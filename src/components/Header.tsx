@@ -25,12 +25,12 @@ const Header = () => {
   };
 
   const menuItems = [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
+    { label: 'Home', href: 'https://www.mesagroupconsulting.com' },
+    { label: 'About', href: 'https://www.mesagroupconsulting.com/about-us' },
     {
       label: 'For Consumers',
       submenu: [
-        { label: 'Build Credit', href: '/build-credit' },
+        { label: 'Build Credit', href: '#' },
         { label: 'Credit Monitoring', href: '/credit-monitoring' },
         { label: 'Credit Repair', href: '/credit-repair' },
         { label: 'DIY Credit Repair', href: '/diy-credit-repair' },
@@ -40,14 +40,14 @@ const Header = () => {
         { label: 'Student Loan Refi', href: '/student-loan-refi' },
         { label: 'Debt Consolidation Loan', href: '/debt-consolidation-loan' },
         { label: 'Debt Relief', href: '/debt-relief' },
-        { label: 'Trust & Will Plan', href: '/trust-will-plan' },
+        { label: 'Trust & Will Plan', href: '/trust-and-will-plan' },
         { label: 'Life Insurance', href: '/life-insurance' },
       ],
     },
     {
       label: 'For Businesses',
       submenu: [
-        { label: '0% Interest Business Funding', href: '/zero-percent-business-funding' },
+        { label: '0% Interest Business Funding', href: '/zero-interest-business-funding' },
         { label: 'Business Funding', href: '/business-funding' },
         { label: 'Business Debt Relief', href: '/business-debt-relief' },
         { label: 'Business Credit', href: '/business-credit' },

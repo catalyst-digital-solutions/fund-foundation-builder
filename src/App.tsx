@@ -5,6 +5,19 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import CreditMonitoring from "./pages/CreditMonitoring";
+import CreditRepair from "./pages/CreditRepair";
+import DIYCreditRepair from "./pages/DIYCreditRepair";
+import CreditCards from "./pages/CreditCards";
+import PersonalLoans from "./pages/PersonalLoans";
+import AutoLoanRefi from "./pages/AutoLoanRefi";
+import StudentLoanRefi from "./pages/StudentLoanRefi";
+import DebtRelief from "./pages/DebtRelief";
+import TrustAndWillPlan from "./pages/TrustAndWillPlan";
+import LifeInsurance from "./pages/LifeInsurance";
+import ZeroInterestBusinessFunding from "./pages/ZeroInterestBusinessFunding";
+import BusinessFunding from "./pages/BusinessFunding";
+import BusinessDebtRelief from "./pages/BusinessDebtRelief";
 
 const queryClient = new QueryClient();
 
@@ -16,7 +29,21 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/business-credit" element={<Index />} />
+          <Route path="/credit-monitoring" element={<CreditMonitoring />} />
+          <Route path="/credit-repair" element={<CreditRepair />} />
+          <Route path="/diy-credit-repair" element={<DIYCreditRepair />} />
+          <Route path="/credit-cards" element={<CreditCards />} />
+          <Route path="/personal-loans" element={<PersonalLoans />} />
+          <Route path="/auto-loan-refi" element={<AutoLoanRefi />} />
+          <Route path="/student-loan-refi" element={<StudentLoanRefi />} />
+          <Route path="/debt-consolidation-loan" element={<PersonalLoans />} />
+          <Route path="/debt-relief" element={<DebtRelief />} />
+          <Route path="/trust-and-will-plan" element={<TrustAndWillPlan />} />
+          <Route path="/life-insurance" element={<LifeInsurance />} />
+          <Route path="/zero-interest-business-funding" element={<ZeroInterestBusinessFunding />} />
+          <Route path="/business-funding" element={<BusinessFunding />} />
+          <Route path="/business-debt-relief" element={<BusinessDebtRelief />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
