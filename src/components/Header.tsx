@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Clock, Mail, MapPin, Phone, ChevronDown, Menu, X, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import mesaGroupLogo from '@/assets/mesa-group-logo.png';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -117,15 +118,11 @@ const Header = () => {
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <div className="flex items-center gap-2">
-                <div className="border-2 border-[#f9c65d] px-3 py-1">
-                  <span className="text-white font-bold text-xl">MESA</span>
-                </div>
-                <div>
-                  <span className="text-white font-bold text-xl">GROUP</span>
-                  <div className="text-[#f9c65d] text-xs font-semibold tracking-wider">CONSULTING</div>
-                </div>
-              </div>
+              <img 
+                src={mesaGroupLogo} 
+                alt="Mesa Group Consulting" 
+                className="h-[60px] w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation */}
