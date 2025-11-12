@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Header from '@/components/Header';
 import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, FileText, AlertTriangle, DollarSign, Eye, Lock, Mail, ChevronDown, Phone, MapPin, ExternalLink } from 'lucide-react';
 
 const AFFILIATE_LINK = "https://smartcredit.com/join/?PID=24603&planType=PREMIUM";
@@ -6,6 +7,7 @@ const AFFILIATE_LINK = "https://smartcredit.com/join/?PID=24603&planType=PREMIUM
 const CreditMonitoring = () => {
   return (
     <div className="min-h-screen bg-background font-['Inter',sans-serif]">
+      <Header />
       <HeroSection />
       <WhyMonitoringMatters />
       <SmartCreditFeatures />

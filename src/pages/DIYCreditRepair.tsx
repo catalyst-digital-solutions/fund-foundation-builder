@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "@/components/Header";
 
 const DIYCreditRepair = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -48,6 +49,7 @@ const DIYCreditRepair = () => {
 
   return (
     <main className="font-['Inter',sans-serif]">
+      <Header />
       {/* SECTION 1: HERO */}
       <section className="bg-gradient-to-b from-primary via-accent to-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">

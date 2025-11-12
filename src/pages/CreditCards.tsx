@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Header from '@/components/Header';
 
 const CreditCards = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -49,6 +50,7 @@ const CreditCards = () => {
 
   return (
     <main className="min-h-screen">
+      <Header />
       {/* SECTION 1: HERO */}
       <section className="bg-gradient-to-b from-[hsl(var(--mgc-yellow))] via-[hsl(var(--mgc-cream))] to-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-6xl mx-auto text-center">

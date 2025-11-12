@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Header from '@/components/Header';
 import { 
   Trophy, CreditCard, Rocket, Building2, FileText, TrendingUp, 
   Coins, BarChart3, Hammer, Target, Building, Banknote, 
@@ -8,6 +9,7 @@ import {
 const ZeroInterestBusinessFunding = () => {
   return (
     <div className="min-h-screen bg-background font-['Inter',sans-serif]">
+      <Header />
       <HeroSection />
       <SuccessStoryTeaser />
       <NineFundingSolutions />

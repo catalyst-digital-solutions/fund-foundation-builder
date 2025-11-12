@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Header from '@/components/Header';
 import { 
   DollarSign, 
   Building2, 
@@ -25,6 +26,7 @@ import { Button } from '@/components/ui/button';
 const BusinessFunding = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       <HeroSection />
       <AllFundingSolutionsGrid />
       <ComparisonTable />

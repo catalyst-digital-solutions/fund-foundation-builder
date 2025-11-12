@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Header from '@/components/Header';
 import { 
   Check, Scale, Lock, CheckCircle, FileText, Building2, Heart, 
   Handshake, Users, Home, Hospital, Smile, AlertTriangle, 
@@ -60,6 +61,7 @@ const TrustAndWillPlan = () => {
 
   return (
     <main className="min-h-screen">
+      <Header />
       {/* SECTION 1: HERO */}
       <section className="bg-gradient-to-b from-[#f9c65d] via-[#f8d899] to-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">

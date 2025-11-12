@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import Header from "@/components/Header";
 import { Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, Search, Lightbulb, MapPin } from "lucide-react";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 
@@ -113,6 +114,7 @@ const CreditRepair = () => {
 
   return (
     <main className="min-h-screen">
+      <Header />
       {/* SECTION 1: HERO */}
       <AuroraBackground className="py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto relative z-10">
