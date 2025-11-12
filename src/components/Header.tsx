@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Clock, Mail, MapPin, Phone, ChevronDown, Menu, X, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = (label: string) => {
+    // Clear any pending close timeout
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+      closeTimeoutRef.current = null;
+    }
+    setActiveDropdown(label);
+  };
+
+  const handleMouseLeave = () => {
+    // Delay closing the dropdown to allow smooth cursor movement
+    closeTimeoutRef.current = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 300);
+  };
 
   const menuItems = [
     { label: 'Home', href: '/' },
@@ -117,8 +134,8 @@ const Header = () => {
                 <div
                   key={item.label}
                   className="relative"
-                  onMouseEnter={() => item.submenu && setActiveDropdown(item.label)}
-                  onMouseLeave={() => setActiveDropdown(null)}
+                  onMouseEnter={() => item.submenu && handleMouseEnter(item.label)}
+                  onMouseLeave={handleMouseLeave}
                 >
                   {item.submenu ? (
                     <>
@@ -127,7 +144,11 @@ const Header = () => {
                         <ChevronDown className="w-4 h-4" />
                       </button>
                       {activeDropdown === item.label && (
-                        <div className="absolute top-full left-0 mt-2 w-64 bg-black border border-gray-800 rounded-lg shadow-xl z-50">
+                        <div 
+                          className="absolute top-full left-0 mt-2 w-64 bg-black border border-gray-800 rounded-lg shadow-xl z-50"
+                          onMouseEnter={() => handleMouseEnter(item.label)}
+                          onMouseLeave={handleMouseLeave}
+                        >
                           <div className="py-2">
                             {item.submenu.map((subItem) => (
                               <Link
