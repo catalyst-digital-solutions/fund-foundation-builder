@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import { Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, Search, Lightbulb, MapPin } from "lucide-react";
-import { AuroraBackground } from "@/components/ui/aurora-background";
 
 const CreditRepair = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -116,7 +115,7 @@ const CreditRepair = () => {
     <main className="min-h-screen">
       <Header />
       {/* SECTION 1: HERO */}
-      <AuroraBackground className="py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-gradient-to-br from-mgc-dark-gray via-gray-900 to-black py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* LEFT COLUMN - Content */}
@@ -200,7 +199,7 @@ const CreditRepair = () => {
             </div>
           </div>
         </div>
-      </AuroraBackground>
+      </section>
 
       {/* TRUST BADGES SECTION - Full Width */}
       <section className="bg-white py-12 md:py-16 px-6 md:px-8">
