@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '@/components/Header';
 import HeroSection from '@/components/business-credit/sections/HeroSection';
 import WhyBusinessCreditMatters from '@/components/business-credit/sections/WhyBusinessCreditMatters';
 import HowItWorks from '@/components/business-credit/sections/HowItWorks';
@@ -12,6 +13,7 @@ import ComplianceFooter from '@/components/business-credit/sections/ComplianceFo
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
+      <Header />
       <HeroSection />
       <WhyBusinessCreditMatters />
       <HowItWorks />
