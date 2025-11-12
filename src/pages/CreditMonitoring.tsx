@@ -3,7 +3,7 @@ import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, F
 
 const AFFILIATE_LINK = "https://smartcredit.com/join/?PID=24603&planType=PREMIUM";
 
-export default function Index() {
+const CreditMonitoring = () => {
   return (
     <div className="min-h-screen bg-background font-['Inter',sans-serif]">
       <HeroSection />
@@ -17,6 +17,8 @@ export default function Index() {
     </div>
   );
 }
+
+export default CreditMonitoring;
 
 function HeroSection() {
   return (
