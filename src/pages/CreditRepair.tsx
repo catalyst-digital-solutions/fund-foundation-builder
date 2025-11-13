@@ -115,7 +115,7 @@ const CreditRepair = () => {
     <main className="min-h-screen">
       <Header />
       {/* SECTION 1: HERO */}
-      <section className="bg-gradient-to-br from-mgc-dark-gray via-gray-900 to-black py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-gradient-to-br from-[#8B7355] via-[#A0826D] to-[#C19A6B] py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* LEFT COLUMN - Content */}
