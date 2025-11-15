@@ -42,26 +42,32 @@ const ServiceTierComparison = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <div className="md:hidden flex gap-2 mb-8">
+        <div className="md:hidden flex border-b-2 border-gray-200 mb-8">
           <button
             onClick={() => setSelectedTier('full')}
-            className={`flex-1 py-3 px-4 rounded-lg font-semibold transition-all ${
+            className={`flex-1 py-4 px-4 font-semibold transition-all relative ${
               selectedTier === 'full'
-                ? 'bg-amber-400 text-gray-900 shadow-lg'
-                : 'bg-gray-100 text-gray-600'
+                ? 'text-amber-600'
+                : 'text-gray-500'
             }`}
           >
             Full Service
+            {selectedTier === 'full' && (
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-amber-600"></div>
+            )}
           </button>
           <button
             onClick={() => setSelectedTier('diy')}
-            className={`flex-1 py-3 px-4 rounded-lg font-semibold transition-all ${
+            className={`flex-1 py-4 px-4 font-semibold transition-all relative ${
               selectedTier === 'diy'
-                ? 'bg-amber-400 text-gray-900 shadow-lg'
-                : 'bg-gray-100 text-gray-600'
+                ? 'text-amber-600'
+                : 'text-gray-500'
             }`}
           >
             DIY
+            {selectedTier === 'diy' && (
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-amber-600"></div>
+            )}
           </button>
         </div>
 
