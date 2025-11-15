@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "@/components/Header";
+import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search } from 'lucide-react';
 
 const DIYCreditRepair = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -115,7 +116,7 @@ const DIYCreditRepair = () => {
               {/* Trust Badges */}
               <div className="flex flex-wrap items-center gap-6 mt-8">
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">⚡</span>
+                  <Zap className="w-6 h-6 text-amber-500" />
                   <span className="text-sm font-medium text-foreground">Setup in 5 Minutes</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -123,7 +124,7 @@ const DIYCreditRepair = () => {
                   <span className="text-sm font-medium text-foreground">AI-Powered</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">📊</span>
+                  <BarChart3 className="w-6 h-6 text-gray-700" />
                   <span className="text-sm font-medium text-foreground">Track All 3 Bureaus</span>
                 </div>
               </div>
@@ -357,7 +358,9 @@ const DIYCreditRepair = () => {
               <div className="w-16 h-16 bg-primary text-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 5
               </div>
-              <div className="text-4xl mb-4">📈</div>
+              <div className="flex justify-center mb-4">
+                <TrendingUp className="w-10 h-10 text-blue-600" />
+              </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
                 Track Results
               </h3>
@@ -438,7 +441,9 @@ const DIYCreditRepair = () => {
             
             {/* Feature 2: Professional Letters */}
             <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg p-6 border-2 border-yellow-200">
-              <div className="text-4xl mb-4">📝</div>
+              <div className="flex justify-center mb-4">
+                <FileText className="w-10 h-10 text-yellow-600" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
                 Professional Letter Generator
               </h3>
@@ -463,7 +468,9 @@ const DIYCreditRepair = () => {
             
             {/* Feature 3: 3-Bureau Tracking */}
             <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-lg p-6 border-2 border-green-200">
-              <div className="text-4xl mb-4">📊</div>
+              <div className="flex justify-center mb-4">
+                <BarChart3 className="w-10 h-10 text-green-600" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
                 3-Bureau Tracking
               </h3>
@@ -513,7 +520,9 @@ const DIYCreditRepair = () => {
             
             {/* Feature 5: Progress Dashboard */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border-2 border-blue-200">
-              <div className="text-4xl mb-4">📈</div>
+              <div className="flex justify-center mb-4">
+                <TrendingUp className="w-10 h-10 text-blue-600" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
                 Real-Time Progress Dashboard
               </h3>
@@ -538,7 +547,9 @@ const DIYCreditRepair = () => {
             
             {/* Feature 6: Education Library */}
             <div className="bg-gradient-to-br from-gray-50 to-slate-50 rounded-lg p-6 border-2 border-gray-200">
-              <div className="text-4xl mb-4">📚</div>
+              <div className="flex justify-center mb-4">
+                <BookOpen className="w-10 h-10 text-gray-600" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
                 Credit Education Library
               </h3>
@@ -578,12 +589,16 @@ const DIYCreditRepair = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
             
             <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <div className="text-3xl mb-2">📅</div>
+              <div className="flex justify-center mb-2">
+                <Calendar className="w-8 h-8 text-gray-700" />
+              </div>
               <div className="font-semibold text-foreground">Late Payments</div>
             </div>
             
             <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <div className="text-3xl mb-2">💳</div>
+              <div className="flex justify-center mb-2">
+                <CreditCard className="w-8 h-8 text-gray-700" />
+              </div>
               <div className="font-semibold text-foreground">Collections</div>
             </div>
             
@@ -593,7 +608,9 @@ const DIYCreditRepair = () => {
             </div>
             
             <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <div className="text-3xl mb-2">🚗</div>
+              <div className="flex justify-center mb-2">
+                <Car className="w-8 h-8 text-gray-700" />
+              </div>
               <div className="font-semibold text-foreground">Repossessions</div>
             </div>
             
@@ -613,7 +630,9 @@ const DIYCreditRepair = () => {
             </div>
             
             <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <div className="text-3xl mb-2">🔍</div>
+              <div className="flex justify-center mb-2">
+                <Search className="w-8 h-8 text-gray-700" />
+              </div>
               <div className="font-semibold text-foreground">Hard Inquiries</div>
             </div>
             
@@ -622,7 +641,7 @@ const DIYCreditRepair = () => {
           {/* Important Disclaimer */}
           <div className="bg-white rounded-lg p-8 border-2 border-secondary">
             <div className="flex items-start gap-4">
-              <span className="text-4xl">⚠️</span>
+              <AlertTriangle className="w-10 h-10 text-orange-600 flex-shrink-0" />
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   Important: You Can Only Dispute Inaccurate Items
@@ -754,7 +773,9 @@ const DIYCreditRepair = () => {
           
           {/* Money-Back Guarantee */}
           <div className="bg-green-50 border-2 border-green-200 rounded-lg p-6 mt-12 text-center max-w-2xl mx-auto">
-            <div className="text-4xl mb-3">🛡️</div>
+            <div className="flex justify-center mb-3">
+              <Shield className="w-10 h-10 text-green-600" />
+            </div>
             <h3 className="text-xl font-bold text-foreground mb-2">
               30-Day Money-Back Guarantee
             </h3>
@@ -823,11 +844,11 @@ const DIYCreditRepair = () => {
             {/* Testimonial 1 */}
             <div className="bg-accent rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
               </div>
               <p className="text-gray-700 mb-4 italic leading-relaxed">
                 "Removed 3 collections and 2 late payments in 4 months. My score went from 590 to 680. Total cost: $200. Would've been $600+ with a credit repair company."
@@ -841,11 +862,11 @@ const DIYCreditRepair = () => {
             {/* Testimonial 2 */}
             <div className="bg-accent rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
               </div>
               <p className="text-gray-700 mb-4 italic leading-relaxed">
                 "The AI told me exactly which items to dispute first. I was skeptical but followed the strategy. 2 of my biggest items were deleted in the first round. Already recommended to 3 friends."
@@ -859,11 +880,11 @@ const DIYCreditRepair = () => {
             {/* Testimonial 3 */}
             <div className="bg-accent rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
               </div>
               <p className="text-gray-700 mb-4 italic leading-relaxed">
                 "I spend maybe 1 hour a month on this. The letter generator is incredible—way better than anything I could've written myself. Saved me $1,500+ vs. hiring a company."
@@ -933,7 +954,7 @@ const DIYCreditRepair = () => {
               <span className="text-sm font-medium">Cancel Anytime</span>
             </div>
             <div className="flex items-center gap-2 text-foreground">
-              <span className="text-2xl">🛡️</span>
+              <Shield className="w-6 h-6 text-green-600" />
               <span className="text-sm font-medium">Money-Back Guarantee</span>
             </div>
           </div>
