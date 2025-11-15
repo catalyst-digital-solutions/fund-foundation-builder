@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
+import { Target, Check, Lock, Lightbulb, TrendingUp, Star, CircleDollarSign, BarChart3, CreditCard, Gem, Plane, X, Gift, Globe, Trophy, ThumbsUp, Wrench } from 'lucide-react';
 
 const CreditCards = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -69,7 +70,7 @@ const CreditCards = () => {
           
           <div className="bg-white border-2 border-amber-300 rounded-lg p-6 mb-8 max-w-3xl mx-auto">
             <div className="flex items-start gap-4">
-              <span className="text-4xl">🎯</span>
+              <Target className="w-10 h-10 text-amber-600 flex-shrink-0" />
               <div className="text-left">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Pre-Qualification = No Credit Score Impact
@@ -94,19 +95,19 @@ const CreditCards = () => {
           
           <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
             <div className="flex items-center gap-2">
-              <span className="text-2xl">✓</span>
+              <Check className="w-6 h-6 text-green-600" />
               <span className="text-sm font-medium text-[hsl(var(--mgc-dark-gray))]">Soft Pull Only</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-2xl">✓</span>
+              <Check className="w-6 h-6 text-green-600" />
               <span className="text-sm font-medium text-[hsl(var(--mgc-dark-gray))]">Compare 50+ Cards</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-2xl">✓</span>
+              <Check className="w-6 h-6 text-green-600" />
               <span className="text-sm font-medium text-[hsl(var(--mgc-dark-gray))]">All Credit Levels</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-2xl">🔒</span>
+              <Lock className="w-6 h-6 text-gray-700" />
               <span className="text-sm font-medium text-[hsl(var(--mgc-dark-gray))]">Bank-Level Security</span>
             </div>
           </div>
@@ -180,7 +181,7 @@ const CreditCards = () => {
           
           <div className="bg-[hsl(var(--mgc-cream))] border-l-4 border-[hsl(var(--mgc-yellow))] p-6 rounded-lg mt-12 max-w-4xl mx-auto">
             <div className="flex items-start gap-3">
-              <span className="text-2xl mt-1">💡</span>
+              <Lightbulb className="w-6 h-6 text-amber-500 flex-shrink-0 mt-1" />
               <div>
                 <h4 className="text-lg font-semibold text-[hsl(var(--mgc-dark-gray))] mb-2">
                   Important: Soft Pull vs. Hard Pull
@@ -222,15 +223,15 @@ const CreditCards = () => {
               </p>
               <ul className="space-y-2 text-sm text-gray-600 mb-4">
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Security deposit required</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Reports to all 3 bureaus</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Path to unsecured card</span>
                 </li>
               </ul>
@@ -243,7 +244,9 @@ const CreditCards = () => {
             </div>
             
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-200">
-              <div className="text-4xl mb-4">📈</div>
+              <div className="flex justify-center mb-4">
+                <TrendingUp className="w-10 h-10 text-blue-600" />
+              </div>
               <h3 className="text-xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-3">
                 Fair Credit (580-669)
               </h3>
@@ -252,15 +255,15 @@ const CreditCards = () => {
               </p>
               <ul className="space-y-2 text-sm text-gray-600 mb-4">
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>No security deposit</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Basic rewards programs</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Credit line increases</span>
                 </li>
               </ul>
@@ -273,7 +276,9 @@ const CreditCards = () => {
             </div>
             
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-200">
-              <div className="text-4xl mb-4">⭐</div>
+              <div className="flex justify-center mb-4">
+                <Star className="w-10 h-10 text-amber-500" />
+              </div>
               <h3 className="text-xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-3">
                 Good Credit (670-739)
               </h3>
@@ -282,15 +287,15 @@ const CreditCards = () => {
               </p>
               <ul className="space-y-2 text-sm text-gray-600 mb-4">
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Solid rewards programs</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Competitive APRs</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Sign-up bonuses</span>
                 </li>
               </ul>
@@ -303,7 +308,9 @@ const CreditCards = () => {
             </div>
             
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-200">
-              <div className="text-4xl mb-4">💎</div>
+              <div className="flex justify-center mb-4">
+                <Gem className="w-10 h-10 text-purple-600" />
+              </div>
               <h3 className="text-xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-3">
                 Excellent Credit (740+)
               </h3>
@@ -312,15 +319,15 @@ const CreditCards = () => {
               </p>
               <ul className="space-y-2 text-sm text-gray-600 mb-4">
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Premium rewards (2-5%)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Airport lounge access</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Large sign-up bonuses</span>
                 </li>
               </ul>
@@ -333,7 +340,9 @@ const CreditCards = () => {
             </div>
             
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-200">
-              <div className="text-4xl mb-4">💰</div>
+              <div className="flex justify-center mb-4">
+                <CircleDollarSign className="w-10 h-10 text-green-600" />
+              </div>
               <h3 className="text-xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-3">
                 Cashback Rewards
               </h3>
@@ -342,15 +351,15 @@ const CreditCards = () => {
               </p>
               <ul className="space-y-2 text-sm text-gray-600 mb-4">
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Simple cash rewards</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>Bonus categories</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <Check className="w-4 h-4 text-green-600 mt-1" />
                   <span>No travel restrictions</span>
                 </li>
               </ul>
@@ -363,7 +372,9 @@ const CreditCards = () => {
             </div>
             
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-200">
-              <div className="text-4xl mb-4">✈️</div>
+              <div className="flex justify-center mb-4">
+                <Plane className="w-10 h-10 text-blue-600" />
+              </div>
               <h3 className="text-xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-3">
                 Travel Rewards
               </h3>
@@ -447,7 +458,7 @@ const CreditCards = () => {
             
             <div className="bg-green-50 border border-green-200 rounded-lg p-8">
               <h3 className="text-2xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-4 flex items-center gap-2">
-                <span className="text-3xl">✓</span>
+                <Check className="w-8 h-8 text-green-600" />
                 <span>Using Our Comparison Tool</span>
               </h3>
               <ul className="space-y-3 text-gray-700">
@@ -503,7 +514,7 @@ const CreditCards = () => {
             
             <div className="bg-white rounded-lg p-6">
               <div className="flex items-start gap-4">
-                <div className="text-4xl">📊</div>
+                <BarChart3 className="w-10 h-10 text-gray-700 flex-shrink-0" />
                 <div>
                   <h3 className="text-xl font-semibold text-[hsl(var(--mgc-dark-gray))] mb-2">
                     APR (Interest Rate)
@@ -537,7 +548,7 @@ const CreditCards = () => {
             
             <div className="bg-white rounded-lg p-6">
               <div className="flex items-start gap-4">
-                <div className="text-4xl">🎁</div>
+                <Gift className="w-10 h-10 text-pink-600 flex-shrink-0" />
                 <div>
                   <h3 className="text-xl font-semibold text-[hsl(var(--mgc-dark-gray))] mb-2">
                     Rewards Rate
@@ -554,7 +565,7 @@ const CreditCards = () => {
             
             <div className="bg-white rounded-lg p-6">
               <div className="flex items-start gap-4">
-                <div className="text-4xl">🎯</div>
+                <Target className="w-10 h-10 text-amber-600 flex-shrink-0" />
                 <div>
                   <h3 className="text-xl font-semibold text-[hsl(var(--mgc-dark-gray))] mb-2">
                     Sign-Up Bonus
@@ -571,7 +582,7 @@ const CreditCards = () => {
             
             <div className="bg-white rounded-lg p-6">
               <div className="flex items-start gap-4">
-                <div className="text-4xl">🌍</div>
+                <Globe className="w-10 h-10 text-blue-600 flex-shrink-0" />
                 <div>
                   <h3 className="text-xl font-semibold text-[hsl(var(--mgc-dark-gray))] mb-2">
                     Foreign Transaction Fee
@@ -588,7 +599,7 @@ const CreditCards = () => {
             
             <div className="bg-white rounded-lg p-6">
               <div className="flex items-start gap-4">
-                <div className="text-4xl">💳</div>
+                <CreditCard className="w-10 h-10 text-purple-600 flex-shrink-0" />
                 <div>
                   <h3 className="text-xl font-semibold text-[hsl(var(--mgc-dark-gray))] mb-2">
                     Credit Limit
@@ -668,7 +679,7 @@ const CreditCards = () => {
                   <div className="text-xl font-semibold mb-1">Exceptional</div>
                   <p className="text-green-100">Best rates on everything. Premium cards welcome you.</p>
                 </div>
-                <div className="text-6xl">🏆</div>
+                <Trophy className="w-16 h-16 text-yellow-300" />
               </div>
             </div>
             
@@ -679,7 +690,7 @@ const CreditCards = () => {
                   <div className="text-xl font-semibold mb-1">Very Good</div>
                   <p className="text-green-100">Great rates. Most premium cards available.</p>
                 </div>
-                <div className="text-6xl">⭐</div>
+                <Star className="w-16 h-16 text-yellow-300 fill-yellow-300" />
               </div>
             </div>
             
@@ -690,7 +701,7 @@ const CreditCards = () => {
                   <div className="text-xl font-semibold mb-1">Good</div>
                   <p>Above-average rates. Solid rewards cards accessible.</p>
                 </div>
-                <div className="text-6xl">👍</div>
+                <ThumbsUp className="w-16 h-16 text-gray-700" />
               </div>
             </div>
             
@@ -701,7 +712,7 @@ const CreditCards = () => {
                   <div className="text-xl font-semibold mb-1">Fair</div>
                   <p className="text-orange-100">Higher rates. Limited to rebuilding cards.</p>
                 </div>
-                <div className="text-6xl">📈</div>
+                <TrendingUp className="w-16 h-16 text-orange-200" />
               </div>
             </div>
             
@@ -712,7 +723,7 @@ const CreditCards = () => {
                   <div className="text-xl font-semibold mb-1">Poor</div>
                   <p className="text-red-100">Secured cards only. Focus on rebuilding.</p>
                 </div>
-                <div className="text-6xl">🔧</div>
+                <Wrench className="w-16 h-16 text-red-200" />
               </div>
             </div>
             
@@ -761,15 +772,15 @@ const CreditCards = () => {
           
           <div className="flex flex-wrap items-center justify-center gap-8 mt-12">
             <div className="flex items-center gap-2">
-              <span className="text-2xl">✓</span>
+              <Check className="w-6 h-6 text-white" />
               <span className="text-sm font-medium text-white">No Score Impact</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-2xl">✓</span>
+              <Check className="w-6 h-6 text-white" />
               <span className="text-sm font-medium text-white">All Credit Levels</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-2xl">🔒</span>
+              <Lock className="w-6 h-6 text-white" />
               <span className="text-sm font-medium text-white">Secure & Private</span>
             </div>
           </div>
