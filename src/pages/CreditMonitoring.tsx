@@ -24,65 +24,65 @@ export default CreditMonitoring;
 
 function HeroSection() {
   return (
-    <section className="bg-gradient-to-br from-primary via-secondary to-primary py-20 px-6 lg:py-28">
+    <section className="bg-gradient-to-br from-white via-amber-50 to-white py-20 px-6 lg:py-28">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
           {/* Left Content */}
-          <div className="text-white">
+          <div>
             
-            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            <div className="inline-flex items-center gap-2 bg-amber-100 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold mb-6 border-2 border-amber-300">
               <Shield className="w-4 h-4" />
               Powered by SmartCredit® | Trusted Credit Monitoring
             </div>
             
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Protect Your Credit. Monitor Your Future.
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              Protect Your <span className="text-amber-600">Credit</span>. Monitor Your <span className="text-amber-600">Future</span>.
             </h1>
             
-            <p className="text-xl mb-8 leading-relaxed text-white/90">
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
               <strong>24/7 credit monitoring</strong> with real-time alerts, identity theft protection, and powerful tools to track and improve your credit score—all in one simple platform.
             </p>
 
             {/* Key Features List */}
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-success rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                   <CheckCircle2 className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg">3-Bureau Credit Reports & Scores</h3>
-                  <p className="text-white/80 text-sm">Experian, Equifax, and TransUnion—all in one dashboard</p>
+                  <h3 className="font-bold text-lg text-gray-900">3-Bureau Credit Reports & Scores</h3>
+                  <p className="text-gray-600 text-sm">Experian, Equifax, and TransUnion—all in one dashboard</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-success rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                   <CheckCircle2 className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg">$1 Million Fraud Insurance</h3>
-                  <p className="text-white/80 text-sm">Covers your entire family's identity theft expenses</p>
+                  <h3 className="font-bold text-lg text-gray-900">$1 Million Fraud Insurance</h3>
+                  <p className="text-gray-600 text-sm">Covers your entire family's identity theft expenses</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-success rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                   <CheckCircle2 className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg">ScoreTracker, Builder & Boost</h3>
-                  <p className="text-white/80 text-sm">Tools to control and improve your future credit score</p>
+                  <h3 className="font-bold text-lg text-gray-900">ScoreTracker, Builder & Boost</h3>
+                  <p className="text-gray-600 text-sm">Tools to control and improve your future credit score</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-success rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                   <CheckCircle2 className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg">Real-Time Alerts</h3>
-                  <p className="text-white/80 text-sm">Instant notifications of suspicious activity or changes</p>
+                  <h3 className="font-bold text-lg text-gray-900">Real-Time Alerts</h3>
+                  <p className="text-gray-600 text-sm">Instant notifications of suspicious activity or changes</p>
                 </div>
               </div>
             </div>
@@ -92,13 +92,13 @@ function HeroSection() {
               href={AFFILIATE_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-success text-white text-xl font-bold px-12 py-5 rounded-lg hover:bg-success/90 transition-all duration-200 shadow-2xl hover:shadow-3xl hover:scale-105 mb-4"
+              className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 mb-4"
             >
               Start Monitoring My Credit
               <ExternalLink className="w-5 h-5" />
             </a>
             
-            <p className="text-sm text-white/80">
+            <p className="text-sm text-gray-600">
               <CheckCircle2 className="w-4 h-4 inline mr-1" />
               Instant access to all 3 bureaus
               <span className="mx-2">|</span>

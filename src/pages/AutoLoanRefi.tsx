@@ -55,24 +55,24 @@ const AutoLoanRefi = () => {
     <main className="min-h-screen">
       <Header />
       {/* SECTION 1: HERO */}
-      <section className="bg-gradient-to-b from-[#f9c65d] via-[#f8d899] to-white py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             
             {/* LEFT COLUMN - Content */}
             <div>
               {/* Eyebrow */}
-              <p className="text-sm uppercase tracking-wide text-[#3E3E3E] mb-4 font-semibold">
+              <p className="text-sm uppercase tracking-wide text-gray-700 mb-4 font-semibold">
                 Auto Loan Refinancing
               </p>
               
               {/* H1 Headline */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#3E3E3E] mb-6 leading-tight">
-                Lower Your Car Payment. Keep the Same Car.
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Lower Your <span className="text-amber-600">Car Payment</span>. Keep the Same Car.
               </h1>
               
               {/* Subheadline */}
-              <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
                 Compare 100+ lenders in minutes and find a better rate on your auto loan. Most drivers save $50-$150/month—without changing anything about their car.
               </p>
               
@@ -80,30 +80,30 @@ const AutoLoanRefi = () => {
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-3">
                   <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
-                  <span className="text-gray-800"><strong>Soft credit check only</strong> – won't hurt your score</span>
+                  <span className="text-gray-700"><strong>Soft credit check only</strong> – won't hurt your score</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
-                  <span className="text-gray-800"><strong>Average savings: $100/month</strong> ($1,200/year)</span>
+                  <span className="text-gray-700"><strong>Average savings: $100/month</strong> ($1,200/year)</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
-                  <span className="text-gray-800"><strong>Compare 100+ lenders</strong> with one application</span>
+                  <span className="text-gray-700"><strong>Compare 100+ lenders</strong> with one application</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
-                  <span className="text-gray-800"><strong>Rates as low as 3.99% APR</strong> for qualified borrowers</span>
+                  <span className="text-gray-700"><strong>Rates as low as 3.99% APR</strong> for qualified borrowers</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
-                  <span className="text-gray-800"><strong>Takes under 2 minutes</strong> to see your offers</span>
+                  <span className="text-gray-700"><strong>Takes under 2 minutes</strong> to see your offers</span>
                 </li>
               </ul>
               
               {/* Primary CTA */}
               <button 
                 onClick={handleCTA}
-                className="bg-[#bb9446] hover:bg-[#3E3E3E] text-white text-lg font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200 w-full md:w-auto"
+                className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4 w-full md:w-auto"
               >
                 Check My New Rate
               </button>
@@ -116,7 +116,7 @@ const AutoLoanRefi = () => {
               <div className="flex flex-wrap items-center gap-6 mt-8">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">🔒</span>
-                  <span className="text-sm font-medium text-[#3E3E3E]">SOC 2 Certified</span>
+                  <span className="text-sm font-medium text-gray-900">SOC 2 Certified</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">⚡</span>

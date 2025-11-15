@@ -52,29 +52,29 @@ const CreditCards = () => {
     <main className="min-h-screen">
       <Header />
       {/* SECTION 1: HERO */}
-      <section className="bg-gradient-to-b from-[hsl(var(--mgc-yellow))] via-[hsl(var(--mgc-cream))] to-white py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-6xl mx-auto text-center">
           
-          <p className="text-sm uppercase tracking-wide text-[hsl(var(--mgc-dark-gray))] mb-4 font-medium">
+          <p className="text-sm uppercase tracking-wide text-gray-700 mb-4 font-medium">
             Mesa Group Consulting Credit Card Marketplace
           </p>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-6 leading-tight">
-            Find Your Perfect Credit Card—Without Hurting Your Score
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            Find Your <span className="text-amber-600">Perfect Credit Card</span>—Without Hurting Your Score
           </h1>
           
-          <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-4xl mx-auto">
             Compare dozens of credit cards in one place. Get pre-qualified with a soft pull (no impact on your credit). Find the best rates, rewards, and terms for your credit situation.
           </p>
           
-          <div className="bg-white border-2 border-[hsl(var(--mgc-gold))] rounded-lg p-6 mb-8 max-w-3xl mx-auto">
+          <div className="bg-white border-2 border-amber-300 rounded-lg p-6 mb-8 max-w-3xl mx-auto">
             <div className="flex items-start gap-4">
               <span className="text-4xl">🎯</span>
               <div className="text-left">
-                <h3 className="text-xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-2">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Pre-Qualification = No Credit Score Impact
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-600">
                   Answer 5 quick questions (no SSN yet). See which cards you're likely to get approved for using a <strong>soft pull only</strong>. Your credit score won't drop. Apply when you're ready—that's when the hard pull happens.
                 </p>
               </div>
@@ -83,7 +83,7 @@ const CreditCards = () => {
           
           <button 
             onClick={() => openAffiliateLink()}
-            className="bg-[hsl(var(--mgc-gold))] hover:bg-[hsl(var(--mgc-yellow))] text-white hover:text-[hsl(var(--mgc-dark-gray))] text-lg font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200"
+            className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4"
           >
             Compare Credit Cards Now
           </button>
