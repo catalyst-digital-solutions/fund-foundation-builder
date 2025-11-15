@@ -47,9 +47,9 @@ function HeroSection() {
             {/* Key Features List */}
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                  <CheckCircle2 className="w-5 h-5 text-white" />
-                </div>
+                <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
                 <div>
                   <h3 className="font-bold text-lg text-gray-900">3-Bureau Credit Reports & Scores</h3>
                   <p className="text-gray-600 text-sm">Experian, Equifax, and TransUnion—all in one dashboard</p>
@@ -57,9 +57,9 @@ function HeroSection() {
               </div>
               
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                  <CheckCircle2 className="w-5 h-5 text-white" />
-                </div>
+                <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
                 <div>
                   <h3 className="font-bold text-lg text-gray-900">$1 Million Fraud Insurance</h3>
                   <p className="text-gray-600 text-sm">Covers your entire family's identity theft expenses</p>
@@ -67,9 +67,9 @@ function HeroSection() {
               </div>
               
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                  <CheckCircle2 className="w-5 h-5 text-white" />
-                </div>
+                <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
                 <div>
                   <h3 className="font-bold text-lg text-gray-900">ScoreTracker, Builder & Boost</h3>
                   <p className="text-gray-600 text-sm">Tools to control and improve your future credit score</p>
@@ -77,9 +77,9 @@ function HeroSection() {
               </div>
               
               <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                  <CheckCircle2 className="w-5 h-5 text-white" />
-                </div>
+                <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
                 <div>
                   <h3 className="font-bold text-lg text-gray-900">Real-Time Alerts</h3>
                   <p className="text-gray-600 text-sm">Instant notifications of suspicious activity or changes</p>
@@ -362,27 +362,27 @@ function SmartCreditFeatures() {
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-8 h-8 bg-success rounded-full flex items-center justify-center text-white">
-                      <CheckCircle2 className="w-5 h-5" />
-                    </div>
+                    <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
                     <div>
                       <div className="font-bold text-foreground">ScoreTracker</div>
                       <div className="text-sm text-muted-foreground">See what's helping or hurting your score in real-time</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-8 h-8 bg-success rounded-full flex items-center justify-center text-white">
-                      <CheckCircle2 className="w-5 h-5" />
-                    </div>
+                    <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
                     <div>
                       <div className="font-bold text-foreground">ScoreBuilder®</div>
                       <div className="text-sm text-muted-foreground">Get personalized recommendations to improve your credit</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-8 h-8 bg-success rounded-full flex items-center justify-center text-white">
-                      <CheckCircle2 className="w-5 h-5" />
-                    </div>
+                    <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
                     <div>
                       <div className="font-bold text-foreground">ScoreBoost™</div>
                       <div className="text-sm text-muted-foreground">Instantly add positive payment history to your report</div>
