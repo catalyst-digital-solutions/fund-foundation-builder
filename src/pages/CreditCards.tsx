@@ -214,7 +214,9 @@ const CreditCards = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-200">
-              <div className="text-4xl mb-4">🔧</div>
+              <div className="flex justify-center mb-4">
+                <Wrench className="w-10 h-10 text-red-600" />
+              </div>
               <h3 className="text-xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-3">
                 Bad Credit (300-579)
               </h3>
@@ -531,7 +533,7 @@ const CreditCards = () => {
             
             <div className="bg-white rounded-lg p-6">
               <div className="flex items-start gap-4">
-                <div className="text-4xl">💵</div>
+                <CircleDollarSign className="w-10 h-10 text-green-600 flex-shrink-0" />
                 <div>
                   <h3 className="text-xl font-semibold text-[hsl(var(--mgc-dark-gray))] mb-2">
                     Annual Fee
