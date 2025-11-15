@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "@/components/Header";
-import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity } from 'lucide-react';
+import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity, X, Home, Scale, Gavel } from 'lucide-react';
 
 const DIYCreditRepair = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -615,7 +615,9 @@ const DIYCreditRepair = () => {
             </div>
             
             <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <div className="text-3xl mb-2">❌</div>
+              <div className="flex justify-center mb-2">
+                <X className="w-8 h-8 text-red-600" />
+              </div>
               <div className="font-semibold text-foreground">Charge-Offs</div>
             </div>
             
@@ -627,17 +629,23 @@ const DIYCreditRepair = () => {
             </div>
             
             <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <div className="text-3xl mb-2">🏠</div>
+              <div className="flex justify-center mb-2">
+                <Home className="w-8 h-8 text-gray-700" />
+              </div>
               <div className="font-semibold text-foreground">Foreclosures</div>
             </div>
             
             <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <div className="text-3xl mb-2">⚖️</div>
+              <div className="flex justify-center mb-2">
+                <Scale className="w-8 h-8 text-gray-700" />
+              </div>
               <div className="font-semibold text-foreground">Bankruptcies</div>
             </div>
             
             <div className="bg-white rounded-lg p-4 text-center shadow-md">
-              <div className="text-3xl mb-2">🔨</div>
+              <div className="flex justify-center mb-2">
+                <Gavel className="w-8 h-8 text-gray-700" />
+              </div>
               <div className="font-semibold text-foreground">Judgments</div>
             </div>
             
