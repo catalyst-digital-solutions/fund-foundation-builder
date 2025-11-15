@@ -397,7 +397,7 @@ const CreditCards = () => {
           <div className="text-center mt-12">
             <button 
               onClick={() => openAffiliateLink()}
-              className="bg-[hsl(var(--mgc-gold))] hover:bg-[hsl(var(--mgc-yellow))] text-white hover:text-[hsl(var(--mgc-dark-gray))] text-lg font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200"
+              className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4"
             >
               Compare All Cards
             </button>
@@ -727,7 +727,7 @@ const CreditCards = () => {
             </p>
             <button 
               onClick={() => openAffiliateLink()}
-              className="bg-[hsl(var(--mgc-gold))] hover:bg-[hsl(var(--mgc-yellow))] text-white hover:text-[hsl(var(--mgc-dark-gray))] text-lg font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200"
+              className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4"
             >
               Find Cards for Your Score
             </button>

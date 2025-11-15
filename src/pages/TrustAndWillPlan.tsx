@@ -402,7 +402,7 @@ const TrustAndWillPlan = () => {
               
               <button 
                 onClick={handleCTAClick}
-                className="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-200"
+                className="w-full mt-6 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
               >
                 Choose Will Plan
               </button>
@@ -488,7 +488,7 @@ const TrustAndWillPlan = () => {
               
               <button 
                 onClick={handleCTAClick}
-                className="w-full mt-6 bg-[#bb9446] hover:bg-[#f9c65d] hover:text-[#3E3E3E] text-white font-semibold px-6 py-3 rounded-lg transition duration-200"
+                className="w-full mt-6 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
               >
                 Choose Trust Plan
               </button>
@@ -682,7 +682,7 @@ const TrustAndWillPlan = () => {
               
               <button 
                 onClick={handleCTAClick}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-200"
+                className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
               >
                 Get Will Plan
               </button>
@@ -748,7 +748,7 @@ const TrustAndWillPlan = () => {
               
               <button 
                 onClick={handleCTAClick}
-                className="w-full bg-[#bb9446] hover:bg-[#f9c65d] hover:text-[#3E3E3E] text-white font-semibold px-6 py-3 rounded-lg transition duration-200"
+                className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
               >
                 Get Trust Plan
               </button>
