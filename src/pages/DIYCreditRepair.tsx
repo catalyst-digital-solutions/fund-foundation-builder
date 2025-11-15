@@ -74,20 +74,28 @@ const DIYCreditRepair = () => {
               
               {/* Value Props Quick List */}
               <ul className="space-y-3 mb-8">
-                <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-700"><strong>$49.99/month</strong> vs. $149-449 for credit repair companies</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-700"><strong>Unlimited disputes</strong> to all 3 bureaus</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-700"><strong>AI recommendations</strong> on which items to dispute</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-700"><strong>Professional letter templates</strong> citing federal laws</span>
                 </li>
               </ul>
@@ -165,7 +173,9 @@ const DIYCreditRepair = () => {
             {/* DIY IS GREAT IF... */}
             <div className="bg-green-50 border-2 border-green-200 rounded-lg p-8">
               <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
-                <span className="text-3xl">✓</span>
+                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
                 <span>DIY Is Great If You:</span>
               </h3>
               <ul className="space-y-4 text-gray-700">
@@ -675,35 +685,51 @@ const DIYCreditRepair = () => {
               
               <ul className="space-y-3 text-left mb-8">
                 <li className="flex items-start gap-3">
-                  <span className="w-6 h-6 bg-[hsl(142,71%,45%)] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-800"><strong>Unlimited disputes</strong> to all 3 credit bureaus</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-6 h-6 bg-[hsl(142,71%,45%)] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-800"><strong>AI-powered</strong> analysis and recommendations</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-6 h-6 bg-[hsl(142,71%,45%)] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-800"><strong>Professional letter generator</strong> (cites federal laws)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-6 h-6 bg-[hsl(142,71%,45%)] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-800"><strong>Real-time tracking</strong> dashboard (3 bureaus)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-6 h-6 bg-[hsl(142,71%,45%)] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-800"><strong>Progress monitoring</strong> & score tracking</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-6 h-6 bg-[hsl(142,71%,45%)] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-800"><strong>Education library</strong> (tutorials, templates, guides)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-6 h-6 bg-[hsl(142,71%,45%)] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-800"><strong>Email support</strong> from credit experts</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-6 h-6 bg-[hsl(142,71%,45%)] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-800"><strong>Cancel anytime</strong> (no contracts, no penalties)</span>
                 </li>
               </ul>
@@ -895,11 +921,15 @@ const DIYCreditRepair = () => {
           {/* Trust Elements */}
           <div className="flex flex-wrap items-center justify-center gap-8 mt-12">
             <div className="flex items-center gap-2 text-foreground">
-              <span className="text-2xl">✓</span>
+              <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
               <span className="text-sm font-medium">No Credit Card for Trial</span>
             </div>
             <div className="flex items-center gap-2 text-foreground">
-              <span className="text-2xl">✓</span>
+              <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
               <span className="text-sm font-medium">Cancel Anytime</span>
             </div>
             <div className="flex items-center gap-2 text-foreground">
