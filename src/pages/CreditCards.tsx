@@ -236,7 +236,7 @@ const CreditCards = () => {
               </ul>
               <button 
                 onClick={() => openAffiliateLink('bad_credit_cards')}
-                className="w-full bg-[hsl(var(--mgc-gold))] hover:bg-[hsl(var(--mgc-yellow))] text-white hover:text-[hsl(var(--mgc-dark-gray))] font-semibold py-3 rounded-lg transition duration-200"
+                className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Bad Credit Cards
               </button>
@@ -266,7 +266,7 @@ const CreditCards = () => {
               </ul>
               <button 
                 onClick={() => openAffiliateLink('fair_credit_cards')}
-                className="w-full bg-[hsl(var(--mgc-gold))] hover:bg-[hsl(var(--mgc-yellow))] text-white hover:text-[hsl(var(--mgc-dark-gray))] font-semibold py-3 rounded-lg transition duration-200"
+                className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Fair Credit Cards
               </button>
@@ -296,7 +296,7 @@ const CreditCards = () => {
               </ul>
               <button 
                 onClick={() => openAffiliateLink('good_credit_cards')}
-                className="w-full bg-[hsl(var(--mgc-gold))] hover:bg-[hsl(var(--mgc-yellow))] text-white hover:text-[hsl(var(--mgc-dark-gray))] font-semibold py-3 rounded-lg transition duration-200"
+                className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Good Credit Cards
               </button>
@@ -326,9 +326,9 @@ const CreditCards = () => {
               </ul>
               <button 
                 onClick={() => openAffiliateLink('excellent_credit_cards')}
-                className="w-full bg-[hsl(var(--mgc-gold))] hover:bg-[hsl(var(--mgc-yellow))] text-white hover:text-[hsl(var(--mgc-dark-gray))] font-semibold py-3 rounded-lg transition duration-200"
+                className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
-                View Premium Cards
+                View Premium Credit Cards
               </button>
             </div>
             
@@ -356,9 +356,9 @@ const CreditCards = () => {
               </ul>
               <button 
                 onClick={() => openAffiliateLink('cashback_cards')}
-                className="w-full bg-[hsl(var(--mgc-gold))] hover:bg-[hsl(var(--mgc-yellow))] text-white hover:text-[hsl(var(--mgc-dark-gray))] font-semibold py-3 rounded-lg transition duration-200"
+                className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
-                View Cashback Cards
+                View Cashback Credit Cards
               </button>
             </div>
             
@@ -386,9 +386,9 @@ const CreditCards = () => {
               </ul>
               <button 
                 onClick={() => openAffiliateLink('travel_cards')}
-                className="w-full bg-[hsl(var(--mgc-gold))] hover:bg-[hsl(var(--mgc-yellow))] text-white hover:text-[hsl(var(--mgc-dark-gray))] font-semibold py-3 rounded-lg transition duration-200"
+                className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
-                View Travel Cards
+                View Travel Credit Cards
               </button>
             </div>
             
