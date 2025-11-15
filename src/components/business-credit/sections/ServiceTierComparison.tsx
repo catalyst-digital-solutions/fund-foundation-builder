@@ -128,9 +128,12 @@ const ServiceTierComparison = () => {
                 href="https://mesagroupcapital.com/business-credit-enroll"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center py-4 px-6 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
               >
                 Enroll in Full Service
+                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
               </a>
 
               <p className="text-xs text-center text-gray-600 mt-4">
@@ -201,9 +204,12 @@ const ServiceTierComparison = () => {
                 href="https://mesagroupcapital.com/bcfs-diy-enroll"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center py-4 px-6 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-700 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300"
               >
                 Enroll in DIY Program
+                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
               </a>
 
               <p className="text-xs text-center text-gray-600 mt-4">
@@ -255,9 +261,12 @@ const ServiceTierComparison = () => {
                   href="https://mesagroupcapital.com/business-credit-enroll"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center py-4 px-6 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg shadow-lg"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
                 >
                   Enroll in Full Service
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -304,9 +313,12 @@ const ServiceTierComparison = () => {
                   href="https://mesagroupcapital.com/bcfs-diy-enroll"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center py-4 px-6 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-lg shadow-lg"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-700 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300"
                 >
                   Enroll in DIY Program
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
                 </a>
               </div>
             </div>
