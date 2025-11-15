@@ -26,33 +26,33 @@ const ZeroInterestBusinessFunding = () => {
 
 // Hero Section
 const HeroSection = () => (
-  <section className="bg-gradient-to-br from-[#f8d899] via-white to-[#E5D2AF] py-16 md:py-20 px-6 animate-fade-in">
+  <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-20 px-6 animate-fade-in">
     <div className="max-w-7xl mx-auto">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         
         {/* Left: Content */}
         <div className="animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-[#bb9446] text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 shadow-md">
+          <div className="inline-flex items-center gap-2 bg-amber-100 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold mb-6 shadow-md border-2 border-amber-300">
             <Trophy className="w-4 h-4" />
             $42M+ Funded for 720+ Businesses
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#3E3E3E] mb-6 leading-tight">
-            0% Interest Business Funding That Actually Makes Sense
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <span className="text-amber-600">0% Interest</span> Business Funding That Actually Makes Sense
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-700 mb-6 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-6">
             Stop sacrificing your profits to interest payments. Get <strong>$25,000 to $250,000</strong> in business capital with <strong>0% interest for 12-18 months</strong>.
           </p>
 
-          <div className="bg-white rounded-lg p-6 mb-8 shadow-lg border-l-4 border-[#bb9446]">
-            <p className="text-lg text-[#3E3E3E] mb-3">
+          <div className="bg-white rounded-lg p-6 mb-8 shadow-lg border-l-4 border-amber-500">
+            <p className="text-lg text-gray-900 mb-3">
               <strong>Unlike traditional loans that eat your cash flow,</strong> our 0% promotional periods let you invest the money and see returns <em>before</em> any interest kicks in.
             </p>
             <div className="flex flex-wrap gap-3 text-base text-gray-600">
-              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-[#bb9446]" /> No collateral required on most options</span>
-              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-[#bb9446]" /> Same-day approval available</span>
-              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-[#bb9446]" /> Credit scores as low as 550+ accepted</span>
+              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-amber-600" /> No collateral required on most options</span>
+              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-amber-600" /> Same-day approval available</span>
+              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-amber-600" /> Credit scores as low as 550+ accepted</span>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ const HeroSection = () => (
               href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#bb9446] text-white text-xl font-bold px-10 py-5 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 text-center shadow-xl hover:shadow-2xl hover:scale-105"
+              className="inline-block text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 text-center hover:scale-105"
             >
               Apply for 0% Funding Now
             </a>

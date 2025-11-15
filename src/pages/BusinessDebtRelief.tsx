@@ -8,15 +8,15 @@ const BusinessDebtRelief = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-primary/10 to-background py-24">
+      <section className="bg-gradient-to-br from-white via-amber-50 to-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Business Debt Relief Solutions
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            Business <span className="text-amber-600">Debt Relief</span> Solutions
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">
             Break free from overwhelming business debt with proven strategies and expert guidance
           </p>
-          <Button size="lg" className="text-lg px-8 py-6">
+          <Button size="lg" className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg px-8 py-6">
             Get Free Consultation
           </Button>
         </div>

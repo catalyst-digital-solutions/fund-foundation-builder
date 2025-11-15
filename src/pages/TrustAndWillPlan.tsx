@@ -63,24 +63,24 @@ const TrustAndWillPlan = () => {
     <main className="min-h-screen">
       <Header />
       {/* SECTION 1: HERO */}
-      <section className="bg-gradient-to-b from-[#f9c65d] via-[#f8d899] to-white py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             
             {/* LEFT COLUMN - Content */}
             <div>
               {/* Eyebrow */}
-              <p className="text-sm uppercase tracking-wide text-[#3E3E3E] mb-4">
+              <p className="text-sm uppercase tracking-wide text-gray-700 mb-4 font-medium">
                 Trust & Will Estate Planning
               </p>
               
               {/* H1 Headline */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#3E3E3E] mb-6 leading-tight">
-                Protect Your Family. Secure Your Legacy.
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Protect Your <span className="text-amber-600">Family</span>. Secure Your <span className="text-amber-600">Legacy</span>.
               </h1>
               
               {/* Subheadline */}
-              <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
                 Create a legally-binding Will or Trust online in 20 minutes—built by attorneys, customized by you. Starting at a fraction of traditional attorney fees.
               </p>
               
@@ -90,38 +90,38 @@ const TrustAndWillPlan = () => {
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
                     <Check className="w-4 h-4 text-white" strokeWidth={3} />
                   </div>
-                  <span className="text-gray-800"><strong>Attorney-built documents</strong> – state-specific & legally binding</span>
+                  <span className="text-gray-700"><strong>Attorney-built documents</strong> – state-specific & legally binding</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
                     <Check className="w-4 h-4 text-white" strokeWidth={3} />
                   </div>
-                  <span className="text-gray-800"><strong>Create online in 20 minutes</strong> – no appointments needed</span>
+                  <span className="text-gray-700"><strong>Create online in 20 minutes</strong> – no appointments needed</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
                     <Check className="w-4 h-4 text-white" strokeWidth={3} />
                   </div>
-                  <span className="text-gray-800"><strong>Save thousands vs attorneys</strong> – plans from $199</span>
+                  <span className="text-gray-700"><strong>Save thousands vs attorneys</strong> – plans from $199</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
                     <Check className="w-4 h-4 text-white" strokeWidth={3} />
                   </div>
-                  <span className="text-gray-800"><strong>Avoid probate with Trusts</strong> – keep affairs private</span>
+                  <span className="text-gray-700"><strong>Avoid probate with Trusts</strong> – keep affairs private</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
                     <Check className="w-4 h-4 text-white" strokeWidth={3} />
                   </div>
-                  <span className="text-gray-800"><strong>30-day money-back guarantee</strong> – risk-free</span>
+                  <span className="text-gray-700"><strong>30-day money-back guarantee</strong> – risk-free</span>
                 </li>
               </ul>
               
               {/* Primary CTA */}
               <button 
                 onClick={handleCTAClick}
-                className="bg-[#bb9446] hover:bg-[#f9c65d] text-white hover:text-[#3E3E3E] text-lg font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200 w-full md:w-auto"
+                className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4 w-full md:w-auto"
               >
                 Create Your Estate Plan
               </button>

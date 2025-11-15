@@ -40,34 +40,34 @@ const BusinessFunding = () => {
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-br from-[hsl(var(--mgc-dark-gray))] via-[hsl(var(--mgc-gold))] to-[hsl(var(--mgc-yellow))] py-24 px-6">
+    <section className="bg-gradient-to-br from-white via-amber-50 to-white py-24 px-6">
       <div className="max-w-5xl mx-auto text-center">
         
-        <div className="inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full text-sm font-bold mb-8">
+        <div className="inline-block bg-amber-100 text-gray-900 px-6 py-3 rounded-full text-sm font-bold mb-8 border-2 border-amber-300">
           Mesa Group Capital | Trusted Business Funding Brokerage
         </div>
         
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-          Business Funding Solutions from $1K to $100M
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          Business Funding Solutions from <span className="text-amber-600">$1K to $100M</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
+        <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
           Whether you're a startup with <strong>no business history</strong> or an established company seeking <strong>multi-million dollar financing</strong>, Mesa Group Capital connects you with the right funding source.
         </p>
 
-        <div className="bg-white rounded-xl p-8 mb-10 shadow-2xl max-w-3xl mx-auto">
+        <div className="bg-white rounded-xl p-8 mb-10 shadow-2xl max-w-3xl mx-auto border border-amber-200">
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
-              <div className="text-4xl font-bold text-[hsl(var(--mgc-gold))] mb-2">8</div>
-              <div className="text-sm text-muted-foreground">Funding Solutions</div>
+              <div className="text-4xl font-bold text-amber-600 mb-2">8</div>
+              <div className="text-sm text-gray-600">Funding Solutions</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[hsl(var(--mgc-gold))] mb-2">530+</div>
-              <div className="text-sm text-muted-foreground">Min Credit Score</div>
+              <div className="text-4xl font-bold text-amber-600 mb-2">530+</div>
+              <div className="text-sm text-gray-600">Min Credit Score</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[hsl(var(--mgc-gold))] mb-2">$100M</div>
-              <div className="text-sm text-muted-foreground">Max Funding Available</div>
+              <div className="text-4xl font-bold text-amber-600 mb-2">$100M</div>
+              <div className="text-sm text-gray-600">Max Funding Available</div>
             </div>
           </div>
         </div>
@@ -75,20 +75,20 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
             size="lg"
-            className="bg-white text-[hsl(var(--mgc-gold))] text-xl font-bold px-12 py-5 h-auto hover:bg-white/90 transition-all duration-200 shadow-xl hover:shadow-2xl"
+            className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto"
           >
             Explore Funding Options →
           </Button>
           
           <a
             href="tel:6613103040"
-            className="inline-flex items-center justify-center gap-2 bg-transparent text-white text-xl font-semibold px-12 py-5 rounded-lg border-2 border-white hover:bg-white/10 transition-all duration-200"
+            className="inline-flex items-center justify-center gap-2 text-gray-700 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-xl font-semibold px-12 py-5"
           >
             <Phone className="w-6 h-6" /> (661) 310-3040
           </a>
         </div>
 
-      <p className="text-white/80 text-sm mt-6 flex items-center justify-center gap-4 flex-wrap">
+      <p className="text-gray-600 text-sm mt-6 flex items-center justify-center gap-4 flex-wrap">
         <span className="flex items-center gap-1"><Check className="w-4 h-4" /> No-obligation consultation</span>
         <span>|</span>
         <span className="flex items-center gap-1"><Check className="w-4 h-4" /> Fast approval process</span>

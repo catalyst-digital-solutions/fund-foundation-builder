@@ -51,44 +51,44 @@ const DIYCreditRepair = () => {
     <main className="font-['Inter',sans-serif]">
       <Header />
       {/* SECTION 1: HERO */}
-      <section className="bg-gradient-to-b from-primary via-accent to-white py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             
             {/* LEFT COLUMN - Content */}
             <div>
               {/* Eyebrow */}
-              <p className="text-sm uppercase tracking-wide text-foreground mb-4 font-medium">
+              <p className="text-sm uppercase tracking-wide text-gray-700 mb-4 font-medium">
                 DIY Credit Repair Software
               </p>
               
               {/* H1 Headline */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-                Take Control: Repair Your Credit Yourself
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Take Control: Repair Your <span className="text-amber-600">Credit Yourself</span>
               </h1>
               
               {/* Subheadline */}
-              <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
                 Professional credit repair letters. AI-powered dispute recommendations. 3-bureau tracking. Everything credit repair companies use—now in your hands for a fraction of the cost.
               </p>
               
               {/* Value Props Quick List */}
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-[hsl(142,71%,45%)] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
-                  <span className="text-gray-800"><strong>$49.99/month</strong> vs. $149-449 for credit repair companies</span>
+                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <span className="text-gray-700"><strong>$49.99/month</strong> vs. $149-449 for credit repair companies</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-[hsl(142,71%,45%)] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
-                  <span className="text-gray-800"><strong>Unlimited disputes</strong> to all 3 bureaus</span>
+                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <span className="text-gray-700"><strong>Unlimited disputes</strong> to all 3 bureaus</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-[hsl(142,71%,45%)] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
-                  <span className="text-gray-800"><strong>AI recommendations</strong> on which items to dispute</span>
+                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <span className="text-gray-700"><strong>AI recommendations</strong> on which items to dispute</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-[hsl(142,71%,45%)] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
-                  <span className="text-gray-800"><strong>Professional letter templates</strong> citing federal laws</span>
+                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <span className="text-gray-700"><strong>Professional letter templates</strong> citing federal laws</span>
                 </li>
               </ul>
               
