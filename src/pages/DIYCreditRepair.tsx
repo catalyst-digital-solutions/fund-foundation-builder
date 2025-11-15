@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "@/components/Header";
-import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search } from 'lucide-react';
+import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity } from 'lucide-react';
 
 const DIYCreditRepair = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -120,7 +120,7 @@ const DIYCreditRepair = () => {
                   <span className="text-sm font-medium text-foreground">Setup in 5 Minutes</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">🤖</span>
+                  <Bot className="w-6 h-6 text-purple-600" />
                   <span className="text-sm font-medium text-foreground">AI-Powered</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -302,7 +302,9 @@ const DIYCreditRepair = () => {
               <div className="w-16 h-16 bg-primary text-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <div className="text-4xl mb-4">📋</div>
+              <div className="flex justify-center mb-4">
+                <ClipboardList className="w-10 h-10 text-gray-700" />
+              </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
                 Import Reports
               </h3>
@@ -316,7 +318,9 @@ const DIYCreditRepair = () => {
               <div className="w-16 h-16 bg-primary text-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 2
               </div>
-              <div className="text-4xl mb-4">🤖</div>
+              <div className="flex justify-center mb-4">
+                <Bot className="w-10 h-10 text-purple-600" />
+              </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
                 AI Recommendations
               </h3>
@@ -330,7 +334,9 @@ const DIYCreditRepair = () => {
               <div className="w-16 h-16 bg-primary text-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 3
               </div>
-              <div className="text-4xl mb-4">✍️</div>
+              <div className="flex justify-center mb-4">
+                <PenTool className="w-10 h-10 text-blue-600" />
+              </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
                 Generate Letters
               </h3>
@@ -344,7 +350,9 @@ const DIYCreditRepair = () => {
               <div className="w-16 h-16 bg-primary text-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 4
               </div>
-              <div className="text-4xl mb-4">📬</div>
+              <div className="flex justify-center mb-4">
+                <Mail className="w-10 h-10 text-green-600" />
+              </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
                 Mail Disputes
               </h3>
@@ -416,7 +424,9 @@ const DIYCreditRepair = () => {
             
             {/* Feature 1: AI Analysis */}
             <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-lg p-6 border-2 border-purple-200">
-              <div className="text-4xl mb-4">🤖</div>
+              <div className="flex justify-center mb-4">
+                <Bot className="w-10 h-10 text-purple-600" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
                 AI-Powered Analysis
               </h3>
@@ -495,7 +505,9 @@ const DIYCreditRepair = () => {
             
             {/* Feature 4: Unlimited Disputes */}
             <div className="bg-gradient-to-br from-pink-50 to-red-50 rounded-lg p-6 border-2 border-pink-200">
-              <div className="text-4xl mb-4">∞</div>
+              <div className="flex justify-center mb-4">
+                <Infinity className="w-10 h-10 text-pink-600" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
                 Unlimited Disputes
               </h3>
