@@ -710,7 +710,7 @@ const DIYCreditRepair = () => {
               
               <button 
                 onClick={handleSignupClick}
-                className="w-full bg-secondary hover:bg-primary text-white hover:text-foreground text-xl font-bold py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200"
+                className="w-full text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold py-4"
               >
                 Start Your 7-Day Free Trial
               </button>
@@ -883,7 +883,7 @@ const DIYCreditRepair = () => {
           
           <button 
             onClick={handleSignupClick}
-            className="bg-white text-secondary hover:bg-foreground hover:text-white text-xl font-bold px-10 py-5 rounded-lg shadow-2xl hover:shadow-3xl transition duration-200"
+            className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5"
           >
             Start Your Free 7-Day Trial
           </button>

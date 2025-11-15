@@ -62,7 +62,7 @@ const DebtRelief = () => {
           <p className="text-xl text-muted-foreground mb-8">
             Get your free personalized debt relief plan today
           </p>
-          <Button size="lg" className="text-lg px-8 py-6">
+          <Button size="lg" className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg px-8 py-6">
             Start Your Journey to Freedom
           </Button>
         </div>

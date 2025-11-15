@@ -57,7 +57,7 @@ const LifeInsurance = () => {
           <p className="text-xl text-muted-foreground mb-8">
             Get your free life insurance quote in minutes
           </p>
-          <Button size="lg" className="text-lg px-8 py-6">
+          <Button size="lg" className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg px-8 py-6">
             Get Free Quote Now
           </Button>
         </div>

@@ -615,7 +615,7 @@ const TrustAndWillPlan = () => {
           <div className="text-center">
             <button 
               onClick={handleCTAClick}
-              className="bg-[#bb9446] hover:bg-[#f9c65d] text-white hover:text-[#3E3E3E] text-lg font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200"
+              className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4"
             >
               Get Started Now
             </button>

@@ -58,7 +58,7 @@ const BusinessDebtRelief = () => {
           <p className="text-xl text-muted-foreground mb-8">
             Speak with a debt relief specialist today
           </p>
-          <Button size="lg" className="text-lg px-8 py-6">
+          <Button size="lg" className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg px-8 py-6">
             Schedule Free Consultation
           </Button>
         </div>

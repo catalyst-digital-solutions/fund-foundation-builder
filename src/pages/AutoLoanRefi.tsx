@@ -938,7 +938,7 @@ const AutoLoanRefi = () => {
           
           <button 
             onClick={handleCTA}
-            className="bg-white text-[#bb9446] hover:bg-[#3E3E3E] hover:text-white text-xl font-bold px-10 py-5 rounded-lg shadow-2xl hover:shadow-3xl transition duration-200"
+            className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5"
           >
             Check My New Rate
           </button>
