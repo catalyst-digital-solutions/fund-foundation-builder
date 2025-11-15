@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
-import { Lock, Zap, CircleDollarSign, TrendingUp, TrendingDown, Search, BarChart3, Landmark, Lightbulb, Star } from 'lucide-react';
+import { Lock, Zap, CircleDollarSign, TrendingUp, TrendingDown, Search, BarChart3, Landmark, Lightbulb, Star, Banknote, Ban, UserMinus, FileText, Shield, AlertTriangle, LockKeyhole, CheckCircle2 } from 'lucide-react';
 
 const AutoLoanRefi = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -219,7 +219,9 @@ const AutoLoanRefi = () => {
             </div>
             
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-6 text-center shadow-md border-2 border-purple-200">
-              <div className="text-5xl mb-4">💸</div>
+              <div className="flex justify-center mb-4">
+                <Banknote className="w-12 h-12 text-purple-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-3">
                 Payment Too High
               </h3>
@@ -229,7 +231,9 @@ const AutoLoanRefi = () => {
             </div>
             
             <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg p-6 text-center shadow-md border-2 border-yellow-200">
-              <div className="text-5xl mb-4">🚫</div>
+              <div className="flex justify-center mb-4">
+                <Ban className="w-12 h-12 text-orange-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-3">
                 Dealer Marked Up Rate
               </h3>
@@ -239,7 +243,9 @@ const AutoLoanRefi = () => {
             </div>
             
             <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-lg p-6 text-center shadow-md border-2 border-red-200">
-              <div className="text-5xl mb-4">👤</div>
+              <div className="flex justify-center mb-4">
+                <UserMinus className="w-12 h-12 text-red-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-3">
                 Remove Co-Signer
               </h3>
@@ -338,7 +344,9 @@ const AutoLoanRefi = () => {
               <div className="w-16 h-16 bg-[#bb9446] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <div className="text-4xl mb-4">📝</div>
+              <div className="flex justify-center mb-4">
+                <FileText className="w-10 h-10 text-gray-700" />
+              </div>
               <h3 className="text-lg font-semibold text-[#3E3E3E] mb-3">
                 Tell Us About Your Car
               </h3>
@@ -434,7 +442,7 @@ const AutoLoanRefi = () => {
             
             <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-lg p-8 border-2 border-green-200">
               <div className="flex items-start gap-4">
-                <div className="text-5xl">🛡️</div>
+                <Shield className="w-12 h-12 text-green-600 flex-shrink-0" />
                 <div>
                   <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
                     Safe Credit Check
@@ -604,7 +612,9 @@ const AutoLoanRefi = () => {
             </div>
             
             <div className="bg-white rounded-lg p-6 text-center shadow-md border-2 border-orange-500">
-              <div className="text-3xl mb-3">⚠️</div>
+              <div className="flex justify-center mb-3">
+                <AlertTriangle className="w-8 h-8 text-orange-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-2">Poor</h3>
               <div className="text-2xl font-bold text-orange-600 mb-2">12%-16.99%</div>
               <div className="text-sm text-gray-600 mb-3">Credit: 580-639</div>
@@ -769,7 +779,7 @@ const AutoLoanRefi = () => {
           {/* Important: Upside-Down Loans */}
           <div className="bg-orange-50 border-2 border-orange-200 rounded-lg p-8">
             <div className="flex items-start gap-4">
-              <span className="text-5xl">⚠️</span>
+              <AlertTriangle className="w-12 h-12 text-orange-600 flex-shrink-0" />
               <div>
                 <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
                   Important: What If I'm "Upside-Down" on My Loan?
@@ -932,17 +942,23 @@ const AutoLoanRefi = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-4xl mb-2">🔐</div>
+                <div className="flex justify-center mb-2">
+                  <LockKeyhole className="w-10 h-10 text-gray-700" />
+                </div>
                 <div className="font-semibold text-[#3E3E3E] mb-1">SOC 2 Type II Certified</div>
                 <div className="text-sm text-gray-600">Audited for data security</div>
               </div>
               <div>
-                <div className="text-4xl mb-2">🛡️</div>
+                <div className="flex justify-center mb-2">
+                  <Shield className="w-10 h-10 text-blue-600" />
+                </div>
                 <div className="font-semibold text-[#3E3E3E] mb-1">256-Bit Encryption</div>
                 <div className="text-sm text-gray-600">Bank-level protection</div>
               </div>
               <div>
-                <div className="text-4xl mb-2">✅</div>
+                <div className="flex justify-center mb-2">
+                  <CheckCircle2 className="w-10 h-10 text-green-600" />
+                </div>
                 <div className="font-semibold text-[#3E3E3E] mb-1">No Data Selling</div>
                 <div className="text-sm text-gray-600">We never sell your info</div>
               </div>
