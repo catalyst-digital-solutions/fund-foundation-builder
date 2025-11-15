@@ -115,58 +115,58 @@ const CreditRepair = () => {
     <main className="min-h-screen">
       <Header />
       {/* SECTION 1: HERO */}
-      <section className="bg-gradient-to-br from-[#8B7355] via-[#A0826D] to-[#C19A6B] py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* LEFT COLUMN - Content */}
             <div>
               {/* Eyebrow */}
-              <p className="text-sm uppercase tracking-wide text-mgc-cream mb-4">
+              <p className="text-sm uppercase tracking-wide text-gray-600 mb-4">
                 Professional Credit Repair in Bakersfield, CA
               </p>
 
               {/* H1 Headline */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Remove Inaccurate Items. Rebuild Your Credit. Reclaim Your Financial Future.
               </h1>
 
               {/* Subheadline */}
-              <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
                 91% success rate. Average 83-point increase. Results in 30-45 days. We handle disputes,
                 negotiate with creditors, and track every change—so you don't have to.
               </p>
 
               {/* Transparency Callout Box */}
-              <div className="bg-white/10 backdrop-blur-sm border-l-4 border-mgc-yellow p-6 rounded-lg mb-8">
+              <div className="bg-white/80 backdrop-blur-sm border-l-4 border-amber-500 p-6 rounded-lg mb-8 shadow-lg">
                 <div className="flex items-start gap-3 mb-4">
-                  <AlertTriangle className="text-mgc-yellow w-6 h-6 flex-shrink-0" />
-                  <h3 className="text-lg font-semibold text-white">
+                  <AlertTriangle className="text-amber-600 w-6 h-6 flex-shrink-0" />
+                  <h3 className="text-lg font-semibold text-gray-900">
                     Here's What We Do (And Don't Do):
                   </h3>
                 </div>
-                <ul className="space-y-2 text-gray-200">
+                <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
-                    <Check className="text-[#10B981] w-5 h-5 flex-shrink-0 mt-0.5" />
+                    <Check className="text-green-600 w-5 h-5 flex-shrink-0 mt-0.5" />
                     <span>Dispute inaccurate, unverifiable items with all 3 bureaus</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Check className="text-[#10B981] w-5 h-5 flex-shrink-0 mt-0.5" />
+                    <Check className="text-green-600 w-5 h-5 flex-shrink-0 mt-0.5" />
                     <span>Negotiate directly with creditors for removal</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Check className="text-[#10B981] w-5 h-5 flex-shrink-0 mt-0.5" />
+                    <Check className="text-green-600 w-5 h-5 flex-shrink-0 mt-0.5" />
                     <span>Guide you through credit-building strategies</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <X className="text-[#EF4444] w-5 h-5 flex-shrink-0 mt-0.5" />
+                    <X className="text-red-600 w-5 h-5 flex-shrink-0 mt-0.5" />
                     <span>We CANNOT guarantee specific score increases</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <X className="text-[#EF4444] w-5 h-5 flex-shrink-0 mt-0.5" />
+                    <X className="text-red-600 w-5 h-5 flex-shrink-0 mt-0.5" />
                     <span>We CANNOT remove accurate, timely negative items</span>
                   </li>
                 </ul>
-                <p className="text-sm italic text-gray-300 mt-4 pt-4 border-t border-mgc-yellow/30">
+                <p className="text-sm italic text-gray-600 mt-4 pt-4 border-t border-amber-500/30">
                   Why we're honest: Scam companies promise miracles. We deliver legal, proven results.
                 </p>
               </div>
@@ -182,7 +182,7 @@ const CreditRepair = () => {
               {/* Secondary CTA Link */}
               <button
                 onClick={() => scrollToSection("how-it-works")}
-                className="block text-mgc-cream hover:text-mgc-yellow underline text-base mt-4"
+                className="block text-gray-700 hover:text-amber-600 underline text-base mt-4"
               >
                 Not ready yet? Learn more about our process ↓
               </button>
