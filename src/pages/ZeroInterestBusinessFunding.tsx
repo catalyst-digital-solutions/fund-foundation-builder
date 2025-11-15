@@ -753,7 +753,7 @@ const FAQSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:6613103040"
-              className="inline-flex items-center gap-2 bg-[#bb9446] text-white text-xl font-bold px-10 py-5 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
+              className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 hover:scale-105"
             >
               <Phone className="w-6 h-6" /> Call (661) 310-3040
             </a>
@@ -797,7 +797,7 @@ const FinalCTA = () => (
           href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#bb9446] text-white text-2xl font-bold px-14 py-6 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 shadow-xl hover:shadow-2xl mb-4 hover:scale-105"
+          className="inline-block text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-2xl font-bold px-14 py-6 mb-4 hover:scale-105"
         >
           Apply for 0% Funding Now →
         </a>
@@ -879,7 +879,7 @@ const Footer = () => (
             href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#f9c65d] text-[#3E3E3E] text-base font-bold px-6 py-3 rounded-lg hover:bg-[#f8d899] transition-all duration-200 mb-4 hover:scale-105"
+            className="inline-block text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-base font-bold px-6 py-3"
           >
             Apply for Funding
           </a>

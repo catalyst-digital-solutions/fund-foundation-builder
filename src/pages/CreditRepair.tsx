@@ -623,7 +623,7 @@ const CreditRepair = () => {
               </ul>
               <button
                 onClick={() => handleCTAClick("silver")}
-                className="w-full bg-[#F1F5F9] hover:bg-[#bb9446] hover:text-white text-[#bb9446] font-semibold py-3 rounded-lg transition duration-200"
+                className="w-full text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 Choose Silver
               </button>
@@ -656,7 +656,7 @@ const CreditRepair = () => {
               </ul>
               <button
                 onClick={() => handleCTAClick("sapphire")}
-                className="w-full bg-[#F1F5F9] hover:bg-[#bb9446] hover:text-white text-[#bb9446] font-semibold py-3 rounded-lg transition duration-200"
+                className="w-full text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 Choose Sapphire
               </button>
@@ -692,7 +692,7 @@ const CreditRepair = () => {
               </ul>
               <button
                 onClick={() => handleCTAClick("ruby")}
-                className="w-full bg-[#bb9446] hover:bg-[#f9c65d] text-white font-semibold py-3 rounded-lg transition duration-200"
+                className="w-full text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 Choose Ruby
               </button>
@@ -725,7 +725,7 @@ const CreditRepair = () => {
               </ul>
               <button
                 onClick={() => handleCTAClick("emerald")}
-                className="w-full bg-[#F1F5F9] hover:bg-[#bb9446] hover:text-white text-[#bb9446] font-semibold py-3 rounded-lg transition duration-200"
+                className="w-full text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 Choose Emerald
               </button>
@@ -741,7 +741,7 @@ const CreditRepair = () => {
           <div className="text-center mt-6">
             <button
               onClick={() => handleCTAClick()}
-              className="bg-[#bb9446] hover:bg-[#f9c65d] text-white text-lg font-semibold px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-200"
+              className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4"
             >
               Get Free Analysis
             </button>

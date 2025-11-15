@@ -821,7 +821,7 @@ const FinalCTA = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
-              className="bg-[hsl(var(--mgc-gold))] text-white text-xl font-bold px-12 py-5 h-auto hover:bg-[hsl(var(--accent))] transition-all duration-200 shadow-lg"
+              className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto"
             >
               Apply for Funding Now
             </Button>

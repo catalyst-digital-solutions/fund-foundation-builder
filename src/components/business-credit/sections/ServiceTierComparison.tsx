@@ -201,7 +201,7 @@ const ServiceTierComparison = () => {
                 href="https://mesagroupcapital.com/bcfs-diy-enroll"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center py-4 px-6 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
+                className="block w-full text-center py-4 px-6 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
               >
                 Enroll in DIY Program
               </a>
