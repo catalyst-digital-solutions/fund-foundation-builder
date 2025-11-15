@@ -127,7 +127,7 @@ const CreditRepair = () => {
 
               {/* H1 Headline */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Remove Inaccurate Items. Rebuild Your Credit. Reclaim Your Financial Future.
+                Remove <span className="text-amber-600">Inaccurate Items</span>. Rebuild Your <span className="text-amber-600">Credit</span>. Reclaim Your <span className="text-amber-600">Financial Future</span>.
               </h1>
 
               {/* Subheadline */}
