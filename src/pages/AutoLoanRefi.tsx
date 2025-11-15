@@ -390,7 +390,7 @@ const AutoLoanRefi = () => {
                 4
               </div>
               <div className="flex justify-center mb-4">
-                <CheckCircle2 className="w-10 h-10 text-green-600" />
+                <CheckCircle2 className="w-10 h-10 text-gray-700" />
               </div>
               <h3 className="text-lg font-semibold text-[#3E3E3E] mb-3">
                 Start Saving Money
