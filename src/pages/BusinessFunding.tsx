@@ -871,60 +871,59 @@ const FAQSection = () => {
 
 const FinalCTA = () => {
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-[hsl(var(--mgc-gold))] via-[hsl(var(--mgc-yellow))] to-[hsl(var(--mgc-tan))]">
-      <div className="max-w-4xl mx-auto text-center">
-        
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-          Get Matched with Your Ideal Funding Solution
+    <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        {/* Main Headline */}
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          Get Matched with Your <span className="text-amber-400">Ideal Funding Solution</span>
         </h2>
         
-        <p className="text-xl md:text-2xl text-white mb-8 leading-relaxed">
-          From <strong>$1,000 to $100 million</strong>. From <strong>530+ to 700+ credit</strong>. From <strong>brand new startups to established enterprises</strong>. Mesa Group Capital has the right funding source for your business.
+        {/* Subheadline */}
+        <p className="text-xl text-gray-300 mb-12">
+          From $1,000 to $100 million. From 530+ to 700+ credit. From brand new startups to established enterprises.
         </p>
 
-        <div className="bg-white rounded-xl p-8 mb-8 shadow-2xl">
-          <h3 className="text-2xl font-bold text-foreground mb-4 flex items-center justify-center gap-2">
-            <ClipboardList className="w-7 h-7 text-[hsl(var(--mgc-gold))]" />
-            Start Your Free Consultation
-          </h3>
-          <p className="text-lg text-muted-foreground mb-6">
-            No obligation. No pressure. Just expert guidance on which funding solution fits your business best.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg"
-              className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto"
-            >
-              Apply for Funding Now
-            </Button>
-            
-            <a
-              href="tel:6613103040"
-              className="inline-flex items-center justify-center gap-2 bg-transparent text-[hsl(var(--mgc-gold))] text-xl font-semibold px-12 py-5 rounded-lg border-2 border-[hsl(var(--mgc-gold))] hover:bg-secondary/30 transition-all duration-200"
-            >
-              <Phone className="w-6 h-6" /> (661) 310-3040
+        {/* Two-Column Button Grid */}
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {/* Primary Option (Orange Gradient) */}
+          <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left">
+            <h3 className="text-2xl font-bold mb-4">Apply for Funding</h3>
+            <p className="text-white/90 mb-6">
+              Start your free consultation with no obligation. Get matched with the perfect funding solution for your business.
+            </p>
+            <a href="#apply" className="block w-full text-center py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-all duration-200">
+              Apply Now
             </a>
           </div>
-          <p className="text-sm text-muted-foreground mt-4">
-            Mesa Group Capital | Bakersfield's Trusted Business Funding Brokerage
-          </p>
+
+          {/* Secondary Option (Glass Effect) */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-left border-2 border-white/20">
+            <h3 className="text-2xl font-bold mb-4">Speak with an Expert</h3>
+            <p className="text-gray-300 mb-6">
+              Call us directly for immediate assistance. Our funding experts are ready to help you find the right solution.
+            </p>
+            <a href="tel:6613103040" className="w-full inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500">
+              <Phone className="mr-2 w-5 h-5" />
+              (661) 310-3040
+            </a>
+          </div>
         </div>
 
-    <div className="grid md:grid-cols-3 gap-4 text-white text-sm">
-      <div className="flex items-center justify-center gap-2">
-        <Check className="w-5 h-5" />
-        <span>8 Funding Solutions</span>
-      </div>
-      <div className="flex items-center justify-center gap-2">
-        <Check className="w-5 h-5" />
-        <span>30+ Lender Network</span>
-      </div>
-      <div className="flex items-center justify-center gap-2">
-        <Check className="w-5 h-5" />
-        <span>Expert Brokerage Guidance</span>
-      </div>
-    </div>
-
+        {/* Trust Indicators */}
+        <div className="grid md:grid-cols-3 gap-4 text-white text-sm mt-8">
+          <div className="flex items-center justify-center gap-2">
+            <Check className="w-5 h-5" />
+            <span>8 Funding Solutions</span>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <Check className="w-5 h-5" />
+            <span>30+ Lender Network</span>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <Check className="w-5 h-5" />
+            <span>Expert Brokerage Guidance</span>
+          </div>
+        </div>
       </div>
     </section>
   );
