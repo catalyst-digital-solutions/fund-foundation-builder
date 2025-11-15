@@ -86,34 +86,34 @@ const TrustAndWillPlan = () => {
               
               {/* Value Props Quick List */}
               <ul className="space-y-3 mb-8">
-                <li className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check className="w-4 h-4 text-white" strokeWidth={3} />
-                  </div>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-700"><strong>Attorney-built documents</strong> – state-specific & legally binding</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check className="w-4 h-4 text-white" strokeWidth={3} />
-                  </div>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-700"><strong>Create online in 20 minutes</strong> – no appointments needed</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check className="w-4 h-4 text-white" strokeWidth={3} />
-                  </div>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-700"><strong>Save thousands vs attorneys</strong> – plans from $199</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check className="w-4 h-4 text-white" strokeWidth={3} />
-                  </div>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-700"><strong>Avoid probate with Trusts</strong> – keep affairs private</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check className="w-4 h-4 text-white" strokeWidth={3} />
-                  </div>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <span className="text-gray-700"><strong>30-day money-back guarantee</strong> – risk-free</span>
                 </li>
               </ul>
