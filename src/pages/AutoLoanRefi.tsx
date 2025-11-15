@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
+import { Lock, Zap, CircleDollarSign, TrendingUp, TrendingDown, Search, BarChart3, Landmark, Lightbulb, Star } from 'lucide-react';
 
 const AutoLoanRefi = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -125,15 +126,15 @@ const AutoLoanRefi = () => {
               {/* Trust Badges */}
               <div className="flex flex-wrap items-center gap-6 mt-8">
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">🔒</span>
+                  <Lock className="w-6 h-6 text-gray-700" />
                   <span className="text-sm font-medium text-gray-900">SOC 2 Certified</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">⚡</span>
+                  <Zap className="w-6 h-6 text-amber-500" />
                   <span className="text-sm font-medium text-[#3E3E3E]">60-Second Results</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">💰</span>
+                  <CircleDollarSign className="w-6 h-6 text-green-600" />
                   <span className="text-sm font-medium text-[#3E3E3E]">Avg $1,200/Year Saved</span>
                 </div>
               </div>
@@ -194,7 +195,9 @@ const AutoLoanRefi = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
             
             <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-lg p-6 text-center shadow-md border-2 border-green-200">
-              <div className="text-5xl mb-4">📈</div>
+              <div className="flex justify-center mb-4">
+                <TrendingUp className="w-12 h-12 text-green-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-3">
                 Your Credit Improved
               </h3>
@@ -204,7 +207,9 @@ const AutoLoanRefi = () => {
             </div>
             
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 text-center shadow-md border-2 border-blue-200">
-              <div className="text-5xl mb-4">📉</div>
+              <div className="flex justify-center mb-4">
+                <TrendingDown className="w-12 h-12 text-blue-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-3">
                 Interest Rates Dropped
               </h3>
@@ -346,7 +351,9 @@ const AutoLoanRefi = () => {
               <div className="w-16 h-16 bg-[#bb9446] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 2
               </div>
-              <div className="text-4xl mb-4">🔍</div>
+              <div className="flex justify-center mb-4">
+                <Search className="w-10 h-10 text-gray-700" />
+              </div>
               <h3 className="text-lg font-semibold text-[#3E3E3E] mb-3">
                 We Find Your Best Rates
               </h3>
@@ -359,7 +366,9 @@ const AutoLoanRefi = () => {
               <div className="w-16 h-16 bg-[#bb9446] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 3
               </div>
-              <div className="text-4xl mb-4">📊</div>
+              <div className="flex justify-center mb-4">
+                <BarChart3 className="w-10 h-10 text-gray-700" />
+              </div>
               <h3 className="text-lg font-semibold text-[#3E3E3E] mb-3">
                 Compare & Choose
               </h3>
@@ -453,7 +462,7 @@ const AutoLoanRefi = () => {
             
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-8 border-2 border-blue-200">
               <div className="flex items-start gap-4">
-                <div className="text-5xl">🏦</div>
+                <Landmark className="w-12 h-12 text-blue-600 flex-shrink-0" />
                 <div>
                   <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
                     100+ Lenders Compete
@@ -481,7 +490,7 @@ const AutoLoanRefi = () => {
             
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-8 border-2 border-purple-200">
               <div className="flex items-start gap-4">
-                <div className="text-5xl">💰</div>
+                <CircleDollarSign className="w-12 h-12 text-green-600 flex-shrink-0" />
                 <div>
                   <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
                     Guaranteed Real Savings
@@ -509,7 +518,7 @@ const AutoLoanRefi = () => {
             
             <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg p-8 border-2 border-yellow-200">
               <div className="flex items-start gap-4">
-                <div className="text-5xl">⚡</div>
+                <Zap className="w-12 h-12 text-amber-500 flex-shrink-0" />
                 <div>
                   <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
                     Fast & Easy Process
@@ -556,7 +565,11 @@ const AutoLoanRefi = () => {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-12">
             
             <div className="bg-white rounded-lg p-6 text-center shadow-md border-2 border-green-500">
-              <div className="text-3xl mb-3">⭐⭐⭐</div>
+              <div className="flex justify-center gap-1 mb-3">
+                <Star className="w-6 h-6 text-green-600 fill-green-600" />
+                <Star className="w-6 h-6 text-green-600 fill-green-600" />
+                <Star className="w-6 h-6 text-green-600 fill-green-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-2">Excellent</h3>
               <div className="text-2xl font-bold text-green-600 mb-2">3.99%-5.49%</div>
               <div className="text-sm text-gray-600 mb-3">Credit: 750+</div>
@@ -566,7 +579,10 @@ const AutoLoanRefi = () => {
             </div>
             
             <div className="bg-white rounded-lg p-6 text-center shadow-md border-2 border-blue-500">
-              <div className="text-3xl mb-3">⭐⭐</div>
+              <div className="flex justify-center gap-1 mb-3">
+                <Star className="w-6 h-6 text-blue-600 fill-blue-600" />
+                <Star className="w-6 h-6 text-blue-600 fill-blue-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-2">Good</h3>
               <div className="text-2xl font-bold text-blue-600 mb-2">5.5%-7.99%</div>
               <div className="text-sm text-gray-600 mb-3">Credit: 700-749</div>
@@ -576,7 +592,9 @@ const AutoLoanRefi = () => {
             </div>
             
             <div className="bg-white rounded-lg p-6 text-center shadow-md border-2 border-yellow-500">
-              <div className="text-3xl mb-3">⭐</div>
+              <div className="flex justify-center gap-1 mb-3">
+                <Star className="w-6 h-6 text-yellow-600 fill-yellow-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-2">Fair</h3>
               <div className="text-2xl font-bold text-yellow-600 mb-2">8%-11.99%</div>
               <div className="text-sm text-gray-600 mb-3">Credit: 640-699</div>
@@ -643,7 +661,7 @@ const AutoLoanRefi = () => {
           {/* Good News */}
           <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-6 mt-8">
             <div className="flex items-start gap-3">
-              <span className="text-3xl">💡</span>
+              <Lightbulb className="w-8 h-8 text-amber-500 flex-shrink-0" />
               <div>
                 <h4 className="font-bold text-[#3E3E3E] mb-2">Good News: We Work With All Credit Tiers</h4>
                 <p className="text-gray-700">
@@ -843,7 +861,7 @@ const AutoLoanRefi = () => {
             <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-yellow-500 text-xl">⭐</span>
+                  <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                 ))}
               </div>
               <p className="text-gray-700 mb-4 italic leading-relaxed">
@@ -858,7 +876,7 @@ const AutoLoanRefi = () => {
             <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-yellow-500 text-xl">⭐</span>
+                  <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                 ))}
               </div>
               <p className="text-gray-700 mb-4 italic leading-relaxed">
@@ -873,7 +891,7 @@ const AutoLoanRefi = () => {
             <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-yellow-500 text-xl">⭐</span>
+                  <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                 ))}
               </div>
               <p className="text-gray-700 mb-4 italic leading-relaxed">
