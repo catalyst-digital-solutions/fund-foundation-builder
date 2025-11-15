@@ -230,7 +230,7 @@ function WhyMonitoringMatters() {
             href={AFFILIATE_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground text-xl font-bold px-10 py-4 rounded-lg hover:bg-primary/90 transition-all duration-200 shadow-lg"
+            className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-4"
           >
             Get Protected Today
             <Shield className="w-5 h-5" />
@@ -499,7 +499,7 @@ function SmartCreditFeatures() {
             href={AFFILIATE_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-success text-success-foreground text-xl font-bold px-12 py-5 rounded-lg hover:bg-success/90 transition-all duration-200 shadow-xl hover:shadow-2xl"
+            className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5"
           >
             Get All These Features Now
             <ExternalLink className="w-5 h-5" />

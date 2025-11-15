@@ -95,7 +95,7 @@ const DIYCreditRepair = () => {
               {/* Primary CTA */}
               <button 
                 onClick={handleSignupClick}
-                className="bg-secondary hover:bg-primary text-white hover:text-foreground text-lg font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200 w-full md:w-auto"
+                className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4 w-full md:w-auto"
               >
                 Start Your DIY Credit Repair
               </button>

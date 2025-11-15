@@ -174,7 +174,7 @@ const CreditRepair = () => {
               {/* Primary CTA Button */}
               <button
                 onClick={() => handleCTAClick()}
-                className="bg-mgc-yellow hover:bg-mgc-gold text-black text-lg font-semibold px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-200 w-full md:w-auto"
+                className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4 w-full md:w-auto"
               >
                 Get Your Free Credit Analysis
               </button>
@@ -393,7 +393,7 @@ const CreditRepair = () => {
           <div className="text-center mt-12">
             <button
               onClick={() => handleCTAClick()}
-              className="bg-[#bb9446] hover:bg-[#f9c65d] text-white text-lg font-semibold px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-200"
+              className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4"
             >
               Start Your Credit Repair Journey
             </button>
@@ -488,7 +488,7 @@ const CreditRepair = () => {
           <div className="text-center mt-12">
             <button
               onClick={() => handleCTAClick()}
-              className="bg-[#bb9446] hover:bg-[#f9c65d] text-white text-lg font-semibold px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-200"
+              className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4"
             >
               See What's On Your Report
             </button>
