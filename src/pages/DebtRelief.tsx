@@ -6,7 +6,7 @@ const DebtRelief = () => {
 
   const faqs = [
     {
-      question: "How does Mesa Group Capital's Debt Relief program work?",
+      question: "How does Mesa Group Consulting's Debt Relief program work?",
       answer: "Our program works by negotiating with your creditors to settle debts for 30-50% less than you owe. You stop paying creditors directly and instead make one affordable monthly deposit into a dedicated savings account under your control. As funds accumulate, our expert negotiators work with your creditors to secure settlement offers. When settlements are reached, creditors are paid directly from your account. The entire process typically takes 20-48 months to complete."
     },
     {
@@ -14,7 +14,7 @@ const DebtRelief = () => {
       answer: "Absolutely. If you only make minimum payments on a $20,000 credit card balance at 18% APR, you'll pay over $50,000 total and take 30+ years to pay it off. With debt relief, you could settle that same debt for $10,000-$14,000 (including fees) and be debt-free in 2-4 years. You save tens of thousands of dollars and decades of stress."
     },
     {
-      question: "How much will I save with Mesa Group Capital's program?",
+      question: "How much will I save with Mesa Group Consulting's program?",
       answer: "On average, clients save 30-50% on enrolled debts (approximately 43% average) before program fees. For example, if you have $30,000 in credit card debt, you might settle for $15,000-$21,000 total, including program fees. Actual savings depend on your creditors, debt types, and negotiation outcomes. During your free consultation, we'll provide a personalized savings estimate."
     },
     {
@@ -22,7 +22,7 @@ const DebtRelief = () => {
       answer: "You may qualify if: (1) You have at least $10,000 in unsecured debt, (2) You're experiencing financial hardship or struggling with payments, (3) Your debts are with creditors who negotiate with debt relief companies, and (4) Your debts are unsecured (not backed by collateral). Federal student loans, secured debts like mortgages or car loans, child support, and most tax debts typically don't qualify. Book a free consultation to determine your eligibility."
     },
     {
-      question: "What does Mesa Group Capital's program cost?",
+      question: "What does Mesa Group Consulting's program cost?",
       answer: "We charge NO UPFRONT FEES. Our fees are performance-based and range from 14-25% of your enrolled debt amount, charged only as debts are successfully settled. For example, on $30,000 enrolled debt with a 20% fee structure, our total fees would be $6,000, paid gradually as each debt settles. You pay nothing until we deliver results. This is required by FTC regulations."
     },
     {
@@ -43,7 +43,7 @@ const DebtRelief = () => {
     },
     {
       question: "What happens if I can't complete the program?",
-      answer: "You can withdraw from the program at any time without penalty. If you withdraw, you'll receive all funds from your dedicated savings account, minus any fees earned by Mesa Group Capital for completed settlements and any fees paid to third-party service providers. We work with you to create sustainable payment plans, but life circumstances change and we understand that."
+      answer: "You can withdraw from the program at any time without penalty. If you withdraw, you'll receive all funds from your dedicated savings account, minus any fees earned by Mesa Group Consulting for completed settlements and any fees paid to third-party service providers. We work with you to create sustainable payment plans, but life circumstances change and we understand that."
     }
   ];
 
@@ -56,7 +56,7 @@ const DebtRelief = () => {
         <div className="max-w-5xl mx-auto text-center">
           
           <div className="inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full text-sm font-bold mb-8">
-            Mesa Group Capital | Debt Relief Specialists Since 2015
+            Mesa Group Consulting | Debt Relief Specialists Since 2015
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
@@ -64,7 +64,7 @@ const DebtRelief = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Buried under credit card debt? Collections calling? Can't afford more than minimum payments? <strong>Mesa Group Capital's Debt Relief program</strong> reduces your debt by 30-50% and replaces multiple payments with one affordable monthly payment.
+            Buried under credit card debt? Collections calling? Can't afford more than minimum payments? <strong>Mesa Group Consulting's Debt Relief program</strong> reduces your debt by 30-50% and replaces multiple payments with one affordable monthly payment.
           </p>
 
           <div className="bg-white rounded-xl p-8 mb-10 shadow-2xl max-w-3xl mx-auto">
@@ -176,7 +176,7 @@ const DebtRelief = () => {
               There's a Better Way Than Bankruptcy
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-6 max-w-3xl mx-auto">
-              Debt relief through Mesa Group Capital lets you settle debts for <strong>30-50% less than you owe</strong>, avoid bankruptcy, and protect your family's future—without destroying your credit for 7-10 years.
+              Debt relief through Mesa Group Consulting lets you settle debts for <strong>30-50% less than you owe</strong>, avoid bankruptcy, and protect your family's future—without destroying your credit for 7-10 years.
             </p>
             <a
               href="https://mesagroupcapital.com/debt-analysis"
@@ -562,7 +562,7 @@ const DebtRelief = () => {
           </h2>
           
           <p className="text-xl md:text-2xl text-white mb-8 leading-relaxed">
-            You didn't create this debt overnight, and you can't solve it overnight—but you <strong>can</strong> take the first step today. Let Mesa Group Capital's <strong>Debt Relief specialists</strong> handle your creditors while you focus on what matters most—<strong>your family, your peace of mind, and your future</strong>.
+            You didn't create this debt overnight, and you can't solve it overnight—but you <strong>can</strong> take the first step today. Let Mesa Group Consulting's <strong>Debt Relief specialists</strong> handle your creditors while you focus on what matters most—<strong>your family, your peace of mind, and your future</strong>.
           </p>
 
           <div className="bg-white rounded-xl p-10 mb-8 shadow-2xl">
@@ -633,7 +633,7 @@ const DebtRelief = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             
             <div>
-              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Mesa Group Capital</h3>
+              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Mesa Group Consulting</h3>
               <p className="text-sm text-gray-300 mb-4">
                 Your trusted debt relief partner in Bakersfield, CA.
               </p>
@@ -681,10 +681,10 @@ const DebtRelief = () => {
 
           <div className="border-t border-gray-600 pt-6">
             <p className="text-sm text-gray-400 mb-4 text-center leading-relaxed">
-              <strong>Important Disclosure:</strong> Mesa Group Capital provides debt relief services in partnership with licensed debt resolution platforms. Results vary by client. Average savings of 30-50% (43% average) of enrolled debt are based on clients who complete the program and make all monthly payments. Fees range from 14-25% of enrolled debt. Programs typically last 20-48 months. Not all clients complete the program. First settlement averages 4-7 months from enrollment. We do not assume your debts, make monthly payments to creditors, or provide tax, bankruptcy, accounting, or legal advice. Debt relief will likely negatively affect your credit score. You may be subject to collections or lawsuits by creditors or collectors. Your outstanding debt may increase from the accrual of fees and interest. Any amount of debt forgiven by your creditors may be subject to income tax. Clients may withdraw from the program at any time without penalty and receive all funds from their dedicated account, other than funds earned by the company or fees paid to third-party service providers, as may be applicable. Read and understand all program materials prior to enrolling. Certain types of debts are not eligible for enrollment. Some creditors are not eligible for enrollment because they do not negotiate with debt resolution companies.
+              <strong>Important Disclosure:</strong> Mesa Group Consulting provides debt relief services in partnership with licensed debt resolution platforms. Results vary by client. Average savings of 30-50% (43% average) of enrolled debt are based on clients who complete the program and make all monthly payments. Fees range from 14-25% of enrolled debt. Programs typically last 20-48 months. Not all clients complete the program. First settlement averages 4-7 months from enrollment. We do not assume your debts, make monthly payments to creditors, or provide tax, bankruptcy, accounting, or legal advice. Debt relief will likely negatively affect your credit score. You may be subject to collections or lawsuits by creditors or collectors. Your outstanding debt may increase from the accrual of fees and interest. Any amount of debt forgiven by your creditors may be subject to income tax. Clients may withdraw from the program at any time without penalty and receive all funds from their dedicated account, other than funds earned by the company or fees paid to third-party service providers, as may be applicable. Read and understand all program materials prior to enrolling. Certain types of debts are not eligible for enrollment. Some creditors are not eligible for enrollment because they do not negotiate with debt resolution companies.
             </p>
             <p className="text-sm text-gray-400 text-center">
-              © {new Date().getFullYear()} Mesa Group Capital. All rights reserved.
+              © {new Date().getFullYear()} Mesa Group Consulting. All rights reserved.
             </p>
           </div>
 
