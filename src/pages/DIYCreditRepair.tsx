@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "@/components/Header";
-import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity, X, Home, Scale, Gavel } from 'lucide-react';
+import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity, X, Home, Scale, Gavel, Check } from 'lucide-react';
 
 const DIYCreditRepair = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -937,61 +937,77 @@ const DIYCreditRepair = () => {
       </section>
 
       {/* SECTION 9: FINAL CTA */}
-      <section className="bg-gradient-to-r from-primary to-secondary py-16 md:py-24 px-6 md:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Ready to Take Control of Your Credit?
+      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Main Headline */}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            Ready to Take Control of Your <span className="text-amber-400">Credit</span>?
           </h2>
           
-          <p className="text-xl text-foreground mb-8">
+          {/* Subheadline */}
+          <p className="text-xl text-gray-300 mb-12">
             Try it free for 7 days. No credit card required. See results in your first month.
           </p>
-          
-          <button 
-            onClick={handleSignupClick}
-            className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5"
-          >
-            Start Your Free 7-Day Trial
-          </button>
-          
-          <p className="text-sm text-foreground mt-4 font-medium">
-            $49.99/month after trial • Cancel anytime • 30-day money-back guarantee
-          </p>
-          
-          {/* Trust Elements */}
-          <div className="flex flex-wrap items-center justify-center gap-8 mt-12">
-            <div className="flex items-center gap-2 text-foreground">
-              <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span className="text-sm font-medium">No Credit Card for Trial</span>
-            </div>
-            <div className="flex items-center gap-2 text-foreground">
-              <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span className="text-sm font-medium">Cancel Anytime</span>
-            </div>
-            <div className="flex items-center gap-2 text-foreground">
-              <Shield className="w-6 h-6 text-green-600" />
-              <span className="text-sm font-medium">Money-Back Guarantee</span>
+
+          {/* Single CTA Card */}
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left">
+              <h3 className="text-2xl font-bold mb-4">DIY Credit Repair Software</h3>
+              <div className="grid grid-cols-3 gap-4 mb-6">
+                <div>
+                  <div className="text-3xl font-bold mb-1">7-Day</div>
+                  <div className="text-sm opacity-90">Free Trial</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold mb-1">$49.99</div>
+                  <div className="text-sm opacity-90">Per Month</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold mb-1">Unlimited</div>
+                  <div className="text-sm opacity-90">Disputes</div>
+                </div>
+              </div>
+              <button 
+                onClick={handleSignupClick}
+                className="flex items-center justify-center gap-2 w-full py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors"
+              >
+                Start Your Free 7-Day Trial
+              </button>
+              <p className="text-sm text-white/90 mt-3 text-center">
+                No credit card required • Cancel anytime
+              </p>
             </div>
           </div>
-          
+
+          {/* Trust Indicators */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-gray-300 text-sm">
+            <div className="flex items-center gap-2">
+              <Check className="w-4 h-4 text-amber-400" />
+              <span>No Credit Card for Trial</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Check className="w-4 h-4 text-amber-400" />
+              <span>30-Day Money-Back Guarantee</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Check className="w-4 h-4 text-amber-400" />
+              <span>Professional Templates Included</span>
+            </div>
+          </div>
+
           {/* Alternative Option */}
-          <div className="mt-12 pt-8 border-t-2 border-foreground/20">
-            <p className="text-foreground mb-3">
+          <div className="mt-12 pt-8 border-t-2 border-white/20">
+            <p className="text-gray-300 mb-3">
               Not sure DIY is right for you?
             </p>
             <a 
               href="/credit-repair" 
-              className="text-foreground hover:text-white font-semibold underline text-lg"
+              className="text-amber-400 hover:text-amber-300 font-semibold underline text-lg"
             >
               Check out our full-service credit repair →
             </a>
           </div>
-          
+
         </div>
       </section>
 
