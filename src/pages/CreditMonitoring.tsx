@@ -744,62 +744,62 @@ function FAQSection() {
 
 function FinalCTA() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-primary via-secondary to-success">
-      <div className="max-w-4xl mx-auto text-center">
-        
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-          Start Protecting Your Credit Today
+    <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        {/* Main Headline */}
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          Start Protecting Your <span className="text-amber-400">Credit</span> Today
         </h2>
         
-        <p className="text-xl text-white/90 mb-8 leading-relaxed">
+        {/* Subheadline */}
+        <p className="text-xl text-gray-300 mb-12">
           Join thousands of members who trust SmartCredit® for 24/7 credit monitoring, identity theft protection, and powerful credit-building tools.
         </p>
 
-        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
-            <div>
-              <div className="text-4xl font-bold mb-2">3</div>
-              <div className="text-sm opacity-90">Bureau Monitoring</div>
+        {/* Single CTA Card */}
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left">
+            <h3 className="text-2xl font-bold mb-4">SmartCredit® Premium</h3>
+            <div className="grid grid-cols-3 gap-4 mb-6">
+              <div>
+                <div className="text-3xl font-bold mb-1">3</div>
+                <div className="text-sm opacity-90">Bureau Monitoring</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold mb-1">$1M</div>
+                <div className="text-sm opacity-90">Fraud Insurance</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold mb-1">24/7</div>
+                <div className="text-sm opacity-90">Real-Time Alerts</div>
+              </div>
             </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">$1M</div>
-              <div className="text-sm opacity-90">Fraud Insurance</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">24/7</div>
-              <div className="text-sm opacity-90">Real-Time Alerts</div>
-            </div>
+            <a 
+              href={AFFILIATE_LINK} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center justify-center gap-2 w-full py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors"
+            >
+              Get SmartCredit® Premium
+              <ExternalLink className="w-5 h-5" />
+            </a>
           </div>
         </div>
 
-        <a
-          href={AFFILIATE_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-white text-primary text-2xl font-bold px-16 py-6 rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-2xl hover:shadow-3xl hover:scale-105 mb-6"
-        >
-          Get SmartCredit® Premium
-          <ExternalLink className="w-6 h-6" />
-        </a>
-
-        <p className="text-white/80 text-sm mb-8">
-          <CheckCircle2 className="w-4 h-4 inline mr-1" />
-          Instant access to all 3 bureaus
-          <span className="mx-2">|</span>
-          <CheckCircle2 className="w-4 h-4 inline mr-1" />
-          Cancel anytime
-          <span className="mx-2">|</span>
-          <CheckCircle2 className="w-4 h-4 inline mr-1" />
-          Trusted by credit professionals
-        </p>
-
-        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto">
-          <p className="text-white text-sm leading-relaxed flex items-center justify-center gap-2 flex-wrap">
-            <Phone className="w-4 h-4" />
-            Questions? Call Mesa Group Consulting at
-            <a href="tel:6613103040" className="font-bold hover:underline">(661) 310-3040</a>
-            for assistance with your credit monitoring needs.
-          </p>
+        {/* Trust Indicators */}
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-gray-300 text-sm">
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-amber-400" />
+            <span>Instant access to all 3 bureaus</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-amber-400" />
+            <span>Cancel anytime</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-amber-400" />
+            <span>Trusted by credit professionals</span>
+          </div>
         </div>
 
       </div>
