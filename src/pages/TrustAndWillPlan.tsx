@@ -1255,98 +1255,128 @@ const TrustAndWillPlan = () => {
       </section>
 
       {/* SECTION 9: FINAL CTA */}
-      <section className="bg-gradient-to-r from-[#f9c65d] to-[#bb9446] py-16 md:py-24 px-6 md:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          
-          <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-            Ready to Protect Your Family & Secure Your Legacy?
+      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Main Headline */}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            Ready to Protect Your Family & Secure Your <span className="text-amber-400">Legacy</span>?
           </h2>
           
-          <p className="text-xl text-[#3E3E3E] mb-8">
+          {/* Subheadline */}
+          <p className="text-xl text-gray-300 mb-12">
             Create your attorney-built, state-specific Will or Trust online in 20 minutes. No appointments. No expensive attorneys.
           </p>
-          
-          <button 
-            onClick={handleCTAClick}
-            className="bg-white text-[#bb9446] hover:bg-[#3E3E3E] hover:text-white text-xl font-bold px-10 py-5 rounded-lg shadow-2xl hover:shadow-3xl transition duration-200"
-          >
-            Create Your Estate Plan
-          </button>
-          
-          <p className="text-sm text-[#3E3E3E] mt-4 font-medium">
-            Starting at $199 • 30-day money-back guarantee • Takes 20 minutes • Instant download
+
+          {/* Two-Column Button Grid */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {/* Primary Option - Trust Plan (Orange Gradient) */}
+            <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left">
+              <div className="text-xs font-bold mb-2 tracking-wide">MOST POPULAR</div>
+              <h3 className="text-2xl font-bold mb-4">Trust Estate Plan</h3>
+              <div className="text-4xl font-bold mb-2">$499</div>
+              <p className="text-sm opacity-90 mb-6">Revocable Living Trust + All Will Plan benefits</p>
+              <button 
+                onClick={handleCTAClick}
+                className="block w-full text-center py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors mb-4"
+              >
+                Choose Trust Plan
+              </button>
+              <div className="space-y-2 text-sm">
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4" />
+                  <span>Avoids probate entirely</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4" />
+                  <span>First year membership FREE</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4" />
+                  <span>Immediate asset transfer</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Secondary Option - Will Plan (Glass Effect) */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-left border-2 border-white/20">
+              <div className="text-xs font-bold mb-2 tracking-wide opacity-0">PLACEHOLDER</div>
+              <h3 className="text-2xl font-bold mb-4">Will Estate Plan</h3>
+              <div className="text-4xl font-bold mb-2">$199</div>
+              <p className="text-sm opacity-90 mb-6">Last Will, Healthcare Directives, Power of Attorney</p>
+              <button 
+                onClick={handleCTAClick}
+                className="w-full inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+              >
+                Choose Will Plan
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </button>
+              <div className="mt-4 space-y-2 text-sm">
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 text-amber-400" />
+                  <span>Attorney-built documents</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 text-amber-400" />
+                  <span>State-specific & legally binding</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="w-4 h-4 text-amber-400" />
+                  <span>Name guardians for children</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Trust Indicators */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-gray-300 text-sm">
+            <div className="flex items-center gap-2">
+              <Check className="w-4 h-4 text-amber-400" />
+              <span>30-Day Money-Back Guarantee</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Check className="w-4 h-4 text-amber-400" />
+              <span>Takes Only 20 Minutes</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Lock className="w-4 h-4 text-amber-400" />
+              <span>Bank-Level Security</span>
+            </div>
+          </div>
+
+          {/* Additional Info */}
+          <p className="text-sm text-gray-400 mt-6">
+            Couples plans available • Instant download • Unlimited updates with membership
           </p>
-          
-          {/* Trust Elements */}
-          <div className="flex flex-wrap items-center justify-center gap-8 mt-12">
-            <div className="flex items-center gap-2 text-[#3E3E3E]">
-              <Check className="w-6 h-6" strokeWidth={2.5} />
-              <span className="text-sm font-medium">Attorney-Built</span>
-            </div>
-            <div className="flex items-center gap-2 text-[#3E3E3E]">
-              <Check className="w-6 h-6" strokeWidth={2.5} />
-              <span className="text-sm font-medium">State-Specific</span>
-            </div>
-            <div className="flex items-center gap-2 text-[#3E3E3E]">
-              <Check className="w-6 h-6" strokeWidth={2.5} />
-              <span className="text-sm font-medium">Legally Binding</span>
-            </div>
-            <div className="flex items-center gap-2 text-[#3E3E3E]">
-              <Lock className="w-6 h-6" />
-              <span className="text-sm font-medium">Bank-Level Security</span>
-            </div>
-          </div>
-          
-          {/* Pricing Options Quick Reference */}
-          <div className="mt-12 pt-8 border-t-2 border-[#3E3E3E]/20">
-            <p className="text-[#3E3E3E] mb-4 font-semibold">
-              Choose Your Plan:
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-              <div className="bg-white/90 rounded-lg p-4">
-                <div className="text-2xl font-bold text-blue-600 mb-1">$199</div>
-                <div className="text-sm font-semibold text-[#3E3E3E] mb-2">Will Estate Plan</div>
-                <div className="text-xs text-gray-700">Last Will, Healthcare Directives, Power of Attorney</div>
-              </div>
-              <div className="bg-white rounded-lg p-4 border-2 border-[#3E3E3E]">
-                <div className="text-xs text-[#3E3E3E] font-bold mb-1">MOST POPULAR</div>
-                <div className="text-2xl font-bold text-[#bb9446] mb-1">$499</div>
-                <div className="text-sm font-semibold text-[#3E3E3E] mb-2">Trust Estate Plan</div>
-                <div className="text-xs text-gray-700">Revocable Living Trust + All Will Plan benefits</div>
-              </div>
-            </div>
-            <p className="text-sm text-[#3E3E3E] mt-4">Couples plans available • First year membership free with Trust plan</p>
-          </div>
-          
+
           {/* Alternative Links */}
-          <div className="mt-12 pt-8 border-t-2 border-[#3E3E3E]/20">
-            <p className="text-[#3E3E3E] mb-3">
+          <div className="mt-12 pt-8 border-t-2 border-white/20">
+            <p className="text-gray-300 mb-3">
               Need help with other financial matters?
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
                 href="/credit-repair" 
-                className="text-[#3E3E3E] hover:text-white font-semibold underline"
+                className="text-amber-400 hover:text-amber-300 font-semibold underline"
               >
                 Credit Repair
               </a>
-              <span className="text-[#3E3E3E]">|</span>
+              <span className="text-gray-500">|</span>
               <a 
                 href="/debt-consolidation" 
-                className="text-[#3E3E3E] hover:text-white font-semibold underline"
+                className="text-amber-400 hover:text-amber-300 font-semibold underline"
               >
                 Debt Consolidation
               </a>
-              <span className="text-[#3E3E3E]">|</span>
+              <span className="text-gray-500">|</span>
               <a 
                 href="/life-insurance" 
-                className="text-[#3E3E3E] hover:text-white font-semibold underline"
+                className="text-amber-400 hover:text-amber-300 font-semibold underline"
               >
                 Life Insurance
               </a>
             </div>
           </div>
-          
+
         </div>
       </section>
 
