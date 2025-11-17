@@ -36,7 +36,7 @@ const StudentLoanRefi = () => {
       <Header />
 
       {/* SECTION 1: HERO */}
-      <section className="bg-gradient-to-br from-[#2B5797] via-[#40B8B8] to-[#2B5797] py-20 px-6">
+      <section className="bg-gradient-to-br from-[#3E3E3E] via-[#bb9446] to-[#f9c65d] py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             
@@ -133,7 +133,7 @@ const StudentLoanRefi = () => {
                   href="https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center bg-[#2B5797] text-white font-bold py-4 rounded-lg hover:bg-[#1e3f6d] transition-all duration-200 mt-6"
+                  className="block w-full text-center bg-[#bb9446] text-white font-bold py-4 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 mt-6"
                 >
                   Get My Personalized Rates
                 </a>
@@ -149,7 +149,7 @@ const StudentLoanRefi = () => {
         <div className="max-w-5xl mx-auto">
           
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1F2937] mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-6">
               Turn Your Student Debt Into Opportunity
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
@@ -157,34 +157,34 @@ const StudentLoanRefi = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-[#F3F4F6] to-white rounded-2xl p-8 mb-12 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#1F2937] mb-6 text-center">
+          <div className="bg-gradient-to-br from-[#f8d899] to-white rounded-2xl p-8 mb-12 shadow-lg">
+            <h3 className="text-2xl font-bold text-[#3E3E3E] mb-6 text-center">
               How It Works
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#40B8B8] rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#bb9446] rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">1️⃣</span>
                 </div>
-                <h4 className="font-bold text-lg mb-2 text-[#1F2937]">New Lender Pays Off Old Loans</h4>
+                <h4 className="font-bold text-lg mb-2 text-[#3E3E3E]">New Lender Pays Off Old Loans</h4>
                 <p className="text-gray-600 text-sm">
                   A new lender pays off all your existing student loans in full
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#40B8B8] rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#bb9446] rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">2️⃣</span>
                 </div>
-                <h4 className="font-bold text-lg mb-2 text-[#1F2937]">You Get One New Loan</h4>
+                <h4 className="font-bold text-lg mb-2 text-[#3E3E3E]">You Get One New Loan</h4>
                 <p className="text-gray-600 text-sm">
                   You receive a single new loan with better terms and lower rate
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-[#40B8B8] rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#bb9446] rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">3️⃣</span>
                 </div>
-                <h4 className="font-bold text-lg mb-2 text-[#1F2937]">Start Saving Money</h4>
+                <h4 className="font-bold text-lg mb-2 text-[#3E3E3E]">Start Saving Money</h4>
                 <p className="text-gray-600 text-sm">
                   Lower interest means more money in your pocket every month
                 </p>
@@ -207,11 +207,11 @@ const StudentLoanRefi = () => {
       </section>
 
       {/* SECTION 3: SIX BENEFITS */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#F3F4F6] to-white">
+      <section className="py-20 px-6 bg-gradient-to-br from-[#E5D2AF] to-white">
         <div className="max-w-7xl mx-auto">
           
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1F2937] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
               Why Thousands of Graduates Are Refinancing
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -221,9 +221,9 @@ const StudentLoanRefi = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#10B981]">
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#f9c65d]">
               <div className="text-5xl mb-4">📉</div>
-              <h3 className="text-2xl font-bold text-[#1F2937] mb-4">
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
                 Lower Interest Rates
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -231,9 +231,9 @@ const StudentLoanRefi = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#40B8B8]">
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#bb9446]">
               <div className="text-5xl mb-4">💰</div>
-              <h3 className="text-2xl font-bold text-[#1F2937] mb-4">
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
                 Reduced Monthly Payments
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -241,9 +241,9 @@ const StudentLoanRefi = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#2B5797]">
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#f8d899]">
               <div className="text-5xl mb-4">🎯</div>
-              <h3 className="text-2xl font-bold text-[#1F2937] mb-4">
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
                 Simplified Repayment
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -251,9 +251,9 @@ const StudentLoanRefi = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#F59E0B]">
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#F97316]">
               <div className="text-5xl mb-4">⏰</div>
-              <h3 className="text-2xl font-bold text-[#1F2937] mb-4">
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
                 Flexible Term Options
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -261,9 +261,9 @@ const StudentLoanRefi = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#10B981]">
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#f9c65d]">
               <div className="text-5xl mb-4">👥</div>
-              <h3 className="text-2xl font-bold text-[#1F2937] mb-4">
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
                 Remove a Cosigner
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -271,9 +271,9 @@ const StudentLoanRefi = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#40B8B8]">
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#bb9446]">
               <div className="text-5xl mb-4">🚀</div>
-              <h3 className="text-2xl font-bold text-[#1F2937] mb-4">
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
                 Pay Off Debt Faster
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -288,7 +288,7 @@ const StudentLoanRefi = () => {
               href="https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#2B5797] text-white text-xl font-bold px-12 py-5 rounded-lg hover:bg-[#1e3f6d] transition-all duration-200 shadow-xl hover:shadow-2xl"
+              className="inline-block bg-[#bb9446] text-white text-xl font-bold px-12 py-5 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 shadow-xl hover:shadow-2xl"
             >
               Start Saving Today →
             </a>
@@ -302,7 +302,7 @@ const StudentLoanRefi = () => {
         <div className="max-w-6xl mx-auto">
           
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1F2937] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
               Get Started in 3 Simple Steps
             </h2>
             <p className="text-xl text-gray-600">
@@ -313,7 +313,7 @@ const StudentLoanRefi = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-[#2B5797] to-[#40B8B8] rounded-2xl p-8 text-white shadow-xl">
+              <div className="bg-gradient-to-br from-[#bb9446] to-[#f9c65d] rounded-2xl p-8 text-white shadow-xl">
                 <div className="absolute -top-6 left-8 w-12 h-12 bg-[#10B981] rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
                   1
                 </div>
@@ -328,8 +328,8 @@ const StudentLoanRefi = () => {
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-[#40B8B8] to-[#10B981] rounded-2xl p-8 text-white shadow-xl">
-                <div className="absolute -top-6 left-8 w-12 h-12 bg-[#F59E0B] rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+              <div className="bg-gradient-to-br from-[#f9c65d] to-[#10B981] rounded-2xl p-8 text-white shadow-xl">
+                <div className="absolute -top-6 left-8 w-12 h-12 bg-[#F97316] rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
                   2
                 </div>
                 <h3 className="text-2xl font-bold mb-4 mt-4">Choose Your Best Offer</h3>
@@ -344,7 +344,7 @@ const StudentLoanRefi = () => {
 
             <div className="relative">
               <div className="bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl p-8 text-white shadow-xl">
-                <div className="absolute -top-6 left-8 w-12 h-12 bg-[#2B5797] rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                <div className="absolute -top-6 left-8 w-12 h-12 bg-[#bb9446] rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
                   3
                 </div>
                 <h3 className="text-2xl font-bold mb-4 mt-4">Complete Your Application</h3>
@@ -359,8 +359,8 @@ const StudentLoanRefi = () => {
 
           </div>
 
-          <div className="bg-[#F3F4F6] rounded-xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-[#1F2937] mb-4">
+          <div className="bg-[#f8d899] rounded-xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
               Ready to Lower Your Payments?
             </h3>
             <p className="text-lg text-gray-700 mb-6">
@@ -380,11 +380,11 @@ const StudentLoanRefi = () => {
       </section>
 
       {/* SECTION 5: WHO SHOULD REFINANCE */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#F3F4F6] to-white">
+      <section className="py-20 px-6 bg-gradient-to-br from-[#E5D2AF] to-white">
         <div className="max-w-5xl mx-auto">
           
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1F2937] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
               Is Student Loan Refinancing Right for You?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -399,7 +399,7 @@ const StudentLoanRefi = () => {
                 ✓
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#1F2937] mb-2">
+                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">
                   Good to Excellent Credit (650+)
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -409,11 +409,11 @@ const StudentLoanRefi = () => {
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-lg flex items-start gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#40B8B8] rounded-full flex items-center justify-center text-white text-2xl">
+              <div className="flex-shrink-0 w-12 h-12 bg-[#bb9446] rounded-full flex items-center justify-center text-white text-2xl">
                 ✓
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#1F2937] mb-2">
+                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">
                   Steady Income
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -423,11 +423,11 @@ const StudentLoanRefi = () => {
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-lg flex items-start gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#2B5797] rounded-full flex items-center justify-center text-white text-2xl">
+              <div className="flex-shrink-0 w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center text-white text-2xl">
                 ✓
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#1F2937] mb-2">
+                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">
                   High-Interest Private Loans
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -437,11 +437,11 @@ const StudentLoanRefi = () => {
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-lg flex items-start gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#F59E0B] rounded-full flex items-center justify-center text-white text-2xl">
+              <div className="flex-shrink-0 w-12 h-12 bg-[#F97316] rounded-full flex items-center justify-center text-white text-2xl">
                 ⚠️
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#1F2937] mb-2">
+                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">
                   Federal Loans You're Willing to Convert
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -455,7 +455,7 @@ const StudentLoanRefi = () => {
                 ✓
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#1F2937] mb-2">
+                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">
                   No Plans for Loan Forgiveness
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -466,7 +466,7 @@ const StudentLoanRefi = () => {
 
           </div>
 
-          <div className="mt-12 bg-gradient-to-r from-[#2B5797] to-[#40B8B8] rounded-xl p-8 text-center text-white">
+          <div className="mt-12 bg-gradient-to-r from-[#bb9446] to-[#f9c65d] rounded-xl p-8 text-center text-white">
             <h3 className="text-2xl font-bold mb-4">
               See If You Qualify
             </h3>
@@ -477,7 +477,7 @@ const StudentLoanRefi = () => {
               href="https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-[#2B5797] text-xl font-bold px-12 py-5 rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl"
+              className="inline-block bg-white text-[#bb9446] text-xl font-bold px-12 py-5 rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl"
             >
               Check My Qualification →
             </a>
@@ -491,7 +491,7 @@ const StudentLoanRefi = () => {
         <div className="max-w-7xl mx-auto">
           
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1F2937] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
               Real Savings Examples
             </h2>
             <p className="text-xl text-gray-600">
@@ -501,10 +501,10 @@ const StudentLoanRefi = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             
-            <div className="bg-gradient-to-br from-[#F3F4F6] to-white rounded-xl p-8 shadow-lg border-2 border-[#10B981]">
+            <div className="bg-gradient-to-br from-[#f8d899] to-white rounded-xl p-8 shadow-lg border-2 border-[#f9c65d]">
               <div className="text-center mb-6">
                 <div className="text-5xl mb-2">🎓</div>
-                <h3 className="text-xl font-bold text-[#1F2937]">
+                <h3 className="text-xl font-bold text-[#3E3E3E]">
                   Recent Graduate
                 </h3>
               </div>
@@ -536,10 +536,10 @@ const StudentLoanRefi = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#F3F4F6] to-white rounded-xl p-8 shadow-lg border-2 border-[#40B8B8]">
+            <div className="bg-gradient-to-br from-[#f8d899] to-white rounded-xl p-8 shadow-lg border-2 border-[#bb9446]">
               <div className="text-center mb-6">
                 <div className="text-5xl mb-2">💼</div>
-                <h3 className="text-xl font-bold text-[#1F2937]">
+                <h3 className="text-xl font-bold text-[#3E3E3E]">
                   Established Professional
                 </h3>
               </div>
@@ -563,7 +563,7 @@ const StudentLoanRefi = () => {
                 </div>
               </div>
 
-              <div className="bg-[#40B8B8] text-white rounded-lg p-6 text-center">
+              <div className="bg-[#bb9446] text-white rounded-lg p-6 text-center">
                 <div className="text-sm mb-2">Monthly Savings</div>
                 <div className="text-3xl font-bold mb-4">$267</div>
                 <div className="text-sm mb-2">Total Savings</div>
@@ -571,10 +571,10 @@ const StudentLoanRefi = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#F3F4F6] to-white rounded-xl p-8 shadow-lg border-2 border-[#2B5797]">
+            <div className="bg-gradient-to-br from-[#f8d899] to-white rounded-xl p-8 shadow-lg border-2 border-[#f8d899]">
               <div className="text-center mb-6">
                 <div className="text-5xl mb-2">🚀</div>
-                <h3 className="text-xl font-bold text-[#1F2937]">
+                <h3 className="text-xl font-bold text-[#3E3E3E]">
                   Private Loan Holder
                 </h3>
               </div>
@@ -598,7 +598,7 @@ const StudentLoanRefi = () => {
                 </div>
               </div>
 
-              <div className="bg-[#2B5797] text-white rounded-lg p-6 text-center">
+              <div className="bg-[#bb9446] text-white rounded-lg p-6 text-center">
                 <div className="text-sm mb-2">Monthly Savings</div>
                 <div className="text-3xl font-bold mb-4">$267</div>
                 <div className="text-sm mb-2">Total Savings</div>
@@ -623,11 +623,11 @@ const StudentLoanRefi = () => {
       </section>
 
       {/* SECTION 7: FAQ ACCORDION */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#F3F4F6] to-white">
+      <section className="py-20 px-6 bg-gradient-to-br from-[#E5D2AF] to-white">
         <div className="max-w-4xl mx-auto">
           
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1F2937] mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
               Common Questions About Student Loan Refinancing
             </h2>
             <p className="text-xl text-gray-600">
@@ -642,11 +642,11 @@ const StudentLoanRefi = () => {
                   onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
                   className="w-full text-left px-8 py-6 flex justify-between items-center hover:bg-gray-50 transition-colors"
                 >
-                  <span className="text-lg font-bold text-[#1F2937]">
+                  <span className="text-lg font-bold text-[#3E3E3E]">
                     {faq.question}
                   </span>
                   <svg 
-                    className={`w-6 h-6 text-[#2B5797] transition-transform duration-200 ${openFAQ === index ? 'rotate-180' : ''}`}
+                    className={`w-6 h-6 text-[#bb9446] transition-transform duration-200 ${openFAQ === index ? 'rotate-180' : ''}`}
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -669,7 +669,7 @@ const StudentLoanRefi = () => {
       </section>
 
       {/* SECTION 8: FINAL CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#2B5797] via-[#40B8B8] to-[#10B981]">
+      <section className="py-20 px-6 bg-gradient-to-br from-[#3E3E3E] via-[#bb9446] to-[#f9c65d]">
         <div className="max-w-4xl mx-auto text-center">
           
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -684,7 +684,7 @@ const StudentLoanRefi = () => {
             href="https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-[#2B5797] text-2xl font-bold px-16 py-6 rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-2xl hover:shadow-3xl hover:scale-105 mb-6"
+            className="inline-block bg-white text-[#bb9446] text-2xl font-bold px-16 py-6 rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-2xl hover:shadow-3xl hover:scale-105 mb-6"
           >
             Get My Rates Now →
           </a>
@@ -720,13 +720,13 @@ const StudentLoanRefi = () => {
       </section>
 
       {/* SECTION 9: FOOTER */}
-      <footer className="bg-[#1F2937] py-12 px-6 text-white">
+      <footer className="bg-[#3E3E3E] py-12 px-6 text-white">
         <div className="max-w-7xl mx-auto">
           
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             
             <div>
-              <h3 className="text-xl font-bold text-[#40B8B8] mb-4">Mesa Group Consulting</h3>
+              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Mesa Group Consulting</h3>
               <p className="text-sm text-gray-300 mb-4">
                 Your trusted partner for credit repair and financial services in Bakersfield, CA.
               </p>
@@ -738,32 +738,32 @@ const StudentLoanRefi = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-[#40B8B8] mb-4">For Consumers</h3>
+              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">For Consumers</h3>
               <ul className="space-y-2 text-sm text-gray-300">
-                <li><a href="/build-credit" className="hover:text-[#40B8B8]">Build Credit</a></li>
-                <li><a href="/credit-monitoring" className="hover:text-[#40B8B8]">Credit Monitoring</a></li>
-                <li><a href="/credit-repair" className="hover:text-[#40B8B8]">Credit Repair</a></li>
-                <li><a href="/personal-loans" className="hover:text-[#40B8B8]">Personal Loans</a></li>
-                <li><a href="/debt-consolidation" className="hover:text-[#40B8B8]">Debt Consolidation</a></li>
+                <li><a href="/build-credit" className="hover:text-[#f9c65d]">Build Credit</a></li>
+                <li><a href="/credit-monitoring" className="hover:text-[#f9c65d]">Credit Monitoring</a></li>
+                <li><a href="/credit-repair" className="hover:text-[#f9c65d]">Credit Repair</a></li>
+                <li><a href="/personal-loans" className="hover:text-[#f9c65d]">Personal Loans</a></li>
+                <li><a href="/debt-consolidation" className="hover:text-[#f9c65d]">Debt Consolidation</a></li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-[#40B8B8] mb-4">For Businesses</h3>
+              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">For Businesses</h3>
               <ul className="space-y-2 text-sm text-gray-300">
-                <li><a href="/business-funding" className="hover:text-[#40B8B8]">Business Funding</a></li>
-                <li><a href="/business-credit" className="hover:text-[#40B8B8]">Business Credit</a></li>
-                <li><a href="/business-debt-relief" className="hover:text-[#40B8B8]">Business Debt Relief</a></li>
+                <li><a href="/business-funding" className="hover:text-[#f9c65d]">Business Funding</a></li>
+                <li><a href="/business-credit" className="hover:text-[#f9c65d]">Business Credit</a></li>
+                <li><a href="/business-debt-relief" className="hover:text-[#f9c65d]">Business Debt Relief</a></li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-[#40B8B8] mb-4">Resources</h3>
+              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Resources</h3>
               <ul className="space-y-2 text-sm text-gray-300">
-                <li><a href="/about" className="hover:text-[#40B8B8]">About Us</a></li>
-                <li><a href="/blog" className="hover:text-[#40B8B8]">Mesa News Blog</a></li>
-                <li><a href="/calculators" className="hover:text-[#40B8B8]">Financial Calculators</a></li>
-                <li><a href="/contact" className="hover:text-[#40B8B8]">Contact</a></li>
+                <li><a href="/about" className="hover:text-[#f9c65d]">About Us</a></li>
+                <li><a href="/blog" className="hover:text-[#f9c65d]">Mesa News Blog</a></li>
+                <li><a href="/calculators" className="hover:text-[#f9c65d]">Financial Calculators</a></li>
+                <li><a href="/contact" className="hover:text-[#f9c65d]">Contact</a></li>
               </ul>
             </div>
 
