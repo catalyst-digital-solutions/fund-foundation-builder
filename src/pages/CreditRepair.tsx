@@ -841,43 +841,64 @@ const CreditRepair = () => {
       </section>
 
       {/* SECTION 9: FINAL CTA */}
-      <section className="bg-gradient-to-r from-[#f9c65d] to-[#bb9446] py-16 md:py-24 px-6 md:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to Fix Your Credit the Right Way?
+      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Main Headline */}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            Ready to Fix Your Credit the <span className="text-amber-400">Right Way</span>?
           </h2>
-
-          <p className="text-xl text-white/90 mb-8">
-            Join hundreds of Bakersfield residents who've improved their scores and unlocked better
-            financial opportunities.
+          
+          {/* Subheadline */}
+          <p className="text-xl text-gray-300 mb-12">
+            Join hundreds of Bakersfield residents who've improved their scores and unlocked better financial opportunities.
           </p>
 
-          <button
-            onClick={() => handleCTAClick()}
-            className="bg-white text-[#bb9446] hover:bg-[#f8d899] text-lg font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200"
-          >
-            Get Your Free Credit Analysis
-          </button>
-
-          <p className="text-sm text-white/90 mt-4">
-            No credit card required. Takes 2 minutes. See what we can remove from your report.
-          </p>
-
-          {/* Trust Row */}
-          <div className="flex flex-wrap items-center justify-center gap-8 mt-12">
-            <div className="flex items-center gap-2">
-              <Trophy className="w-6 h-6 text-white" />
-              <span className="text-sm font-medium text-white">91% Success Rate</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Star className="w-6 h-6 text-white fill-white" />
-              <span className="text-sm font-medium text-white">BBB A+ Rated</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <MapPin className="w-6 h-6 text-white" />
-              <span className="text-sm font-medium text-white">Local Bakersfield Team</span>
+          {/* Single CTA Card */}
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left">
+              <h3 className="text-2xl font-bold mb-4">Professional Credit Repair</h3>
+              <div className="grid grid-cols-3 gap-4 mb-6">
+                <div>
+                  <div className="text-3xl font-bold mb-1">91%</div>
+                  <div className="text-sm opacity-90">Success Rate</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold mb-1">60-110</div>
+                  <div className="text-sm opacity-90">Avg. Point Increase</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold mb-1">30-45</div>
+                  <div className="text-sm opacity-90">Days to 1st Results</div>
+                </div>
+              </div>
+              <button 
+                onClick={() => handleCTAClick()}
+                className="flex items-center justify-center gap-2 w-full py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors"
+              >
+                Get Your Free Credit Analysis
+              </button>
+              <p className="text-sm text-white/90 mt-3 text-center">
+                No credit card required • Takes 2 minutes
+              </p>
             </div>
           </div>
+
+          {/* Trust Indicators */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-gray-300 text-sm">
+            <div className="flex items-center gap-2">
+              <Check className="w-4 h-4 text-amber-400" />
+              <span>BBB A+ Rated</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Check className="w-4 h-4 text-amber-400" />
+              <span>Local Bakersfield Team</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Check className="w-4 h-4 text-amber-400" />
+              <span>California DOJ Registered</span>
+            </div>
+          </div>
+
         </div>
       </section>
 
