@@ -1,31 +1,9 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
-import { 
-  DollarSign, 
-  Building2, 
-  CreditCard, 
-  FileText, 
-  Factory, 
-  Building, 
-  Rocket, 
-  Briefcase,
-  Phone,
-  Check,
-  Lightbulb,
-  Target,
-  Zap,
-  Shield,
-  TrendingUp,
-  Handshake,
-  ClipboardList,
-  MapPin,
-  ChevronDown
-} from 'lucide-react';
+import { DollarSign, Building2, CreditCard, FileText, Factory, Building, Rocket, Briefcase, Phone, Check, Lightbulb, Target, Zap, Shield, TrendingUp, Handshake, ClipboardList, MapPin, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const BusinessFunding = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       <HeroSection />
       <ImageSection1 />
@@ -37,21 +15,18 @@ const BusinessFunding = () => {
       <ImageSection3 />
       <FinalCTA />
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 const HeroSection = () => {
-  return (
-    <section className="bg-gradient-to-br from-white via-amber-50 to-white py-24 px-6">
+  return <section className="bg-gradient-to-br from-white via-amber-50 to-white py-24 px-6">
       <div className="max-w-5xl mx-auto text-center">
         
         <div className="inline-block bg-amber-100 text-gray-900 px-6 py-3 rounded-full text-sm font-bold mb-8 border-2 border-amber-300">
           Mesa Group Capital | Trusted Business Funding Brokerage
         </div>
         
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          Business Funding Solutions from <span className="text-amber-600">$1K to $100M</span>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight py-[100px]">
+          Business Funding Solutions from <span className="text-amber-600 py-0 my-[20px]">$1K to $100M</span>
         </h1>
         
         <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
@@ -76,17 +51,11 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-            size="lg"
-            className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto"
-          >
+          <Button size="lg" className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto">
             Explore Funding Options →
           </Button>
           
-          <a
-            href="tel:6613103040"
-            className="inline-flex items-center justify-center gap-2 text-gray-700 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-xl font-semibold px-12 py-5"
-          >
+          <a href="tel:6613103040" className="inline-flex items-center justify-center gap-2 text-gray-700 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-xl font-semibold px-12 py-5">
             <Phone className="w-6 h-6" /> (661) 310-3040
           </a>
         </div>
@@ -100,17 +69,13 @@ const HeroSection = () => {
       </p>
 
       </div>
-    </section>
-  );
+    </section>;
 };
-
 {/* Image Section 1 - Problem State */}
 const ImageSection1 = () => {
-  return (
-    <section 
-      className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
-      style={{backgroundImage: "url('IMAGE: Frustrated business owner at desk surrounded by rejected loan applications and bills, worried expression, dim office lighting, close-up shot showing stress and concern')"}}
-    >
+  return <section className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" style={{
+    backgroundImage: "url('IMAGE: Frustrated business owner at desk surrounded by rejected loan applications and bills, worried expression, dim office lighting, close-up shot showing stress and concern')"
+  }}>
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
@@ -123,17 +88,13 @@ const ImageSection1 = () => {
           There's a Better Way →
         </button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 {/* Image Section 2 - Transformation */}
 const ImageSection2 = () => {
-  return (
-    <section 
-      className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
-      style={{backgroundImage: "url('IMAGE: Professional business consultant shaking hands with relieved small business owner across modern desk, bright office with natural light, both smiling, showing trust and partnership')"}}
-    >
+  return <section className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" style={{
+    backgroundImage: "url('IMAGE: Professional business consultant shaking hands with relieved small business owner across modern desk, bright office with natural light, both smiling, showing trust and partnership')"
+  }}>
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
@@ -146,17 +107,13 @@ const ImageSection2 = () => {
           Discover Your Options →
         </button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 {/* Image Section 3 - Aspiration */}
 const ImageSection3 = () => {
-  return (
-    <section 
-      className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
-      style={{backgroundImage: "url('IMAGE: Successful business owner standing confidently in thriving business with employees working in background, modern bright space, golden hour lighting, expression of pride and accomplishment')"}}
-    >
+  return <section className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" style={{
+    backgroundImage: "url('IMAGE: Successful business owner standing confidently in thriving business with employees working in background, modern bright space, golden hour lighting, expression of pride and accomplishment')"
+  }}>
       <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/20"></div>
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
@@ -169,13 +126,10 @@ const ImageSection3 = () => {
           Start Your Growth Journey →
         </button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 const AllFundingSolutionsGrid = () => {
-  return (
-    <section className="py-20 px-6 bg-background">
+  return <section className="py-20 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         
         <div className="text-center mb-16">
@@ -512,23 +466,17 @@ const AllFundingSolutionsGrid = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <Button 
-            size="lg"
-            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto"
-          >
+          <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto">
             Get Matched with the Right Funding →
           </Button>
           <p className="text-muted-foreground mt-4">Free consultation • No obligation • Fast pre-qualification</p>
         </div>
 
       </div>
-    </section>
-  );
+    </section>;
 };
-
 const ComparisonTable = () => {
-  return (
-    <section className="py-20 px-6 bg-secondary/20">
+  return <section className="py-20 px-6 bg-secondary/20">
       <div className="max-w-7xl mx-auto">
         
         <div className="text-center mb-12">
@@ -635,13 +583,10 @@ const ComparisonTable = () => {
         </div>
 
       </div>
-    </section>
-  );
+    </section>;
 };
-
 const WhyChooseMesaGroupCapital = () => {
-  return (
-    <section className="py-20 px-6 bg-background">
+  return <section className="py-20 px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         
         <div className="text-center mb-12">
@@ -749,75 +694,53 @@ const WhyChooseMesaGroupCapital = () => {
             Let Mesa Group Capital's brokerage expertise connect you with the right funding solution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg"
-              className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-4 h-auto"
-            >
+            <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-4 h-auto">
               Apply for Funding Now
             </Button>
             
-            <a
-              href="tel:6613103040"
-              className="inline-flex items-center justify-center gap-2 bg-white text-[hsl(var(--mgc-gold))] text-xl font-semibold px-10 py-4 rounded-lg border-2 border-[hsl(var(--mgc-gold))] hover:bg-secondary/30 transition-all duration-200"
-            >
+            <a href="tel:6613103040" className="inline-flex items-center justify-center gap-2 bg-white text-[hsl(var(--mgc-gold))] text-xl font-semibold px-10 py-4 rounded-lg border-2 border-[hsl(var(--mgc-gold))] hover:bg-secondary/30 transition-all duration-200">
               <Phone className="w-6 h-6" /> Call (661) 310-3040
             </a>
           </div>
         </div>
 
       </div>
-    </section>
-  );
+    </section>;
 };
-
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const faqs = [
-    {
-      question: "Which funding option is right for my business?",
-      answer: "It depends on your credit score, time in business, revenue, and funding needs. Invoice factoring is best for B2B companies with outstanding invoices and accepts the lowest credit scores (530+). Startups with no business history should look at our STARTUP programs (680+ credit required). Established businesses (2+ years, 650+ credit, $20K+/mo revenue) qualify for term loans and credit lines. Real estate investors need 620+ credit but can access up to $100M. Equipment-heavy businesses can get $1K-$20M with 700+ credit. Mesa Group Capital will help you identify the best fit during your consultation."
-    },
-    {
-      question: "How fast can I get funded?",
-      answer: "Timeline varies by funding type. Business Cash Advances and Merchant Cash Advances can fund same-day to 48 hours. Invoice Factoring typically funds within 24-48 hours. Business Lines of Credit and STARTUP programs: 3-7 business days. SBA loans and Real Estate financing: 2-6 weeks. During your consultation, we'll set clear expectations based on your chosen funding solution."
-    },
-    {
-      question: "What if my credit score is below 680?",
-      answer: "You still have options! Invoice Factoring accepts credit scores as low as 530+. Business Cash Advances accept 550+ credit. Real Estate Investment loans accept 620+ credit. If your credit is below these thresholds, we can help you work on credit improvement strategies while exploring alternative funding sources. Mesa Group Capital specializes in matching businesses with lenders regardless of credit challenges."
-    },
-    {
-      question: "Do I need collateral?",
-      answer: "It depends on the funding type. Unsecured options (no collateral): Business Cash Advances, Business Lines of Credit, STARTUP programs, and some term loans. Secured options (collateral required): Equipment Financing uses the equipment as collateral. Real Estate loans use the property as collateral. SBA loans may require collateral for larger amounts. We always prioritize unsecured options first to protect your assets."
-    },
-    {
-      question: "Can I get funding if my business is brand new (no history)?",
-      answer: "Yes! Our 2 STARTUP programs are designed specifically for businesses with ZERO time in business. The STARTUP Unsecured Business Funding (up to $150K) and STARTUP Small Business Loan (up to $150K) only require personal credit of 680+ and some verifiable personal income. No business tax returns, no years of operation required. Perfect for launching your first venture."
-    },
-    {
-      question: "How much will the funding cost me?",
-      answer: "Cost varies significantly by funding type, credit profile, and lender. Business term loans and SBA loans typically have APRs of 6-12%. Business Lines of Credit: 8-20% APR. Merchant Cash Advances and Invoice Factoring: factor rates of 1.1-1.5 (not APR). Equipment Financing: 5-15% depending on collateral. STARTUP programs: 10-25% depending on credit. We'll provide transparent cost breakdowns for all options during your consultation so you can make an informed decision."
-    },
-    {
-      question: "What documents do I need to apply?",
-      answer: "Basic requirements for most programs: Driver's License or ID, 3-6 months of business bank statements, Business tax returns (if applicable), Personal credit authorization. Additional documents may be needed for specific programs (e.g., equipment quotes for equipment financing, invoices for invoice factoring, property details for real estate). Mesa Group Capital will provide a complete checklist during your consultation."
-    },
-    {
-      question: "Can I apply for multiple funding types at once?",
-      answer: "Yes, and we often recommend it! Many businesses benefit from combining multiple funding sources. For example: 0% Business Credit Line + Equipment Financing + Invoice Factoring for comprehensive capital coverage. Mesa Group Capital coordinates timing and applications to maximize approvals while minimizing credit inquiry impacts. We call this 'Strategic Funding Combinations.'"
-    },
-    {
-      question: "What industries does Mesa Group Capital work with?",
-      answer: "We work with virtually all industries, but certain funding types favor specific sectors. Invoice Factoring: B2B services, contractors, staffing agencies, wholesalers. Equipment Financing: manufacturing, construction, healthcare, transportation. Merchant Cash Advances: retail, restaurants, service providers. Real Estate: fix-and-flip investors, commercial property buyers, multi-family developers. STARTUP programs: all industries. If you're unsure whether your industry qualifies, schedule a consultation—we'll find the right option."
-    },
-    {
-      question: "Is Mesa Group Capital a direct lender?",
-      answer: "No, Mesa Group Capital is a business funding brokerage. This means we have relationships with 30+ funding partners and lenders, enabling us to match your business with the ideal funding source for your specific needs and profile. As a brokerage, we provide strategic guidance and handle the application process on your behalf, often achieving better terms than you'd get applying directly. There's no cost to you—we're compensated by the lenders."
-    }
-  ];
-
-  return (
-    <section className="py-20 px-6 bg-secondary/20">
+  const faqs = [{
+    question: "Which funding option is right for my business?",
+    answer: "It depends on your credit score, time in business, revenue, and funding needs. Invoice factoring is best for B2B companies with outstanding invoices and accepts the lowest credit scores (530+). Startups with no business history should look at our STARTUP programs (680+ credit required). Established businesses (2+ years, 650+ credit, $20K+/mo revenue) qualify for term loans and credit lines. Real estate investors need 620+ credit but can access up to $100M. Equipment-heavy businesses can get $1K-$20M with 700+ credit. Mesa Group Capital will help you identify the best fit during your consultation."
+  }, {
+    question: "How fast can I get funded?",
+    answer: "Timeline varies by funding type. Business Cash Advances and Merchant Cash Advances can fund same-day to 48 hours. Invoice Factoring typically funds within 24-48 hours. Business Lines of Credit and STARTUP programs: 3-7 business days. SBA loans and Real Estate financing: 2-6 weeks. During your consultation, we'll set clear expectations based on your chosen funding solution."
+  }, {
+    question: "What if my credit score is below 680?",
+    answer: "You still have options! Invoice Factoring accepts credit scores as low as 530+. Business Cash Advances accept 550+ credit. Real Estate Investment loans accept 620+ credit. If your credit is below these thresholds, we can help you work on credit improvement strategies while exploring alternative funding sources. Mesa Group Capital specializes in matching businesses with lenders regardless of credit challenges."
+  }, {
+    question: "Do I need collateral?",
+    answer: "It depends on the funding type. Unsecured options (no collateral): Business Cash Advances, Business Lines of Credit, STARTUP programs, and some term loans. Secured options (collateral required): Equipment Financing uses the equipment as collateral. Real Estate loans use the property as collateral. SBA loans may require collateral for larger amounts. We always prioritize unsecured options first to protect your assets."
+  }, {
+    question: "Can I get funding if my business is brand new (no history)?",
+    answer: "Yes! Our 2 STARTUP programs are designed specifically for businesses with ZERO time in business. The STARTUP Unsecured Business Funding (up to $150K) and STARTUP Small Business Loan (up to $150K) only require personal credit of 680+ and some verifiable personal income. No business tax returns, no years of operation required. Perfect for launching your first venture."
+  }, {
+    question: "How much will the funding cost me?",
+    answer: "Cost varies significantly by funding type, credit profile, and lender. Business term loans and SBA loans typically have APRs of 6-12%. Business Lines of Credit: 8-20% APR. Merchant Cash Advances and Invoice Factoring: factor rates of 1.1-1.5 (not APR). Equipment Financing: 5-15% depending on collateral. STARTUP programs: 10-25% depending on credit. We'll provide transparent cost breakdowns for all options during your consultation so you can make an informed decision."
+  }, {
+    question: "What documents do I need to apply?",
+    answer: "Basic requirements for most programs: Driver's License or ID, 3-6 months of business bank statements, Business tax returns (if applicable), Personal credit authorization. Additional documents may be needed for specific programs (e.g., equipment quotes for equipment financing, invoices for invoice factoring, property details for real estate). Mesa Group Capital will provide a complete checklist during your consultation."
+  }, {
+    question: "Can I apply for multiple funding types at once?",
+    answer: "Yes, and we often recommend it! Many businesses benefit from combining multiple funding sources. For example: 0% Business Credit Line + Equipment Financing + Invoice Factoring for comprehensive capital coverage. Mesa Group Capital coordinates timing and applications to maximize approvals while minimizing credit inquiry impacts. We call this 'Strategic Funding Combinations.'"
+  }, {
+    question: "What industries does Mesa Group Capital work with?",
+    answer: "We work with virtually all industries, but certain funding types favor specific sectors. Invoice Factoring: B2B services, contractors, staffing agencies, wholesalers. Equipment Financing: manufacturing, construction, healthcare, transportation. Merchant Cash Advances: retail, restaurants, service providers. Real Estate: fix-and-flip investors, commercial property buyers, multi-family developers. STARTUP programs: all industries. If you're unsure whether your industry qualifies, schedule a consultation—we'll find the right option."
+  }, {
+    question: "Is Mesa Group Capital a direct lender?",
+    answer: "No, Mesa Group Capital is a business funding brokerage. This means we have relationships with 30+ funding partners and lenders, enabling us to match your business with the ideal funding source for your specific needs and profile. As a brokerage, we provide strategic guidance and handle the application process on your behalf, often achieving better terms than you'd get applying directly. There's no cost to you—we're compensated by the lenders."
+  }];
+  return <section className="py-20 px-6 bg-secondary/20">
       <div className="max-w-4xl mx-auto">
         
         <div className="text-center mb-12">
@@ -830,48 +753,26 @@ const FAQSection = () => {
         </div>
 
         <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border border-border rounded-lg overflow-hidden bg-card">
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 text-left hover:bg-secondary/50 transition-colors flex justify-between items-center"
-              >
+          {faqs.map((faq, index) => <div key={index} className="border border-border rounded-lg overflow-hidden bg-card">
+              <button onClick={() => setOpenIndex(openIndex === index ? null : index)} className="w-full px-6 py-5 text-left hover:bg-secondary/50 transition-colors flex justify-between items-center">
                 <span className="text-lg font-semibold text-foreground pr-4">
                   {faq.question}
                 </span>
-                <svg
-                  className={`w-6 h-6 text-[hsl(var(--mgc-gold))] flex-shrink-0 transition-transform ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
+                <svg className={`w-6 h-6 text-[hsl(var(--mgc-gold))] flex-shrink-0 transition-transform ${openIndex === index ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              {openIndex === index && (
-                <div className="px-6 py-5 bg-secondary/30 border-t border-border">
+              {openIndex === index && <div className="px-6 py-5 bg-secondary/30 border-t border-border">
                   <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
-                </div>
-              )}
-            </div>
-          ))}
+                </div>}
+            </div>)}
         </div>
 
       </div>
-    </section>
-  );
+    </section>;
 };
-
 const FinalCTA = () => {
-  return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+  return <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Main Headline */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
@@ -925,13 +826,10 @@ const FinalCTA = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 const Footer = () => {
-  return (
-    <footer className="bg-[hsl(var(--mgc-dark-gray))] py-12 px-6 text-white">
+  return <footer className="bg-[hsl(var(--mgc-dark-gray))] py-12 px-6 text-white">
       <div className="max-w-7xl mx-auto">
         
         <div className="grid md:grid-cols-4 gap-8 mb-8">
@@ -1001,8 +899,6 @@ const Footer = () => {
         </div>
 
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default BusinessFunding;
