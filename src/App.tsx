@@ -12,6 +12,7 @@ import CreditCards from "./pages/CreditCards";
 import PersonalLoans from "./pages/PersonalLoans";
 import AutoLoanRefi from "./pages/AutoLoanRefi";
 import StudentLoanRefi from "./pages/StudentLoanRefi";
+import StudentLoanRefi2 from "./pages/StudentLoanRefi2";
 import DebtRelief from "./pages/DebtRelief";
 import TrustAndWillPlan from "./pages/TrustAndWillPlan";
 import LifeInsurance from "./pages/LifeInsurance";
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/personal-loans" element={<PersonalLoans />} />
           <Route path="/auto-loan-refi" element={<AutoLoanRefi />} />
           <Route path="/student-loan-refi" element={<StudentLoanRefi />} />
+          <Route path="/student-loan-refi-2" element={<StudentLoanRefi2 />} />
           <Route path="/debt-consolidation-loan" element={<PersonalLoans />} />
           <Route path="/debt-relief" element={<DebtRelief />} />
           <Route path="/trust-and-will-plan" element={<TrustAndWillPlan />} />
