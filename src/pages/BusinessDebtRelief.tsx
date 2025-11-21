@@ -1,4 +1,7 @@
 import Header from "@/components/Header";
+import EmotionalCTA1 from "@/components/business-debt-relief/sections/EmotionalCTA1";
+import EmotionalCTA2 from "@/components/business-debt-relief/sections/EmotionalCTA2";
+import EmotionalCTA3 from "@/components/business-debt-relief/sections/EmotionalCTA3";
 import { 
   CheckCircle, 
   ArrowRight, 
@@ -258,6 +261,9 @@ const BusinessDebtRelief = () => {
         </div>
       </section>
 
+      {/* EMOTIONAL CTA 1 */}
+      <EmotionalCTA1 />
+
       {/* SECTION 4: TYPES OF DEBT WE HANDLE */}
       <section className="bg-[#F9F7F4] py-16 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
@@ -511,6 +517,9 @@ const BusinessDebtRelief = () => {
           
         </div>
       </section>
+
+      {/* EMOTIONAL CTA 2 */}
+      <EmotionalCTA2 />
 
       {/* SECTION 6: FIVE-STEP PROCESS */}
       <section className="bg-gradient-to-br from-[#3E3E3E] via-[#4a4a4a] to-[#3E3E3E] py-16 md:py-24 px-4 sm:px-6 lg:px-8">
@@ -913,6 +922,9 @@ const BusinessDebtRelief = () => {
           
         </div>
       </section>
+
+      {/* EMOTIONAL CTA 3 */}
+      <EmotionalCTA3 />
 
       {/* SECTION 9: FINAL CTA */}
       <section className="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 py-16 md:py-24 px-4 sm:px-6 lg:px-8">
