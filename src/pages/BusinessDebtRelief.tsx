@@ -259,7 +259,7 @@ const BusinessDebtRelief = () => {
       </section>
 
       {/* SECTION 4: TYPES OF DEBT WE HANDLE */}
-      <section className="bg-gray-50 py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F9F7F4] py-16 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           
           <div className="text-center mb-12">
@@ -724,7 +724,7 @@ const BusinessDebtRelief = () => {
           <div className="space-y-4">
             
             {/* FAQ 1 */}
-            <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
+            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
               <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
                 <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 Does my company need debt restructuring?
@@ -738,7 +738,7 @@ const BusinessDebtRelief = () => {
             </div>
             
             {/* FAQ 2 */}
-            <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
+            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
               <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
                 <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 How does the debt relief process work?
@@ -753,7 +753,7 @@ const BusinessDebtRelief = () => {
             </div>
             
             {/* FAQ 3 */}
-            <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
+            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
               <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
                 <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 What types of business debt do you handle?
@@ -767,7 +767,7 @@ const BusinessDebtRelief = () => {
             </div>
             
             {/* FAQ 4 */}
-            <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
+            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
               <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
                 <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 How much will it cost me to restructure my debt?
@@ -781,7 +781,7 @@ const BusinessDebtRelief = () => {
             </div>
             
             {/* FAQ 5 */}
-            <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
+            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
               <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
                 <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 How long will it take to complete the program?
@@ -795,7 +795,7 @@ const BusinessDebtRelief = () => {
             </div>
             
             {/* FAQ 6 */}
-            <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
+            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
               <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
                 <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 What reporting and updates can I expect?
@@ -809,7 +809,7 @@ const BusinessDebtRelief = () => {
             </div>
             
             {/* FAQ 7 */}
-            <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
+            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
               <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
                 <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 How will the program affect my business credit?
@@ -823,7 +823,7 @@ const BusinessDebtRelief = () => {
             </div>
             
             {/* FAQ 8 */}
-            <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
+            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
               <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
                 <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 What's the difference between debt relief and bankruptcy?
@@ -837,7 +837,7 @@ const BusinessDebtRelief = () => {
             </div>
             
             {/* FAQ 9 */}
-            <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
+            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
               <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
                 <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 Can I continue operating my business during the program?
@@ -850,7 +850,7 @@ const BusinessDebtRelief = () => {
             </div>
             
             {/* FAQ 10 */}
-            <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
+            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
               <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
                 <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 What if creditors sue me or get a judgment?
@@ -864,7 +864,7 @@ const BusinessDebtRelief = () => {
             </div>
             
             {/* FAQ 11 */}
-            <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
+            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
               <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
                 <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 Do I qualify for business debt relief?
@@ -878,7 +878,7 @@ const BusinessDebtRelief = () => {
             </div>
             
             {/* FAQ 12 */}
-            <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
+            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
               <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
                 <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                 Are there any upfront costs or fees?
