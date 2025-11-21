@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
 import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, FileText, AlertTriangle, DollarSign, Eye, Lock, Mail, ChevronDown, Phone, MapPin, ExternalLink } from 'lucide-react';
+import EmotionalCTA1 from '@/components/credit-monitoring/sections/EmotionalCTA1';
+import EmotionalCTA2 from '@/components/credit-monitoring/sections/EmotionalCTA2';
+import EmotionalCTA3 from '@/components/credit-monitoring/sections/EmotionalCTA3';
 
 const AFFILIATE_LINK = "https://smartcredit.com/join/?PID=24603&planType=PREMIUM";
 
@@ -10,9 +13,12 @@ const CreditMonitoring = () => {
       <Header />
       <HeroSection />
       <WhyMonitoringMatters />
+      <EmotionalCTA1 />
       <SmartCreditFeatures />
+      <EmotionalCTA2 />
       <WhyChooseSmartCredit />
       <HowItWorks />
+      <EmotionalCTA3 />
       <FAQSection />
       <FinalCTA />
       <Footer />
