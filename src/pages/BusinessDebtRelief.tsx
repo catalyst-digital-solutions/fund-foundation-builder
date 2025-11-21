@@ -108,14 +108,14 @@ const BusinessDebtRelief = () => {
       </section>
 
       {/* SECTION 2: PROBLEM / PAIN POINTS */}
-      <section className="bg-[#3E3E3E] py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F9F7F4] py-16 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Is <span className="text-amber-400">Business Debt</span> Controlling Your Life?
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            Is <span className="text-amber-600">Business Debt</span> Controlling Your Life?
           </h2>
           
-          <p className="text-lg md:text-xl text-gray-300 mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-700 mb-12 leading-relaxed">
             You're not alone. Thousands of business owners face the same creditor pressure, sleepless nights, 
             and constant worry about keeping their company afloat.
           </p>
@@ -123,45 +123,45 @@ const BusinessDebtRelief = () => {
           {/* Pain Points Grid */}
           <div className="grid md:grid-cols-2 gap-6 text-left">
             
-            <div className="bg-[#4a4a4a] rounded-lg p-6 border-l-4 border-red-500">
-              <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+            <div className="bg-white rounded-lg p-6 border-l-4 border-red-500 shadow-md">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
                 <AlertCircle className="w-6 h-6 text-red-500" />
                 Creditor Harassment
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Daily calls from collection agencies, attorneys, and creditors demanding immediate payment. 
                 You're afraid to answer your phone or check your mail.
               </p>
             </div>
             
-            <div className="bg-[#4a4a4a] rounded-lg p-6 border-l-4 border-red-500">
-              <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+            <div className="bg-white rounded-lg p-6 border-l-4 border-red-500 shadow-md">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
                 <AlertCircle className="w-6 h-6 text-red-500" />
                 Lawsuit Threats & Judgments
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Facing lawsuits, wage garnishments, or bank levies? Legal threats keep you up at night 
                 and distract you from running your business.
               </p>
             </div>
             
-            <div className="bg-[#4a4a4a] rounded-lg p-6 border-l-4 border-red-500">
-              <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+            <div className="bg-white rounded-lg p-6 border-l-4 border-red-500 shadow-md">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
                 <AlertCircle className="w-6 h-6 text-red-500" />
                 Cash Flow Crisis
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Juggling multiple minimum payments with different due dates leaves nothing for payroll, 
                 inventory, or growth. Your business is suffocating.
               </p>
             </div>
             
-            <div className="bg-[#4a4a4a] rounded-lg p-6 border-l-4 border-red-500">
-              <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+            <div className="bg-white rounded-lg p-6 border-l-4 border-red-500 shadow-md">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
                 <AlertCircle className="w-6 h-6 text-red-500" />
                 Bankruptcy Looming
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Considering bankruptcy but terrified of losing your business assets, damaging your reputation, 
                 and paying expensive attorney fees just to file.
               </p>
@@ -522,14 +522,14 @@ const BusinessDebtRelief = () => {
       <EmotionalCTA2 />
 
       {/* SECTION 6: FIVE-STEP PROCESS */}
-      <section className="bg-gradient-to-br from-[#3E3E3E] via-[#4a4a4a] to-[#3E3E3E] py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#F9F7F4] py-16 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              Your Path to <span className="text-amber-400">Debt Freedom</span> in 5 Steps
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Your Path to <span className="text-amber-600">Debt Freedom</span> in 5 Steps
             </h2>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
               From your first consultation to complete debt resolution, here's exactly how our proven process works.
             </p>
           </div>
@@ -542,8 +542,8 @@ const BusinessDebtRelief = () => {
                 <span className="text-2xl font-bold text-gray-900">1</span>
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-white mb-3">Free Consultation & Debt Analysis</h3>
-                <p className="text-gray-300 leading-relaxed mb-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Free Consultation & Debt Analysis</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
                   We review your complete financial situation—cash flow, debt types, creditor pressures, and business 
                   goals. Our experts determine if you qualify for the program and provide a customized savings estimate.
                 </p>
@@ -560,8 +560,8 @@ const BusinessDebtRelief = () => {
                 <span className="text-2xl font-bold text-gray-900">2</span>
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-white mb-3">Enrollment & Program Setup</h3>
-                <p className="text-gray-300 leading-relaxed mb-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Enrollment & Program Setup</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
                   Once you decide to proceed, we set up your dedicated account with 24/7 online access. You'll be 
                   assigned a restructuring team and we'll establish your affordable monthly payment based on your budget.
                 </p>
@@ -578,8 +578,8 @@ const BusinessDebtRelief = () => {
                 <span className="text-2xl font-bold text-gray-900">3</span>
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-white mb-3">Creditor Negotiation Begins</h3>
-                <p className="text-gray-300 leading-relaxed mb-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Creditor Negotiation Begins</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
                   Our expert negotiators contact your creditors immediately. We handle all communication—you refer 
                   collection calls to us. We begin negotiations to settle debts for pennies on the dollar while you 
                   focus on your business.
@@ -597,8 +597,8 @@ const BusinessDebtRelief = () => {
                 <span className="text-2xl font-bold text-gray-900">4</span>
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-white mb-3">Settlements & Debt Reduction</h3>
-                <p className="text-gray-300 leading-relaxed mb-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Settlements & Debt Reduction</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
                   As funds accumulate from your monthly payments, we strategically settle debts one by one. You'll 
                   see real-time updates in your online dashboard. Some creditors settle quickly (4-7 months), others 
                   take longer—we negotiate based on your budget and priorities.
@@ -616,8 +616,8 @@ const BusinessDebtRelief = () => {
                 <span className="text-2xl font-bold text-gray-900">5</span>
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-white mb-3">Debt Freedom & Business Recovery</h3>
-                <p className="text-gray-300 leading-relaxed mb-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Debt Freedom & Business Recovery</h3>
+                <p className="text-gray-700 leading-relaxed mb-3">
                   Once all enrolled debts are settled (typically 2-4 years), you graduate the program completely 
                   debt-free. With improved cash flow and no creditor pressure, you can focus on growing your business 
                   and rebuilding credit.
@@ -997,7 +997,7 @@ const BusinessDebtRelief = () => {
       </section>
 
       {/* SECTION 10: FOOTER */}
-      <footer className="bg-[#3E3E3E] py-12 px-4 sm:px-6 lg:px-8">
+      <footer className="bg-[#F9F7F4] py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           
           {/* Footer Content */}
@@ -1005,27 +1005,27 @@ const BusinessDebtRelief = () => {
             
             {/* Company Info */}
             <div>
-              <h3 className="text-xl font-bold text-white mb-4">Mesa Group Capital</h3>
-              <p className="text-gray-400 leading-relaxed mb-4">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Mesa Group Capital</h3>
+              <p className="text-gray-600 leading-relaxed mb-4">
                 Expert business debt relief services helping companies reduce debt, avoid bankruptcy, 
                 and regain financial stability.
               </p>
-              <p className="text-gray-400">
-                <strong className="text-white">Phone:</strong> (661) 310-3040
+              <p className="text-gray-600">
+                <strong className="text-gray-900">Phone:</strong> (661) 310-3040
               </p>
             </div>
             
             {/* Quick Links */}
             <div>
-              <h3 className="text-xl font-bold text-white mb-4">Quick Links</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="https://mesagroupcapital.com/debt-analysis" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-amber-400 transition-colors">
+                  <a href="https://mesagroupcapital.com/debt-analysis" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-amber-600 transition-colors">
                     Free Debt Analysis
                   </a>
                 </li>
                 <li>
-                  <a href="tel:661-310-3040" className="text-gray-400 hover:text-amber-400 transition-colors">
+                  <a href="tel:661-310-3040" className="text-gray-600 hover:text-amber-600 transition-colors">
                     Contact Us
                   </a>
                 </li>
@@ -1034,8 +1034,8 @@ const BusinessDebtRelief = () => {
             
             {/* Compliance */}
             <div>
-              <h3 className="text-xl font-bold text-white mb-4">Important Information</h3>
-              <p className="text-sm text-gray-400 leading-relaxed">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Important Information</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
                 Results vary by individual circumstances. We cannot guarantee specific outcomes. 
                 All sales are final due to immediate access to services.
               </p>
@@ -1044,43 +1044,43 @@ const BusinessDebtRelief = () => {
           </div>
           
           {/* Compliance Disclaimer */}
-          <div className="border-t border-gray-800 pt-8">
-            <div className="bg-[#4a4a4a] rounded-lg p-6 mb-6">
-              <h4 className="text-base font-bold text-white mb-3">Important Disclosures</h4>
-              <div className="space-y-3 text-sm text-gray-400 leading-relaxed">
+          <div className="border-t border-gray-300 pt-8">
+            <div className="bg-white rounded-lg p-6 mb-6 shadow-md">
+              <h4 className="text-base font-bold text-gray-900 mb-3">Important Disclosures</h4>
+              <div className="space-y-3 text-sm text-gray-600 leading-relaxed">
                 <p>
-                  <strong className="text-gray-300">No Guarantees:</strong> Mesa Group Capital cannot guarantee specific debt reduction amounts, 
+                  <strong className="text-gray-900">No Guarantees:</strong> Mesa Group Capital cannot guarantee specific debt reduction amounts, 
                   settlement timelines, or program outcomes. Results vary based on individual circumstances, creditor cooperation, 
                   and client compliance with program requirements.
                 </p>
                 <p>
-                  <strong className="text-gray-300">Credit Impact:</strong> Participating in a debt relief program will negatively impact 
+                  <strong className="text-gray-900">Credit Impact:</strong> Participating in a debt relief program will negatively impact 
                   your business credit score. Accounts enrolled in the program typically go into default, which is reported to credit bureaus.
                 </p>
                 <p>
-                  <strong className="text-gray-300">Tax Consequences:</strong> Settled debt may be considered taxable income by the IRS. 
+                  <strong className="text-gray-900">Tax Consequences:</strong> Settled debt may be considered taxable income by the IRS. 
                   Consult a tax professional regarding potential tax liabilities from debt settlements.
                 </p>
                 <p>
-                  <strong className="text-gray-300">Legal Action:</strong> Creditors may pursue legal action including lawsuits, judgments, 
+                  <strong className="text-gray-900">Legal Action:</strong> Creditors may pursue legal action including lawsuits, judgments, 
                   wage garnishments, or bank levies during the program. Mesa Group Capital does not provide legal representation.
                 </p>
                 <p>
-                  <strong className="text-gray-300">Program Completion:</strong> Not all clients complete our debt relief program. 
+                  <strong className="text-gray-900">Program Completion:</strong> Not all clients complete our debt relief program. 
                   Clients who do not complete may not realize the full benefits and may be subject to collection activities.
                 </p>
                 <p>
-                  <strong className="text-gray-300">Performance Statistics:</strong> Statistics represent averages from completed programs 
+                  <strong className="text-gray-900">Performance Statistics:</strong> Statistics represent averages from completed programs 
                   and may not reflect individual results. Average debt reduction of 30-50% represents settled debts before program fees.
                 </p>
                 <p>
-                  <strong className="text-gray-300">No Refunds:</strong> All sales are final. Due to immediate access to proprietary 
+                  <strong className="text-gray-900">No Refunds:</strong> All sales are final. Due to immediate access to proprietary 
                   services, materials, and negotiations, Mesa Group Capital does not offer refunds once enrollment is complete.
                 </p>
               </div>
             </div>
             
-            <p className="text-center text-sm text-gray-500">
+            <p className="text-center text-sm text-gray-600">
               © {new Date().getFullYear()} Mesa Group Capital. All rights reserved. | 
               Business Debt Relief Services | FTC Compliant
             </p>
