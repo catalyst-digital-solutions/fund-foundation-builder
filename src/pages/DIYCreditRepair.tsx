@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity, X, Home, Scale, Gavel, Check } from 'lucide-react';
+import EmotionalCTA1 from "@/components/diy-credit-repair/sections/EmotionalCTA1";
+import EmotionalCTA2 from "@/components/diy-credit-repair/sections/EmotionalCTA2";
+import EmotionalCTA3 from "@/components/diy-credit-repair/sections/EmotionalCTA3";
 
 const DIYCreditRepair = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -282,6 +285,8 @@ const DIYCreditRepair = () => {
         </div>
       </section>
 
+      <EmotionalCTA1 />
+
       {/* SECTION 3: HOW IT WORKS */}
       <section className="bg-muted py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
@@ -406,6 +411,8 @@ const DIYCreditRepair = () => {
           
         </div>
       </section>
+
+      <EmotionalCTA2 />
 
       {/* SECTION 4: KEY FEATURES */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
@@ -588,6 +595,8 @@ const DIYCreditRepair = () => {
           
         </div>
       </section>
+
+      <EmotionalCTA3 />
 
       {/* SECTION 5: WHAT YOU CAN DISPUTE */}
       <section className="bg-accent py-16 md:py-24 px-6 md:px-8">
