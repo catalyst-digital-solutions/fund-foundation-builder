@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
+import EmotionalCTA1 from '@/components/trust-and-will/sections/EmotionalCTA1';
+import EmotionalCTA2 from '@/components/trust-and-will/sections/EmotionalCTA2';
+import EmotionalCTA3 from '@/components/trust-and-will/sections/EmotionalCTA3';
 import { 
   Check, Scale, Lock, CheckCircle, FileText, Building2, Heart, 
   Handshake, Users, Home, Hospital, Smile, AlertTriangle, 
@@ -203,6 +206,8 @@ const TrustAndWillPlan = () => {
           </div>
         </div>
       </section>
+
+      <EmotionalCTA1 />
 
       {/* SECTION 2: WHY YOU NEED ESTATE PLANNING */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
@@ -626,6 +631,8 @@ const TrustAndWillPlan = () => {
           
         </div>
       </section>
+
+      <EmotionalCTA2 />
 
       {/* SECTION 5: PRICING DETAILS */}
       <section className="bg-[#E5D2AF] py-16 md:py-24 px-6 md:px-8">
@@ -1253,6 +1260,8 @@ const TrustAndWillPlan = () => {
           
         </div>
       </section>
+
+      <EmotionalCTA3 />
 
       {/* SECTION 9: FINAL CTA */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
