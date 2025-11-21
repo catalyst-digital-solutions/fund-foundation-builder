@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import { Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, Search, Lightbulb, MapPin } from "lucide-react";
+import EmotionalCTA1 from "@/components/credit-repair/sections/EmotionalCTA1";
+import EmotionalCTA2 from "@/components/credit-repair/sections/EmotionalCTA2";
+import EmotionalCTA3 from "@/components/credit-repair/sections/EmotionalCTA3";
 
 const CreditRepair = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -292,6 +295,8 @@ const CreditRepair = () => {
         </div>
       </section>
 
+      <EmotionalCTA1 />
+
       {/* SECTION 3: HOW IT WORKS */}
       <section id="how-it-works" className="bg-[#F8FAFC] py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
@@ -401,6 +406,8 @@ const CreditRepair = () => {
         </div>
       </section>
 
+      <EmotionalCTA2 />
+
       {/* SECTION 4: WHAT WE REMOVE */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-6xl mx-auto">
@@ -495,6 +502,8 @@ const CreditRepair = () => {
           </div>
         </div>
       </section>
+
+      <EmotionalCTA3 />
 
       {/* SECTION 5: TESTIMONIALS */}
       <section className="bg-[#F8FAFC] py-16 md:py-24 px-6 md:px-8">
