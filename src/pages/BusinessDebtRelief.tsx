@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import EmotionalCTA1 from "@/components/business-debt-relief/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/business-debt-relief/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/business-debt-relief/sections/EmotionalCTA3";
+import FAQ from "@/components/business-debt-relief/sections/FAQ";
 import { 
   CheckCircle, 
   ArrowRight, 
@@ -20,7 +21,6 @@ import {
   Heart,
   Calendar,
   Clock,
-  HelpCircle,
   Lock
 } from 'lucide-react';
 
@@ -718,210 +718,7 @@ const BusinessDebtRelief = () => {
       </section>
 
       {/* SECTION 8: FAQ SECTION */}
-      <section className="bg-white py-16 md:py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Frequently Asked <span className="text-amber-600">Questions</span>
-            </h2>
-            <p className="text-lg text-gray-700">
-              Get answers to the most common questions about business debt relief
-            </p>
-          </div>
-          
-          <div className="space-y-4">
-            
-            {/* FAQ 1 */}
-            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                Does my company need debt restructuring?
-              </h3>
-              <p className="text-gray-700 leading-relaxed ml-9">
-                Our program is best suited for business owners who: (1) Can't afford existing debt payments but want 
-                to pay them off at a realistic pace, (2) Need to protect assets from aggressive creditors without 
-                filing bankruptcy, (3) Don't want to go deeper into debt by borrowing again at high, unsustainable rates. 
-                If you're struggling with cash flow due to debt payments, you likely qualify.
-              </p>
-            </div>
-            
-            {/* FAQ 2 */}
-            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                How does the debt relief process work?
-              </h3>
-              <p className="text-gray-700 leading-relaxed ml-9">
-                We take your large amount of unaffordable debt and make it affordable. You provide your budget—what 
-                you can realistically afford monthly—and we use that to negotiate settlements with creditors ranging from 
-                pennies on the dollar to payment in full. There are no time limits for settlements. Some creditors settle 
-                quickly after our first offers, others take longer. Most importantly, you refer harassing collection calls 
-                to us so you can focus on your business.
-              </p>
-            </div>
-            
-            {/* FAQ 3 */}
-            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                What types of business debt do you handle?
-              </h3>
-              <p className="text-gray-700 leading-relaxed ml-9">
-                All types of business debts including <strong>cash advances (MCA), credit cards, suppliers/vendors, 
-                business loans, leases, tax debts (IRS/state), and equipment financing</strong>. We routinely settle 
-                lawsuits, judgments, and secured debts as well—even those with personal guarantees. If it's a business 
-                debt causing financial hardship, we can likely help.
-              </p>
-            </div>
-            
-            {/* FAQ 4 */}
-            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                How much will it cost me to restructure my debt?
-              </h3>
-              <p className="text-gray-700 leading-relaxed ml-9">
-                We don't promise specific outcomes, but <strong>clients who completed our program paid back 89% of their 
-                debt over 35 months on average—including the cost of our services</strong>. This means if you owed $100,000, 
-                you'd pay approximately $89,000 total (including our fees) instead of the full $100,000. We charge NO upfront 
-                fees—our fees are performance-based and only charged as debts successfully settle.
-              </p>
-            </div>
-            
-            {/* FAQ 5 */}
-            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                How long will it take to complete the program?
-              </h3>
-              <p className="text-gray-700 leading-relaxed ml-9">
-                Our clients finish the program between <strong>2-4 years</strong> typically—sometimes faster, sometimes 
-                slower. The more you pay monthly, the faster you'll be debt-free. However, we encourage clients to commit 
-                to paying as little as necessary because when cash flow is tight, it's better to pay back less than more. 
-                If your cash flow improves, you can always increase payments and finish faster.
-              </p>
-            </div>
-            
-            {/* FAQ 6 */}
-            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                What reporting and updates can I expect?
-              </h3>
-              <p className="text-gray-700 leading-relaxed ml-9">
-                As our client, you'll have <strong>24/7 access to your secure online dashboard</strong> with over a dozen 
-                reports including: your restructuring team's background, comprehensive creditor reports showing negotiation 
-                status, monthly transaction statements, rate of funding, payment schedules, needed documentation, net savings 
-                vs. net cost analysis, and a "finish line" tracker showing remaining debt and timeline to completion.
-              </p>
-            </div>
-            
-            {/* FAQ 7 */}
-            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                How will the program affect my business credit?
-              </h3>
-              <p className="text-gray-700 leading-relaxed ml-9">
-                The truth is clients may have to temporarily sacrifice their credit score to save their business. Whether 
-                in our program or not, <strong>credit scores will decline if debts aren't paid on time</strong>. Our goal 
-                is to get you out of debt with payments you can actually afford so you can save your business and continue 
-                providing for your family. Once debts are settled and cash flow improves, you can rebuild business credit.
-              </p>
-            </div>
-            
-            {/* FAQ 8 */}
-            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                What's the difference between debt relief and bankruptcy?
-              </h3>
-              <p className="text-gray-700 leading-relaxed ml-9">
-                Bankruptcy forces you to liquidate assets, damages your business reputation for 7-10 years, requires expensive 
-                attorney fees ($3,000-$10,000+), and you lose control of the process. <strong>Debt relief lets you settle debts 
-                for less, protect your assets, keep the process private, and maintain business operations</strong>. You stay in 
-                control and avoid the stigma of bankruptcy.
-              </p>
-            </div>
-            
-            {/* FAQ 9 */}
-            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                Can I continue operating my business during the program?
-              </h3>
-              <p className="text-gray-700 leading-relaxed ml-9">
-                <strong>Yes! That's the whole point.</strong> Unlike bankruptcy which may force liquidation, our debt relief 
-                program is designed to let you continue business operations while we negotiate settlements. You'll have improved 
-                cash flow from reduced debt payments, allowing you to focus on revenue generation rather than debt management.
-              </p>
-            </div>
-            
-            {/* FAQ 10 */}
-            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                What if creditors sue me or get a judgment?
-              </h3>
-              <p className="text-gray-700 leading-relaxed ml-9">
-                We routinely handle lawsuits and judgments as part of our program. <strong>Even if a creditor has already 
-                sued you or obtained a judgment, we can still negotiate settlements</strong>. In many cases, we resolve legal 
-                actions for significantly less than the judgment amount. The key is acting quickly before garnishments or levies 
-                begin—book your free consultation now.
-              </p>
-            </div>
-            
-            {/* FAQ 11 */}
-            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                Do I qualify for business debt relief?
-              </h3>
-              <p className="text-gray-700 leading-relaxed ml-9">
-                You may qualify if: (1) You have at least <strong>$10,000 in business debt</strong>, (2) You're experiencing 
-                financial hardship or struggling with payments, (3) You can commit to a monthly payment toward settlements based 
-                on your budget, and (4) Your debts are with creditors who negotiate settlements. The only way to know for sure is 
-                to book a free consultation—we'll review your situation and provide a customized recommendation.
-              </p>
-            </div>
-            
-            {/* FAQ 12 */}
-            <div className="bg-[#F9F7F4] rounded-lg p-6 hover:bg-[#F0EDE8] transition-colors">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-start gap-3">
-                <HelpCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                Are there any upfront costs or fees?
-              </h3>
-              <p className="text-gray-700 leading-relaxed ml-9">
-                <strong>NO. We charge zero upfront fees.</strong> Our fees are performance-based, meaning you only pay as debts 
-                successfully settle. This aligns our interests with yours—we don't get paid unless we deliver results. During 
-                your free consultation, we'll explain our complete fee structure transparently so you know exactly what to expect.
-              </p>
-            </div>
-            
-          </div>
-          
-          {/* CTA After FAQ */}
-          <div className="mt-12 text-center bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 border-2 border-amber-200">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Still Have Questions?
-            </h3>
-            <p className="text-lg text-gray-700 mb-6">
-              Book a free consultation with our business debt specialists. Get personalized answers and a customized debt relief plan.
-            </p>
-            <a 
-              href="https://mesagroupcapital.com/debt-analysis"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg"
-            >
-              Book Free Consultation
-              <ArrowRight className="w-5 h-5" />
-            </a>
-          </div>
-          
-        </div>
-      </section>
+      <FAQ />
 
       {/* EMOTIONAL CTA 3 */}
       <EmotionalCTA3 />
