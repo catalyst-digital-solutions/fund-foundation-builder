@@ -14,7 +14,7 @@ const EmotionalCTA2 = () => {
           What If Building Business Credit Could Unlock $150,000 Without Touching Your Personal Assets?
         </h2>
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-          Mesa Group Capital doesn't just file paperwork—we build the financial foundation your business deserves. Our proven 4-stage process has helped 720+ Bakersfield business owners separate their personal lives from business risk while accessing serious funding. We see your potential where traditional lenders see only credit scores. This isn't about more debt on your shoulders—it's about building credit in your business's name so you can finally breathe easy.
+          We've helped 720+ business owners build business credit that unlocks real funding—without personal guarantees. Our proven system separates your personal life from business risk. We see your potential where banks see only numbers. This is your path to breathing easy.
         </p>
         <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
           Discover Your Path Forward →
