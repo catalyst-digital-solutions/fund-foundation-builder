@@ -14,7 +14,7 @@ const EmotionalCTA1 = () => {
           Tired of Risking Your Home Every Time Your Business Needs Funding?
         </h2>
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-          Every business expense on your personal credit card. Every loan application that requires your home as collateral. Every sleepless night wondering if one bad quarter could cost you everything your family depends on. You started your business to build something—not to gamble with your personal assets. While competitors with established business credit are scaling effortlessly, you're stuck using personal credit that's maxed out and vulnerable.
+          Every loan on your personal credit. Every night worrying your home's at risk. You built a business to create opportunity—not gamble with everything your family depends on. While competitors scale with business credit, you're stuck risking it all.
         </p>
         <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
           Protect What Matters Most →

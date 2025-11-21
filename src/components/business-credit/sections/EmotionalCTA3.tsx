@@ -14,7 +14,7 @@ const EmotionalCTA3 = () => {
           Picture Your Business Standing Strong on Its Own Credit. Imagine Your Family Protected.
         </h2>
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-          Imagine getting approved for a $50,000 business line of credit—without a personal guarantee. Purchasing that essential equipment on business terms while your personal credit score actually improves. Sleeping soundly knowing your home is never at risk from business decisions. Taking that major contract without hesitation because your business has the credit foundation to support growth. That's not a distant dream—that's what happens when you build real business credit. Your breakthrough is one decision away.
+          Imagine $50,000 approved—no personal guarantee. Equipment purchased on business terms. Sleeping soundly knowing your home's protected. Taking that major contract without hesitation. That's what real business credit creates. Your breakthrough is one decision away.
         </p>
         <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
           Start Building Your Foundation →
