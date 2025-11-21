@@ -82,7 +82,7 @@ const BusinessDebtRelief = () => {
           {/* Dual CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
-              href="https://mesagroupcapital.com/debt-analysis"
+              href="https://mesagroupcapital.com/for-businesses/debt-relief"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg w-full sm:w-auto justify-center"
@@ -245,7 +245,7 @@ const BusinessDebtRelief = () => {
           {/* CTA */}
           <div className="text-center">
             <a 
-              href="https://mesagroupcapital.com/debt-analysis"
+              href="https://mesagroupcapital.com/for-businesses/debt-relief"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg"
@@ -505,7 +505,7 @@ const BusinessDebtRelief = () => {
           {/* CTA */}
           <div className="mt-12 text-center">
             <a 
-              href="https://mesagroupcapital.com/debt-analysis"
+              href="https://mesagroupcapital.com/for-businesses/debt-relief"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg"
@@ -640,7 +640,7 @@ const BusinessDebtRelief = () => {
               Book your free consultation now. No obligation, no upfront fees, completely confidential.
             </p>
             <a 
-              href="https://mesagroupcapital.com/debt-analysis"
+              href="https://mesagroupcapital.com/for-businesses/debt-relief"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#3E3E3E] text-white text-lg font-bold px-8 py-4 rounded-lg hover:bg-[#4a4a4a] transition-all duration-200 shadow-lg"
@@ -757,7 +757,7 @@ const BusinessDebtRelief = () => {
           {/* Primary CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
             <a 
-              href="https://mesagroupcapital.com/debt-analysis"
+              href="https://mesagroupcapital.com/for-businesses/debt-relief"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-xl font-bold px-10 py-5 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-2xl w-full sm:w-auto justify-center"
@@ -817,7 +817,7 @@ const BusinessDebtRelief = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="https://mesagroupcapital.com/debt-analysis" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-amber-600 transition-colors">
+                  <a href="https://mesagroupcapital.com/for-businesses/debt-relief" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-amber-600 transition-colors">
                     Free Debt Analysis
                   </a>
                 </li>

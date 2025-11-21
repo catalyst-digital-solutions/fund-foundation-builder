@@ -16,9 +16,14 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Mesa Group Capital negotiates directly with your creditors—settling debts for pennies on the dollar while protecting your business assets. We've helped thousands reduce crushing debt into one affordable payment. No more creditor harassment. No bankruptcy stigma. Just a proven path forward with experts who see your potential where banks see only risk.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <a 
+          href="https://mesagroupcapital.com/for-businesses/debt-relief"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl inline-block"
+        >
           Discover Your Path to Freedom →
-        </button>
+        </a>
       </div>
     </section>
   );
