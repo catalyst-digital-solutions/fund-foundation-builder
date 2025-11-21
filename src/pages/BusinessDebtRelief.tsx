@@ -105,7 +105,7 @@ const BusinessDebtRelief = () => {
       </section>
 
       {/* SECTION 2: PROBLEM / PAIN POINTS */}
-      <section className="bg-gray-900 py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#3E3E3E] py-16 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
@@ -120,7 +120,7 @@ const BusinessDebtRelief = () => {
           {/* Pain Points Grid */}
           <div className="grid md:grid-cols-2 gap-6 text-left">
             
-            <div className="bg-gray-800 rounded-lg p-6 border-l-4 border-red-500">
+            <div className="bg-[#4a4a4a] rounded-lg p-6 border-l-4 border-red-500">
               <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
                 <AlertCircle className="w-6 h-6 text-red-500" />
                 Creditor Harassment
@@ -131,7 +131,7 @@ const BusinessDebtRelief = () => {
               </p>
             </div>
             
-            <div className="bg-gray-800 rounded-lg p-6 border-l-4 border-red-500">
+            <div className="bg-[#4a4a4a] rounded-lg p-6 border-l-4 border-red-500">
               <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
                 <AlertCircle className="w-6 h-6 text-red-500" />
                 Lawsuit Threats & Judgments
@@ -142,7 +142,7 @@ const BusinessDebtRelief = () => {
               </p>
             </div>
             
-            <div className="bg-gray-800 rounded-lg p-6 border-l-4 border-red-500">
+            <div className="bg-[#4a4a4a] rounded-lg p-6 border-l-4 border-red-500">
               <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
                 <AlertCircle className="w-6 h-6 text-red-500" />
                 Cash Flow Crisis
@@ -153,7 +153,7 @@ const BusinessDebtRelief = () => {
               </p>
             </div>
             
-            <div className="bg-gray-800 rounded-lg p-6 border-l-4 border-red-500">
+            <div className="bg-[#4a4a4a] rounded-lg p-6 border-l-4 border-red-500">
               <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
                 <AlertCircle className="w-6 h-6 text-red-500" />
                 Bankruptcy Looming
@@ -513,7 +513,7 @@ const BusinessDebtRelief = () => {
       </section>
 
       {/* SECTION 6: FIVE-STEP PROCESS */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-br from-[#3E3E3E] via-[#4a4a4a] to-[#3E3E3E] py-16 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           
           <div className="text-center mb-12">
@@ -634,7 +634,7 @@ const BusinessDebtRelief = () => {
               href="https://mesagroupcapital.com/debt-analysis"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gray-900 text-white text-lg font-bold px-8 py-4 rounded-lg hover:bg-gray-800 transition-all duration-200 shadow-lg"
+              className="inline-flex items-center gap-2 bg-[#3E3E3E] text-white text-lg font-bold px-8 py-4 rounded-lg hover:bg-[#4a4a4a] transition-all duration-200 shadow-lg"
             >
               Book Free Consultation Now
               <ArrowRight className="w-5 h-5" />
@@ -915,7 +915,7 @@ const BusinessDebtRelief = () => {
       </section>
 
       {/* SECTION 9: FINAL CTA */}
-      <section className="bg-gradient-to-br from-gray-900 via-amber-900 to-gray-900 py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 py-16 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
@@ -985,7 +985,7 @@ const BusinessDebtRelief = () => {
       </section>
 
       {/* SECTION 10: FOOTER */}
-      <footer className="bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+      <footer className="bg-[#3E3E3E] py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           
           {/* Footer Content */}
@@ -1033,7 +1033,7 @@ const BusinessDebtRelief = () => {
           
           {/* Compliance Disclaimer */}
           <div className="border-t border-gray-800 pt-8">
-            <div className="bg-gray-800 rounded-lg p-6 mb-6">
+            <div className="bg-[#4a4a4a] rounded-lg p-6 mb-6">
               <h4 className="text-base font-bold text-white mb-3">Important Disclosures</h4>
               <div className="space-y-3 text-sm text-gray-400 leading-relaxed">
                 <p>
