@@ -927,7 +927,7 @@ const BusinessDebtRelief = () => {
       <EmotionalCTA3 />
 
       {/* SECTION 9: FINAL CTA */}
-      <section className="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#131B29] py-16 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
