@@ -16,9 +16,14 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Every day brings more collection calls, more threats, more sleepless nights wondering if today's the day you lose it all. Your business is gasping for air while debt payments consume every dollar of profit. You've poured your heart into building something—but debt is stealing your dream while competitors thrive and you're trapped watching it all slip away.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <a 
+          href="https://mesagroupcapital.com/for-businesses/debt-relief"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl inline-block"
+        >
           Stop the Debt Spiral →
-        </button>
+        </a>
       </div>
     </section>
   );

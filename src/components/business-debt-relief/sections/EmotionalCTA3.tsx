@@ -16,9 +16,14 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine checking your account and seeing profit instead of red. Taking that growth opportunity without hesitation. Sleeping through the night knowing creditors are settled and your business is protected. Telling your family the storm is over—you not only survived, you're positioned to thrive. That financial freedom you deserve is one decision away.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <a 
+          href="https://mesagroupcapital.com/for-businesses/debt-relief"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl inline-block"
+        >
           Start Your Debt-Free Journey →
-        </button>
+        </a>
       </div>
     </section>
   );
