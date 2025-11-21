@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
 import { Target, Check, Lock, Lightbulb, TrendingUp, Star, CircleDollarSign, BarChart3, CreditCard, Gem, Plane, X, Gift, Globe, Trophy, ThumbsUp, Wrench } from 'lucide-react';
+import EmotionalCTA1 from '@/components/credit-cards/sections/EmotionalCTA1';
+import EmotionalCTA2 from '@/components/credit-cards/sections/EmotionalCTA2';
+import EmotionalCTA3 from '@/components/credit-cards/sections/EmotionalCTA3';
 
 const CreditCards = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -198,6 +201,8 @@ const CreditCards = () => {
           
         </div>
       </section>
+
+      <EmotionalCTA1 />
 
       {/* SECTION 3: CARD CATEGORIES */}
       <section className="bg-[hsl(var(--mgc-tan))] py-16 md:py-24 px-6 md:px-8">
@@ -419,6 +424,8 @@ const CreditCards = () => {
         </div>
       </section>
 
+      <EmotionalCTA2 />
+
       {/* SECTION 4: WHY USE A COMPARISON TOOL */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-6xl mx-auto">
@@ -620,6 +627,8 @@ const CreditCards = () => {
           
         </div>
       </section>
+
+      <EmotionalCTA3 />
 
       {/* SECTION 6: FAQ ACCORDION */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
