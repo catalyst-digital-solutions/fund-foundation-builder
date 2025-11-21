@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
+import EmotionalCTA1 from '@/components/zero-interest-business-funding/sections/EmotionalCTA1';
+import EmotionalCTA2 from '@/components/zero-interest-business-funding/sections/EmotionalCTA2';
+import EmotionalCTA3 from '@/components/zero-interest-business-funding/sections/EmotionalCTA3';
 import { 
   Trophy, CreditCard, Rocket, Building2, FileText, TrendingUp, 
   Coins, BarChart3, Hammer, Target, Building, Banknote, 
@@ -11,10 +14,13 @@ const ZeroInterestBusinessFunding = () => {
     <div className="min-h-screen bg-background font-['Inter',sans-serif]">
       <Header />
       <HeroSection />
+      <EmotionalCTA1 />
       <SuccessStoryTeaser />
       <NineFundingSolutions />
+      <EmotionalCTA2 />
       <ZeroPercentAdvantage />
       <MesaGroupProcess />
+      <EmotionalCTA3 />
       <QualificationFactors />
       <BakersfieldTestimonials />
       <FAQSection />
