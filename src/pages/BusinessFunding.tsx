@@ -1,18 +1,21 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
+import EmotionalCTA1 from '@/components/business-funding/sections/EmotionalCTA1';
+import EmotionalCTA2 from '@/components/business-funding/sections/EmotionalCTA2';
+import EmotionalCTA3 from '@/components/business-funding/sections/EmotionalCTA3';
 import { DollarSign, Building2, CreditCard, FileText, Factory, Building, Rocket, Briefcase, Phone, Check, Lightbulb, Target, Zap, Shield, TrendingUp, Handshake, ClipboardList, MapPin, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 const BusinessFunding = () => {
   return <div className="min-h-screen bg-background">
       <Header />
       <HeroSection />
-      <ImageSection1 />
+      <EmotionalCTA1 />
       <AllFundingSolutionsGrid />
       <ComparisonTable />
-      <ImageSection2 />
+      <EmotionalCTA2 />
       <WhyChooseMesaGroupCapital />
       <FAQSection />
-      <ImageSection3 />
+      <EmotionalCTA3 />
       <FinalCTA />
       <Footer />
     </div>;
@@ -68,63 +71,6 @@ const HeroSection = () => {
         <span className="flex items-center gap-1"><Check className="w-4 h-4" /> Multiple lender network</span>
       </p>
 
-      </div>
-    </section>;
-};
-{/* Image Section 1 - Problem State */}
-const ImageSection1 = () => {
-  return <section className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" style={{
-    backgroundImage: "url('IMAGE: Frustrated business owner at desk surrounded by rejected loan applications and bills, worried expression, dim office lighting, close-up shot showing stress and concern')"
-  }}>
-      <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
-          Tired of Watching Opportunities Pass By While Banks Say "No"?
-        </h2>
-        <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-          You've poured your heart into your business, but traditional banks don't see your potential—they only see credit scores and paperwork. That lucrative contract? That expansion opportunity? They're slipping away because you can't access the capital you need. We understand the frustration of being stuck while your competitors move forward.
-        </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
-          There's a Better Way →
-        </button>
-      </div>
-    </section>;
-};
-{/* Image Section 2 - Transformation */}
-const ImageSection2 = () => {
-  return <section className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" style={{
-    backgroundImage: "url('IMAGE: Professional business consultant shaking hands with relieved small business owner across modern desk, bright office with natural light, both smiling, showing trust and partnership')"
-  }}>
-      <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
-          What If One Call Could Unlock The Funding You've Been Denied?
-        </h2>
-        <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-          Mesa Group Capital isn't another lender—we're your advocate. With access to 8 different funding solutions and relationships with lenders nationwide, we match your unique business situation with the right funding source. No cookie-cutter rejections. Just strategic guidance from experts who've helped thousands of businesses secure the capital they deserve.
-        </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
-          Discover Your Options →
-        </button>
-      </div>
-    </section>;
-};
-{/* Image Section 3 - Aspiration */}
-const ImageSection3 = () => {
-  return <section className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" style={{
-    backgroundImage: "url('IMAGE: Successful business owner standing confidently in thriving business with employees working in background, modern bright space, golden hour lighting, expression of pride and accomplishment')"
-  }}>
-      <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/20"></div>
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
-          Picture Your Business Thriving. See Yourself Seizing Every Opportunity.
-        </h2>
-        <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-          Imagine accepting that major contract without hesitation. Expanding to that second location you've been dreaming about. Investing in the equipment that will multiply your efficiency. Paying yourself a salary you actually deserve. That's not a fantasy—it's what happens when you have the right funding partner. Your breakthrough is one decision away.
-        </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
-          Start Your Growth Journey →
-        </button>
       </div>
     </section>;
 };
