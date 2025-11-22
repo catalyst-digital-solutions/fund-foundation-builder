@@ -1,6 +1,20 @@
 import { useState } from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { 
+  AlertCircle, 
+  CreditCard, 
+  TrendingDown, 
+  Users, 
+  DollarSign, 
+  Shield, 
+  Calendar, 
+  Clock, 
+  CreditCard as CardIcon,
+  Heart,
+  Scale,
+  CheckCircle
+} from 'lucide-react';
 
 const DebtRelief = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -53,40 +67,40 @@ const DebtRelief = () => {
       <Header />
       
       {/* SECTION 1: HERO */}
-      <section className="bg-gradient-to-br from-[#3E3E3E] via-[#bb9446] to-[#f9c65d] py-24 px-6">
+      <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-24 px-6">
         <div className="max-w-5xl mx-auto text-center">
           
-          <div className="inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full text-sm font-bold mb-8">
+          <div className="inline-block bg-amber-400/20 backdrop-blur-sm text-amber-400 px-6 py-3 rounded-full text-sm font-bold mb-8 border border-amber-400/30">
             Mesa Group Consulting | Debt Relief Specialists Since 2015
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Stop Drowning in Debt.<br />Start Living Your Life Again.
+            Stop Drowning in Debt.<br />Start <span className="text-amber-400">Living Your Life</span> Again.
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
             Buried under credit card debt? Collections calling? Can't afford more than minimum payments? <strong>Mesa Group Consulting's Debt Relief program</strong> reduces your debt by 30-50% and replaces multiple payments with one affordable monthly payment.
           </p>
 
-          <div className="bg-white rounded-xl p-8 mb-10 shadow-2xl max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold text-[#3E3E3E] mb-6">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-10 shadow-2xl max-w-3xl mx-auto border border-white/20">
+            <h3 className="text-2xl font-bold text-white mb-6">
               How Debt Relief Works:
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
               <div>
-                <div className="text-4xl font-bold text-[#bb9446] mb-2">30-50%</div>
-                <div className="text-sm text-gray-600">Average Debt Reduction</div>
+                <div className="text-4xl font-bold text-amber-400 mb-2">30-50%</div>
+                <div className="text-sm text-gray-300">Average Debt Reduction</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#bb9446] mb-2">1</div>
-                <div className="text-sm text-gray-600">Affordable Monthly Payment</div>
+                <div className="text-4xl font-bold text-amber-400 mb-2">1</div>
+                <div className="text-sm text-gray-300">Affordable Monthly Payment</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#bb9446] mb-2">20-48</div>
-                <div className="text-sm text-gray-600">Months to Debt-Free</div>
+                <div className="text-4xl font-bold text-amber-400 mb-2">20-48</div>
+                <div className="text-sm text-gray-300">Months to Debt-Free</div>
               </div>
             </div>
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-gray-200 mb-6 leading-relaxed">
               We negotiate with your creditors, collection agencies, and attorneys to settle your debts for <strong>significantly less than you owe</strong>—while you focus on rebuilding your financial future, not drowning in debt.
             </p>
             
@@ -94,21 +108,23 @@ const DebtRelief = () => {
               href="https://mesagroupcapital.com/debt-analysis"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#bb9446] text-white text-xl font-bold px-12 py-5 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 shadow-xl hover:shadow-2xl"
+              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl"
             >
               Book Your Free Debt Analysis
             </a>
-            <p className="text-sm text-gray-600 mt-4">
-              ✓ No upfront fees &nbsp; | &nbsp; ✓ Minimum $10,000 debt required &nbsp; | &nbsp; ✓ Results in 4-7 months
+            <p className="text-sm text-gray-300 mt-4 flex items-center justify-center gap-4 flex-wrap">
+              <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4" /> No upfront fees</span>
+              <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4" /> Minimum $10,000 debt required</span>
+              <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4" /> Results in 4-7 months</span>
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:6613103040"
-              className="inline-block bg-white text-[#bb9446] text-xl font-semibold px-10 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-lg"
+              className="inline-block bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 text-xl font-semibold px-10 py-4 rounded-lg hover:bg-white/20 transition-all duration-200 shadow-lg"
             >
-              📞 Call (661) 310-3040
+              Call (661) 310-3040
             </a>
           </div>
 
@@ -120,8 +136,8 @@ const DebtRelief = () => {
         <div className="max-w-7xl mx-auto">
           
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-              Are You Trapped in the Debt Cycle?
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Are You Trapped in the <span className="text-amber-600">Debt Cycle</span>?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               You're not alone. These are the signs that debt relief might be your best option.
@@ -130,9 +146,11 @@ const DebtRelief = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             
-            <div className="bg-gray-50 rounded-xl p-6 border-l-4 border-[#bb9446]">
-              <div className="text-4xl mb-4">😰</div>
-              <h3 className="text-xl font-bold text-[#3E3E3E] mb-3">
+            <div className="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-amber-400 hover:shadow-lg transition-all">
+              <div className="mb-4 w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
+                <AlertCircle className="w-6 h-6 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Creditor Harassment
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -140,9 +158,11 @@ const DebtRelief = () => {
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6 border-l-4 border-[#bb9446]">
-              <div className="text-4xl mb-4">💸</div>
-              <h3 className="text-xl font-bold text-[#3E3E3E] mb-3">
+            <div className="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-amber-400 hover:shadow-lg transition-all">
+              <div className="mb-4 w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
+                <TrendingDown className="w-6 h-6 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Minimum Payment Trap
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -150,9 +170,11 @@ const DebtRelief = () => {
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6 border-l-4 border-[#bb9446]">
-              <div className="text-4xl mb-4">😓</div>
-              <h3 className="text-xl font-bold text-[#3E3E3E] mb-3">
+            <div className="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-amber-400 hover:shadow-lg transition-all">
+              <div className="mb-4 w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
+                <DollarSign className="w-6 h-6 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Can't Afford Payments
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -160,9 +182,11 @@ const DebtRelief = () => {
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6 border-l-4 border-[#bb9446]">
-              <div className="text-4xl mb-4">😢</div>
-              <h3 className="text-xl font-bold text-[#3E3E3E] mb-3">
+            <div className="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-amber-400 hover:shadow-lg transition-all">
+              <div className="mb-4 w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
+                <Users className="w-6 h-6 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Family Stress
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -172,8 +196,8 @@ const DebtRelief = () => {
 
           </div>
 
-          <div className="mt-12 bg-[#f8d899] rounded-xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
+          <div className="mt-12 bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-8 text-center border-2 border-amber-200">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
               There's a Better Way Than Bankruptcy
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-6 max-w-3xl mx-auto">
@@ -183,7 +207,7 @@ const DebtRelief = () => {
               href="https://mesagroupcapital.com/debt-analysis"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#bb9446] text-white text-xl font-bold px-10 py-4 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 shadow-lg"
+              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-10 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Get Your Free Debt Analysis
             </a>
@@ -197,8 +221,8 @@ const DebtRelief = () => {
         <div className="max-w-6xl mx-auto">
           
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-              How Debt Relief Transforms Your Life
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              How Debt Relief <span className="text-amber-600">Transforms Your Life</span>
             </h2>
             <p className="text-xl text-gray-600">
               Stop managing the debt crisis. Start living your life again.
@@ -207,13 +231,13 @@ const DebtRelief = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-2 border-gray-100 hover:border-amber-400">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-full flex items-center justify-center text-3xl">
-                  💰
+                <div className="flex-shrink-0 w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center">
+                  <DollarSign className="w-8 h-8 text-gray-900" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     Reduce Your Debt by 30-50%
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -223,13 +247,13 @@ const DebtRelief = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-2 border-gray-100 hover:border-amber-400">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-full flex items-center justify-center text-3xl">
-                  🛡️
+                <div className="flex-shrink-0 w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center">
+                  <Shield className="w-8 h-8 text-gray-900" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     Stop Creditor Harassment
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -239,13 +263,13 @@ const DebtRelief = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-2 border-gray-100 hover:border-amber-400">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-full flex items-center justify-center text-3xl">
-                  📅
+                <div className="flex-shrink-0 w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center">
+                  <Calendar className="w-8 h-8 text-gray-900" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     One Affordable Monthly Payment
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -255,13 +279,13 @@ const DebtRelief = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-2 border-gray-100 hover:border-amber-400">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-full flex items-center justify-center text-3xl">
-                  ⏰
+                <div className="flex-shrink-0 w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center">
+                  <Clock className="w-8 h-8 text-gray-900" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     Be Debt-Free in 20-48 Months
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -281,8 +305,8 @@ const DebtRelief = () => {
         <div className="max-w-7xl mx-auto">
           
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-              Types of Debt We Can Settle
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Types of Debt We Can <span className="text-amber-600">Settle</span>
             </h2>
             <p className="text-xl text-gray-600">
               Our program handles unsecured debts—those not backed by collateral like a house or car.
@@ -291,85 +315,100 @@ const DebtRelief = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             
-            <div className="bg-gradient-to-br from-[#f8d899] to-white rounded-xl p-6 shadow-md">
-              <h3 className="text-xl font-bold text-[#3E3E3E] mb-4">
-                💳 Credit Cards & Loans
-              </h3>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100 hover:border-amber-400 transition-all">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-10 h-10 bg-amber-400 rounded-full flex items-center justify-center">
+                  <CardIcon className="w-5 h-5 text-gray-900" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">
+                  Credit Cards & Loans
+                </h3>
+              </div>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Credit card debt</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Personal loans</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Lines of credit</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Payday loans</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Private student loans</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-[#f8d899] to-white rounded-xl p-6 shadow-md">
-              <h3 className="text-xl font-bold text-[#3E3E3E] mb-4">
-                🏥 Medical & Other Debts
-              </h3>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100 hover:border-amber-400 transition-all">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-10 h-10 bg-amber-400 rounded-full flex items-center justify-center">
+                  <Heart className="w-5 h-5 text-gray-900" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">
+                  Medical & Other Debts
+                </h3>
+              </div>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Medical bills</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Hospital debt</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Dental & veterinary bills</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Cellular/utility debts</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Retail store cards</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-[#f8d899] to-white rounded-xl p-6 shadow-md">
-              <h3 className="text-xl font-bold text-[#3E3E3E] mb-4">
-                ⚖️ Collections & Legal Debts
-              </h3>
+            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100 hover:border-amber-400 transition-all">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-10 h-10 bg-amber-400 rounded-full flex items-center justify-center">
+                  <Scale className="w-5 h-5 text-gray-900" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">
+                  Collections & Legal Debts
+                </h3>
+              </div>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Collection agency accounts</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Charged-off accounts</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Judgments</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Repossession deficiencies</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#bb9446] font-bold">•</span>
+                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Attorney-represented debts</span>
                 </li>
               </ul>
@@ -391,8 +430,8 @@ const DebtRelief = () => {
         <div className="max-w-5xl mx-auto">
           
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-              5 Steps to Debt Freedom
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              5 Steps to <span className="text-amber-600">Debt Freedom</span>
             </h2>
             <p className="text-xl text-gray-600">
               Our proven process has helped thousands of families escape the debt trap.
@@ -402,11 +441,11 @@ const DebtRelief = () => {
           <div className="space-y-8">
             
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-20 h-20 bg-[#bb9446] text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
+              <div className="flex-shrink-0 w-20 h-20 bg-amber-400 text-gray-900 rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
                 1
               </div>
-              <div className="flex-1 bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
+              <div className="flex-1 bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   Free Debt Consultation
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -418,11 +457,11 @@ const DebtRelief = () => {
             </div>
 
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-20 h-20 bg-[#bb9446] text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
+              <div className="flex-shrink-0 w-20 h-20 bg-amber-400 text-gray-900 rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
                 2
               </div>
-              <div className="flex-1 bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
+              <div className="flex-1 bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   Establish Dedicated Savings Account
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -435,11 +474,11 @@ const DebtRelief = () => {
             </div>
 
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-20 h-20 bg-[#bb9446] text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
+              <div className="flex-shrink-0 w-20 h-20 bg-amber-400 text-gray-900 rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
                 3
               </div>
-              <div className="flex-1 bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
+              <div className="flex-1 bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   Professional Debt Negotiation
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -452,11 +491,11 @@ const DebtRelief = () => {
             </div>
 
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-20 h-20 bg-[#bb9446] text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
+              <div className="flex-shrink-0 w-20 h-20 bg-amber-400 text-gray-900 rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
                 4
               </div>
-              <div className="flex-1 bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
+              <div className="flex-1 bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   Debt Settlements & Payments
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -470,11 +509,11 @@ const DebtRelief = () => {
             </div>
 
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-20 h-20 bg-[#bb9446] text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
+              <div className="flex-shrink-0 w-20 h-20 bg-amber-400 text-gray-900 rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
                 5
               </div>
-              <div className="flex-1 bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
+              <div className="flex-1 bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   Achieve Debt Freedom
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -493,7 +532,7 @@ const DebtRelief = () => {
               href="https://mesagroupcapital.com/debt-analysis"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#bb9446] text-white text-xl font-bold px-12 py-5 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 shadow-xl hover:shadow-2xl"
+              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl"
             >
               Start Your Debt-Free Journey Today
             </a>
@@ -508,8 +547,8 @@ const DebtRelief = () => {
         <div className="max-w-4xl mx-auto">
           
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-              Debt Relief Questions Answered
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Debt Relief <span className="text-amber-600">Questions Answered</span>
             </h2>
             <p className="text-xl text-gray-600">
               Get clarity before booking your free consultation.
@@ -523,11 +562,11 @@ const DebtRelief = () => {
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   className="w-full px-6 py-5 text-left hover:bg-gray-50 transition-colors flex justify-between items-center"
                 >
-                  <span className="text-lg font-semibold text-[#3E3E3E] pr-4">
+                  <span className="text-lg font-semibold text-gray-900 pr-4">
                     {faq.question}
                   </span>
                   <svg
-                    className={`w-6 h-6 text-[#bb9446] flex-shrink-0 transition-transform ${
+                    className={`w-6 h-6 text-amber-600 flex-shrink-0 transition-transform ${
                       openIndex === index ? 'rotate-180' : ''
                     }`}
                     fill="none"
@@ -555,37 +594,37 @@ const DebtRelief = () => {
       </section>
 
       {/* SECTION 7: FINAL CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#bb9446] via-[#f9c65d] to-[#E5D2AF]">
+      <section className="py-20 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <div className="max-w-5xl mx-auto text-center">
           
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Stop Drowning in Debt.<br />Start Living Your Life Again.
+            Stop Drowning in Debt.<br />Start <span className="text-amber-400">Living Your Life</span> Again.
           </h2>
           
           <p className="text-xl md:text-2xl text-white mb-8 leading-relaxed">
             You didn't create this debt overnight, and you can't solve it overnight—but you <strong>can</strong> take the first step today. Let Mesa Group Consulting's <strong>Debt Relief specialists</strong> handle your creditors while you focus on what matters most—<strong>your family, your peace of mind, and your future</strong>.
           </p>
 
-          <div className="bg-white rounded-xl p-10 mb-8 shadow-2xl">
-            <h3 className="text-3xl font-bold text-[#3E3E3E] mb-6">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-10 mb-8 shadow-2xl border border-white/20">
+            <h3 className="text-3xl font-bold text-white mb-6">
               Book Your Free Debt Analysis Now
             </h3>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-200 mb-6 leading-relaxed">
               In just 30 minutes, we'll analyze your debt situation and show you exactly how much you can save through our proven debt relief program.
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="text-center">
-                <div className="text-4xl font-bold text-[#bb9446] mb-2">$0</div>
-                <div className="text-sm text-gray-600">Upfront Fees</div>
+                <div className="text-4xl font-bold text-amber-400 mb-2">$0</div>
+                <div className="text-sm text-gray-300">Upfront Fees</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-[#bb9446] mb-2">30-50%</div>
-                <div className="text-sm text-gray-600">Average Savings</div>
+                <div className="text-4xl font-bold text-amber-400 mb-2">30-50%</div>
+                <div className="text-sm text-gray-300">Average Savings</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-[#bb9446] mb-2">4-7</div>
-                <div className="text-sm text-gray-600">Months to 1st Settlement</div>
+                <div className="text-4xl font-bold text-amber-400 mb-2">4-7</div>
+                <div className="text-sm text-gray-300">Months to 1st Settlement</div>
               </div>
             </div>
 
@@ -593,33 +632,27 @@ const DebtRelief = () => {
               href="https://mesagroupcapital.com/debt-analysis"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#bb9446] text-white text-2xl font-bold px-16 py-6 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 shadow-xl hover:shadow-2xl mb-4"
+              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-2xl font-bold px-16 py-6 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl mb-4"
             >
               Schedule Free Consultation →
             </a>
             
-            <p className="text-sm text-gray-600">
-              Or call us directly: <a href="tel:6613103040" className="font-bold text-[#bb9446] hover:underline">(661) 310-3040</a>
+            <p className="text-sm text-gray-300">
+              Or call us directly: <a href="tel:6613103040" className="font-bold text-amber-400 hover:underline">(661) 310-3040</a>
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-4 text-white text-sm">
             <div className="flex items-center justify-center gap-2">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
+              <CheckCircle className="w-5 h-5 text-amber-400" />
               <span>No Obligation</span>
             </div>
             <div className="flex items-center justify-center gap-2">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
+              <CheckCircle className="w-5 h-5 text-amber-400" />
               <span>Certified Specialists</span>
             </div>
             <div className="flex items-center justify-center gap-2">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
+              <CheckCircle className="w-5 h-5 text-amber-400" />
               <span>Proven Results</span>
             </div>
           </div>
