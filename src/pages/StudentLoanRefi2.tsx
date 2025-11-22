@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import EmotionalCTA1 from '@/components/student-loan-refi2/sections/EmotionalCTA1';
+import EmotionalCTA2 from '@/components/student-loan-refi2/sections/EmotionalCTA2';
+import EmotionalCTA3 from '@/components/student-loan-refi2/sections/EmotionalCTA3';
 import { 
   TrendingDown, 
   Layers, 
@@ -244,6 +247,9 @@ const StudentLoanRefi2 = () => {
         </div>
       </section>
 
+      {/* EMOTIONAL CTA 1 */}
+      <EmotionalCTA1 />
+
       {/* HOW IT WORKS */}
       <section id="how-it-works" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
@@ -451,6 +457,9 @@ const StudentLoanRefi2 = () => {
           </div>
         </div>
       </section>
+
+      {/* EMOTIONAL CTA 2 */}
+      <EmotionalCTA2 />
 
       {/* SAVINGS CALCULATOR */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 via-amber-50 to-orange-50">
@@ -718,6 +727,9 @@ const StudentLoanRefi2 = () => {
           </div>
         </div>
       </section>
+
+      {/* EMOTIONAL CTA 3 */}
+      <EmotionalCTA3 />
 
       {/* FAQ */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
