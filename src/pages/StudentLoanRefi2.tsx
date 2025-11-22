@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { 
   TrendingDown, 
   Layers, 
@@ -925,64 +926,7 @@ const StudentLoanRefi2 = () => {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-white font-bold text-lg mb-4">About Mesa Group Consulting</h3>
-              <p className="text-sm mb-4">
-                Your trusted partner for student loan refinancing solutions. We help you compare top lenders to find the best rates and terms.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-white font-bold text-lg mb-4">Important Links</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="https://studentaid.gov/understand-aid/types/loans/federal-vs-private" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">
-                    Federal vs Private Loans
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.consumerfinance.gov/ask-cfpb/what-is-student-loan-refinancing-en-2101/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">
-                    CFPB: What is Refinancing?
-                  </a>
-                </li>
-                <li>
-                  <a href="https://studentaid.gov/manage-loans/forgiveness-cancellation/public-service" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400 transition-colors">
-                    Public Service Loan Forgiveness
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-white font-bold text-lg mb-4">Contact</h3>
-              <p className="text-sm">
-                Questions about refinancing?<br />
-                Contact us for guidance.
-              </p>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-700 pt-8">
-            <div className="text-sm space-y-4">
-              <p>
-                <strong className="text-white">Disclaimer:</strong> Mesa Group Consulting is not a lender. We help you compare refinancing offers from our partner lenders through SuperMoney. Refinancing federal student loans eliminates federal protections including income-driven repayment, Public Service Loan Forgiveness (PSLF), and forbearance options. Carefully consider your options before refinancing federal loans.
-              </p>
-              <p>
-                <strong className="text-white">Savings Disclosure:</strong> Average savings of $20,000 is based on typical refinancing scenarios where borrowers reduce their interest rate by 2-3%. Actual savings vary based on original loan balance, current rate, new rate, and loan term. Not all applicants will qualify for the lowest advertised rates. Your actual rate depends on credit score, income, debt-to-income ratio, and other factors determined by lenders.
-              </p>
-              <p>
-                <strong className="text-white">Affiliate Disclosure:</strong> Mesa Group Consulting may earn a commission when you refinance through our partner links. This does not affect the rates or terms you receive from lenders. We only partner with reputable lenders that meet our quality standards.
-              </p>
-              <p className="text-center text-gray-400">
-                © 2025 Mesa Group Consulting. All rights reserved.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
