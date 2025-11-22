@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import EmotionalCTA1 from '@/components/zero-interest-business-funding/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/zero-interest-business-funding/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/zero-interest-business-funding/sections/EmotionalCTA3';
@@ -827,81 +828,6 @@ const FinalCTA = () => (
       </div>
     </div>
   </section>
-);
-
-// Footer
-const Footer = () => (
-  <footer className="bg-[#3E3E3E] py-12 px-6 text-white">
-    <div className="max-w-7xl mx-auto">
-      
-      <div className="grid md:grid-cols-4 gap-8 mb-8">
-        
-        {/* Company Info */}
-        <div>
-          <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Mesa Group Consulting</h3>
-          <p className="text-sm text-gray-300 mb-2">
-            Bakersfield's trusted business funding specialists since 2015.
-          </p>
-          <p className="text-sm text-gray-300 flex items-start gap-2">
-            <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-            <span>Bakersfield, CA 93301</span>
-          </p>
-          <p className="text-sm text-gray-300 mt-2 flex items-center gap-2">
-            <Phone className="w-4 h-4" /> (661) 310-3040
-          </p>
-        </div>
-
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Services</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
-            <li><a href="#funding" className="hover:text-[#f9c65d] transition-colors">0% Business Funding</a></li>
-            <li><a href="#credit" className="hover:text-[#f9c65d] transition-colors">Credit Repair</a></li>
-            <li><a href="#monitoring" className="hover:text-[#f9c65d] transition-colors">Credit Monitoring</a></li>
-            <li><a href="#business-credit" className="hover:text-[#f9c65d] transition-colors">Business Credit Building</a></li>
-          </ul>
-        </div>
-
-        {/* Resources */}
-        <div>
-          <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Resources</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
-            <li><a href="#blog" className="hover:text-[#f9c65d] transition-colors">Mesa News Blog</a></li>
-            <li><a href="#calculators" className="hover:text-[#f9c65d] transition-colors">Financial Calculators</a></li>
-            <li><a href="#templates" className="hover:text-[#f9c65d] transition-colors">Letter Templates</a></li>
-            <li><a href="#about" className="hover:text-[#f9c65d] transition-colors">About Us</a></li>
-          </ul>
-        </div>
-
-        {/* Contact CTA */}
-        <div>
-          <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Get Started Today</h3>
-          <a
-            href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-base font-bold px-6 py-3"
-          >
-            Apply for Funding
-          </a>
-          <p className="text-xs text-gray-400">
-            Free consultation • No obligation • Fast approval
-          </p>
-        </div>
-
-      </div>
-
-      <div className="border-t border-gray-600 pt-6 text-center">
-        <p className="text-sm text-gray-400 mb-2">
-          © {new Date().getFullYear()} Mesa Group Consulting. All rights reserved.
-        </p>
-        <p className="text-xs text-gray-500 max-w-4xl mx-auto">
-          <strong>Disclosure:</strong> Business funding products and services provided by Mesa Group Consulting and its lending partners. Approval and terms are subject to credit review and lender requirements. 0% promotional APR periods vary by product and lender; standard rates apply after promotional period. Not all applicants will qualify. Consult with a Mesa Group funding specialist for details specific to your situation.
-        </p>
-      </div>
-
-    </div>
-  </footer>
 );
 
 export default ZeroInterestBusinessFunding;

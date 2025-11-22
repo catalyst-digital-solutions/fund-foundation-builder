@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { Target, Check, Lock, Lightbulb, TrendingUp, Star, CircleDollarSign, BarChart3, CreditCard, Gem, Plane, X, Gift, Globe, Trophy, ThumbsUp, Wrench } from 'lucide-react';
 import EmotionalCTA1 from '@/components/credit-cards/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/credit-cards/sections/EmotionalCTA2';
@@ -820,32 +821,7 @@ const CreditCards = () => {
         </div>
       </section>
 
-      {/* SECTION 9: COMPLIANCE FOOTER */}
-      <footer className="bg-gray-50 py-12 px-6 md:px-8 border-t-2 border-[hsl(var(--mgc-light-gray))]">
-        <div className="max-w-4xl mx-auto">
-          
-          <div className="text-sm text-gray-600 leading-relaxed space-y-4">
-            
-            <p>
-              <strong>Affiliate Disclosure:</strong> Mesa Group Consulting is a partner of SuperMoney. We may earn a commission if you apply for a credit card through our comparison tool, at no additional cost to you. We only recommend services that provide value to our clients.
-            </p>
-            
-            <p>
-              <strong>Pre-Qualification Disclaimer:</strong> Pre-qualification does not guarantee approval. Actual approval depends on the card issuer's full review of your credit history, income, and other factors. Pre-qualification uses a soft pull; actual applications require a hard pull which may affect your credit score.
-            </p>
-            
-            <p>
-              <strong>Credit Score Impact:</strong> Comparing credit cards through our tool uses soft inquiries only, which do not affect your credit score. When you submit an actual application for a credit card, the issuer will perform a hard inquiry, which may lower your score by 5-10 points temporarily.
-            </p>
-            
-            <p>
-              Card terms, rates, and fees are determined by the card issuer and may change without notice. Always review the card's terms and conditions before applying.
-            </p>
-            
-          </div>
-          
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 };

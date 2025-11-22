@@ -13,7 +13,7 @@ import QualificationRequirements from '@/components/personal-loans/sections/Qual
 import EmotionalCTA3 from '@/components/debt-consolidation/sections/EmotionalCTA3';
 import FAQ from '@/components/personal-loans/sections/FAQ';
 import FinalCTA from '@/components/personal-loans/sections/FinalCTA';
-import ComplianceFooter from '@/components/personal-loans/sections/ComplianceFooter';
+import Footer from '@/components/Footer';
 
 const PersonalLoans = () => {
   return (
@@ -33,7 +33,7 @@ const PersonalLoans = () => {
         <EmotionalCTA3 />
         <FAQ />
         <FinalCTA />
-        <ComplianceFooter />
+        <Footer />
       </main>
     </div>
   );

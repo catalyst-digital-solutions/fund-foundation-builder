@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import EmotionalCTA1 from "@/components/business-debt-relief/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/business-debt-relief/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/business-debt-relief/sections/EmotionalCTA3";
@@ -793,98 +794,7 @@ const BusinessDebtRelief = () => {
         </div>
       </section>
 
-      {/* SECTION 10: FOOTER */}
-      <footer className="bg-[#F9F7F4] py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          
-          {/* Footer Content */}
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            
-            {/* Company Info */}
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Mesa Group Capital</h3>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                Expert business debt relief services helping companies reduce debt, avoid bankruptcy, 
-                and regain financial stability.
-              </p>
-              <p className="text-gray-600">
-                <strong className="text-gray-900">Phone:</strong> (661) 310-3040
-              </p>
-            </div>
-            
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="https://mesagroupcapital.com/for-businesses/debt-relief" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-amber-600 transition-colors">
-                    Free Debt Analysis
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:661-310-3040" className="text-gray-600 hover:text-amber-600 transition-colors">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
-            
-            {/* Compliance */}
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Important Information</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Results vary by individual circumstances. We cannot guarantee specific outcomes. 
-                All sales are final due to immediate access to services.
-              </p>
-            </div>
-            
-          </div>
-          
-          {/* Compliance Disclaimer */}
-          <div className="border-t border-gray-300 pt-8">
-            <div className="bg-white rounded-lg p-6 mb-6 shadow-md">
-              <h4 className="text-base font-bold text-gray-900 mb-3">Important Disclosures</h4>
-              <div className="space-y-3 text-sm text-gray-600 leading-relaxed">
-                <p>
-                  <strong className="text-gray-900">No Guarantees:</strong> Mesa Group Capital cannot guarantee specific debt reduction amounts, 
-                  settlement timelines, or program outcomes. Results vary based on individual circumstances, creditor cooperation, 
-                  and client compliance with program requirements.
-                </p>
-                <p>
-                  <strong className="text-gray-900">Credit Impact:</strong> Participating in a debt relief program will negatively impact 
-                  your business credit score. Accounts enrolled in the program typically go into default, which is reported to credit bureaus.
-                </p>
-                <p>
-                  <strong className="text-gray-900">Tax Consequences:</strong> Settled debt may be considered taxable income by the IRS. 
-                  Consult a tax professional regarding potential tax liabilities from debt settlements.
-                </p>
-                <p>
-                  <strong className="text-gray-900">Legal Action:</strong> Creditors may pursue legal action including lawsuits, judgments, 
-                  wage garnishments, or bank levies during the program. Mesa Group Capital does not provide legal representation.
-                </p>
-                <p>
-                  <strong className="text-gray-900">Program Completion:</strong> Not all clients complete our debt relief program. 
-                  Clients who do not complete may not realize the full benefits and may be subject to collection activities.
-                </p>
-                <p>
-                  <strong className="text-gray-900">Performance Statistics:</strong> Statistics represent averages from completed programs 
-                  and may not reflect individual results. Average debt reduction of 30-50% represents settled debts before program fees.
-                </p>
-                <p>
-                  <strong className="text-gray-900">No Refunds:</strong> All sales are final. Due to immediate access to proprietary 
-                  services, materials, and negotiations, Mesa Group Capital does not offer refunds once enrollment is complete.
-                </p>
-              </div>
-            </div>
-            
-            <p className="text-center text-sm text-gray-600">
-              © {new Date().getFullYear()} Mesa Group Capital. All rights reserved. | 
-              Business Debt Relief Services | FTC Compliant
-            </p>
-          </div>
-          
-        </div>
-      </footer>
+      <Footer />
 
     </div>
   );

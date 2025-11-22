@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import EmotionalCTA1 from '@/components/auto-loan-refi/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/auto-loan-refi/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/auto-loan-refi/sections/EmotionalCTA3';
@@ -1040,6 +1041,8 @@ const AutoLoanRefi = () => {
 
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 };
