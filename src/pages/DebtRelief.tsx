@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import EmotionalCTA1 from "@/components/debt-relief/sections/EmotionalCTA1";
+import EmotionalCTA2 from "@/components/debt-relief/sections/EmotionalCTA2";
+import EmotionalCTA3 from "@/components/debt-relief/sections/EmotionalCTA3";
 import { 
   AlertCircle, 
   CreditCard, 
@@ -216,6 +219,8 @@ const DebtRelief = () => {
         </div>
       </section>
 
+      <EmotionalCTA1 />
+
       {/* SECTION 3: THE 4 BENEFITS */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -299,6 +304,8 @@ const DebtRelief = () => {
 
         </div>
       </section>
+
+      <EmotionalCTA2 />
 
       {/* SECTION 4: TYPES OF DEBT WE HANDLE */}
       <section className="py-20 px-6 bg-white">
@@ -541,6 +548,8 @@ const DebtRelief = () => {
 
         </div>
       </section>
+
+      <EmotionalCTA3 />
 
       {/* SECTION 6: FAQ */}
       <section className="py-20 px-6 bg-white">
