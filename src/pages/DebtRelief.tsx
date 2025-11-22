@@ -70,40 +70,40 @@ const DebtRelief = () => {
       <Header />
       
       {/* SECTION 1: HERO */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-24 px-6">
+      <section className="bg-gradient-to-br from-white via-amber-50 to-white py-24 px-6">
         <div className="max-w-5xl mx-auto text-center">
           
-          <div className="inline-block bg-amber-400/20 backdrop-blur-sm text-amber-400 px-6 py-3 rounded-full text-sm font-bold mb-8 border border-amber-400/30">
-            Mesa Group Consulting | Debt Relief Specialists Since 2015
+          <div className="inline-block bg-white px-6 py-3 rounded-full text-sm font-bold mb-8 border-2 border-gray-200 shadow-sm">
+            <span className="text-gray-700">Mesa Group Consulting | Debt Relief Specialists Since 2015</span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Stop Drowning in Debt.<br />Start <span className="text-amber-400">Living Your Life</span> Again.
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            Stop Drowning in Debt.<br />Start <span className="text-amber-600">Living Your Life</span> Again.
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
             Buried under credit card debt? Collections calling? Can't afford more than minimum payments? <strong>Mesa Group Consulting's Debt Relief program</strong> reduces your debt by 30-50% and replaces multiple payments with one affordable monthly payment.
           </p>
 
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-10 shadow-2xl max-w-3xl mx-auto border border-white/20">
-            <h3 className="text-2xl font-bold text-white mb-6">
+          <div className="bg-white rounded-2xl p-8 mb-10 shadow-2xl max-w-3xl mx-auto border border-gray-200">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
               How Debt Relief Works:
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
               <div>
-                <div className="text-4xl font-bold text-amber-400 mb-2">30-50%</div>
-                <div className="text-sm text-gray-300">Average Debt Reduction</div>
+                <div className="text-4xl font-bold text-amber-600 mb-2">30-50%</div>
+                <div className="text-sm text-gray-600">Average Debt Reduction</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-amber-400 mb-2">1</div>
-                <div className="text-sm text-gray-300">Affordable Monthly Payment</div>
+                <div className="text-4xl font-bold text-amber-600 mb-2">1</div>
+                <div className="text-sm text-gray-600">Affordable Monthly Payment</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-amber-400 mb-2">20-48</div>
-                <div className="text-sm text-gray-300">Months to Debt-Free</div>
+                <div className="text-4xl font-bold text-amber-600 mb-2">20-48</div>
+                <div className="text-sm text-gray-600">Months to Debt-Free</div>
               </div>
             </div>
-            <p className="text-gray-200 mb-6 leading-relaxed">
+            <p className="text-gray-700 mb-6 leading-relaxed">
               We negotiate with your creditors, collection agencies, and attorneys to settle your debts for <strong>significantly less than you owe</strong>—while you focus on rebuilding your financial future, not drowning in debt.
             </p>
             
@@ -111,21 +111,21 @@ const DebtRelief = () => {
               href="https://mesagroupcapital.com/debt-analysis"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl"
+              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl border-2 border-amber-500"
             >
               Book Your Free Debt Analysis
             </a>
-            <p className="text-sm text-gray-300 mt-4 flex items-center justify-center gap-4 flex-wrap">
-              <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4" /> No upfront fees</span>
-              <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4" /> Minimum $10,000 debt required</span>
-              <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4" /> Results in 4-7 months</span>
+            <p className="text-sm text-gray-600 mt-4 flex items-center justify-center gap-4 flex-wrap">
+              <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4 text-green-600" /> No upfront fees</span>
+              <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4 text-green-600" /> Minimum $10,000 debt required</span>
+              <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4 text-green-600" /> Results in 4-7 months</span>
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:6613103040"
-              className="inline-block bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 text-xl font-semibold px-10 py-4 rounded-lg hover:bg-white/20 transition-all duration-200 shadow-lg"
+              className="inline-block bg-white text-gray-700 border-2 border-gray-300 text-xl font-semibold px-10 py-4 rounded-lg hover:bg-gray-50 transition-all duration-200 shadow-lg"
             >
               Call (661) 310-3040
             </a>
@@ -135,82 +135,82 @@ const DebtRelief = () => {
       </section>
 
       {/* SECTION 2: THE PROBLEM (PAIN POINTS) */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6" style={{ backgroundColor: '#151D2C' }}>
         <div className="max-w-7xl mx-auto">
           
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Are You Trapped in the <span className="text-amber-600">Debt Cycle</span>?
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Are You Trapped in the <span className="text-amber-400">Debt Cycle</span>?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               You're not alone. These are the signs that debt relief might be your best option.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             
-            <div className="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-amber-400 hover:shadow-lg transition-all">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/20 hover:border-amber-400 hover:shadow-lg transition-all">
               <div className="mb-4 w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
                 <AlertCircle className="w-6 h-6 text-gray-900" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-white mb-3">
                 Creditor Harassment
               </h3>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 Constant collection calls. Threatening letters. Lawsuits filed. You're afraid to answer your phone or check your mail.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-amber-400 hover:shadow-lg transition-all">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/20 hover:border-amber-400 hover:shadow-lg transition-all">
               <div className="mb-4 w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
                 <TrendingDown className="w-6 h-6 text-gray-900" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-white mb-3">
                 Minimum Payment Trap
               </h3>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 You're making minimum payments but the balance never goes down. Interest eats up everything you pay—you're running in place.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-amber-400 hover:shadow-lg transition-all">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/20 hover:border-amber-400 hover:shadow-lg transition-all">
               <div className="mb-4 w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
                 <DollarSign className="w-6 h-6 text-gray-900" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-white mb-3">
                 Can't Afford Payments
               </h3>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 You have to choose between debt payments and groceries, rent, or utilities. There's nothing left at the end of the month.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-amber-400 hover:shadow-lg transition-all">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/20 hover:border-amber-400 hover:shadow-lg transition-all">
               <div className="mb-4 w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
                 <Users className="w-6 h-6 text-gray-900" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-white mb-3">
                 Family Stress
               </h3>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 Debt is destroying your peace of mind, your relationships, and your health. You can't see a way out.
               </p>
             </div>
 
           </div>
 
-          <div className="mt-12 bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-8 text-center border-2 border-amber-200">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <div className="mt-12 bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center border-2 border-white/20">
+            <h3 className="text-2xl font-bold text-white mb-4">
               There's a Better Way Than Bankruptcy
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 leading-relaxed mb-6 max-w-3xl mx-auto">
               Debt relief through Mesa Group Consulting lets you settle debts for <strong>30-50% less than you owe</strong>, avoid bankruptcy, and protect your family's future—without destroying your credit for 7-10 years.
             </p>
             <a
               href="https://mesagroupcapital.com/debt-analysis"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-10 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-10 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
             >
               Get Your Free Debt Analysis
             </a>
