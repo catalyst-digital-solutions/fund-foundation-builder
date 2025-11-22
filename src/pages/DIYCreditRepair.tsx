@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity, X, Home, Scale, Gavel, Check } from 'lucide-react';
 import EmotionalCTA1 from "@/components/diy-credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/diy-credit-repair/sections/EmotionalCTA2";
@@ -1020,32 +1021,7 @@ const DIYCreditRepair = () => {
         </div>
       </section>
 
-      {/* SECTION 10: COMPLIANCE FOOTER */}
-      <footer className="bg-gray-50 py-12 px-6 md:px-8 border-t-2 border-border">
-        <div className="max-w-4xl mx-auto">
-          
-          <div className="text-sm text-gray-600 leading-relaxed space-y-4">
-            
-            <p>
-              <strong>Affiliate Disclosure:</strong> Mesa Group Consulting is a partner of Creditily. We may earn a commission if you subscribe through our link, at no additional cost to you. We only recommend tools we believe provide value to consumers.
-            </p>
-            
-            <p>
-              <strong>Software Disclaimer:</strong> Creditily is credit repair software that provides tools, templates, and education for consumers who wish to dispute their own credit reports. Results depend on the user's effort, the accuracy of negative items, and credit bureau responsiveness. We do not guarantee specific score increases or item deletions.
-            </p>
-            
-            <p>
-              <strong>Legal Notice:</strong> You have the right to dispute inaccurate information on your credit reports for free by contacting credit bureaus directly. This software provides tools to make that process easier and more effective. Credit repair software is not a credit repair service and is not subject to CROA regulations.
-            </p>
-            
-            <p>
-              <strong>Your Rights:</strong> Under the Fair Credit Reporting Act (FCRA), you have the right to dispute inaccurate, incomplete, or unverifiable information on your credit reports. For more information, visit <a href="https://www.ftc.gov/credit" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">ftc.gov/credit</a>.
-            </p>
-            
-          </div>
-          
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 };

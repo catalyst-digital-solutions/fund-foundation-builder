@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import EmotionalCTA1 from '@/components/business-funding/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/business-funding/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/business-funding/sections/EmotionalCTA3';
@@ -773,78 +774,5 @@ const FinalCTA = () => {
         </div>
       </div>
     </section>;
-};
-const Footer = () => {
-  return <footer className="bg-[hsl(var(--mgc-dark-gray))] py-12 px-6 text-white">
-      <div className="max-w-7xl mx-auto">
-        
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          
-          {/* Company Info */}
-          <div>
-            <h3 className="text-xl font-bold text-[hsl(var(--mgc-yellow))] mb-4">Mesa Group Capital</h3>
-        <p className="text-sm text-gray-300 mb-4">
-          Your trusted business funding brokerage connecting businesses with the right capital solutions.
-        </p>
-        <div className="text-sm text-gray-300 space-y-1">
-          <p className="flex items-center gap-2">
-            <MapPin className="w-4 h-4" /> Bakersfield, CA
-          </p>
-          <p className="flex items-center gap-2">
-            <Phone className="w-4 h-4" /> (661) 310-3040
-          </p>
-        </div>
-          </div>
-
-          {/* Funding Solutions */}
-          <div>
-            <h3 className="text-xl font-bold text-[hsl(var(--mgc-yellow))] mb-4">Funding Solutions</h3>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li>• Business Cash Advance</li>
-              <li>• Business Term Loans</li>
-              <li>• Business Lines of Credit</li>
-              <li>• Invoice Factoring</li>
-              <li>• Equipment Financing</li>
-              <li>• Real Estate Financing</li>
-              <li>• STARTUP Funding</li>
-            </ul>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-bold text-[hsl(var(--mgc-yellow))] mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li><a href="/about" className="hover:text-[hsl(var(--mgc-yellow))]">About Mesa Group</a></li>
-              <li><a href="/business-funding" className="hover:text-[hsl(var(--mgc-yellow))]">Business Funding</a></li>
-              <li><a href="/business-credit" className="hover:text-[hsl(var(--mgc-yellow))]">Business Credit Building</a></li>
-              <li><a href="/business-debt-relief" className="hover:text-[hsl(var(--mgc-yellow))]">Business Debt Relief</a></li>
-              <li><a href="/contact" className="hover:text-[hsl(var(--mgc-yellow))]">Contact Us</a></li>
-            </ul>
-          </div>
-
-          {/* CTA */}
-          <div>
-            <h3 className="text-xl font-bold text-[hsl(var(--mgc-yellow))] mb-4">Ready to Get Funded?</h3>
-            <Button className="bg-[hsl(var(--mgc-yellow))] text-[hsl(var(--mgc-dark-gray))] text-base font-bold px-6 py-3 h-auto hover:bg-[hsl(var(--mgc-cream))] transition-all duration-200 mb-4 w-full">
-              Apply Now
-            </Button>
-            <p className="text-xs text-gray-400">
-              Free consultation • No obligation • Fast approval
-            </p>
-          </div>
-
-        </div>
-
-        <div className="border-t border-gray-600 pt-6 text-center">
-          <p className="text-sm text-gray-400 mb-2">
-            © {new Date().getFullYear()} Mesa Group Capital. All rights reserved.
-          </p>
-          <p className="text-xs text-gray-500">
-            <strong>Disclosure:</strong> Mesa Group Capital is a business funding brokerage connecting businesses with third-party lenders. Approval, terms, and rates are subject to lender requirements and credit review. Not all applicants will qualify for all funding programs. Funding amounts and terms vary by program, credit profile, business revenue, and lender discretion.
-          </p>
-        </div>
-
-      </div>
-    </footer>;
 };
 export default BusinessFunding;

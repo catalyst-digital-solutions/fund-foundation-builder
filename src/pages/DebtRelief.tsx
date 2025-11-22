@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const DebtRelief = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -626,70 +627,7 @@ const DebtRelief = () => {
         </div>
       </section>
 
-      {/* SECTION 8: FOOTER */}
-      <footer className="bg-[#3E3E3E] py-12 px-6 text-white">
-        <div className="max-w-7xl mx-auto">
-          
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            
-            <div>
-              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Mesa Group Consulting</h3>
-              <p className="text-sm text-gray-300 mb-4">
-                Your trusted debt relief partner in Bakersfield, CA.
-              </p>
-              <p className="text-sm text-gray-300">
-                📍 Bakersfield, CA<br />
-                📞 (661) 310-3040
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Our Services</h3>
-              <ul className="space-y-2 text-sm text-gray-300">
-                <li><a href="/debt-relief" className="hover:text-[#f9c65d]">Debt Relief</a></li>
-                <li><a href="/credit-repair" className="hover:text-[#f9c65d]">Credit Repair</a></li>
-                <li><a href="/credit-monitoring" className="hover:text-[#f9c65d]">Credit Monitoring</a></li>
-                <li><a href="/business-debt-relief" className="hover:text-[#f9c65d]">Business Debt Relief</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Resources</h3>
-              <ul className="space-y-2 text-sm text-gray-300">
-                <li><a href="https://www.mesagroupconsulting.com/about-us" className="hover:text-[#f9c65d]">About Us</a></li>
-                <li><a href="https://www.mesagroupconsulting.com/blog" className="hover:text-[#f9c65d]">Mesa News Blog</a></li>
-                <li><a href="https://www.mesagroupconsulting.com/contact-us" className="hover:text-[#f9c65d]">Contact</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Get Started</h3>
-              <a
-                href="https://mesagroupcapital.com/debt-analysis"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#f9c65d] text-[#3E3E3E] text-base font-bold px-6 py-3 rounded-lg hover:bg-[#f8d899] transition-all duration-200 mb-4 w-full text-center"
-              >
-                Free Consultation
-              </a>
-              <p className="text-xs text-gray-400">
-                No upfront fees • Proven results • Expert negotiators
-              </p>
-            </div>
-
-          </div>
-
-          <div className="border-t border-gray-600 pt-6">
-            <p className="text-sm text-gray-400 mb-4 text-center leading-relaxed">
-              <strong>Important Disclosure:</strong> Mesa Group Consulting provides debt relief services in partnership with licensed debt resolution platforms. Results vary by client. Average savings of 30-50% (43% average) of enrolled debt are based on clients who complete the program and make all monthly payments. Fees range from 14-25% of enrolled debt. Programs typically last 20-48 months. Not all clients complete the program. First settlement averages 4-7 months from enrollment. We do not assume your debts, make monthly payments to creditors, or provide tax, bankruptcy, accounting, or legal advice. Debt relief will likely negatively affect your credit score. You may be subject to collections or lawsuits by creditors or collectors. Your outstanding debt may increase from the accrual of fees and interest. Any amount of debt forgiven by your creditors may be subject to income tax. Clients may withdraw from the program at any time without penalty and receive all funds from their dedicated account, other than funds earned by the company or fees paid to third-party service providers, as may be applicable. Read and understand all program materials prior to enrolling. Certain types of debts are not eligible for enrollment. Some creditors are not eligible for enrollment because they do not negotiate with debt resolution companies.
-            </p>
-            <p className="text-sm text-gray-400 text-center">
-              © {new Date().getFullYear()} Mesa Group Consulting. All rights reserved.
-            </p>
-          </div>
-
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

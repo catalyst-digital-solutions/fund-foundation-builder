@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import EmotionalCTA1 from '@/components/trust-and-will/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/trust-and-will/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/trust-and-will/sections/EmotionalCTA3';
@@ -1389,60 +1390,7 @@ const TrustAndWillPlan = () => {
         </div>
       </section>
 
-      {/* SECTION 10: COMPLIANCE FOOTER */}
-      <footer className="bg-gray-50 py-12 px-6 md:px-8 border-t-2 border-[#CBCBCB]">
-        <div className="max-w-4xl mx-auto">
-          
-          <div className="text-sm text-gray-600 leading-relaxed space-y-4">
-            
-            <p>
-              <strong>Affiliate Partnership Disclosure:</strong> Mesa Group Consulting is a partner with Trust & Will and may earn a commission if you purchase an estate plan through our platform, at no additional cost to you. We only recommend services we believe provide exceptional value to individuals and families seeking to protect their loved ones and assets.
-            </p>
-            
-            <p>
-              <strong>Legal Service Provider:</strong> Trust & Will is an online estate planning platform that provides state-specific legal documents built by licensed attorneys. Trust & Will is not a law firm and does not provide legal advice. The documents provided are legally binding when executed according to your state's requirements (witness and/or notarization). For complex estates, unusual situations, or specific legal questions, consultation with a licensed attorney in your state is recommended.
-            </p>
-            
-            <p>
-              <strong>State-Specific Requirements:</strong> Estate planning laws vary by state. All documents provided by Trust & Will are customized to comply with your state's specific legal requirements. Requirements for witnesses, notarization, and execution vary by state and document type. Trust & Will provides clear instructions for your state's requirements.
-            </p>
-            
-            <p>
-              <strong>Document Validity:</strong> When properly executed according to state requirements, Will and Trust documents created through Trust & Will are legally binding and enforceable. However, Mesa Group Consulting and Trust & Will cannot guarantee that documents will achieve your specific estate planning goals or prevent all disputes. Complex estates may require additional legal counsel.
-            </p>
-            
-            <p>
-              <strong>Probate Avoidance:</strong> A properly funded Revocable Living Trust can help avoid probate court for assets held in the Trust. However, probate avoidance requires that assets be properly titled in the name of the Trust (process called "funding the Trust"). Trust & Will provides guidance on funding your Trust, but you are responsible for transferring asset titles. Assets not properly transferred to the Trust may still go through probate.
-            </p>
-            
-            <p>
-              <strong>Healthcare Directives:</strong> Healthcare directives (Living Will, Healthcare Power of Attorney) communicate your medical wishes and designate decision-makers. These documents are legally binding when properly executed. However, medical providers are not required to honor all requests, particularly those that conflict with medical ethics or the provider's policies. Discussing your wishes with family members and healthcare providers is recommended.
-            </p>
-            
-            <p>
-              <strong>Pricing & Plans:</strong> Pricing shown is current as of the date of publication and subject to change. Will Estate Plan starts at $199 for individuals ($299 for couples). Trust Estate Plan starts at $499 for individuals ($599 for couples). Trust plan includes first year of membership free ($39/year thereafter). Membership includes document updates and access to educational resources.
-            </p>
-            
-            <p>
-              <strong>Not Legal or Tax Advice:</strong> Information provided on this page is for general educational purposes only and should not be construed as legal advice, tax advice, or a substitute for consultation with a qualified attorney or tax professional. Estate planning has significant legal and tax implications. For personalized advice regarding your specific situation, consult with licensed professionals in your state.
-            </p>
-            
-            <p>
-              <strong>Money-Back Guarantee:</strong> Trust & Will offers a 30-day satisfaction guarantee. If you are not completely satisfied with your purchase, contact Trust & Will within 30 days of purchase to request a refund. Terms and conditions apply.
-            </p>
-            
-            <p>
-              <strong>Data Security:</strong> Trust & Will uses bank-level 256-bit SSL encryption to protect your personal and financial information. Information you provide is confidential and used only to create your estate planning documents. Trust & Will does not sell your personal information to third parties.
-            </p>
-            
-            <p>
-              <strong>Service Availability:</strong> Trust & Will's estate planning services are available in all 50 U.S. states and the District of Columbia. State-specific document requirements vary. U.S. citizenship or residency is required.
-            </p>
-            
-          </div>
-          
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 };

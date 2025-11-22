@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, Search, Lightbulb, MapPin } from "lucide-react";
 import EmotionalCTA1 from "@/components/credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/credit-repair/sections/EmotionalCTA2";
@@ -911,40 +912,7 @@ const CreditRepair = () => {
         </div>
       </section>
 
-      {/* SECTION 10: COMPLIANCE FOOTER */}
-      <footer className="bg-[#F1F5F9] py-12 px-6 md:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-sm text-[#64748B] leading-relaxed space-y-4">
-            <p>
-              <strong>Results Disclaimer:</strong> Results vary by individual. While our average client
-              sees a 60-110 point improvement, your results depend on your specific credit situation, the
-              accuracy of negative items, and how many items are successfully removed. We cannot guarantee
-              specific score increases or the removal of accurate information.
-            </p>
-
-            <p>
-              Mesa Group Consulting is registered with the California Department of Justice and maintains a
-              $100,000 surety bond as required by California law. We comply with the Credit Repair
-              Organizations Act (CROA), Fair Credit Reporting Act (FCRA), and FTC Telemarketing Sales Rule
-              (TSR).
-            </p>
-
-            <p>
-              <strong>Your Rights:</strong> You have the right to dispute credit report information
-              yourself, free of charge. For more information about your rights, visit{" "}
-              <a
-                href="https://www.ftc.gov/credit"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#bb9446] hover:underline"
-              >
-                ftc.gov/credit
-              </a>
-              .
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 };

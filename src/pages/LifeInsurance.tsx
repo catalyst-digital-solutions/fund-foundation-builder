@@ -11,7 +11,7 @@ import WhyPolicyGenius from "@/components/life-insurance/sections/WhyPolicyGeniu
 import EmotionalCTA3 from "@/components/life-insurance/sections/EmotionalCTA3";
 import FAQ from "@/components/life-insurance/sections/FAQ";
 import FinalCTA from "@/components/life-insurance/sections/FinalCTA";
-import ComplianceFooter from "@/components/life-insurance/sections/ComplianceFooter";
+import Footer from "@/components/Footer";
 
 const LifeInsurance = () => {
   return (
@@ -29,7 +29,7 @@ const LifeInsurance = () => {
       <EmotionalCTA3 />
       <FAQ />
       <FinalCTA />
-      <ComplianceFooter />
+      <Footer />
     </div>
   );
 };

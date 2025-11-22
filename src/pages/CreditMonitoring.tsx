@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, FileText, AlertTriangle, DollarSign, Eye, Lock, Mail, ChevronDown, Phone, MapPin, ExternalLink } from 'lucide-react';
 import EmotionalCTA1 from '@/components/credit-monitoring/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/credit-monitoring/sections/EmotionalCTA2';
@@ -813,76 +814,3 @@ function FinalCTA() {
   );
 }
 
-function Footer() {
-  return (
-    <footer className="bg-dark py-12 px-6 text-white">
-      <div className="max-w-7xl mx-auto">
-        
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          
-          {/* Company Info */}
-          <div>
-            <h3 className="text-xl font-bold text-secondary mb-4">Mesa Group Consulting</h3>
-            <p className="text-sm text-gray-300 mb-4">
-              Your trusted partner for credit repair and financial services in Bakersfield, CA.
-            </p>
-            <div className="space-y-2">
-              <p className="text-sm text-gray-300 flex items-start gap-2">
-                <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span>5001 California Ave Suite 219<br />Bakersfield, CA 93309</span>
-              </p>
-              <p className="text-sm text-gray-300 flex items-center gap-2">
-                <Phone className="w-4 h-4 flex-shrink-0" />
-                <a href="tel:6613103040" className="hover:text-secondary">(661) 310-3040</a>
-              </p>
-            </div>
-          </div>
-
-          {/* For Consumers */}
-          <div>
-            <h3 className="text-xl font-bold text-secondary mb-4">For Consumers</h3>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li><a href="/build-credit" className="hover:text-secondary transition-colors">Build Credit</a></li>
-              <li><a href="/credit-monitoring" className="hover:text-secondary transition-colors">Credit Monitoring</a></li>
-              <li><a href="/credit-repair" className="hover:text-secondary transition-colors">Credit Repair</a></li>
-              <li><a href="/personal-loans" className="hover:text-secondary transition-colors">Personal Loans</a></li>
-              <li><a href="/student-loan-refi" className="hover:text-secondary transition-colors">Student Loan Refi</a></li>
-            </ul>
-          </div>
-
-          {/* For Businesses */}
-          <div>
-            <h3 className="text-xl font-bold text-secondary mb-4">For Businesses</h3>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li><a href="/business-funding" className="hover:text-secondary transition-colors">Business Funding</a></li>
-              <li><a href="/business-credit" className="hover:text-secondary transition-colors">Business Credit</a></li>
-              <li><a href="/business-debt-relief" className="hover:text-secondary transition-colors">Business Debt Relief</a></li>
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h3 className="text-xl font-bold text-secondary mb-4">Resources</h3>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li><a href="/about" className="hover:text-secondary transition-colors">About Us</a></li>
-              <li><a href="/blog" className="hover:text-secondary transition-colors">Mesa News Blog</a></li>
-              <li><a href="/calculators" className="hover:text-secondary transition-colors">Financial Calculators</a></li>
-              <li><a href="/contact" className="hover:text-secondary transition-colors">Contact</a></li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div className="border-t border-gray-700 pt-6">
-          <p className="text-xs text-gray-400 text-center leading-relaxed mb-4">
-            <strong>Important Disclosure:</strong> Mesa Group Consulting is an affiliate partner of SmartCredit®. SmartCredit® services are provided by ConsumerDirect®, Inc. Identity Fraud Expense Reimbursement is provided under a Blanket Policy issued to ConsumerDirect®, Inc. by Voyager Indemnity Insurance Company. Credit monitoring services show your credit reports and scores from all three major bureaus. Subscription required. Monitoring your own credit is considered a soft inquiry and does not impact your credit score.
-          </p>
-          <p className="text-sm text-gray-400 text-center">
-            © {new Date().getFullYear()} Mesa Group Consulting. All rights reserved.
-          </p>
-        </div>
-
-      </div>
-    </footer>
-  );
-}
