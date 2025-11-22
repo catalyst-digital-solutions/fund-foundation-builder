@@ -11,7 +11,7 @@ import EmotionalCTA3 from '@/components/business-credit/sections/EmotionalCTA3';
 import Testimonials from '@/components/business-credit/sections/Testimonials';
 import FAQ from '@/components/business-credit/sections/FAQ';
 import FinalCTA from '@/components/business-credit/sections/FinalCTA';
-import ComplianceFooter from '@/components/business-credit/sections/ComplianceFooter';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
@@ -28,7 +28,7 @@ const Index = () => {
       <Testimonials />
       <FAQ />
       <FinalCTA />
-      <ComplianceFooter />
+      <Footer />
     </div>
   );
 };
