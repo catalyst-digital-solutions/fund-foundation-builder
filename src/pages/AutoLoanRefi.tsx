@@ -840,7 +840,7 @@ const AutoLoanRefi = () => {
                 
                 <button
                   onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-                  className="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-[#f8d899] transition duration-200"
+                  className="w-full text-left px-6 py-4 flex items-center justify-between bg-white hover:bg-[#f8d899] transition duration-200"
                 >
                   <h3 className="text-lg font-semibold text-[#3E3E3E] pr-8">
                     {faq.question}
@@ -851,7 +851,7 @@ const AutoLoanRefi = () => {
                 </button>
                 
                 {openFAQ === index && (
-                  <div className="px-6 pb-4 pt-2">
+                  <div className="px-6 pb-4 pt-2 bg-white">
                     <p className="text-gray-700 leading-relaxed">
                       {faq.answer}
                     </p>

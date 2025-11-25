@@ -641,11 +641,11 @@ const CreditCards = () => {
           
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg border-2 border-[hsl(var(--mgc-light-gray))] hover:border-[hsl(var(--mgc-yellow))] overflow-hidden transition duration-200">
+              <div key={index} className="bg-white rounded-lg border-2 border-[hsl(var(--mgc-light-gray))] hover:border-[hsl(var(--mgc-yellow))] overflow-hidden transition duration-200">
                 
                 <button
                   onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-                  className="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-[hsl(var(--mgc-cream))] transition duration-200"
+                  className="w-full text-left px-6 py-4 flex items-center justify-between bg-white hover:bg-[hsl(var(--mgc-cream))] transition duration-200"
                 >
                   <h3 className="text-lg font-semibold text-[hsl(var(--mgc-dark-gray))] pr-8">
                     {faq.question}

@@ -74,11 +74,11 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl border border-gray-200 overflow-hidden"
+              className="bg-white rounded-xl border border-gray-200 overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-100 transition-colors duration-200"
+                className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-gray-100 transition-colors duration-200"
               >
                 <span className="text-lg font-semibold text-gray-900 pr-4">
                   {faq.question}
@@ -91,7 +91,7 @@ const FAQ = () => {
               </button>
               
               {openIndex === index && (
-                <div className="px-6 pb-5">
+                <div className="px-6 pb-5 bg-white">
                   <div className="pt-2 border-t border-gray-200">
                     <p className="text-gray-700 leading-relaxed mt-3">
                       {faq.answer}

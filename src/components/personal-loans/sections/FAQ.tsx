@@ -71,10 +71,10 @@ const FAQ = () => {
         {/* FAQ Items */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-gradient-to-br from-gray-50 to-amber-50 rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
+            <div key={index} className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-white/50 transition-colors duration-200"
+                className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-white/50 transition-colors duration-200"
               >
                 <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
                 <ChevronDown 
@@ -89,7 +89,7 @@ const FAQ = () => {
                   openIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}
               >
-                <div className="px-6 pb-5 pt-2">
+                <div className="px-6 pb-5 pt-2 bg-white">
                   <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                 </div>
               </div>

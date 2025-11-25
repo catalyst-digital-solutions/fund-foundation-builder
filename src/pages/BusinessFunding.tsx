@@ -700,8 +700,8 @@ const FAQSection = () => {
         </div>
 
         <div className="space-y-4">
-          {faqs.map((faq, index) => <div key={index} className="border border-border rounded-lg overflow-hidden bg-card">
-              <button onClick={() => setOpenIndex(openIndex === index ? null : index)} className="w-full px-6 py-5 text-left hover:bg-secondary/50 transition-colors flex justify-between items-center">
+          {faqs.map((faq, index) => <div key={index} className="border border-border rounded-lg overflow-hidden bg-white">
+              <button onClick={() => setOpenIndex(openIndex === index ? null : index)} className="w-full px-6 py-5 text-left bg-white hover:bg-secondary/50 transition-colors flex justify-between items-center">
                 <span className="text-lg font-semibold text-foreground pr-4">
                   {faq.question}
                 </span>
@@ -709,7 +709,7 @@ const FAQSection = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              {openIndex === index && <div className="px-6 py-5 bg-secondary/30 border-t border-border">
+              {openIndex === index && <div className="px-6 py-5 bg-white border-t border-border">
                   <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
                 </div>}
             </div>)}

@@ -640,7 +640,7 @@ const StudentLoanRefi = () => {
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
                 <button 
                   onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-                  className="w-full text-left px-8 py-6 flex justify-between items-center hover:bg-gray-50 transition-colors"
+                  className="w-full text-left px-8 py-6 flex justify-between items-center bg-white hover:bg-gray-50 transition-colors"
                 >
                   <span className="text-lg font-bold text-[#3E3E3E]">
                     {faq.question}
@@ -655,7 +655,7 @@ const StudentLoanRefi = () => {
                   </svg>
                 </button>
                 {openFAQ === index && (
-                  <div className="px-8 py-6 bg-gray-50">
+                  <div className="px-8 py-6 bg-white">
                     <p className="text-gray-700 leading-relaxed">
                       {faq.answer}
                     </p>

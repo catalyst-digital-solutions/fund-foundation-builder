@@ -726,10 +726,10 @@ function FAQSection() {
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-card rounded-lg shadow-md overflow-hidden border border-border">
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden border border-border">
               <button 
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full text-left px-8 py-6 flex justify-between items-center hover:bg-muted/50 transition-colors"
+                className="w-full text-left px-8 py-6 flex justify-between items-center bg-white hover:bg-muted/50 transition-colors"
               >
                 <span className="text-lg font-bold text-foreground pr-4">
                   {faq.question}
