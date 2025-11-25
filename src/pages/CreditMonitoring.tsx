@@ -612,7 +612,7 @@ function HowItWorks() {
                 1
               </div>
               <div className="flex justify-center mt-4 mb-4">
-                <FileText className="w-16 h-16 text-success" />
+                <FileText className="w-16 h-16 text-[#3D3D3D]" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4 text-center">
                 Sign Up
@@ -630,7 +630,7 @@ function HowItWorks() {
                 2
               </div>
               <div className="flex justify-center mt-4 mb-4">
-                <Eye className="w-16 h-16 text-secondary" />
+                <Eye className="w-16 h-16 text-[#3D3D3D]" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4 text-center">
                 Get Your Reports
@@ -648,7 +648,7 @@ function HowItWorks() {
                 3
               </div>
               <div className="flex justify-center mt-4 mb-4">
-                <Shield className="w-16 h-16 text-primary" />
+                <Shield className="w-16 h-16 text-[#3D3D3D]" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4 text-center">
                 Stay Protected
