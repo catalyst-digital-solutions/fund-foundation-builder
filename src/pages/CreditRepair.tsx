@@ -532,62 +532,70 @@ const CreditRepair = () => {
           {/* Testimonials Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Testimonial 1 */}
-            <div className="bg-white rounded-lg p-6 shadow-md">
+            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                 ))}
               </div>
-              <p className="text-[#475569] leading-relaxed mb-4 italic">
+              <p className="text-white leading-relaxed mb-4 italic">
                 "Right away got on my credit and making changes. Was given Mesa Group Consulting by a good
                 friend from high school. Evert is a knowledgeable agent with well experience to handle my
                 case. Thank you Mesa Group Consulting."
               </p>
-              <p className="text-sm font-medium text-[#64748B]">
-                — Jose Luis Herrera, Bakersfield, CA
-              </p>
+              <div className="pt-4 border-t border-white/30">
+                <p className="text-sm font-medium text-white">
+                  — Jose Luis Herrera, Bakersfield, CA
+                </p>
+              </div>
             </div>
 
             {/* Testimonial 2 */}
-            <div className="bg-white rounded-lg p-6 shadow-md">
+            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                 ))}
               </div>
-              <p className="text-[#475569] leading-relaxed mb-4 italic">
+              <p className="text-white leading-relaxed mb-4 italic">
                 "Removed 4 collections and 2 late payments in 90 days. My score went from 580 to 680.
                 Finally qualified for a car loan at a decent rate."
               </p>
-              <p className="text-sm font-medium text-[#64748B]">— Jennifer M., Kern County</p>
+              <div className="pt-4 border-t border-white/30">
+                <p className="text-sm font-medium text-white">— Jennifer M., Kern County</p>
+              </div>
             </div>
 
             {/* Testimonial 3 */}
-            <div className="bg-white rounded-lg p-6 shadow-md">
+            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                 ))}
               </div>
-              <p className="text-[#475569] leading-relaxed mb-4 italic">
+              <p className="text-white leading-relaxed mb-4 italic">
                 "Tried DIY for 6 months—got nowhere. Mesa Group removed 3 items in the first 60 days. Wish
                 I'd hired them sooner."
               </p>
-              <p className="text-sm font-medium text-[#64748B]">— David R., Bakersfield, CA</p>
+              <div className="pt-4 border-t border-white/30">
+                <p className="text-sm font-medium text-white">— David R., Bakersfield, CA</p>
+              </div>
             </div>
 
             {/* Testimonial 4 */}
-            <div className="bg-white rounded-lg p-6 shadow-md">
+            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                 ))}
               </div>
-              <p className="text-[#475569] leading-relaxed mb-4 italic">
+              <p className="text-white leading-relaxed mb-4 italic">
                 "Transparent pricing, no hidden fees. Canceled after 5 months when I hit my goal score
                 (720). Exactly as advertised."
               </p>
-              <p className="text-sm font-medium text-[#64748B]">— Maria L., CA</p>
+              <div className="pt-4 border-t border-white/30">
+                <p className="text-sm font-medium text-white">— Maria L., CA</p>
+              </div>
             </div>
           </div>
         </div>

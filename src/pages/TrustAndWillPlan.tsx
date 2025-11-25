@@ -1160,50 +1160,50 @@ const TrustAndWillPlan = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             
             {/* Testimonial 1 */}
-            <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
+            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                 ))}
               </div>
-              <p className="text-gray-700 mb-4 italic leading-relaxed">
+              <p className="text-white mb-4 italic leading-relaxed">
                 "As a new mom, I kept putting off creating a Will because I thought it would be complicated and expensive. This platform made it SO easy. In 20 minutes, I named guardians for my daughter and designated where everything goes. The peace of mind is priceless."
               </p>
-              <div className="pt-4 border-t border-yellow-300">
-                <p className="font-semibold text-[#3E3E3E]">Rachel M.</p>
-                <p className="text-sm text-gray-600">Will Estate Plan • New parent</p>
+              <div className="pt-4 border-t border-white/30">
+                <p className="font-semibold text-white">Rachel M.</p>
+                <p className="text-sm text-white/90">Will Estate Plan • New parent</p>
               </div>
             </div>
             
             {/* Testimonial 2 */}
-            <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
+            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                 ))}
               </div>
-              <p className="text-gray-700 mb-4 italic leading-relaxed">
+              <p className="text-white mb-4 italic leading-relaxed">
                 "My wife and I own our home and have investment accounts. We knew we needed a Trust to avoid probate but didn't want to spend $5,000 on an attorney. For $599, we got everything we needed—state-specific, legally binding, and done from our couch in under an hour."
               </p>
-              <div className="pt-4 border-t border-yellow-300">
-                <p className="font-semibold text-[#3E3E3E]">David & Jennifer K.</p>
-                <p className="text-sm text-gray-600">Trust Estate Plan • Homeowners</p>
+              <div className="pt-4 border-t border-white/30">
+                <p className="font-semibold text-white">David & Jennifer K.</p>
+                <p className="text-sm text-white/90">Trust Estate Plan • Homeowners</p>
               </div>
             </div>
             
             {/* Testimonial 3 */}
-            <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
+            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                 ))}
               </div>
-              <p className="text-gray-700 mb-4 italic leading-relaxed">
+              <p className="text-white mb-4 italic leading-relaxed">
                 "My dad passed away without a Will and the probate process was a nightmare—9 months, tons of legal fees, and family fighting. I swore I'd never put my kids through that. Creating my Trust online was the smartest thing I've ever done. My estate will transfer immediately with zero court involvement."
               </p>
-              <div className="pt-4 border-t border-yellow-300">
-                <p className="font-semibold text-[#3E3E3E]">Michael T.</p>
-                <p className="text-sm text-gray-600">Trust Estate Plan • Learned the hard way</p>
+              <div className="pt-4 border-t border-white/30">
+                <p className="font-semibold text-white">Michael T.</p>
+                <p className="text-sm text-white/90">Trust Estate Plan • Learned the hard way</p>
               </div>
             </div>
             
