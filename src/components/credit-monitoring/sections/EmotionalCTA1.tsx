@@ -12,7 +12,7 @@ const EmotionalCTA1 = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
-          Tired of Lying Awake Wondering If Someone's Stealing Your Identity Right Now?
+          Worried Your Identity Could Be Stolen?
         </h2>
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Every notification could be fraud. Every unfamiliar charge could be the start of identity theft. Nine million Americans become victims each year—and most don't know until the damage is done. You check your account obsessively, but you still don't have real answers or protection.
