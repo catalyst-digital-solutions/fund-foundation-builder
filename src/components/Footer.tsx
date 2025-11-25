@@ -1,10 +1,14 @@
-import React from 'react';
-import { Mail, Phone, MapPin, Clock, Facebook, Instagram, Linkedin } from 'lucide-react';
+import React, { useState } from 'react';
+import { Mail, Phone, MapPin, Clock, Facebook, Instagram, Linkedin, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import mesaLogo from '@/assets/mesa-group-logo.png';
 import catalystLogo from '@/assets/catalyst-logo.png';
 
 const Footer = () => {
+  const [isConsumersOpen, setIsConsumersOpen] = useState(false);
+  const [isBusinessesOpen, setIsBusinessesOpen] = useState(false);
+
   return (
     <footer className="w-full">
       {/* Main Footer Section - Two Column Layout */}
@@ -100,18 +104,49 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Services Column */}
+            {/* Services Column with Collapsible Sections */}
             <div>
               <h3 className="text-[#F9C65D] text-lg font-semibold mb-4">Services</h3>
-              <ul className="space-y-3">
-                <li><Link to="/zero-interest-business-funding" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">0% Business Funding</Link></li>
-                <li><Link to="/build-credit" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Build Credit</Link></li>
-                <li><Link to="/credit-repair" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Repair</Link></li>
-                <li><Link to="/credit-monitoring" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Monitoring</Link></li>
-                <li><Link to="/diy-credit-repair" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">DIY Credit Repair</Link></li>
-                <li><a href="https://www.mesagroupconsulting.com/services/business-consulting-coming-soon" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Consulting</a></li>
-                <li><a href="https://www.mesagroupconsulting.com/services/tax-services-coming-soon" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Tax Services</a></li>
-              </ul>
+              
+              {/* For Consumers Section */}
+              <Collapsible open={isConsumersOpen} onOpenChange={setIsConsumersOpen}>
+                <CollapsibleTrigger className="flex items-center justify-between w-full text-left group mb-2">
+                  <span className="text-white text-[15px] font-medium">For Consumers</span>
+                  <ChevronDown className={`w-4 h-4 text-[#F9C65D] transition-transform duration-200 ${isConsumersOpen ? 'rotate-180' : ''}`} />
+                </CollapsibleTrigger>
+                <ul className="space-y-3 mb-4">
+                  <li><Link to="/build-credit" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Build Credit</Link></li>
+                  <li><Link to="/credit-monitoring" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Monitoring</Link></li>
+                  <li><Link to="/credit-repair" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Repair</Link></li>
+                  <li><Link to="/diy-credit-repair" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">DIY Credit Repair</Link></li>
+                  <CollapsibleContent>
+                    <li className="mt-3"><Link to="/credit-cards" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Cards</Link></li>
+                    <li className="mt-3"><Link to="/personal-loans" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Personal Loans</Link></li>
+                    <li className="mt-3"><Link to="/auto-loan-refi" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Auto Loan Refi</Link></li>
+                    <li className="mt-3"><Link to="/student-loan-refi" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Student Loan Refi</Link></li>
+                    <li className="mt-3"><Link to="/debt-consolidation" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Debt Consolidation Loan</Link></li>
+                    <li className="mt-3"><Link to="/debt-relief" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Debt Relief</Link></li>
+                    <li className="mt-3"><Link to="/trust-and-will" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Trust & Will Plan</Link></li>
+                    <li className="mt-3"><Link to="/life-insurance" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Life Insurance</Link></li>
+                  </CollapsibleContent>
+                </ul>
+              </Collapsible>
+
+              {/* For Businesses Section */}
+              <Collapsible open={isBusinessesOpen} onOpenChange={setIsBusinessesOpen}>
+                <CollapsibleTrigger className="flex items-center justify-between w-full text-left group mb-2">
+                  <span className="text-white text-[15px] font-medium">For Businesses</span>
+                  <ChevronDown className={`w-4 h-4 text-[#F9C65D] transition-transform duration-200 ${isBusinessesOpen ? 'rotate-180' : ''}`} />
+                </CollapsibleTrigger>
+                <ul className="space-y-3">
+                  <li><Link to="/zero-interest-business-funding" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">0% Interest Business Funding</Link></li>
+                  <li><Link to="/business-funding" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Funding</Link></li>
+                  <li><Link to="/business-debt-relief" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Debt Relief</Link></li>
+                  <CollapsibleContent>
+                    <li className="mt-3"><Link to="/business-credit" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Credit</Link></li>
+                  </CollapsibleContent>
+                </ul>
+              </Collapsible>
             </div>
 
             {/* Pages Column */}
