@@ -268,7 +268,7 @@ const DIYCreditRepair = () => {
             <h4 className="text-2xl font-bold text-foreground mb-4">Cost Comparison</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div>
-                <div className="text-5xl font-bold text-secondary mb-2">$49.99</div>
+                <div className="text-5xl font-bold text-white mb-2">$49.99</div>
                 <div className="text-lg text-gray-700">per month</div>
                 <div className="text-sm text-gray-600 mt-2">DIY Credit Repair Software</div>
               </div>
@@ -392,19 +392,19 @@ const DIYCreditRepair = () => {
             </h4>
             <div className="space-y-3 text-gray-700">
               <div className="flex items-start gap-3">
-                <span className="font-semibold text-secondary min-w-[120px]">Week 1:</span>
+                <span className="font-semibold text-[#bb9446] min-w-[120px]">Week 1:</span>
                 <span>Import reports, identify negative items, send first round of disputes</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="font-semibold text-secondary min-w-[120px]">Week 4-6:</span>
+                <span className="font-semibold text-[#bb9446] min-w-[120px]">Week 4-6:</span>
                 <span>Bureaus respond (30-day deadline). Some items deleted, some verified</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="font-semibold text-secondary min-w-[120px]">Week 8:</span>
+                <span className="font-semibold text-[#bb9446] min-w-[120px]">Week 8:</span>
                 <span>Send second round for verified items with different strategy</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="font-semibold text-secondary min-w-[120px]">Month 3-6:</span>
+                <span className="font-semibold text-[#bb9446] min-w-[120px]">Month 3-6:</span>
                 <span>Continue cycles, see significant score improvements as items are removed</span>
               </div>
             </div>
@@ -626,7 +626,7 @@ const DIYCreditRepair = () => {
             
             <div className="bg-white rounded-lg p-4 text-center shadow-md">
               <div className="flex justify-center mb-2">
-                <X className="w-8 h-8 text-red-600" />
+                <X className="w-8 h-8 text-gray-700" />
               </div>
               <div className="font-semibold text-foreground">Charge-Offs</div>
             </div>
@@ -726,7 +726,7 @@ const DIYCreditRepair = () => {
           <div className="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 md:p-12 text-center shadow-2xl max-w-2xl mx-auto">
             
             <div className="bg-white rounded-xl p-8 mb-6">
-              <div className="text-6xl font-bold text-secondary mb-2">$49.99</div>
+              <div className="text-6xl font-bold text-[#3e3e3e] mb-2">$49.99</div>
               <div className="text-2xl text-gray-700 mb-4">per month</div>
               <div className="text-sm text-gray-600 mb-6">7-day free trial • No credit card required</div>
               
@@ -795,7 +795,7 @@ const DIYCreditRepair = () => {
               </p>
             </div>
             
-            <p className="text-white text-lg">
+            <p className="text-[#3e3e3e] text-lg">
               Try it risk-free for 7 days. If it's not for you, cancel before the trial ends—no charge.
             </p>
             
@@ -930,15 +930,15 @@ const DIYCreditRepair = () => {
           {/* Results Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="text-center">
-              <div className="text-5xl font-bold text-secondary mb-2">73%</div>
+              <div className="text-5xl font-bold text-[#bb9446] mb-2">73%</div>
               <div className="text-gray-700">Success rate for first-time DIY users</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-secondary mb-2">$1,200</div>
+              <div className="text-5xl font-bold text-[#bb9446] mb-2">$1,200</div>
               <div className="text-gray-700">Average savings vs. full-service (6 months)</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-secondary mb-2">4.8</div>
+              <div className="text-5xl font-bold text-[#bb9446] mb-2">4.8</div>
               <div className="text-gray-700">Average rating (out of 5 stars)</div>
             </div>
           </div>
