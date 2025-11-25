@@ -1,11 +1,12 @@
 import React from 'react';
+import ctaImage from '@/assets/business-debt-relief-cta-03.png';
 
 const EmotionalCTA3 = () => {
   return (
     <section 
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
       style={{ 
-        backgroundImage: "url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80')" 
+        backgroundImage: `url(${ctaImage})` 
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/20"></div>
