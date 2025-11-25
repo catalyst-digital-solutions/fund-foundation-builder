@@ -293,11 +293,11 @@ function SmartCreditFeatures() {
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center bg-white rounded-lg p-3 border border-white/30">
-                    <img src={experianLogo} alt="Experian" className="h-4 object-contain" />
+                    <img src={experianLogo} alt="Experian" className="h-5 w-24 object-contain object-left" />
                     <span className="font-bold text-lg text-[#3e3e3e]">725</span>
                   </div>
                   <div className="flex justify-between items-center bg-white rounded-lg p-3 border border-white/30">
-                    <img src={equifaxLogo} alt="Equifax" className="h-4 object-contain" />
+                    <img src={equifaxLogo} alt="Equifax" className="h-4 w-16 object-contain object-left" />
                     <span className="font-bold text-lg text-[#3e3e3e]">718</span>
                   </div>
                   <div className="flex justify-between items-center bg-white rounded-lg p-3 border border-white/30">
