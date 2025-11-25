@@ -822,7 +822,7 @@ const TrustAndWillPlan = () => {
         <div className="max-w-4xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-12 text-center">
-            Common Questions About Estate Planning
+            Common <span className="text-amber-600">Questions</span> About Estate Planning
           </h2>
           
           <div className="space-y-4">

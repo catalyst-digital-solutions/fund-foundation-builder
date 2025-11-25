@@ -771,7 +771,7 @@ const CreditRepair = () => {
       <section className="bg-[#F8FAFC] py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-12 text-center">
-            Common Questions About Credit Repair
+            Common <span className="text-amber-600">Questions</span> About Credit Repair
           </h2>
 
           <div className="space-y-4">

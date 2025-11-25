@@ -557,7 +557,7 @@ const DebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Debt Relief <span className="text-amber-600">Questions Answered</span>
+              Debt Relief <span className="text-amber-600">Questions</span> Answered
             </h2>
             <p className="text-xl text-gray-600">
               Get clarity before booking your free consultation.

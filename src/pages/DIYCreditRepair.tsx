@@ -822,7 +822,7 @@ const DIYCreditRepair = () => {
         <div className="max-w-4xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
-            Common Questions About DIY Credit Repair
+            Common <span className="text-amber-600">Questions</span> About DIY Credit Repair
           </h2>
           
           <div className="space-y-4">

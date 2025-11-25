@@ -707,10 +707,10 @@ const FAQSection = () => {
     <section className="py-20 px-6 bg-gray-50">
       <div className="max-w-4xl mx-auto">
         
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-            Business Funding Questions Answered
-          </h2>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
+              Business Funding <span className="text-amber-600">Questions</span> Answered
+            </h2>
           <p className="text-xl text-gray-600">
             Get clarity before you apply.
           </p>
