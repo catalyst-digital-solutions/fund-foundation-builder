@@ -608,7 +608,7 @@ function HowItWorks() {
           {/* Step 1 */}
           <div className="relative">
             <div className="bg-card rounded-2xl p-8 shadow-xl">
-              <div className="absolute -top-6 left-8 w-12 h-12 bg-success rounded-full flex items-center justify-center text-2xl font-bold text-white shadow-lg">
+              <div className="absolute -top-6 left-8 w-12 h-12 bg-[#ECC169] rounded-full flex items-center justify-center text-2xl font-bold text-gray-900 shadow-lg">
                 1
               </div>
               <div className="flex justify-center mt-4 mb-4">
@@ -626,7 +626,7 @@ function HowItWorks() {
           {/* Step 2 */}
           <div className="relative">
             <div className="bg-card rounded-2xl p-8 shadow-xl">
-              <div className="absolute -top-6 left-8 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-2xl font-bold text-white shadow-lg">
+              <div className="absolute -top-6 left-8 w-12 h-12 bg-[#ECC169] rounded-full flex items-center justify-center text-2xl font-bold text-gray-900 shadow-lg">
                 2
               </div>
               <div className="flex justify-center mt-4 mb-4">
@@ -644,7 +644,7 @@ function HowItWorks() {
           {/* Step 3 */}
           <div className="relative">
             <div className="bg-card rounded-2xl p-8 shadow-xl">
-              <div className="absolute -top-6 left-8 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-2xl font-bold text-white shadow-lg">
+              <div className="absolute -top-6 left-8 w-12 h-12 bg-[#ECC169] rounded-full flex items-center justify-center text-2xl font-bold text-gray-900 shadow-lg">
                 3
               </div>
               <div className="flex justify-center mt-4 mb-4">
