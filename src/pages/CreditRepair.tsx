@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, Search, Lightbulb, MapPin } from "lucide-react";
+import { Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, Search, Lightbulb, MapPin, ChevronDown } from "lucide-react";
 import EmotionalCTA1 from "@/components/credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/credit-repair/sections/EmotionalCTA3";

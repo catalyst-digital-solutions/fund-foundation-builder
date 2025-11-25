@@ -10,7 +10,7 @@ import {
   DollarSign, ClipboardList, Clock, Briefcase, Cake, Wallet, 
   Dog, Laptop, Star, Shield, TrendingUp, FileCheck, UserCheck,
   ArrowRight, HelpCircle, Award, Baby, CircleDollarSign, PiggyBank,
-  FileSignature, Globe, X
+  FileSignature, Globe, X, ChevronDown
 } from 'lucide-react';
 
 const TrustAndWillPlan = () => {

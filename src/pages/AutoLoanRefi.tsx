@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import EmotionalCTA1 from '@/components/auto-loan-refi/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/auto-loan-refi/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/auto-loan-refi/sections/EmotionalCTA3';
-import { Lock, Zap, CircleDollarSign, TrendingUp, TrendingDown, Search, BarChart3, Landmark, Lightbulb, Star, Banknote, Ban, UserMinus, FileText, Shield, AlertTriangle, LockKeyhole, CheckCircle2 } from 'lucide-react';
+import { Lock, Zap, CircleDollarSign, TrendingUp, TrendingDown, Search, BarChart3, Landmark, Lightbulb, Star, Banknote, Ban, UserMinus, FileText, Shield, AlertTriangle, LockKeyhole, CheckCircle2, ChevronDown } from 'lucide-react';
 
 const AutoLoanRefi = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from "@/components/Header";
+import { ChevronDown } from 'lucide-react';
 
 const StudentLoanRefi = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
