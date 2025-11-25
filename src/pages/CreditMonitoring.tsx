@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, FileText, AlertTriangle, DollarSign, Eye, Lock, Mail, ChevronDown, Phone, MapPin, ExternalLink } from 'lucide-react';
+import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, FileText, AlertTriangle, DollarSign, Eye, Lock, ChevronDown, Phone, MapPin, ExternalLink } from 'lucide-react';
 import EmotionalCTA1 from '@/components/credit-monitoring/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/credit-monitoring/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/credit-monitoring/sections/EmotionalCTA3';
+import experianLogo from '@/assets/experian-logo.png';
+import equifaxLogo from '@/assets/equifax-logo.png';
+import transunionLogo from '@/assets/transunion-logo.png';
 
 const AFFILIATE_LINK = "https://smartcredit.com/join/?PID=24603&planType=PREMIUM";
 
@@ -290,15 +293,15 @@ function SmartCreditFeatures() {
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center bg-white/20 backdrop-blur-sm rounded-lg p-3 border border-white/30">
-                    <span className="text-sm font-semibold">Experian</span>
+                    <img src={experianLogo} alt="Experian" className="h-4 object-contain" />
                     <span className="font-bold text-lg">725</span>
                   </div>
                   <div className="flex justify-between items-center bg-white/20 backdrop-blur-sm rounded-lg p-3 border border-white/30">
-                    <span className="text-sm font-semibold">Equifax</span>
+                    <img src={equifaxLogo} alt="Equifax" className="h-4 object-contain" />
                     <span className="font-bold text-lg">718</span>
                   </div>
                   <div className="flex justify-between items-center bg-white/20 backdrop-blur-sm rounded-lg p-3 border border-white/30">
-                    <span className="text-sm font-semibold">TransUnion</span>
+                    <img src={transunionLogo} alt="TransUnion" className="h-5 object-contain" />
                     <span className="font-bold text-lg">717</span>
                   </div>
                 </div>
