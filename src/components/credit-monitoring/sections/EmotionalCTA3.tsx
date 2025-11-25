@@ -17,7 +17,7 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine waking up to instant alerts—not devastating surprises months later. Your family covered with $1M fraud insurance. Your credit score rising as you dispute errors and build strategically. Complete peace of mind knowing you'll catch threats before they destroy your financial future. That security you deserve is one decision away.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <button className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5">
           Claim Your Peace of Mind →
         </button>
       </div>
