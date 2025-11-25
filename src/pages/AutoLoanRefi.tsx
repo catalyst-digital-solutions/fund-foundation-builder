@@ -830,33 +830,38 @@ const AutoLoanRefi = () => {
       <section className="bg-[#E5D2AF] py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
           
-          <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-6 text-center">
             Common <span className="text-amber-600">Questions</span> About Auto Loan Refinancing
           </h2>
+          <p className="text-xl text-gray-700 mb-12 text-center">
+            Get answers to common questions about refinancing your auto loan.
+          </p>
           
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-lg border-2 border-[#CBCBCB] hover:border-[#f9c65d] overflow-hidden transition duration-200">
+              <div key={index} className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
                 
                 <button
                   onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-                  className="w-full text-left px-6 py-4 flex items-center justify-between bg-white hover:bg-[#f8d899] transition duration-200"
+                  className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-white/50 transition-colors duration-200"
                 >
-                  <h3 className="text-lg font-semibold text-[#3E3E3E] pr-8">
-                    {faq.question}
-                  </h3>
-                  <span className="text-2xl text-[#bb9446] flex-shrink-0 font-bold">
-                    {openFAQ === index ? '−' : '+'}
-                  </span>
+                  <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
+                  <ChevronDown 
+                    className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${
+                      openFAQ === index ? 'transform rotate-180' : ''
+                    }`}
+                  />
                 </button>
                 
-                {openFAQ === index && (
-                  <div className="px-6 pb-4 pt-2 bg-white">
-                    <p className="text-gray-700 leading-relaxed">
-                      {faq.answer}
-                    </p>
+                <div 
+                  className={`overflow-hidden transition-all duration-300 ${
+                    openFAQ === index ? 'max-h-96' : 'max-h-0'
+                  }`}
+                >
+                  <div className="px-6 pb-5 pt-2 bg-white">
+                    <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                   </div>
-                )}
+                </div>
                 
               </div>
             ))}

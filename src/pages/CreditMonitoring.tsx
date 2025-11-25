@@ -718,31 +718,37 @@ function FAQSection() {
     <section className="py-20 px-6 bg-background">
       <div className="max-w-4xl mx-auto">
         
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Common <span className="text-amber-600">Questions</span> About Credit Monitoring
             </h2>
+            <p className="text-xl text-gray-700">
+              Get answers to common questions about credit monitoring and identity protection.
+            </p>
           </div>
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden border border-border">
+            <div key={index} className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
               <button 
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full text-left px-8 py-6 flex justify-between items-center bg-white hover:bg-muted/50 transition-colors"
+                className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-white/50 transition-colors duration-200"
               >
-                <span className="text-lg font-bold text-foreground pr-4">
+                <span className="font-semibold text-gray-900 pr-4">
                   {faq.question}
                 </span>
-                <ChevronDown className={`w-6 h-6 text-primary flex-shrink-0 transition-transform duration-200 ${openIndex === index ? 'rotate-180' : ''}`} />
+                <ChevronDown className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${openIndex === index ? 'transform rotate-180' : ''}`} />
               </button>
-              {openIndex === index && (
-                <div className="px-8 py-6 bg-white">
-                  <p className="text-muted-foreground leading-relaxed">
-                    {faq.answer}
-                  </p>
+              
+              <div 
+                className={`overflow-hidden transition-all duration-300 ${
+                  openIndex === index ? 'max-h-96' : 'max-h-0'
+                }`}
+              >
+                <div className="px-6 pb-5 pt-2 bg-white">
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

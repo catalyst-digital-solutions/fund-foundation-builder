@@ -556,45 +556,38 @@ const DebtRelief = () => {
         <div className="max-w-4xl mx-auto">
           
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Debt Relief <span className="text-amber-600">Questions</span> Answered
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700">
               Get clarity before booking your free consultation.
             </p>
           </div>
 
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm">
+              <div key={index} className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors flex justify-between items-center"
+                  className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-white/50 transition-colors duration-200"
                 >
-                  <span className="text-lg font-semibold text-gray-900 pr-4">
-                    {faq.question}
-                  </span>
-                  <svg
-                    className={`w-6 h-6 text-amber-600 flex-shrink-0 transition-transform ${
-                      openIndex === index ? 'rotate-180' : ''
+                  <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
+                  <ChevronDown 
+                    className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${
+                      openIndex === index ? 'transform rotate-180' : ''
                     }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
+                  />
                 </button>
-                {openIndex === index && (
-                  <div className="px-6 py-5 bg-white border-t border-gray-200">
+                
+                <div 
+                  className={`overflow-hidden transition-all duration-300 ${
+                    openIndex === index ? 'max-h-96' : 'max-h-0'
+                  }`}
+                >
+                  <div className="px-6 pb-5 pt-2 bg-white">
                     <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                   </div>
-                )}
+                </div>
               </div>
             ))}
           </div>
