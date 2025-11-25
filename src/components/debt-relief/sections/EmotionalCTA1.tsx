@@ -16,7 +16,7 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Multiple creditor calls every day. Watching your bank account drained by minimum payments that never touch the principal. You can't afford basic necessities while interest piles up. Every night you lie awake calculating numbers that don't add up—trapped in a cycle that steals your peace and your future.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
           Stop the Debt Spiral →
         </button>
       </div>
