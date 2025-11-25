@@ -17,7 +17,7 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine an extra $300 every month—building your emergency fund, saving for a home, finally taking that trip. Watching your loan balance actually shrink instead of treading water. Owning your financial future instead of renting it from your lender. Your financial freedom is one decision away.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
           Start Your Debt-Free Journey →
         </button>
       </div>

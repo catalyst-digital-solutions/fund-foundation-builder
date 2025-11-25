@@ -17,7 +17,7 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Your friends are buying homes, starting families, building savings—while your student loans keep you stuck. Every payment at that high rate is throwing money away to interest. You graduated to build a future, not spend a decade trapped by debt you can't escape.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
           Break Free from High Rates →
         </button>
       </div>
