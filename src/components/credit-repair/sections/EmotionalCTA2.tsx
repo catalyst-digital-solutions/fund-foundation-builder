@@ -17,7 +17,7 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Mesa Group Capital's certified credit experts know exactly which items to dispute, which laws to cite, and how to negotiate with creditors for deletions. We've helped 4,200+ clients remove inaccurate items and raise scores an average of 90 points. Let us fight the bureaus while you breathe easier.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4">
           Start Your Credit Transformation →
         </button>
       </div>

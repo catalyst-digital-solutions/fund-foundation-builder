@@ -418,7 +418,7 @@ const CreditRepair = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Left Column - List */}
-            <div className="bg-[#F8FAFC] rounded-lg p-8">
+            <div className="bg-[#f8d899] rounded-lg p-8">
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-[#10B981] font-bold text-xl mt-1">✓</span>

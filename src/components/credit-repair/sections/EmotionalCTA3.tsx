@@ -17,7 +17,7 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine checking your credit in 90 days—watching those negative items disappear. Getting that car loan at 4% instead of 18%. Qualifying for the mortgage you've been dreaming about. Refinancing debt and pocketing thousands in savings. That financial freedom you deserve is one decision away.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4">
           Claim Your Fresh Start →
         </button>
       </div>
