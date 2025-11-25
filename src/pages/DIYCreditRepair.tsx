@@ -874,11 +874,11 @@ const DIYCreditRepair = () => {
             {/* Testimonial 1 */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
               </div>
               <p className="text-white mb-4 italic leading-relaxed">
                 "Removed 3 collections and 2 late payments in 4 months. My score went from 590 to 680. Total cost: $200. Would've been $600+ with a credit repair company."
@@ -892,11 +892,11 @@ const DIYCreditRepair = () => {
             {/* Testimonial 2 */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
               </div>
               <p className="text-white mb-4 italic leading-relaxed">
                 "The AI told me exactly which items to dispute first. I was skeptical but followed the strategy. 2 of my biggest items were deleted in the first round. Already recommended to 3 friends."
@@ -910,11 +910,11 @@ const DIYCreditRepair = () => {
             {/* Testimonial 3 */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
-                <Star className="w-5 h-5 text-[#bb9446] fill-[#bb9446]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
               </div>
               <p className="text-white mb-4 italic leading-relaxed">
                 "I spend maybe 1 hour a month on this. The letter generator is incredible—way better than anything I could've written myself. Saved me $1,500+ vs. hiring a company."
