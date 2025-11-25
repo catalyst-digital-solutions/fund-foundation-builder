@@ -622,16 +622,18 @@ const BakersfieldTestimonials = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gradient-to-br from-[#f8d899] to-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="flex gap-1 text-[#f9c65d] mb-3">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5" fill="#f9c65d" />)}
+            <div key={index} className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div className="flex gap-1 mb-3">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
-              <p className="text-gray-700 italic leading-relaxed mb-6">
+              <p className="text-white italic leading-relaxed mb-6">
                 "{testimonial.text}"
               </p>
-              <p className="text-sm text-gray-600 font-semibold">
-                — {testimonial.author}
-              </p>
+              <div className="pt-4 border-t border-white/30">
+                <p className="text-sm text-white/90 font-semibold">
+                  — {testimonial.author}
+                </p>
+              </div>
             </div>
           ))}
         </div>

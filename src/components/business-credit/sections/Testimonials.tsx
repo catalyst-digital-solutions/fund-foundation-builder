@@ -28,15 +28,17 @@ const Testimonials = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg p-6 md:p-8 border-l-4 border-amber-400">
+            <div key={index} className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl shadow-lg p-6 md:p-8">
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                 ))}
               </div>
-              <blockquote className="text-gray-700 leading-relaxed mb-6">"{testimonial.quote}"</blockquote>
-              <div className="font-semibold text-gray-900">{testimonial.author}</div>
-              <div className="text-sm text-gray-600">{testimonial.location}</div>
+              <blockquote className="text-white leading-relaxed mb-6">"{testimonial.quote}"</blockquote>
+              <div className="pt-4 border-t border-white/30">
+                <div className="font-semibold text-white">{testimonial.author}</div>
+                <div className="text-sm text-white/90">{testimonial.location}</div>
+              </div>
             </div>
           ))}
         </div>
