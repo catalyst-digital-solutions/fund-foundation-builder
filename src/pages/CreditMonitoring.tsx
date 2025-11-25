@@ -292,17 +292,17 @@ function SmartCreditFeatures() {
                   <div className="text-sm mt-2 font-semibold">Your Average Score</div>
                 </div>
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center bg-white/20 backdrop-blur-sm rounded-lg p-3 border border-white/30">
+                  <div className="flex justify-between items-center bg-white rounded-lg p-3 border border-white/30">
                     <img src={experianLogo} alt="Experian" className="h-4 object-contain" />
-                    <span className="font-bold text-lg">725</span>
+                    <span className="font-bold text-lg text-[#3e3e3e]">725</span>
                   </div>
-                  <div className="flex justify-between items-center bg-white/20 backdrop-blur-sm rounded-lg p-3 border border-white/30">
+                  <div className="flex justify-between items-center bg-white rounded-lg p-3 border border-white/30">
                     <img src={equifaxLogo} alt="Equifax" className="h-4 object-contain" />
-                    <span className="font-bold text-lg">718</span>
+                    <span className="font-bold text-lg text-[#3e3e3e]">718</span>
                   </div>
-                  <div className="flex justify-between items-center bg-white/20 backdrop-blur-sm rounded-lg p-3 border border-white/30">
+                  <div className="flex justify-between items-center bg-white rounded-lg p-3 border border-white/30">
                     <img src={transunionLogo} alt="TransUnion" className="h-5 object-contain" />
-                    <span className="font-bold text-lg">717</span>
+                    <span className="font-bold text-lg text-[#3e3e3e]">717</span>
                   </div>
                 </div>
               </div>
