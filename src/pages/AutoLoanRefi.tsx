@@ -960,21 +960,21 @@ const AutoLoanRefi = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div>
                 <div className="flex justify-center mb-2">
-                  <LockKeyhole className="w-10 h-10 text-gray-700" />
+                  <LockKeyhole className="w-10 h-10 text-[#3e3e3e]" />
                 </div>
                 <div className="font-semibold text-[#3E3E3E] mb-1">SOC 2 Type II Certified</div>
                 <div className="text-sm text-gray-600">Audited for data security</div>
               </div>
               <div>
                 <div className="flex justify-center mb-2">
-                  <Shield className="w-10 h-10 text-blue-600" />
+                  <Shield className="w-10 h-10 text-[#3e3e3e]" />
                 </div>
                 <div className="font-semibold text-[#3E3E3E] mb-1">256-Bit Encryption</div>
                 <div className="text-sm text-gray-600">Bank-level protection</div>
               </div>
               <div>
                 <div className="flex justify-center mb-2">
-                  <CheckCircle2 className="w-10 h-10 text-green-600" />
+                  <CheckCircle2 className="w-10 h-10 text-[#3e3e3e]" />
                 </div>
                 <div className="font-semibold text-[#3E3E3E] mb-1">No Data Selling</div>
                 <div className="text-sm text-gray-600">We never sell your info</div>
