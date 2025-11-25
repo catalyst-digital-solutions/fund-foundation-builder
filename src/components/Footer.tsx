@@ -111,7 +111,7 @@ const Footer = () => {
               {/* For Consumers Section */}
               <Collapsible open={isConsumersOpen} onOpenChange={setIsConsumersOpen}>
                 <CollapsibleTrigger className="flex items-center justify-between w-full text-left group mb-2">
-                  <span className="text-white text-[15px] font-medium">For Consumers</span>
+                  <span className="text-[#F9C65D] text-[15px] font-semibold">For Consumers</span>
                   <ChevronDown className={`w-4 h-4 text-[#F9C65D] transition-transform duration-200 ${isConsumersOpen ? 'rotate-180' : ''}`} />
                 </CollapsibleTrigger>
                 <ul className="space-y-3 mb-4">
@@ -135,7 +135,7 @@ const Footer = () => {
               {/* For Businesses Section */}
               <Collapsible open={isBusinessesOpen} onOpenChange={setIsBusinessesOpen}>
                 <CollapsibleTrigger className="flex items-center justify-between w-full text-left group mb-2">
-                  <span className="text-white text-[15px] font-medium">For Businesses</span>
+                  <span className="text-[#F9C65D] text-[15px] font-semibold">For Businesses</span>
                   <ChevronDown className={`w-4 h-4 text-[#F9C65D] transition-transform duration-200 ${isBusinessesOpen ? 'rotate-180' : ''}`} />
                 </CollapsibleTrigger>
                 <ul className="space-y-3">
