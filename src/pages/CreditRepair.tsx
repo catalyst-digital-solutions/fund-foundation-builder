@@ -111,9 +111,9 @@ const CreditRepair = () => {
   };
 
   // Initialize counters for trust badges
-  const successRateCounter = useCounter(91, 2000, 0);
+  const successRateCounter = useCounter(99, 2000, 0);
   const bbbCounter = useCounter(100, 2000, 150);
-  const yearCounter = useCounter(2012, 2000, 300);
+  const yearCounter = useCounter(2023, 2000, 300);
 
   return (
     <main className="min-h-screen">
@@ -136,7 +136,7 @@ const CreditRepair = () => {
 
               {/* Subheadline */}
               <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-                91% success rate. Average 83-point increase. Results in 30-45 days. We handle disputes,
+                99% success rate. Average 83-point increase. Results in 30-45 days. We handle disputes,
                 negotiate with creditors, and track every change—so you don't have to.
               </p>
 
@@ -214,7 +214,7 @@ const CreditRepair = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-mgc-yellow to-mgc-gold rounded-full flex items-center justify-center shadow-lg animate-scale-in" style={{ animationDelay: '100ms' }}>
                   <Trophy className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-4xl font-bold text-mgc-dark-gray">{successRateCounter.count}%</div>
+                <div className="text-4xl font-bold text-gray-900">{successRateCounter.count}%</div>
                 <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Success Rate</div>
               </div>
             </div>
@@ -223,7 +223,7 @@ const CreditRepair = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-mgc-yellow to-mgc-gold rounded-full flex items-center justify-center shadow-lg animate-scale-in" style={{ animationDelay: '250ms' }}>
                   <Star className="w-8 h-8 text-white fill-white" />
                 </div>
-                <div className="text-4xl font-bold text-mgc-dark-gray">{bbbCounter.count >= 100 ? 'A+' : 'A'}</div>
+                <div className="text-4xl font-bold text-gray-900">{bbbCounter.count >= 100 ? 'A+' : 'A'}</div>
                 <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">BBB Rated</div>
               </div>
             </div>
@@ -232,7 +232,7 @@ const CreditRepair = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-mgc-yellow to-mgc-gold rounded-full flex items-center justify-center shadow-lg animate-scale-in" style={{ animationDelay: '400ms' }}>
                   <Calendar className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-4xl font-bold text-mgc-dark-gray">{yearCounter.count}</div>
+                <div className="text-4xl font-bold text-gray-900">{yearCounter.count}</div>
                 <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Since</div>
               </div>
             </div>
@@ -241,7 +241,7 @@ const CreditRepair = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-mgc-yellow to-mgc-gold rounded-full flex items-center justify-center shadow-lg animate-scale-in" style={{ animationDelay: '550ms' }}>
                   <Lock className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-2xl font-bold text-mgc-dark-gray">Bank-Level</div>
+                <div className="text-2xl font-bold text-gray-900">Bank-Level</div>
                 <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Security</div>
               </div>
             </div>
