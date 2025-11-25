@@ -734,7 +734,7 @@ function FAQSection() {
                 <ChevronDown className={`w-6 h-6 text-primary flex-shrink-0 transition-transform duration-200 ${openIndex === index ? 'rotate-180' : ''}`} />
               </button>
               {openIndex === index && (
-                <div className="px-8 py-6 bg-muted/30">
+                <div className="px-8 py-6 bg-white">
                   <p className="text-muted-foreground leading-relaxed">
                     {faq.answer}
                   </p>
