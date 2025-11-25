@@ -12,12 +12,12 @@ const EmotionalCTA1 = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
-          Tired of Watching Life's Opportunities Slip Away Because of Errors on Your Credit Report?
+          Tired of Missing Opportunities Because of Credit Report Errors?
         </h2>
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Every loan denial. Every "sorry, you don't qualify." Every night worrying your past mistakes will follow you forever. You know some of those items aren't even accurate—but the bureaus won't listen when you try to fix it yourself. Your dreams are on hold while your credit stays broken.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4">
           Get Your Free Credit Analysis →
         </button>
       </div>
