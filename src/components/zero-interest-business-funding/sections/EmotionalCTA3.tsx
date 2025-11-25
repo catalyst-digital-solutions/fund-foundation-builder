@@ -2,6 +2,10 @@ import React from 'react';
 import ctaImage from '@/assets/zero-interest-business-funding-cta-03.png';
 
 const EmotionalCTA3 = () => {
+  const handleClick = () => {
+    window.open('https://funding-app.mesagroupconsulting.com/opt-in/apply-page', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section 
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
@@ -17,7 +21,10 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine saving $5,000+ in interest and channeling it into marketing that doubles revenue. Hiring that key employee who transforms operations. Buying equipment that multiplies capacity. That's the 0% advantage. Your breakthrough is one call away.
         </p>
-        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
+        <button 
+          onClick={handleClick}
+          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+        >
           Start Your 0% Journey →
         </button>
       </div>

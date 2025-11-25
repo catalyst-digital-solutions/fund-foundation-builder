@@ -49,7 +49,7 @@ const DIYCreditRepair = () => {
   ];
 
   const handleSignupClick = () => {
-    window.open('https://member.getcreditily.com/Registration/CreateAccount/Account?utm_source=mesa&utm_medium=website&utm_campaign=diy_credit_repair', '_blank', 'noopener,noreferrer');
+    window.open('https://member.getcreditily.com/Registration/CreateAccount/Account', '_blank', 'noopener,noreferrer');
   };
 
   return (

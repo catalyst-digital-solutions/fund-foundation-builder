@@ -2,6 +2,10 @@ import React from 'react';
 import ctaImage from '@/assets/student-loan-refi-cta-01.png';
 
 const EmotionalCTA1 = () => {
+  const handleClick = () => {
+    window.open('https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=student_loan_refi', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section 
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
@@ -17,7 +21,10 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Your friends are buying homes, starting families, building savings—while your student loans keep you stuck. Every payment at that high rate is throwing money away to interest. You graduated to build a future, not spend a decade trapped by debt you can't escape.
         </p>
-        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
+        <button 
+          onClick={handleClick}
+          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+        >
           Break Free from High Rates →
         </button>
       </div>
