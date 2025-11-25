@@ -17,7 +17,7 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Our AI-powered software analyzes your reports, generates legally-compliant dispute letters, and tracks all three bureaus—just like the pros. Mesa Group Capital gives you the tools and guidance to dispute inaccuracies yourself. Save $3,000+ while taking control of your financial future.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
           Start Your Free Trial →
         </button>
       </div>

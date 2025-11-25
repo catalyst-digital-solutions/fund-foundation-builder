@@ -17,7 +17,7 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Every loan rejection. Every "sorry, you don't qualify." Every month watching your score stay stuck while credit repair companies charge thousands for work you can do yourself. Those inaccuracies aren't going away on their own—but you don't need to spend a fortune to fix them.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
           Take Control of Your Credit →
         </button>
       </div>
