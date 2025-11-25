@@ -872,56 +872,56 @@ const DIYCreditRepair = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             {/* Testimonial 1 */}
-            <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
+            <div className="bg-[#f9c65d] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
               </div>
-              <p className="text-gray-700 mb-4 italic leading-relaxed">
+              <p className="text-white mb-4 italic leading-relaxed">
                 "Removed 3 collections and 2 late payments in 4 months. My score went from 590 to 680. Total cost: $200. Would've been $600+ with a credit repair company."
               </p>
-              <div className="pt-4 border-t border-yellow-300">
-                <p className="font-semibold text-foreground">Sarah M.</p>
-                <p className="text-sm text-gray-600">Bakersfield, CA</p>
+              <div className="pt-4 border-t border-white/30">
+                <p className="font-semibold text-white">Sarah M.</p>
+                <p className="text-sm text-white/90">Bakersfield, CA</p>
               </div>
             </div>
             
             {/* Testimonial 2 */}
-            <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
+            <div className="bg-[#f9c65d] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
               </div>
-              <p className="text-gray-700 mb-4 italic leading-relaxed">
+              <p className="text-white mb-4 italic leading-relaxed">
                 "The AI told me exactly which items to dispute first. I was skeptical but followed the strategy. 2 of my biggest items were deleted in the first round. Already recommended to 3 friends."
               </p>
-              <div className="pt-4 border-t border-yellow-300">
-                <p className="font-semibold text-foreground">James T.</p>
-                <p className="text-sm text-gray-600">Kern County, CA</p>
+              <div className="pt-4 border-t border-white/30">
+                <p className="font-semibold text-white">James T.</p>
+                <p className="text-sm text-white/90">Kern County, CA</p>
               </div>
             </div>
             
             {/* Testimonial 3 */}
-            <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
+            <div className="bg-[#f9c65d] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
               </div>
-              <p className="text-gray-700 mb-4 italic leading-relaxed">
+              <p className="text-white mb-4 italic leading-relaxed">
                 "I spend maybe 1 hour a month on this. The letter generator is incredible—way better than anything I could've written myself. Saved me $1,500+ vs. hiring a company."
               </p>
-              <div className="pt-4 border-t border-yellow-300">
-                <p className="font-semibold text-foreground">Maria G.</p>
-                <p className="text-sm text-gray-600">Fresno, CA</p>
+              <div className="pt-4 border-t border-white/30">
+                <p className="font-semibold text-white">Maria G.</p>
+                <p className="text-sm text-white/90">Fresno, CA</p>
               </div>
             </div>
             
