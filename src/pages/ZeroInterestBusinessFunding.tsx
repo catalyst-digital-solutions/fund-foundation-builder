@@ -7,7 +7,7 @@ import EmotionalCTA3 from '@/components/zero-interest-business-funding/sections/
 import { 
   Trophy, CreditCard, Rocket, Building2, FileText, TrendingUp, 
   Coins, BarChart3, Hammer, Target, Building, Banknote, 
-  Star, Phone, MapPin, Check, Lightbulb 
+  Star, Phone, MapPin, Check, Lightbulb, ChevronDown 
 } from 'lucide-react';
 
 const ZeroInterestBusinessFunding = () => {

@@ -16,7 +16,8 @@ import {
   CreditCard as CardIcon,
   Heart,
   Scale,
-  CheckCircle
+  CheckCircle,
+  ChevronDown
 } from 'lucide-react';
 
 const DebtRelief = () => {
