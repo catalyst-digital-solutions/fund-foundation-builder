@@ -2,6 +2,10 @@ import React from 'react';
 import ctaImage from '@/assets/zero-interest-business-funding-cta-02.png';
 
 const EmotionalCTA2 = () => {
+  const handleClick = () => {
+    window.open('https://funding-app.mesagroupconsulting.com/opt-in/apply-page', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section 
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
@@ -17,7 +21,10 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           We secure 0% promotional funding for 12-18 months—letting you invest and see returns before interest kicks in. No collateral on most options. Approvals in 24-48 hours. We see your potential where banks see risk.
         </p>
-        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
+        <button 
+          onClick={handleClick}
+          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+        >
           Unlock 0% Funding →
         </button>
       </div>

@@ -2,6 +2,10 @@ import React from 'react';
 import ctaImage from '@/assets/diy-credit-repair-cta-02.png';
 
 const EmotionalCTA2 = () => {
+  const handleClick = () => {
+    window.open('https://member.getcreditily.com/Registration/CreateAccount/Account', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section 
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
@@ -17,7 +21,10 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Our AI-powered software analyzes your reports, generates legally-compliant dispute letters, and tracks all three bureaus—just like the pros. Mesa Group Capital gives you the tools and guidance to dispute inaccuracies yourself. Save $3,000+ while taking control of your financial future.
         </p>
-        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
+        <button 
+          onClick={handleClick}
+          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+        >
           Start Your Free Trial →
         </button>
       </div>
