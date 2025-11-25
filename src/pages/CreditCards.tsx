@@ -636,7 +636,7 @@ const CreditCards = () => {
         <div className="max-w-4xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-12 text-center">
-            Common Credit Card Questions
+            Common Credit Card <span className="text-amber-600">Questions</span>
           </h2>
           
           <div className="space-y-4">

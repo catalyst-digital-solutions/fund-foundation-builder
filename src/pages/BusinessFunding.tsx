@@ -692,7 +692,7 @@ const FAQSection = () => {
         
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Frequently Asked Questions
+            Frequently Asked <span className="text-amber-600">Questions</span>
           </h2>
           <p className="text-xl text-muted-foreground">
             Get clarity on Mesa Group Capital's funding solutions.

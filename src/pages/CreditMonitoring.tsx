@@ -718,11 +718,11 @@ function FAQSection() {
     <section className="py-20 px-6 bg-background">
       <div className="max-w-4xl mx-auto">
         
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Common Questions About Credit Monitoring
-          </h2>
-        </div>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Common <span className="text-amber-600">Questions</span> About Credit Monitoring
+            </h2>
+          </div>
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
