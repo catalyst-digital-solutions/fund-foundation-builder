@@ -872,7 +872,7 @@ const DIYCreditRepair = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             {/* Testimonial 1 */}
-            <div className="bg-accent rounded-lg p-6 shadow-md">
+            <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                 <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
@@ -890,7 +890,7 @@ const DIYCreditRepair = () => {
             </div>
             
             {/* Testimonial 2 */}
-            <div className="bg-accent rounded-lg p-6 shadow-md">
+            <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                 <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
@@ -908,7 +908,7 @@ const DIYCreditRepair = () => {
             </div>
             
             {/* Testimonial 3 */}
-            <div className="bg-accent rounded-lg p-6 shadow-md">
+            <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                 <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
