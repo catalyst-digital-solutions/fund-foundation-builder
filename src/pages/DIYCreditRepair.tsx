@@ -872,7 +872,7 @@ const DIYCreditRepair = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             {/* Testimonial 1 */}
-            <div className="bg-[#f9c65d] rounded-lg p-6 shadow-md">
+            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
                 <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
@@ -890,7 +890,7 @@ const DIYCreditRepair = () => {
             </div>
             
             {/* Testimonial 2 */}
-            <div className="bg-[#f9c65d] rounded-lg p-6 shadow-md">
+            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
                 <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
@@ -908,7 +908,7 @@ const DIYCreditRepair = () => {
             </div>
             
             {/* Testimonial 3 */}
-            <div className="bg-[#f9c65d] rounded-lg p-6 shadow-md">
+            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
                 <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
                 <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
