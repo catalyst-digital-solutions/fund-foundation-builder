@@ -272,8 +272,8 @@ function SmartCreditFeatures() {
           <div className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-200">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="inline-block bg-secondary/10 p-4 rounded-lg mb-4">
-                  <BarChart3 className="w-12 h-12 text-secondary" />
+                <div className="inline-block bg-[#bb9446]/10 p-4 rounded-lg mb-4">
+                  <BarChart3 className="w-12 h-12 text-foreground" />
                 </div>
                 <h3 className="text-3xl font-bold text-foreground mb-4">
                   3-Bureau Credit Reports & Scores
@@ -325,8 +325,8 @@ function SmartCreditFeatures() {
                 </div>
               </div>
               <div className="order-1 md:order-2">
-                <div className="inline-block bg-success/10 p-4 rounded-lg mb-4">
-                  <Lock className="w-12 h-12 text-success" />
+                <div className="inline-block bg-[#bb9446]/10 p-4 rounded-lg mb-4">
+                  <Lock className="w-12 h-12 text-foreground" />
                 </div>
                 <h3 className="text-3xl font-bold text-foreground mb-4">
                   Identity Theft Protection & Fraud Insurance
