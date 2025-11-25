@@ -160,8 +160,8 @@ const TrustAndWillPlan = () => {
                 
                 <div className="space-y-4">
                   {/* Last Will & Testament */}
-                  <div className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
-                    <FileText className="w-8 h-8 text-blue-600 flex-shrink-0" />
+                  <div className="flex items-start gap-3 p-3 bg-amber-50 rounded-lg border border-amber-200">
+                    <FileText className="w-8 h-8 text-amber-600 flex-shrink-0" />
                     <div>
                       <div className="font-semibold text-[#3E3E3E]">Last Will & Testament</div>
                       <div className="text-sm text-gray-600">Decide who gets your assets, name guardians for children/pets</div>
@@ -226,9 +226,9 @@ const TrustAndWillPlan = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
             
             {/* Reason 1: Protect Children */}
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 text-center shadow-md border-2 border-blue-200">
+            <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-lg p-6 text-center shadow-md border-2 border-amber-200">
               <div className="flex justify-center mb-4">
-                <Users className="w-12 h-12 text-blue-600" />
+                <Users className="w-12 h-12 text-amber-600" />
               </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-3">
                 Protect Your Children
@@ -655,12 +655,12 @@ const TrustAndWillPlan = () => {
               <h3 className="text-2xl font-bold text-[#3E3E3E] mb-6 text-center">Will Estate Plan</h3>
               
               <div className="text-center mb-6">
-                <div className="text-5xl font-bold text-blue-600 mb-2">$199</div>
+                <div className="text-5xl font-bold text-amber-600 mb-2">$199</div>
                 <div className="text-gray-600">Individual Plan</div>
               </div>
               
               <div className="text-center mb-8 pb-8 border-b border-gray-200">
-                <div className="text-4xl font-bold text-blue-600 mb-2">$299</div>
+                <div className="text-4xl font-bold text-amber-600 mb-2">$299</div>
                 <div className="text-gray-600">Couples Plan</div>
                 <div className="text-sm text-green-600 font-semibold mt-1">Save $99</div>
               </div>
