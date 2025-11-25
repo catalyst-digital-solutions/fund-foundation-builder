@@ -783,7 +783,7 @@ const CreditRepair = () => {
                 {/* Question - clickable header */}
                 <button
                   onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-                  className="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-[#F8FAFC] transition duration-200"
+                  className="w-full text-left px-6 py-4 flex items-center justify-between bg-white hover:bg-[#F8FAFC] transition duration-200"
                   aria-expanded={openFAQ === index}
                 >
                   <h3 className="text-lg font-semibold text-[#3E3E3E] pr-8">{faq.question}</h3>
@@ -794,7 +794,7 @@ const CreditRepair = () => {
 
                 {/* Answer - collapsible content */}
                 {openFAQ === index && (
-                  <div className="px-6 pb-4 pt-2">
+                  <div className="px-6 pb-4 pt-2 bg-white">
                     <p className="text-[#475569] leading-relaxed">{faq.answer}</p>
                   </div>
                 )}

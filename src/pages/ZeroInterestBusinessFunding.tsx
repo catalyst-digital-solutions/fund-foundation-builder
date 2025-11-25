@@ -721,7 +721,7 @@ const FAQSection = () => {
             <div key={index} className="border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 text-left hover:bg-gray-50 transition-colors flex justify-between items-center"
+                className="w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors flex justify-between items-center"
               >
                 <span className="text-lg font-semibold text-[#3E3E3E] pr-4">
                   {faq.question}
@@ -747,7 +747,7 @@ const FAQSection = () => {
                   openIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}
               >
-                <div className="px-6 py-5 bg-gray-50 border-t border-gray-200">
+                <div className="px-6 py-5 bg-white border-t border-gray-200">
                   <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                 </div>
               </div>

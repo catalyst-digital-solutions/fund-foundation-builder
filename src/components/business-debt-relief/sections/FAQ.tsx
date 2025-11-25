@@ -68,10 +68,10 @@ const FAQ = () => {
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-gray-50 rounded-xl border-2 border-gray-200">
+            <div key={index} className="bg-white rounded-xl border-2 border-gray-200">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 flex items-center justify-between gap-4 text-left"
+                className="w-full px-6 py-5 flex items-center justify-between gap-4 text-left bg-white hover:bg-gray-100 transition-colors"
               >
                 <span className="text-lg font-semibold text-gray-900">{faq.question}</span>
                 <svg className={`w-6 h-6 text-amber-600 flex-shrink-0 transition-transform ${openIndex === index ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,7 +79,7 @@ const FAQ = () => {
                 </svg>
               </button>
               {openIndex === index && (
-                <div className="px-6 pb-5">
+                <div className="px-6 pb-5 bg-white">
                   <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                 </div>
               )}
