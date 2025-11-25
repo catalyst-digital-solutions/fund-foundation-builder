@@ -282,24 +282,24 @@ function SmartCreditFeatures() {
                   Your credit report is like a report card of your entire financial history. We make it easy to check accuracy and understand what's helping or hurting your score.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-6 text-white">
+              <div className="bg-gradient-to-br from-[#bb9446] to-[#8b6f35] rounded-xl p-6 text-white shadow-xl">
                 <div className="text-center mb-6">
-                  <div className="text-sm opacity-80 mb-2">See All 3 Scores</div>
-                  <div className="text-6xl font-bold">720</div>
-                  <div className="text-sm opacity-80 mt-2">Your Average Score</div>
+                  <div className="text-sm mb-2 font-semibold">See All 3 Scores</div>
+                  <div className="text-6xl font-bold drop-shadow-lg">720</div>
+                  <div className="text-sm mt-2 font-semibold">Your Average Score</div>
                 </div>
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                    <span className="text-sm">Experian</span>
-                    <span className="font-bold">725</span>
+                  <div className="flex justify-between items-center bg-white/20 backdrop-blur-sm rounded-lg p-3 border border-white/30">
+                    <span className="text-sm font-semibold">Experian</span>
+                    <span className="font-bold text-lg">725</span>
                   </div>
-                  <div className="flex justify-between items-center bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                    <span className="text-sm">Equifax</span>
-                    <span className="font-bold">718</span>
+                  <div className="flex justify-between items-center bg-white/20 backdrop-blur-sm rounded-lg p-3 border border-white/30">
+                    <span className="text-sm font-semibold">Equifax</span>
+                    <span className="font-bold text-lg">718</span>
                   </div>
-                  <div className="flex justify-between items-center bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                    <span className="text-sm">TransUnion</span>
-                    <span className="font-bold">717</span>
+                  <div className="flex justify-between items-center bg-white/20 backdrop-blur-sm rounded-lg p-3 border border-white/30">
+                    <span className="text-sm font-semibold">TransUnion</span>
+                    <span className="font-bold text-lg">717</span>
                   </div>
                 </div>
               </div>
@@ -358,8 +358,8 @@ function SmartCreditFeatures() {
           <div className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-200">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="inline-block bg-secondary/10 p-4 rounded-lg mb-4">
-                  <TrendingUp className="w-12 h-12 text-secondary" />
+                <div className="inline-block bg-[#bb9446]/10 p-4 rounded-lg mb-4">
+                  <TrendingUp className="w-12 h-12 text-foreground" />
                 </div>
                 <h3 className="text-3xl font-bold text-foreground mb-4">
                   ScoreTracker, Builder & Boost™
@@ -397,19 +397,19 @@ function SmartCreditFeatures() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl p-6 text-white">
+              <div className="bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-xl p-6 text-gray-900 shadow-xl">
                 <div className="text-center mb-6">
-                  <div className="text-sm opacity-80 mb-2">Credit Score Trend</div>
+                  <div className="text-sm mb-2 font-bold">Credit Score Trend</div>
                   <div className="flex items-end justify-center gap-2 mb-4">
-                    <div className="w-8 h-12 bg-white/20 rounded"></div>
-                    <div className="w-8 h-16 bg-white/30 rounded"></div>
-                    <div className="w-8 h-24 bg-white/40 rounded"></div>
-                    <div className="w-8 h-32 bg-white/60 rounded"></div>
-                    <div className="w-8 h-40 bg-white/80 rounded"></div>
-                    <div className="w-8 h-48 bg-white rounded"></div>
+                    <div className="w-8 h-12 bg-[#3E3E3E] rounded shadow-md"></div>
+                    <div className="w-8 h-16 bg-[#3E3E3E] rounded shadow-md"></div>
+                    <div className="w-8 h-24 bg-[#3E3E3E] rounded shadow-md"></div>
+                    <div className="w-8 h-32 bg-[#3E3E3E] rounded shadow-md"></div>
+                    <div className="w-8 h-40 bg-[#3E3E3E] rounded shadow-md"></div>
+                    <div className="w-8 h-48 bg-gray-900 rounded shadow-lg"></div>
                   </div>
-                  <div className="text-3xl font-bold">+67 Points</div>
-                  <div className="text-sm opacity-80">in 6 Months</div>
+                  <div className="text-3xl font-bold drop-shadow-sm">+67 Points</div>
+                  <div className="text-sm font-semibold">in 6 Months</div>
                 </div>
               </div>
             </div>
@@ -418,15 +418,15 @@ function SmartCreditFeatures() {
           {/* Feature 4: Dispute Errors */}
           <div className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-200">
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="order-2 md:order-1 bg-destructive rounded-xl p-8 text-white">
-                <AlertTriangle className="w-12 h-12 mb-4" />
+              <div className="order-2 md:order-1 bg-gradient-to-br from-red-600 to-red-700 rounded-xl p-8 text-white shadow-xl">
+                <AlertTriangle className="w-12 h-12 mb-4 drop-shadow-lg" />
                 <h4 className="text-2xl font-bold mb-4">Found an Error?</h4>
                 <p className="leading-relaxed mb-4">
                   Use our Action Buttons to dispute errors directly with creditors and credit bureaus—right from your dashboard.
                 </p>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 border border-white/30">
                   <div className="text-sm font-bold mb-2">Common Errors We Help Fix:</div>
-                  <ul className="text-sm space-y-1 opacity-90">
+                  <ul className="text-sm space-y-1">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="w-3 h-3" />
                       Incorrect account balances
@@ -447,8 +447,8 @@ function SmartCreditFeatures() {
                 </div>
               </div>
               <div className="order-1 md:order-2">
-                <div className="inline-block bg-destructive/10 p-4 rounded-lg mb-4">
-                  <Mail className="w-12 h-12 text-destructive" />
+                <div className="inline-block bg-red-600/10 p-4 rounded-lg mb-4">
+                  <FileText className="w-12 h-12 text-foreground" />
                 </div>
                 <h3 className="text-3xl font-bold text-foreground mb-4">
                   Dispute Errors on Your Credit Reports
@@ -480,18 +480,18 @@ function SmartCreditFeatures() {
                   Track your accounts, monitor transactions, and manage your credit—all from a single, simple dashboard designed for both your money and credit.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-secondary to-primary rounded-xl p-6 text-white">
+              <div className="bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-xl p-6 text-gray-900 shadow-xl">
                 <div className="space-y-3">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                    <div className="text-sm opacity-80 mb-1">Checking Account</div>
+                  <div className="bg-white/30 backdrop-blur-sm rounded-lg p-4 border border-white/40">
+                    <div className="text-sm mb-1 font-bold">Checking Account</div>
                     <div className="text-2xl font-bold">$3,247.89</div>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                    <div className="text-sm opacity-80 mb-1">Savings Account</div>
+                  <div className="bg-white/30 backdrop-blur-sm rounded-lg p-4 border border-white/40">
+                    <div className="text-sm mb-1 font-bold">Savings Account</div>
                     <div className="text-2xl font-bold">$12,450.00</div>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                    <div className="text-sm opacity-80 mb-1">Credit Card Balance</div>
+                  <div className="bg-white/30 backdrop-blur-sm rounded-lg p-4 border border-white/40">
+                    <div className="text-sm mb-1 font-bold">Credit Card Balance</div>
                     <div className="text-2xl font-bold">$1,842.30</div>
                   </div>
                 </div>
