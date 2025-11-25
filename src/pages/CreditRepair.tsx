@@ -211,7 +211,7 @@ const CreditRepair = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             <div ref={successRateCounter.counterRef} className="bg-gradient-to-br from-gray-50 to-white rounded-lg p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-fade-in border border-gray-100" style={{ animationDelay: '0ms' }}>
               <div className="flex flex-col items-center text-center gap-3">
-                <div className="w-16 h-16 bg-gradient-to-br from-mgc-yellow to-mgc-gold rounded-full flex items-center justify-center shadow-lg animate-scale-in" style={{ animationDelay: '100ms' }}>
+                <div className="w-16 h-16 bg-[#bb9446] rounded-full flex items-center justify-center shadow-lg animate-scale-in" style={{ animationDelay: '100ms' }}>
                   <Trophy className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-4xl font-bold text-gray-900">{successRateCounter.count}%</div>
@@ -220,7 +220,7 @@ const CreditRepair = () => {
             </div>
             <div ref={bbbCounter.counterRef} className="bg-gradient-to-br from-gray-50 to-white rounded-lg p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-fade-in border border-gray-100" style={{ animationDelay: '150ms' }}>
               <div className="flex flex-col items-center text-center gap-3">
-                <div className="w-16 h-16 bg-gradient-to-br from-mgc-yellow to-mgc-gold rounded-full flex items-center justify-center shadow-lg animate-scale-in" style={{ animationDelay: '250ms' }}>
+                <div className="w-16 h-16 bg-[#bb9446] rounded-full flex items-center justify-center shadow-lg animate-scale-in" style={{ animationDelay: '250ms' }}>
                   <Star className="w-8 h-8 text-white fill-white" />
                 </div>
                 <div className="text-4xl font-bold text-gray-900">{bbbCounter.count >= 100 ? 'A+' : 'A'}</div>
@@ -229,7 +229,7 @@ const CreditRepair = () => {
             </div>
             <div ref={yearCounter.counterRef} className="bg-gradient-to-br from-gray-50 to-white rounded-lg p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-fade-in border border-gray-100" style={{ animationDelay: '300ms' }}>
               <div className="flex flex-col items-center text-center gap-3">
-                <div className="w-16 h-16 bg-gradient-to-br from-mgc-yellow to-mgc-gold rounded-full flex items-center justify-center shadow-lg animate-scale-in" style={{ animationDelay: '400ms' }}>
+                <div className="w-16 h-16 bg-[#bb9446] rounded-full flex items-center justify-center shadow-lg animate-scale-in" style={{ animationDelay: '400ms' }}>
                   <Calendar className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-4xl font-bold text-gray-900">{yearCounter.count}</div>
@@ -238,7 +238,7 @@ const CreditRepair = () => {
             </div>
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-lg p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-fade-in border border-gray-100" style={{ animationDelay: '450ms' }}>
               <div className="flex flex-col items-center text-center gap-3">
-                <div className="w-16 h-16 bg-gradient-to-br from-mgc-yellow to-mgc-gold rounded-full flex items-center justify-center shadow-lg animate-scale-in" style={{ animationDelay: '550ms' }}>
+                <div className="w-16 h-16 bg-[#bb9446] rounded-full flex items-center justify-center shadow-lg animate-scale-in" style={{ animationDelay: '550ms' }}>
                   <Lock className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-2xl font-bold text-gray-900">Bank-Level</div>
