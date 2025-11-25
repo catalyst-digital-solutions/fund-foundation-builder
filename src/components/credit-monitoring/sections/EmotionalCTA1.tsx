@@ -17,7 +17,7 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Every notification could be fraud. Every unfamiliar charge could be the start of identity theft. Nine million Americans become victims each year—and most don't know until the damage is done. You check your account obsessively, but you still don't have real answers or protection.
         </p>
-        <button className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-bold px-8 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl">
+        <button className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-4">
           Stop Worrying, Start Monitoring →
         </button>
       </div>
