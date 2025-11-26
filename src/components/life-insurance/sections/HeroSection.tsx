@@ -7,7 +7,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
           {/* Left Column - Content */}
-          <div className="space-y-6 lg:space-y-8">
+          <div className="space-y-6 lg:space-y-8 lg:h-[600px] lg:flex lg:flex-col lg:justify-center">
             {/* Trust Badge */}
             <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-200">
               <Shield className="w-5 h-5 text-green-600" />
