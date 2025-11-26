@@ -563,7 +563,7 @@ const WhyChooseMesaGroupCapital = () => {
 
           <div className="flex items-start gap-4">
             <div className="flex-shrink-0">
-              <Zap className="w-14 h-14 text-[hsl(var(--mgc-yellow))]" strokeWidth={2} />
+              <Zap className="w-14 h-14 text-[hsl(var(--mgc-gold))]" strokeWidth={2} />
             </div>
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-3">
@@ -605,7 +605,7 @@ const WhyChooseMesaGroupCapital = () => {
 
           <div className="flex items-start gap-4">
             <div className="flex-shrink-0">
-              <TrendingUp className="w-14 h-14 text-[hsl(var(--mgc-yellow))]" strokeWidth={2} />
+              <TrendingUp className="w-14 h-14 text-[hsl(var(--mgc-gold))]" strokeWidth={2} />
             </div>
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-3">
