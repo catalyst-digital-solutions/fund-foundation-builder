@@ -264,7 +264,7 @@ const NineFundingSolutions = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {solutions.map((solution, index) => (
-            <div key={index} className="bg-gradient-to-br from-[#f8d899] to-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-[#E5D2AF] hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            <div key={index} className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-[#E5D2AF] hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
               {getIcon(solution.icon)}
               <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
                 {solution.title}

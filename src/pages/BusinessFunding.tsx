@@ -633,7 +633,7 @@ const WhyChooseMesaGroupCapital = () => {
 
         </div>
 
-        <div className="bg-gradient-to-br from-[hsl(var(--mgc-cream))] to-[hsl(var(--mgc-tan))] rounded-xl p-8 text-center">
+        <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 text-center">
           <h3 className="text-3xl font-bold text-foreground mb-4">
             Ready to Get the Funding Your Business Deserves?
           </h3>
