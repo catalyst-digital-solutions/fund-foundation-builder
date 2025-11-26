@@ -19,7 +19,7 @@ const TrustBadgeBar = () => {
           </div>
 
           <div className="text-center">
-            <CheckCircle className="w-8 h-8 text-green-600 mx-auto mb-2" />
+            <CheckCircle className="w-8 h-8 text-amber-600 mx-auto mb-2" />
             <div className="text-sm font-medium text-gray-900">A+ Rated Insurers</div>
             <div className="text-xs text-gray-600">Top-Tier Partners</div>
           </div>
