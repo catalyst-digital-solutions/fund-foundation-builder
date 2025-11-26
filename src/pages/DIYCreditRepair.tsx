@@ -69,7 +69,7 @@ const DIYCreditRepair = () => {
               
               {/* H1 Headline */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Take Control: Repair Your <span className="text-amber-600">Credit Yourself</span>
+                Take Control: Repair Your <span className="text-[#FBBF24]">Credit Yourself</span>
               </h1>
               
               {/* Subheadline */}
