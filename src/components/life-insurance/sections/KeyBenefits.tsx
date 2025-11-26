@@ -24,7 +24,7 @@ const KeyBenefits = () => {
     },
     {
       icon: TrendingUp,
-      title: "Wealth Building",
+      title: "Financial Confidence",
       description: "Some policies build cash value over time, creating a financial asset for your future."
     },
     {
