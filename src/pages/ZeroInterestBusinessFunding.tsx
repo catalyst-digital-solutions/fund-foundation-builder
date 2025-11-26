@@ -7,7 +7,7 @@ import EmotionalCTA3 from '@/components/zero-interest-business-funding/sections/
 import { 
   Trophy, CreditCard, Rocket, Building2, FileText, TrendingUp, 
   Coins, BarChart3, Hammer, Target, Building, Banknote, 
-  Star, Phone, MapPin, Check, Lightbulb, ChevronDown 
+  Star, Phone, MapPin, Check, Lightbulb, ChevronDown, X, CheckCircle
 } from 'lucide-react';
 
 const ZeroInterestBusinessFunding = () => {
@@ -319,8 +319,8 @@ const ZeroPercentAdvantage = () => (
         {/* Traditional Loan */}
         <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-red-200 animate-fade-in">
           <div className="text-center mb-6">
-            <div className="inline-block bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
-              ❌ Traditional Bank Loan
+            <div className="inline-flex items-center justify-center gap-2 bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
+              <X className="w-4 h-4" /> Traditional Bank Loan
             </div>
             <h3 className="text-3xl font-bold text-[#3E3E3E]">$50,000 Loan @ 12% APR</h3>
           </div>
@@ -351,8 +351,8 @@ const ZeroPercentAdvantage = () => (
         {/* Mesa 0% Funding */}
         <div className="bg-gradient-to-br from-[#f8d899] to-[#E5D2AF] rounded-xl p-8 shadow-2xl border-2 border-[#bb9446] animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="text-center mb-6">
-            <div className="inline-block bg-[#bb9446] text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-              ✅ Mesa Group 0% Funding
+            <div className="inline-flex items-center justify-center gap-2 bg-[#bb9446] text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+              <CheckCircle className="w-4 h-4" /> Mesa Group 0% Funding
             </div>
             <h3 className="text-3xl font-bold text-[#3E3E3E]">$50,000 @ 0% for 18 Months</h3>
           </div>
@@ -378,9 +378,9 @@ const ZeroPercentAdvantage = () => (
               <span className="font-bold text-2xl text-green-600">$50,000</span>
             </div>
           </div>
-        <div className="mt-6 pt-6 border-t-2 border-[#bb9446] text-center">
-          <p className="text-2xl font-bold text-[#bb9446] flex items-center justify-center gap-2">
-            <Coins className="w-8 h-8" /> YOU SAVE: $5,386
+        <div className="mt-6 pt-6 border-t-2 border-green-600 text-center">
+          <p className="text-2xl font-bold text-green-600 flex items-center justify-center gap-2">
+            <CheckCircle className="w-8 h-8" /> YOU SAVE: $5,386
           </p>
             <p className="text-sm text-gray-700 mt-2">
               That's money that stays in your business for growth, hiring, or profit.
