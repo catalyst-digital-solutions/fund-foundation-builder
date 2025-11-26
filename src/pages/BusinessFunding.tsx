@@ -91,7 +91,7 @@ const AllFundingSolutionsGrid = () => {
         <div className="grid md:grid-cols-2 gap-8">
           
           {/* Card 1: Business Cash Advance */}
-          <div className="bg-gradient-to-br from-[#f8d899] to-[#f9c65d] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
+          <div className="bg-gradient-to-br from-white to-[#f8d899] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
             <div className="flex items-start justify-between mb-4">
               <div>
                 <div className="mb-3">
@@ -131,7 +131,7 @@ const AllFundingSolutionsGrid = () => {
           </div>
 
           {/* Card 2: Business Term Loans */}
-          <div className="bg-gradient-to-br from-[#f8d899] to-[#f9c65d] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
+          <div className="bg-gradient-to-br from-white to-[#f8d899] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
             <div className="flex items-start justify-between mb-4">
               <div>
                 <div className="mb-3">
@@ -171,7 +171,7 @@ const AllFundingSolutionsGrid = () => {
           </div>
 
           {/* Card 3: Business Line of Credit */}
-          <div className="bg-gradient-to-br from-[#f8d899] to-[#f9c65d] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
+          <div className="bg-gradient-to-br from-white to-[#f8d899] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
             <div className="flex items-start justify-between mb-4">
               <div>
                 <div className="mb-3">
@@ -211,7 +211,7 @@ const AllFundingSolutionsGrid = () => {
           </div>
 
           {/* Card 4: Invoice Factoring */}
-          <div className="bg-gradient-to-br from-[#f8d899] to-[#f9c65d] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
+          <div className="bg-gradient-to-br from-white to-[#f8d899] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
             <div className="flex items-start justify-between mb-4">
               <div>
                 <div className="mb-3">
@@ -251,7 +251,7 @@ const AllFundingSolutionsGrid = () => {
           </div>
 
           {/* Card 5: Equipment Financing */}
-          <div className="bg-gradient-to-br from-[#f8d899] to-[#f9c65d] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
+          <div className="bg-gradient-to-br from-white to-[#f8d899] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
             <div className="flex items-start justify-between mb-4">
               <div>
                 <div className="mb-3">
@@ -291,7 +291,7 @@ const AllFundingSolutionsGrid = () => {
           </div>
 
           {/* Card 6: Real Estate Investment / Commercial Mortgage */}
-          <div className="bg-gradient-to-br from-[#f8d899] to-[#f9c65d] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
+          <div className="bg-gradient-to-br from-white to-[#f8d899] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
             <div className="flex items-start justify-between mb-4">
               <div>
                 <div className="mb-3">
