@@ -23,8 +23,8 @@ const ValueProposition = () => {
           
           {/* Card 1 - Financial Confidence */}
           <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
-              <TrendingUp className="w-8 h-8 text-green-600" />
+            <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
+              <TrendingUp className="w-8 h-8 text-amber-600" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Financial Confidence
