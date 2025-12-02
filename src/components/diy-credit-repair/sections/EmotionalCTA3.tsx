@@ -27,6 +27,9 @@ const EmotionalCTA3 = () => {
         >
           Begin Your Journey Today →
         </button>
+        <p className="text-sm text-white mt-4 drop-shadow-md">
+          Powered by Mesa Group
+        </p>
       </div>
     </section>
   );
