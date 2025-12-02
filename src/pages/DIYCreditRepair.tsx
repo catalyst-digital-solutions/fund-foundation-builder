@@ -599,9 +599,13 @@ const DIYCreditRepair = () => {
       <section className="bg-accent py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-6xl mx-auto">
           
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
-            Types of Negative Items You Can Dispute
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
+            What Can You Dispute?
           </h2>
+          
+          <p className="text-lg text-gray-600 mb-12 text-center max-w-4xl mx-auto">
+            Under the FCRA, you have the right to challenge anything inaccurate, incomplete, unverifiable, or unfairly reported. And here's the thing — even items that seem accurate often have errors:
+          </p>
           
           {/* Negative Item Types Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
@@ -681,7 +685,7 @@ const DIYCreditRepair = () => {
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700 mb-4">
                   <li className="flex items-start gap-2">
                     <span className="text-secondary">•</span>
-                    <span>Incorrect dates or amounts</span>
+                    <span>Incorrect dates or balances</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-secondary">•</span>
@@ -693,7 +697,7 @@ const DIYCreditRepair = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-secondary">•</span>
-                    <span>Unverifiable debt ownership</span>
+                    <span>Debt that can't be verified</span>
                   </li>
                 </ul>
                 <p className="text-gray-700 font-medium">
