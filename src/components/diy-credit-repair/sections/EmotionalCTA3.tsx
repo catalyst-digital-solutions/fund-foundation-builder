@@ -16,10 +16,10 @@ const EmotionalCTA3 = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/20"></div>
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
-          Picture Your Score Climbing 50+ Points. Imagine Getting Approved. See Yourself Saving Thousands.
+          Bridge the Gap — Without Breaking the Bank.
         </h2>
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-          Imagine checking your credit next month—watching that score rise. Getting approved for that car loan at 4% instead of 12%. Qualifying for that mortgage. All while keeping $3,000+ in your pocket instead of paying a credit repair company. Your credit transformation is one decision away.
+          Approvals instead of denials. Better rates. Thousands saved. You don't need a credit repair company to get there. You just need the tools — and now you have them. $29.99/mo. No contracts. No excuses.
         </p>
         <button 
           onClick={handleClick}
