@@ -670,18 +670,15 @@ const DIYCreditRepair = () => {
               <AlertTriangle className="w-10 h-10 text-orange-600 flex-shrink-0" />
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-3">
-                  Important: You Can Only Dispute Inaccurate Items
+                  What Can You Dispute?
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Federal law (FCRA) allows you to dispute items that are <strong>inaccurate, incomplete, unverifiable, or unfair</strong>. You CANNOT remove accurate, timely negative items just because you don't like them.
-                </p>
-                <p className="text-gray-700 mb-4">
-                  However, even "accurate" items often have:
+                  Under the FCRA, you have the right to challenge anything inaccurate, incomplete, unverifiable, or unfairly reported. And here's the thing — even items that seem accurate often have errors:
                 </p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700 mb-4">
                   <li className="flex items-start gap-2">
                     <span className="text-secondary">•</span>
-                    <span>Incorrect dates or amounts</span>
+                    <span>Incorrect dates or balances</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-secondary">•</span>
@@ -693,11 +690,11 @@ const DIYCreditRepair = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-secondary">•</span>
-                    <span>Unverifiable debt ownership</span>
+                    <span>Debt that can't be verified</span>
                   </li>
                 </ul>
                 <p className="text-gray-700 font-medium">
-                  Our AI helps you identify these technicalities so you can dispute legally and effectively.
+                  The AI scans for these. You dispute them. That's how it works.
                 </p>
               </div>
             </div>
