@@ -851,92 +851,68 @@ const DIYCreditRepair = () => {
         </div>
       </section>
 
-      {/* SECTION 8: SUCCESS STORIES */}
-      <section className="bg-white py-16 md:py-24 px-6 md:px-8">
+      {/* SECTION 8: USER TESTIMONIALS & COUNTERS */}
+      <section className="bg-gradient-to-br from-amber-50 via-white to-amber-50 py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-6xl mx-auto">
           
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-            Real DIY Success Stories
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+            People Like You Are Doing It Themselves
           </h2>
           
-          <p className="text-lg text-gray-600 mb-12 text-center">
-            Everyday people using our software to fix their credit—and save thousands.
+          <p className="text-lg text-gray-700 mb-16 text-center max-w-4xl mx-auto leading-relaxed">
+            No credit repair company. No thousands in fees. Just the right tools and the drive to take control. Creditily users are saving money and fixing their credit — on their own terms.
           </p>
           
-          {/* Testimonials Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Counter Header */}
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-12 text-center">
+            What Creditily Users Are Saying
+          </h3>
+          
+          {/* Counters Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             
-            {/* Testimonial 1 */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
-              <div className="flex gap-1 mb-4">
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+            {/* Counter 1: 5 Stars */}
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center border-2 border-amber-100 hover:border-amber-300 transition-all duration-300">
+              <div className="flex justify-center mb-4">
+                <div className="w-20 h-20 bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-full flex items-center justify-center">
+                  <Star className="w-10 h-10 text-white fill-white" />
+                </div>
               </div>
-              <p className="text-white mb-4 italic leading-relaxed">
-                "Removed 3 collections and 2 late payments in 4 months. My score went from 590 to 680. Total cost: $200. Would've been $600+ with a credit repair company."
-              </p>
-              <div className="pt-4 border-t border-white/30">
-                <p className="font-semibold text-white">Sarah M.</p>
-                <p className="text-sm text-white/90">Bakersfield, CA</p>
-              </div>
+              <div className="text-6xl font-bold text-[#bb9446] mb-3">5</div>
+              <div className="text-2xl font-semibold text-gray-900 mb-2">Stars</div>
+              <div className="text-sm text-gray-600 leading-relaxed">Rated on Google</div>
             </div>
             
-            {/* Testimonial 2 */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
-              <div className="flex gap-1 mb-4">
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+            {/* Counter 2: Thousands Saved */}
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center border-2 border-amber-100 hover:border-amber-300 transition-all duration-300">
+              <div className="flex justify-center mb-4">
+                <div className="w-20 h-20 bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-full flex items-center justify-center">
+                  <TrendingUp className="w-10 h-10 text-white" />
+                </div>
               </div>
-              <p className="text-white mb-4 italic leading-relaxed">
-                "The AI told me exactly which items to dispute first. I was skeptical but followed the strategy. 2 of my biggest items were deleted in the first round. Already recommended to 3 friends."
-              </p>
-              <div className="pt-4 border-t border-white/30">
-                <p className="font-semibold text-white">James T.</p>
-                <p className="text-sm text-white/90">Kern County, CA</p>
-              </div>
+              <div className="text-6xl font-bold text-[#bb9446] mb-3">$1,000s</div>
+              <div className="text-2xl font-semibold text-gray-900 mb-2">Saved</div>
+              <div className="text-sm text-gray-600 leading-relaxed">vs. credit repair companies</div>
             </div>
             
-            {/* Testimonial 3 */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
-              <div className="flex gap-1 mb-4">
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+            {/* Counter 3: Total Control */}
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center border-2 border-amber-100 hover:border-amber-300 transition-all duration-300">
+              <div className="flex justify-center mb-4">
+                <div className="w-20 h-20 bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-full flex items-center justify-center">
+                  <Shield className="w-10 h-10 text-white" />
+                </div>
               </div>
-              <p className="text-white mb-4 italic leading-relaxed">
-                "I spend maybe 1 hour a month on this. The letter generator is incredible—way better than anything I could've written myself. Saved me $1,500+ vs. hiring a company."
-              </p>
-              <div className="pt-4 border-t border-white/30">
-                <p className="font-semibold text-white">Maria G.</p>
-                <p className="text-sm text-white/90">Fresno, CA</p>
-              </div>
+              <div className="text-6xl font-bold text-[#bb9446] mb-3">100%</div>
+              <div className="text-2xl font-semibold text-gray-900 mb-2">Control</div>
+              <div className="text-sm text-gray-600 leading-relaxed">You run the process</div>
             </div>
             
           </div>
           
-          {/* Results Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <div className="text-center">
-              <div className="text-5xl font-bold text-[#bb9446] mb-2">73%</div>
-              <div className="text-gray-700">Success rate for first-time DIY users</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-[#bb9446] mb-2">$1,200</div>
-              <div className="text-gray-700">Average savings vs. full-service (6 months)</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-[#bb9446] mb-2">4.8</div>
-              <div className="text-gray-700">Average rating (out of 5 stars)</div>
-            </div>
-          </div>
+          {/* Tagline */}
+          <p className="text-xl text-gray-700 text-center font-medium italic">
+            Real people. Real results. No middleman.
+          </p>
           
         </div>
       </section>
