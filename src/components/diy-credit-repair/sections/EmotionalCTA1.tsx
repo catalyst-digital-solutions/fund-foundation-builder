@@ -16,16 +16,16 @@ const EmotionalCTA1 = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
-          Tired of Watching Your Dreams Get Denied While Paying $1,500+ to Fix Errors You Could Dispute Yourself?
+          You've Been Denied Enough. Why Pay Thousands to Fix It?
         </h2>
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-          Every loan rejection. Every "sorry, you don't qualify." Every month watching your score stay stuck while credit repair companies charge thousands for work you can do yourself. Those inaccuracies aren't going away on their own—but you don't need to spend a fortune to fix them.
+          Every rejection. Every "sorry, you don't qualify." Every company charging $1,500+ for disputes you could file yourself. Enough. Those errors aren't going away on their own — but fixing them shouldn't cost a fortune. Creditily gives you the tools. You make the moves.
         </p>
         <button 
           onClick={handleClick}
           className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
         >
-          Take Control of Your Credit →
+          Fix It Yourself for $29.99/mo →
         </button>
       </div>
     </section>
