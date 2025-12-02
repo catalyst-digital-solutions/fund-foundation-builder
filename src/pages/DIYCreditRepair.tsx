@@ -261,21 +261,21 @@ const DIYCreditRepair = () => {
           
           {/* Cost Comparison */}
           <div className="bg-accent rounded-lg p-8 mt-12 text-center">
-            <h4 className="text-2xl font-bold text-foreground mb-4">Cost Comparison</h4>
+            <h4 className="text-2xl font-bold text-foreground mb-4">Credit Repair Shouldn't Cost Thousands</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div>
-                <div className="text-5xl font-bold text-white mb-2">$49.99</div>
-                <div className="text-lg text-gray-700">per month</div>
-                <div className="text-sm text-gray-600 mt-2">DIY Credit Repair Software</div>
+                <div className="text-5xl font-bold text-gray-400 mb-2">$1,000 - $3,000+</div>
+                <div className="text-lg text-gray-700">upfront</div>
+                <div className="text-sm text-gray-600 mt-2">What most companies charge</div>
               </div>
               <div>
-                <div className="text-5xl font-bold text-gray-400 mb-2">$149-449</div>
-                <div className="text-lg text-gray-700">per month</div>
-                <div className="text-sm text-gray-600 mt-2">Full-Service Credit Repair</div>
+                <div className="text-5xl font-bold text-white mb-2">$29.99/mo</div>
+                <div className="text-lg text-gray-700"></div>
+                <div className="text-sm text-gray-600 mt-2">What you'll pay with Creditily</div>
               </div>
             </div>
             <p className="text-gray-700 mt-6">
-              <strong>Save 70-90%</strong> by doing it yourself with professional tools.
+              Professional tools. No upfront fees. No long-term contracts. Just results.
             </p>
           </div>
           
