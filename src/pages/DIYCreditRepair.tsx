@@ -918,11 +918,11 @@ const DIYCreditRepair = () => {
       </section>
 
       {/* SECTION 9: FINAL CTA */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-amber-50 via-orange-50 to-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Main Headline */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
-            Ready to Bridge the Gap — <span className="text-amber-600">Your Way?</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-12">
+            Ready to Bridge the Gap — <span className="text-[#f9c65d]">Your Way?</span>
           </h2>
 
           {/* Single CTA Card */}
@@ -941,7 +941,7 @@ const DIYCreditRepair = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-gray-700 text-sm font-medium">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-white text-sm font-medium">
             <div className="flex items-center gap-2">
               <Check className="w-4 h-4 text-green-600" />
               <span>Unlimited disputes</span>
@@ -957,13 +957,13 @@ const DIYCreditRepair = () => {
           </div>
 
           {/* Alternative Option */}
-          <div className="mt-12 pt-8 border-t-2 border-gray-300">
-            <p className="text-gray-700 mb-3">
+          <div className="mt-12 pt-8 border-t-2 border-white/20">
+            <p className="text-gray-300 mb-3">
               Not sure DIY is right for you?
             </p>
             <a 
               href="/credit-repair" 
-              className="text-amber-600 hover:text-amber-700 font-semibold underline text-lg"
+              className="text-[#f9c65d] hover:text-[#bb9446] font-semibold underline text-lg"
             >
               Check out our full-service credit repair →
             </a>
