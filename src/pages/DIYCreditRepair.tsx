@@ -162,11 +162,11 @@ const DIYCreditRepair = () => {
         <div className="max-w-6xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-            Is DIY Credit Repair Right for You?
+            Two Ways to Bridge the Gap
           </h2>
           
           <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-            Be honest with yourself. DIY works great for some people, but not everyone. Here's how to decide:
+            No wrong answers. Just different paths depending on your situation.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -177,36 +177,36 @@ const DIYCreditRepair = () => {
                 <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span>DIY Is Great If You:</span>
+                <span>Creditily DIY Is For You If:</span>
               </h3>
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl mt-1">•</span>
-                  <span><strong>Have time</strong> to manage disputes (2-3 hours/month)</span>
+                  <span>You've got <strong>2-3 hours/month</strong> to manage disputes</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl mt-1">•</span>
-                  <span><strong>Are organized</strong> and can track deadlines</span>
+                  <span>You're <strong>organized</strong> and can track deadlines</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl mt-1">•</span>
-                  <span><strong>Want to save money</strong> (70% less than full-service)</span>
+                  <span>You want to <strong>save money</strong> — 70% less than full-service</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl mt-1">•</span>
-                  <span><strong>Like being in control</strong> of the process</span>
+                  <span>You like <strong>being in control</strong> of the process</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl mt-1">•</span>
-                  <span><strong>Are comfortable</strong> with technology</span>
+                  <span>You're comfortable with <strong>basic technology</strong></span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl mt-1">•</span>
-                  <span><strong>Have 1-10 negative items</strong> to dispute</span>
+                  <span>You have <strong>1-10 negative items</strong> to tackle</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl mt-1">•</span>
-                  <span><strong>Want to learn</strong> about credit for long-term benefit</span>
+                  <span>You want to <strong>learn the system</strong> — not just fix it once</span>
                 </li>
               </ul>
             </div>
@@ -215,36 +215,36 @@ const DIYCreditRepair = () => {
             <div className="bg-orange-50 border-2 border-orange-200 rounded-lg p-8">
               <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
                 <span className="text-3xl">→</span>
-                <span>Choose Full-Service If:</span>
+                <span>Mesa Group Full-Service Is For You If:</span>
               </h3>
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-orange-500 text-xl mt-1">•</span>
-                  <span><strong>You don't have time</strong> to manage disputes</span>
+                  <span>You'd rather spend your time on <strong>life</strong> — not paperwork</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-orange-500 text-xl mt-1">•</span>
-                  <span><strong>Your credit is complex</strong> (bankruptcy, foreclosure, etc.)</span>
+                  <span>Your situation is <strong>complex</strong> (bankruptcy, repos, foreclosure)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-orange-500 text-xl mt-1">•</span>
-                  <span><strong>You have 15+ negative items</strong> to handle</span>
+                  <span>You have <strong>15+ negative items</strong> to tackle</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-orange-500 text-xl mt-1">•</span>
-                  <span><strong>You need creditor negotiations</strong> (goodwill letters, pay-for-delete)</span>
+                  <span>You need direct <strong>creditor negotiations</strong> (goodwill letters, pay-for-delete)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-orange-500 text-xl mt-1">•</span>
-                  <span><strong>You want experts</strong> to handle everything</span>
+                  <span>You want <strong>experts handling everything</strong> — start to finish</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-orange-500 text-xl mt-1">•</span>
-                  <span><strong>You're not tech-savvy</strong> or hate paperwork</span>
+                  <span>You'd rather not deal with <strong>disputes, deadlines, or tracking</strong></span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-orange-500 text-xl mt-1">•</span>
-                  <span><strong>Budget isn't the main concern</strong></span>
+                  <span>You're ready to invest in a <strong>white-glove experience</strong></span>
                 </li>
               </ul>
               <div className="mt-6 pt-6 border-t border-orange-200">
