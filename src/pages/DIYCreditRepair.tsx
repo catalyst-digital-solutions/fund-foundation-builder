@@ -69,7 +69,7 @@ const DIYCreditRepair = () => {
               
               {/* H1 Headline */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Not Ready for Full-Service? Fix It Yourself for $29.99/mo.
+                Not Ready for Full-Service? Fix It Yourself for <span className="text-[#f9c65d]">$29.99/mo</span>.
               </h1>
               
               {/* Subheadline */}
