@@ -113,6 +113,10 @@ const DIYCreditRepair = () => {
                 Start Your DIY Credit Repair
               </button>
               
+              <p className="text-sm text-gray-600 mt-4">
+                Powered by Mesa Group
+              </p>
+              
               {/* Trust Badges */}
               <div className="flex flex-wrap items-center gap-6 mt-8">
                 <div className="flex items-center gap-2">
@@ -937,6 +941,9 @@ const DIYCreditRepair = () => {
               >
                 Get Started →
               </button>
+              <p className="text-sm text-gray-600 mt-4">
+                Powered by Mesa Group
+              </p>
             </div>
           </div>
 
