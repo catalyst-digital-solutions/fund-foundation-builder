@@ -416,11 +416,11 @@ const DIYCreditRepair = () => {
         <div className="max-w-7xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-            Everything You Need to Repair Your Credit
+            Everything You Need to Bridge the Gap.
           </h2>
           
           <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-            Professional-grade tools that credit repair companies charge hundreds for—now yours for $49.99/month.
+            Professional-grade credit repair tools — now in your hands for just $29.99/mo.
           </p>
           
           {/* Features Grid */}
@@ -432,23 +432,23 @@ const DIYCreditRepair = () => {
                 <Bot className="w-10 h-10 text-purple-600" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
-                AI-Powered Analysis
+                AI-Powered. Zero Guesswork.
               </h3>
               <p className="text-gray-700 mb-4">
-                Our AI scans your credit report and identifies which items are hurting your score most—and which are easiest to remove.
+                Import your 3-bureau report automatically — no hard inquiry. Our AI identifies exactly what's hurting your score and tells you how to attack it.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-purple-500">✓</span>
-                  <span>Prioritizes high-impact items</span>
+                  <span>Auto-imports all 3 bureaus (no hard inquiry)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-purple-500">✓</span>
-                  <span>Suggests dispute strategies</span>
+                  <span>Prioritizes high-impact items first</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-purple-500">✓</span>
-                  <span>Predicts removal likelihood</span>
+                  <span>Suggests new strategies monthly if items aren't deleted</span>
                 </li>
               </ul>
             </div>
@@ -459,23 +459,23 @@ const DIYCreditRepair = () => {
                 <FileText className="w-10 h-10 text-yellow-600" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
-                Professional Letter Generator
+                Letters the Pros Would Send — Generated Instantly
               </h3>
               <p className="text-gray-700 mb-4">
-                Create legally-compliant dispute letters that cite specific federal laws. Bureaus take these seriously.
+                Letters are far more effective than online disputes. Ours cite federal consumer protection laws — and because YOU send them, bureaus can't reject them like they do with credit repair companies.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-yellow-600">✓</span>
-                  <span>Cites FCRA violations</span>
+                  <span>Cites FCRA, FDCPA, and Metro 2 violations</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-yellow-600">✓</span>
-                  <span>Includes Metro 2 compliance issues</span>
+                  <span>More effective than online disputes</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-yellow-600">✓</span>
-                  <span>Multiple letter templates</span>
+                  <span>You send them — bureaus must respond</span>
                 </li>
               </ul>
             </div>
@@ -486,23 +486,23 @@ const DIYCreditRepair = () => {
                 <BarChart3 className="w-10 h-10 text-green-600" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
-                3-Bureau Tracking
+                One Dashboard. Total Control.
               </h3>
               <p className="text-gray-700 mb-4">
-                Manage disputes with Experian, Equifax, and TransUnion all in one dashboard. No need to juggle three accounts.
+                Manage unlimited disputes across Experian, Equifax, and TransUnion — all at the same time. No juggling accounts. No missing deadlines.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-green-500">✓</span>
-                  <span>Single dashboard for all 3</span>
+                  <span>All 3 bureaus in a single dashboard</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-500">✓</span>
-                  <span>Automatic deadline tracking</span>
+                  <span>Unlimited disputes — whether you have 1 item or 50</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-500">✓</span>
-                  <span>Color-coded status updates</span>
+                  <span>Monthly updates show what's deleted + your new scores</span>
                 </li>
               </ul>
             </div>
@@ -513,23 +513,23 @@ const DIYCreditRepair = () => {
                 <Infinity className="w-10 h-10 text-pink-600" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
-                Unlimited Disputes
+                No Limits. No Extra Charges.
               </h3>
               <p className="text-gray-700 mb-4">
-                Dispute as many items as you want, as often as needed. Whether you have 1 account or 50, same price.
+                Dispute everything — all 3 bureaus, as many items as you have, as many rounds as needed. One price. Unlimited firepower.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-pink-500">✓</span>
-                  <span>No per-item charges</span>
+                  <span>1 account or 50 — same price</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-pink-500">✓</span>
-                  <span>Re-dispute verified items</span>
+                  <span>Re-dispute verified items with new strategies</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-pink-500">✓</span>
-                  <span>Multiple dispute rounds</span>
+                  <span>Keep going until your report is clean</span>
                 </li>
               </ul>
             </div>
@@ -540,23 +540,23 @@ const DIYCreditRepair = () => {
                 <TrendingUp className="w-10 h-10 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
-                Real-Time Progress Dashboard
+                Watch It Work.
               </h3>
               <p className="text-gray-700 mb-4">
-                See exactly which items have been removed, which are pending, and how your score is improving month by month.
+                Every month, your report is re-imported automatically. See exactly what's been deleted, what's pending, and how your score is climbing — all 3 bureaus, one dashboard.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-blue-500">✓</span>
-                  <span>Score tracking (all 3 bureaus)</span>
+                  <span>Monthly score updates across all 3 bureaus</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-500">✓</span>
-                  <span>Removal count & timeline</span>
+                  <span>See exactly which items were removed</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-500">✓</span>
-                  <span>Visual progress charts</span>
+                  <span>Track your progress visually over time</span>
                 </li>
               </ul>
             </div>
@@ -567,23 +567,23 @@ const DIYCreditRepair = () => {
                 <BookOpen className="w-10 h-10 text-gray-600" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
-                Credit Education Library
+                Expert Guidance. Zero Extra Cost.
               </h3>
               <p className="text-gray-700 mb-4">
-                Learn credit repair strategies, understand laws, read sample letters, watch tutorials. Become your own expert.
+                Credit coaching videos, articles, and downloadable guides included with your membership. Learn the process. Understand the laws. Become your own expert.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-gray-500">✓</span>
-                  <span>Video tutorials</span>
+                  <span>Video lessons from credit experts</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-gray-500">✓</span>
-                  <span>Sample successful disputes</span>
+                  <span>Tutorials for every step of the process</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-gray-500">✓</span>
-                  <span>Credit laws explained</span>
+                  <span>Bonus guides: goodwill letters, identity theft protection, and more</span>
                 </li>
               </ul>
             </div>
