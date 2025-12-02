@@ -157,9 +157,9 @@ const CreditRepair2 = () => {
             Featured in local and national media for our proven Mesa360 Credit System™
           </p>
           <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20 lg:gap-28">
-            <img src={kgetLogo} alt="KGET 17" className="h-20 md:h-28 w-auto object-contain" />
-            <img src={studio17Logo} alt="Studio 17" className="h-16 md:h-22 w-auto object-contain" />
-            <img src={telemundoLogo} alt="Telemundo" className="h-18 md:h-24 w-auto object-contain" />
+            <img src={kgetLogo} alt="KGET 17" className="h-16 md:h-20 w-auto object-contain" />
+            <img src={studio17Logo} alt="Studio 17" className="h-20 md:h-28 w-auto object-contain" />
+            <img src={telemundoLogo} alt="Telemundo" className="h-16 md:h-20 w-auto object-contain" />
             <img src={cwLogo} alt="The CW" className="h-14 md:h-18 w-auto object-contain" />
           </div>
         </div>
