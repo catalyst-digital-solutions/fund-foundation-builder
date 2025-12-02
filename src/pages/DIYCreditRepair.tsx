@@ -927,13 +927,13 @@ const DIYCreditRepair = () => {
 
           {/* Single CTA Card */}
           <div className="max-w-2xl mx-auto">
-            <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-white text-center shadow-2xl">
+            <div className="bg-gradient-to-br from-[#f9c65d] to-white rounded-2xl p-8 text-gray-900 text-center shadow-2xl">
               <p className="text-xl mb-6 leading-relaxed">
                 Everything you need to fix your credit yourself. <strong>$29.99/mo.</strong> No contracts. Cancel anytime.
               </p>
               <button 
                 onClick={handleSignupClick}
-                className="inline-flex items-center justify-center gap-2 py-4 px-8 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors shadow-lg text-lg"
+                className="inline-flex items-center justify-center gap-2 py-4 px-8 bg-[#3e3e3e] hover:bg-[#2c2c2c] text-white font-semibold rounded-lg transition-colors shadow-lg text-lg"
               >
                 Get Started →
               </button>
