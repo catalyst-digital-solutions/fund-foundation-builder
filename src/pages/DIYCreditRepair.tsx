@@ -918,72 +918,52 @@ const DIYCreditRepair = () => {
       </section>
 
       {/* SECTION 9: FINAL CTA */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-amber-50 via-orange-50 to-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Main Headline */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Take Control of Your <span className="text-amber-400">Credit</span>?
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
+            Ready to Bridge the Gap — <span className="text-amber-600">Your Way?</span>
           </h2>
-          
-          {/* Subheadline */}
-          <p className="text-xl text-gray-300 mb-12">
-            Try it free for 7 days. No credit card required. See results in your first month.
-          </p>
 
           {/* Single CTA Card */}
           <div className="max-w-2xl mx-auto">
-            <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left">
-              <h3 className="text-2xl font-bold mb-4">DIY Credit Repair Software</h3>
-              <div className="grid grid-cols-3 gap-4 mb-6">
-                <div>
-                  <div className="text-3xl font-bold mb-1">7-Day</div>
-                  <div className="text-sm opacity-90">Free Trial</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold mb-1">$49.99</div>
-                  <div className="text-sm opacity-90">Per Month</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold mb-1">Unlimited</div>
-                  <div className="text-sm opacity-90">Disputes</div>
-                </div>
-              </div>
+            <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-white text-center shadow-2xl">
+              <p className="text-xl mb-6 leading-relaxed">
+                Everything you need to fix your credit yourself. <strong>$29.99/mo.</strong> No contracts. Cancel anytime.
+              </p>
               <button 
                 onClick={handleSignupClick}
-                className="flex items-center justify-center gap-2 w-full py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors"
+                className="inline-flex items-center justify-center gap-2 py-4 px-8 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors shadow-lg text-lg"
               >
-                Start Your Free 7-Day Trial
+                Get Started →
               </button>
-              <p className="text-sm text-white/90 mt-3 text-center">
-                No credit card required • Cancel anytime
-              </p>
             </div>
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-gray-300 text-sm">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-gray-700 text-sm font-medium">
             <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>No Credit Card for Trial</span>
+              <Check className="w-4 h-4 text-green-600" />
+              <span>Unlimited disputes</span>
             </div>
             <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>30-Day Money-Back Guarantee</span>
+              <Check className="w-4 h-4 text-green-600" />
+              <span>AI-powered tools</span>
             </div>
             <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>Professional Templates Included</span>
+              <Check className="w-4 h-4 text-green-600" />
+              <span>Cancel anytime</span>
             </div>
           </div>
 
           {/* Alternative Option */}
-          <div className="mt-12 pt-8 border-t-2 border-white/20">
-            <p className="text-gray-300 mb-3">
+          <div className="mt-12 pt-8 border-t-2 border-gray-300">
+            <p className="text-gray-700 mb-3">
               Not sure DIY is right for you?
             </p>
             <a 
               href="/credit-repair" 
-              className="text-amber-400 hover:text-amber-300 font-semibold underline text-lg"
+              className="text-amber-600 hover:text-amber-700 font-semibold underline text-lg"
             >
               Check out our full-service credit repair →
             </a>
