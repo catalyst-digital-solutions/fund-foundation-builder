@@ -33,6 +33,7 @@ const Header = () => {
         { label: 'Build Credit', href: '#' },
         { label: 'Credit Monitoring', href: '/credit-monitoring' },
         { label: 'Credit Repair', href: '/credit-repair' },
+        { label: 'Credit Repair 2 (Mesa360)', href: '/credit-repair-2' },
         { label: 'DIY Credit Repair', href: '/diy-credit-repair' },
         { label: 'Credit Cards', href: '/credit-cards' },
         { label: 'Personal Loans', href: '/personal-loans' },
