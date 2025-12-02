@@ -11,6 +11,10 @@ import {
 import EmotionalCTA1 from "@/components/credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/credit-repair/sections/EmotionalCTA3";
+import kgetLogo from "@/assets/kget-17-logo.png";
+import studio17Logo from "@/assets/studio-17-logo.png";
+import telemundoLogo from "@/assets/telemundo-logo.png";
+import cwLogo from "@/assets/cw-logo.png";
 
 const CreditRepair2 = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -147,16 +151,16 @@ const CreditRepair2 = () => {
       {/* ============================================ */}
       {/* SECTION 2: AS SEEN ON MEDIA LOGOS */}
       {/* ============================================ */}
-      <section className="bg-[#3E3E3E] py-8 px-6 md:px-8">
+      <section className="bg-gray-100 py-10 px-6 md:px-8">
         <div className="max-w-5xl mx-auto">
-          <p className="text-center text-white/80 text-sm mb-6">
+          <p className="text-center text-gray-600 text-sm mb-8">
             Featured in local and national media for our proven Mesa360 Credit System™
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            <span className="text-white/60 font-bold text-lg tracking-wider">KGET17</span>
-            <span className="text-white/60 font-bold text-lg tracking-wider">Studio17</span>
-            <span className="text-white/60 font-bold text-lg tracking-wider">Telemundo</span>
-            <span className="text-white/60 font-bold text-lg tracking-wider">The CW</span>
+          <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
+            <img src={kgetLogo} alt="KGET 17" className="h-16 md:h-20 w-auto object-contain" />
+            <img src={studio17Logo} alt="Studio 17" className="h-12 md:h-14 w-auto object-contain" />
+            <img src={telemundoLogo} alt="Telemundo" className="h-14 md:h-16 w-auto object-contain" />
+            <img src={cwLogo} alt="The CW" className="h-10 md:h-12 w-auto object-contain" />
           </div>
         </div>
       </section>
