@@ -719,60 +719,74 @@ const DIYCreditRepair = () => {
           <div className="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 md:p-12 text-center shadow-2xl max-w-2xl mx-auto">
             
             <div className="bg-white rounded-xl p-8 mb-6">
-              <div className="text-6xl font-bold text-[#3e3e3e] mb-2">$49.99</div>
-              <div className="text-2xl text-gray-700 mb-4">per month</div>
-              <div className="text-sm text-gray-600 mb-6">7-day free trial • No credit card required</div>
+              <h3 className="text-2xl font-bold text-[#3e3e3e] mb-4">CREDITILY PRO</h3>
+              <div className="text-6xl font-bold text-[#3e3e3e] mb-2">$29.99</div>
+              <div className="text-2xl text-gray-700 mb-6">/mo</div>
               
               <div className="h-px bg-gray-300 my-6"></div>
+              
+              <h4 className="text-lg font-semibold text-gray-900 mb-4 text-left">What's Included:</h4>
               
               <ul className="space-y-3 text-left mb-8">
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-800"><strong>Unlimited disputes</strong> to all 3 credit bureaus</span>
+                  <span className="text-gray-800">Unlimited disputes to all 3 bureaus</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-800"><strong>AI-powered</strong> analysis and recommendations</span>
+                  <span className="text-gray-800">AI-powered analysis and recommendations</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-800"><strong>Professional letter generator</strong> (cites federal laws)</span>
+                  <span className="text-gray-800">Professional dispute letter generator</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-800"><strong>Real-time tracking</strong> dashboard (3 bureaus)</span>
+                  <span className="text-gray-800">Monthly 3-bureau credit reports & scores</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-800"><strong>Progress monitoring</strong> & score tracking</span>
+                  <span className="text-gray-800">Real-time tracking dashboard</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-800"><strong>Education library</strong> (tutorials, templates, guides)</span>
+                  <span className="text-gray-800">Credit coaching tutorials & guides</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-800"><strong>Email support</strong> from credit experts</span>
+                  <span className="text-gray-800">Credit monitoring & alerts</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-800"><strong>Cancel anytime</strong> (no contracts, no penalties)</span>
+                  <span className="text-gray-800">$1 Million identity fraud insurance</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-gray-800">PrivacyMaster® protection</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-gray-800">Cancel anytime — no contracts, no penalties</span>
                 </li>
               </ul>
               
@@ -780,31 +794,14 @@ const DIYCreditRepair = () => {
                 onClick={handleSignupClick}
                 className="w-full text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold py-4"
               >
-                Start Your 7-Day Free Trial
+                Get Started for $29.99/mo →
               </button>
               
               <p className="text-sm text-gray-600 mt-4">
-                No credit card required for trial. $49.99/month after trial ends.
+                Powered by Mesa Group
               </p>
             </div>
             
-            <p className="text-[#3e3e3e] text-lg">
-              Try it risk-free for 7 days. If it's not for you, cancel before the trial ends—no charge.
-            </p>
-            
-          </div>
-          
-          {/* Money-Back Guarantee */}
-          <div className="bg-green-50 border-2 border-green-200 rounded-lg p-6 mt-12 text-center max-w-2xl mx-auto">
-            <div className="flex justify-center mb-3">
-              <Shield className="w-10 h-10 text-green-600" />
-            </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">
-              30-Day Money-Back Guarantee
-            </h3>
-            <p className="text-gray-700">
-              If you're not satisfied with the software in your first 30 days, we'll refund your money. No questions asked.
-            </p>
           </div>
           
         </div>
