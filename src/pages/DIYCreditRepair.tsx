@@ -289,11 +289,11 @@ const DIYCreditRepair = () => {
         <div className="max-w-7xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-            How DIY Credit Repair Works
+            Simple Steps. Powerful Results.
           </h2>
           
           <p className="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
-            Our software walks you through every step. You're never doing this alone.
+            Our software guides you through every move — you're never doing this alone.
           </p>
           
           {/* 5-Step Process */}
@@ -308,10 +308,10 @@ const DIYCreditRepair = () => {
                 <ClipboardList className="w-10 h-10 text-gray-700" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
-                Import Reports
+                Import Your Reports
               </h3>
               <p className="text-sm text-gray-700">
-                Upload your 3-bureau credit report. Our AI analyzes every negative item.
+                Upload your 3-bureau report. AI analyzes every negative item instantly.
               </p>
             </div>
             
@@ -324,10 +324,10 @@ const DIYCreditRepair = () => {
                 <Bot className="w-10 h-10 text-purple-600" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
-                AI Recommendations
+                Get AI Recommendations
               </h3>
               <p className="text-sm text-gray-700">
-                See which items to dispute first, with strategy suggestions for each.
+                See exactly what to dispute and why — prioritized for impact.
               </p>
             </div>
             
@@ -343,7 +343,7 @@ const DIYCreditRepair = () => {
                 Generate Letters
               </h3>
               <p className="text-sm text-gray-700">
-                Create professional dispute letters citing FCRA, FDCPA, and other laws.
+                Professional dispute letters citing federal law — created in seconds.
               </p>
             </div>
             
@@ -356,10 +356,10 @@ const DIYCreditRepair = () => {
                 <Mail className="w-10 h-10 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
-                Mail Disputes
+                Send Your Disputes
               </h3>
               <p className="text-sm text-gray-700">
-                Print and mail (or email) your disputes. Track delivery and deadlines.
+                Print and mail or send digitally. Track every deadline automatically.
               </p>
             </div>
             
@@ -372,10 +372,10 @@ const DIYCreditRepair = () => {
                 <TrendingUp className="w-10 h-10 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
-                Track Results
+                Track Your Results
               </h3>
               <p className="text-sm text-gray-700">
-                Monitor responses, update reports monthly, watch your score rise.
+                Monitor responses, pull updated reports, and watch your score climb.
               </p>
             </div>
             
@@ -384,24 +384,24 @@ const DIYCreditRepair = () => {
           {/* Timeline Expectation */}
           <div className="bg-white rounded-lg p-8 mt-12 max-w-4xl mx-auto">
             <h4 className="text-xl font-bold text-foreground mb-4 text-center">
-              Typical Timeline
+              What the Process Looks Like
             </h4>
             <div className="space-y-3 text-gray-700">
               <div className="flex items-start gap-3">
-                <span className="font-semibold text-[#bb9446] min-w-[120px]">Week 1:</span>
-                <span>Import reports, identify negative items, send first round of disputes</span>
+                <span className="font-semibold text-[#bb9446] min-w-[120px]">First Round:</span>
+                <span>Import reports, identify negative items, send your first disputes</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="font-semibold text-[#bb9446] min-w-[120px]">Week 4-6:</span>
-                <span>Bureaus respond (30-day deadline). Some items deleted, some verified</span>
+                <span className="font-semibold text-[#bb9446] min-w-[120px]">30 Days Later:</span>
+                <span>Bureaus respond (they're required to by law). Some items deleted, some verified.</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="font-semibold text-[#bb9446] min-w-[120px]">Week 8:</span>
-                <span>Send second round for verified items with different strategy</span>
+                <span className="font-semibold text-[#bb9446] min-w-[120px]">Next Round:</span>
+                <span>Dispute verified items with a different strategy</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="font-semibold text-[#bb9446] min-w-[120px]">Month 3-6:</span>
-                <span>Continue cycles, see significant score improvements as items are removed</span>
+                <span className="font-semibold text-[#bb9446] min-w-[120px]">Ongoing:</span>
+                <span>Continue cycles until your report is clean. Credit repair is a marathon — not a sprint.</span>
               </div>
             </div>
           </div>
