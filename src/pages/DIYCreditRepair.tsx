@@ -64,17 +64,17 @@ const DIYCreditRepair = () => {
             <div>
               {/* Eyebrow */}
               <p className="text-sm uppercase tracking-wide text-gray-700 mb-4 font-medium">
-                DIY Credit Repair Software
+                DIY CREDIT REPAIR — POWERED BY MESA GROUP
               </p>
               
               {/* H1 Headline */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Take Control: Repair Your <span className="text-[#FBBF24]">Credit Yourself</span>
+                Not Ready for Full-Service? Fix It Yourself for $29.99/mo.
               </h1>
               
               {/* Subheadline */}
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
-                Professional credit repair letters. AI-powered dispute recommendations. 3-bureau tracking. Everything credit repair companies use—now in your hands for a fraction of the cost.
+                Professional-grade credit repair tools — now in your hands. AI tells you what to dispute. We give you the letters. You send them. No waiting on anyone else. You're in control.
               </p>
               
               {/* Value Props Quick List */}
@@ -83,7 +83,7 @@ const DIYCreditRepair = () => {
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-700"><strong>$49.99/month</strong> vs. $149-449 for credit repair companies</span>
+                  <span className="text-gray-700">Just <strong>$29.99/month</strong> (vs. thousands that other companies charge)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -95,13 +95,13 @@ const DIYCreditRepair = () => {
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-700"><strong>AI recommendations</strong> on which items to dispute</span>
+                  <span className="text-gray-700"><strong>AI-powered recommendations</strong> on what to challenge</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-700"><strong>Professional letter templates</strong> citing federal laws</span>
+                  <span className="text-gray-700"><strong>Professional letter templates</strong> citing federal law</span>
                 </li>
               </ul>
               
@@ -112,10 +112,6 @@ const DIYCreditRepair = () => {
               >
                 Start Your DIY Credit Repair
               </button>
-              
-              <p className="text-sm text-gray-600 mt-4">
-                7-day free trial. No credit card required. Cancel anytime.
-              </p>
               
               {/* Trust Badges */}
               <div className="flex flex-wrap items-center gap-6 mt-8">
