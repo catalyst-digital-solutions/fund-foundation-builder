@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import CreditMonitoring from "./pages/CreditMonitoring";
 import CreditRepair from "./pages/CreditRepair";
+import CreditRepair2 from "./pages/CreditRepair2";
 import DIYCreditRepair from "./pages/DIYCreditRepair";
 import CreditCards from "./pages/CreditCards";
 import PersonalLoans from "./pages/PersonalLoans";
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/business-credit" element={<Index />} />
           <Route path="/credit-monitoring" element={<CreditMonitoring />} />
           <Route path="/credit-repair" element={<CreditRepair />} />
+          <Route path="/credit-repair-2" element={<CreditRepair2 />} />
           <Route path="/diy-credit-repair" element={<DIYCreditRepair />} />
           <Route path="/credit-cards" element={<CreditCards />} />
           <Route path="/personal-loans" element={<PersonalLoans />} />
