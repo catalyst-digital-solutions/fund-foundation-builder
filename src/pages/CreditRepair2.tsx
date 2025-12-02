@@ -69,7 +69,7 @@ const CreditRepair2 = () => {
 
               {/* H1 Headline */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Stuck with Bad Credit? Our <span className="text-amber-600">Mesa360 Credit System™</span> Can Help You Fix It.
+                Stuck with Bad Credit? Our <span className="text-[#f9c65d]">Mesa360 Credit System™</span> Can Help You Fix It.
               </h1>
 
               {/* Subheadline */}
@@ -80,19 +80,19 @@ const CreditRepair2 = () => {
               {/* Trust Bar */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <Trophy className="w-5 h-5 text-amber-600" />
+                  <Trophy className="w-5 h-5 text-[#f9c65d]" />
                   <span><strong>2,500+</strong> Clients</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <Star className="w-5 h-5 text-amber-600 fill-amber-600" />
+                  <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                   <span><strong>150+</strong> 5-Star Reviews</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <Building2 className="w-5 h-5 text-amber-600" />
+                  <Building2 className="w-5 h-5 text-[#f9c65d]" />
                   <span>Bakersfield HQ</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <Globe className="w-5 h-5 text-amber-600" />
+                  <Globe className="w-5 h-5 text-[#f9c65d]" />
                   <span>EN/ES/Punjabi</span>
                 </div>
               </div>
@@ -139,7 +139,7 @@ const CreditRepair2 = () => {
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-8 text-center">
-            We Know You've Been Promised <span className="text-amber-600">Quick Fixes</span> Before.
+            We Know You've Been Promised <span className="text-[#f9c65d]">Quick Fixes</span> Before.
           </h2>
 
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
@@ -199,7 +199,7 @@ const CreditRepair2 = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3E3E3E] mb-6">
-              The Mesa360 Credit System™: <span className="text-amber-600">Repair. Rebuild. Optimize.</span>
+              The Mesa360 Credit System™: <span className="text-[#f9c65d]">Repair. Rebuild. Optimize.</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Unlike cookie-cutter credit repair companies that use generic templates and offshore call centers, Mesa Group provides a <strong>personalized, legally compliant credit restoration strategy</strong>—backed by a local team you can actually talk to.
@@ -211,9 +211,9 @@ const CreditRepair2 = () => {
             {/* STEP 1: REPAIR */}
             <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-amber-500">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
-                <Search className="w-8 h-8 text-amber-600" />
+                <Search className="w-8 h-8 text-[#f9c65d]" />
               </div>
-              <div className="text-sm font-bold text-amber-600 mb-2">STEP 1</div>
+              <div className="text-sm font-bold text-[#f9c65d] mb-2">STEP 1</div>
               <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">REPAIR</h3>
               <p className="text-gray-600 mb-6">Remove What's Holding You Back</p>
               
@@ -448,7 +448,7 @@ const CreditRepair2 = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              This Isn't Just Credit Repair. It's a <span className="text-amber-600">Complete Financial Transformation</span>.
+              This Isn't Just Credit Repair. It's a <span className="text-[#f9c65d]">Complete Financial Transformation</span>.
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Most credit repair companies send generic dispute letters and disappear. At Mesa Group, every client gets a dedicated account manager, customized action plan, monthly reviews, and 1-on-1 financial coaching.
@@ -457,32 +457,32 @@ const CreditRepair2 = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <FileText className="w-10 h-10 text-amber-600 mb-4" />
+              <FileText className="w-10 h-10 text-[#f9c65d] mb-4" />
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-2">Customized Action Plan</h3>
               <p className="text-gray-600 text-sm">Your account manager creates a personalized roadmap based on YOUR unique credit situation—not a one-size-fits-all template.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <Users className="w-10 h-10 text-amber-600 mb-4" />
+              <Users className="w-10 h-10 text-[#f9c65d] mb-4" />
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-2">Dedicated Account Manager</h3>
               <p className="text-gray-600 text-sm">A real person assigned to your case who knows your name, your story, and your goals. No random reps each time.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <BarChart3 className="w-10 h-10 text-amber-600 mb-4" />
+              <BarChart3 className="w-10 h-10 text-[#f9c65d] mb-4" />
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-2">Monthly Progress Reviews</h3>
               <p className="text-gray-600 text-sm">Every 35 days: what was disputed, what was removed, what's in progress, and your next steps. We walk you through everything.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <GraduationCap className="w-10 h-10 text-amber-600 mb-4" />
+              <GraduationCap className="w-10 h-10 text-[#f9c65d] mb-4" />
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-2">Credit Building Education</h3>
               <p className="text-gray-600 text-sm">Learn how utilization works, when to apply for credit, building payment history, and protecting your credit long-term.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <MessageSquare className="w-10 h-10 text-amber-600 mb-4" />
+              <MessageSquare className="w-10 h-10 text-[#f9c65d] mb-4" />
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-2">Ongoing Support</h3>
               <p className="text-gray-600 text-sm">Questions answered throughout the process. Guidance on major decisions like buying a car or applying for a mortgage.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <Heart className="w-10 h-10 text-amber-600 mb-4" />
+              <Heart className="w-10 h-10 text-[#f9c65d] mb-4" />
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-2">Why This Matters</h3>
               <p className="text-gray-600 text-sm">Removing items is half the battle. Without learning to build good credit, you'll end up back where you started.</p>
             </div>
@@ -600,7 +600,7 @@ const CreditRepair2 = () => {
               <p className="text-sm text-gray-600">5-Star Reviews</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg text-center">
-              <div className="text-4xl font-bold text-amber-600 mb-2">45-90</div>
+              <div className="text-4xl font-bold text-[#f9c65d] mb-2">45-90</div>
               <p className="text-sm text-gray-600">Days to First Results</p>
             </div>
           </div>
@@ -665,7 +665,7 @@ const CreditRepair2 = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              Choose a Package that Suits Your <span className="text-amber-600">Budget</span>
+              Choose a Package that Suits Your <span className="text-[#f9c65d]">Budget</span>
             </h2>
             <p className="text-xl text-gray-700">
               Once you choose a package, we can get you started on your credit transformation journey with the Mesa360 Credit System™
@@ -992,7 +992,7 @@ const CreditRepair2 = () => {
       <section id="faq" className="bg-gray-50 py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4 text-center">
-            Your <span className="text-amber-600">Questions</span>, Answered.
+            Your <span className="text-[#f9c65d]">Questions</span>, Answered.
           </h2>
           <p className="text-xl text-gray-700 mb-12 text-center">
             We believe in transparency. Here are honest answers to the questions most people ask.
