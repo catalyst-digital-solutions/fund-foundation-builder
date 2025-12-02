@@ -1,13 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { 
-  Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, 
-  Search, Lightbulb, MapPin, ChevronDown, Building2, Globe, Phone,
-  Shield, Users, FileText, TrendingUp, DollarSign, Clock, Award,
-  Home, Car, CreditCard, GraduationCap, Briefcase, Heart, Scale,
-  MessageSquare, Mail, CheckCircle2, XCircle, ArrowRight, Zap
-} from "lucide-react";
+import { Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, Search, Lightbulb, MapPin, ChevronDown, Building2, Globe, Phone, Shield, Users, FileText, TrendingUp, DollarSign, Clock, Award, Home, Car, CreditCard, GraduationCap, Briefcase, Heart, Scale, MessageSquare, Mail, CheckCircle2, XCircle, ArrowRight, Zap } from "lucide-react";
 import EmotionalCTA1 from "@/components/credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/credit-repair/sections/EmotionalCTA3";
@@ -15,63 +9,48 @@ import kgetLogo from "@/assets/kget-17-logo.png";
 import studio17Logo from "@/assets/studio-17-logo.png";
 import telemundoLogo from "@/assets/telemundo-logo.png";
 import cwLogo from "@/assets/cw-logo.png";
-
 const CreditRepair2 = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
-
   const handleCTAClick = () => {
     window.open("https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09", "_blank", "noopener,noreferrer");
   };
-
   const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  const faqs = [
-    {
-      question: "Is this legit or a scam?",
-      answer: "Mesa Group Consulting is a legitimate, California DOJ-registered credit repair company with a real physical office at 5001 California Ave Suite 219, Bakersfield, CA 93309. We've served 2,500+ clients nationwide with 150+ five-star reviews. Unlike fly-by-night operations, we've been in business since 2008 and comply with all federal regulations including CROA, TSR, and California CSO requirements. You're welcome to visit our office anytime.",
-    },
-    {
-      question: "Will this hurt my credit more?",
-      answer: "No. Disputing inaccurate items is your legal right under the Fair Credit Reporting Act (FCRA). The dispute process itself does not negatively impact your credit score. In fact, when negative items are removed, your score typically increases. We only challenge items that are inaccurate, unverifiable, or unfairly reported—we never use illegal tactics that could harm your credit.",
-    },
-    {
-      question: "How much is this going to cost total?",
-      answer: "Our monthly plans range from $149-$299/month plus an initial fee of $350-$800 depending on the plan. Most clients complete the program in 4-8 months, making total investment typically $1,000-$3,000. We also offer 12-month programs ($1,500-$1,800) for upfront savings. SmartCredit monitoring ($27.99/month) is required separately. There are no hidden fees, and you can cancel monthly plans anytime.",
-    },
-    {
-      question: "How long does it actually take to see results?",
-      answer: "Most clients see first results within 45-90 days. Credit bureaus have 30 days to investigate each dispute, and most items require 1-2 dispute cycles. Significant improvements (60-110+ point increases) typically occur within 3-6 months. Complex cases with bankruptcies, repos, or 15+ negative items may take 6-12 months. We provide realistic timelines during your free analysis.",
-    },
-    {
-      question: "Can I do this myself instead of paying someone?",
-      answer: "Legally, yes—the FCRA gives you the right to dispute items yourself for free. However, DIY has challenges: it takes 10-15 hours/month, generic templates are easily rejected, you need expertise in FCRA/Metro 2 compliance, and one mistake can hurt your case. Our clients choose professional service because we have relationships with creditors, advanced dispute methods, and a 91% success rate. That said, if you prefer DIY, check out our Creditily platform for $29.99/month.",
-    },
-    {
-      question: "What items can be removed from my credit report?",
-      answer: "We can challenge any item that is inaccurate, unverifiable, or unfairly reported—including collections, late payments, charge-offs, repossessions, foreclosures, bankruptcies (with errors), judgments, tax liens, and unauthorized inquiries. We CANNOT remove items that are 100% accurate and properly documented. However, even 'accurate' items often have errors (wrong dates, amounts, missing documentation) that make them legally disputable.",
-    },
-    {
-      question: "Do you have legal support for FCRA violations?",
-      answer: "Yes. While Mesa Group Consulting is not a law firm, we have a full legal team available for cases where creditors or bureaus violate your rights under FCRA or FDCPA. When violations occur (bureau fails to investigate within 30 days, creditor re-reports deleted info, etc.), our legal team can send demand letters and support potential violation claims. Many clients have received $1,000-$2,500+ settlements.",
-    },
-    {
-      question: "What's the difference between monthly plans and 12-month programs?",
-      answer: "Monthly plans (Lite/Flex/Elite) offer flexibility—pay as you go, cancel anytime, and we continue working on new items that appear. 12-month programs (Ruby/Emerald) offer significant savings (up to $1,788) when you pay upfront, but new items added during the program aren't covered. Choose monthly if your credit situation is evolving; choose 12-month if it's stable and you want to save money.",
-    },
-    {
-      question: "What is SmartCredit and why do I need it?",
-      answer: "SmartCredit provides real-time access to your credit reports from all three bureaus. We need this to see your actual reports, file accurate disputes, and track progress. Cost is $1 for 7-day trial, then $27.99/month. It's a third-party service you control directly—not owned by Mesa Group. You must keep SmartCredit active throughout the program for us to work your file.",
-    },
-    {
-      question: "What's your refund policy?",
-      answer: "We offer a 90-Day Money-Back Guarantee. If you hold up your end (keep SmartCredit active, stay responsive, keep account current, follow guidance) and we don't remove at least 1 verifiable negative item within 90 days, you get 100% of your money back—every dollar paid to Mesa Group. This is in writing in your agreement. No vague promises, no runaround.",
-    },
-  ];
-
-  return (
-    <main className="min-h-screen">
+  const faqs = [{
+    question: "Is this legit or a scam?",
+    answer: "Mesa Group Consulting is a legitimate, California DOJ-registered credit repair company with a real physical office at 5001 California Ave Suite 219, Bakersfield, CA 93309. We've served 2,500+ clients nationwide with 150+ five-star reviews. Unlike fly-by-night operations, we've been in business since 2008 and comply with all federal regulations including CROA, TSR, and California CSO requirements. You're welcome to visit our office anytime."
+  }, {
+    question: "Will this hurt my credit more?",
+    answer: "No. Disputing inaccurate items is your legal right under the Fair Credit Reporting Act (FCRA). The dispute process itself does not negatively impact your credit score. In fact, when negative items are removed, your score typically increases. We only challenge items that are inaccurate, unverifiable, or unfairly reported—we never use illegal tactics that could harm your credit."
+  }, {
+    question: "How much is this going to cost total?",
+    answer: "Our monthly plans range from $149-$299/month plus an initial fee of $350-$800 depending on the plan. Most clients complete the program in 4-8 months, making total investment typically $1,000-$3,000. We also offer 12-month programs ($1,500-$1,800) for upfront savings. SmartCredit monitoring ($27.99/month) is required separately. There are no hidden fees, and you can cancel monthly plans anytime."
+  }, {
+    question: "How long does it actually take to see results?",
+    answer: "Most clients see first results within 45-90 days. Credit bureaus have 30 days to investigate each dispute, and most items require 1-2 dispute cycles. Significant improvements (60-110+ point increases) typically occur within 3-6 months. Complex cases with bankruptcies, repos, or 15+ negative items may take 6-12 months. We provide realistic timelines during your free analysis."
+  }, {
+    question: "Can I do this myself instead of paying someone?",
+    answer: "Legally, yes—the FCRA gives you the right to dispute items yourself for free. However, DIY has challenges: it takes 10-15 hours/month, generic templates are easily rejected, you need expertise in FCRA/Metro 2 compliance, and one mistake can hurt your case. Our clients choose professional service because we have relationships with creditors, advanced dispute methods, and a 91% success rate. That said, if you prefer DIY, check out our Creditily platform for $29.99/month."
+  }, {
+    question: "What items can be removed from my credit report?",
+    answer: "We can challenge any item that is inaccurate, unverifiable, or unfairly reported—including collections, late payments, charge-offs, repossessions, foreclosures, bankruptcies (with errors), judgments, tax liens, and unauthorized inquiries. We CANNOT remove items that are 100% accurate and properly documented. However, even 'accurate' items often have errors (wrong dates, amounts, missing documentation) that make them legally disputable."
+  }, {
+    question: "Do you have legal support for FCRA violations?",
+    answer: "Yes. While Mesa Group Consulting is not a law firm, we have a full legal team available for cases where creditors or bureaus violate your rights under FCRA or FDCPA. When violations occur (bureau fails to investigate within 30 days, creditor re-reports deleted info, etc.), our legal team can send demand letters and support potential violation claims. Many clients have received $1,000-$2,500+ settlements."
+  }, {
+    question: "What's the difference between monthly plans and 12-month programs?",
+    answer: "Monthly plans (Lite/Flex/Elite) offer flexibility—pay as you go, cancel anytime, and we continue working on new items that appear. 12-month programs (Ruby/Emerald) offer significant savings (up to $1,788) when you pay upfront, but new items added during the program aren't covered. Choose monthly if your credit situation is evolving; choose 12-month if it's stable and you want to save money."
+  }, {
+    question: "What is SmartCredit and why do I need it?",
+    answer: "SmartCredit provides real-time access to your credit reports from all three bureaus. We need this to see your actual reports, file accurate disputes, and track progress. Cost is $1 for 7-day trial, then $27.99/month. It's a third-party service you control directly—not owned by Mesa Group. You must keep SmartCredit active throughout the program for us to work your file."
+  }, {
+    question: "What's your refund policy?",
+    answer: "We offer a 90-Day Money-Back Guarantee. If you hold up your end (keep SmartCredit active, stay responsive, keep account current, follow guidance) and we don't remove at least 1 verifiable negative item within 90 days, you get 100% of your money back—every dollar paid to Mesa Group. This is in writing in your agreement. No vague promises, no runaround."
+  }];
+  return <main className="min-h-screen">
       <Header />
       
       {/* ============================================ */}
@@ -120,16 +99,10 @@ const CreditRepair2 = () => {
 
               {/* Primary CTA Button */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <button
-                  onClick={handleCTAClick}
-                  className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4"
-                >
+                <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4">
                   Start Your Credit Transformation →
                 </button>
-                <button
-                  onClick={() => scrollToSection("how-it-works")}
-                  className="text-amber-700 hover:text-amber-800 font-semibold underline underline-offset-4"
-                >
+                <button onClick={() => scrollToSection("how-it-works")} className="text-amber-700 hover:text-amber-800 font-semibold underline underline-offset-4">
                   Get Free Credit Analysis
                 </button>
               </div>
@@ -137,12 +110,7 @@ const CreditRepair2 = () => {
 
             {/* RIGHT COLUMN - Hero Image */}
             <div className="hidden lg:block">
-              <img
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=600&h=700&q=80"
-                alt="Happy client achieving financial freedom with Mesa Group"
-                className="rounded-2xl shadow-2xl"
-                loading="eager"
-              />
+              <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=600&h=700&q=80" alt="Happy client achieving financial freedom with Mesa Group" className="rounded-2xl shadow-2xl" loading="eager" />
             </div>
           </div>
         </div>
@@ -523,9 +491,7 @@ const CreditRepair2 = () => {
           {/* Testimonial Callout */}
           <div className="mt-12 bg-white rounded-2xl p-8 shadow-xl border-l-4 border-amber-500">
             <div className="flex gap-1 mb-4">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 text-amber-500 fill-amber-500" />
-              ))}
+              {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-amber-500 fill-amber-500" />)}
             </div>
             <p className="text-gray-700 italic mb-4">
               "I came to Mesa Group with a 540 score and collections I didn't understand. My account manager, Maria, didn't just file disputes—she explained every step, taught me how credit utilization works, and helped me build a plan to keep my score high after the program. Nine months later, I'm at 710 and I finally understand how to manage my credit."
@@ -534,10 +500,7 @@ const CreditRepair2 = () => {
           </div>
 
           <div className="text-center mt-10">
-            <button
-              onClick={handleCTAClick}
-              className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4"
-            >
+            <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4">
               Get Your Customized Action Plan →
             </button>
           </div>
@@ -646,9 +609,7 @@ const CreditRepair2 = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg">
               <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
               <h4 className="text-white font-bold mb-2">"From 540 to 695 in 75 Days—I Finally Got My Dream Home"</h4>
               <p className="text-gray-300 text-sm mb-4">
@@ -659,9 +620,7 @@ const CreditRepair2 = () => {
 
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg">
               <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
               <h4 className="text-white font-bold mb-2">"100+ Point Increase in Under 4 Months"</h4>
               <p className="text-gray-300 text-sm mb-4">
@@ -672,9 +631,7 @@ const CreditRepair2 = () => {
 
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg">
               <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
               <h4 className="text-white font-bold mb-2">"Tried DIY for 6 Months—Got Nowhere"</h4>
               <p className="text-gray-300 text-sm mb-4">
@@ -685,9 +642,7 @@ const CreditRepair2 = () => {
 
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg">
               <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
               <h4 className="text-white font-bold mb-2">"Transparent Pricing, No Hidden Fees"</h4>
               <p className="text-gray-300 text-sm mb-4">
@@ -1022,10 +977,7 @@ const CreditRepair2 = () => {
             The longer you wait, the more it costs you. But it doesn't have to be this way.<br />
             <strong className="text-amber-400">Your financial transformation starts today.</strong>
           </p>
-          <button
-            onClick={handleCTAClick}
-            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5"
-          >
+          <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5">
             Start Your Credit Transformation Now →
           </button>
           <p className="text-white/70 mt-4">
@@ -1047,34 +999,18 @@ const CreditRepair2 = () => {
           </p>
 
           <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300"
-              >
-                <button
-                  onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-                  className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-gray-50 transition-colors duration-200"
-                >
+            {faqs.map((faq, index) => <div key={index} className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
+                <button onClick={() => setOpenFAQ(openFAQ === index ? null : index)} className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-gray-50 transition-colors duration-200">
                   <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
-                  <ChevronDown 
-                    className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${
-                      openFAQ === index ? 'transform rotate-180' : ''
-                    }`}
-                  />
+                  <ChevronDown className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${openFAQ === index ? 'transform rotate-180' : ''}`} />
                 </button>
 
-                <div 
-                  className={`overflow-hidden transition-all duration-300 ${
-                    openFAQ === index ? 'max-h-[500px]' : 'max-h-0'
-                  }`}
-                >
+                <div className={`overflow-hidden transition-all duration-300 ${openFAQ === index ? 'max-h-[500px]' : 'max-h-0'}`}>
                   <div className="px-6 pb-5 pt-2 bg-white">
                     <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           {/* Still Have Questions? */}
@@ -1104,7 +1040,7 @@ const CreditRepair2 = () => {
       {/* ============================================ */}
       {/* SECTION 13: FINAL TRUST BAR + FOOTER CTA */}
       {/* ============================================ */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white bg-secondary">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Trust Recap */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
@@ -1148,10 +1084,7 @@ const CreditRepair2 = () => {
               Ready to Take Control of Your <span className="text-amber-400">Credit</span>?
             </h2>
             
-            <button
-              onClick={handleCTAClick}
-              className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 mb-4"
-            >
+            <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 mb-4">
               Get Started Today →
             </button>
             
@@ -1164,8 +1097,6 @@ const CreditRepair2 = () => {
       </section>
 
       <Footer />
-    </main>
-  );
+    </main>;
 };
-
 export default CreditRepair2;
