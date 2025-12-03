@@ -1,11 +1,8 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-
 const FAQ = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
-
-  return (
-    <section id="faq" className="py-16 md:py-24 px-6 md:px-8 bg-gray-50">
+  return <section id="faq" className="py-16 md:py-24 px-6 md:px-8 bg-gray-50">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4 text-center">
           Your <span className="text-[#f9c65d]">Questions</span>, Answered.
@@ -16,17 +13,12 @@ const FAQ = () => {
 
         {/* Section Header: THE BIG 5 OBJECTIONS */}
         <div className="mb-6">
-          <h3 className="text-xl font-bold text-[#3E3E3E] mb-4 uppercase tracking-wide">THE BIG 5 OBJECTIONS</h3>
+          <h3 className="font-bold mb-4 uppercase tracking-wide text-3xl text-foreground">THE BIG 5 QUESTIONS</h3>
         </div>
 
         <div className="space-y-4 mb-12">
           {/* FAQ 1 */}
-          <FAQItem
-            index={0}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="1. Is this legit or a scam?"
-          >
+          <FAQItem index={0} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="1. Is this legit or a scam?">
             <p className="mb-4">Absolutely legitimate. Mesa Group Consulting is a CROA-compliant financial services company operating in full accordance with federal consumer protection laws. We're not a fly-by-night operation—we're a real business with:</p>
             <ul className="list-disc pl-6 space-y-2 mb-4">
               <li>A physical office in Bakersfield, CA that you can visit</li>
@@ -40,12 +32,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 2 */}
-          <FAQItem
-            index={1}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="2. Will this hurt my credit more?"
-          >
+          <FAQItem index={1} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="2. Will this hurt my credit more?">
             <p className="mb-4">No. Legitimate credit disputes filed under the Fair Credit Reporting Act (FCRA) cannot hurt your credit score. In fact, it's your legal right to dispute inaccurate, incomplete, or unverifiable information on your credit report.</p>
             <p className="font-semibold mb-2">Here's what happens when we dispute items:</p>
             <ul className="list-disc pl-6 space-y-2 mb-4">
@@ -64,12 +51,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 3 */}
-          <FAQItem
-            index={2}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="3. How much is this going to cost total?"
-          >
+          <FAQItem index={2} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="3. How much is this going to cost total?">
             <p className="mb-4">We believe in transparent pricing. Here's exactly what you'll pay:</p>
             <p className="font-semibold mb-2">Monthly Plans:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
@@ -97,12 +79,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 4 */}
-          <FAQItem
-            index={3}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="4. How long does it actually take to see results?"
-          >
+          <FAQItem index={3} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="4. How long does it actually take to see results?">
             <p className="mb-4">Most clients see their first results within 45-90 days. However, timelines vary based on several factors:</p>
             <p className="font-semibold mb-2">What affects your timeline:</p>
             <ul className="list-disc pl-6 space-y-2 mb-4">
@@ -123,12 +100,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 5 */}
-          <FAQItem
-            index={4}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="5. Can I do this myself instead of paying someone?"
-          >
+          <FAQItem index={4} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="5. Can I do this myself instead of paying someone?">
             <p className="mb-4">Yes—and we'll be the first to tell you that you have every legal right to dispute items yourself for free.</p>
             <p className="mb-2"><strong>But here's the reality:</strong></p>
             <p className="font-semibold mb-2">Why DIY often fails:</p>
@@ -158,12 +130,7 @@ const FAQ = () => {
 
         <div className="space-y-4">
           {/* FAQ 6 */}
-          <FAQItem
-            index={5}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="6. What items can be removed from my credit report?"
-          >
+          <FAQItem index={5} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="6. What items can be removed from my credit report?">
             <p className="mb-4">We can dispute any item that is:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
               <li><strong>Inaccurate:</strong> Wrong account number, incorrect balance, belongs to someone else</li>
@@ -196,12 +163,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 7 */}
-          <FAQItem
-            index={6}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="7. Do you have legal support for FCRA violations?"
-          >
+          <FAQItem index={6} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="7. Do you have legal support for FCRA violations?">
             <p className="mb-4">Yes. While Mesa Group Consulting is not a law firm, we have a full legal team available for cases where creditors or credit bureaus violate your rights under the Fair Credit Reporting Act (FCRA) or Fair Debt Collection Practices Act (FDCPA).</p>
             <p className="font-semibold mb-2">When legal escalation happens:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
@@ -223,12 +185,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 8 */}
-          <FAQItem
-            index={7}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="8. Do you work with all three credit bureaus?"
-          >
+          <FAQItem index={7} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="8. Do you work with all three credit bureaus?">
             <p className="mb-4">Yes. We file disputes with all three major credit bureaus:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
               <li>Experian</li>
@@ -252,12 +209,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 9 */}
-          <FAQItem
-            index={8}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="9. What happens if an item comes back 'verified'?"
-          >
+          <FAQItem index={8} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="9. What happens if an item comes back 'verified'?">
             <p className="mb-4">If a credit bureau verifies an item after our first dispute, that doesn't mean the process is over. Here's what happens next:</p>
             <p className="font-semibold mb-2">Round 2: Advanced Dispute Methods</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
@@ -292,12 +244,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 10 */}
-          <FAQItem
-            index={9}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="10. Can you guarantee my score will increase by X points?"
-          >
+          <FAQItem index={9} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="10. Can you guarantee my score will increase by X points?">
             <p className="mb-4">No—and you should run from any company that makes that promise.</p>
             <p className="mb-4">Under the Credit Repair Organizations Act (CROA), it is illegal for credit repair companies to:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
@@ -330,12 +277,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 11 */}
-          <FAQItem
-            index={10}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="11. What's included in the 1-on-1 financial coaching?"
-          >
+          <FAQItem index={10} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="11. What's included in the 1-on-1 financial coaching?">
             <p className="mb-4">Every Mesa Group client—regardless of which plan you choose—gets a dedicated account manager and personalized financial coaching. This isn't just credit repair; it's a complete financial transformation program.</p>
             <p className="font-semibold mb-2">Your coaching includes:</p>
             <p className="font-semibold mt-4 mb-2">📊 Customized Action Plan</p>
@@ -382,12 +324,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 12 */}
-          <FAQItem
-            index={11}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="12. What's the difference between your monthly plans and 12-month programs?"
-          >
+          <FAQItem index={11} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="12. What's the difference between your monthly plans and 12-month programs?">
             <p className="mb-4">Great question—we offer both options to fit different needs and budgets.</p>
             
             <div className="bg-amber-50 p-4 rounded-lg mb-4">
@@ -448,12 +385,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 13 */}
-          <FAQItem
-            index={12}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="13. Do I need to live in Bakersfield to work with you?"
-          >
+          <FAQItem index={12} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="13. Do I need to live in Bakersfield to work with you?">
             <p className="mb-4">Not at all! While we're headquartered in Bakersfield, California, we serve clients nationwide.</p>
             <p className="font-semibold mb-2">How it works:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
@@ -473,12 +405,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 14 */}
-          <FAQItem
-            index={13}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="14. How do I track my progress?"
-          >
+          <FAQItem index={13} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="14. How do I track my progress?">
             <p className="mb-4">Transparency is one of our core values. You'll always know exactly what's happening with your credit.</p>
             <p className="font-semibold mb-2">You get access to:</p>
             <p className="font-semibold mt-4 mb-2">📱 Mobile App</p>
@@ -519,12 +446,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 15 */}
-          <FAQItem
-            index={14}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="15. What happens after my credit is restored?"
-          >
+          <FAQItem index={14} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="15. What happens after my credit is restored?">
             <p className="mb-4">Our goal isn't just to fix your credit—it's to transform your financial future. Here's what happens:</p>
             <p className="font-semibold mb-2">During the Program:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
@@ -554,12 +476,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 16 */}
-          <FAQItem
-            index={15}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="16. What is SmartCredit and why do I need it?"
-          >
+          <FAQItem index={15} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="16. What is SmartCredit and why do I need it?">
             <p className="mb-4">SmartCredit is a credit monitoring service that provides real-time access to your credit reports from all three bureaus (Experian, Equifax, TransUnion). It's a required tool for our program.</p>
             <p className="font-semibold mb-2">Why it's required:</p>
             <p className="font-semibold mt-4 mb-2">📊 Real-Time Access</p>
@@ -602,12 +519,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 17 */}
-          <FAQItem
-            index={16}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="17. Can I apply for new credit during the program?"
-          >
+          <FAQItem index={16} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="17. Can I apply for new credit during the program?">
             <p className="mb-4">Yes, but strategically.</p>
             <p className="mb-4">This is one of the most important topics we cover in your 1-on-1 coaching, because applying for new credit during credit restoration can either help or hurt—depending on timing and approach.</p>
             <p className="font-semibold mb-2">General guidance:</p>
@@ -644,12 +556,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 18 */}
-          <FAQItem
-            index={17}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="18. What's your refund policy?"
-          >
+          <FAQItem index={17} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="18. What's your refund policy?">
             <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-4">
               <p className="font-bold text-lg">90 Days. Real Results. Or You Get Every Dollar Back.</p>
             </div>
@@ -729,12 +636,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 19 */}
-          <FAQItem
-            index={18}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="19. Will you help me with identity theft?"
-          >
+          <FAQItem index={18} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="19. Will you help me with identity theft?">
             <p className="mb-4">Yes, absolutely.</p>
             <p className="mb-4">Identity theft accounts (fraudulent accounts opened in your name) are some of the most damaging items that can appear on your credit report—and they're 100% disputable since they're not your responsibility.</p>
             <p className="font-semibold mb-2">What we do:</p>
@@ -774,12 +676,7 @@ const FAQ = () => {
           </FAQItem>
 
           {/* FAQ 20 */}
-          <FAQItem
-            index={19}
-            openFAQ={openFAQ}
-            setOpenFAQ={setOpenFAQ}
-            question="20. Can you help with student loans?"
-          >
+          <FAQItem index={19} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="20. Can you help with student loans?">
             <p className="mb-4">Yes—but it depends on the situation.</p>
             <p className="mb-4">Student loans are one of the most complex credit issues we handle. Here's what we can and can't do:</p>
             
@@ -853,8 +750,7 @@ const FAQ = () => {
           </FAQItem>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 
 // Reusable FAQ Item component
@@ -865,32 +761,23 @@ interface FAQItemProps {
   question: string;
   children: React.ReactNode;
 }
-
-const FAQItem = ({ index, openFAQ, setOpenFAQ, question, children }: FAQItemProps) => {
-  return (
-    <div className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
-      <button
-        onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-        className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-gray-50 transition-colors duration-200"
-      >
+const FAQItem = ({
+  index,
+  openFAQ,
+  setOpenFAQ,
+  question,
+  children
+}: FAQItemProps) => {
+  return <div className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
+      <button onClick={() => setOpenFAQ(openFAQ === index ? null : index)} className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-gray-50 transition-colors duration-200">
         <span className="font-semibold text-gray-900 pr-4">{question}</span>
-        <ChevronDown
-          className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${
-            openFAQ === index ? "transform rotate-180" : ""
-          }`}
-        />
+        <ChevronDown className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${openFAQ === index ? "transform rotate-180" : ""}`} />
       </button>
-      <div
-        className={`overflow-hidden transition-all duration-300 ${
-          openFAQ === index ? "max-h-[2000px]" : "max-h-0"
-        }`}
-      >
+      <div className={`overflow-hidden transition-all duration-300 ${openFAQ === index ? "max-h-[2000px]" : "max-h-0"}`}>
         <div className="px-6 pb-5 pt-2 bg-white text-gray-700 leading-relaxed">
           {children}
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default FAQ;
