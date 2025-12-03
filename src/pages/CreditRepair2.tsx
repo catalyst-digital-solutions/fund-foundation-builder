@@ -283,8 +283,12 @@ const CreditRepair2 = () => {
                   </ul>
                 </div>
                 <div>
+                  <p className="font-semibold mb-2">Customized Action Plan</p>
+                  <p>Your account manager creates a personalized roadmap based on your unique goals—not a one-size-fits-all template.</p>
+                </div>
+                <div>
                   <p className="font-semibold mb-2">Monthly Progress Reviews</p>
-                  <p>Every 35 days: what was disputed, what was removed, what's in progress, and your next steps.</p>
+                  <p>We don't just send updates—we walk you through your results, explain what's happening, and adjust strategy as needed.</p>
                 </div>
               </div>
             </div>
