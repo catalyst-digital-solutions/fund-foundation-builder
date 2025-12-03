@@ -147,9 +147,14 @@ const CreditRepair2 = () => {
               You've probably seen ads promising to "erase bad credit in 30 days" or "guaranteed 100-point increases." Here's the truth: <strong>those promises are not only unrealistic—they may violate federal law.</strong>
             </p>
 
-            <p>
-              Bad credit doesn't define you. It's just a chapter in your financial story. And with the right strategy, it's a chapter you can rewrite.
-            </p>
+            <blockquote className="my-8 py-6 px-8 border-l-4 border-[#f9c65d] bg-gray-50 text-center">
+              <p className="text-2xl md:text-3xl font-semibold text-gray-800 italic">
+                "Bad credit doesn't define you."
+              </p>
+              <p className="mt-3 text-lg text-gray-600">
+                It's just a chapter in your financial story. And with the right strategy, it's a chapter you can rewrite.
+              </p>
+            </blockquote>
 
             <p className="font-medium">Maybe you're stuck in the cycle:</p>
 
