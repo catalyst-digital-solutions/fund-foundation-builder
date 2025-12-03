@@ -195,7 +195,7 @@ const CreditRepair2 = () => {
         </div>
       </section>
 
-      <EmotionalCTA1 />
+      
 
       {/* ============================================ */}
       {/* SECTION 4: THE SOLUTION (Mesa360 Credit System™) */}
@@ -360,7 +360,7 @@ const CreditRepair2 = () => {
         </div>
       </section>
 
-      <EmotionalCTA2 />
+      
 
       {/* ============================================ */}
       {/* SECTION 5: WHAT MAKES US DIFFERENT */}
@@ -525,7 +525,7 @@ const CreditRepair2 = () => {
         </div>
       </section>
 
-      <EmotionalCTA3 />
+      
 
       {/* ============================================ */}
       {/* SECTION 7: THE ROI (Cost of Bad Credit) */}
@@ -907,9 +907,8 @@ const CreditRepair2 = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
               90 Days. Real Results. Or <span className="text-green-600">Every Dollar Back</span>.
             </h2>
-            <p className="text-xl text-gray-700">
-              We don't just talk about results—we put it in writing with our legally backed 90-Day Money-Back Guarantee.
-            </p>
+            <p className="text-xl text-gray-700">We don't just talk about results.
+We put it in writing with our legally backed 90-Day Money-Back Guarantee.</p>
           </div>
 
           <div className="bg-white rounded-2xl p-8 shadow-xl mb-8">
@@ -943,7 +942,8 @@ const CreditRepair2 = () => {
 
             <div className="mt-8 p-6 bg-green-100 rounded-xl text-center">
               <p className="text-lg font-bold text-green-800 mb-2">If We Don't Deliver:</p>
-              <p className="text-2xl font-bold text-green-600">You get 100% of your money back—every dollar you paid to Mesa Group.</p>
+              <p className="text-2xl font-bold text-green-600">You get 100% of your money back.
+Every dollar you paid to Mesa Group.</p>
             </div>
           </div>
 
