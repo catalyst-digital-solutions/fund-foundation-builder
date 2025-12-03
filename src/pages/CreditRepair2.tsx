@@ -305,7 +305,7 @@ const CreditRepair2 = () => {
               <div className="space-y-4 text-sm text-gray-700">
                 <div>
                   <p className="font-semibold mb-2">Funding Profile Optimization</p>
-                  <p>We help you position your entire financial profile for maximum approval odds on mortgages, business funding, and loans.</p>
+                  <p>We don't stop at credit repair. We help you position your entire financial profile for maximum approval odds on mortgages, business funding, and loans.</p>
                 </div>
                 <div>
                   <p className="font-semibold mb-2">Strategic Credit Building</p>
@@ -313,10 +313,11 @@ const CreditRepair2 = () => {
                 </div>
                 <div>
                   <p className="font-semibold mb-2">Life After Restoration</p>
+                  <p className="mb-2">When you're ready, we help you understand:</p>
                   <ul className="space-y-1 text-gray-600">
-                    <li>• How to maintain improved credit</li>
+                    <li>• How to maintain your improved credit</li>
                     <li>• When to refinance high-interest debts</li>
-                    <li>• Building wealth with good credit</li>
+                    <li>• Building wealth with good credit as your foundation</li>
                   </ul>
                 </div>
               </div>
