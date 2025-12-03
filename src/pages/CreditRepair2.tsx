@@ -149,7 +149,7 @@ const CreditRepair2 = () => {
 
             <blockquote className="my-8 py-6 px-8 border-l-4 border-[#f9c65d] bg-gray-50 text-center">
               <p className="text-2xl md:text-3xl font-semibold text-gray-800 italic">
-                "Bad credit doesn't define you."
+                Bad credit doesn't define you.
               </p>
               <p className="mt-3 text-lg text-gray-600">
                 It's just a chapter in your financial story. And with the right strategy, it's a chapter you can rewrite.
