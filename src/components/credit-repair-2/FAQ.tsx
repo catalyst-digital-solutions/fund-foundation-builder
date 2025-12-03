@@ -55,14 +55,14 @@ const FAQ = () => {
             <p className="mb-4">We believe in transparent pricing. Here's exactly what you'll pay:</p>
             <p className="font-semibold mb-2">Monthly Plans:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
-              <li>Mesa360 Lite: $350 initial setup + $149/month (ongoing)</li>
-              <li>Mesa360 Flex: $500 initial setup + $199/month (ongoing)</li>
-              <li>Mesa360 Elite: $800 initial setup + $299/month (ongoing)</li>
+              <li><strong>Mesa360 Lite:</strong> $350 initial setup + $149/month (ongoing)</li>
+              <li><strong>Mesa360 Flex:</strong> $500 initial setup + $199/month (ongoing)</li>
+              <li><strong>Mesa360 Elite:</strong> $800 initial setup + $299/month (ongoing)</li>
             </ul>
             <p className="font-semibold mb-2">12-Month Programs (Pay in Full & Save):</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
-              <li>Ruby Plan: $1,500 one-time payment (saves you $888 vs. monthly Flex)</li>
-              <li>Emerald Plan: $1,800 one-time payment (saves you $1,788 vs. monthly Elite)</li>
+              <li><strong>Ruby Plan:</strong> $1,500 one-time payment (saves you $888 vs. monthly Flex)</li>
+              <li><strong>Emerald Plan:</strong> $1,800 one-time payment (saves you $1,788 vs. monthly Elite)</li>
             </ul>
             <p className="font-semibold mb-2">What's included in every plan:</p>
             <ul className="space-y-1 mb-4">
@@ -118,7 +118,7 @@ const FAQ = () => {
               <li><strong>Ongoing coaching:</strong> We don't just dispute items—we teach you how to build and maintain good credit long-term</li>
               <li><strong>It's our full-time job:</strong> While you're working, spending time with family, or running your business, we're managing your disputes</li>
             </ul>
-            <p className="mb-4">Think of it this way: You CAN change your own oil, fix your own plumbing, or file your own taxes. But most people hire professionals because the time, expertise, and peace of mind are worth it.</p>
+            <p className="mb-4"><strong>Think of it this way:</strong> You CAN change your own oil, fix your own plumbing, or file your own taxes. But most people hire professionals because the time, expertise, and peace of mind are worth it.</p>
             <p><strong>Still want to try DIY first?</strong> We respect that. Download our free credit dispute letter template and give it a shot. If it works, great! If not, we're here when you're ready for professional help.</p>
           </FAQItem>
         </div>
@@ -386,7 +386,7 @@ const FAQ = () => {
 
           {/* FAQ 13 */}
           <FAQItem index={12} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="13. Do I need to live in Bakersfield to work with you?">
-            <p className="mb-4">Not at all! While we're headquartered in Bakersfield, California, we serve clients nationwide.</p>
+            <p className="mb-4">Not at all! While we're headquartered in Bakersfield, California, we serve clients <strong>nationwide</strong>.</p>
             <p className="font-semibold mb-2">How it works:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
               <li><strong>Everything is done remotely:</strong> Phone, email, and our client portal</li>
@@ -401,7 +401,7 @@ const FAQ = () => {
             </ul>
             <p className="font-semibold mb-2">Our Office:</p>
             <p>📍 5001 California Ave Suite 219<br />Bakersfield, CA 93309<br />📞 (661) 310-3040<br />📧 contact@mesagroupconsulting.com</p>
-            <p className="mt-4"><strong>Bilingual support nationwide:</strong> Our Spanish, English, and Punjabi speaking team members work remotely with clients across the country.</p>
+            <p className="mt-4"><strong>Bilingual support <em>nationwide</em>:</strong> Our Spanish, English, and Punjabi speaking team members work remotely with clients across the country.</p>
           </FAQItem>
 
           {/* FAQ 14 */}
@@ -561,7 +561,7 @@ const FAQ = () => {
               <p className="font-bold text-lg">90 Days. Real Results. Or You Get Every Dollar Back.</p>
             </div>
             <p className="mb-4">We don't just talk about results—we put it in writing.</p>
-            <p className="mb-4">Every Mesa Group client is protected by <strong>The Mesa360 Guarantee</strong>: a legally written, contract-backed 90-Day Money-Back Promise that most credit service companies aren't confident enough to offer.</p>
+            <p className="mb-4">Every Mesa Group client is protected by <strong>The Mesa360 Guarantee</strong>: a legally written, contract-backed <strong>90-Day Money-Back Promise</strong> that most credit service companies aren't confident enough to offer.</p>
             <p className="font-semibold mb-2">Here's how it works:</p>
             <p className="mb-4">If you hold up your end of the agreement and we don't deliver real, verifiable progress within the first 90 days, you get 100% of your money back. No excuses. No runaround. No fine print.</p>
             
@@ -594,14 +594,17 @@ const FAQ = () => {
               <li>When violations occur, our legal team escalates</li>
             </ul>
             <p className="mb-4 font-semibold">We're that confident in our process.</p>
+          </FAQItem>
 
+          {/* FAQ 19 */}
+          <FAQItem index={18} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="19. What are the cancellation terms and guarantee exclusions?">
             <p className="font-semibold mb-2">What's NOT Covered by the Guarantee:</p>
             <ul className="space-y-1 mb-4">
-              <li>❌ SmartCredit subscription fees (that's a third-party service you control)</li>
-              <li>❌ Inactive SmartCredit account (if your CMS is inactive for more than 30 days, we can't work on your case)</li>
-              <li>❌ Unpaid invoices (if your Mesa Group account has unpaid invoices for more than 30 days, service is suspended)</li>
-              <li>❌ Unresponsive clients (if you don't respond to communications for more than 30 days, we can no longer service your account)</li>
-              <li>❌ New negative items you add during the process (late payments, collections, inquiries)</li>
+              <li>❌ <strong>SmartCredit subscription fees</strong> (that's a third-party service you control)</li>
+              <li>❌ <strong>Inactive SmartCredit account</strong> (if your CMS is inactive for more than 30 days, we can't work on your case)</li>
+              <li>❌ <strong>Unpaid invoices</strong> (if your Mesa Group account has unpaid invoices for more than 30 days, service is suspended)</li>
+              <li>❌ <strong>Unresponsive clients</strong> (if you don't respond to communications for more than 30 days, we can no longer service your account)</li>
+              <li>❌ <strong>New negative items you add during the process</strong> (late payments, collections, inquiries)</li>
             </ul>
 
             <p className="font-semibold mb-2">3-Day Risk-Free Cancellation Window (All Plans):</p>
@@ -635,8 +638,8 @@ const FAQ = () => {
             <p>📞 Call us: (661) 310-3040<br />📧 Email: contact@mesagroupconsulting.com<br />🏢 Visit us: 5001 California Ave Suite 219, Bakersfield, CA 93309</p>
           </FAQItem>
 
-          {/* FAQ 19 */}
-          <FAQItem index={18} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="19. Will you help me with identity theft?">
+          {/* FAQ 20 */}
+          <FAQItem index={19} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="20. Will you help me with identity theft?">
             <p className="mb-4">Yes, absolutely.</p>
             <p className="mb-4">Identity theft accounts (fraudulent accounts opened in your name) are some of the most damaging items that can appear on your credit report—and they're 100% disputable since they're not your responsibility.</p>
             <p className="font-semibold mb-2">What we do:</p>
@@ -675,8 +678,8 @@ const FAQ = () => {
             <p className="font-semibold">If you suspect identity theft, tell your account manager immediately.</p>
           </FAQItem>
 
-          {/* FAQ 20 */}
-          <FAQItem index={19} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="20. Can you help with student loans?">
+          {/* FAQ 21 */}
+          <FAQItem index={20} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="21. Can you help with student loans?">
             <p className="mb-4">Yes—but it depends on the situation.</p>
             <p className="mb-4">Student loans are one of the most complex credit issues we handle. Here's what we can and can't do:</p>
             
