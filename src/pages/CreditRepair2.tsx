@@ -212,9 +212,9 @@ const CreditRepair2 = () => {
           </div>
 
           {/* 3-Step Process */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-3 gap-8 mb-16 items-stretch">
             {/* STEP 1: REPAIR */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-amber-500">
+            <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-amber-500 flex flex-col">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <Search className="w-8 h-8 text-[#f9c65d]" />
               </div>
@@ -238,6 +238,14 @@ const CreditRepair2 = () => {
                   </ul>
                 </div>
                 <div>
+                  <p className="font-semibold mb-2">Custom Dispute Strategy</p>
+                  <p>No cookie-cutter letters. We craft personalized dispute strategies based on your unique credit situation and FCRA/FDCPA guidelines.</p>
+                </div>
+                <div>
+                  <p className="font-semibold mb-2">We Handle the Disputes</p>
+                  <p>We manage all communication with credit bureaus and creditors on your behalf. No stress, no confusion—just progress.</p>
+                </div>
+                <div>
                   <p className="font-semibold mb-2">Advanced Methods:</p>
                   <ul className="space-y-1 text-gray-600">
                     <li>• Digital uploads to bureaus</li>
@@ -251,7 +259,7 @@ const CreditRepair2 = () => {
             </div>
 
             {/* STEP 2: REBUILD */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-green-500">
+            <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-green-500 flex flex-col">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
                 <Users className="w-8 h-8 text-green-600" />
               </div>
@@ -282,7 +290,7 @@ const CreditRepair2 = () => {
             </div>
 
             {/* STEP 3: OPTIMIZE */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-blue-500">
+            <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-blue-500 flex flex-col">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                 <TrendingUp className="w-8 h-8 text-blue-600" />
               </div>
