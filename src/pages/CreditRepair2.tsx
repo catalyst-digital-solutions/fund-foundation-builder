@@ -5,12 +5,12 @@ import { Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, Searc
 import EmotionalCTA1 from "@/components/credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/credit-repair/sections/EmotionalCTA3";
+import FAQ from "@/components/credit-repair-2/FAQ";
 import kgetLogo from "@/assets/kget-17-logo.png";
 import studio17Logo from "@/assets/studio-17-logo.png";
 import telemundoLogo from "@/assets/telemundo-logo.png";
 import cwLogo from "@/assets/cw-logo.png";
 const CreditRepair2 = () => {
-  const [openFAQ, setOpenFAQ] = useState<number | null>(0);
   const handleCTAClick = () => {
     window.open("https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09", "_blank", "noopener,noreferrer");
   };
@@ -19,37 +19,6 @@ const CreditRepair2 = () => {
       behavior: "smooth"
     });
   };
-  const faqs = [{
-    question: "Is this legit or a scam?",
-    answer: "Mesa Group Consulting is a legitimate, California DOJ-registered credit repair company with a real physical office at 5001 California Ave Suite 219, Bakersfield, CA 93309. We've served 2,500+ clients nationwide with 150+ five-star reviews. Unlike fly-by-night operations, we've been in business since 2008 and comply with all federal regulations including CROA, TSR, and California CSO requirements. You're welcome to visit our office anytime."
-  }, {
-    question: "Will this hurt my credit more?",
-    answer: "No. Disputing inaccurate items is your legal right under the Fair Credit Reporting Act (FCRA). The dispute process itself does not negatively impact your credit score. In fact, when negative items are removed, your score typically increases. We only challenge items that are inaccurate, unverifiable, or unfairly reported—we never use illegal tactics that could harm your credit."
-  }, {
-    question: "How much is this going to cost total?",
-    answer: "Our monthly plans range from $149-$299/month plus an initial fee of $350-$800 depending on the plan. Most clients complete the program in 4-8 months, making total investment typically $1,000-$3,000. We also offer 12-month programs ($1,500-$1,800) for upfront savings. SmartCredit monitoring ($27.99/month) is required separately. There are no hidden fees, and you can cancel monthly plans anytime."
-  }, {
-    question: "How long does it actually take to see results?",
-    answer: "Most clients see first results within 45-90 days. Credit bureaus have 30 days to investigate each dispute, and most items require 1-2 dispute cycles. Significant improvements (60-110+ point increases) typically occur within 3-6 months. Complex cases with bankruptcies, repos, or 15+ negative items may take 6-12 months. We provide realistic timelines during your free analysis."
-  }, {
-    question: "Can I do this myself instead of paying someone?",
-    answer: "Legally, yes—the FCRA gives you the right to dispute items yourself for free. However, DIY has challenges: it takes 10-15 hours/month, generic templates are easily rejected, you need expertise in FCRA/Metro 2 compliance, and one mistake can hurt your case. Our clients choose professional service because we have relationships with creditors, advanced dispute methods, and a 91% success rate. That said, if you prefer DIY, check out our Creditily platform for $29.99/month."
-  }, {
-    question: "What items can be removed from my credit report?",
-    answer: "We can challenge any item that is inaccurate, unverifiable, or unfairly reported—including collections, late payments, charge-offs, repossessions, foreclosures, bankruptcies (with errors), judgments, tax liens, and unauthorized inquiries. We CANNOT remove items that are 100% accurate and properly documented. However, even 'accurate' items often have errors (wrong dates, amounts, missing documentation) that make them legally disputable."
-  }, {
-    question: "Do you have legal support for FCRA violations?",
-    answer: "Yes. While Mesa Group Consulting is not a law firm, we have a full legal team available for cases where creditors or bureaus violate your rights under FCRA or FDCPA. When violations occur (bureau fails to investigate within 30 days, creditor re-reports deleted info, etc.), our legal team can send demand letters and support potential violation claims. Many clients have received $1,000-$2,500+ settlements."
-  }, {
-    question: "What's the difference between monthly plans and 12-month programs?",
-    answer: "Monthly plans (Lite/Flex/Elite) offer flexibility—pay as you go, cancel anytime, and we continue working on new items that appear. 12-month programs (Ruby/Emerald) offer significant savings (up to $1,788) when you pay upfront, but new items added during the program aren't covered. Choose monthly if your credit situation is evolving; choose 12-month if it's stable and you want to save money."
-  }, {
-    question: "What is SmartCredit and why do I need it?",
-    answer: "SmartCredit provides real-time access to your credit reports from all three bureaus. We need this to see your actual reports, file accurate disputes, and track progress. Cost is $1 for 7-day trial, then $27.99/month. It's a third-party service you control directly—not owned by Mesa Group. You must keep SmartCredit active throughout the program for us to work your file."
-  }, {
-    question: "What's your refund policy?",
-    answer: "We offer a 90-Day Money-Back Guarantee. If you hold up your end (keep SmartCredit active, stay responsive, keep account current, follow guidance) and we don't remove at least 1 verifiable negative item within 90 days, you get 100% of your money back—every dollar paid to Mesa Group. This is in writing in your agreement. No vague promises, no runaround."
-  }];
   return <main className="min-h-screen">
       <Header />
       
@@ -1007,53 +976,7 @@ Every dollar you paid to Mesa Group.</p>
       {/* ============================================ */}
       {/* SECTION 12: FAQ */}
       {/* ============================================ */}
-      <section id="faq" className="bg-gray-50 py-16 md:py-24 px-6 md:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4 text-center">
-            Your <span className="text-[#f9c65d]">Questions</span>, Answered.
-          </h2>
-          <p className="text-xl text-gray-700 mb-12 text-center">
-            We believe in transparency. Here are honest answers to the questions most people ask.
-          </p>
-
-          <div className="space-y-4">
-            {faqs.map((faq, index) => <div key={index} className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
-                <button onClick={() => setOpenFAQ(openFAQ === index ? null : index)} className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-gray-50 transition-colors duration-200">
-                  <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
-                  <ChevronDown className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${openFAQ === index ? 'transform rotate-180' : ''}`} />
-                </button>
-
-                <div className={`overflow-hidden transition-all duration-300 ${openFAQ === index ? 'max-h-[500px]' : 'max-h-0'}`}>
-                  <div className="px-6 pb-5 pt-2 bg-white">
-                    <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
-                  </div>
-                </div>
-              </div>)}
-          </div>
-
-          {/* Still Have Questions? */}
-          <div className="mt-12 text-center bg-white rounded-2xl p-8 shadow-lg">
-            <h3 className="text-xl font-bold text-[#3E3E3E] mb-4">Still Have Questions? Let's Talk.</h3>
-            <div className="flex flex-wrap justify-center gap-4 mb-6">
-              <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-6 py-3 rounded-lg transition-colors">
-                Book Free Consultation
-              </button>
-              <button onClick={handleCTAClick} className="bg-[#3E3E3E] hover:bg-gray-700 text-white font-bold px-6 py-3 rounded-lg transition-colors">
-                Start Your Transformation
-              </button>
-            </div>
-            <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
-              <a href="tel:6613103040" className="flex items-center gap-2 hover:text-amber-600">
-                <Phone className="w-4 h-4" /> (661) 310-3040
-              </a>
-              <a href="mailto:contact@mesagroupconsulting.com" className="flex items-center gap-2 hover:text-amber-600">
-                <Mail className="w-4 h-4" /> contact@mesagroupconsulting.com
-              </a>
-            </div>
-            <p className="text-sm text-gray-500 mt-4">🌎 Hablamos español | We speak Punjabi</p>
-          </div>
-        </div>
-      </section>
+      <FAQ />
 
       {/* ============================================ */}
       {/* SECTION 13: FINAL TRUST BAR + FOOTER CTA */}
