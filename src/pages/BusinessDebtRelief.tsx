@@ -44,8 +44,8 @@ const BusinessDebtRelief = () => {
           
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Stop Hiding from <span className="text-amber-600">Creditors</span>.<br />
-            Start Rebuilding Your <span className="text-amber-600">Business</span>.
+            Stop Hiding from <span className="text-[#3e3e3e]">Creditors</span>.<br />
+            Start Rebuilding Your <span className="text-[#3e3e3e]">Business</span>.
           </h1>
           
           {/* Subheadline */}
@@ -113,7 +113,7 @@ const BusinessDebtRelief = () => {
         <div className="max-w-4xl mx-auto text-center">
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Is <span className="text-amber-600">Business Debt</span> Controlling Your Life?
+            Is <span className="text-[#3e3e3e]">Business Debt</span> Controlling Your Life?
           </h2>
           
           <p className="text-lg md:text-xl text-gray-700 mb-12 leading-relaxed">
@@ -190,7 +190,7 @@ const BusinessDebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              How <span className="text-amber-600">Business Debt Relief</span> Works
+              How <span className="text-[#3e3e3e]">Business Debt Relief</span> Works
             </h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
               Mesa Group Capital's business debt relief program restructures your unaffordable debt into 
@@ -271,7 +271,7 @@ const BusinessDebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              We Resolve <span className="text-amber-600">All Types</span> of Business Debt
+              We Resolve <span className="text-[#3e3e3e]">All Types</span> of Business Debt
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               From merchant cash advances to credit cards, lawsuits to tax debts—we routinely settle every 
@@ -285,7 +285,7 @@ const BusinessDebtRelief = () => {
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <CreditCard className="w-8 h-8 text-amber-600" />
+                  <CreditCard className="w-8 h-8 text-[#3e3e3e]" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Credit Cards</h3>
@@ -297,7 +297,7 @@ const BusinessDebtRelief = () => {
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <DollarSign className="w-8 h-8 text-amber-600" />
+                  <DollarSign className="w-8 h-8 text-[#3e3e3e]" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Cash Advances (MCA)</h3>
@@ -309,7 +309,7 @@ const BusinessDebtRelief = () => {
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <FileText className="w-8 h-8 text-amber-600" />
+                  <FileText className="w-8 h-8 text-[#3e3e3e]" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Supplier/Vendor Debt</h3>
@@ -321,7 +321,7 @@ const BusinessDebtRelief = () => {
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <Scale className="w-8 h-8 text-amber-600" />
+                  <Scale className="w-8 h-8 text-[#3e3e3e]" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Lawsuits & Judgments</h3>
@@ -333,7 +333,7 @@ const BusinessDebtRelief = () => {
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <Building className="w-8 h-8 text-amber-600" />
+                  <Building className="w-8 h-8 text-[#3e3e3e]" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Tax Debt (IRS/State)</h3>
@@ -345,7 +345,7 @@ const BusinessDebtRelief = () => {
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <Briefcase className="w-8 h-8 text-amber-600" />
+                  <Briefcase className="w-8 h-8 text-[#3e3e3e]" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Personal Guarantees</h3>
@@ -373,7 +373,7 @@ const BusinessDebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              How Business Debt Relief <span className="text-amber-600">Transforms</span> Your Situation
+              How Business Debt Relief <span className="text-[#3e3e3e]">Transforms</span> Your Situation
             </h2>
             <p className="text-lg md:text-xl text-gray-700">
               Stop managing the debt crisis. Start managing your business again.
@@ -401,7 +401,7 @@ const BusinessDebtRelief = () => {
                     <p className="text-sm font-semibold text-gray-900 mb-2">Example:</p>
                     <p className="text-sm text-gray-700">
                       <strong>$100,000 in debt</strong> with $5,000/month payments becomes 
-                      <strong> $2,000/month</strong> in our program = <strong className="text-amber-600">$3,000/month 
+                      <strong> $2,000/month</strong> in our program = <strong className="text-[#3e3e3e]">$3,000/month 
                       saved for business operations</strong>
                     </p>
                   </div>
@@ -528,7 +528,7 @@ const BusinessDebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Your Path to <span className="text-amber-600">Debt Freedom</span> in 5 Steps
+              Your Path to <span className="text-[#3e3e3e]">Debt Freedom</span> in 5 Steps
             </h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
               From your first consultation to complete debt resolution, here's exactly how our proven process works.
@@ -660,7 +660,7 @@ const BusinessDebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Proven <span className="text-amber-600">Results</span> for Business Owners
+              Proven <span className="text-[#3e3e3e]">Results</span> for Business Owners
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Our business debt relief program has helped thousands of companies reduce debt, avoid bankruptcy, 
@@ -672,25 +672,25 @@ const BusinessDebtRelief = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 text-center border-2 border-amber-200">
-              <div className="text-5xl font-bold text-amber-600 mb-2">30-50%</div>
+              <div className="text-5xl font-bold text-[#3e3e3e] mb-2">30-50%</div>
               <p className="text-base font-semibold text-gray-900 mb-1">Average Debt Reduction</p>
               <p className="text-sm text-gray-600">Settled for less than full balance</p>
             </div>
             
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 text-center border-2 border-amber-200">
-              <div className="text-5xl font-bold text-amber-600 mb-2">89%</div>
+              <div className="text-5xl font-bold text-[#3e3e3e] mb-2">89%</div>
               <p className="text-base font-semibold text-gray-900 mb-1">Total Repayment Rate</p>
               <p className="text-sm text-gray-600">Including fees (vs. 100% owed)</p>
             </div>
             
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 text-center border-2 border-amber-200">
-              <div className="text-5xl font-bold text-amber-600 mb-2">2-4</div>
+              <div className="text-5xl font-bold text-[#3e3e3e] mb-2">2-4</div>
               <p className="text-base font-semibold text-gray-900 mb-1">Years to Complete</p>
               <p className="text-sm text-gray-600">Average program duration</p>
             </div>
             
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 text-center border-2 border-amber-200">
-              <div className="text-5xl font-bold text-amber-600 mb-2">4-7</div>
+              <div className="text-5xl font-bold text-[#3e3e3e] mb-2">4-7</div>
               <p className="text-base font-semibold text-gray-900 mb-1">Months to First Settlement</p>
               <p className="text-sm text-gray-600">Initial debt resolved quickly</p>
             </div>
@@ -701,7 +701,7 @@ const BusinessDebtRelief = () => {
           <div className="bg-amber-400 rounded-2xl p-8 md:p-12 text-center">
             <div className="max-w-3xl mx-auto">
               <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full mb-6">
-                <Shield className="w-6 h-6 text-amber-600" />
+                <Shield className="w-6 h-6 text-[#3e3e3e]" />
                 <span className="text-base font-bold text-gray-900">Our Guarantee</span>
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">

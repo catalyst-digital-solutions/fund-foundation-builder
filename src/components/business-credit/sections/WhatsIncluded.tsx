@@ -34,7 +34,7 @@ const WhatsIncluded = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Everything You Need to Build <span className="text-amber-600">Business Credit</span>
+            Everything You Need to Build <span className="text-[#3e3e3e]">Business Credit</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600">
             Our comprehensive Business Credit Finance Suite includes professional tools, expert guidance, and ongoing support.
@@ -45,7 +45,7 @@ const WhatsIncluded = () => {
           {components.map((component, index) => (
             <div key={index} className={`bg-white rounded-xl shadow-lg p-6 md:p-8 border-l-4 ${component.fullServiceOnly ? 'border-amber-500' : 'border-green-500'}`}>
               <div className="flex items-start gap-4">
-                <div className={`flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center ${component.fullServiceOnly ? 'bg-amber-100 text-amber-600' : 'bg-green-100 text-green-600'}`}>
+                <div className={`flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center ${component.fullServiceOnly ? 'bg-amber-100 text-[#3e3e3e]' : 'bg-green-100 text-green-600'}`}>
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {component.icon}
                   </svg>
@@ -53,7 +53,7 @@ const WhatsIncluded = () => {
                 <div className="flex-1">
                   <div className="flex items-start justify-between gap-4 mb-3">
                     <h3 className="text-xl font-bold text-gray-900">{component.title}</h3>
-                    <span className="text-lg font-bold text-amber-600 whitespace-nowrap">{component.value}</span>
+                    <span className="text-lg font-bold text-[#3e3e3e] whitespace-nowrap">{component.value}</span>
                   </div>
                   <p className="text-gray-600">{component.description}</p>
                 </div>

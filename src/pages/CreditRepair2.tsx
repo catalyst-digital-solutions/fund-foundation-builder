@@ -565,7 +565,7 @@ const CreditRepair2 = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              Real People. Real Results. Real <span className="text-amber-600">Transformation</span>.
+              Real People. Real Results. Real <span className="text-[#3e3e3e]">Transformation</span>.
             </h2>
             <p className="text-xl text-gray-700">
               Don't take our word for it—hear from clients who transformed their financial futures with the Mesa360 Credit System™.
@@ -575,15 +575,15 @@ const CreditRepair2 = () => {
           {/* Aggregate Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
             <div className="bg-white rounded-xl p-6 shadow-lg text-center">
-              <div className="text-4xl font-bold text-amber-600 mb-2">83</div>
+              <div className="text-4xl font-bold text-[#3e3e3e] mb-2">83</div>
               <p className="text-sm text-gray-600">Points Avg. Increase</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg text-center">
-              <div className="text-4xl font-bold text-amber-600 mb-2">2,500+</div>
+              <div className="text-4xl font-bold text-[#3e3e3e] mb-2">2,500+</div>
               <p className="text-sm text-gray-600">Clients Served</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg text-center">
-              <div className="text-4xl font-bold text-amber-600 mb-2">150+</div>
+              <div className="text-4xl font-bold text-[#3e3e3e] mb-2">150+</div>
               <p className="text-sm text-gray-600">5-Star Reviews</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg text-center">

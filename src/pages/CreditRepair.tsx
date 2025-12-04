@@ -131,7 +131,7 @@ const CreditRepair = () => {
 
               {/* H1 Headline */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Remove <span className="text-amber-600">Inaccurate Items</span>. Rebuild Your <span className="text-amber-600">Credit</span>. Reclaim Your <span className="text-amber-600">Financial Future</span>.
+                Remove <span className="text-[#3e3e3e]">Inaccurate Items</span>. Rebuild Your <span className="text-[#3e3e3e]">Credit</span>. Reclaim Your <span className="text-[#3e3e3e]">Financial Future</span>.
               </h1>
 
               {/* Subheadline */}
@@ -143,7 +143,7 @@ const CreditRepair = () => {
               {/* Transparency Callout Box */}
               <div className="bg-white/80 backdrop-blur-sm border-l-4 border-amber-500 p-6 rounded-lg mb-8 shadow-lg">
                 <div className="flex items-start gap-3 mb-4">
-                  <AlertTriangle className="text-amber-600 w-6 h-6 flex-shrink-0" />
+                  <AlertTriangle className="text-[#3e3e3e] w-6 h-6 flex-shrink-0" />
                   <h3 className="text-lg font-semibold text-gray-900">
                     Here's What We Do (And Don't Do):
                   </h3>
@@ -186,7 +186,7 @@ const CreditRepair = () => {
               {/* Secondary CTA Link */}
               <button
                 onClick={() => scrollToSection("how-it-works")}
-                className="block text-gray-700 hover:text-amber-600 underline text-base mt-4"
+                className="block text-gray-700 hover:text-[#3e3e3e] underline text-base mt-4"
               >
                 Not ready yet? Learn more about our process ↓
               </button>
@@ -771,7 +771,7 @@ const CreditRepair = () => {
       <section className="bg-[#F8FAFC] py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-6 text-center">
-            Common <span className="text-amber-600">Questions</span> About Credit Repair
+            Common <span className="text-[#3e3e3e]">Questions</span> About Credit Repair
           </h2>
           <p className="text-xl text-gray-700 mb-12 text-center">
             Get answers to common questions about our credit repair service.
@@ -789,7 +789,7 @@ const CreditRepair = () => {
                 >
                   <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
                   <ChevronDown 
-                    className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${
+                    className={`w-5 h-5 text-[#3e3e3e] flex-shrink-0 transition-transform duration-300 ${
                       openFAQ === index ? 'transform rotate-180' : ''
                     }`}
                   />

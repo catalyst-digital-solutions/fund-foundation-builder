@@ -58,7 +58,7 @@ const HowItWorks = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Your Path to <span className="text-amber-600">$150K+ in Business Funding</span>
+            Your Path to <span className="text-[#3e3e3e]">$150K+ in Business Funding</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600">
             Our proven 4-stage process builds your business credit systematically, protecting your personal credit while opening doors to significant business funding opportunities.
@@ -95,7 +95,7 @@ const HowItWorks = () => {
                         {step.title}
                       </h3>
                       <div className="inline-flex items-center gap-2 bg-amber-50 px-4 py-2 rounded-full shrink-0">
-                        <svg className="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-[#3e3e3e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <span className="text-sm font-semibold text-amber-700">{step.timeline}</span>

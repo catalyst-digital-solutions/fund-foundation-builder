@@ -82,21 +82,21 @@ const WhyBusinessCreditMatters = () => {
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-amber-600 mb-3">10-20x</div>
+              <div className="text-5xl font-bold text-[#3e3e3e] mb-3">10-20x</div>
               <div className="text-gray-700 font-medium">More Funding Access</div>
               <div className="text-sm text-gray-600 mt-2">
                 Businesses with established credit access 10-20 times more capital than those without
               </div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-amber-600 mb-3">100%</div>
+              <div className="text-5xl font-bold text-[#3e3e3e] mb-3">100%</div>
               <div className="text-gray-700 font-medium">Asset Protection</div>
               <div className="text-sm text-gray-600 mt-2">
                 Keep your personal assets completely separate from business liabilities
               </div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-amber-600 mb-3">6-12</div>
+              <div className="text-5xl font-bold text-[#3e3e3e] mb-3">6-12</div>
               <div className="text-gray-700 font-medium">Months to Build</div>
               <div className="text-sm text-gray-600 mt-2">
                 Typical timeframe to establish meaningful business credit profiles

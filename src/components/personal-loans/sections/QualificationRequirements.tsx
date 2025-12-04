@@ -41,7 +41,7 @@ const QualificationRequirements = () => {
         {/* Headline */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            <span className="text-amber-600">Qualification</span> Requirements
+            <span className="text-[#3e3e3e]">Qualification</span> Requirements
           </h2>
           <p className="text-xl text-gray-700">
             Basic requirements to get started. Don't worry if you don't meet every criterion—
@@ -57,11 +57,11 @@ const QualificationRequirements = () => {
               <div key={index} className="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-amber-400 transition-colors duration-300 shadow-sm hover:shadow-lg">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-6 h-6 text-amber-600" />
+                    <Icon className="w-6 h-6 text-[#3e3e3e]" />
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">{req.title}</h3>
-                    <p className="text-sm font-semibold text-amber-600 mb-2">{req.requirement}</p>
+                    <p className="text-sm font-semibold text-[#3e3e3e] mb-2">{req.requirement}</p>
                     <p className="text-sm text-gray-600">{req.details}</p>
                   </div>
                 </div>
@@ -84,19 +84,19 @@ const QualificationRequirements = () => {
               </p>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
-                  <span className="text-amber-600 font-bold">•</span>
+                  <span className="text-[#3e3e3e] font-bold">•</span>
                   <span>Bad credit or no credit history</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-amber-600 font-bold">•</span>
+                  <span className="text-[#3e3e3e] font-bold">•</span>
                   <span>Self-employed or non-traditional income</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-amber-600 font-bold">•</span>
+                  <span className="text-[#3e3e3e] font-bold">•</span>
                   <span>Recent bankruptcy or foreclosure</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-amber-600 font-bold">•</span>
+                  <span className="text-[#3e3e3e] font-bold">•</span>
                   <span>High debt-to-income ratio</span>
                 </li>
               </ul>

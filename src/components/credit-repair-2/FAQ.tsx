@@ -774,7 +774,7 @@ const FAQItem = ({
   return <div className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
       <button onClick={() => setOpenFAQ(openFAQ === index ? null : index)} className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-gray-50 transition-colors duration-200">
         <span className="font-semibold text-gray-900 pr-4">{question}</span>
-        <ChevronDown className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${openFAQ === index ? "transform rotate-180" : ""}`} />
+        <ChevronDown className={`w-5 h-5 text-[#3e3e3e] flex-shrink-0 transition-transform duration-300 ${openFAQ === index ? "transform rotate-180" : ""}`} />
       </button>
       <div className={`overflow-hidden transition-all duration-300 ${openFAQ === index ? "max-h-[2000px]" : "max-h-0"}`}>
         <div className="px-6 pb-5 pt-2 bg-white text-gray-700 leading-relaxed">
