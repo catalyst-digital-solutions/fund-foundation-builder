@@ -25,7 +25,7 @@ const EmotionalCTA1 = () => {
           onClick={handleClick}
           className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
         >
-          Fix It Yourself for $29.99/mo →
+          Fix It Yourself for $39.99/mo →
         </button>
         <p className="text-sm text-white mt-4 drop-shadow-md">
           Powered by Mesa Group

@@ -19,7 +19,7 @@ const EmotionalCTA2 = () => {
           Everything the Pros Use. A Fraction of the Cost.
         </h2>
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-          Creditily gives you AI-powered dispute recommendations, professional letter templates, and 3-bureau tracking — the same tools credit repair companies charge thousands for. Now in your hands for just $29.99/mo. No contracts. No upfront fees. Just results.
+          Creditily gives you AI-powered dispute recommendations, professional letter templates, and 3-bureau tracking — the same tools credit repair companies charge thousands for. Now in your hands for just $39.99/mo. No contracts. No upfront fees. Just results.
         </p>
         <button 
           onClick={handleClick}

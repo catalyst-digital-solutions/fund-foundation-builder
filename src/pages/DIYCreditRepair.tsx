@@ -69,7 +69,7 @@ const DIYCreditRepair = () => {
               
               {/* H1 Headline */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                <span className="text-[#f9c65d]">Not Ready</span> for Full-Service? Fix It Yourself for <span className="text-[#f9c65d]">$29.99/mo</span>.
+                <span className="text-[#f9c65d]">Not Ready</span> for Full-Service? Fix It Yourself for <span className="text-[#f9c65d]">$39.99/mo</span>.
               </h1>
               
               {/* Subheadline */}
@@ -83,7 +83,7 @@ const DIYCreditRepair = () => {
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-700">Just <strong>$29.99/month</strong> (vs. thousands that other companies charge)</span>
+                  <span className="text-gray-700">Just <strong>$39.99/month</strong> (vs. thousands that other companies charge)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -273,7 +273,7 @@ const DIYCreditRepair = () => {
                 <div className="text-sm text-gray-600 mt-2">What most companies charge</div>
               </div>
               <div>
-                <div className="text-5xl font-bold text-white mb-2">$29.99/mo</div>
+                <div className="text-5xl font-bold text-white mb-2">$39.99/mo</div>
                 <div className="text-lg text-gray-700"></div>
                 <div className="text-sm text-gray-600 mt-2">What you'll pay with Creditily</div>
               </div>
@@ -424,7 +424,7 @@ const DIYCreditRepair = () => {
           </h2>
           
           <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-            Professional-grade credit repair tools — now in your hands for just $29.99/mo.
+            Professional-grade credit repair tools — now in your hands for just $39.99/mo.
           </p>
           
           {/* Features Grid */}
@@ -724,7 +724,7 @@ const DIYCreditRepair = () => {
             
             <div className="bg-white rounded-xl p-8 mb-6">
               <h3 className="text-2xl font-bold text-[#3e3e3e] mb-4">CREDITILY PRO</h3>
-              <div className="text-6xl font-bold text-[#3e3e3e] mb-2">$29.99</div>
+              <div className="text-6xl font-bold text-[#3e3e3e] mb-2">$39.99</div>
               <div className="text-2xl text-gray-700 mb-6">/mo</div>
               
               <div className="h-px bg-gray-300 my-6"></div>
@@ -798,7 +798,7 @@ const DIYCreditRepair = () => {
                 onClick={handleSignupClick}
                 className="w-full text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold py-4"
               >
-                Get Started for $29.99/mo →
+                Get Started for $39.99/mo →
               </button>
               
               <p className="text-sm text-gray-600 mt-4">
@@ -933,7 +933,7 @@ const DIYCreditRepair = () => {
           <div className="max-w-2xl mx-auto">
             <div className="bg-gradient-to-br from-[#f9c65d] to-white rounded-2xl p-8 text-gray-900 text-center shadow-2xl">
               <p className="text-xl mb-6 leading-relaxed">
-                Everything you need to fix your credit yourself. <strong>$29.99/mo.</strong> No contracts. Cancel anytime.
+                Everything you need to fix your credit yourself. <strong>$39.99/mo.</strong> No contracts. Cancel anytime.
               </p>
               <button 
                 onClick={handleSignupClick}

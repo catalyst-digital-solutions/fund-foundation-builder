@@ -19,7 +19,7 @@ const EmotionalCTA3 = () => {
           Bridge the Gap — Without Breaking the Bank.
         </h2>
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-          Approvals instead of denials. Better rates. Thousands saved. You don't need a credit repair company to get there. You just need the tools — and now you have them. $29.99/mo. No contracts. No excuses.
+          Approvals instead of denials. Better rates. Thousands saved. You don't need a credit repair company to get there. You just need the tools — and now you have them. $39.99/mo. No contracts. No excuses.
         </p>
         <button 
           onClick={handleClick}
