@@ -922,60 +922,75 @@ const DIYCreditRepair = () => {
       </section>
 
       {/* SECTION 9: FINAL CTA */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Main Headline */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-12">
-            Ready to Bridge the Gap — <span className="text-[#f9c65d]">Your Way?</span>
-          </h2>
-
-          {/* Single CTA Card */}
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-gradient-to-br from-[#f9c65d] to-white rounded-2xl p-8 text-gray-900 text-center shadow-2xl">
-              <p className="text-xl mb-6 leading-relaxed">
-                Everything you need to fix your credit yourself. <strong>$39.99/mo.</strong> No contracts. Cancel anytime.
-              </p>
-              <button 
-                onClick={handleSignupClick}
-                className="inline-flex items-center justify-center gap-2 py-4 px-8 bg-[#3e3e3e] hover:bg-[#2c2c2c] text-white font-semibold rounded-lg transition-colors shadow-lg text-lg"
-              >
-                Get Started →
-              </button>
-              <p className="text-sm text-gray-600 mt-4">
-                Powered by Mesa Group
-              </p>
+      <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Trust Recap */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Unlimited Disputes</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">AI-Powered Analysis</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Professional Templates</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Step-by-Step Guidance</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Progress Tracking</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Cancel Anytime</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">$39.99/month</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">No Contracts</span>
             </div>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-white text-sm font-medium">
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-green-600" />
-              <span>Unlimited disputes</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-green-600" />
-              <span>AI-powered tools</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-green-600" />
-              <span>Cancel anytime</span>
-            </div>
-          </div>
-
-          {/* Alternative Option */}
-          <div className="mt-12 pt-8 border-t-2 border-white/20">
-            <p className="text-gray-300 mb-3">
-              Not sure DIY is right for you?
-            </p>
-            <a 
-              href="/credit-repair" 
-              className="text-[#f9c65d] hover:text-[#bb9446] font-semibold underline text-lg"
+          {/* Final CTA */}
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Ready to Bridge the Gap — <span className="text-[#f9c65d]">Your Way?</span>
+            </h2>
+            
+            <button 
+              onClick={handleSignupClick}
+              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
             >
-              Check out our full-service credit repair →
-            </a>
-          </div>
+              Start Your DIY Credit Repair →
+            </button>
+            
+            <p className="text-gray-600 mb-6">
+              Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
+            </p>
+            <p className="text-sm text-gray-500 mb-8">Powered by Mesa Group</p>
 
+            {/* Alternative Option */}
+            <div className="pt-6 border-t border-gray-300">
+              <p className="text-gray-600 mb-2">
+                Not sure DIY is right for you?
+              </p>
+              <a 
+                href="/credit-repair" 
+                className="text-[#bb9446] hover:text-[#9a7a3a] font-semibold underline text-lg"
+              >
+                Check out our full-service credit repair →
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
