@@ -59,14 +59,6 @@ const TrustAndWillPlan = () => {
     }
   ];
 
-  const handleTrustClick = () => {
-    window.open('https://mesagroupcapital.com/for-consumers/trust-estate-plan', '_blank', 'noopener,noreferrer');
-  };
-
-  const handleWillClick = () => {
-    window.open('https://mesagroupcapital.com/for-consumers/will-estate-plan', '_blank', 'noopener,noreferrer');
-  };
-
   const handleCTAClick = () => {
     window.open('https://trustandwill.com/?utm_source=novae&utm_medium=partnerships&p_id=110&c_id=mesagroup', '_blank', 'noopener,noreferrer');
   };
@@ -415,7 +407,7 @@ const TrustAndWillPlan = () => {
               </div>
               
               <button
-                onClick={handleWillClick}
+                onClick={handleCTAClick}
                 className="w-full mt-6 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
               >
                 Choose Will Plan
@@ -502,7 +494,7 @@ const TrustAndWillPlan = () => {
               </div>
               
               <button
-                onClick={handleTrustClick}
+                onClick={handleCTAClick}
                 className="w-full mt-6 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
               >
                 Choose Trust Plan
@@ -630,7 +622,7 @@ const TrustAndWillPlan = () => {
           {/* CTA */}
           <div className="text-center">
             <button
-              onClick={handleTrustClick}
+              onClick={handleCTAClick}
               className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4"
             >
               Get Started Now
@@ -700,7 +692,7 @@ const TrustAndWillPlan = () => {
               </div>
               
               <button
-                onClick={handleWillClick}
+                onClick={handleCTAClick}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
               >
                 Get Will Plan
@@ -767,7 +759,7 @@ const TrustAndWillPlan = () => {
               </div>
               
               <button
-                onClick={handleTrustClick}
+                onClick={handleCTAClick}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
               >
                 Get Trust Plan
@@ -1340,7 +1332,7 @@ const TrustAndWillPlan = () => {
               <div className="text-4xl font-bold mb-2">$499</div>
               <p className="text-sm opacity-90 mb-6">Revocable Living Trust + All Will Plan benefits</p>
               <button
-                onClick={handleTrustClick}
+                onClick={handleCTAClick}
                 className="block w-full text-center py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors mb-2"
               >
                 Choose Trust Plan
@@ -1369,7 +1361,7 @@ const TrustAndWillPlan = () => {
               <div className="text-4xl font-bold mb-2 text-gray-900">$199</div>
               <p className="text-sm text-gray-600 mb-6">Last Will, Healthcare Directives, Power of Attorney</p>
               <button
-                onClick={handleWillClick}
+                onClick={handleCTAClick}
                 className="w-full inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
               >
                 Choose Will Plan
