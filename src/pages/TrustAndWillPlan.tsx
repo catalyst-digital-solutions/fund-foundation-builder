@@ -59,6 +59,14 @@ const TrustAndWillPlan = () => {
     }
   ];
 
+  const handleTrustClick = () => {
+    window.open('https://mesagroupcapital.com/for-consumers/trust-estate-plan', '_blank', 'noopener,noreferrer');
+  };
+
+  const handleWillClick = () => {
+    window.open('https://mesagroupcapital.com/for-consumers/will-estate-plan', '_blank', 'noopener,noreferrer');
+  };
+
   const handleCTAClick = () => {
     window.open('https://trustandwill.com/?utm_source=novae&utm_medium=partnerships&p_id=110&c_id=mesagroup', '_blank', 'noopener,noreferrer');
   };
@@ -406,12 +414,13 @@ const TrustAndWillPlan = () => {
                 </div>
               </div>
               
-              <button 
-                onClick={handleCTAClick}
+              <button
+                onClick={handleWillClick}
                 className="w-full mt-6 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
               >
                 Choose Will Plan
               </button>
+              <p className="text-xs text-gray-500 mt-2 text-center">Powered by estateOS</p>
             </div>
             
             {/* Trust Estate Plan */}
@@ -492,12 +501,13 @@ const TrustAndWillPlan = () => {
                 </div>
               </div>
               
-              <button 
-                onClick={handleCTAClick}
+              <button
+                onClick={handleTrustClick}
                 className="w-full mt-6 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
               >
                 Choose Trust Plan
               </button>
+              <p className="text-xs text-gray-500 mt-2 text-center">Powered by estateOS</p>
             </div>
             
           </div>
@@ -619,12 +629,13 @@ const TrustAndWillPlan = () => {
           
           {/* CTA */}
           <div className="text-center">
-            <button 
-              onClick={handleCTAClick}
+            <button
+              onClick={handleTrustClick}
               className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4"
             >
               Get Started Now
             </button>
+            <p className="text-xs text-gray-500 mt-2">Powered by estateOS</p>
             <p className="text-sm text-gray-600 mt-4">
               20 minutes to complete • No credit card to start • 30-day guarantee
             </p>
@@ -688,12 +699,13 @@ const TrustAndWillPlan = () => {
                 </div>
               </div>
               
-              <button 
-                onClick={handleCTAClick}
+              <button
+                onClick={handleWillClick}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
               >
                 Get Will Plan
               </button>
+              <p className="text-xs text-gray-500 mt-2 text-center">Powered by estateOS</p>
             </div>
             
             {/* Trust Pricing */}
@@ -754,12 +766,13 @@ const TrustAndWillPlan = () => {
                 </div>
               </div>
               
-              <button 
-                onClick={handleCTAClick}
+              <button
+                onClick={handleTrustClick}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
               >
                 Get Trust Plan
               </button>
+              <p className="text-xs text-gray-500 mt-2 text-center">Powered by estateOS</p>
             </div>
             
           </div>
@@ -1326,12 +1339,13 @@ const TrustAndWillPlan = () => {
               <h3 className="text-2xl font-bold mb-4">Trust Estate Plan</h3>
               <div className="text-4xl font-bold mb-2">$499</div>
               <p className="text-sm opacity-90 mb-6">Revocable Living Trust + All Will Plan benefits</p>
-              <button 
-                onClick={handleCTAClick}
-                className="block w-full text-center py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors mb-4"
+              <button
+                onClick={handleTrustClick}
+                className="block w-full text-center py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors mb-2"
               >
                 Choose Trust Plan
               </button>
+              <p className="text-xs text-white/80 mb-4 text-center">Powered by estateOS</p>
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4" />
@@ -1354,13 +1368,14 @@ const TrustAndWillPlan = () => {
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Will Estate Plan</h3>
               <div className="text-4xl font-bold mb-2 text-gray-900">$199</div>
               <p className="text-sm text-gray-600 mb-6">Last Will, Healthcare Directives, Power of Attorney</p>
-              <button 
-                onClick={handleCTAClick}
+              <button
+                onClick={handleWillClick}
                 className="w-full inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
               >
                 Choose Will Plan
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
+              <p className="text-xs text-gray-500 mt-2 text-center">Powered by estateOS</p>
               <div className="mt-4 space-y-2 text-sm">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-green-600" />
