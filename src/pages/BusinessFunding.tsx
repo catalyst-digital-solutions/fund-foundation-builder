@@ -30,7 +30,7 @@ const HeroSection = () => {
         </div>
         
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight py-[100px]">
-          Business Funding Solutions from <span className="text-[#3e3e3e] py-0 my-[20px]">$1K to $100M</span>
+          Business Funding Solutions from <span className="text-[#f9c65d] py-0 my-[20px]">$1K to $100M</span>
         </h1>
         
         <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
@@ -692,7 +692,7 @@ const FAQSection = () => {
         
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Frequently Asked <span className="text-[#3e3e3e]">Questions</span>
+            Frequently Asked <span className="text-[#f9c65d]">Questions</span>
           </h2>
           <p className="text-xl text-gray-700">
             Get clarity on Mesa Group Capital's funding solutions.

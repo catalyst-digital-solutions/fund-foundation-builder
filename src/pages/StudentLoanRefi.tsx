@@ -629,7 +629,7 @@ const StudentLoanRefi = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-6">
-              Common <span className="text-amber-600">Questions</span> About Student Loan Refinancing
+              Common <span className="text-[#f9c65d]">Questions</span> About Student Loan Refinancing
             </h2>
             <p className="text-xl text-gray-700">
               Get answers to your most pressing questions about refinancing.

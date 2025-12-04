@@ -79,7 +79,7 @@ const DebtRelief = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Stop Drowning in Debt.<br />Start <span className="text-amber-600">Living Your Life</span> Again.
+            Stop Drowning in Debt.<br />Start <span className="text-[#f9c65d]">Living Your Life</span> Again.
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
@@ -228,7 +228,7 @@ const DebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              How Debt Relief <span className="text-amber-600">Transforms Your Life</span>
+              How Debt Relief <span className="text-[#f9c65d]">Transforms Your Life</span>
             </h2>
             <p className="text-xl text-gray-600">
               Stop managing the debt crisis. Start living your life again.
@@ -314,7 +314,7 @@ const DebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Types of Debt We Can <span className="text-amber-600">Settle</span>
+              Types of Debt We Can <span className="text-[#f9c65d]">Settle</span>
             </h2>
             <p className="text-xl text-gray-600">
               Our program handles unsecured debts—those not backed by collateral like a house or car.
@@ -439,7 +439,7 @@ const DebtRelief = () => {
           
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              5 Steps to <span className="text-amber-600">Debt Freedom</span>
+              5 Steps to <span className="text-[#f9c65d]">Debt Freedom</span>
             </h2>
             <p className="text-xl text-gray-600">
               Our proven process has helped thousands of families escape the debt trap.
@@ -558,7 +558,7 @@ const DebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Debt Relief <span className="text-amber-600">Questions</span> Answered
+              Debt Relief <span className="text-[#f9c65d]">Questions</span> Answered
             </h2>
             <p className="text-xl text-gray-700">
               Get clarity before booking your free consultation.

@@ -47,7 +47,7 @@ function HeroSection() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Protect Your <span className="text-[#3e3e3e]">Credit</span>. Monitor Your <span className="text-[#3e3e3e]">Future</span>.
+              Protect Your <span className="text-[#f9c65d]">Credit</span>. Monitor Your <span className="text-[#f9c65d]">Future</span>.
             </h1>
             
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
@@ -720,7 +720,7 @@ function FAQSection() {
         
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Common <span className="text-[#3e3e3e]">Questions</span> About Credit Monitoring
+              Common <span className="text-[#f9c65d]">Questions</span> About Credit Monitoring
             </h2>
             <p className="text-xl text-gray-700">
               Get answers to common questions about credit monitoring and identity protection.

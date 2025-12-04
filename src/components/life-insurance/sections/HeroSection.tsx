@@ -19,7 +19,7 @@ const HeroSection = () => {
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Protect Your Family's{' '}
-              <span className="text-[#3e3e3e]">Future</span> with Life Insurance
+              <span className="text-[#f9c65d]">Future</span> with Life Insurance
             </h1>
 
             {/* Subheadline */}

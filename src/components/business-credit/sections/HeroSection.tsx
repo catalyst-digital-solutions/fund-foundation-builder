@@ -19,8 +19,8 @@ const HeroSection = () => {
 
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Build <span className="text-[#3e3e3e]">Business Credit</span> That Opens Doors to{' '}
-              <span className="text-[#3e3e3e]">$150K+</span> in Funding
+              Build <span className="text-[#f9c65d]">Business Credit</span> That Opens Doors to{' '}
+              <span className="text-[#f9c65d]">$150K+</span> in Funding
             </h1>
 
             {/* Subheadline */}

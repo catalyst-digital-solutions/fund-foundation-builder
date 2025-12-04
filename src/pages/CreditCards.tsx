@@ -65,7 +65,7 @@ const CreditCards = () => {
           </p>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Find Your <span className="text-[#3e3e3e]">Perfect Credit Card</span>—Without Hurting Your Score
+            Find Your <span className="text-[#f9c65d]">Perfect Credit Card</span>—Without Hurting Your Score
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-4xl mx-auto">
@@ -636,7 +636,7 @@ const CreditCards = () => {
         <div className="max-w-4xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-6 text-center">
-            Common Credit Card <span className="text-[#3e3e3e]">Questions</span>
+            Common Credit Card <span className="text-[#f9c65d]">Questions</span>
           </h2>
           <p className="text-xl text-gray-700 mb-12 text-center">
             Get answers to common questions about credit cards and pre-qualification.

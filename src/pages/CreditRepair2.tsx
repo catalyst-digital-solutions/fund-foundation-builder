@@ -565,7 +565,7 @@ const CreditRepair2 = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              Real People. Real Results. Real <span className="text-[#3e3e3e]">Transformation</span>.
+              Real People. Real Results. Real <span className="text-[#f9c65d]">Transformation</span>.
             </h2>
             <p className="text-xl text-gray-700">
               Don't take our word for it—hear from clients who transformed their financial futures with the Mesa360 Credit System™.

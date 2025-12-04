@@ -80,7 +80,7 @@ const TrustAndWillPlan = () => {
               
               {/* H1 Headline */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Protect Your <span className="text-amber-600">Family</span>. Secure Your <span className="text-amber-600">Legacy</span>.
+                Protect Your <span className="text-[#f9c65d]">Family</span>. Secure Your <span className="text-[#f9c65d]">Legacy</span>.
               </h1>
               
               {/* Subheadline */}
@@ -822,7 +822,7 @@ const TrustAndWillPlan = () => {
         <div className="max-w-4xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-6 text-center">
-            Common <span className="text-amber-600">Questions</span> About Estate Planning
+            Common <span className="text-[#f9c65d]">Questions</span> About Estate Planning
           </h2>
           <p className="text-xl text-gray-700 mb-12 text-center">
             Get answers to common questions about Wills, Trusts, and estate planning.
