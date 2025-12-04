@@ -22,7 +22,8 @@ import {
   Heart,
   Calendar,
   Clock,
-  Lock
+  Lock,
+  Check
 } from 'lucide-react';
 
 const BusinessDebtRelief = () => {
@@ -725,72 +726,70 @@ const BusinessDebtRelief = () => {
       <EmotionalCTA3 />
 
       {/* SECTION 9: FINAL CTA */}
-      <section className="bg-[#131B29] py-16 md:py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-            Stop Drowning in Debt.<br />
-            Start Building Your <span className="text-amber-400">Business Future</span>.
-          </h2>
-          
-          <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-            You've worked too hard to let debt destroy everything you've built. Mesa Group Capital's business debt 
-            relief program gives you a proven path to financial freedom—without bankruptcy, without losing assets, 
-            and without the constant creditor pressure.
-          </p>
-          
-          {/* Value Props */}
-          <div className="grid sm:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
-            <div className="flex flex-col items-center gap-2">
-              <CheckCircle className="w-8 h-8 text-green-500" />
-              <p className="text-base font-semibold text-white">30-50% Debt Reduction</p>
+      <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Trust Recap */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">30-50% Debt Reduction</span>
             </div>
-            <div className="flex flex-col items-center gap-2">
-              <CheckCircle className="w-8 h-8 text-green-500" />
-              <p className="text-base font-semibold text-white">No Upfront Fees</p>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">No Upfront Fees</span>
             </div>
-            <div className="flex flex-col items-center gap-2">
-              <CheckCircle className="w-8 h-8 text-green-500" />
-              <p className="text-base font-semibold text-white">2-4 Year Program</p>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">2-4 Year Program</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Free Consultation</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">No Obligation</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">100% Confidential</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Avoid Bankruptcy</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Stop Creditor Calls</span>
             </div>
           </div>
-          
-          {/* Primary CTA */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-            <a 
+
+          {/* Final CTA */}
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Stop Drowning in Debt.<br />
+              Start Building Your <span className="text-[#f9c65d]">Business Future</span>.
+            </h2>
+            
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
+              You've worked too hard to let debt destroy everything you've built. Mesa Group Capital's business debt 
+              relief program gives you a proven path to financial freedom.
+            </p>
+
+            <a
               href="https://mesagroupcapital.com/for-businesses/debt-relief"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-xl font-bold px-10 py-5 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-2xl w-full sm:w-auto justify-center"
+              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
             >
-              Get Your Free Debt Analysis
-              <ArrowRight className="w-6 h-6" />
+              Get Your Free Debt Analysis →
             </a>
-            <a 
-              href="tel:661-310-3040"
-              className="inline-flex items-center gap-2 bg-white text-gray-900 text-xl font-bold px-10 py-5 rounded-lg hover:bg-gray-100 transition-all duration-200 w-full sm:w-auto justify-center"
-            >
-              <Phone className="w-6 h-6" />
-              (661) 310-3040
-            </a>
+            
+            <p className="text-gray-600 mb-6">
+              Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
+            </p>
+            <p className="text-sm text-gray-500">Free 30-minute consultation • No obligation • 100% confidential</p>
           </div>
-          
-          {/* Trust Elements */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm text-gray-400">
-            <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4" />
-              <span>Free 30-minute consultation</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Shield className="w-4 h-4" />
-              <span>No obligation required</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Lock className="w-4 h-4" />
-              <span>100% confidential</span>
-            </div>
-          </div>
-          
         </div>
       </section>
 
