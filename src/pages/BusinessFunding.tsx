@@ -728,58 +728,65 @@ const FAQSection = () => {
     </section>;
 };
 const FinalCTA = () => {
-  return <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Main Headline */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-          Get Matched with Your <span className="text-amber-400">Ideal Funding Solution</span>
-        </h2>
-        
-        {/* Subheadline */}
-        <p className="text-xl text-gray-300 mb-12">
-          From $1,000 to $100 million. From 530+ to 700+ credit. From brand new startups to established enterprises.
-        </p>
-
-        {/* Two-Column Button Grid */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {/* Primary Option (Orange Gradient) */}
-          <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left">
-            <h3 className="text-2xl font-bold mb-4">Apply for Funding</h3>
-            <p className="text-white/90 mb-6">
-              Start your free consultation with no obligation. Get matched with the perfect funding solution for your business.
-            </p>
-            <a href="#apply" className="block w-full text-center py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-all duration-200">
-              Apply Now
-            </a>
+  return <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Trust Recap */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">8 Funding Solutions</span>
           </div>
-
-          {/* Secondary Option (Glass Effect) */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-left border-2 border-white/20">
-            <h3 className="text-2xl font-bold mb-4">Speak with an Expert</h3>
-            <p className="text-gray-300 mb-6">
-              Call us directly for immediate assistance. Our funding experts are ready to help you find the right solution.
-            </p>
-            <a href="tel:6613103040" className="w-full inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500">
-              <Phone className="mr-2 w-5 h-5" />
-              (661) 310-3040
-            </a>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">30+ Lender Network</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">$1K-$100M Funding</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">530+ Credit Accepted</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">Same-Day Funding</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">Startup Programs</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">No Obligation</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">Expert Guidance</span>
           </div>
         </div>
 
-        {/* Trust Indicators */}
-        <div className="grid md:grid-cols-3 gap-4 text-white text-sm mt-8">
-          <div className="flex items-center justify-center gap-2">
-            <Check className="w-5 h-5" />
-            <span>8 Funding Solutions</span>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <Check className="w-5 h-5" />
-            <span>30+ Lender Network</span>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <Check className="w-5 h-5" />
-            <span>Expert Brokerage Guidance</span>
-          </div>
+        {/* Final CTA */}
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            Get Matched with Your <span className="text-[#f9c65d]">Ideal Funding Solution</span>
+          </h2>
+          
+          <p className="text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
+            From $1,000 to $100 million. From 530+ to 700+ credit. From brand new startups to established enterprises.
+          </p>
+
+          <a
+            href="#apply"
+            className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
+          >
+            Apply for Funding Now →
+          </a>
+          
+          <p className="text-gray-600 mb-6">
+            Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
+          </p>
+          <p className="text-sm text-gray-500">Free consultation • No obligation • Expert brokerage guidance</p>
         </div>
       </div>
     </section>;
