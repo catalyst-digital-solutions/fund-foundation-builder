@@ -981,58 +981,58 @@ Every dollar you paid to Mesa Group.</p>
       {/* ============================================ */}
       {/* SECTION 13: FINAL TRUST BAR + FOOTER CTA */}
       {/* ============================================ */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white bg-secondary">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-white via-amber-50 to-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Trust Recap */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>Mesa360 Credit System™</span>
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Mesa360 Credit System™</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>90-Day Money-Back Guarantee</span>
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">90-Day Money-Back Guarantee</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>Nationwide from Bakersfield</span>
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Nationwide from Bakersfield</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>Full Legal Team</span>
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Full Legal Team</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>2,500+ Clients Served</span>
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">2,500+ Clients Served</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>1-on-1 Financial Coaching</span>
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">1-on-1 Financial Coaching</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>EN/ES/Punjabi Support</span>
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">EN/ES/Punjabi Support</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>Real Office You Can Visit</span>
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Real Office You Can Visit</span>
             </div>
           </div>
 
           {/* Final CTA */}
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Ready to Take Control of Your <span className="text-amber-400">Credit</span>?
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Ready to Take Control of Your <span className="text-amber-600">Credit</span>?
             </h2>
             
-            <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 mb-4">
+            <button onClick={handleCTAClick} className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4">
               Get Started Today →
             </button>
             
-            <p className="text-gray-300 mb-6">
-              Or call us: <a href="tel:6613103040" className="text-amber-400 hover:underline font-semibold">(661) 310-3040</a>
+            <p className="text-gray-600 mb-6">
+              Or call us: <a href="tel:6613103040" className="text-amber-600 hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            <p className="text-sm text-gray-400">Hablamos español | We speak Punjabi</p>
+            <p className="text-sm text-gray-500">Hablamos español | We speak Punjabi</p>
           </div>
         </div>
       </section>
