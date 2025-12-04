@@ -597,69 +597,68 @@ const DebtRelief = () => {
       </section>
 
       {/* SECTION 7: FINAL CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-        <div className="max-w-5xl mx-auto text-center">
-          
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Stop Drowning in Debt.<br />Start <span className="text-amber-400">Living Your Life</span> Again.
-          </h2>
-          
-          <p className="text-xl md:text-2xl text-white mb-8 leading-relaxed">
-            You didn't create this debt overnight, and you can't solve it overnight—but you <strong>can</strong> take the first step today. Let Mesa Group Consulting's <strong>Debt Relief specialists</strong> handle your creditors while you focus on what matters most—<strong>your family, your peace of mind, and your future</strong>.
-          </p>
-
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-10 mb-8 shadow-2xl border border-white/20">
-            <h3 className="text-3xl font-bold text-white mb-6">
-              Book Your Free Debt Analysis Now
-            </h3>
-            <p className="text-lg text-gray-200 mb-6 leading-relaxed">
-              In just 30 minutes, we'll analyze your debt situation and show you exactly how much you can save through our proven debt relief program.
-            </p>
-            
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-amber-400 mb-2">$0</div>
-                <div className="text-sm text-gray-300">Upfront Fees</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-amber-400 mb-2">30-50%</div>
-                <div className="text-sm text-gray-300">Average Savings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-amber-400 mb-2">4-7</div>
-                <div className="text-sm text-gray-300">Months to 1st Settlement</div>
-              </div>
+      <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Trust Recap */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div className="flex items-center gap-2 text-sm">
+              <CheckCircle className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">No Upfront Fees</span>
             </div>
+            <div className="flex items-center gap-2 text-sm">
+              <CheckCircle className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">30-50% Average Savings</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <CheckCircle className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Certified Specialists</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <CheckCircle className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Results in 4-7 Months</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <CheckCircle className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">One Monthly Payment</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <CheckCircle className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Debt-Free in 20-48 Months</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <CheckCircle className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">We Handle Creditors</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <CheckCircle className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Proven Results</span>
+            </div>
+          </div>
+
+          {/* Final CTA */}
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              Stop Drowning in Debt.<br />Start <span className="text-[#f9c65d]">Living Your Life</span> Again.
+            </h2>
+            
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
+              You didn't create this debt overnight, and you can't solve it overnight—but you <strong>can</strong> take the first step today. Let Mesa Group Consulting's <strong>Debt Relief specialists</strong> handle your creditors while you focus on what matters most.
+            </p>
 
             <a
               href="https://mesagroupcapital.com/debt-analysis"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-2xl font-bold px-16 py-6 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl mb-4"
+              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
             >
               Schedule Free Consultation →
             </a>
             
-            <p className="text-sm text-gray-300">
-              Or call us directly: <a href="tel:6613103040" className="font-bold text-amber-400 hover:underline">(661) 310-3040</a>
+            <p className="text-gray-600 mb-6">
+              Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
+            <p className="text-sm text-gray-500">Minimum $10,000 debt required</p>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-4 text-white text-sm">
-            <div className="flex items-center justify-center gap-2">
-              <CheckCircle className="w-5 h-5 text-amber-400" />
-              <span>No Obligation</span>
-            </div>
-            <div className="flex items-center justify-center gap-2">
-              <CheckCircle className="w-5 h-5 text-amber-400" />
-              <span>Certified Specialists</span>
-            </div>
-            <div className="flex items-center justify-center gap-2">
-              <CheckCircle className="w-5 h-5 text-amber-400" />
-              <span>Proven Results</span>
-            </div>
-          </div>
-
         </div>
       </section>
 
