@@ -981,7 +981,7 @@ Every dollar you paid to Mesa Group.</p>
       {/* ============================================ */}
       {/* SECTION 13: FINAL TRUST BAR + FOOTER CTA */}
       {/* ============================================ */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-white via-amber-50 to-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Trust Recap */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
