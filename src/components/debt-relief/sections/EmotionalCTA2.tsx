@@ -2,6 +2,10 @@ import React from 'react';
 import debtReliefCta02 from '@/assets/debt-relief-cta-02.png';
 
 const EmotionalCTA2 = () => {
+  const handleClick = () => {
+    window.open('https://mesagroupcapital.com/debt-analysis', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section 
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
@@ -17,9 +21,15 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Mesa Group Capital negotiates directly with your creditors—settling your debts for pennies on the dollar while you make one affordable payment based on YOUR budget. No more harassment. No more juggling due dates. We handle the creditors while you reclaim your life. We see your potential for freedom where banks see only numbers.
         </p>
-        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
+        <button
+          onClick={handleClick}
+          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+        >
           Discover Your Path to Freedom →
         </button>
+        <p className="text-sm text-white mt-4 drop-shadow-md">
+          Powered by Mesa Group
+        </p>
       </div>
     </section>
   );

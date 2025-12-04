@@ -21,12 +21,15 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           No more guessing. No more rejection letters. Mesa Group Capital shows you cards matched to YOUR credit level—with approval odds displayed upfront. Compare rates, rewards, and terms with zero credit score impact. We believe everyone deserves access to the right financial tools.
         </p>
-        <button 
+        <button
           onClick={handleClick}
           className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
         >
           See Your Card Matches Now →
         </button>
+        <p className="text-sm text-white mt-4 drop-shadow-md">
+          Powered by SuperMoney
+        </p>
       </div>
     </section>
   );

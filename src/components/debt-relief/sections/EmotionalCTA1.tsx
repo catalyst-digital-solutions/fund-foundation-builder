@@ -2,6 +2,10 @@ import React from 'react';
 import debtReliefCta01 from '@/assets/debt-relief-cta-01.png';
 
 const EmotionalCTA1 = () => {
+  const handleClick = () => {
+    window.open('https://mesagroupcapital.com/debt-analysis', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section 
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
@@ -17,9 +21,15 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Multiple creditor calls every day. Watching your bank account drained by minimum payments that never touch the principal. You can't afford basic necessities while interest piles up. Every night you lie awake calculating numbers that don't add up—trapped in a cycle that steals your peace and your future.
         </p>
-        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
+        <button
+          onClick={handleClick}
+          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+        >
           Stop the Debt Spiral →
         </button>
+        <p className="text-sm text-white mt-4 drop-shadow-md">
+          Powered by Mesa Group
+        </p>
       </div>
     </section>
   );

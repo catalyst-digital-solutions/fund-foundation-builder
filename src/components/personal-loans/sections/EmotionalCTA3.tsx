@@ -21,12 +21,15 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine waking up without that knot in your stomach. One manageable payment instead of juggling five. Money left over to build your emergency fund, plan that vacation, start investing. Your financial freedom isn't a dream—it's one decision away. Take control today and watch your stress transform into confidence.
         </p>
-        <button 
+        <button
           onClick={openAffiliateLink}
           className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
         >
           Start Your Journey Now →
         </button>
+        <p className="text-sm text-white mt-4 drop-shadow-md">
+          Powered by SuperMoney
+        </p>
       </div>
     </section>
   );

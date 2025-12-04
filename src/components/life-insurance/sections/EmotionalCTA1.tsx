@@ -2,6 +2,10 @@ import React from 'react';
 import ctaImage from '@/assets/life-insurance-cta-01.png';
 
 const EmotionalCTA1 = () => {
+  const handleClick = () => {
+    window.open('https://policygenius.go2cloud.org/aff_c?offer_id=811&aff_id=2244', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section 
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
@@ -17,9 +21,15 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           The mortgage. College tuition. Daily expenses your family depends on. Every day without coverage is a gamble with everything they've built their lives around. You know you need protection—but the quotes seem overwhelming and you keep putting it off.
         </p>
-        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
+        <button
+          onClick={handleClick}
+          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+        >
           Protect Your Family Now →
         </button>
+        <p className="text-sm text-white mt-4 drop-shadow-md">
+          Powered by Policygenius
+        </p>
       </div>
     </section>
   );

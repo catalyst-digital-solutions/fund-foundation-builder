@@ -25,6 +25,9 @@ const EmotionalCTA1 = () => {
         >
           Protect What Matters Most →
         </a>
+        <p className="text-sm text-white mt-4 drop-shadow-md">
+          Powered by Mesa Group
+        </p>
       </div>
     </section>
   );

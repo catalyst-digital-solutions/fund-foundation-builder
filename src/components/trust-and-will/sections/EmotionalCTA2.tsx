@@ -2,6 +2,10 @@ import React from 'react';
 import ctaImage from '@/assets/trust-and-will-cta-02.png';
 
 const EmotionalCTA2 = () => {
+  const handleClick = () => {
+    window.open('https://trustandwill.com/?utm_source=novae&utm_medium=partnerships&p_id=110&c_id=mesagroup', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section 
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
@@ -17,9 +21,15 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Trust & Will makes it attorney-simple without attorney prices. Answer guided questions online. Get state-specific documents instantly. Name guardians, divide assets, avoid probate—all legally valid. We make protection affordable and achievable.
         </p>
-        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
+        <button
+          onClick={handleClick}
+          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+        >
           Start Your Plan Now →
         </button>
+        <p className="text-sm text-white mt-4 drop-shadow-md">
+          Powered by estateOS
+        </p>
       </div>
     </section>
   );

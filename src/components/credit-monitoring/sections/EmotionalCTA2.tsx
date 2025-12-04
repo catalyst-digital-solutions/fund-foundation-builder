@@ -21,12 +21,15 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Through SmartCredit®, monitor Experian, Equifax, and TransUnion 24/7 with instant fraud alerts. Get $1 Million family fraud insurance. Catch identity theft before it ruins your credit. Track your score daily and dispute errors instantly. Mesa Group Capital gives you complete visibility and ironclad protection.
         </p>
-        <button 
+        <button
           onClick={handleClick}
           className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-4"
         >
           Get Complete Protection Now →
         </button>
+        <p className="text-sm text-white mt-4 drop-shadow-md">
+          Powered by SmartCredit
+        </p>
       </div>
     </section>
   );

@@ -67,11 +67,14 @@ const CreditRepair2 = () => {
               </div>
 
               {/* Primary CTA Button */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4">
-                  Start Your Credit Transformation →
-                </button>
-                <button onClick={() => scrollToSection("how-it-works")} className="text-[#bb9446] hover:text-[#9a7a3a] font-semibold underline underline-offset-4">
+              <div className="flex flex-col sm:flex-row gap-4 items-start">
+                <div className="flex flex-col items-center">
+                  <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4">
+                    Start Your Credit Transformation →
+                  </button>
+                  <p className="text-sm text-gray-600 mt-2">Powered by Mesa Group</p>
+                </div>
+                <button onClick={() => scrollToSection("how-it-works")} className="text-[#bb9446] hover:text-[#9a7a3a] font-semibold underline underline-offset-4 mt-3">
                   Get Free Credit Analysis
                 </button>
               </div>
@@ -490,6 +493,7 @@ const CreditRepair2 = () => {
             <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4">
               Get Your Customized Action Plan →
             </button>
+            <p className="text-sm text-gray-600 mt-4">Powered by Mesa Group</p>
           </div>
         </div>
       </section>
@@ -967,7 +971,8 @@ Every dollar you paid to Mesa Group.</p>
           <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5">
             Start Your Credit Transformation Now →
           </button>
-          <p className="text-white/70 mt-4">
+          <p className="text-sm text-white/80 mt-4">Powered by Mesa Group</p>
+          <p className="text-white/70 mt-2">
             Or, <button onClick={() => scrollToSection("faq")} className="underline hover:text-white">schedule a free consultation</button>
           </p>
         </div>
@@ -1025,9 +1030,10 @@ Every dollar you paid to Mesa Group.</p>
               Ready to Take Control of Your <span className="text-[#f9c65d]">Credit</span>?
             </h2>
             
-            <button onClick={handleCTAClick} className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4">
+            <button onClick={handleCTAClick} className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-2">
               Get Started Today →
             </button>
+            <p className="text-sm text-gray-600 mb-4">Powered by Mesa Group</p>
             
             <p className="text-gray-600 mb-6">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>

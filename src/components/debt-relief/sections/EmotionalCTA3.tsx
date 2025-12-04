@@ -2,6 +2,10 @@ import React from 'react';
 import debtReliefCta03 from '@/assets/debt-relief-cta-03.png';
 
 const EmotionalCTA3 = () => {
+  const handleClick = () => {
+    window.open('https://mesagroupcapital.com/debt-analysis', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section 
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
@@ -17,9 +21,15 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine checking your caller ID and seeing a friend, not a creditor. Having cash flow for groceries and gas without anxiety. Taking your family on that vacation you've been postponing for years. Watching your debt balance drop to zero in 2-4 years—not 20. That financial freedom you deserve is one decision away.
         </p>
-        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
+        <button
+          onClick={handleClick}
+          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+        >
           Start Your Debt-Free Journey →
         </button>
+        <p className="text-sm text-white mt-4 drop-shadow-md">
+          Powered by Mesa Group
+        </p>
       </div>
     </section>
   );

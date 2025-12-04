@@ -21,12 +21,15 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Through our SuperMoney partnership, compare 10+ lenders in minutes—no credit score impact. Lower your rate 1-3%, reduce monthly payments, or pay off faster. We see your potential for financial freedom where lenders see only numbers. One soft credit check could save you $10,000+.
         </p>
-        <button 
+        <button
           onClick={handleClick}
           className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
         >
           See Your New Rate Now →
         </button>
+        <p className="text-sm text-white mt-4 drop-shadow-md">
+          Powered by SuperMoney
+        </p>
       </div>
     </section>
   );
