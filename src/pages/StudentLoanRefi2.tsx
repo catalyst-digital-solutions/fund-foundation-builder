@@ -22,7 +22,8 @@ import {
   AlertTriangle,
   DollarSign,
   Users,
-  Award
+  Award,
+  Check
 } from 'lucide-react';
 
 const StudentLoanRefi2 = () => {
@@ -906,66 +907,68 @@ const StudentLoanRefi2 = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Main Headline */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Start <span className="text-amber-400">Saving?</span>
-          </h2>
-          
-          {/* Subheadline */}
-          <p className="text-xl text-gray-300 mb-12">
-            Compare 10+ lenders in 2 minutes—with zero impact to your credit score.
-          </p>
-
-          {/* Single CTA Card */}
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left">
-              <h3 className="text-2xl font-bold mb-4">Student Loan Refinancing</h3>
-              <div className="grid grid-cols-3 gap-4 mb-6">
-                <div>
-                  <div className="text-3xl font-bold mb-1">10+</div>
-                  <div className="text-sm opacity-90">Lenders</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold mb-1">2 Min</div>
-                  <div className="text-sm opacity-90">Quick Check</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold mb-1">0</div>
-                  <div className="text-sm opacity-90">Score Impact</div>
-                </div>
-              </div>
-              <a
-                href={affiliateLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors"
-              >
-                Check My New Rate
-              </a>
-              <p className="text-sm text-white/90 mt-3 text-center">
-                Free comparison • Soft credit check only • No obligation
-              </p>
+      <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Trust Recap */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">No Credit Impact</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Compare 10+ Lenders</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">2-Minute Process</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Save Up to $288/Month</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">No Obligation</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">100% Free Comparison</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Secure & Private</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Soft Credit Check Only</span>
             </div>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-gray-300 text-sm">
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-4 h-4 text-amber-400" />
-              <span>No Credit Score Impact</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-4 h-4 text-amber-400" />
-              <span>100% Free Comparison</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Lock className="w-4 h-4 text-amber-400" />
-              <span>Secure & Private</span>
-            </div>
-          </div>
+          {/* Final CTA */}
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Ready to Start <span className="text-[#f9c65d]">Saving</span>?
+            </h2>
+            
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
+              Compare 10+ lenders in 2 minutes—with zero impact to your credit score.
+            </p>
 
+            <a
+              href={affiliateLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
+            >
+              Check My New Rate →
+            </a>
+            
+            <p className="text-gray-600 mb-6">
+              Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
+            </p>
+            <p className="text-sm text-gray-500">Free comparison • Soft credit check only • No obligation</p>
+          </div>
         </div>
       </section>
 
