@@ -29,7 +29,7 @@ const HowItWorks = () => {
         {/* Headline */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Get Your <span className="text-amber-600">Personal Loan</span> in 3 Simple Steps
+            Get Your <span className="text-[#3e3e3e]">Personal Loan</span> in 3 Simple Steps
           </h2>
           <p className="text-xl text-gray-700">
             From application to funding—we make the process fast, easy, and transparent.
@@ -52,7 +52,7 @@ const HowItWorks = () => {
                 
                 {/* Icon */}
                 <div className="w-16 h-16 bg-amber-50 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                  <Icon className="w-8 h-8 text-amber-600" />
+                  <Icon className="w-8 h-8 text-[#3e3e3e]" />
                 </div>
                 
                 {/* Content */}
@@ -66,7 +66,7 @@ const HowItWorks = () => {
         {/* Timeline Note */}
         <div className="mt-12 text-center">
           <p className="text-lg text-gray-600">
-            <span className="font-semibold text-amber-600">Average time from application to funding: 1-3 business days</span>
+            <span className="font-semibold text-[#3e3e3e]">Average time from application to funding: 1-3 business days</span>
           </p>
         </div>
       </div>

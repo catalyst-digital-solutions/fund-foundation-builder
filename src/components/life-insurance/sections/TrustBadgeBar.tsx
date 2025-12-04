@@ -7,25 +7,25 @@ const TrustBadgeBar = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
           
           <div className="text-center">
-            <Shield className="w-8 h-8 text-amber-600 mx-auto mb-2" />
+            <Shield className="w-8 h-8 text-[#3e3e3e] mx-auto mb-2" />
             <div className="text-sm font-medium text-gray-900">Licensed Agents</div>
             <div className="text-xs text-gray-600">Expert Guidance</div>
           </div>
 
           <div className="text-center">
-            <Lock className="w-8 h-8 text-amber-600 mx-auto mb-2" />
+            <Lock className="w-8 h-8 text-[#3e3e3e] mx-auto mb-2" />
             <div className="text-sm font-medium text-gray-900">Secure Process</div>
             <div className="text-xs text-gray-600">Data Protected</div>
           </div>
 
           <div className="text-center">
-            <CheckCircle className="w-8 h-8 text-amber-600 mx-auto mb-2" />
+            <CheckCircle className="w-8 h-8 text-[#3e3e3e] mx-auto mb-2" />
             <div className="text-sm font-medium text-gray-900">A+ Rated Insurers</div>
             <div className="text-xs text-gray-600">Top-Tier Partners</div>
           </div>
 
           <div className="text-center">
-            <Clock className="w-8 h-8 text-amber-600 mx-auto mb-2" />
+            <Clock className="w-8 h-8 text-[#3e3e3e] mx-auto mb-2" />
             <div className="text-sm font-medium text-gray-900">Fast Approval</div>
             <div className="text-xs text-gray-600">24-48 Hours</div>
           </div>

@@ -22,7 +22,7 @@ const HeroSection = () => {
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Compare <span className="text-amber-600">Personal Loans</span> from Multiple Lenders in <span className="text-amber-600">Minutes</span>
+              Compare <span className="text-[#3e3e3e]">Personal Loans</span> from Multiple Lenders in <span className="text-[#3e3e3e]">Minutes</span>
             </h1>
 
             {/* Subheadline */}
@@ -82,7 +82,7 @@ const HeroSection = () => {
                 <div className="space-y-6">
                   <div className="flex items-center justify-between pb-4 border-b border-gray-200">
                     <span className="text-gray-700 font-medium">Loan Amount</span>
-                    <span className="text-2xl font-bold text-amber-600">$25,000</span>
+                    <span className="text-2xl font-bold text-[#3e3e3e]">$25,000</span>
                   </div>
                   <div className="flex items-center justify-between pb-4 border-b border-gray-200">
                     <span className="text-gray-700 font-medium">APR</span>

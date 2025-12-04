@@ -26,7 +26,7 @@ const ValueProposition = () => {
         {/* Headline */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Why Compare Personal Loans with <span className="text-amber-600">Mesa Group Consulting</span>?
+            Why Compare Personal Loans with <span className="text-[#3e3e3e]">Mesa Group Consulting</span>?
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed">
             Skip the hassle of applying to dozens of lenders. We connect you with multiple pre-qualified offers 

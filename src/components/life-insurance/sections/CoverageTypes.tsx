@@ -67,7 +67,7 @@ const CoverageTypes = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Types of Life Insurance <span className="text-amber-600">Coverage</span>
+            Types of Life Insurance <span className="text-[#3e3e3e]">Coverage</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
             Choose the coverage type that best fits your needs and budget. Not sure which is right? Our licensed agents can help.
@@ -96,11 +96,11 @@ const CoverageTypes = () => {
                 
                 <div className="flex items-start gap-4 mb-4">
                   <div className={`w-14 h-14 ${coverage.highlight ? 'bg-amber-400' : 'bg-white'} rounded-lg flex items-center justify-center shadow-md`}>
-                    <Icon className={`w-7 h-7 ${coverage.highlight ? 'text-white' : 'text-amber-600'}`} />
+                    <Icon className={`w-7 h-7 ${coverage.highlight ? 'text-white' : 'text-[#3e3e3e]'}`} />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-1">{coverage.title}</h3>
-                    <p className="text-sm font-medium text-amber-600">{coverage.subtitle}</p>
+                    <p className="text-sm font-medium text-[#3e3e3e]">{coverage.subtitle}</p>
                   </div>
                 </div>
 

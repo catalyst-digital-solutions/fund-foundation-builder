@@ -30,7 +30,7 @@ const HeroSection = () => {
         </div>
         
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight py-[100px]">
-          Business Funding Solutions from <span className="text-amber-600 py-0 my-[20px]">$1K to $100M</span>
+          Business Funding Solutions from <span className="text-[#3e3e3e] py-0 my-[20px]">$1K to $100M</span>
         </h1>
         
         <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
@@ -40,15 +40,15 @@ const HeroSection = () => {
         <div className="bg-white rounded-xl p-8 mb-10 shadow-2xl max-w-3xl mx-auto border border-amber-200">
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
-              <div className="text-4xl font-bold text-amber-600 mb-2">8</div>
+              <div className="text-4xl font-bold text-[#3e3e3e] mb-2">8</div>
               <div className="text-sm text-gray-600">Funding Solutions</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-amber-600 mb-2">530+</div>
+              <div className="text-4xl font-bold text-[#3e3e3e] mb-2">530+</div>
               <div className="text-sm text-gray-600">Min Credit Score</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-amber-600 mb-2">$100M</div>
+              <div className="text-4xl font-bold text-[#3e3e3e] mb-2">$100M</div>
               <div className="text-sm text-gray-600">Max Funding Available</div>
             </div>
           </div>
@@ -692,7 +692,7 @@ const FAQSection = () => {
         
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Frequently Asked <span className="text-amber-600">Questions</span>
+            Frequently Asked <span className="text-[#3e3e3e]">Questions</span>
           </h2>
           <p className="text-xl text-gray-700">
             Get clarity on Mesa Group Capital's funding solutions.
@@ -706,7 +706,7 @@ const FAQSection = () => {
                   {faq.question}
                 </span>
                 <ChevronDown 
-                  className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${
+                  className={`w-5 h-5 text-[#3e3e3e] flex-shrink-0 transition-transform duration-300 ${
                     openIndex === index ? 'transform rotate-180' : ''
                   }`}
                 />

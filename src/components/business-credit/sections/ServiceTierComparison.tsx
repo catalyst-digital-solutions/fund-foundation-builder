@@ -34,7 +34,7 @@ const ServiceTierComparison = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Choose Your <span className="text-amber-600">Business Credit</span> Program
+            Choose Your <span className="text-[#3e3e3e]">Business Credit</span> Program
           </h2>
           <p className="text-lg md:text-xl text-gray-600">
             Select the program that fits your business needs and budget. Both options provide access to the same business credit building system—the difference is in the level of support and guidance.
@@ -47,7 +47,7 @@ const ServiceTierComparison = () => {
             onClick={() => setSelectedTier('full')}
             className={`flex-1 py-4 px-4 font-semibold transition-all relative ${
               selectedTier === 'full'
-                ? 'text-amber-600'
+                ? 'text-[#3e3e3e]'
                 : 'text-gray-500'
             }`}
           >
@@ -60,7 +60,7 @@ const ServiceTierComparison = () => {
             onClick={() => setSelectedTier('diy')}
             className={`flex-1 py-4 px-4 font-semibold transition-all relative ${
               selectedTier === 'diy'
-                ? 'text-amber-600'
+                ? 'text-[#3e3e3e]'
                 : 'text-gray-500'
             }`}
           >
@@ -110,7 +110,7 @@ const ServiceTierComparison = () => {
                         </svg>
                         <span className="text-sm text-gray-700">{feature.name}</span>
                       </div>
-                      <span className="text-sm font-semibold text-amber-600 whitespace-nowrap">
+                      <span className="text-sm font-semibold text-[#3e3e3e] whitespace-nowrap">
                         {feature.value}
                       </span>
                     </div>

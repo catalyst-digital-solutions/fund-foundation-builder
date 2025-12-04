@@ -65,7 +65,7 @@ const CreditCards = () => {
           </p>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Find Your <span className="text-amber-600">Perfect Credit Card</span>—Without Hurting Your Score
+            Find Your <span className="text-[#3e3e3e]">Perfect Credit Card</span>—Without Hurting Your Score
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-4xl mx-auto">
@@ -74,7 +74,7 @@ const CreditCards = () => {
           
           <div className="bg-white border-2 border-amber-300 rounded-lg p-6 mb-8 max-w-3xl mx-auto">
             <div className="flex items-start gap-4">
-              <Target className="w-10 h-10 text-amber-600 flex-shrink-0" />
+              <Target className="w-10 h-10 text-[#3e3e3e] flex-shrink-0" />
               <div className="text-left">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Pre-Qualification = No Credit Score Impact
@@ -575,7 +575,7 @@ const CreditCards = () => {
             
             <div className="bg-white rounded-lg p-6">
               <div className="flex items-start gap-4">
-                <Target className="w-10 h-10 text-amber-600 flex-shrink-0" />
+                <Target className="w-10 h-10 text-[#3e3e3e] flex-shrink-0" />
                 <div>
                   <h3 className="text-xl font-semibold text-[hsl(var(--mgc-dark-gray))] mb-2">
                     Sign-Up Bonus
@@ -636,7 +636,7 @@ const CreditCards = () => {
         <div className="max-w-4xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-6 text-center">
-            Common Credit Card <span className="text-amber-600">Questions</span>
+            Common Credit Card <span className="text-[#3e3e3e]">Questions</span>
           </h2>
           <p className="text-xl text-gray-700 mb-12 text-center">
             Get answers to common questions about credit cards and pre-qualification.
@@ -652,7 +652,7 @@ const CreditCards = () => {
                 >
                   <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
                   <ChevronDown 
-                    className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${
+                    className={`w-5 h-5 text-[#3e3e3e] flex-shrink-0 transition-transform duration-300 ${
                       openFAQ === index ? 'transform rotate-180' : ''
                     }`}
                   />

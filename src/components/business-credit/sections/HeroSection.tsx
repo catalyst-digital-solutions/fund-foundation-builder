@@ -19,8 +19,8 @@ const HeroSection = () => {
 
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Build <span className="text-amber-600">Business Credit</span> That Opens Doors to{' '}
-              <span className="text-amber-600">$150K+</span> in Funding
+              Build <span className="text-[#3e3e3e]">Business Credit</span> That Opens Doors to{' '}
+              <span className="text-[#3e3e3e]">$150K+</span> in Funding
             </h1>
 
             {/* Subheadline */}
@@ -75,15 +75,15 @@ const HeroSection = () => {
             {/* Trust Statistics */}
             <div className="grid grid-cols-3 gap-6 pt-6 border-t border-gray-200">
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600">720+</div>
+                <div className="text-3xl font-bold text-[#3e3e3e]">720+</div>
                 <div className="text-sm text-gray-600 mt-1">Businesses Helped</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600">$42M+</div>
+                <div className="text-3xl font-bold text-[#3e3e3e]">$42M+</div>
                 <div className="text-sm text-gray-600 mt-1">Capital Secured</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600">15+</div>
+                <div className="text-3xl font-bold text-[#3e3e3e]">15+</div>
                 <div className="text-sm text-gray-600 mt-1">Years Experience</div>
               </div>
             </div>
@@ -118,7 +118,7 @@ const HeroSection = () => {
                   <div className="mt-4 pt-4 border-t border-gray-200">
                     <div className="flex justify-between items-center">
                       <span className="text-sm font-semibold text-gray-900">Total Access:</span>
-                      <span className="text-xl font-bold text-amber-600">$150,000+</span>
+                      <span className="text-xl font-bold text-[#3e3e3e]">$150,000+</span>
                     </div>
                   </div>
                 </div>

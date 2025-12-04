@@ -47,7 +47,7 @@ function HeroSection() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Protect Your <span className="text-amber-600">Credit</span>. Monitor Your <span className="text-amber-600">Future</span>.
+              Protect Your <span className="text-[#3e3e3e]">Credit</span>. Monitor Your <span className="text-[#3e3e3e]">Future</span>.
             </h1>
             
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
@@ -720,7 +720,7 @@ function FAQSection() {
         
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Common <span className="text-amber-600">Questions</span> About Credit Monitoring
+              Common <span className="text-[#3e3e3e]">Questions</span> About Credit Monitoring
             </h2>
             <p className="text-xl text-gray-700">
               Get answers to common questions about credit monitoring and identity protection.
@@ -737,7 +737,7 @@ function FAQSection() {
                 <span className="font-semibold text-gray-900 pr-4">
                   {faq.question}
                 </span>
-                <ChevronDown className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${openIndex === index ? 'transform rotate-180' : ''}`} />
+                <ChevronDown className={`w-5 h-5 text-[#3e3e3e] flex-shrink-0 transition-transform duration-300 ${openIndex === index ? 'transform rotate-180' : ''}`} />
               </button>
               
               <div 

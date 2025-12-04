@@ -19,7 +19,7 @@ const HeroSection = () => {
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Protect Your Family's{' '}
-              <span className="text-amber-600">Future</span> with Life Insurance
+              <span className="text-[#3e3e3e]">Future</span> with Life Insurance
             </h1>
 
             {/* Subheadline */}
@@ -31,15 +31,15 @@ const HeroSection = () => {
             {/* Key Stats */}
             <div className="grid grid-cols-3 gap-6 py-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600">$2M+</div>
+                <div className="text-3xl font-bold text-[#3e3e3e]">$2M+</div>
                 <div className="text-sm text-gray-600 mt-1">Coverage Available</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600">5 Min</div>
+                <div className="text-3xl font-bold text-[#3e3e3e]">5 Min</div>
                 <div className="text-sm text-gray-600 mt-1">Quick Quotes</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600">A+ Rated</div>
+                <div className="text-3xl font-bold text-[#3e3e3e]">A+ Rated</div>
                 <div className="text-sm text-gray-600 mt-1">Partner Insurers</div>
               </div>
             </div>
@@ -85,7 +85,7 @@ const HeroSection = () => {
               <div className="absolute inset-4 bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl transform rotate-3"></div>
               <div className="relative bg-white rounded-2xl shadow-2xl p-8 transform -rotate-3 hover:rotate-0 transition-transform duration-300 flex items-center justify-center">
                 <div className="text-center space-y-6">
-                  <Shield className="w-32 h-32 text-amber-600 mx-auto" />
+                  <Shield className="w-32 h-32 text-[#3e3e3e] mx-auto" />
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold text-gray-900">Your Family's Security</h3>
                     <p className="text-gray-600">Protected by life insurance</p>

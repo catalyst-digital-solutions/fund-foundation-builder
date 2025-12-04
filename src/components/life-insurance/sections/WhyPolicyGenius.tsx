@@ -41,7 +41,7 @@ const WhyPolicyGenius = () => {
 
   const colorMap: { [key: string]: { bg: string; icon: string } } = {
     blue: { bg: "bg-blue-100", icon: "text-blue-600" },
-    amber: { bg: "bg-amber-100", icon: "text-amber-600" },
+    amber: { bg: "bg-amber-100", icon: "text-[#3e3e3e]" },
     green: { bg: "bg-green-100", icon: "text-green-600" },
     purple: { bg: "bg-purple-100", icon: "text-purple-600" }
   };
@@ -54,7 +54,7 @@ const WhyPolicyGenius = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Why We Partner with{' '}
-            <span className="text-amber-600">PolicyGenius</span>
+            <span className="text-[#3e3e3e]">PolicyGenius</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
             Mesa Group Consulting partners with PolicyGenius to provide our clients with access 
@@ -91,7 +91,7 @@ const WhyPolicyGenius = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl font-bold text-amber-600 mb-2">{stat.value}</div>
+                <div className="text-4xl font-bold text-[#3e3e3e] mb-2">{stat.value}</div>
                 <div className="text-sm text-gray-600">{stat.label}</div>
               </div>
             ))}
