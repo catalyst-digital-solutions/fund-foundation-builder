@@ -1270,22 +1270,58 @@ const TrustAndWillPlan = () => {
       <EmotionalCTA3 />
 
       {/* SECTION 9: FINAL CTA */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Trust Recap */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Attorney-Built</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">State-Specific</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">20-Minute Setup</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">30-Day Guarantee</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Bank-Level Security</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Legally Binding</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Instant Download</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Free Updates</span>
+            </div>
+          </div>
+
           {/* Main Headline */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Protect Your Family & Secure Your <span className="text-amber-400">Legacy</span>?
-          </h2>
-          
-          {/* Subheadline */}
-          <p className="text-xl text-gray-300 mb-12">
-            Create your attorney-built, state-specific Will or Trust online in 20 minutes. No appointments. No expensive attorneys.
-          </p>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Ready to Protect Your Family & Secure Your <span className="text-[#f9c65d]">Legacy</span>?
+            </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              Create your attorney-built, state-specific Will or Trust online in 20 minutes. No appointments. No expensive attorneys.
+            </p>
+          </div>
 
           {/* Two-Column Button Grid */}
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {/* Primary Option - Trust Plan (Orange Gradient) */}
-            <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left">
+            {/* Primary Option - Trust Plan */}
+            <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left text-white">
               <div className="text-xs font-bold mb-2 tracking-wide">MOST POPULAR</div>
               <h3 className="text-2xl font-bold mb-4">Trust Estate Plan</h3>
               <div className="text-4xl font-bold mb-2">$499</div>
@@ -1312,12 +1348,12 @@ const TrustAndWillPlan = () => {
               </div>
             </div>
 
-            {/* Secondary Option - Will Plan (Glass Effect) */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-left border-2 border-white/20">
-              <div className="text-xs font-bold mb-2 tracking-wide opacity-0">PLACEHOLDER</div>
-              <h3 className="text-2xl font-bold mb-4">Will Estate Plan</h3>
-              <div className="text-4xl font-bold mb-2">$199</div>
-              <p className="text-sm opacity-90 mb-6">Last Will, Healthcare Directives, Power of Attorney</p>
+            {/* Secondary Option - Will Plan */}
+            <div className="bg-white rounded-2xl p-8 text-left border-2 border-gray-200 shadow-lg">
+              <div className="text-xs font-bold mb-2 tracking-wide text-gray-400">ESSENTIAL</div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Will Estate Plan</h3>
+              <div className="text-4xl font-bold mb-2 text-gray-900">$199</div>
+              <p className="text-sm text-gray-600 mb-6">Last Will, Healthcare Directives, Power of Attorney</p>
               <button 
                 onClick={handleCTAClick}
                 className="w-full inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
@@ -1327,69 +1363,27 @@ const TrustAndWillPlan = () => {
               </button>
               <div className="mt-4 space-y-2 text-sm">
                 <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-amber-400" />
-                  <span>Attorney-built documents</span>
+                  <Check className="w-4 h-4 text-green-600" />
+                  <span className="text-gray-700">Attorney-built documents</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-amber-400" />
-                  <span>State-specific & legally binding</span>
+                  <Check className="w-4 h-4 text-green-600" />
+                  <span className="text-gray-700">State-specific & legally binding</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-amber-400" />
-                  <span>Name guardians for children</span>
+                  <Check className="w-4 h-4 text-green-600" />
+                  <span className="text-gray-700">Name guardians for children</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-gray-300 text-sm">
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>30-Day Money-Back Guarantee</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-amber-400" />
-              <span>Takes Only 20 Minutes</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Lock className="w-4 h-4 text-amber-400" />
-              <span>Bank-Level Security</span>
-            </div>
-          </div>
-
-          {/* Additional Info */}
-          <p className="text-sm text-gray-400 mt-6">
-            Couples plans available • Instant download • Unlimited updates with membership
-          </p>
-
-          {/* Alternative Links */}
-          <div className="mt-12 pt-8 border-t-2 border-white/20">
-            <p className="text-gray-300 mb-3">
-              Need help with other financial matters?
+          {/* Phone CTA */}
+          <div className="text-center mt-8">
+            <p className="text-gray-600 mb-2">
+              Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a 
-                href="/credit-repair" 
-                className="text-amber-400 hover:text-amber-300 font-semibold underline"
-              >
-                Credit Repair
-              </a>
-              <span className="text-gray-500">|</span>
-              <a 
-                href="/debt-consolidation" 
-                className="text-amber-400 hover:text-amber-300 font-semibold underline"
-              >
-                Debt Consolidation
-              </a>
-              <span className="text-gray-500">|</span>
-              <a 
-                href="/life-insurance" 
-                className="text-amber-400 hover:text-amber-300 font-semibold underline"
-              >
-                Life Insurance
-              </a>
-            </div>
+            <p className="text-sm text-gray-500">Couples plans available • Unlimited updates with membership</p>
           </div>
 
         </div>
