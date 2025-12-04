@@ -71,7 +71,7 @@ const ComplianceFooter = () => {
               href="https://www.consumerfinance.gov/ask-cfpb/what-is-a-personal-loan-en-1959/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-amber-600 hover:text-amber-700 hover:underline"
+              className="flex items-center gap-2 text-[#bb9446] hover:text-[#9a7a3a] hover:underline"
             >
               <ExternalLink className="w-4 h-4" />
               <span>Consumer Financial Protection Bureau - Personal Loans</span>
@@ -80,7 +80,7 @@ const ComplianceFooter = () => {
               href="https://www.ftc.gov/news-events/topics/consumer-finance/credit-loans" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-amber-600 hover:text-amber-700 hover:underline"
+              className="flex items-center gap-2 text-[#bb9446] hover:text-[#9a7a3a] hover:underline"
             >
               <ExternalLink className="w-4 h-4" />
               <span>Federal Trade Commission - Credit & Loans</span>
@@ -89,7 +89,7 @@ const ComplianceFooter = () => {
               href="https://www.annualcreditreport.com/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-amber-600 hover:text-amber-700 hover:underline"
+              className="flex items-center gap-2 text-[#bb9446] hover:text-[#9a7a3a] hover:underline"
             >
               <ExternalLink className="w-4 h-4" />
               <span>Free Annual Credit Report</span>
@@ -98,7 +98,7 @@ const ComplianceFooter = () => {
               href="https://www.consumerfinance.gov/complaint/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-amber-600 hover:text-amber-700 hover:underline"
+              className="flex items-center gap-2 text-[#bb9446] hover:text-[#9a7a3a] hover:underline"
             >
               <ExternalLink className="w-4 h-4" />
               <span>Submit a Consumer Complaint (CFPB)</span>
@@ -110,7 +110,7 @@ const ComplianceFooter = () => {
         <div className="pt-8 border-t border-gray-300 text-center">
           <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} Mesa Group Consulting. All rights reserved. | 
-            <a href="https://www.mesagroupconsulting.com" className="text-amber-600 hover:underline ml-1">
+            <a href="https://www.mesagroupconsulting.com" className="text-[#bb9446] hover:underline ml-1">
               www.mesagroupconsulting.com
             </a>
           </p>

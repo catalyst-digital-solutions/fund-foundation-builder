@@ -71,7 +71,7 @@ const CreditRepair2 = () => {
                 <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4">
                   Start Your Credit Transformation →
                 </button>
-                <button onClick={() => scrollToSection("how-it-works")} className="text-amber-700 hover:text-amber-800 font-semibold underline underline-offset-4">
+                <button onClick={() => scrollToSection("how-it-works")} className="text-[#bb9446] hover:text-[#9a7a3a] font-semibold underline underline-offset-4">
                   Get Free Credit Analysis
                 </button>
               </div>
@@ -852,10 +852,10 @@ const CreditRepair2 = () => {
           <div className="text-center mt-10">
             <p className="text-gray-700 mb-4">Still not sure which plan is right for you?</p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <a href="tel:6613103040" className="flex items-center gap-2 text-amber-700 hover:text-amber-800 font-semibold">
+              <a href="tel:6613103040" className="flex items-center gap-2 text-[#bb9446] hover:text-[#9a7a3a] font-semibold">
                 <Phone className="w-4 h-4" /> (661) 310-3040
               </a>
-              <a href="mailto:contact@mesagroupconsulting.com" className="flex items-center gap-2 text-amber-700 hover:text-amber-800 font-semibold">
+              <a href="mailto:contact@mesagroupconsulting.com" className="flex items-center gap-2 text-[#bb9446] hover:text-[#9a7a3a] font-semibold">
                 <Mail className="w-4 h-4" /> contact@mesagroupconsulting.com
               </a>
               <span className="flex items-center gap-2 text-gray-600">
