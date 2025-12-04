@@ -17,9 +17,14 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Every loan on your personal credit. Every night worrying your home's at risk. You built a business to create opportunity—not gamble with everything your family depends on. While competitors scale with business credit, you're stuck risking it all.
         </p>
-        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
+        <a
+          href="https://mesagroupcapital.com/business-credit-enroll"
+          target="_blank"
+          rel="noopener"
+          className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+        >
           Protect What Matters Most →
-        </button>
+        </a>
       </div>
     </section>
   );
