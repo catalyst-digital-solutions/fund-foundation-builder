@@ -107,7 +107,7 @@ function HeroSection() {
               Start Monitoring My Credit
               <ExternalLink className="w-5 h-5" />
             </a>
-            
+            <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
             <p className="text-sm text-gray-600">
               <CheckCircle2 className="w-4 h-4 inline mr-1" />
               Instant access to all 3 bureaus
@@ -245,6 +245,7 @@ function WhyMonitoringMatters() {
             Get Protected Today
             <Shield className="w-5 h-5" />
           </a>
+          <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
         </div>
 
       </div>
@@ -514,6 +515,7 @@ function SmartCreditFeatures() {
             Get All These Features Now
             <ExternalLink className="w-5 h-5" />
           </a>
+          <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
         </div>
 
       </div>
@@ -674,6 +676,7 @@ function HowItWorks() {
             Start My Protection Now
             <ExternalLink className="w-5 h-5" />
           </a>
+          <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
           <p className="text-sm text-muted-foreground mt-4">
             Join thousands of satisfied members • Cancel anytime
           </p>
@@ -816,6 +819,7 @@ function FinalCTA() {
           <p className="text-gray-600 mb-6">
             Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
           </p>
+          <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
           <p className="text-sm text-gray-500">Powered by Mesa Group</p>
         </div>
       </div>
