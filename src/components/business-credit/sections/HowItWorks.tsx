@@ -98,7 +98,7 @@ const HowItWorks = () => {
                         <svg className="w-5 h-5 text-[#3e3e3e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        <span className="text-sm font-semibold text-amber-700">{step.timeline}</span>
+                        <span className="text-sm font-semibold text-[#bb9446]">{step.timeline}</span>
                       </div>
                     </div>
 
