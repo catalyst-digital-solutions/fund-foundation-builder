@@ -775,49 +775,68 @@ const FAQSection = () => {
 
 // Final CTA
 const FinalCTA = () => (
-  <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      {/* Main Headline */}
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-        Stop Paying Interest.<br />
-        Start Growing Your <span className="text-amber-400">Business</span>.
-      </h2>
-      
-      {/* Subheadline */}
-      <p className="text-xl text-gray-300 mb-12">
-        Get $25,000 to $250,000 in 0% interest business funding and keep every dollar working for your business—not for the bank.
-      </p>
-
-      {/* Two-Column Button Grid */}
-      <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        {/* Primary Option (Orange Gradient) */}
-        <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left">
-          <h3 className="text-2xl font-bold mb-4">Apply for Funding</h3>
-          <p className="text-white/90 mb-6">
-            Apply in 5 minutes. Get a decision within 24-48 hours. Receive funding within days.
-          </p>
-          <a href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-all duration-200">
-            Apply for 0% Funding Now
-          </a>
+  <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Trust Recap */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        <div className="flex items-center gap-2 text-sm">
+          <Check className="w-4 h-4 text-green-600" />
+          <span className="text-gray-700">0% Interest Available</span>
         </div>
-
-        {/* Secondary Option (Glass Effect) */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-left border-2 border-white/20">
-          <h3 className="text-2xl font-bold mb-4">Speak with a Specialist</h3>
-          <p className="text-gray-300 mb-6">
-            Get a free consultation with our funding experts. No obligation. Same-day approval possible.
-          </p>
-          <a href="tel:6613103040" className="w-full inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500">
-            <Phone className="mr-2 w-5 h-5" />
-            (661) 310-3040
-          </a>
+        <div className="flex items-center gap-2 text-sm">
+          <Check className="w-4 h-4 text-green-600" />
+          <span className="text-gray-700">$25K-$250K Funding</span>
+        </div>
+        <div className="flex items-center gap-2 text-sm">
+          <Check className="w-4 h-4 text-green-600" />
+          <span className="text-gray-700">No Collateral Required</span>
+        </div>
+        <div className="flex items-center gap-2 text-sm">
+          <Check className="w-4 h-4 text-green-600" />
+          <span className="text-gray-700">24-48 Hour Decisions</span>
+        </div>
+        <div className="flex items-center gap-2 text-sm">
+          <Check className="w-4 h-4 text-green-600" />
+          <span className="text-gray-700">720+ Businesses Funded</span>
+        </div>
+        <div className="flex items-center gap-2 text-sm">
+          <Check className="w-4 h-4 text-green-600" />
+          <span className="text-gray-700">$42M+ Capital Secured</span>
+        </div>
+        <div className="flex items-center gap-2 text-sm">
+          <Check className="w-4 h-4 text-green-600" />
+          <span className="text-gray-700">30+ Funding Partners</span>
+        </div>
+        <div className="flex items-center gap-2 text-sm">
+          <Check className="w-4 h-4 text-green-600" />
+          <span className="text-gray-700">Local Bakersfield Team</span>
         </div>
       </div>
 
-      {/* Trust Indicators */}
-      <div className="mt-8 text-sm text-gray-400">
-        <p>Mesa Group Consulting | Bakersfield, CA</p>
-        <p className="mt-1">Serving Bakersfield businesses since 2015 • $42M+ funded for 720+ businesses</p>
+      {/* Final CTA */}
+      <div className="text-center">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          Stop Paying Interest.<br />
+          Start Growing Your <span className="text-[#f9c65d]">Business</span>.
+        </h2>
+        
+        <p className="text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
+          Get $25,000 to $250,000 in 0% interest business funding and keep every dollar working for your business—not for the bank.
+        </p>
+
+        <a
+          href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
+        >
+          Apply for 0% Funding Now →
+        </a>
+        
+        <p className="text-gray-600 mb-6">
+          Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
+        </p>
+        <p className="text-sm text-gray-500">Mesa Group Consulting | Bakersfield, CA | Serving businesses since 2015</p>
       </div>
     </div>
   </section>
