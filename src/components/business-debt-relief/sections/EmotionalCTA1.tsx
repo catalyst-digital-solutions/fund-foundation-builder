@@ -17,7 +17,7 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Every day brings more collection calls, more threats, more sleepless nights wondering if today's the day you lose it all. Your business is gasping for air while debt payments consume every dollar of profit. You've poured your heart into building something—but debt is stealing your dream while competitors thrive and you're trapped watching it all slip away.
         </p>
-        <a 
+        <a
           href="https://mesagroupcapital.com/for-businesses/debt-relief"
           target="_blank"
           rel="noopener noreferrer"
@@ -25,6 +25,7 @@ const EmotionalCTA1 = () => {
         >
           Stop the Debt Spiral →
         </a>
+        <p className="text-sm text-white mt-4 drop-shadow-md">Powered by Mesa Group</p>
       </div>
     </section>
   );

@@ -2,11 +2,15 @@ import React from 'react';
 import ctaImage from '@/assets/business-funding-cta-01.png';
 
 const EmotionalCTA1 = () => {
+  const handleClick = () => {
+    window.open('https://mesagroupcapital.com/for-businesses/business-funding', '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <section 
-      className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
-      style={{ 
-        backgroundImage: `url(${ctaImage})` 
+    <section
+      className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${ctaImage})`
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
@@ -17,9 +21,13 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           That lucrative contract slipping away. That expansion delayed another year. Your competitors moving forward while you're stuck in bank rejection limbo. You've poured everything into this business, but traditional lenders only see what you lack—not your potential.
         </p>
-        <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4">
+        <button
+          onClick={handleClick}
+          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+        >
           There's a Better Way →
         </button>
+        <p className="text-sm text-white mt-4 drop-shadow-md">Powered by Mesa Group</p>
       </div>
     </section>
   );

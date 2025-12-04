@@ -17,7 +17,7 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Mesa Group Capital negotiates directly with your creditors—settling debts for pennies on the dollar while protecting your business assets. We've helped thousands reduce crushing debt into one affordable payment. No more creditor harassment. No bankruptcy stigma. Just a proven path forward with experts who see your potential where banks see only risk.
         </p>
-        <a 
+        <a
           href="https://mesagroupcapital.com/for-businesses/debt-relief"
           target="_blank"
           rel="noopener noreferrer"
@@ -25,6 +25,7 @@ const EmotionalCTA2 = () => {
         >
           Discover Your Path to Freedom →
         </a>
+        <p className="text-sm text-white mt-4 drop-shadow-md">Powered by Mesa Group</p>
       </div>
     </section>
   );
