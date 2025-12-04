@@ -37,7 +37,7 @@ const Header = () => {
         { label: 'Credit Cards', href: '/credit-cards' },
         { label: 'Personal Loans', href: '/personal-loans' },
         { label: 'Auto Loan Refi', href: '/auto-loan-refi' },
-        { label: 'Student Loan Refinancing', href: '/student-loan-refi-2' },
+        { label: 'Student Loan Refi', href: '/student-loan-refi-2' },
         { label: 'Debt Consolidation Loan', href: '/debt-consolidation-loan' },
         { label: 'Debt Relief', href: '/debt-relief' },
         { label: 'Trust & Will Plan', href: '/trust-and-will-plan' },
