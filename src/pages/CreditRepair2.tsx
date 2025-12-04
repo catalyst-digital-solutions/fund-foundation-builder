@@ -670,7 +670,7 @@ const CreditRepair2 = () => {
               <div className="mb-4">
                 <span className="text-3xl font-bold text-[#3E3E3E]">$350</span>
                 <span className="text-gray-500"> initial + </span>
-                <span className="text-3xl font-bold text-amber-600">$149</span>
+                <span className="text-3xl font-bold text-[#FBBF23]">$149</span>
                 <span className="text-gray-500">/mo</span>
               </div>
               <p className="text-sm text-gray-600 mb-6">Starting your credit repair journey. Covers collections, late payments, and inquiries across all 3 bureaus.</p>
@@ -697,15 +697,15 @@ const CreditRepair2 = () => {
 
             {/* Mesa360 Flex - Most Popular */}
             <div className="bg-white border-2 border-amber-400 rounded-2xl p-6 relative shadow-xl">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-amber-500 text-white text-xs font-bold px-4 py-1 rounded-full">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#FBBF23] text-white text-xs font-bold px-4 py-1 rounded-full">
                 MOST POPULAR
               </div>
               <h4 className="text-xl font-bold text-[#3E3E3E] mb-2">Mesa360 Flex</h4>
-              <p className="text-sm text-amber-600 font-semibold mb-4">Most Popular</p>
+              <p className="text-sm text-[#FBBF23] font-semibold mb-4">Most Popular</p>
               <div className="mb-4">
                 <span className="text-3xl font-bold text-[#3E3E3E]">$500</span>
                 <span className="text-gray-500"> initial + </span>
-                <span className="text-3xl font-bold text-amber-600">$199</span>
+                <span className="text-3xl font-bold text-[#FBBF23]">$199</span>
                 <span className="text-gray-500">/mo</span>
               </div>
               <p className="text-sm text-gray-600 mb-6">Our most popular plan with faster methods like digital uploads, Experian rapid inquiry removal, and CFPB complaints.</p>
@@ -723,7 +723,7 @@ const CreditRepair2 = () => {
                 <p className="text-xs text-gray-500">Risk Free - 3 Day Cancellation Window</p>
               </div>
               
-              <button onClick={handleCTAClick} className="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 rounded-lg transition-colors">
+              <button onClick={handleCTAClick} className="w-full bg-[#FBBF23] hover:bg-[#E5AC1F] text-gray-900 font-bold py-3 rounded-lg transition-colors">
                 Choose Mesa360 Flex
               </button>
             </div>
@@ -1022,7 +1022,7 @@ Every dollar you paid to Mesa Group.</p>
           {/* Final CTA */}
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Ready to Take Control of Your <span className="text-amber-600">Credit</span>?
+              Ready to Take Control of Your <span className="text-[#f9c65d]">Credit</span>?
             </h2>
             
             <button onClick={handleCTAClick} className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4">
@@ -1030,7 +1030,7 @@ Every dollar you paid to Mesa Group.</p>
             </button>
             
             <p className="text-gray-600 mb-6">
-              Or call us: <a href="tel:6613103040" className="text-amber-600 hover:underline font-semibold">(661) 310-3040</a>
+              Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
             <p className="text-sm text-gray-500">Hablamos español | We speak Punjabi</p>
           </div>
