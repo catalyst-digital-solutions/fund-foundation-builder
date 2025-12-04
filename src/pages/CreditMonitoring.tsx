@@ -312,13 +312,13 @@ function SmartCreditFeatures() {
           {/* Feature 2: Identity Theft Protection */}
           <div className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-200">
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="order-2 md:order-1 bg-gradient-to-br from-success to-success/80 rounded-xl p-8 text-white">
+              <div className="order-2 md:order-1 bg-gradient-to-br from-success to-success/80 rounded-xl p-8">
                 <div className="text-center">
-                  <Shield className="w-16 h-16 mb-4 mx-auto" />
-                  <div className="text-5xl font-bold mb-2">$1 Million</div>
-                  <div className="text-xl mb-6">Family Fraud Insurance</div>
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
-                    <p className="text-sm leading-relaxed text-white">
+                  <Shield className="w-16 h-16 mb-4 mx-auto text-[#3e3e3e]" />
+                  <div className="text-5xl font-bold mb-2 text-[#3e3e3e]">$1 Million</div>
+                  <div className="text-xl mb-6 text-[#3e3e3e]">Family Fraud Insurance</div>
+                <div className="bg-white/40 backdrop-blur-sm rounded-lg p-4">
+                    <p className="text-sm leading-relaxed text-[#3e3e3e]">
                       Comprehensive identity fraud expense reimbursement covering your entire household
                     </p>
                   </div>
