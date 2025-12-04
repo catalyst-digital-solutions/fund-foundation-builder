@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Shield, Clock, CheckCircle } from 'lucide-react';
+import { Check } from 'lucide-react';
 
 const FinalCTA = () => {
   const openAffiliateLink = () => {
@@ -7,64 +7,61 @@ const FinalCTA = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Headline */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-          Ready to <span className="text-amber-400">Compare Your Options</span>?
-        </h2>
-        
-        {/* Subheadline */}
-        <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-          See personalized loan offers from multiple lenders in minutes. 
-          No impact on your credit score. No obligation to accept any offer.
-        </p>
-
-        {/* Trust Badges */}
-        <div className="flex flex-wrap justify-center gap-6 mb-10">
-          <div className="flex items-center gap-2 text-gray-300">
-            <Shield className="w-5 h-5 text-green-400" />
-            <span className="text-sm">100% Secure</span>
+    <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Trust Recap */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">100+ Lenders</span>
           </div>
-          <div className="flex items-center gap-2 text-gray-300">
-            <Clock className="w-5 h-5 text-green-400" />
-            <span className="text-sm">3-Minute Application</span>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">No Credit Impact</span>
           </div>
-          <div className="flex items-center gap-2 text-gray-300">
-            <CheckCircle className="w-5 h-5 text-green-400" />
-            <span className="text-sm">No Credit Impact</span>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">3-Minute Process</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">$1K-$100K Loans</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">All Credit Levels</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">Competitive Rates</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">Same-Day Funding</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Check className="w-4 h-4 text-green-600" />
+            <span className="text-gray-700">No Obligation</span>
           </div>
         </div>
 
-        {/* CTA Button */}
-        <button
-          onClick={openAffiliateLink}
-          className="inline-flex items-center justify-center px-10 py-5 text-lg font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-2xl hover:shadow-amber-500/50 transition-all duration-200 border-2 border-amber-500 transform hover:scale-105"
-        >
-          Get Started - Compare Rates Now
-          <ArrowRight className="ml-3 w-6 h-6" />
-        </button>
-
-        {/* Fine Print */}
-        <p className="text-sm text-gray-400 mt-6 max-w-2xl mx-auto">
-          By clicking "Get Started," you'll be connected with our partner SuperMoney to compare personalized loan offers. 
-          Checking rates will not affect your credit score.
-        </p>
-
-        {/* Stats */}
-        <div className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-gray-700">
-          <div>
-            <div className="text-3xl font-bold text-amber-400">2,500+</div>
-            <div className="text-sm text-gray-400 mt-1">Happy Clients</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-amber-400">$50M+</div>
-            <div className="text-sm text-gray-400 mt-1">Loans Facilitated</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-amber-400">4.8/5</div>
-            <div className="text-sm text-gray-400 mt-1">Satisfaction Rating</div>
-          </div>
+        {/* Final CTA */}
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            Ready to <span className="text-[#f9c65d]">Compare Your Options</span>?
+          </h2>
+          
+          <button
+            onClick={openAffiliateLink}
+            className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
+          >
+            Get Started - Compare Rates Now →
+          </button>
+          
+          <p className="text-gray-600 mb-6">
+            Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
+          </p>
+          <p className="text-sm text-gray-500">Powered by Mesa Group</p>
         </div>
       </div>
     </section>
