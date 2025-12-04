@@ -317,8 +317,8 @@ function SmartCreditFeatures() {
                   <Shield className="w-16 h-16 mb-4 mx-auto" />
                   <div className="text-5xl font-bold mb-2">$1 Million</div>
                   <div className="text-xl mb-6">Family Fraud Insurance</div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                    <p className="text-sm leading-relaxed">
+                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                    <p className="text-sm leading-relaxed text-white">
                       Comprehensive identity fraud expense reimbursement covering your entire household
                     </p>
                   </div>
