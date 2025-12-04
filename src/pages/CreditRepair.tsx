@@ -131,7 +131,7 @@ const CreditRepair = () => {
 
               {/* H1 Headline */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Remove <span className="text-[#3e3e3e]">Inaccurate Items</span>. Rebuild Your <span className="text-[#3e3e3e]">Credit</span>. Reclaim Your <span className="text-[#3e3e3e]">Financial Future</span>.
+                Remove <span className="text-[#f9c65d]">Inaccurate Items</span>. Rebuild Your <span className="text-[#f9c65d]">Credit</span>. Reclaim Your <span className="text-[#f9c65d]">Financial Future</span>.
               </h1>
 
               {/* Subheadline */}
@@ -771,7 +771,7 @@ const CreditRepair = () => {
       <section className="bg-[#F8FAFC] py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-6 text-center">
-            Common <span className="text-[#3e3e3e]">Questions</span> About Credit Repair
+            Common <span className="text-[#f9c65d]">Questions</span> About Credit Repair
           </h2>
           <p className="text-xl text-gray-700 mb-12 text-center">
             Get answers to common questions about our credit repair service.

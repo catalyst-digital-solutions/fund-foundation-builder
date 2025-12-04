@@ -73,7 +73,7 @@ const AutoLoanRefi = () => {
               
               {/* H1 Headline */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Lower Your <span className="text-[#3e3e3e]">Car Payment</span>. Keep the Same Car.
+                Lower Your <span className="text-[#f9c65d]">Car Payment</span>. Keep the Same Car.
               </h1>
               
               {/* Subheadline */}
@@ -831,7 +831,7 @@ const AutoLoanRefi = () => {
         <div className="max-w-4xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-6 text-center">
-            Common <span className="text-[#3e3e3e]">Questions</span> About Auto Loan Refinancing
+            Common <span className="text-[#f9c65d]">Questions</span> About Auto Loan Refinancing
           </h2>
           <p className="text-xl text-gray-700 mb-12 text-center">
             Get answers to common questions about refinancing your auto loan.

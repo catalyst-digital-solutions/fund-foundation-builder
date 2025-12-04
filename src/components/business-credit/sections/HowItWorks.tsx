@@ -58,7 +58,7 @@ const HowItWorks = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Your Path to <span className="text-[#3e3e3e]">$150K+ in Business Funding</span>
+            Your Path to <span className="text-[#f9c65d]">$150K+ in Business Funding</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600">
             Our proven 4-stage process builds your business credit systematically, protecting your personal credit while opening doors to significant business funding opportunities.

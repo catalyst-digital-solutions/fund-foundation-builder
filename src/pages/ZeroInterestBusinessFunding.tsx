@@ -45,7 +45,7 @@ const HeroSection = () => (
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            <span className="text-amber-600">0% Interest</span> Business Funding That Actually Makes Sense
+            <span className="text-[#f9c65d]">0% Interest</span> Business Funding That Actually Makes Sense
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-6">
@@ -709,7 +709,7 @@ const FAQSection = () => {
         
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-6">
-              Business Funding <span className="text-amber-600">Questions</span> Answered
+              Business Funding <span className="text-[#f9c65d]">Questions</span> Answered
             </h2>
             <p className="text-xl text-gray-700">
               Get clarity before you apply.

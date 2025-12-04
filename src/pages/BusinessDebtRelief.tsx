@@ -45,8 +45,8 @@ const BusinessDebtRelief = () => {
           
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Stop Hiding from <span className="text-[#3e3e3e]">Creditors</span>.<br />
-            Start Rebuilding Your <span className="text-[#3e3e3e]">Business</span>.
+            Stop Hiding from <span className="text-[#f9c65d]">Creditors</span>.<br />
+            Start Rebuilding Your <span className="text-[#f9c65d]">Business</span>.
           </h1>
           
           {/* Subheadline */}
@@ -114,7 +114,7 @@ const BusinessDebtRelief = () => {
         <div className="max-w-4xl mx-auto text-center">
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Is <span className="text-[#3e3e3e]">Business Debt</span> Controlling Your Life?
+            Is <span className="text-[#f9c65d]">Business Debt</span> Controlling Your Life?
           </h2>
           
           <p className="text-lg md:text-xl text-gray-700 mb-12 leading-relaxed">
@@ -191,7 +191,7 @@ const BusinessDebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              How <span className="text-[#3e3e3e]">Business Debt Relief</span> Works
+              How <span className="text-[#f9c65d]">Business Debt Relief</span> Works
             </h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
               Mesa Group Capital's business debt relief program restructures your unaffordable debt into 
@@ -272,7 +272,7 @@ const BusinessDebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              We Resolve <span className="text-[#3e3e3e]">All Types</span> of Business Debt
+              We Resolve <span className="text-[#f9c65d]">All Types</span> of Business Debt
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               From merchant cash advances to credit cards, lawsuits to tax debts—we routinely settle every 
@@ -374,7 +374,7 @@ const BusinessDebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              How Business Debt Relief <span className="text-[#3e3e3e]">Transforms</span> Your Situation
+              How Business Debt Relief <span className="text-[#f9c65d]">Transforms</span> Your Situation
             </h2>
             <p className="text-lg md:text-xl text-gray-700">
               Stop managing the debt crisis. Start managing your business again.
@@ -529,7 +529,7 @@ const BusinessDebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Your Path to <span className="text-[#3e3e3e]">Debt Freedom</span> in 5 Steps
+              Your Path to <span className="text-[#f9c65d]">Debt Freedom</span> in 5 Steps
             </h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
               From your first consultation to complete debt resolution, here's exactly how our proven process works.
@@ -661,7 +661,7 @@ const BusinessDebtRelief = () => {
           
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Proven <span className="text-[#3e3e3e]">Results</span> for Business Owners
+              Proven <span className="text-[#f9c65d]">Results</span> for Business Owners
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Our business debt relief program has helped thousands of companies reduce debt, avoid bankruptcy, 

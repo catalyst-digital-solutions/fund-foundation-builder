@@ -34,7 +34,7 @@ const ServiceTierComparison = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Choose Your <span className="text-[#3e3e3e]">Business Credit</span> Program
+            Choose Your <span className="text-[#f9c65d]">Business Credit</span> Program
           </h2>
           <p className="text-lg md:text-xl text-gray-600">
             Select the program that fits your business needs and budget. Both options provide access to the same business credit building system—the difference is in the level of support and guidance.

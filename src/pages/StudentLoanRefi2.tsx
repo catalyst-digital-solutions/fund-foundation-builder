@@ -107,7 +107,7 @@ const StudentLoanRefi2 = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Lower Your <span className="text-amber-600">Student Loan Rate</span> and Save Thousands
+              Lower Your <span className="text-[#f9c65d]">Student Loan Rate</span> and Save Thousands
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
@@ -177,7 +177,7 @@ const StudentLoanRefi2 = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Why Refinance Your <span className="text-amber-600">Student Loans?</span>
+              Why Refinance Your <span className="text-[#f9c65d]">Student Loans?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Refinancing can help you save money, simplify payments, and pay off your debt faster.
@@ -256,7 +256,7 @@ const StudentLoanRefi2 = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              How Student Loan <span className="text-amber-600">Refinancing Works</span>
+              How Student Loan <span className="text-[#f9c65d]">Refinancing Works</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Getting started is quick and easy. Here's what to expect:
@@ -362,7 +362,7 @@ const StudentLoanRefi2 = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Who Should <span className="text-amber-600">Refinance?</span>
+              Who Should <span className="text-[#f9c65d]">Refinance?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Refinancing isn't right for everyone. Here's how to know if it makes sense for you.
@@ -467,7 +467,7 @@ const StudentLoanRefi2 = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Calculate Your <span className="text-amber-600">Potential Savings</span>
+              Calculate Your <span className="text-[#f9c65d]">Potential Savings</span>
             </h2>
             <p className="text-xl text-gray-600">
               See how much you could save by refinancing your student loans
@@ -587,7 +587,7 @@ const StudentLoanRefi2 = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Fixed vs Variable <span className="text-amber-600">Interest Rates</span>
+              Fixed vs Variable <span className="text-[#f9c65d]">Interest Rates</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Understanding your rate options helps you choose the best loan for your situation
@@ -737,7 +737,7 @@ const StudentLoanRefi2 = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Frequently Asked <span className="text-amber-600">Questions</span>
+              Frequently Asked <span className="text-[#f9c65d]">Questions</span>
             </h2>
             <p className="text-xl text-gray-700">
               Get answers to common questions about student loan refinancing.
@@ -796,7 +796,7 @@ const StudentLoanRefi2 = () => {
               <AlertTriangle className="w-8 h-8 text-white" />
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Important <span className="text-amber-600">Considerations</span>
+              Important <span className="text-[#f9c65d]">Considerations</span>
             </h2>
             <p className="text-xl text-gray-600">
               Understand what you're giving up when refinancing federal student loans

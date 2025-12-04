@@ -22,7 +22,7 @@ const HeroSection = () => {
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Compare <span className="text-[#3e3e3e]">Personal Loans</span> from Multiple Lenders in <span className="text-[#3e3e3e]">Minutes</span>
+              Compare <span className="text-[#f9c65d]">Personal Loans</span> from Multiple Lenders in <span className="text-[#f9c65d]">Minutes</span>
             </h1>
 
             {/* Subheadline */}

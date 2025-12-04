@@ -22,7 +22,7 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Trusted by <span className="text-[#3e3e3e]">720+</span> Bakersfield Business Owners
+            Trusted by <span className="text-[#f9c65d]">720+</span> Bakersfield Business Owners
           </h2>
         </div>
 

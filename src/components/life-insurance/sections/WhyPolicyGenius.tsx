@@ -54,7 +54,7 @@ const WhyPolicyGenius = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Why We Partner with{' '}
-            <span className="text-[#3e3e3e]">PolicyGenius</span>
+            <span className="text-[#f9c65d]">PolicyGenius</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
             Mesa Group Consulting partners with PolicyGenius to provide our clients with access 
