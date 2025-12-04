@@ -136,7 +136,7 @@ const DebtRelief = () => {
       </section>
 
       {/* SECTION 2: THE PROBLEM (PAIN POINTS) */}
-      <section className="py-20 px-6" style={{ backgroundColor: '#151D2C' }}>
+      <section className="py-20 px-6" style={{ backgroundColor: '#3e3e3e' }}>
         <div className="max-w-7xl mx-auto">
           
           <div className="text-center mb-12">
