@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   const menuItems = [
-    { label: 'Home', href: 'https://www.mesagroupconsulting.com' },
+    { label: 'Home', href: '/' },
     { label: 'About', href: 'https://www.mesagroupconsulting.com/about-us' },
     {
       label: 'For Consumers',
