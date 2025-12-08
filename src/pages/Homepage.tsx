@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { 
-  CheckCircle, 
+  Check,
+  CheckCircle,
   ArrowRight, 
   Phone,
   CreditCard,
@@ -1597,91 +1598,63 @@ const Homepage = () => {
       {/* ================================================================
           SECTION 11: FINAL CONVERSION ZONE
       ================================================================ */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Transform Your <span className="text-amber-400">Financial Future</span>?
-          </h2>
-          
-          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            You've read this far because you're ready for change. You're ready to stop being held back by your credit history. You're ready to access the opportunities you deserve.
-          </p>
-          
-          <p className="text-2xl font-bold mb-12">
-            Let's make it happen—together.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Trust Recap */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Licensed & Compliant</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">A+ Rated Partners</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Nationwide from Bakersfield</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Bilingual Support</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">2,500+ Clients Served</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">150+ Five-Star Reviews</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">EN/ES/Punjabi Support</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600" />
+              <span className="text-gray-700">Real Office You Can Visit</span>
+            </div>
+          </div>
+
+          {/* Final CTA */}
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Ready to Transform Your <span className="text-[#f9c65d]">Financial Future</span>?
+            </h2>
+            
             <button
               onClick={openConsultationModal}
-              className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold text-xl rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all border-2 border-amber-500"
+              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-2"
             >
-              Schedule My Free Consultation
-              <ArrowRight className="w-6 h-6" />
+              Schedule My Free Consultation →
             </button>
+            <p className="text-sm text-gray-600 mb-4">Powered by Mesa Group</p>
             
-            <a
-              href="tel:6613103040"
-              className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white/10 hover:bg-white/20 text-white font-bold text-xl rounded-xl border-2 border-white/30 transition-all"
-            >
-              <Phone className="w-6 h-6" />
-              (661) 310-3040
-            </a>
-          </div>
-          
-          <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-300 mb-6">
-              In your free consultation, we'll:
+            <p className="text-gray-600 mb-6">
+              Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              {[
-                'Listen to your current financial situation without judgment',
-                'Discuss your goals and challenges openly',
-                'Recommend tailored solutions from our platform',
-                'Answer all your questions with complete transparency'
-              ].map((item, idx) => (
-                <div key={idx} className="flex items-start gap-3 text-left">
-                  <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" />
-                  <span className="text-gray-200">{item}</span>
-                </div>
-              ))}
-            </div>
-            
-            <p className="text-lg text-gray-300 mt-8">
-              No pressure. No hidden fees. No surprises. Just clear guidance and proven solutions.
-            </p>
-            
-            <p className="text-2xl font-bold text-white mt-6">
-              This is your moment. Let's make it count.
-            </p>
+            <p className="text-sm text-gray-500">Hablamos español | We speak Punjabi</p>
           </div>
-
-          {/* Trust Reinforcement */}
-          <div className="mt-12 pt-12 border-t border-white/20 flex flex-wrap justify-center items-center gap-6 text-sm text-gray-300">
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-green-400" />
-              <span>Licensed & Compliant</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-green-400" />
-              <span>A+ Rated Partners</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-green-400" />
-              <span>2,500+ Clients Served</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-green-400" />
-              <span>150+ Five-Star Reviews</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-green-400" />
-              <span>Serving Since 2023</span>
-            </div>
-          </div>
-
         </div>
       </section>
 
