@@ -29,6 +29,7 @@ const Header = () => {
     { label: 'About', href: '/about' },
     {
       label: 'For Consumers',
+      href: '/for-consumers',
       submenu: [
         { label: 'Build Credit', href: '#' },
         { label: 'Credit Monitoring', href: '/credit-monitoring' },
