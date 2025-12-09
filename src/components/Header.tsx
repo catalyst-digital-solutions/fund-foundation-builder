@@ -53,7 +53,16 @@ const Header = () => {
         { label: 'Business Credit', href: '/business-credit' },
       ],
     },
-    { label: 'Resources', href: '/resources' },
+    {
+      label: 'Resources',
+      href: '/resources',
+      submenu: [
+        { label: 'Articles & Insights', href: '/resources/articles' },
+        { label: 'Mesa News', href: 'https://www.mesagroupconsulting.com/blog', external: true },
+        { label: 'Financial Calculators', href: '/resources/calculators' },
+        { label: 'Letter Templates', href: '/resources/templates' },
+      ],
+    },
     { label: 'Contact', href: 'https://www.mesagroupconsulting.com/contact-us', external: true },
   ];
 
@@ -129,10 +138,20 @@ const Header = () => {
                 >
                   {item.submenu ? (
                     <>
-                      <button className="flex items-center gap-1 text-white hover:text-[#f9c65d] transition-colors font-medium">
-                        {item.label}
-                        <ChevronDown className="w-4 h-4" />
-                      </button>
+                      {item.href ? (
+                        <Link 
+                          to={item.href}
+                          className="flex items-center gap-1 text-white hover:text-[#f9c65d] transition-colors font-medium"
+                        >
+                          {item.label}
+                          <ChevronDown className="w-4 h-4" />
+                        </Link>
+                      ) : (
+                        <button className="flex items-center gap-1 text-white hover:text-[#f9c65d] transition-colors font-medium">
+                          {item.label}
+                          <ChevronDown className="w-4 h-4" />
+                        </button>
+                      )}
                       {activeDropdown === item.label && (
                         <div 
                           className="absolute top-full left-0 mt-2 w-64 bg-black border border-gray-800 rounded-lg shadow-xl z-50"
@@ -141,13 +160,25 @@ const Header = () => {
                         >
                           <div className="py-2">
                             {item.submenu.map((subItem) => (
-                              <Link
-                                key={subItem.label}
-                                to={subItem.href}
-                                className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-900 hover:text-[#f9c65d] transition-colors"
-                              >
-                                {subItem.label}
-                              </Link>
+                              subItem.external ? (
+                                <a
+                                  key={subItem.label}
+                                  href={subItem.href}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-900 hover:text-[#f9c65d] transition-colors"
+                                >
+                                  {subItem.label}
+                                </a>
+                              ) : (
+                                <Link
+                                  key={subItem.label}
+                                  to={subItem.href}
+                                  className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-900 hover:text-[#f9c65d] transition-colors"
+                                >
+                                  {subItem.label}
+                                </Link>
+                              )
                             ))}
                           </div>
                         </div>
@@ -207,28 +238,55 @@ const Header = () => {
                 <div key={item.label}>
                   {item.submenu ? (
                     <>
-                      <button
-                        onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
-                        className="flex items-center justify-between w-full px-4 py-3 text-white hover:text-[#f9c65d] hover:bg-gray-900 rounded-lg transition-colors font-medium"
-                      >
-                        {item.label}
-                        <ChevronDown
-                          className={`w-4 h-4 transition-transform ${
-                            activeDropdown === item.label ? 'rotate-180' : ''
-                          }`}
-                        />
-                      </button>
+                      <div className="flex items-center">
+                        {item.href ? (
+                          <Link
+                            to={item.href}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="flex-1 px-4 py-3 text-white hover:text-[#f9c65d] hover:bg-gray-900 rounded-l-lg transition-colors font-medium"
+                          >
+                            {item.label}
+                          </Link>
+                        ) : (
+                          <span className="flex-1 px-4 py-3 text-white font-medium">
+                            {item.label}
+                          </span>
+                        )}
+                        <button
+                          onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
+                          className="px-4 py-3 text-white hover:text-[#f9c65d] hover:bg-gray-900 rounded-r-lg transition-colors"
+                        >
+                          <ChevronDown
+                            className={`w-4 h-4 transition-transform ${
+                              activeDropdown === item.label ? 'rotate-180' : ''
+                            }`}
+                          />
+                        </button>
+                      </div>
                       {activeDropdown === item.label && (
                         <div className="ml-4 mt-2 space-y-1">
                           {item.submenu.map((subItem) => (
-                            <Link
-                              key={subItem.label}
-                              to={subItem.href}
-                              onClick={() => setMobileMenuOpen(false)}
-                              className="block px-4 py-2 text-sm text-gray-300 hover:text-[#f9c65d] hover:bg-gray-900 rounded-lg transition-colors"
-                            >
-                              {subItem.label}
-                            </Link>
+                            subItem.external ? (
+                              <a
+                                key={subItem.label}
+                                href={subItem.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="block px-4 py-2 text-sm text-gray-300 hover:text-[#f9c65d] hover:bg-gray-900 rounded-lg transition-colors"
+                              >
+                                {subItem.label}
+                              </a>
+                            ) : (
+                              <Link
+                                key={subItem.label}
+                                to={subItem.href}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="block px-4 py-2 text-sm text-gray-300 hover:text-[#f9c65d] hover:bg-gray-900 rounded-lg transition-colors"
+                              >
+                                {subItem.label}
+                              </Link>
+                            )
                           ))}
                         </div>
                       )}
