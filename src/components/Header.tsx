@@ -55,7 +55,9 @@ const Header = () => {
     },
     {
       label: 'Resources',
+      href: '/resources',
       submenu: [
+        { label: 'Articles & Insights', href: '/articles' },
         { label: 'Mesa News', href: '/mesa-news' },
         { label: 'Financial Calculators', href: '/financial-calculators' },
         { label: 'Letter Templates', href: '/letter-templates' },
