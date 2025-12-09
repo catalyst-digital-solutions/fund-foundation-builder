@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs";
 import Resources from "./pages/Resources";
 import ArticlesInsights from "./pages/ArticlesInsights";
 import FinancialCalculators from "./pages/FinancialCalculators";
+import LetterTemplates from "./pages/LetterTemplates";
 import NotFound from "./pages/NotFound";
 import CreditMonitoring from "./pages/CreditMonitoring";
 import CreditRepair from "./pages/CreditRepair";
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/resources/articles" element={<ArticlesInsights />} />
           <Route path="/resources/news" element={<MesaNews />} />
           <Route path="/resources/calculators" element={<FinancialCalculators />} />
+          <Route path="/resources/templates" element={<LetterTemplates />} />
           <Route path="/business-credit" element={<Index />} />
           <Route path="/credit-monitoring" element={<CreditMonitoring />} />
           <Route path="/credit-repair" element={<CreditRepair />} />
