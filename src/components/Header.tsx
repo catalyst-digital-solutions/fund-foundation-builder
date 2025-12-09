@@ -31,7 +31,7 @@ const Header = () => {
       label: 'For Consumers',
       href: '/for-consumers',
       submenu: [
-        { label: 'Build Credit', href: '#' },
+        { label: 'Build Credit', href: '/build-credit' },
         { label: 'Credit Monitoring', href: '/credit-monitoring' },
         { label: 'Credit Repair (Mesa360)', href: '/credit-repair-2' },
         { label: 'DIY Credit Repair', href: '/diy-credit-repair' },
