@@ -256,7 +256,7 @@ const ArticlesInsights = () => {
       </section>
 
       {/* NEWSLETTER SIGNUP SECTION */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 to-gray-800">
+      <section className="py-16 md:py-24 bg-[#3e3e3e]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           
           <div className="inline-flex items-center justify-center w-16 h-16 bg-[#f9c65d] rounded-full mb-6">
