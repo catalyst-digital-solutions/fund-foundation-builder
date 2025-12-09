@@ -56,9 +56,8 @@ const Resources = () => {
         'Partnership announcements',
         'Client success stories'
       ],
-      link: 'https://www.mesagroupconsulting.com/blog',
-      linkText: 'Read Latest News',
-      external: true
+      link: '/resources/news',
+      linkText: 'Read Latest News'
     },
     {
       icon: Calculator,
@@ -202,25 +201,13 @@ const Resources = () => {
                     </div>
 
                     {/* CTA Button */}
-                    {category.external ? (
-                      <a
-                        href={category.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 w-full group-hover:scale-[1.02]"
-                      >
-                        {category.linkText}
-                        <ArrowRight className="w-5 h-5" />
-                      </a>
-                    ) : (
-                      <Link
-                        to={category.link}
-                        className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 w-full group-hover:scale-[1.02]"
-                      >
-                        {category.linkText}
-                        <ArrowRight className="w-5 h-5" />
-                      </Link>
-                    )}
+                    <Link
+                      to={category.link}
+                      className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 w-full group-hover:scale-[1.02]"
+                    >
+                      {category.linkText}
+                      <ArrowRight className="w-5 h-5" />
+                    </Link>
                   </div>
                 </div>
               );
