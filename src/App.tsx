@@ -25,6 +25,7 @@ import LifeInsurance from "./pages/LifeInsurance";
 import ZeroInterestBusinessFunding from "./pages/ZeroInterestBusinessFunding";
 import BusinessFunding from "./pages/BusinessFunding";
 import BusinessDebtRelief from "./pages/BusinessDebtRelief";
+import MesaNews from "./pages/MesaNews";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/about" element={<AboutUs />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/resources/articles" element={<ArticlesInsights />} />
+          <Route path="/resources/news" element={<MesaNews />} />
           <Route path="/business-credit" element={<Index />} />
           <Route path="/credit-monitoring" element={<CreditMonitoring />} />
           <Route path="/credit-repair" element={<CreditRepair />} />

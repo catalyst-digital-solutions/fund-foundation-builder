@@ -58,7 +58,7 @@ const Header = () => {
       href: '/resources',
       submenu: [
         { label: 'Articles & Insights', href: '/resources/articles' },
-        { label: 'Mesa News', href: 'https://www.mesagroupconsulting.com/blog', external: true },
+        { label: 'Mesa News', href: '/resources/news' },
         { label: 'Financial Calculators', href: '/resources/calculators' },
         { label: 'Letter Templates', href: '/resources/templates' },
       ],
@@ -160,7 +160,7 @@ const Header = () => {
                         >
                           <div className="py-2">
                             {item.submenu.map((subItem) => (
-                              subItem.external ? (
+                              ('external' in subItem && subItem.external) ? (
                                 <a
                                   key={subItem.label}
                                   href={subItem.href}
@@ -266,7 +266,7 @@ const Header = () => {
                       {activeDropdown === item.label && (
                         <div className="ml-4 mt-2 space-y-1">
                           {item.submenu.map((subItem) => (
-                            subItem.external ? (
+                            ('external' in subItem && subItem.external) ? (
                               <a
                                 key={subItem.label}
                                 href={subItem.href}
