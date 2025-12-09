@@ -1,0 +1,284 @@
+import { useState } from 'react';
+import { DollarSign, ArrowLeft, Home, Car, CreditCard, GraduationCap, Wallet, MoreHorizontal } from 'lucide-react';
+import { formatCurrency, getDTIZone } from '@/utils/calculations';
+
+interface DTICalculatorProps {
+  onBack: () => void;
+}
+
+const DTIGauge = ({ percentage }: { percentage: number }) => {
+  const zone = getDTIZone(percentage);
+  
+  return (
+    <div className="space-y-4">
+      <div className="relative h-12 bg-gray-200 rounded-full overflow-hidden">
+        <div className="absolute inset-0 flex">
+          <div className="flex-[36] bg-green-100"></div>
+          <div className="flex-[7] bg-yellow-100"></div>
+          <div className="flex-[7] bg-orange-100"></div>
+          <div className="flex-[50] bg-red-100"></div>
+        </div>
+        <div 
+          className={`absolute h-full ${zone.color} transition-all duration-500`}
+          style={{ width: `${Math.min(percentage, 100)}%` }}
+        />
+      </div>
+      
+      <div className="flex justify-between text-xs text-gray-600 font-medium px-1">
+        <span>0%</span>
+        <span className="text-green-600">36%</span>
+        <span className="text-yellow-600">43%</span>
+        <span className="text-orange-600">50%</span>
+        <span>100%</span>
+      </div>
+      
+      <div className={`text-center text-xl font-bold ${zone.textColor}`}>
+        {zone.label}
+      </div>
+    </div>
+  );
+};
+
+const DTICalculator = ({ onBack }: DTICalculatorProps) => {
+  const [income, setIncome] = useState(0);
+  const [debts, setDebts] = useState({
+    mortgage: 0,
+    carLoan: 0,
+    creditCards: 0,
+    studentLoans: 0,
+    personalLoans: 0,
+    other: 0
+  });
+  const [showResults, setShowResults] = useState(false);
+  const [email, setEmail] = useState('');
+
+  const updateDebt = (field: keyof typeof debts, value: number) => {
+    setDebts({ ...debts, [field]: value || 0 });
+  };
+
+  const calculateDTI = () => {
+    const totalDebt = Object.values(debts).reduce((sum, val) => sum + val, 0);
+    const dtiRatio = income > 0 ? (totalDebt / income) * 100 : 0;
+    
+    const mortgageQualified = dtiRatio < 43;
+    const autoLoanQualified = dtiRatio < 50;
+    
+    const debtReductionForMortgage = Math.max(0, totalDebt - (income * 0.43));
+    const debtReductionForAuto = Math.max(0, totalDebt - (income * 0.50));
+    
+    return { 
+      dtiRatio, 
+      totalDebt,
+      mortgageQualified, 
+      autoLoanQualified, 
+      debtReductionForMortgage,
+      debtReductionForAuto
+    };
+  };
+
+  const handleCalculate = () => {
+    setShowResults(true);
+  };
+
+  const handleEmailSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log('Email submitted:', email);
+  };
+
+  const { dtiRatio, totalDebt, mortgageQualified, autoLoanQualified, debtReductionForMortgage, debtReductionForAuto } = calculateDTI();
+
+  const debtFields = [
+    { key: 'mortgage', label: 'Mortgage/Rent', icon: Home },
+    { key: 'carLoan', label: 'Car Loan', icon: Car },
+    { key: 'creditCards', label: 'Credit Card Minimum Payments', icon: CreditCard },
+    { key: 'studentLoans', label: 'Student Loans', icon: GraduationCap },
+    { key: 'personalLoans', label: 'Personal Loans', icon: Wallet },
+    { key: 'other', label: 'Other Monthly Debts', icon: MoreHorizontal },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-6 md:p-8">
+      {/* Header */}
+      <div className="mb-8">
+        <button 
+          onClick={onBack}
+          className="inline-flex items-center gap-2 text-gray-600 hover:text-amber-600 mb-4 transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Back to Calculators
+        </button>
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          Debt-to-Income Ratio Calculator
+        </h2>
+        <p className="text-gray-600">
+          Find out if you qualify for a mortgage, auto loan, or other major purchase based on your debt-to-income ratio.
+        </p>
+      </div>
+
+      {/* Income Input */}
+      <div className="bg-amber-50 rounded-lg p-6 border border-amber-200 mb-6">
+        <label className="block text-sm font-medium text-gray-700 mb-2">
+          Gross Monthly Income (before taxes)
+        </label>
+        <div className="relative max-w-sm">
+          <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+          <input
+            type="number"
+            value={income || ''}
+            onChange={(e) => setIncome(parseFloat(e.target.value) || 0)}
+            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
+            placeholder="5000"
+            min="0"
+          />
+        </div>
+      </div>
+
+      {/* Debt Inputs */}
+      <div className="space-y-4 mb-8">
+        <h3 className="font-semibold text-gray-900">Monthly Debt Payments</h3>
+        <div className="grid md:grid-cols-2 gap-4">
+          {debtFields.map(({ key, label, icon: Icon }) => (
+            <div key={key} className="bg-gray-50 rounded-lg p-4">
+              <label className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-2">
+                <Icon className="w-4 h-4 text-gray-500" />
+                {label}
+              </label>
+              <div className="relative">
+                <DollarSign className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                <input
+                  type="number"
+                  value={debts[key as keyof typeof debts] || ''}
+                  onChange={(e) => updateDebt(key as keyof typeof debts, parseFloat(e.target.value))}
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
+                  placeholder="0"
+                  min="0"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Calculate Button */}
+      <button
+        onClick={handleCalculate}
+        className="w-full py-4 bg-amber-400 text-gray-900 font-bold text-lg rounded-lg hover:bg-amber-500 transition-colors shadow-lg"
+      >
+        Calculate My DTI Ratio
+      </button>
+
+      {/* Results Section */}
+      {showResults && (
+        <div className="mt-8 space-y-6">
+          {/* DTI Result */}
+          <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg p-6 border border-amber-200">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">
+              Your Debt-to-Income Ratio
+            </h3>
+            <div className="text-5xl font-bold text-gray-900 mb-6">
+              {dtiRatio.toFixed(1)}%
+            </div>
+            <DTIGauge percentage={dtiRatio} />
+            <div className="mt-4 text-sm text-gray-600">
+              <p>Total Monthly Debt: {formatCurrency(totalDebt)}</p>
+              <p>Gross Monthly Income: {formatCurrency(income)}</p>
+            </div>
+          </div>
+
+          {/* Qualification Status */}
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className={`rounded-lg p-6 border ${mortgageQualified ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'}`}>
+              <div className="flex items-center gap-3 mb-2">
+                <Home className={`w-6 h-6 ${mortgageQualified ? 'text-green-600' : 'text-red-600'}`} />
+                <h4 className="font-bold text-gray-900">Mortgage Qualification</h4>
+              </div>
+              <p className={`text-lg font-semibold ${mortgageQualified ? 'text-green-600' : 'text-red-600'}`}>
+                {mortgageQualified ? 'Likely Qualified' : 'May Not Qualify'}
+              </p>
+              <p className="text-sm text-gray-600 mt-2">
+                Most lenders require DTI below 43%
+              </p>
+              {!mortgageQualified && (
+                <p className="text-sm text-red-600 mt-2">
+                  Reduce monthly debt by {formatCurrency(debtReductionForMortgage)} to qualify
+                </p>
+              )}
+            </div>
+            
+            <div className={`rounded-lg p-6 border ${autoLoanQualified ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'}`}>
+              <div className="flex items-center gap-3 mb-2">
+                <Car className={`w-6 h-6 ${autoLoanQualified ? 'text-green-600' : 'text-red-600'}`} />
+                <h4 className="font-bold text-gray-900">Auto Loan Qualification</h4>
+              </div>
+              <p className={`text-lg font-semibold ${autoLoanQualified ? 'text-green-600' : 'text-red-600'}`}>
+                {autoLoanQualified ? 'Likely Qualified' : 'May Not Qualify'}
+              </p>
+              <p className="text-sm text-gray-600 mt-2">
+                Most lenders prefer DTI below 50%
+              </p>
+              {!autoLoanQualified && (
+                <p className="text-sm text-red-600 mt-2">
+                  Reduce monthly debt by {formatCurrency(debtReductionForAuto)} to qualify
+                </p>
+              )}
+            </div>
+          </div>
+
+          {/* Recommendations */}
+          <div className="bg-white border-l-4 border-amber-600 rounded-lg p-6 shadow-sm">
+            <h4 className="font-bold text-gray-900 mb-3">How to Improve Your DTI</h4>
+            <ul className="space-y-2 text-gray-700">
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600 font-bold">•</span>
+                Pay down existing debt to reduce monthly payments
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600 font-bold">•</span>
+                Increase your income through raises or side income
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600 font-bold">•</span>
+                Avoid taking on new debt before applying for loans
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-600 font-bold">•</span>
+                Consider debt consolidation to lower monthly payments
+              </li>
+            </ul>
+          </div>
+
+          {/* Email Capture */}
+          <div className="bg-gray-900 rounded-lg p-6 text-white">
+            <h4 className="font-bold mb-2">Want personalized DTI improvement tips?</h4>
+            <p className="text-gray-300 text-sm mb-4">
+              Enter your email to receive a custom action plan
+            </p>
+            <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-3">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="your@email.com"
+                className="flex-1 px-4 py-3 rounded-lg text-gray-900"
+                required
+              />
+              <button 
+                type="submit"
+                className="px-6 py-3 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors whitespace-nowrap"
+              >
+                Send My Plan
+              </button>
+            </form>
+          </div>
+
+          {/* Disclaimer */}
+          <p className="text-xs text-gray-500 italic">
+            Lender qualification standards vary. This calculator uses general benchmarks. Individual lenders may have different requirements.
+          </p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default DTICalculator;
