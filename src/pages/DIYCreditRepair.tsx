@@ -260,24 +260,24 @@ const DIYCreditRepair = () => {
                 backgroundImage: `url(${creditilyWideWolfLogo})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center center',
-                backgroundSize: '85% auto',
+                backgroundSize: '105% auto',
               }}
             />
             <div className="relative z-10">
-              <h4 className="text-2xl font-bold text-black mb-4">Credit Repair Shouldn't Cost Thousands</h4>
+              <h4 className="text-2xl font-bold text-white mb-4">Credit Repair Shouldn't Cost Thousands</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div>
-                  <div className="text-5xl font-bold text-black mb-2">$1,000 - $3,000+</div>
-                  <div className="text-lg text-black">upfront</div>
-                  <div className="text-sm text-black mt-2">What most companies charge</div>
+                  <div className="text-5xl font-bold text-white mb-2">$1,000 - $3,000+</div>
+                  <div className="text-lg text-white">upfront</div>
+                  <div className="text-sm text-white mt-2">What most companies charge</div>
                 </div>
                 <div>
                   <div className="text-5xl font-bold text-[#f9c65d] mb-2">$39.99/mo</div>
-                  <div className="text-lg text-black"></div>
-                  <div className="text-sm text-black mt-2">What you'll pay with Creditily</div>
+                  <div className="text-lg text-white"></div>
+                  <div className="text-sm text-white mt-2">What you'll pay with Creditily</div>
                 </div>
               </div>
-              <p className="text-black mt-6">
+              <p className="text-white mt-6">
                 Professional tools. No upfront fees. No long-term contracts. Just results.
               </p>
             </div>
