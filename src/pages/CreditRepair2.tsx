@@ -10,6 +10,7 @@ import kgetLogo from "@/assets/kget-17-logo.png";
 import studio17Logo from "@/assets/studio-17-logo.png";
 import telemundoLogo from "@/assets/telemundo-logo.png";
 import cwLogo from "@/assets/cw-logo.png";
+import mesa360HeroImage from "@/assets/mesa360-hero-image.png";
 const CreditRepair2 = () => {
   const handleCTAClick = () => {
     window.open("https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09", "_blank", "noopener,noreferrer");
@@ -170,18 +171,31 @@ const CreditRepair2 = () => {
       
 
       {/* ============================================ */}
-      {/* SECTION 4: THE SOLUTION (Mesa360 Credit System™) */}
+      {/* SECTION 4A: Mesa360 Credit System Hero */}
       {/* ============================================ */}
-      <section id="how-it-works" className="bg-gradient-to-br from-gray-50 to-amber-50 py-16 md:py-24 px-6 md:px-8">
+      <section 
+        id="how-it-works" 
+        className="relative py-20 md:py-28 px-6 md:px-8 bg-cover bg-center"
+        style={{ backgroundImage: `url(${mesa360HeroImage})` }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/60" />
+        
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            The Mesa360 Credit System™: <span className="text-[#f9c65d]">Repair. Rebuild. Optimize.</span>
+          </h2>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+            Unlike cookie-cutter credit repair companies that use generic templates and offshore call centers, Mesa Group provides a <strong className="text-white">personalized, legally compliant credit restoration strategy</strong>—backed by a local team you can actually talk to.
+          </p>
+        </div>
+      </section>
+
+      {/* ============================================ */}
+      {/* SECTION 4B: 3-Step Process Cards */}
+      {/* ============================================ */}
+      <section className="bg-gradient-to-br from-gray-50 to-amber-50 py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3E3E3E] mb-6">
-              The Mesa360 Credit System™: <span className="text-[#f9c65d]">Repair. Rebuild. Optimize.</span>
-            </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Unlike cookie-cutter credit repair companies that use generic templates and offshore call centers, Mesa Group provides a <strong>personalized, legally compliant credit restoration strategy</strong>—backed by a local team you can actually talk to.
-            </p>
-          </div>
 
           {/* 3-Step Process */}
           <div className="grid md:grid-cols-3 gap-8 mb-16 items-stretch">
