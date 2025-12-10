@@ -138,27 +138,27 @@ const Header = () => {
                   contact@mesagroupconsulting.com
                 </a>
               </div>
-              <div className="hidden lg:flex items-center gap-2">
+              <a href="https://www.google.com/maps/dir//5001+California+Ave+Suite+219,+Bakersfield,+CA+93309" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center gap-2 hover:text-[#f9c65d] transition-colors">
                 <MapPin className="w-4 h-4" />
                 <span>5001 California Ave Suite 219 Bakersfield, California 93309</span>
-              </div>
+              </a>
             </div>
 
             {/* Right: Social Icons */}
             <div className="flex items-center gap-3">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
+              <a href="https://www.facebook.com/mesafinanciera1" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
+              <a href="https://www.instagram.com/mesafinanciera/" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
+              <a href="https://x.com/mesafinanciera" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
                 <XIcon />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
+              <a href="https://www.linkedin.com/company/mesa-group-consulting/" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
+              <a href="https://www.tiktok.com/@mesafinanciera?lang=en" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
                 <TikTokIcon />
               </a>
             </div>
@@ -265,7 +265,7 @@ const Header = () => {
                 </div>
                 <div className="text-right">
                   <div className="text-xs text-gray-400">Have Questions?</div>
-                  <a href="tel:6613103040" className="text-sm font-semibold text-white hover:text-[#f9c65d] transition-colors">
+                  <a href="tel:+16613103040" className="text-sm font-semibold text-white hover:text-[#f9c65d] transition-colors">
                     (661) 310-3040
                   </a>
                 </div>
@@ -379,7 +379,7 @@ const Header = () => {
 
             {/* Mobile Phone */}
             <div className="mt-4 pt-4 border-t border-gray-800">
-              <a href="tel:6613103040" className="flex items-center gap-3 px-4 py-3 text-white hover:text-[#f9c65d] transition-colors">
+              <a href="tel:+16613103040" className="flex items-center gap-3 px-4 py-3 text-white hover:text-[#f9c65d] transition-colors">
                 <div className="w-10 h-10 rounded-full bg-[#3e3e3e] flex items-center justify-center">
                   <Phone className="w-5 h-5" />
                 </div>
