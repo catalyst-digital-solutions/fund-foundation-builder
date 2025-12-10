@@ -179,8 +179,8 @@ const Header = () => {
             {/* Divider */}
             <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-6" />
 
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-6 flex-1">
+            {/* Desktop Navigation - Centered */}
+            <nav className="hidden lg:flex items-center justify-center gap-6 flex-1">
               {menuItems.map((item) => (
                 <div
                   key={item.label}
@@ -257,8 +257,11 @@ const Header = () => {
               ))}
             </nav>
 
+            {/* Divider before Phone */}
+            <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-6" />
+
             {/* Right Side: Phone & Dot Grid */}
-            <div className="flex items-center gap-4 ml-auto">
+            <div className="flex items-center gap-4">
               {/* Phone Section */}
               <div className="hidden md:flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#3e3e3e] flex items-center justify-center">
@@ -271,6 +274,9 @@ const Header = () => {
                   </a>
                 </div>
               </div>
+
+              {/* Divider before Dot Grid */}
+              <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
 
               {/* 3x3 Dot Grid - Desktop */}
               <button
