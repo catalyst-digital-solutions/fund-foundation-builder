@@ -11,7 +11,6 @@ import studio17Logo from "@/assets/studio-17-logo.png";
 import telemundoLogo from "@/assets/telemundo-logo.png";
 import cwLogo from "@/assets/cw-logo.png";
 import mesa360HeroImage from "@/assets/mesa360-hero-image.png";
-import mesa360LogoHero from "@/assets/mesa360-logo-hero.png";
 const CreditRepair2 = () => {
   const handleCTAClick = () => {
     window.open("https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09", "_blank", "noopener,noreferrer");
@@ -27,47 +26,42 @@ const CreditRepair2 = () => {
       {/* ============================================ */}
       {/* SECTION 1: HERO */}
       {/* ============================================ */}
-      <section 
-        className="relative py-16 md:py-24 px-6 md:px-8 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${mesa360LogoHero})` }}
-      >
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/50"></div>
+      <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* LEFT COLUMN - Content */}
             <div>
               {/* Eyebrow */}
-              <div className="inline-flex items-center gap-2 bg-amber-400/20 text-[#f9c65d] px-4 py-2 rounded-full text-sm font-medium mb-6 border border-amber-400/30">
+              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Award className="w-4 h-4" />
                 MESA360 CREDIT SYSTEM™
               </div>
 
               {/* H1 Headline */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Stuck with Bad Credit? Our <span className="text-[#f9c65d]">Mesa360 Credit System™</span> Can Help You Fix It.
               </h1>
 
               {/* Subheadline */}
-              <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
-                Remove inaccurate items from your credit report in 45-90 days—plus get 1-on-1 coaching to rebuild your credit and achieve your financial goals. This isn't just credit restoration—it's a <strong className="text-white">complete financial transformation program</strong> powered by our proven Mesa360 Credit System™.
+              <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+                Remove inaccurate items from your credit report in 45-90 days—plus get 1-on-1 coaching to rebuild your credit and achieve your financial goals. This isn't just credit restoration—it's a <strong>complete financial transformation program</strong> powered by our proven Mesa360 Credit System™.
               </p>
 
               {/* Trust Bar */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                <div className="flex items-center gap-2 text-sm text-gray-200">
+                <div className="flex items-center gap-2 text-sm text-gray-700">
                   <Trophy className="w-5 h-5 text-[#f9c65d]" />
-                  <span><strong className="text-white">2,500+</strong> Clients</span>
+                  <span><strong>2,500+</strong> Clients</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-gray-200">
+                <div className="flex items-center gap-2 text-sm text-gray-700">
                   <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                  <span><strong className="text-white">150+</strong> 5-Star Reviews</span>
+                  <span><strong>150+</strong> 5-Star Reviews</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-gray-200">
+                <div className="flex items-center gap-2 text-sm text-gray-700">
                   <Building2 className="w-5 h-5 text-[#f9c65d]" />
                   <span>Bakersfield HQ</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-gray-200">
+                <div className="flex items-center gap-2 text-sm text-gray-700">
                   <Globe className="w-5 h-5 text-[#f9c65d]" />
                   <span>EN/ES/Punjabi</span>
                 </div>
@@ -79,9 +73,9 @@ const CreditRepair2 = () => {
                   <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4">
                     Start Your Credit Transformation →
                   </button>
-                  <p className="text-sm text-gray-300 mt-2">Powered by Mesa Group</p>
+                  <p className="text-sm text-gray-600 mt-2">Powered by Mesa Group</p>
                 </div>
-                <button onClick={() => scrollToSection("how-it-works")} className="text-[#f9c65d] hover:text-[#bb9446] font-semibold underline underline-offset-4 mt-3">
+                <button onClick={() => scrollToSection("how-it-works")} className="text-[#bb9446] hover:text-[#9a7a3a] font-semibold underline underline-offset-4 mt-3">
                   Get Free Credit Analysis
                 </button>
               </div>
