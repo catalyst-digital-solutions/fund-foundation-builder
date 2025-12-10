@@ -124,7 +124,7 @@ const Header = () => {
               <img 
                 src={mesaGroupLogo} 
                 alt="Mesa Group Consulting" 
-                className="h-[60px] w-auto"
+                className="h-[36px] w-auto"
               />
             </Link>
 
