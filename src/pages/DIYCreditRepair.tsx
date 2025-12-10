@@ -255,26 +255,26 @@ const DIYCreditRepair = () => {
           <div className="relative bg-[#6c6c6c] rounded-lg p-8 mt-12 text-center overflow-hidden">
             {/* Watermark Background */}
             <div 
-              className="absolute inset-0 opacity-[0.12] pointer-events-none"
+              className="absolute inset-0 opacity-[0.25] pointer-events-none"
               style={{
                 backgroundImage: `url(${creditilyWideWolfLogo})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center center',
-                backgroundSize: '80% auto',
+                backgroundSize: '85% auto',
               }}
             />
             <div className="relative z-10">
               <h4 className="text-2xl font-bold text-black mb-4">Credit Repair Shouldn't Cost Thousands</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div>
-                  <div className="text-5xl font-bold text-gray-400 mb-2">$1,000 - $3,000+</div>
-                  <div className="text-lg text-gray-300">upfront</div>
-                  <div className="text-sm text-gray-400 mt-2">What most companies charge</div>
+                  <div className="text-5xl font-bold text-black mb-2">$1,000 - $3,000+</div>
+                  <div className="text-lg text-black">upfront</div>
+                  <div className="text-sm text-black mt-2">What most companies charge</div>
                 </div>
                 <div>
                   <div className="text-5xl font-bold text-[#f9c65d] mb-2">$39.99/mo</div>
-                  <div className="text-lg text-gray-300"></div>
-                  <div className="text-sm text-gray-400 mt-2">What you'll pay with Creditily</div>
+                  <div className="text-lg text-black"></div>
+                  <div className="text-sm text-black mt-2">What you'll pay with Creditily</div>
                 </div>
               </div>
               <p className="text-black mt-6">
