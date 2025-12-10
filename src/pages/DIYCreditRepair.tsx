@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity, X, Home, Scale, Gavel, Check, ChevronDown } from 'lucide-react';
 import creditilyLogo from "@/assets/creditily-wolf-logo.svg";
+import creditilyWideWolfLogo from "@/assets/creditily-wide-wolf-logo.svg";
 import EmotionalCTA1 from "@/components/diy-credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/diy-credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/diy-credit-repair/sections/EmotionalCTA3";
@@ -276,14 +277,25 @@ const DIYCreditRepair = () => {
       <EmotionalCTA1 />
 
       {/* SECTION 3: HOW IT WORKS */}
-      <section className="bg-muted py-16 md:py-24 px-6 md:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative bg-[#2c2c2c] py-16 md:py-24 px-6 md:px-8 overflow-hidden">
+        {/* Watermark Background */}
+        <div 
+          className="absolute inset-0 opacity-[0.04] pointer-events-none"
+          style={{
+            backgroundImage: `url(${creditilyWideWolfLogo})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center center',
+            backgroundSize: '80% auto',
+          }}
+        />
+        
+        <div className="max-w-7xl mx-auto relative z-10">
           
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-            Simple Steps. Powerful Results.
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+            Simple Steps. <span className="text-[#f9c65d]">Powerful Results.</span>
           </h2>
           
-          <p className="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
+          <p className="text-lg text-gray-300 mb-12 text-center max-w-3xl mx-auto">
             Our software guides you through every move — you're never doing this alone.
           </p>
           
@@ -291,81 +303,81 @@ const DIYCreditRepair = () => {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
             
             {/* Step 1 */}
-            <div className="bg-white rounded-lg p-6 text-center shadow-md">
-              <div className="w-16 h-16 bg-primary text-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/10">
+              <div className="w-16 h-16 bg-[#f9c65d] text-[#2c2c2c] rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 1
               </div>
               <div className="flex justify-center mb-4">
-                <ClipboardList className="w-10 h-10 text-gray-700" />
+                <ClipboardList className="w-10 h-10 text-[#f9c65d]" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">
+              <h3 className="text-lg font-semibold text-white mb-3">
                 Import Your Reports
               </h3>
-              <p className="text-sm text-gray-700">
+              <p className="text-sm text-gray-300">
                 Upload your 3-bureau report. AI analyzes every negative item instantly.
               </p>
             </div>
             
             {/* Step 2 */}
-            <div className="bg-white rounded-lg p-6 text-center shadow-md">
-              <div className="w-16 h-16 bg-primary text-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/10">
+              <div className="w-16 h-16 bg-[#f9c65d] text-[#2c2c2c] rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 2
               </div>
               <div className="flex justify-center mb-4">
-                <Bot className="w-10 h-10 text-purple-600" />
+                <Bot className="w-10 h-10 text-[#f9c65d]" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">
+              <h3 className="text-lg font-semibold text-white mb-3">
                 Get AI Recommendations
               </h3>
-              <p className="text-sm text-gray-700">
+              <p className="text-sm text-gray-300">
                 See exactly what to dispute and why — prioritized for impact.
               </p>
             </div>
             
             {/* Step 3 */}
-            <div className="bg-white rounded-lg p-6 text-center shadow-md">
-              <div className="w-16 h-16 bg-primary text-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/10">
+              <div className="w-16 h-16 bg-[#f9c65d] text-[#2c2c2c] rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 3
               </div>
               <div className="flex justify-center mb-4">
-                <PenTool className="w-10 h-10 text-blue-600" />
+                <PenTool className="w-10 h-10 text-[#f9c65d]" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">
+              <h3 className="text-lg font-semibold text-white mb-3">
                 Generate Letters
               </h3>
-              <p className="text-sm text-gray-700">
+              <p className="text-sm text-gray-300">
                 Professional dispute letters citing federal law — created in seconds.
               </p>
             </div>
             
             {/* Step 4 */}
-            <div className="bg-white rounded-lg p-6 text-center shadow-md">
-              <div className="w-16 h-16 bg-primary text-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/10">
+              <div className="w-16 h-16 bg-[#f9c65d] text-[#2c2c2c] rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 4
               </div>
               <div className="flex justify-center mb-4">
-                <Mail className="w-10 h-10 text-green-600" />
+                <Mail className="w-10 h-10 text-[#f9c65d]" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">
+              <h3 className="text-lg font-semibold text-white mb-3">
                 Send Your Disputes
               </h3>
-              <p className="text-sm text-gray-700">
+              <p className="text-sm text-gray-300">
                 Print and mail or send digitally. Track every deadline automatically.
               </p>
             </div>
             
             {/* Step 5 */}
-            <div className="bg-white rounded-lg p-6 text-center shadow-md">
-              <div className="w-16 h-16 bg-primary text-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center border border-white/10">
+              <div className="w-16 h-16 bg-[#f9c65d] text-[#2c2c2c] rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 5
               </div>
               <div className="flex justify-center mb-4">
-                <TrendingUp className="w-10 h-10 text-blue-600" />
+                <TrendingUp className="w-10 h-10 text-[#f9c65d]" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">
+              <h3 className="text-lg font-semibold text-white mb-3">
                 Track Your Results
               </h3>
-              <p className="text-sm text-gray-700">
+              <p className="text-sm text-gray-300">
                 Monitor responses, pull updated reports, and watch your score climb.
               </p>
             </div>
@@ -373,25 +385,25 @@ const DIYCreditRepair = () => {
           </div>
           
           {/* Timeline Expectation */}
-          <div className="bg-white rounded-lg p-8 mt-12 max-w-4xl mx-auto">
-            <h4 className="text-xl font-bold text-foreground mb-4 text-center">
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 mt-12 max-w-4xl mx-auto border border-white/10">
+            <h4 className="text-xl font-bold text-white mb-4 text-center">
               What the Process Looks Like
             </h4>
-            <div className="space-y-3 text-gray-700">
+            <div className="space-y-3 text-gray-300">
               <div className="flex items-start gap-3">
-                <span className="font-semibold text-[#bb9446] min-w-[120px]">First Round:</span>
+                <span className="font-semibold text-[#f9c65d] min-w-[120px]">First Round:</span>
                 <span>Import reports, identify negative items, send your first disputes</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="font-semibold text-[#bb9446] min-w-[120px]">30 Days Later:</span>
+                <span className="font-semibold text-[#f9c65d] min-w-[120px]">30 Days Later:</span>
                 <span>Bureaus respond (they're required to by law). Some items deleted, some verified.</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="font-semibold text-[#bb9446] min-w-[120px]">Next Round:</span>
+                <span className="font-semibold text-[#f9c65d] min-w-[120px]">Next Round:</span>
                 <span>Dispute verified items with a different strategy</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="font-semibold text-[#bb9446] min-w-[120px]">Ongoing:</span>
+                <span className="font-semibold text-[#f9c65d] min-w-[120px]">Ongoing:</span>
                 <span>Continue cycles until your report is clean. Credit repair is a marathon — not a sprint.</span>
               </div>
             </div>
