@@ -252,7 +252,7 @@ const DIYCreditRepair = () => {
           </div>
           
           {/* Cost Comparison */}
-          <div className="relative bg-[#2c2c2c] rounded-lg p-8 mt-12 text-center overflow-hidden">
+          <div className="relative bg-[#6c6c6c] rounded-lg p-8 mt-12 text-center overflow-hidden">
             {/* Watermark Background */}
             <div 
               className="absolute inset-0 opacity-[0.12] pointer-events-none"
