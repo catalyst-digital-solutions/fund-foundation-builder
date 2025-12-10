@@ -252,23 +252,35 @@ const DIYCreditRepair = () => {
           </div>
           
           {/* Cost Comparison */}
-          <div className="bg-accent rounded-lg p-8 mt-12 text-center">
-            <h4 className="text-2xl font-bold text-foreground mb-4">Credit Repair Shouldn't Cost Thousands</h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div>
-                <div className="text-5xl font-bold text-gray-400 mb-2">$1,000 - $3,000+</div>
-                <div className="text-lg text-gray-700">upfront</div>
-                <div className="text-sm text-gray-600 mt-2">What most companies charge</div>
+          <div className="relative bg-[#2c2c2c] rounded-lg p-8 mt-12 text-center overflow-hidden">
+            {/* Watermark Background */}
+            <div 
+              className="absolute inset-0 opacity-[0.04] pointer-events-none"
+              style={{
+                backgroundImage: `url(${creditilyWideWolfLogo})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center center',
+                backgroundSize: '80% auto',
+              }}
+            />
+            <div className="relative z-10">
+              <h4 className="text-2xl font-bold text-white mb-4">Credit Repair Shouldn't Cost Thousands</h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div>
+                  <div className="text-5xl font-bold text-gray-400 mb-2">$1,000 - $3,000+</div>
+                  <div className="text-lg text-gray-300">upfront</div>
+                  <div className="text-sm text-gray-400 mt-2">What most companies charge</div>
+                </div>
+                <div>
+                  <div className="text-5xl font-bold text-[#f9c65d] mb-2">$39.99/mo</div>
+                  <div className="text-lg text-gray-300"></div>
+                  <div className="text-sm text-gray-400 mt-2">What you'll pay with Creditily</div>
+                </div>
               </div>
-              <div>
-                <div className="text-5xl font-bold text-white mb-2">$39.99/mo</div>
-                <div className="text-lg text-gray-700"></div>
-                <div className="text-sm text-gray-600 mt-2">What you'll pay with Creditily</div>
-              </div>
+              <p className="text-gray-300 mt-6">
+                Professional tools. No upfront fees. No long-term contracts. Just results.
+              </p>
             </div>
-            <p className="text-gray-700 mt-6">
-              Professional tools. No upfront fees. No long-term contracts. Just results.
-            </p>
           </div>
           
         </div>
@@ -277,19 +289,8 @@ const DIYCreditRepair = () => {
       <EmotionalCTA1 />
 
       {/* SECTION 3: HOW IT WORKS */}
-      <section className="relative bg-[#2c2c2c] py-16 md:py-24 px-6 md:px-8 overflow-hidden">
-        {/* Watermark Background */}
-        <div 
-          className="absolute inset-0 opacity-[0.04] pointer-events-none"
-          style={{
-            backgroundImage: `url(${creditilyWideWolfLogo})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center center',
-            backgroundSize: '80% auto',
-          }}
-        />
-        
-        <div className="max-w-7xl mx-auto relative z-10">
+      <section className="bg-[#2c2c2c] py-16 md:py-24 px-6 md:px-8">
+        <div className="max-w-7xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             Simple Steps. <span className="text-[#f9c65d]">Powerful Results.</span>
