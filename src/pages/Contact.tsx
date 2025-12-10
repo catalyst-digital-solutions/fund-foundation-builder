@@ -307,7 +307,7 @@ const Contact = () => {
               src="https://maps.google.com/maps?q=5001%20California%20Ave%20Suite%20219%20Bakersfield%2C%20California%2093309&t=m&z=14&output=embed&iwloc=near"
               title="Mesa Group Consulting Office - 5001 California Ave Suite 219 Bakersfield, California 93309"
               aria-label="Mesa Group Consulting Office Location"
-              className="w-full h-96 md:h-[500px]"
+              className="w-full h-96 md:h-[500px] grayscale"
               loading="lazy"
               style={{ border: 0 }}
             />
