@@ -91,9 +91,9 @@ const Header = () => {
   return (
     <header className="w-full bg-black text-white">
       {/* Top Info Bar */}
-      <div className="border-b border-white/20">
-        <div className="max-w-[1840px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between py-2 text-xs sm:text-sm">
+      <div className="border-b border-white/20 h-[45px]">
+        <div className="max-w-[1840px] mx-auto px-4 sm:px-6 lg:px-8 h-full">
+          <div className="flex items-center justify-between h-full text-xs sm:text-sm">
             {/* Left: Hours */}
             <div className="flex items-center gap-2 text-white">
               <Clock className="w-4 h-4" />
@@ -140,7 +140,7 @@ const Header = () => {
       {/* Main Navigation */}
       <div className="border-b border-gray-800">
         <div className="max-w-[1840px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center h-[60px]">
+          <div className="flex items-center h-[105px]">
             {/* Logo */}
             <Link to="/" className="flex items-center flex-shrink-0">
               <img 
