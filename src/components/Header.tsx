@@ -97,6 +97,7 @@ const Header = () => {
     },
     {
       label: 'For Businesses',
+      href: '/for-businesses',
       submenu: [
         { label: '0% Interest Business Funding', href: '/zero-interest-business-funding' },
         { label: 'Business Funding', href: '/business-funding' },
