@@ -115,7 +115,7 @@ const Header = () => {
         { label: 'Letter Templates', href: '/resources/templates' },
       ],
     },
-    { label: 'Contact', href: 'https://www.mesagroupconsulting.com/contact-us', external: true },
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -236,15 +236,6 @@ const Header = () => {
                         </div>
                       )}
                     </>
-                  ) : item.external ? (
-                    <a
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white hover:text-[#f9c65d] transition-colors text-sm font-medium"
-                    >
-                      {item.label}
-                    </a>
                   ) : (
                     <Link
                       to={item.href}
@@ -361,16 +352,6 @@ const Header = () => {
                         </div>
                       )}
                     </>
-                  ) : item.external ? (
-                    <a
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="block px-4 py-3 text-white hover:text-[#f9c65d] hover:bg-gray-900 rounded-lg transition-colors font-medium"
-                    >
-                      {item.label}
-                    </a>
                   ) : (
                     <Link
                       to={item.href}

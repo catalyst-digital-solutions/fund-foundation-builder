@@ -31,6 +31,7 @@ import ZeroInterestBusinessFunding from "./pages/ZeroInterestBusinessFunding";
 import BusinessFunding from "./pages/BusinessFunding";
 import BusinessDebtRelief from "./pages/BusinessDebtRelief";
 import MesaNews from "./pages/MesaNews";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -68,6 +69,7 @@ const App = () => (
           <Route path="/zero-interest-business-funding" element={<ZeroInterestBusinessFunding />} />
           <Route path="/business-funding" element={<BusinessFunding />} />
           <Route path="/business-debt-relief" element={<BusinessDebtRelief />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
