@@ -175,7 +175,7 @@ const CreditRepair2 = () => {
       {/* ============================================ */}
       <section 
         id="how-it-works" 
-        className="relative py-20 md:py-28 px-6 md:px-8 bg-cover bg-center"
+        className="relative py-20 md:py-28 px-6 md:px-8 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url(${mesa360HeroImage})` }}
       >
         {/* Dark overlay */}
