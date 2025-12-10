@@ -39,7 +39,7 @@ const Contact = () => {
                 CONTACT US
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Get Your <span className="text-amber-600">Free Credit Report Analysis</span> & Personalized Financial Strategy
+                Get Your <span className="text-[#bb9446]">Free Credit Report Analysis</span> & Personalized Financial Strategy
               </h1>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Have questions about your credit report or financial options? Our team is ready to help. Fill out this form to schedule your complimentary credit analysis with one of our Bakersfield specialists. We'll review your Experian, Equifax, and TransUnion reports, identify improvement opportunities, and develop a customized strategy for your unique situation. Most inquiries receive a response within 24 hours.
@@ -328,7 +328,7 @@ const Contact = () => {
 
             {/* Heading */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
-              Subscribe to our <span className="text-amber-600">Newsletter</span> for free credit tips.
+              Subscribe to our <span className="text-[#bb9446]">Newsletter</span> for free credit tips.
             </h2>
 
             {/* Form */}
