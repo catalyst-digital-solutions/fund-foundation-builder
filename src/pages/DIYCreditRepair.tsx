@@ -264,7 +264,7 @@ const DIYCreditRepair = () => {
               }}
             />
             <div className="relative z-10">
-              <h4 className="text-2xl font-bold text-white mb-4">Credit Repair Shouldn't Cost Thousands</h4>
+              <h4 className="text-2xl font-bold text-black mb-4">Credit Repair Shouldn't Cost Thousands</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div>
                   <div className="text-5xl font-bold text-gray-400 mb-2">$1,000 - $3,000+</div>
@@ -277,7 +277,7 @@ const DIYCreditRepair = () => {
                   <div className="text-sm text-gray-400 mt-2">What you'll pay with Creditily</div>
                 </div>
               </div>
-              <p className="text-gray-300 mt-6">
+              <p className="text-black mt-6">
                 Professional tools. No upfront fees. No long-term contracts. Just results.
               </p>
             </div>
