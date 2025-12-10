@@ -260,7 +260,7 @@ const DIYCreditRepair = () => {
                 backgroundImage: `url(${creditilyWideWolfLogo})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center center',
-                backgroundSize: '105% auto',
+                backgroundSize: '85% auto',
               }}
             />
             <div className="relative z-10">
