@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity, X, Home, Scale, Gavel, Check, ChevronDown } from 'lucide-react';
+import creditilyLogo from "@/assets/creditily-logo.png";
 import EmotionalCTA1 from "@/components/diy-credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/diy-credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/diy-credit-repair/sections/EmotionalCTA3";
@@ -135,26 +136,12 @@ const DIYCreditRepair = () => {
             </div>
             
             {/* RIGHT COLUMN - Visual */}
-            <div className="hidden md:block">
-              <div className="bg-white rounded-lg shadow-2xl p-6 border-2 border-secondary">
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between p-4 bg-gray-50 rounded">
-                    <span className="font-semibold text-foreground">Late Payment #1</span>
-                    <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Removed ✓</span>
-                  </div>
-                  <div className="flex items-center justify-between p-4 bg-gray-50 rounded">
-                    <span className="font-semibold text-foreground">Collection Account</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Disputing...</span>
-                  </div>
-                  <div className="flex items-center justify-between p-4 bg-gray-50 rounded">
-                    <span className="font-semibold text-foreground">Credit Score</span>
-                    <span className="text-2xl font-bold text-primary">658 → 712</span>
-                  </div>
-                </div>
-                <p className="text-center text-sm text-gray-600 mt-4 italic">
-                  Track your progress in real-time
-                </p>
-              </div>
+            <div className="hidden md:flex items-center justify-center">
+              <img 
+                src={creditilyLogo} 
+                alt="Creditily - DIY Credit Repair Software" 
+                className="max-w-full h-auto"
+              />
             </div>
             
           </div>
