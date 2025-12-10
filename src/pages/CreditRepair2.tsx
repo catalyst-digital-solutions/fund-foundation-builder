@@ -11,6 +11,7 @@ import studio17Logo from "@/assets/studio-17-logo.png";
 import telemundoLogo from "@/assets/telemundo-logo.png";
 import cwLogo from "@/assets/cw-logo.png";
 import mesa360HeroImage from "@/assets/mesa360-hero-image.png";
+import mesa360LogoMockup from "@/assets/mesa360-logo-mockup.jpg";
 const CreditRepair2 = () => {
   const handleCTAClick = () => {
     window.open("https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09", "_blank", "noopener,noreferrer");
@@ -83,7 +84,7 @@ const CreditRepair2 = () => {
 
             {/* RIGHT COLUMN - Hero Image */}
             <div className="hidden lg:block">
-              <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=600&h=700&q=80" alt="Happy client achieving financial freedom with Mesa Group" className="rounded-2xl shadow-2xl" loading="eager" />
+              <img src={mesa360LogoMockup} alt="Mesa360 Credit System logo with golden arrows" className="rounded-2xl shadow-2xl" loading="eager" />
             </div>
           </div>
         </div>
