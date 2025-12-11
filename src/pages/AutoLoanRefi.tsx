@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import EmotionalCTA1 from '@/components/auto-loan-refi/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/auto-loan-refi/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/auto-loan-refi/sections/EmotionalCTA3';
+import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 import { Lock, Zap, CircleDollarSign, TrendingUp, TrendingDown, Search, BarChart3, Landmark, Lightbulb, Star, Banknote, Ban, UserMinus, FileText, Shield, AlertTriangle, LockKeyhole, CheckCircle2, ChevronDown, Check } from 'lucide-react';
 
 const AutoLoanRefi = () => {
@@ -116,12 +117,15 @@ const AutoLoanRefi = () => {
               </ul>
               
               {/* Primary CTA */}
-              <button 
-                onClick={handleCTA}
-                className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4 w-full md:w-auto"
-              >
-                Check My New Rate
-              </button>
+              <div className="inline-block">
+                <button 
+                  onClick={handleCTA}
+                  className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4 w-full md:w-auto"
+                >
+                  Check My New Rate
+                </button>
+                <PoweredBySuperMoney className="mt-3" />
+              </div>
               
               <p className="text-sm text-gray-600 mt-4">
                 Free comparison. No credit score impact. See offers in 60 seconds.
@@ -1036,11 +1040,11 @@ const AutoLoanRefi = () => {
             >
               Check My New Rate →
             </button>
+            <PoweredBySuperMoney className="mb-4" />
             
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            <p className="text-sm text-gray-500">Powered by Mesa Group</p>
           </div>
         </div>
       </section>
