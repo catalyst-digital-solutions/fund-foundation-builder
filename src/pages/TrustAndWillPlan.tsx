@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import EmotionalCTA1 from '@/components/trust-and-will/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/trust-and-will/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/trust-and-will/sections/EmotionalCTA3';
+import PoweredByTrustAndWill from '@/components/PoweredByTrustAndWill';
 import { 
   Check, Scale, Lock, CheckCircle, FileText, Building2, Heart, 
   Handshake, Users, Home, Hospital, Smile, AlertTriangle, 
@@ -123,12 +124,15 @@ const TrustAndWillPlan = () => {
               </ul>
               
               {/* Primary CTA */}
-              <button 
-                onClick={handleCTAClick}
-                className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4 w-full md:w-auto"
-              >
-                Create Your Estate Plan
-              </button>
+              <div className="inline-block">
+                <button 
+                  onClick={handleCTAClick}
+                  className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4 w-full md:w-auto"
+                >
+                  Create Your Estate Plan
+                </button>
+                <PoweredByTrustAndWill className="mt-3" />
+              </div>
               
               <p className="text-sm text-gray-600 mt-4">
                 Takes 20 minutes. Instant download. No appointments required.
@@ -406,13 +410,15 @@ const TrustAndWillPlan = () => {
                 </div>
               </div>
               
-              <button
-                onClick={handleCTAClick}
-                className="w-full mt-6 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
-              >
-                Choose Will Plan
-              </button>
-              <p className="text-xs text-gray-500 mt-2 text-center">Powered by estateOS</p>
+              <div className="mt-6">
+                <button
+                  onClick={handleCTAClick}
+                  className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
+                >
+                  Choose Will Plan
+                </button>
+                <PoweredByTrustAndWill className="mt-2" />
+              </div>
             </div>
             
             {/* Trust Estate Plan */}
@@ -493,13 +499,15 @@ const TrustAndWillPlan = () => {
                 </div>
               </div>
               
-              <button
-                onClick={handleCTAClick}
-                className="w-full mt-6 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
-              >
-                Choose Trust Plan
-              </button>
-              <p className="text-xs text-gray-500 mt-2 text-center">Powered by estateOS</p>
+              <div className="mt-6">
+                <button
+                  onClick={handleCTAClick}
+                  className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
+                >
+                  Choose Trust Plan
+                </button>
+                <PoweredByTrustAndWill className="mt-2" />
+              </div>
             </div>
             
           </div>
@@ -621,13 +629,15 @@ const TrustAndWillPlan = () => {
           
           {/* CTA */}
           <div className="text-center">
-            <button
-              onClick={handleCTAClick}
-              className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4"
-            >
-              Get Started Now
-            </button>
-            <p className="text-xs text-gray-500 mt-2">Powered by estateOS</p>
+            <div className="inline-block">
+              <button
+                onClick={handleCTAClick}
+                className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4"
+              >
+                Get Started Now
+              </button>
+              <PoweredByTrustAndWill className="mt-2" />
+            </div>
             <p className="text-sm text-gray-600 mt-4">
               20 minutes to complete • No credit card to start • 30-day guarantee
             </p>
@@ -691,13 +701,15 @@ const TrustAndWillPlan = () => {
                 </div>
               </div>
               
-              <button
-                onClick={handleCTAClick}
-                className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
-              >
-                Get Will Plan
-              </button>
-              <p className="text-xs text-gray-500 mt-2 text-center">Powered by estateOS</p>
+              <div>
+                <button
+                  onClick={handleCTAClick}
+                  className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
+                >
+                  Get Will Plan
+                </button>
+                <PoweredByTrustAndWill className="mt-2" />
+              </div>
             </div>
             
             {/* Trust Pricing */}
@@ -758,13 +770,15 @@ const TrustAndWillPlan = () => {
                 </div>
               </div>
               
-              <button
-                onClick={handleCTAClick}
-                className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
-              >
-                Get Trust Plan
-              </button>
-              <p className="text-xs text-gray-500 mt-2 text-center">Powered by estateOS</p>
+              <div>
+                <button
+                  onClick={handleCTAClick}
+                  className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold px-6 py-3"
+                >
+                  Get Trust Plan
+                </button>
+                <PoweredByTrustAndWill className="mt-2" />
+              </div>
             </div>
             
           </div>
@@ -1337,7 +1351,7 @@ const TrustAndWillPlan = () => {
               >
                 Choose Trust Plan
               </button>
-              <p className="text-xs text-white/80 mb-4 text-center">Powered by estateOS</p>
+              <PoweredByTrustAndWill variant="dark" className="mb-4" />
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4" />
@@ -1367,7 +1381,7 @@ const TrustAndWillPlan = () => {
                 Choose Will Plan
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
-              <p className="text-xs text-gray-500 mt-2 text-center">Powered by estateOS</p>
+              <PoweredByTrustAndWill className="mt-2" />
               <div className="mt-4 space-y-2 text-sm">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-green-600" />

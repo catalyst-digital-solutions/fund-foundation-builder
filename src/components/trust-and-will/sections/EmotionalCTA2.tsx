@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/trust-and-will-cta-02.png';
+import PoweredByTrustAndWill from '@/components/PoweredByTrustAndWill';
 
 const EmotionalCTA2 = () => {
   const handleClick = () => {
@@ -21,15 +22,15 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Trust & Will makes it attorney-simple without attorney prices. Answer guided questions online. Get state-specific documents instantly. Name guardians, divide assets, avoid probate—all legally valid. We make protection affordable and achievable.
         </p>
-        <button
-          onClick={handleClick}
-          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
-        >
-          Start Your Plan Now →
-        </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by estateOS
-        </p>
+        <div className="inline-block">
+          <button
+            onClick={handleClick}
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          >
+            Start Your Plan Now →
+          </button>
+          <PoweredByTrustAndWill variant="dark" className="mt-3" />
+        </div>
       </div>
     </section>
   );

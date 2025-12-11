@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/trust-and-will-cta-03.png';
+import PoweredByTrustAndWill from '@/components/PoweredByTrustAndWill';
 
 const EmotionalCTA3 = () => {
   const handleClick = () => {
@@ -21,15 +22,15 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine knowing your kids will be raised by people you trust. Your assets going exactly where you want. No family fighting in court. No state interference. That's the peace a proper estate plan creates. Your family's protection is one decision away.
         </p>
-        <button
-          onClick={handleClick}
-          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
-        >
-          Secure Your Legacy →
-        </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by estateOS
-        </p>
+        <div className="inline-block">
+          <button
+            onClick={handleClick}
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          >
+            Secure Your Legacy →
+          </button>
+          <PoweredByTrustAndWill variant="dark" className="mt-3" />
+        </div>
       </div>
     </section>
   );
