@@ -90,7 +90,7 @@ const Contact = () => {
       {/* In-Office Meeting Section - Desktop */}
       <section className="py-16 md:py-24 hidden md:block">
         <div className="container mx-auto px-4">
-          <div className="bg-gray-900 rounded-3xl p-12 grid md:grid-cols-2 gap-12 items-center">
+          <div className="bg-[#3e3e3e] rounded-3xl p-12 grid md:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
             <div className="space-y-6">
               <div className="inline-block bg-amber-400 text-gray-900 px-3 py-1 rounded-md text-sm font-semibold">
@@ -143,7 +143,7 @@ const Contact = () => {
       {/* In-Office Meeting Section - Mobile */}
       <section className="py-16 md:hidden">
         <div className="container mx-auto px-4">
-          <div className="bg-gray-900 rounded-3xl p-8 space-y-8">
+          <div className="bg-[#3e3e3e] rounded-3xl p-8 space-y-8">
             {/* Content */}
             <div className="space-y-4">
               <div className="inline-block bg-amber-400 text-gray-900 px-3 py-1 rounded-md text-sm font-semibold">
