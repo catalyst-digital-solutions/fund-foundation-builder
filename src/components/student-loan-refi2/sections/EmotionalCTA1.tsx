@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/student-loan-refi-cta-01.png';
+import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 
 const EmotionalCTA1 = () => {
   const handleClick = () => {
@@ -27,9 +28,7 @@ const EmotionalCTA1 = () => {
         >
           Break Free from High Rates →
         </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by SuperMoney
-        </p>
+        <PoweredBySuperMoney variant="dark" className="mt-4" />
       </div>
     </section>
   );

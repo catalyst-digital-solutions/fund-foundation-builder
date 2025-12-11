@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import EmotionalCTA1 from '@/components/student-loan-refi2/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/student-loan-refi2/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/student-loan-refi2/sections/EmotionalCTA3';
+import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 import { 
   TrendingDown, 
   Layers, 
@@ -114,16 +115,19 @@ const StudentLoanRefi2 = () => {
               Compare personalized refinancing offers from multiple lenders in minutes. It's free, easy, and won't affect your credit score.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <a
-                href={affiliateLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
-              >
-                Check Your Rates Now
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
+              <div className="inline-block">
+                <a
+                  href={affiliateLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+                >
+                  Check Your Rates Now
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
+                <PoweredBySuperMoney className="mt-3" />
+              </div>
               
               <a
                 href="#how-it-works"
@@ -344,15 +348,18 @@ const StudentLoanRefi2 = () => {
           </div>
 
           <div className="text-center mt-12">
-            <a
-              href={affiliateLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
-            >
-              Get Started - Check Rates
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            <div className="inline-block">
+              <a
+                href={affiliateLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+              >
+                Get Started - Check Rates
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <PoweredBySuperMoney className="mt-3" />
+            </div>
           </div>
         </div>
       </section>
@@ -565,15 +572,18 @@ const StudentLoanRefi2 = () => {
             </div>
 
             <div className="text-center mt-8">
-              <a
-                href={affiliateLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
-              >
-                Check My Actual Rate
-                <ArrowRight className="w-5 h-5" />
-              </a>
+              <div className="inline-block">
+                <a
+                  href={affiliateLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+                >
+                  Check My Actual Rate
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+                <PoweredBySuperMoney className="mt-3" />
+              </div>
               <p className="text-sm text-gray-600 mt-4">
                 Won't affect your credit score • Takes 2 minutes
               </p>
@@ -775,15 +785,18 @@ const StudentLoanRefi2 = () => {
           </div>
 
           <div className="text-center mt-12">
-            <a
-              href={affiliateLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
-            >
-              Get Your Personalized Rates
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            <div className="inline-block">
+              <a
+                href={affiliateLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+              >
+                Get Your Personalized Rates
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <PoweredBySuperMoney className="mt-3" />
+            </div>
           </div>
         </div>
       </section>
@@ -893,15 +906,18 @@ const StudentLoanRefi2 = () => {
           </div>
 
           <div className="text-center mt-12">
-            <a
-              href={affiliateLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
-            >
-              I Understand - Check My Rates
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            <div className="inline-block">
+              <a
+                href={affiliateLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+              >
+                I Understand - Check My Rates
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <PoweredBySuperMoney className="mt-3" />
+            </div>
           </div>
         </div>
       </section>
@@ -963,11 +979,11 @@ const StudentLoanRefi2 = () => {
             >
               Check My New Rate →
             </a>
+            <PoweredBySuperMoney className="mb-4" />
             
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            <p className="text-sm text-gray-500">Free comparison • Soft credit check only • No obligation</p>
           </div>
         </div>
       </section>
