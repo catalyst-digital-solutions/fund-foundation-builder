@@ -99,8 +99,8 @@ const CreditCards = () => {
           </p>
           
           <div className="flex items-center justify-center gap-2 mt-3">
-            <span className="text-xs" style={{ color: '#4B5462' }}>Powered by</span>
-            <img src={supermoneyLogo} alt="SuperMoney" className="h-4" />
+            <span className="text-sm" style={{ color: '#4B5462' }}>Powered by</span>
+            <img src={supermoneyLogo} alt="SuperMoney" className="h-5" />
           </div>
           
           <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
@@ -427,8 +427,8 @@ const CreditCards = () => {
               Compare All Cards
             </button>
             <div className="flex items-center justify-center gap-2 mt-3">
-              <span className="text-xs" style={{ color: '#4B5462' }}>Powered by</span>
-              <img src={supermoneyLogo} alt="SuperMoney" className="h-4" />
+              <span className="text-sm" style={{ color: '#4B5462' }}>Powered by</span>
+              <img src={supermoneyLogo} alt="SuperMoney" className="h-5" />
             </div>
           </div>
           
@@ -770,8 +770,8 @@ const CreditCards = () => {
               Find Cards for Your Score
             </button>
             <div className="flex items-center justify-center gap-2 mt-3">
-              <span className="text-xs" style={{ color: '#4B5462' }}>Powered by</span>
-              <img src={supermoneyLogo} alt="SuperMoney" className="h-4" />
+              <span className="text-sm" style={{ color: '#4B5462' }}>Powered by</span>
+              <img src={supermoneyLogo} alt="SuperMoney" className="h-5" />
             </div>
           </div>
           
@@ -834,8 +834,8 @@ const CreditCards = () => {
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
             <div className="flex items-center justify-center gap-2">
-              <span className="text-xs" style={{ color: '#4B5462' }}>Powered by</span>
-              <img src={supermoneyLogo} alt="SuperMoney" className="h-4" />
+              <span className="text-sm" style={{ color: '#4B5462' }}>Powered by</span>
+              <img src={supermoneyLogo} alt="SuperMoney" className="h-5" />
             </div>
           </div>
         </div>

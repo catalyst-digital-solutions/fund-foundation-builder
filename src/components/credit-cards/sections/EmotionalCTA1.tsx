@@ -29,8 +29,8 @@ const EmotionalCTA1 = () => {
           Find Cards You Qualify For →
         </button>
         <div className="flex items-center justify-center gap-2 mt-4">
-          <span className="text-xs text-white drop-shadow-md">Powered by</span>
-          <img src={supermoneyLogo} alt="SuperMoney" className="h-4 brightness-0 invert" />
+          <span className="text-sm text-white drop-shadow-md">Powered by</span>
+          <img src={supermoneyLogo} alt="SuperMoney" className="h-5 brightness-0 invert" />
         </div>
       </div>
     </section>
