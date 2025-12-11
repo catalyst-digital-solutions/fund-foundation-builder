@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/trust-and-will-cta-01.png';
+import PoweredByTrustAndWill from '@/components/PoweredByTrustAndWill';
 
 const EmotionalCTA1 = () => {
   const handleClick = () => {
@@ -21,15 +22,15 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Without a plan, the state decides who raises your kids and who gets your assets. Family fights in probate court. Thousands in legal fees. You know it's critical—but attorney costs and complexity keep you frozen while your family remains vulnerable.
         </p>
-        <button
-          onClick={handleClick}
-          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
-        >
-          Protect Your Family Today →
-        </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by estateOS
-        </p>
+        <div className="inline-block">
+          <button
+            onClick={handleClick}
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          >
+            Protect Your Family Today →
+          </button>
+          <PoweredByTrustAndWill variant="dark" className="mt-3" />
+        </div>
       </div>
     </section>
   );
