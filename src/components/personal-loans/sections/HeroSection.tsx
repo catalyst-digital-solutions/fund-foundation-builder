@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle, Clock, Shield, DollarSign, ArrowRight } from 'lucide-react';
+import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 
 const HeroSection = () => {
   const openAffiliateLink = () => {
@@ -59,6 +60,7 @@ const HeroSection = () => {
               Get Started - Compare Loan Offers Now
               <ArrowRight className="ml-2 w-5 h-5" />
             </button>
+            <PoweredBySuperMoney className="mt-3" />
 
             {/* Social Proof */}
             <div className="flex items-center gap-4 mt-8">
