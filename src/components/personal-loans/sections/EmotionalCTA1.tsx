@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/personal-loans-cta-01.png';
+import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 
 const EmotionalCTA1 = () => {
   const openAffiliateLink = () => {
@@ -27,9 +28,7 @@ const EmotionalCTA1 = () => {
         >
           Find Your Solution Now →
         </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by SuperMoney
-        </p>
+        <PoweredBySuperMoney variant="dark" className="mt-4" />
       </div>
     </section>
   );
