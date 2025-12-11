@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 import EmotionalCTA1 from '@/components/zero-interest-business-funding/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/zero-interest-business-funding/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/zero-interest-business-funding/sections/EmotionalCTA3';
@@ -63,23 +64,28 @@ const HeroSection = () => (
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 text-center hover:scale-105"
-            >
-              Apply for 0% Funding Now
-            </a>
-            
-            <a
-              href="tel:6613103040"
-              className="inline-flex items-center justify-center gap-2 bg-white text-[#bb9446] text-xl font-semibold px-10 py-5 rounded-lg border-2 border-[#bb9446] hover:bg-[#f8d899] transition-all duration-200 text-center hover:scale-105"
-            >
-              <Phone className="w-6 h-6" />
-              (661) 310-3040
-            </a>
+          <div className="flex flex-col items-start">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 text-center hover:scale-105"
+              >
+                Apply for 0% Funding Now
+              </a>
+              
+              <a
+                href="tel:6613103040"
+                className="inline-flex items-center justify-center gap-2 bg-white text-[#bb9446] text-xl font-semibold px-10 py-5 rounded-lg border-2 border-[#bb9446] hover:bg-[#f8d899] transition-all duration-200 text-center hover:scale-105"
+              >
+                <Phone className="w-6 h-6" />
+                (661) 310-3040
+              </a>
+            </div>
+            <div className="w-full sm:w-auto flex justify-center sm:self-center mt-3">
+              <PoweredByMesaGroup />
+            </div>
           </div>
 
           <p className="text-sm text-gray-600 mt-4 italic">
@@ -482,14 +488,17 @@ const MesaGroupProcess = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <a
-            href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 hover:scale-105"
-          >
-            Start Your Funding Application
-          </a>
+          <div className="inline-block">
+            <a
+              href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 hover:scale-105"
+            >
+              Start Your Funding Application
+            </a>
+            <PoweredByMesaGroup className="mt-3" />
+          </div>
         </div>
 
       </div>
@@ -750,21 +759,24 @@ const FAQSection = () => {
           <p className="text-lg text-gray-700 mb-4">
             Ready to discuss your specific funding needs?
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:6613103040"
-              className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 hover:scale-105"
-            >
-              <Phone className="w-6 h-6" /> Call (661) 310-3040
-            </a>
-            <a
-              href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white text-[#bb9446] text-xl font-semibold px-10 py-5 rounded-lg border-2 border-[#bb9446] hover:bg-[#f8d899] transition-all duration-200 hover:scale-105"
-            >
-              Apply Online
-            </a>
+          <div className="flex flex-col items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="tel:6613103040"
+                className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 hover:scale-105"
+              >
+                <Phone className="w-6 h-6" /> Call (661) 310-3040
+              </a>
+              <a
+                href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-[#bb9446] text-xl font-semibold px-10 py-5 rounded-lg border-2 border-[#bb9446] hover:bg-[#f8d899] transition-all duration-200 hover:scale-105"
+              >
+                Apply Online
+              </a>
+            </div>
+            <PoweredByMesaGroup className="mt-3" />
           </div>
         </div>
 
@@ -824,14 +836,17 @@ const FinalCTA = () => (
           Get $25,000 to $250,000 in 0% interest business funding and keep every dollar working for your business—not for the bank.
         </p>
 
-        <a
-          href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
-        >
-          Apply for 0% Funding Now →
-        </a>
+        <div className="inline-block">
+          <a
+            href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
+          >
+            Apply for 0% Funding Now →
+          </a>
+          <PoweredByMesaGroup className="mt-2" />
+        </div>
         
         <p className="text-gray-600 mb-6">
           Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
