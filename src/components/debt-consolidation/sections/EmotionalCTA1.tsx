@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/debt-consolidation-cta-01.png';
+import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 
 const EmotionalCTA1 = () => {
   const handleClick = () => {
@@ -21,15 +22,15 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Credit cards. Personal loans. Medical bills. Every month, different due dates, different amounts, watching hundreds disappear to interest alone. You're working harder but getting nowhere—trapped in a cycle that never ends while life passes by.
         </p>
-        <button
-          onClick={handleClick}
-          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
-        >
-          Break Free from Debt Chaos →
-        </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by SuperMoney
-        </p>
+        <div className="inline-block">
+          <button
+            onClick={handleClick}
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          >
+            Break Free from Debt Chaos →
+          </button>
+          <PoweredBySuperMoney variant="dark" className="mt-3" />
+        </div>
       </div>
     </section>
   );
