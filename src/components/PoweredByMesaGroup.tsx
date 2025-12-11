@@ -19,7 +19,7 @@ const PoweredByMesaGroup: React.FC<PoweredByMesaGroupProps> = ({
   return (
     <div className={`flex items-center justify-center gap-2 ${className}`}>
       <span className={`text-sm ${textColor} ${shadow}`} style={textStyle}>Powered by</span>
-      <img src={logo} alt="Mesa Group Capital" className="h-5" />
+      <img src={logo} alt="Mesa Group Capital" className="h-7" />
     </div>
   );
 };
