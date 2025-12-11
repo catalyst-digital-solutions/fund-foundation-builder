@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PoweredByMesaGroup from "@/components/PoweredByMesaGroup";
 import EmotionalCTA1 from "@/components/debt-relief/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/debt-relief/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/debt-relief/sections/EmotionalCTA3";
@@ -108,14 +109,17 @@ const DebtRelief = () => {
               We negotiate with your creditors, collection agencies, and attorneys to settle your debts for <strong>significantly less than you owe</strong>—while you focus on rebuilding your financial future, not drowning in debt.
             </p>
             
-            <a
-              href="https://mesagroupcapital.com/debt-analysis"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl border-2 border-amber-500"
-            >
-              Book Your Free Debt Analysis
-            </a>
+            <div className="inline-block">
+              <a
+                href="https://mesagroupcapital.com/debt-analysis"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl border-2 border-amber-500"
+              >
+                Book Your Free Debt Analysis
+              </a>
+              <PoweredByMesaGroup className="mt-4" />
+            </div>
             <p className="text-sm text-gray-600 mt-4 flex items-center justify-center gap-4 flex-wrap">
               <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4 text-green-600" /> No upfront fees</span>
               <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4 text-green-600" /> Minimum $10,000 debt required</span>
@@ -207,14 +211,17 @@ const DebtRelief = () => {
             <p className="text-lg text-gray-300 leading-relaxed mb-6 max-w-3xl mx-auto">
               Debt relief through Mesa Group Consulting lets you settle debts for <strong>30-50% less than you owe</strong>, avoid bankruptcy, and protect your family's future—without destroying your credit for 7-10 years.
             </p>
-            <a
-              href="https://mesagroupcapital.com/debt-analysis"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-10 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
-            >
-              Get Your Free Debt Analysis
-            </a>
+            <div className="inline-block">
+              <a
+                href="https://mesagroupcapital.com/debt-analysis"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-10 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
+              >
+                Get Your Free Debt Analysis
+              </a>
+              <PoweredByMesaGroup variant="dark" className="mt-4" />
+            </div>
           </div>
 
         </div>
@@ -536,14 +543,17 @@ const DebtRelief = () => {
           </div>
 
           <div className="mt-12 text-center">
-            <a
-              href="https://mesagroupcapital.com/debt-analysis"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl"
-            >
-              Start Your Debt-Free Journey Today
-            </a>
+            <div className="inline-block">
+              <a
+                href="https://mesagroupcapital.com/debt-analysis"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl"
+              >
+                Start Your Debt-Free Journey Today
+              </a>
+              <PoweredByMesaGroup className="mt-4" />
+            </div>
             <p className="text-gray-600 mt-4">Minimum $10,000 in debt required • No upfront fees</p>
           </div>
 
@@ -645,14 +655,17 @@ const DebtRelief = () => {
               You didn't create this debt overnight, and you can't solve it overnight—but you <strong>can</strong> take the first step today. Let Mesa Group Consulting's <strong>Debt Relief specialists</strong> handle your creditors while you focus on what matters most.
             </p>
 
-            <a
-              href="https://mesagroupcapital.com/debt-analysis"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
-            >
-              Schedule Free Consultation →
-            </a>
+            <div className="inline-block">
+              <a
+                href="https://mesagroupcapital.com/debt-analysis"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
+              >
+                Schedule Free Consultation →
+              </a>
+              <PoweredByMesaGroup className="mt-2" />
+            </div>
             
             <p className="text-gray-600 mb-6">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>

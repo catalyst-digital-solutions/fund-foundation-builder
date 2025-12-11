@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 import EmotionalCTA1 from '@/components/business-funding/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/business-funding/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/business-funding/sections/EmotionalCTA3';
@@ -55,11 +56,14 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto">
-              Explore Funding Options →
-            </Button>
-          </a>
+          <div className="inline-block">
+            <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto">
+                Explore Funding Options →
+              </Button>
+            </a>
+            <PoweredByMesaGroup className="mt-4" />
+          </div>
           
           <a href="tel:6613103040" className="inline-flex items-center justify-center gap-2 text-gray-700 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-xl font-semibold px-12 py-5">
             <Phone className="w-6 h-6" /> (661) 310-3040
@@ -415,11 +419,14 @@ const AllFundingSolutionsGrid = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto">
-              Get Matched with the Right Funding →
-            </Button>
-          </a>
+          <div className="inline-block">
+            <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto">
+                Get Matched with the Right Funding →
+              </Button>
+            </a>
+            <PoweredByMesaGroup className="mt-4" />
+          </div>
           <p className="text-muted-foreground mt-4">Free consultation • No obligation • Fast pre-qualification</p>
         </div>
 
@@ -528,11 +535,14 @@ const ComparisonTable = () => {
           <p className="text-muted-foreground leading-relaxed mb-4">
             That's where Mesa Group Capital's brokerage expertise comes in. We analyze your business profile, credit situation, revenue, and goals to match you with the <strong>best funding source</strong> from our network of lenders. No guesswork—just strategic guidance.
           </p>
-          <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-3 h-auto">
-              Get Expert Guidance Now
-            </Button>
-          </a>
+          <div className="inline-block">
+            <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-3 h-auto">
+                Get Expert Guidance Now
+              </Button>
+            </a>
+            <PoweredByMesaGroup className="mt-4" />
+          </div>
         </div>
 
       </div>
@@ -647,11 +657,14 @@ const WhyChooseMesaGroupCapital = () => {
             Let Mesa Group Capital's brokerage expertise connect you with the right funding solution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-4 h-auto">
-                Apply for Funding Now
-              </Button>
-            </a>
+            <div className="inline-block">
+              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-4 h-auto">
+                  Apply for Funding Now
+                </Button>
+              </a>
+              <PoweredByMesaGroup className="mt-4" />
+            </div>
             
             <a href="tel:6613103040" className="inline-flex items-center justify-center gap-2 bg-white text-[hsl(var(--mgc-gold))] text-xl font-semibold px-10 py-4 rounded-lg border-2 border-[hsl(var(--mgc-gold))] hover:bg-secondary/30 transition-all duration-200">
               <Phone className="w-6 h-6" /> Call (661) 310-3040
@@ -784,14 +797,17 @@ const FinalCTA = () => {
             From $1,000 to $100 million. From 530+ to 700+ credit. From brand new startups to established enterprises.
           </p>
 
-          <a
-            href="https://mesagroupcapital.com/for-businesses/business-funding"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
-          >
-            Apply for Funding Now →
-          </a>
+          <div className="inline-block">
+            <a
+              href="https://mesagroupcapital.com/for-businesses/business-funding"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
+            >
+              Apply for Funding Now →
+            </a>
+            <PoweredByMesaGroup className="mt-2" />
+          </div>
           
           <p className="text-gray-600 mb-6">
             Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>

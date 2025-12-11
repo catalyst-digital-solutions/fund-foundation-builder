@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PoweredByMesaGroup from "@/components/PoweredByMesaGroup";
 import EmotionalCTA1 from "@/components/business-debt-relief/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/business-debt-relief/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/business-debt-relief/sections/EmotionalCTA3";
@@ -83,15 +84,18 @@ const BusinessDebtRelief = () => {
           
           {/* Dual CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a 
-              href="https://mesagroupcapital.com/for-businesses/debt-relief"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg w-full sm:w-auto justify-center"
-            >
-              Book Free Debt Analysis
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            <div className="inline-block">
+              <a 
+                href="https://mesagroupcapital.com/for-businesses/debt-relief"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg w-full sm:w-auto justify-center"
+              >
+                Book Free Debt Analysis
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <PoweredByMesaGroup className="mt-4" />
+            </div>
             <a 
               href="tel:661-310-3040"
               className="inline-flex items-center gap-2 bg-white text-gray-900 text-lg font-semibold px-8 py-4 rounded-lg border-2 border-gray-300 hover:border-amber-400 hover:bg-gray-50 transition-all duration-200 w-full sm:w-auto justify-center"
@@ -246,15 +250,18 @@ const BusinessDebtRelief = () => {
           
           {/* CTA */}
           <div className="text-center">
-            <a 
-              href="https://mesagroupcapital.com/for-businesses/debt-relief"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg"
-            >
-              Get Your Free Debt Analysis
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            <div className="inline-block">
+              <a 
+                href="https://mesagroupcapital.com/for-businesses/debt-relief"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg"
+              >
+                Get Your Free Debt Analysis
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <PoweredByMesaGroup className="mt-4" />
+            </div>
             <p className="text-sm text-gray-600 mt-4">
               No upfront costs • No obligation • Confidential consultation
             </p>
@@ -506,15 +513,18 @@ const BusinessDebtRelief = () => {
           
           {/* CTA */}
           <div className="mt-12 text-center">
-            <a 
-              href="https://mesagroupcapital.com/for-businesses/debt-relief"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg"
-            >
-              Schedule Your Free Consultation
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            <div className="inline-block">
+              <a 
+                href="https://mesagroupcapital.com/for-businesses/debt-relief"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg"
+              >
+                Schedule Your Free Consultation
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <PoweredByMesaGroup className="mt-4" />
+            </div>
           </div>
           
         </div>
@@ -641,15 +651,18 @@ const BusinessDebtRelief = () => {
             <p className="text-lg text-gray-800 mb-6">
               Book your free consultation now. No obligation, no upfront fees, completely confidential.
             </p>
-            <a 
-              href="https://mesagroupcapital.com/for-businesses/debt-relief"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#3E3E3E] text-white text-lg font-bold px-8 py-4 rounded-lg hover:bg-[#4a4a4a] transition-all duration-200 shadow-lg"
-            >
-              Book Free Consultation Now
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            <div className="inline-block">
+              <a 
+                href="https://mesagroupcapital.com/for-businesses/debt-relief"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#3E3E3E] text-white text-lg font-bold px-8 py-4 rounded-lg hover:bg-[#4a4a4a] transition-all duration-200 shadow-lg"
+              >
+                Book Free Consultation Now
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <PoweredByMesaGroup variant="dark" className="mt-4" />
+            </div>
           </div>
           
         </div>
@@ -776,14 +789,17 @@ const BusinessDebtRelief = () => {
               relief program gives you a proven path to financial freedom.
             </p>
 
-            <a
-              href="https://mesagroupcapital.com/for-businesses/debt-relief"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
-            >
-              Get Your Free Debt Analysis →
-            </a>
+            <div className="inline-block">
+              <a
+                href="https://mesagroupcapital.com/for-businesses/debt-relief"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
+              >
+                Get Your Free Debt Analysis →
+              </a>
+              <PoweredByMesaGroup className="mt-2" />
+            </div>
             
             <p className="text-gray-600 mb-6">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check, ArrowRight } from 'lucide-react';
+import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 
 const FinalCTA = () => {
   return (
@@ -121,7 +122,7 @@ const FinalCTA = () => {
           <p className="text-gray-600 mb-2">
             Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
           </p>
-          <p className="text-sm text-gray-500">Powered by Mesa Group</p>
+          <PoweredByMesaGroup className="mt-4" />
         </div>
 
       </div>
