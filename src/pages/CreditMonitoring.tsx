@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, FileText, AlertTriangle, DollarSign, Eye, Lock, ChevronDown, Phone, MapPin, ExternalLink, Check } from 'lucide-react';
+import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, FileText, AlertTriangle, DollarSign, Eye, Lock, ChevronDown, Phone, MapPin, ExternalLink, Check, Play } from 'lucide-react';
 import EmotionalCTA1 from '@/components/credit-monitoring/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/credit-monitoring/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/credit-monitoring/sections/EmotionalCTA3';
@@ -729,6 +729,29 @@ function FAQSection() {
               Get answers to common questions about credit monitoring and identity protection.
             </p>
           </div>
+
+        {/* Video Testimonials */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-foreground text-center mb-8">
+            Hear From Our <span className="text-[#f9c65d]">Clients</span>
+          </h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[1, 2, 3].map((index) => (
+              <div key={index} className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
+                <div className="aspect-video bg-gray-100 flex items-center justify-center">
+                  <div className="text-center">
+                    <Play className="w-12 h-12 text-[#bb9446] mx-auto mb-2" />
+                    <p className="text-sm text-gray-500">Video Testimonial {index}</p>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="font-semibold text-gray-900">Client Name</p>
+                  <p className="text-sm text-gray-600">Brief description of their experience</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
