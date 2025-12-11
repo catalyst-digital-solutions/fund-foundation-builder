@@ -253,18 +253,8 @@ const DIYCreditRepair = () => {
           </div>
           
           {/* Cost Comparison */}
-          <div className="relative bg-[#6c6c6c] rounded-lg p-8 mt-12 text-center overflow-hidden">
-            {/* Watermark Background */}
-            <div 
-              className="absolute inset-0 opacity-[0.15] pointer-events-none"
-              style={{
-                backgroundImage: `url(${creditilyWideWolfLogo})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center center',
-                backgroundSize: '85% auto',
-              }}
-            />
-            <div className="relative z-10">
+          <div className="bg-[#6c6c6c] rounded-lg p-8 mt-12 text-center">
+            <div>
               <h4 className="text-2xl font-bold text-white mb-4">Credit Repair Shouldn't Cost Thousands</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div>
