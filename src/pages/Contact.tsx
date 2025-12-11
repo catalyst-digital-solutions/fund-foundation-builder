@@ -218,7 +218,7 @@ const Contact = () => {
                 href="https://calendly.com/mesagroupconsulting/free-credit-consultation"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-gray-900 hover:bg-white hover:text-gray-900 text-amber-400 font-bold text-2xl py-8 px-6 rounded-2xl transition-colors text-center flex items-center justify-center gap-3 border-2 border-transparent hover:border-gray-900"
+                className="block w-full bg-black hover:bg-white hover:text-black text-amber-400 font-bold text-2xl py-8 px-6 rounded-2xl transition-colors text-center flex items-center justify-center gap-3 border-2 border-transparent hover:border-black"
               >
                 English
                 <ArrowUpRight className="w-6 h-6" />
@@ -227,7 +227,7 @@ const Contact = () => {
                 href="https://calendly.com/mesagroupconsulting/consulta-de-credito"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-gray-900 hover:bg-white hover:text-gray-900 text-amber-400 font-bold text-2xl py-8 px-6 rounded-2xl transition-colors text-center flex items-center justify-center gap-3 border-2 border-transparent hover:border-gray-900"
+                className="block w-full bg-black hover:bg-white hover:text-black text-amber-400 font-bold text-2xl py-8 px-6 rounded-2xl transition-colors text-center flex items-center justify-center gap-3 border-2 border-transparent hover:border-black"
               >
                 Español
                 <ArrowUpRight className="w-6 h-6" />
@@ -236,7 +236,7 @@ const Contact = () => {
                 href="https://link.mesagroupconsulting.com/widget/bookings/free-credit-consulation-punjabi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-gray-900 hover:bg-white hover:text-gray-900 text-amber-400 font-bold text-2xl py-8 px-6 rounded-2xl transition-colors text-center flex items-center justify-center gap-3 border-2 border-transparent hover:border-gray-900"
+                className="block w-full bg-black hover:bg-white hover:text-black text-amber-400 font-bold text-2xl py-8 px-6 rounded-2xl transition-colors text-center flex items-center justify-center gap-3 border-2 border-transparent hover:border-black"
               >
                 ਪੰਜਾਬੀ
                 <ArrowUpRight className="w-6 h-6" />
@@ -271,7 +271,7 @@ const Contact = () => {
                 href="https://calendly.com/mesagroupconsulting/free-credit-consultation"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-gray-900 hover:bg-white hover:text-gray-900 text-amber-400 font-semibold text-lg py-5 px-6 rounded-xl transition-colors text-center flex items-center justify-center gap-2 border-2 border-transparent hover:border-gray-900"
+                className="block w-full bg-black hover:bg-white hover:text-black text-amber-400 font-semibold text-lg py-5 px-6 rounded-xl transition-colors text-center flex items-center justify-center gap-2 border-2 border-transparent hover:border-black"
               >
                 English
                 <ArrowUpRight className="w-5 h-5" />
@@ -280,7 +280,7 @@ const Contact = () => {
                 href="https://calendly.com/mesagroupconsulting/consulta-de-credito"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-gray-900 hover:bg-white hover:text-gray-900 text-amber-400 font-semibold text-lg py-5 px-6 rounded-xl transition-colors text-center flex items-center justify-center gap-2 border-2 border-transparent hover:border-gray-900"
+                className="block w-full bg-black hover:bg-white hover:text-black text-amber-400 font-semibold text-lg py-5 px-6 rounded-xl transition-colors text-center flex items-center justify-center gap-2 border-2 border-transparent hover:border-black"
               >
                 Español
                 <ArrowUpRight className="w-5 h-5" />
@@ -289,7 +289,7 @@ const Contact = () => {
                 href="https://link.mesagroupconsulting.com/widget/bookings/free-credit-consulation-punjabi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-gray-900 hover:bg-white hover:text-gray-900 text-amber-400 font-semibold text-lg py-5 px-6 rounded-xl transition-colors text-center flex items-center justify-center gap-2 border-2 border-transparent hover:border-gray-900"
+                className="block w-full bg-black hover:bg-white hover:text-black text-amber-400 font-semibold text-lg py-5 px-6 rounded-xl transition-colors text-center flex items-center justify-center gap-2 border-2 border-transparent hover:border-black"
               >
                 ਪੰਜਾਬੀ
                 <ArrowUpRight className="w-5 h-5" />
