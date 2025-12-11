@@ -5,6 +5,7 @@ import { Target, Check, Lock, Lightbulb, TrendingUp, Star, CircleDollarSign, Bar
 import EmotionalCTA1 from '@/components/credit-cards/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/credit-cards/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/credit-cards/sections/EmotionalCTA3';
+import supermoneyLogo from '@/assets/supermoney-logo.svg';
 
 const CreditCards = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -96,6 +97,11 @@ const CreditCards = () => {
           <p className="text-sm text-gray-600 mt-4">
             Free to compare. No credit card required. Takes 60 seconds.
           </p>
+          
+          <div className="flex items-center justify-center gap-2 mt-3 opacity-70">
+            <span className="text-xs text-gray-500">Powered by</span>
+            <img src={supermoneyLogo} alt="SuperMoney" className="h-4" />
+          </div>
           
           <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
             <div className="flex items-center gap-2">
