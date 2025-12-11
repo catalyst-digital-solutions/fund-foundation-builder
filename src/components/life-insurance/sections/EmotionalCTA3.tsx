@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/life-insurance-cta-03.png';
+import PoweredByPolicyGenius from '@/components/PoweredByPolicyGenius';
 
 const EmotionalCTA3 = () => {
   const handleClick = () => {
@@ -21,15 +22,15 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine knowing your spouse won't have to work three jobs. Your children's education is secured. The mortgage gets paid. Final expenses covered with dignity. That's the peace of mind life insurance creates. Your family's security is one decision away.
         </p>
-        <button
-          onClick={handleClick}
-          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
-        >
-          Secure Your Family's Future →
-        </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by Policygenius
-        </p>
+        <div className="inline-block">
+          <button
+            onClick={handleClick}
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          >
+            Secure Your Family's Future →
+          </button>
+          <PoweredByPolicyGenius variant="dark" className="mt-3" />
+        </div>
       </div>
     </section>
   );
