@@ -1,4 +1,5 @@
 import { Clock, TrendingUp, Building, Users, CheckCircle, ArrowRight } from "lucide-react";
+import PoweredByPolicyGenius from '@/components/PoweredByPolicyGenius';
 
 const CoverageTypes = () => {
   const coverageTypes = [
@@ -139,15 +140,18 @@ const CoverageTypes = () => {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <a
-            href="https://policygenius.go2cloud.org/aff_c?offer_id=811&aff_id=2244"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
-          >
-            Compare Policies & Get Your Free Quote
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </a>
+          <div className="inline-block">
+            <a
+              href="https://policygenius.go2cloud.org/aff_c?offer_id=811&aff_id=2244"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
+            >
+              Compare Policies & Get Your Free Quote
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </a>
+            <PoweredByPolicyGenius className="mt-2" />
+          </div>
         </div>
 
       </div>

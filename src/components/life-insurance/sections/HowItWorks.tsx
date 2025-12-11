@@ -1,4 +1,5 @@
 import { FileText, Search, UserCheck, FileCheck, Shield, ArrowRight } from "lucide-react";
+import PoweredByPolicyGenius from '@/components/PoweredByPolicyGenius';
 
 const HowItWorks = () => {
   const steps = [
@@ -102,15 +103,18 @@ const HowItWorks = () => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <a
-            href="https://policygenius.go2cloud.org/aff_c?offer_id=811&aff_id=2244"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
-          >
-            Start Your Application Now
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </a>
+          <div className="inline-block">
+            <a
+              href="https://policygenius.go2cloud.org/aff_c?offer_id=811&aff_id=2244"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
+            >
+              Start Your Application Now
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </a>
+            <PoweredByPolicyGenius className="mt-2" />
+          </div>
         </div>
 
       </div>
