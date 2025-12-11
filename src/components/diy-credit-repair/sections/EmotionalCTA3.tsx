@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/diy-credit-repair-cta-03.png';
+import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 
 const EmotionalCTA3 = () => {
   const handleClick = () => {
@@ -21,15 +22,15 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Approvals instead of denials. Better rates. Thousands saved. You don't need a credit repair company to get there. You just need the tools — and now you have them. $39.99/mo. No contracts. No excuses.
         </p>
-        <button 
-          onClick={handleClick}
-          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
-        >
-          Begin Your Journey Today →
-        </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by Mesa Group
-        </p>
+        <div className="inline-block">
+          <button 
+            onClick={handleClick}
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          >
+            Begin Your Journey Today →
+          </button>
+          <PoweredByMesaGroup variant="dark" className="mt-4" />
+        </div>
       </div>
     </section>
   );

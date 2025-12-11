@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/business-credit-cta-03.png';
+import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 
 const EmotionalCTA3 = () => {
   const handleClick = () => {
@@ -21,15 +22,15 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine $50,000 approved—no personal guarantee. Equipment purchased on business terms. Sleeping soundly knowing your home's protected. Taking that major contract without hesitation. That's what real business credit creates. Your breakthrough is one decision away.
         </p>
-        <button
-          onClick={handleClick}
-          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
-        >
-          Start Building Your Foundation →
-        </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by Mesa Group
-        </p>
+        <div className="inline-block">
+          <button
+            onClick={handleClick}
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          >
+            Start Building Your Foundation →
+          </button>
+          <PoweredByMesaGroup variant="dark" className="mt-4" />
+        </div>
       </div>
     </section>
   );

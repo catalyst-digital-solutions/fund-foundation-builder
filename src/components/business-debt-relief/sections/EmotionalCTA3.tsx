@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/business-debt-relief-cta-03.png';
+import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 
 const EmotionalCTA3 = () => {
   return (
@@ -17,15 +18,17 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine checking your account and seeing profit instead of red. Taking that growth opportunity without hesitation. Sleeping through the night knowing creditors are settled and your business is protected. Telling your family the storm is over—you not only survived, you're positioned to thrive. That financial freedom you deserve is one decision away.
         </p>
-        <a
-          href="https://mesagroupcapital.com/for-businesses/debt-relief"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-block"
-        >
-          Start Your Debt-Free Journey →
-        </a>
-        <p className="text-sm text-white mt-4 drop-shadow-md">Powered by Mesa Group</p>
+        <div className="inline-block">
+          <a
+            href="https://mesagroupcapital.com/for-businesses/debt-relief"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-block"
+          >
+            Start Your Debt-Free Journey →
+          </a>
+          <PoweredByMesaGroup variant="dark" className="mt-4" />
+        </div>
       </div>
     </section>
   );

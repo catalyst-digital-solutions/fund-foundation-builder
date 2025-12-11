@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/business-credit-cta-01.png';
+import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 
 const EmotionalCTA1 = () => {
   return (
@@ -17,17 +18,17 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Every loan on your personal credit. Every night worrying your home's at risk. You built a business to create opportunity—not gamble with everything your family depends on. While competitors scale with business credit, you're stuck risking it all.
         </p>
-        <a
-          href="https://mesagroupcapital.com/business-credit-enroll"
-          target="_blank"
-          rel="noopener"
-          className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
-        >
-          Protect What Matters Most →
-        </a>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by Mesa Group
-        </p>
+        <div className="inline-block">
+          <a
+            href="https://mesagroupcapital.com/business-credit-enroll"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          >
+            Protect What Matters Most →
+          </a>
+          <PoweredByMesaGroup variant="dark" className="mt-4" />
+        </div>
       </div>
     </section>
   );
