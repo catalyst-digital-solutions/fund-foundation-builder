@@ -107,7 +107,7 @@ function HeroSection() {
               Start Monitoring My Credit
               <ExternalLink className="w-5 h-5" />
             </a>
-            <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
+            <p className="text-gray-700 text-sm mt-3 mb-3">Powered by SmartCredit</p>
             <p className="text-sm text-gray-600">
               <CheckCircle2 className="w-4 h-4 inline mr-1" />
               Instant access to all 3 bureaus
