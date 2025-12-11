@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/business-funding-cta-02.png';
+import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 
 const EmotionalCTA2 = () => {
   const handleClick = () => {
@@ -21,13 +22,15 @@ const EmotionalCTA2 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Mesa Group Capital isn't another lender—we're your advocate. With 8 funding solutions and nationwide lender relationships, we match your unique situation with the right capital source. No cookie-cutter rejections. Just expert guidance that opens doors banks closed.
         </p>
-        <button
-          onClick={handleClick}
-          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
-        >
-          Discover Your Options →
-        </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">Powered by Mesa Group</p>
+        <div className="inline-block">
+          <button
+            onClick={handleClick}
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          >
+            Discover Your Options →
+          </button>
+          <PoweredByMesaGroup variant="dark" className="mt-4" />
+        </div>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/credit-cards-cta-03.png';
-import supermoneyLogo from '@/assets/supermoney-logo.svg';
+import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 
 const EmotionalCTA3 = () => {
   const handleClick = () => {
@@ -22,15 +22,14 @@ const EmotionalCTA3 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine checking your credit score next month—watching it climb. Getting approved for that premium card. Earning 3% cash back on groceries. Booking flights with points you earned. That financial confidence you deserve is one decision away.
         </p>
-        <button
-          onClick={handleClick}
-          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
-        >
-          Start Building Your Credit Future →
-        </button>
-        <div className="flex items-center justify-center gap-2 mt-4">
-          <span className="text-sm text-white drop-shadow-md">Powered by</span>
-          <img src={supermoneyLogo} alt="SuperMoney" className="h-5 brightness-0 invert" />
+        <div className="inline-block">
+          <button
+            onClick={handleClick}
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          >
+            Start Building Your Credit Future →
+          </button>
+          <PoweredBySuperMoney variant="dark" className="mt-4" />
         </div>
       </div>
     </section>
