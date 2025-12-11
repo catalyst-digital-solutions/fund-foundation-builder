@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/credit-cards-cta-01.png';
+import supermoneyLogo from '@/assets/supermoney-logo.svg';
 
 const EmotionalCTA1 = () => {
   const handleClick = () => {
@@ -27,9 +28,10 @@ const EmotionalCTA1 = () => {
         >
           Find Cards You Qualify For →
         </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by SuperMoney
-        </p>
+        <div className="flex items-center justify-center gap-2 mt-4">
+          <span className="text-xs text-white/80 drop-shadow-md">Powered by</span>
+          <img src={supermoneyLogo} alt="SuperMoney" className="h-4 brightness-0 invert" />
+        </div>
       </div>
     </section>
   );
