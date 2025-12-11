@@ -290,14 +290,19 @@ const NineFundingSolutions = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a
-            href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#bb9446] text-white text-xl font-bold px-12 py-5 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
-          >
-            Apply for 0% Funding Now
-          </a>
+          <div className="inline-block">
+            <a
+              href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#bb9446] text-white text-xl font-bold px-12 py-5 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+            >
+              Apply for 0% Funding Now
+            </a>
+            <div className="bg-black rounded-lg px-4 py-2 mt-3 inline-block">
+              <PoweredByMesaGroup variant="dark" />
+            </div>
+          </div>
           <p className="text-sm text-gray-600 mt-4">Free consultation • No obligation • Same-day approval possible</p>
         </div>
 
