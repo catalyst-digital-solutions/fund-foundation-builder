@@ -131,7 +131,7 @@ const StudentLoanRefi2 = () => {
               
               <a
                 href="#how-it-works"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-700 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-700 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 self-start"
               >
                 How It Works
                 <ArrowRight className="ml-2 w-5 h-5" />
