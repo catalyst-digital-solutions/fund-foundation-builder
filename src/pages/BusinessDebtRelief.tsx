@@ -661,7 +661,9 @@ const BusinessDebtRelief = () => {
                 Book Free Consultation Now
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <PoweredByMesaGroup variant="dark" className="mt-4" />
+              <div className="bg-black rounded-lg px-4 py-2 mt-4 inline-block">
+                <PoweredByMesaGroup variant="dark" />
+              </div>
             </div>
           </div>
           
