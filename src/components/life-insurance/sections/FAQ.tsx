@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import PoweredByPolicyGenius from '@/components/PoweredByPolicyGenius';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -104,14 +105,17 @@ const FAQ = () => {
           <p className="text-gray-700 mb-6">
             Connect with a licensed PolicyGenius agent who can answer your specific questions and help you find the right coverage.
           </p>
-          <a
-            href="https://policygenius.go2cloud.org/aff_c?offer_id=811&aff_id=2244"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-gray-900 bg-amber-400 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
-          >
-            Speak with an Expert
-          </a>
+          <div className="inline-block">
+            <a
+              href="https://policygenius.go2cloud.org/aff_c?offer_id=811&aff_id=2244"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-gray-900 bg-amber-400 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
+            >
+              Speak with an Expert
+            </a>
+            <PoweredByPolicyGenius className="mt-2" />
+          </div>
         </div>
 
       </div>
