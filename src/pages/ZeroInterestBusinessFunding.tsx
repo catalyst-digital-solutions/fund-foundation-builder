@@ -290,7 +290,7 @@ const NineFundingSolutions = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="inline-block">
+          <div className="flex flex-col items-center">
             <a
               href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
               target="_blank"
@@ -299,7 +299,7 @@ const NineFundingSolutions = () => {
             >
               Apply for 0% Funding Now
             </a>
-            <div className="bg-black rounded-lg px-4 py-2 mt-3 inline-block">
+            <div className="bg-black rounded-lg px-4 py-2 mt-3">
               <PoweredByMesaGroup variant="dark" />
             </div>
           </div>
