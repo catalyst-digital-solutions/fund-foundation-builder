@@ -1,6 +1,6 @@
 import React from 'react';
-import mesaGroupLogoBlack from '@/assets/mesa-group-logo-black.svg';
-import mesaGroupLogoWhite from '@/assets/mesa-group-logo-white.svg';
+import mesaGroupLogoBlack from '@/assets/mesa-group-logo-black.webp';
+import mesaGroupLogoWhite from '@/assets/mesa-group-logo-white.webp';
 
 interface PoweredByMesaGroupProps {
   variant?: 'light' | 'dark'; // 'light' = dark logo for light backgrounds, 'dark' = white logo for dark backgrounds
