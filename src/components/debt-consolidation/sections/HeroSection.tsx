@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle, Clock, Shield, TrendingDown, ArrowRight } from 'lucide-react';
+import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 
 const HeroSection = () => {
   const openAffiliateLink = () => {
@@ -52,13 +53,16 @@ const HeroSection = () => {
             </div>
 
             {/* Primary CTA */}
-            <button
-              onClick={openAffiliateLink}
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
-            >
-              Get Started - Compare Consolidation Offers Now
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </button>
+            <div className="inline-block">
+              <button
+                onClick={openAffiliateLink}
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+              >
+                Get Started - Compare Consolidation Offers Now
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </button>
+              <PoweredBySuperMoney className="mt-3" />
+            </div>
 
             {/* Social Proof */}
             <div className="flex items-center gap-4 mt-8">
