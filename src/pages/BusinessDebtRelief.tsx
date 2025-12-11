@@ -651,7 +651,7 @@ const BusinessDebtRelief = () => {
             <p className="text-lg text-gray-800 mb-6">
               Book your free consultation now. No obligation, no upfront fees, completely confidential.
             </p>
-            <div className="inline-block">
+            <div className="flex flex-col items-center">
               <a 
                 href="https://mesagroupcapital.com/for-businesses/debt-relief"
                 target="_blank"
@@ -661,7 +661,7 @@ const BusinessDebtRelief = () => {
                 Book Free Consultation Now
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <div className="bg-black rounded-lg px-4 py-2 mt-4 inline-block">
+              <div className="bg-black rounded-lg px-4 py-2 mt-3 inline-block">
                 <PoweredByMesaGroup variant="dark" />
               </div>
             </div>
