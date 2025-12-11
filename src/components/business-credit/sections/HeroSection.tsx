@@ -48,32 +48,34 @@ const HeroSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <div className="inline-block">
+            <div className="flex flex-col items-start pt-4">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="https://mesagroupcapital.com/business-credit-enroll"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 min-w-[220px]"
                 >
                   Get Full Service ($2,495)
                   <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </a>
-                <PoweredByMesaGroup className="mt-4" />
+                <a
+                  href="https://mesagroupcapital.com/bcfs-diy-enroll"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-700 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 min-w-[220px]"
+                >
+                  Get DIY Version ($995)
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
               </div>
-              <a
-                href="https://mesagroupcapital.com/bcfs-diy-enroll"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-700 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300"
-              >
-                Get DIY Version ($995)
-                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
+              <div className="w-full sm:w-auto flex justify-center sm:self-center mt-3">
+                <PoweredByMesaGroup />
+              </div>
             </div>
 
             {/* Trust Statistics */}
