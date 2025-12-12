@@ -155,12 +155,12 @@ export default function TransformationJourney() {
         ref={parallaxRef}
         className="relative h-[50vh] md:h-[60vh] overflow-hidden"
       >
-        <div 
-          className="absolute inset-x-0 h-[150%] -top-[25%]"
+        <img 
+          src={sunriseCoastlineImg}
+          alt="Sunrise over coastline"
+          className="absolute w-full h-[150%] -top-[25%] object-cover"
           style={{ 
-            backgroundImage: `url(${sunriseCoastlineImg})`,
-            backgroundSize: 'cover',
-            backgroundPosition: `center ${scrollProgress * 100}%`,
+            objectPosition: `50% ${scrollProgress * 100}%`,
           }}
         />
         <div className="absolute inset-0 bg-black/40" />
