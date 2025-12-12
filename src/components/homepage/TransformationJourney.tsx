@@ -8,7 +8,7 @@ export default function TransformationJourney() {
       {/* Full sunrise gradient background wrapper */}
       <div 
         className="py-16 md:py-20"
-        style={{ background: 'linear-gradient(115deg, #d4a84b 0%, #f5d98a 50%, #fcefd3 100%)' }}
+        style={{ background: 'linear-gradient(-115deg, #e8c872 0%, #f5d98a 50%, #fcefd3 100%)' }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#3e3e3e]/20 mb-6">
@@ -23,7 +23,7 @@ export default function TransformationJourney() {
       {/* Milestone 1: Credit Transformation */}
       <div 
         className="py-12 md:py-16"
-        style={{ background: 'linear-gradient(115deg, #d9b35a 0%, #f7dea0 50%, #fcf2dc 100%)' }}
+        style={{ background: 'linear-gradient(-115deg, #ebd080 0%, #f7dea0 50%, #fcf2dc 100%)' }}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-start gap-6">
@@ -45,7 +45,7 @@ export default function TransformationJourney() {
       {/* Milestone 2: Apartment Approval */}
       <div 
         className="py-12 md:py-16"
-        style={{ background: 'linear-gradient(115deg, #debb68 0%, #f8e3ab 50%, #fdf4e2 100%)' }}
+        style={{ background: 'linear-gradient(-115deg, #eed88e 0%, #f8e3ab 50%, #fdf4e2 100%)' }}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-start gap-6">
@@ -66,7 +66,7 @@ export default function TransformationJourney() {
       {/* Milestone 3: Car Dealership Win */}
       <div 
         className="py-12 md:py-16"
-        style={{ background: 'linear-gradient(115deg, #e3c376 0%, #f9e8b6 50%, #fef6e8 100%)' }}
+        style={{ background: 'linear-gradient(-115deg, #f1e09c 0%, #f9e8b6 50%, #fef6e8 100%)' }}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-start gap-6">
@@ -88,7 +88,7 @@ export default function TransformationJourney() {
       {/* Milestone 4: Homeownership & Legacy - Peak Emotional */}
       <div 
         className="py-12 md:py-16"
-        style={{ background: 'linear-gradient(115deg, #e8cb84 0%, #faedc1 50%, #fef8ee 100%)' }}
+        style={{ background: 'linear-gradient(-115deg, #f4e8aa 0%, #faedc1 50%, #fef8ee 100%)' }}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-start gap-6">
@@ -110,7 +110,7 @@ export default function TransformationJourney() {
       {/* Partner Declaration - Transition Section */}
       <div 
         className="py-12 md:py-16"
-        style={{ background: 'linear-gradient(115deg, #edd392 0%, #fbf2cc 50%, #fefaf4 100%)' }}
+        style={{ background: 'linear-gradient(-115deg, #f7f0b8 0%, #fbf2cc 50%, #fefaf4 100%)' }}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-xl md:text-2xl font-bold text-[#3e3e3e] leading-tight">
