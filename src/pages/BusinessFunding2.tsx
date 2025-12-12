@@ -63,21 +63,21 @@ const HeroSection = () => {
           Through our brokerage division, <strong>Mesa Group Capital</strong>, we connect you with a curated network of <strong>75+ specialized lenders</strong>—each offering different products, terms, and approval criteria. We don't just submit applications. We architect funding solutions that match your business reality.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-          <div className="inline-block">
+        <div className="flex flex-col items-center mb-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="text-white bg-amber-500 hover:bg-amber-600 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-600 text-xl font-bold px-12 py-5 h-auto">
                 Schedule Free Consultation
               </Button>
             </a>
-            <PoweredByMesaGroup className="mt-4" />
-          </div>
 
-          <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="text-gray-900 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-xl font-semibold px-12 py-5 h-auto">
-              Ready to Apply Now →
-            </Button>
-          </a>
+            <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="text-gray-900 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-xl font-semibold px-12 py-5 h-auto">
+                Ready to Apply Now →
+              </Button>
+            </a>
+          </div>
+          <PoweredByMesaGroup className="mt-4" />
         </div>
 
       </div>
@@ -367,7 +367,7 @@ const IntroducingBrokerageDivision = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Introducing Our <span className="text-[#f9c65d]">Brokerage Division</span>
           </h2>
-          <h3 className="text-3xl font-bold text-amber-600 mb-4">
+          <h3 className="text-3xl font-bold text-[#f9c65d] mb-4">
             Mesa Group Capital: Your Connection to 75+ Lenders
           </h3>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
@@ -1635,23 +1635,26 @@ const FinalCTA = () => {
 
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Choose Your Path:</h3>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <div>
-                <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-white font-bold px-10 py-4 text-xl h-auto">
-                    Schedule Free Consultation
-                  </Button>
-                </a>
-                <p className="text-sm text-gray-600 mt-2">← Start here if you have questions</p>
+            <div className="flex flex-col items-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div>
+                  <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
+                    <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-white font-bold px-10 py-4 text-xl h-auto">
+                      Schedule Free Consultation
+                    </Button>
+                  </a>
+                  <p className="text-sm text-gray-600 mt-2">← Start here if you have questions</p>
+                </div>
+                <div>
+                  <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
+                    <Button size="lg" className="bg-gray-800 hover:bg-gray-900 text-white font-bold px-10 py-4 text-xl h-auto">
+                      Apply Now
+                    </Button>
+                  </a>
+                  <p className="text-sm text-gray-600 mt-2">← Start here if you're ready to go</p>
+                </div>
               </div>
-              <div>
-                <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-gray-800 hover:bg-gray-900 text-white font-bold px-10 py-4 text-xl h-auto">
-                    Apply Now
-                  </Button>
-                </a>
-                <p className="text-sm text-gray-600 mt-2">← Start here if you're ready to go</p>
-              </div>
+              <PoweredByMesaGroup className="mt-4" />
             </div>
           </div>
 
