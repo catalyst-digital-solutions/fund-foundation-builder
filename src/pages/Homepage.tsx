@@ -450,16 +450,16 @@ const Homepage = () => {
           SECTION 2: MEDIA TRUST STRIP
       ================================================================ */}
       <section className="bg-gray-900 py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-gray-400 text-sm font-medium mb-6">
             AS FEATURED ON
           </p>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-            <img src={kget17Logo} alt="KGET 17" className="h-10 md:h-12 opacity-70 hover:opacity-100 transition-opacity object-contain" />
-            <img src={studio17Logo} alt="Studio 17" className="h-10 md:h-12 opacity-70 hover:opacity-100 transition-opacity object-contain" />
-            <img src={telemundoLogo} alt="Telemundo" className="h-10 md:h-12 opacity-70 hover:opacity-100 transition-opacity object-contain" />
-            <img src={cwLogo} alt="The CW" className="h-10 md:h-12 opacity-70 hover:opacity-100 transition-opacity object-contain" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-center justify-items-center">
+            <img src={kget17Logo} alt="KGET 17" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-70 hover:opacity-100 transition-opacity object-contain" />
+            <img src={studio17Logo} alt="Studio 17" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-70 hover:opacity-100 transition-opacity object-contain" />
+            <img src={telemundoLogo} alt="Telemundo" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-70 hover:opacity-100 transition-opacity object-contain" />
+            <img src={cwLogo} alt="The CW" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-70 hover:opacity-100 transition-opacity object-contain" />
           </div>
 
           <p className="text-center text-gray-500 text-sm mt-6">
