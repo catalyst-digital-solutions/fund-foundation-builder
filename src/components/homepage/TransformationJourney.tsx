@@ -11,34 +11,29 @@ export default function TransformationJourney() {
   return (
     <section className="relative overflow-hidden">
       
-      {/* Vision Opener - Flowing gradient into dark imagery */}
-      <div className="relative">
-        <div 
-          className="pt-16 md:pt-20 pb-24 md:pb-32"
-          style={{ background: 'linear-gradient(180deg, #f5d98a 0%, #e8c872 40%, #c9a455 70%, #3e3e3e 100%)' }}
-        >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#3e3e3e]/20 mb-6">
-              <Eye className="w-8 h-8 md:w-10 md:h-10 text-[#3e3e3e]" />
-            </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight">
-              Imagine Your Life 6 Months From Now
-            </h2>
+      {/* Vision Opener - Sunrise gradient background */}
+      <div 
+        className="py-16 md:py-20"
+        style={{ background: 'linear-gradient(-115deg, #e8c872 0%, #f5d98a 50%, #fcefd3 100%)' }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#3e3e3e]/20 mb-6">
+            <Eye className="w-8 h-8 md:w-10 md:h-10 text-[#3e3e3e]" />
           </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight">
+            Imagine Your Life 6 Months From Now
+          </h2>
         </div>
-        {/* Fade connector overlay */}
-        <div className="absolute bottom-0 left-0 right-0 h-16 md:h-24 bg-gradient-to-b from-transparent to-black/90" />
       </div>
 
       {/* Milestone 1: Credit Score - Full width image with text overlay */}
-      <div className="relative h-[400px] md:h-[500px] overflow-hidden -mt-8 md:-mt-12">
+      <div className="relative h-[400px] md:h-[500px] overflow-hidden">
         <img 
           src={creditScoreImg} 
           alt="Man smiling at improved credit score on phone"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
-        <div className="absolute top-0 left-0 right-0 h-16 md:h-24 bg-gradient-to-b from-black/70 to-transparent" />
         <div className="relative h-full flex items-center justify-start">
           <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
             <div className="max-w-2xl mr-auto text-left space-y-2">
