@@ -105,7 +105,7 @@ const HeroSection = () => (
 
         {/* Right: Hero Visual - Could be image placeholder */}
         <div className="hidden md:block">
-          <div className="bg-gradient-to-br from-amber-100 to-orange-100 rounded-xl p-8 shadow-2xl">
+          <div className="bg-[#fcf7e6] rounded-xl p-8 shadow-2xl">
             <div className="text-center">
               <div className="text-6xl font-bold text-[#f9c65d] mb-2">$155K</div>
               <div className="text-xl text-gray-700 mb-6">Average Funding Amount</div>
