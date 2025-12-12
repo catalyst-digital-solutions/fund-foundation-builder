@@ -460,10 +460,10 @@ const Homepage = () => {
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-center justify-items-center">
-            <img src={kget17Logo} alt="KGET 17" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
-            <img src={studio17Logo} alt="Studio 17" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
-            <img src={telemundoLogo} alt="Telemundo" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
-            <img src={cwLogo} alt="The CW" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
+            <img src={kget17Logo} alt="KGET 17" className="h-32 sm:h-40 md:h-48 w-auto max-w-[280px] md:max-w-[360px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
+            <img src={studio17Logo} alt="Studio 17" className="h-32 sm:h-40 md:h-48 w-auto max-w-[280px] md:max-w-[360px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
+            <img src={telemundoLogo} alt="Telemundo" className="h-32 sm:h-40 md:h-48 w-auto max-w-[280px] md:max-w-[360px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
+            <img src={cwLogo} alt="The CW" className="h-32 sm:h-40 md:h-48 w-auto max-w-[280px] md:max-w-[360px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
           </div>
 
           <p className="text-center text-gray-600 text-sm mt-6">
