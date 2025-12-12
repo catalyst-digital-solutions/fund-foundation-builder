@@ -28,6 +28,7 @@ import DebtRelief from "./pages/DebtRelief";
 import TrustAndWillPlan from "./pages/TrustAndWillPlan";
 import LifeInsurance from "./pages/LifeInsurance";
 import ZeroInterestBusinessFunding from "./pages/ZeroInterestBusinessFunding";
+import ZeroInterestBusinessFunding2 from "./pages/ZeroInterestBusinessFunding2";
 import BusinessFunding from "./pages/BusinessFunding";
 import BusinessDebtRelief from "./pages/BusinessDebtRelief";
 import MesaNews from "./pages/MesaNews";
@@ -67,6 +68,7 @@ const App = () => (
           <Route path="/trust-and-will-plan" element={<TrustAndWillPlan />} />
           <Route path="/life-insurance" element={<LifeInsurance />} />
           <Route path="/zero-interest-business-funding" element={<ZeroInterestBusinessFunding />} />
+          <Route path="/zero-interest-business-funding-2" element={<ZeroInterestBusinessFunding2 />} />
           <Route path="/business-funding" element={<BusinessFunding />} />
           <Route path="/business-debt-relief" element={<BusinessDebtRelief />} />
           <Route path="/contact" element={<Contact />} />
