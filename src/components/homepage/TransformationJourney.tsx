@@ -7,26 +7,31 @@ import apartmentKeysImg from '@/assets/transformation-apartment-keys.jpg';
 import carApprovalImg from '@/assets/transformation-car-approval.jpg';
 import familyHomeImg from '@/assets/transformation-family-home.jpg';
 import sunriseCoastlineImg from '@/assets/transformation-sunrise-coastline.jpg';
+import pchRoadtripImg from '@/assets/pch-couple-roadtrip.jpg';
 
 export default function TransformationJourney() {
   const parallaxRef = useRef<HTMLDivElement>(null);
+  const parallaxRef2 = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [scrollProgress2, setScrollProgress2] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!parallaxRef.current) return;
+      // First parallax section
+      if (parallaxRef.current) {
+        const rect = parallaxRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const progress = Math.max(0, Math.min(1, 1 - (rect.bottom / windowHeight)));
+        setScrollProgress(progress);
+      }
 
-      const rect = parallaxRef.current.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      // Calculate progress: 0 (bottom of image) when section is at bottom of viewport
-      // 1 (top of image) when section reaches top of viewport
-      // Progress increases as section moves up the viewport
-      const progress = Math.max(0, Math.min(1,
-        1 - (rect.bottom / windowHeight)
-      ));
-
-      setScrollProgress(progress);
+      // Second parallax section
+      if (parallaxRef2.current) {
+        const rect2 = parallaxRef2.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const progress2 = Math.max(0, Math.min(1, 1 - (rect2.bottom / windowHeight)));
+        setScrollProgress2(progress2);
+      }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -219,13 +224,28 @@ export default function TransformationJourney() {
         </div>
       </div>
 
-      {/* Closing Declaration - Final Empowerment */}
-      <div className="bg-gradient-to-br from-amber-100 via-amber-50 to-white py-12 md:py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-            Your financial past doesn't have to define your <span className="text-amber-600">financial future</span>. 
-            <span className="block mt-2">Not anymore.</span>
-          </p>
+      {/* Closing Declaration - Final Empowerment Parallax Section */}
+      <div
+        ref={parallaxRef2}
+        className="relative h-[40vh] md:h-[45vh] overflow-hidden"
+      >
+        <img
+          src={pchRoadtripImg}
+          alt="Couple enjoying a road trip on the Pacific Coast Highway"
+          className="absolute w-full h-[180%] object-cover"
+          style={{
+            objectPosition: `center ${scrollProgress2 * 100}%`,
+            top: `${-80 + (scrollProgress2 * 80)}%`
+          }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative h-full flex items-center justify-center">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight drop-shadow-lg">
+              Your financial past doesn't have to define your <span className="text-[#f9c65d]">financial future</span>. 
+              <span className="block mt-2">Not anymore.</span>
+            </p>
+          </div>
         </div>
       </div>
 
