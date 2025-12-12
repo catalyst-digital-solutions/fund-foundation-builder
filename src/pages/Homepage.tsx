@@ -449,20 +449,24 @@ const Homepage = () => {
       {/* ================================================================
           SECTION 2: MEDIA TRUST STRIP
       ================================================================ */}
-      <section className="bg-gray-900 py-8">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-gray-400 text-sm font-medium mb-6">
-            AS FEATURED ON
+      <section className="bg-gradient-to-br from-[#fcf7e6] via-white to-[#fcf7e6] py-10 border-y border-gray-200 relative overflow-hidden">
+        {/* Subtle decorative elements */}
+        <div className="absolute top-0 left-0 w-32 h-32 bg-[#f9c65d]/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute bottom-0 right-0 w-40 h-40 bg-[#f9c65d]/10 rounded-full translate-x-1/2 translate-y-1/2"></div>
+        
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <p className="text-center text-gray-500 text-sm font-medium tracking-wider uppercase mb-6">
+            As Featured On
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-center justify-items-center">
-            <img src={kget17Logo} alt="KGET 17" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-70 hover:opacity-100 transition-opacity object-contain" />
-            <img src={studio17Logo} alt="Studio 17" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-70 hover:opacity-100 transition-opacity object-contain" />
-            <img src={telemundoLogo} alt="Telemundo" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-70 hover:opacity-100 transition-opacity object-contain" />
-            <img src={cwLogo} alt="The CW" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-70 hover:opacity-100 transition-opacity object-contain" />
+            <img src={kget17Logo} alt="KGET 17" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
+            <img src={studio17Logo} alt="Studio 17" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
+            <img src={telemundoLogo} alt="Telemundo" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
+            <img src={cwLogo} alt="The CW" className="h-16 sm:h-20 md:h-24 w-auto max-w-[140px] md:max-w-[180px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
           </div>
 
-          <p className="text-center text-gray-500 text-sm mt-6">
+          <p className="text-center text-gray-600 text-sm mt-6">
             Recognized across California and beyond as a trusted financial resource
           </p>
         </div>
