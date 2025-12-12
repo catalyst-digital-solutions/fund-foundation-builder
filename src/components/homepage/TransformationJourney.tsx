@@ -34,9 +34,9 @@ export default function TransformationJourney() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
-        <div className="relative h-full flex items-center">
-          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="max-w-2xl space-y-2">
+        <div className="relative h-full flex items-center justify-start">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+            <div className="max-w-2xl mr-auto text-left space-y-2">
               <p className="text-lg md:text-xl text-white/80 italic">You check your credit score...</p>
               <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f9c65d] leading-none">
                 +100 points.
@@ -82,14 +82,14 @@ export default function TransformationJourney() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
-        <div className="relative h-full flex items-center">
-          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="max-w-2xl space-y-2">
+        <div className="relative h-full flex items-center justify-start">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+            <div className="max-w-2xl mr-auto text-left space-y-2">
               <p className="text-lg md:text-xl text-white/80 italic">You walk into the dealership...</p>
               <p className="text-xl md:text-2xl text-white font-light tracking-wide">
                 Not with dread. <span className="font-semibold">With confidence.</span>
               </p>
-              <div className="pt-4 flex items-baseline gap-4 flex-wrap">
+              <div className="pt-4 flex items-baseline gap-4 flex-wrap justify-start">
                 <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f9c65d]">6.9%</span>
                 <span className="text-2xl md:text-3xl text-white/60">not</span>
                 <span className="text-3xl md:text-4xl text-red-400 line-through">18%</span>
