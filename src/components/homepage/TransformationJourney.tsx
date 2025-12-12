@@ -15,21 +15,23 @@ export default function TransformationJourney() {
   useEffect(() => {
     const handleScroll = () => {
       if (!parallaxRef.current) return;
-      
+
       const rect = parallaxRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      
-      // Calculate progress: 0 when section enters viewport, 1 when it exits
-      const progress = Math.max(0, Math.min(1, 
-        (windowHeight - rect.top) / (windowHeight + rect.height)
+
+      // Calculate progress: 0 (bottom of image) when section is at bottom of viewport
+      // 1 (top of image) when section reaches top of viewport
+      // Progress increases as section moves up the viewport
+      const progress = Math.max(0, Math.min(1,
+        1 - (rect.bottom / windowHeight)
       ));
-      
+
       setScrollProgress(progress);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll(); // Initial call
-    
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -151,16 +153,17 @@ export default function TransformationJourney() {
       </div>
 
       {/* Partner Declaration - Parallax Section */}
-      <div 
+      <div
         ref={parallaxRef}
-        className="relative h-[50vh] md:h-[60vh] overflow-hidden"
+        className="relative h-[40vh] md:h-[45vh] overflow-hidden"
       >
-        <img 
+        <img
           src={sunriseCoastlineImg}
           alt="Sunrise over coastline"
-          className="absolute w-full h-[150%] -top-[25%] object-cover"
-          style={{ 
-            objectPosition: `50% ${scrollProgress * 100}%`,
+          className="absolute w-full h-[180%] object-cover"
+          style={{
+            objectPosition: `center ${scrollProgress * 100}%`,
+            top: `${-80 + (scrollProgress * 80)}%`
           }}
         />
         <div className="absolute inset-0 bg-black/40" />
