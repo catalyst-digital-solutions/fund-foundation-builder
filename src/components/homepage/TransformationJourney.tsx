@@ -33,13 +33,20 @@ export default function TransformationJourney() {
           alt="Man smiling at improved credit score on phone"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
         <div className="relative h-full flex items-center">
           <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
-            <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed font-medium max-w-2xl">
-              You check your credit score and it's climbed over <span className="font-bold text-[#f9c65d]">100 points</span>. 
-              The collections are gone. The late payments—removed. Your report is clean.
-            </p>
+            <div className="max-w-2xl space-y-2">
+              <p className="text-lg md:text-xl text-white/80 italic">You check your credit score...</p>
+              <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f9c65d] leading-none">
+                +100 points.
+              </p>
+              <p className="text-xl md:text-2xl text-white font-light tracking-wide pt-4">
+                Collections? <span className="font-semibold">Gone.</span><br />
+                Late payments? <span className="font-semibold">Removed.</span><br />
+                Your report? <span className="font-semibold text-[#f9c65d]">Clean.</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -51,12 +58,18 @@ export default function TransformationJourney() {
           alt="Property manager handing over keys to new apartment"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-l from-black/70 via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-l from-black/80 via-black/60 to-transparent" />
         <div className="relative h-full flex items-center justify-end">
           <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
-            <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed font-medium max-w-2xl ml-auto text-right">
-              You apply for that apartment you've been eyeing. <span className="font-bold text-green-400">Approved.</span>
-            </p>
+            <div className="max-w-2xl ml-auto text-right space-y-2">
+              <p className="text-lg md:text-xl text-white/80 italic">That apartment you've been eyeing...</p>
+              <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-green-400 leading-none">
+                Approved.
+              </p>
+              <p className="text-xl md:text-2xl text-white font-light tracking-wide pt-4">
+                The keys are yours.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -68,13 +81,23 @@ export default function TransformationJourney() {
           alt="Woman shaking hands at car dealership after loan approval"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
         <div className="relative h-full flex items-center">
           <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
-            <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed font-medium max-w-2xl">
-              You walk into the car dealership with confidence instead of dread. The finance manager comes back smiling. 
-              Approved at <span className="font-bold text-[#f9c65d]">6.9%</span> instead of <span className="line-through text-red-300">18%</span>.
-            </p>
+            <div className="max-w-2xl space-y-2">
+              <p className="text-lg md:text-xl text-white/80 italic">You walk into the dealership...</p>
+              <p className="text-xl md:text-2xl text-white font-light tracking-wide">
+                Not with dread. <span className="font-semibold">With confidence.</span>
+              </p>
+              <div className="pt-4 flex items-baseline gap-4 flex-wrap">
+                <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f9c65d]">6.9%</span>
+                <span className="text-2xl md:text-3xl text-white/60">not</span>
+                <span className="text-3xl md:text-4xl text-red-400 line-through">18%</span>
+              </div>
+              <p className="text-xl md:text-2xl text-white font-light tracking-wide pt-2">
+                The finance manager is <span className="font-semibold text-[#f9c65d]">smiling.</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -86,13 +109,18 @@ export default function TransformationJourney() {
           alt="Happy family in front of their new home with SOLD sign"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-l from-black/70 via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-l from-black/80 via-black/60 to-transparent" />
         <div className="relative h-full flex items-center justify-end">
           <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
-            <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed font-medium max-w-2xl ml-auto text-right">
-              You tell your kids you're buying a house. They don't have to move again. 
-              You're building something they can inherit.
-            </p>
+            <div className="max-w-2xl ml-auto text-right space-y-2">
+              <p className="text-lg md:text-xl text-white/80 italic">"We're buying a house."</p>
+              <p className="text-2xl md:text-3xl text-white font-light tracking-wide pt-2">
+                They don't have to move again.
+              </p>
+              <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#f9c65d] leading-tight pt-4">
+                You're building something<br />they can inherit.
+              </p>
+            </div>
           </div>
         </div>
       </div>
