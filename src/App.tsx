@@ -30,6 +30,7 @@ import LifeInsurance from "./pages/LifeInsurance";
 import ZeroInterestBusinessFunding from "./pages/ZeroInterestBusinessFunding";
 import ZeroInterestBusinessFunding2 from "./pages/ZeroInterestBusinessFunding2";
 import BusinessFunding from "./pages/BusinessFunding";
+import BusinessFunding2 from "./pages/BusinessFunding2";
 import BusinessDebtRelief from "./pages/BusinessDebtRelief";
 import MesaNews from "./pages/MesaNews";
 import Contact from "./pages/Contact";
@@ -70,6 +71,7 @@ const App = () => (
           <Route path="/zero-interest-business-funding" element={<ZeroInterestBusinessFunding />} />
           <Route path="/zero-interest-business-funding-2" element={<ZeroInterestBusinessFunding2 />} />
           <Route path="/business-funding" element={<BusinessFunding />} />
+          <Route path="/business-funding-2" element={<BusinessFunding2 />} />
           <Route path="/business-debt-relief" element={<BusinessDebtRelief />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
