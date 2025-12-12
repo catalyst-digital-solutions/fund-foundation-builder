@@ -141,6 +141,7 @@ const Footer = () => {
                 <ul className="space-y-3">
                   <li><Link to="/zero-interest-business-funding" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">0% Interest Business Funding</Link></li>
                   <li><Link to="/business-funding" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Funding</Link></li>
+                  <li><Link to="/business-credit-builder" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Credit Builder</Link></li>
                   <li><Link to="/business-debt-relief" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Debt Relief</Link></li>
                   <CollapsibleContent>
                     <li className="mt-3"><Link to="/business-credit" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Credit</Link></li>

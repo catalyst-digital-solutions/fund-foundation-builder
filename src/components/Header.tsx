@@ -101,6 +101,7 @@ const Header = () => {
       submenu: [
         { label: '0% Interest Business Funding', href: '/zero-interest-business-funding' },
         { label: 'Business Funding', href: '/business-funding' },
+        { label: 'Business Credit Builder', href: '/business-credit-builder' },
         { label: 'Business Debt Relief', href: '/business-debt-relief' },
         { label: 'Business Credit', href: '/business-credit' },
       ],
