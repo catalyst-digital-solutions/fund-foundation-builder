@@ -45,7 +45,7 @@ const HeroSection = () => (
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Access $50,000 to $250,000+ in <span className="text-amber-600">0% Interest Capital</span> Without Loans, Debt Payments, or Business Tax Returns
+            Access $50,000 to $250,000+ in <span className="text-[#f9c65d]">0% Interest Capital</span> Without Loans, Debt Payments, or Business Tax Returns
           </h1>
 
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-6">
@@ -107,23 +107,23 @@ const HeroSection = () => (
         <div className="hidden md:block">
           <div className="bg-gradient-to-br from-amber-100 to-orange-100 rounded-xl p-8 shadow-2xl">
             <div className="text-center">
-              <div className="text-6xl font-bold text-amber-600 mb-2">$155K</div>
+              <div className="text-6xl font-bold text-[#f9c65d] mb-2">$155K</div>
               <div className="text-xl text-gray-700 mb-6">Average Funding Amount</div>
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div className="bg-white rounded-lg p-4 shadow">
-                  <div className="text-3xl font-bold text-gray-900">$47M+</div>
+                  <div className="text-3xl font-bold text-[#f9c65d]">$47M+</div>
                   <div className="text-gray-600">Total Capital Secured</div>
                 </div>
                 <div className="bg-white rounded-lg p-4 shadow">
-                  <div className="text-3xl font-bold text-gray-900">850+</div>
+                  <div className="text-3xl font-bold text-[#f9c65d]">850+</div>
                   <div className="text-gray-600">Clients Funded</div>
                 </div>
                 <div className="bg-white rounded-lg p-4 shadow">
-                  <div className="text-3xl font-bold text-gray-900">30-60</div>
+                  <div className="text-3xl font-bold text-[#f9c65d]">30-60</div>
                   <div className="text-gray-600">Days To Capital</div>
                 </div>
                 <div className="bg-white rounded-lg p-4 shadow">
-                  <div className="text-3xl font-bold text-gray-900">15+</div>
+                  <div className="text-3xl font-bold text-[#f9c65d]">15+</div>
                   <div className="text-gray-600">Years Experience</div>
                 </div>
               </div>
@@ -143,7 +143,7 @@ const TheAwakeningSection = () => (
 
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Imagine Having $150,000 in Credit Available and Paying Zero Interest for 18 Months
+          Imagine Having <span className="text-[#f9c65d]">$150,000 in Credit</span> Available and Paying <span className="text-[#f9c65d]">Zero Interest</span> for 18 Months
         </h2>
         <p className="text-xl text-gray-600">
           Let's talk real numbers. Here's what 0% capital actually means for your business.
@@ -234,7 +234,7 @@ const TrustIndicators = () => (
           { number: "15+", label: "Years Combined Banking Experience" }
         ].map((stat, index) => (
           <div key={index} className="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="text-3xl md:text-4xl font-bold text-amber-600 mb-2">{stat.number}</div>
+            <div className="text-3xl md:text-4xl font-bold text-[#f9c65d] mb-2">{stat.number}</div>
             <div className="text-sm text-gray-600">{stat.label}</div>
           </div>
         ))}
@@ -283,9 +283,9 @@ const TheVisionSection = () => {
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            What Would You Do With $150,000 at 0% Interest Available Tomorrow?
-          </h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          What Would You Do With <span className="text-[#f9c65d]">$150,000 at 0% Interest</span> Available Tomorrow?
+        </h2>
           <p className="text-xl text-gray-600">
             This isn't just about capital. It's about what that capital makes possible.
           </p>
@@ -426,9 +426,9 @@ const ThreeRoundFramework = () => {
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our Proven Three-Round Funding Framework
-          </h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Our Proven Three-Round <span className="text-[#f9c65d]">Funding Framework</span>
+        </h2>
           <p className="text-xl text-gray-600">
             Strategic sequencing across multiple rounds. Each success builds momentum for the next.
           </p>
@@ -579,9 +579,9 @@ const ResultsShowcase = () => {
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Real Clients. Real Results. Real Capital.
-          </h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Real Clients. Real Results. <span className="text-[#f9c65d]">Real Capital.</span>
+        </h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -643,7 +643,7 @@ const QualificationRequirements = () => (
 
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Here's Exactly What We Need to Get You Funded
+          Here's Exactly What We Need to <span className="text-[#f9c65d]">Get You Funded</span>
         </h2>
       </div>
 
@@ -834,7 +834,7 @@ const PartnershipModel = () => (
 
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Our Performance-Based Partnership Model
+          Our <span className="text-[#f9c65d]">Performance-Based</span> Partnership Model
         </h2>
         <p className="text-xl text-gray-600">
           We only succeed when you succeed. You never pay for promises, only results.
@@ -1087,7 +1087,7 @@ const FinalCTA = () => (
 
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          You Have Two Choices Right Now
+          You Have <span className="text-[#f9c65d]">Two Choices</span> Right Now
         </h2>
       </div>
 
