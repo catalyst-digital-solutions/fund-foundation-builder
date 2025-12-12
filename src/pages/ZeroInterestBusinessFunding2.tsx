@@ -39,9 +39,9 @@ const HeroSection = () => (
 
         {/* Left: Content */}
         <div className="animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold mb-6 shadow-md border-2 border-green-300">
-            <Trophy className="w-4 h-4" />
-            700+ Credit Score? You Likely Qualify
+          <div className="inline-flex items-center gap-2 bg-white border-2 border-amber-400 px-6 py-3 rounded-full text-sm font-bold mb-6 shadow-lg">
+            <Trophy className="w-4 h-4 text-amber-500" />
+            <span className="text-gray-900">700+ Credit Score? You Likely Qualify</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
