@@ -46,24 +46,28 @@ export default function TransformationJourney() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
-        <div className="relative h-full flex flex-col justify-center">
-          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
-            {/* Centered headline */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight text-center mb-8">
+        <div className="relative h-full flex flex-col">
+          {/* Title at top */}
+          <div className="pt-10 md:pt-14">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight text-center">
               Imagine <span className="text-[#f9c65d]">Your Life</span> 6 Months From Now
             </h2>
-            
-            {/* Left-aligned milestone text */}
-            <div className="max-w-2xl text-left space-y-2">
-              <p className="text-lg md:text-xl text-white/80 italic">You check your credit score...</p>
-              <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f9c65d] leading-none">
-                +100 points.
-              </p>
-              <p className="text-xl md:text-2xl text-white font-light tracking-wide pt-4">
-                Collections? <span className="font-semibold">Gone.</span><br />
-                Late payments? <span className="font-semibold">Removed.</span><br />
-                Your report? <span className="font-semibold text-[#f9c65d]">Clean.</span>
-              </p>
+          </div>
+          
+          {/* Milestone text - vertically centered in remaining space */}
+          <div className="flex-1 flex items-center">
+            <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+              <div className="max-w-2xl text-left space-y-2">
+                <p className="text-lg md:text-xl text-white/80 italic">You check your credit score...</p>
+                <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f9c65d] leading-none">
+                  +100 points.
+                </p>
+                <p className="text-xl md:text-2xl text-white font-light tracking-wide pt-4">
+                  Collections? <span className="font-semibold">Gone.</span><br />
+                  Late payments? <span className="font-semibold">Removed.</span><br />
+                  Your report? <span className="font-semibold text-[#f9c65d]">Clean.</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
