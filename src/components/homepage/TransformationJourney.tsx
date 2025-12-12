@@ -1,11 +1,17 @@
 import React from 'react';
-import { Eye, TrendingUp, Key, Car, Home, Unlock, Building } from 'lucide-react';
+import { Eye, TrendingUp, Unlock, Building } from 'lucide-react';
+
+// Import transformation images
+import creditScoreImg from '@/assets/transformation-credit-score.jpeg';
+import apartmentKeysImg from '@/assets/transformation-apartment-keys.jpeg';
+import carApprovalImg from '@/assets/transformation-car-approval.jpeg';
+import familyHomeImg from '@/assets/transformation-family-home.jpeg';
 
 export default function TransformationJourney() {
   return (
     <section className="relative overflow-hidden">
       
-      {/* Full sunrise gradient background wrapper */}
+      {/* Vision Opener - Sunrise gradient background */}
       <div 
         className="py-16 md:py-20"
         style={{ background: 'linear-gradient(-115deg, #e8c872 0%, #f5d98a 50%, #fcefd3 100%)' }}
@@ -20,89 +26,73 @@ export default function TransformationJourney() {
         </div>
       </div>
 
-      {/* Milestone 1: Credit Transformation */}
-      <div 
-        className="py-12 md:py-16"
-        style={{ background: 'linear-gradient(-115deg, #ebd080 0%, #f7dea0 50%, #fcf2dc 100%)' }}
-      >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-start gap-6">
-            <div className="flex-shrink-0">
-              <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#3e3e3e]/20 flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 md:w-8 md:h-8 text-[#3e3e3e]" />
-              </div>
-            </div>
-            <div className="space-y-3">
-              <p className="text-lg md:text-xl text-[#3e3e3e] leading-relaxed">
-                You check your credit score and it's climbed over <span className="font-bold text-[#8b6f35]">100 points</span>. 
-                The collections are gone. The late payments—removed. Your report is clean.
-              </p>
-            </div>
+      {/* Milestone 1: Credit Score - Full width image with text overlay */}
+      <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+        <img 
+          src={creditScoreImg} 
+          alt="Man smiling at improved credit score on phone"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+        <div className="relative h-full flex items-center">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+            <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed font-medium max-w-2xl">
+              You check your credit score and it's climbed over <span className="font-bold text-[#f9c65d]">100 points</span>. 
+              The collections are gone. The late payments—removed. Your report is clean.
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Milestone 2: Apartment Approval */}
-      <div 
-        className="py-12 md:py-16"
-        style={{ background: 'linear-gradient(-115deg, #eed88e 0%, #f8e3ab 50%, #fdf4e2 100%)' }}
-      >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-start gap-6">
-            <div className="flex-shrink-0">
-              <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#3e3e3e]/20 flex items-center justify-center">
-                <Key className="w-6 h-6 md:w-8 md:h-8 text-[#3e3e3e]" />
-              </div>
-            </div>
-            <div className="space-y-3">
-              <p className="text-lg md:text-xl text-[#3e3e3e] leading-relaxed">
-                You apply for that apartment you've been eyeing. <span className="font-bold text-green-700">Approved.</span>
-              </p>
-            </div>
+      {/* Milestone 2: Apartment Approval - Full width image with text overlay */}
+      <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+        <img 
+          src={apartmentKeysImg} 
+          alt="Property manager handing over keys to new apartment"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-l from-black/70 via-black/50 to-transparent" />
+        <div className="relative h-full flex items-center justify-end">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+            <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed font-medium max-w-2xl ml-auto text-right">
+              You apply for that apartment you've been eyeing. <span className="font-bold text-green-400">Approved.</span>
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Milestone 3: Car Dealership Win */}
-      <div 
-        className="py-12 md:py-16"
-        style={{ background: 'linear-gradient(-115deg, #f1e09c 0%, #f9e8b6 50%, #fef6e8 100%)' }}
-      >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-start gap-6">
-            <div className="flex-shrink-0">
-              <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#3e3e3e]/20 flex items-center justify-center">
-                <Car className="w-6 h-6 md:w-8 md:h-8 text-[#3e3e3e]" />
-              </div>
-            </div>
-            <div className="space-y-3">
-              <p className="text-lg md:text-xl text-[#3e3e3e] leading-relaxed">
-                You walk into the car dealership with confidence instead of dread. The finance manager comes back smiling. 
-                Approved at <span className="font-bold text-[#8b6f35]">6.9%</span> instead of <span className="line-through text-red-700">18%</span>.
-              </p>
-            </div>
+      {/* Milestone 3: Car Dealership Win - Full width image with text overlay */}
+      <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+        <img 
+          src={carApprovalImg} 
+          alt="Woman shaking hands at car dealership after loan approval"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+        <div className="relative h-full flex items-center">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+            <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed font-medium max-w-2xl">
+              You walk into the car dealership with confidence instead of dread. The finance manager comes back smiling. 
+              Approved at <span className="font-bold text-[#f9c65d]">6.9%</span> instead of <span className="line-through text-red-300">18%</span>.
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Milestone 4: Homeownership & Legacy - Peak Emotional */}
-      <div 
-        className="py-12 md:py-16"
-        style={{ background: 'linear-gradient(-115deg, #f4e8aa 0%, #faedc1 50%, #fef8ee 100%)' }}
-      >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-start gap-6">
-            <div className="flex-shrink-0">
-              <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#3e3e3e]/20 flex items-center justify-center">
-                <Home className="w-6 h-6 md:w-8 md:h-8 text-[#3e3e3e]" />
-              </div>
-            </div>
-            <div className="space-y-3">
-              <p className="text-lg md:text-xl text-[#3e3e3e] leading-relaxed">
-                You tell your kids you're buying a house. They don't have to move again. 
-                You're building something they can inherit.
-              </p>
-            </div>
+      {/* Milestone 4: Homeownership & Legacy - Full width image with text overlay */}
+      <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+        <img 
+          src={familyHomeImg} 
+          alt="Happy family in front of their new home with SOLD sign"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-l from-black/70 via-black/50 to-transparent" />
+        <div className="relative h-full flex items-center justify-end">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+            <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed font-medium max-w-2xl ml-auto text-right">
+              You tell your kids you're buying a house. They don't have to move again. 
+              You're building something they can inherit.
+            </p>
           </div>
         </div>
       </div>
