@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Eye, TrendingUp, Unlock, Building } from 'lucide-react';
 
 // Import transformation images
@@ -9,6 +9,30 @@ import familyHomeImg from '@/assets/transformation-family-home.jpeg';
 import sunriseCoastlineImg from '@/assets/transformation-sunrise-coastline.jpg';
 
 export default function TransformationJourney() {
+  const parallaxRef = useRef<HTMLDivElement>(null);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!parallaxRef.current) return;
+      
+      const rect = parallaxRef.current.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      
+      // Calculate progress: 0 when section enters viewport, 1 when it exits
+      const progress = Math.max(0, Math.min(1, 
+        (windowHeight - rect.top) / (windowHeight + rect.height)
+      ));
+      
+      setScrollProgress(progress);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Initial call
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section className="relative overflow-hidden">
       
@@ -127,16 +151,23 @@ export default function TransformationJourney() {
       </div>
 
       {/* Partner Declaration - Parallax Section */}
-      <div className="relative h-[300px] md:h-[400px] overflow-hidden">
+      <div 
+        ref={parallaxRef}
+        className="relative h-[50vh] md:h-[60vh] overflow-hidden"
+      >
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${sunriseCoastlineImg})` }}
+          className="absolute inset-x-0 h-[150%] -top-[25%]"
+          style={{ 
+            backgroundImage: `url(${sunriseCoastlineImg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: `center ${scrollProgress * 100}%`,
+          }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative h-full flex items-center justify-center">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight drop-shadow-lg">
-              This isn't a fantasy. This is what happens when you have the right partner.
+              This isn't a <span className="text-[#f9c65d]">fantasy.</span> This is what happens when you have the <span className="text-[#f9c65d]">right partner.</span>
             </p>
           </div>
         </div>
