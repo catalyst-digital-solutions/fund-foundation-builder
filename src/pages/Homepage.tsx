@@ -30,6 +30,7 @@ import {
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import TransformationJourney from '@/components/homepage/TransformationJourney';
 
 // Import media logos
 import kget17Logo from '@/assets/kget-17-logo.png';
@@ -872,6 +873,11 @@ const Homepage = () => {
 
         </div>
       </section>
+
+      {/* ================================================================
+          SECTION 4B: TRANSFORMATION JOURNEY (A/B TEST VARIANT)
+      ================================================================ */}
+      <TransformationJourney />
 
       {/* ================================================================
           SECTION 5: WHY MESA GROUP (STRATEGIC DIFFERENTIATION)
