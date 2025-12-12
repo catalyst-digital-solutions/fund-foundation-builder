@@ -2,10 +2,10 @@ import React, { useRef, useEffect, useState } from 'react';
 import { Eye, TrendingUp, Unlock, Building } from 'lucide-react';
 
 // Import transformation images
-import creditScoreImg from '@/assets/transformation-credit-score.jpeg';
-import apartmentKeysImg from '@/assets/transformation-apartment-keys.jpeg';
-import carApprovalImg from '@/assets/transformation-car-approval.jpeg';
-import familyHomeImg from '@/assets/transformation-family-home.jpeg';
+import creditScoreImg from '@/assets/transformation-credit-score.jpg';
+import apartmentKeysImg from '@/assets/transformation-apartment-keys.jpg';
+import carApprovalImg from '@/assets/transformation-car-approval.jpg';
+import familyHomeImg from '@/assets/transformation-family-home.jpg';
 import sunriseCoastlineImg from '@/assets/transformation-sunrise-coastline.jpg';
 
 export default function TransformationJourney() {
