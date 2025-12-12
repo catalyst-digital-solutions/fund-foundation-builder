@@ -321,6 +321,116 @@ This project is built in collaboration with Lovable, a web development platform.
 <Footer />
 ```
 
+## Recent Major Update #3 (December 12, 2024)
+
+### Business Credit Builder Program Page (New Service)
+
+**Background:**
+- The existing `/build-credit` page is for PERSONAL credit building (free educational guide)
+- Created a NEW page for BUSINESS credit building (paid program enrollment at $2,495 or $995)
+- **These are two completely different services that coexist as separate pages**
+
+**What Was Created:**
+- New page: `BusinessCreditBuilder.tsx`
+- Existing personal credit page preserved at `/build-credit`
+- New business credit program page at `/business-credit-builder`
+
+**Key Service Differences:**
+
+| Aspect | Personal Credit (/build-credit) | Business Credit (/business-credit-builder) |
+|--------|--------------------------------|-------------------------------------------|
+| **Target** | Consumers | Business owners with LLC/Corp |
+| **Goal** | 680-750+ personal credit score | $50K-$150K business funding |
+| **Cost** | Free guide + partner signups | $2,495 (Full Service) or $995 (DIY) |
+| **Support** | Educational guide only | 12-month coaching + software platform |
+| **Guarantee** | None | $50,000 minimum funding guarantee |
+| **Software** | None | Business Credit Finance Suite |
+| **Bureaus** | Consumer (Experian, Equifax, TransUnion) | Business (Dun & Bradstreet, Experian Business, Equifax Business) |
+| **Risk Focus** | Credit score impact | Home/personal assets at risk |
+
+**New Page Statistics:**
+- **$50,000 minimum funding guarantee** (key differentiator)
+- **$5,000 to $150,000 funding range**
+- **300+ vendor & lender network**
+- **125+ Fundability Factors™ tracked**
+- **6-12 months to $50K funding timeline**
+- **$11,040 total program value**
+- **3 business credit bureaus** (Dun & Bradstreet, Experian Business, Equifax Business)
+- **4 credit tiers** (Tier 1-4 progression)
+
+**Sections Included:**
+- **Hero Section** - Fear-based messaging: "Stop Gambling Your Home Every Time Your Business Needs Capital"
+- **Problem Section** - Emotional pull: home-at-risk messaging, 7 problems WITHOUT vs 7 benefits WITH business credit
+- **Awakening Section** - Strategic comparison table (WITHOUT vs WITH business credit)
+- **Vision Section** - 6 benefit categories (Financial Freedom, Asset Protection, Scalability, Better Terms, Business Equity, Peace of Mind)
+- **5-Step Fundability® System** (MAJOR SECTION):
+  1. Know Your Fundability Score™
+  2. Identify Fundability Factors™ (125+ hidden factors)
+  3. Track Business Bureau Insights™
+  4. Maximize Your Fundability®
+  5. Get MATCHED with 300+ Sources
+- **Guarantee Section** - $50K minimum funding guarantee with compliance language
+- **What's Included Section** - Value breakdown table showing $11,040 total value with "PRICELESS" row
+- **Program Options Section** - Dual pricing cards:
+  - Full Service: $2,495 (12 months coaching + weekly calls + $50K guarantee)
+  - DIY: $995 (complete system + software + all education, no coaching)
+- **Testimonials Section** - 2 client success stories (Michelle, Curtis H.)
+- **Video Section** - Business Credit Finance Suite walkthrough placeholder
+- **Choice Section** - Path 1 (DIY 18-24 months) vs Path 2 (Mesa system 6-12 months)
+- **FAQ Section** - 13 comprehensive business credit questions
+- **Final CTA Section** - Both program options with enrollment links + contact options
+- **Compliance Disclaimers** - Mesa Group + Novae partnership disclosure, $50K guarantee terms
+
+**Enrollment CTAs:**
+- Full Service ($2,495): `https://mesagroupcapital.com/business-credit-enroll`
+- DIY ($995): `https://mesagroupcapital.com/bcfs-diy-enroll`
+- Consultation: `https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery`
+- Phone: (661) 310-3040
+
+**Design System Preserved:**
+- Amber/gold color scheme (#f9c65d, #bb9446, #fcd34d, #f59e0b)
+- Gradient backgrounds (white → amber-50 → white)
+- Shadow-lg cards with hover effects
+- Rounded-xl corners throughout
+- Lucide React icons
+- Dark testimonial cards (#3e3e3e → #2c2c2c) with gold stars
+- FAQ accordion pattern with ChevronDown icons
+- Hover animations: scale-105, -translate-y-1
+- Responsive breakpoints (md/lg)
+
+**Trademark Usage:**
+- Fundability® (registered trademark - used with ® symbol throughout)
+- Fundability Score™
+- Fundability Factors™
+- Business Bureau Insights™
+
+**Pricing Model:**
+- Full Service: $2,495 one-time OR 3-month payment plan (access after 2nd payment)
+- DIY: $995 one-time (instant access)
+- No "contact for pricing" ambiguity - clear upfront pricing
+
+**Component Structure:**
+```tsx
+<Header />
+<HeroSection />
+<ProblemSection />
+<AwakeningSection />
+<VisionSection />
+<FundabilitySystemSection />  // 5 steps with detailed reveals
+<GuaranteeSection />
+<WhatsIncludedSection />      // Value breakdown $11,040
+<ProgramOptionsSection />     // Dual pricing cards
+<TestimonialsSection />
+<VideoSection />
+<ChoiceSection />
+<FAQSection />                // 13 questions with accordion
+<FinalCTASection />           // Both CTAs + compliance
+<Footer />
+```
+
+**Partnership Disclosure:**
+Program delivered through strategic partnership between Mesa Group Consulting, Mesa Group Capital, and Novae. Novae provides technology platform (Business Credit Finance Suite, myNovaeDisputes Manager). Mesa Group provides consulting, coaching, and advisory services.
+
 ## Future Considerations
 
 1. **A/B Testing:** May want to test original vs. new versions for both 0% funding and Business Funding pages
@@ -329,6 +439,7 @@ This project is built in collaboration with Lovable, a web development platform.
 4. **SEO Optimization:** Meta tags and descriptions may need updating
 5. **Analytics:** Track conversion rates between page versions and between consultation vs. direct application pathways
 6. **Calculator Enhancement:** Consider adding more calculator variations (equipment, real estate, etc.)
+7. **Personal vs Business Credit Strategy:** Consider navigation/marketing strategy to guide users to appropriate page (personal credit vs business credit)
 
 ## Important Files for Context
 
@@ -346,3 +457,4 @@ Repository is hosted on GitHub and likely deployed through Lovable's platform or
 **Last Updated:** December 12, 2024
 **Updated By:** Claude Code (Anthropic)
 **Project Status:** Active Development
+**Latest Addition:** Business Credit Builder Program page (/business-credit-builder)
