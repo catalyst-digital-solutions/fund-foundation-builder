@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 
 const BusinessCreditBuilder = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -38,7 +39,7 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto text-center">
         {/* Main Headline */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          Stop Gambling Your Home Every Time<br />Your Business Needs Capital
+          Stop Gambling <span style={{ color: '#f9c65d' }}>Your Home</span> Every Time<br /><span style={{ color: '#f9c65d' }}>Your Business</span> Needs Capital
         </h1>
 
         {/* Subheadline */}
@@ -63,25 +64,30 @@ const HeroSection = () => {
         </div>
 
         {/* Dual CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a
-            href="https://mesagroupcapital.com/business-credit-enroll"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 flex items-center gap-2 text-lg"
-          >
-            Get Full Service Program ($2,495)
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </a>
-          <a
-            href="https://mesagroupcapital.com/bcfs-diy-enroll"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 border-2 border-gray-300 flex items-center gap-2 text-lg"
-          >
-            Get DIY Program ($995)
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </a>
+        <div className="flex flex-col items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="https://mesagroupcapital.com/business-credit-enroll"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 flex items-center gap-2 text-lg"
+            >
+              Get Full Service Program ($2,495)
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a
+              href="https://mesagroupcapital.com/bcfs-diy-enroll"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 border-2 border-gray-300 flex items-center gap-2 text-lg"
+            >
+              Get DIY Program ($995)
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
+          <div className="mt-4">
+            <PoweredByMesaGroup />
+          </div>
         </div>
       </div>
     </section>
@@ -280,7 +286,7 @@ const VisionSection = () => {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-6">
           Picture Your Business Standing Strong on Its Own Credit.<br />
-          <span className="text-amber-600">Imagine Your Family Protected.</span>
+          <span style={{ color: '#f9c65d' }}>Imagine Your Family Protected.</span>
         </h2>
 
         <div className="bg-white rounded-xl p-8 shadow-lg max-w-3xl mx-auto mb-12">
@@ -401,7 +407,7 @@ const FundabilitySystemSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            How Fundability<sup className="text-2xl">®</sup> Prepares Your Business<br />for Maximum Funding in 5 Steps
+            How Fundability<sup className="text-2xl">®</sup> Prepares Your Business<br />for <span style={{ color: '#f9c65d' }}>Maximum Funding</span> in 5 Steps
           </h2>
           <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
             Your business has untapped funding potential. The challenge? Most businesses don't know how to unlock it. Our proven Fundability<sup>®</sup> system shows you exactly how fundable your business is right now—and the precise steps to maximize your access to capital.
@@ -517,6 +523,9 @@ const GuaranteeSection = () => {
               Get Started with Full Service ($2,495)
               <ArrowRight className="w-5 h-5" />
             </a>
+            <div className="mt-4">
+              <PoweredByMesaGroup />
+            </div>
           </div>
 
           <div className="mt-8 bg-white rounded-lg p-6 border-l-4 border-amber-600">
@@ -747,6 +756,11 @@ const ProgramOptionsSection = () => {
 
             <p className="text-sm text-gray-600 text-center mt-4">Instant access upon enrollment</p>
           </div>
+        </div>
+
+        {/* Powered By Mesa Group Capital - Centered Below Both Cards */}
+        <div className="flex justify-center mt-8 mb-8">
+          <PoweredByMesaGroup />
         </div>
 
         {/* Need Help Deciding */}
@@ -1073,6 +1087,11 @@ const FinalCTASection = () => {
               Purchase Now
             </a>
           </div>
+        </div>
+
+        {/* Powered By Mesa Group Capital - Centered Below Pricing Cards */}
+        <div className="flex justify-center mb-12">
+          <PoweredByMesaGroup />
         </div>
 
         {/* Contact Section */}
