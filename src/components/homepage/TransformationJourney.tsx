@@ -85,7 +85,7 @@ export default function TransformationJourney() {
           <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
             <div className="max-w-2xl ml-auto text-right space-y-2">
               <p className="text-lg md:text-xl text-white/80 italic">That apartment you've been eyeing...</p>
-              <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-green-400 leading-none">
+              <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f9c65d] leading-none">
                 Approved.
               </p>
               <p className="text-xl md:text-2xl text-white font-light tracking-wide pt-4">
