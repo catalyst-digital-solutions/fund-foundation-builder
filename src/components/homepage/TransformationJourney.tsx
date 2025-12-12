@@ -6,6 +6,7 @@ import creditScoreImg from '@/assets/transformation-credit-score.jpeg';
 import apartmentKeysImg from '@/assets/transformation-apartment-keys.jpeg';
 import carApprovalImg from '@/assets/transformation-car-approval.jpeg';
 import familyHomeImg from '@/assets/transformation-family-home.jpeg';
+import sunriseCoastlineImg from '@/assets/transformation-sunrise-coastline.jpg';
 
 export default function TransformationJourney() {
   return (
@@ -125,15 +126,19 @@ export default function TransformationJourney() {
         </div>
       </div>
 
-      {/* Partner Declaration - Transition Section */}
-      <div 
-        className="py-12 md:py-16"
-        style={{ background: 'linear-gradient(-115deg, #f7f0b8 0%, #fbf2cc 50%, #fefaf4 100%)' }}
-      >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xl md:text-2xl font-bold text-[#3e3e3e] leading-tight">
-            This isn't a fantasy. This is what happens when you have the right partner.
-          </p>
+      {/* Partner Declaration - Parallax Section */}
+      <div className="relative h-[300px] md:h-[400px] overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: `url(${sunriseCoastlineImg})` }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative h-full flex items-center justify-center">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight drop-shadow-lg">
+              This isn't a fantasy. This is what happens when you have the right partner.
+            </p>
+          </div>
         </div>
       </div>
 
