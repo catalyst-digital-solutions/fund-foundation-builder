@@ -46,29 +46,22 @@ export default function TransformationJourney() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
-        <div className="relative h-full flex items-center justify-start">
-          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
-            <div className="max-w-2xl mr-auto text-left space-y-4">
-              {/* Headline moved from separate section */}
-              <div className="flex items-center gap-3 mb-2">
-                <div className="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/20">
-                  <Eye className="w-6 h-6 md:w-7 md:h-7 text-white" />
-                </div>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
-                  Imagine Your Life 6 Months From Now
-                </h2>
-              </div>
-              
-              <p className="text-lg md:text-xl text-white/80 italic pt-4">You check your credit score...</p>
-              <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f9c65d] leading-none">
-                +100 points.
-              </p>
-              <p className="text-xl md:text-2xl text-white font-light tracking-wide pt-4">
-                Collections? <span className="font-semibold">Gone.</span><br />
-                Late payments? <span className="font-semibold">Removed.</span><br />
-                Your report? <span className="font-semibold text-[#f9c65d]">Clean.</span>
-              </p>
-            </div>
+        <div className="relative h-full flex flex-col items-center justify-center">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full text-center space-y-6">
+            {/* Centered headline */}
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+              Imagine <span className="text-[#f9c65d]">Your Life</span> 6 Months From Now
+            </h2>
+            
+            <p className="text-lg md:text-xl text-white/80 italic pt-2">You check your credit score...</p>
+            <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f9c65d] leading-none">
+              +100 points.
+            </p>
+            <p className="text-xl md:text-2xl text-white font-light tracking-wide pt-2">
+              Collections? <span className="font-semibold">Gone.</span><br />
+              Late payments? <span className="font-semibold">Removed.</span><br />
+              Your report? <span className="font-semibold text-[#f9c65d]">Clean.</span>
+            </p>
           </div>
         </div>
       </div>
