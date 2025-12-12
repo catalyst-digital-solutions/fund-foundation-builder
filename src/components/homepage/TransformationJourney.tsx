@@ -114,7 +114,7 @@ export default function TransformationJourney() {
               <div className="pt-4 flex items-baseline gap-4 flex-wrap justify-start">
                 <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f9c65d]">6.9%</span>
                 <span className="text-2xl md:text-3xl text-white/60">not</span>
-                <span className="text-3xl md:text-4xl text-red-400 line-through">18%</span>
+                <span className="text-3xl md:text-4xl text-[#f9c65d] line-through">18%</span>
               </div>
               <p className="text-xl md:text-2xl text-white font-light tracking-wide pt-2">
                 The finance manager is <span className="font-semibold text-[#f9c65d]">smiling.</span>
