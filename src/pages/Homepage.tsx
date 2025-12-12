@@ -38,6 +38,9 @@ import studio17Logo from '@/assets/studio-17-logo.png';
 import telemundoLogo from '@/assets/telemundo-logo.png';
 import cwLogo from '@/assets/cw-logo.png';
 
+// Import meeting room image
+import meetingRoomImg from '@/assets/meeting-room-consultation.jpg';
+
 // ============================================================================
 // INNOVATIVE SERVICES TAB COMPONENT
 // ============================================================================
@@ -797,21 +800,31 @@ const Homepage = () => {
 
           </div>
 
-          {/* Primary CTA */}
-          <div className="text-center bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-8 md:p-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Not Sure Where to Start?
-            </h3>
-            <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-              Schedule your free consultation and let our experts create a personalized roadmap for your financial success.
-            </p>
-            <button
-              onClick={openConsultationModal}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all border-2 border-amber-500"
-            >
-              Schedule My Free Consultation
-              <ArrowRight className="w-5 h-5" />
-            </button>
+          {/* Primary CTA - Meeting Room Background Section */}
+          <div className="relative h-[500px] md:h-[600px] overflow-hidden rounded-3xl">
+            <img
+              src={meetingRoomImg}
+              alt="Mesa Group Consulting professional meeting room"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/50" />
+            <div className="relative h-full flex items-center">
+              <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full text-center">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                  Not Sure Where to <span className="text-[#f9c65d]">Start?</span>
+                </h3>
+                <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+                  Schedule your free consultation and let our experts create a personalized roadmap for your financial success.
+                </p>
+                <button
+                  onClick={openConsultationModal}
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all border-2 border-amber-500"
+                >
+                  Schedule My Free Consultation
+                  <ArrowRight className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
           </div>
 
         </div>
