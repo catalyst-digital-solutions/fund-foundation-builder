@@ -38,23 +38,8 @@ export default function TransformationJourney() {
   return (
     <section className="relative overflow-hidden">
       
-      {/* Vision Opener - Sunrise gradient background */}
-      <div 
-        className="py-16 md:py-20"
-        style={{ background: 'linear-gradient(-115deg, #e8c872 0%, #f5d98a 50%, #fcefd3 100%)' }}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#3e3e3e]/20 mb-6">
-            <Eye className="w-8 h-8 md:w-10 md:h-10 text-[#3e3e3e]" />
-          </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight">
-            Imagine Your Life 6 Months From Now
-          </h2>
-        </div>
-      </div>
-
-      {/* Milestone 1: Credit Score - Full width image with text overlay */}
-      <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+      {/* Milestone 1: Credit Score - Combined with "Imagine Your Life" headline */}
+      <div className="relative h-[500px] md:h-[600px] overflow-hidden">
         <img 
           src={creditScoreImg} 
           alt="Man smiling at improved credit score on phone"
@@ -63,8 +48,18 @@ export default function TransformationJourney() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
         <div className="relative h-full flex items-center justify-start">
           <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
-            <div className="max-w-2xl mr-auto text-left space-y-2">
-              <p className="text-lg md:text-xl text-white/80 italic">You check your credit score...</p>
+            <div className="max-w-2xl mr-auto text-left space-y-4">
+              {/* Headline moved from separate section */}
+              <div className="flex items-center gap-3 mb-2">
+                <div className="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/20">
+                  <Eye className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                </div>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
+                  Imagine Your Life 6 Months From Now
+                </h2>
+              </div>
+              
+              <p className="text-lg md:text-xl text-white/80 italic pt-4">You check your credit score...</p>
               <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f9c65d] leading-none">
                 +100 points.
               </p>
