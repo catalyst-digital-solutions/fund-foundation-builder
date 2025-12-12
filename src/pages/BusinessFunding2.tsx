@@ -48,7 +48,7 @@ const HeroSection = () => {
         </div>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          Your Business Deserves More Than <span className="text-amber-600">"Maybe"</span>
+          Your Business Deserves More Than <span className="text-[#f9c65d]">"Maybe"</span>
         </h1>
 
         <p className="text-xl text-gray-700 leading-relaxed mb-4 max-w-3xl mx-auto">
@@ -122,7 +122,7 @@ const InteractiveFundingCalculator = () => {
             Interactive Funding Calculator
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            How Much Funding Could Your Business Qualify For?
+            How Much Funding Could <span className="text-[#f9c65d]">Your Business</span> Qualify For?
           </h2>
           <p className="text-xl text-gray-700">
             Most lenders approve 10-20% of your annual revenue for unsecured funding. See your estimated range instantly:
@@ -252,7 +252,7 @@ const TheSolutionSection = () => {
 
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            How Mesa Group Capital Gets You Funded
+            How <span className="text-[#f9c65d]">Mesa Group Capital</span> Gets You Funded
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Unlike traditional lenders who fit businesses into rigid boxes, we start with a simple question: <strong>What would the right capital do for your business right now?</strong>
@@ -365,7 +365,7 @@ const IntroducingBrokerageDivision = () => {
 
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Introducing Our Brokerage Division
+            Introducing Our <span className="text-[#f9c65d]">Brokerage Division</span>
           </h2>
           <h3 className="text-3xl font-bold text-amber-600 mb-4">
             Mesa Group Capital: Your Connection to 75+ Lenders
@@ -450,7 +450,7 @@ const AllFundingSolutionsGrid = () => {
 
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            8 Ways We Fund Your Business Growth
+            8 Ways We Fund Your <span className="text-[#f9c65d]">Business Growth</span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Through Mesa Group Capital, you have access to every major funding category. No two businesses are identical—that's why we offer multiple pathways.
@@ -1151,7 +1151,7 @@ const WhyMesaGetsResults = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Why Mesa Group Capital Gets Better Results
           </h2>
-          <p className="text-2xl text-amber-700 font-semibold">
+          <p className="text-2xl text-[#f9c65d] font-semibold">
             Most Brokers Submit Your Application and Hope. We Engineer Your Approval.
           </p>
         </div>
@@ -1222,7 +1222,7 @@ const TheProcessSection = () => {
 
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            From "Maybe" to "Approved" in 4 Simple Steps
+            From <span className="text-[#f9c65d]">"Maybe"</span> to <span className="text-[#f9c65d]">"Approved"</span> in 4 Simple Steps
           </h2>
         </div>
 
@@ -1439,7 +1439,7 @@ const FAQSection = () => {
 
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Your Questions, <span className="text-amber-600">Answered</span>
+            Your Questions, <span className="text-[#f9c65d]">Answered</span>
           </h2>
         </div>
 
@@ -1603,7 +1603,7 @@ const FinalCTA = () => {
 
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Your Business Doesn't Have Time to Wait
+            Your Business Doesn't Have <span className="text-[#f9c65d]">Time</span> to Wait
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed mb-6 max-w-3xl mx-auto">
             Every day without the right funding is a day your competition moves ahead. The market doesn't care about your credit score—it cares whether you can deliver.
