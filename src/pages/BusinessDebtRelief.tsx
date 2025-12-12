@@ -84,21 +84,21 @@ const BusinessDebtRelief = () => {
           
           {/* Dual CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <div className="inline-block">
+            <div className="flex flex-col items-center">
               <a 
                 href="https://mesagroupcapital.com/for-businesses/debt-relief"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg w-full sm:w-auto justify-center"
+                className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg justify-center border-2 border-amber-500"
               >
                 Book Free Debt Analysis
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <PoweredByMesaGroup className="mt-4" />
+              <PoweredByMesaGroup className="mt-3" />
             </div>
             <a 
               href="tel:661-310-3040"
-              className="inline-flex items-center gap-2 bg-white text-gray-900 text-lg font-semibold px-8 py-4 rounded-lg border-2 border-gray-300 hover:border-amber-400 hover:bg-gray-50 transition-all duration-200 w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-2 bg-white text-gray-900 text-lg font-semibold px-8 py-4 rounded-lg border-2 border-gray-300 hover:border-amber-400 hover:bg-gray-50 transition-all duration-200 justify-center"
             >
               <Phone className="w-5 h-5" />
               Call (661) 310-3040
