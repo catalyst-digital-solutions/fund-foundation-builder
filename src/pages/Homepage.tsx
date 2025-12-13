@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { 
   Check,
   CheckCircle,
@@ -31,15 +31,122 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import TransformationJourney from '@/components/homepage/TransformationJourney';
+// Fullpage.js removed - using CSS scroll-snap instead
 
 // Import media logos
 import kget17Logo from '@/assets/kget-17-logo.png';
 import studio17Logo from '@/assets/studio-17-logo.png';
+import evertStudio17Img from '@/assets/evert-studio17-interview.jpg';
 import telemundoLogo from '@/assets/telemundo-logo.png';
 import cwLogo from '@/assets/cw-logo.png';
 
 // Import meeting room image
 import meetingRoomImg from '@/assets/meeting-room-consultation.jpg';
+
+// ============================================================================
+// HOW IT WORKS - 3 STEP SECTION
+// ============================================================================
+
+const HowItWorksSection = ({ openConsultationModal }: { openConsultationModal: () => void }) => {
+  const steps = [
+    {
+      number: 1,
+      icon: Users,
+      iconBg: 'from-blue-100 to-blue-200',
+      iconColor: 'text-blue-600',
+      title: 'Free Consultation',
+      description: 'Schedule a conversation with our team to discuss your current situation, goals, and challenges. We\'ll provide expert guidance on your best path forward—completely free.',
+      whatHappens: 'You\'ll complete a brief contact form or call us directly. We\'ll schedule a consultation at your convenience to review your needs.',
+      bgGradient: 'from-amber-100 via-amber-50 to-white',
+      borderColor: 'border-amber-200'
+    },
+    {
+      number: 2,
+      icon: Target,
+      iconBg: 'from-purple-100 to-purple-200',
+      iconColor: 'text-purple-600',
+      title: 'Custom Recommendations',
+      description: 'Based on your analysis, we\'ll recommend the right solutions from our ecosystem—whether that\'s credit restoration, funding access, debt relief, or financial product comparisons.',
+      whatHappens: 'Our team creates a personalized action plan with transparent pricing and expected timelines.',
+      bgGradient: 'from-purple-100 via-purple-50 to-white',
+      borderColor: 'border-purple-200'
+    },
+    {
+      number: 3,
+      icon: TrendingUp,
+      iconBg: 'from-green-100 to-green-200',
+      iconColor: 'text-green-600',
+      title: 'Execute & Transform',
+      description: 'We guide you through implementation, provide ongoing support, and track your progress until you hit your goals. You\'re never alone in this process.',
+      whatHappens: 'Regular check-ins, progress updates, and adjustments as needed. We\'re with you every step of the way.',
+      bgGradient: 'from-green-100 via-green-50 to-white',
+      borderColor: 'border-green-200'
+    }
+  ];
+
+  return (
+    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            How It <span className="text-[#f9c65d]">Works</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Three simple steps to transform your financial future
+          </p>
+        </div>
+
+        <div className="space-y-8">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className={`bg-gradient-to-br ${step.bgGradient} rounded-3xl p-8 md:p-12 shadow-xl border-2 ${step.borderColor} transform transition-all hover:scale-[1.02] hover:shadow-2xl`}
+            >
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                {/* Step Number & Icon */}
+                <div className="flex-shrink-0">
+                  <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full shadow-2xl mb-4 animate-bounce-slow">
+                    <span className="text-4xl font-bold text-white">{step.number}</span>
+                  </div>
+                  <div className={`w-24 h-24 bg-gradient-to-br ${step.iconBg} rounded-3xl flex items-center justify-center shadow-xl mx-auto`}>
+                    <step.icon className={`w-14 h-14 ${step.iconColor}`} />
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    {step.title}
+                  </h3>
+                  <p className="text-xl text-gray-700 leading-relaxed mb-6">
+                    {step.description}
+                  </p>
+                  <div className={`bg-white/80 backdrop-blur-sm rounded-2xl p-6 border-2 ${step.borderColor}`}>
+                    <p className="text-lg font-bold text-gray-900 mb-2">What happens:</p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      {step.whatHappens}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center mt-16">
+          <button
+            onClick={openConsultationModal}
+            className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-gray-900 font-bold text-xl rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
+          >
+            Start My Free Consultation
+            <ArrowRight className="w-6 h-6" />
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 // ============================================================================
 // INNOVATIVE SERVICES TAB COMPONENT
@@ -1140,6 +1247,11 @@ const Homepage = () => {
       </section>
 
       {/* ================================================================
+          SECTION 6B: HOW IT WORKS - SCROLL-JACKING VERSION (A/B TEST)
+      ================================================================ */}
+      <HowItWorksSection openConsultationModal={openConsultationModal} />
+
+      {/* ================================================================
           SECTION 7: WHO WE SERVE (PERSONAS)
       ================================================================ */}
       <section className="py-16 md:py-24 bg-white">
@@ -1437,22 +1549,14 @@ const Homepage = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             
-            {/* Left Column - Photo Placeholder */}
+            {/* Left Column - Evert Calderon Studio 17 Photo */}
             <div className="order-2 lg:order-1">
-              <div className="relative aspect-[3/4] bg-gradient-to-br from-gray-200 to-gray-300 rounded-3xl shadow-2xl overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-32 bg-amber-400 rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <Users className="w-16 h-16 text-white" />
-                    </div>
-                    <p className="text-lg font-semibold text-gray-700">
-                      [Insert Professional Photo of Evert Calderon Here]
-                    </p>
-                    <p className="text-sm text-gray-600 mt-2">
-                      Founder & CEO, Mesa Group Consulting
-                    </p>
-                  </div>
-                </div>
+              <div className="relative aspect-[3/4] rounded-3xl shadow-2xl overflow-hidden">
+                <img
+                  src={evertStudio17Img}
+                  alt="Evert Calderon, Founder & CEO of Mesa Group Consulting, interviewed at Studio 17"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
