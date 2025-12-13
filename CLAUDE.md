@@ -431,6 +431,84 @@ This project is built in collaboration with Lovable, a web development platform.
 **Partnership Disclosure:**
 Program delivered through strategic partnership between Mesa Group Consulting, Mesa Group Capital, and Novae. Novae provides technology platform (Business Credit Finance Suite, myNovaeDisputes Manager). Mesa Group provides consulting, coaching, and advisory services.
 
+## Recent Major Update #4 (December 12, 2024)
+
+### Homepage "How It Works" Section - Interactive Flip Cards
+
+**Background:**
+- Originally implemented with scroll-jacking animation that proved too brittle
+- Redesigned with 3D flip card interaction using CSS transforms
+
+**What Changed:**
+- Replaced scroll-triggered animation with viewport-based mouse detection
+- Implemented CSS 3D transforms for smooth card flipping
+- Desktop: Interactive flip cards with "What Happens Next" on back
+- Mobile: Stacked content (no flip animation)
+
+**Technical Implementation:**
+
+1. **Custom Tailwind Utilities Added** (`tailwind.config.ts`):
+```typescript
+'.perspective-1000': { perspective: '1000px' },
+'.transform-style-3d': { transformStyle: 'preserve-3d' },
+'.backface-hidden': { backfaceVisibility: 'hidden' }
+```
+
+2. **Viewport-Based Flip Detection:**
+- Uses `window.addEventListener('mousemove')` with `passive: true`
+- Checks cursor Y position against card's `getBoundingClientRect()`
+- Card flips when cursor is between card top and bottom boundaries
+- Prevents stuttering caused by hover-based detection (3D rotation changing boundaries)
+
+3. **FlipCard Component Structure:**
+```tsx
+const FlipCard = ({ step, openConsultationModal }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!cardRef.current) return;
+      const rect = cardRef.current.getBoundingClientRect();
+      const mouseY = e.clientY;
+      const isInVerticalSection = mouseY >= rect.top && mouseY <= rect.bottom;
+      setIsFlipped(isInVerticalSection);
+    };
+    // ... event listener setup
+  }, []);
+  // ... render front and back faces
+};
+```
+
+4. **Three Step Cards:**
+- **Step 1 (Amber):** Free Consultation → What happens: Contact form or call, schedule at your convenience
+- **Step 2 (Purple):** Custom Recommendations → What happens: Personalized action plan with pricing and timelines
+- **Step 3 (Green):** Execute & Transform → What happens: Regular check-ins, progress updates, ongoing support
+
+**Design System:**
+- Front face: Icon in colored circle, step number, title, description
+- Back face: "What Happens Next" heading with detailed next steps
+- Color-coordinated themes:
+  - Step 1: Amber gradients (from-amber-100 via-amber-50 to-white)
+  - Step 2: Purple gradients (from-purple-100 via-purple-50 to-white)
+  - Step 3: Green gradients (from-green-100 via-green-50 to-white)
+- Smooth 500ms transition on flip
+- 400px fixed height for consistent layout
+- Responsive: Desktop shows flip animation, mobile shows both sides stacked
+
+**Performance Considerations:**
+- Event listener uses `{ passive: true }` flag for scroll performance
+- Single event listener per card (not global)
+- Proper cleanup in useEffect return
+- No layout thrashing (reads then writes DOM)
+
+**Benefits Over Previous Implementation:**
+- Stable triggering (no boundary-change stuttering)
+- Smooth, predictable animation
+- Works with mouse movement (natural user behavior)
+- No complex scroll detection logic
+- Mobile-friendly fallback
+
 ## Future Considerations
 
 1. **A/B Testing:** May want to test original vs. new versions for both 0% funding and Business Funding pages
@@ -440,6 +518,7 @@ Program delivered through strategic partnership between Mesa Group Consulting, M
 5. **Analytics:** Track conversion rates between page versions and between consultation vs. direct application pathways
 6. **Calculator Enhancement:** Consider adding more calculator variations (equipment, real estate, etc.)
 7. **Personal vs Business Credit Strategy:** Consider navigation/marketing strategy to guide users to appropriate page (personal credit vs business credit)
+8. **Flip Card Analytics:** Consider tracking interaction rates with flip cards (engagement metrics)
 
 ## Important Files for Context
 
@@ -457,4 +536,6 @@ Repository is hosted on GitHub and likely deployed through Lovable's platform or
 **Last Updated:** December 12, 2024
 **Updated By:** Claude Code (Anthropic)
 **Project Status:** Active Development
-**Latest Addition:** Business Credit Builder Program page (/business-credit-builder)
+**Latest Additions:**
+- Business Credit Builder Program page (/business-credit-builder)
+- Homepage "How It Works" interactive flip cards with viewport-based detection

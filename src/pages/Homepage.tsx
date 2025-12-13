@@ -44,21 +44,134 @@ import cwLogo from '@/assets/cw-logo.png';
 import meetingRoomImg from '@/assets/meeting-room-consultation.jpg';
 
 // ============================================================================
-// HOW IT WORKS - 3 STEP SECTION
+// HOW IT WORKS - 3 STEP FLIP CARD SECTION
 // ============================================================================
+
+const FlipCard = ({ step, openConsultationModal }: { step: any; openConsultationModal: () => void }) => {
+  const [isFlipped, setIsFlipped] = React.useState(false);
+  const cardRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!cardRef.current) return;
+
+      const rect = cardRef.current.getBoundingClientRect();
+      const mouseY = e.clientY;
+
+      // Define the vertical section: card top to card bottom
+      const isInVerticalSection = mouseY >= rect.top && mouseY <= rect.bottom;
+
+      setIsFlipped(isInVerticalSection);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+  return (
+    <div ref={cardRef} className="py-4">
+      {/* Desktop: Flip Card */}
+      <div className="hidden md:block perspective-1000">
+        <div
+          className={`relative w-full h-[400px] transform-style-3d transition-transform duration-500 ease-in-out ${
+            isFlipped ? '[transform:rotateY(180deg)]' : ''
+          }`}
+        >
+          {/* FRONT FACE */}
+          <div className={`absolute inset-0 backface-hidden bg-gradient-to-br ${step.bgGradient} rounded-3xl p-8 md:p-12 shadow-xl border-2 ${step.borderColor}`}>
+            <div className="flex items-center gap-8 h-full">
+              {/* Step Number & Icon */}
+              <div className="flex-shrink-0">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full shadow-2xl mb-4 animate-bounce-slow">
+                  <span className="text-4xl font-bold text-white">{step.number}</span>
+                </div>
+                <div className={`w-24 h-24 bg-gradient-to-br ${step.iconBg} rounded-3xl flex items-center justify-center shadow-xl mx-auto`}>
+                  <step.icon className={`w-14 h-14 ${step.iconColor}`} />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="flex-1">
+                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  {step.title}
+                </h3>
+                <p className="text-xl text-gray-700 leading-relaxed">
+                  {step.description}
+                </p>
+                <p className="text-sm text-gray-500 mt-6 italic">
+                  Hover over the card to see what happens next →
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* BACK FACE */}
+          <div className={`absolute inset-0 backface-hidden [transform:rotateY(180deg)] bg-gradient-to-br ${step.backBgGradient} rounded-3xl p-8 md:p-12 shadow-xl border-2 ${step.borderColor}`}>
+            <div className="flex flex-col justify-center items-center h-full text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full shadow-2xl mb-6">
+                <span className="text-3xl font-bold text-white">{step.number}</span>
+              </div>
+              <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                What Happens Next
+              </h4>
+              <p className="text-xl text-gray-800 leading-relaxed max-w-2xl">
+                {step.whatHappens}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile: Stacked Content (no flip) */}
+      <div className="md:hidden">
+        <div className={`bg-gradient-to-br ${step.bgGradient} rounded-3xl p-6 shadow-xl border-2 ${step.borderColor}`}>
+          <div className="text-center">
+            {/* Step Number & Icon */}
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full shadow-2xl mb-4">
+              <span className="text-3xl font-bold text-white">{step.number}</span>
+            </div>
+            <div className={`w-20 h-20 bg-gradient-to-br ${step.iconBg} rounded-3xl flex items-center justify-center shadow-xl mx-auto mb-6`}>
+              <step.icon className={`w-12 h-12 ${step.iconColor}`} />
+            </div>
+
+            {/* Content */}
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              {step.title}
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              {step.description}
+            </p>
+
+            {/* What Happens - Visible on Mobile */}
+            <div className={`bg-gradient-to-br ${step.backBgGradient} rounded-2xl p-6 border-2 ${step.borderColor}`}>
+              <p className="text-base font-bold text-gray-900 mb-2">What happens:</p>
+              <p className="text-base text-gray-800 leading-relaxed">
+                {step.whatHappens}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const HowItWorksSection = ({ openConsultationModal }: { openConsultationModal: () => void }) => {
   const steps = [
     {
       number: 1,
       icon: Users,
-      iconBg: 'from-blue-100 to-blue-200',
-      iconColor: 'text-blue-600',
+      iconBg: 'from-amber-100 to-amber-200',
+      iconColor: 'text-amber-600',
       title: 'Free Consultation',
       description: 'Schedule a conversation with our team to discuss your current situation, goals, and challenges. We\'ll provide expert guidance on your best path forward—completely free.',
       whatHappens: 'You\'ll complete a brief contact form or call us directly. We\'ll schedule a consultation at your convenience to review your needs.',
       bgGradient: 'from-amber-100 via-amber-50 to-white',
-      borderColor: 'border-amber-200'
+      borderColor: 'border-amber-200',
+      backBgGradient: 'from-amber-200 via-amber-100 to-amber-50'
     },
     {
       number: 2,
@@ -69,7 +182,8 @@ const HowItWorksSection = ({ openConsultationModal }: { openConsultationModal: (
       description: 'Based on your analysis, we\'ll recommend the right solutions from our ecosystem—whether that\'s credit restoration, funding access, debt relief, or financial product comparisons.',
       whatHappens: 'Our team creates a personalized action plan with transparent pricing and expected timelines.',
       bgGradient: 'from-purple-100 via-purple-50 to-white',
-      borderColor: 'border-purple-200'
+      borderColor: 'border-purple-200',
+      backBgGradient: 'from-purple-200 via-purple-100 to-purple-50'
     },
     {
       number: 3,
@@ -80,7 +194,8 @@ const HowItWorksSection = ({ openConsultationModal }: { openConsultationModal: (
       description: 'We guide you through implementation, provide ongoing support, and track your progress until you hit your goals. You\'re never alone in this process.',
       whatHappens: 'Regular check-ins, progress updates, and adjustments as needed. We\'re with you every step of the way.',
       bgGradient: 'from-green-100 via-green-50 to-white',
-      borderColor: 'border-green-200'
+      borderColor: 'border-green-200',
+      backBgGradient: 'from-green-200 via-green-100 to-green-50'
     }
   ];
 
@@ -94,42 +209,14 @@ const HowItWorksSection = ({ openConsultationModal }: { openConsultationModal: (
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Three simple steps to transform your financial future
           </p>
+          <p className="text-base text-gray-500 mt-2 hidden md:block">
+            Move your cursor over each card to see what happens next
+          </p>
         </div>
 
         <div className="space-y-8">
           {steps.map((step, index) => (
-            <div
-              key={index}
-              className={`bg-gradient-to-br ${step.bgGradient} rounded-3xl p-8 md:p-12 shadow-xl border-2 ${step.borderColor} transform transition-all hover:scale-[1.02] hover:shadow-2xl`}
-            >
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                {/* Step Number & Icon */}
-                <div className="flex-shrink-0">
-                  <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full shadow-2xl mb-4 animate-bounce-slow">
-                    <span className="text-4xl font-bold text-white">{step.number}</span>
-                  </div>
-                  <div className={`w-24 h-24 bg-gradient-to-br ${step.iconBg} rounded-3xl flex items-center justify-center shadow-xl mx-auto`}>
-                    <step.icon className={`w-14 h-14 ${step.iconColor}`} />
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                    {step.title}
-                  </h3>
-                  <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                    {step.description}
-                  </p>
-                  <div className={`bg-white/80 backdrop-blur-sm rounded-2xl p-6 border-2 ${step.borderColor}`}>
-                    <p className="text-lg font-bold text-gray-900 mb-2">What happens:</p>
-                    <p className="text-lg text-gray-700 leading-relaxed">
-                      {step.whatHappens}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <FlipCard key={index} step={step} openConsultationModal={openConsultationModal} />
           ))}
         </div>
 
