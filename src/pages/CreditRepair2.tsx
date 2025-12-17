@@ -64,7 +64,7 @@ const CreditRepair2 = () => {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-700">
                   <Globe className="w-5 h-5 text-[#f9c65d]" />
-                  <span>EN/ES/Punjabi</span>
+                  <span>🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano</span>
                 </div>
               </div>
 
@@ -395,8 +395,8 @@ const CreditRepair2 = () => {
                   <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-400 mx-auto" /></td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-4 font-medium">Bilingual Support</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Spanish/English/Punjabi</span></td>
+                  <td className="p-4 font-medium">Trilingual Support</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano</span></td>
                   <td className="p-4 text-center text-gray-500">English only</td>
                   <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-400 mx-auto" /></td>
                 </tr>
@@ -442,6 +442,104 @@ const CreditRepair2 = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================ */}
+      {/* SECTION 5B: LEGAL ESCALATIONS */}
+      {/* ============================================ */}
+      <section className="bg-gradient-to-br from-[#1a1a1a] to-[#2c2c2c] py-16 md:py-24 px-6 md:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <Scale className="w-16 h-16 text-amber-400 mx-auto mb-6" />
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Legal Escalations for <span className="text-[#f9c65d]">Serious Violations</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              When credit bureaus, creditors, or collection agencies violate federal consumer protection laws, Mesa Group takes decisive action through our partnered legal team.
+            </p>
+          </div>
+
+          <div className="bg-white/10 backdrop-blur rounded-2xl p-8 mb-8">
+            <p className="text-gray-200 mb-4 leading-relaxed">
+              While Mesa Group Consulting is not a law firm, we have established partnerships with experienced consumer rights attorneys who specialize in FCRA (Fair Credit Reporting Act) and FDCPA (Fair Debt Collection Practices Act) violations.
+            </p>
+          </div>
+
+          {/* When Legal Escalation Happens */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <AlertTriangle className="w-8 h-8 text-amber-400" />
+              When Legal Escalation Happens:
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
+                <h4 className="text-lg font-bold text-white mb-2">Willful FCRA Violations</h4>
+                <p className="text-gray-300 text-sm">When bureaus knowingly report false information or fail to investigate disputes properly</p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
+                <h4 className="text-lg font-bold text-white mb-2">FDCPA Violations</h4>
+                <p className="text-gray-300 text-sm">When collectors engage in harassment, threats, or deceptive practices</p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
+                <h4 className="text-lg font-bold text-white mb-2">Verification Failures</h4>
+                <p className="text-gray-300 text-sm">When furnishers repeatedly fail to verify disputed information</p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
+                <h4 className="text-lg font-bold text-white mb-2">Continued Reporting After Deletion</h4>
+                <p className="text-gray-300 text-sm">When removed items reappear without proper re-investigation</p>
+              </div>
+
+              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
+                <h4 className="text-lg font-bold text-white mb-2">Identity Theft Cases</h4>
+                <p className="text-gray-300 text-sm">When fraudulent accounts require legal intervention for resolution</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Our Legal Partnership Process */}
+          <div className="bg-gradient-to-br from-amber-900/30 to-orange-900/30 backdrop-blur rounded-2xl p-8 border border-amber-500/30">
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <FileText className="w-8 h-8 text-amber-400" />
+              Our Legal Partnership Process:
+            </h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">1</div>
+                <p className="text-gray-200 pt-1">Our team identifies clear violations during your Mesa 360 process</p>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">2</div>
+                <p className="text-gray-200 pt-1">We document all evidence of regulatory non-compliance</p>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">3</div>
+                <p className="text-gray-200 pt-1">Cases meeting legal thresholds are referred to our attorney partners</p>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">4</div>
+                <p className="text-gray-200 pt-1">Attorneys send demand letters and pursue formal legal action when warranted</p>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">5</div>
+                <p className="text-gray-200 pt-1">You incur no additional fees for this escalation—it's included in your Mesa 360 service</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <p className="text-amber-400 text-lg font-semibold">
+              This legal backing sets Mesa 360 apart from basic dispute services and ensures maximum accountability from bureaus and creditors.
+            </p>
           </div>
         </div>
       </section>
@@ -950,6 +1048,199 @@ Every dollar you paid to Mesa Group.</p>
       </section>
 
       {/* ============================================ */}
+      {/* SECTION 10B: WHAT'S NOT COVERED */}
+      {/* ============================================ */}
+      <section className="bg-white py-16 md:py-24 px-6 md:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <AlertTriangle className="w-16 h-16 text-orange-500 mx-auto mb-6" />
+            <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
+              What's <span className="text-orange-600">Not Covered</span> by the Mesa 360 90-Day Money-Back Guarantee
+            </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              Transparency is important to us. Here's what the Mesa 360 90-Day Money-Back Guarantee does NOT cover:
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Card 1: SmartCredit */}
+            <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-orange-200 rounded-xl p-6">
+              <div className="flex items-start gap-3 mb-4">
+                <XCircle className="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" />
+                <h3 className="text-xl font-bold text-[#3E3E3E]">SmartCredit Monitoring Fees</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                The $27.99/month SmartCredit subscription is a separate third-party service and is not refundable through Mesa Group. SmartCredit has its own cancellation policy.
+              </p>
+            </div>
+
+            {/* Card 2: Client Responsibilities */}
+            <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-orange-200 rounded-xl p-6">
+              <div className="flex items-start gap-3 mb-4">
+                <XCircle className="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" />
+                <h3 className="text-xl font-bold text-[#3E3E3E]">Cases Where Client Responsibilities Aren't Met</h3>
+              </div>
+              <p className="text-gray-700 mb-3">To qualify for the guarantee, you must:</p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-orange-600">•</span>
+                  <span>Keep your SmartCredit monitoring active for the full 90 days (no 30+ day gaps)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-orange-600">•</span>
+                  <span>Respond to your account manager's communications (no 30+ days of silence)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-orange-600">•</span>
+                  <span>Keep your Mesa account current (no invoices 30+ days past due)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-orange-600">•</span>
+                  <span>Avoid adding new negative items during the first 90 days (new late payments, collections, charge-offs)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-orange-600">•</span>
+                  <span>Avoid multiple new hard inquiries during the initial dispute period</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-orange-600">•</span>
+                  <span>Follow guidance provided by your account manager</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Card 3: New Negatives */}
+            <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-orange-200 rounded-xl p-6">
+              <div className="flex items-start gap-3 mb-4">
+                <XCircle className="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" />
+                <h3 className="text-xl font-bold text-[#3E3E3E]">New Negatives Added During Service</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                If you add new late payments, new collections, or other new negative items after enrollment, those items are not covered by the removal guarantee. The guarantee applies to items on your report at the time of enrollment.
+              </p>
+            </div>
+
+            {/* Card 4: Accurate Information */}
+            <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-orange-200 rounded-xl p-6">
+              <div className="flex items-start gap-3 mb-4">
+                <XCircle className="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" />
+                <h3 className="text-xl font-bold text-[#3E3E3E]">Accurate, Timely, and Verifiable Information</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Federal law (CROA) prohibits us from guaranteeing the removal of accurate information. If bureaus and creditors properly verify that negative items are accurate, complete, and timely, those items may remain on your report despite our best efforts. We can only legally dispute items that are inaccurate, incomplete, unverifiable, or outdated.
+              </p>
+            </div>
+
+            {/* Card 5: Annual Plans After 90 Days */}
+            <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-orange-200 rounded-xl p-6 md:col-span-2">
+              <div className="flex items-start gap-3 mb-4">
+                <XCircle className="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" />
+                <h3 className="text-xl font-bold text-[#3E3E3E]">Ruby & Emerald (Prepaid Annual Plans) After 90 Days</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                The 90-day money-back guarantee is your primary protection for annual plans. After 90 days, refunds are evaluated case-by-case based on work completed, as these are prepaid programs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================ */}
+      {/* SECTION 10C: YOU'VE GOT NOTHING TO LOSE */}
+      {/* ============================================ */}
+      <section className="bg-gradient-to-br from-amber-50 to-yellow-50 py-16 md:py-24 px-6 md:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <Shield className="w-16 h-16 text-[#f9c65d] mx-auto mb-6" />
+            <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
+              Risk-Free Credit Repair: You've Got <span className="text-[#f9c65d]">Nothing to Lose</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Card 1: 3-Day Cancellation */}
+            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#f9c65d]">
+              <div className="flex items-center gap-3 mb-4">
+                <CheckCircle2 className="w-10 h-10 text-green-600" />
+                <h3 className="text-2xl font-bold text-[#3E3E3E]">3-Day Cancellation Right (All Plans)</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Federal law (CROA) requires that we honor a 3-day cancellation period. If you enroll in Mesa 360 and change your mind for ANY reason within the first 3 days, you can cancel and receive a 100% refund of all Mesa fees paid. No questions asked.
+              </p>
+            </div>
+
+            {/* Card 2: 90-Day Guarantee */}
+            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#f9c65d]">
+              <div className="flex items-center gap-3 mb-4">
+                <CheckCircle2 className="w-10 h-10 text-green-600" />
+                <h3 className="text-2xl font-bold text-[#3E3E3E]">90-Day Money-Back Guarantee (When You Meet Your Part)</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                If you follow all client responsibilities for the first 90 days and we don't remove at least one negative item from your credit report, you get 100% of your money back. Every dollar you paid to Mesa Group.
+              </p>
+            </div>
+
+            {/* Card 3: Cancel Anytime */}
+            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#f9c65d]">
+              <div className="flex items-center gap-3 mb-4">
+                <CheckCircle2 className="w-10 h-10 text-green-600" />
+                <h3 className="text-2xl font-bold text-[#3E3E3E]">Monthly Plans: Cancel Anytime After 90 Days</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                For monthly Mesa 360 plans (Lite, Flex, Elite), you can cancel at any time after the initial 90 days with no penalties or future charges. You only pay for work already completed.
+              </p>
+            </div>
+
+            {/* Card 4: Why This Matters */}
+            <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#f9c65d]">
+              <div className="flex items-center gap-3 mb-4">
+                <CheckCircle2 className="w-10 h-10 text-green-600" />
+                <h3 className="text-2xl font-bold text-[#3E3E3E]">Why This Guarantee Matters</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Most credit repair companies don't offer this level of protection. We can make this guarantee because:
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#f9c65d]">•</span>
+                  <span>We have a 91% success rate in removing or correcting negative items</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#f9c65d]">•</span>
+                  <span>Our Mesa 360 system uses proven legal strategies, not generic template letters</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#f9c65d]">•</span>
+                  <span>Our partnered legal team backs up our disputes when violations occur</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#f9c65d]">•</span>
+                  <span>We've helped thousands of clients improve their credit scores (average 150-point increase)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Bottom Callout */}
+          <div className="bg-gradient-to-r from-[#f9c65d] to-[#fcd34d] rounded-2xl p-8 md:p-10 text-center">
+            <p className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              The only way you don't see results is if you don't hold up your end—keeping monitoring active, staying responsive, and avoiding new negatives.
+            </p>
+            <p className="text-xl text-gray-800 mb-6">
+              If you do your part, we deliver results or refund your investment.
+            </p>
+            <p className="text-2xl font-bold text-gray-900 mb-6">
+              Ready to start your credit transformation with zero risk?
+            </p>
+            <button onClick={handleCTAClick} className="bg-gray-900 hover:bg-gray-800 text-white rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 text-xl font-bold px-10 py-5">
+              Start Your Risk-Free Credit Repair →
+            </button>
+            <p className="text-sm text-gray-700 mt-4">Powered by Mesa Group</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================ */}
       {/* SECTION 11: THE COST OF INACTION (Urgency) */}
       {/* ============================================ */}
       <section className="bg-gradient-to-br from-red-900 to-red-800 py-16 md:py-24 px-6 md:px-8">
@@ -1031,7 +1322,7 @@ Every dollar you paid to Mesa Group.</p>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">EN/ES/Punjabi Support</span>
+              <span className="text-gray-700">Trilingual: 🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
@@ -1053,7 +1344,7 @@ Every dollar you paid to Mesa Group.</p>
             <p className="text-gray-600 mb-6">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            <p className="text-sm text-gray-500">Hablamos español | We speak Punjabi</p>
+            <p className="text-sm text-gray-500">🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano</p>
           </div>
         </div>
       </section>
