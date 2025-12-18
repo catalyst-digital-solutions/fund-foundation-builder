@@ -121,7 +121,7 @@ const Resources = () => {
 
             {/* Hero Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#3E3E3E] leading-tight">
-              Your Financial Education <span className="text-[#f9c65d]">Starts Here</span>
+              Financial <span className="text-[#f9c65d]">Knowledge Center</span>
             </h1>
 
             {/* Subheadline */}

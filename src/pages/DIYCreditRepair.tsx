@@ -46,8 +46,8 @@ const DIYCreditRepair = () => {
       answer: "We offer a 7-day free trial (no credit card required) and a 30-day money-back guarantee after you subscribe. If the software isn't what you expected, cancel within 30 days for a full refund. We want you to succeed, not feel trapped."
     },
     {
-      question: "Can I upgrade to full-service credit repair later?",
-      answer: "Absolutely. If you try DIY and realize it's not for you, we can transition you to our full-service credit repair team at any time. Many clients start with DIY to save money, then upgrade if their situation becomes more complex. We're here to help either way."
+      question: "Can I upgrade to MESA 360 coaching later?",
+      answer: "Absolutely. If you try DIY and realize it's not for you, we can transition you to our MESA 360 financial coaching team at any time. Many clients start with DIY to save money, then upgrade if their situation becomes more complex. We're here to help either way."
     }
   ];
 
@@ -242,10 +242,10 @@ const DIYCreditRepair = () => {
               </ul>
               <div className="mt-6 pt-6 border-t border-orange-200">
                 <a 
-                  href="/credit-repair" 
+                  href="/credit-repair-2" 
                   className="text-secondary hover:text-primary font-semibold underline"
                 >
-                  Learn about our full-service credit repair →
+                  Explore MESA 360 Coaching →
                 </a>
               </div>
             </div>
