@@ -371,8 +371,8 @@ const ServicesTabSystem = () => {
   return (
     <div className="relative">
       {/* Tab Navigation - Horizontal Scroll on Mobile, Grid on Desktop */}
-      <div className="mb-8 overflow-x-auto overflow-y-visible scrollbar-hide py-2">
-        <div className="flex lg:grid lg:grid-cols-8 gap-3 min-w-max lg:min-w-0 pb-4 lg:pb-2">
+      <div className="mb-8 overflow-visible scrollbar-hide py-2 px-2">
+        <div className="flex lg:grid lg:grid-cols-8 gap-3 min-w-max lg:min-w-0 pb-4 lg:pb-2 overflow-x-auto lg:overflow-visible">
           {services.map((service) => {
             const ServiceIcon = service.icon;
             return (
