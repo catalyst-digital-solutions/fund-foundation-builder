@@ -155,7 +155,7 @@ const CreditRepair2 = () => {
               </div>
               <div className="flex items-start gap-3">
                 <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
-                <span>Burned by "credit repair" companies that disappeared with your money</span>
+                <span>Burned by "credit restoration" companies that disappeared with your money</span>
               </div>
             </div>
 
@@ -183,11 +183,11 @@ const CreditRepair2 = () => {
         <div className="absolute inset-0 bg-black/60" />
         
         <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            The Mesa360 Credit System™: <span className="text-[#f9c65d]">Repair. Rebuild. Optimize.</span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            The Mesa360 Credit System™: <span className="text-[#f9c65d]">Restore. Rebuild. Optimize.</span>
           </h2>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Unlike cookie-cutter credit repair companies that use generic templates and offshore call centers, Mesa Group provides a <strong className="text-white">personalized, legally compliant credit restoration strategy</strong>—backed by a local team you can actually talk to.
+            Unlike cookie-cutter credit restoration companies that use generic templates and offshore call centers, Mesa Group provides a <strong className="text-white">personalized, legally compliant credit recovery strategy</strong>—backed by a local team you can actually talk to.
           </p>
         </div>
       </section>
@@ -292,7 +292,7 @@ const CreditRepair2 = () => {
               <div className="space-y-4 text-sm text-gray-700">
                 <div>
                   <p className="font-semibold mb-2">Funding Profile Optimization</p>
-                  <p>We don't stop at credit repair. We help you position your entire financial profile for maximum approval odds on mortgages, business funding, and loans.</p>
+                  <p>We don't stop at credit restoration. We help you position your entire financial profile for maximum approval odds on mortgages, business funding, and loans.</p>
                 </div>
                 <div>
                   <p className="font-semibold mb-2">Strategic Credit Building</p>
@@ -545,16 +545,16 @@ const CreditRepair2 = () => {
       </section>
 
       {/* ============================================ */}
-      {/* SECTION 6: MORE THAN CREDIT REPAIR */}
+      {/* SECTION 6: MORE THAN CREDIT RESTORATION */}
       {/* ============================================ */}
       <section className="bg-gradient-to-br from-amber-50 to-orange-50 py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              This Isn't Just Credit Repair. It's a <span className="text-[#f9c65d]">Complete Financial Transformation</span>.
+              This Isn't Just Credit Restoration. It's a <span className="text-[#f9c65d]">Complete Financial Transformation</span>.
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Most credit repair companies send generic dispute letters and disappear. At Mesa Group, every client gets a dedicated account manager, customized action plan, monthly reviews, and 1-on-1 financial coaching.
+              Most credit recovery companies send generic dispute letters and disappear. At Mesa Group, every client gets a dedicated account manager, customized action plan, monthly reviews, and 1-on-1 financial coaching.
             </p>
           </div>
 
@@ -790,7 +790,7 @@ const CreditRepair2 = () => {
                 <span className="text-3xl font-bold text-[#FBBF23]">$149</span>
                 <span className="text-gray-500">/mo</span>
               </div>
-              <p className="text-sm text-gray-600 mb-6">Starting your credit repair journey. Covers collections, late payments, and inquiries across all 3 bureaus.</p>
+              <p className="text-sm text-gray-600 mb-6">Starting your credit restoration journey. Covers collections, late payments, and inquiries across all 3 bureaus.</p>
               
               <div className="space-y-2 mb-6 text-sm">
                 <p className="font-semibold text-gray-700">What's Included:</p>
@@ -1153,7 +1153,7 @@ Every dollar you paid to Mesa Group.</p>
           <div className="text-center mb-12">
             <Shield className="w-16 h-16 text-[#f9c65d] mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              Risk-Free Credit Repair: You've Got <span className="text-[#f9c65d]">Nothing to Lose</span>
+              Risk-Free Credit Restoration: You've Got <span className="text-[#f9c65d]">Nothing to Lose</span>
             </h2>
           </div>
 
@@ -1197,9 +1197,9 @@ Every dollar you paid to Mesa Group.</p>
                 <CheckCircle2 className="w-10 h-10 text-green-600" />
                 <h3 className="text-2xl font-bold text-[#3E3E3E]">Why This Guarantee Matters</h3>
               </div>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Most credit repair companies don't offer this level of protection. We can make this guarantee because:
-              </p>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Most credit restoration companies don't offer this level of protection. We can make this guarantee because:
+                </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-[#f9c65d]">•</span>
@@ -1233,7 +1233,7 @@ Every dollar you paid to Mesa Group.</p>
               Ready to start your credit transformation with zero risk?
             </p>
             <button onClick={handleCTAClick} className="bg-gray-900 hover:bg-gray-800 text-white rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 text-xl font-bold px-10 py-5">
-              Start Your Risk-Free Credit Repair →
+              Start Your Risk-Free Credit Restoration →
             </button>
             <p className="text-sm text-gray-700 mt-4">Powered by Mesa Group</p>
           </div>
