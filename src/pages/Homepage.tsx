@@ -647,26 +647,17 @@ const Homepage = () => {
       {/* ================================================================
           SECTION 2: MEDIA TRUST STRIP
       ================================================================ */}
-      <section className="bg-gradient-to-br from-[#fcf7e6] via-white to-[#fcf7e6] py-10 border-y border-gray-200 relative overflow-hidden">
-        {/* Subtle decorative elements */}
-        <div className="absolute top-0 left-0 w-32 h-32 bg-[#f9c65d]/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-        <div className="absolute bottom-0 right-0 w-40 h-40 bg-[#f9c65d]/10 rounded-full translate-x-1/2 translate-y-1/2"></div>
-        
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <p className="text-center text-gray-500 text-sm font-medium tracking-wider uppercase mb-6">
-            As Featured On
+      <section className="bg-gray-100 py-12 px-6 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-center text-gray-600 text-sm mb-10">
+            Featured in local and national media for our proven financial solutions
           </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-center justify-items-center">
-            <img src={kget17Logo} alt="KGET 17" className="h-32 sm:h-40 md:h-48 w-auto max-w-[280px] md:max-w-[360px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
-            <img src={studio17Logo} alt="Studio 17" className="h-32 sm:h-40 md:h-48 w-auto max-w-[280px] md:max-w-[360px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
-            <img src={telemundoLogo} alt="Telemundo" className="h-32 sm:h-40 md:h-48 w-auto max-w-[280px] md:max-w-[360px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
-            <img src={cwLogo} alt="The CW" className="h-32 sm:h-40 md:h-48 w-auto max-w-[280px] md:max-w-[360px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
+          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20 lg:gap-28">
+            <img src={kget17Logo} alt="KGET 17" className="h-16 md:h-20 w-auto object-contain" />
+            <img src={studio17Logo} alt="Studio 17" className="h-20 md:h-28 w-auto object-contain" />
+            <img src={telemundoLogo} alt="Telemundo" className="h-16 md:h-20 w-auto object-contain" />
+            <img src={cwLogo} alt="The CW" className="h-14 md:h-18 w-auto object-contain" />
           </div>
-
-          <p className="text-center text-gray-600 text-sm mt-6">
-            Recognized across California and beyond as a trusted financial resource
-          </p>
         </div>
       </section>
 
