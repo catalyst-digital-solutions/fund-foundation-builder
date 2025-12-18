@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, FileText, AlertTriangle, DollarSign, Eye, Lock, ChevronDown, Phone, MapPin, ExternalLink, Check, Play } from 'lucide-react';
+import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, FileText, AlertTriangle, DollarSign, Eye, Lock, ChevronDown, ChevronUp, Phone, MapPin, ExternalLink, Check, Play, CheckCircle } from 'lucide-react';
+import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 import EmotionalCTA1 from '@/components/credit-monitoring/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/credit-monitoring/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/credit-monitoring/sections/EmotionalCTA3';
@@ -41,9 +42,24 @@ function HeroSection() {
           {/* Left Content */}
           <div>
             
-            <div className="inline-flex items-center gap-2 bg-amber-100 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold mb-6 border-2 border-amber-300">
+            <div className="inline-flex items-center gap-2 bg-amber-100 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold mb-4 border-2 border-amber-300">
               <Shield className="w-4 h-4" />
               Powered by SmartCredit® | Trusted Credit Monitoring
+            </div>
+
+            {/* Trial Pricing Badge - Hero */}
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500 px-6 py-3 rounded-full shadow-lg mb-6">
+              <div className="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                $1
+              </div>
+              <div className="text-left">
+                <p className="text-lg font-bold text-gray-900 leading-tight">
+                  $1 for 7-Day Trial
+                </p>
+                <p className="text-sm text-gray-600">
+                  Then $27.99/month
+                </p>
+              </div>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -97,17 +113,29 @@ function HeroSection() {
               </div>
             </div>
 
+            {/* Pricing Callout - Above CTA */}
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4 text-center max-w-md">
+              <p className="text-gray-700 leading-relaxed">
+                <span className="font-bold text-xl text-amber-600">$1</span> gets you started with a 
+                <span className="font-semibold"> 7-day trial</span> of full 3-bureau credit monitoring.
+                <br />
+                <span className="text-sm text-gray-600">
+                  Continue at $27.99/month after trial. Cancel anytime.
+                </span>
+              </p>
+            </div>
+
             {/* CTA Button */}
             <a
               href={AFFILIATE_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 mb-4"
+              className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 mb-2"
             >
-              Start Monitoring My Credit
+              Start Your $1 Trial
               <ExternalLink className="w-5 h-5" />
             </a>
-            <p className="text-gray-700 text-sm mt-3 mb-3">Powered by SmartCredit</p>
+            <PoweredBySuperMoney className="mt-3 mb-3" />
             <p className="text-sm text-gray-600">
               <CheckCircle2 className="w-4 h-4 inline mr-1" />
               Instant access to all 3 bureaus
@@ -118,6 +146,7 @@ function HeroSection() {
               <CheckCircle2 className="w-4 h-4 inline mr-1" />
               Family fraud protection
             </p>
+
 
           </div>
 
@@ -195,8 +224,8 @@ function WhyMonitoringMatters() {
           </div>
 
           {/* Concern 2 */}
-          <div className="bg-gradient-to-br from-orange-50 to-background rounded-xl p-6 shadow-md border-l-4 border-orange-500">
-            <TrendingUp className="w-12 h-12 text-orange-500 mb-3" />
+          <div className="bg-gradient-to-br from-amber-50 to-background rounded-xl p-6 shadow-md border-l-4 border-amber-500">
+            <TrendingUp className="w-12 h-12 text-amber-600 mb-3" />
             <h3 className="text-lg font-bold text-foreground mb-2">
               Errors Hurt Your Score
             </h3>
@@ -242,10 +271,10 @@ function WhyMonitoringMatters() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-4"
           >
-            Get Protected Today
+            Start Your $1 Trial
             <Shield className="w-5 h-5" />
           </a>
-          <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
+          <PoweredBySuperMoney className="mt-3" />
         </div>
 
       </div>
@@ -512,10 +541,10 @@ function SmartCreditFeatures() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5"
           >
-            Get All These Features Now
+            Start Your $1 Trial
             <ExternalLink className="w-5 h-5" />
           </a>
-          <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
+          <PoweredBySuperMoney className="mt-3" />
         </div>
 
       </div>
@@ -673,10 +702,10 @@ function HowItWorks() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5"
           >
-            Start My Protection Now
+            Start Your $1 Trial
             <ExternalLink className="w-5 h-5" />
           </a>
-          <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
+          <PoweredBySuperMoney className="mt-3" />
           <p className="text-sm text-muted-foreground mt-4">
             Join thousands of satisfied members • Cancel anytime
           </p>
@@ -691,6 +720,10 @@ function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
+    {
+      question: "How much does SmartCredit cost?",
+      answer: "SmartCredit offers an incredible $1 trial for 7 days so you can experience full 3-bureau credit monitoring with zero risk. After your 7-day trial, SmartCredit continues at $27.99 per month. This includes daily credit monitoring from all 3 bureaus, real-time alerts for changes to your credit, credit score tracking and analysis, and identity theft protection features. You can cancel anytime with no long-term commitment required."
+    },
     {
       question: "Why do I need to monitor all 3 credit bureaus?",
       answer: "Each credit bureau (Experian, Equifax, and TransUnion) maintains separate records. One bureau may have more or fewer inquiries than the others, which could produce different credit reports and scores. Monitoring all three ensures you have a comprehensive view of your credit and can quickly identify discrepancies."
@@ -829,20 +862,32 @@ function FinalCTA() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Start Protecting Your <span className="text-[#f9c65d]">Credit</span> Today
           </h2>
+
+          {/* Pricing Callout */}
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6 text-center max-w-md mx-auto">
+            <p className="text-gray-700 leading-relaxed">
+              <span className="font-bold text-xl text-amber-600">$1</span> gets you started with a 
+              <span className="font-semibold"> 7-day trial</span> of full 3-bureau credit monitoring.
+              <br />
+              <span className="text-sm text-gray-600">
+                Continue at $27.99/month after trial. Cancel anytime.
+              </span>
+            </p>
+          </div>
           
           <a 
             href={AFFILIATE_LINK} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
+            className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-2"
           >
-            Get SmartCredit® Premium →
+            Start Your $1 Trial →
           </a>
+          <PoweredBySuperMoney className="mt-3 mb-4" />
           
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 mb-2">
             Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
           </p>
-          <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
           <p className="text-sm text-gray-500">Powered by Mesa Group</p>
         </div>
       </div>
