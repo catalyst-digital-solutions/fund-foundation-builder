@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, FileText, AlertTriangle, DollarSign, Eye, Lock, ChevronDown, ChevronUp, Phone, MapPin, ExternalLink, Check, Play, CheckCircle } from 'lucide-react';
-import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
+import PoweredBySmartCredit from '@/components/PoweredBySmartCredit';
 import EmotionalCTA1 from '@/components/credit-monitoring/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/credit-monitoring/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/credit-monitoring/sections/EmotionalCTA3';
@@ -135,7 +135,7 @@ function HeroSection() {
               Start Your $1 Trial
               <ExternalLink className="w-5 h-5" />
             </a>
-            <PoweredBySuperMoney className="mt-3 mb-3" />
+            <PoweredBySmartCredit className="mt-3 mb-3" />
             <p className="text-sm text-gray-600">
               <CheckCircle2 className="w-4 h-4 inline mr-1" />
               Instant access to all 3 bureaus
@@ -274,7 +274,7 @@ function WhyMonitoringMatters() {
             Start Your $1 Trial
             <Shield className="w-5 h-5" />
           </a>
-          <PoweredBySuperMoney className="mt-3" />
+          <PoweredBySmartCredit className="mt-3" />
         </div>
 
       </div>
@@ -544,7 +544,7 @@ function SmartCreditFeatures() {
             Start Your $1 Trial
             <ExternalLink className="w-5 h-5" />
           </a>
-          <PoweredBySuperMoney className="mt-3" />
+          <PoweredBySmartCredit className="mt-3" />
         </div>
 
       </div>
@@ -705,7 +705,7 @@ function HowItWorks() {
             Start Your $1 Trial
             <ExternalLink className="w-5 h-5" />
           </a>
-          <PoweredBySuperMoney className="mt-3" />
+          <PoweredBySmartCredit className="mt-3" />
           <p className="text-sm text-muted-foreground mt-4">
             Join thousands of satisfied members • Cancel anytime
           </p>
@@ -883,7 +883,7 @@ function FinalCTA() {
           >
             Start Your $1 Trial →
           </a>
-          <PoweredBySuperMoney className="mt-3 mb-4" />
+          <PoweredBySmartCredit className="mt-3 mb-4" />
           
           <p className="text-gray-600 mb-2">
             Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>

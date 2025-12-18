@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/credit-monitoring-cta-02.png';
+import PoweredBySmartCredit from '@/components/PoweredBySmartCredit';
 
 const EmotionalCTA2 = () => {
   const handleClick = () => {
@@ -27,9 +28,7 @@ const EmotionalCTA2 = () => {
         >
           Get Complete Protection Now →
         </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by SmartCredit
-        </p>
+        <PoweredBySmartCredit variant="dark" className="mt-4" />
       </div>
     </section>
   );
