@@ -85,6 +85,11 @@ const CreditRepair2 = () => {
             {/* RIGHT COLUMN - Hero Image */}
             <div className="hidden lg:block">
               <img src={mesa360HeroTeam} alt="Mesa Group Capital team in front of client's new home" className="rounded-2xl shadow-2xl" loading="eager" />
+              <div className="mt-4 px-2">
+                <p className="text-sm text-gray-600 italic leading-relaxed text-center">
+                  <span className="text-[#f9c65d] font-semibold not-italic">Real clients</span> with real results — achieving their dream of homeownership through the <span className="font-semibold text-gray-700">Mesa360 Credit System™</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
