@@ -109,7 +109,7 @@ const Header = () => {
       ],
     },
     {
-      label: 'Financial Knowledge Center',
+      label: 'Resources',
       href: '/resources',
       submenu: [
         { label: 'Articles & Insights', href: '/resources/articles' },
