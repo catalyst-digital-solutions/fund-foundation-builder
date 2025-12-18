@@ -125,17 +125,19 @@ function HeroSection() {
               </p>
             </div>
 
-            {/* CTA Button */}
-            <a
-              href={AFFILIATE_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 mb-2"
-            >
-              Start Your $1 Trial
-              <ExternalLink className="w-5 h-5" />
-            </a>
-            <PoweredBySmartCredit className="mt-3 mb-3" />
+{/* CTA Button */}
+            <div className="flex flex-col items-center">
+              <a
+                href={AFFILIATE_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5"
+              >
+                Start Your $1 Trial
+                <ExternalLink className="w-5 h-5" />
+              </a>
+              <PoweredBySmartCredit className="mt-3 mb-3" />
+            </div>
             <p className="text-sm text-gray-600">
               <CheckCircle2 className="w-4 h-4 inline mr-1" />
               Instant access to all 3 bureaus
