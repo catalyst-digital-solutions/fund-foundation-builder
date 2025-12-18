@@ -250,7 +250,7 @@ const CreditCards = () => {
                 </li>
               </ul>
               <button 
-                onClick={() => openAffiliateLink('bad_credit_cards')}
+                onClick={() => window.open('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815&url_id=26', '_blank', 'noopener,noreferrer')}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Bad Credit Cards
@@ -282,7 +282,7 @@ const CreditCards = () => {
                 </li>
               </ul>
               <button 
-                onClick={() => openAffiliateLink('fair_credit_cards')}
+                onClick={() => window.open('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815&url_id=23', '_blank', 'noopener,noreferrer')}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Fair Credit Cards
@@ -314,7 +314,7 @@ const CreditCards = () => {
                 </li>
               </ul>
               <button 
-                onClick={() => openAffiliateLink('good_credit_cards')}
+                onClick={() => window.open('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815&url_id=25', '_blank', 'noopener,noreferrer')}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Good Credit Cards
@@ -323,33 +323,33 @@ const CreditCards = () => {
             
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition duration-200">
               <div className="flex justify-center mb-4">
-                <Gem className="w-10 h-10 text-purple-600" />
+                <BarChart3 className="w-10 h-10 text-purple-600" />
               </div>
               <h3 className="text-xl font-bold text-[hsl(var(--mgc-dark-gray))] mb-3">
-                Excellent Credit (740+)
+                Balance Transfer
               </h3>
               <p className="text-gray-700 mb-4">
-                Premium cards with best perks. Luxury travel benefits, highest cashback, lowest rates.
+                Move high-interest debt to a low or 0% APR card. Save money and pay down debt faster.
               </p>
               <ul className="space-y-2 text-sm text-gray-600 mb-4">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-green-600 mt-1" />
-                  <span>Premium rewards (2-5%)</span>
+                  <span>0% intro APR offers</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-green-600 mt-1" />
-                  <span>Airport lounge access</span>
+                  <span>Consolidate multiple cards</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-green-600 mt-1" />
-                  <span>Large sign-up bonuses</span>
+                  <span>Pay off debt faster</span>
                 </li>
               </ul>
               <button 
-                onClick={() => openAffiliateLink('excellent_credit_cards')}
+                onClick={() => window.open('https://www.supermoney.com/reviews/personal-credit-cards/balance-transfer?offer_id=596&aff_id=2815', '_blank', 'noopener,noreferrer')}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
-                View Premium Credit Cards
+                View Balance Transfer Cards
               </button>
             </div>
             
@@ -378,7 +378,7 @@ const CreditCards = () => {
                 </li>
               </ul>
               <button 
-                onClick={() => openAffiliateLink('cashback_cards')}
+                onClick={() => window.open('https://www.supermoney.com/reviews/personal-credit-cards/cashback?offer_id=596&aff_id=2815', '_blank', 'noopener,noreferrer')}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Cashback Credit Cards
@@ -410,7 +410,7 @@ const CreditCards = () => {
                 </li>
               </ul>
               <button 
-                onClick={() => openAffiliateLink('travel_cards')}
+                onClick={() => window.open('https://www.supermoney.com/reviews/personal-credit-cards/travel?offer_id=596&aff_id=2815', '_blank', 'noopener,noreferrer')}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Travel Credit Cards
