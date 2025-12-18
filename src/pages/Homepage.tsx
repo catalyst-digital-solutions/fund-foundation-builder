@@ -1015,62 +1015,6 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* ================================================================
-          SECTION 4A: THE TRANSFORMATION (EMOTIONAL FUTURE STATE)
-      ================================================================ */}
-      <section className="py-16 md:py-24 bg-[#3e3e3e] text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
-            Imagine Your Life <span className="text-amber-400">6 Months From Now</span>
-          </h2>
-
-          <div className="space-y-6 text-lg md:text-xl leading-relaxed">
-            <p>
-              You check your credit score and it's climbed over 100 points. The collections are gone. The late payments—removed. Your report is clean.
-            </p>
-            
-            <p>
-              You apply for that apartment you've been eyeing. <span className="font-bold text-green-400">Approved.</span>
-            </p>
-            
-            <p>
-              You walk into the car dealership with confidence instead of dread. The finance manager comes back smiling. <span className="font-bold text-green-400">Approved at 6.9% instead of 18%.</span>
-            </p>
-            
-            <p>
-              You tell your kids you're buying a house. They don't have to move again. You're building something they can inherit.
-            </p>
-            
-            <p className="text-2xl font-bold text-amber-400 pt-6">
-              This isn't a fantasy. This is what happens when you have the right partner.
-            </p>
-            
-            <div className="pt-8 space-y-4 text-gray-300">
-              <p>
-                You stop living paycheck to paycheck because you consolidated that debt at a fraction of the interest.
-              </p>
-              <p>
-                You stop losing sleep because you have estate planning in place—your family is protected.
-              </p>
-              <p>
-                You stop wondering "what if" because you secured that business funding and finally launched.
-              </p>
-            </div>
-            
-            <div className="pt-8 space-y-4 text-xl font-semibold">
-              <p>This is the freedom good credit creates.</p>
-              <p>This is the opportunity smart money decisions unlock.</p>
-              <p>This is the legacy Mesa Group helps you build.</p>
-            </div>
-            
-            <p className="text-2xl font-bold text-white pt-8">
-              Your financial past doesn't have to define your financial future. Not anymore.
-            </p>
-          </div>
-
-        </div>
-      </section>
 
       {/* ================================================================
           SECTION 4B: TRANSFORMATION JOURNEY (A/B TEST VARIANT)
