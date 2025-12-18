@@ -5,6 +5,7 @@ import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, C
 import creditilyLogo from "@/assets/creditily-wolf-logo.svg";
 import creditilyWideWolfLogo from "@/assets/creditily-wide-wolf-logo.svg";
 import diyHeroImage from "@/assets/diy-credit-repair-hero.webp";
+import costComparisonBg from "@/assets/diy-credit-repair-cost-comparison-bg.png";
 import EmotionalCTA1 from "@/components/diy-credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/diy-credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/diy-credit-repair/sections/EmotionalCTA3";
@@ -254,8 +255,16 @@ const DIYCreditRepair = () => {
           
           {/* Cost Comparison */}
           <div className="relative overflow-hidden rounded-2xl mt-12">
-            {/* Background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#3d3d3d] via-[#4a4a4a] to-[#2c2c2c]" />
+            {/* Background image with overlay */}
+            <div className="absolute inset-0">
+              <img 
+                src={costComparisonBg} 
+                alt="" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-[#2c2c2c]/80" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#2c2c2c]/90 via-transparent to-[#2c2c2c]/90" />
+            </div>
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(249,198,93,0.15),_transparent_50%)]" />
             
             <div className="relative p-8 md:p-12">
