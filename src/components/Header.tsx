@@ -83,7 +83,7 @@ const Header = () => {
       submenu: [
         { label: 'Build Credit', href: '/build-credit' },
         { label: 'Credit Monitoring', href: '/credit-monitoring' },
-        { label: 'Credit Repair (Mesa360)', href: '/credit-repair-2' },
+        { label: 'Credit Restoration (Mesa360)', href: '/credit-repair-2' },
         { label: 'DIY Credit Repair', href: '/diy-credit-repair' },
         { label: 'Credit Cards', href: '/credit-cards' },
         { label: 'Personal Loans', href: '/personal-loans' },
@@ -109,7 +109,7 @@ const Header = () => {
       ],
     },
     {
-      label: 'Resources',
+      label: 'Financial Knowledge Center',
       href: '/resources',
       submenu: [
         { label: 'Articles & Insights', href: '/resources/articles' },
