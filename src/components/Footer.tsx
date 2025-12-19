@@ -96,7 +96,6 @@ const Footer = () => {
                 <li><a href="https://portal.mesagroupconsulting.com/" target="_blank" rel="noopener noreferrer" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Client Portal</a></li>
                 <li><a href="https://tailorbrands.go2cloud.org/aff_c?offer_id=103&aff_id=9347" target="_blank" rel="noopener noreferrer" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Form An LLC</a></li>
                 <li><a href="https://smartcredit.com/join/?PID=24603&planType=PREMIUM" target="_blank" rel="noopener noreferrer" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Get Credit Report</a></li>
-                <li><Link to="/build-credit" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Build Credit</Link></li>
               </ul>
             </div>
 
@@ -135,15 +134,10 @@ const Footer = () => {
                   <ChevronDown className={`w-4 h-4 text-[#F9C65D] transition-transform duration-200 ${isBusinessesOpen ? 'rotate-180' : ''}`} />
                 </CollapsibleTrigger>
                 <ul className="space-y-3">
-                  <li><Link to="/zero-interest-business-funding" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">0% Interest Business Funding</Link></li>
-                  <li><Link to="/zero-interest-business-funding-2" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">0% Interest Business Funding 2.0</Link></li>
-                  <li><Link to="/business-funding" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Funding</Link></li>
-                  <li><Link to="/business-funding-2" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Funding 2.0</Link></li>
+                  <li><Link to="/zero-interest-business-funding-2" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">0% Interest Business Funding</Link></li>
+                  <li><Link to="/business-funding-2" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Funding</Link></li>
                   <li><Link to="/business-credit-builder" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Credit Builder</Link></li>
                   <li><Link to="/business-debt-relief" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Debt Relief</Link></li>
-                  <CollapsibleContent>
-                    <li className="mt-3"><Link to="/business-credit" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Credit</Link></li>
-                  </CollapsibleContent>
                 </ul>
               </Collapsible>
             </div>
