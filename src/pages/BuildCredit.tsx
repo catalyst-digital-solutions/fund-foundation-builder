@@ -604,11 +604,14 @@ const BuildCredit = () => {
           
           {/* Revolving Credit Builders */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
               <CreditCard className="w-6 h-6 text-amber-600" />
               Revolving Credit Builders
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <p className="text-gray-700 mb-6 max-w-4xl">
+              Revolving credit accounts are the foundation of a strong credit profile. These platforms let you add primary credit card tradelines without requiring good credit.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               {revolvingPartners.map((partner, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                   <h4 className="text-lg font-bold text-gray-900 mb-3">{partner.name}</h4>
@@ -625,6 +628,54 @@ const BuildCredit = () => {
                   </button>
                 </div>
               ))}
+            </div>
+            
+            {/* Revolving Credit Info Box */}
+            <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-2xl p-8 border border-amber-200">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">?</span>
+                    What They Are
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    Specialized accounts that report as revolving credit to all three bureaus—with no credit check required.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚙</span>
+                    How They Work
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    You sign up, the account reports as a $2,500-$10,000 credit line on your report. You make small purchases or payments monthly, and positive payment history builds automatically.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <span className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">✓</span>
+                    Key Benefits
+                  </h4>
+                  <ul className="space-y-2">
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      No hard inquiry or credit check
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Instant approval
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Reports to all three bureaus
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Credit limits from $2,500 to $10,000+
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           
