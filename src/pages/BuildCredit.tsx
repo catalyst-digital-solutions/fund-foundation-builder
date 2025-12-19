@@ -306,7 +306,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Build Credit Fast—The <span className="text-amber-600">Strategic</span> Way
+              Build Credit Fast—The <span className="text-[#f9c65d]">Strategic</span> Way
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
               Access the nation's leading credit building platforms through one trusted partner. We've partnered with proven tools to help you build strong credit relationships—no guesswork, no wasted time, just a clear path to funding.
@@ -349,7 +349,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-8">
-            Credit Is About <span className="text-amber-600">Relationships</span>, Not Just Numbers
+            Credit Is About <span className="text-[#f9c65d]">Relationships</span>, Not Just Numbers
           </h2>
           
           <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mb-12">
@@ -392,7 +392,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              You Can't Get Credit Without <span className="text-amber-600">Credit History</span>
+              You Can't Get Credit Without <span className="text-[#f9c65d]">Credit History</span>
             </h2>
             <p className="text-xl text-gray-700">It's the ultimate catch-22.</p>
           </div>
@@ -432,7 +432,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
             Same Starting Point. Different Strategy.{' '}
-            <span className="text-amber-600">Completely Different Outcome.</span>
+            <span className="text-[#f9c65d]">Completely Different Outcome.</span>
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -485,7 +485,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Credit Building = Adding <span className="text-amber-600">Positive Accounts</span> That Lenders Actually Want to See
+              Credit Building = Adding <span className="text-[#f9c65d]">Positive Accounts</span> That Lenders Actually Want to See
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Credit building means strategically opening accounts that report positive payment history to the credit bureaus. These accounts create the "credit depth" that lenders need to see before approving you for major purchases.
@@ -543,7 +543,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-            Your Credit Building Journey in <span className="text-amber-600">3 Steps</span>
+            Your Credit Building Journey in <span className="text-[#f9c65d]">3 Steps</span>
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -617,7 +617,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Ready to Get Started? Click Your <span className="text-amber-600">Preferred Tool</span> Below
+              Ready to Get Started? Click Your <span className="text-[#f9c65d]">Preferred Tool</span> Below
             </h2>
             <p className="text-lg text-gray-700">
               We've partnered with the nation's leading credit building platforms. Click any partner below to get started immediately:
@@ -805,7 +805,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Three Proven <span className="text-amber-600">Paths</span> to Building Credit
+              Three Proven <span className="text-[#f9c65d]">Paths</span> to Building Credit
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Choose the combination that fits your starting point and goals. Instead of opening random accounts and hoping for the best, follow a proven strategy.
@@ -881,7 +881,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-            Real Results from <span className="text-amber-600">Real People</span>
+            Real Results from <span className="text-[#f9c65d]">Real People</span>
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -912,7 +912,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-8">
-            Beyond the Score: Building <span className="text-amber-600">Institutional Relationships</span>
+            Beyond the Score: Building <span className="text-[#f9c65d]">Institutional Relationships</span>
           </h2>
           
           <div className="max-w-4xl mx-auto mb-12">
@@ -970,7 +970,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-            5 Mistakes That <span className="text-amber-600">Cost People</span> Months of Progress
+            5 Mistakes That <span className="text-[#f9c65d]">Cost People</span> Months of Progress
           </h2>
           
           <div className="space-y-6 max-w-4xl mx-auto">
@@ -1006,7 +1006,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-8">
             Already Working on Credit Restoration?{' '}
-            <span className="text-amber-600">Add Credit Building.</span>
+            <span className="text-[#f9c65d]">Add Credit Building.</span>
           </h2>
           
           <div className="max-w-4xl mx-auto mb-12">
@@ -1046,7 +1046,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-            Common <span className="text-amber-600">Questions</span> About Building Credit
+            Common <span className="text-[#f9c65d]">Questions</span> About Building Credit
           </h2>
           
           <div className="space-y-4">
@@ -1074,7 +1074,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Start Building <span className="text-amber-600">Relationships</span>, Not Just Scores
+            Start Building <span className="text-[#f9c65d]">Relationships</span>, Not Just Scores
           </h2>
           
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
