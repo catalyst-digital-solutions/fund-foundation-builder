@@ -99,10 +99,8 @@ const Header = () => {
       label: 'For Businesses',
       href: '/for-businesses',
       submenu: [
-        { label: '0% Interest Business Funding', href: '/zero-interest-business-funding' },
-        { label: '0% Interest Business Funding 2.0', href: '/zero-interest-business-funding-2' },
-        { label: 'Business Funding', href: '/business-funding' },
-        { label: 'Business Funding 2.0', href: '/business-funding-2' },
+        { label: '0% Interest Business Funding', href: '/zero-interest-business-funding-2' },
+        { label: 'Business Funding', href: '/business-funding-2' },
         { label: 'Business Credit Builder', href: '/business-credit-builder' },
         { label: 'Business Debt Relief', href: '/business-debt-relief' },
         { label: 'Business Credit', href: '/business-credit' },
