@@ -393,27 +393,37 @@ const CreditRepair2 = () => {
 
           {/* Why It Works */}
           <div className="bg-[#3E3E3E] rounded-2xl p-8 md:p-12">
-            <h3 className="text-2xl font-bold text-white mb-8 text-center">Why the Mesa360 Credit System™ Works</h3>
-            <div className="grid md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <Zap className="w-10 h-10 text-amber-400 mx-auto mb-3" />
-                <p className="font-semibold text-white mb-2">It's Comprehensive</p>
-                <p className="text-sm text-gray-300">We educate, support, and coach you through the entire transformation.</p>
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">WHY THE MESA360 CREDIT SYSTEM™ ACTUALLY WORKS</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="text-center md:text-left">
+                <Zap className="w-10 h-10 text-amber-400 mx-auto md:mx-0 mb-3" />
+                <p className="font-bold text-white text-lg mb-2">It's Comprehensive</p>
+                <p className="text-gray-300">We don't just dispute items. We educate you, support you, and coach you through total financial transformation.</p>
               </div>
-              <div className="text-center">
-                <Users className="w-10 h-10 text-amber-400 mx-auto mb-3" />
-                <p className="font-semibold text-white mb-2">It's Personalized</p>
-                <p className="text-sm text-gray-300">Your credit situation is unique. Your strategy should be too.</p>
+              <div className="text-center md:text-left">
+                <Users className="w-10 h-10 text-amber-400 mx-auto md:mx-0 mb-3" />
+                <p className="font-bold text-white text-lg mb-2">It's Personalized</p>
+                <p className="text-gray-300">Your credit situation is unique. Your strategy should be too. No generic templates. No one-size-fits-all.</p>
               </div>
-              <div className="text-center">
-                <Award className="w-10 h-10 text-amber-400 mx-auto mb-3" />
-                <p className="font-semibold text-white mb-2">It's Proven</p>
-                <p className="text-sm text-gray-300">2,500+ clients. 150+ five-star reviews. 83-point average increase.</p>
+              <div className="text-center md:text-left">
+                <Award className="w-10 h-10 text-amber-400 mx-auto md:mx-0 mb-3" />
+                <p className="font-bold text-white text-lg mb-2">It's Proven</p>
+                <ul className="text-gray-300 space-y-1">
+                  <li>• 2,500+ clients nationwide</li>
+                  <li>• 150+ five-star reviews</li>
+                  <li>• 83-point average score increase</li>
+                  <li>• Real results you can verify</li>
+                </ul>
               </div>
-              <div className="text-center">
-                <Shield className="w-10 h-10 text-amber-400 mx-auto mb-3" />
-                <p className="font-semibold text-white mb-2">It's Legal</p>
-                <p className="text-sm text-gray-300">FCRA/FDCPA compliant. No shady tactics that put you at risk.</p>
+              <div className="text-center md:text-left">
+                <Shield className="w-10 h-10 text-amber-400 mx-auto md:mx-0 mb-3" />
+                <p className="font-bold text-white text-lg mb-2">It's Legal</p>
+                <p className="text-gray-300">We follow FCRA/FDCPA regulations to the letter. No shady tactics. No gray areas. No putting you at risk.</p>
+              </div>
+              <div className="text-center md:text-left lg:col-span-2">
+                <Scale className="w-10 h-10 text-amber-400 mx-auto md:mx-0 mb-3" />
+                <p className="font-bold text-white text-lg mb-2">It's Backed by Real Legal Power</p>
+                <p className="text-gray-300">When creditors or bureaus violate your rights, we don't back down. We escalate to our legal team—real attorneys who've recovered thousands in settlements for clients whose rights were violated.</p>
               </div>
             </div>
           </div>
