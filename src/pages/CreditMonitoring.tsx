@@ -305,22 +305,22 @@ function SmartCreditFeatures() {
                   Your credit report is like a report card of your entire financial history. We make it easy to check accuracy and understand what's helping or hurting your score.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-[#bb9446] to-[#8b6f35] rounded-xl p-6 text-white shadow-xl">
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6 text-gray-900 shadow-xl border border-amber-200">
                 <div className="text-center mb-6">
-                  <div className="text-sm mb-2 font-semibold">See All 3 Scores</div>
-                  <div className="text-6xl font-bold drop-shadow-lg">720</div>
-                  <div className="text-sm mt-2 font-semibold">Your Average Score</div>
+                  <div className="text-sm mb-2 font-semibold text-gray-700">See All 3 Scores</div>
+                  <div className="text-6xl font-bold text-[#3e3e3e]">720</div>
+                  <div className="text-sm mt-2 font-semibold text-gray-700">Your Average Score</div>
                 </div>
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center bg-white rounded-lg p-3 border border-white/30">
+                  <div className="flex justify-between items-center bg-white rounded-lg p-3 border border-amber-200">
                     <img src={experianLogo} alt="Experian" className="h-5 w-24 object-contain object-left" />
                     <span className="font-bold text-lg text-[#3e3e3e]">725</span>
                   </div>
-                  <div className="flex justify-between items-center bg-white rounded-lg p-3 border border-white/30">
+                  <div className="flex justify-between items-center bg-white rounded-lg p-3 border border-amber-200">
                     <img src={equifaxLogo} alt="Equifax" className="h-4 w-16 object-contain object-left" />
                     <span className="font-bold text-lg text-[#3e3e3e]">718</span>
                   </div>
-                  <div className="flex justify-between items-center bg-white rounded-lg p-3 border border-white/30">
+                  <div className="flex justify-between items-center bg-white rounded-lg p-3 border border-amber-200">
                     <img src={transunionLogo} alt="TransUnion" className="h-5 object-contain" />
                     <span className="font-bold text-lg text-[#3e3e3e]">717</span>
                   </div>
@@ -420,19 +420,19 @@ function SmartCreditFeatures() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-xl p-6 text-gray-900 shadow-xl">
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6 text-gray-900 shadow-xl border border-amber-200">
                 <div className="text-center mb-6">
-                  <div className="text-sm mb-2 font-bold">Credit Score Trend</div>
+                  <div className="text-sm mb-2 font-bold text-gray-700">Credit Score Trend</div>
                   <div className="flex items-end justify-center gap-2 mb-4">
-                    <div className="w-8 h-12 bg-[#3E3E3E] rounded shadow-md"></div>
-                    <div className="w-8 h-16 bg-[#3E3E3E] rounded shadow-md"></div>
-                    <div className="w-8 h-24 bg-[#3E3E3E] rounded shadow-md"></div>
-                    <div className="w-8 h-32 bg-[#3E3E3E] rounded shadow-md"></div>
-                    <div className="w-8 h-40 bg-[#3E3E3E] rounded shadow-md"></div>
-                    <div className="w-8 h-48 bg-gray-900 rounded shadow-lg"></div>
+                    <div className="w-8 h-12 bg-[#f9c65d] rounded shadow-md"></div>
+                    <div className="w-8 h-16 bg-[#f9c65d] rounded shadow-md"></div>
+                    <div className="w-8 h-24 bg-[#f9c65d] rounded shadow-md"></div>
+                    <div className="w-8 h-32 bg-[#f9c65d] rounded shadow-md"></div>
+                    <div className="w-8 h-40 bg-[#f9c65d] rounded shadow-md"></div>
+                    <div className="w-8 h-48 bg-[#bb9446] rounded shadow-lg"></div>
                   </div>
-                  <div className="text-3xl font-bold drop-shadow-sm">+67 Points</div>
-                  <div className="text-sm font-semibold">in 6 Months</div>
+                  <div className="text-3xl font-bold text-[#3e3e3e]">+67 Points</div>
+                  <div className="text-sm font-semibold text-gray-700">in 6 Months</div>
                 </div>
               </div>
             </div>
@@ -503,19 +503,19 @@ function SmartCreditFeatures() {
                   Track your accounts, monitor transactions, and manage your credit—all from a single, simple dashboard designed for both your money and credit.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-xl p-6 text-gray-900 shadow-xl">
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6 text-gray-900 shadow-xl border border-amber-200">
                 <div className="space-y-3">
-                  <div className="bg-white/30 backdrop-blur-sm rounded-lg p-4 border border-white/40">
-                    <div className="text-sm mb-1 font-bold">Checking Account</div>
-                    <div className="text-2xl font-bold">$3,247.89</div>
+                  <div className="bg-white rounded-lg p-4 border border-amber-200">
+                    <div className="text-sm mb-1 font-bold text-gray-700">Checking Account</div>
+                    <div className="text-2xl font-bold text-[#3e3e3e]">$3,247.89</div>
                   </div>
-                  <div className="bg-white/30 backdrop-blur-sm rounded-lg p-4 border border-white/40">
-                    <div className="text-sm mb-1 font-bold">Savings Account</div>
-                    <div className="text-2xl font-bold">$12,450.00</div>
+                  <div className="bg-white rounded-lg p-4 border border-amber-200">
+                    <div className="text-sm mb-1 font-bold text-gray-700">Savings Account</div>
+                    <div className="text-2xl font-bold text-[#3e3e3e]">$12,450.00</div>
                   </div>
-                  <div className="bg-white/30 backdrop-blur-sm rounded-lg p-4 border border-white/40">
-                    <div className="text-sm mb-1 font-bold">Credit Card Balance</div>
-                    <div className="text-2xl font-bold">$1,842.30</div>
+                  <div className="bg-white rounded-lg p-4 border border-amber-200">
+                    <div className="text-sm mb-1 font-bold text-gray-700">Credit Card Balance</div>
+                    <div className="text-2xl font-bold text-[#3e3e3e]">$1,842.30</div>
                   </div>
                 </div>
               </div>
