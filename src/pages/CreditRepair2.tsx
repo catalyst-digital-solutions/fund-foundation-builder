@@ -84,7 +84,7 @@ const CreditRepair2 = () => {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-700">
                   <Globe className="w-5 h-5 text-[#f9c65d]" />
-                  <span>🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano</span>
+                  <span>🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi</span>
                 </div>
               </div>
 
@@ -1711,7 +1711,7 @@ Every dollar you paid to Mesa Group.</p>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Trilingual: 🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano</span>
+              <span className="text-gray-700">Trilingual: 🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
@@ -1733,7 +1733,7 @@ Every dollar you paid to Mesa Group.</p>
             <p className="text-gray-600 mb-6">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            <p className="text-sm text-gray-500">🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano</p>
+            <p className="text-sm text-gray-500">🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi</p>
           </div>
         </div>
       </section>
