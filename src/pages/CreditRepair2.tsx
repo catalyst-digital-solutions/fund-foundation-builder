@@ -213,9 +213,9 @@ const CreditRepair2 = () => {
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <Search className="w-8 h-8 text-[#f9c65d]" />
               </div>
-              <div className="text-sm font-bold text-[#f9c65d] mb-2">STEP 1</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">REPAIR</h3>
-              <p className="text-gray-600 mb-6">Remove What's Holding You Back</p>
+              <div className="text-sm font-bold text-[#f9c65d] mb-2">PHASE 1</div>
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">BREAK DOWN THE BARRIERS</h3>
+              <p className="text-gray-600 mb-6">What's Really Holding You Back</p>
               
               <div className="space-y-4 text-sm text-gray-700">
                 <div>
