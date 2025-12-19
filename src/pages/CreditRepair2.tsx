@@ -695,83 +695,109 @@ const CreditRepair2 = () => {
             <table className="w-full border-collapse">
               <thead>
                 <tr>
-                  <th className="p-4 text-left bg-gray-100 font-semibold text-gray-700 border-b-2">Feature</th>
-                  <th className="p-4 text-center bg-amber-100 font-bold text-amber-800 border-b-2 border-amber-200">Mesa Group</th>
-                  <th className="p-4 text-center bg-gray-100 font-semibold text-gray-600 border-b-2">Typical Companies</th>
-                  <th className="p-4 text-center bg-gray-100 font-semibold text-gray-600 border-b-2">DIY Letters</th>
+                  <th className="p-4 text-left bg-gray-100 font-semibold text-gray-700 border-b-2">What Actually Matters</th>
+                  <th className="p-4 text-center bg-amber-100 font-bold text-amber-800 border-b-2 border-amber-200">Mesa Group Financial Enhancement</th>
+                  <th className="p-4 text-center bg-gray-100 font-semibold text-gray-600 border-b-2">Typical Credit Repair Companies</th>
+                  <th className="p-4 text-center bg-gray-100 font-semibold text-gray-600 border-b-2">DIY Dispute Letters</th>
                 </tr>
               </thead>
               <tbody className="text-sm">
                 <tr className="border-b">
-                  <td className="p-4 font-medium">Approach</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Mesa360™ - Repair, Rebuild, Optimize</span></td>
-                  <td className="p-4 text-center text-gray-500">Transactional dispute only</td>
-                  <td className="p-4 text-center text-gray-500">Completely on your own</td>
+                  <td className="p-4 font-medium">The System</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Mesa360 Credit System™</span> – Repair, Rebuild, Optimize. This isn't just dispute letters. It's complete financial transformation with coaching, education, and ongoing support.</td>
+                  <td className="p-4 text-center text-gray-500">Transactional dispute service only. Send letters, collect payment, disappear. No education. No coaching. No transformation.</td>
+                  <td className="p-4 text-center text-gray-500">You're completely on your own. Google templates and hope. No strategy. No support. High failure rate.</td>
                 </tr>
                 <tr className="border-b bg-gray-50">
-                  <td className="p-4 font-medium">Location</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Bakersfield, CA HQ (Real Office)</span></td>
-                  <td className="p-4 text-center text-gray-500">Offshore call centers</td>
-                  <td className="p-4 text-center text-gray-500">No support</td>
+                  <td className="p-4 font-medium">Where We Are</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Bakersfield, CA Headquarters</span> – Real office you can visit at 5001 California Ave. Local team serving clients nationwide. You're not a ticket number.</td>
+                  <td className="p-4 text-center text-gray-500">Offshore call centers with no local presence. You'll never meet your "account manager." Reps change constantly.</td>
+                  <td className="p-4 text-center text-gray-500">No support whatsoever. You're isolated and confused.</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-4 font-medium">1-on-1 Coaching</td>
-                  <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-400 mx-auto" /></td>
-                  <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-400 mx-auto" /></td>
+                  <td className="p-4 font-medium">What's Included</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">1-on-1 Financial Coaching</span> included in EVERY plan. Learn how to build credit while we remove the bad. Education changes everything.</td>
+                  <td className="p-4 text-center text-gray-500">Just send dispute letters and ghost you. No coaching. No education. No long-term strategy. You're on your own after disputes.</td>
+                  <td className="p-4 text-center text-gray-500">No guidance. No education. No strategy. You don't even know what you don't know.</td>
                 </tr>
                 <tr className="border-b bg-gray-50">
-                  <td className="p-4 font-medium">Dedicated Account Manager</td>
-                  <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="p-4 text-center text-gray-500">Random reps each time</td>
-                  <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-400 mx-auto" /></td>
+                  <td className="p-4 font-medium">Your Account Manager</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Dedicated account manager</span> for every client. Same person. Knows your name, your story, your goals. Personalized strategy.</td>
+                  <td className="p-4 text-center text-gray-500">Assigned to random reps each call. No continuity. No relationship. No personalization. Just a case number.</td>
+                  <td className="p-4 text-center text-gray-500">No support. No manager. No guidance. Just you, Google, and confusion.</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-4 font-medium">Trilingual Support</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano</span></td>
-                  <td className="p-4 text-center text-gray-500">English only</td>
-                  <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-400 mx-auto" /></td>
+                  <td className="p-4 font-medium">Visit Us</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Real office you can visit</span> – 5001 California Ave, Bakersfield, CA 93309. Walk in. Meet your team. See where the work happens.</td>
+                  <td className="p-4 text-center text-gray-500">No physical presence. PO boxes. Virtual offices. You'll never know who's actually working your file.</td>
+                  <td className="p-4 text-center text-gray-500">No support infrastructure.</td>
                 </tr>
                 <tr className="border-b bg-gray-50">
-                  <td className="p-4 font-medium">Legal Team for FCRA Violations</td>
-                  <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="p-4 text-center text-gray-500">Often non-compliant</td>
-                  <td className="p-4 text-center text-gray-500">Risk of mistakes</td>
+                  <td className="p-4 font-medium">Language Support</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Spanish, English, Punjabi</span> – Bilingual team members who speak YOUR language. Communication without barriers.</td>
+                  <td className="p-4 text-center text-gray-500">English-only support (if you can even reach someone). Language barriers create confusion and mistakes.</td>
+                  <td className="p-4 text-center text-gray-500">No guidance in any language.</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-4 font-medium">Advanced Dispute Methods</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">CFPB, Metro 2, Direct Creditor</span></td>
-                  <td className="p-4 text-center text-gray-500">Generic templates</td>
-                  <td className="p-4 text-center text-gray-500">Internet templates</td>
+                  <td className="p-4 font-medium">Legal Backing</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Full legal team</span> for FCRA violation cases. Paralegals, attorneys, demand letters. REAL legal power when your rights are violated.</td>
+                  <td className="p-4 text-center text-gray-500">Often non-compliant with federal law. No legal support. When violations happen, you're on your own.</td>
+                  <td className="p-4 text-center text-gray-500">Risk of legal mistakes that could hurt you worse. No understanding of FCRA/FDCPA.</td>
                 </tr>
                 <tr className="border-b bg-gray-50">
+                  <td className="p-4 font-medium">Dispute Methods</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Advanced strategies</span>: CFPB complaints, Metro 2 challenges, direct creditor disputes, digital uploads, Experian rapid inquiry removal. Multi-channel attack.</td>
+                  <td className="p-4 text-center text-gray-500">Generic templates the bureaus recognize instantly. Easily ignored. Low success rates.</td>
+                  <td className="p-4 text-center text-gray-500">Internet templates bureaus have seen 10,000 times. Ignored immediately.</td>
+                </tr>
+                <tr className="border-b">
                   <td className="p-4 font-medium">Pricing</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Transparent, no hidden fees</span></td>
-                  <td className="p-4 text-center text-gray-500">Hidden fees, upsells</td>
-                  <td className="p-4 text-center text-gray-500">Free but time-consuming</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Transparent pricing, no hidden fees.</span> You know exactly what you're paying. No surprises. No upsells. No gotchas.</td>
+                  <td className="p-4 text-center text-gray-500">Hidden fees everywhere. Constant upsells. "Oh, you want us to dispute THAT? That's extra." Nickel and dimed to death.</td>
+                  <td className="p-4 text-center text-gray-500">Free (but time-consuming, confusing, error-prone, and often ineffective).</td>
+                </tr>
+                <tr className="border-b bg-gray-50">
+                  <td className="p-4 font-medium">Ongoing Support</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Monthly plans cover new items</span> – Life happens. Collections appear during the process? We work on them at no extra charge. This is accountability.</td>
+                  <td className="p-4 text-center text-gray-500">Limited support windows. "Your 6 months are up, pay again if you want more help." Transactional. No ongoing commitment.</td>
+                  <td className="p-4 text-center text-gray-500">All on you. Every single step. Forever.</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-4 font-medium">Money-Back Guarantee</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">90-Day Written Guarantee</span></td>
-                  <td className="p-4 text-center text-gray-500">Vague promises</td>
-                  <td className="p-4 text-center text-gray-500">N/A</td>
+                  <td className="p-4 font-medium">Guarantee</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">90-Day Money-Back Guarantee in writing.</span> Legally binding contract. Remove at least 1 item or get 100% refund. We're that confident.</td>
+                  <td className="p-4 text-center text-gray-500">Vague "satisfaction" promises with impossible-to-navigate refund processes. Good luck getting your money back.</td>
+                  <td className="p-4 text-center text-gray-500">N/A (you already wasted time you can't get back).</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          {/* Legal Team Callout */}
-          <div className="mt-12 bg-gradient-to-r from-[#3E3E3E] to-[#2c2c2c] rounded-2xl p-8 md:p-10">
-            <div className="flex items-start gap-4">
-              <Scale className="w-12 h-12 text-amber-400 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-bold text-white mb-3">Full Legal Team for FCRA Violations</h3>
-                <p className="text-gray-300 mb-4">
-                  While Mesa Group Consulting is not a law firm, we have a full legal team available for cases where creditors or credit bureaus violate your rights under FCRA or FDCPA.
-                </p>
-                <p className="text-amber-400 font-semibold">
-                  Real Results: Many qualified clients have received settlements ranging from $1,000 to $2,500+ when violations are found—in addition to item removal.
-                </p>
+          {/* What This Really Means For You */}
+          <div className="mt-16">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#3E3E3E] mb-10 text-center">
+              WHAT THIS REALLY MEANS FOR YOU
+            </h3>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Mesa Group = Partnership */}
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 border-2 border-amber-300 rounded-2xl p-6 text-center">
+                <div className="text-4xl mb-4">🎯</div>
+                <h4 className="text-xl font-bold text-amber-800 mb-3">Mesa Group = Partnership</h4>
+                <p className="text-gray-700">You're not just hiring a service. You're gaining a partner, a coach, a dedicated team that succeeds when YOU succeed.</p>
+              </div>
+              
+              {/* Typical Companies = Transaction */}
+              <div className="bg-gray-100 border border-gray-300 rounded-2xl p-6 text-center">
+                <div className="text-4xl mb-4">🏢</div>
+                <h4 className="text-xl font-bold text-gray-600 mb-3">Typical Companies = Transaction</h4>
+                <p className="text-gray-500">They want your money. They don't care about your transformation. Send letters, collect fees, move on to the next customer.</p>
+              </div>
+              
+              {/* DIY = Isolation */}
+              <div className="bg-gray-100 border border-gray-300 rounded-2xl p-6 text-center">
+                <div className="text-4xl mb-4">📄</div>
+                <h4 className="text-xl font-bold text-gray-600 mb-3">DIY = Isolation</h4>
+                <p className="text-gray-500">You're alone, confused, and likely making mistakes that could make things worse.</p>
               </div>
             </div>
           </div>
