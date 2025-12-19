@@ -1800,7 +1800,6 @@ const Homepage = () => {
             >
               Schedule My Free Consultation →
             </button>
-            <p className="text-sm text-gray-600 mb-4">Powered by Mesa Group</p>
             
             <p className="text-gray-600 mb-6">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
