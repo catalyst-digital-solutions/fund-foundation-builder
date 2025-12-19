@@ -121,6 +121,11 @@ const BuildCredit = () => {
       number: 1,
       title: 'Choose Your Tools',
       description: 'Based on your starting point, select the credit building accounts that make sense. Not everyone needs the same combination. Someone with zero credit history needs different tools than someone who just finished credit restoration.',
+      tools: [
+        '2-3 revolving accounts (credit builders or secured cards)',
+        '1-2 installment accounts (credit builder loans)',
+        '1 rent reporting service (optional but recommended)'
+      ],
       cta: 'We help you choose the right combination for your situation.'
     },
     {
@@ -552,7 +557,24 @@ const BuildCredit = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-4">{step.title}</h3>
                   <p className="text-gray-700 leading-relaxed mb-4">{step.description}</p>
                   
-                  {step.cta && (
+                  {step.tools && (
+                    <div className="bg-amber-50 rounded-lg p-4 mt-4">
+                      <p className="text-sm font-semibold text-gray-900 mb-2">Pick 3-5 accounts across different categories:</p>
+                      <ul className="space-y-1">
+                        {step.tools.map((item, i) => (
+                          <li key={i} className="text-sm text-gray-700 flex items-center gap-2">
+                            <ArrowRight className="w-4 h-4 text-amber-600" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                      {step.cta && (
+                        <p className="text-amber-600 font-semibold text-sm mt-3">{step.cta}</p>
+                      )}
+                    </div>
+                  )}
+                  
+                  {!step.tools && step.cta && (
                     <p className="text-amber-600 font-semibold">{step.cta}</p>
                   )}
                   
