@@ -113,18 +113,6 @@ function HeroSection() {
               </div>
             </div>
 
-            {/* Pricing Callout - Above CTA */}
-            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4 text-center max-w-md">
-              <p className="text-gray-700 leading-relaxed">
-                <span className="font-bold text-xl text-amber-600">$1</span> gets you started with a 
-                <span className="font-semibold"> 7-day trial</span> of full 3-bureau credit monitoring.
-                <br />
-                <span className="text-sm text-gray-600">
-                  Continue at $27.99/month after trial. Cancel anytime.
-                </span>
-              </p>
-            </div>
-
 {/* CTA Button */}
             <div className="flex flex-col items-center">
               <a
@@ -133,7 +121,7 @@ function HeroSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5"
               >
-                Start Your $1 Trial
+                Get Started
                 <ExternalLink className="w-5 h-5" />
               </a>
               <PoweredBySmartCredit className="mt-3 mb-3" />
