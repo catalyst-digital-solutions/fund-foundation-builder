@@ -117,7 +117,7 @@ const FlipCard = ({ step, openConsultationModal }: { step: any; openConsultation
                 <span className="text-3xl font-bold text-white">{step.number}</span>
               </div>
               <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                What Happens Next
+                What Happens
               </h4>
               <p className="text-xl text-gray-800 leading-relaxed max-w-2xl">
                 {step.whatHappens}
@@ -182,7 +182,7 @@ const HowItWorksSection = ({ openConsultationModal }: { openConsultationModal: (
       iconColor: 'text-purple-600',
       title: 'Custom Recommendations',
       description: 'Based on your analysis, we\'ll recommend the right solutions from our ecosystem—whether that\'s credit restoration, funding access, debt relief, or financial product comparisons.',
-      whatHappens: 'Our team creates a personalized action plan with transparent pricing and expected timelines.',
+      whatHappens: 'We present a clear roadmap tailored to your situation. You decide what fits your budget and timeline.',
       bgGradient: 'from-purple-100 via-purple-50 to-white',
       borderColor: 'border-purple-200',
       backBgGradient: 'from-purple-200 via-purple-100 to-purple-50'
@@ -194,7 +194,7 @@ const HowItWorksSection = ({ openConsultationModal }: { openConsultationModal: (
       iconColor: 'text-green-600',
       title: 'Guided Implementation',
       description: 'We guide you through implementation, provide ongoing support, and track your progress until you hit your goals. You\'re never alone in this process.',
-      whatHappens: 'Regular check-ins, progress updates, and adjustments as needed. We\'re with you every step of the way.',
+      whatHappens: 'Think of us as your strategic partner on speed dial. You\'re never navigating alone.',
       bgGradient: 'from-green-100 via-green-50 to-white',
       borderColor: 'border-green-200',
       backBgGradient: 'from-green-200 via-green-100 to-green-50'
@@ -206,10 +206,10 @@ const HowItWorksSection = ({ openConsultationModal }: { openConsultationModal: (
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            How It <span className="text-[#f9c65d]">Works</span>
+            Getting Started is <span className="text-[#f9c65d]">Straightforward</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Three simple steps to transform your financial future
+            We've designed our process to be transparent, efficient, and friction-free—so you know exactly what to expect at every step.
           </p>
           <p className="text-base text-gray-500 mt-2 hidden md:block">
             Move your cursor over each card to see what happens next
