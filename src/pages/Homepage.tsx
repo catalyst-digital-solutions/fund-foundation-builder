@@ -910,7 +910,7 @@ const Homepage = () => {
                 </li>
               </ul>
               
-              <Link to="/for-consumers" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold">
+              <Link to="/for-consumers" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold">
                 View All Credit Services
                 <ArrowRight className="w-4 h-4" />
               </Link>
