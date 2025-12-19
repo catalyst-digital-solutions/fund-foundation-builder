@@ -778,7 +778,7 @@ const AllFundingSolutionsGrid = () => {
               <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm border-2 border-gray-300">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
+              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all text-sm">
                 Schedule Consultation
               </a>
             </div>
@@ -822,7 +822,7 @@ const AllFundingSolutionsGrid = () => {
               <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm border-2 border-gray-300">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
+              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all text-sm">
                 Schedule Consultation
               </a>
             </div>
@@ -1583,7 +1583,7 @@ const TwoPathsForward = () => {
             </div>
 
             <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="block">
-              <Button className="w-full bg-white hover:bg-gray-50 text-gray-900 font-bold py-4 text-lg border-2 border-gray-300">
+              <Button className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-4 text-lg">
                 Start Your Application
               </Button>
             </a>
