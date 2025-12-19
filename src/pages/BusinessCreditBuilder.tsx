@@ -70,7 +70,7 @@ const HeroSection = () => {
               href="https://mesagroupcapital.com/business-credit-enroll"
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 flex items-center gap-2 text-lg"
+              className="group px-8 py-4 bg-[#EA6A2B] hover:bg-[#d55f26] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 flex items-center gap-2 text-lg"
             >
               Get Full Service Program ($2,495)
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -426,14 +426,14 @@ const FundabilitySystemSection = () => {
                 <div className="flex items-start gap-6">
                   {/* Step Number Badge */}
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg">
+                    <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center text-gray-900 font-bold text-2xl shadow-lg">
                       {step.number}
                     </div>
                   </div>
 
                   <div className="flex-1">
                     {/* Icon */}
-                    <Icon className="w-12 h-12 text-amber-600 mb-4" strokeWidth={2} />
+                    <Icon className="w-12 h-12 text-[#f9c65d] mb-4" strokeWidth={2} />
 
                     {/* Title */}
                     <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
@@ -441,13 +441,13 @@ const FundabilitySystemSection = () => {
                     </h3>
 
                     {/* Subtitle */}
-                    <p className="text-lg text-amber-700 font-semibold mb-4">{step.subtitle}</p>
+                    <p className="text-lg text-[#d4a84b] font-semibold mb-4">{step.subtitle}</p>
 
                     {/* Body */}
                     <p className="text-gray-700 leading-relaxed mb-6">{step.body}</p>
 
                     {/* What This Reveals */}
-                    <div className="bg-white rounded-lg p-6 border-l-4 border-amber-500">
+                    <div className="bg-white rounded-lg p-6 border-l-4 border-[#f9c65d]">
                       <p className="font-bold text-gray-900 mb-3 text-lg">
                         {step.number === 2 ? 'WHAT YOU DISCOVER:' :
                          step.number === 3 ? 'WHAT YOU\'LL MONITOR:' :
@@ -466,7 +466,7 @@ const FundabilitySystemSection = () => {
 
                     {/* Hint or Result */}
                     {step.hint && (
-                      <div className="mt-4 bg-amber-100 rounded-lg p-4 border-l-4 border-amber-600">
+                      <div className="mt-4 bg-amber-100 rounded-lg p-4 border-l-4 border-[#f9c65d]">
                         <p className="text-sm text-gray-800">
                           <strong>HINT:</strong> {step.hint}
                         </p>
@@ -495,9 +495,9 @@ const GuaranteeSection = () => {
   return (
     <section className="py-20 px-6 bg-gradient-to-b from-amber-50 to-white">
       <div className="max-w-5xl mx-auto">
-        <div className="bg-gradient-to-br from-white to-amber-50 rounded-2xl p-10 shadow-2xl border-4 border-amber-400">
+        <div className="bg-gradient-to-br from-white to-amber-50 rounded-2xl p-10 shadow-2xl border-4 border-[#f9c65d]">
           <div className="text-center mb-8">
-            <div className="inline-block bg-amber-500 text-white px-6 py-2 rounded-full font-bold text-lg mb-4">
+            <div className="inline-block bg-[#f9c65d] text-gray-900 px-6 py-2 rounded-full font-bold text-lg mb-4">
               OUR GUARANTEE
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -518,7 +518,7 @@ const GuaranteeSection = () => {
               href="https://mesagroupcapital.com/business-credit-enroll"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 text-lg"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#f9c65d] hover:bg-[#e5b54e] text-gray-900 font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 text-lg"
             >
               Get Started with Full Service ($2,495)
               <ArrowRight className="w-5 h-5" />
@@ -528,7 +528,7 @@ const GuaranteeSection = () => {
             </div>
           </div>
 
-          <div className="mt-8 bg-white rounded-lg p-6 border-l-4 border-amber-600">
+          <div className="mt-8 bg-white rounded-lg p-6 border-l-4 border-[#f9c65d]">
             <p className="text-sm text-gray-700 leading-relaxed">
               <strong>*</strong>The $50,000 funding guarantee is based on our advisor team of Business Credit Experts assisting you with securing several credit approvals, totaling at least $50,000, through each tier of funding. If you do not comply with the plan or practice healthy financial behaviors, funding may not be approved.
             </p>
@@ -599,17 +599,17 @@ const WhatsIncludedSection = () => {
               <div key={index} className="bg-white rounded-lg p-6 shadow-md border border-gray-200">
                 <div className="flex justify-between items-start mb-3">
                   <h4 className="text-lg font-bold text-gray-900 flex-1">{component.name}</h4>
-                  <span className="text-2xl font-bold text-amber-600">{component.value}</span>
+                  <span className="text-2xl font-bold text-[#f9c65d]">{component.value}</span>
                 </div>
                 <p className="text-gray-700 leading-relaxed">{component.description}</p>
               </div>
             ))}
 
             {/* Total Value */}
-            <div className="bg-gradient-to-r from-amber-400 to-amber-500 rounded-lg p-6 shadow-lg">
+            <div className="bg-gradient-to-r from-[#fad780] to-[#f9c65d] rounded-lg p-6 shadow-lg">
               <div className="flex justify-between items-center">
-                <h4 className="text-xl font-bold text-white">THE TRUE VALUE OF THIS SYSTEM</h4>
-                <span className="text-3xl font-bold text-white">$11,040</span>
+                <h4 className="text-xl font-bold text-gray-900">THE TRUE VALUE OF THIS SYSTEM</h4>
+                <span className="text-3xl font-bold text-gray-900">$11,040</span>
               </div>
             </div>
 
@@ -641,13 +641,13 @@ const ProgramOptionsSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* FULL SERVICE PROGRAM */}
-          <div className="bg-gradient-to-br from-white to-amber-50 rounded-2xl p-8 shadow-2xl border-4 border-amber-400 hover:scale-105 transition-all">
+          <div className="bg-gradient-to-br from-white to-amber-50 rounded-2xl p-8 shadow-2xl border-4 border-[#f9c65d] hover:scale-105 transition-all">
             <div className="text-center mb-6">
-              <div className="inline-block bg-amber-500 text-white px-6 py-2 rounded-full font-bold text-lg mb-4">
+              <div className="inline-block bg-[#f9c65d] text-gray-900 px-6 py-2 rounded-full font-bold text-lg mb-4">
                 MOST POPULAR
               </div>
               <h3 className="text-3xl font-bold text-gray-900 mb-2">Full Service Program</h3>
-              <div className="text-5xl font-bold text-amber-600 mb-2">$2,495</div>
+              <div className="text-5xl font-bold text-[#f9c65d] mb-2">$2,495</div>
               <p className="text-gray-600">one-time payment</p>
               <p className="text-sm text-gray-600 mt-2">Or choose 3-month payment plan<br />(access granted after 2nd payment)</p>
             </div>
@@ -681,7 +681,7 @@ const ProgramOptionsSection = () => {
               href="https://mesagroupcapital.com/business-credit-enroll"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all text-lg"
+              className="block text-center px-8 py-4 bg-[#f9c65d] hover:bg-[#e5b54e] text-gray-900 font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all text-lg"
             >
               Get Started with Full Service →
             </a>
@@ -774,7 +774,7 @@ const ProgramOptionsSection = () => {
               href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-lg transition-all"
+              className="px-6 py-3 bg-[#EA6A2B] hover:bg-[#d55f26] text-white font-bold rounded-lg transition-all"
             >
               Book a Consultation
             </a>
@@ -808,9 +808,9 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gray-900">
+    <section className="py-20 px-6 bg-gray-100">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
           What Our Clients Are Saying About the<br />Business Credit Builder Program
         </h2>
 
@@ -818,22 +818,22 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-8 shadow-2xl border-2 border-amber-400"
+              className="bg-white rounded-xl p-8 shadow-lg border-2 border-gray-200"
             >
               {/* Rating Stars */}
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 fill-amber-400 text-amber-400" />
+                  <Star key={i} className="w-6 h-6 fill-[#f9c65d] text-[#f9c65d]" />
                 ))}
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-lg text-gray-200 leading-relaxed mb-6 italic">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6 italic">
                 "{testimonial.text}"
               </p>
 
               {/* Author */}
-              <p className="text-amber-400 font-bold">— {testimonial.author}</p>
+              <p className="text-gray-900 font-bold">— {testimonial.author}</p>
             </div>
           ))}
         </div>
@@ -854,9 +854,9 @@ const VideoSection = () => {
           Watch a quick walkthrough of the software platform
         </p>
 
-        <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl p-12 shadow-lg border-4 border-amber-400">
+        <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl p-12 shadow-lg border-4 border-[#f9c65d]">
           <div className="flex flex-col items-center justify-center">
-            <Play className="w-20 h-20 text-amber-600 mb-4" strokeWidth={2} />
+            <Play className="w-20 h-20 text-[#f9c65d] mb-4" strokeWidth={2} />
             <p className="text-gray-700 font-semibold mb-4">Video Walkthrough</p>
             <p className="text-gray-600 text-sm max-w-2xl">
               See exactly how the Fundability<sup>®</sup> system works, what the software looks like, and how we guide you through each stage of building business credit that unlocks real funding.
@@ -1053,10 +1053,10 @@ const FinalCTASection = () => {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Full Service CTA */}
-          <div className="bg-gradient-to-br from-white to-amber-50 rounded-xl p-8 shadow-2xl border-4 border-amber-400">
+          <div className="bg-gradient-to-br from-white to-amber-50 rounded-xl p-8 shadow-2xl border-4 border-[#EA6A2B]">
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">Full Service Program</h3>
             <div className="text-center mb-6">
-              <div className="text-5xl font-bold text-amber-600 mb-2">$2,495</div>
+              <div className="text-5xl font-bold text-[#EA6A2B] mb-2">$2,495</div>
               <p className="text-gray-700">12 months of coaching + weekly calls + $50K guarantee</p>
               <p className="text-sm text-gray-600 mt-2">Or choose 3-month payment plan (access after 2nd payment)</p>
             </div>
@@ -1064,14 +1064,14 @@ const FinalCTASection = () => {
               href="https://mesagroupcapital.com/business-credit-enroll"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all text-lg"
+              className="block text-center px-8 py-4 bg-[#EA6A2B] hover:bg-[#d55f26] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all text-lg"
             >
               Get Started Today
             </a>
           </div>
 
           {/* DIY CTA */}
-          <div className="bg-gradient-to-br from-white to-gray-100 rounded-xl p-8 shadow-2xl border-4 border-gray-300">
+          <div className="bg-gradient-to-br from-white to-gray-100 rounded-xl p-8 shadow-2xl border-4 border-[#EA6A2B]">
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">D.I.Y. Program</h3>
             <div className="text-center mb-6">
               <div className="text-5xl font-bold text-gray-900 mb-2">$995</div>
@@ -1082,7 +1082,7 @@ const FinalCTASection = () => {
               href="https://mesagroupcapital.com/bcfs-diy-enroll"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center px-8 py-4 bg-gray-800 hover:bg-gray-900 text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all text-lg"
+              className="block text-center px-8 py-4 bg-[#EA6A2B] hover:bg-[#d55f26] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all text-lg"
             >
               Purchase Now
             </a>
@@ -1102,13 +1102,13 @@ const FinalCTASection = () => {
               href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-lg transition-all"
+              className="px-6 py-3 bg-[#EA6A2B] hover:bg-[#d55f26] text-white font-bold rounded-lg transition-all"
             >
               Book a Consultation
             </a>
             <a
               href="tel:6613103040"
-              className="px-6 py-3 bg-white hover:bg-gray-50 text-gray-900 font-bold rounded-lg border-2 border-gray-300 transition-all flex items-center justify-center gap-2"
+              className="px-6 py-3 bg-white hover:bg-gray-50 text-gray-900 font-bold rounded-lg border-2 border-[#EA6A2B] transition-all flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
               Call (661) 310-3040
