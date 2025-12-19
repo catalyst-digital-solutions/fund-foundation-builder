@@ -1,3 +1,11 @@
+/**
+ * Credit Monitoring (SmartCredit) Page
+ *
+ * DEPLOYMENT NOTE:
+ * This page will be deployed to subdomain: smartcredit.mesagroupconsulting.com
+ * Subdomain setup to be handled separately in GoDaddy DNS configuration
+ */
+
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -8,6 +16,8 @@ import EmotionalCTA3 from '@/components/credit-monitoring/sections/EmotionalCTA3
 import experianLogo from '@/assets/experian-logo.png';
 import equifaxLogo from '@/assets/equifax-logo.png';
 import transunionLogo from '@/assets/transunion-logo.png';
+import smartcreditLogo from '@/assets/smartcredit-logo.png';
+import smartcreditLogoLight from '@/assets/smartcredit-logo-light.png';
 
 const AFFILIATE_LINK = "https://smartcredit.com/join/?PID=24603&planType=PREMIUM";
 
@@ -107,7 +117,13 @@ function HeroSection() {
               Start Monitoring My Credit
               <ExternalLink className="w-5 h-5" />
             </a>
-            <p className="text-gray-700 text-sm mt-3 mb-3">Powered by SmartCredit</p>
+            <div className="flex items-center justify-center gap-2 mt-2 mb-3">
+              <span className="text-gray-700 text-sm">Powered by</span>
+              <img src={smartcreditLogo} alt="SmartCredit" className="h-5" />
+            </div>
+            <p className="text-gray-900 font-bold text-lg mt-1 mb-1">
+              $1 for 7-day trial, <span className="text-gray-600 font-normal text-base">then $27.99/month</span>
+            </p>
             <p className="text-sm text-gray-600">
               <CheckCircle2 className="w-4 h-4 inline mr-1" />
               Instant access to all 3 bureaus
@@ -195,8 +211,8 @@ function WhyMonitoringMatters() {
           </div>
 
           {/* Concern 2 */}
-          <div className="bg-gradient-to-br from-orange-50 to-background rounded-xl p-6 shadow-md border-l-4 border-orange-500">
-            <TrendingUp className="w-12 h-12 text-orange-500 mb-3" />
+          <div className="bg-gradient-to-br from-amber-50 to-background rounded-xl p-6 shadow-md border-l-4 border-[#f9c65d]">
+            <TrendingUp className="w-12 h-12 text-[#f9c65d] mb-3" />
             <h3 className="text-lg font-bold text-foreground mb-2">
               Errors Hurt Your Score
             </h3>
@@ -245,7 +261,13 @@ function WhyMonitoringMatters() {
             Get Protected Today
             <Shield className="w-5 h-5" />
           </a>
-          <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
+          <p className="text-gray-900 font-bold text-lg mt-3 mb-1">
+            $1 for 7-day trial, <span className="text-gray-600 font-normal text-base">then $27.99/month</span>
+          </p>
+          <div className="flex items-center justify-center gap-2 mt-2">
+            <span className="text-gray-700 text-sm">Powered by</span>
+            <img src={smartcreditLogo} alt="SmartCredit" className="h-5" />
+          </div>
         </div>
 
       </div>
@@ -286,7 +308,7 @@ function SmartCreditFeatures() {
                   Your credit report is like a report card of your entire financial history. We make it easy to check accuracy and understand what's helping or hurting your score.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-[#bb9446] to-[#8b6f35] rounded-xl p-6 text-white shadow-xl">
+              <div className="bg-gradient-to-br from-[#d4b574] to-[#c4a563] rounded-xl p-6 text-white shadow-xl">
                 <div className="text-center mb-6">
                   <div className="text-sm mb-2 font-semibold">See All 3 Scores</div>
                   <div className="text-6xl font-bold drop-shadow-lg">720</div>
@@ -401,7 +423,7 @@ function SmartCreditFeatures() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-xl p-6 text-gray-900 shadow-xl">
+              <div className="bg-gradient-to-br from-[#fbd88a] to-[#f3d899] rounded-xl p-6 text-gray-900 shadow-xl">
                 <div className="text-center mb-6">
                   <div className="text-sm mb-2 font-bold">Credit Score Trend</div>
                   <div className="flex items-end justify-center gap-2 mb-4">
@@ -484,7 +506,7 @@ function SmartCreditFeatures() {
                   Track your accounts, monitor transactions, and manage your credit—all from a single, simple dashboard designed for both your money and credit.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-xl p-6 text-gray-900 shadow-xl">
+              <div className="bg-gradient-to-br from-[#fbd88a] to-[#f3d899] rounded-xl p-6 text-gray-900 shadow-xl">
                 <div className="space-y-3">
                   <div className="bg-white/30 backdrop-blur-sm rounded-lg p-4 border border-white/40">
                     <div className="text-sm mb-1 font-bold">Checking Account</div>
@@ -515,7 +537,13 @@ function SmartCreditFeatures() {
             Get All These Features Now
             <ExternalLink className="w-5 h-5" />
           </a>
-          <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
+          <p className="text-gray-900 font-bold text-lg mt-3 mb-1">
+            $1 for 7-day trial, <span className="text-gray-600 font-normal text-base">then $27.99/month</span>
+          </p>
+          <div className="flex items-center justify-center gap-2 mt-2">
+            <span className="text-gray-700 text-sm">Powered by</span>
+            <img src={smartcreditLogo} alt="SmartCredit" className="h-5" />
+          </div>
         </div>
 
       </div>
@@ -676,7 +704,13 @@ function HowItWorks() {
             Start My Protection Now
             <ExternalLink className="w-5 h-5" />
           </a>
-          <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
+          <p className="text-gray-900 font-bold text-lg mt-3 mb-1">
+            $1 for 7-day trial, <span className="text-gray-600 font-normal text-base">then $27.99/month</span>
+          </p>
+          <div className="flex items-center justify-center gap-2 mt-2">
+            <span className="text-gray-700 text-sm">Powered by</span>
+            <img src={smartcreditLogo} alt="SmartCredit" className="h-5" />
+          </div>
           <p className="text-sm text-muted-foreground mt-4">
             Join thousands of satisfied members • Cancel anytime
           </p>
@@ -830,19 +864,25 @@ function FinalCTA() {
             Start Protecting Your <span className="text-[#f9c65d]">Credit</span> Today
           </h2>
           
-          <a 
-            href={AFFILIATE_LINK} 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href={AFFILIATE_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
           >
             Get SmartCredit® Premium →
           </a>
-          
+
+          <p className="text-gray-900 font-bold text-lg mb-1">
+            $1 for 7-day trial, <span className="text-gray-600 font-normal text-base">then $27.99/month</span>
+          </p>
+          <div className="flex items-center justify-center gap-2 mt-2 mb-6">
+            <span className="text-gray-700 text-sm">Powered by</span>
+            <img src={smartcreditLogo} alt="SmartCredit" className="h-5" />
+          </div>
           <p className="text-gray-600 mb-6">
             Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
           </p>
-          <p className="text-gray-700 text-sm mt-3">Powered by SmartCredit</p>
           <p className="text-sm text-gray-500">Powered by Mesa Group</p>
         </div>
       </div>

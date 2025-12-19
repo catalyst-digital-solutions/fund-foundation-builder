@@ -1,213 +1,336 @@
-# Mesa Group Consulting - Fund Foundation Builder
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
 
-This is the main website for Mesa Group Consulting (owned by Evert Calderon), developed in collaboration with Lovable. The site showcases various financial services including credit repair, business funding, debt relief, and consumer financial products.
+Mesa Group Consulting financial services website built with React + TypeScript + Vite. The site showcases credit repair, business funding, debt relief, and consumer financial products.
 
 **Client:** Evert Calderon - Mesa Group Consulting, Mesa Group Capital
 **Development Partner:** Lovable
-**GitHub Repository:** https://github.com/catalyst-digital-solutions/fund-foundation-builder
+**Repository:** https://github.com/catalyst-digital-solutions/fund-foundation-builder
+
+## Development Commands
+
+```bash
+# Development server (runs on port 8080)
+npm run dev
+
+# Production build
+npm run build
+
+# Development build (preserves debugging)
+npm run build:dev
+
+# Preview production build locally
+npm run preview
+
+# Lint code
+npm run lint
+```
 
 ## Tech Stack
 
-- **Framework:** React with TypeScript
-- **Build Tool:** Vite
+- **Framework:** React 18 with TypeScript
+- **Build Tool:** Vite with SWC plugin
 - **Routing:** React Router v6
-- **Styling:** Tailwind CSS
-- **UI Components:** Custom components with shadcn/ui patterns
-- **Icons:** Lucide React
-- **State Management:** React Query (TanStack Query)
+- **Styling:** Tailwind CSS with custom design system
+- **UI Components:** shadcn/ui (Radix UI primitives)
+- **Icons:** lucide-react ONLY (never emojis)
+- **State Management:** TanStack Query (React Query)
+- **Forms:** react-hook-form + zod
 
-## Project Structure
+## Architecture Pattern
 
-```
-fund-foundation-builder/
-├── src/
-│   ├── components/
-│   │   ├── Header.tsx                    # Main navigation header
-│   │   ├── Footer.tsx                    # Site footer
-│   │   ├── PoweredByMesaGroup.tsx        # Branding component
-│   │   ├── life-insurance/sections/      # Life insurance page components
-│   │   └── zero-interest-business-funding/sections/  # Business funding components
-│   ├── pages/
-│   │   ├── Homepage.tsx                  # Main landing page
-│   │   ├── AboutUs.tsx                   # About page
-│   │   ├── ForConsumers.tsx              # Consumer services
-│   │   ├── ForBusinesses.tsx             # Business services
-│   │   ├── BuildCredit.tsx               # Credit building
-│   │   ├── CreditRepair.tsx              # Credit repair (2 versions)
-│   │   ├── ZeroInterestBusinessFunding.tsx      # Original 0% funding page
-│   │   ├── ZeroInterestBusinessFunding2.tsx     # NEW: Premium 0% funding page
-│   │   ├── BusinessFunding.tsx           # General business funding
-│   │   ├── DebtRelief.tsx                # Debt relief services
-│   │   ├── LifeInsurance.tsx             # Life insurance
-│   │   └── Contact.tsx                   # Contact page
-│   └── App.tsx                           # Main app with routing
-├── CLAUDE.md                             # This file
-└── package.json
+### Page Structure (Critical)
+
+Every landing page follows a **vertical section composition** pattern:
+
+```tsx
+const ServicePage = () => (
+  <div className="min-h-screen bg-white">
+    <Header />
+    <HeroSection />
+    <EmotionalCTA1 />
+    <FeatureSection />
+    <HowItWorks />
+    <EmotionalCTA2 />
+    <ServiceComparison />
+    <WhatsIncluded />
+    <EmotionalCTA3 />
+    <Testimonials />
+    <FAQ />
+    <FinalCTA />
+    <Footer />
+  </div>
+);
 ```
 
-## Key Pages & Routes
+**Key principles:**
+- Pages import pre-built section components from `src/components/[service-name]/sections/`
+- Each section is self-contained with its own styling
+- Sections stack vertically with alternating backgrounds (white, gradients, amber-50)
+- Never inline large sections directly in page files
 
-### Business Services
-- `/zero-interest-business-funding` - Original business funding page (broad marketplace approach)
-- `/zero-interest-business-funding-2` - **NEW Premium page** (exclusive insider banking approach)
-- `/business-funding` - General business funding options
-- `/business-debt-relief` - Business debt relief services
-- `/for-businesses` - Business services overview
+### Component Organization
 
-### Consumer Services
-- `/credit-repair` - Credit repair services (version 1)
-- `/credit-repair-2` - Credit repair services (version 2)
-- `/diy-credit-repair` - DIY credit repair
-- `/build-credit` - Credit building services
-- `/credit-cards` - Credit card offers
-- `/personal-loans` - Personal loan options
-- `/auto-loan-refi` - Auto loan refinancing
-- `/student-loan-refi` - Student loan refinancing (2 versions)
-- `/debt-consolidation-loan` - Debt consolidation
-- `/debt-relief` - Consumer debt relief
-- `/for-consumers` - Consumer services overview
+```
+src/
+├── components/
+│   ├── Header.tsx                    # Shared navigation (all pages)
+│   ├── Footer.tsx                    # Shared footer with collapsible menus
+│   ├── NavLink.tsx                   # Custom Link wrapper
+│   ├── [service-name]/               # Service-specific folder (kebab-case)
+│   │   └── sections/                 # Section components for this service
+│   │       ├── HeroSection.tsx
+│   │       ├── FAQ.tsx
+│   │       └── EmotionalCTA1.tsx
+│   ├── calculators/                  # Financial calculator components
+│   └── ui/                           # shadcn/ui base components (DO NOT MODIFY)
+├── pages/
+│   ├── Homepage.tsx                  # Main landing page
+│   ├── [ServiceName].tsx             # Individual service pages (PascalCase)
+│   └── NotFound.tsx                  # 404 page
+└── App.tsx                           # Route definitions
+```
 
-### Other Services
-- `/life-insurance` - Life insurance products
-- `/trust-and-will-plan` - Estate planning
+### Routing Structure
 
-### Informational
-- `/` or `/homepage` - Homepage
-- `/about` - About Mesa Group Consulting
-- `/contact` - Contact information
-- `/resources` - Resources hub
-- `/resources/articles` - Articles and insights
-- `/resources/news` - Mesa News
-- `/resources/calculators` - Financial calculators
-- `/resources/templates` - Letter templates
+All routes defined in [src/App.tsx](src/App.tsx). Key route patterns:
 
-## Recent Major Update (December 2024)
+**Business Services:**
+- `/business-funding` + `/business-funding-2` (v1 and v2 pages)
+- `/zero-interest-business-funding` + `/zero-interest-business-funding-2`
+- `/business-credit-builder` (paid program, separate from personal credit)
+- `/business-debt-relief`
 
-### 0% Interest Business Funding Page Redesign
+**Consumer Services:**
+- `/credit-repair` + `/credit-repair-2` (v1 and v2 pages)
+- `/build-credit` (personal credit - FREE guide)
+- `/credit-cards`, `/personal-loans`, `/auto-loan-refi`
+- `/debt-consolidation-loan`, `/debt-relief`
 
-**Background:**
-- Original page positioned Mesa as a general business funding marketplace (9 different solutions, inclusive 550+ credit scores)
-- Evert provided new copy repositioning the service as an exclusive, premium 0% credit card strategy with insider banking access
+**Important:** Multiple pages have v1/v2 variants for A/B testing. Always clarify which version to modify.
 
-**What Changed:**
-- Created new page: `ZeroInterestBusinessFunding2.tsx`
-- Original preserved as backup at `/zero-interest-business-funding`
-- New page accessible at `/zero-interest-business-funding-2`
+## Design System (Critical)
 
-**Key Positioning Shifts:**
+### Brand Colors
 
-1. **Target Audience Narrowing:**
-   - Old: 550+ credit accepted, startups with limited revenue
-   - New: 700+ credit minimum (preferably 750+), established LLCs with 6+ months history
+All colors use HSL CSS variables from [src/index.css](src/index.css):
 
-2. **Service Model:**
-   - Old: Marketplace broker model with 30+ funding partners
-   - New: Premium consulting with direct banking relationships and insider knowledge
+```tsx
+// Mesa Group Capital Brand Colors (primary palette)
+--mgc-yellow: 40 93% 67%    // #f9c65d - Primary CTAs, highlights
+--mgc-gold: 40 46% 50%      // #bb9446 - Hover states, dark accents
+--mgc-tan: 39 48% 84%       // #E5D2AF - Light backgrounds
+--mgc-cream: 40 88% 76%     // #f8d899 - Subtle backgrounds
 
-3. **Messaging:**
-   - Old: "We have 30+ funding partners"
-   - New: "We submit applications through our banking relationships" - emphasizes CEO's banking background and direct relationships with Business Relationship Managers at major banks
-
-4. **Updated Statistics:**
-   - $47M+ total capital secured (was $42M+)
-   - 850+ clients funded (was 720+)
-   - $155K average funding amount
-   - 15+ years combined banking experience
-
-5. **New Sections Added:**
-   - "The Awakening" - Comparison table showing $20,250 savings vs traditional loans
-   - "Three-Round Framework" - Foundation/Expansion/Maximization rounds (30-60 days, 60-120 days, 120-180 days)
-   - "Who This Works For" - Explicit qualification boundaries (great fit vs. not for you)
-   - "Mesa Advantage" - 4 key differentiators emphasizing insider knowledge
-   - "What You'll Actually Do" - Clear role delineation
-   - "Partnership Model" - Performance-based pricing with ROI examples
-   - "Beyond 0% Credit" - Progression path to larger funding
-   - Updated testimonials with specific credit scores and funding amounts
-
-6. **Sections Removed:**
-   - "9 Funding Solutions" (equipment financing, invoice factoring, merchant cash advances, etc.)
-   - Emotional CTA components (EmotionalCTA1, 2, 3)
-   - Bakersfield-specific testimonials (replaced with detailed case studies)
-
-**Design System Preserved:**
-- Amber/gold color scheme (#f9c65d, #bb9446)
-- Animations and hover effects
-- Card-based layouts
-- Responsive design patterns
-
-## Design & Branding
-
-### Color Scheme
-- **Primary:** Amber/Gold (#f9c65d, #bb9446, #fcd34d, #f59e0b)
-- **Secondary:** Green for success/approval indicators
-- **Accent:** Red for traditional loan comparisons
-- **Neutral:** Gray scale for text and backgrounds
+// Use Tailwind amber utilities (map to mgc colors):
+className="bg-amber-400 hover:bg-amber-500"  // ✅ CORRECT
+className="text-[#f9c65d]"                   // ⚠️ Only when referencing brand yellow directly
+style={{ color: '#bb9446' }}                // ❌ WRONG - use Tailwind classes
+```
 
 ### Typography
-- **Font Family:** Inter (sans-serif)
-- **Headings:** Bold, large scale (4xl-6xl on desktop)
-- **Body:** Regular weight, good line-height for readability
 
-### Component Patterns
-- Gradient backgrounds (white → amber-50 → white)
-- Shadow-lg cards with hover effects
-- Border-l-4 accent bars on callout boxes
-- Rounded-xl corners throughout
-- Hover animations: scale-105, -translate-y-1
+All text uses **Inter font** (loaded via Google Fonts). Standard patterns:
 
-## Funnel & CTA Links
+```tsx
+// Hero Headlines
+className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
 
-### Primary Funnel
-- **Main Application:** https://funding-app.mesagroupconsulting.com/Opt-In
-- **Alternative Entry:** https://funding-app.mesagroupconsulting.com/opt-in/apply-page
+// Section Headers
+className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900"
 
-### Contact
-- **Phone:** (661) 310-3040
-- **Location:** Bakersfield, CA
+// Body Text
+className="text-lg md:text-xl text-gray-600 leading-relaxed"
 
-## Development Notes
-
-### Running Locally
-```bash
-npm install
-npm run dev
+// Accent words in headlines
+<span className="text-amber-600">[Highlight]</span>
 ```
 
-### Building for Production
-```bash
-npm run build
+### Icons: lucide-react ONLY
+
+**Never use emojis.** All icons from `lucide-react`:
+
+```tsx
+import { CheckCircle, ArrowRight, X, Shield, AlertTriangle } from 'lucide-react';
+
+// Checkmarks (positive)
+<CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
+
+// X marks (negative)
+<X className="w-5 h-5 text-red-600 flex-shrink-0" />
+
+// CTA arrows
+<ArrowRight className="ml-2 w-5 h-5" />
 ```
 
-### Key Dependencies
-- React 18+
-- TypeScript
-- Vite
-- Tailwind CSS
-- React Router
-- Lucide React (icons)
-- TanStack Query
+### Button Patterns
 
-### Component Conventions
-- All pages are functional components
-- Use TypeScript for type safety
-- Lucide icons for all iconography
-- Responsive design: mobile-first with md/lg breakpoints
-- Animations use Tailwind's transition utilities
+Primary CTAs use amber background with hover states:
 
-### File Naming
-- Pages: PascalCase (e.g., `ZeroInterestBusinessFunding2.tsx`)
-- Components: PascalCase (e.g., `PoweredByMesaGroup.tsx`)
-- Directories: kebab-case for section folders (e.g., `life-insurance/sections/`)
+```tsx
+<a
+  href="[URL]"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+>
+  Get Started Now
+  <ArrowRight className="ml-2 w-5 h-5" />
+</a>
+```
 
-## Integration with Lovable
+### Common Section Patterns
 
-This project is built in collaboration with Lovable, a web development platform. Changes may be synced between local development and Lovable's environment.
+**Hero Section:**
+- Left column: headline, subheadline, benefits list with checkmarks, CTA buttons
+- Right column: visual element (stats, form, or illustration)
+- Background: `bg-gradient-to-br from-white via-amber-50 to-white`
 
-## Client Requirements
+**Feature Cards:**
+```tsx
+<div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all">
+  <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full" />
+  {/* Content */}
+</div>
+```
 
-**Evert's Preferences:**
+**Container Pattern:**
+```tsx
+<section className="py-12 md:py-20 lg:py-24">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Content */}
+  </div>
+</section>
+```
+
+## Custom Tailwind Utilities
+
+Custom utilities defined in [tailwind.config.ts](tailwind.config.ts):
+
+```tsx
+// 3D flip card utilities (used in Homepage "How It Works" section)
+className="perspective-1000 transform-style-3d backface-hidden"
+
+// Custom animations
+className="animate-bounce-slow"  // Gentle bounce animation
+```
+
+## Key Implementation Patterns
+
+### Interactive Flip Cards (Homepage)
+
+The Homepage "How It Works" section uses viewport-based flip detection:
+
+```tsx
+// Viewport detection (not hover) to avoid stuttering
+const handleMouseMove = (e: MouseEvent) => {
+  const rect = cardRef.current.getBoundingClientRect();
+  const isInVerticalSection = e.clientY >= rect.top && e.clientY <= rect.bottom;
+  setIsFlipped(isInVerticalSection);
+};
+
+useEffect(() => {
+  window.addEventListener('mousemove', handleMouseMove, { passive: true });
+  return () => window.removeEventListener('mousemove', handleMouseMove);
+}, []);
+```
+
+### Service Tier Comparison
+
+- Mobile: Tab-based toggle between tiers
+- Desktop: Side-by-side cards with feature comparison
+- See [src/components/business-credit/sections/ServiceTierComparison.tsx](src/components/business-credit/sections/ServiceTierComparison.tsx) for pattern
+
+### Dual CTA Pathways
+
+Many pages offer consultation + direct application:
+
+```tsx
+// Consultation
+https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery
+
+// Direct Application
+https://mesagroupcapital.com/for-businesses/business-funding
+```
+
+## Critical External CTAs
+
+**Business Funding:**
+- Main Application: `https://funding-app.mesagroupconsulting.com/Opt-In`
+- Consultation: `https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery`
+
+**Credit Repair:**
+- Signup Portal: `https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09`
+
+**Business Credit Builder:**
+- Full Service ($2,495): `https://mesagroupcapital.com/business-credit-enroll`
+- DIY ($995): `https://mesagroupcapital.com/bcfs-diy-enroll`
+
+**Contact:**
+- Phone: (661) 310-3040
+- Location: Bakersfield, CA
+
+## Creating a New Landing Page
+
+1. Add route in [src/App.tsx](src/App.tsx):
+```tsx
+<Route path="/new-service" element={<NewService />} />
+```
+
+2. Create page file: `src/pages/NewService.tsx` (PascalCase)
+
+3. Create component folder: `src/components/new-service/sections/` (kebab-case)
+
+4. Build sections following existing patterns in `src/components/business-credit/sections/`
+
+5. Import sections into page following vertical composition pattern
+
+## Version Management Strategy
+
+Multiple pages have v1/v2 variants for A/B testing:
+
+| Route | Version 1 | Version 2 | Difference |
+|-------|-----------|-----------|------------|
+| Business Funding | `/business-funding` | `/business-funding-2` | v2: Interactive calculator, 10-20% rule, dual pathways |
+| 0% Funding | `/zero-interest-business-funding` | `/zero-interest-business-funding-2` | v2: Premium positioning, 700+ credit minimum |
+| Credit Repair | `/credit-repair` | `/credit-repair-2` | v2: Legal escalations, trilingual support |
+
+**When modifying:** Always clarify which version the user wants updated.
+
+## Important Service Distinctions
+
+### Personal vs Business Credit
+
+**Personal Credit** (`/build-credit`):
+- Target: Consumers
+- Cost: FREE educational guide
+- Goal: 680-750+ personal credit score
+
+**Business Credit** (`/business-credit-builder`):
+- Target: Business owners with LLC/Corp
+- Cost: $2,495 (Full Service) or $995 (DIY)
+- Goal: $50K-$150K business funding
+- Includes: Fundability® System, coaching, software
+
+**These are completely separate services.** Never merge or confuse them.
+
+## Compliance & Legal Requirements
+
+**Credit Repair (CROA Compliance):**
+- Never guarantee score increases or specific removals
+- Transparent about guarantee exclusions
+- Legal partnerships (not a law firm) clearly stated
+- No "Department of Justice" or "DOJ" references
+
+**Business Credit (Trademark Usage):**
+- Fundability® (registered trademark - use ® symbol)
+- Fundability Score™, Fundability Factors™, Business Bureau Insights™
+
+## Client Preferences (Evert Calderon)
+
 - Conservative, professional tone
 - Emphasis on results and credibility (real numbers, real stats)
 - Clear disclosure and compliance language
@@ -215,409 +338,66 @@ This project is built in collaboration with Lovable, a web development platform.
 - Premium positioning for high-credit clients
 - Insider/relationship-based value proposition
 
-## Recent Major Update #2 (December 11-12, 2024)
+## Recent Major Updates
 
-### Business Funding Page Redesign
+### December 17, 2024: Credit Repair 2 - Steve Neu PRD
+- Legal Escalations section (FCRA/FDCPA violations)
+- "What's Not Covered" transparency section
+- "You've Got Nothing to Lose" risk-free guarantee
+- Trilingual support: 🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano
 
-**Background:**
-- Original page presented Mesa as general marketplace broker with simple product descriptions
-- Evert provided new copy repositioning the service with strategic partnership model, realistic expectations framework ("10-20% rule"), and dual consultation/application pathways
+### December 12, 2024: Business Credit Builder
+- New paid program page at `/business-credit-builder`
+- $50,000 minimum funding guarantee
+- 5-Step Fundability® System
+- Dual pricing: $2,495 (Full Service) or $995 (DIY)
 
-**What Changed:**
-- Created new page: `BusinessFunding2.tsx`
-- Original preserved as backup at `/business-funding`
-- New page accessible at `/business-funding-2`
+### December 12, 2024: Homepage Flip Cards
+- 3D flip card interaction in "How It Works" section
+- Viewport-based mouse detection (not hover)
+- Custom Tailwind utilities for 3D transforms
 
-**Key Positioning Shifts:**
+### December 11-12, 2024: Business Funding 2
+- Interactive Funding Calculator (10-20% of annual revenue)
+- Dual pathways: consultation vs. direct application
+- "Real Talk About Qualifications" transparency section
+- 75+ lender relationships, $50M+ facilitated
 
-1. **Service Model:**
-   - Old: Transactional marketplace with single "apply now" CTA
-   - New: Strategic partnership with dual pathways (consultation first OR direct application)
+## Common Pitfalls to Avoid
 
-2. **Transparency & Honesty:**
-   - Old: General product descriptions
-   - New: Upfront realistic expectations ("10-20% rule"), honest qualification talk, "Real Talk About Qualifications" section
+❌ Using emojis instead of lucide-react icons
+❌ Hardcoding hex colors instead of Tailwind classes
+❌ Breaking mobile-first responsive patterns
+❌ Modifying shadcn/ui base components without understanding consequences
+❌ Deviating from vertical section composition pattern
+❌ Confusing personal credit (/build-credit) with business credit (/business-credit-builder)
+❌ Using v1 content when user wants v2 updated (or vice versa)
 
-3. **Interactive Elements:**
-   - NEW: Interactive Funding Calculator showing 10-20% of annual revenue range
-   - Calculates funding estimates in real-time with user input
+## Important Context Files
 
-4. **Updated Statistics:**
-   - 75+ lender relationships (was 30+)
-   - $50M+ in funding facilitated
-   - 1,000+ businesses funded
-   - 5.0 star rating (200+ Google reviews)
-   - All 50 states coverage
+When working on this project, reference:
+1. **This file (CLAUDE.md)** - Architecture and patterns
+2. **MESA_GROUP_PAGE_TEMPLATE_PRD.md** - Comprehensive design system
+3. **.github/copilot-instructions.md** - Detailed component patterns
+4. **src/index.css** - CSS variables and design tokens
+5. **src/components/Header.tsx** - Shared navigation structure
+6. **src/App.tsx** - Route definitions
 
-5. **New Sections Added:**
-   - **Interactive Funding Calculator** - Calculates 10-20% of annual revenue with explanation
-   - **The Problem Section** - Addresses common lender rejections and pain points
-   - **The Solution Section** - Three-Phase Funding Strategy (Discovery & Diagnosis → Strategic Positioning → Execution & Funding)
-   - **Introducing Our Brokerage Division** - Mesa Group Capital: 75+ lenders, broker advantage, strategic matching
-   - **Setting Realistic Expectations** - "The 10-20% Rule" with examples ($100K → $10K-$20K range, etc.)
-   - **Real Talk About Qualifications** - Honest discussion about minimums, fundamentals that matter, when you're ready vs. not ready
-   - **Why Mesa Gets Results** - 5 differentiators (75+ lender relationships, pre-qualification strategy, application optimization, terms negotiation, post-funding strategy)
-   - **The Process Section** - 4 simple steps from consultation to funding
-   - **Enhanced Social Proof** - Detailed testimonials with specific funding amounts and outcomes (Sarah M. - Construction - $250K, James K. - Tech - $85K, Patricia L. - E-commerce - $75K)
-   - **Two Paths Forward** - Side-by-side comparison of consultation-first vs. direct application approaches
-   - Enhanced Final CTA with trust badges and comprehensive disclaimers
+## Lovable Integration
 
-6. **All 8 Funding Products Preserved:**
-   - Business Cash Advance (Up to $10M)
-   - Business Term Loans (Up to $5M)
-   - Business Line of Credit (Up to $250K)
-   - Invoice Factoring (Up to $5M) - Lowest credit (530+)
-   - Equipment Financing ($1K-$20M)
-   - Commercial Real Estate (Up to $100M) - Highest limit
-   - STARTUP Unsecured (Up to $150K) - No business history required
-   - STARTUP Small Business Loan (Up to $150K) - No business history required
-
-7. **Updated Product Descriptions:**
-   - More conversational, strategic tone
-   - Emphasis on when to use each product
-   - Dual CTA buttons on each product card (Apply Now + Schedule Consultation)
-
-8. **Sections Removed:**
-   - `EmotionalCTA1`, `EmotionalCTA2`, `EmotionalCTA3` components removed
-   - Generic CTA approaches replaced with strategic dual-pathway CTAs
-
-9. **Dual Pathways Throughout:**
-   - **Consultation:** https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery
-   - **Application:** https://mesagroupcapital.com/for-businesses/business-funding
-   - Every section offers both options with no judgment language
-   - Clear guidance on when to choose each path
-
-10. **FAQ Expanded:**
-    - 10 comprehensive questions (was simpler before)
-    - Questions include: broker vs. bank difference, credit score impact, previous denials, cost/fees, speed to funding, startup friendliness, credit not good enough, consultation vs. apply directly, relationship between Mesa Group Consulting and Mesa Group Capital
-
-**Design System Preserved:**
-- Amber/gold color scheme (#f9c65d, #bb9446, #fcd34d, #f59e0b)
-- Gradient backgrounds (white → amber-50 → white)
-- Shadow-lg cards with hover effects
-- Rounded-xl corners throughout
-- Lucide React icons
-- Hover animations: scale-105, -translate-y-1
-- Responsive breakpoints (md/lg)
-
-**Component Structure:**
-```tsx
-<Header />
-<HeroSection />
-<InteractiveFundingCalculator />      // NEW
-<TheProblemSection />                 // NEW
-<TheSolutionSection />                // NEW
-<IntroducingBrokerageDivision />     // NEW
-<AllFundingSolutionsGrid />          // Enhanced with dual CTAs
-<ComparisonTable />                   // Enhanced
-<SettingRealisticExpectations />     // NEW - "The 10-20% Rule"
-<RealTalkQualifications />           // NEW
-<WhyMesaGetsResults />               // NEW
-<TheProcessSection />                 // NEW - 4 steps
-<EnhancedSocialProofSection />       // NEW - detailed testimonials
-<FAQSection />                        // Expanded to 10 questions
-<TwoPathsForward />                  // NEW - dual pathway comparison
-<FinalCTA />                         // Enhanced with trust badges
-<Footer />
-```
-
-## Recent Major Update #3 (December 12, 2024)
-
-### Business Credit Builder Program Page (New Service)
-
-**Background:**
-- The existing `/build-credit` page is for PERSONAL credit building (free educational guide)
-- Created a NEW page for BUSINESS credit building (paid program enrollment at $2,495 or $995)
-- **These are two completely different services that coexist as separate pages**
-
-**What Was Created:**
-- New page: `BusinessCreditBuilder.tsx`
-- Existing personal credit page preserved at `/build-credit`
-- New business credit program page at `/business-credit-builder`
-
-**Key Service Differences:**
-
-| Aspect | Personal Credit (/build-credit) | Business Credit (/business-credit-builder) |
-|--------|--------------------------------|-------------------------------------------|
-| **Target** | Consumers | Business owners with LLC/Corp |
-| **Goal** | 680-750+ personal credit score | $50K-$150K business funding |
-| **Cost** | Free guide + partner signups | $2,495 (Full Service) or $995 (DIY) |
-| **Support** | Educational guide only | 12-month coaching + software platform |
-| **Guarantee** | None | $50,000 minimum funding guarantee |
-| **Software** | None | Business Credit Finance Suite |
-| **Bureaus** | Consumer (Experian, Equifax, TransUnion) | Business (Dun & Bradstreet, Experian Business, Equifax Business) |
-| **Risk Focus** | Credit score impact | Home/personal assets at risk |
-
-**New Page Statistics:**
-- **$50,000 minimum funding guarantee** (key differentiator)
-- **$5,000 to $150,000 funding range**
-- **300+ vendor & lender network**
-- **125+ Fundability Factors™ tracked**
-- **6-12 months to $50K funding timeline**
-- **$11,040 total program value**
-- **3 business credit bureaus** (Dun & Bradstreet, Experian Business, Equifax Business)
-- **4 credit tiers** (Tier 1-4 progression)
-
-**Sections Included:**
-- **Hero Section** - Fear-based messaging: "Stop Gambling Your Home Every Time Your Business Needs Capital"
-- **Problem Section** - Emotional pull: home-at-risk messaging, 7 problems WITHOUT vs 7 benefits WITH business credit
-- **Awakening Section** - Strategic comparison table (WITHOUT vs WITH business credit)
-- **Vision Section** - 6 benefit categories (Financial Freedom, Asset Protection, Scalability, Better Terms, Business Equity, Peace of Mind)
-- **5-Step Fundability® System** (MAJOR SECTION):
-  1. Know Your Fundability Score™
-  2. Identify Fundability Factors™ (125+ hidden factors)
-  3. Track Business Bureau Insights™
-  4. Maximize Your Fundability®
-  5. Get MATCHED with 300+ Sources
-- **Guarantee Section** - $50K minimum funding guarantee with compliance language
-- **What's Included Section** - Value breakdown table showing $11,040 total value with "PRICELESS" row
-- **Program Options Section** - Dual pricing cards:
-  - Full Service: $2,495 (12 months coaching + weekly calls + $50K guarantee)
-  - DIY: $995 (complete system + software + all education, no coaching)
-- **Testimonials Section** - 2 client success stories (Michelle, Curtis H.)
-- **Video Section** - Business Credit Finance Suite walkthrough placeholder
-- **Choice Section** - Path 1 (DIY 18-24 months) vs Path 2 (Mesa system 6-12 months)
-- **FAQ Section** - 13 comprehensive business credit questions
-- **Final CTA Section** - Both program options with enrollment links + contact options
-- **Compliance Disclaimers** - Mesa Group + Novae partnership disclosure, $50K guarantee terms
-
-**Enrollment CTAs:**
-- Full Service ($2,495): `https://mesagroupcapital.com/business-credit-enroll`
-- DIY ($995): `https://mesagroupcapital.com/bcfs-diy-enroll`
-- Consultation: `https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery`
-- Phone: (661) 310-3040
-
-**Design System Preserved:**
-- Amber/gold color scheme (#f9c65d, #bb9446, #fcd34d, #f59e0b)
-- Gradient backgrounds (white → amber-50 → white)
-- Shadow-lg cards with hover effects
-- Rounded-xl corners throughout
-- Lucide React icons
-- Dark testimonial cards (#3e3e3e → #2c2c2c) with gold stars
-- FAQ accordion pattern with ChevronDown icons
-- Hover animations: scale-105, -translate-y-1
-- Responsive breakpoints (md/lg)
-
-**Trademark Usage:**
-- Fundability® (registered trademark - used with ® symbol throughout)
-- Fundability Score™
-- Fundability Factors™
-- Business Bureau Insights™
-
-**Pricing Model:**
-- Full Service: $2,495 one-time OR 3-month payment plan (access after 2nd payment)
-- DIY: $995 one-time (instant access)
-- No "contact for pricing" ambiguity - clear upfront pricing
-
-**Component Structure:**
-```tsx
-<Header />
-<HeroSection />
-<ProblemSection />
-<AwakeningSection />
-<VisionSection />
-<FundabilitySystemSection />  // 5 steps with detailed reveals
-<GuaranteeSection />
-<WhatsIncludedSection />      // Value breakdown $11,040
-<ProgramOptionsSection />     // Dual pricing cards
-<TestimonialsSection />
-<VideoSection />
-<ChoiceSection />
-<FAQSection />                // 13 questions with accordion
-<FinalCTASection />           // Both CTAs + compliance
-<Footer />
-```
-
-**Partnership Disclosure:**
-Program delivered through strategic partnership between Mesa Group Consulting, Mesa Group Capital, and Novae. Novae provides technology platform (Business Credit Finance Suite, myNovaeDisputes Manager). Mesa Group provides consulting, coaching, and advisory services.
-
-## Recent Major Update #4 (December 12, 2024)
-
-### Homepage "How It Works" Section - Interactive Flip Cards
-
-**Background:**
-- Originally implemented with scroll-jacking animation that proved too brittle
-- Redesigned with 3D flip card interaction using CSS transforms
-
-**What Changed:**
-- Replaced scroll-triggered animation with viewport-based mouse detection
-- Implemented CSS 3D transforms for smooth card flipping
-- Desktop: Interactive flip cards with "What Happens Next" on back
-- Mobile: Stacked content (no flip animation)
-
-**Technical Implementation:**
-
-1. **Custom Tailwind Utilities Added** (`tailwind.config.ts`):
-```typescript
-'.perspective-1000': { perspective: '1000px' },
-'.transform-style-3d': { transformStyle: 'preserve-3d' },
-'.backface-hidden': { backfaceVisibility: 'hidden' }
-```
-
-2. **Viewport-Based Flip Detection:**
-- Uses `window.addEventListener('mousemove')` with `passive: true`
-- Checks cursor Y position against card's `getBoundingClientRect()`
-- Card flips when cursor is between card top and bottom boundaries
-- Prevents stuttering caused by hover-based detection (3D rotation changing boundaries)
-
-3. **FlipCard Component Structure:**
-```tsx
-const FlipCard = ({ step, openConsultationModal }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
-  const cardRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!cardRef.current) return;
-      const rect = cardRef.current.getBoundingClientRect();
-      const mouseY = e.clientY;
-      const isInVerticalSection = mouseY >= rect.top && mouseY <= rect.bottom;
-      setIsFlipped(isInVerticalSection);
-    };
-    // ... event listener setup
-  }, []);
-  // ... render front and back faces
-};
-```
-
-4. **Three Step Cards:**
-- **Step 1 (Amber):** Free Consultation → What happens: Contact form or call, schedule at your convenience
-- **Step 2 (Purple):** Custom Recommendations → What happens: Personalized action plan with pricing and timelines
-- **Step 3 (Green):** Execute & Transform → What happens: Regular check-ins, progress updates, ongoing support
-
-**Design System:**
-- Front face: Icon in colored circle, step number, title, description
-- Back face: "What Happens Next" heading with detailed next steps
-- Color-coordinated themes:
-  - Step 1: Amber gradients (from-amber-100 via-amber-50 to-white)
-  - Step 2: Purple gradients (from-purple-100 via-purple-50 to-white)
-  - Step 3: Green gradients (from-green-100 via-green-50 to-white)
-- Smooth 500ms transition on flip
-- 400px fixed height for consistent layout
-- Responsive: Desktop shows flip animation, mobile shows both sides stacked
-
-**Performance Considerations:**
-- Event listener uses `{ passive: true }` flag for scroll performance
-- Single event listener per card (not global)
-- Proper cleanup in useEffect return
-- No layout thrashing (reads then writes DOM)
-
-**Benefits Over Previous Implementation:**
-- Stable triggering (no boundary-change stuttering)
-- Smooth, predictable animation
-- Works with mouse movement (natural user behavior)
-- No complex scroll detection logic
-- Mobile-friendly fallback
-
-## Future Considerations
-
-1. **A/B Testing:** May want to test original vs. new versions for both 0% funding and Business Funding pages
-2. **Version Management:** Consider which pages become primary once Evert approves
-3. **Additional Services:** Evert runs multiple brands (Mesa Group Consulting, Mesa Group Capital)
-4. **SEO Optimization:** Meta tags and descriptions may need updating
-5. **Analytics:** Track conversion rates between page versions and between consultation vs. direct application pathways
-6. **Calculator Enhancement:** Consider adding more calculator variations (equipment, real estate, etc.)
-7. **Personal vs Business Credit Strategy:** Consider navigation/marketing strategy to guide users to appropriate page (personal credit vs business credit)
-8. **Flip Card Analytics:** Consider tracking interaction rates with flip cards (engagement metrics)
-
-## Important Files for Context
-
-When working on this project, always reference:
-1. The new copy document: `/Users/Mario/Documents/aaa-catalyst-digital-solutions/aaa-client-projects/Mesa Group Consulting - Evert Calderon/jobs-current/website-revamp-for-steve-neu-campaign/webpage-templates/new-webpage-copy-written-by-evert/`
-2. This CLAUDE.md file for project context
-3. Original pages before making changes (for comparison)
+- Project syncs between local development and Lovable platform
+- Lovable tagger plugin runs in development mode only
+- Changes pushed to GitHub are reflected in Lovable
+- Project URL: https://lovable.dev/projects/a84a569b-99f4-4ddf-898b-bc278a3f3eb0
 
 ## Deployment
 
-Repository is hosted on GitHub and likely deployed through Lovable's platform or another hosting service. Check with Evert for production URL.
-
-## Recent Major Update #5 (December 17, 2024)
-
-### Credit Repair Page Redesign - PRD Implementation COMPLETE ✅
-
-**Background:**
-- Implementing Steve Neu marketing concepts for Credit Repair and Financial Service companies
-- PRD provided by Claude.ai web app with extensive Mesa Group/Steve Neu knowledge
-- All 5 tasks completed successfully
-
-**Changes Implemented:**
-
-**TASK 1: Legal Escalations Section**
-- Added comprehensive legal escalation section after "What Makes Us Different"
-- Dark gradient background with amber accents
-- 5 violation types in 3-column responsive grid
-- 5-step legal partnership process with numbered steps
-- Icons: Scale (header), AlertTriangle (violations), FileText (process)
-- Content emphasizes partnered legal team for FCRA/FDCPA violations
-
-**TASK 2: "What's Not Covered" Section**
-- Added transparency section after 90-Day Guarantee, before Cost of Inaction
-- 5 exclusion categories in card-based layout:
-  - SmartCredit monitoring fees (third-party service)
-  - Cases where client responsibilities aren't met (detailed list)
-  - New negatives added during service
-  - Accurate, timely, and verifiable information (CROA compliance)
-  - Ruby & Emerald annual plans after 90 days
-- Light background with orange accent borders
-- Icons: AlertTriangle (header), XCircle (exclusions)
-
-**TASK 3: "You've Got Nothing to Lose" Section**
-- Added risk-free guarantee section after "What's Not Covered"
-- Mesa Yellow gradient background (#f9c65d)
-- 4-card grid layout with guarantee features:
-  - 3-Day cancellation right (all plans)
-  - 90-Day money-back guarantee
-  - Monthly plans: Cancel anytime after 90 days
-  - Why this guarantee matters (91% success rate, legal backing)
-- Strong CTA: "Start Your Risk-Free Credit Repair" → signup portal
-- Bottom callout banner with final CTA
-- Icons: Shield (header), CheckCircle2 (features)
-
-**TASK 4: Trust Bar / Trilingual Support Updates**
-- Changed "Bilingual" to "Trilingual" throughout
-- Updated language support from "EN/ES/Punjabi" to "🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano"
-- Locations updated in CreditRepair2.tsx (4 instances):
-  - Hero section trust bar
-  - Comparison table
-  - Final trust bar section
-  - Bottom language line
-- Locations updated in FAQ.tsx (3 instances):
-  - FAQ #1: Company legitimacy
-  - FAQ #11: Dedicated account manager
-  - FAQ #13: Nationwide service
-
-**TASK 5: FAQ DOJ Language Audit**
-- Verified no "Department of Justice" or "DOJ" mentions in FAQ
-- Language already compliant - no changes needed
-- Confirms CROA compliance throughout FAQ content
-
-**Files Modified:**
-- `src/pages/CreditRepair2.tsx` - 3 new sections + 4 language updates
-- `src/components/credit-repair-2/FAQ.tsx` - 3 language updates
-
-**Technical Implementation:**
-- All content matches PRD specifications exactly
-- Mesa brand colors: #f9c65d (Mesa Yellow), amber, orange accents
-- lucide-react icons only: Scale, AlertTriangle, XCircle, Shield, CheckCircle2, FileText
-- Responsive grid layouts: grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-- All CTAs link to: https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09
-- Follows existing page patterns and styling conventions
-
-**Compliance Notes:**
-- CROA compliant language throughout
-- Accurate representation of legal partnerships (not a law firm)
-- Transparent about guarantee exclusions
-- Factual, non-promotional tone
-- No guaranteed score increases or removal of accurate items
-
-**Status:** All PRD tasks complete and ready for testing
+- Repository hosted on GitHub
+- Deployed through Lovable platform
+- Check with Evert for production URL
+- Lovable: Project > Settings > Domains to connect custom domain
 
 ---
 
 **Last Updated:** December 17, 2024
-**Updated By:** Claude Code (Anthropic)
-**Project Status:** Active Development - Credit Repair Page Redesign Phase
-**Latest Additions:**
-- Business Credit Builder Program page (/business-credit-builder)
-- Homepage "How It Works" interactive flip cards with viewport-based detection
-- **Credit Repair 2 page: Legal escalations, transparency sections, trilingual support (Steve Neu PRD implementation)**
+**Project Status:** Active Development

@@ -1,5 +1,6 @@
 import React from 'react';
 import ctaImage from '@/assets/credit-monitoring-cta-03.png';
+import smartcreditLogoLight from '@/assets/smartcredit-logo-light.png';
 
 const EmotionalCTA3 = () => {
   const handleClick = () => {
@@ -16,7 +17,7 @@ const EmotionalCTA3 = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/20"></div>
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg">
-          Picture Sleeping Soundly Knowing Your Credit Is Protected. Imagine Catching Fraud the Moment It Happens.
+          Sleep Soundly Knowing Your Credit Is Protected. Catch Fraud the Moment It Happens.
         </h2>
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine waking up to instant alerts—not devastating surprises months later. Your family covered with $1M fraud insurance. Your credit score rising as you dispute errors and build strategically. Complete peace of mind knowing you'll catch threats before they destroy your financial future. That security you deserve is one decision away.
@@ -27,9 +28,10 @@ const EmotionalCTA3 = () => {
         >
           Claim Your Peace of Mind →
         </button>
-        <p className="text-sm text-white mt-4 drop-shadow-md">
-          Powered by SmartCredit
-        </p>
+        <div className="flex items-center justify-center gap-2 mt-4">
+          <span className="text-sm text-white drop-shadow-md">Powered by</span>
+          <img src={smartcreditLogoLight} alt="SmartCredit" className="h-5" />
+        </div>
       </div>
     </section>
   );
