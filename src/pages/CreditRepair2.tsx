@@ -189,10 +189,13 @@ const CreditRepair2 = () => {
         
         <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            The Mesa360 Credit System™: <span className="text-[#f9c65d]">Restore. Rebuild. Optimize.</span>
+            The Mesa360 Credit System™: <span className="text-[#f9c65d]">Your Complete Financial Transformation Blueprint</span>
           </h2>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Unlike cookie-cutter credit restoration companies that use generic templates and offshore call centers, Mesa Group provides a <strong className="text-white">personalized, legally compliant credit recovery strategy</strong>—backed by a local team you can actually talk to.
+            Here's what makes us different: We don't just erase bad marks and disappear. We walk beside you through the entire journey—from breaking free of the mistakes holding you back, to building the financial foundation that changes everything, to positioning you for opportunities you thought were out of reach.
+          </p>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto mt-4">
+            This isn't a service. It's a partnership. It's a transformation. It's your second chance, done right.
           </p>
         </div>
       </section>
