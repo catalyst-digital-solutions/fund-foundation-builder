@@ -252,7 +252,7 @@ const Header = () => {
             {/* Divider before Phone */}
             <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-6" />
 
-            {/* Right Side: Phone & Dot Grid */}
+            {/* Right Side: Phone, Client Login & Dot Grid */}
             <div className="flex items-center gap-4">
               {/* Phone Section */}
               <div className="hidden md:flex items-center gap-3">
@@ -266,6 +266,19 @@ const Header = () => {
                   </a>
                 </div>
               </div>
+
+              {/* Divider before Client Login */}
+              <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
+
+              {/* Client Login Link */}
+              <a
+                href="https://portal.mesagroupconsulting.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden lg:flex text-sm font-medium text-white hover:text-[#f9c65d] transition-colors"
+              >
+                Client Login
+              </a>
 
               {/* Divider before Dot Grid */}
               <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
