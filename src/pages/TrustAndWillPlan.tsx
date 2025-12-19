@@ -1340,11 +1340,11 @@ const TrustAndWillPlan = () => {
           {/* Two-Column Button Grid */}
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {/* Primary Option - Trust Plan */}
-            <div className="bg-mgc-gradient rounded-2xl p-8 text-left text-white">
-              <div className="text-xs font-bold mb-2 tracking-wide">MOST POPULAR</div>
-              <h3 className="text-2xl font-bold mb-4">Trust Estate Plan</h3>
-              <div className="text-4xl font-bold mb-2">$499</div>
-              <p className="text-sm opacity-90 mb-6">Revocable Living Trust + All Will Plan benefits</p>
+            <div className="bg-mgc-gradient rounded-2xl p-8 text-left">
+              <div className="text-xs font-bold mb-2 tracking-wide text-gray-900">MOST POPULAR</div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Trust Estate Plan</h3>
+              <div className="text-4xl font-bold mb-2 text-gray-900">$499</div>
+              <p className="text-sm text-gray-700 mb-6">Revocable Living Trust + All Will Plan benefits</p>
               <button
                 onClick={handleCTAClick}
                 className="block w-full text-center py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors mb-2"
@@ -1352,7 +1352,7 @@ const TrustAndWillPlan = () => {
                 Choose Trust Plan
               </button>
               <PoweredByTrustAndWill variant="dark" className="mb-4" />
-              <div className="space-y-2 text-sm">
+              <div className="space-y-2 text-sm text-gray-900">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4" />
                   <span>Avoids probate entirely</span>
