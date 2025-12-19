@@ -437,7 +437,153 @@ const CreditRepair2 = () => {
         </div>
       </section>
 
-      
+      {/* ============================================ */}
+      {/* SECTION 4C: REALISTIC TIMELINE & EXPECTATIONS */}
+      {/* ============================================ */}
+      <section className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 py-16 md:py-24 px-6 md:px-8 relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent" />
+        
+        <div className="max-w-5xl mx-auto relative z-10">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              REALISTIC TIMELINE & <span className="text-[#f9c65d]">EXPECTATIONS</span>
+            </h2>
+            <div className="w-24 h-1 bg-amber-400 mx-auto mb-8" />
+          </div>
+
+          {/* The Truth Section */}
+          <div className="bg-red-900/30 border border-red-500/30 rounded-2xl p-6 md:p-8 mb-10">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                <AlertTriangle className="w-6 h-6 text-red-400" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">The Truth About Credit Restoration:</h3>
+                <p className="text-gray-300 text-lg">
+                  Anyone promising "30-day miracles" or "guaranteed 100-point increases" is lying to you—and possibly <span className="text-red-400 font-semibold">breaking federal law</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Visual Timeline */}
+          <div className="mb-12">
+            <h3 className="text-xl font-bold text-white mb-8 text-center">Here's What's Real:</h3>
+            
+            {/* Timeline Container */}
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="hidden md:block absolute top-8 left-0 right-0 h-1 bg-gradient-to-r from-amber-400/20 via-amber-400 to-green-400" />
+              
+              {/* Timeline Points */}
+              <div className="grid md:grid-cols-4 gap-6 md:gap-4">
+                {/* Day 1 */}
+                <div className="relative text-center">
+                  <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-amber-400/30 relative z-10">
+                    <span className="text-gray-900 font-bold text-sm">DAY 1</span>
+                  </div>
+                  <div className="bg-gray-800/50 rounded-xl p-4 border border-gray-700">
+                    <p className="text-amber-400 font-semibold mb-1">Analysis</p>
+                    <p className="text-gray-400 text-sm">Deep credit forensics & strategy planning</p>
+                  </div>
+                </div>
+
+                {/* Day 30 */}
+                <div className="relative text-center">
+                  <div className="w-16 h-16 bg-orange-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-orange-400/30 relative z-10">
+                    <span className="text-gray-900 font-bold text-sm">30 DAYS</span>
+                  </div>
+                  <div className="bg-gray-800/50 rounded-xl p-4 border border-gray-700">
+                    <p className="text-orange-400 font-semibold mb-1">First Results</p>
+                    <p className="text-gray-400 text-sm">Bureau investigations complete (by law)</p>
+                  </div>
+                </div>
+
+                {/* Day 45-60 */}
+                <div className="relative text-center">
+                  <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-yellow-400/30 relative z-10">
+                    <span className="text-gray-900 font-bold text-sm">45-60</span>
+                  </div>
+                  <div className="bg-gray-800/50 rounded-xl p-4 border border-gray-700">
+                    <p className="text-yellow-400 font-semibold mb-1">Momentum</p>
+                    <p className="text-gray-400 text-sm">Second dispute cycle for complex items</p>
+                  </div>
+                </div>
+
+                {/* Day 90 */}
+                <div className="relative text-center">
+                  <div className="w-16 h-16 bg-green-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-green-400/30 relative z-10">
+                    <span className="text-gray-900 font-bold text-sm">90 DAYS</span>
+                  </div>
+                  <div className="bg-gray-800/50 rounded-xl p-4 border border-gray-700">
+                    <p className="text-green-400 font-semibold mb-1">Transformation</p>
+                    <p className="text-gray-400 text-sm">Most clients see measurable improvements</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* What's Real Checkmarks */}
+          <div className="grid md:grid-cols-2 gap-4 mb-12">
+            <div className="flex items-start gap-3 bg-gray-800/30 rounded-xl p-4 border border-gray-700/50">
+              <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+              <p className="text-gray-300">Most clients see measurable improvements in <span className="text-white font-semibold">45-90 days</span></p>
+            </div>
+            <div className="flex items-start gap-3 bg-gray-800/30 rounded-xl p-4 border border-gray-700/50">
+              <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+              <p className="text-gray-300">Credit bureaus have <span className="text-white font-semibold">30 days by law</span> to investigate disputes</p>
+            </div>
+            <div className="flex items-start gap-3 bg-gray-800/30 rounded-xl p-4 border border-gray-700/50">
+              <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+              <p className="text-gray-300">Complex items often require <span className="text-white font-semibold">1-2 dispute cycles</span> to resolve</p>
+            </div>
+            <div className="flex items-start gap-3 bg-gray-800/30 rounded-xl p-4 border border-gray-700/50">
+              <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+              <p className="text-gray-300">Your individual timeline depends on the <span className="text-white font-semibold">complexity of your situation</span></p>
+            </div>
+          </div>
+
+          {/* What We CAN Promise */}
+          <div className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-500/30 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">
+              What We <span className="text-[#f9c65d]">CAN</span> Promise:
+            </h3>
+            <div className="space-y-4 max-w-2xl mx-auto">
+              <div className="flex items-start gap-3">
+                <ArrowRight className="w-5 h-5 text-amber-400 flex-shrink-0 mt-1" />
+                <p className="text-gray-300">We'll work your file <span className="text-white font-semibold">aggressively within legal boundaries</span></p>
+              </div>
+              <div className="flex items-start gap-3">
+                <ArrowRight className="w-5 h-5 text-amber-400 flex-shrink-0 mt-1" />
+                <p className="text-gray-300">We'll communicate <span className="text-white font-semibold">transparently every step</span></p>
+              </div>
+              <div className="flex items-start gap-3">
+                <ArrowRight className="w-5 h-5 text-amber-400 flex-shrink-0 mt-1" />
+                <p className="text-gray-300">We'll <span className="text-white font-semibold">adjust strategy based on results</span></p>
+              </div>
+              <div className="flex items-start gap-3">
+                <ArrowRight className="w-5 h-5 text-amber-400 flex-shrink-0 mt-1" />
+                <p className="text-gray-300">If new items appear during the process, we work on them at <span className="text-white font-semibold">no additional charge</span> (monthly plans)</p>
+              </div>
+              <div className="flex items-start gap-3 bg-green-500/10 border border-green-500/30 rounded-xl p-4 mt-6">
+                <Shield className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                <p className="text-green-300 font-semibold">If we don't deliver results in 90 days, you get <span className="text-green-400">100% of your money back</span></p>
+              </div>
+            </div>
+            
+            {/* Closing Statement */}
+            <p className="text-center text-xl text-white font-bold mt-8">
+              No false promises. Just real work. And <span className="text-[#f9c65d]">real results</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
 
       {/* ============================================ */}
       {/* SECTION 5: WHAT MAKES US DIFFERENT */}
