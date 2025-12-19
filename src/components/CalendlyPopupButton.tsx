@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useCalendly, CalendlyPrefillOptions } from '@/hooks/useCalendly';
+import { CalendlyModal } from './CalendlyModal';
 
 interface CalendlyPopupButtonProps {
   /** Button text */
@@ -18,6 +19,7 @@ interface CalendlyPopupButtonProps {
 /**
  * Reusable button component that opens Calendly popup
  * Uses Mesa Group's standard button styling
+ * Automatically adapts to vertical monitors using custom modal
  */
 export const CalendlyPopupButton: React.FC<CalendlyPopupButtonProps> = ({
   text = 'Schedule Free Consultation',
@@ -26,7 +28,7 @@ export const CalendlyPopupButton: React.FC<CalendlyPopupButtonProps> = ({
   prefillOptions,
   onClick,
 }) => {
-  const { openPopup } = useCalendly();
+  const { openPopup, isModalOpen, modalPrefillOptions, closeModal } = useCalendly();
 
   const handleClick = () => {
     // Call custom onClick if provided
@@ -42,14 +44,23 @@ export const CalendlyPopupButton: React.FC<CalendlyPopupButtonProps> = ({
   const defaultStyles = 'inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 border-2 border-amber-500';
 
   return (
-    <button
-      onClick={handleClick}
-      className={className || defaultStyles}
-      type="button"
-    >
-      {text}
-      {showArrow && <ArrowRight className="w-5 h-5" />}
-    </button>
+    <>
+      <button
+        onClick={handleClick}
+        className={className || defaultStyles}
+        type="button"
+      >
+        {text}
+        {showArrow && <ArrowRight className="w-5 h-5" />}
+      </button>
+
+      {/* Custom modal for vertical monitors */}
+      <CalendlyModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        prefillOptions={modalPrefillOptions}
+      />
+    </>
   );
 };
 
@@ -69,7 +80,7 @@ export const CalendlyPopupButtonLarge: React.FC<CalendlyPopupButtonProps> = (pro
  * Variant for text-style links (less prominent)
  */
 export const CalendlyPopupLink: React.FC<CalendlyPopupButtonProps> = (props) => {
-  const { openPopup } = useCalendly();
+  const { openPopup, isModalOpen, modalPrefillOptions, closeModal } = useCalendly();
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -80,12 +91,21 @@ export const CalendlyPopupLink: React.FC<CalendlyPopupButtonProps> = (props) => 
   };
 
   return (
-    <a
-      href="#"
-      onClick={handleClick}
-      className={props.className || 'text-amber-600 hover:text-amber-700 underline font-semibold'}
-    >
-      {props.text || 'Schedule a consultation'}
-    </a>
+    <>
+      <a
+        href="#"
+        onClick={handleClick}
+        className={props.className || 'text-amber-600 hover:text-amber-700 underline font-semibold'}
+      >
+        {props.text || 'Schedule a consultation'}
+      </a>
+
+      {/* Custom modal for vertical monitors */}
+      <CalendlyModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        prefillOptions={modalPrefillOptions}
+      />
+    </>
   );
 };

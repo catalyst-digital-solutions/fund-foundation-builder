@@ -1,8 +1,28 @@
-import { useEffect } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 
 // Calendly configuration
 export const CALENDLY_URL = 'https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar';
 export const CALENDLY_PRIMARY_COLOR = 'f9c65d'; // Mesa Group amber color
+
+/**
+ * Detect if current viewport is vertical/portrait (tall and narrow)
+ * Used to determine whether to use popup widget or custom modal
+ */
+export const isVerticalViewport = (): boolean => {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+
+  // Mobile portrait
+  if (width <= 480) return true;
+
+  // Tablet portrait
+  if (width <= 768 && height > width) return true;
+
+  // Vertical monitor (width > 768 but portrait orientation OR very tall)
+  if (width > 768 && (height / width > 1.25 || height >= 1000)) return true;
+
+  return false;
+};
 
 // Pre-fill options for smart routing
 export interface CalendlyPrefillOptions {
@@ -27,9 +47,13 @@ export interface CalendlyPrefillOptions {
 
 /**
  * Hook to load and manage Calendly widget
- * Loads the Calendly script once and provides methods to open popup
+ * Automatically detects vertical monitors and uses custom modal for better UX
+ * Falls back to Calendly's popup widget for landscape orientations
  */
 export const useCalendly = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalPrefillOptions, setModalPrefillOptions] = useState<CalendlyPrefillOptions | undefined>();
+
   useEffect(() => {
     // Check if Calendly script is already loaded
     if (window.Calendly) {
@@ -56,9 +80,25 @@ export const useCalendly = () => {
   }, []);
 
   /**
-   * Open Calendly popup widget
+   * Open Calendly - automatically chooses between popup widget or custom modal
+   * based on viewport orientation
    */
-  const openPopup = (options?: CalendlyPrefillOptions) => {
+  const openCalendly = useCallback((options?: CalendlyPrefillOptions) => {
+    // Detect if we're on a vertical monitor/portrait orientation
+    if (isVerticalViewport()) {
+      // Use custom modal for vertical monitors
+      setModalPrefillOptions(options);
+      setIsModalOpen(true);
+    } else {
+      // Use Calendly's popup widget for landscape
+      openPopupWidget(options);
+    }
+  }, []);
+
+  /**
+   * Open Calendly popup widget (landscape mode)
+   */
+  const openPopupWidget = (options?: CalendlyPrefillOptions) => {
     if (!window.Calendly) {
       console.error('Calendly script not loaded yet');
       return;
@@ -102,7 +142,19 @@ export const useCalendly = () => {
     });
   };
 
-  return { openPopup };
+  /**
+   * Close the custom modal
+   */
+  const closeModal = useCallback(() => {
+    setIsModalOpen(false);
+  }, []);
+
+  return {
+    openPopup: openCalendly,
+    isModalOpen,
+    modalPrefillOptions,
+    closeModal,
+  };
 };
 
 // TypeScript declaration for Calendly global
