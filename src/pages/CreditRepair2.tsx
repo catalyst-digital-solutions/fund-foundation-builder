@@ -1556,6 +1556,59 @@ const CreditRepair2 = () => {
               </button>
             </div>
           </div>
+
+          {/* Why SmartCredit is Required */}
+          <div className="mt-16 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <BarChart3 className="w-8 h-8 text-blue-600" />
+              <h3 className="text-2xl font-bold text-[#3E3E3E]">WHY SMARTCREDIT IS REQUIRED</h3>
+            </div>
+            
+            <div className="mb-6">
+              <div className="flex items-center gap-2 mb-4">
+                <BarChart3 className="w-5 h-5 text-blue-600" />
+                <h4 className="text-lg font-bold text-[#3E3E3E]">Real-Time 3-Bureau Monitoring</h4>
+              </div>
+              <p className="text-gray-700 mb-4">
+                SmartCredit provides instant access to your credit reports from Experian, Equifax, and TransUnion. We need this to:
+              </p>
+              <div className="space-y-2 mb-6">
+                <div className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">See your actual credit reports to file accurate disputes</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Track your progress in real-time (you see what we see)</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Ensure both you and your account manager have the same information</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Catch new items immediately</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg p-4 mb-6">
+              <p className="text-lg font-bold text-[#3E3E3E]">Cost: <span className="text-blue-600">$1 for 7-day trial</span>, then $27.99/month</p>
+            </div>
+
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
+              <p className="text-sm text-amber-800">
+                <strong>Important:</strong> SmartCredit is a third-party service not owned by Mesa Group. You maintain direct control over your account.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg p-4">
+              <h5 className="font-bold text-[#3E3E3E] mb-2">Why This Matters:</h5>
+              <p className="text-gray-700">
+                Without real-time monitoring, we're flying blind. Disputes could be resolved and we wouldn't know. New items could appear and we'd miss them. SmartCredit keeps everyone aligned—and keeps you in control.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
