@@ -1756,7 +1756,7 @@ const Homepage = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Licensed & Compliant</span>
+              <span className="text-gray-700">Serving since 2023</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
