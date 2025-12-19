@@ -70,7 +70,7 @@ const HeroSection = () => {
               href="https://mesagroupcapital.com/business-credit-enroll"
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-8 py-4 bg-[#EA6A2B] hover:bg-[#d55f26] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 flex items-center gap-2 text-lg"
+              className="group px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 flex items-center gap-2 text-lg"
             >
               Get Full Service Program ($2,495)
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -79,7 +79,7 @@ const HeroSection = () => {
               href="https://mesagroupcapital.com/bcfs-diy-enroll"
               target="_blank"
               rel="noopener noreferrer"
-              className="group px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 border-2 border-gray-300 flex items-center gap-2 text-lg"
+              className="group px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 flex items-center gap-2 text-lg"
             >
               Get DIY Program ($995)
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -518,7 +518,7 @@ const GuaranteeSection = () => {
               href="https://mesagroupcapital.com/business-credit-enroll"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#f9c65d] hover:bg-[#e5b54e] text-gray-900 font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 text-lg"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg"
             >
               Get Started with Full Service ($2,495)
               <ArrowRight className="w-5 h-5" />
@@ -681,7 +681,7 @@ const ProgramOptionsSection = () => {
               href="https://mesagroupcapital.com/business-credit-enroll"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center px-8 py-4 bg-[#f9c65d] hover:bg-[#e5b54e] text-gray-900 font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all text-lg"
+              className="block text-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg"
             >
               Get Started with Full Service →
             </a>
@@ -749,7 +749,7 @@ const ProgramOptionsSection = () => {
               href="https://mesagroupcapital.com/bcfs-diy-enroll"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center px-8 py-4 bg-gray-800 hover:bg-gray-900 text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all text-lg"
+              className="block text-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-lg"
             >
               Get D.I.Y. Program Now →
             </a>
@@ -774,13 +774,13 @@ const ProgramOptionsSection = () => {
               href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-[#EA6A2B] hover:bg-[#d55f26] text-white font-bold rounded-lg transition-all"
+              className="px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
             >
               Book a Consultation
             </a>
             <a
               href="tel:6613103040"
-              className="px-6 py-3 bg-white hover:bg-gray-50 text-gray-900 font-bold rounded-lg border-2 border-gray-300 transition-all flex items-center justify-center gap-2"
+              className="px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
               Call (661) 310-3040
@@ -1053,10 +1053,10 @@ const FinalCTASection = () => {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Full Service CTA */}
-          <div className="bg-gradient-to-br from-white to-amber-50 rounded-xl p-8 shadow-2xl border-4 border-[#EA6A2B]">
+          <div className="bg-gradient-to-br from-white to-amber-50 rounded-xl p-8 shadow-2xl border-4 border-amber-400">
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">Full Service Program</h3>
             <div className="text-center mb-6">
-              <div className="text-5xl font-bold text-[#EA6A2B] mb-2">$2,495</div>
+              <div className="text-5xl font-bold text-amber-500 mb-2">$2,495</div>
               <p className="text-gray-700">12 months of coaching + weekly calls + $50K guarantee</p>
               <p className="text-sm text-gray-600 mt-2">Or choose 3-month payment plan (access after 2nd payment)</p>
             </div>
@@ -1064,14 +1064,14 @@ const FinalCTASection = () => {
               href="https://mesagroupcapital.com/business-credit-enroll"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center px-8 py-4 bg-[#EA6A2B] hover:bg-[#d55f26] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all text-lg"
+              className="block text-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg"
             >
               Get Started Today
             </a>
           </div>
 
           {/* DIY CTA */}
-          <div className="bg-gradient-to-br from-white to-gray-100 rounded-xl p-8 shadow-2xl border-4 border-[#EA6A2B]">
+          <div className="bg-gradient-to-br from-white to-gray-100 rounded-xl p-8 shadow-2xl border-4 border-gray-300">
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">D.I.Y. Program</h3>
             <div className="text-center mb-6">
               <div className="text-5xl font-bold text-gray-900 mb-2">$995</div>
@@ -1082,7 +1082,7 @@ const FinalCTASection = () => {
               href="https://mesagroupcapital.com/bcfs-diy-enroll"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center px-8 py-4 bg-[#EA6A2B] hover:bg-[#d55f26] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl transition-all text-lg"
+              className="block text-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-lg"
             >
               Purchase Now
             </a>
@@ -1102,13 +1102,13 @@ const FinalCTASection = () => {
               href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-[#EA6A2B] hover:bg-[#d55f26] text-white font-bold rounded-lg transition-all"
+              className="px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
             >
               Book a Consultation
             </a>
             <a
               href="tel:6613103040"
-              className="px-6 py-3 bg-white hover:bg-gray-50 text-gray-900 font-bold rounded-lg border-2 border-[#EA6A2B] transition-all flex items-center justify-center gap-2"
+              className="px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
               Call (661) 310-3040
