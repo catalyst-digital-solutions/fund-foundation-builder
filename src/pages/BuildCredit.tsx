@@ -489,7 +489,7 @@ const BuildCredit = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {fivePillars.slice(0, 3).map((pillar, index) => (
-              <div key={index} className="bg-amber-50/50 rounded-xl p-6 shadow-md border border-amber-100">
+              <div key={index} className="bg-white rounded-xl p-6 shadow-md border border-amber-100">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
                     <pillar.icon className="w-6 h-6 text-amber-600" />
@@ -512,7 +512,7 @@ const BuildCredit = () => {
           {/* Bottom row with 2 pillars centered */}
           <div className="grid md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
             {fivePillars.slice(3, 5).map((pillar, index) => (
-              <div key={index + 3} className="bg-amber-50/50 rounded-xl p-6 shadow-md border border-amber-100">
+              <div key={index + 3} className="bg-white rounded-xl p-6 shadow-md border border-amber-100">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
                     <pillar.icon className="w-6 h-6 text-amber-600" />
