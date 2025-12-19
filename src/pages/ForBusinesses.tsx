@@ -130,7 +130,7 @@ const ForBusinesses = () => {
             <div className="hidden lg:block">
               <div className="relative">
                 <div className="aspect-square bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl shadow-2xl flex items-center justify-center">
-                  <Briefcase className="w-48 h-48 text-amber-600" />
+                  <Briefcase className="w-48 h-48 text-[#f9c65d]" />
                 </div>
               </div>
             </div>
@@ -143,7 +143,7 @@ const ForBusinesses = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center">
-              <TrendingUp className="w-12 h-12 text-amber-600 mx-auto mb-4" />
+              <TrendingUp className="w-12 h-12 text-[#f9c65d] mx-auto mb-4" />
               <div className="text-3xl font-bold text-gray-900 mb-2">1,850+</div>
               <div className="text-sm text-gray-600">Businesses Funded</div>
             </div>
@@ -153,7 +153,7 @@ const ForBusinesses = () => {
               <div className="text-sm text-gray-600">Star Rating (200+ Reviews)</div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center">
-              <Building2 className="w-12 h-12 text-amber-600 mx-auto mb-4" />
+              <Building2 className="w-12 h-12 text-[#f9c65d] mx-auto mb-4" />
               <div className="text-3xl font-bold text-gray-900 mb-2">Since 2023</div>
               <div className="text-sm text-gray-600">Serving Businesses Nationwide</div>
             </div>
@@ -214,7 +214,7 @@ const ForBusinesses = () => {
             <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-amber-200 p-8">
               <div className="flex justify-center mb-6">
                 <div className="bg-amber-50 p-4 rounded-full">
-                  <CreditCard className="w-16 h-16 text-amber-600" />
+                  <CreditCard className="w-16 h-16 text-[#f9c65d]" />
                 </div>
               </div>
               
@@ -271,7 +271,7 @@ const ForBusinesses = () => {
               </div>
 
               <Link
-                to="/business-credit"
+                to="/business-credit-builder"
                 className="block w-full text-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 border-2 border-amber-500"
               >
                 Start Building Business Credit →
@@ -282,7 +282,7 @@ const ForBusinesses = () => {
             <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-amber-200 p-8">
               <div className="flex justify-center mb-6">
                 <div className="bg-amber-50 p-4 rounded-full">
-                  <DollarSign className="w-16 h-16 text-amber-600" />
+                  <DollarSign className="w-16 h-16 text-[#f9c65d]" />
                 </div>
               </div>
               
@@ -340,7 +340,7 @@ const ForBusinesses = () => {
               </div>
 
               <Link
-                to="/business-funding"
+                to="/business-funding-2"
                 className="block w-full text-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 border-2 border-amber-500"
               >
                 Explore Business Funding Options →
@@ -351,7 +351,7 @@ const ForBusinesses = () => {
             <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-amber-200 p-8">
               <div className="flex justify-center mb-6">
                 <div className="bg-amber-50 p-4 rounded-full">
-                  <Percent className="w-16 h-16 text-amber-600" />
+                  <Percent className="w-16 h-16 text-[#f9c65d]" />
                 </div>
               </div>
               
@@ -402,7 +402,7 @@ const ForBusinesses = () => {
               </div>
 
               <Link
-                to="/zero-interest-business-funding"
+                to="/zero-interest-business-funding-2"
                 className="block w-full text-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 border-2 border-amber-500"
               >
                 Discover 0% Interest Funding →
@@ -413,7 +413,7 @@ const ForBusinesses = () => {
             <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-amber-200 p-8">
               <div className="flex justify-center mb-6">
                 <div className="bg-amber-50 p-4 rounded-full">
-                  <ShieldCheck className="w-16 h-16 text-amber-600" />
+                  <ShieldCheck className="w-16 h-16 text-[#f9c65d]" />
                 </div>
               </div>
               
@@ -492,10 +492,10 @@ const ForBusinesses = () => {
             <div className="relative">
               <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 h-full">
                 <div className="flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-6 mx-auto">
-                  <span className="text-3xl font-bold text-amber-600">1</span>
+                  <span className="text-3xl font-bold text-[#f9c65d]">1</span>
                 </div>
                 <div className="flex justify-center mb-4">
-                  <Search className="w-12 h-12 text-amber-600" />
+                  <Search className="w-12 h-12 text-[#f9c65d]" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
                   Explore Your Options
@@ -510,10 +510,10 @@ const ForBusinesses = () => {
             <div className="relative">
               <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 h-full">
                 <div className="flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-6 mx-auto">
-                  <span className="text-3xl font-bold text-amber-600">2</span>
+                  <span className="text-3xl font-bold text-[#f9c65d]">2</span>
                 </div>
                 <div className="flex justify-center mb-4">
-                  <Calendar className="w-12 h-12 text-amber-600" />
+                  <Calendar className="w-12 h-12 text-[#f9c65d]" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
                   Schedule a Free Consultation
@@ -528,10 +528,10 @@ const ForBusinesses = () => {
             <div className="relative">
               <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 h-full">
                 <div className="flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-6 mx-auto">
-                  <span className="text-3xl font-bold text-amber-600">3</span>
+                  <span className="text-3xl font-bold text-[#f9c65d]">3</span>
                 </div>
                 <div className="flex justify-center mb-4">
-                  <CheckCircle className="w-12 h-12 text-amber-600" />
+                  <CheckCircle className="w-12 h-12 text-[#f9c65d]" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
                   Choose Your Solution
@@ -546,10 +546,10 @@ const ForBusinesses = () => {
             <div className="relative">
               <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 h-full">
                 <div className="flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-6 mx-auto">
-                  <span className="text-3xl font-bold text-amber-600">4</span>
+                  <span className="text-3xl font-bold text-[#f9c65d]">4</span>
                 </div>
                 <div className="flex justify-center mb-4">
-                  <TrendingUp className="w-12 h-12 text-amber-600" />
+                  <TrendingUp className="w-12 h-12 text-[#f9c65d]" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
                   Take Action & See Results
@@ -592,7 +592,7 @@ const ForBusinesses = () => {
             <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="flex justify-center mb-6">
                 <div className="bg-amber-100 p-4 rounded-full">
-                  <Briefcase className="w-12 h-12 text-amber-600" />
+                  <Briefcase className="w-12 h-12 text-[#f9c65d]" />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
@@ -607,7 +607,7 @@ const ForBusinesses = () => {
             <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="flex justify-center mb-6">
                 <div className="bg-amber-100 p-4 rounded-full">
-                  <Building2 className="w-12 h-12 text-amber-600" />
+                  <Building2 className="w-12 h-12 text-[#f9c65d]" />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
@@ -622,7 +622,7 @@ const ForBusinesses = () => {
             <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="flex justify-center mb-6">
                 <div className="bg-amber-100 p-4 rounded-full">
-                  <DollarSign className="w-12 h-12 text-amber-600" />
+                  <DollarSign className="w-12 h-12 text-[#f9c65d]" />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
@@ -637,7 +637,7 @@ const ForBusinesses = () => {
             <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="flex justify-center mb-6">
                 <div className="bg-amber-100 p-4 rounded-full">
-                  <GraduationCap className="w-12 h-12 text-amber-600" />
+                  <GraduationCap className="w-12 h-12 text-[#f9c65d]" />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
@@ -652,7 +652,7 @@ const ForBusinesses = () => {
             <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="flex justify-center mb-6">
                 <div className="bg-amber-100 p-4 rounded-full">
-                  <Award className="w-12 h-12 text-amber-600" />
+                  <Award className="w-12 h-12 text-[#f9c65d]" />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
@@ -667,7 +667,7 @@ const ForBusinesses = () => {
             <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="flex justify-center mb-6">
                 <div className="bg-amber-100 p-4 rounded-full">
-                  <Target className="w-12 h-12 text-amber-600" />
+                  <Target className="w-12 h-12 text-[#f9c65d]" />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
@@ -816,7 +816,7 @@ const ForBusinesses = () => {
                 >
                   <span className="text-lg font-semibold text-gray-900">{faq.question}</span>
                   {openFaq === index ? (
-                    <ChevronUp className="w-6 h-6 text-amber-600 flex-shrink-0" />
+                    <ChevronUp className="w-6 h-6 text-[#f9c65d] flex-shrink-0" />
                   ) : (
                     <ChevronDown className="w-6 h-6 text-gray-400 flex-shrink-0" />
                   )}
@@ -879,7 +879,7 @@ const ForBusinesses = () => {
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
               <div className="flex items-center justify-center gap-2 mb-3">
-                <Clock className="w-6 h-6 text-amber-600" />
+                <Clock className="w-6 h-6 text-[#f9c65d]" />
                 <h3 className="text-lg font-bold text-gray-900">Office Hours</h3>
               </div>
               <p className="text-gray-700">M-F: 9am - 7pm</p>
@@ -888,7 +888,7 @@ const ForBusinesses = () => {
 
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
               <div className="flex items-center justify-center gap-2 mb-3">
-                <MapPin className="w-6 h-6 text-amber-600" />
+                <MapPin className="w-6 h-6 text-[#f9c65d]" />
                 <h3 className="text-lg font-bold text-gray-900">Office Location</h3>
               </div>
               <p className="text-gray-700">5001 California Ave Suite 219</p>
