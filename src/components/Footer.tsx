@@ -230,7 +230,7 @@ const Footer = () => {
       <div className="bg-[#F9C65D] border-t border-[#2C2C2C]/10 py-4">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-center text-[#2C2C2C] text-[15px]">
-            © Copyright <a href="https://www.mesagroupconsulting.com" target="_blank" rel="noopener noreferrer" className="hover:underline">Mesa Group Consulting.</a> All rights reserved.
+            © Copyright {new Date().getFullYear()} <a href="https://www.mesagroupconsulting.com" target="_blank" rel="noopener noreferrer" className="hover:underline">Mesa Group Consulting.</a> All rights reserved.
           </p>
         </div>
       </div>
