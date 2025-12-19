@@ -1340,7 +1340,7 @@ const TrustAndWillPlan = () => {
           {/* Two-Column Button Grid */}
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {/* Primary Option - Trust Plan */}
-            <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left text-white">
+            <div className="bg-mgc-gradient rounded-2xl p-8 text-left text-white">
               <div className="text-xs font-bold mb-2 tracking-wide">MOST POPULAR</div>
               <h3 className="text-2xl font-bold mb-4">Trust Estate Plan</h3>
               <div className="text-4xl font-bold mb-2">$499</div>
