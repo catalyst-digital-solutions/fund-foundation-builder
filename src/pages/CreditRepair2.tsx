@@ -779,99 +779,130 @@ const CreditRepair2 = () => {
       </section>
 
       {/* ============================================ */}
-      {/* SECTION 5B: LEGAL ESCALATIONS */}
+      {/* SECTION 5B: WHEN LEGAL ESCALATION HAPPENS */}
       {/* ============================================ */}
-      <section className="bg-gradient-to-br from-[#1a1a1a] to-[#2c2c2c] py-16 md:py-24 px-6 md:px-8">
+      <section className="py-16 md:py-24 px-6 md:px-8 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%)' }}>
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-50" />
+        
         <div className="max-w-6xl mx-auto">
+          {/* Header */}
           <div className="text-center mb-12">
-            <Scale className="w-16 h-16 text-amber-400 mx-auto mb-6" />
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-red-500/20 border-2 border-red-500/40 mb-6">
+              <Scale className="w-10 h-10 text-red-400" />
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Legal Escalations for <span className="text-[#f9c65d]">Serious Violations</span>
+              WHEN <span className="text-mgc-yellow">LEGAL ESCALATION</span> HAPPENS
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              When credit bureaus, creditors, or collection agencies violate federal consumer protection laws, Mesa Group takes decisive action through our partnered legal team.
+            <p className="text-xl text-mgc-tan max-w-3xl mx-auto">
+              Your Rights Are Protected By Federal Law—And We Make Sure They're Enforced
             </p>
           </div>
 
-          <div className="bg-white/10 backdrop-blur rounded-2xl p-8 mb-8">
-            <p className="text-gray-200 mb-4 leading-relaxed">
-              While Mesa Group Consulting is not a law firm, we have established partnerships with experienced consumer rights attorneys who specialize in FCRA (Fair Credit Reporting Act) and FDCPA (Fair Debt Collection Practices Act) violations.
+          {/* Disclaimer Box */}
+          <div className="bg-mgc-gold/10 border border-mgc-gold/30 rounded-2xl p-6 md:p-8 mb-12">
+            <p className="text-mgc-tan text-lg leading-relaxed text-center">
+              While Mesa Group Consulting is not a law firm, we work with <span className="text-white font-semibold">licensed attorneys who specialize in consumer protection and FCRA violations</span>.
             </p>
           </div>
 
-          {/* When Legal Escalation Happens */}
+          {/* When We Bring in the Legal Team */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <AlertTriangle className="w-8 h-8 text-amber-400" />
-              When Legal Escalation Happens:
+            <h3 className="text-2xl font-bold text-white mb-8 flex items-center justify-center gap-3">
+              <AlertTriangle className="w-8 h-8 text-red-400" />
+              When We Bring in the Legal Team:
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
-                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
-                <h4 className="text-lg font-bold text-white mb-2">Willful FCRA Violations</h4>
-                <p className="text-gray-300 text-sm">When bureaus knowingly report false information or fail to investigate disputes properly</p>
+            
+            <div className="space-y-4">
+              <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-5 flex items-start gap-4 hover:bg-red-900/30 transition-colors">
+                <span className="text-2xl flex-shrink-0">🚨</span>
+                <div>
+                  <h4 className="text-lg font-bold text-white mb-1">Bureau Fails to Investigate Within 30 Days</h4>
+                  <p className="text-mgc-tan">Federal law requires a response within 30 days. If they ignore you, we escalate to legal.</p>
+                </div>
               </div>
-
-              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
-                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
-                <h4 className="text-lg font-bold text-white mb-2">FDCPA Violations</h4>
-                <p className="text-gray-300 text-sm">When collectors engage in harassment, threats, or deceptive practices</p>
+              
+              <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-5 flex items-start gap-4 hover:bg-red-900/30 transition-colors">
+                <span className="text-2xl flex-shrink-0">🚨</span>
+                <div>
+                  <h4 className="text-lg font-bold text-white mb-1">Creditor Re-Reports Deleted Information Without Verification</h4>
+                  <p className="text-mgc-tan">Once an item is removed, they can't just put it back without proper proof. If they do, that's a violation.</p>
+                </div>
               </div>
-
-              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
-                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
-                <h4 className="text-lg font-bold text-white mb-2">Verification Failures</h4>
-                <p className="text-gray-300 text-sm">When furnishers repeatedly fail to verify disputed information</p>
+              
+              <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-5 flex items-start gap-4 hover:bg-red-900/30 transition-colors">
+                <span className="text-2xl flex-shrink-0">🚨</span>
+                <div>
+                  <h4 className="text-lg font-bold text-white mb-1">Collector Contacts You After Cease & Desist</h4>
+                  <p className="text-mgc-tan">Under FDCPA, once you tell them to stop, they must stop. Violations = potential damages.</p>
+                </div>
               </div>
-
-              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
-                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
-                <h4 className="text-lg font-bold text-white mb-2">Continued Reporting After Deletion</h4>
-                <p className="text-gray-300 text-sm">When removed items reappear without proper re-investigation</p>
+              
+              <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-5 flex items-start gap-4 hover:bg-red-900/30 transition-colors">
+                <span className="text-2xl flex-shrink-0">🚨</span>
+                <div>
+                  <h4 className="text-lg font-bold text-white mb-1">Bureau Reports Inaccurate Info After You've Provided Proof of Error</h4>
+                  <p className="text-mgc-tan">Ignoring documented proof of inaccuracy is a violation of your FCRA rights.</p>
+                </div>
               </div>
-
-              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
-                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
-                <h4 className="text-lg font-bold text-white mb-2">Identity Theft Cases</h4>
-                <p className="text-gray-300 text-sm">When fraudulent accounts require legal intervention for resolution</p>
+              
+              <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-5 flex items-start gap-4 hover:bg-red-900/30 transition-colors">
+                <span className="text-2xl flex-shrink-0">🚨</span>
+                <div>
+                  <h4 className="text-lg font-bold text-white mb-1">Any Other Violation of Federal Consumer Protection Laws</h4>
+                  <p className="text-mgc-tan">We don't tolerate violations. Period.</p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Our Legal Partnership Process */}
-          <div className="bg-gradient-to-br from-amber-900/30 to-orange-900/30 backdrop-blur rounded-2xl p-8 border border-amber-500/30">
+          {/* What Legal Escalation Looks Like */}
+          <div className="bg-gradient-to-br from-mgc-gold/15 to-mgc-yellow/5 border border-mgc-gold/40 rounded-2xl p-8 mb-12">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <FileText className="w-8 h-8 text-amber-400" />
-              Our Legal Partnership Process:
+              <FileText className="w-8 h-8 text-mgc-gold" />
+              What Legal Escalation Looks Like:
             </h3>
             <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">1</div>
-                <p className="text-gray-200 pt-1">Our team identifies clear violations during your Mesa 360 process</p>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                <p className="text-mgc-tan"><span className="text-white font-semibold">Paralegal FCRA/FDCPA Audits</span> of your entire case</p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">2</div>
-                <p className="text-gray-200 pt-1">We document all evidence of regulatory non-compliance</p>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                <p className="text-mgc-tan"><span className="text-white font-semibold">Attorney Review</span> of violations and potential claims</p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">3</div>
-                <p className="text-gray-200 pt-1">Cases meeting legal thresholds are referred to our attorney partners</p>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                <p className="text-mgc-tan"><span className="text-white font-semibold">Legal Demand Letters</span> sent to creditors and bureaus</p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">4</div>
-                <p className="text-gray-200 pt-1">Attorneys send demand letters and pursue formal legal action when warranted</p>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                <p className="text-mgc-tan"><span className="text-white font-semibold">Settlement Negotiation Support</span> when violations are clear</p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">5</div>
-                <p className="text-gray-200 pt-1">You incur no additional fees for this escalation—it's included in your Mesa 360 service</p>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                <p className="text-mgc-tan"><span className="text-white font-semibold">Documentation for Potential Litigation</span> if needed</p>
               </div>
             </div>
           </div>
 
-          <div className="text-center mt-8">
-            <p className="text-amber-400 text-lg font-semibold">
-              This legal backing sets Mesa 360 apart from basic dispute services and ensures maximum accountability from bureaus and creditors.
+          {/* Real Financial Impact */}
+          <div className="bg-green-900/20 border border-green-500/30 rounded-2xl p-8 mb-12 text-center">
+            <DollarSign className="w-12 h-12 text-green-400 mx-auto mb-4" />
+            <h3 className="text-xl font-bold text-white mb-3">Real Financial Impact:</h3>
+            <p className="text-mgc-tan text-lg max-w-3xl mx-auto">
+              Many qualified clients have received cash settlements ranging from <span className="text-green-400 font-bold">$1,000 to $2,500+</span> when creditors or bureaus violated their rights—<span className="text-white font-semibold">in addition to removal of inaccurate items</span>.
             </p>
+          </div>
+
+          {/* The Bottom Line */}
+          <div className="text-center">
+            <div className="inline-block bg-mgc-dark-gray/50 border border-mgc-gold/30 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-4">The Bottom Line:</h3>
+              <p className="text-xl text-mgc-tan max-w-2xl">
+                We don't make promises we can't keep. We make progress you can measure. And when your rights are violated, we fight back with <span className="text-mgc-yellow font-bold">real legal power</span>.
+              </p>
+            </div>
           </div>
         </div>
       </section>
