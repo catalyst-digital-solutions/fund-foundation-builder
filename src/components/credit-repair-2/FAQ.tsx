@@ -28,7 +28,7 @@ const FAQ = () => {
               <li>Full legal team for FCRA violation cases</li>
               <li>Transparent pricing with no hidden fees</li>
             </ul>
-            <p>We're proud to serve clients in English, Spanish, and Italian (🇺🇸 🇪🇸 🇮🇹). You can call us, visit us, or read reviews from real people we've helped. We're as real as it gets.</p>
+            <p>We're proud to serve clients in English, Spanish, and Punjabi (🇺🇸 🇪🇸 🇮🇳). You can call us, visit us, or read reviews from real people we've helped. We're as real as it gets.</p>
           </FAQItem>
 
           {/* FAQ 2 */}
@@ -291,7 +291,7 @@ const FAQ = () => {
             <ul className="list-disc pl-6 space-y-1 mb-4">
               <li>Real person assigned to your case (no switching between random reps)</li>
               <li>Direct phone and email access</li>
-              <li>Trilingual support available (🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano)</li>
+              <li>Trilingual support available (🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi)</li>
               <li>They know your name, your story, and your goals</li>
             </ul>
             <p className="font-semibold mb-2">📈 Monthly Progress Reviews</p>
@@ -401,7 +401,7 @@ const FAQ = () => {
             </ul>
             <p className="font-semibold mb-2">Our Office:</p>
             <p>📍 5001 California Ave Suite 219<br />Bakersfield, CA 93309<br />📞 (661) 310-3040<br />📧 contact@mesagroupconsulting.com</p>
-            <p className="mt-4"><strong>Trilingual support <em>nationwide</em>:</strong> Our English, Spanish, and Italian speaking team members (🇺🇸 🇪🇸 🇮🇹) work remotely with clients across the country.</p>
+            <p className="mt-4"><strong>Trilingual support <em>nationwide</em>:</strong> Our English, Spanish, and Punjabi speaking team members (🇺🇸 🇪🇸 🇮🇳) work remotely with clients across the country.</p>
           </FAQItem>
 
           {/* FAQ 14 */}
