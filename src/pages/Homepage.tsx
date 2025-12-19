@@ -16,6 +16,7 @@ import {
   Building2,
   ShieldCheck,
   Users,
+  User,
   Target,
   Briefcase,
   Home,
@@ -1295,7 +1296,7 @@ const Homepage = () => {
             
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 hover:shadow-xl transition-shadow">
               <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
-                <Home className="w-8 h-8 text-white" />
+                <User className="w-8 h-8 text-white" />
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">
