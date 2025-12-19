@@ -647,24 +647,7 @@ const Homepage = () => {
       </section>
 
       {/* ================================================================
-          SECTION 2: MEDIA TRUST STRIP
-      ================================================================ */}
-      <section className="bg-gray-100 py-12 px-6 md:px-8">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-center text-gray-600 text-sm mb-10">
-            Featured in local and national media for our proven financial solutions
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20 lg:gap-28">
-            <img src={kget17Logo} alt="KGET 17" className="h-16 md:h-20 w-auto object-contain" />
-            <img src={studio17Logo} alt="Studio 17" className="h-20 md:h-28 w-auto object-contain" />
-            <img src={telemundoLogo} alt="Telemundo" className="h-16 md:h-20 w-auto object-contain" />
-            <img src={cwLogo} alt="The CW" className="h-14 md:h-18 w-auto object-contain" />
-          </div>
-        </div>
-      </section>
-
-      {/* ================================================================
-          SECTION 2A: THE PAIN (EMOTIONAL AMPLIFICATION)
+          SECTION 2: THE PAIN (EMOTIONAL AMPLIFICATION)
       ================================================================ */}
       <section className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -699,6 +682,23 @@ const Homepage = () => {
             </p>
           </div>
 
+        </div>
+      </section>
+
+      {/* ================================================================
+          SECTION 2A: MEDIA TRUST STRIP
+      ================================================================ */}
+      <section className="bg-gray-100 py-12 px-6 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-center text-gray-600 text-sm mb-10">
+            Featured in local and national media for our proven financial solutions
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20 lg:gap-28">
+            <img src={kget17Logo} alt="KGET 17" className="h-16 md:h-20 w-auto object-contain" />
+            <img src={studio17Logo} alt="Studio 17" className="h-20 md:h-28 w-auto object-contain" />
+            <img src={telemundoLogo} alt="Telemundo" className="h-16 md:h-20 w-auto object-contain" />
+            <img src={cwLogo} alt="The CW" className="h-14 md:h-18 w-auto object-contain" />
+          </div>
         </div>
       </section>
 
