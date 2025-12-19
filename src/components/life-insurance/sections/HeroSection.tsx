@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
           {/* Left Column - Content */}
-          <div className="space-y-6 lg:space-y-8 lg:h-[600px] lg:flex lg:flex-col lg:justify-center">
+          <div className="space-y-6 lg:space-y-8">
             {/* Trust Badge */}
             <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-200">
               <Shield className="w-5 h-5 text-green-600" />
@@ -84,10 +84,10 @@ const HeroSection = () => {
           </div>
 
           {/* Right Column - Hero Image/Visual */}
-          <div className="relative lg:h-[600px] flex items-center justify-center">
-            <div className="relative w-full h-full max-w-md">
-              <div className="absolute inset-4 bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl transform rotate-3"></div>
-              <div className="relative bg-white rounded-2xl shadow-2xl p-8 transform -rotate-3 hover:rotate-0 transition-transform duration-300 flex items-center justify-center">
+          <div className="hidden lg:block">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl transform rotate-3"></div>
+              <div className="relative bg-white rounded-2xl shadow-2xl p-8 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
                 <div className="text-center space-y-6">
                   <Shield className="w-32 h-32 text-[#3e3e3e] mx-auto" />
                   <div className="space-y-2">
