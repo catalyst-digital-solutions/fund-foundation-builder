@@ -10,7 +10,7 @@ import experianLogo from '@/assets/experian-logo.png';
 import equifaxLogo from '@/assets/equifax-logo.png';
 import transunionLogo from '@/assets/transunion-logo.png';
 
-const AFFILIATE_LINK = "https://smartcredit.com/join/?PID=24603&planType=PREMIUM";
+const AFFILIATE_LINK = "https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM";
 
 const CreditMonitoring = () => {
   return (
