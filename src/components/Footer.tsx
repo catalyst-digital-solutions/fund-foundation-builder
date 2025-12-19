@@ -93,14 +93,10 @@ const Footer = () => {
             <div>
               <h3 className="text-[#F9C65D] text-lg font-semibold mb-4">Resources</h3>
               <ul className="space-y-3">
-                <li><a href="https://start.mesagroupconsulting.com/credit-repair-self-service" target="_blank" rel="noopener noreferrer" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Client Sign-Up</a></li>
                 <li><a href="https://portal.mesagroupconsulting.com/" target="_blank" rel="noopener noreferrer" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Client Portal</a></li>
                 <li><a href="https://tailorbrands.go2cloud.org/aff_c?offer_id=103&aff_id=9347" target="_blank" rel="noopener noreferrer" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Form An LLC</a></li>
                 <li><a href="https://smartcredit.com/join/?PID=24603&planType=PREMIUM" target="_blank" rel="noopener noreferrer" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Get Credit Report</a></li>
                 <li><Link to="/build-credit" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Build Credit</Link></li>
-                <li><a href="https://myfreescorenow.com/En/fundingSnapshot/User/Register/19772" target="_blank" rel="noopener noreferrer" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Funding Snapshot</a></li>
-                <li><a href="https://myfreescorenow.com/en/creditsnapshot/user/register/19772?source=default" target="_blank" rel="noopener noreferrer" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Snapshot</a></li>
-                <li><a href="https://www.nav.com/nav-prime-2/" target="_blank" rel="noopener noreferrer" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Get Business Credit Report</a></li>
               </ul>
             </div>
 
@@ -156,11 +152,12 @@ const Footer = () => {
             <div>
               <h3 className="text-[#F9C65D] text-lg font-semibold mb-4">Pages</h3>
               <ul className="space-y-3">
-                <li><a href="https://www.mesagroupconsulting.com" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Home</a></li>
-                <li><a href="https://www.mesagroupconsulting.com/about-us" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">About</a></li>
-                <li><a href="https://www.mesagroupconsulting.com/contact-us" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Contact Us</a></li>
-                <li><a href="https://www.mesagroupconsulting.com/blog" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Blog</a></li>
-                <li><a href="https://www.mesagroupcapital.io" target="_blank" rel="noopener noreferrer" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Mesa Group Capital</a></li>
+                <li><Link to="/" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Home</Link></li>
+                <li><Link to="/about" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">About</Link></li>
+                <li><Link to="/for-consumers" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">For Consumers</Link></li>
+                <li><Link to="/for-businesses" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">For Businesses</Link></li>
+                <li><Link to="/resources" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Resources</Link></li>
+                <li><Link to="/contact" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Contact</Link></li>
               </ul>
             </div>
           </div>
