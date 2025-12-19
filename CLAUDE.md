@@ -575,7 +575,7 @@ Repository is hosted on GitHub and likely deployed through Lovable's platform or
 
 **TASK 4: Trust Bar / Trilingual Support Updates**
 - Changed "Bilingual" to "Trilingual" throughout
-- Updated language support from "EN/ES/Punjabi" to "🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano"
+- Updated language support from "EN/ES/Punjabi" to "🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi"
 - Locations updated in CreditRepair2.tsx (4 instances):
   - Hero section trust bar
   - Comparison table
