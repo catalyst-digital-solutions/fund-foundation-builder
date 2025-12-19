@@ -1484,35 +1484,95 @@ const CreditRepair2 = () => {
             </div>
           </div>
 
-          {/* SmartCredit Requirement */}
-          <div className="mt-12 bg-blue-50 border border-blue-200 rounded-xl p-6 max-w-3xl mx-auto">
-            <div className="flex items-start gap-4">
-              <BarChart3 className="w-8 h-8 text-blue-600 flex-shrink-0" />
-              <div>
-                <h4 className="font-bold text-[#3E3E3E] mb-2">Why SmartCredit is Required</h4>
-                <p className="text-sm text-gray-700 mb-2">
-                  SmartCredit provides real-time access to your credit reports from all three bureaus. We need this to see your actual reports, file accurate disputes, and track progress.
-                </p>
-                <p className="text-sm text-gray-600">
-                  <strong>Cost:</strong> $1 for 7-day trial, then $27.99/month. SmartCredit is a third-party service you control directly.
-                </p>
+          {/* Which Plan Is Right For You */}
+          <div className="mt-16">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#3E3E3E] mb-10 text-center">
+              WHICH PLAN IS RIGHT FOR YOU?
+            </h3>
+            
+            {/* Individual Plans */}
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              {/* Lite */}
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <h4 className="font-bold text-[#3E3E3E] mb-4">Choose Mesa360 Lite if:</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>You have collections, late payments, and inquiries</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>No charge-offs or heavy accounts</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>You want affordable entry point with full coaching support</span></div>
+                </div>
+              </div>
+
+              {/* Flex */}
+              <div className="bg-amber-50 border-2 border-amber-300 rounded-xl p-6">
+                <h4 className="font-bold text-[#3E3E3E] mb-4">Choose Mesa360 Flex <span className="text-amber-600">(Most Popular)</span> if:</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>You have collections, late payments, inquiries</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>PLUS charge-offs that need removal</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>You want direct creditor disputes and federal escalation</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>You need maximum speed and aggressive strategy</span></div>
+                </div>
+              </div>
+
+              {/* Elite */}
+              <div className="bg-gray-800 text-white rounded-xl p-6">
+                <h4 className="font-bold mb-4">Choose Mesa360 Elite if:</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>You have heavy damage: bankruptcies, repos, evictions, student loans</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>You need advanced legal dispute strategies</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>You want legal team review and priority handling</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>You need funding profile optimization for major purchases</span></div>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Still not sure? */}
-          <div className="text-center mt-10">
-            <p className="text-gray-700 mb-4">Still not sure which plan is right for you?</p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <a href="tel:6613103040" className="flex items-center gap-2 text-[#bb9446] hover:text-[#9a7a3a] font-semibold">
-                <Phone className="w-4 h-4" /> (661) 310-3040
-              </a>
-              <a href="mailto:contact@mesagroupconsulting.com" className="flex items-center gap-2 text-[#bb9446] hover:text-[#9a7a3a] font-semibold">
-                <Mail className="w-4 h-4" /> contact@mesagroupconsulting.com
-              </a>
-              <span className="flex items-center gap-2 text-gray-600">
-                <MapPin className="w-4 h-4" /> 5001 California Ave Suite 219, Bakersfield, CA
-              </span>
+            {/* Monthly vs 12-Month */}
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              {/* Monthly Plans */}
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <h4 className="font-bold text-[#3E3E3E] mb-4">Choose Monthly Plans (Lite/Flex/Elite) if:</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" /><span>You want maximum flexibility</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" /><span>Your credit situation is still evolving</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" /><span>You want ongoing support for new items as they appear</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" /><span>You prefer to pay as you go</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" /><span>You're not 100% sure on timeline yet</span></div>
+                </div>
+              </div>
+
+              {/* 12-Month Programs */}
+              <div className="bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6">
+                <h4 className="font-bold text-[#3E3E3E] mb-4">Choose 12-Month Programs (Ruby/Emerald) if:</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You want to save $888-$1,788 upfront</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>Your credit situation is stable</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You're committed to a full year</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You prefer one-and-done payment</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You want to lock in pricing and eliminate monthly billing</span></div>
+                </div>
+              </div>
+            </div>
+
+            {/* Still Not Sure CTA */}
+            <div className="bg-gradient-to-r from-[#3E3E3E] to-[#2c2c2c] rounded-2xl p-8 text-center">
+              <h4 className="text-2xl font-bold text-white mb-6">STILL NOT SURE? LET'S TALK.</h4>
+              
+              <div className="flex flex-wrap justify-center gap-6 mb-6 text-sm">
+                <a href="tel:6613103040" className="flex items-center gap-2 text-amber-400 hover:text-amber-300 font-semibold">
+                  <Phone className="w-5 h-5" /> (661) 310-3040
+                </a>
+                <a href="mailto:contact@mesagroupconsulting.com" className="flex items-center gap-2 text-amber-400 hover:text-amber-300 font-semibold">
+                  <Mail className="w-5 h-5" /> contact@mesagroupconsulting.com
+                </a>
+                <span className="flex items-center gap-2 text-gray-300">
+                  <MapPin className="w-5 h-5" /> 5001 California Ave Suite 219, Bakersfield, CA 93309
+                </span>
+              </div>
+              
+              <p className="text-gray-300 mb-6">🌎 Hablamos español | We speak Punjabi</p>
+              
+              <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors inline-flex items-center gap-2">
+                Schedule Free Consultation <ArrowRight className="w-5 h-5" />
+              </button>
             </div>
           </div>
         </div>
