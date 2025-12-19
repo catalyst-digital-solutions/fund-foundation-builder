@@ -944,10 +944,10 @@ const Homepage = () => {
                 </li>
               </ul>
               
-              <a href="/business-funding" className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold">
+              <Link to="/for-businesses" className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold">
                 Explore Business Solutions
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
 
             {/* Build Credit */}
