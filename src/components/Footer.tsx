@@ -110,19 +110,19 @@ const Footer = () => {
                   <ChevronDown className={`w-4 h-4 text-[#F9C65D] transition-transform duration-200 ${isConsumersOpen ? 'rotate-180' : ''}`} />
                 </CollapsibleTrigger>
                 <ul className="space-y-3 mb-4">
-                <li><Link to="/build-credit" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Build Credit</Link></li>
-                <li><Link to="/credit-monitoring" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Monitoring</Link></li>
-                <li><Link to="/credit-repair" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Repair</Link></li>
-                <li><Link to="/diy-credit-repair" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">DIY Credit Repair</Link></li>
+                <li><Link to="/build-credit" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Build Credit</Link></li>
+                <li><Link to="/credit-monitoring" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Monitoring</Link></li>
+                <li><Link to="/credit-repair" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Repair</Link></li>
+                <li><Link to="/diy-credit-repair" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">DIY Credit Repair</Link></li>
                   <CollapsibleContent>
-                    <li className="mt-3"><Link to="/credit-cards" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Cards</Link></li>
-                    <li className="mt-3"><Link to="/personal-loans" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Personal Loans</Link></li>
-                    <li className="mt-3"><Link to="/auto-loan-refi" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Auto Loan Refi</Link></li>
-                    <li className="mt-3"><Link to="/student-loan-refi" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Student Loan Refi</Link></li>
-                    <li className="mt-3"><Link to="/debt-consolidation" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Debt Consolidation Loan</Link></li>
-                    <li className="mt-3"><Link to="/debt-relief" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Debt Relief</Link></li>
-                    <li className="mt-3"><Link to="/trust-and-will" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Trust & Will Plan</Link></li>
-                    <li className="mt-3"><Link to="/life-insurance" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Life Insurance</Link></li>
+                    <li className="mt-3"><Link to="/credit-cards" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Cards</Link></li>
+                    <li className="mt-3"><Link to="/personal-loans" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Personal Loans</Link></li>
+                    <li className="mt-3"><Link to="/auto-loan-refi" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Auto Loan Refi</Link></li>
+                    <li className="mt-3"><Link to="/student-loan-refi" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Student Loan Refi</Link></li>
+                    <li className="mt-3"><Link to="/debt-consolidation" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Debt Consolidation Loan</Link></li>
+                    <li className="mt-3"><Link to="/debt-relief" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Debt Relief</Link></li>
+                    <li className="mt-3"><Link to="/trust-and-will" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Trust & Will Plan</Link></li>
+                    <li className="mt-3"><Link to="/life-insurance" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Life Insurance</Link></li>
                   </CollapsibleContent>
                 </ul>
               </Collapsible>
@@ -134,10 +134,10 @@ const Footer = () => {
                   <ChevronDown className={`w-4 h-4 text-[#F9C65D] transition-transform duration-200 ${isBusinessesOpen ? 'rotate-180' : ''}`} />
                 </CollapsibleTrigger>
                 <ul className="space-y-3">
-                  <li><Link to="/zero-interest-business-funding-2" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">0% Interest Business Funding</Link></li>
-                  <li><Link to="/business-funding-2" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Funding</Link></li>
-                  <li><Link to="/business-credit-builder" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Credit Builder</Link></li>
-                  <li><Link to="/business-debt-relief" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Debt Relief</Link></li>
+                  <li><Link to="/zero-interest-business-funding-2" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">0% Interest Business Funding</Link></li>
+                  <li><Link to="/business-funding-2" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Funding</Link></li>
+                  <li><Link to="/business-credit-builder" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Credit Builder</Link></li>
+                  <li><Link to="/business-debt-relief" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Debt Relief</Link></li>
                 </ul>
               </Collapsible>
             </div>
@@ -146,12 +146,12 @@ const Footer = () => {
             <div>
               <h3 className="text-[#F9C65D] text-lg font-semibold mb-4">Pages</h3>
               <ul className="space-y-3">
-                <li><Link to="/" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Home</Link></li>
-                <li><Link to="/about" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">About</Link></li>
-                <li><Link to="/for-consumers" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">For Consumers</Link></li>
-                <li><Link to="/for-businesses" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">For Businesses</Link></li>
-                <li><Link to="/resources" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Resources</Link></li>
-                <li><Link to="/contact" onClick={() => window.scrollTo(0, 0)} className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Contact</Link></li>
+                <li><Link to="/" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Home</Link></li>
+                <li><Link to="/about" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">About</Link></li>
+                <li><Link to="/for-consumers" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">For Consumers</Link></li>
+                <li><Link to="/for-businesses" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">For Businesses</Link></li>
+                <li><Link to="/resources" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Resources</Link></li>
+                <li><Link to="/contact" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Contact</Link></li>
               </ul>
             </div>
           </div>
