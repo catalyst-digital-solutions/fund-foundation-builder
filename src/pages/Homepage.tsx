@@ -31,6 +31,7 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import TransformationJourney from '@/components/homepage/TransformationJourney';
+import { CalendlyPopupButton, CalendlyPopupButtonLarge } from '@/components/CalendlyPopupButton';
 // Fullpage.js removed - using CSS scroll-snap instead
 
 // Import media logos
@@ -47,7 +48,7 @@ import meetingRoomImg from '@/assets/meeting-room-consultation.jpg';
 // HOW IT WORKS - 3 STEP FLIP CARD SECTION
 // ============================================================================
 
-const FlipCard = ({ step, openConsultationModal }: { step: any; openConsultationModal: () => void }) => {
+const FlipCard = ({ step }: { step: any }) => {
   const [isFlipped, setIsFlipped] = React.useState(false);
   const cardRef = React.useRef<HTMLDivElement>(null);
 
@@ -159,7 +160,7 @@ const FlipCard = ({ step, openConsultationModal }: { step: any; openConsultation
   );
 };
 
-const HowItWorksSection = ({ openConsultationModal }: { openConsultationModal: () => void }) => {
+const HowItWorksSection = () => {
   const steps = [
     {
       number: 1,
@@ -216,19 +217,18 @@ const HowItWorksSection = ({ openConsultationModal }: { openConsultationModal: (
 
         <div className="space-y-8">
           {steps.map((step, index) => (
-            <FlipCard key={index} step={step} openConsultationModal={openConsultationModal} />
+            <FlipCard key={index} step={step} />
           ))}
         </div>
 
         {/* CTA Button */}
         <div className="text-center mt-16">
-          <button
-            onClick={openConsultationModal}
-            className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-gray-900 font-bold text-xl rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all"
-          >
-            Start My Free Consultation
-            <ArrowRight className="w-6 h-6" />
-          </button>
+          <CalendlyPopupButtonLarge
+            text="Start My Free Consultation"
+            prefillOptions={{
+              utm: { source: 'website', medium: 'homepage', campaign: 'how_it_works' }
+            }}
+          />
         </div>
       </div>
     </section>
@@ -518,11 +518,6 @@ const ServicesTabSystem = () => {
 const Homepage = () => {
   const [faqOpen, setFaqOpen] = useState<number | null>(null);
 
-  const openConsultationModal = () => {
-    // Opens GoHighLevel contact form in new tab
-    window.open('https://api.leadconnectorhq.com/widget/booking/FNqPZuq2sL5wFO5kGELK', '_blank');
-  };
-
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -560,13 +555,12 @@ const Homepage = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button
-                  onClick={openConsultationModal}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 border-2 border-amber-500"
-                >
-                  Schedule Free Consultation
-                  <ArrowRight className="w-5 h-5" />
-                </button>
+                <CalendlyPopupButton
+                  text="Schedule Free Consultation"
+                  prefillOptions={{
+                    utm: { source: 'website', medium: 'homepage', campaign: 'hero_cta' }
+                  }}
+                />
                 
                 <a
                   href="tel:6613103040"
@@ -1010,13 +1004,12 @@ const Homepage = () => {
                 <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
                   Schedule your free consultation and let our experts create a personalized roadmap for your financial success.
                 </p>
-                <button
-                  onClick={openConsultationModal}
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all border-2 border-amber-500"
-                >
-                  Schedule My Free Consultation
-                  <ArrowRight className="w-5 h-5" />
-                </button>
+                <CalendlyPopupButton
+                  text="Schedule My Free Consultation"
+                  prefillOptions={{
+                    utm: { source: 'website', medium: 'homepage', campaign: 'not_sure_section' }
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -1321,13 +1314,12 @@ const Homepage = () => {
 
           {/* CTA */}
           <div className="text-center mt-12">
-            <button
-              onClick={openConsultationModal}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all border-2 border-amber-500"
-            >
-              Start My Free Consultation
-              <ArrowRight className="w-5 h-5" />
-            </button>
+            <CalendlyPopupButton
+              text="Start My Free Consultation"
+              prefillOptions={{
+                utm: { source: 'website', medium: 'homepage', campaign: 'getting_started_section' }
+              }}
+            />
           </div>
 
         </div>
@@ -1336,7 +1328,7 @@ const Homepage = () => {
       {/* ================================================================
           SECTION 6B: HOW IT WORKS - SCROLL-JACKING VERSION (A/B TEST)
       ================================================================ */}
-      <HowItWorksSection openConsultationModal={openConsultationModal} />
+      <HowItWorksSection />
 
       {/* ================================================================
           SECTION 7: WHO WE SERVE (PERSONAS)
@@ -1855,13 +1847,14 @@ const Homepage = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Ready to Transform Your <span className="text-[#f9c65d]">Financial Future</span>?
             </h2>
-            
-            <button
-              onClick={openConsultationModal}
-              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-2"
-            >
-              Schedule My Free Consultation →
-            </button>
+
+            <CalendlyPopupButtonLarge
+              text="Schedule My Free Consultation →"
+              showArrow={false}
+              prefillOptions={{
+                utm: { source: 'website', medium: 'homepage', campaign: 'final_cta' }
+              }}
+            />
             <p className="text-sm text-gray-600 mb-4">Powered by Mesa Group</p>
             
             <p className="text-gray-600 mb-6">
