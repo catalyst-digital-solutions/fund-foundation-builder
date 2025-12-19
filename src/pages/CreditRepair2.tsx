@@ -206,113 +206,185 @@ const CreditRepair2 = () => {
       <section className="bg-gradient-to-br from-gray-50 to-amber-50 py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
 
-          {/* 3-Step Process */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16 items-stretch">
-            {/* STEP 1: REPAIR */}
+          {/* 4-Phase Process */}
+          <div className="grid md:grid-cols-2 gap-8 mb-16 items-stretch">
+            {/* PHASE 1: BREAK DOWN THE BARRIERS */}
             <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-amber-500 flex flex-col">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <Search className="w-8 h-8 text-[#f9c65d]" />
               </div>
               <div className="text-sm font-bold text-[#f9c65d] mb-2">PHASE 1</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">BREAK DOWN THE BARRIERS</h3>
-              <p className="text-gray-600 mb-6">What's Really Holding You Back</p>
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">BREAK DOWN THE BARRIERS</h3>
+              <p className="text-gray-600 mb-6 italic">What's Really Holding You Back</p>
               
-              <div className="space-y-4 text-sm text-gray-700">
+              <div className="space-y-4 text-sm text-gray-700 flex-grow">
+                <p>Before we can move forward, we need to understand what's anchoring you to the past. Not just the obvious stuff—but the hidden damage, the errors, the items that shouldn't even be there.</p>
+                
                 <div>
-                  <p className="font-semibold mb-2">Free Credit Analysis</p>
-                  <p>We review your credit report from all three bureaus to identify inaccurate, outdated, or unverifiable items.</p>
+                  <p className="font-bold mb-2">Deep Credit Forensics</p>
+                  <p>We pull your credit from all three bureaus—Experian, Equifax, TransUnion—and perform a forensic analysis. Not a 5-minute glance. A real investigation.</p>
                 </div>
+                
                 <div>
-                  <p className="font-semibold mb-2">What We Look For:</p>
+                  <p className="font-bold mb-2">What We're Looking For:</p>
                   <ul className="space-y-1 text-gray-600">
-                    <li>• Collections that aren't yours</li>
-                    <li>• Late payments reported incorrectly</li>
-                    <li>• Charge-offs with missing documentation</li>
-                    <li>• Bankruptcies that should've been removed</li>
-                    <li>• Unauthorized inquiries</li>
+                    <li>• Collections that aren't yours or can't be verified</li>
+                    <li>• Late payments reported incorrectly (wrong dates, wrong amounts)</li>
+                    <li>• Charge-offs missing required documentation</li>
+                    <li>• Bankruptcies that should have aged off years ago</li>
+                    <li>• Inquiries you never authorized</li>
+                    <li>• Accounts reporting wrong balances or fabricated payment history</li>
+                    <li>• Identity theft red flags hiding in plain sight</li>
                   </ul>
                 </div>
+                
                 <div>
-                  <p className="font-semibold mb-2">Custom Dispute Strategy</p>
-                  <p>No cookie-cutter letters. We craft personalized dispute strategies based on your unique credit situation and FCRA/FDCPA guidelines.</p>
+                  <p className="font-bold mb-2">The Truth Moment:</p>
+                  <p>Most people discover 3-7 items on their report that are either completely inaccurate or can't be legally verified. You're not asking for favors. You're demanding accuracy. That's your right under federal law.</p>
                 </div>
+                
                 <div>
-                  <p className="font-semibold mb-2">We Handle the Disputes</p>
-                  <p>We manage all communication with credit bureaus and creditors on your behalf. No stress, no confusion—just progress.</p>
-                </div>
-                <div>
-                  <p className="font-semibold mb-2">Advanced Methods:</p>
+                  <p className="font-bold mb-2">What You Get:</p>
                   <ul className="space-y-1 text-gray-600">
-                    <li>• Digital uploads to bureaus</li>
-                    <li>• Direct Experian uploads + rapid inquiry removal</li>
-                    <li>• CFPB complaints when necessary</li>
-                    <li>• Metro 2 challenges for complex items</li>
-                    <li>• Legal team escalation for FCRA violations</li>
+                    <li>• Free 3-Bureau Credit Analysis (normally $50+ value)</li>
+                    <li>• Written breakdown of every negative item—and whether it's disputable</li>
+                    <li>• Honest assessment of your timeline and what's realistic</li>
+                    <li>• Custom dispute strategy built for YOUR situation, not a template</li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            {/* STEP 2: REBUILD */}
+            {/* PHASE 2: REPAIR WHAT'S BROKEN */}
+            <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-orange-500 flex flex-col">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                <FileText className="w-8 h-8 text-orange-600" />
+              </div>
+              <div className="text-sm font-bold text-orange-600 mb-2">PHASE 2</div>
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">REPAIR WHAT'S BROKEN</h3>
+              <p className="text-gray-600 mb-6 italic">Removing the Weight You've Been Carrying</p>
+              
+              <div className="space-y-4 text-sm text-gray-700 flex-grow">
+                <p>Now the real work begins. We don't send generic letters. We don't use offshore call centers. We don't "set it and forget it."</p>
+                
+                <p>Your dedicated account manager—a real person who knows your name, your story, your goals—builds a custom dispute strategy based on FCRA/FDCPA law, your unique credit profile, and the specific violations we found.</p>
+                
+                <div>
+                  <p className="font-bold mb-2">Our Arsenal of Advanced Methods:</p>
+                  <ul className="space-y-1 text-gray-600">
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> Direct Digital Uploads to all 3 bureaus (faster than mail, harder to ignore)</li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> Experian Rapid Inquiry Removal (proprietary access most companies don't have)</li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> Direct Creditor & Collector Disputes (going straight to the source)</li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> CFPB Complaints (when bureaus stonewall you, we escalate to federal oversight)</li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> Metro 2 Challenges (advanced formatting disputes for complex items)</li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> Legal Team Escalation (when they violate FCRA, we bring in the attorneys)</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <p className="font-bold mb-2">We Handle Everything:</p>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• All communication with bureaus and creditors</li>
+                    <li>• All follow-ups, re-disputes, escalations</li>
+                    <li>• All documentation, tracking, and compliance</li>
+                    <li>• Every 35 days, you get a detailed progress update in your client portal</li>
+                  </ul>
+                </div>
+                
+                <p className="font-semibold text-gray-800">You don't lift a finger. You just watch the progress.</p>
+              </div>
+            </div>
+
+            {/* PHASE 3: BUILD YOUR NEW FOUNDATION */}
             <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-green-500 flex flex-col">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
                 <Users className="w-8 h-8 text-green-600" />
               </div>
-              <div className="text-sm font-bold text-green-600 mb-2">STEP 2</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">REBUILD</h3>
-              <p className="text-gray-600 mb-6">Build a Stronger Foundation</p>
+              <div className="text-sm font-bold text-green-600 mb-2">PHASE 3</div>
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">BUILD YOUR NEW FOUNDATION</h3>
+              <p className="text-gray-600 mb-6 italic">Learning to Win Long-Term</p>
               
-              <div className="space-y-4 text-sm text-gray-700">
+              <div className="space-y-4 text-sm text-gray-700 flex-grow">
+                <p>Here's where most credit repair companies fail you: they remove the bad stuff, take your money, and ghost you. Then 6 months later, you're back where you started because nobody taught you how to actually BUILD credit.</p>
+                
+                <p className="font-semibold">Not here. Not with Mesa360.</p>
+                
                 <div>
-                  <p className="font-semibold mb-2">1-on-1 Financial Coaching</p>
-                  <p>Removing negative items is only half the battle. Our account managers teach you how to build and maintain good credit long-term.</p>
+                  <p className="font-bold mb-2">1-on-1 Financial Coaching (Included in Every Plan)</p>
+                  <p>Your account manager doesn't just file disputes. They teach you the game.</p>
                 </div>
+                
                 <div>
-                  <p className="font-semibold mb-2">You'll Learn:</p>
+                  <p className="font-bold mb-2">You'll Master:</p>
                   <ul className="space-y-1 text-gray-600">
-                    <li>• How to use credit cards responsibly</li>
-                    <li>• When to apply for new credit</li>
-                    <li>• Building positive payment history</li>
-                    <li>• Understanding credit mix</li>
-                    <li>• Protecting your credit long-term</li>
+                    <li>• <span className="font-semibold">Credit Utilization Mastery</span> – How to use cards without hurting your score (it's not just "keep it under 30%")</li>
+                    <li>• <span className="font-semibold">Strategic Application Timing</span> – When to apply for new credit and when to WAIT</li>
+                    <li>• <span className="font-semibold">Positive Payment History Building</span> – Building good credit while we remove the bad</li>
+                    <li>• <span className="font-semibold">Credit Mix Strategy</span> – Understanding why account diversity matters (and how to build it safely)</li>
+                    <li>• <span className="font-semibold">Long-Term Protection</span> – Avoiding the traps that got you here in the first place</li>
                   </ul>
                 </div>
+                
                 <div>
-                  <p className="font-semibold mb-2">Customized Action Plan</p>
-                  <p>Your account manager creates a personalized roadmap based on your unique goals—not a one-size-fits-all template.</p>
+                  <p className="font-bold mb-2">Monthly Strategy Calls:</p>
+                  <p className="mb-2">Every 35 days, you're not just getting a "here's what got deleted" email. You're getting on the phone with your account manager to:</p>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• Review what changed (and why)</li>
+                    <li>• Adjust strategy based on results</li>
+                    <li>• Answer questions about next steps</li>
+                    <li>• Plan for major financial moves (buying a car, applying for a mortgage, etc.)</li>
+                  </ul>
                 </div>
+                
                 <div>
-                  <p className="font-semibold mb-2">Monthly Progress Reviews</p>
-                  <p>We don't just send updates—we walk you through your results, explain what's happening, and adjust strategy as needed.</p>
+                  <p className="font-bold mb-2">Customized Action Plan:</p>
+                  <p className="mb-2">No cookie-cutter templates. No "here's what we tell everyone." Your roadmap is built for YOUR goals:</p>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• Trying to buy a house in 6 months? We structure around that.</li>
+                    <li>• Need business funding? We position you for that.</li>
+                    <li>• Just want financial peace? We focus on stability.</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-            {/* STEP 3: OPTIMIZE */}
+            {/* PHASE 4: OPTIMIZE FOR MAXIMUM OPPORTUNITY */}
             <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-blue-500 flex flex-col">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                 <TrendingUp className="w-8 h-8 text-blue-600" />
               </div>
-              <div className="text-sm font-bold text-blue-600 mb-2">STEP 3</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">OPTIMIZE</h3>
-              <p className="text-gray-600 mb-6">Maximize Your Financial Opportunity</p>
+              <div className="text-sm font-bold text-blue-600 mb-2">PHASE 4</div>
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">OPTIMIZE FOR MAXIMUM OPPORTUNITY</h3>
+              <p className="text-gray-600 mb-6 italic">Positioning You to Win</p>
               
-              <div className="space-y-4 text-sm text-gray-700">
+              <div className="space-y-4 text-sm text-gray-700 flex-grow">
+                <p>We don't just repair your credit. We optimize your entire financial profile so when opportunity knocks, you're ready to answer.</p>
+                
                 <div>
-                  <p className="font-semibold mb-2">Funding Profile Optimization</p>
-                  <p>We don't stop at credit restoration. We help you position your entire financial profile for maximum approval odds on mortgages, business funding, and loans.</p>
-                </div>
-                <div>
-                  <p className="font-semibold mb-2">Strategic Credit Building</p>
-                  <p>Learn which accounts to open, when to apply, and how to manage them for long-term success.</p>
-                </div>
-                <div>
-                  <p className="font-semibold mb-2">Life After Restoration</p>
-                  <p className="mb-2">When you're ready, we help you understand:</p>
+                  <p className="font-bold mb-2">Funding Profile Optimization</p>
+                  <p className="mb-2">We help you understand:</p>
                   <ul className="space-y-1 text-gray-600">
-                    <li>• How to maintain your improved credit</li>
-                    <li>• When to refinance high-interest debts</li>
-                    <li>• Building wealth with good credit as your foundation</li>
+                    <li>• How lenders actually evaluate your profile (it's more than just your score)</li>
+                    <li>• Which accounts to open (and which to avoid)</li>
+                    <li>• How to position yourself for maximum approval odds</li>
+                    <li>• When to apply for mortgages, business funding, loans</li>
+                    <li>• How to leverage good credit for wealth building</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <p className="font-bold mb-2">Strategic Credit Building</p>
+                  <p>Learn which tradelines add value, which hurt you, and how to build strategically—not randomly.</p>
+                </div>
+                
+                <div>
+                  <p className="font-bold mb-2">Exit Strategy & Life After Restoration</p>
+                  <p className="mb-2">When you graduate from our program, you don't just leave with a better score. You leave with:</p>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• Complete understanding of how to maintain it</li>
+                    <li>• Knowledge of when to refinance high-interest debt</li>
+                    <li>• A plan to leverage your improved credit for financial growth</li>
+                    <li>• Confidence that you'll never need credit repair again</li>
                   </ul>
                 </div>
               </div>
