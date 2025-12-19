@@ -1659,7 +1659,7 @@ const Homepage = () => {
               </p>
               
               <p className="italic text-gray-600 mt-8">
-                — Evert Calderon, Founder & CEO
+                — Evert Jafet Calderon, Founder & CEO
               </p>
             </div>
 
