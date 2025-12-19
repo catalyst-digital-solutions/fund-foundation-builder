@@ -791,7 +791,7 @@ const BuildCredit = () => {
           
           {/* Not Sure CTA */}
           <div className="text-center bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8">
-            <p className="text-lg text-gray-700 mb-4">Not Sure Where to Start?</p>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Not Sure Where to Start?</h3>
             <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-8 rounded-lg shadow-lg transition-all">
               Schedule Free Credit Building Consultation
             </button>
