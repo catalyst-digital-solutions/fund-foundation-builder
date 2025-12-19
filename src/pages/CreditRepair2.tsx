@@ -12,6 +12,9 @@ import telemundoLogo from "@/assets/telemundo-logo.png";
 import cwLogo from "@/assets/cw-logo.png";
 import mesa360HeroImage from "@/assets/mesa360-hero-image.png";
 import mesa360HeroTeam from "@/assets/mesa360-hero-team.jpeg";
+import experianLogo from "@/assets/experian-logo.png";
+import equifaxLogo from "@/assets/equifax-logo.png";
+import transunionLogo from "@/assets/transunion-logo.png";
 const CreditRepair2 = () => {
   const timelineSectionRef = useRef<HTMLElement>(null);
   const [timelineVisible, setTimelineVisible] = useState(false);
@@ -1568,6 +1571,11 @@ const CreditRepair2 = () => {
               <div className="flex items-center gap-2 mb-4">
                 <BarChart3 className="w-5 h-5 text-blue-600" />
                 <h4 className="text-lg font-bold text-[#3E3E3E]">Real-Time 3-Bureau Monitoring</h4>
+              </div>
+              <div className="flex items-center justify-center gap-8 mb-6 py-4 bg-white rounded-lg">
+                <img src={experianLogo} alt="Experian" className="h-8 object-contain" />
+                <img src={equifaxLogo} alt="Equifax" className="h-8 object-contain" />
+                <img src={transunionLogo} alt="TransUnion" className="h-8 object-contain" />
               </div>
               <p className="text-gray-700 mb-4">
                 SmartCredit provides instant access to your credit reports from Experian, Equifax, and TransUnion. We need this to:
