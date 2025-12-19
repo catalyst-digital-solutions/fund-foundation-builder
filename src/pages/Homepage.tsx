@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Check,
   CheckCircle,
@@ -15,12 +16,14 @@ import {
   Building2,
   ShieldCheck,
   Users,
+  User,
   Target,
   Briefcase,
   Home,
   Heart,
   PlayCircle,
   ChevronDown,
+  ChevronRight,
   Star,
   TrendingUp,
   Award,
@@ -116,7 +119,7 @@ const FlipCard = ({ step }: { step: any }) => {
                 <span className="text-3xl font-bold text-white">{step.number}</span>
               </div>
               <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                What Happens Next
+                What Happens
               </h4>
               <p className="text-xl text-gray-800 leading-relaxed max-w-2xl">
                 {step.whatHappens}
@@ -181,7 +184,7 @@ const HowItWorksSection = () => {
       iconColor: 'text-purple-600',
       title: 'Custom Recommendations',
       description: 'Based on your analysis, we\'ll recommend the right solutions from our ecosystem—whether that\'s credit restoration, funding access, debt relief, or financial product comparisons.',
-      whatHappens: 'Our team creates a personalized action plan with transparent pricing and expected timelines.',
+      whatHappens: 'We present a clear roadmap tailored to your situation. You decide what fits your budget and timeline.',
       bgGradient: 'from-purple-100 via-purple-50 to-white',
       borderColor: 'border-purple-200',
       backBgGradient: 'from-purple-200 via-purple-100 to-purple-50'
@@ -191,9 +194,9 @@ const HowItWorksSection = () => {
       icon: TrendingUp,
       iconBg: 'from-green-100 to-green-200',
       iconColor: 'text-green-600',
-      title: 'Execute & Transform',
+      title: 'Guided Implementation',
       description: 'We guide you through implementation, provide ongoing support, and track your progress until you hit your goals. You\'re never alone in this process.',
-      whatHappens: 'Regular check-ins, progress updates, and adjustments as needed. We\'re with you every step of the way.',
+      whatHappens: 'Think of us as your strategic partner on speed dial. You\'re never navigating alone.',
       bgGradient: 'from-green-100 via-green-50 to-white',
       borderColor: 'border-green-200',
       backBgGradient: 'from-green-200 via-green-100 to-green-50'
@@ -205,10 +208,10 @@ const HowItWorksSection = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            How It <span className="text-[#f9c65d]">Works</span>
+            Getting Started is <span className="text-[#f9c65d]">Straightforward</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Three simple steps to transform your financial future
+            We've designed our process to be transparent, efficient, and friction-free—so you know exactly what to expect at every step.
           </p>
           <p className="text-base text-gray-500 mt-2 hidden md:block">
             Move your cursor over each card to see what happens next
@@ -371,8 +374,8 @@ const ServicesTabSystem = () => {
   return (
     <div className="relative">
       {/* Tab Navigation - Horizontal Scroll on Mobile, Grid on Desktop */}
-      <div className="mb-8 overflow-x-auto scrollbar-hide">
-        <div className="flex lg:grid lg:grid-cols-8 gap-3 min-w-max lg:min-w-0 pb-4 lg:pb-0">
+      <div className="mb-8 overflow-visible scrollbar-hide py-2 px-2">
+        <div className="flex lg:grid lg:grid-cols-8 gap-3 min-w-max lg:min-w-0 pb-4 lg:pb-2 overflow-x-auto lg:overflow-visible">
           {services.map((service) => {
             const ServiceIcon = service.icon;
             return (
@@ -499,13 +502,13 @@ const ServicesTabSystem = () => {
         <p className="text-gray-600 mb-4">
           Need help with credit restoration, business funding, or credit building?
         </p>
-        <a
-          href="#additional-services"
+        <Link
+          to="/for-consumers"
           className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-semibold"
         >
           View All Services
-          <ChevronDown className="w-4 h-4" />
-        </a>
+          <ChevronRight className="w-4 h-4" />
+        </Link>
       </div>
     </div>
   );
@@ -639,33 +642,7 @@ const Homepage = () => {
       </section>
 
       {/* ================================================================
-          SECTION 2: MEDIA TRUST STRIP
-      ================================================================ */}
-      <section className="bg-gradient-to-br from-[#fcf7e6] via-white to-[#fcf7e6] py-10 border-y border-gray-200 relative overflow-hidden">
-        {/* Subtle decorative elements */}
-        <div className="absolute top-0 left-0 w-32 h-32 bg-[#f9c65d]/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-        <div className="absolute bottom-0 right-0 w-40 h-40 bg-[#f9c65d]/10 rounded-full translate-x-1/2 translate-y-1/2"></div>
-        
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <p className="text-center text-gray-500 text-sm font-medium tracking-wider uppercase mb-6">
-            As Featured On
-          </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-center justify-items-center">
-            <img src={kget17Logo} alt="KGET 17" className="h-32 sm:h-40 md:h-48 w-auto max-w-[280px] md:max-w-[360px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
-            <img src={studio17Logo} alt="Studio 17" className="h-32 sm:h-40 md:h-48 w-auto max-w-[280px] md:max-w-[360px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
-            <img src={telemundoLogo} alt="Telemundo" className="h-32 sm:h-40 md:h-48 w-auto max-w-[280px] md:max-w-[360px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
-            <img src={cwLogo} alt="The CW" className="h-32 sm:h-40 md:h-48 w-auto max-w-[280px] md:max-w-[360px] opacity-80 hover:opacity-100 transition-opacity object-contain" />
-          </div>
-
-          <p className="text-center text-gray-600 text-sm mt-6">
-            Recognized across California and beyond as a trusted financial resource
-          </p>
-        </div>
-      </section>
-
-      {/* ================================================================
-          SECTION 2A: THE PAIN (EMOTIONAL AMPLIFICATION)
+          SECTION 2: THE PAIN (EMOTIONAL AMPLIFICATION)
       ================================================================ */}
       <section className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -700,6 +677,23 @@ const Homepage = () => {
             </p>
           </div>
 
+        </div>
+      </section>
+
+      {/* ================================================================
+          SECTION 2A: MEDIA TRUST STRIP
+      ================================================================ */}
+      <section className="bg-gray-100 py-12 px-6 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-center text-gray-600 text-sm mb-10">
+            Featured in local and national media for our proven financial solutions
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20 lg:gap-28">
+            <img src={kget17Logo} alt="KGET 17" className="h-16 md:h-20 w-auto object-contain" />
+            <img src={studio17Logo} alt="Studio 17" className="h-20 md:h-28 w-auto object-contain" />
+            <img src={telemundoLogo} alt="Telemundo" className="h-16 md:h-20 w-auto object-contain" />
+            <img src={cwLogo} alt="The CW" className="h-14 md:h-18 w-auto object-contain" />
+          </div>
         </div>
       </section>
 
@@ -910,10 +904,10 @@ const Homepage = () => {
                 </li>
               </ul>
               
-              <a href="/credit-repair-2" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold">
+              <Link to="/for-consumers" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold">
                 View All Credit Services
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
 
             {/* Business Funding */}
@@ -945,10 +939,10 @@ const Homepage = () => {
                 </li>
               </ul>
               
-              <a href="/business-funding" className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold">
+              <Link to="/for-businesses" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold">
                 Explore Business Solutions
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
 
             {/* Build Credit */}
@@ -980,10 +974,10 @@ const Homepage = () => {
                 </li>
               </ul>
               
-              <a href="/business-credit" className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold">
+              <Link to="/build-credit" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold">
                 Start Building Credit
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
 
           </div>
@@ -1017,62 +1011,6 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* ================================================================
-          SECTION 4A: THE TRANSFORMATION (EMOTIONAL FUTURE STATE)
-      ================================================================ */}
-      <section className="py-16 md:py-24 bg-[#3e3e3e] text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
-            Imagine Your Life <span className="text-amber-400">6 Months From Now</span>
-          </h2>
-
-          <div className="space-y-6 text-lg md:text-xl leading-relaxed">
-            <p>
-              You check your credit score and it's climbed over 100 points. The collections are gone. The late payments—removed. Your report is clean.
-            </p>
-            
-            <p>
-              You apply for that apartment you've been eyeing. <span className="font-bold text-green-400">Approved.</span>
-            </p>
-            
-            <p>
-              You walk into the car dealership with confidence instead of dread. The finance manager comes back smiling. <span className="font-bold text-green-400">Approved at 6.9% instead of 18%.</span>
-            </p>
-            
-            <p>
-              You tell your kids you're buying a house. They don't have to move again. You're building something they can inherit.
-            </p>
-            
-            <p className="text-2xl font-bold text-amber-400 pt-6">
-              This isn't a fantasy. This is what happens when you have the right partner.
-            </p>
-            
-            <div className="pt-8 space-y-4 text-gray-300">
-              <p>
-                You stop living paycheck to paycheck because you consolidated that debt at a fraction of the interest.
-              </p>
-              <p>
-                You stop losing sleep because you have estate planning in place—your family is protected.
-              </p>
-              <p>
-                You stop wondering "what if" because you secured that business funding and finally launched.
-              </p>
-            </div>
-            
-            <div className="pt-8 space-y-4 text-xl font-semibold">
-              <p>This is the freedom good credit creates.</p>
-              <p>This is the opportunity smart money decisions unlock.</p>
-              <p>This is the legacy Mesa Group helps you build.</p>
-            </div>
-            
-            <p className="text-2xl font-bold text-white pt-8">
-              Your financial past doesn't have to define your financial future. Not anymore.
-            </p>
-          </div>
-
-        </div>
-      </section>
 
       {/* ================================================================
           SECTION 4B: TRANSFORMATION JOURNEY (A/B TEST VARIANT)
@@ -1294,7 +1232,7 @@ const Homepage = () => {
                 </div>
                 
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Execute & Transform
+                  Guided Implementation
                 </h3>
                 
                 <p className="text-gray-700 leading-relaxed mb-6">
@@ -1350,11 +1288,11 @@ const Homepage = () => {
             
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 hover:shadow-xl transition-shadow">
               <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
-                <Home className="w-8 h-8 text-white" />
+                <User className="w-8 h-8 text-white" />
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                First-Time Buyers
+                Young Adults
               </h3>
               
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -1364,10 +1302,10 @@ const Homepage = () => {
               <div className="space-y-2">
                 <p className="text-sm font-semibold text-gray-900">Typical needs:</p>
                 <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• Credit restoration</li>
-                  <li>• Debt consolidation</li>
-                  <li>• Pre-approval prep</li>
-                  <li>• Down payment strategies</li>
+                  <li>• Credit building tools</li>
+                  <li>• First-time credit cards</li>
+                  <li>• Student loan refinancing</li>
+                  <li>• Financial education</li>
                 </ul>
               </div>
             </div>
@@ -1382,16 +1320,16 @@ const Homepage = () => {
               </h3>
               
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Expanding families needing to protect their future through estate planning, life insurance, and strategic credit optimization.
+                Working toward homeownership, managing household debt, and making smart financial decisions that impact their children's future.
               </p>
               
               <div className="space-y-2">
                 <p className="text-sm font-semibold text-gray-900">Typical needs:</p>
                 <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• Life insurance</li>
+                  <li>• Credit restoration</li>
+                  <li>• Mortgage preparation</li>
+                  <li>• Debt consolidation</li>
                   <li>• Estate planning</li>
-                  <li>• Credit optimization</li>
-                  <li>• Savings strategies</li>
                 </ul>
               </div>
             </div>
@@ -1713,7 +1651,7 @@ const Homepage = () => {
               </p>
               
               <p className="italic text-gray-600 mt-8">
-                — Evert Calderon, Founder & CEO
+                — Evert Jafet Calderon, Founder & CEO
               </p>
             </div>
 
@@ -1810,27 +1748,27 @@ const Homepage = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Licensed & Compliant</span>
+              <span className="text-gray-700">Serving since 2023</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">A+ Rated Partners</span>
+              <span className="text-gray-700">2500+ Clients Served</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Nationwide from Bakersfield</span>
+              <span className="text-gray-700">150+ 5-Star Reviews</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Bilingual Support</span>
+              <span className="text-gray-700">Trilingual Support</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">2,500+ Clients Served</span>
+              <span className="text-gray-700">Helping Clients Nationwide</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">150+ Five-Star Reviews</span>
+              <span className="text-gray-700">100% Customized Solutions</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />

@@ -1,10 +1,10 @@
 import React from 'react';
 import ctaImage from '@/assets/credit-monitoring-cta-03.png';
-import smartcreditLogoLight from '@/assets/smartcredit-logo-light.png';
+import PoweredBySmartCredit from '@/components/PoweredBySmartCredit';
 
 const EmotionalCTA3 = () => {
   const handleClick = () => {
-    window.open('https://smartcredit.com/join/?PID=24603&planType=PREMIUM', '_blank', 'noopener,noreferrer');
+    window.open('https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -28,10 +28,7 @@ const EmotionalCTA3 = () => {
         >
           Claim Your Peace of Mind →
         </button>
-        <div className="flex items-center justify-center gap-2 mt-4">
-          <span className="text-sm text-white drop-shadow-md">Powered by</span>
-          <img src={smartcreditLogoLight} alt="SmartCredit" className="h-5" />
-        </div>
+        <PoweredBySmartCredit variant="dark" className="mt-4" />
       </div>
     </section>
   );

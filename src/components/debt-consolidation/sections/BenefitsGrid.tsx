@@ -36,7 +36,7 @@ const BenefitsGrid = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-amber-50 to-orange-50">
+    <section className="py-16 md:py-24 bg-gradient-to-br from-amber-50 to-[#fff8e7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Headline */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -53,8 +53,8 @@ const BenefitsGrid = () => {
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-amber-100">
-                <div className="w-14 h-14 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg flex items-center justify-center mb-4">
+              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 border border-[#bb9446]/30">
+                <div className="w-14 h-14 bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-lg flex items-center justify-center mb-4">
                   <Icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>

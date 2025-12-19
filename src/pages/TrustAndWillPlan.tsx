@@ -334,7 +334,7 @@ const TrustAndWillPlan = () => {
       </section>
 
       {/* SECTION 3: WILL VS TRUST COMPARISON */}
-      <section className="bg-[#E5D2AF] py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-[#F2E5C8] py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4 text-center">
@@ -352,10 +352,10 @@ const TrustAndWillPlan = () => {
             <div className="bg-white rounded-lg p-8 shadow-lg">
               <div className="text-center mb-6">
                 <div className="flex justify-center mb-4">
-                  <FileText className="w-16 h-16 text-blue-600" />
+                  <FileText className="w-16 h-16 text-teal-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">Will Estate Plan</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-2">$199</div>
+                <div className="text-3xl font-bold text-teal-600 mb-2">$199</div>
                 <div className="text-sm text-gray-600">Individual | $299 Couples</div>
               </div>
               
@@ -404,7 +404,7 @@ const TrustAndWillPlan = () => {
                 </ul>
               </div>
               
-              <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+              <div className="mt-6 p-4 bg-teal-50 rounded-lg">
                 <div className="text-sm text-gray-700">
                   <strong>Note:</strong> Estate goes through probate (6-12 months, public record, 3-7% fees)
                 </div>
@@ -493,8 +493,8 @@ const TrustAndWillPlan = () => {
                 </ul>
               </div>
               
-              <div className="mt-6 p-4 bg-purple-50 rounded-lg">
-                <div className="text-sm text-gray-700">
+              <div className="mt-6 p-4 bg-mgc-gradient rounded-lg">
+                <div className="text-sm text-white font-medium">
                   <strong>Benefit:</strong> Assets transfer immediately and privately—no court, no delays, no public record
                 </div>
               </div>
@@ -649,7 +649,7 @@ const TrustAndWillPlan = () => {
       <EmotionalCTA2 />
 
       {/* SECTION 5: PRICING DETAILS */}
-      <section className="bg-[#E5D2AF] py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-[#F2E5C8] py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4 text-center">
@@ -668,12 +668,12 @@ const TrustAndWillPlan = () => {
               <h3 className="text-2xl font-bold text-[#3E3E3E] mb-6 text-center">Will Estate Plan</h3>
               
               <div className="text-center mb-6">
-                <div className="text-5xl font-bold text-amber-600 mb-2">$199</div>
+                <div className="text-5xl font-bold text-[#f9c65d] mb-2">$199</div>
                 <div className="text-gray-600">Individual Plan</div>
               </div>
               
               <div className="text-center mb-8 pb-8 border-b border-gray-200">
-                <div className="text-4xl font-bold text-amber-600 mb-2">$299</div>
+                <div className="text-4xl font-bold text-[#f9c65d] mb-2">$299</div>
                 <div className="text-gray-600">Couples Plan</div>
                 <div className="text-sm text-green-600 font-semibold mt-1">Save $99</div>
               </div>
@@ -881,7 +881,7 @@ const TrustAndWillPlan = () => {
       </section>
 
       {/* SECTION 7: WHO NEEDS ESTATE PLANNING */}
-      <section className="bg-[#E5D2AF] py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-[#F2E5C8] py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4 text-center">
@@ -1340,11 +1340,11 @@ const TrustAndWillPlan = () => {
           {/* Two-Column Button Grid */}
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {/* Primary Option - Trust Plan */}
-            <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-left text-white">
-              <div className="text-xs font-bold mb-2 tracking-wide">MOST POPULAR</div>
-              <h3 className="text-2xl font-bold mb-4">Trust Estate Plan</h3>
-              <div className="text-4xl font-bold mb-2">$499</div>
-              <p className="text-sm opacity-90 mb-6">Revocable Living Trust + All Will Plan benefits</p>
+            <div className="bg-mgc-gradient rounded-2xl p-8 text-left">
+              <div className="text-xs font-bold mb-2 tracking-wide text-[#3E3E3E]">MOST POPULAR</div>
+              <h3 className="text-2xl font-bold mb-4 text-[#3E3E3E]">Trust Estate Plan</h3>
+              <div className="text-4xl font-bold mb-2 text-[#3E3E3E]">$499</div>
+              <p className="text-sm text-[#3E3E3E]/80 mb-6">Revocable Living Trust + All Will Plan benefits</p>
               <button
                 onClick={handleCTAClick}
                 className="block w-full text-center py-4 px-6 bg-white hover:bg-gray-100 text-gray-900 font-semibold rounded-lg transition-colors mb-2"
@@ -1352,7 +1352,7 @@ const TrustAndWillPlan = () => {
                 Choose Trust Plan
               </button>
               <PoweredByTrustAndWill variant="dark" className="mb-4" />
-              <div className="space-y-2 text-sm">
+              <div className="space-y-2 text-sm text-[#3E3E3E]">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4" />
                   <span>Avoids probate entirely</span>

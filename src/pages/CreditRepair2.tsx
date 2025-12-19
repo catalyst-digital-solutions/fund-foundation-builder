@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, Search, Lightbulb, MapPin, ChevronDown, Building2, Globe, Phone, Shield, Users, FileText, TrendingUp, DollarSign, Clock, Award, Home, Car, CreditCard, GraduationCap, Briefcase, Heart, Scale, MessageSquare, Mail, CheckCircle2, XCircle, ArrowRight, Zap } from "lucide-react";
+import { Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, Search, Lightbulb, MapPin, ChevronDown, Building2, Globe, Phone, Shield, Users, FileText, TrendingUp, DollarSign, Clock, Award, Home, Car, CreditCard, GraduationCap, Briefcase, Heart, Scale, MessageSquare, Mail, CheckCircle2, XCircle, ArrowRight, Zap, Crown, Gem } from "lucide-react";
 import EmotionalCTA1 from "@/components/credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/credit-repair/sections/EmotionalCTA3";
@@ -11,8 +11,30 @@ import studio17Logo from "@/assets/studio-17-logo.png";
 import telemundoLogo from "@/assets/telemundo-logo.png";
 import cwLogo from "@/assets/cw-logo.png";
 import mesa360HeroImage from "@/assets/mesa360-hero-image.png";
-import mesa360LogoMockup from "@/assets/mesa360-logo-mockup.jpg";
+import mesa360HeroTeam from "@/assets/mesa360-hero-team.jpeg";
+import experianLogo from "@/assets/experian-logo.png";
+import equifaxLogo from "@/assets/equifax-logo.png";
+import transunionLogo from "@/assets/transunion-logo.png";
 const CreditRepair2 = () => {
+  const timelineSectionRef = useRef<HTMLElement>(null);
+  const [timelineVisible, setTimelineVisible] = useState(false);
+
+  // Scroll animation for timeline section
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setTimelineVisible(true);
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+    if (timelineSectionRef.current) {
+      observer.observe(timelineSectionRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
   const handleCTAClick = () => {
     window.open("https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09", "_blank", "noopener,noreferrer");
   };
@@ -64,7 +86,7 @@ const CreditRepair2 = () => {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-700">
                   <Globe className="w-5 h-5 text-[#f9c65d]" />
-                  <span>🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano</span>
+                  <span>🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi</span>
                 </div>
               </div>
 
@@ -84,7 +106,12 @@ const CreditRepair2 = () => {
 
             {/* RIGHT COLUMN - Hero Image */}
             <div className="hidden lg:block">
-              <img src={mesa360LogoMockup} alt="Mesa360 Credit System logo with golden arrows" className="rounded-2xl shadow-2xl" loading="eager" />
+              <img src={mesa360HeroTeam} alt="Mesa Group Capital team in front of client's new home" className="rounded-2xl shadow-2xl" loading="eager" />
+              <div className="mt-4 px-2">
+                <p className="text-sm text-gray-600 italic leading-relaxed text-center">
+                  <span className="text-[#f9c65d] font-semibold not-italic">Real clients</span> with real results — achieving their dream of homeownership through the <span className="font-semibold text-gray-700">Mesa360 Credit System™</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -155,7 +182,7 @@ const CreditRepair2 = () => {
               </div>
               <div className="flex items-start gap-3">
                 <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
-                <span>Burned by "credit repair" companies that disappeared with your money</span>
+                <span>Burned by "credit restoration" companies that disappeared with your money</span>
               </div>
             </div>
 
@@ -174,20 +201,21 @@ const CreditRepair2 = () => {
       {/* ============================================ */}
       {/* SECTION 4A: Mesa360 Credit System Hero */}
       {/* ============================================ */}
-      <section 
-        id="how-it-works" 
-        className="relative py-20 md:py-28 px-6 md:px-8 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url(${mesa360HeroImage})` }}
-      >
+      <section id="how-it-works" className="relative py-20 md:py-28 px-6 md:px-8 bg-cover bg-center bg-fixed" style={{
+      backgroundImage: `url(${mesa360HeroImage})`
+    }}>
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/60" />
         
         <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            The Mesa360 Credit System™: <span className="text-[#f9c65d]">Repair. Rebuild. Optimize.</span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            The Mesa360 Credit System™: <span className="text-[#f9c65d]">Your Complete Financial Transformation Blueprint</span>
           </h2>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Unlike cookie-cutter credit repair companies that use generic templates and offshore call centers, Mesa Group provides a <strong className="text-white">personalized, legally compliant credit restoration strategy</strong>—backed by a local team you can actually talk to.
+            Here's what makes us different: We don't just erase bad marks and disappear. We walk beside you through the entire journey—from breaking free of the mistakes holding you back, to building the financial foundation that changes everything, to positioning you for opportunities you thought were out of reach.
+          </p>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto mt-4">
+            This isn't a service. It's a partnership. It's a transformation. It's your second chance, done right.
           </p>
         </div>
       </section>
@@ -198,113 +226,185 @@ const CreditRepair2 = () => {
       <section className="bg-gradient-to-br from-gray-50 to-amber-50 py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
 
-          {/* 3-Step Process */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16 items-stretch">
-            {/* STEP 1: REPAIR */}
+          {/* 4-Phase Process */}
+          <div className="grid md:grid-cols-2 gap-8 mb-16 items-stretch">
+            {/* PHASE 1: BREAK DOWN THE BARRIERS */}
             <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-amber-500 flex flex-col">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <Search className="w-8 h-8 text-[#f9c65d]" />
               </div>
-              <div className="text-sm font-bold text-[#f9c65d] mb-2">STEP 1</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">REPAIR</h3>
-              <p className="text-gray-600 mb-6">Remove What's Holding You Back</p>
+              <div className="text-sm font-bold text-[#f9c65d] mb-2">PHASE 1</div>
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">BREAK DOWN THE BARRIERS</h3>
+              <p className="text-gray-600 mb-6 italic">What's Really Holding You Back</p>
               
-              <div className="space-y-4 text-sm text-gray-700">
+              <div className="space-y-4 text-sm text-gray-700 flex-grow">
+                <p>Before we can move forward, we need to understand what's anchoring you to the past. Not just the obvious stuff—but the hidden damage, the errors, the items that shouldn't even be there.</p>
+                
                 <div>
-                  <p className="font-semibold mb-2">Free Credit Analysis</p>
-                  <p>We review your credit report from all three bureaus to identify inaccurate, outdated, or unverifiable items.</p>
+                  <p className="font-bold mb-2">Deep Credit Forensics</p>
+                  <p>We pull your credit from all three bureaus—Experian, Equifax, TransUnion—and perform a forensic analysis. Not a 5-minute glance. A real investigation.</p>
                 </div>
+                
                 <div>
-                  <p className="font-semibold mb-2">What We Look For:</p>
+                  <p className="font-bold mb-2">What We're Looking For:</p>
                   <ul className="space-y-1 text-gray-600">
-                    <li>• Collections that aren't yours</li>
-                    <li>• Late payments reported incorrectly</li>
-                    <li>• Charge-offs with missing documentation</li>
-                    <li>• Bankruptcies that should've been removed</li>
-                    <li>• Unauthorized inquiries</li>
+                    <li>• Collections that aren't yours or can't be verified</li>
+                    <li>• Late payments reported incorrectly (wrong dates, wrong amounts)</li>
+                    <li>• Charge-offs missing required documentation</li>
+                    <li>• Bankruptcies that should have aged off years ago</li>
+                    <li>• Inquiries you never authorized</li>
+                    <li>• Accounts reporting wrong balances or fabricated payment history</li>
+                    <li>• Identity theft red flags hiding in plain sight</li>
                   </ul>
                 </div>
+                
                 <div>
-                  <p className="font-semibold mb-2">Custom Dispute Strategy</p>
-                  <p>No cookie-cutter letters. We craft personalized dispute strategies based on your unique credit situation and FCRA/FDCPA guidelines.</p>
+                  <p className="font-bold mb-2">The Truth Moment:</p>
+                  <p>Most people discover 3-7 items on their report that are either completely inaccurate or can't be legally verified. You're not asking for favors. You're demanding accuracy. That's your right under federal law.</p>
                 </div>
+                
                 <div>
-                  <p className="font-semibold mb-2">We Handle the Disputes</p>
-                  <p>We manage all communication with credit bureaus and creditors on your behalf. No stress, no confusion—just progress.</p>
-                </div>
-                <div>
-                  <p className="font-semibold mb-2">Advanced Methods:</p>
+                  <p className="font-bold mb-2">What You Get:</p>
                   <ul className="space-y-1 text-gray-600">
-                    <li>• Digital uploads to bureaus</li>
-                    <li>• Direct Experian uploads + rapid inquiry removal</li>
-                    <li>• CFPB complaints when necessary</li>
-                    <li>• Metro 2 challenges for complex items</li>
-                    <li>• Legal team escalation for FCRA violations</li>
+                    <li>• Free 3-Bureau Credit Analysis (normally $50+ value)</li>
+                    <li>• Written breakdown of every negative item—and whether it's disputable</li>
+                    <li>• Honest assessment of your timeline and what's realistic</li>
+                    <li>• Custom dispute strategy built for YOUR situation, not a template</li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            {/* STEP 2: REBUILD */}
+            {/* PHASE 2: REPAIR WHAT'S BROKEN */}
+            <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-orange-500 flex flex-col">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                <FileText className="w-8 h-8 text-orange-600" />
+              </div>
+              <div className="text-sm font-bold text-orange-600 mb-2">PHASE 2</div>
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">REPAIR WHAT'S BROKEN</h3>
+              <p className="text-gray-600 mb-6 italic">Removing the Weight You've Been Carrying</p>
+              
+              <div className="space-y-4 text-sm text-gray-700 flex-grow">
+                <p>Now the real work begins. We don't send generic letters. We don't use offshore call centers. We don't "set it and forget it."</p>
+                
+                <p>Your dedicated account manager—a real person who knows your name, your story, your goals—builds a custom dispute strategy based on FCRA/FDCPA law, your unique credit profile, and the specific violations we found.</p>
+                
+                <div>
+                  <p className="font-bold mb-2">Our Arsenal of Advanced Methods:</p>
+                  <ul className="space-y-1 text-gray-600">
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /><span><strong>Direct Digital Uploads</strong> to all 3 bureaus (faster than mail, harder to ignore)</span></li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /><span><strong>Experian Rapid Inquiry Removal</strong> (proprietary access most companies don't have)</span></li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /><span><strong>Direct Creditor & Collector Disputes</strong> (going straight to the source)</span></li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /><span><strong>CFPB Complaints</strong> (when bureaus stonewall you, we escalate to federal oversight)</span></li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /><span><strong>Metro 2 Challenges</strong> (advanced formatting disputes for complex items)</span></li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /><span><strong>Legal Team Escalation</strong> (when they violate FCRA, we bring in the attorneys)</span></li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <p className="font-bold mb-2">We Handle Everything:</p>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• All communication with bureaus and creditors</li>
+                    <li>• All follow-ups, re-disputes, escalations</li>
+                    <li>• All documentation, tracking, and compliance</li>
+                    <li>• Every 35 days, you get a detailed progress update in your client portal</li>
+                  </ul>
+                </div>
+                
+                <p className="font-semibold text-gray-800">You don't lift a finger. You just watch the progress.</p>
+              </div>
+            </div>
+
+            {/* PHASE 3: BUILD YOUR NEW FOUNDATION */}
             <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-green-500 flex flex-col">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
                 <Users className="w-8 h-8 text-green-600" />
               </div>
-              <div className="text-sm font-bold text-green-600 mb-2">STEP 2</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">REBUILD</h3>
-              <p className="text-gray-600 mb-6">Build a Stronger Foundation</p>
+              <div className="text-sm font-bold text-green-600 mb-2">PHASE 3</div>
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">BUILD YOUR NEW FOUNDATION</h3>
+              <p className="text-gray-600 mb-6 italic">Learning to Win Long-Term</p>
               
-              <div className="space-y-4 text-sm text-gray-700">
+              <div className="space-y-4 text-sm text-gray-700 flex-grow">
+                <p>Here's where most credit repair companies fail you: they remove the bad stuff, take your money, and ghost you. Then 6 months later, you're back where you started because nobody taught you how to actually BUILD credit.</p>
+                
+                <p className="font-semibold">Not here. Not with Mesa360.</p>
+                
                 <div>
-                  <p className="font-semibold mb-2">1-on-1 Financial Coaching</p>
-                  <p>Removing negative items is only half the battle. Our account managers teach you how to build and maintain good credit long-term.</p>
+                  <p className="font-bold mb-2">1-on-1 Financial Coaching (Included in Every Plan)</p>
+                  <p>Your account manager doesn't just file disputes. They teach you the game.</p>
                 </div>
+                
                 <div>
-                  <p className="font-semibold mb-2">You'll Learn:</p>
+                  <p className="font-bold mb-2">You'll Master:</p>
                   <ul className="space-y-1 text-gray-600">
-                    <li>• How to use credit cards responsibly</li>
-                    <li>• When to apply for new credit</li>
-                    <li>• Building positive payment history</li>
-                    <li>• Understanding credit mix</li>
-                    <li>• Protecting your credit long-term</li>
+                    <li>• <span className="font-semibold">Credit Utilization Mastery</span> – How to use cards without hurting your score (it's not just "keep it under 30%")</li>
+                    <li>• <span className="font-semibold">Strategic Application Timing</span> – When to apply for new credit and when to WAIT</li>
+                    <li>• <span className="font-semibold">Positive Payment History Building</span> – Building good credit while we remove the bad</li>
+                    <li>• <span className="font-semibold">Credit Mix Strategy</span> – Understanding why account diversity matters (and how to build it safely)</li>
+                    <li>• <span className="font-semibold">Long-Term Protection</span> – Avoiding the traps that got you here in the first place</li>
                   </ul>
                 </div>
+                
                 <div>
-                  <p className="font-semibold mb-2">Customized Action Plan</p>
-                  <p>Your account manager creates a personalized roadmap based on your unique goals—not a one-size-fits-all template.</p>
+                  <p className="font-bold mb-2">Monthly Strategy Calls:</p>
+                  <p className="mb-2">Every 35 days, you're not just getting a "here's what got deleted" email. You're getting on the phone with your account manager to:</p>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• Review what changed (and why)</li>
+                    <li>• Adjust strategy based on results</li>
+                    <li>• Answer questions about next steps</li>
+                    <li>• Plan for major financial moves (buying a car, applying for a mortgage, etc.)</li>
+                  </ul>
                 </div>
+                
                 <div>
-                  <p className="font-semibold mb-2">Monthly Progress Reviews</p>
-                  <p>We don't just send updates—we walk you through your results, explain what's happening, and adjust strategy as needed.</p>
+                  <p className="font-bold mb-2">Customized Action Plan:</p>
+                  <p className="mb-2">No cookie-cutter templates. No "here's what we tell everyone." Your roadmap is built for YOUR goals:</p>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• Trying to buy a house in 6 months? We structure around that.</li>
+                    <li>• Need business funding? We position you for that.</li>
+                    <li>• Just want financial peace? We focus on stability.</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-            {/* STEP 3: OPTIMIZE */}
+            {/* PHASE 4: OPTIMIZE FOR MAXIMUM OPPORTUNITY */}
             <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-blue-500 flex flex-col">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                 <TrendingUp className="w-8 h-8 text-blue-600" />
               </div>
-              <div className="text-sm font-bold text-blue-600 mb-2">STEP 3</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">OPTIMIZE</h3>
-              <p className="text-gray-600 mb-6">Maximize Your Financial Opportunity</p>
+              <div className="text-sm font-bold text-blue-600 mb-2">PHASE 4</div>
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">OPTIMIZE FOR MAXIMUM OPPORTUNITY</h3>
+              <p className="text-gray-600 mb-6 italic">Positioning You to Win</p>
               
-              <div className="space-y-4 text-sm text-gray-700">
+              <div className="space-y-4 text-sm text-gray-700 flex-grow">
+                <p>We don't just repair your credit. We optimize your entire financial profile so when opportunity knocks, you're ready to answer.</p>
+                
                 <div>
-                  <p className="font-semibold mb-2">Funding Profile Optimization</p>
-                  <p>We don't stop at credit repair. We help you position your entire financial profile for maximum approval odds on mortgages, business funding, and loans.</p>
-                </div>
-                <div>
-                  <p className="font-semibold mb-2">Strategic Credit Building</p>
-                  <p>Learn which accounts to open, when to apply, and how to manage them for long-term success.</p>
-                </div>
-                <div>
-                  <p className="font-semibold mb-2">Life After Restoration</p>
-                  <p className="mb-2">When you're ready, we help you understand:</p>
+                  <p className="font-bold mb-2">Funding Profile Optimization</p>
+                  <p className="mb-2">We help you understand:</p>
                   <ul className="space-y-1 text-gray-600">
-                    <li>• How to maintain your improved credit</li>
-                    <li>• When to refinance high-interest debts</li>
-                    <li>• Building wealth with good credit as your foundation</li>
+                    <li>• How lenders actually evaluate your profile (it's more than just your score)</li>
+                    <li>• Which accounts to open (and which to avoid)</li>
+                    <li>• How to position yourself for maximum approval odds</li>
+                    <li>• When to apply for mortgages, business funding, loans</li>
+                    <li>• How to leverage good credit for wealth building</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <p className="font-bold mb-2">Strategic Credit Building</p>
+                  <p>Learn which tradelines add value, which hurt you, and how to build strategically—not randomly.</p>
+                </div>
+                
+                <div>
+                  <p className="font-bold mb-2">Exit Strategy & Life After Restoration</p>
+                  <p className="mb-2">When you graduate from our program, you don't just leave with a better score. You leave with:</p>
+                  <ul className="space-y-1 text-gray-600">
+                    <li>• Complete understanding of how to maintain it</li>
+                    <li>• Knowledge of when to refinance high-interest debt</li>
+                    <li>• A plan to leverage your improved credit for financial growth</li>
+                    <li>• Confidence that you'll never need credit repair again</li>
                   </ul>
                 </div>
               </div>
@@ -313,27 +413,37 @@ const CreditRepair2 = () => {
 
           {/* Why It Works */}
           <div className="bg-[#3E3E3E] rounded-2xl p-8 md:p-12">
-            <h3 className="text-2xl font-bold text-white mb-8 text-center">Why the Mesa360 Credit System™ Works</h3>
-            <div className="grid md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <Zap className="w-10 h-10 text-amber-400 mx-auto mb-3" />
-                <p className="font-semibold text-white mb-2">It's Comprehensive</p>
-                <p className="text-sm text-gray-300">We educate, support, and coach you through the entire transformation.</p>
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">WHY THE <span className="text-[#f9c65d]">MESA360 CREDIT SYSTEM™</span> ACTUALLY WORKS</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="text-center md:text-left">
+                <Zap className="w-10 h-10 text-amber-400 mx-auto md:mx-0 mb-3" />
+                <p className="font-bold text-white text-lg mb-2">It's Comprehensive</p>
+                <p className="text-gray-300">We don't just dispute items. We educate you, support you, and coach you through total financial transformation.</p>
               </div>
-              <div className="text-center">
-                <Users className="w-10 h-10 text-amber-400 mx-auto mb-3" />
-                <p className="font-semibold text-white mb-2">It's Personalized</p>
-                <p className="text-sm text-gray-300">Your credit situation is unique. Your strategy should be too.</p>
+              <div className="text-center md:text-left">
+                <Users className="w-10 h-10 text-amber-400 mx-auto md:mx-0 mb-3" />
+                <p className="font-bold text-white text-lg mb-2">It's Personalized</p>
+                <p className="text-gray-300">Your credit situation is unique. Your strategy should be too. No generic templates. No one-size-fits-all.</p>
               </div>
-              <div className="text-center">
-                <Award className="w-10 h-10 text-amber-400 mx-auto mb-3" />
-                <p className="font-semibold text-white mb-2">It's Proven</p>
-                <p className="text-sm text-gray-300">2,500+ clients. 150+ five-star reviews. 83-point average increase.</p>
+              <div className="text-center md:text-left">
+                <Award className="w-10 h-10 text-amber-400 mx-auto md:mx-0 mb-3" />
+                <p className="font-bold text-white text-lg mb-2">It's Proven</p>
+                <ul className="text-gray-300 space-y-1">
+                  <li>• 2,500+ clients nationwide</li>
+                  <li>• 150+ five-star reviews</li>
+                  <li>• 83-point average score increase</li>
+                  <li>• Real results you can verify</li>
+                </ul>
               </div>
-              <div className="text-center">
-                <Shield className="w-10 h-10 text-amber-400 mx-auto mb-3" />
-                <p className="font-semibold text-white mb-2">It's Legal</p>
-                <p className="text-sm text-gray-300">FCRA/FDCPA compliant. No shady tactics that put you at risk.</p>
+              <div className="text-center md:text-left">
+                <Shield className="w-10 h-10 text-amber-400 mx-auto md:mx-0 mb-3" />
+                <p className="font-bold text-white text-lg mb-2">It's Legal</p>
+                <p className="text-gray-300">We follow FCRA/FDCPA regulations to the letter. No shady tactics. No gray areas. No putting you at risk.</p>
+              </div>
+              <div className="text-center md:text-left lg:col-span-2">
+                <Scale className="w-10 h-10 text-amber-400 mx-auto md:mx-0 mb-3" />
+                <p className="font-bold text-white text-lg mb-2">It's Backed by Real Legal Power</p>
+                <p className="text-gray-300">When creditors or bureaus violate your rights, we don't back down. We escalate to our legal team—real attorneys who've recovered thousands in settlements for clients whose rights were violated.</p>
               </div>
             </div>
           </div>
@@ -347,7 +457,211 @@ const CreditRepair2 = () => {
         </div>
       </section>
 
-      
+      {/* ============================================ */}
+      {/* SECTION 4C: REALISTIC TIMELINE & EXPECTATIONS */}
+      {/* ============================================ */}
+      <section ref={timelineSectionRef} style={{
+      background: 'linear-gradient(to bottom, #2d2d2d, #1a1a1a, #2d2d2d)'
+    }} className="py-16 md:py-24 px-6 md:px-8 relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-mgc-yellow to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-mgc-gold to-transparent" />
+        
+        <div className="max-w-5xl mx-auto relative z-10">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              REALISTIC TIMELINE & <span className="text-mgc-yellow">EXPECTATIONS</span>
+            </h2>
+            <div className="w-24 h-1 bg-mgc-gold mx-auto mb-8" />
+          </div>
+
+          {/* The Truth Section */}
+          <div className="bg-red-900/30 border border-red-500/30 rounded-2xl p-6 md:p-8 mb-10">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                <AlertTriangle className="w-6 h-6 text-red-400" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">The Truth About Credit Restoration:</h3>
+                <p className="text-mgc-tan text-lg">
+                  Anyone promising "30-day miracles" or "guaranteed 100-point increases" is lying to you—and possibly <span className="text-red-400 font-semibold">breaking federal law</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Visual Timeline */}
+          <div className="mb-12">
+            <h3 className="text-xl font-bold text-white mb-8 text-center">Here's What's Real:</h3>
+            
+            {/* Timeline Container */}
+            <div className="relative">
+              {/* Timeline Line - animated on scroll */}
+              <div className="hidden md:block absolute top-8 left-0 right-0 h-1 overflow-hidden" style={{
+              backgroundColor: '#444'
+            }}>
+                <div className="h-full bg-gradient-to-r from-mgc-yellow via-mgc-gold to-green-400 transition-all duration-1000 ease-out" style={{
+                width: timelineVisible ? '100%' : '0%',
+                opacity: timelineVisible ? 1 : 0
+              }} />
+              </div>
+              
+              {/* Timeline Points */}
+              <div className="grid md:grid-cols-4 gap-6 md:gap-4">
+                {/* Day 1 */}
+                <div className="relative text-center transition-all duration-700 ease-out" style={{
+                opacity: timelineVisible ? 1 : 0,
+                transform: timelineVisible ? 'translateY(0)' : 'translateY(40px)',
+                transitionDelay: '200ms'
+              }}>
+                  <div className="w-16 h-16 bg-mgc-yellow rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-mgc-yellow/30 relative z-10 transform transition-transform duration-300 hover:scale-110">
+                    <span className="text-mgc-dark-gray font-bold text-sm">DAY 1</span>
+                  </div>
+                  <div className="rounded-xl p-4 border border-mgc-gold/30 backdrop-blur-sm" style={{
+                  backgroundColor: 'rgba(68,68,68,0.5)'
+                }}>
+                    <p className="text-mgc-yellow font-semibold mb-1">Analysis</p>
+                    <p className="text-mgc-light-gray text-sm">Deep credit forensics & strategy planning</p>
+                  </div>
+                </div>
+
+                {/* Day 30 */}
+                <div className="relative text-center transition-all duration-700 ease-out" style={{
+                opacity: timelineVisible ? 1 : 0,
+                transform: timelineVisible ? 'translateY(0)' : 'translateY(40px)',
+                transitionDelay: '400ms'
+              }}>
+                  <div className="w-16 h-16 bg-mgc-text-orange rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-mgc-text-orange/30 relative z-10 transform transition-transform duration-300 hover:scale-110">
+                    <span className="text-white font-bold text-sm">30 DAYS</span>
+                  </div>
+                  <div className="rounded-xl p-4 border border-mgc-gold/30 backdrop-blur-sm" style={{
+                  backgroundColor: 'rgba(68,68,68,0.5)'
+                }}>
+                    <p className="text-mgc-text-orange font-semibold mb-1">First Results</p>
+                    <p className="text-mgc-light-gray text-sm">Bureau investigations complete (by law)</p>
+                  </div>
+                </div>
+
+                {/* Day 45-60 */}
+                <div className="relative text-center transition-all duration-700 ease-out" style={{
+                opacity: timelineVisible ? 1 : 0,
+                transform: timelineVisible ? 'translateY(0)' : 'translateY(40px)',
+                transitionDelay: '600ms'
+              }}>
+                  <div className="w-16 h-16 bg-mgc-cream rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-mgc-cream/30 relative z-10 transform transition-transform duration-300 hover:scale-110">
+                    <span className="text-mgc-dark-gray font-bold text-sm">45-60</span>
+                  </div>
+                  <div className="rounded-xl p-4 border border-mgc-gold/30 backdrop-blur-sm" style={{
+                  backgroundColor: 'rgba(68,68,68,0.5)'
+                }}>
+                    <p className="text-mgc-cream font-semibold mb-1">Momentum</p>
+                    <p className="text-mgc-light-gray text-sm">Second dispute cycle for complex items</p>
+                  </div>
+                </div>
+
+                {/* Day 90 */}
+                <div className="relative text-center transition-all duration-700 ease-out" style={{
+                opacity: timelineVisible ? 1 : 0,
+                transform: timelineVisible ? 'translateY(0)' : 'translateY(40px)',
+                transitionDelay: '800ms'
+              }}>
+                  <div className="w-16 h-16 bg-green-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-green-400/30 relative z-10 transform transition-transform duration-300 hover:scale-110">
+                    <span className="text-mgc-dark-gray font-bold text-sm">90 DAYS</span>
+                  </div>
+                  <div className="rounded-xl p-4 border border-mgc-gold/30 backdrop-blur-sm" style={{
+                  backgroundColor: 'rgba(68,68,68,0.5)'
+                }}>
+                    <p className="text-green-400 font-semibold mb-1">Transformation</p>
+                    <p className="text-mgc-light-gray text-sm">Most clients see measurable improvements</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* What's Real Checkmarks */}
+          <div className="grid md:grid-cols-2 gap-4 mb-12">
+            <div className="flex items-start gap-3 rounded-xl p-4 border border-mgc-gold/20 transition-all duration-700 ease-out" style={{
+            backgroundColor: 'rgba(68,68,68,0.3)',
+            opacity: timelineVisible ? 1 : 0,
+            transform: timelineVisible ? 'translateX(0)' : 'translateX(-40px)',
+            transitionDelay: '900ms'
+          }}>
+              <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+              <p className="text-mgc-tan">Most clients see measurable improvements in <span className="text-white font-semibold">45-90 days</span></p>
+            </div>
+            <div className="flex items-start gap-3 rounded-xl p-4 border border-mgc-gold/20 transition-all duration-700 ease-out" style={{
+            backgroundColor: 'rgba(68,68,68,0.3)',
+            opacity: timelineVisible ? 1 : 0,
+            transform: timelineVisible ? 'translateX(0)' : 'translateX(40px)',
+            transitionDelay: '1000ms'
+          }}>
+              <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+              <p className="text-mgc-tan">Credit bureaus have <span className="text-white font-semibold">30 days by law</span> to investigate disputes</p>
+            </div>
+            <div className="flex items-start gap-3 rounded-xl p-4 border border-mgc-gold/20 transition-all duration-700 ease-out" style={{
+            backgroundColor: 'rgba(68,68,68,0.3)',
+            opacity: timelineVisible ? 1 : 0,
+            transform: timelineVisible ? 'translateX(0)' : 'translateX(-40px)',
+            transitionDelay: '1100ms'
+          }}>
+              <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+              <p className="text-mgc-tan">Complex items often require <span className="text-white font-semibold">1-2 dispute cycles</span> to resolve</p>
+            </div>
+            <div className="flex items-start gap-3 rounded-xl p-4 border border-mgc-gold/20 transition-all duration-700 ease-out" style={{
+            backgroundColor: 'rgba(68,68,68,0.3)',
+            opacity: timelineVisible ? 1 : 0,
+            transform: timelineVisible ? 'translateX(0)' : 'translateX(40px)',
+            transitionDelay: '1200ms'
+          }}>
+              <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+              <p className="text-mgc-tan">Your individual timeline depends on the <span className="text-white font-semibold">complexity of your situation</span></p>
+            </div>
+          </div>
+
+          {/* What We CAN Promise */}
+          <div className="bg-gradient-to-br from-mgc-gold/15 to-mgc-yellow/5 border border-mgc-gold/40 rounded-2xl p-8 transition-all duration-700 ease-out" style={{
+          opacity: timelineVisible ? 1 : 0,
+          transform: timelineVisible ? 'scale(1)' : 'scale(0.95)',
+          transitionDelay: '1300ms'
+        }}>
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">
+              What We <span className="text-mgc-yellow">CAN</span> Promise:
+            </h3>
+            <div className="space-y-4 max-w-2xl mx-auto">
+              <div className="flex items-start gap-3">
+                <ArrowRight className="w-5 h-5 text-mgc-gold flex-shrink-0 mt-1" />
+                <p className="text-mgc-tan">We'll work your file <span className="text-white font-semibold">aggressively within legal boundaries</span></p>
+              </div>
+              <div className="flex items-start gap-3">
+                <ArrowRight className="w-5 h-5 text-mgc-gold flex-shrink-0 mt-1" />
+                <p className="text-mgc-tan">We'll communicate <span className="text-white font-semibold">transparently every step</span></p>
+              </div>
+              <div className="flex items-start gap-3">
+                <ArrowRight className="w-5 h-5 text-mgc-gold flex-shrink-0 mt-1" />
+                <p className="text-mgc-tan">We'll <span className="text-white font-semibold">adjust strategy based on results</span></p>
+              </div>
+              <div className="flex items-start gap-3">
+                <ArrowRight className="w-5 h-5 text-mgc-gold flex-shrink-0 mt-1" />
+                <p className="text-mgc-tan">If new items appear during the process, we work on them at <span className="text-white font-semibold">no additional charge</span> (monthly plans)</p>
+              </div>
+              <div className="flex items-start gap-3 bg-green-500/10 border border-green-500/30 rounded-xl p-4 mt-6">
+                <Shield className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                <p className="text-green-300 font-semibold">If we don't deliver results in 90 days, you get <span className="text-green-400">100% of your money back</span></p>
+              </div>
+            </div>
+            
+            {/* Closing Statement */}
+            <p className="text-center text-xl text-white font-bold mt-8">
+              No false promises. Just real work. And <span className="text-mgc-yellow">real results</span>.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+
 
       {/* ============================================ */}
       {/* SECTION 5: WHAT MAKES US DIFFERENT */}
@@ -355,7 +669,7 @@ const CreditRepair2 = () => {
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-12 text-center">
-            Why Choose Mesa Group Over Other Credit Services?
+            WHY MESA GROUP ISN'T LIKE OTHER CREDIT COMPANIES
           </h2>
 
           {/* Comparison Table */}
@@ -363,83 +677,109 @@ const CreditRepair2 = () => {
             <table className="w-full border-collapse">
               <thead>
                 <tr>
-                  <th className="p-4 text-left bg-gray-100 font-semibold text-gray-700 border-b-2">Feature</th>
-                  <th className="p-4 text-center bg-amber-100 font-bold text-amber-800 border-b-2 border-amber-200">Mesa Group</th>
-                  <th className="p-4 text-center bg-gray-100 font-semibold text-gray-600 border-b-2">Typical Companies</th>
-                  <th className="p-4 text-center bg-gray-100 font-semibold text-gray-600 border-b-2">DIY Letters</th>
+                  <th className="p-4 text-left bg-gray-100 font-semibold text-gray-700 border-b-2">What Actually Matters</th>
+                  <th className="p-4 text-center bg-amber-100 font-bold text-amber-800 border-b-2 border-amber-200">Mesa Group Financial Enhancement</th>
+                  <th className="p-4 text-center bg-gray-100 font-semibold text-gray-600 border-b-2">Typical Credit Repair Companies</th>
+                  <th className="p-4 text-center bg-gray-100 font-semibold text-gray-600 border-b-2">DIY Dispute Letters</th>
                 </tr>
               </thead>
               <tbody className="text-sm">
                 <tr className="border-b">
-                  <td className="p-4 font-medium">Approach</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Mesa360™ - Repair, Rebuild, Optimize</span></td>
-                  <td className="p-4 text-center text-gray-500">Transactional dispute only</td>
-                  <td className="p-4 text-center text-gray-500">Completely on your own</td>
+                  <td className="p-4 font-medium">The System</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Mesa360 Credit System™</span> – Repair, Rebuild, Optimize. This isn't just dispute letters. It's complete financial transformation with coaching, education, and ongoing support.</td>
+                  <td className="p-4 text-center text-gray-500">Transactional dispute service only. Send letters, collect payment, disappear. No education. No coaching. No transformation.</td>
+                  <td className="p-4 text-center text-gray-500">You're completely on your own. Google templates and hope. No strategy. No support. High failure rate.</td>
                 </tr>
                 <tr className="border-b bg-gray-50">
-                  <td className="p-4 font-medium">Location</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Bakersfield, CA HQ (Real Office)</span></td>
-                  <td className="p-4 text-center text-gray-500">Offshore call centers</td>
-                  <td className="p-4 text-center text-gray-500">No support</td>
+                  <td className="p-4 font-medium">Where We Are</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Bakersfield, CA Headquarters</span> – Real office you can visit at 5001 California Ave. Local team serving clients nationwide. You're not a ticket number.</td>
+                  <td className="p-4 text-center text-gray-500">Offshore call centers with no local presence. You'll never meet your "account manager." Reps change constantly.</td>
+                  <td className="p-4 text-center text-gray-500">No support whatsoever. You're isolated and confused.</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-4 font-medium">1-on-1 Coaching</td>
-                  <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-400 mx-auto" /></td>
-                  <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-400 mx-auto" /></td>
+                  <td className="p-4 font-medium">What's Included</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">1-on-1 Financial Coaching</span> included in EVERY plan. Learn how to build credit while we remove the bad. Education changes everything.</td>
+                  <td className="p-4 text-center text-gray-500">Just send dispute letters and ghost you. No coaching. No education. No long-term strategy. You're on your own after disputes.</td>
+                  <td className="p-4 text-center text-gray-500">No guidance. No education. No strategy. You don't even know what you don't know.</td>
                 </tr>
                 <tr className="border-b bg-gray-50">
-                  <td className="p-4 font-medium">Dedicated Account Manager</td>
-                  <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="p-4 text-center text-gray-500">Random reps each time</td>
-                  <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-400 mx-auto" /></td>
+                  <td className="p-4 font-medium">Your Account Manager</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Dedicated account manager</span> for every client. Same person. Knows your name, your story, your goals. Personalized strategy.</td>
+                  <td className="p-4 text-center text-gray-500">Assigned to random reps each call. No continuity. No relationship. No personalization. Just a case number.</td>
+                  <td className="p-4 text-center text-gray-500">No support. No manager. No guidance. Just you, Google, and confusion.</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-4 font-medium">Trilingual Support</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano</span></td>
-                  <td className="p-4 text-center text-gray-500">English only</td>
-                  <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-400 mx-auto" /></td>
+                  <td className="p-4 font-medium">Visit Us</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Real office you can visit</span> – 5001 California Ave, Bakersfield, CA 93309. Walk in. Meet your team. See where the work happens.</td>
+                  <td className="p-4 text-center text-gray-500">No physical presence. PO boxes. Virtual offices. You'll never know who's actually working your file.</td>
+                  <td className="p-4 text-center text-gray-500">No support infrastructure.</td>
                 </tr>
                 <tr className="border-b bg-gray-50">
-                  <td className="p-4 font-medium">Legal Team for FCRA Violations</td>
-                  <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="p-4 text-center text-gray-500">Often non-compliant</td>
-                  <td className="p-4 text-center text-gray-500">Risk of mistakes</td>
+                  <td className="p-4 font-medium">Language Support</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Spanish, English, Punjabi</span> – Bilingual team members who speak YOUR language. Communication without barriers.</td>
+                  <td className="p-4 text-center text-gray-500">English-only support (if you can even reach someone). Language barriers create confusion and mistakes.</td>
+                  <td className="p-4 text-center text-gray-500">No guidance in any language.</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-4 font-medium">Advanced Dispute Methods</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">CFPB, Metro 2, Direct Creditor</span></td>
-                  <td className="p-4 text-center text-gray-500">Generic templates</td>
-                  <td className="p-4 text-center text-gray-500">Internet templates</td>
+                  <td className="p-4 font-medium">Legal Backing</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Full legal team</span> for FCRA violation cases. Paralegals, attorneys, demand letters. REAL legal power when your rights are violated.</td>
+                  <td className="p-4 text-center text-gray-500">Often non-compliant with federal law. No legal support. When violations happen, you're on your own.</td>
+                  <td className="p-4 text-center text-gray-500">Risk of legal mistakes that could hurt you worse. No understanding of FCRA/FDCPA.</td>
                 </tr>
                 <tr className="border-b bg-gray-50">
+                  <td className="p-4 font-medium">Dispute Methods</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Advanced strategies</span>: CFPB complaints, Metro 2 challenges, direct creditor disputes, digital uploads, Experian rapid inquiry removal. Multi-channel attack.</td>
+                  <td className="p-4 text-center text-gray-500">Generic templates the bureaus recognize instantly. Easily ignored. Low success rates.</td>
+                  <td className="p-4 text-center text-gray-500">Internet templates bureaus have seen 10,000 times. Ignored immediately.</td>
+                </tr>
+                <tr className="border-b">
                   <td className="p-4 font-medium">Pricing</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Transparent, no hidden fees</span></td>
-                  <td className="p-4 text-center text-gray-500">Hidden fees, upsells</td>
-                  <td className="p-4 text-center text-gray-500">Free but time-consuming</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Transparent pricing, no hidden fees.</span> You know exactly what you're paying. No surprises. No upsells. No gotchas.</td>
+                  <td className="p-4 text-center text-gray-500">Hidden fees everywhere. Constant upsells. "Oh, you want us to dispute THAT? That's extra." Nickel and dimed to death.</td>
+                  <td className="p-4 text-center text-gray-500">Free (but time-consuming, confusing, error-prone, and often ineffective).</td>
+                </tr>
+                <tr className="border-b bg-gray-50">
+                  <td className="p-4 font-medium">Ongoing Support</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">Monthly plans cover new items</span> – Life happens. Collections appear during the process? We work on them at no extra charge. This is accountability.</td>
+                  <td className="p-4 text-center text-gray-500">Limited support windows. "Your 6 months are up, pay again if you want more help." Transactional. No ongoing commitment.</td>
+                  <td className="p-4 text-center text-gray-500">All on you. Every single step. Forever.</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-4 font-medium">Money-Back Guarantee</td>
-                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">90-Day Written Guarantee</span></td>
-                  <td className="p-4 text-center text-gray-500">Vague promises</td>
-                  <td className="p-4 text-center text-gray-500">N/A</td>
+                  <td className="p-4 font-medium">Guarantee</td>
+                  <td className="p-4 text-center"><span className="text-green-600 font-semibold">90-Day Money-Back Guarantee in writing.</span> Legally binding contract. Remove at least 1 item or get 100% refund. We're that confident.</td>
+                  <td className="p-4 text-center text-gray-500">Vague "satisfaction" promises with impossible-to-navigate refund processes. Good luck getting your money back.</td>
+                  <td className="p-4 text-center text-gray-500">N/A (you already wasted time you can't get back).</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          {/* Legal Team Callout */}
-          <div className="mt-12 bg-gradient-to-r from-[#3E3E3E] to-[#2c2c2c] rounded-2xl p-8 md:p-10">
-            <div className="flex items-start gap-4">
-              <Scale className="w-12 h-12 text-amber-400 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-bold text-white mb-3">Full Legal Team for FCRA Violations</h3>
-                <p className="text-gray-300 mb-4">
-                  While Mesa Group Consulting is not a law firm, we have a full legal team available for cases where creditors or credit bureaus violate your rights under FCRA or FDCPA.
-                </p>
-                <p className="text-amber-400 font-semibold">
-                  Real Results: Many qualified clients have received settlements ranging from $1,000 to $2,500+ when violations are found—in addition to item removal.
-                </p>
+          {/* What This Really Means For You */}
+          <div className="mt-16">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#3E3E3E] mb-10 text-center">
+              WHAT THIS REALLY MEANS FOR YOU
+            </h3>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Mesa Group = Partnership */}
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 border-2 border-amber-300 rounded-2xl p-6 text-center">
+                <div className="text-4xl mb-4">🎯</div>
+                <h4 className="text-xl font-bold text-amber-800 mb-3">Mesa Group = Partnership</h4>
+                <p className="text-gray-700">You're not just hiring a service. You're gaining a partner, a coach, a dedicated team that succeeds when YOU succeed.</p>
+              </div>
+              
+              {/* Typical Companies = Transaction */}
+              <div className="bg-gray-100 border border-gray-300 rounded-2xl p-6 text-center">
+                <div className="text-4xl mb-4">🏢</div>
+                <h4 className="text-xl font-bold text-gray-600 mb-3">Typical Companies = Transaction</h4>
+                <p className="text-gray-500">They want your money. They don't care about your transformation. Send letters, collect fees, move on to the next customer.</p>
+              </div>
+              
+              {/* DIY = Isolation */}
+              <div className="bg-gray-100 border border-gray-300 rounded-2xl p-6 text-center">
+                <div className="text-4xl mb-4">📄</div>
+                <h4 className="text-xl font-bold text-gray-600 mb-3">DIY = Isolation</h4>
+                <p className="text-gray-500">You're alone, confused, and likely making mistakes that could make things worse.</p>
               </div>
             </div>
           </div>
@@ -447,114 +787,147 @@ const CreditRepair2 = () => {
       </section>
 
       {/* ============================================ */}
-      {/* SECTION 5B: LEGAL ESCALATIONS */}
+      {/* SECTION 5B: WHEN LEGAL ESCALATION HAPPENS */}
       {/* ============================================ */}
-      <section className="bg-gradient-to-br from-[#1a1a1a] to-[#2c2c2c] py-16 md:py-24 px-6 md:px-8">
+      <section className="py-16 md:py-24 px-6 md:px-8 relative overflow-hidden" style={{
+      background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%)'
+    }}>
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-50" />
+        
         <div className="max-w-6xl mx-auto">
+          {/* Header */}
           <div className="text-center mb-12">
-            <Scale className="w-16 h-16 text-amber-400 mx-auto mb-6" />
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-red-500/20 border-2 border-red-500/40 mb-6">
+              <Scale className="w-10 h-10 text-red-400" />
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Legal Escalations for <span className="text-[#f9c65d]">Serious Violations</span>
+              WHEN <span className="text-mgc-yellow">LEGAL ESCALATION</span> HAPPENS
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              When credit bureaus, creditors, or collection agencies violate federal consumer protection laws, Mesa Group takes decisive action through our partnered legal team.
+            <p className="text-xl text-mgc-tan max-w-3xl mx-auto">
+              Your Rights Are Protected By Federal Law—And We Make Sure They're Enforced
             </p>
           </div>
 
-          <div className="bg-white/10 backdrop-blur rounded-2xl p-8 mb-8">
-            <p className="text-gray-200 mb-4 leading-relaxed">
-              While Mesa Group Consulting is not a law firm, we have established partnerships with experienced consumer rights attorneys who specialize in FCRA (Fair Credit Reporting Act) and FDCPA (Fair Debt Collection Practices Act) violations.
+          {/* Disclaimer Box */}
+          <div className="bg-mgc-gold/10 border border-mgc-gold/30 rounded-2xl p-6 md:p-8 mb-12">
+            <p className="text-mgc-tan text-lg leading-relaxed text-center">
+              While Mesa Group Consulting is not a law firm, we work with <span className="text-white font-semibold">licensed attorneys who specialize in consumer protection and FCRA violations</span>.
             </p>
           </div>
 
-          {/* When Legal Escalation Happens */}
+          {/* When We Bring in the Legal Team */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <AlertTriangle className="w-8 h-8 text-amber-400" />
-              When Legal Escalation Happens:
+            <h3 className="text-2xl font-bold text-white mb-8 flex items-center justify-center gap-3">
+              <AlertTriangle className="w-8 h-8 text-red-400" />
+              When We Bring in the Legal Team:
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
-                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
-                <h4 className="text-lg font-bold text-white mb-2">Willful FCRA Violations</h4>
-                <p className="text-gray-300 text-sm">When bureaus knowingly report false information or fail to investigate disputes properly</p>
+            
+            <div className="space-y-4">
+              <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-5 flex items-start gap-4 hover:bg-red-900/30 transition-colors">
+                <span className="text-2xl flex-shrink-0">🚨</span>
+                <div>
+                  <h4 className="text-lg font-bold text-white mb-1">Bureau Fails to Investigate Within 30 Days</h4>
+                  <p className="text-mgc-tan">Federal law requires a response within 30 days. If they ignore you, we escalate to legal.</p>
+                </div>
               </div>
-
-              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
-                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
-                <h4 className="text-lg font-bold text-white mb-2">FDCPA Violations</h4>
-                <p className="text-gray-300 text-sm">When collectors engage in harassment, threats, or deceptive practices</p>
+              
+              <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-5 flex items-start gap-4 hover:bg-red-900/30 transition-colors">
+                <span className="text-2xl flex-shrink-0">🚨</span>
+                <div>
+                  <h4 className="text-lg font-bold text-white mb-1">Creditor Re-Reports Deleted Information Without Verification</h4>
+                  <p className="text-mgc-tan">Once an item is removed, they can't just put it back without proper proof. If they do, that's a violation.</p>
+                </div>
               </div>
-
-              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
-                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
-                <h4 className="text-lg font-bold text-white mb-2">Verification Failures</h4>
-                <p className="text-gray-300 text-sm">When furnishers repeatedly fail to verify disputed information</p>
+              
+              <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-5 flex items-start gap-4 hover:bg-red-900/30 transition-colors">
+                <span className="text-2xl flex-shrink-0">🚨</span>
+                <div>
+                  <h4 className="text-lg font-bold text-white mb-1">Collector Contacts You After Cease & Desist</h4>
+                  <p className="text-mgc-tan">Under FDCPA, once you tell them to stop, they must stop. Violations = potential damages.</p>
+                </div>
               </div>
-
-              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
-                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
-                <h4 className="text-lg font-bold text-white mb-2">Continued Reporting After Deletion</h4>
-                <p className="text-gray-300 text-sm">When removed items reappear without proper re-investigation</p>
+              
+              <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-5 flex items-start gap-4 hover:bg-red-900/30 transition-colors">
+                <span className="text-2xl flex-shrink-0">🚨</span>
+                <div>
+                  <h4 className="text-lg font-bold text-white mb-1">Bureau Reports Inaccurate Info After You've Provided Proof of Error</h4>
+                  <p className="text-mgc-tan">Ignoring documented proof of inaccuracy is a violation of your FCRA rights.</p>
+                </div>
               </div>
-
-              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
-                <AlertTriangle className="w-8 h-8 text-red-400 mb-3" />
-                <h4 className="text-lg font-bold text-white mb-2">Identity Theft Cases</h4>
-                <p className="text-gray-300 text-sm">When fraudulent accounts require legal intervention for resolution</p>
+              
+              <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-5 flex items-start gap-4 hover:bg-red-900/30 transition-colors">
+                <span className="text-2xl flex-shrink-0">🚨</span>
+                <div>
+                  <h4 className="text-lg font-bold text-white mb-1">Any Other Violation of Federal Consumer Protection Laws</h4>
+                  <p className="text-mgc-tan">We don't tolerate violations. Period.</p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Our Legal Partnership Process */}
-          <div className="bg-gradient-to-br from-amber-900/30 to-orange-900/30 backdrop-blur rounded-2xl p-8 border border-amber-500/30">
+          {/* What Legal Escalation Looks Like */}
+          <div className="bg-gradient-to-br from-mgc-gold/15 to-mgc-yellow/5 border border-mgc-gold/40 rounded-2xl p-8 mb-12">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <FileText className="w-8 h-8 text-amber-400" />
-              Our Legal Partnership Process:
+              <FileText className="w-8 h-8 text-mgc-gold" />
+              What Legal Escalation Looks Like:
             </h3>
             <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">1</div>
-                <p className="text-gray-200 pt-1">Our team identifies clear violations during your Mesa 360 process</p>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                <p className="text-mgc-tan"><span className="text-white font-semibold">Paralegal FCRA/FDCPA Audits</span> of your entire case</p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">2</div>
-                <p className="text-gray-200 pt-1">We document all evidence of regulatory non-compliance</p>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                <p className="text-mgc-tan"><span className="text-white font-semibold">Attorney Review</span> of violations and potential claims</p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">3</div>
-                <p className="text-gray-200 pt-1">Cases meeting legal thresholds are referred to our attorney partners</p>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                <p className="text-mgc-tan"><span className="text-white font-semibold">Legal Demand Letters</span> sent to creditors and bureaus</p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">4</div>
-                <p className="text-gray-200 pt-1">Attorneys send demand letters and pursue formal legal action when warranted</p>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                <p className="text-mgc-tan"><span className="text-white font-semibold">Settlement Negotiation Support</span> when violations are clear</p>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">5</div>
-                <p className="text-gray-200 pt-1">You incur no additional fees for this escalation—it's included in your Mesa 360 service</p>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
+                <p className="text-mgc-tan"><span className="text-white font-semibold">Documentation for Potential Litigation</span> if needed</p>
               </div>
             </div>
           </div>
 
-          <div className="text-center mt-8">
-            <p className="text-amber-400 text-lg font-semibold">
-              This legal backing sets Mesa 360 apart from basic dispute services and ensures maximum accountability from bureaus and creditors.
+          {/* Real Financial Impact */}
+          <div className="bg-green-900/20 border border-green-500/30 rounded-2xl p-8 mb-12 text-center">
+            <DollarSign className="w-12 h-12 text-green-400 mx-auto mb-4" />
+            <h3 className="text-xl font-bold text-white mb-3">Real Financial Impact:</h3>
+            <p className="text-mgc-tan text-lg max-w-3xl mx-auto">
+              Many qualified clients have received cash settlements ranging from <span className="text-green-400 font-bold">$1,000 to $2,500+</span> when creditors or bureaus violated their rights—<span className="text-white font-semibold">in addition to removal of inaccurate items</span>.
             </p>
+          </div>
+
+          {/* The Bottom Line */}
+          <div className="text-center">
+            <div className="inline-block bg-mgc-dark-gray/50 border border-mgc-gold/30 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-white mb-4">The Bottom Line:</h3>
+              <p className="text-xl text-mgc-tan max-w-2xl">
+                We don't make promises we can't keep. We make progress you can measure. And when your rights are violated, we fight back with <span className="text-mgc-yellow font-bold">real legal power</span>.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ============================================ */}
-      {/* SECTION 6: MORE THAN CREDIT REPAIR */}
+      {/* SECTION 6: MORE THAN CREDIT RESTORATION */}
       {/* ============================================ */}
       <section className="bg-gradient-to-br from-amber-50 to-orange-50 py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              This Isn't Just Credit Repair. It's a <span className="text-[#f9c65d]">Complete Financial Transformation</span>.
+              This Isn't Just Credit Restoration. It's a <span className="text-[#f9c65d]">Complete Financial Transformation</span>.
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Most credit repair companies send generic dispute letters and disappear. At Mesa Group, every client gets a dedicated account manager, customized action plan, monthly reviews, and 1-on-1 financial coaching.
+              Most credit recovery companies send generic dispute letters and disappear. At Mesa Group, every client gets a dedicated account manager, customized action plan, monthly reviews, and 1-on-1 financial coaching.
             </p>
           </div>
 
@@ -767,217 +1140,481 @@ const CreditRepair2 = () => {
       {/* ============================================ */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          {/* Main Header */}
+          <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              Choose a Package that Suits Your <span className="text-[#f9c65d]">Budget</span>
+              Choose Your Path to <span className="text-[#f9c65d]">Financial Transformation</span>
             </h2>
-            <p className="text-xl text-gray-700">
-              Once you choose a package, we can get you started on your credit transformation journey with the Mesa360 Credit System™
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              This isn't a purchase. It's an investment in your future, your family, your freedom. Every plan includes the complete Mesa360 Credit System™—comprehensive credit restoration, 1-on-1 coaching, and a dedicated account manager who knows your name and your goals.
             </p>
           </div>
 
-          {/* Monthly Plans */}
-          <h3 className="text-2xl font-bold text-[#3E3E3E] mb-6 text-center">Monthly Plans <span className="text-gray-500 font-normal text-lg">(Most Flexible)</span></h3>
+          {/* MONTHLY PLANS SECTION */}
+          <div className="mb-20">
+            <div className="text-center mb-10">
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">MONTHLY PLANS</h3>
+              <p className="text-lg text-gray-600">Build Your Credit While You Invest—Maximum Flexibility for Life's Reality</p>
+            </div>
           
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
-            {/* Mesa360 Lite */}
-            <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-amber-300 transition-colors">
-              <h4 className="text-xl font-bold text-[#3E3E3E] mb-2">Mesa360 Lite</h4>
-              <p className="text-sm text-gray-500 mb-4">Basic</p>
-              <div className="mb-4">
-                <span className="text-3xl font-bold text-[#3E3E3E]">$350</span>
-                <span className="text-gray-500"> initial + </span>
-                <span className="text-3xl font-bold text-[#FBBF23]">$149</span>
-                <span className="text-gray-500">/mo</span>
-              </div>
-              <p className="text-sm text-gray-600 mb-6">Starting your credit repair journey. Covers collections, late payments, and inquiries across all 3 bureaus.</p>
-              
-              <div className="space-y-2 mb-6 text-sm">
-                <p className="font-semibold text-gray-700">What's Included:</p>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Collections, Late Payments, Inquiries</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>3-Bureau disputes to agencies</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Digital uploads</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>35-day updates + client portal</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Dedicated Account Manager</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>1-on-1 Financial Coaching</span></div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Mesa360 Lite */}
+              <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-amber-300 transition-colors">
+                <div className="flex items-center gap-2 mb-2">
+                  <Briefcase className="w-6 h-6 text-amber-500" />
+                  <h4 className="text-xl font-bold text-[#3E3E3E]">MESA360 LITE</h4>
+                </div>
+                <p className="text-sm text-gray-600 mb-1">Your Gateway to Financial Freedom</p>
+                <p className="text-xs text-gray-500 mb-4">Basic</p>
+                
+                <div className="mb-2">
+                  <p className="text-sm font-semibold text-gray-700">Investment:</p>
+                  <div>
+                    <span className="text-2xl font-bold text-[#3E3E3E]">$350</span>
+                    <span className="text-gray-500"> initial + </span>
+                    <span className="text-2xl font-bold text-[#FBBF23]">$149</span>
+                    <span className="text-gray-500">/mo</span>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 mb-4">Starting your credit repair journey. Covers collections, late payments, and inquiries across all 3 bureaus. Includes steady dispute support with agencies and monthly progress tracking.</p>
+                
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">What's Included:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Collections</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Late Payments</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Inquiries (all 3 bureaus)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>3-Bureau disputes to agencies</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Real-Time Digital Filing</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Priority Bureau Access</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>35-day updates + client portal</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Ongoing support for new items</span></div>
+                </div>
+
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">Package Features:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Correct All Personal Information</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dispute All Inquiries</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Monthly Progress Report</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Client Portal to Track Results</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Mobile App to Track Results</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dedicated Account Manager</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>1-on-1 Financial Coaching</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Customized Action Plan</span></div>
+                </div>
+
+                <div className="bg-gray-50 rounded-lg p-3 mb-4">
+                  <p className="text-xs font-semibold text-gray-700 mb-1">Best for:</p>
+                  <p className="text-xs text-gray-600">Starting your credit repair journey. Covers collections, late payments, and inquiries across all 3 bureaus. Includes steady dispute support with agencies and monthly progress tracking.</p>
+                </div>
+
+                <div className="text-center mb-4">
+                  <p className="text-sm font-semibold text-gray-700">Your Investment Today:</p>
+                  <p className="text-2xl font-bold text-green-600">$0.00 DUE TODAY</p>
+                  <p className="text-xs text-gray-500">Risk Free - 3 Day Cancellation Window</p>
+                </div>
+                
+                <button onClick={handleCTAClick} className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3">
+                  Choose Mesa360 Lite
+                </button>
+
+                <p className="text-xs text-gray-500">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process. Ongoing support is provided. If you add new items, we will work on them. Clients may continue applying for accounts as needed.</p>
               </div>
 
-              <div className="text-center mb-4">
-                <p className="text-2xl font-bold text-green-600">$0.00 DUE TODAY</p>
-                <p className="text-xs text-gray-500">Risk Free - 3 Day Cancellation Window</p>
+              {/* Mesa360 Flex - Most Popular */}
+              <div className="bg-white border-2 border-amber-400 rounded-2xl p-6 relative shadow-xl">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#FBBF23] text-gray-900 text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
+                  <Star className="w-3 h-3" /> MOST POPULAR
+                </div>
+                <div className="flex items-center gap-2 mb-2 mt-2">
+                  <Zap className="w-6 h-6 text-amber-500" />
+                  <h4 className="text-xl font-bold text-[#3E3E3E]">MESA360 FLEX</h4>
+                </div>
+                <p className="text-sm text-gray-600 mb-1">The Complete Transformation Package</p>
+                <p className="text-xs text-[#FBBF23] font-semibold mb-4">Most Popular</p>
+                
+                <div className="mb-2">
+                  <p className="text-sm font-semibold text-gray-700">Investment:</p>
+                  <div>
+                    <span className="text-2xl font-bold text-[#3E3E3E]">$500</span>
+                    <span className="text-gray-500"> initial + </span>
+                    <span className="text-2xl font-bold text-[#FBBF23]">$199</span>
+                    <span className="text-gray-500">/mo</span>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 mb-4">Our most popular plan. Everything in Lite PLUS charge-offs. Includes priority bureau access, accelerated processing, direct creditor disputes, and federal escalation protocols.</p>
+                
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">What's Included:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>All Lite features</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Charge-Offs</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Priority Bureau Access + Accelerated Processing</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Disputes to creditors & collectors</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Federal Escalation Protocol (CFPB)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Ongoing support for new items</span></div>
+                </div>
+
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">Package Features:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Correct All Personal Information</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dispute All Inquiries</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Monthly Progress Report</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Client Portal to Track Results</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Mobile App to Track Results</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dedicated Account Manager</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>1-on-1 Financial Coaching</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Customized Action Plan</span></div>
+                </div>
+
+                <div className="bg-amber-50 rounded-lg p-3 mb-4">
+                  <p className="text-xs font-semibold text-gray-700 mb-1">Best for:</p>
+                  <p className="text-xs text-gray-600">Our most popular plan with charge-off removal strategy. Includes priority bureau access, accelerated processing, direct creditor disputes, and federal escalation protocols with 35-day updates.</p>
+                </div>
+
+                <div className="text-center mb-4">
+                  <p className="text-sm font-semibold text-gray-700">Your Investment Today:</p>
+                  <p className="text-2xl font-bold text-green-600">$0.00 DUE TODAY</p>
+                  <p className="text-xs text-gray-500">Risk Free - 3 Day Cancellation Window</p>
+                </div>
+                
+                <button onClick={handleCTAClick} className="w-full bg-[#FBBF23] hover:bg-[#E5AC1F] text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3">
+                  Choose Mesa360 Flex (most popular)
+                </button>
+
+                <p className="text-xs text-gray-500">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process. Ongoing support is provided. If you add new items, we will work on them. Clients may continue applying for accounts as needed.</p>
               </div>
-              
-              <button onClick={handleCTAClick} className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors">
-                Choose Mesa360 Lite
-              </button>
+
+              {/* Mesa360 Elite */}
+              <div className="bg-gradient-to-br from-[#3E3E3E] to-[#2c2c2c] border-2 border-[#3E3E3E] rounded-2xl p-6 text-white">
+                <div className="flex items-center gap-2 mb-2">
+                  <Crown className="w-6 h-6 text-amber-400" />
+                  <h4 className="text-xl font-bold">MESA360 ELITE</h4>
+                </div>
+                <p className="text-sm text-gray-300 mb-1">When You've Got the Heavy Stuff</p>
+                <p className="text-xs text-amber-400 font-semibold mb-4">Premium</p>
+                
+                <div className="mb-2">
+                  <p className="text-sm font-semibold text-gray-300">Investment:</p>
+                  <div>
+                    <span className="text-2xl font-bold">$800</span>
+                    <span className="text-gray-400"> initial + </span>
+                    <span className="text-2xl font-bold text-amber-400">$299</span>
+                    <span className="text-gray-400">/mo</span>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-300 mb-4">Our most premium plan reserved for heavy credit damage. Covers everything in Flex PLUS bankruptcies, repossessions, evictions, student loans, and medical bills. Includes advanced legal disputes, priority handling, and funding profile optimization.</p>
+                
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-200">What's Included:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>All Flex features</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Bankruptcies (Chapter 7/13)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Repossessions</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Evictions</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Student Loans</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Medical Bills</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>First-class mailed disputes to all 3 bureaus</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Priority Bureau Platform Access + Phone Disputes</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Advanced Technical Challenges (Data-Level Disputes, FCRA)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Priority handling + legal review</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Funding profile optimization</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Ongoing support for new items</span></div>
+                </div>
+
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-200">Package Features:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Correct All Personal Information</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Dispute All Inquiries</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Monthly Progress Report</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Client Portal to Track Results</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Mobile App to Track Results</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Dedicated Account Manager</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>1-on-1 Financial Coaching</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Customized Action Plan</span></div>
+                </div>
+
+                <div className="bg-gray-700/50 rounded-lg p-3 mb-4">
+                  <p className="text-xs font-semibold text-gray-200 mb-1">Best for:</p>
+                  <p className="text-xs text-gray-300">Our most premium plan reserved for heavy credit damage. Covers everything in Flex plus bankruptcies, repossessions, evictions, student loans, and medical bills. Includes advanced legal disputes, priority handling, and funding profile optimization.</p>
+                </div>
+
+                <div className="text-center mb-4">
+                  <p className="text-sm font-semibold text-gray-300">Your Investment Today:</p>
+                  <p className="text-2xl font-bold text-green-400">$0.00 DUE TODAY</p>
+                  <p className="text-xs text-gray-400">Risk Free - 3 Day Cancellation Window</p>
+                </div>
+                
+                <button onClick={handleCTAClick} className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3">
+                  Choose Mesa360 Elite (premium)
+                </button>
+
+                <p className="text-xs text-gray-400">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process. Ongoing support is provided. If you add new items, we will work on them. Clients may continue applying for accounts as needed.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 12-MONTH PROGRAMS SECTION */}
+          <div className="mb-16">
+            <div className="text-center mb-10">
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">12-MONTH PROGRAMS</h3>
+              <p className="text-lg text-gray-600 mb-4">Pay Once, Transform Forever—Maximum Savings for Committed Action</p>
+              <p className="text-xl font-semibold text-[#3E3E3E] mb-2">Get a full year of the Mesa360 Credit System™ with significant savings</p>
+              <p className="text-gray-600 max-w-3xl mx-auto">For those who know they're committed—pay in full (or use Buy Now, Pay Later) and save up to $1,788 compared to monthly plans. Get the complete Mesa360 Credit System™ with massive upfront savings.</p>
             </div>
 
-            {/* Mesa360 Flex - Most Popular */}
-            <div className="bg-white border-2 border-amber-400 rounded-2xl p-6 relative shadow-xl">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#FBBF23] text-white text-xs font-bold px-4 py-1 rounded-full">
-                MOST POPULAR
-              </div>
-              <h4 className="text-xl font-bold text-[#3E3E3E] mb-2">Mesa360 Flex</h4>
-              <p className="text-sm text-[#FBBF23] font-semibold mb-4">Most Popular</p>
-              <div className="mb-4">
-                <span className="text-3xl font-bold text-[#3E3E3E]">$500</span>
-                <span className="text-gray-500"> initial + </span>
-                <span className="text-3xl font-bold text-[#FBBF23]">$199</span>
-                <span className="text-gray-500">/mo</span>
-              </div>
-              <p className="text-sm text-gray-600 mb-6">Our most popular plan with faster methods like digital uploads, Experian rapid inquiry removal, and CFPB complaints.</p>
-              
-              <div className="space-y-2 mb-6 text-sm">
-                <p className="font-semibold text-gray-700">All Lite features PLUS:</p>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Direct Experian uploads + rapid inquiry removal</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Disputes to creditors & collectors</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>CFPB complaints</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Ongoing support for new items</span></div>
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {/* Ruby Plan */}
+              <div className="bg-gradient-to-br from-red-50 to-pink-50 border-2 border-red-200 rounded-2xl p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <Gem className="w-8 h-8 text-red-500" />
+                  <div>
+                    <h4 className="text-xl font-bold text-[#3E3E3E]">RUBY PLAN</h4>
+                    <p className="text-sm text-gray-500">12-Month Flex</p>
+                  </div>
+                </div>
+                
+                <div className="mb-2">
+                  <p className="text-sm font-semibold text-gray-700">One-Time Investment:</p>
+                  <span className="text-3xl font-bold text-[#3E3E3E]">$1,500</span>
+                  <span className="text-gray-500"> one-time (Pay in Full or BNPL)</span>
+                </div>
+                <p className="text-green-600 font-bold mb-1">Save $888 vs. Monthly Flex</p>
+                <p className="text-sm text-gray-600 mb-6">(Equivalent to 12 months of Mesa360 Flex for the price of ~7.5 months)</p>
+                
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">What's Included:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Collections</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Late Payments</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Inquiries (all 3 bureaus)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Charge-Offs</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Real-Time Digital Filing (no mailed letters)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Priority Bureau Access + Accelerated Processing</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Disputes to creditors & collection agencies</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Federal Escalation Protocol (CFPB) when necessary</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>35-day updates + client portal</span></div>
+                </div>
+
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">Package Features:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dedicated Account Manager</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>1-on-1 Financial Coaching</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Customized Action Plan</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Monthly Progress Report</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Client Portal + Mobile App</span></div>
+                </div>
+
+                <div className="bg-red-100 rounded-lg p-3 mb-4">
+                  <p className="text-xs font-semibold text-red-800">Important Note:</p>
+                  <p className="text-xs text-red-700">Comprehensive 12-month program focused on your current credit profile. New items added during the program will not be worked on.</p>
+                </div>
+                
+                <button onClick={handleCTAClick} className="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 rounded-lg transition-colors">
+                  Choose Ruby Plan
+                </button>
               </div>
 
-              <div className="text-center mb-4">
-                <p className="text-2xl font-bold text-green-600">$0.00 DUE TODAY</p>
-                <p className="text-xs text-gray-500">Risk Free - 3 Day Cancellation Window</p>
+              {/* Emerald Plan */}
+              <div className="bg-gradient-to-br from-emerald-50 to-green-50 border-2 border-emerald-200 rounded-2xl p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <Gem className="w-8 h-8 text-emerald-500" />
+                  <div>
+                    <h4 className="text-xl font-bold text-[#3E3E3E]">EMERALD PLAN</h4>
+                    <p className="text-sm text-gray-500">12-Month Elite</p>
+                  </div>
+                </div>
+                
+                <div className="mb-2">
+                  <p className="text-sm font-semibold text-gray-700">One-Time Investment:</p>
+                  <span className="text-3xl font-bold text-[#3E3E3E]">$1,800</span>
+                  <span className="text-gray-500"> one-time (Pay in Full or BNPL)</span>
+                </div>
+                <p className="text-green-600 font-bold mb-1">Save $1,788 vs. Monthly Elite</p>
+                <p className="text-sm text-gray-600 mb-6">(Equivalent to 12 months of Mesa360 Elite for the price of ~6 months)</p>
+                
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">What's Included:</p>
+                  <p className="text-gray-600 italic mb-2">All Ruby items PLUS:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Bankruptcies (Chapter 7/13)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Repossessions</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Evictions</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Student Loans</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Medical Bills</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>First-class mailed disputes to all 3 bureaus</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Direct disputes to creditors & collection agencies</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Priority Bureau Platform Access + Phone Disputes</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Federal Escalation Protocol (CFPB)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Advanced Technical Challenges (Data-Level Disputes, FCRA frameworks)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Legal Team Priority Handling + Review</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Funding profile optimization</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>35-day updates + client portal</span></div>
+                </div>
+
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">Package Features:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dedicated Account Manager</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>1-on-1 Financial Coaching</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Customized Action Plan</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Monthly Progress Report</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Client Portal + Mobile App</span></div>
+                </div>
+
+                <div className="bg-emerald-100 rounded-lg p-3 mb-4">
+                  <p className="text-xs font-semibold text-emerald-800">Important Note:</p>
+                  <p className="text-xs text-emerald-700">Comprehensive 12-month program focused on your current credit profile. New items added during the program will not be worked on.</p>
+                </div>
+                
+                <button onClick={handleCTAClick} className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-lg transition-colors">
+                  Choose Emerald Plan
+                </button>
               </div>
-              
-              <button onClick={handleCTAClick} className="w-full bg-[#FBBF23] hover:bg-[#E5AC1F] text-gray-900 font-bold py-3 rounded-lg transition-colors">
-                Choose Mesa360 Flex
-              </button>
+            </div>
+          </div>
+
+          {/* Which Plan Is Right For You */}
+          <div className="mt-16">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#3E3E3E] mb-10 text-center">
+              WHICH PLAN IS RIGHT FOR YOU?
+            </h3>
+            
+            {/* Individual Plans */}
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              {/* Lite */}
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <h4 className="font-bold text-[#3E3E3E] mb-4">Choose Mesa360 Lite if:</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>You have collections, late payments, and inquiries</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>No charge-offs or heavy accounts</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>You want affordable entry point with full coaching support</span></div>
+                </div>
+              </div>
+
+              {/* Flex */}
+              <div className="bg-amber-50 border-2 border-amber-300 rounded-xl p-6">
+                <h4 className="font-bold text-[#3E3E3E] mb-4">Choose Mesa360 Flex <span className="text-amber-600">(Most Popular)</span> if:</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>You have collections, late payments, inquiries</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>PLUS charge-offs that need removal</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>You want direct creditor disputes and federal escalation</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>You need maximum speed and aggressive strategy</span></div>
+                </div>
+              </div>
+
+              {/* Elite */}
+              <div className="bg-gray-800 text-white rounded-xl p-6">
+                <h4 className="font-bold mb-4">Choose Mesa360 Elite if:</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>You have heavy damage: bankruptcies, repos, evictions, student loans</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>You need advanced legal dispute strategies</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>You want legal team review and priority handling</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>You need funding profile optimization for major purchases</span></div>
+                </div>
+              </div>
             </div>
 
-            {/* Mesa360 Elite */}
-            <div className="bg-gradient-to-br from-[#3E3E3E] to-[#2c2c2c] border-2 border-[#3E3E3E] rounded-2xl p-6 text-white">
-              <h4 className="text-xl font-bold mb-2">Mesa360 Elite</h4>
-              <p className="text-sm text-amber-400 font-semibold mb-4">Premium</p>
-              <div className="mb-4">
-                <span className="text-3xl font-bold">$800</span>
-                <span className="text-gray-400"> initial + </span>
-                <span className="text-3xl font-bold text-amber-400">$299</span>
-                <span className="text-gray-400">/mo</span>
-              </div>
-              <p className="text-sm text-gray-300 mb-6">Our most premium plan. Covers everything plus charge-offs, bankruptcies, repos, evictions, student loans, medical bills.</p>
-              
-              <div className="space-y-2 mb-6 text-sm">
-                <p className="font-semibold text-gray-200">All Flex features PLUS:</p>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5" /><span>Charge-offs, Bankruptcies, Repos</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5" /><span>Evictions, Student loans, Medical bills</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5" /><span>Advanced legal disputes (Metro 2, FCRA)</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5" /><span>Priority handling + legal review</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5" /><span>Funding profile optimization</span></div>
+            {/* Monthly vs 12-Month */}
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              {/* Monthly Plans */}
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <h4 className="font-bold text-[#3E3E3E] mb-4">Choose Monthly Plans (Lite/Flex/Elite) if:</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" /><span>You want maximum flexibility</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" /><span>Your credit situation is still evolving</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" /><span>You want ongoing support for new items as they appear</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" /><span>You prefer to pay as you go</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" /><span>You're not 100% sure on timeline yet</span></div>
+                </div>
               </div>
 
-              <div className="text-center mb-4">
-                <p className="text-2xl font-bold text-green-400">$0.00 DUE TODAY</p>
-                <p className="text-xs text-gray-400">Risk Free - 3 Day Cancellation Window</p>
+              {/* 12-Month Programs */}
+              <div className="bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6">
+                <h4 className="font-bold text-[#3E3E3E] mb-4">Choose 12-Month Programs (Ruby/Emerald) if:</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You want to save $888-$1,788 upfront</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>Your credit situation is stable</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You're committed to a full year</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You prefer one-and-done payment</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You want to lock in pricing and eliminate monthly billing</span></div>
+                </div>
+              </div>
+            </div>
+
+            {/* Still Not Sure CTA */}
+            <div className="bg-gradient-to-r from-[#3E3E3E] to-[#2c2c2c] rounded-2xl p-8 text-center">
+              <h4 className="text-2xl font-bold text-white mb-6">STILL NOT SURE? LET'S TALK.</h4>
+              
+              <div className="flex flex-wrap justify-center gap-6 mb-6 text-sm">
+                <a href="tel:6613103040" className="flex items-center gap-2 text-amber-400 hover:text-amber-300 font-semibold">
+                  <Phone className="w-5 h-5" /> (661) 310-3040
+                </a>
+                <a href="mailto:contact@mesagroupconsulting.com" className="flex items-center gap-2 text-amber-400 hover:text-amber-300 font-semibold">
+                  <Mail className="w-5 h-5" /> contact@mesagroupconsulting.com
+                </a>
+                <span className="flex items-center gap-2 text-gray-300">
+                  <MapPin className="w-5 h-5" /> 5001 California Ave Suite 219, Bakersfield, CA 93309
+                </span>
               </div>
               
-              <button onClick={handleCTAClick} className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors">
-                Choose Mesa360 Elite
+              <p className="text-gray-300 mb-6">Hablamos español | We speak Punjabi</p>
+              
+              <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors inline-flex items-center gap-2">
+                Schedule Free Consultation <ArrowRight className="w-5 h-5" />
               </button>
             </div>
           </div>
 
-          {/* 12-Month Programs */}
-          <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2 text-center">12-Month Programs <span className="text-gray-500 font-normal text-lg">(Pay in Full & Save)</span></h3>
-          <p className="text-center text-gray-600 mb-8">Get a full year of the Mesa360 Credit System™ with significant savings</p>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Ruby Plan */}
-            <div className="bg-gradient-to-br from-red-50 to-pink-50 border-2 border-red-200 rounded-2xl p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold">R</span>
+          {/* Why SmartCredit is Required */}
+          <div className="mt-16 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <BarChart3 className="w-8 h-8 text-blue-600" />
+              <h3 className="text-2xl font-bold text-[#3E3E3E]">WHY SMARTCREDIT IS REQUIRED</h3>
+            </div>
+            
+            <div className="mb-6">
+              <div className="flex items-center gap-2 mb-4">
+                <BarChart3 className="w-5 h-5 text-blue-600" />
+                <h4 className="text-lg font-bold text-[#3E3E3E]">Real-Time 3-Bureau Monitoring</h4>
+              </div>
+              <div className="flex items-center justify-center gap-8 mb-6 py-4 bg-white rounded-lg">
+                <img src={experianLogo} alt="Experian" className="h-8 object-contain" />
+                <img src={equifaxLogo} alt="Equifax" className="h-8 object-contain" />
+                <img src={transunionLogo} alt="TransUnion" className="h-8 object-contain" />
+              </div>
+              <p className="text-gray-700 mb-4">
+                SmartCredit provides instant access to your credit reports from Experian, Equifax, and TransUnion. We need this to:
+              </p>
+              <div className="space-y-2 mb-6">
+                <div className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">See your actual credit reports to file accurate disputes</span>
                 </div>
-                <div>
-                  <h4 className="text-xl font-bold text-[#3E3E3E]">Ruby Plan</h4>
-                  <p className="text-sm text-gray-500">12-Month Flex</p>
+                <div className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Track your progress in real-time (you see what we see)</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Ensure both you and your account manager have the same information</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Catch new items immediately</span>
                 </div>
               </div>
-              <div className="mb-2">
-                <span className="text-4xl font-bold text-[#3E3E3E]">$1,500</span>
-                <span className="text-gray-500"> one-time</span>
-              </div>
-              <p className="text-green-600 font-semibold mb-4">Save $888 vs. Monthly Flex</p>
-              <p className="text-sm text-gray-600 mb-6">Equivalent to 12 months of Mesa360 Flex for the price of ~7.5 months</p>
-              
-              <div className="space-y-2 mb-6 text-sm">
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Collections, Late Payments, Inquiries</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Digital uploads + Direct Experian uploads</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Disputes to creditors & collectors</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>CFPB complaints when necessary</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>All coaching & support features</span></div>
-              </div>
-
-              <p className="text-xs text-gray-500 mb-4">Note: New items added during program not covered.</p>
-              
-              <button onClick={handleCTAClick} className="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 rounded-lg transition-colors">
-                Choose Ruby Plan
-              </button>
             </div>
 
-            {/* Emerald Plan */}
-            <div className="bg-gradient-to-br from-emerald-50 to-green-50 border-2 border-emerald-200 rounded-2xl p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold">E</span>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-[#3E3E3E]">Emerald Plan</h4>
-                  <p className="text-sm text-gray-500">12-Month Elite</p>
-                </div>
-              </div>
-              <div className="mb-2">
-                <span className="text-4xl font-bold text-[#3E3E3E]">$1,800</span>
-                <span className="text-gray-500"> one-time</span>
-              </div>
-              <p className="text-green-600 font-semibold mb-4">Save $1,788 vs. Monthly Elite</p>
-              <p className="text-sm text-gray-600 mb-6">Equivalent to 12 months of Mesa360 Elite for the price of ~6 months</p>
-              
-              <div className="space-y-2 mb-6 text-sm">
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>All Ruby items PLUS:</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Charge-offs, Bankruptcies, Repos, Evictions</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Student loans, Medical bills</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Advanced legal disputes + priority handling</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Funding profile optimization</span></div>
-              </div>
-
-              <p className="text-xs text-gray-500 mb-4">Note: New items added during program not covered.</p>
-              
-              <button onClick={handleCTAClick} className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-lg transition-colors">
-                Choose Emerald Plan
-              </button>
+            <div className="bg-white rounded-lg p-4 mb-6">
+              <p className="text-lg font-bold text-[#3E3E3E]">Cost: <span className="text-blue-600">$1 for 7-day trial</span>, then $27.99/month</p>
             </div>
-          </div>
 
-          {/* SmartCredit Requirement */}
-          <div className="mt-12 bg-blue-50 border border-blue-200 rounded-xl p-6 max-w-3xl mx-auto">
-            <div className="flex items-start gap-4">
-              <BarChart3 className="w-8 h-8 text-blue-600 flex-shrink-0" />
-              <div>
-                <h4 className="font-bold text-[#3E3E3E] mb-2">Why SmartCredit is Required</h4>
-                <p className="text-sm text-gray-700 mb-2">
-                  SmartCredit provides real-time access to your credit reports from all three bureaus. We need this to see your actual reports, file accurate disputes, and track progress.
-                </p>
-                <p className="text-sm text-gray-600">
-                  <strong>Cost:</strong> $1 for 7-day trial, then $27.99/month. SmartCredit is a third-party service you control directly.
-                </p>
-              </div>
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
+              <p className="text-sm text-amber-800">
+                <strong>Important:</strong> SmartCredit is a third-party service not owned by Mesa Group. You maintain direct control over your account.
+              </p>
             </div>
-          </div>
 
-          {/* Still not sure? */}
-          <div className="text-center mt-10">
-            <p className="text-gray-700 mb-4">Still not sure which plan is right for you?</p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <a href="tel:6613103040" className="flex items-center gap-2 text-[#bb9446] hover:text-[#9a7a3a] font-semibold">
-                <Phone className="w-4 h-4" /> (661) 310-3040
-              </a>
-              <a href="mailto:contact@mesagroupconsulting.com" className="flex items-center gap-2 text-[#bb9446] hover:text-[#9a7a3a] font-semibold">
-                <Mail className="w-4 h-4" /> contact@mesagroupconsulting.com
-              </a>
-              <span className="flex items-center gap-2 text-gray-600">
-                <MapPin className="w-4 h-4" /> 5001 California Ave Suite 219, Bakersfield, CA
-              </span>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <h5 className="font-bold text-[#3E3E3E] mb-2">Why This Matters:</h5>
+              <p className="text-gray-700">
+                Without real-time monitoring, we're flying blind. Disputes could be resolved and we wouldn't know. New items could appear and we'd miss them. SmartCredit keeps everyone aligned—and keeps you in control.
+              </p>
             </div>
           </div>
         </div>
@@ -1153,7 +1790,7 @@ Every dollar you paid to Mesa Group.</p>
           <div className="text-center mb-12">
             <Shield className="w-16 h-16 text-[#f9c65d] mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              Risk-Free Credit Repair: You've Got <span className="text-[#f9c65d]">Nothing to Lose</span>
+              Risk-Free Credit Restoration: You've Got <span className="text-[#f9c65d]">Nothing to Lose</span>
             </h2>
           </div>
 
@@ -1197,9 +1834,9 @@ Every dollar you paid to Mesa Group.</p>
                 <CheckCircle2 className="w-10 h-10 text-green-600" />
                 <h3 className="text-2xl font-bold text-[#3E3E3E]">Why This Guarantee Matters</h3>
               </div>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Most credit repair companies don't offer this level of protection. We can make this guarantee because:
-              </p>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Most credit restoration companies don't offer this level of protection. We can make this guarantee because:
+                </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-[#f9c65d]">•</span>
@@ -1233,7 +1870,7 @@ Every dollar you paid to Mesa Group.</p>
               Ready to start your credit transformation with zero risk?
             </p>
             <button onClick={handleCTAClick} className="bg-gray-900 hover:bg-gray-800 text-white rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 text-xl font-bold px-10 py-5">
-              Start Your Risk-Free Credit Repair →
+              Start Your Risk-Free Credit Restoration →
             </button>
             <p className="text-sm text-gray-700 mt-4">Powered by Mesa Group</p>
           </div>
@@ -1322,7 +1959,7 @@ Every dollar you paid to Mesa Group.</p>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Trilingual: 🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano</span>
+              <span className="text-gray-700">Trilingual: 🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
@@ -1344,7 +1981,7 @@ Every dollar you paid to Mesa Group.</p>
             <p className="text-gray-600 mb-6">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            <p className="text-sm text-gray-500">🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano</p>
+            <p className="text-sm text-gray-500">🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi</p>
           </div>
         </div>
       </section>

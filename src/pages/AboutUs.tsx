@@ -1221,7 +1221,7 @@ const AboutUs = () => {
                   <li>• DIY Credit Repair (Powered by Creditily)</li>
                   <li>• Credit Monitoring (Powered by SmartCredit)</li>
                 </ul>
-                <Link to="/credit-repair-2" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
+                <Link to="/for-consumers" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
                   View All Credit Services
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
@@ -1236,7 +1236,7 @@ const AboutUs = () => {
                   <li>• Business Credit Building</li>
                   <li>• Business Debt Relief</li>
                 </ul>
-                <Link to="/business-funding" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
+                <Link to="/for-businesses" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
                   Explore Business Solutions
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
@@ -1251,7 +1251,7 @@ const AboutUs = () => {
                   <li>• Authorized User Tradelines</li>
                   <li>• Credit Education Resources</li>
                 </ul>
-                <Link to="/credit-monitoring" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
+                <Link to="/build-credit" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
                   Start Building Credit
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
@@ -1450,7 +1450,7 @@ const AboutUs = () => {
             
             <a
               href="tel:6613103040"
-              className="inline-flex items-center justify-center px-8 py-4 bg-[#bb9446] hover:bg-[#a37f3d] text-white font-semibold rounded-lg transition-colors shadow-lg"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg border-2 border-gray-300 hover:border-[#bb9446] transition-colors shadow-md"
             >
               <Phone className="mr-2 w-5 h-5" />
               Call Us: (661) 310-3040

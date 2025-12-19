@@ -92,7 +92,7 @@ const HeroSection = () => (
                 href="https://funding-app.mesagroupconsulting.com/Opt-In"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white text-amber-600 text-xl font-semibold px-10 py-5 rounded-lg border-2 border-amber-600 hover:bg-amber-50 transition-all duration-200 text-center hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 bg-white text-gray-700 text-xl font-semibold px-10 py-5 rounded-lg border-2 border-gray-300 hover:bg-gray-50 transition-all duration-200 text-center hover:scale-105"
               >
                 See If You Qualify
               </a>
@@ -247,32 +247,32 @@ const TrustIndicators = () => (
 const TheVisionSection = () => {
   const visionCards = [
     {
-      icon: <TrendingUp className="w-12 h-12 text-blue-600" />,
+      icon: <TrendingUp className="w-12 h-12 text-[#f9c65d]" />,
       title: "Scale Without Suffocating",
       description: "Hire that team. Launch that campaign. Buy that inventory. All without crushing loan payments killing your cash flow."
     },
     {
-      icon: <Home className="w-12 h-12 text-purple-600" />,
+      icon: <Home className="w-12 h-12 text-[#f9c65d]" />,
       title: "Real Estate Investors: Move Fast",
       description: "Put $50K down on that flip while your competitor waits on hard money approval. Close deals in days, not weeks."
     },
     {
-      icon: <Rocket className="w-12 h-12 text-orange-600" />,
+      icon: <Rocket className="w-12 h-12 text-[#f9c65d]" />,
       title: "Launch That Second Business",
       description: "You've had the idea for years. Now you have the capital to test it without risking everything."
     },
     {
-      icon: <Shield className="w-12 h-12 text-green-600" />,
+      icon: <Shield className="w-12 h-12 text-[#f9c65d]" />,
       title: "Build Your War Chest",
       description: "6-12 months of operating expenses at 0% interest. Weather any storm with confidence."
     },
     {
-      icon: <Zap className="w-12 h-12 text-yellow-600" />,
+      icon: <Zap className="w-12 h-12 text-[#f9c65d]" />,
       title: "Seize Opportunities Instantly",
       description: "When time-sensitive deals appear, you don't scramble for funding. You already have it."
     },
     {
-      icon: <DollarSign className="w-12 h-12 text-red-600" />,
+      icon: <DollarSign className="w-12 h-12 text-[#f9c65d]" />,
       title: "Eliminate High-Interest Debt",
       description: "Transfer $100K in 18% balances to 0% for 18 months. Save $27,000 in interest payments."
     }
@@ -315,28 +315,28 @@ const MesaAdvantage = () => {
   const advantages = [
     {
       number: 1,
-      icon: <Brain className="w-16 h-16 text-amber-600" />,
+      icon: <Brain className="w-16 h-16 text-[#f9c65d]" />,
       title: "Banking Industry Insider Knowledge",
       description: "Our CEO comes from a banking background and understands exactly how banks evaluate clients and underwrite decisions. We know what triggers approvals and what causes denials—because we've seen it from the inside.",
       result: "We position your profile the exact way underwriters want to see it, maximizing your approval odds and credit limits."
     },
     {
       number: 2,
-      icon: <Users className="w-16 h-16 text-blue-600" />,
+      icon: <Users className="w-16 h-16 text-[#f9c65d]" />,
       title: "Direct Banking Relationships",
       description: "We maintain personal connections with Business Relationship Managers at Chase, Bank of America, US Bank, and 40+ regional banks. Your applications go through people who know us, not algorithms that reject you.",
       result: "Higher approval rates, larger limits, reconsideration support when others get stuck."
     },
     {
       number: 3,
-      icon: <Target className="w-16 h-16 text-purple-600" />,
+      icon: <Target className="w-16 h-16 text-[#f9c65d]" />,
       title: "Strategic Sequencing System",
       description: "The order you apply matters. Which bureau each bank pulls matters. We've processed thousands of funding rounds and know exactly which banks to approach, when, and in what sequence.",
       result: "Maximize total capital while protecting your credit profile from inquiry damage."
     },
     {
       number: 4,
-      icon: <CheckCircle className="w-16 h-16 text-green-600" />,
+      icon: <CheckCircle className="w-16 h-16 text-[#f9c65d]" />,
       title: "Credit Optimization Before Applications",
       description: "Most people apply before they're ready. We analyze your profile across all three bureaus and optimize every factor that impacts underwriting BEFORE we submit anything.",
       result: "Position yourself for the highest limits possible—often $20K-$50K more per card."
@@ -360,7 +360,7 @@ const MesaAdvantage = () => {
           {advantages.map((advantage, index) => (
             <div key={index} className={`flex flex-col md:flex-row gap-6 items-start ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
               <div className="flex-shrink-0">
-                <div className="w-20 h-20 bg-amber-500 text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
+                <div className="w-20 h-20 bg-[#f9c65d] text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
                   {advantage.number}
                 </div>
               </div>
@@ -445,7 +445,7 @@ const ThreeRoundFramework = () => {
                                  'linear-gradient(to br, #f59e0b, #d97706)'
               }}
             >
-              <div className="w-16 h-16 bg-white text-amber-600 rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-lg mx-auto">
+              <div className="w-16 h-16 bg-[#f9c65d] text-white rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-lg mx-auto">
                 {round.number}
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">
@@ -1193,7 +1193,7 @@ const FinalCTA = () => (
 
             <a
               href="tel:6613103040"
-              className="inline-flex items-center justify-center gap-2 bg-white text-amber-600 text-xl font-semibold px-12 py-5 rounded-lg border-2 border-amber-600 hover:bg-amber-50 transition-all duration-200 hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 bg-white text-gray-700 text-xl font-semibold px-12 py-5 rounded-lg border-2 border-gray-300 hover:bg-gray-50 transition-all duration-200 hover:scale-105"
             >
               <Phone className="w-6 h-6" />
               Call Us: (661) 310-3040

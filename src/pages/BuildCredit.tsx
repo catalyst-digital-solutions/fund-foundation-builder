@@ -121,6 +121,11 @@ const BuildCredit = () => {
       number: 1,
       title: 'Choose Your Tools',
       description: 'Based on your starting point, select the credit building accounts that make sense. Not everyone needs the same combination. Someone with zero credit history needs different tools than someone who just finished credit restoration.',
+      tools: [
+        '2-3 revolving accounts (credit builders or secured cards)',
+        '1-2 installment accounts (credit builder loans)',
+        '1 rent reporting service (optional but recommended)'
+      ],
       cta: 'We help you choose the right combination for your situation.'
     },
     {
@@ -140,22 +145,22 @@ const BuildCredit = () => {
   ];
 
   const revolvingPartners = [
-    { name: 'Ava Finance', features: ['Reports to all 3 bureaus', 'No credit check to apply', 'Builds revolving credit'] },
-    { name: 'Kikoff', features: ['$0 annual fee', 'No hard pull', 'Reports monthly'] },
-    { name: 'CreditStrong Revolv', features: ['Credit builder + revolving', 'Low monthly cost', 'All 3 bureaus'] },
-    { name: 'Credit Builder Card', features: ['Secured option', 'Graduate to unsecured', 'Rewards potential'] },
+    { name: 'Ava Finance', url: 'https://meetava.sjv.io/xLxZEA', features: ['Reports to all 3 bureaus', 'No credit check to apply', 'Builds revolving credit'] },
+    { name: 'Kikoff', url: 'https://kikoff.com/', features: ['$0 annual fee', 'No hard pull', 'Reports monthly'] },
+    { name: 'CreditStrong Revolv', url: 'https://myusn.link/1vf1WA', features: ['Credit builder + revolving', 'Low monthly cost', 'All 3 bureaus'] },
+    { name: 'Credit Builder Card', url: 'https://www.creditbuildercard.com/mesagroupconsulting', features: ['Secured option', 'Graduate to unsecured', 'Rewards potential'] },
   ];
 
   const installmentPartners = [
-    { name: 'CreditStrong Loans', features: ['Credit builder loan', 'Reports to all 3 bureaus', 'Save while building'] },
-    { name: 'Self Credit Builder', features: ['No credit check', 'Save money as you build', 'Low monthly payments'] },
+    { name: 'CreditStrong Loans', url: 'https://myusn.link/1vf1WA', features: ['Credit builder loan', 'Reports to all 3 bureaus', 'Save while building'] },
+    { name: 'Self Credit Builder', url: 'https://myusn.link/CGj0Lj', features: ['No credit check', 'Save money as you build', 'Low monthly payments'] },
   ];
 
   const rentPartners = [
-    { name: 'RentReporters', features: ['Backdate up to 24 months', 'Reports to TransUnion', 'Fast enrollment'] },
-    { name: 'Rental Kharma', features: ['Reports to TransUnion', 'Past rent history', 'Monthly reporting'] },
-    { name: 'BoomPay', features: ['Reports to all 3 bureaus', 'Rent + utilities', 'Backdate history'] },
-    { name: 'Experian Boost', features: ['FREE service', 'Add utilities & streaming', 'Instant score update'] },
+    { name: 'RentReporters', url: 'https://www.rentreporters.com/?clickref=1110lXs9Zs', features: ['Backdate up to 24 months', 'Reports to TransUnion', 'Fast enrollment'] },
+    { name: 'Rental Kharma', url: 'https://www.rentalkharma.com/partner-ecalderon/?Code=MESAGROUP', features: ['Reports to TransUnion', 'Past rent history', 'Monthly reporting'] },
+    { name: 'BoomPay', url: 'https://www.boompay.app/', features: ['Reports to all 3 bureaus', 'Rent + utilities', 'Backdate history'] },
+    { name: 'Experian Boost', url: 'https://myusn.link/bFdtEP', features: ['FREE service', 'Add utilities & streaming', 'Instant score update'] },
   ];
 
   const paths = [
@@ -301,7 +306,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Build Credit Fast—The <span className="text-amber-600">Strategic</span> Way
+              Build Credit Fast—The <span className="text-[#f9c65d]">Strategic</span> Way
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
               Access the nation's leading credit building platforms through one trusted partner. We've partnered with proven tools to help you build strong credit relationships—no guesswork, no wasted time, just a clear path to funding.
@@ -344,7 +349,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-8">
-            Credit Is About <span className="text-amber-600">Relationships</span>, Not Just Numbers
+            Credit Is About <span className="text-[#f9c65d]">Relationships</span>, Not Just Numbers
           </h2>
           
           <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mb-12">
@@ -387,7 +392,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              You Can't Get Credit Without <span className="text-amber-600">Credit History</span>
+              You Can't Get Credit Without <span className="text-[#f9c65d]">Credit History</span>
             </h2>
             <p className="text-xl text-gray-700">It's the ultimate catch-22.</p>
           </div>
@@ -427,7 +432,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
             Same Starting Point. Different Strategy.{' '}
-            <span className="text-amber-600">Completely Different Outcome.</span>
+            <span className="text-[#f9c65d]">Completely Different Outcome.</span>
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -480,7 +485,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Credit Building = Adding <span className="text-amber-600">Positive Accounts</span> That Lenders Actually Want to See
+              Credit Building = Adding <span className="text-[#f9c65d]">Positive Accounts</span> That Lenders Actually Want to See
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Credit building means strategically opening accounts that report positive payment history to the credit bureaus. These accounts create the "credit depth" that lenders need to see before approving you for major purchases.
@@ -488,8 +493,31 @@ const BuildCredit = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {fivePillars.map((pillar, index) => (
-              <div key={index} className={`bg-white rounded-xl p-6 shadow-md ${index === 4 ? 'lg:col-span-3 lg:max-w-xl lg:mx-auto' : ''}`}>
+            {fivePillars.slice(0, 3).map((pillar, index) => (
+              <div key={index} className="bg-white rounded-xl p-6 shadow-md border border-amber-100">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                    <pillar.icon className="w-6 h-6 text-amber-600" />
+                  </div>
+                  <div>
+                    <span className="text-sm text-amber-600 font-semibold">Pillar {pillar.number}</span>
+                    <h3 className="text-xl font-bold text-gray-900">{pillar.title}</h3>
+                  </div>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">{pillar.description}</p>
+                <div className="bg-green-50 rounded-lg p-4">
+                  <p className="text-sm text-green-800">
+                    <strong>The Goal:</strong> {pillar.goal}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Bottom row with 2 pillars centered */}
+          <div className="grid md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
+            {fivePillars.slice(3, 5).map((pillar, index) => (
+              <div key={index + 3} className="bg-white rounded-xl p-6 shadow-md border border-amber-100">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
                     <pillar.icon className="w-6 h-6 text-amber-600" />
@@ -515,7 +543,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-            Your Credit Building Journey in <span className="text-amber-600">3 Steps</span>
+            Your Credit Building Journey in <span className="text-[#f9c65d]">3 Steps</span>
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -529,7 +557,24 @@ const BuildCredit = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-4">{step.title}</h3>
                   <p className="text-gray-700 leading-relaxed mb-4">{step.description}</p>
                   
-                  {step.cta && (
+                  {step.tools && (
+                    <div className="bg-amber-50 rounded-lg p-4 mt-4">
+                      <p className="text-sm font-semibold text-gray-900 mb-2">Pick 3-5 accounts across different categories:</p>
+                      <ul className="space-y-1">
+                        {step.tools.map((item, i) => (
+                          <li key={i} className="text-sm text-gray-700 flex items-center gap-2">
+                            <ArrowRight className="w-4 h-4 text-amber-600" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                      {step.cta && (
+                        <p className="text-amber-600 font-semibold text-sm mt-3">{step.cta}</p>
+                      )}
+                    </div>
+                  )}
+                  
+                  {!step.tools && step.cta && (
                     <p className="text-amber-600 font-semibold">{step.cta}</p>
                   )}
                   
@@ -572,7 +617,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Ready to Get Started? Click Your <span className="text-amber-600">Preferred Tool</span> Below
+              Ready to Get Started? Click Your <span className="text-[#f9c65d]">Preferred Tool</span> Below
             </h2>
             <p className="text-lg text-gray-700">
               We've partnered with the nation's leading credit building platforms. Click any partner below to get started immediately:
@@ -581,11 +626,14 @@ const BuildCredit = () => {
           
           {/* Revolving Credit Builders */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
               <CreditCard className="w-6 h-6 text-amber-600" />
               Revolving Credit Builders
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <p className="text-gray-700 mb-6 max-w-4xl">
+              Revolving credit accounts are the foundation of a strong credit profile. These platforms let you add primary credit card tradelines without requiring good credit.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               {revolvingPartners.map((partner, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                   <h4 className="text-lg font-bold text-gray-900 mb-3">{partner.name}</h4>
@@ -597,11 +645,64 @@ const BuildCredit = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                  <a 
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
+                  >
                     Get Started Now
-                  </button>
+                  </a>
                 </div>
               ))}
+            </div>
+            
+            {/* Revolving Credit Info Box */}
+            <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-2xl p-8 border border-amber-200">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">?</span>
+                    What They Are
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    Specialized accounts that report as revolving credit to all three bureaus—with no credit check required.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚙</span>
+                    How They Work
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    You sign up, the account reports as a $2,500-$10,000 credit line on your report. You make small purchases or payments monthly, and positive payment history builds automatically.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <span className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">✓</span>
+                    Key Benefits
+                  </h4>
+                  <ul className="space-y-2">
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      No hard inquiry or credit check
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Instant approval
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Reports to all three bureaus
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Credit limits from $2,500 to $10,000+
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           
@@ -623,9 +724,14 @@ const BuildCredit = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                  <a 
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
+                  >
                     Get Started Now
-                  </button>
+                  </a>
                 </div>
               ))}
             </div>
@@ -649,9 +755,14 @@ const BuildCredit = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                  <a 
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
+                  >
                     Get Started Now
-                  </button>
+                  </a>
                 </div>
               ))}
             </div>
@@ -667,15 +778,20 @@ const BuildCredit = () => {
               <p className="text-gray-700 mb-6">
                 Access 3,000+ aged tradelines (5-20+ years) for instant account age boost. Best for those with established foundation seeking premium profile acceleration.
               </p>
-              <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors">
+              <a 
+                href="https://link.mesagroupconsulting.com/widget/bookings/free-tradeline-consultation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors"
+              >
                 Schedule Free Tradeline Consultation
-              </button>
+              </a>
             </div>
           </div>
           
           {/* Not Sure CTA */}
           <div className="text-center bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8">
-            <p className="text-lg text-gray-700 mb-4">Not Sure Where to Start?</p>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Not Sure Where to Start?</h3>
             <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-8 rounded-lg shadow-lg transition-all">
               Schedule Free Credit Building Consultation
             </button>
@@ -689,7 +805,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Three Proven <span className="text-amber-600">Paths</span> to Building Credit
+              Three Proven <span className="text-[#f9c65d]">Paths</span> to Building Credit
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Choose the combination that fits your starting point and goals. Instead of opening random accounts and hoping for the best, follow a proven strategy.
@@ -765,7 +881,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-            Real Results from <span className="text-amber-600">Real People</span>
+            Real Results from <span className="text-[#f9c65d]">Real People</span>
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -796,7 +912,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-8">
-            Beyond the Score: Building <span className="text-amber-600">Institutional Relationships</span>
+            Beyond the Score: Building <span className="text-[#f9c65d]">Institutional Relationships</span>
           </h2>
           
           <div className="max-w-4xl mx-auto mb-12">
@@ -854,7 +970,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-            5 Mistakes That <span className="text-amber-600">Cost People</span> Months of Progress
+            5 Mistakes That <span className="text-[#f9c65d]">Cost People</span> Months of Progress
           </h2>
           
           <div className="space-y-6 max-w-4xl mx-auto">
@@ -890,7 +1006,7 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-8">
             Already Working on Credit Restoration?{' '}
-            <span className="text-amber-600">Add Credit Building.</span>
+            <span className="text-[#f9c65d]">Add Credit Building.</span>
           </h2>
           
           <div className="max-w-4xl mx-auto mb-12">
@@ -930,7 +1046,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-            Common <span className="text-amber-600">Questions</span> About Building Credit
+            Common <span className="text-[#f9c65d]">Questions</span> About Building Credit
           </h2>
           
           <div className="space-y-4">
@@ -958,7 +1074,7 @@ const BuildCredit = () => {
       <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Start Building <span className="text-amber-600">Relationships</span>, Not Just Scores
+            Start Building <span className="text-[#f9c65d]">Relationships</span>, Not Just Scores
           </h2>
           
           <p className="text-lg text-gray-700 leading-relaxed mb-8">

@@ -5,6 +5,7 @@ import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, C
 import creditilyLogo from "@/assets/creditily-wolf-logo.svg";
 import creditilyWideWolfLogo from "@/assets/creditily-wide-wolf-logo.svg";
 import diyHeroImage from "@/assets/diy-credit-repair-hero.webp";
+import costComparisonBg from "@/assets/diy-credit-repair-cost-comparison-bg.png";
 import EmotionalCTA1 from "@/components/diy-credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/diy-credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/diy-credit-repair/sections/EmotionalCTA3";
@@ -46,8 +47,8 @@ const DIYCreditRepair = () => {
       answer: "We offer a 7-day free trial (no credit card required) and a 30-day money-back guarantee after you subscribe. If the software isn't what you expected, cancel within 30 days for a full refund. We want you to succeed, not feel trapped."
     },
     {
-      question: "Can I upgrade to full-service credit repair later?",
-      answer: "Absolutely. If you try DIY and realize it's not for you, we can transition you to our full-service credit repair team at any time. Many clients start with DIY to save money, then upgrade if their situation becomes more complex. We're here to help either way."
+      question: "Can I upgrade to MESA 360 coaching later?",
+      answer: "Absolutely. If you try DIY and realize it's not for you, we can transition you to our MESA 360 financial coaching team at any time. Many clients start with DIY to save money, then upgrade if their situation becomes more complex. We're here to help either way."
     }
   ];
 
@@ -242,10 +243,10 @@ const DIYCreditRepair = () => {
               </ul>
               <div className="mt-6 pt-6 border-t border-orange-200">
                 <a 
-                  href="/credit-repair" 
+                  href="/credit-repair-2" 
                   className="text-secondary hover:text-primary font-semibold underline"
                 >
-                  Learn about our full-service credit repair →
+                  Explore MESA 360 Coaching →
                 </a>
               </div>
             </div>
@@ -253,23 +254,85 @@ const DIYCreditRepair = () => {
           </div>
           
           {/* Cost Comparison */}
-          <div className="bg-[#6c6c6c] rounded-lg p-8 mt-12 text-center">
-            <div>
-              <h4 className="text-2xl font-bold text-white mb-4">Credit Repair Shouldn't Cost Thousands</h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div>
-                  <div className="text-5xl font-bold text-white mb-2">$1,000 - $3,000+</div>
-                  <div className="text-lg text-white">upfront</div>
-                  <div className="text-sm text-white mt-2">What most companies charge</div>
+          <div className="relative overflow-hidden rounded-2xl mt-12">
+            {/* Background image with overlay */}
+            <div className="absolute inset-0">
+              <img 
+                src={costComparisonBg} 
+                alt="" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-[#2c2c2c]/80" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#2c2c2c]/90 via-transparent to-[#2c2c2c]/90" />
+            </div>
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(249,198,93,0.15),_transparent_50%)]" />
+            
+            <div className="relative p-8 md:p-12">
+              <div className="text-center mb-8">
+                <span className="inline-block px-4 py-1.5 bg-[#f9c65d]/20 text-[#f9c65d] text-sm font-semibold rounded-full mb-4">
+                  💰 The Smart Choice
+                </span>
+                <h4 className="text-2xl md:text-3xl font-bold text-white">
+                  Credit Repair Shouldn't Cost <span className="text-[#f9c65d]">Thousands</span>
+                </h4>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                {/* Traditional Companies */}
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 relative">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                    <span className="px-3 py-1 bg-red-500/20 text-red-400 text-xs font-semibold rounded-full border border-red-500/30">
+                      Traditional Companies
+                    </span>
+                  </div>
+                  <div className="pt-4">
+                    <div className="text-4xl md:text-5xl font-bold text-white/80 mb-2 line-through decoration-red-400 decoration-2">
+                      $1,000 - $3,000+
+                    </div>
+                    <div className="text-lg text-white/60 font-medium">upfront payment</div>
+                    <ul className="text-sm text-white/50 mt-4 space-y-2 text-left">
+                      <li className="flex items-center gap-2">
+                        <span className="text-red-400">✕</span> Hidden fees & long contracts
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-red-400">✕</span> Limited transparency
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-red-400">✕</span> Slow, outdated processes
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-5xl font-bold text-[#f9c65d] mb-2">$39.99/mo</div>
-                  <div className="text-lg text-white"></div>
-                  <div className="text-sm text-white mt-2">What you'll pay with Creditily</div>
+                
+                {/* Creditily */}
+                <div className="bg-gradient-to-br from-[#f9c65d]/20 to-[#f9c65d]/5 backdrop-blur-sm rounded-xl p-6 border-2 border-[#f9c65d]/50 relative shadow-[0_0_30px_rgba(249,198,93,0.15)]">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                    <span className="px-3 py-1 bg-[#f9c65d] text-[#2c2c2c] text-xs font-bold rounded-full">
+                      ⭐ Creditily
+                    </span>
+                  </div>
+                  <div className="pt-4">
+                    <div className="text-4xl md:text-5xl font-bold text-[#f9c65d] mb-2">
+                      $39.99<span className="text-2xl">/mo</span>
+                    </div>
+                    <div className="text-lg text-white font-medium">cancel anytime</div>
+                    <ul className="text-sm text-white/80 mt-4 space-y-2 text-left">
+                      <li className="flex items-center gap-2">
+                        <span className="text-[#f9c65d]">✓</span> No upfront fees ever
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-[#f9c65d]">✓</span> AI-powered dispute system
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-[#f9c65d]">✓</span> Full control & transparency
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <p className="text-white mt-6">
-                Professional tools. No upfront fees. No long-term contracts. Just results.
+              
+              <p className="text-white/80 mt-8 text-center text-lg">
+                <span className="font-semibold text-white">Professional tools.</span> No upfront fees. No long-term contracts. <span className="text-[#f9c65d] font-semibold">Just results.</span>
               </p>
             </div>
           </div>

@@ -28,7 +28,7 @@ const FAQ = () => {
               <li>Full legal team for FCRA violation cases</li>
               <li>Transparent pricing with no hidden fees</li>
             </ul>
-            <p>We're proud to serve clients in English, Spanish, and Italian (🇺🇸 🇪🇸 🇮🇹). You can call us, visit us, or read reviews from real people we've helped. We're as real as it gets.</p>
+            <p>We're proud to serve clients in English, Spanish, and Punjabi (🇺🇸 🇪🇸 🇮🇳). You can call us, visit us, or read reviews from real people we've helped. We're as real as it gets.</p>
           </FAQItem>
 
           {/* FAQ 2 */}
@@ -246,7 +246,7 @@ const FAQ = () => {
           {/* FAQ 10 */}
           <FAQItem index={9} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="10. Can you guarantee my score will increase by X points?">
             <p className="mb-4">No—and you should run from any company that makes that promise.</p>
-            <p className="mb-4">Under the Credit Repair Organizations Act (CROA), it is illegal for credit repair companies to:</p>
+            <p className="mb-4">Under the Credit Repair Organizations Act (CROA), it is illegal for credit restoration companies to:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
               <li>Guarantee specific score increases</li>
               <li>Promise removal of accurate negative items</li>
@@ -278,7 +278,7 @@ const FAQ = () => {
 
           {/* FAQ 11 */}
           <FAQItem index={10} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="11. What's included in the 1-on-1 financial coaching?">
-            <p className="mb-4">Every Mesa Group client—regardless of which plan you choose—gets a dedicated account manager and personalized financial coaching. This isn't just credit repair; it's a complete financial transformation program.</p>
+            <p className="mb-4">Every Mesa Group client—regardless of which plan you choose—gets a dedicated account manager and personalized financial coaching. This isn't just credit restoration; it's a complete financial transformation program.</p>
             <p className="font-semibold mb-2">Your coaching includes:</p>
             <p className="font-semibold mt-4 mb-2">📊 Customized Action Plan</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
@@ -291,7 +291,7 @@ const FAQ = () => {
             <ul className="list-disc pl-6 space-y-1 mb-4">
               <li>Real person assigned to your case (no switching between random reps)</li>
               <li>Direct phone and email access</li>
-              <li>Trilingual support available (🇺🇸 English | 🇪🇸 Español | 🇮🇹 Italiano)</li>
+              <li>Trilingual support available (🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi)</li>
               <li>They know your name, your story, and your goals</li>
             </ul>
             <p className="font-semibold mb-2">📈 Monthly Progress Reviews</p>
@@ -336,7 +336,7 @@ const FAQ = () => {
                 <li>Cancel anytime (after 3-day risk-free window)</li>
               </ul>
               <p className="mb-2"><strong>Key Advantage:</strong> ✅ Ongoing support for new items—If you add new negative items during the process (like a late payment or new collection), we'll work on them. No additional charge.</p>
-              <p className="mb-2"><strong>Why this matters:</strong> Life happens. Despite our coaching and guidance, clients sometimes add new late payments or inquiries during the credit restoration process. Monthly plans keep you covered and accountable—we don't abandon your case when new challenges arise. This flexibility is worth the ongoing investment for clients with active or evolving credit situations.</p>
+              <p className="mb-2"><strong>Why this matters:</strong> Life happens. Despite our coaching and guidance, clients sometimes add new late payments or inquiries during the credit recovery process. Monthly plans keep you covered and accountable—we don't abandon your case when new challenges arise. This flexibility is worth the ongoing investment for clients with active or evolving credit situations.</p>
               <p className="font-semibold mb-2">Best for:</p>
               <ul className="list-disc pl-6 space-y-1">
                 <li>People who want maximum flexibility</li>
@@ -401,7 +401,7 @@ const FAQ = () => {
             </ul>
             <p className="font-semibold mb-2">Our Office:</p>
             <p>📍 5001 California Ave Suite 219<br />Bakersfield, CA 93309<br />📞 (661) 310-3040<br />📧 contact@mesagroupconsulting.com</p>
-            <p className="mt-4"><strong>Trilingual support <em>nationwide</em>:</strong> Our English, Spanish, and Italian speaking team members (🇺🇸 🇪🇸 🇮🇹) work remotely with clients across the country.</p>
+            <p className="mt-4"><strong>Trilingual support <em>nationwide</em>:</strong> Our English, Spanish, and Punjabi speaking team members (🇺🇸 🇪🇸 🇮🇳) work remotely with clients across the country.</p>
           </FAQItem>
 
           {/* FAQ 14 */}
@@ -510,7 +510,7 @@ const FAQ = () => {
               <li>You can cancel SmartCredit separately if you leave our program</li>
             </ul>
             <p className="font-semibold mb-2">After your program:</p>
-            <p>Many clients choose to keep SmartCredit even after completing credit restoration because it's valuable for:</p>
+            <p>Many clients choose to keep SmartCredit even after completing credit recovery because it's valuable for:</p>
             <ul className="list-disc pl-6 space-y-1">
               <li>Ongoing monitoring</li>
               <li>Identity theft protection</li>
@@ -521,7 +521,7 @@ const FAQ = () => {
           {/* FAQ 17 */}
           <FAQItem index={16} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="17. Can I apply for new credit during the program?">
             <p className="mb-4">Yes, but strategically.</p>
-            <p className="mb-4">This is one of the most important topics we cover in your 1-on-1 coaching, because applying for new credit during credit restoration can either help or hurt—depending on timing and approach.</p>
+            <p className="mb-4">This is one of the most important topics we cover in your 1-on-1 coaching, because applying for new credit during credit rebuilding can either help or hurt—depending on timing and approach.</p>
             <p className="font-semibold mb-2">General guidance:</p>
             <p className="font-semibold mt-4 mb-2">✅ GOOD IDEAS:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">

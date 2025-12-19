@@ -83,7 +83,7 @@ const Header = () => {
       submenu: [
         { label: 'Build Credit', href: '/build-credit' },
         { label: 'Credit Monitoring', href: '/credit-monitoring' },
-        { label: 'Credit Repair (Mesa360)', href: '/credit-repair-2' },
+        { label: 'Credit Restoration (Mesa360)', href: '/credit-repair-2' },
         { label: 'DIY Credit Repair', href: '/diy-credit-repair' },
         { label: 'Credit Cards', href: '/credit-cards' },
         { label: 'Personal Loans', href: '/personal-loans' },
@@ -99,10 +99,8 @@ const Header = () => {
       label: 'For Businesses',
       href: '/for-businesses',
       submenu: [
-        { label: '0% Interest Business Funding', href: '/zero-interest-business-funding' },
-        { label: '0% Interest Business Funding 2.0', href: '/zero-interest-business-funding-2' },
-        { label: 'Business Funding', href: '/business-funding' },
-        { label: 'Business Funding 2.0', href: '/business-funding-2' },
+        { label: '0% Interest Business Funding', href: '/zero-interest-business-funding-2' },
+        { label: 'Business Funding', href: '/business-funding-2' },
         { label: 'Business Credit Builder', href: '/business-credit-builder' },
         { label: 'Business Debt Relief', href: '/business-debt-relief' },
         { label: 'Business Credit', href: '/business-credit' },
@@ -254,7 +252,7 @@ const Header = () => {
             {/* Divider before Phone */}
             <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-6" />
 
-            {/* Right Side: Phone & Dot Grid */}
+            {/* Right Side: Phone, Client Login & Dot Grid */}
             <div className="flex items-center gap-4">
               {/* Phone Section */}
               <div className="hidden md:flex items-center gap-3">
@@ -268,6 +266,19 @@ const Header = () => {
                   </a>
                 </div>
               </div>
+
+              {/* Divider before Client Login */}
+              <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
+
+              {/* Client Login Link */}
+              <a
+                href="https://portal.mesagroupconsulting.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden lg:flex text-sm font-medium text-white hover:text-[#f9c65d] transition-colors"
+              >
+                Client Login
+              </a>
 
               {/* Divider before Dot Grid */}
               <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />

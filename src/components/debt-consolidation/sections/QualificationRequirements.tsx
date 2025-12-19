@@ -54,7 +54,7 @@ const QualificationRequirements = () => {
           {requirements.map((req, index) => {
             const Icon = req.icon;
             return (
-              <div key={index} className="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-amber-400 transition-colors duration-300 shadow-sm hover:shadow-lg">
+              <div key={index} className="bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-[#bb9446] transition-colors duration-300 shadow-sm hover:shadow-lg">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Icon className="w-6 h-6 text-[#3e3e3e]" />
@@ -71,7 +71,7 @@ const QualificationRequirements = () => {
         </div>
 
         {/* Additional Info Box */}
-        <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 border-2 border-amber-200">
+        <div className="bg-gradient-to-br from-amber-50 to-[#fff8e7] rounded-2xl p-8 border-2 border-[#bb9446]/30">
           <div className="flex items-start gap-4">
             <CheckCircle className="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
             <div>

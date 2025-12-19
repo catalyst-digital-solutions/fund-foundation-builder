@@ -99,7 +99,7 @@ const StudentLoanRefi2 = () => {
       <Header />
 
       {/* HERO SECTION */}
-      <section className="relative py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 via-amber-50 to-orange-50">
+      <section className="relative py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -157,20 +157,20 @@ const StudentLoanRefi2 = () => {
       </section>
 
       {/* TRUST INDICATORS */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-amber-600 to-orange-600">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-mgc-gradient">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 text-center text-white">
             <div>
               <div className="text-4xl md:text-5xl font-bold mb-2">$20,000+</div>
-              <div className="text-lg text-amber-100">Average savings over loan lifetime</div>
+              <div className="text-lg text-white/90">Average savings over loan lifetime</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold mb-2">2 Minutes</div>
-              <div className="text-lg text-amber-100">To check your personalized rates</div>
+              <div className="text-lg text-white/90">To check your personalized rates</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold mb-2">100+ Lenders</div>
-              <div className="text-lg text-amber-100">Compare offers in one place</div>
+              <div className="text-lg text-white/90">Compare offers in one place</div>
             </div>
           </div>
         </div>
@@ -189,9 +189,9 @@ const StudentLoanRefi2 = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 border-2 border-amber-200">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mb-4">
-                <TrendingDown className="w-6 h-6 text-white" />
+            <div className="bg-[#fef9ed] rounded-xl p-8 border-2 border-[#f9c65d]/30">
+              <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center mb-4">
+                <TrendingDown className="w-6 h-6 text-gray-900" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Lower Your Interest Rate</h3>
               <p className="text-gray-700">
@@ -199,9 +199,9 @@ const StudentLoanRefi2 = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 border-2 border-amber-200">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mb-4">
-                <DollarSign className="w-6 h-6 text-white" />
+            <div className="bg-[#fef9ed] rounded-xl p-8 border-2 border-[#f9c65d]/30">
+              <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center mb-4">
+                <DollarSign className="w-6 h-6 text-gray-900" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Reduce Monthly Payments</h3>
               <p className="text-gray-700">
@@ -209,9 +209,9 @@ const StudentLoanRefi2 = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 border-2 border-amber-200">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mb-4">
-                <Layers className="w-6 h-6 text-white" />
+            <div className="bg-[#fef9ed] rounded-xl p-8 border-2 border-[#f9c65d]/30">
+              <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center mb-4">
+                <Layers className="w-6 h-6 text-gray-900" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Simplify Multiple Loans</h3>
               <p className="text-gray-700">
@@ -219,9 +219,9 @@ const StudentLoanRefi2 = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 border-2 border-amber-200">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mb-4">
-                <Calendar className="w-6 h-6 text-white" />
+            <div className="bg-[#fef9ed] rounded-xl p-8 border-2 border-[#f9c65d]/30">
+              <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center mb-4">
+                <Calendar className="w-6 h-6 text-gray-900" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Choose Your Repayment Term</h3>
               <p className="text-gray-700">
@@ -229,9 +229,9 @@ const StudentLoanRefi2 = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 border-2 border-amber-200">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mb-4">
-                <UserCheck className="w-6 h-6 text-white" />
+            <div className="bg-[#fef9ed] rounded-xl p-8 border-2 border-[#f9c65d]/30">
+              <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center mb-4">
+                <UserCheck className="w-6 h-6 text-gray-900" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Release Your Co-signer</h3>
               <p className="text-gray-700">
@@ -239,9 +239,9 @@ const StudentLoanRefi2 = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 border-2 border-amber-200">
-              <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mb-4">
-                <Ban className="w-6 h-6 text-white" />
+            <div className="bg-[#fef9ed] rounded-xl p-8 border-2 border-[#f9c65d]/30">
+              <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center mb-4">
+                <Ban className="w-6 h-6 text-gray-900" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">No Prepayment Penalties</h3>
               <p className="text-gray-700">
@@ -269,8 +269,8 @@ const StudentLoanRefi2 = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="relative">
-              <div className="bg-white rounded-xl p-8 border-2 border-amber-200 shadow-lg h-full">
-                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6">
+              <div className="bg-white rounded-xl p-8 border-2 border-[#f9c65d]/30 shadow-lg h-full">
+                <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center text-gray-900 text-2xl font-bold mb-6">
                   1
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Compare Rates</h3>
@@ -295,8 +295,8 @@ const StudentLoanRefi2 = () => {
             </div>
 
             <div className="relative">
-              <div className="bg-white rounded-xl p-8 border-2 border-amber-200 shadow-lg h-full">
-                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6">
+              <div className="bg-white rounded-xl p-8 border-2 border-[#f9c65d]/30 shadow-lg h-full">
+                <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center text-gray-900 text-2xl font-bold mb-6">
                   2
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Choose Your Lender</h3>
@@ -321,8 +321,8 @@ const StudentLoanRefi2 = () => {
             </div>
 
             <div className="relative">
-              <div className="bg-white rounded-xl p-8 border-2 border-amber-200 shadow-lg h-full">
-                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6">
+              <div className="bg-white rounded-xl p-8 border-2 border-[#f9c65d]/30 shadow-lg h-full">
+                <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center text-gray-900 text-2xl font-bold mb-6">
                   3
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Finalize & Save</h3>
@@ -414,9 +414,9 @@ const StudentLoanRefi2 = () => {
               </ul>
             </div>
 
-            <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-8">
+            <div className="bg-gray-50 border-2 border-gray-200 rounded-xl p-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center">
                   <X className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">
@@ -425,27 +425,27 @@ const StudentLoanRefi2 = () => {
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <X className="w-6 h-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <X className="w-6 h-6 text-gray-600 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">You're relying on income-driven repayment plans</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <X className="w-6 h-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <X className="w-6 h-6 text-gray-600 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">You're pursuing Public Service Loan Forgiveness (PSLF)</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <X className="w-6 h-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <X className="w-6 h-6 text-gray-600 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">You need federal forbearance or deferment options</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <X className="w-6 h-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <X className="w-6 h-6 text-gray-600 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">Your income is unstable or you may face unemployment</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <X className="w-6 h-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <X className="w-6 h-6 text-gray-600 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">You have poor credit (under 650) and no co-signer</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <X className="w-6 h-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <X className="w-6 h-6 text-gray-600 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">You're currently in school or grace period</span>
                 </li>
               </ul>
@@ -470,7 +470,7 @@ const StudentLoanRefi2 = () => {
       <EmotionalCTA2 />
 
       {/* SAVINGS CALCULATOR */}
-      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 via-amber-50 to-orange-50">
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#fef9ed] to-[#fdf6e3]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -540,7 +540,7 @@ const StudentLoanRefi2 = () => {
               <div className="flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-sm font-semibold text-gray-600 mb-2">Rate Reduction</div>
-                  <div className="text-3xl font-bold text-amber-600">
+                  <div className="text-3xl font-bold text-[#bb9446]">
                     {(currentRate - newRate).toFixed(1)}%
                   </div>
                 </div>
@@ -549,9 +549,9 @@ const StudentLoanRefi2 = () => {
 
             <div className="border-t-2 border-gray-200 pt-8">
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 border-2 border-amber-200">
+                <div className="bg-[#fef9ed] rounded-xl p-6 border-2 border-[#f9c65d]/30">
                   <div className="text-sm font-semibold text-gray-600 mb-2">Monthly Savings</div>
-                  <div className="text-4xl font-bold text-amber-600 mb-2">
+                  <div className="text-4xl font-bold text-[#bb9446] mb-2">
                     ${savings.monthlySavings.toLocaleString()}
                   </div>
                   <div className="text-sm text-gray-600">
