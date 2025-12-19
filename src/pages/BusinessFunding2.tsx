@@ -598,14 +598,14 @@ const AllFundingSolutionsGrid = () => {
           </div>
 
           {/* Invoice Factoring */}
-          <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-green-300">
+          <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-[#f9c65d]/30">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <FileText className="w-12 h-12 text-green-600 mb-3" strokeWidth={2.5} />
+                <FileText className="w-12 h-12 text-[#f9c65d] mb-3" strokeWidth={2.5} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Invoice Factoring</h3>
-                <p className="text-sm text-green-700 font-semibold">Turn receivables into immediate capital</p>
+                <p className="text-sm text-[#d4a84b] font-semibold">Turn receivables into immediate capital</p>
               </div>
-              <div className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">Up to $5M</div>
+              <div className="bg-[#f9c65d] text-gray-900 px-3 py-1 rounded-full text-sm font-bold">Up to $5M</div>
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -619,7 +619,7 @@ const AllFundingSolutionsGrid = () => {
               </div>
               <div className="flex justify-between py-2 border-b border-gray-200">
                 <span className="text-gray-600">Min Credit:</span>
-                <span className="font-bold text-green-600">530+ ⭐ Lowest</span>
+                <span className="font-bold text-[#d4a84b]">530+ ⭐ Lowest</span>
               </div>
               <div className="flex justify-between py-2 border-b border-gray-200">
                 <span className="text-gray-600">Time in Business:</span>
@@ -632,7 +632,7 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-all text-sm">
+              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
               <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm">
@@ -686,14 +686,14 @@ const AllFundingSolutionsGrid = () => {
           </div>
 
           {/* Commercial Real Estate */}
-          <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-blue-300">
+          <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-[#f9c65d]/30">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <Building className="w-12 h-12 text-blue-600 mb-3" strokeWidth={2.5} />
+                <Building className="w-12 h-12 text-[#f9c65d] mb-3" strokeWidth={2.5} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Commercial Real Estate Loans</h3>
-                <p className="text-sm text-blue-700 font-semibold">Stop paying rent—start building equity</p>
+                <p className="text-sm text-[#d4a84b] font-semibold">Stop paying rent—start building equity</p>
               </div>
-              <div className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-bold">Up to $100M</div>
+              <div className="bg-[#f9c65d] text-gray-900 px-3 py-1 rounded-full text-sm font-bold">Up to $100M</div>
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -720,7 +720,7 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all text-sm">
+              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
               <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm">
@@ -775,10 +775,10 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm">
+              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm border-2 border-gray-300">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-lg transition-all text-sm">
+              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Schedule Consultation
               </a>
             </div>
@@ -819,10 +819,10 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm">
+              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm border-2 border-gray-300">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-lg transition-all text-sm">
+              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Schedule Consultation
               </a>
             </div>
@@ -886,11 +886,11 @@ const ComparisonTable = () => {
                 <td className="px-4 py-4 text-center">2+ years</td>
                 <td className="px-4 py-4 text-center">$20K/mo</td>
               </tr>
-              <tr className="bg-green-50 hover:bg-green-100">
+              <tr className="bg-amber-50 hover:bg-amber-100">
                 <td className="px-4 py-4 font-semibold">Invoice Factoring ⭐ Lowest Credit</td>
                 <td className="px-4 py-4 text-center">3-5 days</td>
                 <td className="px-4 py-4 text-center">Up to $5M</td>
-                <td className="px-4 py-4 text-center font-bold text-green-600">530+</td>
+                <td className="px-4 py-4 text-center font-bold text-[#d4a84b]">530+</td>
                 <td className="px-4 py-4 text-center">3 months</td>
                 <td className="px-4 py-4 text-center">$40K/mo</td>
               </tr>
@@ -902,28 +902,28 @@ const ComparisonTable = () => {
                 <td className="px-4 py-4 text-center">4 mo statements</td>
                 <td className="px-4 py-4 text-center">$8K/mo</td>
               </tr>
-              <tr className="bg-blue-50 hover:bg-blue-100">
+              <tr className="bg-amber-50 hover:bg-amber-100">
                 <td className="px-4 py-4 font-semibold">Commercial Real Estate ⭐ Highest Limit</td>
                 <td className="px-4 py-4 text-center">4-8 weeks</td>
-                <td className="px-4 py-4 text-center font-bold text-blue-600">Up to $100M</td>
+                <td className="px-4 py-4 text-center font-bold text-[#d4a84b]">Up to $100M</td>
                 <td className="px-4 py-4 text-center">620+</td>
                 <td className="px-4 py-4 text-center">Experience helps</td>
                 <td className="px-4 py-4 text-center">N/A</td>
               </tr>
-              <tr className="bg-purple-50 hover:bg-purple-100">
+              <tr className="bg-amber-50 hover:bg-amber-100">
                 <td className="px-4 py-4 font-semibold">STARTUP Unsecured ⭐ No Business History</td>
                 <td className="px-4 py-4 text-center">5-10 days</td>
                 <td className="px-4 py-4 text-center">Up to $150K</td>
                 <td className="px-4 py-4 text-center">680+</td>
-                <td className="px-4 py-4 text-center font-bold text-purple-600">NONE</td>
+                <td className="px-4 py-4 text-center font-bold text-[#d4a84b]">NONE</td>
                 <td className="px-4 py-4 text-center">$0-$4K</td>
               </tr>
-              <tr className="bg-purple-50 hover:bg-purple-100">
+              <tr className="bg-amber-50 hover:bg-amber-100">
                 <td className="px-4 py-4 font-semibold">STARTUP Small Biz Loan ⭐ No Business History</td>
                 <td className="px-4 py-4 text-center">1-2 weeks</td>
                 <td className="px-4 py-4 text-center">Up to $150K</td>
                 <td className="px-4 py-4 text-center">680+</td>
-                <td className="px-4 py-4 text-center font-bold text-purple-600">NONE</td>
+                <td className="px-4 py-4 text-center font-bold text-[#d4a84b]">NONE</td>
                 <td className="px-4 py-4 text-center">$4K personal</td>
               </tr>
             </tbody>
@@ -1583,7 +1583,7 @@ const TwoPathsForward = () => {
             </div>
 
             <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="block">
-              <Button className="w-full bg-gray-800 hover:bg-gray-900 text-white font-bold py-4 text-lg">
+              <Button className="w-full bg-white hover:bg-gray-50 text-gray-900 font-bold py-4 text-lg border-2 border-gray-300">
                 Start Your Application
               </Button>
             </a>
@@ -1647,7 +1647,7 @@ const FinalCTA = () => {
                 </div>
                 <div>
                   <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="bg-gray-800 hover:bg-gray-900 text-white font-bold px-10 py-4 text-xl h-auto">
+                    <Button size="lg" className="bg-white hover:bg-gray-50 text-gray-900 font-bold px-10 py-4 text-xl h-auto border-2 border-gray-300">
                       Apply Now
                     </Button>
                   </a>
