@@ -39,14 +39,14 @@ const HowItWorks = () => {
         {/* Process Steps */}
         <div className="grid md:grid-cols-3 gap-8 relative">
           {/* Connector Line (desktop only) */}
-          <div className="hidden md:block absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-amber-400 via-orange-400 to-amber-400" style={{ top: '80px', left: '10%', right: '10%', zIndex: 0 }}></div>
+          <div className="hidden md:block absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-[#f9c65d] via-[#bb9446] to-[#f9c65d]" style={{ top: '80px', left: '10%', right: '10%', zIndex: 0 }}></div>
           
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
-              <div key={index} className="relative bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300 border-2 border-amber-100">
+              <div key={index} className="relative bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300 border-2 border-[#bb9446]/30">
                 {/* Step Number */}
-                <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center text-white text-xl font-bold shadow-lg z-10">
+                <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-full flex items-center justify-center text-white text-xl font-bold shadow-lg z-10">
                   {step.number}
                 </div>
                 

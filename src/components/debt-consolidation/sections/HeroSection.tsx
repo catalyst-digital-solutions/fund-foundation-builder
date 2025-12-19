@@ -56,7 +56,7 @@ const HeroSection = () => {
             <div className="inline-block">
               <button
                 onClick={openAffiliateLink}
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-[#f9c65d] hover:bg-[#bb9446] rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-[#bb9446]"
               >
                 Get Started - Compare Consolidation Offers Now
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -66,10 +66,10 @@ const HeroSection = () => {
 
             {/* Social Proof */}
             <div className="flex items-center gap-4 mt-8">
-              <div className="flex -space-x-2">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 border-2 border-white"></div>
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-amber-500 border-2 border-white"></div>
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-orange-400 border-2 border-white"></div>
+            <div className="flex -space-x-2">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f9c65d] to-[#bb9446] border-2 border-white"></div>
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#bb9446] to-[#f9c65d] border-2 border-white"></div>
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f9c65d] to-[#bb9446] border-2 border-white"></div>
               </div>
               <div className="text-sm text-gray-700">
                 <div className="font-semibold">Join thousands who simplified their debt</div>
@@ -81,7 +81,7 @@ const HeroSection = () => {
           {/* Right Column - Visual */}
           <div className="hidden lg:block">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl transform rotate-3"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-2xl transform rotate-3"></div>
               <div className="relative bg-white rounded-2xl p-8 shadow-2xl">
                 <div className="text-center mb-6">
                   <span className="text-sm font-medium text-gray-600">Before vs After Consolidation</span>
