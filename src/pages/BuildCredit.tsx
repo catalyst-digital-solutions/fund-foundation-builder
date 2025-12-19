@@ -145,22 +145,22 @@ const BuildCredit = () => {
   ];
 
   const revolvingPartners = [
-    { name: 'Ava Finance', features: ['Reports to all 3 bureaus', 'No credit check to apply', 'Builds revolving credit'] },
-    { name: 'Kikoff', features: ['$0 annual fee', 'No hard pull', 'Reports monthly'] },
-    { name: 'CreditStrong Revolv', features: ['Credit builder + revolving', 'Low monthly cost', 'All 3 bureaus'] },
-    { name: 'Credit Builder Card', features: ['Secured option', 'Graduate to unsecured', 'Rewards potential'] },
+    { name: 'Ava Finance', url: 'https://meetava.sjv.io/xLxZEA', features: ['Reports to all 3 bureaus', 'No credit check to apply', 'Builds revolving credit'] },
+    { name: 'Kikoff', url: 'https://kikoff.com/', features: ['$0 annual fee', 'No hard pull', 'Reports monthly'] },
+    { name: 'CreditStrong Revolv', url: 'https://myusn.link/1vf1WA', features: ['Credit builder + revolving', 'Low monthly cost', 'All 3 bureaus'] },
+    { name: 'Credit Builder Card', url: 'https://www.creditbuildercard.com/mesagroupconsulting', features: ['Secured option', 'Graduate to unsecured', 'Rewards potential'] },
   ];
 
   const installmentPartners = [
-    { name: 'CreditStrong Loans', features: ['Credit builder loan', 'Reports to all 3 bureaus', 'Save while building'] },
-    { name: 'Self Credit Builder', features: ['No credit check', 'Save money as you build', 'Low monthly payments'] },
+    { name: 'CreditStrong Loans', url: 'https://myusn.link/1vf1WA', features: ['Credit builder loan', 'Reports to all 3 bureaus', 'Save while building'] },
+    { name: 'Self Credit Builder', url: 'https://myusn.link/CGj0Lj', features: ['No credit check', 'Save money as you build', 'Low monthly payments'] },
   ];
 
   const rentPartners = [
-    { name: 'RentReporters', features: ['Backdate up to 24 months', 'Reports to TransUnion', 'Fast enrollment'] },
-    { name: 'Rental Kharma', features: ['Reports to TransUnion', 'Past rent history', 'Monthly reporting'] },
-    { name: 'BoomPay', features: ['Reports to all 3 bureaus', 'Rent + utilities', 'Backdate history'] },
-    { name: 'Experian Boost', features: ['FREE service', 'Add utilities & streaming', 'Instant score update'] },
+    { name: 'RentReporters', url: 'https://www.rentreporters.com/?clickref=1110lXs9Zs', features: ['Backdate up to 24 months', 'Reports to TransUnion', 'Fast enrollment'] },
+    { name: 'Rental Kharma', url: 'https://www.rentalkharma.com/partner-ecalderon/?Code=MESAGROUP', features: ['Reports to TransUnion', 'Past rent history', 'Monthly reporting'] },
+    { name: 'BoomPay', url: 'https://www.boompay.app/', features: ['Reports to all 3 bureaus', 'Rent + utilities', 'Backdate history'] },
+    { name: 'Experian Boost', url: 'https://myusn.link/bFdtEP', features: ['FREE service', 'Add utilities & streaming', 'Instant score update'] },
   ];
 
   const paths = [
@@ -645,9 +645,14 @@ const BuildCredit = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                  <a 
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
+                  >
                     Get Started Now
-                  </button>
+                  </a>
                 </div>
               ))}
             </div>
@@ -719,9 +724,14 @@ const BuildCredit = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                  <a 
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
+                  >
                     Get Started Now
-                  </button>
+                  </a>
                 </div>
               ))}
             </div>
@@ -745,9 +755,14 @@ const BuildCredit = () => {
                       </li>
                     ))}
                   </ul>
-                  <button className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm">
+                  <a 
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
+                  >
                     Get Started Now
-                  </button>
+                  </a>
                 </div>
               ))}
             </div>
@@ -763,9 +778,14 @@ const BuildCredit = () => {
               <p className="text-gray-700 mb-6">
                 Access 3,000+ aged tradelines (5-20+ years) for instant account age boost. Best for those with established foundation seeking premium profile acceleration.
               </p>
-              <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors">
+              <a 
+                href="https://link.mesagroupconsulting.com/widget/bookings/free-tradeline-consultation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors"
+              >
                 Schedule Free Tradeline Consultation
-              </button>
+              </a>
             </div>
           </div>
           
