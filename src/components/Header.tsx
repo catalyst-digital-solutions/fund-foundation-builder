@@ -173,7 +173,7 @@ const Header = () => {
         <div className="max-w-[1840px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-[105px]">
             {/* Logo */}
-            <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center flex-shrink-0">
+            <Link to="/" className="flex items-center flex-shrink-0">
               <MesaGroupLogo className="h-[40px] w-auto" />
             </Link>
 
@@ -194,7 +194,6 @@ const Header = () => {
                       {item.href ? (
                         <Link 
                           to={item.href}
-                          onClick={() => window.scrollTo(0, 0)}
                           className="flex items-center gap-1 text-white hover:text-[#f9c65d] transition-colors text-sm font-medium"
                         >
                           {item.label}
@@ -228,7 +227,6 @@ const Header = () => {
                                 <Link
                                   key={subItem.label}
                                   to={subItem.href}
-                                  onClick={() => window.scrollTo(0, 0)}
                                   className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-900 hover:text-[#f9c65d] transition-colors"
                                 >
                                   {subItem.label}
@@ -242,7 +240,6 @@ const Header = () => {
                   ) : (
                     <Link
                       to={item.href}
-                      onClick={() => window.scrollTo(0, 0)}
                       className="text-white hover:text-[#f9c65d] transition-colors text-sm font-medium"
                     >
                       {item.label}
@@ -320,7 +317,7 @@ const Header = () => {
                         {item.href ? (
                           <Link
                             to={item.href}
-                            onClick={() => { setMobileMenuOpen(false); window.scrollTo(0, 0); }}
+                            onClick={() => setMobileMenuOpen(false)}
                             className="flex-1 px-4 py-3 text-white hover:text-[#f9c65d] hover:bg-gray-900 rounded-l-lg transition-colors font-medium"
                           >
                             {item.label}
@@ -359,7 +356,7 @@ const Header = () => {
                               <Link
                                 key={subItem.label}
                                 to={subItem.href}
-                                onClick={() => { setMobileMenuOpen(false); window.scrollTo(0, 0); }}
+                                onClick={() => setMobileMenuOpen(false)}
                                 className="block px-4 py-2 text-sm text-gray-300 hover:text-[#f9c65d] hover:bg-gray-900 rounded-lg transition-colors"
                               >
                                 {subItem.label}
@@ -372,7 +369,7 @@ const Header = () => {
                   ) : (
                     <Link
                       to={item.href}
-                      onClick={() => { setMobileMenuOpen(false); window.scrollTo(0, 0); }}
+                      onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 text-white hover:text-[#f9c65d] hover:bg-gray-900 rounded-lg transition-colors font-medium"
                     >
                       {item.label}
