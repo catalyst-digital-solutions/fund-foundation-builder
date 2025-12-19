@@ -1450,7 +1450,7 @@ const AboutUs = () => {
             
             <a
               href="tel:6613103040"
-              className="inline-flex items-center justify-center px-8 py-4 bg-[#bb9446] hover:bg-[#a37f3d] text-white font-semibold rounded-lg transition-colors shadow-lg"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg border-2 border-gray-300 hover:border-[#bb9446] transition-colors shadow-md"
             >
               <Phone className="mr-2 w-5 h-5" />
               Call Us: (661) 310-3040
