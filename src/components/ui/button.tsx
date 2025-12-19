@@ -1,3 +1,16 @@
+/**
+ * MESA GROUP BUTTON CONVENTIONS:
+ * 
+ * Primary CTA buttons (mesa-primary): Amber/yellow style - bg-amber-400 with border-amber-500
+ * - Use for main call-to-action buttons like "Start Your Credit Transformation", "Get Full Service Program"
+ * 
+ * Secondary/Accompanying buttons (mesa-secondary): White with gray border
+ * - Use for secondary actions like "How It Works", "Get DIY Program", phone call buttons
+ * 
+ * Orange buttons (mesa-orange): #EA6A2B orange - reserved for special emphasis only
+ * - Rarely used; prefer mesa-primary for most CTAs
+ */
+
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
@@ -15,11 +28,18 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Mesa Group Primary CTA Button (amber/yellow)
+        "mesa-primary": "bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-bold",
+        // Mesa Group Secondary/Accompanying Button (white with gray border)
+        "mesa-secondary": "bg-white hover:bg-gray-50 text-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 font-semibold",
+        // Mesa Group Orange CTA Button (for specific pages like BusinessCreditBuilder Final CTA)
+        "mesa-orange": "bg-[#EA6A2B] hover:bg-[#d55f26] text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 font-bold",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "px-8 py-4 text-lg",
         icon: "h-10 w-10",
       },
     },
