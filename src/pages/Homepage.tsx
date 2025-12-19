@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Check,
   CheckCircle,
@@ -21,6 +22,7 @@ import {
   Heart,
   PlayCircle,
   ChevronDown,
+  ChevronRight,
   Star,
   TrendingUp,
   Award,
@@ -499,13 +501,13 @@ const ServicesTabSystem = () => {
         <p className="text-gray-600 mb-4">
           Need help with credit restoration, business funding, or credit building?
         </p>
-        <a
-          href="#additional-services"
+        <Link
+          to="/for-consumers"
           className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-semibold"
         >
           View All Services
-          <ChevronDown className="w-4 h-4" />
-        </a>
+          <ChevronRight className="w-4 h-4" />
+        </Link>
       </div>
     </div>
   );
