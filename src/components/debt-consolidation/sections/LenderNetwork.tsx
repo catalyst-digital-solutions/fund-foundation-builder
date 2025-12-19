@@ -28,7 +28,7 @@ const LenderNetwork = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left - Icon & Description */}
             <div>
-              <div className="w-20 h-20 bg-[#bb9446] rounded-2xl flex items-center justify-center mb-6">
+              <div className="w-20 h-20 bg-[#f9c65d] rounded-2xl flex items-center justify-center mb-6">
                 <Building2 className="w-10 h-10 text-gray-900" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
