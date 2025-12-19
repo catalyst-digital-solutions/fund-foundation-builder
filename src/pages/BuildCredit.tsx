@@ -488,8 +488,31 @@ const BuildCredit = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {fivePillars.map((pillar, index) => (
-              <div key={index} className={`bg-white rounded-xl p-6 shadow-md ${index === 4 ? 'lg:col-span-3 lg:max-w-xl lg:mx-auto' : ''}`}>
+            {fivePillars.slice(0, 3).map((pillar, index) => (
+              <div key={index} className="bg-amber-50/50 rounded-xl p-6 shadow-md border border-amber-100">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                    <pillar.icon className="w-6 h-6 text-amber-600" />
+                  </div>
+                  <div>
+                    <span className="text-sm text-amber-600 font-semibold">Pillar {pillar.number}</span>
+                    <h3 className="text-xl font-bold text-gray-900">{pillar.title}</h3>
+                  </div>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">{pillar.description}</p>
+                <div className="bg-green-50 rounded-lg p-4">
+                  <p className="text-sm text-green-800">
+                    <strong>The Goal:</strong> {pillar.goal}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Bottom row with 2 pillars centered */}
+          <div className="grid md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
+            {fivePillars.slice(3, 5).map((pillar, index) => (
+              <div key={index + 3} className="bg-amber-50/50 rounded-xl p-6 shadow-md border border-amber-100">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
                     <pillar.icon className="w-6 h-6 text-amber-600" />
