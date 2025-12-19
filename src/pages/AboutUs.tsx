@@ -1221,7 +1221,7 @@ const AboutUs = () => {
                   <li>• DIY Credit Repair (Powered by Creditily)</li>
                   <li>• Credit Monitoring (Powered by SmartCredit)</li>
                 </ul>
-                <Link to="/credit-repair-2" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
+                <Link to="/for-consumers" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
                   View All Credit Services
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
@@ -1236,7 +1236,7 @@ const AboutUs = () => {
                   <li>• Business Credit Building</li>
                   <li>• Business Debt Relief</li>
                 </ul>
-                <Link to="/business-funding" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
+                <Link to="/for-businesses" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
                   Explore Business Solutions
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
@@ -1251,7 +1251,7 @@ const AboutUs = () => {
                   <li>• Authorized User Tradelines</li>
                   <li>• Credit Education Resources</li>
                 </ul>
-                <Link to="/credit-monitoring" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
+                <Link to="/build-credit" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
                   Start Building Credit
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
