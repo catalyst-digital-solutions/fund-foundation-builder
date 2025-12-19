@@ -39,8 +39,8 @@ const ValueProposition = () => {
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
-              <div key={index} className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 border border-amber-100 hover:shadow-xl transition-shadow duration-300">
-                <div className="w-14 h-14 bg-amber-400 rounded-lg flex items-center justify-center mb-6">
+              <div key={index} className="bg-gradient-to-br from-amber-50 to-[#fff8e7] rounded-xl p-8 border border-[#bb9446]/30 hover:shadow-xl transition-shadow duration-300">
+                <div className="w-14 h-14 bg-[#bb9446] rounded-lg flex items-center justify-center mb-6">
                   <Icon className="w-7 h-7 text-gray-900" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{benefit.title}</h3>

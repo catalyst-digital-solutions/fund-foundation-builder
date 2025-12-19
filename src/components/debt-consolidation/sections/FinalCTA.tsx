@@ -55,7 +55,7 @@ const FinalCTA = () => {
           <div className="inline-block">
             <button
               onClick={openAffiliateLink}
-              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-[#f9c65d] hover:bg-[#bb9446] rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-[#bb9446]"
             >
               Compare Consolidation Offers Now →
             </button>
