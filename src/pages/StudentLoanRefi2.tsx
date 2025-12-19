@@ -157,20 +157,20 @@ const StudentLoanRefi2 = () => {
       </section>
 
       {/* TRUST INDICATORS */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#fef9ed] to-[#fdf6e3]">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#f9c65d] via-[#f9a825] to-[#f57c00]">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 text-center text-gray-900">
+          <div className="grid md:grid-cols-3 gap-8 text-center text-white">
             <div>
               <div className="text-4xl md:text-5xl font-bold mb-2">$20,000+</div>
-              <div className="text-lg text-gray-600">Average savings over loan lifetime</div>
+              <div className="text-lg text-white/90">Average savings over loan lifetime</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold mb-2">2 Minutes</div>
-              <div className="text-lg text-gray-600">To check your personalized rates</div>
+              <div className="text-lg text-white/90">To check your personalized rates</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold mb-2">100+ Lenders</div>
-              <div className="text-lg text-gray-600">Compare offers in one place</div>
+              <div className="text-lg text-white/90">Compare offers in one place</div>
             </div>
           </div>
         </div>
