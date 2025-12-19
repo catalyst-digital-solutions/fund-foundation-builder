@@ -393,7 +393,7 @@ const CreditRepair2 = () => {
 
           {/* Why It Works */}
           <div className="bg-[#3E3E3E] rounded-2xl p-8 md:p-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">WHY THE MESA360 CREDIT SYSTEM™ ACTUALLY WORKS</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">WHY THE <span className="text-[#f9c65d]">MESA360 CREDIT SYSTEM™</span> ACTUALLY WORKS</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="text-center md:text-left">
                 <Zap className="w-10 h-10 text-amber-400 mx-auto md:mx-0 mb-3" />
