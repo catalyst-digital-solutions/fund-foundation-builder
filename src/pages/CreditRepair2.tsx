@@ -1156,185 +1156,331 @@ const CreditRepair2 = () => {
       {/* ============================================ */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          {/* Main Header */}
+          <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              Choose a Package that Suits Your <span className="text-[#f9c65d]">Budget</span>
+              Choose Your Path to <span className="text-[#f9c65d]">Financial Transformation</span>
             </h2>
-            <p className="text-xl text-gray-700">
-              Once you choose a package, we can get you started on your credit transformation journey with the Mesa360 Credit System™
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              This isn't a purchase. It's an investment in your future, your family, your freedom. Every plan includes the complete Mesa360 Credit System™—comprehensive credit restoration, 1-on-1 coaching, and a dedicated account manager who knows your name and your goals.
             </p>
           </div>
 
-          {/* Monthly Plans */}
-          <h3 className="text-2xl font-bold text-[#3E3E3E] mb-6 text-center">Monthly Plans <span className="text-gray-500 font-normal text-lg">(Most Flexible)</span></h3>
+          {/* MONTHLY PLANS SECTION */}
+          <div className="mb-20">
+            <div className="text-center mb-10">
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">MONTHLY PLANS</h3>
+              <p className="text-lg text-gray-600">Build Your Credit While You Invest—Maximum Flexibility for Life's Reality</p>
+            </div>
           
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
-            {/* Mesa360 Lite */}
-            <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-amber-300 transition-colors">
-              <h4 className="text-xl font-bold text-[#3E3E3E] mb-2">Mesa360 Lite</h4>
-              <p className="text-sm text-gray-500 mb-4">Basic</p>
-              <div className="mb-4">
-                <span className="text-3xl font-bold text-[#3E3E3E]">$350</span>
-                <span className="text-gray-500"> initial + </span>
-                <span className="text-3xl font-bold text-[#FBBF23]">$149</span>
-                <span className="text-gray-500">/mo</span>
-              </div>
-              <p className="text-sm text-gray-600 mb-6">Starting your credit restoration journey. Covers collections, late payments, and inquiries across all 3 bureaus.</p>
-              
-              <div className="space-y-2 mb-6 text-sm">
-                <p className="font-semibold text-gray-700">What's Included:</p>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Collections, Late Payments, Inquiries</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>3-Bureau disputes to agencies</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Digital uploads</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>35-day updates + client portal</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Dedicated Account Manager</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>1-on-1 Financial Coaching</span></div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Mesa360 Lite */}
+              <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-amber-300 transition-colors">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-2xl">💼</span>
+                  <h4 className="text-xl font-bold text-[#3E3E3E]">MESA360 LITE</h4>
+                </div>
+                <p className="text-sm text-gray-600 mb-1">Your Gateway to Financial Freedom</p>
+                <p className="text-xs text-gray-500 mb-4">Basic</p>
+                
+                <div className="mb-2">
+                  <p className="text-sm font-semibold text-gray-700">Investment:</p>
+                  <div>
+                    <span className="text-2xl font-bold text-[#3E3E3E]">$350</span>
+                    <span className="text-gray-500"> initial + </span>
+                    <span className="text-2xl font-bold text-[#FBBF23]">$149</span>
+                    <span className="text-gray-500">/mo</span>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 mb-4">Starting your credit repair journey. Covers collections, late payments, and inquiries across all 3 bureaus. Includes steady dispute support with agencies and monthly progress tracking.</p>
+                
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">What's Included:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Collections</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Late Payments</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Inquiries (all 3 bureaus)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>3-Bureau disputes to agencies</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Real-Time Digital Filing</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Priority Bureau Access</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>35-day updates + client portal</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Ongoing support for new items</span></div>
+                </div>
+
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">Package Features:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Correct All Personal Information</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dispute All Inquiries</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Monthly Progress Report</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Client Portal to Track Results</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Mobile App to Track Results</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dedicated Account Manager</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>1-on-1 Financial Coaching</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Customized Action Plan</span></div>
+                </div>
+
+                <div className="bg-gray-50 rounded-lg p-3 mb-4">
+                  <p className="text-xs font-semibold text-gray-700 mb-1">Best for:</p>
+                  <p className="text-xs text-gray-600">Starting your credit repair journey. Covers collections, late payments, and inquiries across all 3 bureaus. Includes steady dispute support with agencies and monthly progress tracking.</p>
+                </div>
+
+                <div className="text-center mb-4">
+                  <p className="text-sm font-semibold text-gray-700">Your Investment Today:</p>
+                  <p className="text-2xl font-bold text-green-600">$0.00 DUE TODAY</p>
+                  <p className="text-xs text-gray-500">Risk Free - 3 Day Cancellation Window</p>
+                </div>
+                
+                <button onClick={handleCTAClick} className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3">
+                  Choose Mesa360 Lite
+                </button>
+
+                <p className="text-xs text-gray-500">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process. Ongoing support is provided. If you add new items, we will work on them. Clients may continue applying for accounts as needed.</p>
               </div>
 
-              <div className="text-center mb-4">
-                <p className="text-2xl font-bold text-green-600">$0.00 DUE TODAY</p>
-                <p className="text-xs text-gray-500">Risk Free - 3 Day Cancellation Window</p>
-              </div>
-              
-              <button onClick={handleCTAClick} className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors">
-                Choose Mesa360 Lite
-              </button>
-            </div>
+              {/* Mesa360 Flex - Most Popular */}
+              <div className="bg-white border-2 border-amber-400 rounded-2xl p-6 relative shadow-xl">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#FBBF23] text-gray-900 text-xs font-bold px-4 py-1 rounded-full">
+                  ⭐ MOST POPULAR
+                </div>
+                <div className="flex items-center gap-2 mb-2 mt-2">
+                  <span className="text-2xl">⚡</span>
+                  <h4 className="text-xl font-bold text-[#3E3E3E]">MESA360 FLEX</h4>
+                </div>
+                <p className="text-sm text-gray-600 mb-1">The Complete Transformation Package</p>
+                <p className="text-xs text-[#FBBF23] font-semibold mb-4">Most Popular</p>
+                
+                <div className="mb-2">
+                  <p className="text-sm font-semibold text-gray-700">Investment:</p>
+                  <div>
+                    <span className="text-2xl font-bold text-[#3E3E3E]">$500</span>
+                    <span className="text-gray-500"> initial + </span>
+                    <span className="text-2xl font-bold text-[#FBBF23]">$199</span>
+                    <span className="text-gray-500">/mo</span>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 mb-4">Our most popular plan. Everything in Lite PLUS charge-offs. Includes priority bureau access, accelerated processing, direct creditor disputes, and federal escalation protocols.</p>
+                
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">What's Included:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>All Lite features</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Charge-Offs</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Priority Bureau Access + Accelerated Processing</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Disputes to creditors & collectors</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Federal Escalation Protocol (CFPB)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Ongoing support for new items</span></div>
+                </div>
 
-            {/* Mesa360 Flex - Most Popular */}
-            <div className="bg-white border-2 border-amber-400 rounded-2xl p-6 relative shadow-xl">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#FBBF23] text-white text-xs font-bold px-4 py-1 rounded-full">
-                MOST POPULAR
-              </div>
-              <h4 className="text-xl font-bold text-[#3E3E3E] mb-2">Mesa360 Flex</h4>
-              <p className="text-sm text-[#FBBF23] font-semibold mb-4">Most Popular</p>
-              <div className="mb-4">
-                <span className="text-3xl font-bold text-[#3E3E3E]">$500</span>
-                <span className="text-gray-500"> initial + </span>
-                <span className="text-3xl font-bold text-[#FBBF23]">$199</span>
-                <span className="text-gray-500">/mo</span>
-              </div>
-              <p className="text-sm text-gray-600 mb-6">Our most popular plan with faster methods like digital uploads, Experian rapid inquiry removal, and CFPB complaints.</p>
-              
-              <div className="space-y-2 mb-6 text-sm">
-                <p className="font-semibold text-gray-700">All Lite features PLUS:</p>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Direct Experian uploads + rapid inquiry removal</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Disputes to creditors & collectors</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>CFPB complaints</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Ongoing support for new items</span></div>
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">Package Features:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Correct All Personal Information</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dispute All Inquiries</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Monthly Progress Report</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Client Portal to Track Results</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Mobile App to Track Results</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dedicated Account Manager</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>1-on-1 Financial Coaching</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Customized Action Plan</span></div>
+                </div>
+
+                <div className="bg-amber-50 rounded-lg p-3 mb-4">
+                  <p className="text-xs font-semibold text-gray-700 mb-1">Best for:</p>
+                  <p className="text-xs text-gray-600">Our most popular plan with charge-off removal strategy. Includes priority bureau access, accelerated processing, direct creditor disputes, and federal escalation protocols with 35-day updates.</p>
+                </div>
+
+                <div className="text-center mb-4">
+                  <p className="text-sm font-semibold text-gray-700">Your Investment Today:</p>
+                  <p className="text-2xl font-bold text-green-600">$0.00 DUE TODAY</p>
+                  <p className="text-xs text-gray-500">Risk Free - 3 Day Cancellation Window</p>
+                </div>
+                
+                <button onClick={handleCTAClick} className="w-full bg-[#FBBF23] hover:bg-[#E5AC1F] text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3">
+                  Choose Mesa360 Flex (most popular)
+                </button>
+
+                <p className="text-xs text-gray-500">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process. Ongoing support is provided. If you add new items, we will work on them. Clients may continue applying for accounts as needed.</p>
               </div>
 
-              <div className="text-center mb-4">
-                <p className="text-2xl font-bold text-green-600">$0.00 DUE TODAY</p>
-                <p className="text-xs text-gray-500">Risk Free - 3 Day Cancellation Window</p>
-              </div>
-              
-              <button onClick={handleCTAClick} className="w-full bg-[#FBBF23] hover:bg-[#E5AC1F] text-gray-900 font-bold py-3 rounded-lg transition-colors">
-                Choose Mesa360 Flex
-              </button>
-            </div>
+              {/* Mesa360 Elite */}
+              <div className="bg-gradient-to-br from-[#3E3E3E] to-[#2c2c2c] border-2 border-[#3E3E3E] rounded-2xl p-6 text-white">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-2xl">👑</span>
+                  <h4 className="text-xl font-bold">MESA360 ELITE</h4>
+                </div>
+                <p className="text-sm text-gray-300 mb-1">When You've Got the Heavy Stuff</p>
+                <p className="text-xs text-amber-400 font-semibold mb-4">Premium</p>
+                
+                <div className="mb-2">
+                  <p className="text-sm font-semibold text-gray-300">Investment:</p>
+                  <div>
+                    <span className="text-2xl font-bold">$800</span>
+                    <span className="text-gray-400"> initial + </span>
+                    <span className="text-2xl font-bold text-amber-400">$299</span>
+                    <span className="text-gray-400">/mo</span>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-300 mb-4">Our most premium plan reserved for heavy credit damage. Covers everything in Flex PLUS bankruptcies, repossessions, evictions, student loans, and medical bills. Includes advanced legal disputes, priority handling, and funding profile optimization.</p>
+                
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-200">What's Included:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>All Flex features</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Bankruptcies (Chapter 7/13)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Repossessions</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Evictions</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Student Loans</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Medical Bills</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>First-class mailed disputes to all 3 bureaus</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Priority Bureau Platform Access + Phone Disputes</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Advanced Technical Challenges (Data-Level Disputes, FCRA)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Priority handling + legal review</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Funding profile optimization</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Ongoing support for new items</span></div>
+                </div>
 
-            {/* Mesa360 Elite */}
-            <div className="bg-gradient-to-br from-[#3E3E3E] to-[#2c2c2c] border-2 border-[#3E3E3E] rounded-2xl p-6 text-white">
-              <h4 className="text-xl font-bold mb-2">Mesa360 Elite</h4>
-              <p className="text-sm text-amber-400 font-semibold mb-4">Premium</p>
-              <div className="mb-4">
-                <span className="text-3xl font-bold">$800</span>
-                <span className="text-gray-400"> initial + </span>
-                <span className="text-3xl font-bold text-amber-400">$299</span>
-                <span className="text-gray-400">/mo</span>
-              </div>
-              <p className="text-sm text-gray-300 mb-6">Our most premium plan. Covers everything plus charge-offs, bankruptcies, repos, evictions, student loans, medical bills.</p>
-              
-              <div className="space-y-2 mb-6 text-sm">
-                <p className="font-semibold text-gray-200">All Flex features PLUS:</p>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5" /><span>Charge-offs, Bankruptcies, Repos</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5" /><span>Evictions, Student loans, Medical bills</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5" /><span>Advanced legal disputes (Metro 2, FCRA)</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5" /><span>Priority handling + legal review</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5" /><span>Funding profile optimization</span></div>
-              </div>
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-200">Package Features:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Correct All Personal Information</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Dispute All Inquiries</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Monthly Progress Report</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Client Portal to Track Results</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Mobile App to Track Results</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Dedicated Account Manager</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>1-on-1 Financial Coaching</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Customized Action Plan</span></div>
+                </div>
 
-              <div className="text-center mb-4">
-                <p className="text-2xl font-bold text-green-400">$0.00 DUE TODAY</p>
-                <p className="text-xs text-gray-400">Risk Free - 3 Day Cancellation Window</p>
+                <div className="bg-gray-700/50 rounded-lg p-3 mb-4">
+                  <p className="text-xs font-semibold text-gray-200 mb-1">Best for:</p>
+                  <p className="text-xs text-gray-300">Our most premium plan reserved for heavy credit damage. Covers everything in Flex plus bankruptcies, repossessions, evictions, student loans, and medical bills. Includes advanced legal disputes, priority handling, and funding profile optimization.</p>
+                </div>
+
+                <div className="text-center mb-4">
+                  <p className="text-sm font-semibold text-gray-300">Your Investment Today:</p>
+                  <p className="text-2xl font-bold text-green-400">$0.00 DUE TODAY</p>
+                  <p className="text-xs text-gray-400">Risk Free - 3 Day Cancellation Window</p>
+                </div>
+                
+                <button onClick={handleCTAClick} className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3">
+                  Choose Mesa360 Elite (premium)
+                </button>
+
+                <p className="text-xs text-gray-400">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process. Ongoing support is provided. If you add new items, we will work on them. Clients may continue applying for accounts as needed.</p>
               </div>
-              
-              <button onClick={handleCTAClick} className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors">
-                Choose Mesa360 Elite
-              </button>
             </div>
           </div>
 
-          {/* 12-Month Programs */}
-          <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2 text-center">12-Month Programs <span className="text-gray-500 font-normal text-lg">(Pay in Full & Save)</span></h3>
-          <p className="text-center text-gray-600 mb-8">Get a full year of the Mesa360 Credit System™ with significant savings</p>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Ruby Plan */}
-            <div className="bg-gradient-to-br from-red-50 to-pink-50 border-2 border-red-200 rounded-2xl p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold">R</span>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-[#3E3E3E]">Ruby Plan</h4>
-                  <p className="text-sm text-gray-500">12-Month Flex</p>
-                </div>
-              </div>
-              <div className="mb-2">
-                <span className="text-4xl font-bold text-[#3E3E3E]">$1,500</span>
-                <span className="text-gray-500"> one-time</span>
-              </div>
-              <p className="text-green-600 font-semibold mb-4">Save $888 vs. Monthly Flex</p>
-              <p className="text-sm text-gray-600 mb-6">Equivalent to 12 months of Mesa360 Flex for the price of ~7.5 months</p>
-              
-              <div className="space-y-2 mb-6 text-sm">
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Collections, Late Payments, Inquiries</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Digital uploads + Direct Experian uploads</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Disputes to creditors & collectors</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>CFPB complaints when necessary</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>All coaching & support features</span></div>
-              </div>
-
-              <p className="text-xs text-gray-500 mb-4">Note: New items added during program not covered.</p>
-              
-              <button onClick={handleCTAClick} className="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 rounded-lg transition-colors">
-                Choose Ruby Plan
-              </button>
+          {/* 12-MONTH PROGRAMS SECTION */}
+          <div className="mb-16">
+            <div className="text-center mb-10">
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">12-MONTH PROGRAMS</h3>
+              <p className="text-lg text-gray-600 mb-4">Pay Once, Transform Forever—Maximum Savings for Committed Action</p>
+              <p className="text-xl font-semibold text-[#3E3E3E] mb-2">Get a full year of the Mesa360 Credit System™ with significant savings</p>
+              <p className="text-gray-600 max-w-3xl mx-auto">For those who know they're committed—pay in full (or use Buy Now, Pay Later) and save up to $1,788 compared to monthly plans. Get the complete Mesa360 Credit System™ with massive upfront savings.</p>
             </div>
 
-            {/* Emerald Plan */}
-            <div className="bg-gradient-to-br from-emerald-50 to-green-50 border-2 border-emerald-200 rounded-2xl p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold">E</span>
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {/* Ruby Plan */}
+              <div className="bg-gradient-to-br from-red-50 to-pink-50 border-2 border-red-200 rounded-2xl p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-3xl">💎</span>
+                  <div>
+                    <h4 className="text-xl font-bold text-[#3E3E3E]">RUBY PLAN</h4>
+                    <p className="text-sm text-gray-500">12-Month Flex</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-xl font-bold text-[#3E3E3E]">Emerald Plan</h4>
-                  <p className="text-sm text-gray-500">12-Month Elite</p>
+                
+                <div className="mb-2">
+                  <p className="text-sm font-semibold text-gray-700">One-Time Investment:</p>
+                  <span className="text-3xl font-bold text-[#3E3E3E]">$1,500</span>
+                  <span className="text-gray-500"> one-time (Pay in Full or BNPL)</span>
                 </div>
-              </div>
-              <div className="mb-2">
-                <span className="text-4xl font-bold text-[#3E3E3E]">$1,800</span>
-                <span className="text-gray-500"> one-time</span>
-              </div>
-              <p className="text-green-600 font-semibold mb-4">Save $1,788 vs. Monthly Elite</p>
-              <p className="text-sm text-gray-600 mb-6">Equivalent to 12 months of Mesa360 Elite for the price of ~6 months</p>
-              
-              <div className="space-y-2 mb-6 text-sm">
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>All Ruby items PLUS:</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Charge-offs, Bankruptcies, Repos, Evictions</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Student loans, Medical bills</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Advanced legal disputes + priority handling</span></div>
-                <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5" /><span>Funding profile optimization</span></div>
+                <p className="text-green-600 font-bold mb-1">Save $888 vs. Monthly Flex</p>
+                <p className="text-sm text-gray-600 mb-6">(Equivalent to 12 months of Mesa360 Flex for the price of ~7.5 months)</p>
+                
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">What's Included:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Collections</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Late Payments</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Inquiries (all 3 bureaus)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Charge-Offs</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Real-Time Digital Filing (no mailed letters)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Priority Bureau Access + Accelerated Processing</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Disputes to creditors & collection agencies</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Federal Escalation Protocol (CFPB) when necessary</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>35-day updates + client portal</span></div>
+                </div>
+
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">Package Features:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dedicated Account Manager</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>1-on-1 Financial Coaching</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Customized Action Plan</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Monthly Progress Report</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Client Portal + Mobile App</span></div>
+                </div>
+
+                <div className="bg-red-100 rounded-lg p-3 mb-4">
+                  <p className="text-xs font-semibold text-red-800">Important Note:</p>
+                  <p className="text-xs text-red-700">Comprehensive 12-month program focused on your current credit profile. New items added during the program will not be worked on.</p>
+                </div>
+                
+                <button onClick={handleCTAClick} className="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 rounded-lg transition-colors">
+                  Choose Ruby Plan
+                </button>
               </div>
 
-              <p className="text-xs text-gray-500 mb-4">Note: New items added during program not covered.</p>
-              
-              <button onClick={handleCTAClick} className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-lg transition-colors">
-                Choose Emerald Plan
-              </button>
+              {/* Emerald Plan */}
+              <div className="bg-gradient-to-br from-emerald-50 to-green-50 border-2 border-emerald-200 rounded-2xl p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-3xl">💚</span>
+                  <div>
+                    <h4 className="text-xl font-bold text-[#3E3E3E]">EMERALD PLAN</h4>
+                    <p className="text-sm text-gray-500">12-Month Elite</p>
+                  </div>
+                </div>
+                
+                <div className="mb-2">
+                  <p className="text-sm font-semibold text-gray-700">One-Time Investment:</p>
+                  <span className="text-3xl font-bold text-[#3E3E3E]">$1,800</span>
+                  <span className="text-gray-500"> one-time (Pay in Full or BNPL)</span>
+                </div>
+                <p className="text-green-600 font-bold mb-1">Save $1,788 vs. Monthly Elite</p>
+                <p className="text-sm text-gray-600 mb-6">(Equivalent to 12 months of Mesa360 Elite for the price of ~6 months)</p>
+                
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">What's Included:</p>
+                  <p className="text-gray-600 italic mb-2">All Ruby items PLUS:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Bankruptcies (Chapter 7/13)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Repossessions</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Evictions</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Student Loans</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Medical Bills</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>First-class mailed disputes to all 3 bureaus</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Direct disputes to creditors & collection agencies</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Priority Bureau Platform Access + Phone Disputes</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Federal Escalation Protocol (CFPB)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Advanced Technical Challenges (Data-Level Disputes, FCRA frameworks)</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Legal Team Priority Handling + Review</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Funding profile optimization</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>35-day updates + client portal</span></div>
+                </div>
+
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-gray-700">Package Features:</p>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dedicated Account Manager</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>1-on-1 Financial Coaching</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Customized Action Plan</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Monthly Progress Report</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Client Portal + Mobile App</span></div>
+                </div>
+
+                <div className="bg-emerald-100 rounded-lg p-3 mb-4">
+                  <p className="text-xs font-semibold text-emerald-800">Important Note:</p>
+                  <p className="text-xs text-emerald-700">Comprehensive 12-month program focused on your current credit profile. New items added during the program will not be worked on.</p>
+                </div>
+                
+                <button onClick={handleCTAClick} className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-lg transition-colors">
+                  Choose Emerald Plan
+                </button>
+              </div>
             </div>
           </div>
 
