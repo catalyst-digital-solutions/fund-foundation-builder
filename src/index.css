@@ -48,6 +48,9 @@ All colors MUST be HSL.
     --mgc-text-orange: 32 93% 44%;
     --mgc-dark-blue: 218 34% 13%;
 
+    /* MGC Gradient Background Asset */
+    --mgc-gradient-bg: linear-gradient(to bottom right, #f9c65d 40%, #f9a825 70%, #f57c00);
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -112,5 +115,11 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-mgc-gradient {
+    background: var(--mgc-gradient-bg);
   }
 }

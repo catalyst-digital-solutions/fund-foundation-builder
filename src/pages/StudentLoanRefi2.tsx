@@ -157,7 +157,7 @@ const StudentLoanRefi2 = () => {
       </section>
 
       {/* TRUST INDICATORS */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#f9c65d] from-40% via-[#f9a825] via-70% to-[#f57c00]">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-mgc-gradient">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 text-center text-white">
             <div>
