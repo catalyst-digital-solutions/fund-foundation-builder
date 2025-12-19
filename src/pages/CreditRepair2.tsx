@@ -15,24 +15,23 @@ import mesa360HeroTeam from "@/assets/mesa360-hero-team.jpeg";
 const CreditRepair2 = () => {
   const timelineSectionRef = useRef<HTMLElement>(null);
   const [timelineVisible, setTimelineVisible] = useState(false);
-  
+
   // Scroll animation for timeline section
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           setTimelineVisible(true);
         }
       });
-    }, { threshold: 0.2 });
-    
+    }, {
+      threshold: 0.2
+    });
     if (timelineSectionRef.current) {
       observer.observe(timelineSectionRef.current);
     }
-    
     return () => observer.disconnect();
   }, []);
-  
   const handleCTAClick = () => {
     window.open("https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09", "_blank", "noopener,noreferrer");
   };
@@ -199,11 +198,9 @@ const CreditRepair2 = () => {
       {/* ============================================ */}
       {/* SECTION 4A: Mesa360 Credit System Hero */}
       {/* ============================================ */}
-      <section 
-        id="how-it-works" 
-        className="relative py-20 md:py-28 px-6 md:px-8 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url(${mesa360HeroImage})` }}
-      >
+      <section id="how-it-works" className="relative py-20 md:py-28 px-6 md:px-8 bg-cover bg-center bg-fixed" style={{
+      backgroundImage: `url(${mesa360HeroImage})`
+    }}>
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/60" />
         
@@ -460,7 +457,9 @@ const CreditRepair2 = () => {
       {/* ============================================ */}
       {/* SECTION 4C: REALISTIC TIMELINE & EXPECTATIONS */}
       {/* ============================================ */}
-      <section ref={timelineSectionRef} style={{ background: 'linear-gradient(to bottom, #2d2d2d, #1a1a1a, #2d2d2d)' }} className="py-16 md:py-24 px-6 md:px-8 relative overflow-hidden">
+      <section ref={timelineSectionRef} style={{
+      background: 'linear-gradient(to bottom, #2d2d2d, #1a1a1a, #2d2d2d)'
+    }} className="py-16 md:py-24 px-6 md:px-8 relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-mgc-yellow to-transparent" />
         <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-mgc-gold to-transparent" />
@@ -496,85 +495,80 @@ const CreditRepair2 = () => {
             {/* Timeline Container */}
             <div className="relative">
               {/* Timeline Line - animated on scroll */}
-              <div className="hidden md:block absolute top-8 left-0 right-0 h-1 overflow-hidden" style={{ backgroundColor: '#444' }}>
-                <div 
-                  className="h-full bg-gradient-to-r from-mgc-yellow via-mgc-gold to-green-400 transition-all duration-1000 ease-out"
-                  style={{ 
-                    width: timelineVisible ? '100%' : '0%',
-                    opacity: timelineVisible ? 1 : 0 
-                  }} 
-                />
+              <div className="hidden md:block absolute top-8 left-0 right-0 h-1 overflow-hidden" style={{
+              backgroundColor: '#444'
+            }}>
+                <div className="h-full bg-gradient-to-r from-mgc-yellow via-mgc-gold to-green-400 transition-all duration-1000 ease-out" style={{
+                width: timelineVisible ? '100%' : '0%',
+                opacity: timelineVisible ? 1 : 0
+              }} />
               </div>
               
               {/* Timeline Points */}
               <div className="grid md:grid-cols-4 gap-6 md:gap-4">
                 {/* Day 1 */}
-                <div 
-                  className="relative text-center transition-all duration-700 ease-out"
-                  style={{ 
-                    opacity: timelineVisible ? 1 : 0,
-                    transform: timelineVisible ? 'translateY(0)' : 'translateY(40px)',
-                    transitionDelay: '200ms'
-                  }}
-                >
+                <div className="relative text-center transition-all duration-700 ease-out" style={{
+                opacity: timelineVisible ? 1 : 0,
+                transform: timelineVisible ? 'translateY(0)' : 'translateY(40px)',
+                transitionDelay: '200ms'
+              }}>
                   <div className="w-16 h-16 bg-mgc-yellow rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-mgc-yellow/30 relative z-10 transform transition-transform duration-300 hover:scale-110">
                     <span className="text-mgc-dark-gray font-bold text-sm">DAY 1</span>
                   </div>
-                  <div className="rounded-xl p-4 border border-mgc-gold/30 backdrop-blur-sm" style={{ backgroundColor: 'rgba(68,68,68,0.5)' }}>
+                  <div className="rounded-xl p-4 border border-mgc-gold/30 backdrop-blur-sm" style={{
+                  backgroundColor: 'rgba(68,68,68,0.5)'
+                }}>
                     <p className="text-mgc-yellow font-semibold mb-1">Analysis</p>
                     <p className="text-mgc-light-gray text-sm">Deep credit forensics & strategy planning</p>
                   </div>
                 </div>
 
                 {/* Day 30 */}
-                <div 
-                  className="relative text-center transition-all duration-700 ease-out"
-                  style={{ 
-                    opacity: timelineVisible ? 1 : 0,
-                    transform: timelineVisible ? 'translateY(0)' : 'translateY(40px)',
-                    transitionDelay: '400ms'
-                  }}
-                >
+                <div className="relative text-center transition-all duration-700 ease-out" style={{
+                opacity: timelineVisible ? 1 : 0,
+                transform: timelineVisible ? 'translateY(0)' : 'translateY(40px)',
+                transitionDelay: '400ms'
+              }}>
                   <div className="w-16 h-16 bg-mgc-text-orange rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-mgc-text-orange/30 relative z-10 transform transition-transform duration-300 hover:scale-110">
                     <span className="text-white font-bold text-sm">30 DAYS</span>
                   </div>
-                  <div className="rounded-xl p-4 border border-mgc-gold/30 backdrop-blur-sm" style={{ backgroundColor: 'rgba(68,68,68,0.5)' }}>
+                  <div className="rounded-xl p-4 border border-mgc-gold/30 backdrop-blur-sm" style={{
+                  backgroundColor: 'rgba(68,68,68,0.5)'
+                }}>
                     <p className="text-mgc-text-orange font-semibold mb-1">First Results</p>
                     <p className="text-mgc-light-gray text-sm">Bureau investigations complete (by law)</p>
                   </div>
                 </div>
 
                 {/* Day 45-60 */}
-                <div 
-                  className="relative text-center transition-all duration-700 ease-out"
-                  style={{ 
-                    opacity: timelineVisible ? 1 : 0,
-                    transform: timelineVisible ? 'translateY(0)' : 'translateY(40px)',
-                    transitionDelay: '600ms'
-                  }}
-                >
+                <div className="relative text-center transition-all duration-700 ease-out" style={{
+                opacity: timelineVisible ? 1 : 0,
+                transform: timelineVisible ? 'translateY(0)' : 'translateY(40px)',
+                transitionDelay: '600ms'
+              }}>
                   <div className="w-16 h-16 bg-mgc-cream rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-mgc-cream/30 relative z-10 transform transition-transform duration-300 hover:scale-110">
                     <span className="text-mgc-dark-gray font-bold text-sm">45-60</span>
                   </div>
-                  <div className="rounded-xl p-4 border border-mgc-gold/30 backdrop-blur-sm" style={{ backgroundColor: 'rgba(68,68,68,0.5)' }}>
+                  <div className="rounded-xl p-4 border border-mgc-gold/30 backdrop-blur-sm" style={{
+                  backgroundColor: 'rgba(68,68,68,0.5)'
+                }}>
                     <p className="text-mgc-cream font-semibold mb-1">Momentum</p>
                     <p className="text-mgc-light-gray text-sm">Second dispute cycle for complex items</p>
                   </div>
                 </div>
 
                 {/* Day 90 */}
-                <div 
-                  className="relative text-center transition-all duration-700 ease-out"
-                  style={{ 
-                    opacity: timelineVisible ? 1 : 0,
-                    transform: timelineVisible ? 'translateY(0)' : 'translateY(40px)',
-                    transitionDelay: '800ms'
-                  }}
-                >
+                <div className="relative text-center transition-all duration-700 ease-out" style={{
+                opacity: timelineVisible ? 1 : 0,
+                transform: timelineVisible ? 'translateY(0)' : 'translateY(40px)',
+                transitionDelay: '800ms'
+              }}>
                   <div className="w-16 h-16 bg-green-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-green-400/30 relative z-10 transform transition-transform duration-300 hover:scale-110">
                     <span className="text-mgc-dark-gray font-bold text-sm">90 DAYS</span>
                   </div>
-                  <div className="rounded-xl p-4 border border-mgc-gold/30 backdrop-blur-sm" style={{ backgroundColor: 'rgba(68,68,68,0.5)' }}>
+                  <div className="rounded-xl p-4 border border-mgc-gold/30 backdrop-blur-sm" style={{
+                  backgroundColor: 'rgba(68,68,68,0.5)'
+                }}>
                     <p className="text-green-400 font-semibold mb-1">Transformation</p>
                     <p className="text-mgc-light-gray text-sm">Most clients see measurable improvements</p>
                   </div>
@@ -585,65 +579,50 @@ const CreditRepair2 = () => {
 
           {/* What's Real Checkmarks */}
           <div className="grid md:grid-cols-2 gap-4 mb-12">
-            <div 
-              className="flex items-start gap-3 rounded-xl p-4 border border-mgc-gold/20 transition-all duration-700 ease-out"
-              style={{ 
-                backgroundColor: 'rgba(68,68,68,0.3)',
-                opacity: timelineVisible ? 1 : 0,
-                transform: timelineVisible ? 'translateX(0)' : 'translateX(-40px)',
-                transitionDelay: '900ms'
-              }}
-            >
+            <div className="flex items-start gap-3 rounded-xl p-4 border border-mgc-gold/20 transition-all duration-700 ease-out" style={{
+            backgroundColor: 'rgba(68,68,68,0.3)',
+            opacity: timelineVisible ? 1 : 0,
+            transform: timelineVisible ? 'translateX(0)' : 'translateX(-40px)',
+            transitionDelay: '900ms'
+          }}>
               <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
               <p className="text-mgc-tan">Most clients see measurable improvements in <span className="text-white font-semibold">45-90 days</span></p>
             </div>
-            <div 
-              className="flex items-start gap-3 rounded-xl p-4 border border-mgc-gold/20 transition-all duration-700 ease-out"
-              style={{ 
-                backgroundColor: 'rgba(68,68,68,0.3)',
-                opacity: timelineVisible ? 1 : 0,
-                transform: timelineVisible ? 'translateX(0)' : 'translateX(40px)',
-                transitionDelay: '1000ms'
-              }}
-            >
+            <div className="flex items-start gap-3 rounded-xl p-4 border border-mgc-gold/20 transition-all duration-700 ease-out" style={{
+            backgroundColor: 'rgba(68,68,68,0.3)',
+            opacity: timelineVisible ? 1 : 0,
+            transform: timelineVisible ? 'translateX(0)' : 'translateX(40px)',
+            transitionDelay: '1000ms'
+          }}>
               <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
               <p className="text-mgc-tan">Credit bureaus have <span className="text-white font-semibold">30 days by law</span> to investigate disputes</p>
             </div>
-            <div 
-              className="flex items-start gap-3 rounded-xl p-4 border border-mgc-gold/20 transition-all duration-700 ease-out"
-              style={{ 
-                backgroundColor: 'rgba(68,68,68,0.3)',
-                opacity: timelineVisible ? 1 : 0,
-                transform: timelineVisible ? 'translateX(0)' : 'translateX(-40px)',
-                transitionDelay: '1100ms'
-              }}
-            >
+            <div className="flex items-start gap-3 rounded-xl p-4 border border-mgc-gold/20 transition-all duration-700 ease-out" style={{
+            backgroundColor: 'rgba(68,68,68,0.3)',
+            opacity: timelineVisible ? 1 : 0,
+            transform: timelineVisible ? 'translateX(0)' : 'translateX(-40px)',
+            transitionDelay: '1100ms'
+          }}>
               <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
               <p className="text-mgc-tan">Complex items often require <span className="text-white font-semibold">1-2 dispute cycles</span> to resolve</p>
             </div>
-            <div 
-              className="flex items-start gap-3 rounded-xl p-4 border border-mgc-gold/20 transition-all duration-700 ease-out"
-              style={{ 
-                backgroundColor: 'rgba(68,68,68,0.3)',
-                opacity: timelineVisible ? 1 : 0,
-                transform: timelineVisible ? 'translateX(0)' : 'translateX(40px)',
-                transitionDelay: '1200ms'
-              }}
-            >
+            <div className="flex items-start gap-3 rounded-xl p-4 border border-mgc-gold/20 transition-all duration-700 ease-out" style={{
+            backgroundColor: 'rgba(68,68,68,0.3)',
+            opacity: timelineVisible ? 1 : 0,
+            transform: timelineVisible ? 'translateX(0)' : 'translateX(40px)',
+            transitionDelay: '1200ms'
+          }}>
               <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
               <p className="text-mgc-tan">Your individual timeline depends on the <span className="text-white font-semibold">complexity of your situation</span></p>
             </div>
           </div>
 
           {/* What We CAN Promise */}
-          <div 
-            className="bg-gradient-to-br from-mgc-gold/15 to-mgc-yellow/5 border border-mgc-gold/40 rounded-2xl p-8 transition-all duration-700 ease-out"
-            style={{ 
-              opacity: timelineVisible ? 1 : 0,
-              transform: timelineVisible ? 'scale(1)' : 'scale(0.95)',
-              transitionDelay: '1300ms'
-            }}
-          >
+          <div className="bg-gradient-to-br from-mgc-gold/15 to-mgc-yellow/5 border border-mgc-gold/40 rounded-2xl p-8 transition-all duration-700 ease-out" style={{
+          opacity: timelineVisible ? 1 : 0,
+          transform: timelineVisible ? 'scale(1)' : 'scale(0.95)',
+          transitionDelay: '1300ms'
+        }}>
             <h3 className="text-2xl font-bold text-white mb-6 text-center">
               What We <span className="text-mgc-yellow">CAN</span> Promise:
             </h3>
@@ -807,7 +786,9 @@ const CreditRepair2 = () => {
       {/* ============================================ */}
       {/* SECTION 5B: WHEN LEGAL ESCALATION HAPPENS */}
       {/* ============================================ */}
-      <section className="py-16 md:py-24 px-6 md:px-8 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%)' }}>
+      <section className="py-16 md:py-24 px-6 md:px-8 relative overflow-hidden" style={{
+      background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%)'
+    }}>
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-50" />
         
