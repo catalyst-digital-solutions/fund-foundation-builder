@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, Search, Lightbulb, MapPin, ChevronDown, Building2, Globe, Phone, Shield, Users, FileText, TrendingUp, DollarSign, Clock, Award, Home, Car, CreditCard, GraduationCap, Briefcase, Heart, Scale, MessageSquare, Mail, CheckCircle2, XCircle, ArrowRight, Zap } from "lucide-react";
+import { Trophy, Star, Calendar, Lock, AlertTriangle, Check, X, BarChart3, Search, Lightbulb, MapPin, ChevronDown, Building2, Globe, Phone, Shield, Users, FileText, TrendingUp, DollarSign, Clock, Award, Home, Car, CreditCard, GraduationCap, Briefcase, Heart, Scale, MessageSquare, Mail, CheckCircle2, XCircle, ArrowRight, Zap, Crown, Gem } from "lucide-react";
 import EmotionalCTA1 from "@/components/credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/credit-repair/sections/EmotionalCTA3";
@@ -1158,7 +1158,7 @@ const CreditRepair2 = () => {
               {/* Mesa360 Lite */}
               <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-amber-300 transition-colors">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-2xl">💼</span>
+                  <Briefcase className="w-6 h-6 text-amber-500" />
                   <h4 className="text-xl font-bold text-[#3E3E3E]">MESA360 LITE</h4>
                 </div>
                 <p className="text-sm text-gray-600 mb-1">Your Gateway to Financial Freedom</p>
@@ -1219,11 +1219,11 @@ const CreditRepair2 = () => {
 
               {/* Mesa360 Flex - Most Popular */}
               <div className="bg-white border-2 border-amber-400 rounded-2xl p-6 relative shadow-xl">
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#FBBF23] text-gray-900 text-xs font-bold px-4 py-1 rounded-full">
-                  ⭐ MOST POPULAR
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#FBBF23] text-gray-900 text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
+                  <Star className="w-3 h-3" /> MOST POPULAR
                 </div>
                 <div className="flex items-center gap-2 mb-2 mt-2">
-                  <span className="text-2xl">⚡</span>
+                  <Zap className="w-6 h-6 text-amber-500" />
                   <h4 className="text-xl font-bold text-[#3E3E3E]">MESA360 FLEX</h4>
                 </div>
                 <p className="text-sm text-gray-600 mb-1">The Complete Transformation Package</p>
@@ -1283,7 +1283,7 @@ const CreditRepair2 = () => {
               {/* Mesa360 Elite */}
               <div className="bg-gradient-to-br from-[#3E3E3E] to-[#2c2c2c] border-2 border-[#3E3E3E] rounded-2xl p-6 text-white">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-2xl">👑</span>
+                  <Crown className="w-6 h-6 text-amber-400" />
                   <h4 className="text-xl font-bold">MESA360 ELITE</h4>
                 </div>
                 <p className="text-sm text-gray-300 mb-1">When You've Got the Heavy Stuff</p>
@@ -1361,7 +1361,7 @@ const CreditRepair2 = () => {
               {/* Ruby Plan */}
               <div className="bg-gradient-to-br from-red-50 to-pink-50 border-2 border-red-200 rounded-2xl p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">💎</span>
+                  <Gem className="w-8 h-8 text-red-500" />
                   <div>
                     <h4 className="text-xl font-bold text-[#3E3E3E]">RUBY PLAN</h4>
                     <p className="text-sm text-gray-500">12-Month Flex</p>
@@ -1411,7 +1411,7 @@ const CreditRepair2 = () => {
               {/* Emerald Plan */}
               <div className="bg-gradient-to-br from-emerald-50 to-green-50 border-2 border-emerald-200 rounded-2xl p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">💚</span>
+                  <Gem className="w-8 h-8 text-emerald-500" />
                   <div>
                     <h4 className="text-xl font-bold text-[#3E3E3E]">EMERALD PLAN</h4>
                     <p className="text-sm text-gray-500">12-Month Elite</p>
@@ -1549,7 +1549,7 @@ const CreditRepair2 = () => {
                 </span>
               </div>
               
-              <p className="text-gray-300 mb-6">🌎 Hablamos español | We speak Punjabi</p>
+              <p className="text-gray-300 mb-6">Hablamos español | We speak Punjabi</p>
               
               <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors inline-flex items-center gap-2">
                 Schedule Free Consultation <ArrowRight className="w-5 h-5" />
