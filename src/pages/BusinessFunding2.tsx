@@ -66,7 +66,7 @@ const HeroSection = () => {
         <div className="flex flex-col items-center mb-8">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="text-white bg-amber-500 hover:bg-amber-600 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-600 text-xl font-bold px-12 py-5 h-auto">
+              <Button size="lg" className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto">
                 Schedule Free Consultation
               </Button>
             </a>
@@ -149,7 +149,7 @@ const InteractiveFundingCalculator = () => {
               </div>
               <Button
                 onClick={calculateFunding}
-                className="bg-amber-500 hover:bg-amber-600 text-white text-lg font-bold px-8 py-4 h-auto rounded-lg"
+                className="bg-amber-400 hover:bg-amber-500 text-gray-900 text-lg font-bold px-8 py-4 h-auto rounded-lg"
               >
                 Calculate My Funding Range
               </Button>
@@ -175,7 +175,7 @@ const InteractiveFundingCalculator = () => {
             )}
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-lg transition-all">
+              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all">
                 Schedule Free Consultation →
               </a>
               <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all">
@@ -262,15 +262,15 @@ const TheSolutionSection = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-xl shadow-2xl border-2 border-amber-300 overflow-hidden mb-8">
-          <div className="bg-gradient-to-r from-amber-500 to-amber-600 px-8 py-4">
-            <h3 className="text-2xl font-bold text-white">Our 3-Phase Funding Strategy</h3>
+        <div className="bg-white rounded-xl shadow-2xl border-2 border-[#f9c65d] overflow-hidden mb-8">
+          <div className="bg-gradient-to-r from-[#f9c65d] to-[#e8b84a] px-8 py-4">
+            <h3 className="text-2xl font-bold text-gray-900">Our 3-Phase Funding Strategy</h3>
           </div>
 
           <div className="p-8 md:p-12 space-y-8">
 
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+              <div className="flex-shrink-0 w-12 h-12 bg-[#f9c65d] text-gray-900 rounded-full flex items-center justify-center font-bold text-xl">1</div>
               <div className="flex-1">
                 <h4 className="text-2xl font-bold text-gray-900 mb-3">Discovery & Diagnosis</h4>
                 <ul className="space-y-2 text-gray-700">
@@ -295,7 +295,7 @@ const TheSolutionSection = () => {
             </div>
 
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+              <div className="flex-shrink-0 w-12 h-12 bg-[#f9c65d] text-gray-900 rounded-full flex items-center justify-center font-bold text-xl">2</div>
               <div className="flex-1">
                 <h4 className="text-2xl font-bold text-gray-900 mb-3">Strategic Positioning</h4>
                 <ul className="space-y-2 text-gray-700">
@@ -320,7 +320,7 @@ const TheSolutionSection = () => {
             </div>
 
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+              <div className="flex-shrink-0 w-12 h-12 bg-[#f9c65d] text-gray-900 rounded-full flex items-center justify-center font-bold text-xl">3</div>
               <div className="flex-1">
                 <h4 className="text-2xl font-bold text-gray-900 mb-3">Execution & Funding</h4>
                 <ul className="space-y-2 text-gray-700">
@@ -377,9 +377,9 @@ const IntroducingBrokerageDivision = () => {
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-amber-200 hover:shadow-2xl transition-shadow">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-[#f9c65d]/30 hover:shadow-2xl transition-shadow">
             <div className="flex items-start gap-4 mb-4">
-              <div className="w-12 h-12 bg-amber-500 text-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-[#f9c65d] text-gray-900 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Building2 className="w-6 h-6" />
               </div>
               <h4 className="text-xl font-bold text-gray-900">75+ Vetted Lender Relationships</h4>
@@ -389,9 +389,9 @@ const IntroducingBrokerageDivision = () => {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-amber-200 hover:shadow-2xl transition-shadow">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-[#f9c65d]/30 hover:shadow-2xl transition-shadow">
             <div className="flex items-start gap-4 mb-4">
-              <div className="w-12 h-12 bg-amber-500 text-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-[#f9c65d] text-gray-900 rounded-lg flex items-center justify-center flex-shrink-0">
                 <TrendingUp className="w-6 h-6" />
               </div>
               <h4 className="text-xl font-bold text-gray-900">Broker Advantage</h4>
@@ -401,9 +401,9 @@ const IntroducingBrokerageDivision = () => {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-amber-200 hover:shadow-2xl transition-shadow">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-[#f9c65d]/30 hover:shadow-2xl transition-shadow">
             <div className="flex items-start gap-4 mb-4">
-              <div className="w-12 h-12 bg-amber-500 text-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-[#f9c65d] text-gray-900 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Target className="w-6 h-6" />
               </div>
               <h4 className="text-xl font-bold text-gray-900">Strategic Matching</h4>
@@ -413,9 +413,9 @@ const IntroducingBrokerageDivision = () => {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-amber-200 hover:shadow-2xl transition-shadow">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-[#f9c65d]/30 hover:shadow-2xl transition-shadow">
             <div className="flex items-start gap-4 mb-4">
-              <div className="w-12 h-12 bg-amber-500 text-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-[#f9c65d] text-gray-900 rounded-lg flex items-center justify-center flex-shrink-0">
                 <CheckCircle2 className="w-6 h-6" />
               </div>
               <h4 className="text-xl font-bold text-gray-900">One Application, Multiple Offers</h4>
@@ -466,14 +466,14 @@ const AllFundingSolutionsGrid = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-16">
 
           {/* Business Cash Advance */}
-          <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-amber-200">
+          <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-[#f9c65d]/30">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <DollarSign className="w-12 h-12 text-amber-600 mb-3" strokeWidth={2.5} />
+                <DollarSign className="w-12 h-12 text-[#f9c65d] mb-3" strokeWidth={2.5} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Business Cash Advance</h3>
-                <p className="text-sm text-amber-700 font-semibold">The speed solution when opportunity knocks</p>
+                <p className="text-sm text-[#d4a84b] font-semibold">The speed solution when opportunity knocks</p>
               </div>
-              <div className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-bold">Up to $10M</div>
+              <div className="bg-[#f9c65d] text-gray-900 px-3 py-1 rounded-full text-sm font-bold">Up to $10M</div>
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -500,7 +500,7 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-lg transition-all text-sm">
+              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
               <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm">
@@ -510,14 +510,14 @@ const AllFundingSolutionsGrid = () => {
           </div>
 
           {/* Business Term Loans */}
-          <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-amber-200">
+          <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-[#f9c65d]/30">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <Building2 className="w-12 h-12 text-amber-600 mb-3" strokeWidth={2.5} />
+                <Building2 className="w-12 h-12 text-[#f9c65d] mb-3" strokeWidth={2.5} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Business Term Loans</h3>
-                <p className="text-sm text-amber-700 font-semibold">Traditional financing with modern speed</p>
+                <p className="text-sm text-[#d4a84b] font-semibold">Traditional financing with modern speed</p>
               </div>
-              <div className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-bold">Up to $5M</div>
+              <div className="bg-[#f9c65d] text-gray-900 px-3 py-1 rounded-full text-sm font-bold">Up to $5M</div>
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -544,7 +544,7 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-lg transition-all text-sm">
+              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
               <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm">
@@ -554,14 +554,14 @@ const AllFundingSolutionsGrid = () => {
           </div>
 
           {/* Business Line of Credit */}
-          <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-amber-200">
+          <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-[#f9c65d]/30">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <CreditCard className="w-12 h-12 text-amber-600 mb-3" strokeWidth={2.5} />
+                <CreditCard className="w-12 h-12 text-[#f9c65d] mb-3" strokeWidth={2.5} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Business Line of Credit</h3>
-                <p className="text-sm text-amber-700 font-semibold">Your financial safety net</p>
+                <p className="text-sm text-[#d4a84b] font-semibold">Your financial safety net</p>
               </div>
-              <div className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-bold">Up to $250K</div>
+              <div className="bg-[#f9c65d] text-gray-900 px-3 py-1 rounded-full text-sm font-bold">Up to $250K</div>
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -588,7 +588,7 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-lg transition-all text-sm">
+              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
               <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm">
@@ -642,14 +642,14 @@ const AllFundingSolutionsGrid = () => {
           </div>
 
           {/* Equipment Financing */}
-          <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-amber-200">
+          <div className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-[#f9c65d]/30">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <Factory className="w-12 h-12 text-amber-600 mb-3" strokeWidth={2.5} />
+                <Factory className="w-12 h-12 text-[#f9c65d] mb-3" strokeWidth={2.5} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Equipment Financing</h3>
-                <p className="text-sm text-amber-700 font-semibold">Own the tools that grow your business</p>
+                <p className="text-sm text-[#d4a84b] font-semibold">Own the tools that grow your business</p>
               </div>
-              <div className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-bold">$1K-$20M</div>
+              <div className="bg-[#f9c65d] text-gray-900 px-3 py-1 rounded-full text-sm font-bold">$1K-$20M</div>
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -676,7 +676,7 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-lg transition-all text-sm">
+              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
               <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm">
@@ -741,30 +741,30 @@ const AllFundingSolutionsGrid = () => {
         <div className="grid md:grid-cols-2 gap-8">
 
           {/* STARTUP Unsecured */}
-          <div className="bg-gradient-to-br from-amber-500 to-amber-600 text-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all border-2 border-amber-700">
+          <div className="bg-gradient-to-br from-[#f9c65d] to-[#e8b84a] text-gray-900 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all border-2 border-[#d4a84b]">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <Rocket className="w-12 h-12 text-white mb-3" strokeWidth={2.5} />
+                <Rocket className="w-12 h-12 text-gray-900 mb-3" strokeWidth={2.5} />
                 <h3 className="text-2xl font-bold mb-2">STARTUP Unsecured Business Funding</h3>
-                <p className="text-sm text-amber-100 font-semibold">Launch without the traditional hurdles</p>
+                <p className="text-sm text-gray-800 font-semibold">Launch without the traditional hurdles</p>
               </div>
-              <div className="bg-white text-amber-600 px-3 py-1 rounded-full text-sm font-bold">Up to $150K</div>
+              <div className="bg-white text-gray-900 px-3 py-1 rounded-full text-sm font-bold">Up to $150K</div>
             </div>
 
-            <p className="leading-relaxed mb-6 text-amber-50">
+            <p className="leading-relaxed mb-6 text-gray-800">
               Revolving credit lines with no revenue requirements through our startup-friendly lenders. Use funds for any business purpose—no restrictions.
             </p>
 
             <div className="space-y-3 text-sm mb-6">
-              <div className="flex justify-between py-2 border-b border-amber-400">
+              <div className="flex justify-between py-2 border-b border-[#d4a84b]">
                 <span>Approval Timeline:</span>
                 <span className="font-bold">5-10 days</span>
               </div>
-              <div className="flex justify-between py-2 border-b border-amber-400">
+              <div className="flex justify-between py-2 border-b border-[#d4a84b]">
                 <span>Min Credit:</span>
                 <span className="font-bold">680+</span>
               </div>
-              <div className="flex justify-between py-2 border-b border-amber-400">
+              <div className="flex justify-between py-2 border-b border-[#d4a84b]">
                 <span>Time in Business:</span>
                 <span className="font-bold">NONE ⭐</span>
               </div>
@@ -775,40 +775,40 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-amber-600 hover:bg-amber-50 font-semibold rounded-lg transition-all text-sm">
+              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-700 hover:bg-amber-800 text-white font-semibold rounded-lg transition-all text-sm">
+              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-lg transition-all text-sm">
                 Schedule Consultation
               </a>
             </div>
           </div>
 
           {/* STARTUP Small Business Loan */}
-          <div className="bg-gradient-to-br from-amber-500 to-amber-600 text-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all border-2 border-amber-700">
+          <div className="bg-gradient-to-br from-[#f9c65d] to-[#e8b84a] text-gray-900 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all border-2 border-[#d4a84b]">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <Briefcase className="w-12 h-12 text-white mb-3" strokeWidth={2.5} />
+                <Briefcase className="w-12 h-12 text-gray-900 mb-3" strokeWidth={2.5} />
                 <h3 className="text-2xl font-bold mb-2">STARTUP Small Business Loan</h3>
-                <p className="text-sm text-amber-100 font-semibold">Personal income, business purposes</p>
+                <p className="text-sm text-gray-800 font-semibold">Personal income, business purposes</p>
               </div>
-              <div className="bg-white text-amber-600 px-3 py-1 rounded-full text-sm font-bold">Up to $150K</div>
+              <div className="bg-white text-gray-900 px-3 py-1 rounded-full text-sm font-bold">Up to $150K</div>
             </div>
 
-            <p className="leading-relaxed mb-6 text-amber-50">
+            <p className="leading-relaxed mb-6 text-gray-800">
               Unsecured personal loans with 3-7 year terms. Direct cash access for any business need through our alternative lending partners.
             </p>
 
             <div className="space-y-3 text-sm mb-6">
-              <div className="flex justify-between py-2 border-b border-amber-400">
+              <div className="flex justify-between py-2 border-b border-[#d4a84b]">
                 <span>Approval Timeline:</span>
                 <span className="font-bold">1-2 weeks</span>
               </div>
-              <div className="flex justify-between py-2 border-b border-amber-400">
+              <div className="flex justify-between py-2 border-b border-[#d4a84b]">
                 <span>Min Credit:</span>
                 <span className="font-bold">680+</span>
               </div>
-              <div className="flex justify-between py-2 border-b border-amber-400">
+              <div className="flex justify-between py-2 border-b border-[#d4a84b]">
                 <span>Time in Business:</span>
                 <span className="font-bold">NONE ⭐</span>
               </div>
@@ -819,10 +819,10 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-amber-600 hover:bg-amber-50 font-semibold rounded-lg transition-all text-sm">
+              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-700 hover:bg-amber-800 text-white font-semibold rounded-lg transition-all text-sm">
+              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-lg transition-all text-sm">
                 Schedule Consultation
               </a>
             </div>
@@ -852,7 +852,7 @@ const ComparisonTable = () => {
         <div className="overflow-x-auto rounded-xl shadow-2xl">
           <table className="w-full bg-white rounded-lg text-sm">
             <thead>
-              <tr className="bg-gradient-to-r from-amber-500 to-amber-600 text-white">
+              <tr className="bg-gradient-to-r from-[#f9c65d] to-[#e8b84a] text-gray-900">
                 <th className="px-4 py-4 text-left font-bold">Funding Type</th>
                 <th className="px-4 py-4 text-center font-bold">Speed</th>
                 <th className="px-4 py-4 text-center font-bold">Amount</th>
@@ -930,9 +930,9 @@ const ComparisonTable = () => {
           </table>
         </div>
 
-        <div className="mt-12 bg-gradient-to-br from-amber-50 to-white rounded-xl p-8 shadow-lg border-2 border-amber-300">
+        <div className="mt-12 bg-gradient-to-br from-amber-50 to-white rounded-xl p-8 shadow-lg border-2 border-[#f9c65d]">
           <div className="flex items-start gap-4">
-            <Lightbulb className="w-8 h-8 text-amber-600 flex-shrink-0" />
+            <Lightbulb className="w-8 h-8 text-[#f9c65d] flex-shrink-0" />
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Not sure which product fits? Schedule a Free Consultation and we'll recommend the best options for your specific situation.
@@ -942,7 +942,7 @@ const ComparisonTable = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
-                  <Button className="bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3">
+                  <Button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3">
                     Schedule Free Consultation
                   </Button>
                 </a>
@@ -970,7 +970,7 @@ const SettingRealisticExpectations = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Setting Realistic Expectations
           </h2>
-          <h3 className="text-2xl font-bold text-amber-700">
+          <h3 className="text-2xl font-bold text-[#d4a84b]">
             How Much Funding Can You Actually Get?
           </h3>
         </div>
@@ -988,24 +988,24 @@ const SettingRealisticExpectations = () => {
 
             <div className="space-y-4">
               <div className="flex items-center gap-4 bg-white rounded-lg p-4">
-                <div className="text-2xl font-bold text-amber-600 w-32">$100K</div>
+                <div className="text-2xl font-bold text-[#f9c65d] w-32">$100K</div>
                 <ArrowRight className="w-6 h-6 text-gray-400" />
                 <div className="text-lg text-gray-700">$10K-$20K typical funding range</div>
               </div>
               <div className="flex items-center gap-4 bg-white rounded-lg p-4">
-                <div className="text-2xl font-bold text-amber-600 w-32">$500K</div>
+                <div className="text-2xl font-bold text-[#f9c65d] w-32">$500K</div>
                 <ArrowRight className="w-6 h-6 text-gray-400" />
                 <div className="text-lg text-gray-700">$50K-$100K typical funding range</div>
               </div>
               <div className="flex items-center gap-4 bg-white rounded-lg p-4">
-                <div className="text-2xl font-bold text-amber-600 w-32">$1M</div>
+                <div className="text-2xl font-bold text-[#f9c65d] w-32">$1M</div>
                 <ArrowRight className="w-6 h-6 text-gray-400" />
                 <div className="text-lg text-gray-700">$100K-$200K typical funding range</div>
               </div>
             </div>
 
             <div className="mt-6 text-center">
-              <a href="#calculator" className="text-amber-600 hover:text-amber-700 font-bold underline">
+              <a href="#calculator" className="text-[#d4a84b] hover:text-[#c49a3d] font-bold underline">
                 Use Our Calculator Above to See Your Range →
               </a>
             </div>
@@ -1052,7 +1052,7 @@ const SettingRealisticExpectations = () => {
             During your consultation, we'll give you an honest assessment of what funding amounts are realistic for your revenue level.
           </p>
           <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3">
+            <Button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3">
               Schedule Your Free Consultation
             </Button>
           </a>
@@ -1228,24 +1228,24 @@ const TheProcessSection = () => {
 
         <div className="space-y-8">
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-amber-500">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#f9c65d]">
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-16 h-16 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-2xl">1</div>
+              <div className="flex-shrink-0 w-16 h-16 bg-[#f9c65d] text-gray-900 rounded-full flex items-center justify-center font-bold text-2xl">1</div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Free Funding Consultation (30 minutes)</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   We'll discuss your business, what you need capital for, and your growth plans. Together, we'll determine which funding products from our network best match your situation and timeline. This consultation is completely free with no obligation.
                 </p>
-                <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-bold">
+                <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#d4a84b] hover:text-[#c49a3d] font-bold">
                   Schedule Your Consultation <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-amber-500">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#f9c65d]">
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-16 h-16 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-2xl">2</div>
+              <div className="flex-shrink-0 w-16 h-16 bg-[#f9c65d] text-gray-900 rounded-full flex items-center justify-center font-bold text-2xl">2</div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Fundability Assessment (2-3 days)</h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -1255,24 +1255,24 @@ const TheProcessSection = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-amber-500">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#f9c65d]">
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-16 h-16 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-2xl">3</div>
+              <div className="flex-shrink-0 w-16 h-16 bg-[#f9c65d] text-gray-900 rounded-full flex items-center justify-center font-bold text-2xl">3</div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Network Submission & Advisor Assignment (1-2 weeks)</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Once we confirm you're fundable, we submit your application strategically across our 75+ lender network to secure your best offers. You'll be assigned a dedicated funding advisor and get access to our client portal where you can track progress, upload documents, and communicate directly with our team throughout the process.
                 </p>
                 <p className="text-gray-700 font-semibold">
-                  Ready to skip the consultation? <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 underline">Apply directly here</a>
+                  Ready to skip the consultation? <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="text-[#d4a84b] hover:text-[#c49a3d] underline">Apply directly here</a>
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-amber-500">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-[#f9c65d]">
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 w-16 h-16 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold text-2xl">4</div>
+              <div className="flex-shrink-0 w-16 h-16 bg-[#f9c65d] text-gray-900 rounded-full flex items-center justify-center font-bold text-2xl">4</div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Funding & Deployment (Timeline varies by product)</h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -1350,34 +1350,34 @@ const EnhancedSocialProofSection = () => {
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">By The Numbers:</h3>
           <div className="grid md:grid-cols-5 gap-6 text-center">
             <div>
-              <div className="text-4xl font-bold text-amber-600 mb-2">$50M+</div>
+          <div className="text-4xl font-bold text-[#f9c65d] mb-2">$50M+</div>
               <div className="text-sm text-gray-600">Business Funding Facilitated</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-amber-600 mb-2">1,000+</div>
+              <div className="text-4xl font-bold text-[#f9c65d] mb-2">1,000+</div>
               <div className="text-sm text-gray-600">Businesses Funded</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-amber-600 mb-2">30 Days</div>
+              <div className="text-4xl font-bold text-[#f9c65d] mb-2">30 Days</div>
               <div className="text-sm text-gray-600">Average Approval Timeline</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-amber-600 mb-2">5.0 ⭐</div>
+              <div className="text-4xl font-bold text-[#f9c65d] mb-2">5.0 ⭐</div>
               <div className="text-sm text-gray-600">Google Rating (200+ Reviews)</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-amber-600 mb-2">50 States</div>
+              <div className="text-4xl font-bold text-[#f9c65d] mb-2">50 States</div>
               <div className="text-sm text-gray-600">Nationwide Coverage</div>
             </div>
           </div>
         </div>
 
         <div className="mt-8 text-center">
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-bold">
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#d4a84b] hover:text-[#c49a3d] font-bold">
             Read More Reviews on Google →
           </a>
           <span className="mx-4 text-gray-400">|</span>
-          <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-bold">
+          <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#d4a84b] hover:text-[#c49a3d] font-bold">
             Start Your Application →
           </a>
         </div>
@@ -1468,7 +1468,7 @@ const FAQSection = () => {
         <div className="mt-12 text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3">
+              <Button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3">
                 Schedule Consultation
               </Button>
             </a>
@@ -1501,9 +1501,9 @@ const TwoPathsForward = () => {
 
           {/* Path 1: Consultation First */}
           <div className="bg-white rounded-xl p-8 shadow-2xl border-2 border-amber-400">
-            <div className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-3 rounded-lg mb-6">
+            <div className="bg-gradient-to-r from-[#f9c65d] to-[#e8b84a] text-gray-900 px-6 py-3 rounded-lg mb-6">
               <h3 className="text-2xl font-bold">Path 1: Free Consultation First</h3>
-              <p className="text-amber-100 text-sm">(Recommended for most businesses)</p>
+              <p className="text-gray-800 text-sm">(Recommended for most businesses)</p>
             </div>
 
             <div className="mb-6">
@@ -1540,7 +1540,7 @@ const TwoPathsForward = () => {
             </div>
 
             <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="block">
-              <Button className="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-4 text-lg">
+              <Button className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-4 text-lg">
                 Schedule Free Consultation
               </Button>
             </a>
@@ -1639,7 +1639,7 @@ const FinalCTA = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <div>
                   <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-white font-bold px-10 py-4 text-xl h-auto">
+                    <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-10 py-4 text-xl h-auto">
                       Schedule Free Consultation
                     </Button>
                   </a>
@@ -1659,7 +1659,7 @@ const FinalCTA = () => {
           </div>
 
           <div className="text-center">
-            <p className="text-gray-700 mb-2">Or call us: <a href="tel:6613103040" className="text-amber-600 hover:text-amber-700 font-bold">(661) 310-3040</a></p>
+            <p className="text-gray-700 mb-2">Or call us: <a href="tel:6613103040" className="text-[#d4a84b] hover:text-[#c49a3d] font-bold">(661) 310-3040</a></p>
             <p className="text-sm text-gray-600">📅 Currently booking consultations 5-7 days out</p>
             <p className="text-sm text-gray-600 mt-4">Mesa Group Capital operates nationwide. Backed by Mesa Group Consulting's expertise.</p>
           </div>
