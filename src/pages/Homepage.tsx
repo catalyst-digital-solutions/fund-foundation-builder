@@ -192,7 +192,7 @@ const HowItWorksSection = ({ openConsultationModal }: { openConsultationModal: (
       icon: TrendingUp,
       iconBg: 'from-green-100 to-green-200',
       iconColor: 'text-green-600',
-      title: 'Execute & Transform',
+      title: 'Guided Implementation',
       description: 'We guide you through implementation, provide ongoing support, and track your progress until you hit your goals. You\'re never alone in this process.',
       whatHappens: 'Regular check-ins, progress updates, and adjustments as needed. We\'re with you every step of the way.',
       bgGradient: 'from-green-100 via-green-50 to-white',
@@ -1238,7 +1238,7 @@ const Homepage = () => {
                 </div>
                 
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Execute & Transform
+                  Guided Implementation
                 </h3>
                 
                 <p className="text-gray-700 leading-relaxed mb-6">
