@@ -272,12 +272,12 @@ const CreditRepair2 = () => {
                 <div>
                   <p className="font-bold mb-2">Our Arsenal of Advanced Methods:</p>
                   <ul className="space-y-1 text-gray-600">
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> Direct Digital Uploads to all 3 bureaus (faster than mail, harder to ignore)</li>
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> Experian Rapid Inquiry Removal (proprietary access most companies don't have)</li>
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> Direct Creditor & Collector Disputes (going straight to the source)</li>
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> CFPB Complaints (when bureaus stonewall you, we escalate to federal oversight)</li>
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> Metro 2 Challenges (advanced formatting disputes for complex items)</li>
-                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /> Legal Team Escalation (when they violate FCRA, we bring in the attorneys)</li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /><span><strong>Direct Digital Uploads</strong> to all 3 bureaus (faster than mail, harder to ignore)</span></li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /><span><strong>Experian Rapid Inquiry Removal</strong> (proprietary access most companies don't have)</span></li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /><span><strong>Direct Creditor & Collector Disputes</strong> (going straight to the source)</span></li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /><span><strong>CFPB Complaints</strong> (when bureaus stonewall you, we escalate to federal oversight)</span></li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /><span><strong>Metro 2 Challenges</strong> (advanced formatting disputes for complex items)</span></li>
+                    <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" /><span><strong>Legal Team Escalation</strong> (when they violate FCRA, we bring in the attorneys)</span></li>
                   </ul>
                 </div>
                 
