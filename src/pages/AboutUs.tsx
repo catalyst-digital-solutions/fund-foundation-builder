@@ -1116,7 +1116,7 @@ const AboutUs = () => {
           {/* 8-Card Service Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             
-            <Link to="/credit-cards" className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
+            <Link to="/credit-cards" onClick={() => window.scrollTo(0, 0)} className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
               <CreditCard className="w-8 h-8 text-[#f9c65d]" />
               <h3 className="text-xl font-bold">Credit Cards</h3>
               <p className="text-gray-300 text-sm">
@@ -1127,7 +1127,7 @@ const AboutUs = () => {
               </div>
             </Link>
             
-            <Link to="/personal-loans" className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
+            <Link to="/personal-loans" onClick={() => window.scrollTo(0, 0)} className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
               <DollarSign className="w-8 h-8 text-[#f9c65d]" />
               <h3 className="text-xl font-bold">Personal Loans</h3>
               <p className="text-gray-300 text-sm">
@@ -1138,7 +1138,7 @@ const AboutUs = () => {
               </div>
             </Link>
             
-            <Link to="/auto-loan-refi" className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
+            <Link to="/auto-loan-refi" onClick={() => window.scrollTo(0, 0)} className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
               <Car className="w-8 h-8 text-[#f9c65d]" />
               <h3 className="text-xl font-bold">Auto Loan Refi</h3>
               <p className="text-gray-300 text-sm">
@@ -1149,7 +1149,7 @@ const AboutUs = () => {
               </div>
             </Link>
             
-            <Link to="/student-loan-refi-2" className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
+            <Link to="/student-loan-refi-2" onClick={() => window.scrollTo(0, 0)} className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
               <GraduationCap className="w-8 h-8 text-[#f9c65d]" />
               <h3 className="text-xl font-bold">Student Loan Refi</h3>
               <p className="text-gray-300 text-sm">
@@ -1160,7 +1160,7 @@ const AboutUs = () => {
               </div>
             </Link>
             
-            <Link to="/debt-consolidation-loan" className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
+            <Link to="/debt-consolidation-loan" onClick={() => window.scrollTo(0, 0)} className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
               <PieChart className="w-8 h-8 text-[#f9c65d]" />
               <h3 className="text-xl font-bold">Debt Consolidation Loan</h3>
               <p className="text-gray-300 text-sm">
@@ -1171,7 +1171,7 @@ const AboutUs = () => {
               </div>
             </Link>
             
-            <Link to="/debt-relief" className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
+            <Link to="/debt-relief" onClick={() => window.scrollTo(0, 0)} className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
               <Umbrella className="w-8 h-8 text-[#f9c65d]" />
               <h3 className="text-xl font-bold">Debt Relief</h3>
               <p className="text-gray-300 text-sm">
@@ -1182,7 +1182,7 @@ const AboutUs = () => {
               </div>
             </Link>
             
-            <Link to="/trust-and-will-plan" className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
+            <Link to="/trust-and-will-plan" onClick={() => window.scrollTo(0, 0)} className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
               <Scale className="w-8 h-8 text-[#f9c65d]" />
               <h3 className="text-xl font-bold">Trust & Will Plan</h3>
               <p className="text-gray-300 text-sm">
@@ -1193,7 +1193,7 @@ const AboutUs = () => {
               </div>
             </Link>
             
-            <Link to="/life-insurance" className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
+            <Link to="/life-insurance" onClick={() => window.scrollTo(0, 0)} className="bg-[#3e3e3e] text-white rounded-xl p-6 hover:bg-[#2c2c2c] transition-colors group space-y-3">
               <LifeBuoy className="w-8 h-8 text-[#f9c65d]" />
               <h3 className="text-xl font-bold">Life Insurance</h3>
               <p className="text-gray-300 text-sm">
@@ -1221,7 +1221,7 @@ const AboutUs = () => {
                   <li>• DIY Credit Repair (Powered by Creditily)</li>
                   <li>• Credit Monitoring (Powered by SmartCredit)</li>
                 </ul>
-                <Link to="/for-consumers" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
+                <Link to="/for-consumers" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
                   View All Credit Services
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
@@ -1236,7 +1236,7 @@ const AboutUs = () => {
                   <li>• Business Credit Building</li>
                   <li>• Business Debt Relief</li>
                 </ul>
-                <Link to="/for-businesses" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
+                <Link to="/for-businesses" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
                   Explore Business Solutions
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
@@ -1251,7 +1251,7 @@ const AboutUs = () => {
                   <li>• Authorized User Tradelines</li>
                   <li>• Credit Education Resources</li>
                 </ul>
-                <Link to="/build-credit" className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
+                <Link to="/build-credit" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center text-[#bb9446] font-semibold hover:text-[#f9c65d]">
                   Start Building Credit
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
