@@ -1760,23 +1760,23 @@ const Homepage = () => {
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">A+ Rated Partners</span>
+              <span className="text-gray-700">2500+ Clients Served</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Nationwide from Bakersfield</span>
+              <span className="text-gray-700">150+ 5-Star Reviews</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Bilingual Support</span>
+              <span className="text-gray-700">Trilingual Support</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">2,500+ Clients Served</span>
+              <span className="text-gray-700">Helping Clients Nationwide</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">150+ Five-Star Reviews</span>
+              <span className="text-gray-700">100% Customized Solutions</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
