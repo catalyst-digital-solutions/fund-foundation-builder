@@ -1299,7 +1299,7 @@ const Homepage = () => {
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                First-Time Buyers
+                Young Adults
               </h3>
               
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -1309,10 +1309,10 @@ const Homepage = () => {
               <div className="space-y-2">
                 <p className="text-sm font-semibold text-gray-900">Typical needs:</p>
                 <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• Credit restoration</li>
-                  <li>• Debt consolidation</li>
-                  <li>• Pre-approval prep</li>
-                  <li>• Down payment strategies</li>
+                  <li>• Credit building tools</li>
+                  <li>• First-time credit cards</li>
+                  <li>• Student loan refinancing</li>
+                  <li>• Financial education</li>
                 </ul>
               </div>
             </div>
@@ -1327,16 +1327,16 @@ const Homepage = () => {
               </h3>
               
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Expanding families needing to protect their future through estate planning, life insurance, and strategic credit optimization.
+                Working toward homeownership, managing household debt, and making smart financial decisions that impact their children's future.
               </p>
               
               <div className="space-y-2">
                 <p className="text-sm font-semibold text-gray-900">Typical needs:</p>
                 <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• Life insurance</li>
+                  <li>• Credit restoration</li>
+                  <li>• Mortgage preparation</li>
+                  <li>• Debt consolidation</li>
                   <li>• Estate planning</li>
-                  <li>• Credit optimization</li>
-                  <li>• Savings strategies</li>
                 </ul>
               </div>
             </div>
