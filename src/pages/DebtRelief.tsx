@@ -76,7 +76,7 @@ const DebtRelief = () => {
         <div className="max-w-5xl mx-auto text-center">
           
           <div className="inline-block bg-white px-6 py-3 rounded-full text-sm font-bold mb-8 border-2 border-gray-200 shadow-sm">
-            <span className="text-gray-700">Mesa Group Consulting | Debt Relief Specialists Since 2015</span>
+            <span className="text-gray-700">Mesa Group Consulting | Debt Relief Specialists Since 2023</span>
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -93,15 +93,15 @@ const DebtRelief = () => {
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-center mb-6">
               <div>
-                <div className="text-4xl font-bold text-amber-600 mb-2">30-50%</div>
+                <div className="text-4xl font-bold text-[#f9c65d] mb-2">30-50%</div>
                 <div className="text-sm text-gray-600">Average Debt Reduction</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-amber-600 mb-2">1</div>
+                <div className="text-4xl font-bold text-[#f9c65d] mb-2">1</div>
                 <div className="text-sm text-gray-600">Affordable Monthly Payment</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-amber-600 mb-2">20-48</div>
+                <div className="text-4xl font-bold text-[#f9c65d] mb-2">20-48</div>
                 <div className="text-sm text-gray-600">Months to Debt-Free</div>
               </div>
             </div>
