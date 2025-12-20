@@ -118,10 +118,10 @@ const Footer = () => {
                     <li className="mt-3"><Link to="/credit-cards" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Cards</Link></li>
                     <li className="mt-3"><Link to="/personal-loans" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Personal Loans</Link></li>
                     <li className="mt-3"><Link to="/auto-loan-refi" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Auto Loan Refi</Link></li>
-                    <li className="mt-3"><Link to="/student-loan-refi" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Student Loan Refi</Link></li>
-                    <li className="mt-3"><Link to="/debt-consolidation" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Debt Consolidation Loan</Link></li>
+                    <li className="mt-3"><Link to="/student-loan-refi-2" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Student Loan Refi</Link></li>
+                    <li className="mt-3"><Link to="/debt-consolidation-loan" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Debt Consolidation Loan</Link></li>
                     <li className="mt-3"><Link to="/debt-relief" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Debt Relief</Link></li>
-                    <li className="mt-3"><Link to="/trust-and-will" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Trust & Will Plan</Link></li>
+                    <li className="mt-3"><Link to="/trust-and-will-plan" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Trust & Will Plan</Link></li>
                     <li className="mt-3"><Link to="/life-insurance" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Life Insurance</Link></li>
                   </CollapsibleContent>
                 </ul>
