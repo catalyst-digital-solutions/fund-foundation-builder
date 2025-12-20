@@ -162,6 +162,7 @@ declare global {
   interface Window {
     Calendly?: {
       initPopupWidget: (options: { url: string; prefill?: { name?: string; email?: string } }) => void;
+      initInlineWidget: (options: { url: string; parentElement: HTMLElement; prefill?: { name?: string; email?: string } }) => void;
       initBadgeWidget: (options: any) => void;
       closePopupWidget: () => void;
     };
