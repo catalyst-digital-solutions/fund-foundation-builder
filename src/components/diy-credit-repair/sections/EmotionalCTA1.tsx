@@ -21,7 +21,7 @@ const EmotionalCTA1 = () => {
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Every rejection. Every "sorry, you don't qualify." Every company charging $1,500+ for disputes you could file yourself. Enough. Those errors aren't going away on their own — but fixing them shouldn't cost a fortune. Creditily gives you the tools. You make the moves.
         </p>
-        <button 
+        <button
           onClick={handleClick}
           className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
         >

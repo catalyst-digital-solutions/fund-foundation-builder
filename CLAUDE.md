@@ -340,16 +340,47 @@ Multiple pages have v1/v2 variants for A/B testing:
 
 ## Recent Major Updates
 
-### December 19, 2024: Calendly Integration (Homepage & About Page)
+### December 19, 2024: Comprehensive Calendly Integration
+Complete replacement of all consultation CTAs across the website with Calendly popup/modal integration.
+
+**Core Infrastructure:**
 - **Reusable Components**: CalendlyPopupButton, CalendlyPopupButtonLarge, CalendlyPopupLink
 - **Custom Hook**: useCalendly with automatic viewport detection
 - **Custom Modal**: CalendlyModal for vertical monitors (mobile portrait, tablet portrait, vertical monitors)
 - **Viewport Detection**: Automatically switches between Calendly popup widget (landscape) and custom modal (portrait)
-- **Homepage**: Replaced all 5 consultation CTAs with Calendly buttons
-- **About Page**: 8 strategically-placed consultation CTAs with unique UTM tracking
-- **UTM Parameters**: Each button tracks location (hero_cta, mesa_story_cta, mission_cta, etc.)
-- **Removed**: Old GoHighLevel iframe booking widget
 - **Files**: [src/components/CalendlyPopupButton.tsx](src/components/CalendlyPopupButton.tsx), [src/hooks/useCalendly.ts](src/hooks/useCalendly.ts), [src/components/CalendlyModal.tsx](src/components/CalendlyModal.tsx)
+
+**Pages Updated:**
+1. **Homepage** ([src/pages/Homepage.tsx](src/pages/Homepage.tsx))
+   - Replaced all 5 consultation CTAs with Calendly buttons
+   - Removed old GoHighLevel iframe booking widget
+   - UTM tracking: hero_cta, how_it_works_cta, services_cta, etc.
+
+2. **About Page** ([src/pages/AboutUs.tsx](src/pages/AboutUs.tsx))
+   - 8 strategically-placed consultation CTAs with unique UTM tracking
+   - UTM tracking: hero_cta, mesa_story_cta, mission_cta, core_values_cta, vision_cta, services_cta, final_cta
+
+3. **Build Credit Page** ([src/pages/BuildCredit.tsx](src/pages/BuildCredit.tsx))
+   - 6 consultation buttons replaced
+   - Hero section, path strategy buttons (Foundation Builder, Accelerated Builder, Premium Profile Builder)
+   - UTM tracking: hero_cta, not_sure_cta, foundation_builder_cta, accelerated_builder_cta, premium_profile_builder_cta, advisor_credit_building_cta, free_analysis_cta, final_cta
+
+4. **DIY Credit Repair Page** ([src/pages/DIYCreditRepair.tsx](src/pages/DIYCreditRepair.tsx))
+   - 3 main consultation buttons (hero, pricing, final CTA)
+   - "Powered by Mesa Group" text removed from consultation buttons only
+   - Background color updates: "Types of Negative Items" (slate gradient), FAQ (blue-indigo gradient)
+   - UTM tracking: hero_cta, pricing_cta, final_cta
+   - **Important**: EmotionalCTA1, EmotionalCTA2, EmotionalCTA3 link to Creditily (external platform) and retain "Powered by Mesa Group" text
+
+5. **Credit Repair 2 Page** ([src/pages/CreditRepair2.tsx](src/pages/CreditRepair2.tsx))
+   - 5 consultation buttons replaced
+   - "Powered by Mesa Group" text removed from all consultation buttons
+   - UTM tracking: still_not_sure_cta, customized_action_plan_cta, risk_free_restoration_cta, transformation_now_cta, get_started_today_cta
+
+**Key Design Decision:**
+- **Consultation buttons** (opening Calendly): NO "Powered by Mesa Group" text
+- **Platform/provider buttons** (linking to Creditily, SuperMoney, Mesa Group Capital, etc.): YES "Powered by Mesa Group" text
+- All CalendlyPopupButton components have arrows positioned on the right side of text by default
 
 ### December 17, 2024: Credit Repair 2 - Steve Neu PRD
 - Legal Escalations section (FCRA/FDCPA violations)

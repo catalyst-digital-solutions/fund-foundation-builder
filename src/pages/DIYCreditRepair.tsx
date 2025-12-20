@@ -9,6 +9,7 @@ import costComparisonBg from "@/assets/diy-credit-repair-cost-comparison-bg.png"
 import EmotionalCTA1 from "@/components/diy-credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/diy-credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/diy-credit-repair/sections/EmotionalCTA3";
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 
 const DIYCreditRepair = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -110,16 +111,14 @@ const DIYCreditRepair = () => {
               </ul>
               
               {/* Primary CTA */}
-              <button 
-                onClick={handleSignupClick}
-                className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4 w-full md:w-auto"
-              >
-                Start Your DIY Credit Repair
-              </button>
-              
-              <p className="text-sm text-gray-600 mt-4">
-                Powered by Mesa Group
-              </p>
+              <CalendlyPopupButton
+                text="Schedule Your Free Consultation"
+                showArrow={true}
+                className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4 w-full md:w-auto inline-flex items-center justify-center gap-2"
+                prefillOptions={{
+                  utm: { source: 'website', medium: 'diy_credit_repair', campaign: 'hero_cta' }
+                }}
+              />
               
               {/* Trust Badges */}
               <div className="flex flex-wrap items-center gap-6 mt-8">
@@ -654,7 +653,7 @@ const DIYCreditRepair = () => {
       <EmotionalCTA3 />
 
       {/* SECTION 5: WHAT YOU CAN DISPUTE */}
-      <section className="bg-accent py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-gradient-to-br from-slate-50 via-gray-100 to-slate-50 py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-6xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
@@ -848,16 +847,14 @@ const DIYCreditRepair = () => {
                 </li>
               </ul>
               
-              <button 
-                onClick={handleSignupClick}
-                className="w-full text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold py-4"
-              >
-                Get Started for $39.99/mo →
-              </button>
-              
-              <p className="text-sm text-gray-600 mt-4">
-                Powered by Mesa Group
-              </p>
+              <CalendlyPopupButton
+                text="Start Your Credit Transformation Now"
+                showArrow={true}
+                className="w-full text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold py-4 inline-flex items-center justify-center gap-2"
+                prefillOptions={{
+                  utm: { source: 'website', medium: 'diy_credit_repair', campaign: 'pricing_cta' }
+                }}
+              />
             </div>
             
           </div>
@@ -866,7 +863,7 @@ const DIYCreditRepair = () => {
       </section>
 
       {/* SECTION 7: FAQ ACCORDION */}
-      <section className="bg-muted py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-50 py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-center">
@@ -1020,17 +1017,18 @@ const DIYCreditRepair = () => {
               Ready to Bridge the Gap — <span className="text-[#f9c65d]">Your Way?</span>
             </h2>
             
-            <button 
-              onClick={handleSignupClick}
-              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
-            >
-              Start Your DIY Credit Repair →
-            </button>
-            
-            <p className="text-gray-600 mb-6">
+            <CalendlyPopupButton
+              text="Get Started Today"
+              showArrow={true}
+              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4 gap-2"
+              prefillOptions={{
+                utm: { source: 'website', medium: 'diy_credit_repair', campaign: 'final_cta' }
+              }}
+            />
+
+            <p className="text-gray-600 mb-8">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            <p className="text-sm text-gray-500 mb-8">Powered by Mesa Group</p>
 
             {/* Alternative Option */}
             <div className="pt-6 border-t border-gray-300">

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { 
-  CheckCircle, 
-  X, 
-  ArrowRight, 
+import {
+  CheckCircle,
+  X,
+  ArrowRight,
   ArrowDown,
-  FileQuestion, 
-  FileX, 
+  FileQuestion,
+  FileX,
   Clock,
   Building,
   CreditCard,
@@ -30,6 +30,7 @@ import {
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 
 const BuildCredit = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -313,12 +314,15 @@ const BuildCredit = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2">
-                Get Your Free Credit Building Guide
-                <ArrowRight className="w-5 h-5" />
-              </button>
-              <a 
-                href="tel:6613103040" 
+              <CalendlyPopupButton
+                text="Schedule Your Free Consultation"
+                showArrow={true}
+                prefillOptions={{
+                  utm: { source: 'website', medium: 'build_credit', campaign: 'hero_cta' }
+                }}
+              />
+              <a
+                href="tel:6613103040"
                 className="bg-white hover:bg-gray-50 text-gray-900 font-semibold py-4 px-8 rounded-lg border-2 border-gray-300 hover:border-amber-400 transition-all duration-200 flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
@@ -792,9 +796,13 @@ const BuildCredit = () => {
           {/* Not Sure CTA */}
           <div className="text-center bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Not Sure Where to Start?</h3>
-            <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-8 rounded-lg shadow-lg transition-all">
-              Schedule Free Credit Building Consultation
-            </button>
+            <CalendlyPopupButton
+              text="Schedule Your Free Consultation"
+              showArrow={true}
+              prefillOptions={{
+                utm: { source: 'website', medium: 'build_credit', campaign: 'not_sure_cta' }
+              }}
+            />
             <p className="text-sm text-gray-600 mt-2">or call (661) 310-3040</p>
           </div>
         </div>
@@ -867,10 +875,15 @@ const BuildCredit = () => {
                     <strong>Results:</strong> {path.results}
                   </p>
                 </div>
-                
-                <button className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors">
-                  Start {path.name}
-                </button>
+
+                <CalendlyPopupButton
+                  text={`Discuss ${path.name} Strategy`}
+                  showArrow={true}
+                  className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors inline-flex items-center justify-center gap-2"
+                  prefillOptions={{
+                    utm: { source: 'website', medium: 'build_credit', campaign: `${path.name.toLowerCase().replace(/ /g, '_')}_cta` }
+                  }}
+                />
               </div>
             ))}
           </div>
@@ -1032,12 +1045,21 @@ const BuildCredit = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors">
-              Ask Your Advisor About Adding Credit Building
-            </button>
-            <button className="bg-white hover:bg-gray-50 text-gray-900 font-semibold py-3 px-6 rounded-lg border-2 border-gray-300 hover:border-amber-400 transition-colors">
-              Schedule Free Credit Analysis
-            </button>
+            <CalendlyPopupButton
+              text="Talk to Your Advisor About Credit Building"
+              showArrow={true}
+              prefillOptions={{
+                utm: { source: 'website', medium: 'build_credit', campaign: 'advisor_credit_building_cta' }
+              }}
+            />
+            <CalendlyPopupButton
+              text="Schedule Free Consultation"
+              showArrow={true}
+              className="bg-white hover:bg-gray-50 text-gray-900 font-semibold py-3 px-6 rounded-lg border-2 border-gray-300 hover:border-amber-400 transition-colors inline-flex items-center justify-center gap-2"
+              prefillOptions={{
+                utm: { source: 'website', medium: 'build_credit', campaign: 'free_analysis_cta' }
+              }}
+            />
           </div>
         </div>
       </section>
@@ -1102,13 +1124,17 @@ const BuildCredit = () => {
           <p className="text-lg text-gray-700 mb-8">
             You just read a guide that most people would charge $500+ for. We gave it to you for free because we believe in education-first.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 text-lg flex items-center justify-center gap-2">
-              Get Your Free Credit Building Guide
-              <ArrowRight className="w-5 h-5" />
-            </button>
-            <a 
+            <CalendlyPopupButton
+              text="Schedule Your Free Consultation"
+              showArrow={true}
+              className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 text-lg inline-flex items-center justify-center gap-2"
+              prefillOptions={{
+                utm: { source: 'website', medium: 'build_credit', campaign: 'final_cta' }
+              }}
+            />
+            <a
               href="tel:6613103040"
               className="bg-white hover:bg-gray-50 text-gray-900 font-bold py-4 px-8 rounded-lg border-2 border-gray-300 hover:border-amber-400 transition-all duration-200 text-lg flex items-center justify-center gap-2"
             >

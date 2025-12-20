@@ -6,6 +6,7 @@ import EmotionalCTA1 from "@/components/credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/credit-repair/sections/EmotionalCTA3";
 import FAQ from "@/components/credit-repair-2/FAQ";
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 import kgetLogo from "@/assets/kget-17-logo.png";
 import studio17Logo from "@/assets/studio-17-logo.png";
 import telemundoLogo from "@/assets/telemundo-logo.png";
@@ -976,10 +977,14 @@ const CreditRepair2 = () => {
           </div>
 
           <div className="text-center mt-10">
-            <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4">
-              Get Your Customized Action Plan →
-            </button>
-            <p className="text-sm text-gray-600 mt-4">Powered by Mesa Group</p>
+            <CalendlyPopupButton
+              text="Get Your Customized Action Plan"
+              showArrow={true}
+              className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4"
+              prefillOptions={{
+                utm: { source: 'website', medium: 'credit_repair_2', campaign: 'customized_action_plan_cta' }
+              }}
+            />
           </div>
         </div>
       </section>
@@ -1553,10 +1558,15 @@ const CreditRepair2 = () => {
               </div>
               
               <p className="text-gray-300 mb-6">Hablamos español | We speak Punjabi</p>
-              
-              <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors inline-flex items-center gap-2">
-                Schedule Free Consultation <ArrowRight className="w-5 h-5" />
-              </button>
+
+              <CalendlyPopupButton
+                text="Schedule Free Consultation"
+                showArrow={true}
+                className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors inline-flex items-center gap-2"
+                prefillOptions={{
+                  utm: { source: 'website', medium: 'credit_repair_2', campaign: 'still_not_sure_cta' }
+                }}
+              />
             </div>
           </div>
 
@@ -1869,10 +1879,14 @@ Every dollar you paid to Mesa Group.</p>
             <p className="text-2xl font-bold text-gray-900 mb-6">
               Ready to start your credit transformation with zero risk?
             </p>
-            <button onClick={handleCTAClick} className="bg-gray-900 hover:bg-gray-800 text-white rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 text-xl font-bold px-10 py-5">
-              Start Your Risk-Free Credit Restoration →
-            </button>
-            <p className="text-sm text-gray-700 mt-4">Powered by Mesa Group</p>
+            <CalendlyPopupButton
+              text="Start Your Risk-Free Credit Restoration"
+              showArrow={true}
+              className="bg-gray-900 hover:bg-gray-800 text-white rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 text-xl font-bold px-10 py-5"
+              prefillOptions={{
+                utm: { source: 'website', medium: 'credit_repair_2', campaign: 'risk_free_restoration_cta' }
+              }}
+            />
           </div>
         </div>
       </section>
@@ -1911,13 +1925,14 @@ Every dollar you paid to Mesa Group.</p>
             The longer you wait, the more it costs you. But it doesn't have to be this way.<br />
             <strong className="text-amber-400">Your financial transformation starts today.</strong>
           </p>
-          <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5">
-            Start Your Credit Transformation Now →
-          </button>
-          <p className="text-sm text-white/80 mt-4">Powered by Mesa Group</p>
-          <p className="text-white/70 mt-2">
-            Or, <button onClick={() => scrollToSection("faq")} className="underline hover:text-white">schedule a free consultation</button>
-          </p>
+          <CalendlyPopupButton
+            text="Start Your Credit Transformation Now"
+            showArrow={true}
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5"
+            prefillOptions={{
+              utm: { source: 'website', medium: 'credit_repair_2', campaign: 'transformation_now_cta' }
+            }}
+          />
         </div>
       </section>
 
@@ -1973,10 +1988,14 @@ Every dollar you paid to Mesa Group.</p>
               Ready to Take Control of Your <span className="text-[#f9c65d]">Credit</span>?
             </h2>
             
-            <button onClick={handleCTAClick} className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-2">
-              Get Started Today →
-            </button>
-            <p className="text-sm text-gray-600 mb-4">Powered by Mesa Group</p>
+            <CalendlyPopupButton
+              text="Get Started Today"
+              showArrow={true}
+              className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
+              prefillOptions={{
+                utm: { source: 'website', medium: 'credit_repair_2', campaign: 'get_started_today_cta' }
+              }}
+            />
             
             <p className="text-gray-600 mb-6">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
