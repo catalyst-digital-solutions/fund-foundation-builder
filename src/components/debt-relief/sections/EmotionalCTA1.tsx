@@ -1,17 +1,14 @@
 import React from 'react';
 import debtReliefCta01 from '@/assets/debt-relief-cta-01.png';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 
 const EmotionalCTA1 = () => {
-  const handleClick = () => {
-    window.open('https://mesagroupcapital.com/debt-analysis', '_blank', 'noopener,noreferrer');
-  };
-
   return (
-    <section 
-      className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
-      style={{ 
-        backgroundImage: `url(${debtReliefCta01})` 
+    <section
+      className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${debtReliefCta01})`
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
@@ -23,12 +20,23 @@ const EmotionalCTA1 = () => {
           Multiple creditor calls every day. Watching your bank account drained by minimum payments that never touch the principal. You can't afford basic necessities while interest piles up. Every night you lie awake calculating numbers that don't add up—trapped in a cycle that steals your peace and your future.
         </p>
         <div className="inline-block">
-          <button
-            onClick={handleClick}
-            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
-          >
-            Stop the Debt Spiral →
-          </button>
+          <CalendlyPopupButton
+            text="Stop the Debt Spiral"
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-flex items-center justify-center gap-2"
+            showArrow={true}
+            prefillOptions={{
+              customAnswers: {
+                serviceType: 'Personal/Consumer services',
+                primaryGoal: 'Lower interest rates/debt'
+              },
+              utm: {
+                source: 'debt-relief-page',
+                medium: 'website',
+                campaign: 'debt-relief',
+                content: 'emotional-cta-1'
+              }
+            }}
+          />
           <PoweredByMesaGroup variant="dark" className="mt-4" />
         </div>
       </div>
