@@ -340,6 +340,17 @@ Multiple pages have v1/v2 variants for A/B testing:
 
 ## Recent Major Updates
 
+### December 19, 2024: Calendly Integration (Homepage & About Page)
+- **Reusable Components**: CalendlyPopupButton, CalendlyPopupButtonLarge, CalendlyPopupLink
+- **Custom Hook**: useCalendly with automatic viewport detection
+- **Custom Modal**: CalendlyModal for vertical monitors (mobile portrait, tablet portrait, vertical monitors)
+- **Viewport Detection**: Automatically switches between Calendly popup widget (landscape) and custom modal (portrait)
+- **Homepage**: Replaced all 5 consultation CTAs with Calendly buttons
+- **About Page**: 8 strategically-placed consultation CTAs with unique UTM tracking
+- **UTM Parameters**: Each button tracks location (hero_cta, mesa_story_cta, mission_cta, etc.)
+- **Removed**: Old GoHighLevel iframe booking widget
+- **Files**: [src/components/CalendlyPopupButton.tsx](src/components/CalendlyPopupButton.tsx), [src/hooks/useCalendly.ts](src/hooks/useCalendly.ts), [src/components/CalendlyModal.tsx](src/components/CalendlyModal.tsx)
+
 ### December 17, 2024: Credit Repair 2 - Steve Neu PRD
 - Legal Escalations section (FCRA/FDCPA violations)
 - "What's Not Covered" transparency section
@@ -480,5 +491,5 @@ When working on this project, reference:
 
 ---
 
-**Last Updated:** December 17, 2024
+**Last Updated:** December 19, 2024
 **Project Status:** Active Development

@@ -1,9 +1,8 @@
-import { useState } from 'react';
-import { 
-  CheckCircle, 
-  Heart, 
-  Shield, 
-  BookOpen, 
+import {
+  CheckCircle,
+  Heart,
+  Shield,
+  BookOpen,
   Sparkles,
   ArrowRight,
   TrendingUp,
@@ -25,10 +24,9 @@ import {
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 
 const AboutUs = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-
   const teamMembers = [
     { name: "Evert Jafet Calderon", role: "Visionary Operations Officer", languages: "Spanish/English" },
     { name: "Justin Calderon", role: "Client Solutions Coordinator", languages: "Spanish/English" },
@@ -70,14 +68,14 @@ const AboutUs = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <button
-                onClick={() => setModalOpen(true)}
-                className="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors shadow-lg border-2 border-amber-500"
-              >
-                Schedule Your Free Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </button>
-              
+              <CalendlyPopupButton
+                text="Schedule Your Free Consultation"
+                showArrow={true}
+                prefillOptions={{
+                  utm: { source: 'website', medium: 'about', campaign: 'hero_cta' }
+                }}
+              />
+
               <a
                 href="tel:6613103040"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg border-2 border-gray-300 hover:border-[#bb9446] transition-colors shadow-md"
@@ -271,9 +269,20 @@ const AboutUs = () => {
           </div>
           
           {/* Results Section */}
+          {/* CTA after Mesa Story */}
+          <div className="mt-12 text-center">
+            <CalendlyPopupButton
+              text="Let's Talk About Your Financial Goals"
+              showArrow={true}
+              prefillOptions={{
+                utm: { source: 'website', medium: 'about', campaign: 'mesa_story_cta' }
+              }}
+            />
+          </div>
+
           <div className="mt-16 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 md:p-12">
             <h3 className="text-2xl md:text-3xl font-bold text-[#3e3e3e] mb-8 text-center">The Results</h3>
-            
+
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
               Today, Mesa Group has:
             </p>
@@ -334,13 +343,13 @@ const AboutUs = () => {
           </div>
           
           <div className="mt-8 text-center">
-            <button
-              onClick={() => setModalOpen(true)}
-              className="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors shadow-lg border-2 border-amber-500"
-            >
-              Get Your Free Consultation
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </button>
+            <CalendlyPopupButton
+              text="Get Your Free Consultation"
+              showArrow={true}
+              prefillOptions={{
+                utm: { source: 'website', medium: 'about', campaign: 'founder_story_cta' }
+              }}
+            />
           </div>
         </div>
       </section>
@@ -422,6 +431,17 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* CTA after Mission */}
+          <div className="mt-12 text-center">
+            <CalendlyPopupButton
+              text="Ready to Start Your Journey?"
+              showArrow={true}
+              prefillOptions={{
+                utm: { source: 'website', medium: 'about', campaign: 'mission_cta' }
+              }}
+            />
           </div>
         </div>
       </section>
@@ -595,6 +615,17 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
+
+          {/* CTA after Core Values */}
+          <div className="mt-12 text-center">
+            <CalendlyPopupButton
+              text="Experience the Mesa Difference"
+              showArrow={true}
+              prefillOptions={{
+                utm: { source: 'website', medium: 'about', campaign: 'core_values_cta' }
+              }}
+            />
+          </div>
         </div>
       </section>
 
@@ -689,6 +720,17 @@ const AboutUs = () => {
             <p className="text-xl md:text-2xl text-[#3e3e3e] font-bold leading-relaxed">
               That's the Mesa legacy.
             </p>
+          </div>
+
+          {/* CTA after Vision */}
+          <div className="mt-12 text-center">
+            <CalendlyPopupButton
+              text="Build Your Legacy with Mesa"
+              showArrow={true}
+              prefillOptions={{
+                utm: { source: 'website', medium: 'about', campaign: 'vision_cta' }
+              }}
+            />
           </div>
         </div>
       </section>
@@ -1260,13 +1302,13 @@ const AboutUs = () => {
           </div>
           
           <div className="mt-8 text-center">
-            <button
-              onClick={() => setModalOpen(true)}
-              className="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors shadow-lg border-2 border-amber-500"
-            >
-              Not Sure Where to Start? Let's Talk.
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </button>
+            <CalendlyPopupButton
+              text="Not Sure Where to Start? Let's Talk."
+              showArrow={true}
+              prefillOptions={{
+                utm: { source: 'website', medium: 'about', campaign: 'services_cta' }
+              }}
+            />
           </div>
         </div>
       </section>
@@ -1440,14 +1482,14 @@ const AboutUs = () => {
           
           {/* Dual CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <button
-              onClick={() => setModalOpen(true)}
-              className="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors shadow-lg border-2 border-amber-500"
-            >
-              Schedule Your Free Consultation
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </button>
-            
+            <CalendlyPopupButton
+              text="Schedule Your Free Consultation"
+              showArrow={true}
+              prefillOptions={{
+                utm: { source: 'website', medium: 'about', campaign: 'final_cta' }
+              }}
+            />
+
             <a
               href="tel:6613103040"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg border-2 border-gray-300 hover:border-[#bb9446] transition-colors shadow-md"
@@ -1502,27 +1544,6 @@ const AboutUs = () => {
       </section>
 
       <Footer />
-
-      {/* GHL Modal */}
-      {modalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
-            <button
-              onClick={() => setModalOpen(false)}
-              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl font-bold"
-            >
-              ×
-            </button>
-            <div className="p-6">
-              <iframe
-                src="https://api.leadconnectorhq.com/widget/booking/YOUR_GHL_CALENDAR_ID"
-                className="w-full h-[600px] border-0"
-                title="Schedule Consultation"
-              />
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
