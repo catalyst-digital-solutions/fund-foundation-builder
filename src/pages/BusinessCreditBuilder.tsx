@@ -1051,11 +1051,11 @@ const FinalCTASection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-6">
           {/* Full Service CTA */}
-          <div className="bg-gradient-to-br from-white to-amber-50 rounded-xl p-8 shadow-2xl border-4 border-amber-400">
+          <div className="bg-gradient-to-br from-white to-amber-50 rounded-xl p-8 shadow-2xl border-4 border-amber-400 flex flex-col">
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">Full Service Program</h3>
-            <div className="text-center mb-6">
+            <div className="text-center mb-6 flex-grow">
               <div className="text-5xl font-bold text-amber-500 mb-2">$2,495</div>
               <p className="text-gray-700">12 months of coaching + weekly calls + $50K guarantee</p>
               <p className="text-sm text-gray-600 mt-2">Or choose 3-month payment plan (access after 2nd payment)</p>
@@ -1071,9 +1071,9 @@ const FinalCTASection = () => {
           </div>
 
           {/* DIY CTA */}
-          <div className="bg-gradient-to-br from-white to-gray-100 rounded-xl p-8 shadow-2xl border-4 border-gray-300">
+          <div className="bg-gradient-to-br from-white to-gray-100 rounded-xl p-8 shadow-2xl border-4 border-gray-300 flex flex-col">
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">D.I.Y. Program</h3>
-            <div className="text-center mb-6">
+            <div className="text-center mb-6 flex-grow">
               <div className="text-5xl font-bold text-gray-900 mb-2">$995</div>
               <p className="text-gray-700">Complete system + software + all education</p>
               <p className="text-sm text-gray-600 mt-2">Instant access upon enrollment</p>
