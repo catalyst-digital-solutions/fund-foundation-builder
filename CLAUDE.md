@@ -377,6 +377,24 @@ Complete replacement of all consultation CTAs across the website with Calendly p
    - "Powered by Mesa Group" text removed from all consultation buttons
    - UTM tracking: still_not_sure_cta, customized_action_plan_cta, risk_free_restoration_cta, transformation_now_cta, get_started_today_cta
 
+6. **Business Credit Builder Page** ([src/pages/BusinessCreditBuilder.tsx](src/pages/BusinessCreditBuilder.tsx))
+   - 2 "Book a Consultation" buttons converted to Calendly
+   - EmotionalCTA2 and EmotionalCTA3 components updated with Calendly integration
+   - UTM tracking: consultation-cta, emotional-cta-2, emotional-cta-3
+   - Arrow alignment fixed: `inline-flex items-center gap-2` for inline arrow display
+
+7. **Business Debt Relief Page** ([src/pages/BusinessDebtRelief.tsx](src/pages/BusinessDebtRelief.tsx))
+   - 8 consultation buttons converted to Calendly (all except hero phone button)
+   - Buttons updated: hero CTA, "How Business Debt Relief Works" section, "Stop Drowning in Debt" section
+   - EmotionalCTA1, EmotionalCTA2, EmotionalCTA3 components fully integrated
+   - UTM tracking: hero-cta, how-it-works-cta, stop-drowning-cta, emotional-cta-1, emotional-cta-2, emotional-cta-3
+   - Arrow alignment fixed across all buttons
+
+8. **Business Funding 2 Page** ([src/pages/BusinessFunding2.tsx](src/pages/BusinessFunding2.tsx))
+   - "Not sure which product fits?" section: Both consultation and "Apply Now" buttons styled with rounded corners
+   - "Path 1: Free Consultation First" button: Added rounded corners and consistent styling
+   - All buttons now match site-wide design with `rounded-lg`, shadows, and transitions
+
 **Key Design Decision:**
 - **Consultation buttons** (opening Calendly): NO "Powered by Mesa Group" text
 - **Platform/provider buttons** (linking to Creditily, SuperMoney, Mesa Group Capital, etc.): YES "Powered by Mesa Group" text
@@ -522,5 +540,5 @@ When working on this project, reference:
 
 ---
 
-**Last Updated:** December 19, 2024
+**Last Updated:** December 20, 2024
 **Project Status:** Active Development

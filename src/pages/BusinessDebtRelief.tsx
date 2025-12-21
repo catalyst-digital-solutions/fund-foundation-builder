@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PoweredByMesaGroup from "@/components/PoweredByMesaGroup";
+import { CalendlyPopupButton } from "@/components/CalendlyPopupButton";
 import EmotionalCTA1 from "@/components/business-debt-relief/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/business-debt-relief/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/business-debt-relief/sections/EmotionalCTA3";
@@ -85,15 +86,23 @@ const BusinessDebtRelief = () => {
           {/* Dual CTA Buttons */}
           <div className="flex flex-col items-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="https://mesagroupcapital.com/for-businesses/debt-relief"
-                target="_blank"
-                rel="noopener noreferrer"
+              <CalendlyPopupButton
+                text="Book Free Debt Analysis"
                 className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg justify-center border-2 border-amber-500"
-              >
-                Book Free Debt Analysis
-                <ArrowRight className="w-5 h-5" />
-              </a>
+                showArrow={true}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Lower interest rates/debt'
+                  },
+                  utm: {
+                    source: 'business-debt-relief-page',
+                    medium: 'website',
+                    campaign: 'business-debt-relief',
+                    content: 'hero-cta'
+                  }
+                }}
+              />
               <a 
                 href="tel:661-310-3040"
                 className="inline-flex items-center gap-2 bg-white text-gray-900 text-lg font-semibold px-8 py-4 rounded-lg border-2 border-gray-300 hover:border-amber-400 hover:bg-gray-50 transition-all duration-200 justify-center"
@@ -251,15 +260,23 @@ const BusinessDebtRelief = () => {
           {/* CTA */}
           <div className="text-center">
             <div className="inline-block">
-              <a 
-                href="https://mesagroupcapital.com/for-businesses/debt-relief"
-                target="_blank"
-                rel="noopener noreferrer"
+              <CalendlyPopupButton
+                text="Get Your Free Debt Analysis"
                 className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg"
-              >
-                Get Your Free Debt Analysis
-                <ArrowRight className="w-5 h-5" />
-              </a>
+                showArrow={true}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Lower interest rates/debt'
+                  },
+                  utm: {
+                    source: 'business-debt-relief-page',
+                    medium: 'website',
+                    campaign: 'business-debt-relief',
+                    content: 'how-it-works-cta'
+                  }
+                }}
+              />
               <PoweredByMesaGroup className="mt-4" />
             </div>
             <p className="text-sm text-gray-600 mt-4">
@@ -514,15 +531,23 @@ const BusinessDebtRelief = () => {
           {/* CTA */}
           <div className="mt-12 text-center">
             <div className="inline-block">
-              <a 
-                href="https://mesagroupcapital.com/for-businesses/debt-relief"
-                target="_blank"
-                rel="noopener noreferrer"
+              <CalendlyPopupButton
+                text="Schedule Your Free Consultation"
                 className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 text-lg font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg"
-              >
-                Schedule Your Free Consultation
-                <ArrowRight className="w-5 h-5" />
-              </a>
+                showArrow={true}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Lower interest rates/debt'
+                  },
+                  utm: {
+                    source: 'business-debt-relief-page',
+                    medium: 'website',
+                    campaign: 'business-debt-relief',
+                    content: 'process-cta'
+                  }
+                }}
+              />
               <PoweredByMesaGroup className="mt-4" />
             </div>
           </div>
@@ -652,15 +677,23 @@ const BusinessDebtRelief = () => {
               Book your free consultation now. No obligation, no upfront fees, completely confidential.
             </p>
             <div className="flex flex-col items-center">
-              <a 
-                href="https://mesagroupcapital.com/for-businesses/debt-relief"
-                target="_blank"
-                rel="noopener noreferrer"
+              <CalendlyPopupButton
+                text="Book Free Consultation Now"
                 className="inline-flex items-center gap-2 bg-[#3E3E3E] text-white text-lg font-bold px-8 py-4 rounded-lg hover:bg-[#4a4a4a] transition-all duration-200 shadow-lg"
-              >
-                Book Free Consultation Now
-                <ArrowRight className="w-5 h-5" />
-              </a>
+                showArrow={true}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Lower interest rates/debt'
+                  },
+                  utm: {
+                    source: 'business-debt-relief-page',
+                    medium: 'website',
+                    campaign: 'business-debt-relief',
+                    content: 'final-cta'
+                  }
+                }}
+              />
               <div className="bg-black rounded-lg px-4 py-2 mt-3 inline-block">
                 <PoweredByMesaGroup variant="dark" />
               </div>
@@ -792,14 +825,23 @@ const BusinessDebtRelief = () => {
             </p>
 
             <div className="inline-block">
-              <a
-                href="https://mesagroupcapital.com/for-businesses/debt-relief"
-                target="_blank"
-                rel="noopener noreferrer"
+              <CalendlyPopupButton
+                text="Get Your Free Debt Analysis"
                 className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
-              >
-                Get Your Free Debt Analysis →
-              </a>
+                showArrow={true}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Lower interest rates/debt'
+                  },
+                  utm: {
+                    source: 'business-debt-relief-page',
+                    medium: 'website',
+                    campaign: 'business-debt-relief',
+                    content: 'stop-drowning-cta'
+                  }
+                }}
+              />
               <PoweredByMesaGroup className="mt-2" />
             </div>
             

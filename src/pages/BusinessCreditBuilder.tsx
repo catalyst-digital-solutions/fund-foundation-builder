@@ -7,6 +7,7 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 
 const BusinessCreditBuilder = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -770,14 +771,23 @@ const ProgramOptionsSection = () => {
             Not sure which program fits your business? Our team can walk you through both options and help you make the best choice based on your goals, experience level, and timeline.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery"
-              target="_blank"
-              rel="noopener noreferrer"
+            <CalendlyPopupButton
+              text="Book a Consultation"
               className="px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
-            >
-              Book a Consultation
-            </a>
+              showArrow={false}
+              prefillOptions={{
+                customAnswers: {
+                  serviceType: 'Business services',
+                  primaryGoal: 'Establish/build business credit'
+                },
+                utm: {
+                  source: 'business-credit-builder-page',
+                  medium: 'website',
+                  campaign: 'business-credit-builder',
+                  content: 'consultation-cta'
+                }
+              }}
+            />
             <a
               href="tel:6613103040"
               className="px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 flex items-center justify-center gap-2"
@@ -1098,14 +1108,23 @@ const FinalCTASection = () => {
         <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-gray-200 max-w-2xl mx-auto text-center mb-12">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Questions? Speak with an Expert</h3>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery"
-              target="_blank"
-              rel="noopener noreferrer"
+            <CalendlyPopupButton
+              text="Book a Consultation"
               className="px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
-            >
-              Book a Consultation
-            </a>
+              showArrow={false}
+              prefillOptions={{
+                customAnswers: {
+                  serviceType: 'Business services',
+                  primaryGoal: 'Establish/build business credit'
+                },
+                utm: {
+                  source: 'business-credit-builder-page',
+                  medium: 'website',
+                  campaign: 'business-credit-builder',
+                  content: 'consultation-cta'
+                }
+              }}
+            />
             <a
               href="tel:6613103040"
               className="px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 flex items-center justify-center gap-2"

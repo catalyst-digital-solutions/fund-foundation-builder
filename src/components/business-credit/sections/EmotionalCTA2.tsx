@@ -1,12 +1,9 @@
 import React from 'react';
 import ctaImage from '@/assets/business-credit-cta-02.png';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 
 const EmotionalCTA2 = () => {
-  const handleClick = () => {
-    window.open('https://mesagroupcapital.com/business-credit-enroll', '_blank', 'noopener,noreferrer');
-  };
-
   return (
     <section 
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center" 
@@ -23,12 +20,23 @@ const EmotionalCTA2 = () => {
           We've helped 720+ business owners build business credit that unlocks real funding—without personal guarantees. Our proven system separates your personal life from business risk. We see your potential where banks see only numbers. This is your path to breathing easy.
         </p>
         <div className="inline-block">
-          <button
-            onClick={handleClick}
-            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
-          >
-            Discover Your Path Forward →
-          </button>
+          <CalendlyPopupButton
+            text="Discover Your Path Forward"
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-flex items-center gap-2"
+            showArrow={true}
+            prefillOptions={{
+              customAnswers: {
+                serviceType: 'Business services',
+                primaryGoal: 'Establish/build business credit'
+              },
+              utm: {
+                source: 'business-credit-builder-page',
+                medium: 'website',
+                campaign: 'business-credit-builder',
+                content: 'emotional-cta-2'
+              }
+            }}
+          />
           <PoweredByMesaGroup variant="dark" className="mt-4" />
         </div>
       </div>

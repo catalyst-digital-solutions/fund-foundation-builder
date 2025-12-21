@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 import {
   DollarSign, Building2, CreditCard, FileText, Factory, Building, Rocket, Briefcase,
   Phone, Check, Lightbulb, Target, Zap, Shield, TrendingUp, Handshake, ClipboardList,
@@ -65,11 +66,23 @@ const HeroSection = () => {
 
         <div className="flex flex-col items-center mb-8">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto">
-                Schedule Free Consultation
-              </Button>
-            </a>
+            <CalendlyPopupButton
+              text="Schedule Free Consultation"
+              className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto"
+              showArrow={false}
+              prefillOptions={{
+                customAnswers: {
+                  serviceType: 'Business services',
+                  primaryGoal: 'Access business funding'
+                },
+                utm: {
+                  source: 'business-funding-page',
+                  medium: 'website',
+                  campaign: 'business-funding',
+                  content: 'hero-cta'
+                }
+              }}
+            />
 
             <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="text-gray-900 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-xl font-semibold px-12 py-5 h-auto">
@@ -175,9 +188,23 @@ const InteractiveFundingCalculator = () => {
             )}
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all">
-                Schedule Free Consultation →
-              </a>
+              <CalendlyPopupButton
+                text="Schedule Free Consultation"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all"
+                showArrow={true}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Access business funding'
+                  },
+                  utm: {
+                    source: 'business-funding-page',
+                    medium: 'website',
+                    campaign: 'business-funding',
+                    content: 'calculator-cta'
+                  }
+                }}
+              />
               <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all">
                 Apply Now →
               </a>
@@ -503,9 +530,23 @@ const AllFundingSolutionsGrid = () => {
               <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm">
-                Schedule Consultation
-              </a>
+              <CalendlyPopupButton
+                text="Schedule Consultation"
+                className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
+                showArrow={false}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Access business funding'
+                  },
+                  utm: {
+                    source: 'business-funding-page',
+                    medium: 'website',
+                    campaign: 'business-funding',
+                    content: 'product-card'
+                  }
+                }}
+              />
             </div>
           </div>
 
@@ -547,9 +588,23 @@ const AllFundingSolutionsGrid = () => {
               <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm">
-                Schedule Consultation
-              </a>
+              <CalendlyPopupButton
+                text="Schedule Consultation"
+                className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
+                showArrow={false}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Access business funding'
+                  },
+                  utm: {
+                    source: 'business-funding-page',
+                    medium: 'website',
+                    campaign: 'business-funding',
+                    content: 'product-card'
+                  }
+                }}
+              />
             </div>
           </div>
 
@@ -591,9 +646,23 @@ const AllFundingSolutionsGrid = () => {
               <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm">
-                Schedule Consultation
-              </a>
+              <CalendlyPopupButton
+                text="Schedule Consultation"
+                className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
+                showArrow={false}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Access business funding'
+                  },
+                  utm: {
+                    source: 'business-funding-page',
+                    medium: 'website',
+                    campaign: 'business-funding',
+                    content: 'product-card'
+                  }
+                }}
+              />
             </div>
           </div>
 
@@ -635,9 +704,23 @@ const AllFundingSolutionsGrid = () => {
               <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm">
-                Schedule Consultation
-              </a>
+              <CalendlyPopupButton
+                text="Schedule Consultation"
+                className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
+                showArrow={false}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Access business funding'
+                  },
+                  utm: {
+                    source: 'business-funding-page',
+                    medium: 'website',
+                    campaign: 'business-funding',
+                    content: 'product-card'
+                  }
+                }}
+              />
             </div>
           </div>
 
@@ -679,9 +762,23 @@ const AllFundingSolutionsGrid = () => {
               <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm">
-                Schedule Consultation
-              </a>
+              <CalendlyPopupButton
+                text="Schedule Consultation"
+                className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
+                showArrow={false}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Access business funding'
+                  },
+                  utm: {
+                    source: 'business-funding-page',
+                    medium: 'website',
+                    campaign: 'business-funding',
+                    content: 'product-card'
+                  }
+                }}
+              />
             </div>
           </div>
 
@@ -723,9 +820,23 @@ const AllFundingSolutionsGrid = () => {
               <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm">
-                Schedule Consultation
-              </a>
+              <CalendlyPopupButton
+                text="Schedule Consultation"
+                className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
+                showArrow={false}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Access business funding'
+                  },
+                  utm: {
+                    source: 'business-funding-page',
+                    medium: 'website',
+                    campaign: 'business-funding',
+                    content: 'product-card'
+                  }
+                }}
+              />
             </div>
           </div>
 
@@ -778,9 +889,23 @@ const AllFundingSolutionsGrid = () => {
               <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm border-2 border-gray-300">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all text-sm">
-                Schedule Consultation
-              </a>
+              <CalendlyPopupButton
+                text="Schedule Consultation"
+                className="flex-1 text-center px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all text-sm"
+                showArrow={false}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Access business funding'
+                  },
+                  utm: {
+                    source: 'business-funding-page',
+                    medium: 'website',
+                    campaign: 'business-funding',
+                    content: 'product-card-special'
+                  }
+                }}
+              />
             </div>
           </div>
 
@@ -822,9 +947,23 @@ const AllFundingSolutionsGrid = () => {
               <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm border-2 border-gray-300">
                 Apply Now
               </a>
-              <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all text-sm">
-                Schedule Consultation
-              </a>
+              <CalendlyPopupButton
+                text="Schedule Consultation"
+                className="flex-1 text-center px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all text-sm"
+                showArrow={false}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Access business funding'
+                  },
+                  utm: {
+                    source: 'business-funding-page',
+                    medium: 'website',
+                    campaign: 'business-funding',
+                    content: 'product-card-special'
+                  }
+                }}
+              />
             </div>
           </div>
 
@@ -941,13 +1080,25 @@ const ComparisonTable = () => {
                 Ready to get started? Apply Now
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
-                  <Button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3">
-                    Schedule Free Consultation
-                  </Button>
-                </a>
+                <CalendlyPopupButton
+                  text="Schedule Free Consultation"
+                  className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+                  showArrow={false}
+                  prefillOptions={{
+                    customAnswers: {
+                      serviceType: 'Business services',
+                      primaryGoal: 'Access business funding'
+                    },
+                    utm: {
+                      source: 'business-funding-page',
+                      medium: 'website',
+                      campaign: 'business-funding',
+                      content: 'comparison-table-cta'
+                    }
+                  }}
+                />
                 <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-                  <Button className="bg-white hover:bg-gray-50 text-gray-900 font-bold px-8 py-3 border-2 border-gray-300">
+                  <Button className="bg-white hover:bg-gray-50 text-gray-900 font-bold px-8 py-3 border-2 border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200">
                     Apply Now
                   </Button>
                 </a>
@@ -1467,11 +1618,23 @@ const FAQSection = () => {
 
         <div className="mt-12 text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3">
-                Schedule Consultation
-              </Button>
-            </a>
+            <CalendlyPopupButton
+              text="Schedule Consultation"
+              className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3"
+              showArrow={false}
+              prefillOptions={{
+                customAnswers: {
+                  serviceType: 'Business services',
+                  primaryGoal: 'Access business funding'
+                },
+                utm: {
+                  source: 'business-funding-page',
+                  medium: 'website',
+                  campaign: 'business-funding',
+                  content: 'faq-cta'
+                }
+              }}
+            />
             <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
               <Button className="bg-white hover:bg-gray-50 text-gray-900 font-bold px-8 py-3 border-2 border-gray-300">
                 Apply Now
@@ -1539,11 +1702,23 @@ const TwoPathsForward = () => {
               </p>
             </div>
 
-            <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="block">
-              <Button className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-4 text-lg">
-                Schedule Free Consultation
-              </Button>
-            </a>
+            <CalendlyPopupButton
+              text="Schedule Free Consultation"
+              className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+              showArrow={false}
+              prefillOptions={{
+                customAnswers: {
+                  serviceType: 'Business services',
+                  primaryGoal: 'Access business funding'
+                },
+                utm: {
+                  source: 'business-funding-page',
+                  medium: 'website',
+                  campaign: 'business-funding',
+                  content: 'two-paths-consultation'
+                }
+              }}
+            />
           </div>
 
           {/* Path 2: Apply Directly */}
@@ -1638,11 +1813,23 @@ const FinalCTA = () => {
             <div className="flex flex-col items-center">
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <div>
-                  <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-10 py-4 text-xl h-auto">
-                      Schedule Free Consultation
-                    </Button>
-                  </a>
+                  <CalendlyPopupButton
+                    text="Schedule Free Consultation"
+                    className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-10 py-4 text-xl h-auto"
+                    showArrow={false}
+                    prefillOptions={{
+                      customAnswers: {
+                        serviceType: 'Business services',
+                        primaryGoal: 'Access business funding'
+                      },
+                      utm: {
+                        source: 'business-funding-page',
+                        medium: 'website',
+                        campaign: 'business-funding',
+                        content: 'final-cta'
+                      }
+                    }}
+                  />
                   <p className="text-sm text-gray-600 mt-2">← Start here if you have questions</p>
                 </div>
                 <div>

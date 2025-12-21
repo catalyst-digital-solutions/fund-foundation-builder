@@ -1,6 +1,7 @@
 import React from 'react';
 import ctaImage from '@/assets/business-debt-relief-cta-01.png';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 
 const EmotionalCTA1 = () => {
   return (
@@ -19,14 +20,23 @@ const EmotionalCTA1 = () => {
           Every day brings more collection calls, more threats, more sleepless nights wondering if today's the day you lose it all. Your business is gasping for air while debt payments consume every dollar of profit. You've poured your heart into building something—but debt is stealing your dream while competitors thrive and you're trapped watching it all slip away.
         </p>
         <div className="inline-block">
-          <a
-            href="https://mesagroupcapital.com/for-businesses/debt-relief"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-block"
-          >
-            Stop the Debt Spiral →
-          </a>
+          <CalendlyPopupButton
+            text="Stop the Debt Spiral"
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-flex items-center gap-2"
+            showArrow={true}
+            prefillOptions={{
+              customAnswers: {
+                serviceType: 'Business services',
+                primaryGoal: 'Lower interest rates/debt'
+              },
+              utm: {
+                source: 'business-debt-relief-page',
+                medium: 'website',
+                campaign: 'business-debt-relief',
+                content: 'emotional-cta-1'
+              }
+            }}
+          />
           <PoweredByMesaGroup variant="dark" className="mt-4" />
         </div>
       </div>

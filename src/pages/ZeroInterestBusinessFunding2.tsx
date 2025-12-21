@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 import {
   Trophy, TrendingUp, Home, Rocket, Shield, Zap, DollarSign,
   Brain, Users, Target, CheckCircle, Phone, Check, ChevronDown,
@@ -79,14 +80,23 @@ const HeroSection = () => (
 
           <div className="flex flex-col items-start">
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://funding-app.mesagroupconsulting.com/Opt-In"
-                target="_blank"
-                rel="noopener noreferrer"
+              <CalendlyPopupButton
+                text="Book Your Free Funding Consultation"
                 className="inline-block text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 text-center hover:scale-105"
-              >
-                Book Your Free Funding Consultation
-              </a>
+                showArrow={false}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Access business funding'
+                  },
+                  utm: {
+                    source: 'zero-interest-funding-page',
+                    medium: 'website',
+                    campaign: 'zero-interest-funding',
+                    content: 'hero-cta'
+                  }
+                }}
+              />
 
               <a
                 href="https://funding-app.mesagroupconsulting.com/Opt-In"
@@ -1182,14 +1192,23 @@ const FinalCTA = () => (
 
         <div className="flex flex-col items-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://funding-app.mesagroupconsulting.com/Opt-In"
-              target="_blank"
-              rel="noopener noreferrer"
+            <CalendlyPopupButton
+              text="Book Your Free Funding Consultation"
               className="inline-block text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 hover:scale-105"
-            >
-              Book Your Free Funding Consultation
-            </a>
+              showArrow={false}
+              prefillOptions={{
+                customAnswers: {
+                  serviceType: 'Business services',
+                  primaryGoal: 'Access business funding'
+                },
+                utm: {
+                  source: 'zero-interest-funding-page',
+                  medium: 'website',
+                  campaign: 'zero-interest-funding',
+                  content: 'final-cta'
+                }
+              }}
+            />
 
             <a
               href="tel:6613103040"
