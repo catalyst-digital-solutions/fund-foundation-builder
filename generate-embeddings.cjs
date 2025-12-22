@@ -104,15 +104,16 @@ async function processBatch(items) {
     }
   }
 
-  // Update database with embeddings
+  // Update database with embeddings using RPC
   if (updates.length > 0) {
     console.log(`\nUpdating ${updates.length} embeddings in database...`);
 
     for (const update of updates) {
-      const { error } = await supabase
-        .from('project_knowledge')
-        .update({ embedding: update.embedding })
-        .eq('id', update.id);
+      const { data, error } = await supabase
+        .rpc('update_embedding', {
+          item_id: update.id,
+          new_embedding: update.embedding
+        });
 
       if (error) {
         console.error(`  ❌ Failed to update ID ${update.id}:`, error.message);
@@ -150,14 +151,11 @@ async function main() {
   console.log('');
 
   try {
-    // Fetch all knowledge items without embeddings
+    // Fetch all knowledge items using RPC function
     console.log('Fetching knowledge items from Supabase...');
 
     const { data: items, error } = await supabase
-      .from('project_knowledge')
-      .select('id, category, key, value, context, embedding')
-      .order('category', { ascending: true })
-      .order('key', { ascending: true });
+      .rpc('get_project_knowledge', { limit_count: 10000 });
 
     if (error) {
       throw new Error(`Failed to fetch items: ${error.message}`);

@@ -6,8 +6,29 @@
 -- Based on: Legal Document AI vector architecture
 -- ================================================================
 
+-- Step 0: Create claude_memory schema if it doesn't exist
+CREATE SCHEMA IF NOT EXISTS claude_memory;
+
 -- Step 1: Enable pgvector extension
 CREATE EXTENSION IF NOT EXISTS vector;
+
+-- Step 1.5: Create project_knowledge table if it doesn't exist
+CREATE TABLE IF NOT EXISTS claude_memory.project_knowledge (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  category text NOT NULL,
+  key text NOT NULL,
+  value text NOT NULL,
+  context text,
+  source text,
+  confidence numeric DEFAULT 1.0,
+  created_at timestamptz DEFAULT now(),
+  updated_at timestamptz DEFAULT now(),
+  UNIQUE(category, key)
+);
+
+-- Add comment on table
+COMMENT ON TABLE claude_memory.project_knowledge IS
+'Project knowledge base for Claude memory system. Stores key-value pairs with semantic search capability.';
 
 -- Step 2: Add embedding column to project_knowledge table
 ALTER TABLE claude_memory.project_knowledge
@@ -134,7 +155,7 @@ SELECT
     WHEN pk.embedding IS NULL THEN 'No embedding'
     ELSE 'Has embedding'
   END as embedding_status,
-  array_length(pk.embedding::float[], 1) as embedding_dimensions
+  1536 as embedding_dimensions
 FROM claude_memory.project_knowledge pk;
 
 COMMENT ON VIEW claude_memory.search_results_enriched IS

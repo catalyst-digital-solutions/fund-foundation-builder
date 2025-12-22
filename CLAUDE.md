@@ -540,5 +540,74 @@ When working on this project, reference:
 
 ---
 
+## Recent Major Update #6 (December 20, 2024)
+
+### Vector Database Integration for Semantic Search
+
+**Background:**
+- Implementing pgvector-based semantic search for project knowledge base
+- Enables Claude to search project documentation using natural language queries
+- Based on Legal Document AI vector architecture
+
+**Infrastructure Setup:**
+
+1. **Dependencies Added:**
+   - `openai` - For generating text embeddings via OpenAI API
+   - `@supabase/supabase-js` - Supabase client for database operations
+   - `dotenv` - Environment variable management
+
+2. **Database Schema:**
+   - Created `claude_memory` schema in Supabase
+   - Added `project_knowledge` table with vector embedding column
+   - Enabled pgvector extension for vector operations
+   - Created IVFFlat index for fast cosine similarity search
+
+3. **SQL Files Created:**
+   - `supabase-vector-migration.sql` - Complete schema setup with vector search functions
+   - `add-rpc-functions.sql` - Public RPC functions for anon key access
+   - `supabase-memory-seed-fixed.sql` - Project knowledge seed data (existing)
+
+4. **Node.js Scripts:**
+   - `generate-embeddings.cjs` - Generates OpenAI embeddings for all knowledge items
+   - `check-database.cjs` - Database verification and status checking
+   - `check-database-rpc.cjs` - RPC-based database verification
+
+5. **Search Functions:**
+   - `search_knowledge_semantic()` - Pure vector similarity search
+   - `search_knowledge_hybrid()` - Vector search + category filtering
+   - Uses OpenAI text-embedding-3-small (1536 dimensions)
+   - Cosine similarity with configurable threshold (default 0.5)
+
+6. **RPC Functions (Public Access):**
+   - `get_project_knowledge(limit_count)` - Retrieve knowledge items
+   - `update_embedding(item_id, new_embedding)` - Update embeddings
+   - `get_embedding_stats()` - Get embedding coverage statistics
+
+**Configuration:**
+- Environment variables in `.env` (not committed to git)
+- OpenAI API key for embedding generation
+- Supabase URL and anon key for database access
+
+**Usage:**
+```bash
+# Generate embeddings for all knowledge items
+node generate-embeddings.cjs
+
+# Check database status
+node check-database.cjs
+```
+
+**Next Steps:**
+1. Seed knowledge data: Run `supabase-memory-seed-fixed.sql` in Supabase SQL Editor
+2. Generate embeddings: Run `node generate-embeddings.cjs`
+3. Test semantic search via Claude Desktop MCP integration
+
+**Cost Estimation:**
+- OpenAI text-embedding-3-small: $0.02 per 1M tokens
+- Estimated ~200 tokens per knowledge item
+- Project with ~100 items: ~$0.0004 (less than 1 cent)
+
+---
+
 **Last Updated:** December 20, 2024
 **Project Status:** Active Development
