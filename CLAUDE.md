@@ -609,5 +609,58 @@ node check-database.cjs
 
 ---
 
-**Last Updated:** December 20, 2024
+## Recent Major Update #7 (December 22, 2024)
+
+### For Consumers Page Updates
+
+**Page:** [src/pages/ForConsumers.tsx](src/pages/ForConsumers.tsx)
+
+**Service Links Updated to Native Pages:**
+All service cards now link to internal pages instead of external affiliate URLs:
+- SmartCredit Monitoring → `/credit-monitoring`
+- Personal Loans → `/personal-loans`
+- Auto Loan Refinancing → `/auto-loan-refi`
+- Student Loan Refinancing → `/student-loan-refinancing`
+- Debt Consolidation Loans → `/debt-consolidation-loan`
+- Credit Cards → `/credit-cards`
+
+**Calendly Integration Added:**
+3 consultation buttons replaced with CalendlyPopupButton:
+1. Hero section - "Schedule Free Consultation"
+2. How It Works section - "Schedule Your Free Consultation"
+3. Final CTA section - "Schedule Free Consultation"
+
+**UTM Tracking:**
+- `For Consumers Page - Hero CTA`
+- `For Consumers Page - How It Works CTA`
+- `For Consumers Page - Final CTA`
+
+---
+
+### Debt Payoff Calculator Fix
+
+**File:** [src/components/calculators/DebtPayoffCalculator.tsx](src/components/calculators/DebtPayoffCalculator.tsx)
+
+**Bug Fixed:** Snowball and Avalanche methods were producing identical results.
+
+**Root Cause:** The `simulatePayoff` function was double-counting freed-up payments - applying them both in-loop and adding to `availableExtra` for the next month.
+
+**Solution:** Rewrote the function with clear separation:
+- `rollingExtra`: Cumulative freed-up minimum payments from paid-off debts (persists across months)
+- `extraPool`: Per-month available extra payment (starts fresh each month from `rollingExtra`)
+
+**Calculator Methods:**
+- **Current Path**: Minimum payments only, no extra payments
+- **Snowball**: Pay smallest balance first (psychological wins, quick momentum)
+- **Avalanche**: Pay highest APR first (mathematically optimal, saves most interest)
+
+**Calculation Logic:**
+1. Each month, calculate interest for all debts
+2. First unpaid debt in priority order gets all extra payments
+3. When a debt is paid off, its minimum payment joins `rollingExtra` for future months
+4. Process continues until all debts are paid or 600-month safety limit reached
+
+---
+
+**Last Updated:** December 22, 2024
 **Project Status:** Active Development

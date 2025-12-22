@@ -79,40 +79,55 @@ const DebtPayoffCalculator = ({ onBack }: DebtPayoffCalculatorProps) => {
   };
 
   const simulatePayoff = (orderedDebts: Debt[]): PayoffResult => {
+    // Create working copies with current balance tracking
     let remainingDebts = orderedDebts.map(d => ({ ...d, currentBalance: d.balance }));
     let totalInterest = 0;
     let months = 0;
-    let availableExtra = extraPayment;
-    const totalMinPayment = debts.reduce((sum, d) => sum + d.minPayment, 0);
-    
+
+    // Track total extra payment available (starts with user's extra, grows as debts pay off)
+    let rollingExtra = extraPayment;
+
     while (remainingDebts.some(d => d.currentBalance > 0) && months < 600) {
       months++;
-      let freedUpPayment = 0;
-      
-      remainingDebts.forEach((debt, index) => {
-        if (debt.currentBalance <= 0) return;
-        
+
+      // Calculate this month's extra pool (rolling extra from previous months)
+      let extraPool = rollingExtra;
+
+      // Process each debt in priority order
+      for (let i = 0; i < remainingDebts.length; i++) {
+        const debt = remainingDebts[i];
+        if (debt.currentBalance <= 0) continue;
+
+        // Calculate interest for this month
         const monthlyRate = (debt.apr / 100) / 12;
         const interest = debt.currentBalance * monthlyRate;
         totalInterest += interest;
-        
+
+        // Add interest to balance
+        debt.currentBalance += interest;
+
+        // Determine payment: minimum + any available extra for the first unpaid debt
         let payment = debt.minPayment;
-        if (index === remainingDebts.findIndex(d => d.currentBalance > 0)) {
-          payment += availableExtra + freedUpPayment;
+
+        // First unpaid debt gets all available extra
+        const isFirstUnpaid = i === remainingDebts.findIndex(d => d.currentBalance > 0);
+        if (isFirstUnpaid) {
+          payment += extraPool;
         }
-        
-        debt.currentBalance = debt.currentBalance + interest - payment;
-        
+
+        // Apply payment
+        debt.currentBalance -= payment;
+
+        // If debt is paid off, add its min payment to rolling extra for future months
         if (debt.currentBalance <= 0) {
-          freedUpPayment += debt.minPayment;
+          // Any overpayment is "lost" (paid to debt, not refunded)
           debt.currentBalance = 0;
+          // This debt's minimum payment now joins the rolling extra for next month
+          rollingExtra += debt.minPayment;
         }
-      });
-      
-      availableExtra += freedUpPayment;
-      freedUpPayment = 0;
+      }
     }
-    
+
     return { months, totalInterest, order: orderedDebts };
   };
 

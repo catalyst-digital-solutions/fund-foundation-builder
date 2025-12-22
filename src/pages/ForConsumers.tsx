@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -204,7 +205,7 @@ const ForConsumers = () => {
       ],
       pricing: "$1 for 7-day trial, then $27.99/month",
       ctaText: "Start Monitoring Your Credit",
-      ctaLink: "https://smartcredit.com/join/?PID=24603&planType=PREMIUM",
+      ctaLink: "/credit-monitoring",
       poweredBy: "SmartCredit"
     },
     {
@@ -247,7 +248,7 @@ const ForConsumers = () => {
         "Emergency funding needs"
       ],
       ctaText: "Compare Personal Loans",
-      ctaLink: "https://track.supermoney.com/aff_c?offer_id=1618&aff_id=2815",
+      ctaLink: "/personal-loans",
       poweredBy: "SuperMoney"
     },
     {
@@ -269,7 +270,7 @@ const ForConsumers = () => {
         "Want to pay off loan faster"
       ],
       ctaText: "Check Refinance Rates",
-      ctaLink: "https://track.supermoney.com/aff_c?offer_id=1623&aff_id=2815",
+      ctaLink: "/auto-loan-refi",
       poweredBy: "SuperMoney"
     },
     {
@@ -292,7 +293,7 @@ const ForConsumers = () => {
       ],
       importantNote: "Federal student loans have unique protections. Refinancing converts them to private loans.",
       ctaText: "Check Student Loan Rates",
-      ctaLink: "https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815",
+      ctaLink: "/student-loan-refinancing",
       poweredBy: "SuperMoney"
     },
     {
@@ -314,7 +315,7 @@ const ForConsumers = () => {
         "Want one simple monthly payment"
       ],
       ctaText: "Compare Consolidation Loans",
-      ctaLink: "https://track.supermoney.com/aff_c?offer_id=1634&aff_id=2815",
+      ctaLink: "/debt-consolidation-loan",
       poweredBy: "SuperMoney"
     },
     {
@@ -336,7 +337,7 @@ const ForConsumers = () => {
         "Managing business expenses"
       ],
       ctaText: "Find Your Card",
-      ctaLink: "https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815",
+      ctaLink: "/credit-cards",
       poweredBy: "SuperMoney"
     },
     {
@@ -471,14 +472,15 @@ const ForConsumers = () => {
                   Explore Your Options
                   <ArrowRight className="w-5 h-5" />
                 </button>
-                <a
-                  href="https://www.mesagroupconsulting.com/contact-us"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white hover:bg-gray-50 text-gray-900 font-semibold py-4 px-8 rounded-lg border-2 border-gray-300 transition-colors flex items-center justify-center gap-2"
-                >
-                  Schedule Free Consultation
-                </a>
+                <CalendlyPopupButton
+                  text="Schedule Free Consultation"
+                  className="bg-white hover:bg-gray-50 text-gray-900 font-semibold py-4 px-8 rounded-lg border-2 border-gray-300 transition-colors"
+                  prefillOptions={{
+                    customAnswers: {
+                      a1: "For Consumers Page - Hero CTA"
+                    }
+                  }}
+                />
               </div>
             </div>
 
@@ -615,15 +617,15 @@ const ForConsumers = () => {
           </div>
 
           <div className="text-center mt-12 space-y-4">
-            <a
-              href="https://www.mesagroupconsulting.com/contact-us"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors"
-            >
-              Schedule Your Free Consultation
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            <CalendlyPopupButton
+              text="Schedule Your Free Consultation"
+              className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors"
+              prefillOptions={{
+                customAnswers: {
+                  a1: "For Consumers Page - How It Works CTA"
+                }
+              }}
+            />
             <div>
               <a href="tel:6613103040" className="inline-flex items-center gap-2 text-gray-700 hover:text-amber-600 font-medium">
                 <Phone className="w-5 h-5" />
@@ -756,15 +758,15 @@ const ForConsumers = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a
-              href="https://www.mesagroupconsulting.com/contact-us"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
-            >
-              Schedule Free Consultation
-              <ArrowRight className="w-5 h-5" />
-            </a>
+            <CalendlyPopupButton
+              text="Schedule Free Consultation"
+              className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors"
+              prefillOptions={{
+                customAnswers: {
+                  a1: "For Consumers Page - Final CTA"
+                }
+              }}
+            />
             <a
               href="tel:6613103040"
               className="bg-white hover:bg-gray-50 text-gray-900 font-semibold py-4 px-8 rounded-lg border-2 border-gray-300 transition-colors flex items-center justify-center gap-2"
