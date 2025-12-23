@@ -903,7 +903,7 @@ const Homepage = () => {
                 </li>
               </ul>
               
-              <Link to="/for-consumers" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold">
+              <Link to="/for-consumers" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold">
                 View All Credit Services
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -938,7 +938,7 @@ const Homepage = () => {
                 </li>
               </ul>
               
-              <Link to="/for-businesses" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold">
+              <Link to="/for-businesses" className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold">
                 Explore Business Solutions
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -973,7 +973,7 @@ const Homepage = () => {
                 </li>
               </ul>
               
-              <Link to="/build-credit" onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold">
+              <Link to="/build-credit" className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold">
                 Start Building Credit
                 <ArrowRight className="w-4 h-4" />
               </Link>

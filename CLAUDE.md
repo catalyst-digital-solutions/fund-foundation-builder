@@ -699,6 +699,82 @@ Redesigned tab navigation layout for mobile/tablet devices to eliminate horizont
 
 **Design Inspiration:** Nerdwallet's compact tab grid system for mobile devices
 
+### Button Arrow Positioning Fix
+
+**Universal Solution for Arrow Icon Wrapping**
+
+**Problem:**
+Consultation buttons and CTA buttons across the site had arrows wrapping to new lines when button text wrapped to multiple lines. This occurred because flexbox treated the text and arrow as equal flex children with `gap-2`, causing the arrow to wrap underneath the text.
+
+**Solution:**
+Wrapped button text in `<span className="text-center">` and added `flex-shrink-0` to arrow icons. This prevents the arrow from shrinking or wrapping, keeping it locked to the right side of the button even when text spans multiple lines.
+
+**Files Modified:**
+
+1. **[src/components/CalendlyPopupButton.tsx](src/components/CalendlyPopupButton.tsx)**
+   - CalendlyPopupButton component (main consultation button)
+   - Applied to all three variants: CalendlyPopupButton, CalendlyPopupButtonLarge, CalendlyPopupLink
+
+```tsx
+// Before:
+<button className="flex items-center justify-center gap-2">
+  {text}
+  {showArrow && <ArrowRight className="w-5 h-5" />}
+</button>
+
+// After:
+<button className="flex items-center justify-center gap-2">
+  <span className="text-center">{text}</span>
+  {showArrow && <ArrowRight className="w-5 h-5 flex-shrink-0" />}
+</button>
+```
+
+2. **[src/pages/ForConsumers.tsx](src/pages/ForConsumers.tsx)**
+   - ServiceCard component buttons (both internal Link and external anchor tags)
+   - Affects all service cards: Credit Repair, Student Loan Refinancing, etc.
+
+**Key Changes:**
+- Text wrapped in `<span className="text-center">`
+- Arrow icon gets `flex-shrink-0` class
+- Layout remains: `flex items-center justify-center gap-2`
+
+**Impact:**
+This fix applies universally to:
+- All Calendly consultation buttons (inherited from CalendlyPopupButton)
+- All service card CTA buttons on For Consumers page
+- Any button using the same flex layout pattern
+
+**Visual Result:**
+- Text can wrap to multiple lines naturally
+- Arrow always stays on the right side of the button
+- Proper alignment and spacing maintained
+- Consistent across all screen sizes
+
+### Browser Back Button Scroll Position Fix
+
+**Problem:**
+Browser's back button was taking users to the top of the previous page instead of their previous scroll position. This occurred because ScrollToTop component was scrolling on ALL navigation events, including POP (back/forward button).
+
+**Solution:**
+Added `useNavigationType()` hook to detect navigation type and only scroll to top on PUSH (new page) or REPLACE (programmatic) navigation, not POP (back/forward button).
+
+**File Modified:**
+[src/components/ScrollToTop.tsx](src/components/ScrollToTop.tsx)
+
+```tsx
+// Added:
+import { useNavigationType } from 'react-router-dom';
+const navigationType = useNavigationType();
+
+// Modified useEffect:
+if (navigationType !== 'POP') {
+  window.scrollTo(0, 0);
+}
+```
+
+**Additional Cleanup:**
+Removed inline `onClick={() => window.scrollTo(0, 0)}` handlers from three links in Homepage.tsx "Complete Credit & Business Solutions" section (lines 906, 941, 976) to ensure consistent scroll behavior through the centralized ScrollToTop component.
+
 ---
 
 **Last Updated:** December 23, 2024

@@ -50,8 +50,8 @@ export const CalendlyPopupButton: React.FC<CalendlyPopupButtonProps> = ({
         className={className || defaultStyles}
         type="button"
       >
-        {text}
-        {showArrow && <ArrowRight className="w-5 h-5" />}
+        <span className="text-center">{text}</span>
+        {showArrow && <ArrowRight className="w-5 h-5 flex-shrink-0" />}
       </button>
 
       {/* Custom modal for vertical monitors */}

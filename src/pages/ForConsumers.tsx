@@ -95,16 +95,16 @@ const ServiceCard = ({
             rel="noopener noreferrer"
             className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2"
           >
-            {ctaText}
-            <ArrowRight className="w-5 h-5" />
+            <span className="text-center">{ctaText}</span>
+            <ArrowRight className="w-5 h-5 flex-shrink-0" />
           </a>
         ) : (
           <Link
             to={ctaLink}
             className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2"
           >
-            {ctaText}
-            <ArrowRight className="w-5 h-5" />
+            <span className="text-center">{ctaText}</span>
+            <ArrowRight className="w-5 h-5 flex-shrink-0" />
           </Link>
         )}
       </div>
