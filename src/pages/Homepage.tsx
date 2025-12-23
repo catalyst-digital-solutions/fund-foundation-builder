@@ -373,9 +373,9 @@ const ServicesTabSystem = () => {
 
   return (
     <div className="relative">
-      {/* Tab Navigation - Horizontal Scroll on Mobile, Grid on Desktop */}
-      <div className="mb-8 overflow-visible scrollbar-hide py-2 px-2">
-        <div className="flex lg:grid lg:grid-cols-8 gap-3 min-w-max lg:min-w-0 pb-4 lg:pb-2 overflow-x-auto lg:overflow-visible">
+      {/* Tab Navigation - 4x2 Grid on Mobile/Tablet, 8-column on Desktop */}
+      <div className="mb-8 py-2 px-2">
+        <div className="grid grid-cols-4 lg:grid-cols-8 gap-2 sm:gap-3">
           {services.map((service) => {
             const ServiceIcon = service.icon;
             return (
@@ -384,27 +384,26 @@ const ServicesTabSystem = () => {
                 onClick={() => setActiveTab(service.id)}
                 className={`
                   group relative flex flex-col items-center justify-center
-                  px-6 py-4 rounded-xl transition-all duration-300
-                  min-w-[140px] lg:min-w-0
-                  ${activeTab === service.id 
-                    ? 'bg-gradient-to-br from-amber-400 to-amber-500 shadow-xl scale-105' 
+                  px-2 sm:px-4 lg:px-6 py-3 sm:py-4 rounded-lg sm:rounded-xl transition-all duration-300
+                  ${activeTab === service.id
+                    ? 'bg-gradient-to-br from-amber-400 to-amber-500 shadow-xl scale-105'
                     : 'bg-white hover:bg-amber-50 shadow-md hover:shadow-lg'
                   }
                 `}
               >
-                <ServiceIcon 
-                  className={`w-8 h-8 mb-2 transition-colors ${
+                <ServiceIcon
+                  className={`w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 mb-1 sm:mb-2 transition-colors ${
                     activeTab === service.id ? 'text-white' : 'text-amber-600 group-hover:text-amber-700'
                   }`}
                 />
-                <span className={`text-sm font-semibold text-center transition-colors ${
+                <span className={`text-xs sm:text-sm font-semibold text-center transition-colors leading-tight ${
                   activeTab === service.id ? 'text-white' : 'text-gray-900'
                 }`}>
                   {service.label}
                 </span>
                 {activeTab === service.id && (
-                  <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
-                    <div className="w-2 h-2 bg-amber-500 rounded-full" />
+                  <div className="absolute -bottom-1 sm:-bottom-2 left-1/2 transform -translate-x-1/2">
+                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-amber-500 rounded-full" />
                   </div>
                 )}
               </button>
