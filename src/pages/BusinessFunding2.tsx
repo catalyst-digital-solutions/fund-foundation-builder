@@ -1635,10 +1635,13 @@ const FAQSection = () => {
                 }
               }}
             />
-            <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-white hover:bg-gray-50 text-gray-900 font-semibold px-6 py-3 border-2 border-gray-300 shadow-lg hover:shadow-xl transition-all duration-200">
-                Apply Now
-              </Button>
+            <a
+              href="https://mesagroupcapital.com/for-businesses/business-funding"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-white hover:bg-gray-50 text-gray-900 font-semibold px-6 py-3 rounded-lg border-2 border-gray-300 shadow-lg hover:shadow-xl transition-all duration-200"
+            >
+              Apply Now
             </a>
           </div>
         </div>
@@ -1757,10 +1760,13 @@ const TwoPathsForward = () => {
               </p>
             </div>
 
-            <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="block">
-              <Button className="w-full bg-gray-700 hover:bg-gray-800 text-white font-semibold py-3 px-6 text-base rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-800">
-                Start Your Application
-              </Button>
+            <a
+              href="https://mesagroupcapital.com/for-businesses/business-funding"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full inline-flex items-center justify-center bg-gray-700 hover:bg-gray-800 text-white font-semibold py-3 px-6 text-base rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-800"
+            >
+              Start Your Application
             </a>
           </div>
 
