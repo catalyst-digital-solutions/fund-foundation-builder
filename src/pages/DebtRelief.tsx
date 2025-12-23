@@ -113,7 +113,7 @@ const DebtRelief = () => {
             <div className="inline-block">
               <CalendlyPopupButton
                 text="Book Your Free Debt Analysis"
-                className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl border-2 border-amber-500"
+                className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl border-2 border-amber-500"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {
@@ -224,7 +224,7 @@ const DebtRelief = () => {
             <div className="inline-block">
               <CalendlyPopupButton
                 text="Get Your Free Debt Analysis"
-                className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-10 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
+                className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-10 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {
@@ -565,7 +565,7 @@ const DebtRelief = () => {
             <div className="inline-block">
               <CalendlyPopupButton
                 text="Start Your Debt-Free Journey Today"
-                className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl"
+                className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {

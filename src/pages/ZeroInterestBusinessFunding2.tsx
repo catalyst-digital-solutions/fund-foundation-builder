@@ -82,7 +82,7 @@ const HeroSection = () => (
             <div className="flex flex-col sm:flex-row gap-4">
               <CalendlyPopupButton
                 text="Book Your Free Funding Consultation"
-                className="inline-block text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 text-center hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 text-center hover:scale-105"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {
@@ -1194,7 +1194,7 @@ const FinalCTA = () => (
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CalendlyPopupButton
               text="Book Your Free Funding Consultation"
-              className="inline-block text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 hover:scale-105"
               showArrow={false}
               prefillOptions={{
                 customAnswers: {

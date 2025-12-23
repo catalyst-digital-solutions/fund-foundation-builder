@@ -980,7 +980,7 @@ const CreditRepair2 = () => {
             <CalendlyPopupButton
               text="Get Your Customized Action Plan"
               showArrow={true}
-              className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4"
+              className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4"
               prefillOptions={{
                 utm: { source: 'website', medium: 'credit_repair_2', campaign: 'customized_action_plan_cta' }
               }}
@@ -1562,7 +1562,7 @@ const CreditRepair2 = () => {
               <CalendlyPopupButton
                 text="Schedule Free Consultation"
                 showArrow={true}
-                className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors inline-flex items-center gap-2"
+                className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors inline-flex items-center justify-center gap-2"
                 prefillOptions={{
                   utm: { source: 'website', medium: 'credit_repair_2', campaign: 'still_not_sure_cta' }
                 }}
@@ -1882,7 +1882,7 @@ Every dollar you paid to Mesa Group.</p>
             <CalendlyPopupButton
               text="Start Your Risk-Free Credit Restoration"
               showArrow={true}
-              className="bg-gray-900 hover:bg-gray-800 text-white rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 text-xl font-bold px-10 py-5"
+              className="inline-flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200 text-xl font-bold px-10 py-5"
               prefillOptions={{
                 utm: { source: 'website', medium: 'credit_repair_2', campaign: 'risk_free_restoration_cta' }
               }}
@@ -1928,7 +1928,7 @@ Every dollar you paid to Mesa Group.</p>
           <CalendlyPopupButton
             text="Start Your Credit Transformation Now"
             showArrow={true}
-            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5"
+            className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5"
             prefillOptions={{
               utm: { source: 'website', medium: 'credit_repair_2', campaign: 'transformation_now_cta' }
             }}

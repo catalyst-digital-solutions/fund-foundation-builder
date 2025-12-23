@@ -68,7 +68,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CalendlyPopupButton
               text="Schedule Free Consultation"
-              className="text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto"
+              className="inline-flex items-center justify-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 h-auto"
               showArrow={false}
               prefillOptions={{
                 customAnswers: {
@@ -532,7 +532,7 @@ const AllFundingSolutionsGrid = () => {
               </a>
               <CalendlyPopupButton
                 text="Schedule Consultation"
-                className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {
@@ -590,7 +590,7 @@ const AllFundingSolutionsGrid = () => {
               </a>
               <CalendlyPopupButton
                 text="Schedule Consultation"
-                className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {
@@ -648,7 +648,7 @@ const AllFundingSolutionsGrid = () => {
               </a>
               <CalendlyPopupButton
                 text="Schedule Consultation"
-                className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {
@@ -706,7 +706,7 @@ const AllFundingSolutionsGrid = () => {
               </a>
               <CalendlyPopupButton
                 text="Schedule Consultation"
-                className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {
@@ -764,7 +764,7 @@ const AllFundingSolutionsGrid = () => {
               </a>
               <CalendlyPopupButton
                 text="Schedule Consultation"
-                className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {
@@ -822,7 +822,7 @@ const AllFundingSolutionsGrid = () => {
               </a>
               <CalendlyPopupButton
                 text="Schedule Consultation"
-                className="flex-1 text-center px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {
@@ -891,7 +891,7 @@ const AllFundingSolutionsGrid = () => {
               </a>
               <CalendlyPopupButton
                 text="Schedule Consultation"
-                className="flex-1 text-center px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all text-sm"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all text-sm"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {
@@ -949,7 +949,7 @@ const AllFundingSolutionsGrid = () => {
               </a>
               <CalendlyPopupButton
                 text="Schedule Consultation"
-                className="flex-1 text-center px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all text-sm"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all text-sm"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {
@@ -1082,7 +1082,7 @@ const ComparisonTable = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <CalendlyPopupButton
                   text="Schedule Free Consultation"
-                  className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+                  className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
                   showArrow={false}
                   prefillOptions={{
                     customAnswers: {
@@ -1620,7 +1620,7 @@ const FAQSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CalendlyPopupButton
               text="Schedule Consultation"
-              className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3"
+              className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3 rounded-lg"
               showArrow={false}
               prefillOptions={{
                 customAnswers: {
@@ -1704,7 +1704,7 @@ const TwoPathsForward = () => {
 
             <CalendlyPopupButton
               text="Schedule Free Consultation"
-              className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+              className="w-full inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
               showArrow={false}
               prefillOptions={{
                 customAnswers: {
@@ -1815,7 +1815,7 @@ const FinalCTA = () => {
                 <div>
                   <CalendlyPopupButton
                     text="Schedule Free Consultation"
-                    className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-10 py-4 text-xl h-auto"
+                    className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-10 py-4 text-xl rounded-lg h-auto"
                     showArrow={false}
                     prefillOptions={{
                       customAnswers: {
