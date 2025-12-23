@@ -1620,7 +1620,7 @@ const FAQSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CalendlyPopupButton
               text="Schedule Consultation"
-              className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3 rounded-lg"
+              className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
               showArrow={false}
               prefillOptions={{
                 customAnswers: {
@@ -1636,7 +1636,7 @@ const FAQSection = () => {
               }}
             />
             <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-white hover:bg-gray-50 text-gray-900 font-bold px-8 py-3 border-2 border-gray-300">
+              <Button className="bg-white hover:bg-gray-50 text-gray-900 font-bold px-8 py-4 border-2 border-gray-300 shadow-lg hover:shadow-xl transition-all duration-200">
                 Apply Now
               </Button>
             </a>
@@ -1758,7 +1758,7 @@ const TwoPathsForward = () => {
             </div>
 
             <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="block">
-              <Button className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-4 text-lg">
+              <Button className="w-full bg-gray-700 hover:bg-gray-800 text-white font-bold py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-800">
                 Start Your Application
               </Button>
             </a>

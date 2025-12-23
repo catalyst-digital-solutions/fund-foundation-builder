@@ -1282,15 +1282,18 @@ const CreditRepair2 = () => {
                 </div>
                 
                 <button onClick={handleCTAClick} className="w-full bg-[#FBBF23] hover:bg-[#E5AC1F] text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3">
-                  Choose Mesa360 Flex (most popular)
+                  Choose Mesa360 Flex
                 </button>
 
                 <p className="text-xs text-gray-500">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process. Ongoing support is provided. If you add new items, we will work on them. Clients may continue applying for accounts as needed.</p>
               </div>
 
               {/* Mesa360 Elite */}
-              <div className="bg-gradient-to-br from-[#3E3E3E] to-[#2c2c2c] border-2 border-[#3E3E3E] rounded-2xl p-6 text-white">
-                <div className="flex items-center gap-2 mb-2">
+              <div className="bg-gradient-to-br from-[#3E3E3E] to-[#2c2c2c] border-2 border-[#3E3E3E] rounded-2xl p-6 text-white relative">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-amber-400 text-gray-900 text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
+                  <Crown className="w-3 h-3" /> PREMIUM
+                </div>
+                <div className="flex items-center gap-2 mb-2 mt-2">
                   <Crown className="w-6 h-6 text-amber-400" />
                   <h4 className="text-xl font-bold">MESA360 ELITE</h4>
                 </div>
@@ -1348,7 +1351,7 @@ const CreditRepair2 = () => {
                 </div>
                 
                 <button onClick={handleCTAClick} className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3">
-                  Choose Mesa360 Elite (premium)
+                  Choose Mesa360 Elite
                 </button>
 
                 <p className="text-xs text-gray-400">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process. Ongoing support is provided. If you add new items, we will work on them. Clients may continue applying for accounts as needed.</p>
