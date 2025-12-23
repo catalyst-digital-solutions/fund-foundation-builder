@@ -1704,7 +1704,7 @@ const TwoPathsForward = () => {
 
             <CalendlyPopupButton
               text="Schedule Free Consultation"
-              className="w-full inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+              className="w-full inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-4 px-8 text-base rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
               showArrow={false}
               prefillOptions={{
                 customAnswers: {
@@ -1758,7 +1758,7 @@ const TwoPathsForward = () => {
             </div>
 
             <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="block">
-              <Button className="w-full bg-gray-700 hover:bg-gray-800 text-white font-bold py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-800">
+              <Button className="w-full bg-gray-700 hover:bg-gray-800 text-white font-bold py-4 px-8 text-base rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-800">
                 Start Your Application
               </Button>
             </a>
