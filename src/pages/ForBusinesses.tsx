@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { 
-  CheckCircle, 
-  Star, 
-  TrendingUp, 
+import {
+  CheckCircle,
+  Star,
+  TrendingUp,
   Building2,
   CreditCard,
   DollarSign,
@@ -24,6 +24,7 @@ import {
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 
 const ForBusinesses = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -117,12 +118,17 @@ const ForBusinesses = () => {
                   Explore Your Business Solutions
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
-                <a
-                  href="#contact"
+                <CalendlyPopupButton
+                  text="Schedule Free Consultation"
+                  prefillOptions={{
+                    utm: {
+                      source: "for_businesses",
+                      medium: "hero_cta"
+                    }
+                  }}
                   className="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg shadow-md border-2 border-gray-300 transition-all duration-200"
-                >
-                  Schedule Free Consultation
-                </a>
+                  showArrow={false}
+                />
               </div>
             </div>
 
@@ -563,12 +569,17 @@ const ForBusinesses = () => {
 
           {/* Section CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#contact"
+            <CalendlyPopupButton
+              text="Schedule Your Free Consultation"
+              prefillOptions={{
+                utm: {
+                  source: "for_businesses",
+                  medium: "how_it_works_cta"
+                }
+              }}
               className="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg shadow-lg transition-all duration-200 border-2 border-amber-500"
-            >
-              Schedule Your Free Consultation
-            </a>
+              showArrow={false}
+            />
             <a
               href="tel:+16613103040"
               className="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg shadow-md border-2 border-gray-300 transition-all duration-200"
@@ -831,12 +842,17 @@ const ForBusinesses = () => {
           </div>
 
           <div className="mt-12 text-center">
-            <a
-              href="#contact"
+            <CalendlyPopupButton
+              text="Still Have Questions? Schedule a Call"
+              prefillOptions={{
+                utm: {
+                  source: "for_businesses",
+                  medium: "faq_cta"
+                }
+              }}
               className="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg shadow-lg transition-all duration-200 border-2 border-amber-500"
-            >
-              Still Have Questions? Schedule a Call
-            </a>
+              showArrow={false}
+            />
           </div>
         </div>
       </section>
@@ -858,14 +874,17 @@ const ForBusinesses = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <a
-              href="https://calendly.com/mesagroupconsulting"
-              target="_blank"
-              rel="noopener noreferrer"
+            <CalendlyPopupButton
+              text="Schedule Free Consultation"
+              prefillOptions={{
+                utm: {
+                  source: "for_businesses",
+                  medium: "final_cta"
+                }
+              }}
               className="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg shadow-lg transition-all duration-200 border-2 border-amber-500"
-            >
-              Schedule Free Consultation
-            </a>
+              showArrow={false}
+            />
             <a
               href="tel:+16613103040"
               className="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg shadow-md border-2 border-gray-300 transition-all duration-200"
