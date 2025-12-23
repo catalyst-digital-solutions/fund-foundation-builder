@@ -474,7 +474,7 @@ const ForConsumers = () => {
                 </button>
                 <CalendlyPopupButton
                   text="Schedule Free Consultation"
-                  className="bg-white hover:bg-gray-50 text-gray-900 font-semibold py-4 px-8 rounded-lg border-2 border-gray-300 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold py-4 px-8 rounded-lg border-2 border-gray-300 transition-colors"
                   prefillOptions={{
                     customAnswers: {
                       a1: "For Consumers Page - Hero CTA"
@@ -619,7 +619,7 @@ const ForConsumers = () => {
           <div className="text-center mt-12 space-y-4">
             <CalendlyPopupButton
               text="Schedule Your Free Consultation"
-              className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors"
               prefillOptions={{
                 customAnswers: {
                   a1: "For Consumers Page - How It Works CTA"
@@ -760,7 +760,7 @@ const ForConsumers = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <CalendlyPopupButton
               text="Schedule Free Consultation"
-              className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors"
               prefillOptions={{
                 customAnswers: {
                   a1: "For Consumers Page - Final CTA"
