@@ -782,14 +782,17 @@ const BuildCredit = () => {
               <p className="text-gray-700 mb-6">
                 Access 3,000+ aged tradelines (5-20+ years) for instant account age boost. Best for those with established foundation seeking premium profile acceleration.
               </p>
-              <a 
-                href="https://link.mesagroupconsulting.com/widget/bookings/free-tradeline-consultation"
-                target="_blank"
-                rel="noopener noreferrer"
+              <CalendlyPopupButton
+                text="Schedule Free Tradeline Consultation"
                 className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors"
-              >
-                Schedule Free Tradeline Consultation
-              </a>
+                prefillOptions={{
+                  utm: {
+                    source: "build_credit",
+                    medium: "tradelines_cta"
+                  }
+                }}
+                showArrow={false}
+              />
             </div>
           </div>
           
