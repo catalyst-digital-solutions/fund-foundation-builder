@@ -753,26 +753,59 @@ function FAQSection() {
             </p>
           </div>
 
-        {/* Video Testimonials */}
+        {/* Client Testimonials */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-foreground text-center mb-8">
             Hear From Our <span className="text-[#f9c65d]">Clients</span>
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((index) => (
-              <div key={index} className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
-                <div className="aspect-video bg-gray-100 flex items-center justify-center">
-                  <div className="text-center">
-                    <Play className="w-12 h-12 text-[#bb9446] mx-auto mb-2" />
-                    <p className="text-sm text-gray-500">Video Testimonial {index}</p>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <p className="font-semibold text-gray-900">Client Name</p>
-                  <p className="text-sm text-gray-600">Brief description of their experience</p>
-                </div>
+            {/* Review 1 - Sandeep K. */}
+            <div className="bg-white rounded-xl border-2 border-gray-200 p-6 hover:border-amber-300 transition-colors duration-300">
+              <div className="flex items-center gap-1 mb-4">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                ))}
               </div>
-            ))}
+              <p className="text-gray-700 leading-relaxed mb-4">
+                "Mesa Group has been such a help in my life! They've made credit repair easy and fast. They are always available to answer questions. I really appreciate everything they have done for me."
+              </p>
+              <div className="border-t border-gray-200 pt-4">
+                <p className="font-semibold text-gray-900">Sandeep K.</p>
+                <p className="text-sm text-gray-600">Bakersfield Resident</p>
+              </div>
+            </div>
+
+            {/* Review 2 - Alex M. */}
+            <div className="bg-white rounded-xl border-2 border-gray-200 p-6 hover:border-amber-300 transition-colors duration-300">
+              <div className="flex items-center gap-1 mb-4">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                ))}
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                "I was going through hardship and needed to get my credit fixed ASAP. I was in luck because they were able to get my credit up in no time. I am forever grateful, and I will recommend Mesa Group Capital to anybody needing help with credit repair."
+              </p>
+              <div className="border-t border-gray-200 pt-4">
+                <p className="font-semibold text-gray-900">Alex M.</p>
+                <p className="text-sm text-gray-600">Bakersfield Resident</p>
+              </div>
+            </div>
+
+            {/* Review 3 - Christian M. */}
+            <div className="bg-white rounded-xl border-2 border-gray-200 p-6 hover:border-amber-300 transition-colors duration-300">
+              <div className="flex items-center gap-1 mb-4">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                ))}
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                "I was in a very difficult time coming out of college, and I needed to get my credit in better standing. That's where I sought out a credit consulting agency, and Mesa Group was there for me. Thanks to them, I now have way better credit and I can now get approved for housing, car financing, and other things."
+              </p>
+              <div className="border-t border-gray-200 pt-4">
+                <p className="font-semibold text-gray-900">Christian M.</p>
+                <p className="text-sm text-gray-600">Bakersfield Resident</p>
+              </div>
+            </div>
           </div>
         </div>
 
