@@ -717,7 +717,7 @@ const BuildCredit = () => {
               Installment Loan Builders
             </h3>
             <p className="text-gray-700 mb-6 max-w-4xl">
-              Installment loans demonstrate your ability to commit to fixed payments over time. These credit builder loans report positive payment history while you save money simultaneously.
+              Installment loans demonstrate your ability to manage fixed payments over time. Credit builder loans report positive payment history to credit bureaus while helping you save money.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               {installmentPartners.map((partner, index) => (
@@ -748,20 +748,20 @@ const BuildCredit = () => {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">?</span>
+                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">📋</span>
                     What They Are
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Credit builder loans are designed specifically to help you build credit while saving money. You make monthly payments that are held in a savings account until the loan term ends.
+                    Credit builder loans are designed to help you establish credit history while saving money. You make monthly payments into a secured account over 6-24 months, and the lender reports your payment history to the credit bureaus.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚙</span>
+                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚙️</span>
                     How They Work
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
-                    You open a small loan ($500-$3,000), make monthly payments for 6-24 months, and the lender reports your on-time payments to all three credit bureaus. At the end of the term, you receive your money back (minus interest and fees).
+                    You open a small loan ($500-$3,000), make monthly payments for the loan term, and the lender reports your on-time payments to credit bureaus. At the end of the term, you receive your savings (minus interest and fees).
                   </p>
                 </div>
                 <div>
@@ -776,7 +776,7 @@ const BuildCredit = () => {
                     </li>
                     <li className="text-gray-700 flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      Adds installment credit diversity
+                      Adds installment account diversity
                     </li>
                     <li className="text-gray-700 flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
@@ -785,6 +785,10 @@ const BuildCredit = () => {
                     <li className="text-gray-700 flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                       Low monthly payments ($25-$150)
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Typical results visible in 3-6 months*
                     </li>
                   </ul>
                 </div>
@@ -799,7 +803,7 @@ const BuildCredit = () => {
               Rent Reporting & Alternative Credit
             </h3>
             <p className="text-gray-700 mb-6 max-w-4xl">
-              Your rent is likely your largest monthly expense. Rent reporting services add your on-time rent payments to your credit reports, backdating months or years of positive payment history instantly.
+              Your rent is likely your largest monthly expense. Rent reporting services add your on-time rent payments to your credit reports, potentially backdating months or years of positive payment history.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               {rentPartners.map((partner, index) => (
@@ -830,20 +834,20 @@ const BuildCredit = () => {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">?</span>
+                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">📋</span>
                     What They Are
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Services that report your monthly rent payments to credit bureaus, turning an expense you're already paying into credit-building history. Some can backdate up to 24 months of past rent payments.
+                    Services that report your monthly rent payments to credit bureaus, turning an expense you're already paying into credit-building history. Some services can add verified past rent payments to your credit report.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚙</span>
+                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚙️</span>
                     How They Work
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
-                    You connect your bank account or provide lease documentation. The service verifies your rent payments and reports them to one or more credit bureaus. Some services also report utility bills, phone bills, and streaming subscriptions.
+                    You connect your bank account or provide lease documentation. The service verifies your rent payments and reports them to one or more credit bureaus. Some services also report utility bills, phone bills, and subscription payments.
                   </p>
                 </div>
                 <div>
@@ -854,19 +858,19 @@ const BuildCredit = () => {
                   <ul className="space-y-2">
                     <li className="text-gray-700 flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      Backdate 12-24 months of payment history
+                      Add 12-24 months of verified payment history
                     </li>
                     <li className="text-gray-700 flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      No new accounts or inquiries needed
+                      No new credit accounts or hard inquiries
                     </li>
                     <li className="text-gray-700 flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      Instant credit score boost (avg 35+ points)
+                      Average score increase varies by credit profile*
                     </li>
                     <li className="text-gray-700 flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      Low monthly cost ($5-$20/month)
+                      Low monthly cost ($5-$20/month, Experian Boost is free)
                     </li>
                   </ul>
                 </div>
@@ -874,75 +878,119 @@ const BuildCredit = () => {
             </div>
           </div>
           
-          {/* Authorized User Tradelines */}
+          {/* Authorized User Strategy */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
               <Users className="w-6 h-6 text-amber-600" />
-              Authorized User Tradelines (Advanced)
+              Authorized User Strategy (Educational)
             </h3>
             <p className="text-gray-700 mb-6 max-w-4xl">
-              Access 3,000+ aged tradelines (5-20+ years) for instant account age boost. Best for those with established foundation seeking premium profile acceleration.
+              Some consumers explore authorized user tradelines—being added to established credit card accounts (typically 5-20+ years old) to potentially benefit from the account's positive history.
             </p>
-            <div className="bg-white rounded-xl p-8 shadow-md mb-8">
-              <CalendlyPopupButton
-                text="Schedule Free Tradeline Consultation"
-                className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors"
-                prefillOptions={{
-                  utm: {
-                    source: "build_credit",
-                    medium: "tradelines_cta"
-                  }
-                }}
-                showArrow={false}
-              />
+
+            <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-8">
+              <p className="text-lg font-semibold text-gray-900 mb-3">Important Considerations:</p>
+              <p className="text-gray-700 leading-relaxed">
+                Mesa Group provides education on all legitimate credit-building strategies, including authorized user accounts. <strong>We do not sell tradelines directly.</strong> We recommend a family-first approach and understanding the significant risks involved.
+              </p>
             </div>
 
-            {/* Tradelines Info Box */}
-            <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-2xl p-8 border border-amber-200">
+            {/* Info Box */}
+            <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-2xl p-8 border border-amber-200 mb-8">
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">?</span>
+                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">📋</span>
                     What They Are
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Authorized user tradelines are seasoned credit card accounts (5-20+ years old) where you're added as an authorized user. The entire account history reports to your credit report instantly.
+                    Authorized user tradelines involve being added as an authorized user to someone else's credit card account. The account history may report to your credit file, potentially adding account age and positive payment history.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚙</span>
+                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚙️</span>
                     How They Work
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
-                    You select tradelines based on age, limit, and utilization. Once added, the account appears on your credit report within 30 days, instantly increasing your average account age and available credit.
+                    You can be added as an authorized user by a family member (parent, spouse) or through third-party tradeline services. Once added, the account may appear on your credit report within 30-60 days, depending on when the card issuer reports.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">✓</span>
-                    Key Benefits
+                    <span className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚠️</span>
+                    Important Risks
                   </h4>
                   <ul className="space-y-2">
-                    <li className="text-gray-700 flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      Instant account age boost (5-20+ years)
+                    <li className="text-gray-700 flex items-start gap-2">
+                      <AlertTriangle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm">If the primary account holder misses payments, it negatively impacts YOUR credit</span>
                     </li>
-                    <li className="text-gray-700 flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      Increases available credit dramatically
+                    <li className="text-gray-700 flex items-start gap-2">
+                      <AlertTriangle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm">Not all card issuers report authorized users to all three bureaus</span>
                     </li>
-                    <li className="text-gray-700 flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      No hard inquiry or application needed
+                    <li className="text-gray-700 flex items-start gap-2">
+                      <AlertTriangle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm">Third-party tradeline services can cost $200-$1,500+ per tradeline</span>
                     </li>
-                    <li className="text-gray-700 flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      Typically reports within 30 days
+                    <li className="text-gray-700 flex items-start gap-2">
+                      <AlertTriangle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm">Recent FICO algorithm changes have reduced the impact of purchased tradelines</span>
+                    </li>
+                    <li className="text-gray-700 flex items-start gap-2">
+                      <AlertTriangle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm">This is not a substitute for building your own primary credit history</span>
                     </li>
                   </ul>
                 </div>
               </div>
+            </div>
+
+            {/* Mesa Group's Approach */}
+            <div className="bg-white rounded-xl p-8 shadow-md mb-8">
+              <h4 className="text-xl font-bold text-gray-900 mb-4">Mesa Group's Educational Approach</h4>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="font-semibold text-gray-900">Family approach first:</p>
+                    <p className="text-gray-700">Being added to a parent's or spouse's card is safest and free</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="font-semibold text-gray-900">Understand the risks:</p>
+                    <p className="text-gray-700">This strategy has significant downsides if not done carefully</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="font-semibold text-gray-900">Focus on fundamentals:</p>
+                    <p className="text-gray-700">Your own payment history and credit utilization matter most long-term</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 text-center">
+              <p className="text-gray-700 mb-6 max-w-3xl mx-auto">
+                If you're considering this strategy, we can discuss whether it's appropriate for your situation during a complimentary consultation.
+              </p>
+              <CalendlyPopupButton
+                text="Schedule Free Consultation"
+                className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors"
+                prefillOptions={{
+                  utm: {
+                    source: "build_credit",
+                    medium: "tradelines_consultation"
+                  }
+                }}
+                showArrow={false}
+              />
             </div>
           </div>
           
