@@ -26,7 +26,9 @@ import {
   Car,
   Briefcase,
   AlertTriangle,
-  ExternalLink
+  ExternalLink,
+  HelpCircle,
+  Settings
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -748,7 +750,9 @@ const BuildCredit = () => {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">📋</span>
+                    <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <HelpCircle className="w-5 h-5 text-white" />
+                    </div>
                     What They Are
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
@@ -757,7 +761,9 @@ const BuildCredit = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚙️</span>
+                    <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Settings className="w-5 h-5 text-white" />
+                    </div>
                     How They Work
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
@@ -766,7 +772,9 @@ const BuildCredit = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">✓</span>
+                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="w-5 h-5 text-white" />
+                    </div>
                     Key Benefits
                   </h4>
                   <ul className="space-y-2">
@@ -834,7 +842,9 @@ const BuildCredit = () => {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">📋</span>
+                    <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <HelpCircle className="w-5 h-5 text-white" />
+                    </div>
                     What They Are
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
@@ -843,7 +853,9 @@ const BuildCredit = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚙️</span>
+                    <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Settings className="w-5 h-5 text-white" />
+                    </div>
                     How They Work
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
@@ -852,7 +864,9 @@ const BuildCredit = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">✓</span>
+                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="w-5 h-5 text-white" />
+                    </div>
                     Key Benefits
                   </h4>
                   <ul className="space-y-2">
@@ -900,7 +914,9 @@ const BuildCredit = () => {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">📋</span>
+                    <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <HelpCircle className="w-5 h-5 text-white" />
+                    </div>
                     What They Are
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
@@ -909,7 +925,9 @@ const BuildCredit = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚙️</span>
+                    <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Settings className="w-5 h-5 text-white" />
+                    </div>
                     How They Work
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
@@ -918,7 +936,9 @@ const BuildCredit = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚠️</span>
+                    <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <AlertTriangle className="w-5 h-5 text-white" />
+                    </div>
                     Important Risks
                   </h4>
                   <ul className="space-y-2">
