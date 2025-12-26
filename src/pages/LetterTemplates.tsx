@@ -534,20 +534,12 @@ const LetterTemplates = () => {
                   </p>
                 </div>
                 
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <a 
+                <div className="flex justify-center">
+                  <a
                     href="https://www.mesagroupconsulting.com/contact-us"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors text-center"
-                  >
-                    Contact Our Identity Theft Team
-                  </a>
-                  <a 
-                    href="https://www.mesagroupconsulting.com/contact-us"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 bg-white hover:bg-gray-50 border-2 border-gray-300 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors text-center"
+                    className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-8 rounded-lg transition-colors text-center"
                   >
                     Book Free Consultation
                   </a>
