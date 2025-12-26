@@ -103,7 +103,6 @@ const Header = () => {
         { label: 'Business Funding', href: '/business-funding-2' },
         { label: 'Business Credit Builder', href: '/business-credit-builder' },
         { label: 'Business Debt Relief', href: '/business-debt-relief' },
-        { label: 'Business Credit', href: '/business-credit' },
       ],
     },
     {
