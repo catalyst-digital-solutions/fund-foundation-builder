@@ -393,7 +393,7 @@ const FinancialCalculators = () => {
             Calculators are great for DIY guidance—but if you want a customized strategy built by experts, we're here to help. Our team specializes in credit repair, business funding, and debt relief tailored to your unique situation.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-row gap-4 justify-center">
             <a
               href="/"
               className="inline-flex items-center justify-center gap-2 bg-amber-400 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:bg-amber-500 transition-all"

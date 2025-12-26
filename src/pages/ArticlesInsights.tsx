@@ -310,7 +310,7 @@ const ArticlesInsights = () => {
             Reading about credit repair is a great start—but if you're ready for professional help, our team is here to guide you through every step of your financial journey.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-row gap-4 justify-center">
             <Link
               to="/"
               className="inline-flex items-center justify-center px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl border-2 border-[#bb9446]"

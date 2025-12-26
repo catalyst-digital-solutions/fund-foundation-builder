@@ -300,7 +300,7 @@ const Resources = () => {
             Our resources are designed to educate and empower you—but if you'd rather have professionals handle your credit repair, business funding, or debt relief, we're here to help.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-row gap-4 justify-center">
             <Link
               to="/"
               className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-semibold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200"

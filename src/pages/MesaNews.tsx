@@ -532,8 +532,8 @@ const MesaNews = () => {
               The clients featured in our success stories started right where you are. If you're ready to transform your credit, secure funding, or find debt relief, let's talk.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              
+            <div className="flex flex-row gap-4 justify-center items-center">
+
               <a
                 href="/"
                 className="inline-flex items-center gap-2 bg-amber-400 text-gray-900 font-semibold px-8 py-4 rounded-lg hover:bg-amber-500 transition-colors shadow-lg hover:shadow-xl"
@@ -555,11 +555,11 @@ const MesaNews = () => {
 
             <div className="mt-6">
               <a
-                href="tel:661-368-8008"
+                href="tel:661-310-3040"
                 className="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                Call (661) 368-8008
+                Call (661) 310-3040
               </a>
             </div>
 
