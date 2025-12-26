@@ -105,7 +105,7 @@ const HowItWorks = () => {
         <div className="text-center mt-16">
           <div className="inline-block">
             <a
-              href="https://policygenius.go2cloud.org/aff_c?offer_id=811&aff_id=2244"
+              href="https://www.policygenius.com/mesa-group-capital-life/?show_prices=true&utm_campaign=811&utm_content=&utm_medium=affiliate&utm_source=Novae+"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"

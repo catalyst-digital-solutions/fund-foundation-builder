@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, FileText, AlertTriangle, DollarSign, Eye, Lock, ChevronDown, ChevronUp, Phone, MapPin, ExternalLink, Check, Play, CheckCircle } from 'lucide-react';
+import { Shield, CheckCircle2, TrendingUp, Bell, BarChart3, Users, Smartphone, FileText, AlertTriangle, DollarSign, Eye, Lock, ChevronDown, ChevronUp, Phone, MapPin, ExternalLink, Check, CheckCircle, Star } from 'lucide-react';
 import PoweredBySmartCredit from '@/components/PoweredBySmartCredit';
 import EmotionalCTA1 from '@/components/credit-monitoring/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/credit-monitoring/sections/EmotionalCTA2';

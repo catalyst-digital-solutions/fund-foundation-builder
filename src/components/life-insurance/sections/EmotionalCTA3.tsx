@@ -4,7 +4,7 @@ import PoweredByPolicyGenius from '@/components/PoweredByPolicyGenius';
 
 const EmotionalCTA3 = () => {
   const handleClick = () => {
-    window.open('https://policygenius.go2cloud.org/aff_c?offer_id=811&aff_id=2244', '_blank', 'noopener,noreferrer');
+    window.open('https://www.policygenius.com/mesa-group-capital-life/?show_prices=true&utm_campaign=811&utm_content=&utm_medium=affiliate&utm_source=Novae+', '_blank', 'noopener,noreferrer');
   };
 
   return (

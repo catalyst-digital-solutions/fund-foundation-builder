@@ -5,7 +5,7 @@ import PoweredByMesaGroup from "@/components/PoweredByMesaGroup";
 import EmotionalCTA1 from "@/components/debt-relief/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/debt-relief/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/debt-relief/sections/EmotionalCTA3";
-import { CalendlyPopupButton } from "@/components/CalendlyPopupButton";
+import { ArrowRight } from "lucide-react";
 import {
   AlertCircle,
   CreditCard,
@@ -111,23 +111,14 @@ const DebtRelief = () => {
             </p>
             
             <div className="inline-block">
-              <CalendlyPopupButton
-                text="Book Your Free Debt Analysis"
+              <a
+                href="https://calendly.com/d/z7p-zgg-z6c/debt-help-consultation?embed_domain=mesagroupcapital.com&embed_type=Inline&utm_source=wl&utm_term=mesagroup&hide_gdpr_banner=1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl border-2 border-amber-500"
-                showArrow={false}
-                prefillOptions={{
-                  customAnswers: {
-                    serviceType: 'Personal/Consumer services',
-                    primaryGoal: 'Lower interest rates/debt'
-                  },
-                  utm: {
-                    source: 'debt-relief-page',
-                    medium: 'website',
-                    campaign: 'debt-relief',
-                    content: 'hero-cta'
-                  }
-                }}
-              />
+              >
+                Book Your Free Debt Analysis
+              </a>
               <PoweredByMesaGroup className="mt-4" />
             </div>
             <p className="text-sm text-gray-600 mt-4 flex items-center justify-center gap-4 flex-wrap">
@@ -222,23 +213,14 @@ const DebtRelief = () => {
               Debt relief through Mesa Group Consulting lets you settle debts for <strong>30-50% less than you owe</strong>, avoid bankruptcy, and protect your family's future—without destroying your credit for 7-10 years.
             </p>
             <div className="inline-block">
-              <CalendlyPopupButton
-                text="Get Your Free Debt Analysis"
+              <a
+                href="https://calendly.com/d/z7p-zgg-z6c/debt-help-consultation?embed_domain=mesagroupcapital.com&embed_type=Inline&utm_source=wl&utm_term=mesagroup&hide_gdpr_banner=1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-10 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
-                showArrow={false}
-                prefillOptions={{
-                  customAnswers: {
-                    serviceType: 'Personal/Consumer services',
-                    primaryGoal: 'Lower interest rates/debt'
-                  },
-                  utm: {
-                    source: 'debt-relief-page',
-                    medium: 'website',
-                    campaign: 'debt-relief',
-                    content: 'problem-section-cta'
-                  }
-                }}
-              />
+              >
+                Get Your Free Debt Analysis
+              </a>
               <PoweredByMesaGroup variant="dark" className="mt-4" />
             </div>
           </div>
@@ -563,23 +545,14 @@ const DebtRelief = () => {
 
           <div className="mt-12 text-center">
             <div className="inline-block">
-              <CalendlyPopupButton
-                text="Start Your Debt-Free Journey Today"
+              <a
+                href="https://calendly.com/d/z7p-zgg-z6c/debt-help-consultation?embed_domain=mesagroupcapital.com&embed_type=Inline&utm_source=wl&utm_term=mesagroup&hide_gdpr_banner=1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl"
-                showArrow={false}
-                prefillOptions={{
-                  customAnswers: {
-                    serviceType: 'Personal/Consumer services',
-                    primaryGoal: 'Lower interest rates/debt'
-                  },
-                  utm: {
-                    source: 'debt-relief-page',
-                    medium: 'website',
-                    campaign: 'debt-relief',
-                    content: 'process-section-cta'
-                  }
-                }}
-              />
+              >
+                Start Your Debt-Free Journey Today
+              </a>
               <PoweredByMesaGroup className="mt-4" />
             </div>
             <p className="text-gray-600 mt-4">Minimum $10,000 in debt required • No upfront fees</p>
@@ -684,23 +657,15 @@ const DebtRelief = () => {
             </p>
 
             <div className="inline-block">
-              <CalendlyPopupButton
-                text="Schedule Free Consultation"
+              <a
+                href="https://calendly.com/d/z7p-zgg-z6c/debt-help-consultation?embed_domain=mesagroupcapital.com&embed_type=Inline&utm_source=wl&utm_term=mesagroup&hide_gdpr_banner=1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
-                showArrow={true}
-                prefillOptions={{
-                  customAnswers: {
-                    serviceType: 'Personal/Consumer services',
-                    primaryGoal: 'Lower interest rates/debt'
-                  },
-                  utm: {
-                    source: 'debt-relief-page',
-                    medium: 'website',
-                    campaign: 'debt-relief',
-                    content: 'final-cta'
-                  }
-                }}
-              />
+              >
+                Schedule Free Consultation
+                <ArrowRight className="w-5 h-5" />
+              </a>
               <PoweredByMesaGroup className="mt-2" />
             </div>
             
