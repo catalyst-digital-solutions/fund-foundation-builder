@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity, X, Home, Scale, Gavel, Check, ChevronDown } from 'lucide-react';
+import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity, X, Home, Scale, Gavel, Check, ChevronDown, ArrowRight } from 'lucide-react';
 import creditilyLogo from "@/assets/creditily-wolf-logo.svg";
 import creditilyWideWolfLogo from "@/assets/creditily-wide-wolf-logo.svg";
 import diyHeroImage from "@/assets/diy-credit-repair-hero.webp";
@@ -9,7 +9,6 @@ import costComparisonBg from "@/assets/diy-credit-repair-cost-comparison-bg.png"
 import EmotionalCTA1 from "@/components/diy-credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/diy-credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/diy-credit-repair/sections/EmotionalCTA3";
-import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 
 const DIYCreditRepair = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -111,14 +110,15 @@ const DIYCreditRepair = () => {
               </ul>
               
               {/* Primary CTA */}
-              <CalendlyPopupButton
-                text="Schedule Your Free Consultation"
-                showArrow={true}
+              <a
+                href="https://member.getcreditily.com/Registration/CreateAccount/Account"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4 w-full md:w-auto inline-flex items-center justify-center gap-2"
-                prefillOptions={{
-                  utm: { source: 'website', medium: 'diy_credit_repair', campaign: 'hero_cta' }
-                }}
-              />
+              >
+                Start Now
+                <ArrowRight className="w-5 h-5" />
+              </a>
               
               {/* Trust Badges */}
               <div className="flex flex-wrap items-center gap-6 mt-8">
@@ -847,14 +847,15 @@ const DIYCreditRepair = () => {
                 </li>
               </ul>
               
-              <CalendlyPopupButton
-                text="Start Your Credit Transformation Now"
-                showArrow={true}
+              <a
+                href="https://member.getcreditily.com/Registration/CreateAccount/Account"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold py-4 inline-flex items-center justify-center gap-2"
-                prefillOptions={{
-                  utm: { source: 'website', medium: 'diy_credit_repair', campaign: 'pricing_cta' }
-                }}
-              />
+              >
+                Start Your Credit Transformation Now
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </div>
             
           </div>
@@ -1017,14 +1018,15 @@ const DIYCreditRepair = () => {
               Ready to Bridge the Gap — <span className="text-[#f9c65d]">Your Way?</span>
             </h2>
             
-            <CalendlyPopupButton
-              text="Get Started Today"
-              showArrow={true}
+            <a
+              href="https://member.getcreditily.com/Registration/CreateAccount/Account"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4 gap-2"
-              prefillOptions={{
-                utm: { source: 'website', medium: 'diy_credit_repair', campaign: 'final_cta' }
-              }}
-            />
+            >
+              Get Started Today
+              <ArrowRight className="w-5 h-5" />
+            </a>
 
             <p className="text-gray-600 mb-8">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
