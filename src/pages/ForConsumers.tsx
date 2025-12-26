@@ -293,7 +293,7 @@ const ForConsumers = () => {
       ],
       importantNote: "Federal student loans have unique protections. Refinancing converts them to private loans.",
       ctaText: "Check Student Loan Rates",
-      ctaLink: "/student-loan-refinancing",
+      ctaLink: "/student-loan-refi-2",
       poweredBy: "SuperMoney"
     },
     {
@@ -476,10 +476,12 @@ const ForConsumers = () => {
                   text="Schedule Free Consultation"
                   className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold py-4 px-8 rounded-lg border-2 border-gray-300 transition-colors"
                   prefillOptions={{
-                    customAnswers: {
-                      a1: "For Consumers Page - Hero CTA"
+                    utm: {
+                      source: "for_consumers",
+                      medium: "hero_cta"
                     }
                   }}
+                  showArrow={false}
                 />
               </div>
             </div>
@@ -762,10 +764,12 @@ const ForConsumers = () => {
               text="Schedule Free Consultation"
               className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors"
               prefillOptions={{
-                customAnswers: {
-                  a1: "For Consumers Page - Final CTA"
+                utm: {
+                  source: "for_consumers",
+                  medium: "final_cta"
                 }
               }}
+              showArrow={false}
             />
             <a
               href="tel:6613103040"
