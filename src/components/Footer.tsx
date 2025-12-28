@@ -118,7 +118,7 @@ const Footer = () => {
                     <li className="mt-3"><Link to="/credit-cards" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Cards</Link></li>
                     <li className="mt-3"><Link to="/personal-loans" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Personal Loans</Link></li>
                     <li className="mt-3"><Link to="/auto-loan-refi" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Auto Loan Refi</Link></li>
-                    <li className="mt-3"><Link to="/student-loan-refi-2" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Student Loan Refi</Link></li>
+                    <li className="mt-3"><Link to="/student-loan-refi" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Student Loan Refi</Link></li>
                     <li className="mt-3"><Link to="/debt-consolidation-loan" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Debt Consolidation Loan</Link></li>
                     <li className="mt-3"><Link to="/debt-relief" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Debt Relief</Link></li>
                     <li className="mt-3"><Link to="/trust-and-will-plan" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Trust & Will Plan</Link></li>
@@ -134,8 +134,8 @@ const Footer = () => {
                   <ChevronDown className={`w-4 h-4 text-[#F9C65D] transition-transform duration-200 ${isBusinessesOpen ? 'rotate-180' : ''}`} />
                 </CollapsibleTrigger>
                 <ul className="space-y-3">
-                  <li><Link to="/zero-interest-business-funding-2" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">0% Interest Business Funding</Link></li>
-                  <li><Link to="/business-funding-2" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Funding</Link></li>
+                  <li><Link to="/zero-interest-business-funding" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">0% Interest Business Funding</Link></li>
+                  <li><Link to="/business-funding" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Funding</Link></li>
                   <li><Link to="/business-credit-builder" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Credit Builder</Link></li>
                   <li><Link to="/business-debt-relief" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Business Debt Relief</Link></li>
                 </ul>
