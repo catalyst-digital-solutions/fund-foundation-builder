@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 import FilloutModal from '@/components/FilloutModal';
+import DualCTAButtons from '@/components/DualCTAButtons';
 import {
   Trophy, TrendingUp, Home, Rocket, Shield, Zap, DollarSign,
   Brain, Users, Target, CheckCircle, Phone, Check, ChevronDown,
@@ -11,20 +12,22 @@ import {
 } from 'lucide-react';
 
 const ZeroInterestBusinessFunding2 = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background font-['Inter',sans-serif]">
       <Header />
-      <HeroSection />
-      <TheAwakeningSection />
+      <HeroSection isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+      <TheAwakeningSection setIsModalOpen={setIsModalOpen} />
       <TrustIndicators />
       <TheVisionSection />
-      <MesaAdvantage />
+      <MesaAdvantage setIsModalOpen={setIsModalOpen} />
       <ThreeRoundFramework />
       <WhoThisWorksFor />
-      <ResultsShowcase />
-      <QualificationRequirements />
+      <ResultsShowcase setIsModalOpen={setIsModalOpen} />
+      <QualificationRequirements setIsModalOpen={setIsModalOpen} />
       <WhatYouActuallyDo />
-      <PartnershipModel />
+      <PartnershipModel setIsModalOpen={setIsModalOpen} />
       <BeyondZeroPercent />
       <FAQSection />
       <FinalCTA />
@@ -34,9 +37,7 @@ const ZeroInterestBusinessFunding2 = () => {
 };
 
 // Hero Section
-const HeroSection = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
+const HeroSection = ({ isModalOpen, setIsModalOpen }: { isModalOpen: boolean; setIsModalOpen: (open: boolean) => void }) => {
   return (
     <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-20 px-6 animate-fade-in">
       <div className="max-w-7xl mx-auto">
@@ -156,7 +157,7 @@ const HeroSection = () => {
 };
 
 // The Awakening Section
-const TheAwakeningSection = () => (
+const TheAwakeningSection = ({ setIsModalOpen }: { setIsModalOpen: (open: boolean) => void }) => (
   <section className="py-20 px-6 bg-gray-50">
     <div className="max-w-6xl mx-auto">
 
@@ -235,6 +236,8 @@ const TheAwakeningSection = () => (
           Bottom Line: That's $20,250 you keep to reinvest. While competitors hemorrhage cash on interest, you're building an empire.
         </p>
       </div>
+
+      <DualCTAButtons onQualifyClick={() => setIsModalOpen(true)} utmContent="awakening-section-cta" />
 
     </div>
   </section>
@@ -330,7 +333,7 @@ const TheVisionSection = () => {
 };
 
 // Mesa Advantage
-const MesaAdvantage = () => {
+const MesaAdvantage = ({ setIsModalOpen }: { setIsModalOpen: (open: boolean) => void }) => {
   const advantages = [
     {
       number: 1,
@@ -408,6 +411,8 @@ const MesaAdvantage = () => {
             This is why our clients average 2x-6x more funding than DIY attempts.
           </p>
         </div>
+
+        <DualCTAButtons onQualifyClick={() => setIsModalOpen(true)} utmContent="mesa-advantage-cta" />
 
       </div>
     </section>
@@ -565,7 +570,7 @@ const WhoThisWorksFor = () => (
 );
 
 // Results Showcase
-const ResultsShowcase = () => {
+const ResultsShowcase = ({ setIsModalOpen }: { setIsModalOpen: (open: boolean) => void }) => {
   const testimonials = [
     {
       name: "Sarah M.",
@@ -650,13 +655,15 @@ const ResultsShowcase = () => {
           </div>
         </div>
 
+        <DualCTAButtons onQualifyClick={() => setIsModalOpen(true)} utmContent="results-showcase-cta" />
+
       </div>
     </section>
   );
 };
 
 // Qualification Requirements
-const QualificationRequirements = () => (
+const QualificationRequirements = ({ setIsModalOpen }: { setIsModalOpen: (open: boolean) => void }) => (
   <section className="py-20 px-6 bg-gray-50">
     <div className="max-w-6xl mx-auto">
 
@@ -747,6 +754,8 @@ const QualificationRequirements = () => (
           Most of our highest-funded clients started with scores in the 680-710 range. We optimized them to 720+ before Round 1, which is why they accessed significantly higher limits.
         </p>
       </div>
+
+      <DualCTAButtons onQualifyClick={() => setIsModalOpen(true)} utmContent="qualification-requirements-cta" />
 
     </div>
   </section>
@@ -847,7 +856,7 @@ const WhatYouActuallyDo = () => (
 );
 
 // Partnership Model - PART 2
-const PartnershipModel = () => (
+const PartnershipModel = ({ setIsModalOpen }: { setIsModalOpen: (open: boolean) => void }) => (
   <section className="py-20 px-6 bg-gray-50">
     <div className="max-w-6xl mx-auto">
 
@@ -944,6 +953,8 @@ const PartnershipModel = () => (
           Your exact investment and personalized funding projection will be covered in detail during your free consultation.
         </p>
       </div>
+
+      <DualCTAButtons onQualifyClick={() => setIsModalOpen(true)} utmContent="partnership-model-cta" />
 
     </div>
   </section>
