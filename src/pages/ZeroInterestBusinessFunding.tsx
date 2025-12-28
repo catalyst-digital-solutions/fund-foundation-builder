@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
+import FilloutModal from '@/components/FilloutModal';
 import {
   Trophy, TrendingUp, Home, Rocket, Shield, Zap, DollarSign,
   Brain, Users, Target, CheckCircle, Phone, Check, ChevronDown,
@@ -33,10 +34,13 @@ const ZeroInterestBusinessFunding2 = () => {
 };
 
 // Hero Section
-const HeroSection = () => (
-  <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-20 px-6 animate-fade-in">
-    <div className="max-w-7xl mx-auto">
-      <div className="grid md:grid-cols-2 gap-12 items-center">
+const HeroSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  return (
+    <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-20 px-6 animate-fade-in">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
 
         {/* Left: Content */}
         <div className="animate-fade-in-up">
@@ -98,14 +102,12 @@ const HeroSection = () => (
                 }}
               />
 
-              <a
-                href="https://funding-app.mesagroupconsulting.com/Opt-In"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => setIsModalOpen(true)}
                 className="inline-flex items-center justify-center gap-2 bg-white text-gray-700 text-xl font-semibold px-10 py-5 rounded-lg border-2 border-gray-300 hover:bg-gray-50 transition-all duration-200 text-center hover:scale-105"
               >
                 See If You Qualify
-              </a>
+              </button>
             </div>
             <div className="w-full sm:w-auto flex justify-center sm:self-center mt-3">
               <PoweredByMesaGroup />
@@ -143,8 +145,15 @@ const HeroSection = () => (
 
       </div>
     </div>
+
+    {/* Fillout Modal */}
+    <FilloutModal
+      isOpen={isModalOpen}
+      onClose={() => setIsModalOpen(false)}
+    />
   </section>
-);
+  );
+};
 
 // The Awakening Section
 const TheAwakeningSection = () => (
