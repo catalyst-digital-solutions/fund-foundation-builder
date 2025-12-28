@@ -2,29 +2,29 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
-import EmotionalCTA1 from '@/components/zero-interest-business-funding/sections/EmotionalCTA1';
-import EmotionalCTA2 from '@/components/zero-interest-business-funding/sections/EmotionalCTA2';
-import EmotionalCTA3 from '@/components/zero-interest-business-funding/sections/EmotionalCTA3';
-import { 
-  Trophy, CreditCard, Rocket, Building2, FileText, TrendingUp, 
-  Coins, BarChart3, Hammer, Target, Building, Banknote, 
-  Star, Phone, MapPin, Check, Lightbulb, ChevronDown, X, CheckCircle
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
+import {
+  Trophy, TrendingUp, Home, Rocket, Shield, Zap, DollarSign,
+  Brain, Users, Target, CheckCircle, Phone, Check, ChevronDown,
+  X, Star, AlertCircle
 } from 'lucide-react';
 
-const ZeroInterestBusinessFunding = () => {
+const ZeroInterestBusinessFunding2 = () => {
   return (
     <div className="min-h-screen bg-background font-['Inter',sans-serif]">
       <Header />
       <HeroSection />
-      <EmotionalCTA1 />
-      <SuccessStoryTeaser />
-      <NineFundingSolutions />
-      <EmotionalCTA2 />
-      <ZeroPercentAdvantage />
-      <MesaGroupProcess />
-      <EmotionalCTA3 />
-      <QualificationFactors />
-      <BakersfieldTestimonials />
+      <TheAwakeningSection />
+      <TrustIndicators />
+      <TheVisionSection />
+      <MesaAdvantage />
+      <ThreeRoundFramework />
+      <WhoThisWorksFor />
+      <ResultsShowcase />
+      <QualificationRequirements />
+      <WhatYouActuallyDo />
+      <PartnershipModel />
+      <BeyondZeroPercent />
       <FAQSection />
       <FinalCTA />
       <Footer />
@@ -37,271 +37,282 @@ const HeroSection = () => (
   <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-20 px-6 animate-fade-in">
     <div className="max-w-7xl mx-auto">
       <div className="grid md:grid-cols-2 gap-12 items-center">
-        
+
         {/* Left: Content */}
         <div className="animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 bg-amber-100 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold mb-6 shadow-md border-2 border-amber-300">
-            <Trophy className="w-4 h-4" />
-            $42M+ Funded for 720+ Businesses
+          <div className="inline-flex items-center gap-2 bg-white border-2 border-amber-400 px-6 py-3 rounded-full text-sm font-bold mb-6 shadow-lg">
+            <Trophy className="w-4 h-4 text-amber-500" />
+            <span className="text-gray-900">700+ Credit Score? You Likely Qualify</span>
           </div>
-          
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            <span className="text-[#f9c65d]">0% Interest</span> Business Funding That Actually Makes Sense
+            Access $50,000 to $250,000+ in <span className="text-[#f9c65d]">0% Interest Capital</span> Without Loans, Debt Payments, or Business Tax Returns
           </h1>
-          
+
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-6">
-            Stop sacrificing your profits to interest payments. Get <strong>$25,000 to $250,000</strong> in business capital with <strong>0% interest for 12-18 months</strong>.
+            We show you how to leverage your personal credit to unlock business capital at 0% interest for 9-18 months. No monthly debt payments. No crushing interest. Just pure growth capital you can deploy however you need.
           </p>
 
           <div className="bg-white rounded-lg p-6 mb-8 shadow-lg border-l-4 border-amber-500">
-            <p className="text-lg text-gray-900 mb-3">
-              <strong>Unlike traditional loans that eat your cash flow,</strong> our 0% promotional periods let you invest the money and see returns <em>before</em> any interest kicks in.
-            </p>
-            <div className="flex flex-wrap gap-3 text-base text-gray-600">
-              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-amber-600" /> No collateral required on most options</span>
-              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-amber-600" /> Same-day approval available</span>
-              <span className="flex items-center gap-1"><Check className="w-4 h-4 text-amber-600" /> Credit scores as low as 550+ accepted</span>
-            </div>
+            <ul className="space-y-2 text-base text-gray-700">
+              <li className="flex items-start gap-2">
+                <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                No business tax returns or financial statements required
+              </li>
+              <li className="flex items-start gap-2">
+                <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                No collateral required (unsecured credit lines)
+              </li>
+              <li className="flex items-start gap-2">
+                <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                0% interest means every dollar works for you, not lenders
+              </li>
+              <li className="flex items-start gap-2">
+                <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                Strategic bank relationships = higher approval rates
+              </li>
+              <li className="flex items-start gap-2">
+                <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                Capital available in 30-60 days, not 6+ months
+              </li>
+            </ul>
           </div>
 
           <div className="flex flex-col items-start">
             <div className="flex flex-col sm:flex-row gap-4">
+              <CalendlyPopupButton
+                text="Book Your Free Funding Consultation"
+                className="inline-flex items-center justify-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 text-center hover:scale-105"
+                showArrow={false}
+                prefillOptions={{
+                  customAnswers: {
+                    serviceType: 'Business services',
+                    primaryGoal: 'Access business funding'
+                  },
+                  utm: {
+                    source: 'zero-interest-funding-page',
+                    medium: 'website',
+                    campaign: 'zero-interest-funding',
+                    content: 'hero-cta'
+                  }
+                }}
+              />
+
               <a
-                href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
+                href="https://funding-app.mesagroupconsulting.com/Opt-In"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 text-center hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 bg-white text-gray-700 text-xl font-semibold px-10 py-5 rounded-lg border-2 border-gray-300 hover:bg-gray-50 transition-all duration-200 text-center hover:scale-105"
               >
-                Apply for 0% Funding Now
-              </a>
-              
-              <a
-                href="tel:6613103040"
-                className="inline-flex items-center justify-center gap-2 bg-white text-[#bb9446] text-xl font-semibold px-10 py-5 rounded-lg border-2 border-[#bb9446] hover:bg-[#f8d899] transition-all duration-200 text-center hover:scale-105"
-              >
-                <Phone className="w-6 h-6" />
-                (661) 310-3040
+                See If You Qualify
               </a>
             </div>
             <div className="w-full sm:w-auto flex justify-center sm:self-center mt-3">
               <PoweredByMesaGroup />
             </div>
           </div>
-
-          <p className="text-sm text-gray-600 mt-4 italic">
-            Serving Bakersfield &amp; businesses nationwide since 2015
-          </p>
         </div>
 
-        {/* Right: Stats Cards */}
-        <div className="grid grid-cols-2 gap-6">
-          <div className="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-scale-in">
-            <div className="text-5xl font-bold text-[#bb9446] mb-2">$42M+</div>
-            <div className="text-sm text-gray-600">Total Funding Secured</div>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-scale-in" style={{ animationDelay: '0.1s' }}>
-            <div className="text-5xl font-bold text-[#bb9446] mb-2">720+</div>
-            <div className="text-sm text-gray-600">Businesses Funded</div>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-scale-in" style={{ animationDelay: '0.2s' }}>
-            <div className="text-5xl font-bold text-[#bb9446] mb-2">0%</div>
-            <div className="text-sm text-gray-600">Interest for 12-18 Months</div>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-scale-in" style={{ animationDelay: '0.3s' }}>
-            <div className="text-5xl font-bold text-[#bb9446] mb-2">30+</div>
-            <div className="text-sm text-gray-600">Funding Partners</div>
+        {/* Right: Hero Visual - Could be image placeholder */}
+        <div className="hidden md:block">
+          <div className="bg-[#fcf7e6] rounded-xl p-8 shadow-2xl">
+            <div className="text-center">
+              <div className="text-6xl font-bold text-[#f9c65d] mb-2">$155K</div>
+              <div className="text-xl text-gray-700 mb-6">Average Funding Amount</div>
+              <div className="grid grid-cols-2 gap-4 text-sm">
+                <div className="bg-white rounded-lg p-4 shadow">
+                  <div className="text-3xl font-bold text-[#f9c65d]">$47M+</div>
+                  <div className="text-gray-600">Total Capital Secured</div>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow">
+                  <div className="text-3xl font-bold text-[#f9c65d]">850+</div>
+                  <div className="text-gray-600">Clients Funded</div>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow">
+                  <div className="text-3xl font-bold text-[#f9c65d]">30-60</div>
+                  <div className="text-gray-600">Days To Capital</div>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow">
+                  <div className="text-3xl font-bold text-[#f9c65d]">15+</div>
+                  <div className="text-gray-600">Years Experience</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   </section>
 );
 
-// Success Story Teaser
-const SuccessStoryTeaser = () => (
-  <section className="py-12 px-6 bg-[#bb9446]">
-    <div className="max-w-4xl mx-auto">
-      <div className="bg-white rounded-xl p-8 shadow-2xl animate-fade-in">
-        <div className="flex items-center gap-4 mb-4">
-          <div className="w-20 h-20 bg-gradient-to-br from-[#f9c65d] to-[#bb9446] rounded-full flex items-center justify-center text-white flex-shrink-0">
-            <Star className="w-10 h-10" fill="white" />
+// The Awakening Section
+const TheAwakeningSection = () => (
+  <section className="py-20 px-6 bg-gray-50">
+    <div className="max-w-6xl mx-auto">
+
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Imagine Having <span className="text-[#f9c65d]">$150,000 in Credit</span> Available and Paying <span className="text-[#f9c65d]">Zero Interest</span> for 18 Months
+        </h2>
+        <p className="text-xl text-gray-600">
+          Let's talk real numbers. Here's what 0% capital actually means for your business.
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-12">
+
+        {/* Traditional Loan */}
+        <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-red-200">
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center justify-center gap-2 bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
+              <X className="w-4 h-4" /> Traditional Business Loan at 9% APR
+            </div>
           </div>
-          <div>
-            <p className="text-2xl font-bold text-[#3E3E3E]">"Mesa Group secured $87,000 in 0% interest financing when traditional banks wouldn't even look at my application."</p>
+          <div className="space-y-4 text-lg">
+            <div className="flex justify-between pb-3 border-b border-gray-200">
+              <span className="text-gray-700">$150K borrowed =</span>
+              <span className="font-bold text-red-600">$1,125/month in interest</span>
+            </div>
+            <div className="flex justify-between pb-3 border-b border-gray-200">
+              <span className="text-gray-700">Over 18 months:</span>
+              <span className="font-bold text-red-600">$20,250 wasted on interest</span>
+            </div>
+            <div className="py-3 border-b border-gray-200">
+              <p className="text-gray-700 mb-2"><strong>Requires:</strong></p>
+              <p className="text-sm text-gray-600">• 2+ years tax returns</p>
+              <p className="text-sm text-gray-600">• 3-6 month approval process</p>
+            </div>
+            <div className="pt-3">
+              <p className="text-gray-700"><strong>Fixed monthly payments:</strong></p>
+              <p className="text-red-600 font-bold">$3,500+ whether you're making money or not</p>
+            </div>
           </div>
         </div>
-        <p className="text-lg text-gray-700 leading-relaxed mb-4">
-          "The funding allowed me to purchase essential equipment and hire staff without worrying about crushing interest payments during our critical growth phase. We're now generating enough revenue to comfortably pay it back—and we haven't paid a single dollar in interest."
+
+        {/* Mesa's 0% Funding */}
+        <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 shadow-2xl border-2 border-green-400">
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+              <CheckCircle className="w-4 h-4" /> Mesa's 0% Funding Approach
+            </div>
+          </div>
+          <div className="space-y-4 text-lg">
+            <div className="flex justify-between pb-3 border-b border-green-200">
+              <span className="text-gray-700">$150K at 0% APR =</span>
+              <span className="font-bold text-green-600">$0 in interest payments</span>
+            </div>
+            <div className="flex justify-between pb-3 border-b border-green-200">
+              <span className="text-gray-700">You keep:</span>
+              <span className="font-bold text-green-600">All $20,250 for growth</span>
+            </div>
+            <div className="py-3 border-b border-green-200">
+              <p className="text-gray-700 mb-2"><strong>Requires:</strong></p>
+              <p className="text-sm text-gray-700">• LLCs with 6+ months history</p>
+              <p className="text-sm text-gray-700">• 700+ credit score</p>
+            </div>
+            <div className="pt-3">
+              <p className="text-gray-700"><strong>Minimum payments:</strong></p>
+              <p className="text-green-600 font-bold">$50-100/month, preserving cash flow</p>
+              <p className="text-sm text-gray-600 mt-1">Timeline: 30-60 days to first capital</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="bg-amber-50 rounded-xl p-8 shadow-lg border-l-4 border-amber-500">
+        <p className="text-2xl font-bold text-gray-900 text-center">
+          Bottom Line: That's $20,250 you keep to reinvest. While competitors hemorrhage cash on interest, you're building an empire.
         </p>
-        <p className="text-base text-gray-600 font-semibold">
-          — Daniel Rodriguez, Bakersfield Entrepreneur
-        </p>
+      </div>
+
+    </div>
+  </section>
+);
+
+// Trust Indicators
+const TrustIndicators = () => (
+  <section className="py-16 px-6 bg-gradient-to-br from-amber-50 to-orange-50">
+    <div className="max-w-7xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+        {[
+          { number: "$47M+", label: "Total 0% Capital Secured" },
+          { number: "850+", label: "Clients Funded" },
+          { number: "$155K", label: "Average Funding Amount" },
+          { number: "30-60", label: "Days To First Capital" },
+          { number: "15+", label: "Years Combined Banking Experience" }
+        ].map((stat, index) => (
+          <div key={index} className="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div className="text-3xl md:text-4xl font-bold text-[#f9c65d] mb-2">{stat.number}</div>
+            <div className="text-sm text-gray-600">{stat.label}</div>
+          </div>
+        ))}
       </div>
     </div>
   </section>
 );
 
-// Nine Funding Solutions
-const NineFundingSolutions = () => {
-  const getIcon = (iconName: string) => {
-    const iconMap: { [key: string]: JSX.Element } = {
-      'credit': <CreditCard className="w-12 h-12 mb-4 text-[#bb9446]" />,
-      'rocket': <Rocket className="w-12 h-12 mb-4 text-[#bb9446]" />,
-      'building': <Building2 className="w-12 h-12 mb-4 text-[#bb9446]" />,
-      'file': <FileText className="w-12 h-12 mb-4 text-[#bb9446]" />,
-      'trending': <TrendingUp className="w-12 h-12 mb-4 text-[#bb9446]" />,
-      'coins': <Coins className="w-12 h-12 mb-4 text-[#bb9446]" />,
-      'chart': <BarChart3 className="w-12 h-12 mb-4 text-[#bb9446]" />,
-      'hammer': <Hammer className="w-12 h-12 mb-4 text-[#bb9446]" />,
-      'target': <Target className="w-12 h-12 mb-4 text-[#bb9446]" />
-    };
-    return iconMap[iconName];
-  };
-
-  const solutions = [
+// The Vision Section
+const TheVisionSection = () => {
+  const visionCards = [
     {
-      icon: "credit",
-      title: "0% Interest Business Credit Lines",
-      description: "Our signature funding: $25,000 to $250,000 credit lines with 0% interest for 12-18 months. Use for equipment, inventory, working capital, or growth without paying interest during the promotional period.",
-      features: [
-        "Revolving credit (reuse as you repay)",
-        "No collateral required",
-        "Builds business credit profile"
-      ]
+      icon: <TrendingUp className="w-12 h-12 text-[#f9c65d]" />,
+      title: "Scale Without Suffocating",
+      description: "Hire that team. Launch that campaign. Buy that inventory. All without crushing loan payments killing your cash flow."
     },
     {
-      icon: "rocket",
-      title: "Startup Business Funding",
-      description: "New businesses need special funding because they don't have the history banks want. Get 0% credit lines, equipment leasing, and loans based on your personal credit—not years of business history you don't have yet.",
-      features: [
-        "Personal credit as low as 550+",
-        "Multiple funding sources combined",
-        "Fast approval (24-48 hours possible)"
-      ]
+      icon: <Home className="w-12 h-12 text-[#f9c65d]" />,
+      title: "Real Estate Investors: Move Fast",
+      description: "Put $50K down on that flip while your competitor waits on hard money approval. Close deals in days, not weeks."
     },
     {
-      icon: "building",
-      title: "Equipment Financing",
-      description: "Buy essential equipment while keeping cash flow healthy. Choose from equipment loans, lease-to-own deals, or 0% promotional financing. Equipment serves as collateral, making approval easier.",
-      features: [
-        "Equipment acts as collateral",
-        "Seamless vendor financing",
-        "Preserve working capital"
-      ]
+      icon: <Rocket className="w-12 h-12 text-[#f9c65d]" />,
+      title: "Launch That Second Business",
+      description: "You've had the idea for years. Now you have the capital to test it without risking everything."
     },
     {
-      icon: "file",
-      title: "Invoice Factoring",
-      description: "Turn unpaid invoices into immediate cash instead of waiting 30-90 days. Get 80-90% upfront, with the rest (minus small fees) when customers pay. Perfect for B2B companies and contractors.",
-      features: [
-        "Cash within 24 hours",
-        "Recourse & non-recourse options",
-        "No debt on balance sheet"
-      ]
+      icon: <Shield className="w-12 h-12 text-[#f9c65d]" />,
+      title: "Build Your War Chest",
+      description: "6-12 months of operating expenses at 0% interest. Weather any storm with confidence."
     },
     {
-      icon: "trending",
-      title: "Business Expansion Funding",
-      description: "Ready to open new locations or enter new markets? Get term loans, SBA-backed options, or 0% credit lines specifically for scaling established businesses while maintaining operations.",
-      features: [
-        "Substantial capital for scaling",
-        "Multiple sources combined",
-        "Strategic deployment planning"
-      ]
+      icon: <Zap className="w-12 h-12 text-[#f9c65d]" />,
+      title: "Seize Opportunities Instantly",
+      description: "When time-sensitive deals appear, you don't scramble for funding. You already have it."
     },
     {
-      icon: "coins",
-      title: "Merchant Cash Advances",
-      description: "Get fast funding based on credit card sales, with repayment as a percentage of daily receipts. Great for retail, restaurants, and service providers. Payments adjust to your business performance.",
-      features: [
-        "Fast approval (same day possible)",
-        "Automatic daily repayment",
-        "Flexible during slow seasons"
-      ]
-    },
-    {
-      icon: "chart",
-      title: "Revenue-Based Financing",
-      description: "Innovative funding with payments based on monthly revenue instead of fixed amounts. Perfect for software companies, subscription businesses, and seasonal enterprises. Payments adjust to your cycles.",
-      features: [
-        "2-8% of monthly revenue",
-        "Aligns with business cycles",
-        "No stress during slow periods"
-      ]
-    },
-    {
-      icon: "hammer",
-      title: "Business Credit Building",
-      description: "Build and strengthen your business credit profile for access to 10-20x more capital with better terms. Our 6-12 month structured approach includes vendor credit, business cards, and higher-limit options.",
-      features: [
-        "Separate business from personal credit",
-        "Reports to business bureaus",
-        "Long-term funding foundation"
-      ]
-    },
-    {
-      icon: "target",
-      title: "Strategic Funding Combinations",
-      description: "Complex businesses need sophisticated strategies. We combine multiple funding tools simultaneously—blending 0% credit lines with term loans, equipment financing, and revenue-based options for optimal results.",
-      features: [
-        "Custom funding packages",
-        "Coordinated timing",
-        "Minimize credit inquiries"
-      ]
+      icon: <DollarSign className="w-12 h-12 text-[#f9c65d]" />,
+      title: "Eliminate High-Interest Debt",
+      description: "Transfer $100K in 18% balances to 0% for 18 months. Save $27,000 in interest payments."
     }
   ];
 
   return (
     <section className="py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-        
+
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-            9 Strategic Funding Solutions with 0% Interest
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Each solution targets specific business needs, ensuring you get the right capital at the right time—without the burden of interest costs.
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          What Would You Do With <span className="text-[#f9c65d]">$150,000 at 0% Interest</span> Available Tomorrow?
+        </h2>
+          <p className="text-xl text-gray-600">
+            This isn't just about capital. It's about what that capital makes possible.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {solutions.map((solution, index) => (
-            <div key={index} className="bg-gradient-to-br from-white to-[#fefbf6] rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-[#E5D2AF] hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              {getIcon(solution.icon)}
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
-                {solution.title}
+          {visionCards.map((card, index) => (
+            <div key={index} className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gray-100 hover:border-amber-300 hover:-translate-y-1">
+              <div className="mb-4">{card.icon}</div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                {card.title}
               </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                {solution.description}
+              <p className="text-gray-700 leading-relaxed">
+                {card.description}
               </p>
-              <div className="text-sm text-gray-600 space-y-1">
-                {solution.features.map((feature, i) => (
-                  <p key={i} className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-[#bb9446] flex-shrink-0" /> {feature}
-                  </p>
-                ))}
-              </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <div className="flex flex-col items-center">
-            <a
-              href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 hover:scale-105"
-            >
-              Apply for 0% Funding Now
-            </a>
-            <PoweredByMesaGroup className="mt-3" />
-          </div>
-          <p className="text-sm text-gray-600 mt-4">Free consultation • No obligation • Same-day approval possible</p>
         </div>
 
       </div>
@@ -309,287 +320,83 @@ const NineFundingSolutions = () => {
   );
 };
 
-// Zero Percent Advantage
-const ZeroPercentAdvantage = () => (
-  <section className="py-20 px-6 bg-gray-50">
-    <div className="max-w-6xl mx-auto">
-      
-      <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-          The 0% Advantage: Real Math, Real Savings
-        </h2>
-        <p className="text-xl text-gray-600">
-          See exactly how much money stays in your business instead of going to interest payments.
-        </p>
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-8 mb-12">
-        
-        {/* Traditional Loan */}
-        <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-red-200 animate-fade-in">
-          <div className="text-center mb-6">
-            <div className="inline-flex items-center justify-center gap-2 bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
-              <X className="w-4 h-4" /> Traditional Bank Loan
-            </div>
-            <h3 className="text-3xl font-bold text-[#3E3E3E]">$50,000 Loan @ 12% APR</h3>
-          </div>
-          <div className="space-y-4 text-lg">
-            <div className="flex justify-between pb-3 border-b border-gray-200">
-              <span className="text-gray-700">Loan Amount:</span>
-              <span className="font-bold">$50,000</span>
-            </div>
-            <div className="flex justify-between pb-3 border-b border-gray-200">
-              <span className="text-gray-700">Interest Rate:</span>
-              <span className="font-bold text-red-600">12% APR</span>
-            </div>
-            <div className="flex justify-between pb-3 border-b border-gray-200">
-              <span className="text-gray-700">18-Month Payment:</span>
-              <span className="font-bold">$3,077/month</span>
-            </div>
-            <div className="flex justify-between pb-3 border-b border-gray-200">
-              <span className="text-gray-700">Total Interest Paid:</span>
-              <span className="font-bold text-red-600">$5,386</span>
-            </div>
-            <div className="flex justify-between pt-3">
-              <span className="text-gray-700 font-semibold">Total Repayment:</span>
-              <span className="font-bold text-2xl text-red-600">$55,386</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Mesa 0% Funding */}
-        <div className="bg-gradient-to-br from-[#f8d899] to-[#E5D2AF] rounded-xl p-8 shadow-2xl border-2 border-[#bb9446] animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <div className="text-center mb-6">
-            <div className="inline-flex items-center justify-center gap-2 bg-[#bb9446] text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
-              <CheckCircle className="w-4 h-4" /> Mesa Group 0% Funding
-            </div>
-            <h3 className="text-3xl font-bold text-[#3E3E3E]">$50,000 @ 0% for 18 Months</h3>
-          </div>
-          <div className="space-y-4 text-lg">
-            <div className="flex justify-between pb-3 border-b border-[#bb9446]/30">
-              <span className="text-gray-700">Loan Amount:</span>
-              <span className="font-bold">$50,000</span>
-            </div>
-            <div className="flex justify-between pb-3 border-b border-[#bb9446]/30">
-              <span className="text-gray-700">Interest Rate:</span>
-              <span className="font-bold text-green-600">0% for 18 months</span>
-            </div>
-            <div className="flex justify-between pb-3 border-b border-[#bb9446]/30">
-              <span className="text-gray-700">18-Month Payment:</span>
-              <span className="font-bold">$2,778/month</span>
-            </div>
-            <div className="flex justify-between pb-3 border-b border-[#bb9446]/30">
-              <span className="text-gray-700">Total Interest Paid:</span>
-              <span className="font-bold text-green-600">$0</span>
-            </div>
-            <div className="flex justify-between pt-3">
-              <span className="text-gray-700 font-semibold">Total Repayment:</span>
-              <span className="font-bold text-2xl text-green-600">$50,000</span>
-            </div>
-          </div>
-        <div className="mt-6 pt-6 border-t-2 border-green-600 text-center">
-          <p className="text-2xl font-bold text-green-600 flex items-center justify-center gap-2">
-            <CheckCircle className="w-8 h-8" /> YOU SAVE: $5,386
-          </p>
-            <p className="text-sm text-gray-700 mt-2">
-              That's money that stays in your business for growth, hiring, or profit.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      {/* Key Advantages List */}
-      <div className="bg-white rounded-xl p-8 shadow-lg">
-      <h3 className="text-2xl font-bold text-[#3E3E3E] mb-6 text-center flex items-center justify-center gap-2">
-        <Target className="w-8 h-8 text-[#bb9446]" /> Additional 0% Funding Advantages
-      </h3>
-        <div className="grid md:grid-cols-2 gap-6">
-          {[
-            { title: "Maximize Cash Flow", desc: "More revenue stays available for reinvestment, creating compound growth effects" },
-            { title: "Flexible Usage", desc: "Use for ANY legitimate business purpose—no restrictions on capital deployment" },
-            { title: "Revolving Availability", desc: "Reuse capacity as you repay principal, creating ongoing access to capital" },
-            { title: "Build Business Credit", desc: "Accounts report to business bureaus, strengthening your profile for future funding" },
-            { title: "No Collateral Required", desc: "Most options remain unsecured, eliminating risks to business or personal assets" },
-            { title: "Rapid Access", desc: "Same-day liquidity enables you to capitalize on time-sensitive opportunities" }
-          ].map((advantage, index) => (
-            <div key={index} className="flex items-start gap-3">
-              <div className="flex-shrink-0 w-8 h-8 bg-[#bb9446] text-white rounded-full flex items-center justify-center">
-                <Check className="w-5 h-5" />
-              </div>
-              <div>
-                <p className="font-semibold text-[#3E3E3E]">{advantage.title}</p>
-                <p className="text-gray-600 text-sm">{advantage.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-    </div>
-  </section>
-);
-
-// Mesa Group Process
-const MesaGroupProcess = () => {
-  const steps = [
+// Mesa Advantage
+const MesaAdvantage = () => {
+  const advantages = [
     {
-      title: "Initial Funding Consultation",
-      description: "Our process begins with a thorough assessment of your business needs, current financial position, and growth objectives. We identify funding requirements, timeline considerations, and ideal structure based on your specific situation."
+      number: 1,
+      icon: <Brain className="w-16 h-16 text-[#f9c65d]" />,
+      title: "Banking Industry Insider Knowledge",
+      description: "Our CEO comes from a banking background and understands exactly how banks evaluate clients and underwrite decisions. We know what triggers approvals and what causes denials—because we've seen it from the inside.",
+      result: "We position your profile the exact way underwriters want to see it, maximizing your approval odds and credit limits."
     },
     {
-      title: "Business Profile Optimization",
-      description: "Before applying, we help strengthen your business funding profile by addressing key factors that impact approval odds and terms. This includes business credit optimization, documentation preparation, and financial presentation improvements."
+      number: 2,
+      icon: <Users className="w-16 h-16 text-[#f9c65d]" />,
+      title: "Direct Banking Relationships",
+      description: "We maintain personal connections with Business Relationship Managers at Chase, Bank of America, US Bank, and 40+ regional banks. Your applications go through people who know us, not algorithms that reject you.",
+      result: "Higher approval rates, larger limits, reconsideration support when others get stuck."
     },
     {
-      title: "Custom Funding Strategy",
-      description: "Based on your consultation and profile analysis, we develop a tailored funding strategy that may include single or multiple funding sources structured for optimal terms, rates, and alignment with your business objectives."
+      number: 3,
+      icon: <Target className="w-16 h-16 text-[#f9c65d]" />,
+      title: "Strategic Sequencing System",
+      description: "The order you apply matters. Which bureau each bank pulls matters. We've processed thousands of funding rounds and know exactly which banks to approach, when, and in what sequence.",
+      result: "Maximize total capital while protecting your credit profile from inquiry damage."
     },
     {
-      title: "Lender Matching & Submission",
-      description: "Using our extensive network of 30+ funding partners, we match your business with the ideal sources for your specific needs and profile. Our strategic submission approach maximizes approval odds while protecting your credit profile."
-    },
-    {
-      title: "Application Management",
-      description: "Our team oversees the entire application process, managing documentation requirements, responding to information requests, and advocating for your business with potential funders to ensure optimal results."
-    },
-    {
-      title: "Funding Coordination & Deployment",
-      description: "After approval, we coordinate the closing process and help develop a strategic plan for utilizing the funding to maximize return on investment while maintaining healthy cash flow. We provide continued support for long-term capital strategies."
-    }
-  ];
-
-  return (
-    <section className="py-20 px-6 bg-white">
-      <div className="max-w-6xl mx-auto">
-        
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-            Our Proven 6-Step Funding Process
-          </h2>
-          <p className="text-xl text-gray-600">
-            Systematic approach to securing optimal business funding for your specific needs.
-          </p>
-        </div>
-
-        <div className="space-y-8">
-          {steps.map((step, index) => (
-            <div key={index} className="flex items-start gap-6 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="flex-shrink-0 w-20 h-20 bg-[#bb9446] text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
-                {index + 1}
-              </div>
-              <div className="flex-1 bg-gradient-to-r from-[#f8d899] to-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300">
-                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">
-                  {step.title}
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  {step.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <div className="inline-block">
-            <a
-              href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 hover:scale-105"
-            >
-              Start Your Funding Application
-            </a>
-            <PoweredByMesaGroup className="mt-3" />
-          </div>
-        </div>
-
-      </div>
-    </section>
-  );
-};
-
-// Qualification Factors
-const QualificationFactors = () => {
-  const getFactorIcon = (iconName: string) => {
-    const iconMap: { [key: string]: JSX.Element } = {
-      'chart': <BarChart3 className="w-16 h-16 text-[#bb9446]" />,
-      'building': <Building className="w-16 h-16 text-[#bb9446]" />,
-      'banknote': <Banknote className="w-16 h-16 text-[#bb9446]" />,
-      'target': <Target className="w-16 h-16 text-[#bb9446]" />
-    };
-    return iconMap[iconName];
-  };
-
-  const factors = [
-    {
-      icon: "chart",
-      title: "Credit Profile",
-      description: "Personal and business credit significantly impact approval odds and limits. Strong profiles often access 5-10x more capital.",
-      details: ["Personal: 550+ acceptable", "Business: We can help build"]
-    },
-    {
-      icon: "building",
-      title: "Business Structure",
-      description: "Proper structure, documentation, and compliance affect eligibility. This includes entity structure, tax compliance, banking relationships, and operational documentation.",
-      details: ["LLC, S-Corp, or C-Corp preferred", "Sole proprietors considered"]
-    },
-    {
-      icon: "banknote",
-      title: "Revenue & Cash Flow",
-      description: "Consistent revenue improves funding options. Lenders prefer predictable streams that demonstrate viability and repayment capacity.",
-      details: ["$8K+/month for most programs", "Startups: lower requirements"]
-    },
-    {
-      icon: "target",
-      title: "Industry Type",
-      description: "Certain industries have better access to specific funding types based on risk profiles and lender preferences. We match you with industry-friendly lenders.",
-      details: ["Most industries accepted", "Specialized programs available"]
+      number: 4,
+      icon: <CheckCircle className="w-16 h-16 text-[#f9c65d]" />,
+      title: "Credit Optimization Before Applications",
+      description: "Most people apply before they're ready. We analyze your profile across all three bureaus and optimize every factor that impacts underwriting BEFORE we submit anything.",
+      result: "Position yourself for the highest limits possible—often $20K-$50K more per card."
     }
   ];
 
   return (
     <section className="py-20 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-            What Impacts Your Funding Approval?
+
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Why Mesa Clients Get 2x-6x More Capital Than Going It Alone
           </h2>
-          <p className="text-xl text-gray-600">
-            Understanding these factors dramatically improves your success probability.
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+            Anyone can Google "business credit cards." But random applications get random results. Our clients average $155K because we have what you can't Google.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {factors.map((factor, index) => (
-            <div key={index} className="bg-white rounded-xl p-8 shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="flex justify-center mb-4">
-                {getFactorIcon(factor.icon)}
+        <div className="space-y-8">
+          {advantages.map((advantage, index) => (
+            <div key={index} className={`flex flex-col md:flex-row gap-6 items-start ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+              <div className="flex-shrink-0">
+                <div className="w-20 h-20 bg-[#f9c65d] text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-xl">
+                  {advantage.number}
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-[#3E3E3E] mb-3">
-                {factor.title}
-              </h3>
-              <p className="text-gray-700 leading-relaxed text-sm">
-                {factor.description}
-              </p>
-              <div className="mt-4 text-xs text-gray-600 space-y-1">
-                {factor.details.map((detail, i) => (
-                  <p key={i} className="flex items-center justify-center gap-2">
-                    <Check className="w-3 h-3 text-[#bb9446]" /> {detail}
+              <div className="flex-1 bg-white rounded-xl p-8 shadow-lg">
+                <div className="flex items-center gap-4 mb-4">
+                  {advantage.icon}
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    {advantage.title}
+                  </h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  {advantage.description}
+                </p>
+                <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                  <p className="text-sm font-semibold text-gray-700">
+                    <strong className="text-green-700">The Result:</strong> {advantage.result}
                   </p>
-                ))}
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-    <div className="mt-12 bg-white rounded-xl p-8 shadow-lg">
-      <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4 text-center flex items-center justify-center gap-2">
-        <Lightbulb className="w-8 h-8 text-[#bb9446]" /> Don't Meet All Criteria? Apply Anyway.
-      </h3>
-          <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto leading-relaxed">
-            Our 30+ funding partners have different requirements. Even if you don't meet traditional bank standards, we often find alternative options for credit scores as low as 550+, startups with limited revenue, and businesses in challenging industries.
+        <div className="mt-12 text-center">
+          <p className="text-2xl font-bold text-gray-900">
+            This is why our clients average 2x-6x more funding than DIY attempts.
           </p>
         </div>
 
@@ -598,68 +405,79 @@ const QualificationFactors = () => {
   );
 };
 
-// Bakersfield Testimonials
-const BakersfieldTestimonials = () => {
-  const testimonials = [
+// Three Round Framework
+const ThreeRoundFramework = () => {
+  const rounds = [
     {
-      text: "My credit was really bad. They really helped me now. I'm buying a house.",
-      author: "Mesa Group Client, Bakersfield"
+      number: 1,
+      title: "Foundation Round",
+      description: "Major national banks where our relationships are strongest. Establish your foundation and prove you can manage credit responsibly.",
+      timeline: "30-60 Days",
+      expected: "$50K-$150K"
     },
     {
-      text: "Evert is amazing! The best! Helped me out from my bankruptcy and starting new credit for my business. I would recommend him to my family and friends.",
-      author: "Business Owner, Bakersfield"
+      number: 2,
+      title: "Expansion Round",
+      description: "With payment history from Round 1, we tap our network of regional banks and specialized underwriters. Massive leverage happens here.",
+      timeline: "Days 60-120",
+      expected: "$50K-$150K Additional"
     },
     {
-      text: "I got recommended from one of my family members that Evert is a very knowledgeable agent from Mesa Group Consulting which helped him establish a high credit score. I scheduled an appointment with Evert about my situation and we had a great conversation about improving my credit score.",
-      author: "Referred Client, Bakersfield"
-    },
-    {
-      text: "Great service, Evert was able to get me approved on a 25 Grand Cherokee.",
-      author: "Auto Financing Client, Bakersfield"
+      number: 3,
+      title: "Maximization Round",
+      description: "Final push leveraging your strong credit history and banking relationships. Institution-specific opportunities many miss completely.",
+      timeline: "Days 120-180",
+      expected: "$25K-$100K Additional"
     }
   ];
 
   return (
     <section className="py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-        
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-            Bakersfield Entrepreneurs Share Their Funding Victories
-          </h2>
+
+        <div className="text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Our Proven Three-Round <span className="text-[#f9c65d]">Funding Framework</span>
+        </h2>
           <p className="text-xl text-gray-600">
-            Local business owners have accessed the capital they need without sacrificing cash flow to interest.
+            Strategic sequencing across multiple rounds. Each success builds momentum for the next.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="flex gap-1 mb-3">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {rounds.map((round, index) => (
+            <div
+              key={index}
+              className="bg-gradient-to-br rounded-xl p-8 shadow-lg text-white"
+              style={{
+                backgroundImage: index === 0 ? 'linear-gradient(to br, #fef3c7, #fcd34d)' :
+                                 index === 1 ? 'linear-gradient(to br, #fcd34d, #f59e0b)' :
+                                 'linear-gradient(to br, #f59e0b, #d97706)'
+              }}
+            >
+              <div className="w-16 h-16 bg-[#f9c65d] text-white rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-lg mx-auto">
+                {round.number}
               </div>
-              <p className="text-white italic leading-relaxed mb-6">
-                "{testimonial.text}"
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">
+                {round.title}
+              </h3>
+              <p className="text-gray-800 leading-relaxed mb-6">
+                {round.description}
               </p>
-              <div className="pt-4 border-t border-white/30">
-                <p className="text-sm text-white/90 font-semibold">
-                  — {testimonial.author}
-                </p>
+              <div className="space-y-2 text-gray-900">
+                <p className="font-semibold">Timeline: <span className="font-bold">{round.timeline}</span></p>
+                <p className="font-semibold">Expected: <span className="font-bold">{round.expected}</span></p>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Featured Testimonial */}
-        <div className="bg-gradient-to-br from-[#bb9446] to-[#f9c65d] text-white rounded-xl p-8 shadow-xl">
-          <div className="flex gap-1 mb-3">
-            {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6" fill="white" />)}
-          </div>
-          <p className="text-white text-xl italic leading-relaxed mb-6">
-            "Mesa Group secured $87,000 in 0% interest financing for my startup when traditional banks wouldn't even consider my application. The funding allowed me to purchase essential equipment and hire staff without worrying about crushing interest payments during our critical growth phase."
-          </p>
-          <p className="text-sm text-white font-semibold">
-            — Daniel Rodriguez, Bakersfield Entrepreneur
+        <div className="bg-amber-50 rounded-xl p-8 shadow-lg border-l-4 border-amber-500">
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            Why Three Rounds Instead of All at Once?
+          </h3>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Banks reward established customers and payment history. By spacing applications strategically, you build the exact profile that makes banks compete to give you their highest limits. Rush it, and you leave $50K-$100K on the table.
           </p>
         </div>
 
@@ -667,6 +485,510 @@ const BakersfieldTestimonials = () => {
     </section>
   );
 };
+
+// Who This Works For
+const WhoThisWorksFor = () => (
+  <section className="py-20 px-6 bg-gray-50">
+    <div className="max-w-6xl mx-auto">
+
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Is 0% Business Funding Right for You?
+        </h2>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-8">
+
+        {/* Great Fit */}
+        <div className="bg-green-50 rounded-xl p-8 shadow-lg border-2 border-green-400">
+          <h3 className="text-2xl font-bold text-green-800 mb-6 flex items-center gap-2">
+            <CheckCircle className="w-8 h-8" /> You're a Great Fit If:
+          </h3>
+          <div className="space-y-4">
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">Your personal credit score is 700 or higher</p>
+              <p className="text-sm text-gray-700">This system is built on personal creditworthiness. Below 700, approval rates and limits decrease significantly.</p>
+            </div>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">You can manage credit responsibly</p>
+              <p className="text-sm text-gray-700">We're giving you access to $150K+ at 0%. You need to pay on time and avoid overextending.</p>
+            </div>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">You need capital for legitimate business purposes</p>
+              <p className="text-sm text-gray-700">Growth, inventory, marketing, real estate, hiring, equipment—anything that moves your business forward.</p>
+            </div>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">You're willing to follow our system</p>
+              <p className="text-sm text-gray-700">We tell you what to do and when. Going rogue sabotages the process.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Not For You */}
+        <div className="bg-red-50 rounded-xl p-8 shadow-lg border-2 border-red-400">
+          <h3 className="text-2xl font-bold text-red-800 mb-6 flex items-center gap-2">
+            <X className="w-8 h-8" /> This ISN'T For You If:
+          </h3>
+          <div className="space-y-4">
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">Your credit score is below 700</p>
+              <p className="text-sm text-gray-700">We can optimize your profile first, but you're not positioned for maximum approvals yet.</p>
+            </div>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">You have recent bankruptcies or major derogatory marks</p>
+              <p className="text-sm text-gray-700">Banks won't approve you regardless of our relationships.</p>
+            </div>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">You're looking for "free money"</p>
+              <p className="text-sm text-gray-700">This is real credit requiring real responsibility.</p>
+            </div>
+            <div>
+              <p className="font-semibold text-gray-900 mb-1">You need money for personal expenses</p>
+              <p className="text-sm text-gray-700">This is business funding only.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+);
+
+// Results Showcase
+const ResultsShowcase = () => {
+  const testimonials = [
+    {
+      name: "Sarah M.",
+      business: "E-commerce Owner",
+      creditScore: 735,
+      funded: "$187,000",
+      timeline: "90 Days",
+      quote: "I was stuck at $50K in revenue because I couldn't afford inventory at scale. Mesa helped me secure $187K at 0%. I 5x'd my inventory and hit $340K in revenue within 6 months. The 0% interest saved me $25K that hired two employees. This completely changed my trajectory."
+    },
+    {
+      name: "Marcus T.",
+      business: "Real Estate Investor",
+      creditScore: 698,
+      funded: "$143,000",
+      timeline: "75 Days",
+      quote: "Hard money was killing me at 12%. Mesa got me $143K at 0% in 75 days. I funded three flips simultaneously and made $89K profit. If I'd used hard money, interest would have eaten $15K-$18K. Now I close deals the day I find them."
+    },
+    {
+      name: "David K.",
+      business: "SaaS Startup",
+      creditScore: 762,
+      funded: "$218,000",
+      timeline: "105 Days",
+      quote: "VCs wanted 40% of my company. Instead, I got $218K at 0% and kept 100% ownership. Funded 9 months of development, hired three developers, launched, and hit $40K MRR. Now VCs chase us at a $15M valuation. Best decision I ever made."
+    }
+  ];
+
+  return (
+    <section className="py-20 px-6 bg-white">
+      <div className="max-w-7xl mx-auto">
+
+        <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Real Clients. Real Results. <span className="text-[#f9c65d]">Real Capital.</span>
+        </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-amber-500 hover:shadow-xl transition-all duration-300">
+              <div className="mb-4">
+                <p className="text-xl font-bold text-gray-900">{testimonial.name}</p>
+                <p className="text-sm text-gray-600">{testimonial.business}</p>
+              </div>
+              <div className="grid grid-cols-3 gap-2 mb-4 text-sm">
+                <div>
+                  <p className="text-gray-600">Credit Score</p>
+                  <p className="font-bold text-amber-600">{testimonial.creditScore}</p>
+                </div>
+                <div>
+                  <p className="text-gray-600">Funded</p>
+                  <p className="font-bold text-green-600">{testimonial.funded}</p>
+                </div>
+                <div>
+                  <p className="text-gray-600">Timeline</p>
+                  <p className="font-bold text-blue-600">{testimonial.timeline}</p>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed italic">
+                "{testimonial.quote}"
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 shadow-lg">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            Across 850+ Clients:
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { label: "Average Funding", value: "$155,000" },
+              { label: "Typical Interest Saved", value: "$18K-$28K" },
+              { label: "Success Rate (720+ scores)", value: "94%" },
+              { label: "Avg Time to First Approval", value: "38 days" }
+            ].map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-3xl font-bold text-green-600 mb-1">{stat.value}</div>
+                <div className="text-sm text-gray-600">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+// Qualification Requirements
+const QualificationRequirements = () => (
+  <section className="py-20 px-6 bg-gray-50">
+    <div className="max-w-6xl mx-auto">
+
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Here's Exactly What We Need to <span className="text-[#f9c65d]">Get You Funded</span>
+        </h2>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-12">
+
+        {/* Minimum Requirements */}
+        <div className="bg-gray-100 rounded-xl p-8 shadow-lg">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+            <Check className="w-8 h-8 text-gray-700" /> Minimum Requirements:
+          </h3>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-gray-600 flex-shrink-0 mt-0.5" />
+              Personal credit score of 700+
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-gray-600 flex-shrink-0 mt-0.5" />
+              No late payments in the past 12 months
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-gray-600 flex-shrink-0 mt-0.5" />
+              No bankruptcies or charge-offs in the past 2 years
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-gray-600 flex-shrink-0 mt-0.5" />
+              At least 2 years of credit history
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-gray-600 flex-shrink-0 mt-0.5" />
+              Fewer than 5 inquiries per bureau in past 6 months
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-gray-600 flex-shrink-0 mt-0.5" />
+              Active business with 6+ months history (LLC, S-Corp, or Sole Proprietorship)
+            </li>
+          </ul>
+        </div>
+
+        {/* Ideal Profile */}
+        <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 shadow-lg border-2 border-amber-400">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+            <Star className="w-8 h-8 text-amber-600" /> Ideal Profile for Maximum Funding ($150K-$250K+):
+          </h3>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex items-start gap-2">
+              <Star className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Credit score 750+
+            </li>
+            <li className="flex items-start gap-2">
+              <Star className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Multiple credit account types (cards, auto, mortgage)
+            </li>
+            <li className="flex items-start gap-2">
+              <Star className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Credit utilization under 10%
+            </li>
+            <li className="flex items-start gap-2">
+              <Star className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              5+ years of credit history
+            </li>
+            <li className="flex items-start gap-2">
+              <Star className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Clean inquiry profile (under 3 per bureau)
+            </li>
+            <li className="flex items-start gap-2">
+              <Star className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Existing high-limit cards showing lender trust
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div className="bg-blue-50 rounded-xl p-8 shadow-lg border-l-4 border-blue-500">
+        <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          If You Don't Qualify Yet:
+        </h3>
+        <p className="text-lg text-gray-700 leading-relaxed mb-4">
+          We can help you get there. Our credit optimization program fixes utilization, removes inaccurate items, and positions your profile for maximum approvals. Typically takes 60-90 days.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Most of our highest-funded clients started with scores in the 680-710 range. We optimized them to 720+ before Round 1, which is why they accessed significantly higher limits.
+        </p>
+      </div>
+
+    </div>
+  </section>
+);
+
+// What You Actually Do - PART 1 of split component
+const WhatYouActuallyDo = () => (
+  <section className="py-20 px-6 bg-white">
+    <div className="max-w-6xl mx-auto">
+
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Your Role in the Process
+        </h2>
+        <p className="text-xl text-gray-600">
+          We handle applications, you follow our blueprint
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-8">
+
+        {/* What We Handle */}
+        <div className="bg-amber-50 rounded-xl p-8 shadow-lg">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            What We Handle:
+          </h3>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Credit profile analysis and optimization strategy
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Submitting all funding applications on your behalf
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Coordinating directly with our banking contacts
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Timing all applications strategically across three rounds
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Managing inquiry distribution across all three bureaus
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Guiding you through pending reviews or reconsiderations
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Tracking your progress and next steps
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Identifying credit limit increase opportunities
+            </li>
+          </ul>
+        </div>
+
+        {/* What You Handle */}
+        <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-gray-200">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            What You Handle:
+          </h3>
+          <div className="space-y-4 text-gray-700">
+            <div>
+              <p className="font-semibold text-gray-900 mb-2">Following Our Banking Relationship Blueprint</p>
+              <p className="text-sm">We guide you through a specific sequence of relationship-building activities that position you as a priority client.</p>
+            </div>
+            <div>
+              <p className="font-semibold text-gray-900 mb-2">Maintaining Strategic Communication</p>
+              <p className="text-sm">When banks reach out for verification or due diligence, you'll handle those conversations using our positioning framework.</p>
+            </div>
+            <div>
+              <p className="font-semibold text-gray-900 mb-2">Managing Your New Credit Lines</p>
+              <p className="text-sm">You're responsible for maintaining positive balances, making on-time minimum payments, and keeping the banking relationships we've helped you establish.</p>
+            </div>
+            <div>
+              <p className="font-semibold text-gray-900 mb-2">Providing Required Documentation</p>
+              <p className="text-sm">When we need documents (ID, business formation docs, bank statements), provide them promptly to keep your funding timeline on track.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="bg-gray-100 rounded-xl p-8 shadow-lg">
+        <p className="text-lg text-gray-700 leading-relaxed text-center">
+          <strong className="text-gray-900">The Bottom Line:</strong> This isn't passive—you're an active participant. But you're never guessing. We handle the applications and strategy. You follow our blueprint and maintain relationships. Think of it like having a personal trainer: We design the program and track progress. You show up and do the work. Together, we get results.
+        </p>
+      </div>
+
+    </div>
+  </section>
+);
+
+// Partnership Model - PART 2
+const PartnershipModel = () => (
+  <section className="py-20 px-6 bg-gray-50">
+    <div className="max-w-6xl mx-auto">
+
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Our <span className="text-[#f9c65d]">Performance-Based</span> Partnership Model
+        </h2>
+        <p className="text-xl text-gray-600">
+          We only succeed when you succeed. You never pay for promises, only results.
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-12">
+
+        <div className="bg-white rounded-xl p-8 shadow-lg">
+          <div className="flex items-center gap-3 mb-4">
+            <DollarSign className="w-12 h-12 text-amber-600" />
+            <h3 className="text-2xl font-bold text-gray-900">Small Retainer to Begin</h3>
+          </div>
+          <p className="text-gray-700 leading-relaxed">
+            A minimal upfront investment covers your comprehensive credit analysis across all three bureaus, custom funding roadmap, and full onboarding. This ensures we're both committed to your funding goals.
+          </p>
+        </div>
+
+        <div className="bg-white rounded-xl p-8 shadow-lg">
+          <div className="flex items-center gap-3 mb-4">
+            <CheckCircle className="w-12 h-12 text-green-600" />
+            <h3 className="text-2xl font-bold text-gray-900">Success Fee on Results Only</h3>
+          </div>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Once you're approved and funded, we earn a percentage of the total capital you receive. This means:
+          </p>
+          <ul className="space-y-2 text-gray-700">
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              We're incentivized to maximize your approvals
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              You only pay when you get actual results
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              Our interests are 100% aligned
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              No funding = no success fee
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 shadow-lg border-2 border-green-400 mb-8">
+        <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+          The ROI Reality
+        </h3>
+        <p className="text-lg text-gray-700 leading-relaxed mb-4 text-center">
+          When you're accessing $150K at 0% instead of paying 9-15% on traditional loans, the math is compelling. Most clients save 3-5x their program investment in interest payments alone.
+        </p>
+        <div className="bg-white rounded-lg p-6 text-center">
+          <p className="text-xl font-bold text-gray-900 mb-2">
+            Example: $150,000 at 0% vs. 9% traditional loan
+          </p>
+          <p className="text-3xl font-bold text-green-600">
+            = $20,250 saved in interest over 18 months
+          </p>
+          <p className="text-gray-700 mt-2">
+            That's real money staying in your business for growth instead of going to lenders.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-xl p-8 shadow-lg">
+        <h3 className="text-2xl font-bold text-gray-900 mb-6">What You Get</h3>
+        <div className="grid md:grid-cols-2 gap-4">
+          {[
+            "Complete credit analysis across all three bureaus",
+            "Custom funding roadmap tailored to your profile",
+            "Credit optimization included (if needed)",
+            "Guided execution through all three rounds",
+            "Direct access to our banking relationships",
+            "Reconsideration support and bureau management",
+            "Ongoing credit limit increase coaching"
+          ].map((item, index) => (
+            <div key={index} className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              <span className="text-gray-700">{item}</span>
+            </div>
+          ))}
+        </div>
+        <p className="text-gray-600 mt-6 text-center italic">
+          Your exact investment and personalized funding projection will be covered in detail during your free consultation.
+        </p>
+      </div>
+
+    </div>
+  </section>
+);
+
+// Beyond 0% Credit
+const BeyondZeroPercent = () => (
+  <section className="py-20 px-6 bg-white">
+    <div className="max-w-6xl mx-auto">
+
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          What Happens After You've Maxed Out 0% Funding?
+        </h2>
+        <p className="text-xl text-gray-600">
+          Once you've deployed 0% capital and proven your business model works at scale, bigger funding options open up:
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-8">
+        {[
+          {
+            title: "Bank Statement Loans",
+            amount: "$50K-$500K",
+            description: "After 3-6 months of using your 0% capital, you'll have business cash flow in bank statements. This qualifies you for larger loans based on deposits, not tax returns."
+          },
+          {
+            title: "Traditional Business Lines of Credit",
+            amount: "Varies",
+            description: "With established revenue and banking relationships from our program, you can access revolving credit with better terms."
+          },
+          {
+            title: "SBA Loans & Full-Doc Funding",
+            amount: "Major Expansion",
+            description: "Once you have 2+ years of tax returns showing strong revenue (built with your 0% capital), SBA loans become available for major expansion."
+          }
+        ].map((option, index) => (
+          <div key={index} className="bg-gradient-to-br from-white to-amber-50 rounded-xl p-8 shadow-lg border-2 border-gray-200 hover:border-amber-400 transition-all duration-300">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">{option.title}</h3>
+            <p className="text-amber-600 font-bold mb-4">{option.amount}</p>
+            <p className="text-gray-700 leading-relaxed">{option.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-12 text-center bg-amber-50 rounded-xl p-8 shadow-lg">
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Mesa Group Consulting can guide you through all of these when you're ready. The 0% program is the fastest way to get capital NOW. Everything else builds from there.
+        </p>
+      </div>
+
+    </div>
+  </section>
+);
 
 // FAQ Section
 const FAQSection = () => {
@@ -674,78 +996,83 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "What is 0% business funding, and how does it really work?",
-      answer: "0% business funding refers to business credit lines with promotional 0% APR for 12-18 months. During this period, you pay no interest on the borrowed amount—only the principal. This is similar to 0% credit card offers but designed for business use with much higher limits ($25K-$250K+). After the promotional period ends, standard interest rates apply to any remaining balance, so strategic businesses pay it off during the 0% window."
+      question: "Is this even legal?",
+      answer: "100% legal. We're leveraging business credit cards with promotional 0% APR periods. Banks WANT to give you these cards. We just maximize approval amounts through our relationships and positioning."
     },
     {
-      question: "What credit score do I need to qualify?",
-      answer: "It depends on the funding type. For 0% business credit lines, we typically need personal credit scores of 680+. However, we have other funding options (merchant cash advances, invoice factoring, revenue-based financing) that accept scores as low as 550+. Even if your credit isn't perfect, we likely have options—that's why we work with 30+ funding partners with different requirements."
+      question: "Will this hurt my credit score?",
+      answer: "Each application creates a hard inquiry (2-5 point temporary drop). However, we manage inquiry distribution strategically across all three bureaus. Most clients see scores INCREASE by 20-40 points after Round 1 due to new accounts with high limits and low utilization."
     },
     {
-      question: "How much can I actually get approved for?",
-      answer: "Funding amounts vary based on your credit profile, business revenue, time in business, and industry. For 0% credit lines: typically $25,000 to $250,000. For business term loans: up to $5 million. For merchant cash advances: up to $10 million (for very high-volume businesses). We've secured $42M+ in funding for 720+ businesses, with individual approvals ranging from $10K to $2M+. Your specific approval amount will be determined during the consultation process."
+      question: "What if I get denied?",
+      answer: "Our optimization and banking relationships dramatically reduce denials. If you do get denied, we guide you through reconsideration—often converting denials to approvals. We have backup banks for every round. One denial doesn't kill the process."
     },
     {
-      question: "Do I need collateral or a down payment?",
-      answer: "Most of our 0% business credit lines and unsecured term loans require NO collateral. Equipment financing uses the equipment itself as collateral. SBA loans and larger term loans may require collateral depending on the amount. We always prioritize unsecured options first to protect your business and personal assets."
+      question: "Do I need an established business with revenue?",
+      answer: "No. These are 'no-doc' approvals based on personal credit, not business financials. LLCs with 6+ months of history qualify immediately. You don't even need business revenue yet."
     },
     {
-      question: "How long does the approval process take?",
-      answer: "Timeline varies by funding type. For 0% business credit lines: 3-7 business days typical. For merchant cash advances: same-day to 48 hours. For SBA loans or larger term loans: 2-6 weeks. During your consultation, we'll set clear timeline expectations based on your chosen funding solution."
+      question: "What if I don't have great credit?",
+      answer: "If your score is 700-719, you'll likely qualify but may get lower limits ($65K-$130K range). If you're below 700, we recommend our credit optimization program first. We can usually get you to 720+ within 60-90 days, then proceed with funding."
     },
     {
-      question: "What can I use the funding for?",
-      answer: "You can use business funding for ANY legitimate business purpose: equipment purchases, inventory, payroll, marketing, expansion, working capital, debt consolidation, hiring, office space, vehicles, technology, or any other operational need. There are no restrictions on how you deploy the capital."
+      question: "How is this different from just applying for cards myself?",
+      answer: "Three major differences: (1) We submit applications on your behalf through our banking relationships—your applications go through people who know us, not just online portals. (2) Our strategic sequencing and bureau management prevents inquiry damage while maximizing total approvals. (3) Our optimization process positions you for maximum limits before we submit anything. DIY attempts typically result in 40-60% of the funding you'd get with our system and relationships."
     },
     {
-      question: "Will applying hurt my credit score?",
-      answer: "We use strategic application management to minimize credit impacts. Initial consultations and soft credit checks don't affect your score. When we submit formal applications, there will be hard inquiries, but we coordinate timing to minimize the impact. Multiple inquiries for the same purpose within a 14-30 day window typically count as a single inquiry for scoring purposes."
+      question: "What happens when the 0% period ends?",
+      answer: "You have options: (1) Pay off the balance before interest kicks in. (2) Transfer the balance to another 0% card (we help you find these). (3) Convert it to a low-interest business loan. (4) Keep it as a revolving line if needed. We track all your promotional periods and help you plan the best strategy."
     },
     {
-      question: "What happens after the 0% promotional period ends?",
-      answer: "After 12-18 months (depending on your specific terms), any remaining balance begins accruing interest at the standard APR (typically 15-25%). However, strategic businesses use the 0% period to grow revenue and pay down the principal before interest kicks in. We help you develop a repayment strategy during the deployment planning phase."
+      question: "Can I use this for real estate investing?",
+      answer: "Absolutely. Many of our clients are real estate investors using 0% capital for down payments, renovations, or holding costs. $50K at 0% can fund multiple fix-and-flips without the crushing interest of hard money loans."
     },
     {
-      question: "Do you work with startups or only established businesses?",
-      answer: "Yes, we work with startups! We have specialized startup funding programs that focus on personal credit rather than business history. While some funding types require 2+ years in business, our startup programs can work with businesses as new as 3-6 months old—or even pre-revenue in some cases."
+      question: "What if I already have some business credit cards?",
+      answer: "Perfect. We'll incorporate your existing cards into the strategy and focus on getting you NEW lines at the highest limits. Having existing cards often helps with approvals."
     },
     {
-      question: "What makes Mesa Group different from other business funding companies?",
-      answer: "Three key differences: (1) We're a Bakersfield-based local company with deep community roots and accountability. (2) We have access to 30+ funding partners, enabling us to match your specific profile with the best options rather than being limited to one lender. (3) We provide ongoing support and strategic guidance beyond just securing funding—we help you deploy capital effectively and build long-term funding relationships."
+      question: "How much time does this take from me?",
+      answer: "Round 1 requires about 5-10 hours of your time spread over 30-60 days: following our banking blueprint, answering verification calls, providing documents. Rounds 2 and 3 are even easier because the foundation is established."
+    },
+    {
+      question: "What if I miss a payment?",
+      answer: "Your 0% rate disappears, and you get hit with penalty APR (typically 29.99%). This is why we emphasize: if you can't manage credit responsibly, this program isn't for you. The upside is massive, but you must make minimum payments on time."
+    },
+    {
+      question: "Is there a guarantee?",
+      answer: "We only get paid when you get funded. Our retainer covers your analysis and strategy—the real success fee only comes when you receive actual approvals. We've never had a client with a 720+ score fail to get at least $50K in Round 1. If your score is 700-719, we'll be upfront about realistic expectations during your consultation."
     }
   ];
 
   return (
     <section className="py-20 px-6 bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-6">
-              Business Funding <span className="text-[#f9c65d]">Questions</span> Answered
-            </h2>
-            <p className="text-xl text-gray-700">
-              Get clarity before you apply.
-            </p>
-          </div>
+
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Questions? We've Heard Them All.
+          </h2>
+        </div>
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div key={index} className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-white/50 transition-colors duration-200"
+                className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-amber-50 transition-colors duration-200"
               >
                 <span className="font-semibold text-gray-900 pr-4">
                   {faq.question}
                 </span>
-                <ChevronDown 
+                <ChevronDown
                   className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${
                     openIndex === index ? 'transform rotate-180' : ''
                   }`}
                 />
               </button>
-              
-              <div 
+
+              <div
                 className={`overflow-hidden transition-all duration-300 ${
                   openIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}
@@ -758,31 +1085,6 @@ const FAQSection = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-lg text-gray-700 mb-4">
-            Ready to discuss your specific funding needs?
-          </p>
-          <div className="flex flex-col items-center">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:6613103040"
-                className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 hover:scale-105"
-              >
-                <Phone className="w-6 h-6" /> Call (661) 310-3040
-              </a>
-              <a
-                href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white text-[#bb9446] text-xl font-semibold px-10 py-5 rounded-lg border-2 border-[#bb9446] hover:bg-[#f8d899] transition-all duration-200 hover:scale-105"
-              >
-                Apply Online
-              </a>
-            </div>
-            <PoweredByMesaGroup className="mt-3" />
-          </div>
-        </div>
-
       </div>
     </section>
   );
@@ -790,74 +1092,155 @@ const FAQSection = () => {
 
 // Final CTA
 const FinalCTA = () => (
-  <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      {/* Trust Recap */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-        <div className="flex items-center gap-2 text-sm">
-          <Check className="w-4 h-4 text-green-600" />
-          <span className="text-gray-700">0% Interest Available</span>
-        </div>
-        <div className="flex items-center gap-2 text-sm">
-          <Check className="w-4 h-4 text-green-600" />
-          <span className="text-gray-700">$25K-$250K Funding</span>
-        </div>
-        <div className="flex items-center gap-2 text-sm">
-          <Check className="w-4 h-4 text-green-600" />
-          <span className="text-gray-700">No Collateral Required</span>
-        </div>
-        <div className="flex items-center gap-2 text-sm">
-          <Check className="w-4 h-4 text-green-600" />
-          <span className="text-gray-700">24-48 Hour Decisions</span>
-        </div>
-        <div className="flex items-center gap-2 text-sm">
-          <Check className="w-4 h-4 text-green-600" />
-          <span className="text-gray-700">720+ Businesses Funded</span>
-        </div>
-        <div className="flex items-center gap-2 text-sm">
-          <Check className="w-4 h-4 text-green-600" />
-          <span className="text-gray-700">$42M+ Capital Secured</span>
-        </div>
-        <div className="flex items-center gap-2 text-sm">
-          <Check className="w-4 h-4 text-green-600" />
-          <span className="text-gray-700">30+ Funding Partners</span>
-        </div>
-        <div className="flex items-center gap-2 text-sm">
-          <Check className="w-4 h-4 text-green-600" />
-          <span className="text-gray-700">Local Bakersfield Team</span>
-        </div>
-      </div>
+  <section className="py-20 px-6 bg-gradient-to-br from-amber-50 to-orange-50">
+    <div className="max-w-6xl mx-auto">
 
-      {/* Final CTA */}
-      <div className="text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-          Stop Paying Interest.<br />
-          Start Growing Your <span className="text-[#f9c65d]">Business</span>.
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          You Have <span className="text-[#f9c65d]">Two Choices</span> Right Now
         </h2>
-        
-        <p className="text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
-          Get $25,000 to $250,000 in 0% interest business funding and keep every dollar working for your business—not for the bank.
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-12">
+
+        {/* Choice 1 */}
+        <div className="bg-gray-100 rounded-xl p-8 shadow-lg border-2 border-gray-300">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center text-2xl font-bold">1</div>
+            <h3 className="text-2xl font-bold text-gray-900">Keep Doing What You've Been Doing</h3>
+          </div>
+          <ul className="space-y-2 text-gray-700">
+            <li className="flex items-start gap-2">
+              <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+              Keep applying for traditional loans with 9-15% interest rates
+            </li>
+            <li className="flex items-start gap-2">
+              <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+              Keep waiting 3-6 months for funding decisions
+            </li>
+            <li className="flex items-start gap-2">
+              <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+              Keep watching $20,000+ per year vanish into interest payments
+            </li>
+          </ul>
+        </div>
+
+        {/* Choice 2 */}
+        <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 shadow-lg border-2 border-green-400">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">2</div>
+            <h3 className="text-2xl font-bold text-gray-900">Access $150K at 0% Interest in 30-60 Days</h3>
+          </div>
+          <ul className="space-y-2 text-gray-700">
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              Let us show you exactly how much 0% capital you can access
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              Get the funding you need without crushing debt payments
+            </li>
+            <li className="flex items-start gap-2">
+              <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              Build your business with capital that costs you nothing
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div className="bg-amber-100 rounded-xl p-6 shadow-lg border-2 border-amber-400 mb-8">
+        <div className="flex items-start gap-4">
+          <AlertCircle className="w-8 h-8 text-amber-600 flex-shrink-0" />
+          <div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Our Banking Relationships Are Capacity-Limited</h3>
+            <p className="text-gray-700 mb-2">
+              To maintain our high approval rates and personalized service, we only take on 15-20 new clients per month. This ensures every client gets the attention their funding deserves and our banking contacts aren't overwhelmed with applications.
+            </p>
+            <p className="text-gray-900 font-semibold">
+              Current availability for December 2024: 7 spots remaining
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-center">
+        <h3 className="text-3xl font-bold text-gray-900 mb-4">
+          Book Your Free Funding Consultation Now
+        </h3>
+        <p className="text-lg text-gray-600 mb-6">
+          On this 30-minute call, you'll get:
+        </p>
+        <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-8">
+          {[
+            "Complete credit analysis across all 3 bureaus",
+            "Your exact funding potential ($50K-$250K range)",
+            "Custom roadmap with timeline",
+            "Honest assessment (we'll tell you if you're not ready)"
+          ].map((item, index) => (
+            <div key={index} className="flex items-start gap-2 text-left">
+              <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+              <span className="text-gray-700">{item}</span>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-gray-600 mb-6 italic">
+          The consultation is free. The assessment is honest. The opportunity is real.<br />
+          No pressure. No obligation. Just clarity.
         </p>
 
-        <div className="inline-block">
-          <a
-            href="https://funding-app.mesagroupconsulting.com/opt-in/apply-page"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
-          >
-            Apply for 0% Funding Now →
-          </a>
-          <PoweredByMesaGroup className="mt-2" />
+        <div className="flex flex-col items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <CalendlyPopupButton
+              text="Book Your Free Funding Consultation"
+              className="inline-flex items-center justify-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5 hover:scale-105"
+              showArrow={false}
+              prefillOptions={{
+                customAnswers: {
+                  serviceType: 'Business services',
+                  primaryGoal: 'Access business funding'
+                },
+                utm: {
+                  source: 'zero-interest-funding-page',
+                  medium: 'website',
+                  campaign: 'zero-interest-funding',
+                  content: 'final-cta'
+                }
+              }}
+            />
+
+            <a
+              href="tel:6613103040"
+              className="inline-flex items-center justify-center gap-2 bg-white text-gray-700 text-xl font-semibold px-12 py-5 rounded-lg border-2 border-gray-300 hover:bg-gray-50 transition-all duration-200 hover:scale-105"
+            >
+              <Phone className="w-6 h-6" />
+              Call Us: (661) 310-3040
+            </a>
+          </div>
+          <PoweredByMesaGroup className="mt-4" />
         </div>
-        
-        <p className="text-gray-600 mb-6">
-          Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
-        </p>
-        <p className="text-sm text-gray-500">Mesa Group Consulting | Bakersfield, CA | Serving businesses since 2015</p>
+
       </div>
+
+      <div className="mt-12 text-center text-sm text-gray-600 bg-white rounded-lg p-6">
+        <p className="font-semibold mb-2">Important Disclosure:</p>
+        <p className="mb-4">
+          Mesa & Co Consulting LLC dba Mesa Group Consulting provides business credit consulting services. We do not issue credit, make lending decisions, or guarantee approval amounts. Funding amounts and approval rates depend on individual credit profiles and bank underwriting criteria. Results vary by client.
+        </p>
+        <p className="mb-4">
+          Credit inquiries will affect credit scores temporarily. All business credit products are subject to terms and conditions set by issuing banks. This program requires responsible credit management and timely payments. Promotional 0% APR periods are subject to change by issuing banks and typically range from 9-18 months. Penalty APRs apply if payments are missed.
+        </p>
+        <p className="mb-4">
+          <strong>Pricing Structure:</strong> Small retainer due upon enrollment to cover analysis and strategy. Success fee based on percentage of funded amount, due only when you receive approvals. No funding = no success fee.
+        </p>
+        <p>
+          Mesa Group Consulting is not a lender, bank, or financial institution. We are a consulting firm that provides strategy, guidance, and access to banking relationships. All credit decisions are made by issuing banks based on their underwriting criteria. Business credit cards require personal guarantee by the business owner.
+        </p>
+      </div>
+
     </div>
   </section>
 );
 
-export default ZeroInterestBusinessFunding;
+export default ZeroInterestBusinessFunding2;

@@ -18,21 +18,17 @@ import LetterTemplates from "./pages/LetterTemplates";
 import NotFound from "./pages/NotFound";
 import CreditMonitoring from "./pages/CreditMonitoring";
 import CreditRepair from "./pages/CreditRepair";
-import CreditRepair2 from "./pages/CreditRepair2";
 import DIYCreditRepair from "./pages/DIYCreditRepair";
 import CreditCards from "./pages/CreditCards";
 import PersonalLoans from "./pages/PersonalLoans";
 import AutoLoanRefi from "./pages/AutoLoanRefi";
 import StudentLoanRefi from "./pages/StudentLoanRefi";
-import StudentLoanRefi2 from "./pages/StudentLoanRefi2";
 import DebtConsolidationLoan from "./pages/DebtConsolidationLoan";
 import DebtRelief from "./pages/DebtRelief";
 import TrustAndWillPlan from "./pages/TrustAndWillPlan";
 import LifeInsurance from "./pages/LifeInsurance";
 import ZeroInterestBusinessFunding from "./pages/ZeroInterestBusinessFunding";
-import ZeroInterestBusinessFunding2 from "./pages/ZeroInterestBusinessFunding2";
 import BusinessFunding from "./pages/BusinessFunding";
-import BusinessFunding2 from "./pages/BusinessFunding2";
 import BusinessDebtRelief from "./pages/BusinessDebtRelief";
 import MesaNews from "./pages/MesaNews";
 import Contact from "./pages/Contact";
@@ -61,21 +57,17 @@ const App = () => (
           <Route path="/business-credit" element={<Index />} />
           <Route path="/credit-monitoring" element={<CreditMonitoring />} />
           <Route path="/credit-repair" element={<CreditRepair />} />
-          <Route path="/credit-repair-2" element={<CreditRepair2 />} />
           <Route path="/diy-credit-repair" element={<DIYCreditRepair />} />
           <Route path="/credit-cards" element={<CreditCards />} />
           <Route path="/personal-loans" element={<PersonalLoans />} />
           <Route path="/auto-loan-refi" element={<AutoLoanRefi />} />
           <Route path="/student-loan-refi" element={<StudentLoanRefi />} />
-          <Route path="/student-loan-refi-2" element={<StudentLoanRefi2 />} />
           <Route path="/debt-consolidation-loan" element={<DebtConsolidationLoan />} />
           <Route path="/debt-relief" element={<DebtRelief />} />
           <Route path="/trust-and-will-plan" element={<TrustAndWillPlan />} />
           <Route path="/life-insurance" element={<LifeInsurance />} />
           <Route path="/zero-interest-business-funding" element={<ZeroInterestBusinessFunding />} />
-          <Route path="/zero-interest-business-funding-2" element={<ZeroInterestBusinessFunding2 />} />
           <Route path="/business-funding" element={<BusinessFunding />} />
-          <Route path="/business-funding-2" element={<BusinessFunding2 />} />
           <Route path="/business-debt-relief" element={<BusinessDebtRelief />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />

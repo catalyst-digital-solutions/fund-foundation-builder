@@ -1,34 +1,96 @@
-import { useState } from 'react';
-import Header from "@/components/Header";
-import { ChevronDown, Check } from 'lucide-react';
+import React, { useState } from 'react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import EmotionalCTA1 from '@/components/student-loan-refi2/sections/EmotionalCTA1';
+import EmotionalCTA2 from '@/components/student-loan-refi2/sections/EmotionalCTA2';
+import EmotionalCTA3 from '@/components/student-loan-refi2/sections/EmotionalCTA3';
+import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
+import { 
+  TrendingDown, 
+  Layers, 
+  Calendar, 
+  UserCheck, 
+  Ban, 
+  BarChart,
+  CheckCircle, 
+  ArrowRight, 
+  Clock,
+  Shield,
+  X,
+  Lock,
+  Activity,
+  ChevronDown,
+  AlertTriangle,
+  DollarSign,
+  Users,
+  Award,
+  Check
+} from 'lucide-react';
 
-const StudentLoanRefi = () => {
-  const [openFAQ, setOpenFAQ] = useState<number | null>(0);
+const StudentLoanRefi2 = () => {
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  const [loanAmount, setLoanAmount] = useState(50000);
+  const [currentRate, setCurrentRate] = useState(7);
+  const [newRate, setNewRate] = useState(4.5);
+
+  const affiliateLink = "https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815";
+
+  const calculateSavings = () => {
+    const monthlyPaymentOld = (loanAmount * (currentRate / 100 / 12)) / (1 - Math.pow(1 + (currentRate / 100 / 12), -120));
+    const monthlyPaymentNew = (loanAmount * (newRate / 100 / 12)) / (1 - Math.pow(1 + (newRate / 100 / 12), -120));
+    const totalOld = monthlyPaymentOld * 120;
+    const totalNew = monthlyPaymentNew * 120;
+    
+    return {
+      monthlySavings: Math.round(monthlyPaymentOld - monthlyPaymentNew),
+      totalSavings: Math.round(totalOld - totalNew),
+      oldPayment: Math.round(monthlyPaymentOld),
+      newPayment: Math.round(monthlyPaymentNew)
+    };
+  };
+
+  const savings = calculateSavings();
 
   const faqs = [
     {
-      question: "Will checking rates affect my credit score?",
-      answer: "No. Our rate comparison uses a soft credit check, which doesn't impact your score. Only when you formally apply with a lender will a hard inquiry be performed."
+      question: "Will checking my rate hurt my credit score?",
+      answer: "No! Checking your rate only requires a soft credit pull, which doesn't affect your credit score. Only when you formally apply with a lender will a hard credit inquiry be performed."
     },
     {
-      question: "How long does refinancing take?",
-      answer: "Most borrowers complete the process in 2-4 weeks. Rate comparison takes 2 minutes, and applications typically take 15-30 minutes to complete."
+      question: "How much can I save by refinancing my student loans?",
+      answer: "Savings vary based on your current rate, new rate, and loan balance. On average, borrowers save $20,000+ over the life of their loan. Some save even more if they have high-interest private loans or significant debt."
     },
     {
-      question: "Can I refinance federal and private loans together?",
-      answer: "Yes. Many lenders allow you to consolidate both federal and private loans into a single new loan. Remember, federal loans will lose their protections if refinanced."
+      question: "Can I refinance both federal and private student loans?",
+      answer: "Yes, you can refinance both federal and private loans into one new private loan. However, refinancing federal loans means losing federal benefits like income-driven repayment, PSLF, and forbearance options."
     },
     {
-      question: "What credit score do I need?",
-      answer: "Most lenders require a minimum score of 650, though the best rates go to borrowers with scores above 700. Some lenders offer options for borrowers with lower scores."
+      question: "What credit score do I need to refinance?",
+      answer: "Most lenders require a minimum credit score of 650-660, though some may work with scores as low as 640. The higher your credit score, the better rate you'll qualify for."
     },
     {
-      question: "Can I refinance multiple times?",
-      answer: "Absolutely. Many borrowers refinance again when rates drop or their credit improves. There's no limit to how many times you can refinance."
+      question: "How long does the refinancing process take?",
+      answer: "Checking rates takes just 2-3 minutes. Once you choose a lender and apply, the process typically takes 2-4 weeks from application to disbursement."
     },
     {
-      question: "Are there fees to refinance?",
-      answer: "Most lenders don't charge application, origination, or prepayment fees. However, always read the terms carefully before accepting an offer."
+      question: "What is the minimum loan amount I can refinance?",
+      answer: "Most lenders require a minimum balance of $5,000 to refinance. There's typically a maximum of $300,000-$500,000 depending on the lender."
+    },
+    {
+      question: "Do I need to be employed to refinance?",
+      answer: "Yes, most lenders require steady employment and verifiable income. Some lenders may consider other income sources like spousal income or investments."
+    },
+    {
+      question: "Can I refinance while I'm still in school?",
+      answer: "No, you typically need to have graduated and completed your grace period before refinancing. Lenders want to see you've established employment and steady income."
+    },
+    {
+      question: "Will I lose my grace period if I refinance?",
+      answer: "Yes, refinancing converts your loans into a new private loan with immediate repayment. However, some lenders offer a brief forbearance period after refinancing."
+    },
+    {
+      question: "What happens to my original loans when I refinance?",
+      answer: "Your new lender pays off your existing loans directly. Your original loans are closed, and you'll only have the new refinanced loan to repay."
     }
   ];
 
@@ -36,617 +98,673 @@ const StudentLoanRefi = () => {
     <div className="min-h-screen bg-white">
       <Header />
 
-      {/* SECTION 1: HERO */}
-      <section className="bg-gradient-to-br from-[#3E3E3E] via-[#bb9446] to-[#f9c65d] py-20 px-6">
+      {/* HERO SECTION */}
+      <section className="relative py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            
-            {/* Left Content */}
-            <div className="text-white">
-              
-              <div className="inline-block bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                🎓 Mesa Group Consulting | Student Loan Refinancing
-              </div>
-              
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Lower Your Student Loan Payments and Save Thousands
-              </h1>
-              
-              <p className="text-xl mb-8 leading-relaxed text-white/90">
-                Refinance your student loans to secure a <strong>lower interest rate</strong>, reduce monthly payments, and pay off debt faster. Compare top lenders in minutes.
-              </p>
-
-              {/* Stats Cards */}
-              <div className="grid grid-cols-3 gap-4 mb-8">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-                  <div className="text-3xl font-bold mb-1">$288</div>
-                  <div className="text-sm text-white/80">Avg Monthly Savings</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-                  <div className="text-3xl font-bold mb-1">1-3%</div>
-                  <div className="text-sm text-white/80">Rate Reduction</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-                  <div className="text-3xl font-bold mb-1">$10K+</div>
-                  <div className="text-sm text-white/80">Lifetime Savings</div>
-                </div>
-              </div>
-
-              {/* CTA Button */}
-              <a
-                href="https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#10B981] text-white text-xl font-bold px-12 py-5 rounded-lg hover:bg-[#059669] transition-all duration-200 shadow-2xl hover:shadow-3xl hover:scale-105 mb-4"
-              >
-                Compare Rates Now →
-              </a>
-              
-              <p className="text-sm text-white/80">
-                ✓ No impact to credit score &nbsp; | &nbsp; ✓ Takes 2 minutes &nbsp; | &nbsp; ✓ 100% free comparison
-              </p>
-
-              {/* Trust Badges */}
-              <div className="flex gap-4 mt-8">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 text-sm">
-                  🔒 SSL Secure
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 text-sm">
-                  ⭐ Trusted by Thousands
-                </div>
-              </div>
-
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <Award className="w-4 h-4" />
+              Trusted Student Loan Refinancing Partner | Compare Top-Rated Lenders
             </div>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              Lower Your <span className="text-[#f9c65d]">Student Loan Rate</span> and Save Thousands
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
+              Compare personalized refinancing offers from multiple lenders in minutes. It's free, easy, and won't affect your credit score.
+            </p>
 
-            {/* Right Visual */}
-            <div className="hidden lg:block">
-              <div className="bg-white rounded-2xl p-8 shadow-2xl">
-                <h3 className="text-2xl font-bold text-[#1F2937] mb-6">
-                  How Much Can You Save?
-                </h3>
-                
-                <div className="space-y-6">
-                  <div>
-                    <div className="flex justify-between text-sm mb-2">
-                      <span className="text-gray-600">Your Current Rate</span>
-                      <span className="font-bold text-red-600">7.5%</span>
-                    </div>
-                    <div className="flex justify-between text-sm mb-2">
-                      <span className="text-gray-600">Your New Rate</span>
-                      <span className="font-bold text-[#10B981]">5.0%</span>
-                    </div>
-                    <div className="border-t border-gray-200 pt-4 mt-4">
-                      <div className="flex justify-between items-end">
-                        <div>
-                          <div className="text-sm text-gray-600 mb-1">Monthly Savings</div>
-                          <div className="text-3xl font-bold text-[#10B981]">$267</div>
-                        </div>
-                        <div className="text-right">
-                          <div className="text-sm text-gray-600 mb-1">Lifetime Savings</div>
-                          <div className="text-3xl font-bold text-[#10B981]">$48,060</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
+              <div className="inline-block">
                 <a
-                  href="https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815"
+                  href={affiliateLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center bg-[#bb9446] text-white font-bold py-4 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 mt-6"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
                 >
-                  Get My Personalized Rates
+                  Check Your Rates Now
+                  <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
+                <PoweredBySuperMoney className="mt-3" />
               </div>
+              
+              <a
+                href="#how-it-works"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-700 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 self-start"
+              >
+                How It Works
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
             </div>
 
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+              <div className="flex items-center gap-2">
+                <Shield className="w-5 h-5 text-green-600" />
+                <span>No application fees</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Lock className="w-5 h-5 text-green-600" />
+                <span>Won't hurt your credit score</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock className="w-5 h-5 text-green-600" />
+                <span>Takes 2 minutes</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 2: WHAT IS STUDENT LOAN REFINANCING */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-5xl mx-auto">
-          
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-6">
-              Turn Your Student Debt Into Opportunity
-            </h2>
-            <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Student loan refinancing replaces your existing federal or private student loans with a new loan at a <strong>lower interest rate</strong>. This can significantly reduce your monthly payments and the total amount you'll pay over the life of the loan.
-            </p>
-          </div>
-
-          <div className="bg-gradient-to-br from-[#f8d899] to-white rounded-2xl p-8 mb-12 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#3E3E3E] mb-6 text-center">
-              How It Works
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#bb9446] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">1️⃣</span>
-                </div>
-                <h4 className="font-bold text-lg mb-2 text-[#3E3E3E]">New Lender Pays Off Old Loans</h4>
-                <p className="text-gray-600 text-sm">
-                  A new lender pays off all your existing student loans in full
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#bb9446] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">2️⃣</span>
-                </div>
-                <h4 className="font-bold text-lg mb-2 text-[#3E3E3E]">You Get One New Loan</h4>
-                <p className="text-gray-600 text-sm">
-                  You receive a single new loan with better terms and lower rate
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#bb9446] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">3️⃣</span>
-                </div>
-                <h4 className="font-bold text-lg mb-2 text-[#3E3E3E]">Start Saving Money</h4>
-                <p className="text-gray-600 text-sm">
-                  Lower interest means more money in your pocket every month
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <a
-              href="https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#10B981] text-white text-xl font-bold px-12 py-5 rounded-lg hover:bg-[#059669] transition-all duration-200 shadow-xl hover:shadow-2xl"
-            >
-              Check My Rates (Won't Affect Credit)
-            </a>
-          </div>
-
-        </div>
-      </section>
-
-      {/* SECTION 3: SIX BENEFITS */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#E5D2AF] to-white">
+      {/* TRUST INDICATORS */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-mgc-gradient">
         <div className="max-w-7xl mx-auto">
-          
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-              Why Thousands of Graduates Are Refinancing
+          <div className="grid md:grid-cols-3 gap-8 text-center text-white">
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">$20,000+</div>
+              <div className="text-lg text-white/90">Average savings over loan lifetime</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">2 Minutes</div>
+              <div className="text-lg text-white/90">To check your personalized rates</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">100+ Lenders</div>
+              <div className="text-lg text-white/90">Compare offers in one place</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY REFINANCE */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Why Refinance Your <span className="text-[#f9c65d]">Student Loans?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Refinancing your student loans can unlock financial freedom and help you achieve your goals faster
+              Refinancing can help you save money, simplify payments, and pay off your debt faster.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#f9c65d]">
-              <div className="text-5xl mb-4">📉</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
-                Lower Interest Rates
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Secure a competitive rate based on your current credit score and income—often significantly lower than your original student loan rates. <strong>Even a 1% reduction can save you thousands.</strong>
+            <div className="bg-[#fef9ed] rounded-xl p-8 border-2 border-[#f9c65d]/30">
+              <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center mb-4">
+                <TrendingDown className="w-6 h-6 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Lower Your Interest Rate</h3>
+              <p className="text-gray-700">
+                If your credit has improved or market rates have dropped, you could qualify for a significantly lower rate—saving thousands over time.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#bb9446]">
-              <div className="text-5xl mb-4">💰</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
-                Reduced Monthly Payments
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Free up cash flow each month by extending your repayment term or lowering your interest rate. Use the extra money for savings, investing, or other financial goals.
+            <div className="bg-[#fef9ed] rounded-xl p-8 border-2 border-[#f9c65d]/30">
+              <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center mb-4">
+                <DollarSign className="w-6 h-6 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Reduce Monthly Payments</h3>
+              <p className="text-gray-700">
+                Lower rates or extended terms can reduce your monthly burden, freeing up cash for other goals like buying a home or building savings.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#f8d899]">
-              <div className="text-5xl mb-4">🎯</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
-                Simplified Repayment
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Combine multiple student loans into one convenient monthly payment. No more juggling different due dates, servicers, or payment amounts.
+            <div className="bg-[#fef9ed] rounded-xl p-8 border-2 border-[#f9c65d]/30">
+              <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center mb-4">
+                <Layers className="w-6 h-6 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Simplify Multiple Loans</h3>
+              <p className="text-gray-700">
+                Combine several loans into one convenient payment with a single lender, eliminating confusion and missed payments.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#F97316]">
-              <div className="text-5xl mb-4">⏰</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
-                Flexible Term Options
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Choose a repayment term that fits your budget—from 5 to 20 years. Shorter terms mean less interest paid overall; longer terms provide lower monthly payments.
+            <div className="bg-[#fef9ed] rounded-xl p-8 border-2 border-[#f9c65d]/30">
+              <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center mb-4">
+                <Calendar className="w-6 h-6 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Choose Your Repayment Term</h3>
+              <p className="text-gray-700">
+                Select a term (5-20 years) that fits your budget and goals—pay off faster to save on interest, or extend for lower monthly payments.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#f9c65d]">
-              <div className="text-5xl mb-4">👥</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
-                Remove a Cosigner
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                If you had a cosigner on your original loans, refinancing in your name alone can release them from that obligation and give you full financial independence.
+            <div className="bg-[#fef9ed] rounded-xl p-8 border-2 border-[#f9c65d]/30">
+              <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center mb-4">
+                <UserCheck className="w-6 h-6 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Release Your Co-signer</h3>
+              <p className="text-gray-700">
+                If you originally needed a co-signer but now qualify on your own, refinancing can release them from the loan obligation.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-200 border-t-4 border-[#bb9446]">
-              <div className="text-5xl mb-4">🚀</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
-                Pay Off Debt Faster
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Lower rates mean more of your payment goes toward principal. You can become debt-free years earlier without increasing your monthly payment.
+            <div className="bg-[#fef9ed] rounded-xl p-8 border-2 border-[#f9c65d]/30">
+              <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center mb-4">
+                <Ban className="w-6 h-6 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">No Prepayment Penalties</h3>
+              <p className="text-gray-700">
+                Most lenders don't charge fees for paying off your loan early, allowing you to save even more by accelerating payments.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
 
+      {/* EMOTIONAL CTA 1 */}
+      <EmotionalCTA1 />
+
+      {/* HOW IT WORKS */}
+      <section id="how-it-works" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              How Student Loan <span className="text-[#f9c65d]">Refinancing Works</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Getting started is quick and easy. Here's what to expect:
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="relative">
+              <div className="bg-white rounded-xl p-8 border-2 border-[#f9c65d]/30 shadow-lg h-full">
+                <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center text-gray-900 text-2xl font-bold mb-6">
+                  1
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Compare Rates</h3>
+                <p className="text-gray-700 mb-4">
+                  Fill out a quick form with your loan details and financial info. You'll receive personalized rate quotes from multiple lenders in minutes.
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Soft credit pull only</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>No impact on credit score</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Takes 2-3 minutes</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="bg-white rounded-xl p-8 border-2 border-[#f9c65d]/30 shadow-lg h-full">
+                <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center text-gray-900 text-2xl font-bold mb-6">
+                  2
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Choose Your Lender</h3>
+                <p className="text-gray-700 mb-4">
+                  Review and compare offers side-by-side. Consider rates, terms, monthly payments, and lender benefits before selecting the best fit.
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Compare rates & terms</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Review lender benefits</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Select best option</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="bg-white rounded-xl p-8 border-2 border-[#f9c65d]/30 shadow-lg h-full">
+                <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center text-gray-900 text-2xl font-bold mb-6">
+                  3
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Finalize & Save</h3>
+                <p className="text-gray-700 mb-4">
+                  Complete your application with the chosen lender. They'll pay off your old loans directly, and you'll start making payments at your new, lower rate.
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>2-4 week processing</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Old loans paid off</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Start saving immediately</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div className="text-center mt-12">
-            <a
-              href="https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#bb9446] text-white text-xl font-bold px-12 py-5 rounded-lg hover:bg-[#a07d3a] transition-all duration-200 shadow-xl hover:shadow-2xl"
-            >
-              Start Saving Today →
-            </a>
+            <div className="inline-block">
+              <a
+                href={affiliateLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+              >
+                Get Started - Check Rates
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <PoweredBySuperMoney className="mt-3" />
+            </div>
           </div>
-
         </div>
       </section>
 
-      {/* SECTION 4: THREE-STEP PROCESS */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-              Get Started in 3 Simple Steps
-            </h2>
-            <p className="text-xl text-gray-600">
-              From rate comparison to debt freedom—we make refinancing easy
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            
-            <div className="relative">
-              <div className="bg-gradient-to-br from-[#bb9446] to-[#f9c65d] rounded-2xl p-8 text-white shadow-xl">
-                <div className="absolute -top-6 left-8 w-12 h-12 bg-[#10B981] rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
-                  1
-                </div>
-                <h3 className="text-2xl font-bold mb-4 mt-4">Compare Your Options</h3>
-                <p className="leading-relaxed mb-6">
-                  Answer a few quick questions about your loans, credit score, and income. Our comparison tool instantly shows you personalized rates from multiple top lenders—<strong>with no impact to your credit score</strong>.
-                </p>
-                <div className="text-sm bg-white/20 backdrop-blur-sm rounded-lg p-3">
-                  ⏱️ Takes just 2 minutes
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="bg-gradient-to-br from-[#f9c65d] to-[#10B981] rounded-2xl p-8 text-white shadow-xl">
-                <div className="absolute -top-6 left-8 w-12 h-12 bg-[#F97316] rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
-                  2
-                </div>
-                <h3 className="text-2xl font-bold mb-4 mt-4">Choose Your Best Offer</h3>
-                <p className="leading-relaxed mb-6">
-                  Review offers side-by-side, comparing interest rates, monthly payments, and loan terms. Select the option that best fits your financial goals and budget.
-                </p>
-                <div className="text-sm bg-white/20 backdrop-blur-sm rounded-lg p-3">
-                  📊 Compare 10+ lenders
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl p-8 text-white shadow-xl">
-                <div className="absolute -top-6 left-8 w-12 h-12 bg-[#bb9446] rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
-                  3
-                </div>
-                <h3 className="text-2xl font-bold mb-4 mt-4">Complete Your Application</h3>
-                <p className="leading-relaxed mb-6">
-                  Apply directly with your chosen lender. They'll verify your information, finalize your rate, and pay off your existing loans. You'll start making payments on your new, lower-cost loan.
-                </p>
-                <div className="text-sm bg-white/20 backdrop-blur-sm rounded-lg p-3">
-                  ✅ Process complete in 2-4 weeks
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div className="bg-[#f8d899] rounded-xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-[#3E3E3E] mb-4">
-              Ready to Lower Your Payments?
-            </h3>
-            <p className="text-lg text-gray-700 mb-6">
-              Compare personalized rates from top lenders in just 2 minutes
-            </p>
-            <a
-              href="https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#10B981] text-white text-xl font-bold px-12 py-5 rounded-lg hover:bg-[#059669] transition-all duration-200 shadow-xl hover:shadow-2xl"
-            >
-              Get My Rates Now
-            </a>
-          </div>
-
-        </div>
-      </section>
-
-      {/* SECTION 5: WHO SHOULD REFINANCE */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#E5D2AF] to-white">
-        <div className="max-w-5xl mx-auto">
-          
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-              Is Student Loan Refinancing Right for You?
+      {/* WHO SHOULD REFINANCE */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Who Should <span className="text-[#f9c65d]">Refinance?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Refinancing works best for borrowers who meet these criteria
+              Refinancing isn't right for everyone. Here's how to know if it makes sense for you.
             </p>
           </div>
 
-          <div className="space-y-6">
-            
-            <div className="bg-white rounded-xl p-8 shadow-lg flex items-start gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#10B981] rounded-full flex items-center justify-center text-white text-2xl">
-                ✓
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">
-                  Good to Excellent Credit (650+)
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-8">
+            <div className="bg-green-50 border-2 border-green-300 rounded-xl p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
+                  <CheckCircle className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  You're a Good Candidate If:
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Your credit score significantly impacts the rates you'll qualify for. A score of 650 or higher typically unlocks competitive offers. The higher your score, the better your rate.
-                </p>
               </div>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Your credit score has improved since taking out your loans (typically 650+ required)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You have stable employment and steady income</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Your current interest rate is 6% or higher</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You have private student loans or can afford to lose federal loan benefits</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You want to simplify multiple loan payments</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You're comfortable with a private lender</span>
+                </li>
+              </ul>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg flex items-start gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#bb9446] rounded-full flex items-center justify-center text-white text-2xl">
-                ✓
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">
-                  Steady Income
+            <div className="bg-gray-50 border-2 border-gray-200 rounded-xl p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center">
+                  <X className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  You Might Want to Wait If:
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Lenders want to see reliable income that demonstrates your ability to repay. Full-time employment or consistent self-employment income qualifies.
-                </p>
               </div>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <X className="w-6 h-6 text-gray-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You're relying on income-driven repayment plans</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <X className="w-6 h-6 text-gray-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You're pursuing Public Service Loan Forgiveness (PSLF)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <X className="w-6 h-6 text-gray-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You need federal forbearance or deferment options</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <X className="w-6 h-6 text-gray-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Your income is unstable or you may face unemployment</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <X className="w-6 h-6 text-gray-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You have poor credit (under 650) and no co-signer</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <X className="w-6 h-6 text-gray-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You're currently in school or grace period</span>
+                </li>
+              </ul>
             </div>
-
-            <div className="bg-white rounded-xl p-8 shadow-lg flex items-start gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center text-white text-2xl">
-                ✓
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">
-                  High-Interest Private Loans
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  If your current loans have rates above 6-7%, refinancing can lead to substantial savings. Private student loans are especially good candidates for refinancing.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 shadow-lg flex items-start gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#F97316] rounded-full flex items-center justify-center text-white text-2xl">
-                ⚠️
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">
-                  Federal Loans You're Willing to Convert
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Federal loans come with unique protections (income-driven repayment, forgiveness programs). If you don't need these benefits, refinancing can save you money. <strong>Consider carefully before refinancing federal loans.</strong>
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 shadow-lg flex items-start gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#10B981] rounded-full flex items-center justify-center text-white text-2xl">
-                ✓
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">
-                  No Plans for Loan Forgiveness
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  If you're pursuing Public Service Loan Forgiveness (PSLF) or other federal programs, keep federal loans separate and don't refinance them. Refinancing makes you ineligible for forgiveness.
-                </p>
-              </div>
-            </div>
-
           </div>
 
-          <div className="mt-12 bg-gradient-to-r from-[#bb9446] to-[#f9c65d] rounded-xl p-8 text-center text-white">
-            <h3 className="text-2xl font-bold mb-4">
-              See If You Qualify
-            </h3>
-            <p className="text-lg mb-6 max-w-2xl mx-auto">
-              Check your rate in 2 minutes with zero impact to your credit score
-            </p>
-            <a
-              href="https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white text-[#bb9446] text-xl font-bold px-12 py-5 rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl"
-            >
-              Check My Qualification →
-            </a>
+          <div className="bg-amber-100 border-l-4 border-amber-600 rounded-lg p-6">
+            <div className="flex items-start gap-3">
+              <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+              <div>
+                <p className="text-gray-900 font-semibold mb-2">Important Note:</p>
+                <p className="text-gray-700">
+                  If you have federal student loans, carefully weigh the benefits of a lower rate against the loss of federal protections before refinancing. Once you refinance federal loans with a private lender, you cannot get those federal benefits back.
+                </p>
+              </div>
+            </div>
           </div>
-
         </div>
       </section>
 
-      {/* SECTION 6: SAVINGS EXAMPLES */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-7xl mx-auto">
-          
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-4">
-              Real Savings Examples
+      {/* EMOTIONAL CTA 2 */}
+      <EmotionalCTA2 />
+
+      {/* SAVINGS CALCULATOR */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#fef9ed] to-[#fdf6e3]">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Calculate Your <span className="text-[#f9c65d]">Potential Savings</span>
             </h2>
             <p className="text-xl text-gray-600">
-              See how much borrowers like you are saving through refinancing
+              See how much you could save by refinancing your student loans
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            
-            <div className="bg-gradient-to-br from-[#f8d899] to-white rounded-xl p-8 shadow-lg border-2 border-[#f9c65d]">
-              <div className="text-center mb-6">
-                <div className="text-5xl mb-2">🎓</div>
-                <h3 className="text-xl font-bold text-[#3E3E3E]">
-                  Recent Graduate
-                </h3>
-              </div>
-              
-              <div className="space-y-4 mb-6">
-                <div className="flex justify-between pb-2 border-b border-gray-200">
-                  <span className="text-gray-600">Original Loan:</span>
-                  <span className="font-bold">$50,000</span>
-                </div>
-                <div className="flex justify-between pb-2 border-b border-gray-200">
-                  <span className="text-gray-600">Original Rate:</span>
-                  <span className="font-bold text-red-600">6.8%</span>
-                </div>
-                <div className="flex justify-between pb-2 border-b border-gray-200">
-                  <span className="text-gray-600">New Rate:</span>
-                  <span className="font-bold text-[#10B981]">4.5%</span>
-                </div>
-                <div className="flex justify-between pb-2 border-b border-gray-200">
-                  <span className="text-gray-600">Term:</span>
-                  <span className="font-bold">10 years</span>
+          <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <label className="block text-sm font-semibold text-gray-900 mb-2">
+                  Total Loan Balance
+                </label>
+                <input
+                  type="range"
+                  min="10000"
+                  max="200000"
+                  step="5000"
+                  value={loanAmount}
+                  onChange={(e) => setLoanAmount(Number(e.target.value))}
+                  className="w-full h-2 bg-amber-200 rounded-lg appearance-none cursor-pointer accent-amber-600"
+                />
+                <div className="text-2xl font-bold text-gray-900 mt-2">
+                  ${loanAmount.toLocaleString()}
                 </div>
               </div>
 
-              <div className="bg-[#10B981] text-white rounded-lg p-6 text-center">
-                <div className="text-sm mb-2">Monthly Savings</div>
-                <div className="text-3xl font-bold mb-4">$142</div>
-                <div className="text-sm mb-2">Total Savings</div>
-                <div className="text-3xl font-bold">$17,040</div>
+              <div>
+                <label className="block text-sm font-semibold text-gray-900 mb-2">
+                  Current Interest Rate
+                </label>
+                <input
+                  type="range"
+                  min="3"
+                  max="12"
+                  step="0.5"
+                  value={currentRate}
+                  onChange={(e) => setCurrentRate(Number(e.target.value))}
+                  className="w-full h-2 bg-amber-200 rounded-lg appearance-none cursor-pointer accent-amber-600"
+                />
+                <div className="text-2xl font-bold text-gray-900 mt-2">
+                  {currentRate.toFixed(1)}%
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-900 mb-2">
+                  New Interest Rate
+                </label>
+                <input
+                  type="range"
+                  min="2"
+                  max="10"
+                  step="0.5"
+                  value={newRate}
+                  onChange={(e) => setNewRate(Number(e.target.value))}
+                  className="w-full h-2 bg-green-200 rounded-lg appearance-none cursor-pointer accent-green-600"
+                />
+                <div className="text-2xl font-bold text-green-600 mt-2">
+                  {newRate.toFixed(1)}%
+                </div>
+              </div>
+
+              <div className="flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-sm font-semibold text-gray-600 mb-2">Rate Reduction</div>
+                  <div className="text-3xl font-bold text-[#bb9446]">
+                    {(currentRate - newRate).toFixed(1)}%
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#f8d899] to-white rounded-xl p-8 shadow-lg border-2 border-[#bb9446]">
-              <div className="text-center mb-6">
-                <div className="text-5xl mb-2">💼</div>
-                <h3 className="text-xl font-bold text-[#3E3E3E]">
-                  Established Professional
-                </h3>
-              </div>
-              
-              <div className="space-y-4 mb-6">
-                <div className="flex justify-between pb-2 border-b border-gray-200">
-                  <span className="text-gray-600">Original Loan:</span>
-                  <span className="font-bold">$100,000</span>
+            <div className="border-t-2 border-gray-200 pt-8">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-[#fef9ed] rounded-xl p-6 border-2 border-[#f9c65d]/30">
+                  <div className="text-sm font-semibold text-gray-600 mb-2">Monthly Savings</div>
+                  <div className="text-4xl font-bold text-[#bb9446] mb-2">
+                    ${savings.monthlySavings.toLocaleString()}
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    ${savings.oldPayment.toLocaleString()}/mo → ${savings.newPayment.toLocaleString()}/mo
+                  </div>
                 </div>
-                <div className="flex justify-between pb-2 border-b border-gray-200">
-                  <span className="text-gray-600">Original Rate:</span>
-                  <span className="font-bold text-red-600">7.5%</span>
-                </div>
-                <div className="flex justify-between pb-2 border-b border-gray-200">
-                  <span className="text-gray-600">New Rate:</span>
-                  <span className="font-bold text-[#10B981]">5.0%</span>
-                </div>
-                <div className="flex justify-between pb-2 border-b border-gray-200">
-                  <span className="text-gray-600">Term:</span>
-                  <span className="font-bold">15 years</span>
-                </div>
-              </div>
 
-              <div className="bg-[#bb9446] text-white rounded-lg p-6 text-center">
-                <div className="text-sm mb-2">Monthly Savings</div>
-                <div className="text-3xl font-bold mb-4">$267</div>
-                <div className="text-sm mb-2">Total Savings</div>
-                <div className="text-3xl font-bold">$48,060</div>
+                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border-2 border-green-200">
+                  <div className="text-sm font-semibold text-gray-600 mb-2">Total Savings (10 years)</div>
+                  <div className="text-4xl font-bold text-green-600 mb-2">
+                    ${savings.totalSavings.toLocaleString()}
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    Over the life of your loan
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#f8d899] to-white rounded-xl p-8 shadow-lg border-2 border-[#f8d899]">
-              <div className="text-center mb-6">
-                <div className="text-5xl mb-2">🚀</div>
-                <h3 className="text-xl font-bold text-[#3E3E3E]">
-                  Private Loan Holder
-                </h3>
+            <div className="text-center mt-8">
+              <div className="inline-block">
+                <a
+                  href={affiliateLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+                >
+                  Check My Actual Rate
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+                <PoweredBySuperMoney className="mt-3" />
               </div>
-              
-              <div className="space-y-4 mb-6">
-                <div className="flex justify-between pb-2 border-b border-gray-200">
-                  <span className="text-gray-600">Original Loan:</span>
-                  <span className="font-bold">$75,000</span>
-                </div>
-                <div className="flex justify-between pb-2 border-b border-gray-200">
-                  <span className="text-gray-600">Original Rate:</span>
-                  <span className="font-bold text-red-600">9.0%</span>
-                </div>
-                <div className="flex justify-between pb-2 border-b border-gray-200">
-                  <span className="text-gray-600">New Rate:</span>
-                  <span className="font-bold text-[#10B981]">5.5%</span>
-                </div>
-                <div className="flex justify-between pb-2 border-b border-gray-200">
-                  <span className="text-gray-600">Term:</span>
-                  <span className="font-bold">15 years</span>
-                </div>
-              </div>
-
-              <div className="bg-[#bb9446] text-white rounded-lg p-6 text-center">
-                <div className="text-sm mb-2">Monthly Savings</div>
-                <div className="text-3xl font-bold mb-4">$267</div>
-                <div className="text-sm mb-2">Total Savings</div>
-                <div className="text-3xl font-bold">$48,060</div>
-              </div>
+              <p className="text-sm text-gray-600 mt-4">
+                Won't affect your credit score • Takes 2 minutes
+              </p>
             </div>
-
           </div>
-
-          <div className="mt-12 text-center">
-            <a
-              href="https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#10B981] text-white text-xl font-bold px-12 py-5 rounded-lg hover:bg-[#059669] transition-all duration-200 shadow-xl hover:shadow-2xl"
-            >
-              Calculate My Savings →
-            </a>
-          </div>
-
         </div>
       </section>
 
-      {/* SECTION 7: FAQ ACCORDION */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#E5D2AF] to-white">
-        <div className="max-w-4xl mx-auto">
-          
+      {/* FIXED VS VARIABLE */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#3E3E3E] mb-6">
-              Common <span className="text-[#f9c65d]">Questions</span> About Student Loan Refinancing
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Fixed vs Variable <span className="text-[#f9c65d]">Interest Rates</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Understanding your rate options helps you choose the best loan for your situation
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border-2 border-blue-200">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                  <Lock className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Fixed Rate</h3>
+              </div>
+              
+              <p className="text-gray-700 mb-6">
+                Your interest rate stays the same for the entire loan term, providing predictable monthly payments.
+              </p>
+
+              <div className="space-y-4 mb-6">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Pros:</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Predictable monthly payments</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Protected if rates increase</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Easier to budget</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Peace of mind</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Cons:</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2">
+                      <X className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Typically higher initial rate</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <X className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Won't benefit if rates drop</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-blue-100 border-l-4 border-blue-600 rounded p-4">
+                <p className="text-sm text-gray-900 font-semibold">
+                  Best for: Risk-averse borrowers who want payment stability
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 border-2 border-green-200">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
+                  <Activity className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Variable Rate</h3>
+              </div>
+              
+              <p className="text-gray-700 mb-6">
+                Your rate can change based on market conditions, typically tied to LIBOR or SOFR benchmarks.
+              </p>
+
+              <div className="space-y-4 mb-6">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Pros:</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Lower initial rate</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Can save more if rates drop</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Good for short-term loans</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Often includes rate caps</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Cons:</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2">
+                      <X className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Unpredictable payments</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <X className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Could increase significantly</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-green-100 border-l-4 border-green-600 rounded p-4">
+                <p className="text-sm text-gray-900 font-semibold">
+                  Best for: Borrowers planning to pay off quickly or expecting rates to fall
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 max-w-4xl mx-auto bg-amber-50 border-2 border-amber-200 rounded-xl p-8">
+            <div className="flex items-start gap-4">
+              <AlertTriangle className="w-8 h-8 text-amber-600 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  Making Your Choice
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Most borrowers choose fixed rates for the predictability and peace of mind. However, variable rates can work well if you plan to pay off your loan quickly (within 5 years) or if you expect rates to remain stable or decrease.
+                </p>
+                <p className="text-gray-700">
+                  Compare offers for both rate types to see which saves you the most based on your financial goals and risk tolerance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* EMOTIONAL CTA 3 */}
+      <EmotionalCTA3 />
+
+      {/* FAQ */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Frequently Asked <span className="text-[#f9c65d]">Questions</span>
             </h2>
             <p className="text-xl text-gray-700">
-              Get answers to your most pressing questions about refinancing.
+              Get answers to common questions about student loan refinancing.
             </p>
           </div>
 
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-white rounded-xl border-2 border-gray-200 overflow-hidden hover:border-amber-300 transition-colors duration-300">
-                <button 
+                <button
                   onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
                   className="w-full px-6 py-5 flex items-center justify-between text-left bg-white hover:bg-white/50 transition-colors duration-200"
                 >
                   <span className="font-semibold text-gray-900 pr-4">
                     {faq.question}
                   </span>
-                  <ChevronDown 
+                  <ChevronDown
                     className={`w-5 h-5 text-amber-600 flex-shrink-0 transition-transform duration-300 ${
                       openFAQ === index ? 'transform rotate-180' : ''
                     }`}
@@ -659,17 +777,152 @@ const StudentLoanRefi = () => {
                   }`}
                 >
                   <div className="px-6 pb-5 pt-2 bg-white">
-                    <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    <div className="text-gray-700 leading-relaxed">{faq.answer}</div>
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
+          <div className="text-center mt-12">
+            <div className="inline-block">
+              <a
+                href={affiliateLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+              >
+                Get Your Personalized Rates
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <PoweredBySuperMoney className="mt-3" />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* SECTION 8: FINAL CTA */}
+      {/* IMPORTANT CONSIDERATIONS */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-red-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-red-600 rounded-full mb-6">
+              <AlertTriangle className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              Important <span className="text-[#f9c65d]">Considerations</span>
+            </h2>
+            <p className="text-xl text-gray-600">
+              Understand what you're giving up when refinancing federal student loans
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border-2 border-red-200">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              Federal Benefits You'll Lose When Refinancing:
+            </h3>
+            
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-start gap-3">
+                <X className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong className="text-gray-900">Income-Driven Repayment Plans</strong>
+                  <span className="text-gray-700"> - Payments based on your income and family size</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <X className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong className="text-gray-900">Public Service Loan Forgiveness (PSLF)</strong>
+                  <span className="text-gray-700"> - Forgiveness after 10 years of public service employment</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <X className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong className="text-gray-900">Forbearance & Deferment</strong>
+                  <span className="text-gray-700"> - Temporarily pause payments during hardship</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <X className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong className="text-gray-900">Loan Forgiveness Programs</strong>
+                  <span className="text-gray-700"> - Teacher forgiveness, disability discharge, death discharge</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <X className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong className="text-gray-900">Federal Consolidation</strong>
+                  <span className="text-gray-700"> - Ability to consolidate federal loans in the future</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <X className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <strong className="text-gray-900">Flexible Payment Options</strong>
+                  <span className="text-gray-700"> - Graduated, extended, and alternative repayment plans</span>
+                </div>
+              </li>
+            </ul>
+
+            <div className="bg-amber-100 rounded-lg p-6 border-2 border-amber-600 mb-8">
+              <p className="text-gray-900 font-bold text-lg">
+                ⚠️ This is a one-way decision. Once you refinance federal loans, you cannot convert them back.
+              </p>
+            </div>
+
+            <div className="bg-green-50 border-2 border-green-300 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                When Refinancing Makes Sense:
+              </h3>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Your savings significantly outweigh the value of federal protections</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You have stable employment in the private sector</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You don't anticipate needing income-driven repayment</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You're not pursuing Public Service Loan Forgiveness</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">You have an emergency fund to cover 6+ months of expenses</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">Your career path is stable with low unemployment risk</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="inline-block">
+              <a
+                href={affiliateLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+              >
+                I Understand - Check My Rates
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <PoweredBySuperMoney className="mt-3" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Trust Recap */}
@@ -696,109 +949,49 @@ const StudentLoanRefi = () => {
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">SSL Secure</span>
+              <span className="text-gray-700">100% Free Comparison</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Bakersfield Office</span>
+              <span className="text-gray-700">Secure & Private</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Your Info Is Safe</span>
+              <span className="text-gray-700">Soft Credit Check Only</span>
             </div>
           </div>
 
           {/* Final CTA */}
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Ready to Lower Your <span className="text-[#f9c65d]">Student Loan Payments</span>?
+              Ready to Start <span className="text-[#f9c65d]">Saving</span>?
             </h2>
             
             <p className="text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Compare personalized rates from top lenders in 2 minutes. No cost, no obligation, no impact to your credit score.
+              Compare 10+ lenders in 2 minutes—with zero impact to your credit score.
             </p>
 
             <a
-              href="https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815"
+              href={affiliateLink}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
             >
-              Get My Rates Now →
+              Check My New Rate →
             </a>
+            <PoweredBySuperMoney className="mb-4" />
             
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            <p className="text-sm text-gray-500">We're here to help you save money on your student loans</p>
           </div>
         </div>
       </section>
 
-      {/* SECTION 9: FOOTER */}
-      <footer className="bg-[#3E3E3E] py-12 px-6 text-white">
-        <div className="max-w-7xl mx-auto">
-          
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            
-            <div>
-              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Mesa Group Consulting</h3>
-              <p className="text-sm text-gray-300 mb-4">
-                Your trusted partner for credit repair and financial services in Bakersfield, CA.
-              </p>
-              <p className="text-sm text-gray-300">
-                📍 5001 California Ave Suite 219<br />
-                Bakersfield, CA 93309<br />
-                📞 (661) 310-3040
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">For Consumers</h3>
-              <ul className="space-y-2 text-sm text-gray-300">
-                <li><a href="/build-credit" className="hover:text-[#f9c65d]">Build Credit</a></li>
-                <li><a href="/credit-monitoring" className="hover:text-[#f9c65d]">Credit Monitoring</a></li>
-                <li><a href="/credit-repair" className="hover:text-[#f9c65d]">Credit Repair</a></li>
-                <li><a href="/personal-loans" className="hover:text-[#f9c65d]">Personal Loans</a></li>
-                <li><a href="/debt-consolidation" className="hover:text-[#f9c65d]">Debt Consolidation</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">For Businesses</h3>
-              <ul className="space-y-2 text-sm text-gray-300">
-                <li><a href="/business-funding" className="hover:text-[#f9c65d]">Business Funding</a></li>
-                <li><a href="/business-credit" className="hover:text-[#f9c65d]">Business Credit</a></li>
-                <li><a href="/business-debt-relief" className="hover:text-[#f9c65d]">Business Debt Relief</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-[#f9c65d] mb-4">Resources</h3>
-              <ul className="space-y-2 text-sm text-gray-300">
-                <li><a href="/about" className="hover:text-[#f9c65d]">About Us</a></li>
-                <li><a href="/blog" className="hover:text-[#f9c65d]">Mesa News Blog</a></li>
-                <li><a href="/calculators" className="hover:text-[#f9c65d]">Financial Calculators</a></li>
-                <li><a href="/contact" className="hover:text-[#f9c65d]">Contact</a></li>
-              </ul>
-            </div>
-
-          </div>
-
-          <div className="border-t border-gray-700 pt-6">
-            <p className="text-xs text-gray-400 text-center leading-relaxed mb-4">
-              <strong>Important Disclosure:</strong> Mesa Group Consulting is a marketing service that connects consumers with lending partners. We do not make credit decisions. Rates, terms, and conditions are determined by your chosen lender. Refinancing federal student loans eliminates federal benefits including income-driven repayment, loan forgiveness programs, and deferment options. Consider carefully before refinancing federal loans. Not all applicants will qualify. Your actual rate depends on credit score, income, and other factors.
-            </p>
-            <p className="text-sm text-gray-400 text-center">
-              © {new Date().getFullYear()} Mesa Group Consulting. All rights reserved.
-            </p>
-          </div>
-
-        </div>
-      </footer>
-
+      {/* FOOTER */}
+      <Footer />
     </div>
   );
 };
 
-export default StudentLoanRefi;
+export default StudentLoanRefi2;
