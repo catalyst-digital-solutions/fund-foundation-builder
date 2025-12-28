@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { X } from 'lucide-react';
 
+// Extend Window interface for Fillout
+declare global {
+  interface Window {
+    Fillout?: {
+      initializeEmbeds?: () => void;
+    };
+  }
+}
+
 interface FilloutModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -32,33 +41,54 @@ const FilloutModal: React.FC<FilloutModalProps> = ({
     const formWrapper = document.getElementById('fillout-form-wrapper');
     if (!formWrapper) return;
 
-    // Clear existing content
+    // Clear existing content completely
     formWrapper.innerHTML = '';
 
-    // Create form container
-    const formContainer = document.createElement('div');
-    formContainer.style.width = '100%';
-    formContainer.style.height = height;
-    formContainer.setAttribute('data-fillout-id', formId);
-    formContainer.setAttribute('data-fillout-embed-type', 'standard');
-    formContainer.setAttribute('data-fillout-inherit-parameters', '');
-    formContainer.setAttribute('data-fillout-dynamic-resize', '');
-    formContainer.setAttribute('data-fillout-domain', 'form.advisorhub.io');
-    formContainer.setAttribute('data-partner', partner);
-    formContainer.setAttribute('data-ip', userIp);
+    // Small delay to ensure cleanup is complete
+    const timeoutId = setTimeout(() => {
+      // Create form container
+      const formContainer = document.createElement('div');
+      formContainer.style.width = '100%';
+      formContainer.style.height = height;
+      formContainer.setAttribute('data-fillout-id', formId);
+      formContainer.setAttribute('data-fillout-embed-type', 'standard');
+      formContainer.setAttribute('data-fillout-inherit-parameters', '');
+      formContainer.setAttribute('data-fillout-dynamic-resize', '');
+      formContainer.setAttribute('data-fillout-domain', 'form.advisorhub.io');
+      formContainer.setAttribute('data-partner', partner);
+      formContainer.setAttribute('data-ip', userIp);
 
-    formWrapper.appendChild(formContainer);
+      formWrapper.appendChild(formContainer);
 
-    // Load Fillout embed script if not already loaded
-    if (!document.querySelector('script[src="https://server.fillout.com/embed/v1/"]')) {
-      const script = document.createElement('script');
-      script.src = 'https://server.fillout.com/embed/v1/';
-      document.body.appendChild(script);
-    }
+      // Force script reload to reinitialize Fillout
+      const existingScript = document.querySelector('script[src="https://server.fillout.com/embed/v1/"]');
+
+      if (existingScript) {
+        // Remove and re-add script to force reinitialization
+        existingScript.remove();
+
+        // Small delay before re-adding script
+        setTimeout(() => {
+          const script = document.createElement('script');
+          script.src = 'https://server.fillout.com/embed/v1/';
+          script.async = true;
+          document.body.appendChild(script);
+        }, 50);
+      } else {
+        // Load script for the first time
+        const script = document.createElement('script');
+        script.src = 'https://server.fillout.com/embed/v1/';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    }, 100);
 
     return () => {
+      clearTimeout(timeoutId);
       // Cleanup on unmount
-      formWrapper.innerHTML = '';
+      if (formWrapper) {
+        formWrapper.innerHTML = '';
+      }
     };
   }, [isOpen, userIp, formId, partner, height]);
 
