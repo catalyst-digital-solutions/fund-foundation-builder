@@ -2,9 +2,15 @@ import React from 'react';
 import ctaImage from '@/assets/auto-loan-refi-cta-01.png';
 import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 
-const EmotionalCTA1 = () => {
+interface EmotionalCTA1Props {
+  setIsModalOpen: (open: boolean) => void;
+  setSelectedUrl: (url: string) => void;
+}
+
+const EmotionalCTA1: React.FC<EmotionalCTA1Props> = ({ setIsModalOpen, setSelectedUrl }) => {
   const handleClick = () => {
-    window.open('https://track.supermoney.com/aff_c?offer_id=1623&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=auto_loan_refi', '_blank', 'noopener,noreferrer');
+    setSelectedUrl('https://track.supermoney.com/aff_c?offer_id=1623&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=auto_loan_refi');
+    setIsModalOpen(true);
   };
 
   return (

@@ -2,9 +2,15 @@ import React from 'react';
 import ctaImage from '@/assets/personal-loans-cta-02.png';
 import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 
-const EmotionalCTA2 = () => {
+interface EmotionalCTA2Props {
+  setIsModalOpen: (open: boolean) => void;
+  setSelectedUrl: (url: string) => void;
+}
+
+const EmotionalCTA2: React.FC<EmotionalCTA2Props> = ({ setIsModalOpen, setSelectedUrl }) => {
   const openAffiliateLink = () => {
-    window.open('https://track.supermoney.com/aff_c?offer_id=1618&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=personal_loans', '_blank', 'noopener,noreferrer');
+    setSelectedUrl('https://track.supermoney.com/aff_c?offer_id=1618&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=personal_loans');
+    setIsModalOpen(true);
   };
 
   return (

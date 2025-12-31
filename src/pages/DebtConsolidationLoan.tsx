@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/debt-consolidation/sections/HeroSection';
 import TrustIndicators from '@/components/debt-consolidation/sections/TrustIndicators';
@@ -13,26 +13,37 @@ import EmotionalCTA3 from '@/components/debt-consolidation/sections/EmotionalCTA
 import FAQ from '@/components/debt-consolidation/sections/FAQ';
 import FinalCTA from '@/components/debt-consolidation/sections/FinalCTA';
 import Footer from '@/components/Footer';
+import ExternalLinkModal from '@/components/ExternalLinkModal';
 
 const DebtConsolidationLoan = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedUrl, setSelectedUrl] = useState('');
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <HeroSection />
+        <HeroSection setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
         <TrustIndicators />
         <ValueProposition />
         <HowItWorks />
-        <EmotionalCTA1 />
+        <EmotionalCTA1 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
         <BenefitsGrid />
-        <EmotionalCTA2 />
+        <EmotionalCTA2 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
         <LenderNetwork />
         <QualificationRequirements />
-        <EmotionalCTA3 />
+        <EmotionalCTA3 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
         <FAQ />
-        <FinalCTA />
+        <FinalCTA setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
         <Footer />
       </main>
+
+      <ExternalLinkModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        url={selectedUrl}
+        title="SuperMoney Debt Consolidation"
+      />
     </div>
   );
 };

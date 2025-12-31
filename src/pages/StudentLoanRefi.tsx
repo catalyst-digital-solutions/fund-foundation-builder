@@ -5,15 +5,16 @@ import EmotionalCTA1 from '@/components/student-loan-refi2/sections/EmotionalCTA
 import EmotionalCTA2 from '@/components/student-loan-refi2/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/student-loan-refi2/sections/EmotionalCTA3';
 import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
-import { 
-  TrendingDown, 
-  Layers, 
-  Calendar, 
-  UserCheck, 
-  Ban, 
+import ExternalLinkModal from '@/components/ExternalLinkModal';
+import {
+  TrendingDown,
+  Layers,
+  Calendar,
+  UserCheck,
+  Ban,
   BarChart,
-  CheckCircle, 
-  ArrowRight, 
+  CheckCircle,
+  ArrowRight,
   Clock,
   Shield,
   X,
@@ -32,8 +33,15 @@ const StudentLoanRefi2 = () => {
   const [loanAmount, setLoanAmount] = useState(50000);
   const [currentRate, setCurrentRate] = useState(7);
   const [newRate, setNewRate] = useState(4.5);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedUrl, setSelectedUrl] = useState('');
 
   const affiliateLink = "https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815";
+
+  const handleAffiliateClick = () => {
+    setSelectedUrl(affiliateLink);
+    setIsModalOpen(true);
+  };
 
   const calculateSavings = () => {
     const monthlyPaymentOld = (loanAmount * (currentRate / 100 / 12)) / (1 - Math.pow(1 + (currentRate / 100 / 12), -120));
@@ -117,15 +125,13 @@ const StudentLoanRefi2 = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
               <div className="inline-block">
-                <a
-                  href={affiliateLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={handleAffiliateClick}
                   className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
                 >
                   Check Your Rates Now
                   <ArrowRight className="ml-2 w-5 h-5" />
-                </a>
+                </button>
                 <PoweredBySuperMoney className="mt-3" />
               </div>
               
@@ -253,7 +259,7 @@ const StudentLoanRefi2 = () => {
       </section>
 
       {/* EMOTIONAL CTA 1 */}
-      <EmotionalCTA1 />
+      <EmotionalCTA1 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
 
       {/* HOW IT WORKS */}
       <section id="how-it-works" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
@@ -349,15 +355,13 @@ const StudentLoanRefi2 = () => {
 
           <div className="text-center mt-12">
             <div className="inline-block">
-              <a
-                href={affiliateLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleAffiliateClick}
                 className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
               >
                 Get Started - Check Rates
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </button>
               <PoweredBySuperMoney className="mt-3" />
             </div>
           </div>
@@ -467,7 +471,7 @@ const StudentLoanRefi2 = () => {
       </section>
 
       {/* EMOTIONAL CTA 2 */}
-      <EmotionalCTA2 />
+      <EmotionalCTA2 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
 
       {/* SAVINGS CALCULATOR */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#fef9ed] to-[#fdf6e3]">
@@ -573,15 +577,13 @@ const StudentLoanRefi2 = () => {
 
             <div className="text-center mt-8">
               <div className="inline-block">
-                <a
-                  href={affiliateLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={handleAffiliateClick}
                   className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
                 >
                   Check My Actual Rate
                   <ArrowRight className="w-5 h-5" />
-                </a>
+                </button>
                 <PoweredBySuperMoney className="mt-3" />
               </div>
               <p className="text-sm text-gray-600 mt-4">
@@ -740,7 +742,7 @@ const StudentLoanRefi2 = () => {
       </section>
 
       {/* EMOTIONAL CTA 3 */}
-      <EmotionalCTA3 />
+      <EmotionalCTA3 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
 
       {/* FAQ */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
@@ -786,15 +788,13 @@ const StudentLoanRefi2 = () => {
 
           <div className="text-center mt-12">
             <div className="inline-block">
-              <a
-                href={affiliateLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleAffiliateClick}
                 className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
               >
                 Get Your Personalized Rates
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </button>
               <PoweredBySuperMoney className="mt-3" />
             </div>
           </div>
@@ -907,15 +907,13 @@ const StudentLoanRefi2 = () => {
 
           <div className="text-center mt-12">
             <div className="inline-block">
-              <a
-                href={affiliateLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleAffiliateClick}
                 className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
               >
                 I Understand - Check My Rates
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </button>
               <PoweredBySuperMoney className="mt-3" />
             </div>
           </div>
@@ -971,14 +969,12 @@ const StudentLoanRefi2 = () => {
               Compare 10+ lenders in 2 minutes—with zero impact to your credit score.
             </p>
 
-            <a
-              href={affiliateLink}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={handleAffiliateClick}
               className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
             >
               Check My New Rate →
-            </a>
+            </button>
             <PoweredBySuperMoney className="mb-4" />
             
             <p className="text-gray-600">
@@ -990,6 +986,12 @@ const StudentLoanRefi2 = () => {
 
       {/* FOOTER */}
       <Footer />
+      <ExternalLinkModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        url={selectedUrl}
+        title="SuperMoney Student Loan Refinancing"
+      />
     </div>
   );
 };

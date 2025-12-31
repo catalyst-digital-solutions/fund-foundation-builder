@@ -2,9 +2,15 @@ import React from 'react';
 import { CheckCircle, Clock, Shield, TrendingDown, ArrowRight } from 'lucide-react';
 import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  setIsModalOpen: (open: boolean) => void;
+  setSelectedUrl: (url: string) => void;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({ setIsModalOpen, setSelectedUrl }) => {
   const openAffiliateLink = () => {
-    window.open('https://track.supermoney.com/aff_c?offer_id=1634&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=debt_consolidation', '_blank', 'noopener,noreferrer');
+    setSelectedUrl('https://track.supermoney.com/aff_c?offer_id=1634&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=debt_consolidation');
+    setIsModalOpen(true);
   };
 
   return (

@@ -2,9 +2,15 @@ import React from 'react';
 import ctaImage from '@/assets/student-loan-refi-cta-03.png';
 import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 
-const EmotionalCTA3 = () => {
+interface EmotionalCTA3Props {
+  setIsModalOpen: (open: boolean) => void;
+  setSelectedUrl: (url: string) => void;
+}
+
+const EmotionalCTA3: React.FC<EmotionalCTA3Props> = ({ setIsModalOpen, setSelectedUrl }) => {
   const handleClick = () => {
-    window.open('https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=student_loan_refi', '_blank', 'noopener,noreferrer');
+    setSelectedUrl('https://track.supermoney.com/aff_c?offer_id=1629&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=student_loan_refi');
+    setIsModalOpen(true);
   };
 
   return (

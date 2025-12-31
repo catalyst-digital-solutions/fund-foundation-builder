@@ -5,10 +5,13 @@ import EmotionalCTA1 from '@/components/auto-loan-refi/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/auto-loan-refi/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/auto-loan-refi/sections/EmotionalCTA3';
 import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
+import ExternalLinkModal from '@/components/ExternalLinkModal';
 import { Lock, Zap, CircleDollarSign, TrendingUp, TrendingDown, Search, BarChart3, Landmark, Lightbulb, Star, Banknote, Ban, UserMinus, FileText, Shield, AlertTriangle, LockKeyhole, CheckCircle2, ChevronDown, Check } from 'lucide-react';
 
 const AutoLoanRefi = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedUrl, setSelectedUrl] = useState('');
 
   const faqs = [
     {
@@ -54,7 +57,8 @@ const AutoLoanRefi = () => {
   ];
 
   const handleCTA = () => {
-    window.open('https://track.supermoney.com/aff_c?offer_id=1623&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=auto_loan_refi', '_blank', 'noopener,noreferrer');
+    setSelectedUrl('https://track.supermoney.com/aff_c?offer_id=1623&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=auto_loan_refi');
+    setIsModalOpen(true);
   };
 
   return (
@@ -333,7 +337,7 @@ const AutoLoanRefi = () => {
         </div>
       </section>
 
-      <EmotionalCTA1 />
+      <EmotionalCTA1 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
 
       {/* SECTION 3: HOW IT WORKS */}
       <section className="bg-[#E5D2AF] py-16 md:py-24 px-6 md:px-8">
@@ -696,7 +700,7 @@ const AutoLoanRefi = () => {
         </div>
       </section>
 
-      <EmotionalCTA2 />
+      <EmotionalCTA2 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
 
       {/* SECTION 6: REQUIREMENTS & QUALIFICATIONS */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
@@ -828,7 +832,7 @@ const AutoLoanRefi = () => {
         </div>
       </section>
 
-      <EmotionalCTA3 />
+      <EmotionalCTA3 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
 
       {/* SECTION 7: FAQ ACCORDION */}
       <section className="bg-[#E5D2AF] py-16 md:py-24 px-6 md:px-8">
@@ -1050,6 +1054,12 @@ const AutoLoanRefi = () => {
       </section>
 
       <Footer />
+      <ExternalLinkModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        url={selectedUrl}
+        title="SuperMoney Auto Loan Refinancing"
+      />
     </main>
   );
 };

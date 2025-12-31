@@ -2,9 +2,15 @@ import React from 'react';
 import { Check } from 'lucide-react';
 import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 
-const FinalCTA = () => {
+interface FinalCTAProps {
+  setIsModalOpen: (open: boolean) => void;
+  setSelectedUrl: (url: string) => void;
+}
+
+const FinalCTA: React.FC<FinalCTAProps> = ({ setIsModalOpen, setSelectedUrl }) => {
   const openAffiliateLink = () => {
-    window.open('https://track.supermoney.com/aff_c?offer_id=1618&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=personal_loans', '_blank', 'noopener,noreferrer');
+    setSelectedUrl('https://track.supermoney.com/aff_c?offer_id=1618&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=personal_loans');
+    setIsModalOpen(true);
   };
 
   return (
