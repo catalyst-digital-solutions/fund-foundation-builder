@@ -312,7 +312,7 @@ const ArticlesInsights = () => {
 
           <div className="flex flex-row gap-4 justify-center">
             <Link
-              to="/"
+              to="/#services"
               className="inline-flex items-center justify-center px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl border-2 border-[#bb9446]"
             >
               View Our Services

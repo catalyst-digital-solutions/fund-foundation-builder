@@ -844,7 +844,7 @@ const Homepage = () => {
       {/* ================================================================
           SECTION 4: INNOVATIVE SERVICES TAB SYSTEM
       ================================================================ */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 via-amber-50/30 to-gray-50">
+      <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-gray-50 via-amber-50/30 to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center mb-12">
