@@ -5,18 +5,27 @@ import { Target, Check, Lock, Lightbulb, TrendingUp, Star, CircleDollarSign, Bar
 import EmotionalCTA1 from '@/components/credit-cards/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/credit-cards/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/credit-cards/sections/EmotionalCTA3';
+import ExternalLinkModal from '@/components/ExternalLinkModal';
 import supermoneyLogo from '@/assets/supermoney-logo.svg';
 
 const CreditCards = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedUrl, setSelectedUrl] = useState('');
 
   const affiliateLink = 'https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=credit_cards';
-  
+
   const openAffiliateLink = (campaign?: string) => {
-    const url = campaign 
+    const url = campaign
       ? `https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=${campaign}`
       : affiliateLink;
-    window.open(url, '_blank', 'noopener,noreferrer');
+    setSelectedUrl(url);
+    setIsModalOpen(true);
+  };
+
+  const handleSuperMoneyClick = (url: string) => {
+    setSelectedUrl(url);
+    setIsModalOpen(true);
   };
 
   const faqs = [
@@ -249,8 +258,8 @@ const CreditCards = () => {
                   <span>Path to unsecured card</span>
                 </li>
               </ul>
-              <button 
-                onClick={() => window.open('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815&url_id=26', '_blank', 'noopener,noreferrer')}
+              <button
+                onClick={() => handleSuperMoneyClick('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815&url_id=26')}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Bad Credit Cards
@@ -281,8 +290,8 @@ const CreditCards = () => {
                   <span>Credit line increases</span>
                 </li>
               </ul>
-              <button 
-                onClick={() => window.open('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815&url_id=23', '_blank', 'noopener,noreferrer')}
+              <button
+                onClick={() => handleSuperMoneyClick('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815&url_id=23')}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Fair Credit Cards
@@ -313,8 +322,8 @@ const CreditCards = () => {
                   <span>Sign-up bonuses</span>
                 </li>
               </ul>
-              <button 
-                onClick={() => window.open('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815&url_id=25', '_blank', 'noopener,noreferrer')}
+              <button
+                onClick={() => handleSuperMoneyClick('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815&url_id=25')}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Good Credit Cards
@@ -345,8 +354,8 @@ const CreditCards = () => {
                   <span>Pay off debt faster</span>
                 </li>
               </ul>
-              <button 
-                onClick={() => window.open('https://www.supermoney.com/reviews/personal-credit-cards/balance-transfer?offer_id=596&aff_id=2815', '_blank', 'noopener,noreferrer')}
+              <button
+                onClick={() => handleSuperMoneyClick('https://www.supermoney.com/reviews/personal-credit-cards/balance-transfer?offer_id=596&aff_id=2815')}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Balance Transfer Cards
@@ -377,8 +386,8 @@ const CreditCards = () => {
                   <span>No travel restrictions</span>
                 </li>
               </ul>
-              <button 
-                onClick={() => window.open('https://www.supermoney.com/reviews/personal-credit-cards/cashback?offer_id=596&aff_id=2815', '_blank', 'noopener,noreferrer')}
+              <button
+                onClick={() => handleSuperMoneyClick('https://www.supermoney.com/reviews/personal-credit-cards/cashback?offer_id=596&aff_id=2815')}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Cashback Credit Cards
@@ -409,8 +418,8 @@ const CreditCards = () => {
                   <span>Travel protections</span>
                 </li>
               </ul>
-              <button 
-                onClick={() => window.open('https://www.supermoney.com/reviews/personal-credit-cards/travel?offer_id=596&aff_id=2815', '_blank', 'noopener,noreferrer')}
+              <button
+                onClick={() => handleSuperMoneyClick('https://www.supermoney.com/reviews/personal-credit-cards/travel?offer_id=596&aff_id=2815')}
                 className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-semibold py-3"
               >
                 View Travel Credit Cards
@@ -842,6 +851,14 @@ const CreditCards = () => {
       </section>
 
       <Footer />
+
+      {/* External Link Modal for SuperMoney Links */}
+      <ExternalLinkModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        url={selectedUrl}
+        title="SuperMoney Credit Cards"
+      />
     </main>
   );
 };
