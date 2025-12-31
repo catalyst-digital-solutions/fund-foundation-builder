@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PoweredByMesaGroup from "@/components/PoweredByMesaGroup";
 import EmotionalCTA1 from "@/components/debt-relief/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/debt-relief/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/debt-relief/sections/EmotionalCTA3";
+import { CalendlyModal } from "@/components/CalendlyModal";
 import { ArrowRight } from "lucide-react";
 import {
   AlertCircle,
@@ -22,8 +23,36 @@ import {
   ChevronDown
 } from 'lucide-react';
 
+// Debt Relief specific Calendly URL
+const DEBT_RELIEF_CALENDLY_URL = 'https://calendly.com/d/z7p-zgg-z6c/debt-help-consultation';
+const CALENDLY_PRIMARY_COLOR = 'f9c65d';
+
 const DebtRelief = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+
+  // Load Calendly script
+  useEffect(() => {
+    if (window.Calendly) return;
+
+    const link = document.createElement('link');
+    link.href = 'https://assets.calendly.com/assets/external/widget.css';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
+  const openCalendly = () => {
+    setIsCalendlyOpen(true);
+  };
+
+  const closeCalendly = () => {
+    setIsCalendlyOpen(false);
+  };
 
   const faqs = [
     {
@@ -111,14 +140,12 @@ const DebtRelief = () => {
             </p>
             
             <div className="inline-block">
-              <a
-                href="https://calendly.com/d/z7p-zgg-z6c/debt-help-consultation?embed_domain=mesagroupcapital.com&embed_type=Inline&utm_source=wl&utm_term=mesagroup&hide_gdpr_banner=1"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={openCalendly}
                 className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl border-2 border-amber-500"
               >
                 Book Your Free Debt Analysis
-              </a>
+              </button>
               <PoweredByMesaGroup className="mt-4" />
             </div>
             <p className="text-sm text-gray-600 mt-4 flex items-center justify-center gap-4 flex-wrap">
@@ -213,14 +240,12 @@ const DebtRelief = () => {
               Debt relief through Mesa Group Consulting lets you settle debts for <strong>30-50% less than you owe</strong>, avoid bankruptcy, and protect your family's future—without destroying your credit for 7-10 years.
             </p>
             <div className="inline-block">
-              <a
-                href="https://calendly.com/d/z7p-zgg-z6c/debt-help-consultation?embed_domain=mesagroupcapital.com&embed_type=Inline&utm_source=wl&utm_term=mesagroup&hide_gdpr_banner=1"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={openCalendly}
                 className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-10 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-amber-500"
               >
                 Get Your Free Debt Analysis
-              </a>
+              </button>
               <PoweredByMesaGroup variant="dark" className="mt-4" />
             </div>
           </div>
@@ -545,14 +570,12 @@ const DebtRelief = () => {
 
           <div className="mt-12 text-center">
             <div className="inline-block">
-              <a
-                href="https://calendly.com/d/z7p-zgg-z6c/debt-help-consultation?embed_domain=mesagroupcapital.com&embed_type=Inline&utm_source=wl&utm_term=mesagroup&hide_gdpr_banner=1"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={openCalendly}
                 className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 text-xl font-bold px-12 py-5 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl"
               >
                 Start Your Debt-Free Journey Today
-              </a>
+              </button>
               <PoweredByMesaGroup className="mt-4" />
             </div>
             <p className="text-gray-600 mt-4">Minimum $10,000 in debt required • No upfront fees</p>
@@ -657,15 +680,13 @@ const DebtRelief = () => {
             </p>
 
             <div className="inline-block">
-              <a
-                href="https://calendly.com/d/z7p-zgg-z6c/debt-help-consultation?embed_domain=mesagroupcapital.com&embed_type=Inline&utm_source=wl&utm_term=mesagroup&hide_gdpr_banner=1"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={openCalendly}
                 className="inline-flex items-center justify-center gap-2 px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
               >
                 Schedule Free Consultation
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </button>
               <PoweredByMesaGroup className="mt-2" />
             </div>
             
@@ -678,6 +699,20 @@ const DebtRelief = () => {
       </section>
 
       <Footer />
+
+      <CalendlyModal
+        isOpen={isCalendlyOpen}
+        onClose={closeCalendly}
+        customUrl={DEBT_RELIEF_CALENDLY_URL}
+        prefillOptions={{
+          utm: {
+            source: 'wl',
+            medium: 'website',
+            campaign: 'debt_relief',
+            content: 'mesagroup'
+          }
+        }}
+      />
     </div>
   );
 };

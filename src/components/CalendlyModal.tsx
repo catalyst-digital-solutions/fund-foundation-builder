@@ -6,6 +6,7 @@ interface CalendlyModalProps {
   isOpen: boolean;
   onClose: () => void;
   prefillOptions?: CalendlyPrefillOptions;
+  customUrl?: string; // Allow custom Calendly URL (defaults to CALENDLY_URL from hook)
 }
 
 /**
@@ -16,6 +17,7 @@ export const CalendlyModal: React.FC<CalendlyModalProps> = ({
   isOpen,
   onClose,
   prefillOptions,
+  customUrl,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -44,8 +46,11 @@ export const CalendlyModal: React.FC<CalendlyModalProps> = ({
     function initializeCalendly() {
       if (!window.Calendly || !containerRef.current) return;
 
+      // Use custom URL if provided, otherwise use default
+      const baseUrl = customUrl || CALENDLY_URL;
+
       // Build URL with query parameters
-      let url = `${CALENDLY_URL}?primary_color=${CALENDLY_PRIMARY_COLOR}&embed_domain=${window.location.hostname}&embed_type=Inline`;
+      let url = `${baseUrl}?primary_color=${CALENDLY_PRIMARY_COLOR}&embed_domain=${window.location.hostname}&embed_type=Inline`;
 
       // Add custom answers as URL parameters
       if (prefillOptions?.customAnswers) {
@@ -81,7 +86,7 @@ export const CalendlyModal: React.FC<CalendlyModalProps> = ({
     return () => {
       document.body.style.overflow = '';
     };
-  }, [isOpen, prefillOptions]);
+  }, [isOpen, prefillOptions, customUrl]);
 
   // Handle escape key to close
   useEffect(() => {
