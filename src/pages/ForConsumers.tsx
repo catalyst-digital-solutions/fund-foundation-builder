@@ -140,7 +140,7 @@ const ForConsumers = () => {
       ],
       pricing: "Monthly Plans starting at $149/month • 90-Day Money-Back Guarantee",
       ctaText: "Start Your Credit Transformation",
-      ctaLink: "/credit-repair-2"
+      ctaLink: "/credit-repair"
     },
     {
       icon: <Laptop className="w-6 h-6 text-amber-600" />,
@@ -293,7 +293,7 @@ const ForConsumers = () => {
       ],
       importantNote: "Federal student loans have unique protections. Refinancing converts them to private loans.",
       ctaText: "Check Student Loan Rates",
-      ctaLink: "/student-loan-refi-2",
+      ctaLink: "/student-loan-refi",
       poweredBy: "SuperMoney"
     },
     {
