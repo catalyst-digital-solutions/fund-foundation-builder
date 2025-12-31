@@ -33,9 +33,12 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
+import ExternalLinkModal from '@/components/ExternalLinkModal';
 
 const BuildCredit = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPartnerUrl, setSelectedPartnerUrl] = useState('');
 
   const trustPillars = [
     { icon: Calendar, title: 'Consistency', description: 'Showing up every month with on-time payments' },
@@ -299,6 +302,11 @@ const BuildCredit = () => {
       answer: 'Most of our recommended partners report to all three major bureaus (Experian, Equifax, TransUnion). We specifically choose partners with comprehensive reporting.'
     },
   ];
+
+  const handlePartnerClick = (url: string) => {
+    setSelectedPartnerUrl(url);
+    setIsModalOpen(true);
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -651,14 +659,12 @@ const BuildCredit = () => {
                       </li>
                     ))}
                   </ul>
-                  <a 
-                    href={partner.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => handlePartnerClick(partner.url)}
                     className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                   >
                     Get Started Now
-                  </a>
+                  </button>
                 </div>
               ))}
             </div>
@@ -733,14 +739,12 @@ const BuildCredit = () => {
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href={partner.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => handlePartnerClick(partner.url)}
                     className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                   >
                     Get Started Now
-                  </a>
+                  </button>
                 </div>
               ))}
             </div>
@@ -825,14 +829,12 @@ const BuildCredit = () => {
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href={partner.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => handlePartnerClick(partner.url)}
                     className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                   >
                     Get Started Now
-                  </a>
+                  </button>
                 </div>
               ))}
             </div>
@@ -1421,6 +1423,14 @@ const BuildCredit = () => {
       </section>
 
       <Footer />
+
+      {/* External Link Modal for Partner Links */}
+      <ExternalLinkModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        url={selectedPartnerUrl}
+        title="Credit Building Partner"
+      />
     </div>
   );
 };
