@@ -99,18 +99,21 @@ src/
 All routes defined in [src/App.tsx](src/App.tsx). Key route patterns:
 
 **Business Services:**
-- `/business-funding` + `/business-funding-2` (v1 and v2 pages)
-- `/zero-interest-business-funding` + `/zero-interest-business-funding-2`
-- `/business-credit-builder` (paid program, separate from personal credit)
-- `/business-debt-relief`
+- `/business-funding` - Business funding solutions (formerly v2, now primary)
+- `/zero-interest-business-funding` - 0% interest business funding (formerly v2, now primary)
+- `/business-credit-builder` - Paid program, separate from personal credit
+- `/business-debt-relief` - Business debt relief solutions
 
 **Consumer Services:**
-- `/credit-repair` + `/credit-repair-2` (v1 and v2 pages)
-- `/build-credit` (personal credit - FREE guide)
+- `/credit-repair` - Credit repair services (formerly v2, now primary)
+- `/student-loan-refi` - Student loan refinancing (formerly v2, now primary)
+- `/build-credit` - Personal credit building (FREE guide)
+- `/diy-credit-repair` - DIY credit repair software (Creditily)
 - `/credit-cards`, `/personal-loans`, `/auto-loan-refi`
 - `/debt-consolidation-loan`, `/debt-relief`
 
-**Important:** Multiple pages have v1/v2 variants for A/B testing. Always clarify which version to modify.
+**Important Note - V1 to V2 Migration (December 28, 2024):**
+All v1 pages were archived and v2 pages were promoted to become the primary versions. The `-2` suffix was removed from routes and file names. There are NO longer separate v1/v2 variants - the current pages are the evolved v2 versions. See commit `4ae614c` for full migration details.
 
 ## Design System (Critical)
 
@@ -287,18 +290,6 @@ https://mesagroupcapital.com/for-businesses/business-funding
 4. Build sections following existing patterns in `src/components/business-credit/sections/`
 
 5. Import sections into page following vertical composition pattern
-
-## Version Management Strategy
-
-Multiple pages have v1/v2 variants for A/B testing:
-
-| Route | Version 1 | Version 2 | Difference |
-|-------|-----------|-----------|------------|
-| Business Funding | `/business-funding` | `/business-funding-2` | v2: Interactive calculator, 10-20% rule, dual pathways |
-| 0% Funding | `/zero-interest-business-funding` | `/zero-interest-business-funding-2` | v2: Premium positioning, 700+ credit minimum |
-| Credit Repair | `/credit-repair` | `/credit-repair-2` | v2: Legal escalations, trilingual support |
-
-**When modifying:** Always clarify which version the user wants updated.
 
 ## Important Service Distinctions
 
@@ -816,3 +807,66 @@ if (navigationType !== 'POP') {
 
 **Additional Cleanup:**
 Removed inline `onClick={() => window.scrollTo(0, 0)}` handlers from three links in Homepage.tsx "Complete Credit & Business Solutions" section (lines 906, 941, 976) to ensure consistent scroll behavior through the centralized ScrollToTop component.
+
+---
+
+## Recent Major Update #9 (December 30, 2024)
+
+### ExternalLinkModal Implementation - Traffic Retention Strategy
+
+**Background:**
+Implemented reusable modal system to open external signup/registration links in popup windows instead of navigating away from the site. Goal: Retain user traffic and maintain brand presence during external form completion.
+
+**Component Created:**
+[src/components/ExternalLinkModal.tsx](src/components/ExternalLinkModal.tsx) - Reusable modal for all external links
+
+**Implementation Pattern:**
+```tsx
+// 1. Import modal and add state
+import ExternalLinkModal from "@/components/ExternalLinkModal";
+const [isModalOpen, setIsModalOpen] = useState(false);
+const externalUrl = 'https://external-site.com/signup';
+
+// 2. Update button click handler
+const handleClick = () => {
+  setIsModalOpen(true);
+};
+
+// 3. Add modal component
+<ExternalLinkModal
+  isOpen={isModalOpen}
+  onClose={() => setIsModalOpen(false)}
+  url={externalUrl}
+  title="External Signup"
+/>
+```
+
+**Pages Updated:**
+
+1. **DIY Credit Repair** ([src/pages/DIYCreditRepair.tsx](src/pages/DIYCreditRepair.tsx))
+   - All 6 Creditily signup buttons converted to modal pattern
+   - URL: `https://member.getcreditily.com/Registration/CreateAccount/Account`
+   - Buttons: Hero "Start Now", 3 EmotionalCTA sections, pricing, final CTA
+
+2. **Credit Repair** ([src/pages/CreditRepair.tsx](src/pages/CreditRepair.tsx))
+   - All 6 Mesa Group portal buttons converted to modal pattern
+   - URL: `https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09`
+   - Buttons: Hero, Mesa360 Lite/Flex/Elite, Ruby Plan, Emerald Plan
+   - Component name corrected from `CreditRepair2` to `CreditRepair`
+
+**Technical Details:**
+- Styled popup window: 80% of screen size (max 1400x900), centered
+- Brief confirmation dialog with popup blocker warning
+- Bypasses iframe X-Frame-Options restrictions
+- Professional UX while maintaining traffic on primary domain
+
+**Why Popup Instead of Iframe:**
+Initial iframe approach failed due to external sites' X-Frame-Options security headers. Popup solution provides better UX than plain new tab while working around security restrictions.
+
+**Future Expansion:**
+Modal pattern can be applied to other external links (SuperMoney, PolicyGenius, etc.) for consistent traffic retention strategy site-wide.
+
+---
+
+**Last Updated:** December 30, 2024
+**Project Status:** Active Development

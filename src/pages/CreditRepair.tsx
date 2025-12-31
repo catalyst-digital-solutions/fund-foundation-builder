@@ -17,7 +17,7 @@ import mesa360HeroTeam from "@/assets/mesa360-hero-team.jpeg";
 import experianLogo from "@/assets/experian-logo.png";
 import equifaxLogo from "@/assets/equifax-logo.png";
 import transunionLogo from "@/assets/transunion-logo.png";
-const CreditRepair2 = () => {
+const CreditRepair = () => {
   const timelineSectionRef = useRef<HTMLElement>(null);
   const [timelineVisible, setTimelineVisible] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -2023,4 +2023,4 @@ Every dollar you paid to Mesa Group.</p>
       />
     </main>;
 };
-export default CreditRepair2;
+export default CreditRepair;
