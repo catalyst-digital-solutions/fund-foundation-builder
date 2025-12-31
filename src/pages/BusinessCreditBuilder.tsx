@@ -8,33 +8,58 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
+import ExternalLinkModal from '@/components/ExternalLinkModal';
 
 const BusinessCreditBuilder = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedUrl, setSelectedUrl] = useState('');
+
+  const openFullServiceModal = () => {
+    setSelectedUrl('https://mesagroupcapital.com/business-credit-enroll');
+    setIsModalOpen(true);
+  };
+
+  const openDIYModal = () => {
+    setSelectedUrl('https://mesagroupcapital.com/bcfs-diy-enroll');
+    setIsModalOpen(true);
+  };
 
   return (
     <div className="min-h-screen bg-background font-['Inter',sans-serif]">
       <Header />
-      <HeroSection />
+      <HeroSection openFullServiceModal={openFullServiceModal} openDIYModal={openDIYModal} />
       <ProblemSection />
       <AwakeningSection />
       <VisionSection />
       <FundabilitySystemSection />
-      <GuaranteeSection />
+      <GuaranteeSection openFullServiceModal={openFullServiceModal} />
       <WhatsIncludedSection />
-      <ProgramOptionsSection />
+      <ProgramOptionsSection openFullServiceModal={openFullServiceModal} openDIYModal={openDIYModal} />
       <TestimonialsSection />
       <VideoSection />
       <ChoiceSection />
       <FAQSection openFaq={openFaq} setOpenFaq={setOpenFaq} />
-      <FinalCTASection />
+      <FinalCTASection openFullServiceModal={openFullServiceModal} openDIYModal={openDIYModal} />
       <Footer />
+
+      <ExternalLinkModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        url={selectedUrl}
+        title="Mesa Group Capital - Business Credit Builder"
+      />
     </div>
   );
 };
 
 // HERO SECTION
-const HeroSection = () => {
+interface HeroSectionProps {
+  openFullServiceModal: () => void;
+  openDIYModal: () => void;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({ openFullServiceModal, openDIYModal }) => {
   return (
     <section className="relative pt-32 pb-20 px-6 overflow-hidden bg-gradient-to-b from-white via-amber-50 to-white">
       <div className="max-w-7xl mx-auto text-center">
@@ -67,24 +92,20 @@ const HeroSection = () => {
         {/* Dual CTAs */}
         <div className="flex flex-col items-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="https://mesagroupcapital.com/business-credit-enroll"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={openFullServiceModal}
               className="group px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 flex items-center gap-2 text-lg"
             >
               Get Full Service Program ($2,495)
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a
-              href="https://mesagroupcapital.com/bcfs-diy-enroll"
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
+              onClick={openDIYModal}
               className="group px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 flex items-center gap-2 text-lg"
             >
               Get DIY Program ($995)
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </button>
           </div>
           <div className="mt-4">
             <PoweredByMesaGroup />
@@ -492,7 +513,11 @@ const FundabilitySystemSection = () => {
 };
 
 // GUARANTEE SECTION
-const GuaranteeSection = () => {
+interface GuaranteeSectionProps {
+  openFullServiceModal: () => void;
+}
+
+const GuaranteeSection: React.FC<GuaranteeSectionProps> = ({ openFullServiceModal }) => {
   return (
     <section className="py-20 px-6 bg-gradient-to-b from-amber-50 to-white">
       <div className="max-w-5xl mx-auto">
@@ -515,15 +540,13 @@ const GuaranteeSection = () => {
           </p>
 
           <div className="text-center">
-            <a
-              href="https://mesagroupcapital.com/business-credit-enroll"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={openFullServiceModal}
               className="inline-flex items-center gap-2 px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg"
             >
               Get Started with Full Service ($2,495)
               <ArrowRight className="w-5 h-5" />
-            </a>
+            </button>
             <div className="mt-4">
               <PoweredByMesaGroup />
             </div>
@@ -629,7 +652,12 @@ const WhatsIncludedSection = () => {
 };
 
 // PROGRAM OPTIONS SECTION
-const ProgramOptionsSection = () => {
+interface ProgramOptionsSectionProps {
+  openFullServiceModal: () => void;
+  openDIYModal: () => void;
+}
+
+const ProgramOptionsSection: React.FC<ProgramOptionsSectionProps> = ({ openFullServiceModal, openDIYModal }) => {
   return (
     <section className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-6xl mx-auto">
@@ -678,14 +706,12 @@ const ProgramOptionsSection = () => {
               </ul>
             </div>
 
-            <a
-              href="https://mesagroupcapital.com/business-credit-enroll"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg"
+            <button
+              onClick={openFullServiceModal}
+              className="block text-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg w-full"
             >
               Get Started with Full Service →
-            </a>
+            </button>
 
             <p className="text-sm text-gray-600 text-center mt-4">Access granted within 2-3 business days</p>
           </div>
@@ -746,14 +772,12 @@ const ProgramOptionsSection = () => {
               </ul>
             </div>
 
-            <a
-              href="https://mesagroupcapital.com/bcfs-diy-enroll"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-lg"
+            <button
+              onClick={openDIYModal}
+              className="block text-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-lg w-full"
             >
               Get D.I.Y. Program Now →
-            </a>
+            </button>
 
             <p className="text-sm text-gray-600 text-center mt-4">Instant access upon enrollment</p>
           </div>
@@ -1048,7 +1072,12 @@ const FAQSection = ({ openFaq, setOpenFaq }: { openFaq: number | null; setOpenFa
 };
 
 // FINAL CTA SECTION
-const FinalCTASection = () => {
+interface FinalCTASectionProps {
+  openFullServiceModal: () => void;
+  openDIYModal: () => void;
+}
+
+const FinalCTASection: React.FC<FinalCTASectionProps> = ({ openFullServiceModal, openDIYModal }) => {
   return (
     <section className="py-20 px-6 bg-gradient-to-b from-amber-50 to-white">
       <div className="max-w-6xl mx-auto">
@@ -1070,14 +1099,12 @@ const FinalCTASection = () => {
               <p className="text-gray-700">12 months of coaching + weekly calls + $50K guarantee</p>
               <p className="text-sm text-gray-600 mt-2">Or choose 3-month payment plan (access after 2nd payment)</p>
             </div>
-            <a
-              href="https://mesagroupcapital.com/business-credit-enroll"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg"
+            <button
+              onClick={openFullServiceModal}
+              className="block text-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg w-full"
             >
               Get Started Today
-            </a>
+            </button>
           </div>
 
           {/* DIY CTA */}
@@ -1088,14 +1115,12 @@ const FinalCTASection = () => {
               <p className="text-gray-700">Complete system + software + all education</p>
               <p className="text-sm text-gray-600 mt-2">Instant access upon enrollment</p>
             </div>
-            <a
-              href="https://mesagroupcapital.com/bcfs-diy-enroll"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-lg"
+            <button
+              onClick={openDIYModal}
+              className="block text-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-lg w-full"
             >
               Purchase Now
-            </a>
+            </button>
           </div>
         </div>
 
