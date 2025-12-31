@@ -3,7 +3,11 @@ import { ArrowRight } from 'lucide-react';
 import debtReliefCta02 from '@/assets/debt-relief-cta-02.png';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 
-const EmotionalCTA2 = () => {
+interface EmotionalCTA2Props {
+  openCalendly: () => void;
+}
+
+const EmotionalCTA2: React.FC<EmotionalCTA2Props> = ({ openCalendly }) => {
   return (
     <section
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center"
@@ -20,15 +24,13 @@ const EmotionalCTA2 = () => {
           Mesa Group Capital negotiates directly with your creditors—settling your debts for pennies on the dollar while you make one affordable payment based on YOUR budget. No more harassment. No more juggling due dates. We handle the creditors while you reclaim your life. We see your potential for freedom where banks see only numbers.
         </p>
         <div className="inline-block">
-          <a
-            href="https://calendly.com/d/z7p-zgg-z6c/debt-help-consultation?embed_domain=mesagroupcapital.com&embed_type=Inline&utm_source=wl&utm_term=mesagroup&hide_gdpr_banner=1"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={openCalendly}
             className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-flex items-center justify-center gap-2"
           >
             Discover Your Path to Freedom
             <ArrowRight className="w-5 h-5" />
-          </a>
+          </button>
           <PoweredByMesaGroup variant="dark" className="mt-4" />
         </div>
       </div>

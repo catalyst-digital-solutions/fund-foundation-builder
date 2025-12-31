@@ -253,7 +253,7 @@ const DebtRelief = () => {
         </div>
       </section>
 
-      <EmotionalCTA1 />
+      <EmotionalCTA1 openCalendly={openCalendly} />
 
       {/* SECTION 3: THE 4 BENEFITS */}
       <section className="py-20 px-6 bg-gray-50">
@@ -339,7 +339,7 @@ const DebtRelief = () => {
         </div>
       </section>
 
-      <EmotionalCTA2 />
+      <EmotionalCTA2 openCalendly={openCalendly} />
 
       {/* SECTION 4: TYPES OF DEBT WE HANDLE */}
       <section className="py-20 px-6 bg-white">
@@ -584,7 +584,7 @@ const DebtRelief = () => {
         </div>
       </section>
 
-      <EmotionalCTA3 />
+      <EmotionalCTA3 openCalendly={openCalendly} />
 
       {/* SECTION 6: FAQ */}
       <section className="py-20 px-6 bg-white">

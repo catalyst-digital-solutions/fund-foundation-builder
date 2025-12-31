@@ -3,7 +3,11 @@ import { ArrowRight } from 'lucide-react';
 import debtReliefCta03 from '@/assets/debt-relief-cta-03.png';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 
-const EmotionalCTA3 = () => {
+interface EmotionalCTA3Props {
+  openCalendly: () => void;
+}
+
+const EmotionalCTA3: React.FC<EmotionalCTA3Props> = ({ openCalendly }) => {
   return (
     <section
       className="relative h-[400px] md:h-[500px] flex items-center justify-center bg-cover bg-center"
@@ -20,15 +24,13 @@ const EmotionalCTA3 = () => {
           Imagine checking your caller ID and seeing a friend, not a creditor. Having cash flow for groceries and gas without anxiety. Taking your family on that vacation you've been postponing for years. Watching your debt balance drop to zero in 2-4 years—not 20. That financial freedom you deserve is one decision away.
         </p>
         <div className="inline-block">
-          <a
-            href="https://calendly.com/d/z7p-zgg-z6c/debt-help-consultation?embed_domain=mesagroupcapital.com&embed_type=Inline&utm_source=wl&utm_term=mesagroup&hide_gdpr_banner=1"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={openCalendly}
             className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-flex items-center justify-center gap-2"
           >
             Start Your Debt-Free Journey
             <ArrowRight className="w-5 h-5" />
-          </a>
+          </button>
           <PoweredByMesaGroup variant="dark" className="mt-4" />
         </div>
       </div>
