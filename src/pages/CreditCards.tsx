@@ -218,7 +218,7 @@ const CreditCards = () => {
         </div>
       </section>
 
-      <EmotionalCTA1 />
+      <EmotionalCTA1 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
 
       {/* SECTION 3: CARD CATEGORIES */}
       <section className="bg-[hsl(var(--mgc-tan))] py-16 md:py-24 px-6 md:px-8">
@@ -444,7 +444,7 @@ const CreditCards = () => {
         </div>
       </section>
 
-      <EmotionalCTA2 />
+      <EmotionalCTA2 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
 
       {/* SECTION 4: WHY USE A COMPARISON TOOL */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
@@ -648,7 +648,7 @@ const CreditCards = () => {
         </div>
       </section>
 
-      <EmotionalCTA3 />
+      <EmotionalCTA3 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
 
       {/* SECTION 6: FAQ ACCORDION */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">

@@ -2,9 +2,15 @@ import React from 'react';
 import ctaImage from '@/assets/credit-cards-cta-03.png';
 import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 
-const EmotionalCTA3 = () => {
+interface EmotionalCTA3Props {
+  setIsModalOpen: (open: boolean) => void;
+  setSelectedUrl: (url: string) => void;
+}
+
+const EmotionalCTA3: React.FC<EmotionalCTA3Props> = ({ setIsModalOpen, setSelectedUrl }) => {
   const handleClick = () => {
-    window.open('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815', '_blank', 'noopener,noreferrer');
+    setSelectedUrl('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815');
+    setIsModalOpen(true);
   };
 
   return (
