@@ -1,9 +1,13 @@
 import React from 'react';
 import ctaImage from '@/assets/diy-credit-repair-cta-01.png';
 
-const EmotionalCTA1 = () => {
+interface EmotionalCTA1Props {
+  setIsModalOpen: (open: boolean) => void;
+}
+
+const EmotionalCTA1: React.FC<EmotionalCTA1Props> = ({ setIsModalOpen }) => {
   const handleClick = () => {
-    window.open('https://member.getcreditily.com/Registration/CreateAccount/Account', '_blank', 'noopener,noreferrer');
+    setIsModalOpen(true);
   };
 
   return (

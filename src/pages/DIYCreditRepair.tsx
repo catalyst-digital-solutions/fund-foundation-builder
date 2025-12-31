@@ -6,12 +6,16 @@ import creditilyLogo from "@/assets/creditily-wolf-logo.svg";
 import creditilyWideWolfLogo from "@/assets/creditily-wide-wolf-logo.svg";
 import diyHeroImage from "@/assets/diy-credit-repair-hero.webp";
 import costComparisonBg from "@/assets/diy-credit-repair-cost-comparison-bg.png";
+import ExternalLinkModal from "@/components/ExternalLinkModal";
 import EmotionalCTA1 from "@/components/diy-credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/diy-credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/diy-credit-repair/sections/EmotionalCTA3";
 
 const DIYCreditRepair = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const creditilyUrl = 'https://member.getcreditily.com/Registration/CreateAccount/Account';
 
   const faqs = [
     {
@@ -53,7 +57,7 @@ const DIYCreditRepair = () => {
   ];
 
   const handleSignupClick = () => {
-    window.open('https://member.getcreditily.com/Registration/CreateAccount/Account', '_blank', 'noopener,noreferrer');
+    setIsModalOpen(true);
   };
 
   return (
@@ -110,15 +114,13 @@ const DIYCreditRepair = () => {
               </ul>
               
               {/* Primary CTA */}
-              <a
-                href="https://member.getcreditily.com/Registration/CreateAccount/Account"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleSignupClick}
                 className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-semibold px-8 py-4 w-full md:w-auto inline-flex items-center justify-center gap-2"
               >
                 Start Now
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </button>
               
               {/* Trust Badges */}
               <div className="flex flex-wrap items-center gap-6 mt-8">
@@ -339,7 +341,7 @@ const DIYCreditRepair = () => {
         </div>
       </section>
 
-      <EmotionalCTA1 />
+      <EmotionalCTA1 setIsModalOpen={setIsModalOpen} />
 
       {/* SECTION 3: HOW IT WORKS */}
       <section className="bg-[#2c2c2c] py-16 md:py-24 px-6 md:px-8">
@@ -466,7 +468,7 @@ const DIYCreditRepair = () => {
         </div>
       </section>
 
-      <EmotionalCTA2 />
+      <EmotionalCTA2 setIsModalOpen={setIsModalOpen} />
 
       {/* SECTION 4: KEY FEATURES */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
@@ -650,7 +652,7 @@ const DIYCreditRepair = () => {
         </div>
       </section>
 
-      <EmotionalCTA3 />
+      <EmotionalCTA3 setIsModalOpen={setIsModalOpen} />
 
       {/* SECTION 5: WHAT YOU CAN DISPUTE */}
       <section className="bg-gradient-to-br from-slate-50 via-gray-100 to-slate-50 py-16 md:py-24 px-6 md:px-8">
@@ -847,15 +849,13 @@ const DIYCreditRepair = () => {
                 </li>
               </ul>
               
-              <a
-                href="https://member.getcreditily.com/Registration/CreateAccount/Account"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleSignupClick}
                 className="w-full text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold py-4 inline-flex items-center justify-center gap-2"
               >
                 Start Your Credit Transformation Now
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </button>
             </div>
             
           </div>
@@ -1018,15 +1018,13 @@ const DIYCreditRepair = () => {
               Ready to Bridge the Gap — <span className="text-[#f9c65d]">Your Way?</span>
             </h2>
             
-            <a
-              href="https://member.getcreditily.com/Registration/CreateAccount/Account"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={handleSignupClick}
               className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4 gap-2"
             >
               Get Started Today
               <ArrowRight className="w-5 h-5" />
-            </a>
+            </button>
 
             <p className="text-gray-600 mb-8">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
@@ -1049,6 +1047,14 @@ const DIYCreditRepair = () => {
       </section>
 
       <Footer />
+
+      {/* External Link Modal */}
+      <ExternalLinkModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        url={creditilyUrl}
+        title="Creditily DIY Credit Repair Signup"
+      />
     </main>
   );
 };
