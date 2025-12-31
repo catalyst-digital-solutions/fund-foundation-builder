@@ -1,12 +1,25 @@
 import { useState } from 'react';
 import { Search, Clock, ArrowRight, BookOpen, TrendingUp, Building2, Scale, DollarSign, Mail, CheckCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const ArticlesInsights = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [email, setEmail] = useState('');
+  const navigate = useNavigate();
+
+  const handleViewServicesClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate('/');
+    // Wait for navigation to complete, then scroll to services section
+    setTimeout(() => {
+      const servicesSection = document.getElementById('services');
+      if (servicesSection) {
+        servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  };
 
   const featuredArticles = [
     {
@@ -312,7 +325,8 @@ const ArticlesInsights = () => {
 
           <div className="flex flex-row gap-4 justify-center">
             <Link
-              to="/#services"
+              to="/"
+              onClick={handleViewServicesClick}
               className="inline-flex items-center justify-center px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl border-2 border-[#bb9446]"
             >
               View Our Services
