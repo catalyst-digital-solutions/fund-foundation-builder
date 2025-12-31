@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
+import ExternalLinkModal from '@/components/ExternalLinkModal';
+import { CalendlyModal } from '@/components/CalendlyModal';
 import {
   DollarSign, Building2, CreditCard, FileText, Factory, Building, Rocket, Briefcase,
   Phone, Check, Lightbulb, Target, Zap, Shield, TrendingUp, Handshake, ClipboardList,
@@ -11,30 +13,72 @@ import {
 import { Button } from '@/components/ui/button';
 
 const BusinessFunding2 = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedUrl, setSelectedUrl] = useState('');
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+
+  const openApplicationModal = () => {
+    setSelectedUrl('https://mesagroupcapital.com/for-businesses/business-funding');
+    setIsModalOpen(true);
+  };
+
+  const openCalendly = () => {
+    setIsCalendlyOpen(true);
+  };
+
+  const closeCalendly = () => {
+    setIsCalendlyOpen(false);
+  };
+
   return (
     <div className="min-h-screen bg-background font-['Inter',sans-serif]">
       <Header />
-      <HeroSection />
-      <InteractiveFundingCalculator />
+      <HeroSection openApplicationModal={openApplicationModal} />
+      <InteractiveFundingCalculator openApplicationModal={openApplicationModal} />
       <TheProblemSection />
       <TheSolutionSection />
       <IntroducingBrokerageDivision />
-      <AllFundingSolutionsGrid />
-      <ComparisonTable />
-      <SettingRealisticExpectations />
+      <AllFundingSolutionsGrid openApplicationModal={openApplicationModal} />
+      <ComparisonTable openApplicationModal={openApplicationModal} />
+      <SettingRealisticExpectations openCalendly={openCalendly} />
       <RealTalkQualifications />
       <WhyMesaGetsResults />
-      <TheProcessSection />
-      <EnhancedSocialProofSection />
-      <FAQSection />
-      <TwoPathsForward />
-      <FinalCTA />
+      <TheProcessSection openApplicationModal={openApplicationModal} openCalendly={openCalendly} />
+      <EnhancedSocialProofSection openApplicationModal={openApplicationModal} />
+      <FAQSection openApplicationModal={openApplicationModal} />
+      <TwoPathsForward openApplicationModal={openApplicationModal} openCalendly={openCalendly} />
+      <FinalCTA openApplicationModal={openApplicationModal} />
       <Footer />
+
+      <ExternalLinkModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        url={selectedUrl}
+        title="Mesa Group Capital - Business Funding Application"
+      />
+
+      <CalendlyModal
+        isOpen={isCalendlyOpen}
+        onClose={closeCalendly}
+        customUrl="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery"
+        prefillOptions={{
+          utm: {
+            source: 'wl',
+            medium: 'website',
+            campaign: 'business_funding',
+            content: 'mesagroup'
+          }
+        }}
+      />
     </div>
   );
 };
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  openApplicationModal: () => void;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({ openApplicationModal }) => {
   return (
     <section className="bg-gradient-to-br from-white via-amber-50 to-white py-24 px-6">
       <div className="max-w-5xl mx-auto text-center">
@@ -84,11 +128,9 @@ const HeroSection = () => {
               }}
             />
 
-            <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="text-gray-900 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-xl font-semibold px-12 py-5 h-auto">
-                Ready to Apply Now →
-              </Button>
-            </a>
+            <Button onClick={openApplicationModal} size="lg" className="text-gray-900 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-xl font-semibold px-12 py-5 h-auto">
+              Ready to Apply Now →
+            </Button>
           </div>
           <PoweredByMesaGroup className="mt-4" />
         </div>
@@ -98,7 +140,11 @@ const HeroSection = () => {
   );
 };
 
-const InteractiveFundingCalculator = () => {
+interface InteractiveFundingCalculatorProps {
+  openApplicationModal: () => void;
+}
+
+const InteractiveFundingCalculator: React.FC<InteractiveFundingCalculatorProps> = ({ openApplicationModal }) => {
   const [revenue, setRevenue] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [fundingRange, setFundingRange] = useState({ min: 0, max: 0 });
@@ -205,9 +251,12 @@ const InteractiveFundingCalculator = () => {
                   }
                 }}
               />
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all">
+              <button
+                onClick={openApplicationModal}
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all"
+              >
                 Apply Now →
-              </a>
+              </button>
             </div>
 
             <p className="text-center text-sm text-gray-600 mt-6">
@@ -470,7 +519,11 @@ const IntroducingBrokerageDivision = () => {
 };
 
 // Continue with AllFundingSolutionsGrid - keeping the same 8 products but with updated descriptions where needed
-const AllFundingSolutionsGrid = () => {
+interface AllFundingSolutionsGridProps {
+  openApplicationModal: () => void;
+}
+
+const AllFundingSolutionsGrid: React.FC<AllFundingSolutionsGridProps> = ({ openApplicationModal }) => {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-amber-50 to-white">
       <div className="max-w-7xl mx-auto">
@@ -527,9 +580,12 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
+              <button
+                onClick={openApplicationModal}
+                className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm"
+              >
                 Apply Now
-              </a>
+              </button>
               <CalendlyPopupButton
                 text="Schedule Consultation"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
@@ -585,9 +641,12 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
+              <button
+                onClick={openApplicationModal}
+                className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm"
+              >
                 Apply Now
-              </a>
+              </button>
               <CalendlyPopupButton
                 text="Schedule Consultation"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
@@ -643,9 +702,12 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
+              <button
+                onClick={openApplicationModal}
+                className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm"
+              >
                 Apply Now
-              </a>
+              </button>
               <CalendlyPopupButton
                 text="Schedule Consultation"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
@@ -701,9 +763,12 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
+              <button
+                onClick={openApplicationModal}
+                className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm"
+              >
                 Apply Now
-              </a>
+              </button>
               <CalendlyPopupButton
                 text="Schedule Consultation"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
@@ -759,9 +824,12 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
+              <button
+                onClick={openApplicationModal}
+                className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm"
+              >
                 Apply Now
-              </a>
+              </button>
               <CalendlyPopupButton
                 text="Schedule Consultation"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
@@ -817,9 +885,12 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm">
+              <button
+                onClick={openApplicationModal}
+                className="flex-1 text-center px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-all text-sm"
+              >
                 Apply Now
-              </a>
+              </button>
               <CalendlyPopupButton
                 text="Schedule Consultation"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all text-sm"
@@ -886,9 +957,12 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm border-2 border-gray-300">
+              <button
+                onClick={openApplicationModal}
+                className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm border-2 border-gray-300"
+              >
                 Apply Now
-              </a>
+              </button>
               <CalendlyPopupButton
                 text="Schedule Consultation"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all text-sm"
@@ -944,9 +1018,12 @@ const AllFundingSolutionsGrid = () => {
             </div>
 
             <div className="flex gap-3">
-              <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm border-2 border-gray-300">
+              <button
+                onClick={openApplicationModal}
+                className="flex-1 text-center px-4 py-2 bg-white text-gray-900 hover:bg-gray-50 font-semibold rounded-lg transition-all text-sm border-2 border-gray-300"
+              >
                 Apply Now
-              </a>
+              </button>
               <CalendlyPopupButton
                 text="Schedule Consultation"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all text-sm"
@@ -974,7 +1051,11 @@ const AllFundingSolutionsGrid = () => {
   );
 };
 
-const ComparisonTable = () => {
+interface ComparisonTableProps {
+  openApplicationModal: () => void;
+}
+
+const ComparisonTable: React.FC<ComparisonTableProps> = ({ openApplicationModal }) => {
   return (
     <section className="py-20 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
@@ -1097,11 +1178,9 @@ const ComparisonTable = () => {
                     }
                   }}
                 />
-                <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-                  <Button className="bg-white hover:bg-gray-50 text-gray-900 font-bold px-8 py-3 border-2 border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200">
-                    Apply Now
-                  </Button>
-                </a>
+                <Button onClick={openApplicationModal} className="bg-white hover:bg-gray-50 text-gray-900 font-bold px-8 py-3 border-2 border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200">
+                  Apply Now
+                </Button>
               </div>
             </div>
           </div>
@@ -1112,7 +1191,11 @@ const ComparisonTable = () => {
   );
 };
 
-const SettingRealisticExpectations = () => {
+interface SettingRealisticExpectationsProps {
+  openCalendly: () => void;
+}
+
+const SettingRealisticExpectations: React.FC<SettingRealisticExpectationsProps> = ({ openCalendly }) => {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-amber-50 to-white">
       <div className="max-w-5xl mx-auto">
@@ -1202,11 +1285,9 @@ const SettingRealisticExpectations = () => {
           <p className="text-lg text-gray-700 mb-6">
             During your consultation, we'll give you an honest assessment of what funding amounts are realistic for your revenue level.
           </p>
-          <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3">
-              Schedule Your Free Consultation
-            </Button>
-          </a>
+          <Button onClick={openCalendly} className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3">
+            Schedule Your Free Consultation
+          </Button>
         </div>
 
       </div>
@@ -1366,7 +1447,12 @@ const WhyMesaGetsResults = () => {
   );
 };
 
-const TheProcessSection = () => {
+interface TheProcessSectionProps {
+  openApplicationModal: () => void;
+  openCalendly: () => void;
+}
+
+const TheProcessSection: React.FC<TheProcessSectionProps> = ({ openApplicationModal, openCalendly }) => {
   return (
     <section className="py-20 px-6 bg-background">
       <div className="max-w-5xl mx-auto">
@@ -1387,9 +1473,9 @@ const TheProcessSection = () => {
                 <p className="text-gray-700 leading-relaxed mb-4">
                   We'll discuss your business, what you need capital for, and your growth plans. Together, we'll determine which funding products from our network best match your situation and timeline. This consultation is completely free with no obligation.
                 </p>
-                <a href="https://link.mesagroupconsulting.com/widget/bookings/mesa-group-capital-funding-discovery" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#d4a84b] hover:text-[#c49a3d] font-bold">
+                <button onClick={openCalendly} className="inline-flex items-center gap-2 text-[#d4a84b] hover:text-[#c49a3d] font-bold">
                   Schedule Your Consultation <ArrowRight className="w-4 h-4" />
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -1415,7 +1501,7 @@ const TheProcessSection = () => {
                   Once we confirm you're fundable, we submit your application strategically across our 75+ lender network to secure your best offers. You'll be assigned a dedicated funding advisor and get access to our client portal where you can track progress, upload documents, and communicate directly with our team throughout the process.
                 </p>
                 <p className="text-gray-700 font-semibold">
-                  Ready to skip the consultation? <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="text-[#d4a84b] hover:text-[#c49a3d] underline">Apply directly here</a>
+                  Ready to skip the consultation? <button onClick={openApplicationModal} className="text-[#d4a84b] hover:text-[#c49a3d] underline">Apply directly here</button>
                 </p>
               </div>
             </div>
@@ -1440,7 +1526,11 @@ const TheProcessSection = () => {
   );
 };
 
-const EnhancedSocialProofSection = () => {
+interface EnhancedSocialProofSectionProps {
+  openApplicationModal: () => void;
+}
+
+const EnhancedSocialProofSection: React.FC<EnhancedSocialProofSectionProps> = ({ openApplicationModal }) => {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-amber-50 to-white">
       <div className="max-w-6xl mx-auto">
@@ -1528,9 +1618,9 @@ const EnhancedSocialProofSection = () => {
             Read More Reviews on Google →
           </a>
           <span className="mx-4 text-gray-400">|</span>
-          <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#d4a84b] hover:text-[#c49a3d] font-bold">
+          <button onClick={openApplicationModal} className="inline-flex items-center gap-2 text-[#d4a84b] hover:text-[#c49a3d] font-bold">
             Start Your Application →
-          </a>
+          </button>
         </div>
 
       </div>
@@ -1538,7 +1628,11 @@ const EnhancedSocialProofSection = () => {
   );
 };
 
-const FAQSection = () => {
+interface FAQSectionProps {
+  openApplicationModal: () => void;
+}
+
+const FAQSection: React.FC<FAQSectionProps> = ({ openApplicationModal }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
@@ -1635,14 +1729,12 @@ const FAQSection = () => {
                 }
               }}
             />
-            <a
-              href="https://mesagroupcapital.com/for-businesses/business-funding"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={openApplicationModal}
               className="inline-flex items-center justify-center bg-white hover:bg-gray-50 text-gray-900 font-semibold px-6 py-3 rounded-lg border-2 border-gray-300 shadow-lg hover:shadow-xl transition-all duration-200"
             >
               Apply Now
-            </a>
+            </button>
           </div>
         </div>
 
@@ -1651,7 +1743,12 @@ const FAQSection = () => {
   );
 };
 
-const TwoPathsForward = () => {
+interface TwoPathsForwardProps {
+  openApplicationModal: () => void;
+  openCalendly: () => void;
+}
+
+const TwoPathsForward: React.FC<TwoPathsForwardProps> = ({ openApplicationModal, openCalendly }) => {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-amber-50 to-white">
       <div className="max-w-6xl mx-auto">
@@ -1760,14 +1857,12 @@ const TwoPathsForward = () => {
               </p>
             </div>
 
-            <a
-              href="https://mesagroupcapital.com/for-businesses/business-funding"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={openApplicationModal}
               className="w-full inline-flex items-center justify-center bg-gray-700 hover:bg-gray-800 text-white font-semibold py-3 px-6 text-base rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-800"
             >
               Start Your Application
-            </a>
+            </button>
           </div>
 
         </div>
@@ -1777,7 +1872,11 @@ const TwoPathsForward = () => {
   );
 };
 
-const FinalCTA = () => {
+interface FinalCTAProps {
+  openApplicationModal: () => void;
+}
+
+const FinalCTA: React.FC<FinalCTAProps> = ({ openApplicationModal }) => {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-white via-amber-50 to-amber-100">
       <div className="max-w-5xl mx-auto">
@@ -1839,11 +1938,9 @@ const FinalCTA = () => {
                   <p className="text-sm text-gray-600 mt-2">← Start here if you have questions</p>
                 </div>
                 <div>
-                  <a href="https://mesagroupcapital.com/for-businesses/business-funding" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="bg-white hover:bg-gray-50 text-gray-900 font-bold px-10 py-4 text-xl h-auto border-2 border-gray-300">
-                      Apply Now
-                    </Button>
-                  </a>
+                  <Button onClick={openApplicationModal} size="lg" className="bg-white hover:bg-gray-50 text-gray-900 font-bold px-10 py-4 text-xl h-auto border-2 border-gray-300">
+                    Apply Now
+                  </Button>
                   <p className="text-sm text-gray-600 mt-2">← Start here if you're ready to go</p>
                 </div>
               </div>
