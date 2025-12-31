@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 interface ExternalLinkModalProps {
   isOpen: boolean;
@@ -14,62 +14,60 @@ const ExternalLinkModal: React.FC<ExternalLinkModalProps> = ({
   url,
   title = 'External Site'
 }) => {
-  // Handle escape key press
+  // Open popup window when modal is triggered
   useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) {
-        onClose();
-      }
-    };
+    if (!isOpen) return;
 
-    if (isOpen) {
-      document.addEventListener('keydown', handleEscape);
-      // Prevent body scroll when modal is open
-      document.body.style.overflow = 'hidden';
+    // Calculate popup dimensions (80% of screen)
+    const width = Math.min(1400, window.screen.width * 0.8);
+    const height = Math.min(900, window.screen.height * 0.8);
+    const left = (window.screen.width - width) / 2;
+    const top = (window.screen.height - height) / 2;
+
+    // Open popup window
+    const popup = window.open(
+      url,
+      'creditily_signup',
+      `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes,status=yes,toolbar=no,menubar=no,location=yes`
+    );
+
+    // Focus the popup
+    if (popup) {
+      popup.focus();
     }
 
-    return () => {
-      document.removeEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'unset';
-    };
-  }, [isOpen, onClose]);
+    // Close the modal immediately after opening popup
+    onClose();
+  }, [isOpen, url, onClose]);
 
+  // Render confirmation dialog
   if (!isOpen) return null;
 
   return (
-    <div
-      className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm"
-      onClick={onClose}
-    >
-      {/* Full-screen modal container */}
-      <div
-        className="relative w-full h-full bg-white"
-        onClick={(e) => e.stopPropagation()}
-      >
-        {/* Close button - fixed in upper right corner */}
+    <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+      <div className="bg-white rounded-xl shadow-2xl max-w-md w-full p-6 space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+            <ExternalLink className="w-6 h-6 text-amber-600" />
+          </div>
+          <div>
+            <h3 className="text-lg font-bold text-gray-900">Opening Signup Page</h3>
+            <p className="text-sm text-gray-600">You'll be redirected to complete your registration</p>
+          </div>
+        </div>
+
+        <div className="bg-amber-50 border-l-4 border-amber-400 p-3 rounded">
+          <p className="text-sm text-gray-700">
+            <strong>Note:</strong> A popup window will open. If you don't see it, check your browser's popup blocker.
+          </p>
+        </div>
+
         <button
           onClick={onClose}
-          className="fixed top-4 right-4 z-[60] p-3 bg-white hover:bg-gray-100 rounded-full shadow-lg border-2 border-gray-300 transition-colors group"
-          aria-label="Close"
+          className="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg transition-colors"
         >
-          <X className="w-6 h-6 text-gray-600 group-hover:text-gray-900" />
+          Close
         </button>
-
-        {/* Optional title bar */}
-        {title && (
-          <div className="absolute top-0 left-0 right-0 bg-gray-900 text-white px-6 py-3 text-sm font-medium z-[55]">
-            {title}
-          </div>
-        )}
-
-        {/* Full-screen iframe */}
-        <iframe
-          src={url}
-          className={`w-full h-full border-0 ${title ? 'mt-12' : ''}`}
-          title={title}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox"
-        />
       </div>
     </div>
   );
