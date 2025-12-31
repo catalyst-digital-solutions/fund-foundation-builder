@@ -7,6 +7,7 @@ import EmotionalCTA2 from "@/components/credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/credit-repair/sections/EmotionalCTA3";
 import FAQ from "@/components/credit-repair-2/FAQ";
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
+import ExternalLinkModal from "@/components/ExternalLinkModal";
 import kgetLogo from "@/assets/kget-17-logo.png";
 import studio17Logo from "@/assets/studio-17-logo.png";
 import telemundoLogo from "@/assets/telemundo-logo.png";
@@ -19,6 +20,9 @@ import transunionLogo from "@/assets/transunion-logo.png";
 const CreditRepair2 = () => {
   const timelineSectionRef = useRef<HTMLElement>(null);
   const [timelineVisible, setTimelineVisible] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const portalUrl = 'https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09';
 
   // Scroll animation for timeline section
   useEffect(() => {
@@ -37,7 +41,7 @@ const CreditRepair2 = () => {
     return () => observer.disconnect();
   }, []);
   const handleCTAClick = () => {
-    window.open("https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09", "_blank", "noopener,noreferrer");
+    setIsModalOpen(true);
   };
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({
@@ -2009,6 +2013,14 @@ Every dollar you paid to Mesa Group.</p>
       </section>
 
       <Footer />
+
+      {/* External Link Modal for Portal Signup */}
+      <ExternalLinkModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        url={portalUrl}
+        title="Mesa Group Credit Repair Portal"
+      />
     </main>;
 };
 export default CreditRepair2;
