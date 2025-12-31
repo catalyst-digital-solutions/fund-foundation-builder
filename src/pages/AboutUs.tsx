@@ -196,10 +196,12 @@ const AboutUs = () => {
             
             {/* Left Column - Photo */}
             <div className="order-2 lg:order-1">
-              <div className="aspect-[3/4] bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl overflow-hidden shadow-2xl">
-                <div className="w-full h-full flex items-center justify-center text-gray-400">
-                  <Users className="w-32 h-32" />
-                </div>
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/evert-at-a-speaking-engagement-for-smartcredit.jpg"
+                  alt="Evert Calderon speaking at SmartCredit event"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             
