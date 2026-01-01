@@ -3,11 +3,16 @@ import { Search, Clock, ArrowRight, BookOpen, TrendingUp, Building2, Scale, Doll
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { CalendlyModal } from '@/components/CalendlyModal';
 
 const ArticlesInsights = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [email, setEmail] = useState('');
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
   const navigate = useNavigate();
+
+  const openCalendly = () => setIsCalendlyOpen(true);
+  const closeCalendly = () => setIsCalendlyOpen(false);
 
   const handleViewServicesClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -332,18 +337,22 @@ const ArticlesInsights = () => {
               View Our Services
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
-            <a
-              href="https://www.mesagroupconsulting.com/contact-us"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={openCalendly}
               className="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 transition-all"
             >
               Book a Free Consultation
-            </a>
+            </button>
           </div>
 
         </div>
       </section>
+
+      <CalendlyModal
+        isOpen={isCalendlyOpen}
+        onClose={closeCalendly}
+        utmCampaign="Articles & Insights Page - Final CTA"
+      />
 
       <Footer />
     </div>

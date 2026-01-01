@@ -793,14 +793,12 @@ const LetterTemplates = () => {
               View Credit Repair Services
               <ArrowRight className="w-5 h-5" />
             </a>
-            <a
-              href="https://www.mesagroupconsulting.com/contact-us"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={openCalendly}
               className="bg-white hover:bg-gray-50 border-2 border-gray-300 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors text-center"
             >
               Book a Free Consultation
-            </a>
+            </button>
           </div>
           
           <div className="text-center mt-6">

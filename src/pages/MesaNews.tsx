@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { 
-  Newspaper, 
-  Search, 
-  Calendar, 
-  Tag, 
+import {
+  Newspaper,
+  Search,
+  Calendar,
+  Tag,
   ArrowRight,
   Building2,
   FileText,
@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { CalendlyModal } from '@/components/CalendlyModal';
 
 import kget17Logo from '@/assets/kget-17-logo.png';
 import studio17Logo from '@/assets/studio-17-logo.png';
@@ -35,6 +36,10 @@ const MesaNews = () => {
   const [sortOrder, setSortOrder] = useState('recent');
   const [email, setEmail] = useState('');
   const [firstName, setFirstName] = useState('');
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+
+  const openCalendly = () => setIsCalendlyOpen(true);
+  const closeCalendly = () => setIsCalendlyOpen(false);
 
   const categories = [
     {
@@ -542,14 +547,12 @@ const MesaNews = () => {
                 <ArrowRight className="w-5 h-5" />
               </a>
 
-              <a
-                href="https://www.mesagroupconsulting.com/contact-us"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={openCalendly}
                 className="inline-flex items-center gap-2 bg-white text-gray-900 font-semibold px-8 py-4 rounded-lg border-2 border-gray-300 hover:border-amber-400 hover:bg-amber-50 transition-all shadow-md hover:shadow-lg"
               >
                 Book a Free Consultation
-              </a>
+              </button>
 
             </div>
 
@@ -586,6 +589,12 @@ const MesaNews = () => {
 
         </div>
       </section>
+
+      <CalendlyModal
+        isOpen={isCalendlyOpen}
+        onClose={closeCalendly}
+        utmCampaign="Mesa News Page - Final CTA"
+      />
 
       <Footer />
     </div>
