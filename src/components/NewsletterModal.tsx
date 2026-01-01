@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+import { X } from 'lucide-react';
 
 interface NewsletterModalProps {
   isOpen: boolean;
@@ -6,61 +7,54 @@ interface NewsletterModalProps {
 }
 
 export const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) => {
-  useEffect(() => {
-    // Load GHL form embed script once on mount
-    const script = document.createElement('script');
-    script.src = 'https://link.mesagroupconsulting.com/js/form_embed.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Clean up script on unmount
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
     if (isOpen) {
-      // Trigger the hidden link that GHL's script is bound to
-      const triggerLink = document.getElementById('ghl-newsletter-trigger');
-      if (triggerLink) {
-        triggerLink.click();
-      }
-      // Close our wrapper immediately since GHL will show its own modal
-      onClose();
+      // Prevent body scroll when modal is open
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
     }
-  }, [isOpen, onClose]);
 
-  // Render a hidden link that GHL's script will bind to, plus the hidden iframe
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
+  if (!isOpen) return null;
+
   return (
-    <>
-      <a
-        href="#"
-        id="ghl-newsletter-trigger"
-        style={{ display: 'none' }}
-        data-form="87XreQhYJtAAT7XwLE0p"
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4"
+      onClick={onClose}
+    >
+      <div
+        className="relative bg-transparent rounded-lg max-w-lg w-full"
+        onClick={(e) => e.stopPropagation()}
       >
-        Newsletter
-      </a>
-      <iframe
-        src="https://link.mesagroupconsulting.com/widget/form/87XreQhYJtAAT7XwLE0p"
-        style={{ display: 'none' }}
-        id="popup-87XreQhYJtAAT7XwLE0p"
-        data-layout='{"id":"POPUP"}'
-        data-trigger-type="click"
-        data-trigger-value="#ghl-newsletter-trigger"
-        data-activation-type="alwaysActivated"
-        data-activation-value=""
-        data-deactivation-type="neverDeactivate"
-        data-deactivation-value=""
-        data-form-name="MGC Website NewsLetter"
-        data-height="340"
-        data-layout-iframe-id="popup-87XreQhYJtAAT7XwLE0p"
-        data-form-id="87XreQhYJtAAT7XwLE0p"
-        title="MGC Website NewsLetter"
-      />
-    </>
+        {/* Close Button - positioned outside the iframe */}
+        <button
+          onClick={onClose}
+          className="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors z-10"
+          aria-label="Close modal"
+        >
+          <X className="w-8 h-8" />
+        </button>
+
+        {/* GHL Form Iframe - only rendered when modal is open */}
+        <iframe
+          ref={iframeRef}
+          src="https://link.mesagroupconsulting.com/widget/form/87XreQhYJtAAT7XwLE0p"
+          style={{
+            width: '100%',
+            height: '450px',
+            border: 'none',
+            borderRadius: '8px'
+          }}
+          title="MGC Website NewsLetter"
+        />
+      </div>
+    </div>
   );
 };
