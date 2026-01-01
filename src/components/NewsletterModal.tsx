@@ -23,12 +23,10 @@ export const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClos
 
   useEffect(() => {
     if (isOpen) {
-      // Trigger GHL's native popup by dispatching a click event on the hidden iframe
-      const iframe = document.getElementById('popup-87XreQhYJtAAT7XwLE0p');
+      // Trigger GHL's native popup by clicking the iframe
+      const iframe = document.getElementById('popup-87XreQhYJtAAT7XwLE0p') as HTMLIFrameElement;
       if (iframe) {
-        // GHL's form embed script will handle showing the popup
-        const event = new Event('click', { bubbles: true });
-        iframe.dispatchEvent(event);
+        iframe.click();
       }
       // Close our wrapper immediately since GHL will show its own modal
       onClose();
@@ -36,13 +34,14 @@ export const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClos
   }, [isOpen, onClose]);
 
   // Render the hidden GHL iframe that the embed script needs
+  // Removed auto-trigger attributes to prevent auto-opening
   return (
     <iframe
       src="https://link.mesagroupconsulting.com/widget/form/87XreQhYJtAAT7XwLE0p"
-      style={{ display: 'none' }}
+      style={{ display: 'none', width: '100%', height: '100%', border: 'none', borderRadius: '3px' }}
       id="popup-87XreQhYJtAAT7XwLE0p"
       data-layout='{"id":"POPUP"}'
-      data-trigger-type="alwaysShow"
+      data-trigger-type="click"
       data-trigger-value=""
       data-activation-type="alwaysActivated"
       data-activation-value=""
