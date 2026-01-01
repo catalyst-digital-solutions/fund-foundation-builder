@@ -23,35 +23,44 @@ export const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClos
 
   useEffect(() => {
     if (isOpen) {
-      // Trigger GHL's native popup by clicking the iframe
-      const iframe = document.getElementById('popup-87XreQhYJtAAT7XwLE0p') as HTMLIFrameElement;
-      if (iframe) {
-        iframe.click();
+      // Trigger the hidden link that GHL's script is bound to
+      const triggerLink = document.getElementById('ghl-newsletter-trigger');
+      if (triggerLink) {
+        triggerLink.click();
       }
       // Close our wrapper immediately since GHL will show its own modal
       onClose();
     }
   }, [isOpen, onClose]);
 
-  // Render the hidden GHL iframe that the embed script needs
-  // Removed auto-trigger attributes to prevent auto-opening
+  // Render a hidden link that GHL's script will bind to, plus the hidden iframe
   return (
-    <iframe
-      src="https://link.mesagroupconsulting.com/widget/form/87XreQhYJtAAT7XwLE0p"
-      style={{ display: 'none', width: '100%', height: '100%', border: 'none', borderRadius: '3px' }}
-      id="popup-87XreQhYJtAAT7XwLE0p"
-      data-layout='{"id":"POPUP"}'
-      data-trigger-type="click"
-      data-trigger-value=""
-      data-activation-type="alwaysActivated"
-      data-activation-value=""
-      data-deactivation-type="neverDeactivate"
-      data-deactivation-value=""
-      data-form-name="MGC Website NewsLetter"
-      data-height="340"
-      data-layout-iframe-id="popup-87XreQhYJtAAT7XwLE0p"
-      data-form-id="87XreQhYJtAAT7XwLE0p"
-      title="MGC Website NewsLetter"
-    />
+    <>
+      <a
+        href="#"
+        id="ghl-newsletter-trigger"
+        style={{ display: 'none' }}
+        data-form="87XreQhYJtAAT7XwLE0p"
+      >
+        Newsletter
+      </a>
+      <iframe
+        src="https://link.mesagroupconsulting.com/widget/form/87XreQhYJtAAT7XwLE0p"
+        style={{ display: 'none' }}
+        id="popup-87XreQhYJtAAT7XwLE0p"
+        data-layout='{"id":"POPUP"}'
+        data-trigger-type="click"
+        data-trigger-value="#ghl-newsletter-trigger"
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="MGC Website NewsLetter"
+        data-height="340"
+        data-layout-iframe-id="popup-87XreQhYJtAAT7XwLE0p"
+        data-form-id="87XreQhYJtAAT7XwLE0p"
+        title="MGC Website NewsLetter"
+      />
+    </>
   );
 };
