@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { 
-  BookOpen, 
-  Newspaper, 
-  Calculator, 
-  FileText, 
-  CheckCircle, 
+import {
+  BookOpen,
+  Newspaper,
+  Calculator,
+  FileText,
+  CheckCircle,
   ArrowRight,
   Star,
   Users,
@@ -15,10 +15,15 @@ import {
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { CalendlyModal } from '@/components/CalendlyModal';
 
 const Resources = () => {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+
+  const openCalendly = () => setIsCalendlyOpen(true);
+  const closeCalendly = () => setIsCalendlyOpen(false);
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -308,15 +313,13 @@ const Resources = () => {
               Explore Our Services
               <ArrowRight className="w-5 h-5" />
             </Link>
-            <a
-              href="https://www.mesagroupconsulting.com/contact-us"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={openCalendly}
               className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-[#3E3E3E] font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-white"
             >
               Book Free Consultation
               <ArrowRight className="w-5 h-5" />
-            </a>
+            </button>
           </div>
 
         </div>
@@ -371,6 +374,12 @@ const Resources = () => {
 
         </div>
       </section>
+
+      <CalendlyModal
+        isOpen={isCalendlyOpen}
+        onClose={closeCalendly}
+        utmCampaign="Resources Page - Want Experts CTA"
+      />
 
       <Footer />
     </div>
