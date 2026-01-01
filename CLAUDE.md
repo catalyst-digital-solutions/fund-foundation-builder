@@ -868,5 +868,97 @@ Modal pattern can be applied to other external links (SuperMoney, PolicyGenius, 
 
 ---
 
-**Last Updated:** December 30, 2024
+## Recent Major Update #10 (January 1, 2026)
+
+### Newsletter Modal Implementation - GHL Form Integration
+
+**Background:**
+Replaced email input forms on Articles & Insights and Resources pages with buttons that open the GHL newsletter signup form in a browser popup window. This approach keeps users on the Mesa Group site while completing newsletter signup.
+
+**Component Created:**
+[src/components/NewsletterModal.tsx](src/components/NewsletterModal.tsx) - Opens GHL form in centered browser popup
+
+**Implementation:**
+```tsx
+import { useEffect } from 'react';
+
+interface NewsletterModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) => {
+  useEffect(() => {
+    if (isOpen) {
+      // Open GHL form in a centered popup window
+      const width = 500;
+      const height = 600;
+      const left = (window.innerWidth - width) / 2 + window.screenX;
+      const top = (window.innerHeight - height) / 2 + window.screenY;
+
+      window.open(
+        'https://link.mesagroupconsulting.com/widget/form/87XreQhYJtAAT7XwLE0p',
+        'NewsletterSignup',
+        `width=${width},height=${height},left=${left},top=${top},scrollbars=yes,resizable=yes`
+      );
+
+      // Close our state immediately since we opened a popup
+      onClose();
+    }
+  }, [isOpen, onClose]);
+
+  return null; // Component doesn't render anything - just opens popup
+};
+```
+
+**Pages Updated:**
+
+1. **Articles & Insights** ([src/pages/ArticlesInsights.tsx](src/pages/ArticlesInsights.tsx))
+   - Removed email input form
+   - Added "Subscribe to Newsletter" button with ArrowRight icon
+   - Button opens GHL form in browser popup
+
+2. **Resources** ([src/pages/Resources.tsx](src/pages/Resources.tsx))
+   - Removed email input form
+   - Added centered "Subscribe to Newsletter" button
+   - Button wrapped in `<div className="text-center">` for centering
+
+**Usage Pattern:**
+```tsx
+import { NewsletterModal } from '@/components/NewsletterModal';
+
+const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
+const openNewsletter = () => setIsNewsletterOpen(true);
+const closeNewsletter = () => setIsNewsletterOpen(false);
+
+// Button:
+<button onClick={openNewsletter} className="...">
+  Subscribe to Newsletter
+  <ArrowRight className="w-5 h-5" />
+</button>
+
+// Modal (renders nothing, just manages popup):
+<NewsletterModal isOpen={isNewsletterOpen} onClose={closeNewsletter} />
+```
+
+**GHL Form Details:**
+- Form ID: `87XreQhYJtAAT7XwLE0p`
+- Form Name: "MGC Website NewsLetter"
+- Form URL: `https://link.mesagroupconsulting.com/widget/form/87XreQhYJtAAT7XwLE0p`
+
+**Why Browser Popup Instead of Iframe/Modal:**
+- GHL's native `form_embed.js` script auto-triggered forms on page load
+- Iframe approach caused "two modals" issue (React wrapper + GHL popup)
+- Browser popup provides clean UX without interfering with GHL's scripts
+- User stays on Mesa Group site while form is in separate window
+
+**Technical Notes:**
+- Popup dimensions: 500x600 pixels, centered on screen
+- `scrollbars=yes,resizable=yes` for accessibility
+- No GHL embed script needed - direct URL opens in popup
+- State resets immediately after popup opens via `onClose()`
+
+---
+
+**Last Updated:** January 1, 2026
 **Project Status:** Active Development
