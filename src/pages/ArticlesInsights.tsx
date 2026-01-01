@@ -1,20 +1,21 @@
 import { useState } from 'react';
-import { Search, Clock, ArrowRight, BookOpen, TrendingUp, Building2, Scale, DollarSign, Mail, CheckCircle, Loader2 } from 'lucide-react';
+import { Search, Clock, ArrowRight, BookOpen, TrendingUp, Building2, Scale, DollarSign, Mail } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyModal } from '@/components/CalendlyModal';
+import { NewsletterModal } from '@/components/NewsletterModal';
 
 const ArticlesInsights = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [email, setEmail] = useState('');
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
   const navigate = useNavigate();
 
   const openCalendly = () => setIsCalendlyOpen(true);
   const closeCalendly = () => setIsCalendlyOpen(false);
+  const openNewsletter = () => setIsNewsletterOpen(true);
+  const closeNewsletter = () => setIsNewsletterOpen(false);
 
   const handleViewServicesClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -332,55 +333,17 @@ const ArticlesInsights = () => {
             Get our latest credit tips, financial strategies, and expert insights delivered straight to your inbox every week.
           </p>
 
-          <form onSubmit={handleNewsletterSubmit} className="max-w-md mx-auto">
-            <div className="flex flex-col sm:flex-row gap-4">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
-                required
-                disabled={isSubmitting}
-                className="flex-1 px-6 py-4 rounded-lg border-2 border-gray-600 bg-white text-gray-900 focus:border-[#f9c65d] focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
-              />
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? (
-                  <>
-                    <Loader2 className="w-5 h-5 animate-spin" />
-                    Subscribing...
-                  </>
-                ) : (
-                  <>
-                    Subscribe
-                    <ArrowRight className="w-5 h-5" />
-                  </>
-                )}
-              </button>
-            </div>
-          </form>
+          <button
+            onClick={openNewsletter}
+            className="px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold rounded-lg transition-colors inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+          >
+            Subscribe to Newsletter
+            <ArrowRight className="w-5 h-5" />
+          </button>
 
-          {submitStatus === 'success' && (
-            <div className="mt-4 p-4 bg-green-500 text-white rounded-lg flex items-center justify-center gap-2">
-              <CheckCircle className="w-5 h-5" />
-              <span>Successfully subscribed! Check your inbox for confirmation.</span>
-            </div>
-          )}
-
-          {submitStatus === 'error' && (
-            <div className="mt-4 p-4 bg-red-500 text-white rounded-lg flex items-center justify-center gap-2">
-              <span>Something went wrong. Please try again later.</span>
-            </div>
-          )}
-
-          {submitStatus === 'idle' && (
-            <p className="text-sm text-gray-400 mt-4">
-              No spam. Unsubscribe anytime.
-            </p>
-          )}
+          <p className="text-sm text-gray-400 mt-4">
+            No spam. Unsubscribe anytime.
+          </p>
 
         </div>
       </section>
@@ -421,6 +384,11 @@ const ArticlesInsights = () => {
         isOpen={isCalendlyOpen}
         onClose={closeCalendly}
         utmCampaign="Articles & Insights Page - Final CTA"
+      />
+
+      <NewsletterModal
+        isOpen={isNewsletterOpen}
+        onClose={closeNewsletter}
       />
 
       <Footer />

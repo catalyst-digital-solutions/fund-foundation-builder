@@ -16,24 +16,16 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyModal } from '@/components/CalendlyModal';
+import { NewsletterModal } from '@/components/NewsletterModal';
 
 const Resources = () => {
-  const [email, setEmail] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
 
   const openCalendly = () => setIsCalendlyOpen(true);
   const closeCalendly = () => setIsCalendlyOpen(false);
-
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setEmail('');
-      alert('Thank you for subscribing!');
-    }, 1000);
-  };
+  const openNewsletter = () => setIsNewsletterOpen(true);
+  const closeNewsletter = () => setIsNewsletterOpen(false);
 
   const resourceCategories = [
     {
@@ -345,30 +337,17 @@ const Resources = () => {
               </p>
             </div>
 
-            <form onSubmit={handleNewsletterSubmit} className="max-w-xl mx-auto">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email address"
-                  required
-                  className="flex-1 px-6 py-4 rounded-lg border-2 border-[#CBCBCB] focus:border-[#f9c65d] focus:ring-2 focus:ring-[#f9c65d]/20 outline-none transition-all text-[#3E3E3E]"
-                />
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] disabled:bg-[#CBCBCB] text-[#3E3E3E] font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
-                >
-                  {isSubmitting ? 'Subscribing...' : 'Subscribe'}
-                  {!isSubmitting && <ArrowRight className="w-5 h-5" />}
-                </button>
-              </div>
+            <button
+              onClick={openNewsletter}
+              className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
+            >
+              Subscribe to Newsletter
+              <ArrowRight className="w-5 h-5" />
+            </button>
 
-              <p className="text-sm text-[#3E3E3E]/60 text-center mt-4">
-                No spam. Unsubscribe anytime. We respect your privacy.
-              </p>
-            </form>
+            <p className="text-sm text-[#3E3E3E]/60 text-center mt-4">
+              No spam. Unsubscribe anytime. We respect your privacy.
+            </p>
 
           </div>
 
@@ -379,6 +358,11 @@ const Resources = () => {
         isOpen={isCalendlyOpen}
         onClose={closeCalendly}
         utmCampaign="Resources Page - Want Experts CTA"
+      />
+
+      <NewsletterModal
+        isOpen={isNewsletterOpen}
+        onClose={closeNewsletter}
       />
 
       <Footer />
