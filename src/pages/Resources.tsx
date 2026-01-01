@@ -337,17 +337,19 @@ const Resources = () => {
               </p>
             </div>
 
-            <button
-              onClick={openNewsletter}
-              className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
-            >
-              Subscribe to Newsletter
-              <ArrowRight className="w-5 h-5" />
-            </button>
+            <div className="text-center">
+              <button
+                onClick={openNewsletter}
+                className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
+              >
+                Subscribe to Newsletter
+                <ArrowRight className="w-5 h-5" />
+              </button>
 
-            <p className="text-sm text-[#3E3E3E]/60 text-center mt-4">
-              No spam. Unsubscribe anytime. We respect your privacy.
-            </p>
+              <p className="text-sm text-[#3E3E3E]/60 mt-4">
+                No spam. Unsubscribe anytime. We respect your privacy.
+              </p>
+            </div>
 
           </div>
 
