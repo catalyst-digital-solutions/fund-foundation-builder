@@ -19,6 +19,7 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyModal } from '@/components/CalendlyModal';
+import { NewsletterModal } from '@/components/NewsletterModal';
 import CreditUtilizationCalculator from '@/components/calculators/CreditUtilizationCalculator';
 import DebtPayoffCalculator from '@/components/calculators/DebtPayoffCalculator';
 import DTICalculator from '@/components/calculators/DTICalculator';
@@ -69,17 +70,13 @@ const calculators = [
 const FinancialCalculators = () => {
   const [activeCalculator, setActiveCalculator] = useState<CalculatorType>('hub');
   const [filter, setFilter] = useState<FilterType>('all');
-  const [email, setEmail] = useState('');
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
 
   const openCalendly = () => setIsCalendlyOpen(true);
   const closeCalendly = () => setIsCalendlyOpen(false);
-
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Newsletter signup:', email);
-    setEmail('');
-  };
+  const openNewsletter = () => setIsNewsletterOpen(true);
+  const closeNewsletter = () => setIsNewsletterOpen(false);
 
   const filteredCalculators = calculators.filter(calc => 
     filter === 'all' || calc.category === filter
@@ -355,33 +352,23 @@ const FinancialCalculators = () => {
       <section className="py-16 md:py-24 bg-[#3e3e3e]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Mail className="w-16 h-16 text-amber-400 mx-auto mb-6" />
-          
+
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             Get More Free <span className="text-amber-400">Tools & Tips</span>
           </h2>
-          
+
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
             Join our email list for exclusive calculators, downloadable resources, and expert financial strategies delivered weekly.
           </p>
 
-          <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto mb-4">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email address"
-              className="flex-1 px-6 py-4 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-400"
-              required
-            />
-            <button
-              type="submit"
-              className="px-8 py-4 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors whitespace-nowrap"
-            >
-              Subscribe Now
-            </button>
-          </form>
+          <button
+            onClick={openNewsletter}
+            className="px-8 py-4 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+          >
+            Subscribe Now
+          </button>
 
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 mt-4">
             No spam. Unsubscribe anytime.
           </p>
         </div>
@@ -436,6 +423,11 @@ const FinancialCalculators = () => {
         isOpen={isCalendlyOpen}
         onClose={closeCalendly}
         utmCampaign="Financial Calculators Page - Final CTA"
+      />
+
+      <NewsletterModal
+        isOpen={isNewsletterOpen}
+        onClose={closeNewsletter}
       />
 
       <Footer />

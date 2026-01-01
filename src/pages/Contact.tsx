@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowUpRight, Send, Mail, Phone, MapPin, Clock } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { NewsletterModal } from '@/components/NewsletterModal';
 import mesaGroupLogoWhite from '@/assets/mesa-group-logo-white.svg';
 
 const Contact = () => {
@@ -10,19 +11,15 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
 
-  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const openNewsletter = () => setIsNewsletterOpen(true);
+  const closeNewsletter = () => setIsNewsletterOpen(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
     console.log('Form submitted:', formData);
-  };
-
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle newsletter submission
-    console.log('Newsletter signup:', newsletterEmail);
   };
 
   return (
@@ -331,29 +328,28 @@ const Contact = () => {
               Subscribe to our <span className="text-[#f9c65d]">Newsletter</span> for free credit tips.
             </h2>
 
-            {/* Form */}
-            <form onSubmit={handleNewsletterSubmit} className="max-w-2xl mx-auto">
-              <div className="flex flex-col md:flex-row gap-3">
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  required
-                  value={newsletterEmail}
-                  onChange={(e) => setNewsletterEmail(e.target.value)}
-                  className="flex-1 px-6 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 text-base"
-                />
-                <button
-                  type="submit"
-                  className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold px-8 py-4 rounded-lg transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
-                >
-                  Submit
-                  <ArrowUpRight className="w-5 h-5" />
-                </button>
-              </div>
-            </form>
+            {/* Button */}
+            <div className="text-center">
+              <button
+                onClick={openNewsletter}
+                className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+              >
+                Subscribe to Newsletter
+                <ArrowUpRight className="w-5 h-5" />
+              </button>
+
+              <p className="text-sm text-gray-600 mt-4">
+                No spam. Unsubscribe anytime.
+              </p>
+            </div>
           </div>
         </div>
       </section>
+
+      <NewsletterModal
+        isOpen={isNewsletterOpen}
+        onClose={closeNewsletter}
+      />
 
       <Footer />
     </div>

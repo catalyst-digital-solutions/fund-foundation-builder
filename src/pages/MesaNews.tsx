@@ -24,6 +24,7 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyModal } from '@/components/CalendlyModal';
+import { NewsletterModal } from '@/components/NewsletterModal';
 
 import kget17Logo from '@/assets/kget-17-logo.png';
 import studio17Logo from '@/assets/studio-17-logo.png';
@@ -34,12 +35,13 @@ const MesaNews = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [sortOrder, setSortOrder] = useState('recent');
-  const [email, setEmail] = useState('');
-  const [firstName, setFirstName] = useState('');
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
 
   const openCalendly = () => setIsCalendlyOpen(true);
   const closeCalendly = () => setIsCalendlyOpen(false);
+  const openNewsletter = () => setIsNewsletterOpen(true);
+  const closeNewsletter = () => setIsNewsletterOpen(false);
 
   const categories = [
     {
@@ -146,11 +148,6 @@ const MesaNews = () => {
     { name: 'Telemundo', logo: telemundoLogo },
     { name: 'The CW', logo: cwLogo }
   ];
-
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Newsletter signup:', { email, firstName });
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -469,54 +466,19 @@ const MesaNews = () => {
               Get MESA news, company updates, and exclusive announcements delivered to your inbox. Be the first to know about new services, partnerships, and community events.
             </p>
 
-            <form onSubmit={handleNewsletterSubmit} className="space-y-4">
-              
-              <div className="grid md:grid-cols-2 gap-4">
-                
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                    First Name (Optional)
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                    placeholder="John"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address <span className="text-red-600">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="john@example.com"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent"
-                  />
-                </div>
-
-              </div>
-
+            <div className="text-center">
               <button
-                type="submit"
-                className="w-full bg-amber-400 text-gray-900 font-semibold py-4 px-6 rounded-lg hover:bg-amber-500 transition-colors shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                onClick={openNewsletter}
+                className="bg-amber-400 text-gray-900 font-semibold py-4 px-8 rounded-lg hover:bg-amber-500 transition-colors shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
               >
-                Subscribe
+                Subscribe to Newsletter
                 <Send className="w-5 h-5" />
               </button>
 
-            </form>
-
-            <p className="text-sm text-gray-600 text-center mt-6">
-              No spam. Unsubscribe anytime.
-            </p>
+              <p className="text-sm text-gray-600 mt-4">
+                No spam. Unsubscribe anytime.
+              </p>
+            </div>
 
           </div>
 
@@ -594,6 +556,11 @@ const MesaNews = () => {
         isOpen={isCalendlyOpen}
         onClose={closeCalendly}
         utmCampaign="Mesa News Page - Final CTA"
+      />
+
+      <NewsletterModal
+        isOpen={isNewsletterOpen}
+        onClose={closeNewsletter}
       />
 
       <Footer />

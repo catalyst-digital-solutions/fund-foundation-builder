@@ -8,6 +8,7 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyModal } from '@/components/CalendlyModal';
+import { NewsletterModal } from '@/components/NewsletterModal';
 
 interface TemplateCardProps {
   icon: React.ReactNode;
@@ -332,9 +333,12 @@ const LetterTemplates = () => {
   const [sortBy, setSortBy] = useState('popular');
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
 
   const openCalendly = () => setIsCalendlyOpen(true);
   const closeCalendly = () => setIsCalendlyOpen(false);
+  const openNewsletter = () => setIsNewsletterOpen(true);
+  const closeNewsletter = () => setIsNewsletterOpen(false);
 
   const filteredTemplates = templates.filter(template => {
     const matchesCategory = selectedCategory === 'all' || template.category === selectedCategory;
@@ -734,23 +738,18 @@ const LetterTemplates = () => {
           <p className="text-lg text-gray-700 text-center max-w-2xl mx-auto mb-8">
             Downloading templates is just the first step. Join our email list for ongoing credit strategies, dispute tips, and exclusive resources.
           </p>
-          
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
-              <div className="flex flex-col md:flex-row gap-4">
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  className="flex-1 px-6 py-4 border-2 border-gray-300 rounded-lg text-base focus:border-amber-400 focus:outline-none"
-                />
-                <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors whitespace-nowrap">
-                  Subscribe
-                </button>
-              </div>
-              <p className="text-sm text-gray-600 text-center mt-4">
-                No spam. Unsubscribe anytime.
-              </p>
-            </div>
+
+          <div className="text-center">
+            <button
+              onClick={openNewsletter}
+              className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+            >
+              Subscribe to Newsletter
+            </button>
+
+            <p className="text-sm text-gray-600 mt-4">
+              No spam. Unsubscribe anytime.
+            </p>
           </div>
         </div>
       </section>
@@ -854,6 +853,11 @@ const LetterTemplates = () => {
         isOpen={isCalendlyOpen}
         onClose={closeCalendly}
         utmCampaign="Letter Templates Page - Identity Theft CTA"
+      />
+
+      <NewsletterModal
+        isOpen={isNewsletterOpen}
+        onClose={closeNewsletter}
       />
 
       <Footer />
