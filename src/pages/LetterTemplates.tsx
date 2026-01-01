@@ -1,12 +1,13 @@
 import { useState } from 'react';
-import { 
-  FileText, Download, Search, CheckCircle, ArrowRight, Scale, 
+import {
+  FileText, Download, Search, CheckCircle, ArrowRight, Scale,
   DollarSign, Edit, Award, Shield, Edit3, Mail, Copy, AlignLeft,
   Paperclip, Clock, Target, Lightbulb, List, MapPin, File,
   Phone, ChevronDown, AlertTriangle, AlertCircle
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { CalendlyModal } from '@/components/CalendlyModal';
 
 interface TemplateCardProps {
   icon: React.ReactNode;
@@ -330,6 +331,10 @@ const LetterTemplates = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [sortBy, setSortBy] = useState('popular');
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+
+  const openCalendly = () => setIsCalendlyOpen(true);
+  const closeCalendly = () => setIsCalendlyOpen(false);
 
   const filteredTemplates = templates.filter(template => {
     const matchesCategory = selectedCategory === 'all' || template.category === selectedCategory;
@@ -535,14 +540,12 @@ const LetterTemplates = () => {
                 </div>
                 
                 <div className="flex justify-center">
-                  <a
-                    href="https://www.mesagroupconsulting.com/contact-us"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={openCalendly}
                     className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-8 rounded-lg transition-colors text-center"
                   >
                     Book Free Consultation
-                  </a>
+                  </button>
                 </div>
                 
                 <div className="mt-6 pt-6 border-t border-red-200">
@@ -848,6 +851,12 @@ const LetterTemplates = () => {
           </div>
         </div>
       </div>
+
+      <CalendlyModal
+        isOpen={isCalendlyOpen}
+        onClose={closeCalendly}
+        utmCampaign="Letter Templates Page - Identity Theft CTA"
+      />
 
       <Footer />
     </div>

@@ -1,23 +1,24 @@
 import { useState } from 'react';
-import { 
-  Calculator, 
-  ArrowDown, 
-  ArrowRight, 
-  Mail, 
-  Calendar, 
+import {
+  Calculator,
+  ArrowDown,
+  ArrowRight,
+  Mail,
+  Calendar,
   Plus,
-  CreditCard, 
-  TrendingDown, 
-  PieChart, 
-  DollarSign, 
+  CreditCard,
+  TrendingDown,
+  PieChart,
+  DollarSign,
   Shield,
-  Lock, 
-  Award, 
+  Lock,
+  Award,
   Target,
   AlertCircle
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { CalendlyModal } from '@/components/CalendlyModal';
 import CreditUtilizationCalculator from '@/components/calculators/CreditUtilizationCalculator';
 import DebtPayoffCalculator from '@/components/calculators/DebtPayoffCalculator';
 import DTICalculator from '@/components/calculators/DTICalculator';
@@ -69,6 +70,10 @@ const FinancialCalculators = () => {
   const [activeCalculator, setActiveCalculator] = useState<CalculatorType>('hub');
   const [filter, setFilter] = useState<FilterType>('all');
   const [email, setEmail] = useState('');
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+
+  const openCalendly = () => setIsCalendlyOpen(true);
+  const closeCalendly = () => setIsCalendlyOpen(false);
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -401,15 +406,13 @@ const FinancialCalculators = () => {
               View Our Services
               <ArrowRight className="w-5 h-5" />
             </a>
-            <a
-              href="https://www.mesagroupconsulting.com/contact-us"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={openCalendly}
               className="inline-flex items-center justify-center gap-2 bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg border-2 border-gray-300 hover:border-amber-400 transition-all"
             >
               Book Free Consultation
               <Calendar className="w-5 h-5" />
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -428,6 +431,12 @@ const FinancialCalculators = () => {
           </div>
         </div>
       </section>
+
+      <CalendlyModal
+        isOpen={isCalendlyOpen}
+        onClose={closeCalendly}
+        utmCampaign="Financial Calculators Page - Final CTA"
+      />
 
       <Footer />
     </div>
