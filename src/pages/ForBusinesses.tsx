@@ -346,7 +346,7 @@ const ForBusinesses = () => {
               </div>
 
               <Link
-                to="/business-funding-2"
+                to="/business-funding"
                 className="block w-full text-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 border-2 border-amber-500"
               >
                 Explore Business Funding Options →
@@ -408,7 +408,7 @@ const ForBusinesses = () => {
               </div>
 
               <Link
-                to="/zero-interest-business-funding-2"
+                to="/zero-interest-business-funding"
                 className="block w-full text-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 border-2 border-amber-500"
               >
                 Discover 0% Interest Funding →
