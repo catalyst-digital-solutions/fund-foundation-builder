@@ -49,14 +49,14 @@ To test the API locally with Vercel CLI:
 # Install Vercel CLI (if not already installed)
 npm i -g vercel
 
-# Run local development server
-vercel dev
+# Run local development server on port 5002
+vercel dev --listen 5002
 ```
 
 Then test with:
 
 ```bash
-curl -X POST http://localhost:3000/api/newsletter/subscribe \
+curl -X POST http://localhost:5002/api/newsletter/subscribe \
   -H "Content-Type: application/json" \
   -d '{
     "email": "test@example.com",

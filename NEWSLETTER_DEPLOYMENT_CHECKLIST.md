@@ -28,14 +28,14 @@ GHL_LOCATION_ID=your_actual_ghl_location_id_here
 # Install Vercel CLI if not already installed
 npm install -g vercel
 
-# Start local development server
-vercel dev
+# Start local development server on port 5002
+vercel dev --listen 5002
 ```
 
 Then open a new terminal and test with curl:
 
 ```bash
-curl -X POST http://localhost:3000/api/newsletter/subscribe \
+curl -X POST http://localhost:5002/api/newsletter/subscribe \
   -H "Content-Type: application/json" \
   -d '{
     "email": "your-test-email@example.com",
