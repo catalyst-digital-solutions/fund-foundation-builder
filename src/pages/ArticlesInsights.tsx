@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, Clock, ArrowRight, BookOpen, TrendingUp, Building2, Scale, DollarSign, Mail, CheckCircle } from 'lucide-react';
+import { Search, Clock, ArrowRight, BookOpen, TrendingUp, Building2, Scale, DollarSign, Mail, CheckCircle, Loader2 } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -9,6 +9,8 @@ const ArticlesInsights = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [email, setEmail] = useState('');
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const navigate = useNavigate();
 
   const openCalendly = () => setIsCalendlyOpen(true);
@@ -116,10 +118,51 @@ const ArticlesInsights = () => {
     }
   ];
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Newsletter signup:', email);
-    setEmail('');
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      // TODO: Replace with actual backend endpoint
+      // This should call your backend API that proxies to GHL Contacts API
+      const response = await fetch('/api/newsletter/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          source: 'Mesa React SPA - Articles & Insights',
+          tags: ['newsletter', 'articles-page'],
+          utmSource: 'mesa-website',
+          utmMedium: 'newsletter-signup',
+          utmCampaign: 'articles-insights',
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Subscription failed');
+      }
+
+      setSubmitStatus('success');
+      setEmail('');
+
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus('idle');
+      }, 5000);
+    } catch (error) {
+      console.error('Newsletter signup error:', error);
+      setSubmitStatus('error');
+
+      // Reset error message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus('idle');
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -297,21 +340,47 @@ const ArticlesInsights = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 required
-                className="flex-1 px-6 py-4 rounded-lg border-2 border-gray-600 bg-white text-gray-900 focus:border-[#f9c65d] focus:outline-none"
+                disabled={isSubmitting}
+                className="flex-1 px-6 py-4 rounded-lg border-2 border-gray-600 bg-white text-gray-900 focus:border-[#f9c65d] focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
               />
               <button
                 type="submit"
-                className="px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg"
+                disabled={isSubmitting}
+                className="px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Subscribe
-                <ArrowRight className="w-5 h-5" />
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                    Subscribing...
+                  </>
+                ) : (
+                  <>
+                    Subscribe
+                    <ArrowRight className="w-5 h-5" />
+                  </>
+                )}
               </button>
             </div>
           </form>
 
-          <p className="text-sm text-gray-400 mt-4">
-            No spam. Unsubscribe anytime.
-          </p>
+          {submitStatus === 'success' && (
+            <div className="mt-4 p-4 bg-green-500 text-white rounded-lg flex items-center justify-center gap-2">
+              <CheckCircle className="w-5 h-5" />
+              <span>Successfully subscribed! Check your inbox for confirmation.</span>
+            </div>
+          )}
+
+          {submitStatus === 'error' && (
+            <div className="mt-4 p-4 bg-red-500 text-white rounded-lg flex items-center justify-center gap-2">
+              <span>Something went wrong. Please try again later.</span>
+            </div>
+          )}
+
+          {submitStatus === 'idle' && (
+            <p className="text-sm text-gray-400 mt-4">
+              No spam. Unsubscribe anytime.
+            </p>
+          )}
 
         </div>
       </section>
