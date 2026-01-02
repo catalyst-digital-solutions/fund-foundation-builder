@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, Clock, ArrowRight, BookOpen, TrendingUp, Building2, Scale, DollarSign, Mail } from 'lucide-react';
+import { Search, Clock, ArrowRight, BookOpen, TrendingUp, Building2, Scale, DollarSign, Mail, CheckCircle } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -119,52 +119,6 @@ const ArticlesInsights = () => {
     }
   ];
 
-  const handleNewsletterSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-
-    try {
-      // TODO: Replace with actual backend endpoint
-      // This should call your backend API that proxies to GHL Contacts API
-      const response = await fetch('/api/newsletter/subscribe', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email,
-          source: 'Mesa React SPA - Articles & Insights',
-          tags: ['newsletter', 'articles-page'],
-          utmSource: 'mesa-website',
-          utmMedium: 'newsletter-signup',
-          utmCampaign: 'articles-insights',
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Subscription failed');
-      }
-
-      setSubmitStatus('success');
-      setEmail('');
-
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setSubmitStatus('idle');
-      }, 5000);
-    } catch (error) {
-      console.error('Newsletter signup error:', error);
-      setSubmitStatus('error');
-
-      // Reset error message after 5 seconds
-      setTimeout(() => {
-        setSubmitStatus('idle');
-      }, 5000);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -383,7 +337,13 @@ const ArticlesInsights = () => {
       <CalendlyModal
         isOpen={isCalendlyOpen}
         onClose={closeCalendly}
-        utmCampaign="Articles & Insights Page - Final CTA"
+        prefillOptions={{
+          utm: {
+            source: 'mesa-website',
+            medium: 'website',
+            campaign: 'Articles & Insights Page - Final CTA'
+          }
+        }}
       />
 
       <NewsletterModal
