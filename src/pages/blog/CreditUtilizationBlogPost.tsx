@@ -80,7 +80,7 @@ const CreditUtilizationBlogPost = () => {
         {/* Hero Image */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
           <img
-            src="/blog-post-images/post-01-img-1-woman-reviewing-credit-card-statement.png"
+            src="/blog-post-images/post-01-img-1-woman-reviewing-credit-card-statement-v2.png"
             alt="Woman reviewing credit card statement to understand billing cycle timing"
             className="w-full rounded-xl shadow-lg"
           />
@@ -332,7 +332,7 @@ const CreditUtilizationBlogPost = () => {
         {/* Payment Strategy Chart */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-12">
           <img
-            src="/blog-post-images/post-01-img-3-payment-timing-strategy-comparison-chart.png"
+            src="/blog-post-images/post-01-img-3-payment-timing-strategy-comparison-chart-v2.png"
             alt="Side-by-side comparison showing credit score impact of different payment timing strategies"
             className="w-full rounded-xl shadow-lg"
           />

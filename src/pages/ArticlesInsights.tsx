@@ -36,7 +36,7 @@ const ArticlesInsights = () => {
       excerpt: "Yes, credit utilization affects your score even if you pay in full monthly. The timing of when your balance gets reported matters more than whether you eventually pay it off. Learn why statement closing dates are more important than due dates.",
       category: "Credit Truth Thursdays",
       readTime: "8 min read",
-      image: "/blog-post-images/post-01-img-1-woman-reviewing-credit-card-statement.png"
+      image: "/blog-post-images/post-01-img-1-woman-reviewing-credit-card-statement-v2.png"
     },
     {
       id: 2,
