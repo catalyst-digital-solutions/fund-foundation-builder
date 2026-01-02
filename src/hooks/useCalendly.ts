@@ -53,6 +53,7 @@ export interface CalendlyPrefillOptions {
 export const useCalendly = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalPrefillOptions, setModalPrefillOptions] = useState<CalendlyPrefillOptions | undefined>();
+  const [modalCustomUrl, setModalCustomUrl] = useState<string | undefined>();
 
   useEffect(() => {
     // Check if Calendly script is already loaded
@@ -83,29 +84,33 @@ export const useCalendly = () => {
    * Open Calendly - automatically chooses between popup widget or custom modal
    * based on viewport orientation
    */
-  const openCalendly = useCallback((options?: CalendlyPrefillOptions) => {
+  const openCalendly = useCallback((options?: CalendlyPrefillOptions, customUrl?: string) => {
     // Detect if we're on a vertical monitor/portrait orientation
     if (isVerticalViewport()) {
       // Use custom modal for vertical monitors
       setModalPrefillOptions(options);
+      setModalCustomUrl(customUrl);
       setIsModalOpen(true);
     } else {
       // Use Calendly's popup widget for landscape
-      openPopupWidget(options);
+      openPopupWidget(options, customUrl);
     }
   }, []);
 
   /**
    * Open Calendly popup widget (landscape mode)
    */
-  const openPopupWidget = (options?: CalendlyPrefillOptions) => {
+  const openPopupWidget = (options?: CalendlyPrefillOptions, customUrl?: string) => {
     if (!window.Calendly) {
       console.error('Calendly script not loaded yet');
       return;
     }
 
+    // Use custom URL if provided, otherwise use default
+    const baseUrl = customUrl || CALENDLY_URL;
+
     // Build URL with query parameters
-    let url = `${CALENDLY_URL}?primary_color=${CALENDLY_PRIMARY_COLOR}`;
+    let url = `${baseUrl}?primary_color=${CALENDLY_PRIMARY_COLOR}`;
 
     // Add custom answers as URL parameters
     if (options?.customAnswers) {
@@ -153,6 +158,7 @@ export const useCalendly = () => {
     openPopup: openCalendly,
     isModalOpen,
     modalPrefillOptions,
+    modalCustomUrl,
     closeModal,
   };
 };

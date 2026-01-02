@@ -12,6 +12,8 @@ interface CalendlyPopupButtonProps {
   showArrow?: boolean;
   /** Pre-fill options for Calendly form */
   prefillOptions?: CalendlyPrefillOptions;
+  /** Custom Calendly URL (overrides default) */
+  customUrl?: string;
   /** Custom onClick handler (will be called before opening Calendly) */
   onClick?: () => void;
 }
@@ -26,6 +28,7 @@ export const CalendlyPopupButton: React.FC<CalendlyPopupButtonProps> = ({
   className = '',
   showArrow = true,
   prefillOptions,
+  customUrl,
   onClick,
 }) => {
   const { openPopup, isModalOpen, modalPrefillOptions, closeModal } = useCalendly();
@@ -37,7 +40,7 @@ export const CalendlyPopupButton: React.FC<CalendlyPopupButtonProps> = ({
     }
 
     // Open Calendly popup
-    openPopup(prefillOptions);
+    openPopup(prefillOptions, customUrl);
   };
 
   // Default Mesa Group button styles
@@ -59,6 +62,7 @@ export const CalendlyPopupButton: React.FC<CalendlyPopupButtonProps> = ({
         isOpen={isModalOpen}
         onClose={closeModal}
         prefillOptions={modalPrefillOptions}
+        customUrl={customUrl}
       />
     </>
   );

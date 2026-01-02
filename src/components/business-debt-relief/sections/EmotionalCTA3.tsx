@@ -24,6 +24,7 @@ const EmotionalCTA3 = () => {
             text="Start Your Debt-Free Journey"
             className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-flex items-center gap-2"
             showArrow={true}
+            customUrl="https://calendly.com/d/43c-vpc-dpf/business-debt-help?embed_domain=mesagroupcapital.com&embed_type=Inline&hide_gdpr_banner=1&utm_source=wl&utm_term=mesagroup"
             prefillOptions={{
               customAnswers: {
                 serviceType: 'Business services',
