@@ -32,11 +32,11 @@ const ArticlesInsights = () => {
   const featuredArticles = [
     {
       id: 1,
-      title: "How Credit Scores Are Actually Calculated: The Complete Breakdown",
-      excerpt: "Understanding the exact factors that determine your credit score is the first step to improving it. Learn the real math behind FICO scores.",
-      category: "Credit Fundamentals",
+      title: "Does Credit Utilization Matter If You Pay in Full Every Month?",
+      excerpt: "Yes, credit utilization affects your score even if you pay in full monthly. The timing of when your balance gets reported matters more than whether you eventually pay it off. Learn why statement closing dates are more important than due dates.",
+      category: "Credit Truth Thursdays",
       readTime: "8 min read",
-      image: "/api/placeholder/400/250"
+      image: "/blog-post-images/post-01-img-1-woman-reviewing-credit-card-statement.png"
     },
     {
       id: 2,
@@ -167,43 +167,60 @@ const ArticlesInsights = () => {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredArticles.map((article) => (
-              <article 
-                key={article.id}
-                className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer"
-              >
-                <div className="relative h-48 bg-gradient-to-br from-[#f9c65d]/20 to-[#bb9446]/20 overflow-hidden flex items-center justify-center">
-                  <BookOpen className="w-16 h-16 text-[#bb9446]" />
-                  <div className="absolute top-4 left-4">
-                    <span className="inline-block px-3 py-1 bg-[#f9c65d] text-gray-900 text-sm font-semibold rounded-full">
-                      {article.category}
-                    </span>
+            {featuredArticles.map((article) => {
+              const isFirstArticle = article.id === 1;
+              const cardContent = (
+                <>
+                  <div className="relative h-48 bg-gradient-to-br from-[#f9c65d]/20 to-[#bb9446]/20 overflow-hidden flex items-center justify-center">
+                    <BookOpen className="w-16 h-16 text-[#bb9446]" />
+                    <div className="absolute top-4 left-4">
+                      <span className="inline-block px-3 py-1 bg-[#f9c65d] text-gray-900 text-sm font-semibold rounded-full">
+                        {article.category}
+                      </span>
+                    </div>
                   </div>
-                </div>
 
-                <div className="p-6 space-y-4">
-                  <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <Clock className="w-4 h-4" />
-                    <span>{article.readTime}</span>
+                  <div className="p-6 space-y-4">
+                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                      <Clock className="w-4 h-4" />
+                      <span>{article.readTime}</span>
+                    </div>
+
+                    <h3 className="text-xl font-bold text-gray-900 leading-tight group-hover:text-[#bb9446] transition-colors">
+                      {article.title}
+                    </h3>
+
+                    <p className="text-gray-600 leading-relaxed">
+                      {article.excerpt}
+                    </p>
+
+                    <div className="pt-4">
+                      <span className="inline-flex items-center text-[#bb9446] font-semibold group-hover:gap-2 transition-all">
+                        Read Article
+                        <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </span>
+                    </div>
                   </div>
-                  
-                  <h3 className="text-xl font-bold text-gray-900 leading-tight group-hover:text-[#bb9446] transition-colors">
-                    {article.title}
-                  </h3>
-                  
-                  <p className="text-gray-600 leading-relaxed">
-                    {article.excerpt}
-                  </p>
-                  
-                  <div className="pt-4">
-                    <span className="inline-flex items-center text-[#bb9446] font-semibold group-hover:gap-2 transition-all">
-                      Read Article
-                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </span>
-                  </div>
-                </div>
-              </article>
-            ))}
+                </>
+              );
+
+              return isFirstArticle ? (
+                <Link
+                  key={article.id}
+                  to="/blog/does-credit-utilization-matter-if-you-pay-in-full-every-month"
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
+                >
+                  {cardContent}
+                </Link>
+              ) : (
+                <article
+                  key={article.id}
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer"
+                >
+                  {cardContent}
+                </article>
+              );
+            })}
           </div>
 
         </div>

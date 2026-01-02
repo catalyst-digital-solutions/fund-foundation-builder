@@ -32,6 +32,7 @@ import BusinessFunding from "./pages/BusinessFunding";
 import BusinessDebtRelief from "./pages/BusinessDebtRelief";
 import MesaNews from "./pages/MesaNews";
 import Contact from "./pages/Contact";
+import CreditUtilizationBlogPost from "./pages/blog/CreditUtilizationBlogPost";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ const App = () => (
           <Route path="/resources" element={<Resources />} />
           <Route path="/resources/articles" element={<ArticlesInsights />} />
           <Route path="/resources/news" element={<MesaNews />} />
+          <Route path="/blog/does-credit-utilization-matter-if-you-pay-in-full-every-month" element={<CreditUtilizationBlogPost />} />
           <Route path="/resources/calculators" element={<FinancialCalculators />} />
           <Route path="/resources/templates" element={<LetterTemplates />} />
           <Route path="/business-credit" element={<Index />} />
