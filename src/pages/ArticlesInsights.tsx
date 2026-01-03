@@ -173,10 +173,14 @@ const ArticlesInsights = () => {
               const isThirdArticle = article.id === 3;
               const cardContent = (
                 <>
-                  <div className="relative h-48 bg-gradient-to-br from-[#f9c65d]/20 to-[#bb9446]/20 overflow-hidden flex items-center justify-center">
-                    <BookOpen className="w-16 h-16 text-[#bb9446]" />
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                     <div className="absolute top-4 left-4">
-                      <span className="inline-block px-3 py-1 bg-[#f9c65d] text-gray-900 text-sm font-semibold rounded-full">
+                      <span className="inline-block px-3 py-1 bg-[#f9c65d] text-gray-900 text-sm font-semibold rounded-full shadow-lg">
                         {article.category}
                       </span>
                     </div>
