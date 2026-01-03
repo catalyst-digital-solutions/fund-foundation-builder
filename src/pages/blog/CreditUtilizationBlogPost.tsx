@@ -332,7 +332,7 @@ const CreditUtilizationBlogPost = () => {
         {/* Payment Strategy Chart */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-12">
           <img
-            src="/blog-post-images/post-01-img-3-payment-timing-strategy-comparison-chart-v2.png"
+            src="/blog-post-images/post-01-img-3-payment-timing-strategy-comparison-chart-v2.jpeg"
             alt="Side-by-side comparison showing credit score impact of different payment timing strategies"
             className="w-full rounded-xl shadow-lg"
           />
