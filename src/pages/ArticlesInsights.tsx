@@ -48,11 +48,11 @@ const ArticlesInsights = () => {
     },
     {
       id: 3,
-      title: "Business Funding Options When You Have Bad Personal Credit",
-      excerpt: "Your personal credit score doesn't have to block your business growth. Discover funding alternatives that look beyond FICO.",
-      category: "Business Funding",
+      title: "Debt Relief vs Debt Consolidation: Which One Is Right for You?",
+      excerpt: "Debt relief and debt consolidation solve different problems. Consolidation reorganizes your debt at better terms. Relief reduces what you owe through negotiation. Learn which path fits your situation.",
+      category: "Money Mondays",
       readTime: "10 min read",
-      image: "/api/placeholder/400/250"
+      image: "/blog-post-images/post-03-img-1-stressed-person-choosing-debt-options.png"
     }
   ];
 
@@ -170,6 +170,7 @@ const ArticlesInsights = () => {
             {featuredArticles.map((article) => {
               const isFirstArticle = article.id === 1;
               const isSecondArticle = article.id === 2;
+              const isThirdArticle = article.id === 3;
               const cardContent = (
                 <>
                   <div className="relative h-48 bg-gradient-to-br from-[#f9c65d]/20 to-[#bb9446]/20 overflow-hidden flex items-center justify-center">
@@ -220,6 +221,16 @@ const ArticlesInsights = () => {
                   <Link
                     key={article.id}
                     to="/blog/what-is-wfbna-on-credit-report"
+                    className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
+                  >
+                    {cardContent}
+                  </Link>
+                );
+              } else if (isThirdArticle) {
+                return (
+                  <Link
+                    key={article.id}
+                    to="/blog/debt-relief-vs-debt-consolidation"
                     className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
                   >
                     {cardContent}
