@@ -586,10 +586,15 @@ const WFBNABlogPost = () => {
               Related Articles
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
+              {/* Article 1: Credit Utilization */}
               <Link to="/blog/does-credit-utilization-matter-if-you-pay-in-full-every-month" className="group">
-                <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-200">
-                  <div className="h-48 bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
-                    <CheckCircle className="w-16 h-16 text-amber-600" />
+                <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
+                  <div className="h-48 overflow-hidden">
+                    <img
+                      src="/blog-post-images/post-01-img-1-woman-reviewing-credit-card-statement-v2.png"
+                      alt="Woman reviewing credit card statement"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
                   <div className="p-6">
                     <div className="text-sm text-amber-600 font-semibold mb-2">Credit Truth Thursdays</div>
@@ -603,39 +608,48 @@ const WFBNABlogPost = () => {
                 </div>
               </Link>
 
-              <div className="group cursor-pointer opacity-60">
-                <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
-                  <div className="h-48 bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center">
-                    <Mail className="w-16 h-16 text-blue-600" />
+              {/* Article 3: Debt Relief vs Consolidation */}
+              <Link to="/blog/debt-relief-vs-debt-consolidation" className="group">
+                <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
+                  <div className="h-48 overflow-hidden">
+                    <img
+                      src="/blog-post-images/post-03-img-1-stressed-person-choosing-debt-options.png"
+                      alt="Person stressed about debt options"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
                   <div className="p-6">
-                    <div className="text-sm text-gray-500 font-semibold mb-2">Coming Soon</div>
-                    <h4 className="font-bold text-gray-900 mb-2">
-                      More Articles Coming Soon
+                    <div className="text-sm text-green-600 font-semibold mb-2">Money Mondays</div>
+                    <h4 className="font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors">
+                      Debt Relief vs Debt Consolidation
                     </h4>
                     <p className="text-sm text-gray-600">
-                      We're working on more helpful credit and finance articles for you.
+                      Learn the difference between debt relief and consolidation, and which solution fits your situation.
                     </p>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="group cursor-pointer opacity-60">
-                <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
-                  <div className="h-48 bg-gradient-to-br from-green-100 to-emerald-100 flex items-center justify-center">
-                    <Mail className="w-16 h-16 text-green-600" />
-                  </div>
-                  <div className="p-6">
-                    <div className="text-sm text-gray-500 font-semibold mb-2">Coming Soon</div>
+              {/* Browse All Articles */}
+              <Link to="/resources/articles" className="group">
+                <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl border-2 border-amber-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col justify-center p-6">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <ArrowRight className="w-6 h-6 text-gray-900" />
+                    </div>
                     <h4 className="font-bold text-gray-900 mb-2">
-                      More Articles Coming Soon
+                      Explore All Articles
                     </h4>
-                    <p className="text-sm text-gray-600">
-                      We're working on more helpful credit and finance articles for you.
+                    <p className="text-sm text-gray-700 mb-3">
+                      Discover more credit tips and financial strategies.
                     </p>
+                    <div className="inline-flex items-center text-amber-600 text-sm font-semibold group-hover:text-amber-700">
+                      View All
+                      <ArrowRight className="ml-1 w-4 h-4" />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

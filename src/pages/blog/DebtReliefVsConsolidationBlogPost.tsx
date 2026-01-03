@@ -607,53 +607,67 @@ const DebtReliefVsConsolidationBlogPost = () => {
             Related Articles
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link to="/resources/articles" className="group">
-              <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-200">
-                <div className="h-48 bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
-                  <CheckCircle className="w-16 h-16 text-amber-600" />
+            {/* Article 1: Credit Utilization */}
+            <Link to="/blog/does-credit-utilization-matter-if-you-pay-in-full-every-month" className="group">
+              <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src="/blog-post-images/post-01-img-1-woman-reviewing-credit-card-statement-v2.png"
+                    alt="Woman reviewing credit card statement"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <div className="p-6">
-                  <div className="text-sm text-amber-600 font-semibold mb-2">Credit Building</div>
+                  <div className="text-sm text-amber-600 font-semibold mb-2">Credit Truth Thursdays</div>
                   <h4 className="font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors">
-                    Rebuilding Credit After Debt Relief
+                    Does Credit Utilization Matter If You Pay in Full?
                   </h4>
                   <p className="text-sm text-gray-600">
-                    Step-by-step strategies for recovering your credit score after debt settlement.
+                    Learn why statement closing dates matter more than due dates for your credit score.
                   </p>
                 </div>
               </div>
             </Link>
 
-            <Link to="/resources/articles" className="group">
-              <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-200">
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center">
-                  <DollarSign className="w-16 h-16 text-blue-600" />
+            {/* Article 2: WFBNA */}
+            <Link to="/blog/what-is-wfbna-on-credit-report" className="group">
+              <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src="/blog-post-images/post-02-img-1-confused-person-reviewing-credit-report.png"
+                    alt="Confused person reviewing credit report"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <div className="p-6">
-                  <div className="text-sm text-amber-600 font-semibold mb-2">Debt Solutions</div>
+                  <div className="text-sm text-blue-600 font-semibold mb-2">What's That Wednesday</div>
                   <h4 className="font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors">
-                    Complete Guide to Debt Consolidation Loans
+                    What Is WFBNA on Your Credit Report?
                   </h4>
                   <p className="text-sm text-gray-600">
-                    Everything you need to know about qualifying, comparing, and choosing consolidation loans.
+                    WFBNA stands for Wells Fargo Bank N.A. Learn when this code is normal and when it signals a problem.
                   </p>
                 </div>
               </div>
             </Link>
 
+            {/* Browse All Articles */}
             <Link to="/resources/articles" className="group">
-              <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-200">
-                <div className="h-48 bg-gradient-to-br from-green-100 to-emerald-100 flex items-center justify-center">
-                  <TrendingUp className="w-16 h-16 text-green-600" />
-                </div>
-                <div className="p-6">
-                  <div className="text-sm text-amber-600 font-semibold mb-2">Credit Protection</div>
-                  <h4 className="font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors">
-                    Protect Your Progress with Credit Monitoring
+              <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl border-2 border-amber-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col justify-center p-6">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <ArrowRight className="w-6 h-6 text-gray-900" />
+                  </div>
+                  <h4 className="font-bold text-gray-900 mb-2">
+                    Explore All Articles
                   </h4>
-                  <p className="text-sm text-gray-600">
-                    Track your credit recovery and catch issues before they derail your progress.
+                  <p className="text-sm text-gray-700 mb-3">
+                    Discover more credit tips and financial strategies.
                   </p>
+                  <div className="inline-flex items-center text-amber-600 text-sm font-semibold group-hover:text-amber-700">
+                    View All
+                    <ArrowRight className="ml-1 w-4 h-4" />
+                  </div>
                 </div>
               </div>
             </Link>

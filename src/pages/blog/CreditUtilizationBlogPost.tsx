@@ -644,23 +644,82 @@ const CreditUtilizationBlogPost = () => {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-                <span className="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-sm font-semibold rounded-full mb-4">
-                  Credit Fundamentals
-                </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Coming Soon
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  More credit insights coming soon.
-                </p>
-                <Link to="/resources/articles" className="inline-flex items-center text-amber-600 font-semibold hover:text-amber-700">
-                  Browse All Articles
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
+            {/* Article 2: WFBNA */}
+            <Link to="/blog/what-is-wfbna-on-credit-report" className="group">
+              <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src="/blog-post-images/post-02-img-1-confused-person-reviewing-credit-report.png"
+                    alt="Confused person reviewing credit report"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-sm font-semibold rounded-full mb-3">
+                    What's That Wednesday
+                  </span>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-amber-600 transition-colors">
+                    What Is WFBNA on Your Credit Report?
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    WFBNA stands for Wells Fargo Bank N.A. Learn when this code is normal and when it signals a problem.
+                  </p>
+                  <div className="flex items-center text-amber-600 font-semibold group-hover:text-amber-700">
+                    Read Article
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </div>
+                </div>
               </div>
-            ))}
+            </Link>
+
+            {/* Article 3: Debt Relief vs Consolidation */}
+            <Link to="/blog/debt-relief-vs-debt-consolidation" className="group">
+              <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src="/blog-post-images/post-03-img-1-stressed-person-choosing-debt-options.png"
+                    alt="Person stressed about debt options"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <span className="inline-block px-3 py-1 bg-green-100 text-green-800 text-sm font-semibold rounded-full mb-3">
+                    Money Mondays
+                  </span>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-amber-600 transition-colors">
+                    Debt Relief vs Debt Consolidation
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Learn the difference between debt relief and consolidation, and which solution fits your situation.
+                  </p>
+                  <div className="flex items-center text-amber-600 font-semibold group-hover:text-amber-700">
+                    Read Article
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            {/* Browse All Articles */}
+            <Link to="/resources/articles" className="group">
+              <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl border-2 border-amber-200 overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col justify-center p-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <ArrowRight className="w-8 h-8 text-gray-900" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    Explore All Articles
+                  </h3>
+                  <p className="text-gray-700 mb-4">
+                    Discover more credit tips, financial strategies, and money insights.
+                  </p>
+                  <div className="inline-flex items-center text-amber-600 font-semibold group-hover:text-amber-700">
+                    View Articles & Insights
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </div>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
