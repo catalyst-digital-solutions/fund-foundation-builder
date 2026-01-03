@@ -498,12 +498,12 @@ const WFBNABlogPost = () => {
 
         {/* CTA Section - Credit Monitoring */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-12">
-          <div className="bg-gradient-to-br from-blue-900 to-indigo-900 rounded-2xl p-8 md:p-12">
+          <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2a2a2a] rounded-2xl p-8 md:p-12 border-2 border-[#bb9446]">
             <div className="max-w-2xl mx-auto text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Track Your Credit Report <span className="text-amber-400">Changes</span>
+                Track Your Credit Report <span className="text-[#f9c65d]">Changes</span>
               </h3>
-              <p className="text-gray-200 leading-relaxed mb-8">
+              <p className="text-[#e5d2af] leading-relaxed mb-8">
                 Get real-time alerts about new accounts, balance changes, and potential fraud with 3-bureau credit monitoring.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -511,14 +511,14 @@ const WFBNABlogPost = () => {
                   href="https://smartcredit.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-[#bb9446]"
                 >
                   Start Monitoring Your Credit
                   <ArrowRight className="w-5 h-5" />
                 </a>
                 <button
                   onClick={openCalendly}
-                  className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-gray-900 font-semibold px-8 py-4 rounded-lg transition-all duration-200"
+                  className="inline-flex items-center justify-center gap-2 bg-white hover:bg-[#f8d899] text-gray-900 font-semibold px-8 py-4 rounded-lg transition-all duration-200 border-2 border-[#cbcbcb]"
                 >
                   Get Expert Help
                 </button>
