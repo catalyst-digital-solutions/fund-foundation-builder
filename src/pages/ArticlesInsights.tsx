@@ -40,11 +40,11 @@ const ArticlesInsights = () => {
     },
     {
       id: 2,
-      title: "How to Dispute Errors on Your Credit Report (Step-by-Step Guide)",
-      excerpt: "A comprehensive walkthrough of the credit dispute process, including letter templates and timeline expectations.",
-      category: "Credit Repair Strategies",
-      readTime: "12 min read",
-      image: "/api/placeholder/400/250"
+      title: "What Is WFBNA on Your Credit Report? (Wells Fargo Explained)",
+      excerpt: "WFBNA stands for Wells Fargo Bank N.A. and appears on credit reports for Wells Fargo products. Learn when this code is normal and when it signals a problem you need to address.",
+      category: "What's That Wednesday",
+      readTime: "6 min read",
+      image: "/blog-post-images/post-02-img-1-confused-person-reviewing-credit-report.png"
     },
     {
       id: 3,
@@ -169,6 +169,7 @@ const ArticlesInsights = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredArticles.map((article) => {
               const isFirstArticle = article.id === 1;
+              const isSecondArticle = article.id === 2;
               const cardContent = (
                 <>
                   <div className="relative h-48 bg-gradient-to-br from-[#f9c65d]/20 to-[#bb9446]/20 overflow-hidden flex items-center justify-center">
@@ -204,22 +205,36 @@ const ArticlesInsights = () => {
                 </>
               );
 
-              return isFirstArticle ? (
-                <Link
-                  key={article.id}
-                  to="/blog/does-credit-utilization-matter-if-you-pay-in-full-every-month"
-                  className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
-                >
-                  {cardContent}
-                </Link>
-              ) : (
-                <article
-                  key={article.id}
-                  className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer"
-                >
-                  {cardContent}
-                </article>
-              );
+              if (isFirstArticle) {
+                return (
+                  <Link
+                    key={article.id}
+                    to="/blog/does-credit-utilization-matter-if-you-pay-in-full-every-month"
+                    className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
+                  >
+                    {cardContent}
+                  </Link>
+                );
+              } else if (isSecondArticle) {
+                return (
+                  <Link
+                    key={article.id}
+                    to="/blog/what-is-wfbna-on-credit-report"
+                    className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
+                  >
+                    {cardContent}
+                  </Link>
+                );
+              } else {
+                return (
+                  <article
+                    key={article.id}
+                    className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer"
+                  >
+                    {cardContent}
+                  </article>
+                );
+              }
             })}
           </div>
 
