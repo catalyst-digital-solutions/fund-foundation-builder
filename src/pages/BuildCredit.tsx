@@ -304,6 +304,16 @@ const BuildCredit = () => {
   ];
 
   const handlePartnerClick = (url: string) => {
+    // Special handling for Ava Finance (mobile app) to preserve affiliate attribution
+    // When the link redirects to App Store, iOS intercepts it and we lose attribution
+    // Solution: Open directly in same tab/window instead of popup
+    if (url.includes('meetava.sjv.io')) {
+      // Open Ava Finance link directly in new tab (not popup) to preserve redirect chain
+      window.open(url, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    // For all other partners, use the modal popup approach
     setSelectedPartnerUrl(url);
     setIsModalOpen(true);
   };
