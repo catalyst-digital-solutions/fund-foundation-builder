@@ -612,25 +612,25 @@ const CreditUtilizationBlogPost = () => {
       </article>
 
       {/* Newsletter Signup */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-gray-900 to-gray-800">
+      <section className="py-16 md:py-20 bg-gradient-to-br from-[#3e3e3e] to-[#2a2a2a]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center mx-auto mb-6">
             <Mail className="w-8 h-8 text-gray-900" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Don't Miss Future <span className="text-amber-400">Credit Truth Thursdays</span>
+            Don't Miss Future <span className="text-[#f9c65d]">Credit Truth Thursdays</span>
           </h2>
-          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+          <p className="text-xl text-[#e5d2af] mb-8 leading-relaxed">
             Get weekly insights on credit, debt, and financial strategies delivered straight to your inbox. No fluff, just actionable advice you can use.
           </p>
           <button
             onClick={openNewsletter}
-            className="px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+            className="px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold rounded-lg transition-all duration-200 inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl border-2 border-[#bb9446]"
           >
             <span className="text-center">Subscribe to Newsletter</span>
             <ArrowRight className="w-5 h-5 flex-shrink-0" />
           </button>
-          <p className="text-sm text-gray-400 mt-4">
+          <p className="text-sm text-[#cbcbcb] mt-4">
             No spam. Unsubscribe anytime.
           </p>
         </div>

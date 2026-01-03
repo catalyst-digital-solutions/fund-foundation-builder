@@ -556,25 +556,25 @@ const WFBNABlogPost = () => {
           </div>
 
           {/* Newsletter Signup Section */}
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 md:p-12 my-12">
+          <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2a2a2a] rounded-2xl p-8 md:p-12 my-12 border-2 border-[#bb9446]">
             <div className="max-w-2xl mx-auto text-center">
-              <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center mx-auto mb-6">
                 <Mail className="w-8 h-8 text-gray-900" />
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Decode Your Credit Report
+                Decode Your <span className="text-[#f9c65d]">Credit Report</span>
               </h3>
-              <p className="text-gray-300 leading-relaxed mb-8">
+              <p className="text-[#e5d2af] leading-relaxed mb-8">
                 Join our newsletter for weekly tips on understanding credit reports, fixing errors, and building better credit.
               </p>
               <button
                 onClick={openNewsletter}
-                className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-[#bb9446]"
               >
                 Subscribe to Newsletter
                 <ArrowRight className="w-5 h-5" />
               </button>
-              <p className="text-sm text-gray-400 mt-4">
+              <p className="text-sm text-[#cbcbcb] mt-4">
                 No spam. Unsubscribe anytime.
               </p>
             </div>
