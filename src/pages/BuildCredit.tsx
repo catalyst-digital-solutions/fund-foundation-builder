@@ -33,12 +33,9 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
-import ExternalLinkModal from '@/components/ExternalLinkModal';
 
 const BuildCredit = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedPartnerUrl, setSelectedPartnerUrl] = useState('');
 
   const trustPillars = [
     { icon: Calendar, title: 'Consistency', description: 'Showing up every month with on-time payments' },
@@ -302,21 +299,6 @@ const BuildCredit = () => {
       answer: 'Most of our recommended partners report to all three major bureaus (Experian, Equifax, TransUnion). We specifically choose partners with comprehensive reporting.'
     },
   ];
-
-  const handlePartnerClick = (url: string) => {
-    // Special handling for Ava Finance (mobile app) to preserve affiliate attribution
-    // When the link redirects to App Store, iOS intercepts it and we lose attribution
-    // Solution: Open directly in same tab/window instead of popup
-    if (url.includes('meetava.sjv.io')) {
-      // Open Ava Finance link directly in new tab (not popup) to preserve redirect chain
-      window.open(url, '_blank', 'noopener,noreferrer');
-      return;
-    }
-
-    // For all other partners, use the modal popup approach
-    setSelectedPartnerUrl(url);
-    setIsModalOpen(true);
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -669,12 +651,15 @@ const BuildCredit = () => {
                       </li>
                     ))}
                   </ul>
-                  <button
-                    onClick={() => handlePartnerClick(partner.url)}
+                  {/* Plain anchor tags - no modal, no JavaScript, clean navigation */}
+                  <a
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                   >
                     Get Started Now
-                  </button>
+                  </a>
                 </div>
               ))}
             </div>
@@ -749,12 +734,15 @@ const BuildCredit = () => {
                       </li>
                     ))}
                   </ul>
-                  <button
-                    onClick={() => handlePartnerClick(partner.url)}
+                  {/* Use plain anchor tags for all installment partners */}
+                  <a
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                   >
                     Get Started Now
-                  </button>
+                  </a>
                 </div>
               ))}
             </div>
@@ -839,12 +827,15 @@ const BuildCredit = () => {
                       </li>
                     ))}
                   </ul>
-                  <button
-                    onClick={() => handlePartnerClick(partner.url)}
+                  {/* Use plain anchor tags for all rent reporting partners */}
+                  <a
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                   >
                     Get Started Now
-                  </button>
+                  </a>
                 </div>
               ))}
             </div>
@@ -903,7 +894,229 @@ const BuildCredit = () => {
               </div>
             </div>
           </div>
-          
+        </div>
+      </section>
+
+      {/* [TEST] Hardcoded Partner Links Section - No React, No Arrays, Just Plain HTML */}
+      <section className="py-16 md:py-24 bg-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              [TEST] Ready to Get Started? Click Your <span className="text-blue-600">Preferred Tool</span> Below
+            </h2>
+            <p className="text-lg text-gray-700">
+              This is a TEST section with hardcoded links - no React components, no arrays, just plain anchor tags.
+            </p>
+          </div>
+
+          {/* Revolving Credit Builders - Hardcoded */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Revolving Credit Builders</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+              {/* Ava Finance */}
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">Ava Finance</h4>
+                <ul className="space-y-2 mb-4">
+                  <li className="text-sm text-gray-700">• Reports to all 3 bureaus</li>
+                  <li className="text-sm text-gray-700">• No credit check to apply</li>
+                  <li className="text-sm text-gray-700">• Builds revolving credit</li>
+                </ul>
+                <a
+                  href="https://meetava.sjv.io/xLxZEA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                >
+                  Get Started Now
+                </a>
+              </div>
+
+              {/* Kikoff */}
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">Kikoff</h4>
+                <ul className="space-y-2 mb-4">
+                  <li className="text-sm text-gray-700">• $0 annual fee</li>
+                  <li className="text-sm text-gray-700">• No hard pull</li>
+                  <li className="text-sm text-gray-700">• Reports monthly</li>
+                </ul>
+                <a
+                  href="https://kikoff.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                >
+                  Get Started Now
+                </a>
+              </div>
+
+              {/* CreditStrong Revolv */}
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">CreditStrong Revolv</h4>
+                <ul className="space-y-2 mb-4">
+                  <li className="text-sm text-gray-700">• Credit builder + revolving</li>
+                  <li className="text-sm text-gray-700">• Low monthly cost</li>
+                  <li className="text-sm text-gray-700">• All 3 bureaus</li>
+                </ul>
+                <a
+                  href="https://myusn.link/1vf1WA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                >
+                  Get Started Now
+                </a>
+              </div>
+
+              {/* Credit Builder Card */}
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">Credit Builder Card</h4>
+                <ul className="space-y-2 mb-4">
+                  <li className="text-sm text-gray-700">• Secured option</li>
+                  <li className="text-sm text-gray-700">• Graduate to unsecured</li>
+                  <li className="text-sm text-gray-700">• Rewards potential</li>
+                </ul>
+                <a
+                  href="https://www.creditbuildercard.com/mesagroupconsulting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                >
+                  Get Started Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Installment Loan Builders - Hardcoded */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Installment Loan Builders</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+              {/* CreditStrong Loans */}
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">CreditStrong Loans</h4>
+                <ul className="space-y-2 mb-4">
+                  <li className="text-sm text-gray-700">• Credit builder loan</li>
+                  <li className="text-sm text-gray-700">• Reports to all 3 bureaus</li>
+                  <li className="text-sm text-gray-700">• Save while building</li>
+                </ul>
+                <a
+                  href="https://myusn.link/1vf1WA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                >
+                  Get Started Now
+                </a>
+              </div>
+
+              {/* Self Credit Builder */}
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">Self Credit Builder</h4>
+                <ul className="space-y-2 mb-4">
+                  <li className="text-sm text-gray-700">• No credit check</li>
+                  <li className="text-sm text-gray-700">• Save money as you build</li>
+                  <li className="text-sm text-gray-700">• Low monthly payments</li>
+                </ul>
+                <a
+                  href="https://myusn.link/CGj0Lj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                >
+                  Get Started Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Rent Reporting - Hardcoded */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Rent Reporting & Alternative Credit</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+              {/* RentReporters */}
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">RentReporters</h4>
+                <ul className="space-y-2 mb-4">
+                  <li className="text-sm text-gray-700">• Backdate up to 24 months</li>
+                  <li className="text-sm text-gray-700">• Reports to TransUnion</li>
+                  <li className="text-sm text-gray-700">• Fast enrollment</li>
+                </ul>
+                <a
+                  href="https://www.rentreporters.com/?clickref=1110lXs9Zs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                >
+                  Get Started Now
+                </a>
+              </div>
+
+              {/* Rental Kharma */}
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">Rental Kharma</h4>
+                <ul className="space-y-2 mb-4">
+                  <li className="text-sm text-gray-700">• Reports to TransUnion</li>
+                  <li className="text-sm text-gray-700">• Past rent history</li>
+                  <li className="text-sm text-gray-700">• Monthly reporting</li>
+                </ul>
+                <a
+                  href="https://www.rentalkharma.com/partner-ecalderon/?Code=MESAGROUP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                >
+                  Get Started Now
+                </a>
+              </div>
+
+              {/* BoomPay */}
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">BoomPay</h4>
+                <ul className="space-y-2 mb-4">
+                  <li className="text-sm text-gray-700">• Reports to all 3 bureaus</li>
+                  <li className="text-sm text-gray-700">• Rent + utilities</li>
+                  <li className="text-sm text-gray-700">• Backdate history</li>
+                </ul>
+                <a
+                  href="https://www.boompay.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                >
+                  Get Started Now
+                </a>
+              </div>
+
+              {/* Experian Boost */}
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">Experian Boost</h4>
+                <ul className="space-y-2 mb-4">
+                  <li className="text-sm text-gray-700">• FREE service</li>
+                  <li className="text-sm text-gray-700">• Add utilities & streaming</li>
+                  <li className="text-sm text-gray-700">• Instant score update</li>
+                </ul>
+                <a
+                  href="https://myusn.link/bFdtEP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                >
+                  Get Started Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Continue with original content */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           {/* Authorized User Strategy */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
@@ -1433,14 +1646,6 @@ const BuildCredit = () => {
       </section>
 
       <Footer />
-
-      {/* External Link Modal for Partner Links */}
-      <ExternalLinkModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        url={selectedPartnerUrl}
-        title="Credit Building Partner"
-      />
     </div>
   );
 };
