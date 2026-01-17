@@ -618,7 +618,8 @@ const BuildCredit = () => {
         </div>
       </section>
 
-      {/* Quick Access Partners */}
+      {/* Quick Access Partners - ORIGINAL (disabled, using hardcoded version below) */}
+      {false && (
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -896,216 +897,485 @@ const BuildCredit = () => {
           </div>
         </div>
       </section>
+      )}
 
-      {/* [TEST] Hardcoded Partner Links Section - No React, No Arrays, Just Plain HTML */}
-      <section className="py-16 md:py-24 bg-blue-50">
+      {/* [HARDCODED VERSION] Quick Access Partners - No React arrays, just plain HTML */}
+      <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              [TEST] Ready to Get Started? Click Your <span className="text-blue-600">Preferred Tool</span> Below
+              Ready to Get Started? Click Your <span className="text-[#f9c65d]">Preferred Tool</span> Below
             </h2>
             <p className="text-lg text-gray-700">
-              This is a TEST section with hardcoded links - no React components, no arrays, just plain anchor tags.
+              We've partnered with the nation's leading credit building platforms. Click any partner below to get started immediately:
             </p>
           </div>
 
           {/* Revolving Credit Builders - Hardcoded */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Revolving Credit Builders</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <CreditCard className="w-6 h-6 text-amber-600" />
+              Revolving Credit Builders
+            </h3>
+            <p className="text-gray-700 mb-6 max-w-4xl">
+              Revolving credit accounts are the foundation of a strong credit profile. These platforms let you add primary credit card tradelines without requiring good credit.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
 
               {/* Ava Finance */}
-              <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">Ava Finance</h4>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-sm text-gray-700">• Reports to all 3 bureaus</li>
-                  <li className="text-sm text-gray-700">• No credit check to apply</li>
-                  <li className="text-sm text-gray-700">• Builds revolving credit</li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Reports to all 3 bureaus
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    No credit check to apply
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Builds revolving credit
+                  </li>
                 </ul>
                 <a
                   href="https://meetava.sjv.io/xLxZEA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                  className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                 >
                   Get Started Now
                 </a>
               </div>
 
               {/* Kikoff */}
-              <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">Kikoff</h4>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-sm text-gray-700">• $0 annual fee</li>
-                  <li className="text-sm text-gray-700">• No hard pull</li>
-                  <li className="text-sm text-gray-700">• Reports monthly</li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    $0 annual fee
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    No hard pull
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Reports monthly
+                  </li>
                 </ul>
                 <a
                   href="https://kikoff.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                  className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                 >
                   Get Started Now
                 </a>
               </div>
 
               {/* CreditStrong Revolv */}
-              <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">CreditStrong Revolv</h4>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-sm text-gray-700">• Credit builder + revolving</li>
-                  <li className="text-sm text-gray-700">• Low monthly cost</li>
-                  <li className="text-sm text-gray-700">• All 3 bureaus</li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Credit builder + revolving
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Low monthly cost
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    All 3 bureaus
+                  </li>
                 </ul>
                 <a
                   href="https://myusn.link/1vf1WA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                  className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                 >
                   Get Started Now
                 </a>
               </div>
 
               {/* Credit Builder Card */}
-              <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">Credit Builder Card</h4>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-sm text-gray-700">• Secured option</li>
-                  <li className="text-sm text-gray-700">• Graduate to unsecured</li>
-                  <li className="text-sm text-gray-700">• Rewards potential</li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Secured option
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Graduate to unsecured
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Rewards potential
+                  </li>
                 </ul>
                 <a
                   href="https://www.creditbuildercard.com/mesagroupconsulting"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                  className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                 >
                   Get Started Now
                 </a>
+              </div>
+            </div>
+
+            {/* Revolving Credit Info Box */}
+            <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-2xl p-8 border border-amber-200">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">?</span>
+                    What They Are
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    Specialized accounts that report as revolving credit to all three bureaus—with no credit check required.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <span className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center text-sm font-bold">⚙</span>
+                    How They Work
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    You sign up, the account reports as a $2,500-$10,000 credit line on your report. You make small purchases or payments monthly, and positive payment history builds automatically.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <span className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">✓</span>
+                    Key Benefits
+                  </h4>
+                  <ul className="space-y-2">
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      No hard inquiry or credit check
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Instant approval
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Reports to all three bureaus
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Credit limits from $2,500 to $10,000+
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Installment Loan Builders - Hardcoded */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Installment Loan Builders</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <FileText className="w-6 h-6 text-amber-600" />
+              Installment Loan Builders
+            </h3>
+            <p className="text-gray-700 mb-6 max-w-4xl">
+              Installment loans demonstrate your ability to manage fixed payments over time. Credit builder loans report positive payment history to credit bureaus while helping you save money.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
 
               {/* CreditStrong Loans */}
-              <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">CreditStrong Loans</h4>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-sm text-gray-700">• Credit builder loan</li>
-                  <li className="text-sm text-gray-700">• Reports to all 3 bureaus</li>
-                  <li className="text-sm text-gray-700">• Save while building</li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Credit builder loan
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Reports to all 3 bureaus
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Save while building
+                  </li>
                 </ul>
                 <a
                   href="https://myusn.link/1vf1WA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                  className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                 >
                   Get Started Now
                 </a>
               </div>
 
               {/* Self Credit Builder */}
-              <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">Self Credit Builder</h4>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-sm text-gray-700">• No credit check</li>
-                  <li className="text-sm text-gray-700">• Save money as you build</li>
-                  <li className="text-sm text-gray-700">• Low monthly payments</li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    No credit check
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Save money as you build
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Low monthly payments
+                  </li>
                 </ul>
                 <a
                   href="https://myusn.link/CGj0Lj"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                  className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                 >
                   Get Started Now
                 </a>
+              </div>
+            </div>
+
+            {/* Installment Loan Info Box */}
+            <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-2xl p-8 border border-amber-200">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <HelpCircle className="w-5 h-5 text-white" />
+                    </div>
+                    What They Are
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    Credit builder loans are designed to help you establish credit history while saving money. You make monthly payments into a secured account over 6-24 months, and the lender reports your payment history to the credit bureaus.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Settings className="w-5 h-5 text-white" />
+                    </div>
+                    How They Work
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    You open a small loan ($500-$3,000), make monthly payments for the loan term, and the lender reports your on-time payments to credit bureaus. At the end of the term, you receive your savings (minus interest and fees).
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="w-5 h-5 text-white" />
+                    </div>
+                    Key Benefits
+                  </h4>
+                  <ul className="space-y-2">
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Build credit and savings simultaneously
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Adds installment account diversity
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Reports to all three bureaus
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Low monthly payments ($25-$150)
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Typical results visible in 3-6 months*
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Rent Reporting - Hardcoded */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Rent Reporting & Alternative Credit</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+              <Home className="w-6 h-6 text-amber-600" />
+              Rent Reporting & Alternative Credit
+            </h3>
+            <p className="text-gray-700 mb-6 max-w-4xl">
+              Your rent is likely your largest monthly expense. Rent reporting services add your on-time rent payments to your credit reports, potentially backdating months or years of positive payment history.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
 
               {/* RentReporters */}
-              <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">RentReporters</h4>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-sm text-gray-700">• Backdate up to 24 months</li>
-                  <li className="text-sm text-gray-700">• Reports to TransUnion</li>
-                  <li className="text-sm text-gray-700">• Fast enrollment</li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Backdate up to 24 months
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Reports to TransUnion
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Fast enrollment
+                  </li>
                 </ul>
                 <a
                   href="https://www.rentreporters.com/?clickref=1110lXs9Zs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                  className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                 >
                   Get Started Now
                 </a>
               </div>
 
               {/* Rental Kharma */}
-              <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">Rental Kharma</h4>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-sm text-gray-700">• Reports to TransUnion</li>
-                  <li className="text-sm text-gray-700">• Past rent history</li>
-                  <li className="text-sm text-gray-700">• Monthly reporting</li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Reports to TransUnion
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Past rent history
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Monthly reporting
+                  </li>
                 </ul>
                 <a
                   href="https://www.rentalkharma.com/partner-ecalderon/?Code=MESAGROUP"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                  className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                 >
                   Get Started Now
                 </a>
               </div>
 
               {/* BoomPay */}
-              <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">BoomPay</h4>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-sm text-gray-700">• Reports to all 3 bureaus</li>
-                  <li className="text-sm text-gray-700">• Rent + utilities</li>
-                  <li className="text-sm text-gray-700">• Backdate history</li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Reports to all 3 bureaus
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Rent + utilities
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Backdate history
+                  </li>
                 </ul>
                 <a
                   href="https://www.boompay.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                  className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                 >
                   Get Started Now
                 </a>
               </div>
 
               {/* Experian Boost */}
-              <div className="bg-white rounded-xl p-6 shadow-md">
+              <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">Experian Boost</h4>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-sm text-gray-700">• FREE service</li>
-                  <li className="text-sm text-gray-700">• Add utilities & streaming</li>
-                  <li className="text-sm text-gray-700">• Instant score update</li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    FREE service
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Add utilities & streaming
+                  </li>
+                  <li className="text-sm text-gray-700 flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Instant score update
+                  </li>
                 </ul>
                 <a
                   href="https://myusn.link/bFdtEP"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm text-center"
+                  className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
                 >
                   Get Started Now
                 </a>
+              </div>
+            </div>
+
+            {/* Rent Reporting Info Box */}
+            <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-2xl p-8 border border-amber-200">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <HelpCircle className="w-5 h-5 text-white" />
+                    </div>
+                    What They Are
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    Services that report your monthly rent payments to credit bureaus, turning an expense you're already paying into credit-building history. Some services can add verified past rent payments to your credit report.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Settings className="w-5 h-5 text-white" />
+                    </div>
+                    How They Work
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    You connect your bank account or provide lease documentation. The service verifies your rent payments and reports them to one or more credit bureaus. Some services also report utility bills, phone bills, and subscription payments.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="w-5 h-5 text-white" />
+                    </div>
+                    Key Benefits
+                  </h4>
+                  <ul className="space-y-2">
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Add 12-24 months of verified payment history
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      No new credit accounts or hard inquiries
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Average score increase varies by credit profile*
+                    </li>
+                    <li className="text-gray-700 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                      Low monthly cost ($5-$20/month, Experian Boost is free)
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -1114,7 +1384,7 @@ const BuildCredit = () => {
       </section>
 
       {/* Continue with original content */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      <section className="pt-0 pb-16 md:pb-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Authorized User Strategy */}
