@@ -7,7 +7,6 @@ import EmotionalCTA2 from "@/components/credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/credit-repair/sections/EmotionalCTA3";
 import FAQ from "@/components/credit-repair-2/FAQ";
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
-import ExternalLinkModal from "@/components/ExternalLinkModal";
 import kgetLogo from "@/assets/kget-17-logo.png";
 import studio17Logo from "@/assets/studio-17-logo.png";
 import telemundoLogo from "@/assets/telemundo-logo.png";
@@ -20,8 +19,7 @@ import transunionLogo from "@/assets/transunion-logo.png";
 const CreditRepair = () => {
   const timelineSectionRef = useRef<HTMLElement>(null);
   const [timelineVisible, setTimelineVisible] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
+  
   const portalUrl = 'https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09';
 
   // Scroll animation for timeline section
@@ -40,9 +38,6 @@ const CreditRepair = () => {
     }
     return () => observer.disconnect();
   }, []);
-  const handleCTAClick = () => {
-    setIsModalOpen(true);
-  };
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth"
@@ -98,14 +93,24 @@ const CreditRepair = () => {
               {/* Primary CTA Button */}
               <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <div className="flex flex-col items-center">
-                  <button onClick={handleCTAClick} className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4">
-                    Start Your Credit Transformation →
-                  </button>
+                  <CalendlyPopupButton
+                    text="Schedule Your Free Consultation →"
+                    className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4 text-center"
+                    showArrow={false}
+                    prefillOptions={{
+                      utm: { source: 'credit_repair_page', medium: 'website', campaign: 'hero_cta' }
+                    }}
+                  />
                   <p className="text-sm text-gray-600 mt-2">Powered by Mesa Group</p>
                 </div>
-                <button onClick={() => scrollToSection("how-it-works")} className="text-[#bb9446] hover:text-[#9a7a3a] font-semibold underline underline-offset-4 mt-3">
+                <a 
+                  href="https://shm.to/yatPKyE" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center justify-center bg-white text-gray-900 hover:bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-lg font-bold px-8 py-4 text-center mt-0"
+                >
                   Get Free Credit Analysis
-                </button>
+                </a>
               </div>
             </div>
 
@@ -222,6 +227,25 @@ const CreditRepair = () => {
           <p className="text-xl text-gray-200 max-w-3xl mx-auto mt-4">
             This isn't a service. It's a partnership. It's a transformation. It's your second chance, done right.
           </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+            <CalendlyPopupButton 
+              text="Schedule Your Free Consultation"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
+              showArrow={true}
+              prefillOptions={{
+                utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
+              }}
+            />
+            <a 
+              href={portalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white/10 rounded-lg transition-all duration-200 text-lg font-bold"
+            >
+              Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
         </div>
       </section>
 
@@ -661,6 +685,25 @@ const CreditRepair = () => {
             <p className="text-center text-xl text-white font-bold mt-8">
               No false promises. Just real work. And <span className="text-mgc-yellow">real results</span>.
             </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+              <CalendlyPopupButton 
+                text="Schedule Your Free Consultation"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
+                showArrow={true}
+                prefillOptions={{
+                  utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
+                }}
+              />
+              <a 
+                href={portalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white/10 rounded-lg transition-all duration-200 text-lg font-bold"
+              >
+                Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -787,6 +830,25 @@ const CreditRepair = () => {
                 <p className="text-gray-500">You're alone, confused, and likely making mistakes that could make things worse.</p>
               </div>
             </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
+              <CalendlyPopupButton 
+                text="Schedule Your Free Consultation"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
+                showArrow={true}
+                prefillOptions={{
+                  utm: { source: 'credit_repair_page', medium: 'website', campaign: 'what_this_means_cta' }
+                }}
+              />
+              <a 
+                href={portalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-gray-900 text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 text-lg font-bold"
+              >
+                Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -912,11 +974,30 @@ const CreditRepair = () => {
 
           {/* The Bottom Line */}
           <div className="text-center">
-            <div className="inline-block bg-mgc-dark-gray/50 border border-mgc-gold/30 rounded-2xl p-8">
+            <div className="inline-block bg-mgc-dark-gray/50 border border-mgc-gold/30 rounded-2xl p-8 mb-12">
               <h3 className="text-2xl font-bold text-white mb-4">The Bottom Line:</h3>
               <p className="text-xl text-mgc-tan max-w-2xl">
                 We don't make promises we can't keep. We make progress you can measure. And when your rights are violated, we fight back with <span className="text-mgc-yellow font-bold">real legal power</span>.
               </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <CalendlyPopupButton 
+                text="Schedule Your Free Consultation"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
+                showArrow={true}
+                prefillOptions={{
+                  utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
+                }}
+              />
+              <a 
+                href={portalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white/10 rounded-lg transition-all duration-200 text-lg font-bold"
+              >
+                Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
@@ -980,20 +1061,27 @@ const CreditRepair = () => {
             <p className="text-[#3E3E3E] font-semibold">— Carlos R., Bakersfield, CA</p>
           </div>
 
-          <div className="text-center mt-10">
-            <CalendlyPopupButton
-              text="Get Your Customized Action Plan"
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
+            <CalendlyPopupButton 
+              text="Schedule Your Free Consultation"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
               showArrow={true}
-              className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4"
               prefillOptions={{
-                utm: { source: 'website', medium: 'credit_repair_2', campaign: 'customized_action_plan_cta' }
+                utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
               }}
             />
+            <a 
+              href={portalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-gray-900 text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 text-lg font-bold"
+            >
+              Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
+            </a>
           </div>
         </div>
       </section>
 
-      
 
       {/* ============================================ */}
       {/* SECTION 7: THE ROI (Cost of Bad Credit) */}
@@ -1053,6 +1141,25 @@ const CreditRepair = () => {
             <p className="text-gray-400 mt-6 text-sm">
               Improving your credit isn't an expense—it's the highest-ROI financial decision you can make.
             </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+              <CalendlyPopupButton 
+                text="Schedule Your Free Consultation"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
+                showArrow={true}
+                prefillOptions={{
+                  utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
+                }}
+              />
+              <a 
+                href={portalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 border-2 border-gray-300 hover:bg-gray-50 rounded-lg transition-all duration-200 text-lg font-bold shadow-sm hover:shadow-md"
+              >
+                Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -1141,6 +1248,25 @@ const CreditRepair = () => {
           <p className="text-center text-sm text-gray-500 mt-8">
             Individual results may vary. Testimonials are not a guarantee of future performance. Results depend on individual circumstances.
           </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
+            <CalendlyPopupButton 
+              text="Schedule Your Free Consultation"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
+              showArrow={true}
+              prefillOptions={{
+                utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
+              }}
+            />
+            <a 
+              href={portalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 border-2 border-gray-300 hover:bg-gray-50 rounded-lg transition-all duration-200 text-lg font-bold shadow-sm hover:shadow-md"
+            >
+              Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
         </div>
       </section>
 
@@ -1222,9 +1348,9 @@ const CreditRepair = () => {
                   <p className="text-xs text-gray-500">Risk Free - 3 Day Cancellation Window</p>
                 </div>
                 
-                <button onClick={handleCTAClick} className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3">
+                <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3 text-center">
                   Choose Mesa360 Lite
-                </button>
+                </a>
 
                 <p className="text-xs text-gray-500">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process. Ongoing support is provided. If you add new items, we will work on them. Clients may continue applying for accounts as needed.</p>
               </div>
@@ -1285,9 +1411,9 @@ const CreditRepair = () => {
                   <p className="text-xs text-gray-500">Risk Free - 3 Day Cancellation Window</p>
                 </div>
                 
-                <button onClick={handleCTAClick} className="w-full bg-[#FBBF23] hover:bg-[#E5AC1F] text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3">
+                <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-[#FBBF23] hover:bg-[#E5AC1F] text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3 text-center">
                   Choose Mesa360 Flex
-                </button>
+                </a>
 
                 <p className="text-xs text-gray-500">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process. Ongoing support is provided. If you add new items, we will work on them. Clients may continue applying for accounts as needed.</p>
               </div>
@@ -1354,9 +1480,9 @@ const CreditRepair = () => {
                   <p className="text-xs text-gray-400">Risk Free - 3 Day Cancellation Window</p>
                 </div>
                 
-                <button onClick={handleCTAClick} className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3">
+                <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors mb-3 text-center">
                   Choose Mesa360 Elite
-                </button>
+                </a>
 
                 <p className="text-xs text-gray-400">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process. Ongoing support is provided. If you add new items, we will work on them. Clients may continue applying for accounts as needed.</p>
               </div>
@@ -1418,9 +1544,9 @@ const CreditRepair = () => {
                   <p className="text-xs text-red-700">Comprehensive 12-month program focused on your current credit profile. New items added during the program will not be worked on.</p>
                 </div>
                 
-                <button onClick={handleCTAClick} className="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 rounded-lg transition-colors">
+                <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 rounded-lg transition-colors text-center">
                   Choose Ruby Plan
-                </button>
+                </a>
               </div>
 
               {/* Emerald Plan */}
@@ -1473,9 +1599,9 @@ const CreditRepair = () => {
                   <p className="text-xs text-emerald-700">Comprehensive 12-month program focused on your current credit profile. New items added during the program will not be worked on.</p>
                 </div>
                 
-                <button onClick={handleCTAClick} className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-lg transition-colors">
+                <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-lg transition-colors text-center">
                   Choose Emerald Plan
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -1697,6 +1823,25 @@ Every dollar you paid to Mesa Group.</p>
               ✨ This is The Mesa360 Guarantee.<br />
               Real Results in 90 Days — or Your Money Back.
             </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+              <CalendlyPopupButton 
+                text="Schedule Your Free Consultation"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
+                showArrow={true}
+                prefillOptions={{
+                  utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
+                }}
+              />
+              <a 
+                href={portalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 border-2 border-gray-300 hover:bg-gray-50 rounded-lg transition-all duration-200 text-lg font-bold shadow-sm hover:shadow-md"
+              >
+                Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -2013,14 +2158,6 @@ Every dollar you paid to Mesa Group.</p>
       </section>
 
       <Footer />
-
-      {/* External Link Modal for Portal Signup */}
-      <ExternalLinkModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        url={portalUrl}
-        title="Mesa Group Credit Repair Portal"
-      />
     </main>;
 };
 export default CreditRepair;

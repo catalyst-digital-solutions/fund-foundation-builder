@@ -156,7 +156,7 @@ const BuildCredit = () => {
 
   const installmentPartners = [
     { name: 'CreditStrong Loans', url: 'https://myusn.link/1vf1WA', features: ['Credit builder loan', 'Reports to all 3 bureaus', 'Save while building'] },
-    { name: 'Self Credit Builder', url: 'https://myusn.link/CGj0Lj', features: ['No credit check', 'Save money as you build', 'Low monthly payments'] },
+    { name: 'Self Credit Builder', url: 'https://self.inc', features: ['No credit check', 'Save money as you build', 'Low monthly payments'] },
   ];
 
   const rentPartners = [
@@ -1136,7 +1136,7 @@ const BuildCredit = () => {
                   </li>
                 </ul>
                 <a
-                  href="https://myusn.link/CGj0Lj"
+                  href="https://self.inc"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"

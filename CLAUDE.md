@@ -873,92 +873,187 @@ Modal pattern can be applied to other external links (SuperMoney, PolicyGenius, 
 ### Newsletter Modal Implementation - GHL Form Integration
 
 **Background:**
-Replaced email input forms on Articles & Insights and Resources pages with buttons that open the GHL newsletter signup form in a browser popup window. This approach keeps users on the Mesa Group site while completing newsletter signup.
+Replaced email input forms on Articles & Insights and Resources pages with buttons that open the GHL newsletter signup form in an inline modal (matching CalendlyModal behavior).
 
 **Component Created:**
-[src/components/NewsletterModal.tsx](src/components/NewsletterModal.tsx) - Opens GHL form in centered browser popup
+[src/components/NewsletterModal.tsx](src/components/NewsletterModal.tsx) - Inline modal with iframe embed
 
-**Implementation:**
+**Current Implementation (January 19, 2026):**
 ```tsx
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { X } from 'lucide-react';
 
-interface NewsletterModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
+const GHL_NEWSLETTER_FORM_URL = 'https://link.mesagroupconsulting.com/widget/form/87XreQhYJtAAT7XwLE0p';
 
 export const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) => {
-  useEffect(() => {
-    if (isOpen) {
-      // Open GHL form in a centered popup window
-      const width = 500;
-      const height = 600;
-      const left = (window.innerWidth - width) / 2 + window.screenX;
-      const top = (window.innerHeight - height) / 2 + window.screenY;
+  // Prevent body scroll when modal is open
+  // Handle escape key to close
 
-      window.open(
-        'https://link.mesagroupconsulting.com/widget/form/87XreQhYJtAAT7XwLE0p',
-        'NewsletterSignup',
-        `width=${width},height=${height},left=${left},top=${top},scrollbars=yes,resizable=yes`
-      );
-
-      // Close our state immediately since we opened a popup
-      onClose();
-    }
-  }, [isOpen, onClose]);
-
-  return null; // Component doesn't render anything - just opens popup
+  return (
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 p-4 sm:p-6" onClick={onClose}>
+      <div className="relative w-full max-w-[500px] h-auto max-h-[90vh] bg-white rounded-xl shadow-2xl flex flex-col overflow-hidden">
+        <button className="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-gray-100">
+          <X className="w-5 h-5 text-gray-700" />
+        </button>
+        <iframe src={GHL_NEWSLETTER_FORM_URL} className="flex-1 w-full min-h-[520px] border-0" />
+      </div>
+    </div>
+  );
 };
 ```
 
 **Pages Updated:**
-
 1. **Articles & Insights** ([src/pages/ArticlesInsights.tsx](src/pages/ArticlesInsights.tsx))
-   - Removed email input form
-   - Added "Subscribe to Newsletter" button with ArrowRight icon
-   - Button opens GHL form in browser popup
-
 2. **Resources** ([src/pages/Resources.tsx](src/pages/Resources.tsx))
-   - Removed email input form
-   - Added centered "Subscribe to Newsletter" button
-   - Button wrapped in `<div className="text-center">` for centering
-
-**Usage Pattern:**
-```tsx
-import { NewsletterModal } from '@/components/NewsletterModal';
-
-const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
-const openNewsletter = () => setIsNewsletterOpen(true);
-const closeNewsletter = () => setIsNewsletterOpen(false);
-
-// Button:
-<button onClick={openNewsletter} className="...">
-  Subscribe to Newsletter
-  <ArrowRight className="w-5 h-5" />
-</button>
-
-// Modal (renders nothing, just manages popup):
-<NewsletterModal isOpen={isNewsletterOpen} onClose={closeNewsletter} />
-```
 
 **GHL Form Details:**
 - Form ID: `87XreQhYJtAAT7XwLE0p`
 - Form Name: "MGC Website NewsLetter"
 - Form URL: `https://link.mesagroupconsulting.com/widget/form/87XreQhYJtAAT7XwLE0p`
 
-**Why Browser Popup Instead of Iframe/Modal:**
-- GHL's native `form_embed.js` script auto-triggered forms on page load
-- Iframe approach caused "two modals" issue (React wrapper + GHL popup)
-- Browser popup provides clean UX without interfering with GHL's scripts
-- User stays on Mesa Group site while form is in separate window
+---
 
-**Technical Notes:**
-- Popup dimensions: 500x600 pixels, centered on screen
-- `scrollbars=yes,resizable=yes` for accessibility
-- No GHL embed script needed - direct URL opens in popup
-- State resets immediately after popup opens via `onClose()`
+## Recent Major Update #11 (January 15-19, 2026)
+
+### Build Credit Page - Partner Links Hardcoded Fix
+
+**Background:**
+The "Ready to Get Started? Click Your Preferred Tool Below" section on Build Credit page had issues with ExternalLinkModal causing:
+- "Funky flash" when clicking buttons (modal briefly rendering before popup)
+- Tab cannibalization (all buttons reusing same browser tab due to hardcoded window name)
+
+**Solution:**
+Replaced ExternalLinkModal JavaScript-based navigation with plain HTML anchor tags (`<a>` elements with `target="_blank"`).
+
+**File Modified:** [src/pages/BuildCredit.tsx](src/pages/BuildCredit.tsx)
+
+**Changes:**
+1. Original section wrapped in `{false && (...)}` to disable without deleting
+2. New hardcoded section with plain `<a target="_blank">` tags for all 10 partners
+3. Removed ExternalLinkModal import and related state management
+
+**Partner Affiliate URLs (Hardcoded):**
+| Partner | URL |
+|---------|-----|
+| Ava Finance | `https://meetava.sjv.io/xLxZEA` |
+| Kikoff | `https://kikoff.com/` |
+| CreditStrong | `https://myusn.link/1vf1WA` |
+| Credit Builder Card | `https://www.creditbuildercard.com/mesagroupconsulting` |
+| Self Credit Builder | `https://myusn.link/CGj0Lj` |
+| RentReporters | `https://www.rentreporters.com/?clickref=1110lXs9Zs` |
+| Rental Kharma | `https://www.rentalkharma.com/partner-ecalderon/?Code=MESAGROUP` |
+| BoomPay | `https://www.boompay.app/` |
+| Experian Boost | `https://myusn.link/bFdtEP` |
+| StellarFi | `https://stellarfi.com/` |
+
+**Known Issue - Ava Finance iOS:**
+On iPhone, Ava Finance button triggers App Store modal (iOS Universal Links), breaking affiliate attribution. This is iOS-level behavior that cannot be fixed with code. Need web-only signup URL from Ava Finance.
+
+**Commits:**
+- `21b15e5` - Finalize hardcoded partner links section, disable original
+- `c9b8680` - Add TEST section with hardcoded partner links on Build Credit page
+- `fe55d48` - Fix Ava Finance affiliate attribution on Build Credit page
 
 ---
 
-**Last Updated:** January 1, 2026
+## Recent Major Update #12 (January 15-19, 2026)
+
+### Blog Posts and Articles Infrastructure
+
+**Three Blog Posts Added:**
+1. **Understanding Credit Monitoring** ([src/pages/BlogPost1.tsx](src/pages/BlogPost1.tsx))
+   - Route: `/resources/articles/understanding-credit-monitoring`
+
+2. **What Is WFBNA on Credit Report** ([src/pages/BlogPost2.tsx](src/pages/BlogPost2.tsx))
+   - Route: `/resources/articles/what-is-wfbna-on-credit-report`
+
+3. **Debt Relief vs Debt Consolidation** ([src/pages/BlogPost3.tsx](src/pages/BlogPost3.tsx))
+   - Route: `/resources/articles/debt-relief-vs-debt-consolidation`
+
+**Articles & Insights Page Updates:**
+- Hero images now display for each blog post in Latest Articles section
+- Related articles sections updated in all three blog posts
+- Newsletter section colors updated to Mesa Group brand
+
+**Commits:**
+- `f488d90` - Display blog post hero images in Articles & Insights Latest Articles section
+- `58ee290` - Update related articles sections in all three blog posts
+- `72a4bcb` - Update newsletter section colors in blog posts 1 and 2
+- `363c894` - Add third blog post: Debt Relief vs Debt Consolidation
+
+---
+
+## Recent Major Update #13 (January 19, 2026)
+
+### Credit Repair & DIY Credit Repair Button/Link Refactoring
+
+**Background:**
+Comprehensive updates to CTA behavior across credit repair pages, replacing styled popup modals with direct new-tab navigation and adding strategic dual CTAs throughout the Credit Repair page.
+
+**Changes Implemented:**
+
+**1. Build Credit Page** ([src/pages/BuildCredit.tsx](src/pages/BuildCredit.tsx))
+- Updated **Self Credit Builder** affiliate link to direct URL: `https://self.inc`
+- Removed intermediate Upsell Nation affiliate link that was not redirecting properly
+
+**2. Credit Repair Page** ([src/pages/CreditRepair.tsx](src/pages/CreditRepair.tsx))
+- **Removed ExternalLinkModal Pattern:** All signup buttons now use plain `<a target="_blank">` tags instead of popup modals
+- **Hero Section Updates:**
+  - Primary CTA: "Schedule Your Free Consultation" → CalendlyPopupButton (opens Calendly modal)
+  - Secondary CTA: "Get Free Credit Analysis" → White button linking to `https://shm.to/yatPKyE` (Mesa Group's credit analysis form)
+- **Added Dual CTAs to 7 Sections:**
+  1. "The Mesa360 Credit System™" (Section 4A) - Dark overlay section
+  2. "REALISTIC TIMELINE & EXPECTATIONS" - Dark background section
+  3. "WHAT THIS REALLY MEANS FOR YOU" - White background (fixed visibility)
+  4. "WHEN LEGAL ESCALATION HAPPENS" - Dark gradient section
+  5. "Bad Credit Costs You $126,000..." - White background
+  6. "This Isn't Just Credit Restoration" - Cream/orange gradient (fixed visibility)
+  7. "Real People. Real Results. Real Transformation" - Light background
+  8. "90 Days. Real Results. Or Every Dollar Back" - Green gradient section
+
+**Dual CTA Pattern:**
+```tsx
+<CalendlyPopupButton 
+  text="Schedule Your Free Consultation"
+  className="[amber button styles]"
+  showArrow={true}
+/>
+<a 
+  href={portalUrl}
+  target="_blank"
+  className="[secondary button - white or transparent depending on background]"
+>
+  Get Free Credit Analysis <ArrowRight />
+</a>
+```
+
+**Button Visibility Fixes:**
+- Fixed "Get Free Credit Analysis" button in "WHAT THIS REALLY MEANS FOR YOU" section (was white on white)
+- Fixed "Get Free Credit Analysis" button in "This Isn't Just Credit Restoration" section (was white on cream)
+- Changed from `border-white text-white` to `border-gray-900 text-gray-900` on light backgrounds
+
+**3. DIY Credit Repair Page** ([src/pages/DIYCreditRepair.tsx](src/pages/DIYCreditRepair.tsx))
+- **Removed ExternalLinkModal:** Replaced popup modal behavior with direct new-tab navigation
+- **New URL:** Changed from `https://member.getcreditily.com/Registration/CreateAccount/Account` to `https://shm.to/fsgSro2` (Mesa Group affiliate link)
+- **Implementation:** Added useEffect hook that opens signup in new tab when `isModalOpen` state changes
+- **Preserved Components:** EmotionalCTA1, EmotionalCTA2, EmotionalCTA3 components unchanged (still call `setIsModalOpen(true)`)
+- **Why:** Maintains component reusability while centralizing navigation behavior at page level
+
+**Technical Details:**
+- All Calendly buttons use UTM tracking for campaign attribution
+- Portal URL: `https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09`
+- Credit Analysis Form: `https://shm.to/yatPKyE`
+- DIY Signup: `https://shm.to/fsgSro2`
+- No linter errors introduced
+
+**Files Modified:**
+- `src/pages/BuildCredit.tsx` - Self link update
+- `src/pages/CreditRepair.tsx` - Button refactoring, dual CTA additions, visibility fixes
+- `src/pages/DIYCreditRepair.tsx` - Popup to new-tab conversion
+
+**Status:** All changes complete and tested
+
+---
+
+**Last Updated:** January 19, 2026
 **Project Status:** Active Development

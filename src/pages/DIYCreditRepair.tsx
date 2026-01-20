@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity, X, Home, Scale, Gavel, Check, ChevronDown, ArrowRight } from 'lucide-react';
@@ -6,7 +6,7 @@ import creditilyLogo from "@/assets/creditily-wolf-logo.svg";
 import creditilyWideWolfLogo from "@/assets/creditily-wide-wolf-logo.svg";
 import diyHeroImage from "@/assets/diy-credit-repair-hero.webp";
 import costComparisonBg from "@/assets/diy-credit-repair-cost-comparison-bg.png";
-import ExternalLinkModal from "@/components/ExternalLinkModal";
+// ExternalLinkModal removed for DIY flow; open external links in new tab instead
 import EmotionalCTA1 from "@/components/diy-credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/diy-credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/diy-credit-repair/sections/EmotionalCTA3";
@@ -59,6 +59,17 @@ const DIYCreditRepair = () => {
   const handleSignupClick = () => {
     setIsModalOpen(true);
   };
+
+  // Open Creditily signup in a new tab when any child component requests the modal.
+  // This preserves existing components that call setIsModalOpen(true) (e.g. EmotionalCTA*).
+  // Use the short link with affiliate attribution as requested.
+  useEffect(() => {
+    if (!isModalOpen) return;
+    const url = 'https://shm.to/fsgSro2';
+    const popup = window.open(url, '_blank');
+    if (popup) popup.focus();
+    setIsModalOpen(false);
+  }, [isModalOpen]);
 
   return (
     <main className="font-['Inter',sans-serif]">
@@ -1048,13 +1059,7 @@ const DIYCreditRepair = () => {
 
       <Footer />
 
-      {/* External Link Modal */}
-      <ExternalLinkModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        url={creditilyUrl}
-        title="Creditily DIY Credit Repair Signup"
-      />
+      {/* ExternalLinkModal removed — external signup opens in new tab instead */}
     </main>
   );
 };
