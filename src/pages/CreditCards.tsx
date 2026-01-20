@@ -1,11 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Target, Check, Lock, Lightbulb, TrendingUp, Star, CircleDollarSign, BarChart3, CreditCard, Gem, Plane, X, Gift, Globe, Trophy, ThumbsUp, Wrench, ChevronDown } from 'lucide-react';
 import EmotionalCTA1 from '@/components/credit-cards/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/credit-cards/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/credit-cards/sections/EmotionalCTA3';
-import ExternalLinkModal from '@/components/ExternalLinkModal';
 import supermoneyLogo from '@/assets/supermoney-logo.svg';
 
 const CreditCards = () => {
@@ -27,6 +26,14 @@ const CreditCards = () => {
     setSelectedUrl(url);
     setIsModalOpen(true);
   };
+
+  // Open affiliate links in a new tab when selected by CTA components
+  useEffect(() => {
+    if (!isModalOpen || !selectedUrl) return;
+    const popup = window.open(selectedUrl, '_blank', 'noopener,noreferrer');
+    if (popup) popup.focus();
+    setIsModalOpen(false);
+  }, [isModalOpen, selectedUrl]);
 
   const faqs = [
     {
@@ -852,13 +859,7 @@ const CreditCards = () => {
 
       <Footer />
 
-      {/* External Link Modal for SuperMoney Links */}
-      <ExternalLinkModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        url={selectedUrl}
-        title="SuperMoney Credit Cards"
-      />
+      
     </main>
   );
 };
