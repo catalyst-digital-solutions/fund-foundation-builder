@@ -17,6 +17,13 @@ import Footer from '@/components/Footer';
 const DebtConsolidationLoan = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedUrl, setSelectedUrl] = useState('');
+ 
+  useEffect(() => {
+    if (!isModalOpen || !selectedUrl) return;
+    const popup = window.open(selectedUrl, '_blank', 'noopener,noreferrer');
+    if (popup) popup.focus();
+    setIsModalOpen(false);
+  }, [isModalOpen, selectedUrl]);
 
   return (
     <div className="min-h-screen bg-white">
@@ -37,13 +44,7 @@ const DebtConsolidationLoan = () => {
         <Footer />
       </main>
 
-      {/* Open affiliate links in a new tab instead of showing the modal */}
-      useEffect(() => {
-        if (!isModalOpen || !selectedUrl) return;
-        const popup = window.open(selectedUrl, '_blank', 'noopener,noreferrer');
-        if (popup) popup.focus();
-        setIsModalOpen(false);
-      }, [isModalOpen, selectedUrl]);
+      
     </div>
   );
 };
