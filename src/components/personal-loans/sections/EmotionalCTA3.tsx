@@ -8,10 +8,7 @@ interface EmotionalCTA3Props {
 }
 
 const EmotionalCTA3: React.FC<EmotionalCTA3Props> = ({ setIsModalOpen, setSelectedUrl }) => {
-  const openAffiliateLink = () => {
-    setSelectedUrl('https://track.supermoney.com/aff_c?offer_id=1618&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=personal_loans');
-    setIsModalOpen(true);
-  };
+  const affiliateUrl = 'https://track.supermoney.com/aff_c?offer_id=1618&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=personal_loans';
 
   return (
     <section 
@@ -28,12 +25,14 @@ const EmotionalCTA3: React.FC<EmotionalCTA3Props> = ({ setIsModalOpen, setSelect
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
           Imagine waking up without that knot in your stomach. One manageable payment instead of juggling five. Money left over to build your emergency fund, plan that vacation, start investing. Your financial freedom isn't a dream—it's one decision away. Take control today and watch your stress transform into confidence.
         </p>
-        <button
-          onClick={openAffiliateLink}
-          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+        <a
+          href={affiliateUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-flex items-center justify-center"
         >
           Start Your Journey Now →
-        </button>
+        </a>
         <PoweredBySuperMoney variant="dark" className="mt-4" />
       </div>
     </section>

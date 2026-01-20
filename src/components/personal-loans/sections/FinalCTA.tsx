@@ -58,12 +58,14 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ setIsModalOpen, setSelectedUrl }) =
             Ready to <span className="text-[#f9c65d]">Compare Your Options</span>?
           </h2>
           
-          <button
-            onClick={openAffiliateLink}
+          <a
+            href="https://track.supermoney.com/aff_c?offer_id=1618&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=personal_loans"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
           >
             Get Started - Compare Rates Now →
-          </button>
+          </a>
           <PoweredBySuperMoney className="mb-4" />
           
           <p className="text-gray-600">

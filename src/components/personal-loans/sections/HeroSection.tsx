@@ -60,13 +60,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ setIsModalOpen, setSelectedUr
 
             {/* Primary CTA */}
             <div className="inline-block">
-              <button
-                onClick={openAffiliateLink}
+              <a
+                href="https://track.supermoney.com/aff_c?offer_id=1618&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=personal_loans"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
               >
                 Get Started - Compare Loan Offers Now
                 <ArrowRight className="ml-2 w-5 h-5" />
-              </button>
+              </a>
               <PoweredBySuperMoney className="mt-3" />
             </div>
 
