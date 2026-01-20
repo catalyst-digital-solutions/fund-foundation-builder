@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EmotionalCTA1 from '@/components/auto-loan-refi/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/auto-loan-refi/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/auto-loan-refi/sections/EmotionalCTA3';
 import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
-import ExternalLinkModal from '@/components/ExternalLinkModal';
+// ExternalLinkModal removed; external links open in a new tab instead
 import { Lock, Zap, CircleDollarSign, TrendingUp, TrendingDown, Search, BarChart3, Landmark, Lightbulb, Star, Banknote, Ban, UserMinus, FileText, Shield, AlertTriangle, LockKeyhole, CheckCircle2, ChevronDown, Check } from 'lucide-react';
 
 const AutoLoanRefi = () => {
@@ -60,6 +60,15 @@ const AutoLoanRefi = () => {
     setSelectedUrl('https://track.supermoney.com/aff_c?offer_id=1623&aff_id=2815&utm_source=mesa&utm_medium=website&utm_campaign=auto_loan_refi');
     setIsModalOpen(true);
   };
+
+  // When CTA components call setSelectedUrl(...) and setIsModalOpen(true),
+  // this effect will open the selectedUrl in a new tab and reset the flag.
+  useEffect(() => {
+    if (!isModalOpen || !selectedUrl) return;
+    const popup = window.open(selectedUrl, '_blank', 'noopener,noreferrer');
+    if (popup) popup.focus();
+    setIsModalOpen(false);
+  }, [isModalOpen, selectedUrl]);
 
   return (
     <main className="min-h-screen">
@@ -1054,12 +1063,8 @@ const AutoLoanRefi = () => {
       </section>
 
       <Footer />
-      <ExternalLinkModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        url={selectedUrl}
-        title="SuperMoney Auto Loan Refinancing"
-      />
+
+      
     </main>
   );
 };
