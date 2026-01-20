@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EmotionalCTA1 from '@/components/student-loan-refi2/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/student-loan-refi2/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/student-loan-refi2/sections/EmotionalCTA3';
 import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
-import ExternalLinkModal from '@/components/ExternalLinkModal';
+// ExternalLinkModal removed; open affiliate links in new tab instead
 import {
   TrendingDown,
   Layers,
@@ -42,6 +42,13 @@ const StudentLoanRefi2 = () => {
     setSelectedUrl(affiliateLink);
     setIsModalOpen(true);
   };
+
+  useEffect(() => {
+    if (!isModalOpen || !selectedUrl) return;
+    const popup = window.open(selectedUrl, '_blank', 'noopener,noreferrer');
+    if (popup) popup.focus();
+    setIsModalOpen(false);
+  }, [isModalOpen, selectedUrl]);
 
   const calculateSavings = () => {
     const monthlyPaymentOld = (loanAmount * (currentRate / 100 / 12)) / (1 - Math.pow(1 + (currentRate / 100 / 12), -120));
@@ -986,12 +993,6 @@ const StudentLoanRefi2 = () => {
 
       {/* FOOTER */}
       <Footer />
-      <ExternalLinkModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        url={selectedUrl}
-        title="SuperMoney Student Loan Refinancing"
-      />
     </div>
   );
 };

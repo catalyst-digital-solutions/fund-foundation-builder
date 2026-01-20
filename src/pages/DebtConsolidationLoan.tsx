@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/debt-consolidation/sections/HeroSection';
 import TrustIndicators from '@/components/debt-consolidation/sections/TrustIndicators';
@@ -13,7 +13,6 @@ import EmotionalCTA3 from '@/components/debt-consolidation/sections/EmotionalCTA
 import FAQ from '@/components/debt-consolidation/sections/FAQ';
 import FinalCTA from '@/components/debt-consolidation/sections/FinalCTA';
 import Footer from '@/components/Footer';
-import ExternalLinkModal from '@/components/ExternalLinkModal';
 
 const DebtConsolidationLoan = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -38,12 +37,13 @@ const DebtConsolidationLoan = () => {
         <Footer />
       </main>
 
-      <ExternalLinkModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        url={selectedUrl}
-        title="SuperMoney Debt Consolidation"
-      />
+      {/* Open affiliate links in a new tab instead of showing the modal */}
+      useEffect(() => {
+        if (!isModalOpen || !selectedUrl) return;
+        const popup = window.open(selectedUrl, '_blank', 'noopener,noreferrer');
+        if (popup) popup.focus();
+        setIsModalOpen(false);
+      }, [isModalOpen, selectedUrl]);
     </div>
   );
 };
