@@ -8,10 +8,7 @@ interface EmotionalCTA1Props {
 }
 
 const EmotionalCTA1: React.FC<EmotionalCTA1Props> = ({ setIsModalOpen, setSelectedUrl }) => {
-  const handleClick = () => {
-    setSelectedUrl('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815');
-    setIsModalOpen(true);
-  };
+  const affiliateUrl = 'https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815';
 
   return (
     <section 
@@ -29,12 +26,14 @@ const EmotionalCTA1: React.FC<EmotionalCTA1Props> = ({ setIsModalOpen, setSelect
           Another rejection. Another form asking for perfect credit you don't have. You watch friends earn cash back and travel rewards while you're stuck paying cash for everything—no credit building, no benefits, no path forward.
         </p>
         <div className="inline-block">
-          <button
-            onClick={handleClick}
-            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          <a
+            href={affiliateUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-flex items-center justify-center"
           >
             Find Cards You Qualify For →
-          </button>
+          </a>
           <PoweredBySuperMoney variant="dark" className="mt-4" />
         </div>
       </div>

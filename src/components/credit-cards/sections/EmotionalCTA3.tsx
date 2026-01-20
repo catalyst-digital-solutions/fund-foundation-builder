@@ -8,10 +8,7 @@ interface EmotionalCTA3Props {
 }
 
 const EmotionalCTA3: React.FC<EmotionalCTA3Props> = ({ setIsModalOpen, setSelectedUrl }) => {
-  const handleClick = () => {
-    setSelectedUrl('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815');
-    setIsModalOpen(true);
-  };
+  const affiliateUrl = 'https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815';
 
   return (
     <section 
@@ -29,12 +26,14 @@ const EmotionalCTA3: React.FC<EmotionalCTA3Props> = ({ setIsModalOpen, setSelect
           Imagine checking your credit score next month—watching it climb. Getting approved for that premium card. Earning 3% cash back on groceries. Booking flights with points you earned. That financial confidence you deserve is one decision away.
         </p>
         <div className="inline-block">
-          <button
-            onClick={handleClick}
-            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          <a
+            href={affiliateUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-flex items-center justify-center"
           >
             Start Building Your Credit Future →
-          </button>
+          </a>
           <PoweredBySuperMoney variant="dark" className="mt-4" />
         </div>
       </div>

@@ -8,10 +8,7 @@ interface EmotionalCTA2Props {
 }
 
 const EmotionalCTA2: React.FC<EmotionalCTA2Props> = ({ setIsModalOpen, setSelectedUrl }) => {
-  const handleClick = () => {
-    setSelectedUrl('https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815');
-    setIsModalOpen(true);
-  };
+  const affiliateUrl = 'https://track.supermoney.com/aff_c?offer_id=596&aff_id=2815';
 
   return (
     <section 
@@ -29,12 +26,14 @@ const EmotionalCTA2: React.FC<EmotionalCTA2Props> = ({ setIsModalOpen, setSelect
           No more guessing. No more rejection letters. Mesa Group Capital shows you cards matched to YOUR credit level—with approval odds displayed upfront. Compare rates, rewards, and terms with zero credit score impact. We believe everyone deserves access to the right financial tools.
         </p>
         <div className="inline-block">
-          <button
-            onClick={handleClick}
-            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4"
+          <a
+            href={affiliateUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-8 py-4 inline-flex items-center justify-center"
           >
             See Your Card Matches Now →
-          </button>
+          </a>
           <PoweredBySuperMoney variant="dark" className="mt-4" />
         </div>
       </div>
