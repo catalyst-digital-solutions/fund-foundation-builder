@@ -132,13 +132,15 @@ const StudentLoanRefi2 = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
               <div className="inline-block">
-                <button
-                  onClick={handleAffiliateClick}
+                <a
+                  href={affiliateLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
                 >
                   Check Your Rates Now
                   <ArrowRight className="ml-2 w-5 h-5" />
-                </button>
+                </a>
                 <PoweredBySuperMoney className="mt-3" />
               </div>
               
@@ -362,13 +364,15 @@ const StudentLoanRefi2 = () => {
 
           <div className="text-center mt-12">
             <div className="inline-block">
-              <button
-                onClick={handleAffiliateClick}
+              <a
+                href={affiliateLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
               >
                 Get Started - Check Rates
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </a>
               <PoweredBySuperMoney className="mt-3" />
             </div>
           </div>
@@ -582,15 +586,17 @@ const StudentLoanRefi2 = () => {
               </div>
             </div>
 
-            <div className="text-center mt-8">
+                <div className="text-center mt-8">
               <div className="inline-block">
-                <button
-                  onClick={handleAffiliateClick}
+                <a
+                  href={affiliateLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
                 >
                   Check My Actual Rate
                   <ArrowRight className="w-5 h-5" />
-                </button>
+                </a>
                 <PoweredBySuperMoney className="mt-3" />
               </div>
               <p className="text-sm text-gray-600 mt-4">
@@ -795,13 +801,15 @@ const StudentLoanRefi2 = () => {
 
           <div className="text-center mt-12">
             <div className="inline-block">
-              <button
-                onClick={handleAffiliateClick}
+              <a
+                href={affiliateLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
               >
                 Get Your Personalized Rates
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </a>
               <PoweredBySuperMoney className="mt-3" />
             </div>
           </div>
@@ -914,13 +922,15 @@ const StudentLoanRefi2 = () => {
 
           <div className="text-center mt-12">
             <div className="inline-block">
-              <button
-                onClick={handleAffiliateClick}
+              <a
+                href={affiliateLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
               >
                 I Understand - Check My Rates
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </a>
               <PoweredBySuperMoney className="mt-3" />
             </div>
           </div>
@@ -976,12 +986,14 @@ const StudentLoanRefi2 = () => {
               Compare 10+ lenders in 2 minutes—with zero impact to your credit score.
             </p>
 
-            <button
-              onClick={handleAffiliateClick}
+            <a
+              href={affiliateLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-4"
             >
               Check My New Rate →
-            </button>
+            </a>
             <PoweredBySuperMoney className="mb-4" />
             
             <p className="text-gray-600">
