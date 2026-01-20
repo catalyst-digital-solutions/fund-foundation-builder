@@ -1055,5 +1055,18 @@ Comprehensive updates to CTA behavior across credit repair pages, replacing styl
 
 ---
 
-**Last Updated:** January 19, 2026
+## Recent Major Update #14 (January 20, 2026)
+
+### Business Funding & Business Credit Builder CTA behavior
+
+- Replaced in-app styled browser/modal behavior with direct new-tab navigation for application CTAs on:
+  - `src/pages/BusinessFunding.tsx` — `openApplicationModal` now opens `https://mesagroupcapital.com/for-businesses/business-funding` in a new tab.
+  - `src/pages/BusinessCreditBuilder.tsx` — enrollment CTAs (`openFullServiceModal`, `openDIYModal`) now open in new tabs to their respective URLs.
+- Purpose: preserve affiliate URLs and UX while preventing modal-related rendering issues and JSX parsing errors.
+- No affiliate URLs were changed; only CTA behavior was updated.
+- Linted and no errors reported after changes.
+
+---
+
+**Last Updated:** January 20, 2026
 **Project Status:** Active Development
