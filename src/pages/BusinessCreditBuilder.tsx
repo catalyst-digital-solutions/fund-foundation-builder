@@ -16,13 +16,15 @@ const BusinessCreditBuilder = () => {
   const [selectedUrl, setSelectedUrl] = useState('');
 
   const openFullServiceModal = () => {
-    setSelectedUrl('https://mesagroupcapital.com/business-credit-enroll');
-    setIsModalOpen(true);
+    const url = 'https://mesagroupcapital.com/business-credit-enroll';
+    const popup = window.open(url, '_blank', 'noopener,noreferrer');
+    if (popup) popup.focus();
   };
-
+  
   const openDIYModal = () => {
-    setSelectedUrl('https://mesagroupcapital.com/bcfs-diy-enroll');
-    setIsModalOpen(true);
+    const url = 'https://mesagroupcapital.com/bcfs-diy-enroll';
+    const popup = window.open(url, '_blank', 'noopener,noreferrer');
+    if (popup) popup.focus();
   };
 
   return (

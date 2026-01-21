@@ -18,8 +18,9 @@ const BusinessFunding2 = () => {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
 
   const openApplicationModal = () => {
-    setSelectedUrl('https://mesagroupcapital.com/for-businesses/business-funding');
-    setIsModalOpen(true);
+    const url = 'https://mesagroupcapital.com/for-businesses/business-funding';
+    const popup = window.open(url, '_blank', 'noopener,noreferrer');
+    if (popup) popup.focus();
   };
 
   const openCalendly = () => {

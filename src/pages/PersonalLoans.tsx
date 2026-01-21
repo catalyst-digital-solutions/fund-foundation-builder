@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/personal-loans/sections/HeroSection';
 import TrustIndicators from '@/components/personal-loans/sections/TrustIndicators';
@@ -14,11 +14,19 @@ import EmotionalCTA3 from '@/components/personal-loans/sections/EmotionalCTA3';
 import FAQ from '@/components/personal-loans/sections/FAQ';
 import FinalCTA from '@/components/personal-loans/sections/FinalCTA';
 import Footer from '@/components/Footer';
-import ExternalLinkModal from '@/components/ExternalLinkModal';
+// ExternalLinkModal removed; open affiliate links in new tab instead
 
 const PersonalLoans = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedUrl, setSelectedUrl] = useState('');
+
+  // Open affiliate links in a new tab when CTA components set selectedUrl/isModalOpen
+  useEffect(() => {
+    if (!isModalOpen || !selectedUrl) return;
+    const popup = window.open(selectedUrl, '_blank', 'noopener,noreferrer');
+    if (popup) popup.focus();
+    setIsModalOpen(false);
+  }, [isModalOpen, selectedUrl]);
 
   return (
     <div className="min-h-screen bg-white">
@@ -39,13 +47,6 @@ const PersonalLoans = () => {
         <FinalCTA setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
         <Footer />
       </main>
-
-      <ExternalLinkModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        url={selectedUrl}
-        title="SuperMoney Personal Loans"
-      />
     </div>
   );
 };
