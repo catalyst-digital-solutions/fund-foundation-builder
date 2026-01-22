@@ -860,10 +860,9 @@ function FinalCTA() {
           </a>
           <PoweredBySmartCredit className="mt-3 mb-4" />
           
-          <p className="text-gray-600 mb-2">
+          <p className="text-gray-600">
             Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
           </p>
-          <p className="text-sm text-gray-500">Powered by Mesa Group</p>
         </div>
       </div>
     </section>
