@@ -393,6 +393,37 @@ const BuildCredit = () => {
         </div>
       </section>
 
+      {/* Success Stories */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
+            Real Results from <span className="text-[#f9c65d]">Real People</span>
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg">
+                <div className="flex gap-1 mb-4">
+                  {[1,2,3,4,5].map((star) => (
+                    <Star key={star} className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
+                  ))}
+                </div>
+                <p className="text-white italic mb-4 leading-relaxed">"{testimonial.quote}"</p>
+                <div className="border-t border-gray-600 pt-4">
+                  <p className="font-semibold text-white">{testimonial.name}</p>
+                  <p className="text-sm text-gray-400">{testimonial.location}</p>
+                  <p className="text-sm text-amber-400 font-semibold mt-1">{testimonial.transformation}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-sm text-gray-600 italic text-center mt-8">
+            Compliance Disclaimer: Results vary based on individual circumstances. Testimonials reflect individual experiences and are not a guarantee of similar outcomes.
+          </p>
+        </div>
+      </section>
+
       {/* Problem Section */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1603,37 +1634,6 @@ const BuildCredit = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Success Stories */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
-            Real Results from <span className="text-[#f9c65d]">Real People</span>
-          </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg">
-                <div className="flex gap-1 mb-4">
-                  {[1,2,3,4,5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
-                  ))}
-                </div>
-                <p className="text-white italic mb-4 leading-relaxed">"{testimonial.quote}"</p>
-                <div className="border-t border-gray-600 pt-4">
-                  <p className="font-semibold text-white">{testimonial.name}</p>
-                  <p className="text-sm text-gray-400">{testimonial.location}</p>
-                  <p className="text-sm text-amber-400 font-semibold mt-1">{testimonial.transformation}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <p className="text-sm text-gray-600 italic text-center mt-8">
-            Compliance Disclaimer: Results vary based on individual circumstances. Testimonials reflect individual experiences and are not a guarantee of similar outcomes.
-          </p>
         </div>
       </section>
 
