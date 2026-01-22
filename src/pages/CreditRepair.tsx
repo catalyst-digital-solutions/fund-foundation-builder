@@ -119,7 +119,7 @@ const CreditRepair = () => {
             </div>
 
             {/* RIGHT COLUMN - Hero Image */}
-            <div className="hidden lg:block">
+            <div className="block">
               <img src={mesa360HeroTeam} alt="Mesa Group Capital team in front of client's new home" className="rounded-2xl shadow-2xl" loading="eager" />
               <div className="mt-4 px-2">
                 <p className="text-sm text-gray-600 italic leading-relaxed text-center">
@@ -1822,7 +1822,7 @@ Every dollar you paid to Mesa Group.</p>
               Most clients see results in the first 30-45 days. We use advanced dispute methods, not cookie-cutter templates. Your dedicated account manager works your file personally. Our reputation depends on your success.
             </p>
             <p className="text-white font-bold mt-6 text-xl">
-              ✨ This is The Mesa360 Guarantee.<br />
+              This is The Mesa360 Guarantee.<br />
               Real Results in 90 Days — or Your Money Back.
             </p>
 
