@@ -71,22 +71,26 @@ const CreditRepair = () => {
               </p>
 
               {/* Trust Bar */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <Trophy className="w-5 h-5 text-[#f9c65d]" />
-                  <span><strong>2,500+</strong> Clients</span>
+              <div className="mb-8">
+                <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-6 mb-3">
+                  <div className="flex items-center gap-2 text-sm text-gray-700">
+                    <Trophy className="w-5 h-5 text-[#f9c65d]" />
+                    <span><strong>2,500+</strong> Clients</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700">
+                    <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                    <span><strong>150+</strong> 5-Star Reviews</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700">
+                    <Building2 className="w-5 h-5 text-[#f9c65d]" />
+                    <span>Bakersfield HQ</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <Star className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                  <span><strong>150+</strong> 5-Star Reviews</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <Building2 className="w-5 h-5 text-[#f9c65d]" />
-                  <span>Bakersfield HQ</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <Globe className="w-5 h-5 text-[#f9c65d]" />
-                  <span>🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi</span>
+                <div className="flex justify-center md:justify-start">
+                  <div className="flex items-center gap-2 text-sm text-gray-700">
+                    <Globe className="w-5 h-5 text-[#f9c65d]" />
+                    <span>🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi</span>
+                  </div>
                 </div>
               </div>
 
