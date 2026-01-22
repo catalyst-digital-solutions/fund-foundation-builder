@@ -1248,7 +1248,30 @@ const AboutUs = () => {
               </div>
             </Link>
           </div>
-          
+
+          {/* See Our Services CTA */}
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#3e3e3e] mb-6">
+              See Our Services
+            </h3>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link
+                to="/for-consumers"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+              >
+                <span className="text-center">For Consumers</span>
+                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+              </Link>
+              <Link
+                to="/for-businesses"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#3e3e3e] hover:bg-[#2c2c2c] text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-[#3e3e3e]"
+              >
+                <span className="text-center">For Businesses</span>
+                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+              </Link>
+            </div>
+          </div>
+
           {/* Additional Services Section */}
           <div className="bg-white rounded-2xl p-8 md:p-12">
             <h3 className="text-2xl md:text-3xl font-bold text-[#3e3e3e] mb-8 text-center">
