@@ -358,7 +358,7 @@ const CreditRepair = () => {
               <p className="text-gray-600 mb-6 italic">Learning to Win Long-Term</p>
               
               <div className="space-y-4 text-sm text-gray-700 flex-grow">
-                <p>Here's where most credit repair companies fail you: they remove the bad stuff, take your money, and ghost you. Then 6 months later, you're back where you started because nobody taught you how to actually BUILD credit.</p>
+                <p>Here's where most credit restoration companies fail you: they remove the bad stuff, take your money, and ghost you. Then 6 months later, you're back where you started because nobody taught you how to actually BUILD credit.</p>
                 
                 <p className="font-semibold">Not here. Not with Mesa360.</p>
                 
@@ -437,7 +437,7 @@ const CreditRepair = () => {
                     <li>• Complete understanding of how to maintain it</li>
                     <li>• Knowledge of when to refinance high-interest debt</li>
                     <li>• A plan to leverage your improved credit for financial growth</li>
-                    <li>• Confidence that you'll never need credit repair again</li>
+                    <li>• Confidence that you'll never need credit restoration again</li>
                   </ul>
                 </div>
               </div>
@@ -731,7 +731,7 @@ const CreditRepair = () => {
                 <tr>
                   <th className="p-4 text-left bg-gray-100 font-semibold text-gray-700 border-b-2">What Actually Matters</th>
                   <th className="p-4 text-center bg-amber-100 font-bold text-amber-800 border-b-2 border-amber-200">Mesa Group Financial Enhancement</th>
-                  <th className="p-4 text-center bg-gray-100 font-semibold text-gray-600 border-b-2">Typical Credit Repair Companies</th>
+                  <th className="p-4 text-center bg-gray-100 font-semibold text-gray-600 border-b-2">Typical Credit Restoration Companies</th>
                   <th className="p-4 text-center bg-gray-100 font-semibold text-gray-600 border-b-2">DIY Dispute Letters</th>
                 </tr>
               </thead>
@@ -1313,7 +1313,7 @@ const CreditRepair = () => {
                     <span className="text-gray-500">/mo</span>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 mb-4">Starting your credit repair journey. Covers collections, late payments, and inquiries across all 3 bureaus. Includes steady dispute support with agencies and monthly progress tracking.</p>
+                <p className="text-sm text-gray-600 mb-4">Starting your credit restoration journey. Covers collections, late payments, and inquiries across all 3 bureaus. Includes steady dispute support with agencies and monthly progress tracking.</p>
                 
                 <div className="space-y-1 mb-4 text-sm">
                   <p className="font-semibold text-gray-700">What's Included:</p>
@@ -1341,7 +1341,7 @@ const CreditRepair = () => {
 
                 <div className="bg-gray-50 rounded-lg p-3 mb-4">
                   <p className="text-xs font-semibold text-gray-700 mb-1">Best for:</p>
-                  <p className="text-xs text-gray-600">Starting your credit repair journey. Covers collections, late payments, and inquiries across all 3 bureaus. Includes steady dispute support with agencies and monthly progress tracking.</p>
+                  <p className="text-xs text-gray-600">Starting your credit restoration journey. Covers collections, late payments, and inquiries across all 3 bureaus. Includes steady dispute support with agencies and monthly progress tracking.</p>
                 </div>
 
                 <div className="text-center mb-4">

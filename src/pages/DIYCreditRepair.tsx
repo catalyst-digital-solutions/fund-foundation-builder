@@ -24,11 +24,11 @@ const DIYCreditRepair = () => {
     },
     {
       question: "How much time will this take per month?",
-      answer: "Plan on 2-3 hours per month. Initial setup (importing reports, reviewing items) takes about 2 hours. After that, it's 30-60 minutes monthly to send disputes, track responses, and update your reports. Compare this to full-service credit repair which takes 0 hours but costs $149-449/month."
+      answer: "Plan on 2-3 hours per month. Initial setup (importing reports, reviewing items) takes about 2 hours. After that, it's 30-60 minutes monthly to send disputes, track responses, and update your reports. Compare this to full-service credit restoration which takes 0 hours but costs $149-449/month."
     },
     {
-      question: "What's the difference between this and free DIY credit repair?",
-      answer: "Free DIY means writing your own letters from scratch, creating Excel spreadsheets to track everything, and figuring out strategy yourself. Our software gives you AI-powered recommendations, professional letter templates, 3-bureau tracking, deadline management, and education—everything credit repair companies use. You save hundreds while getting professional tools."
+      question: "What's the difference between this and free DIY credit restoration?",
+      answer: "Free DIY means writing your own letters from scratch, creating Excel spreadsheets to track everything, and figuring out strategy yourself. Our software gives you AI-powered recommendations, professional letter templates, 3-bureau tracking, deadline management, and education—everything credit restoration companies use. You save hundreds while getting professional tools."
     },
     {
       question: "Can I really dispute as many items as I want?",
@@ -36,11 +36,11 @@ const DIYCreditRepair = () => {
     },
     {
       question: "What if I get stuck or have questions?",
-      answer: "We provide email support from real credit repair experts. Typically respond within 24 hours on business days. Plus, our education library has tutorials, sample disputes, and step-by-step guides for common situations. You're never truly on your own."
+      answer: "We provide email support from real credit restoration experts. Typically respond within 24 hours on business days. Plus, our education library has tutorials, sample disputes, and step-by-step guides for common situations. You're never truly on your own."
     },
     {
       question: "Will bureaus take my disputes seriously?",
-      answer: "Yes, IF you use proper dispute letters. That's exactly what our letter generator creates—professional, legally-compliant disputes that cite specific FCRA violations, Metro 2 errors, and debt validation requirements. Bureaus are REQUIRED by federal law to investigate all disputes, whether they come from you or a credit repair company."
+      answer: "Yes, IF you use proper dispute letters. That's exactly what our letter generator creates—professional, legally-compliant disputes that cite specific FCRA violations, Metro 2 errors, and debt validation requirements. Bureaus are REQUIRED by federal law to investigate all disputes, whether they come from you or a credit restoration company."
     },
     {
       question: "How long until I see results?",
@@ -93,7 +93,7 @@ const DIYCreditRepair = () => {
               
               {/* Subheadline */}
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
-                Professional-grade credit repair tools — now in your hands. AI tells you what to dispute. We give you the letters. You send them. No waiting on anyone else. You're in control.
+                Professional-grade credit restoration tools — now in your hands. AI tells you what to dispute. We give you the letters. You send them. No waiting on anyone else. You're in control.
               </p>
               
               {/* Value Props Quick List */}
@@ -154,7 +154,7 @@ const DIYCreditRepair = () => {
             <div className="flex items-center justify-center">
               <img 
                 src={diyHeroImage} 
-                alt="Creditily DIY Credit Repair - Example credit improvements showing removed negative items and score increase" 
+                alt="Creditily DIY Credit Restoration - Example credit improvements showing removed negative items and score increase" 
                 className="max-w-full h-auto rounded-lg shadow-2xl"
               />
             </div>
@@ -285,7 +285,7 @@ const DIYCreditRepair = () => {
                   💰 The Smart Choice
                 </span>
                 <h4 className="text-2xl md:text-3xl font-bold text-white">
-                  Credit Repair Shouldn't Cost <span className="text-[#f9c65d]">Thousands</span>
+                  Credit Restoration Shouldn't Cost <span className="text-[#f9c65d]">Thousands</span>
                 </h4>
               </div>
               
@@ -490,7 +490,7 @@ const DIYCreditRepair = () => {
           </h2>
           
           <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-            Professional-grade credit repair tools — now in your hands for just $39.99/mo.
+            Professional-grade credit restoration tools — now in your hands for just $39.99/mo.
           </p>
           
           {/* Features Grid */}
@@ -532,7 +532,7 @@ const DIYCreditRepair = () => {
                 Letters the Pros Would Send — Generated Instantly
               </h3>
               <p className="text-gray-700 mb-4">
-                Letters are far more effective than online disputes. Ours cite federal consumer protection laws — and because YOU send them, bureaus can't reject them like they do with credit repair companies.
+                Letters are far more effective than online disputes. Ours cite federal consumer protection laws — and because YOU send them, bureaus can't reject them like they do with credit restoration companies.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
@@ -879,10 +879,10 @@ const DIYCreditRepair = () => {
         <div className="max-w-4xl mx-auto">
           
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-center">
-            Common <span className="text-[#f9c65d]">Questions</span> About DIY Credit Repair
+            Common <span className="text-[#f9c65d]">Questions</span> About DIY Credit Restoration
           </h2>
           <p className="text-xl text-gray-700 mb-12 text-center">
-            Get answers to common questions about our DIY credit repair software.
+            Get answers to common questions about our DIY credit restoration software.
           </p>
           
           <div className="space-y-4">
@@ -927,7 +927,7 @@ const DIYCreditRepair = () => {
           </h2>
           
           <p className="text-lg text-gray-700 mb-16 text-center max-w-4xl mx-auto leading-relaxed">
-            No credit repair company. No thousands in fees. Just the right tools and the drive to take control. Creditily users are saving money and fixing their credit — on their own terms.
+            No credit restoration company. No thousands in fees. Just the right tools and the drive to take control. Creditily users are saving money and fixing their credit — on their own terms.
           </p>
           
           {/* Counter Header */}
@@ -959,7 +959,7 @@ const DIYCreditRepair = () => {
               </div>
               <div className="text-6xl font-bold text-[#bb9446] mb-3">$1,000s</div>
               <div className="text-2xl font-semibold text-gray-900 mb-2">Saved</div>
-              <div className="text-sm text-gray-600 leading-relaxed">vs. credit repair companies</div>
+              <div className="text-sm text-gray-600 leading-relaxed">vs. credit restoration companies</div>
             </div>
             
             {/* Counter 3: Total Control */}
@@ -1050,7 +1050,7 @@ const DIYCreditRepair = () => {
                 href="/credit-repair" 
                 className="text-[#bb9446] hover:text-[#9a7a3a] font-semibold underline text-lg"
               >
-                Check out our full-service credit repair →
+                Check out our full-service credit restoration →
               </a>
             </div>
           </div>

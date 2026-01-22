@@ -112,8 +112,8 @@ const Footer = () => {
                 <ul className="space-y-3 mb-4">
                 <li><Link to="/build-credit" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Build Credit</Link></li>
                 <li><Link to="/credit-monitoring" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Monitoring</Link></li>
-                <li><Link to="/credit-repair" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Repair</Link></li>
-                <li><Link to="/diy-credit-repair" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">DIY Credit Repair</Link></li>
+                <li><Link to="/credit-repair" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Restoration</Link></li>
+                <li><Link to="/diy-credit-repair" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">DIY Credit Restoration</Link></li>
                   <CollapsibleContent>
                     <li className="mt-3"><Link to="/credit-cards" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Credit Cards</Link></li>
                     <li className="mt-3"><Link to="/personal-loans" className="text-white text-[15px] hover:text-[#F9C65D] transition-colors">Personal Loans</Link></li>
