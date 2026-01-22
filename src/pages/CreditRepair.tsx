@@ -972,7 +972,7 @@ const CreditRepair = () => {
             <DollarSign className="w-12 h-12 text-green-400 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-white mb-3">Real Financial Impact:</h3>
             <p className="text-mgc-tan text-lg">
-              Many qualified clients have received cash settlements ranging from <span className="text-green-400 font-bold">$1,000 to $2,500+</span> when creditors or bureaus violated their rights—<br /><span className="text-white font-semibold">in addition to removal of inaccurate items</span>.
+              Many qualified clients have received cash settlements ranging from <span className="text-green-400 font-bold">$1,000 to $2,500+</span> when creditors or bureaus violated their rights—<span className="text-white font-semibold">in addition to removal of inaccurate items</span>.
             </p>
           </div>
 
