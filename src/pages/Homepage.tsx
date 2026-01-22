@@ -21,7 +21,6 @@ import {
   Briefcase,
   Home,
   Heart,
-  PlayCircle,
   ChevronDown,
   ChevronRight,
   Star,
@@ -589,25 +588,18 @@ const Homepage = () => {
               </div>
             </div>
 
-            {/* Right Column - Video Placeholder */}
+            {/* Right Column - Video */}
             <div className="relative">
               <div className="relative aspect-video bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl shadow-2xl overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm hover:bg-black/30 transition-all cursor-pointer group">
-                  <div className="transform group-hover:scale-110 transition-transform">
-                    <PlayCircle className="w-24 h-24 text-white drop-shadow-lg" />
-                  </div>
-                </div>
-                
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-xl">
-                    <p className="text-sm font-semibold text-gray-900 mb-1">
-                      Watch: Why Mesa Group Is Different
-                    </p>
-                    <p className="text-xs text-gray-600">
-                      45-90 second founder video • Evert Calderon
-                    </p>
-                  </div>
-                </div>
+                <video
+                  className="w-full h-full object-cover"
+                  controls
+                  poster=""
+                  preload="metadata"
+                >
+                  <source src="/mesa-group-consulting-30-second-commercial.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
 
               {/* Floating Stats Cards */}
