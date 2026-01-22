@@ -621,7 +621,7 @@ const Homepage = () => {
                     <Star className="w-6 h-6 text-amber-600 fill-amber-600" />
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-gray-900">4.9/5.0</p>
+                    <p className="text-2xl font-bold text-gray-900">5-Star</p>
                     <p className="text-xs text-gray-600">Client Rating</p>
                   </div>
                 </div>
