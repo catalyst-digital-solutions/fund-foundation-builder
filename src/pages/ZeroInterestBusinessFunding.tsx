@@ -1174,11 +1174,8 @@ const FinalCTA = () => (
           <AlertCircle className="w-8 h-8 text-amber-600 flex-shrink-0" />
           <div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Our Banking Relationships Are Capacity-Limited</h3>
-            <p className="text-gray-700 mb-2">
+            <p className="text-gray-700">
               To maintain our high approval rates and personalized service, we only take on 15-20 new clients per month. This ensures every client gets the attention their funding deserves and our banking contacts aren't overwhelmed with applications.
-            </p>
-            <p className="text-gray-900 font-semibold">
-              Current availability for December 2024: 7 spots remaining
             </p>
           </div>
         </div>
