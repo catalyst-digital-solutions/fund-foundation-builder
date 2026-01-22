@@ -87,7 +87,7 @@ const HeroSection = ({ isModalOpen, setIsModalOpen }: { isModalOpen: boolean; se
             <div className="flex flex-col sm:flex-row gap-4">
               <CalendlyPopupButton
                 text="Book Your Free Funding Consultation"
-                className="inline-flex items-center justify-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 text-center hover:scale-105"
+                className="flex-1 inline-flex items-center justify-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-5 text-center hover:scale-105"
                 showArrow={false}
                 prefillOptions={{
                   customAnswers: {
@@ -105,7 +105,7 @@ const HeroSection = ({ isModalOpen, setIsModalOpen }: { isModalOpen: boolean; se
 
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="inline-flex items-center justify-center gap-2 bg-white text-gray-700 text-xl font-semibold px-10 py-5 rounded-lg border-2 border-gray-300 hover:bg-gray-50 transition-all duration-200 text-center hover:scale-105"
+                className="flex-1 inline-flex items-center justify-center gap-2 bg-white text-gray-700 text-xl font-semibold px-10 py-5 rounded-lg border-2 border-gray-300 hover:bg-gray-50 transition-all duration-200 text-center hover:scale-105"
               >
                 See If You Qualify
               </button>
