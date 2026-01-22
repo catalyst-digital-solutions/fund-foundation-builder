@@ -150,12 +150,12 @@ const BuildCredit = () => {
   const revolvingPartners = [
     { name: 'Ava Finance', url: 'https://meetava.sjv.io/xLxZEA', features: ['Reports to all 3 bureaus', 'No credit check to apply', 'Builds revolving credit'] },
     { name: 'Kikoff', url: 'https://kikoff.com/', features: ['$0 annual fee', 'No hard pull', 'Reports monthly'] },
-    { name: 'CreditStrong Revolv', url: 'https://myusn.link/1vf1WA', features: ['Credit builder + revolving', 'Low monthly cost', 'All 3 bureaus'] },
+    { name: 'CreditStrong Revolv', url: 'https://www.creditstrong.com/?transid=346adf8666034416853ba1e6c434b2cc&utm_medium=31&utm_source=Affiliate&affiliate_id=31&utm_campaign=429891', features: ['Credit builder + revolving', 'Low monthly cost', 'All 3 bureaus'] },
     { name: 'Credit Builder Card', url: 'https://www.creditbuildercard.com/mesagroupconsulting', features: ['Secured option', 'Graduate to unsecured', 'Rewards potential'] },
   ];
 
   const installmentPartners = [
-    { name: 'CreditStrong Loans', url: 'https://myusn.link/1vf1WA', features: ['Credit builder loan', 'Reports to all 3 bureaus', 'Save while building'] },
+    { name: 'CreditStrong Loans', url: 'https://www.creditstrong.com/?transid=346adf8666034416853ba1e6c434b2cc&utm_medium=31&utm_source=Affiliate&affiliate_id=31&utm_campaign=429891', features: ['Credit builder loan', 'Reports to all 3 bureaus', 'Save while building'] },
     { name: 'Self Credit Builder', url: 'https://self.inc', features: ['No credit check', 'Save money as you build', 'Low monthly payments'] },
   ];
 
@@ -163,7 +163,7 @@ const BuildCredit = () => {
     { name: 'RentReporters', url: 'https://www.rentreporters.com/?clickref=1110lXs9Zs', features: ['Backdate up to 24 months', 'Reports to TransUnion', 'Fast enrollment'] },
     { name: 'Rental Kharma', url: 'https://www.rentalkharma.com/partner-ecalderon/?Code=MESAGROUP', features: ['Reports to TransUnion', 'Past rent history', 'Monthly reporting'] },
     { name: 'BoomPay', url: 'https://www.boompay.app/', features: ['Reports to all 3 bureaus', 'Rent + utilities', 'Backdate history'] },
-    { name: 'Experian Boost', url: 'https://myusn.link/bFdtEP', features: ['FREE service', 'Add utilities & streaming', 'Instant score update'] },
+    { name: 'Experian Boost', url: 'https://www.experian.com/lp/score-boost/?conf=aff_a&pc=aff_exp_27&cc=aff_33_27_1228_6640_429891_01_213777450_eb70e093-56e4-474a-a807-01fcb94afdcc_rid175705769&ref=6fda4f17%2c21d6beda%2cn%2cn', features: ['FREE service', 'Add utilities & streaming', 'Instant score update'] },
   ];
 
   const paths = [
@@ -994,7 +994,7 @@ const BuildCredit = () => {
                   </li>
                 </ul>
                 <a
-                  href="https://myusn.link/1vf1WA"
+                  href="https://www.creditstrong.com/?transid=346adf8666034416853ba1e6c434b2cc&utm_medium=31&utm_source=Affiliate&affiliate_id=31&utm_campaign=429891"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
@@ -1109,7 +1109,7 @@ const BuildCredit = () => {
                   </li>
                 </ul>
                 <a
-                  href="https://myusn.link/1vf1WA"
+                  href="https://www.creditstrong.com/?transid=346adf8666034416853ba1e6c434b2cc&utm_medium=31&utm_source=Affiliate&affiliate_id=31&utm_campaign=429891"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
@@ -1315,7 +1315,7 @@ const BuildCredit = () => {
                   </li>
                 </ul>
                 <a
-                  href="https://myusn.link/bFdtEP"
+                  href="https://www.experian.com/lp/score-boost/?conf=aff_a&pc=aff_exp_27&cc=aff_33_27_1228_6640_429891_01_213777450_eb70e093-56e4-474a-a807-01fcb94afdcc_rid175705769&ref=6fda4f17%2c21d6beda%2cn%2cn"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors text-sm text-center"
