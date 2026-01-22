@@ -1787,7 +1787,7 @@ const Homepage = () => {
           {/* Final CTA */}
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Ready to Transform Your <span className="text-[#f9c65d]">Financial Future</span>?
+              Ready to Transform Your<br /><span className="text-[#f9c65d]">Financial Future</span>?
             </h2>
 
             <CalendlyPopupButtonLarge
