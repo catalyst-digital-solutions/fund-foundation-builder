@@ -2126,7 +2126,7 @@ Every dollar you paid to Mesa Group.</p>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Trilingual: 🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi</span>
+              <span className="text-gray-700">Trilingual Support</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Check className="w-4 h-4 text-green-600" />
@@ -2152,7 +2152,7 @@ Every dollar you paid to Mesa Group.</p>
             <p className="text-gray-600 mb-6">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            <p className="text-sm text-gray-500">🇺🇸 English | 🇪🇸 Español | 🇮🇳 Punjabi</p>
+            <p className="text-sm text-gray-500">Hablamos Español 🇪🇸 |  Assi Punjabi Bolde Haan 🇮🇳</p>
           </div>
         </div>
       </section>
