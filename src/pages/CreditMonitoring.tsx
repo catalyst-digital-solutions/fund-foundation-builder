@@ -841,7 +841,7 @@ function FinalCTA() {
           {/* Pricing Callout */}
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6 text-center max-w-md mx-auto">
             <p className="text-gray-700 leading-relaxed">
-              <span className="font-bold text-xl text-amber-600">$1</span> gets you started with a 
+              <span className="font-bold text-xl text-[#f9c65d]">$1</span> gets you started with a 
               <span className="font-semibold"> 7-day trial</span> of full 3-bureau credit monitoring.
               <br />
               <span className="text-sm text-gray-600">
