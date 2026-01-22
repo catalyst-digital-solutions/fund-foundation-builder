@@ -327,8 +327,8 @@ const BuildCredit = () => {
                 href="tel:6613103040"
                 className="bg-white hover:bg-gray-50 text-gray-900 font-semibold py-4 px-8 rounded-lg border-2 border-gray-300 hover:border-amber-400 transition-all duration-200 flex items-center justify-center gap-2"
               >
-                <Phone className="w-5 h-5" />
-                Speak with a Specialist: (661) 310-3040
+                <Phone className="w-5 h-5 flex-shrink-0" />
+                <span className="text-center">Speak with a Specialist:<br />(661) 310-3040</span>
               </a>
             </div>
             
@@ -1854,8 +1854,8 @@ const BuildCredit = () => {
               href="tel:6613103040"
               className="bg-white hover:bg-gray-50 text-gray-900 font-bold py-4 px-8 rounded-lg border-2 border-gray-300 hover:border-amber-400 transition-all duration-200 text-lg flex items-center justify-center gap-2"
             >
-              <Phone className="w-5 h-5" />
-              Speak with a Specialist: (661) 310-3040
+              <Phone className="w-5 h-5 flex-shrink-0" />
+              <span className="text-center">Speak with a Specialist:<br />(661) 310-3040</span>
             </a>
           </div>
           
