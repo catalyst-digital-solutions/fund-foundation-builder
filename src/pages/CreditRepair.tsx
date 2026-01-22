@@ -968,7 +968,7 @@ const CreditRepair = () => {
           </div>
 
           {/* Real Financial Impact */}
-          <div className="bg-green-900/20 border border-green-500/30 rounded-2xl p-8 mb-12 text-center max-w-3xl mx-auto">
+          <div className="bg-green-900/20 border border-green-500/30 rounded-2xl p-8 mb-12 text-center">
             <DollarSign className="w-12 h-12 text-green-400 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-white mb-3">Real Financial Impact:</h3>
             <p className="text-mgc-tan text-lg">
@@ -977,7 +977,7 @@ const CreditRepair = () => {
           </div>
 
           {/* The Bottom Line */}
-          <div className="bg-mgc-dark-gray/50 border border-mgc-gold/30 rounded-2xl p-8 mb-12 text-center max-w-3xl mx-auto">
+          <div className="bg-mgc-dark-gray/50 border border-mgc-gold/30 rounded-2xl p-8 mb-12 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">The Bottom Line:</h3>
             <p className="text-xl text-mgc-tan">
               We don't make promises we can't keep. We make progress you can measure. And when your rights are violated, we fight back with <span className="text-mgc-yellow font-bold">real legal power</span>.
