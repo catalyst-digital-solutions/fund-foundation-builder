@@ -1627,32 +1627,70 @@ const Homepage = () => {
               <p>
                 So it could be the strategic financial partner my family never had when we needed it most.
               </p>
-              
-              <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 my-8">
-                <p className="font-semibold text-gray-900">
-                  Today, we've helped over 2,500 families and businesses. We've facilitated over $100M in funding through our partner networks. We've turned 490 credit scores into mortgage approvals. We've turned denied loan applications into funded businesses.
+
+              {/* Mobile/Tablet only - show legacy content inline */}
+              <div className="lg:hidden">
+                <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 my-8">
+                  <p className="font-semibold text-gray-900">
+                    Today, we've helped over 2,500 families and businesses. We've facilitated over $100M in funding through our partner networks. We've turned 490 credit scores into mortgage approvals. We've turned denied loan applications into funded businesses.
+                  </p>
+                </div>
+
+                <p className="text-xl font-bold text-green-600">
+                  But here's what I'm most proud of:
+                </p>
+
+                <p>
+                  Every single client we've helped is now equipped to teach the next generation. They understand how credit works. They know how to access capital. They can build wealth that lasts.
+                </p>
+
+                <p className="text-xl font-bold text-gray-900">
+                  That's the real legacy. Not fixing credit—breaking generational curses.
+                </p>
+
+                <p className="italic text-gray-600 mt-8">
+                  — Evert Jafet Calderon, Founder & CEO
                 </p>
               </div>
-              
-              <p className="text-xl font-bold text-green-600">
-                But here's what I'm most proud of:
-              </p>
-              
-              <p>
-                Every single client we've helped is now equipped to teach the next generation. They understand how credit works. They know how to access capital. They can build wealth that lasts.
-              </p>
-              
-              <p className="text-xl font-bold text-gray-900">
-                That's the real legacy. Not fixing credit—breaking generational curses.
-              </p>
-              
-              <p className="italic text-gray-600 mt-8">
-                — Evert Jafet Calderon, Founder & CEO
-              </p>
             </div>
 
           </div>
 
+        </div>
+      </section>
+
+      {/* ================================================================
+          SECTION 9B: FOUNDER'S LEGACY (Desktop only - moved from above)
+      ================================================================ */}
+      <section className="hidden lg:block py-16 md:py-24 bg-gradient-to-br from-amber-50 via-white to-orange-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-amber-100">
+              <p className="text-xl md:text-2xl font-semibold text-gray-900 leading-relaxed mb-8">
+                Today, we've helped over <span className="text-[#f9c65d]">2,500 families and businesses</span>. We've facilitated over <span className="text-[#f9c65d]">$100M in funding</span> through our partner networks. We've turned <span className="text-[#f9c65d]">490 credit scores</span> into mortgage approvals. We've turned denied loan applications into funded businesses.
+              </p>
+
+              <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-orange-400 mx-auto mb-8 rounded-full" />
+
+              <p className="text-xl font-bold text-green-600 mb-4">
+                But here's what I'm most proud of:
+              </p>
+
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                Every single client we've helped is now equipped to teach the next generation. They understand how credit works. They know how to access capital. They can build wealth that lasts.
+              </p>
+
+              <p className="text-2xl font-bold text-gray-900 mb-8">
+                That's the real legacy. Not fixing credit—<span className="text-[#f9c65d]">breaking generational curses</span>.
+              </p>
+
+              <div className="border-t border-gray-200 pt-6">
+                <p className="text-lg italic text-gray-600">
+                  — Evert Jafet Calderon, Founder & CEO
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
