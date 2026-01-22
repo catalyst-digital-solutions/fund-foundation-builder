@@ -820,7 +820,7 @@ function FinalCTA() {
           </div>
           <div className="flex items-center gap-2 text-sm">
             <Check className="w-4 h-4 text-green-600" />
-            <span className="text-gray-700">Easy Dispute Action Buttons</span>
+            <span className="text-gray-700">PrivacyMaster®</span>
           </div>
           <div className="flex items-center gap-2 text-sm">
             <Check className="w-4 h-4 text-green-600" />
