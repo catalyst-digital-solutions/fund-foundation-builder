@@ -1694,7 +1694,7 @@ const CreditRepair = () => {
                 </span>
               </div>
               
-              <p className="text-gray-300 mb-6">Hablamos español | We speak Punjabi</p>
+              <p className="text-gray-300 mb-6">Hablamos Español 🇪🇸 | Assi Punjabi Bolde Haan 🇮🇳</p>
 
               <CalendlyPopupButton
                 text="Schedule Free Consultation"
