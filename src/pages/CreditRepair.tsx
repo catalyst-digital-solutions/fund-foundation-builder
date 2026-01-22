@@ -968,22 +968,21 @@ const CreditRepair = () => {
           </div>
 
           {/* Real Financial Impact */}
-          <div className="bg-green-900/20 border border-green-500/30 rounded-2xl p-8 mb-12 text-center">
+          <div className="bg-green-900/20 border border-green-500/30 rounded-2xl p-8 mb-12 text-center max-w-3xl mx-auto">
             <DollarSign className="w-12 h-12 text-green-400 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-white mb-3">Real Financial Impact:</h3>
-            <p className="text-mgc-tan text-lg max-w-3xl mx-auto">
-              Many qualified clients have received cash settlements ranging from <span className="text-green-400 font-bold">$1,000 to $2,500+</span> when creditors or bureaus violated their rights—<span className="text-white font-semibold">in addition to removal of inaccurate items</span>.
+            <p className="text-mgc-tan text-lg">
+              Many qualified clients have received cash settlements ranging from <span className="text-green-400 font-bold">$1,000 to $2,500+</span> when creditors or bureaus violated their rights—<br /><span className="text-white font-semibold">in addition to removal of inaccurate items</span>.
             </p>
           </div>
 
           {/* The Bottom Line */}
-          <div className="text-center">
-            <div className="inline-block bg-mgc-dark-gray/50 border border-mgc-gold/30 rounded-2xl p-8 mb-12">
-              <h3 className="text-2xl font-bold text-white mb-4">The Bottom Line:</h3>
-              <p className="text-xl text-mgc-tan max-w-2xl">
-                We don't make promises we can't keep. We make progress you can measure. And when your rights are violated, we fight back with <span className="text-mgc-yellow font-bold">real legal power</span>.
-              </p>
-            </div>
+          <div className="bg-mgc-dark-gray/50 border border-mgc-gold/30 rounded-2xl p-8 mb-12 text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-white mb-4">The Bottom Line:</h3>
+            <p className="text-xl text-mgc-tan">
+              We don't make promises we can't keep. We make progress you can measure. And when your rights are violated, we fight back with <span className="text-mgc-yellow font-bold">real legal power</span>.
+            </p>
+          </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <CalendlyPopupButton 
