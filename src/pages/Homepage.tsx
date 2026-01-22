@@ -643,34 +643,39 @@ const Homepage = () => {
       {/* ================================================================
           SECTION 2: THE PAIN (EMOTIONAL AMPLIFICATION)
       ================================================================ */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section
+        className="relative py-16 md:py-24 bg-cover bg-center"
+        style={{ backgroundImage: "url('/mesa-group-office-9-small.jpg')" }}
+      >
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8">
             You Deserve <span className="text-[#f9c65d]">Better</span> Than This
           </h2>
 
-          <div className="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed">
+          <div className="space-y-6 text-lg md:text-xl text-gray-200 leading-relaxed">
             <p>
               Getting denied for that apartment while the landlord looked at you like you're irresponsible.
             </p>
-            
+
             <p>
               Watching your friends book trips with credit card rewards while you're stuck paying cash for everything.
             </p>
-            
+
             <p>
               That sick feeling in your stomach every time you apply for something—knowing the rejection is coming before you even hit submit.
             </p>
-            
+
             <p>
               The stress of being one emergency away from financial catastrophe. The shame of pulling out your debit card while everyone else swipes credit. The weight of knowing your financial past is stealing your financial future.
             </p>
-            
-            <p className="text-2xl font-semibold text-gray-900 pt-4">
+
+            <p className="text-2xl font-semibold text-white pt-4">
               This isn't about a number on a report. This is about your dignity. Your opportunities. Your family's future.
             </p>
-            
+
             <p className="text-2xl font-bold text-[#f9c65d]">
               And it ends here.
             </p>
