@@ -438,54 +438,6 @@ function SmartCreditFeatures() {
             </div>
           </div>
 
-          {/* Feature 4: Dispute Errors */}
-          <div className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-200">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="order-2 md:order-1 bg-gradient-to-br from-red-600 to-red-700 rounded-xl p-8 text-white shadow-xl">
-                <AlertTriangle className="w-12 h-12 mb-4 drop-shadow-lg" />
-                <h4 className="text-2xl font-bold mb-4">Found an Error?</h4>
-                <p className="leading-relaxed mb-4">
-                  Use our Action Buttons to dispute errors directly with creditors and credit bureaus—right from your dashboard.
-                </p>
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 border border-white/30">
-                  <div className="text-sm font-bold mb-2">Common Errors We Help Fix:</div>
-                  <ul className="text-sm space-y-1">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3" />
-                      Incorrect account balances
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3" />
-                      Accounts that aren't yours
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3" />
-                      Wrong payment history
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3" />
-                      Outdated information
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="order-1 md:order-2">
-                <div className="inline-block bg-[#bb9446]/10 p-4 rounded-lg mb-4">
-                  <FileText className="w-12 h-12 text-foreground" />
-                </div>
-                <h3 className="text-3xl font-bold text-foreground mb-4">
-                  Dispute Errors on Your Credit Reports
-                </h3>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  Disputing an error on your credit report doesn't have to be complicated. With SmartCredit®'s <strong>Action Buttons</strong>, you can communicate directly with creditors to fix inaccuracies that may be lowering your score.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Our interactive credit reports make it easy to identify errors and take immediate action—all from your dashboard.
-                </p>
-              </div>
-            </div>
-          </div>
-
           {/* Feature 5: Money Manager */}
           <div className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-200">
             <div className="grid md:grid-cols-2 gap-8 items-center">
