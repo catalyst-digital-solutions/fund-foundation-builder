@@ -219,25 +219,29 @@ const BuildCredit = () => {
       quote: "I went from no credit to a 738 score in 8 months. The strategy was simple—I just needed someone to show me the right order to do things.",
       name: 'Jessica M.',
       location: 'Bakersfield, CA',
-      transformation: '0 → 738 in 8 months'
+      transformation: '0 → 738 in 8 months',
+      image: '/img-04-professional-headshot-of-jessica-m.jpeg'
     },
     {
       quote: "After my credit restoration, I thought I was done. Mesa Group showed me that removing negatives was just step one. Building positive accounts is where the magic happens.",
       name: 'Marcus T.',
       location: 'Los Angeles, CA',
-      transformation: '540 → 712 in 10 months'
+      transformation: '540 → 712 in 10 months',
+      image: '/img-05-professional-headshot-of-marcus-t.jpeg'
     },
     {
       quote: "The rent reporting alone added 24 months of payment history I didn\'t know I could use. Game changer.",
       name: 'Sarah K.',
       location: 'Fresno, CA',
-      transformation: '580 → 695 in 6 months'
+      transformation: '580 → 695 in 6 months',
+      image: '/img-06-professional-headshot-of-sarah-k.jpeg'
     },
     {
       quote: "Person A vs. Person B? I was Person A for years. Once I followed this strategy, everything changed. Pre-approved for my first home loan last month.",
       name: 'David R.',
       location: 'Bakersfield, CA',
-      transformation: '620 → 745 in 12 months'
+      transformation: '620 → 745 in 12 months',
+      image: '/img-07-professional-headshot-of-david-r.jpeg'
     },
   ];
 
@@ -409,10 +413,17 @@ const BuildCredit = () => {
                   ))}
                 </div>
                 <p className="text-white italic mb-4 leading-relaxed">"{testimonial.quote}"</p>
-                <div className="border-t border-gray-600 pt-4">
-                  <p className="font-semibold text-white">{testimonial.name}</p>
-                  <p className="text-sm text-gray-400">{testimonial.location}</p>
-                  <p className="text-sm text-amber-400 font-semibold mt-1">{testimonial.transformation}</p>
+                <div className="border-t border-gray-600 pt-4 flex items-start gap-3">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full object-cover flex-shrink-0"
+                  />
+                  <div>
+                    <p className="font-semibold text-white">{testimonial.name}</p>
+                    <p className="text-sm text-gray-400">{testimonial.location}</p>
+                    <p className="text-sm text-amber-400 font-semibold mt-1">{testimonial.transformation}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -1607,7 +1618,7 @@ const BuildCredit = () => {
                 </div>
 
                 <CalendlyPopupButton
-                  text={`Discuss ${path.name} Strategy`}
+                  text={`Download ${path.name} Guide`}
                   showArrow={true}
                   className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors inline-flex items-center justify-center gap-2"
                   prefillOptions={{

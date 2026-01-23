@@ -443,10 +443,24 @@ When working on this project, reference:
 
 ## Deployment
 
-- Repository hosted on GitHub
-- Deployed through Lovable platform
-- Check with Evert for production URL
-- Lovable: Project > Settings > Domains to connect custom domain
+- **Repository:** GitHub - https://github.com/catalyst-digital-solutions/fund-foundation-builder
+- **Platform:** Lovable (manages build/deploy) → Vercel (hosting)
+- **Preview URL:** https://mesa-group-consulting-website.vercel.app/
+- **Workflow:** Push to GitHub → Lovable syncs → Vercel rebuilds automatically
+- Lovable Project: https://lovable.dev/projects/a84a569b-99f4-4ddf-898b-bc278a3f3eb0
+
+## Meta Tags & Social Sharing
+
+**OpenGraph & Twitter Cards** (configured in `index.html`):
+- **og:image:** `/opengraph-thumbnail.jpg` (240KB, in `public/`)
+- **twitter:image:** `/opengraph-thumbnail.jpg`
+- **twitter:site:** `@mesafinanciera`
+- **Favicon:** `/favicon.jpg` (in `public/`)
+
+**Full URLs for social sharing:**
+```
+https://mesa-group-consulting-website.vercel.app/opengraph-thumbnail.jpg
+```
 
 ## Recent Major Update #5 (December 17, 2024)
 
@@ -1068,5 +1082,78 @@ Comprehensive updates to CTA behavior across credit repair pages, replacing styl
 
 ---
 
-**Last Updated:** January 20, 2026
+## Recent Major Update #15 (January 21, 2026)
+
+### Meta Tags & Deployment Documentation
+
+- Updated `index.html` OpenGraph and Twitter meta tags:
+  - `og:image` → `https://mesa-group-consulting-website.vercel.app/opengraph-thumbnail.jpg`
+  - `twitter:image` → same
+  - `twitter:site` → `@mesafinanciera` (was `@Lovable`)
+- Documented deployment workflow: GitHub → Lovable → Vercel
+- Added preview URL to CLAUDE.md deployment section
+
+**Commits:**
+- `982ca4c` - Update OG and Twitter meta tags with Mesa Group branding
+- `46d6ad5` - Fix twitter:site to @mesafinanciera
+
+---
+
+## Recent Major Update #16 (January 22, 2026)
+
+### Testimonial Enhancements - Avatar Images & Credit Score Improvements
+
+**Background:**
+Added professional avatar images and credit score transformation lines to testimonial sections on Build Credit and Credit Monitoring pages.
+
+**Build Credit Page** ([src/pages/BuildCredit.tsx](src/pages/BuildCredit.tsx))
+- Added avatar images to "Real Results from Real People" testimonials
+- Testimonials with avatars:
+  - Jessica M. (`/img-04-professional-headshot-of-jessica-m.jpeg`) - 0 → 738 in 8 months
+  - Marcus T. (`/img-05-professional-headshot-of-marcus-t.jpeg`) - 520 → 695 in 6 months
+  - Sarah K. (`/img-06-professional-headshot-of-sarah-k.jpeg`) - 580 → 742 in 9 months
+  - David R. (`/img-07-professional-headshot-of-david-r.jpeg`) - 490 → 712 in 7 months
+- Avatar styling: `w-12 h-12 rounded-full object-cover flex-shrink-0`
+
+**Credit Monitoring Page** ([src/pages/CreditMonitoring.tsx](src/pages/CreditMonitoring.tsx))
+- Added avatar images to "Hear From Our Clients" testimonials
+- Restyled testimonial cards from white to dark theme (matching Build Credit)
+- Added credit score transformation lines:
+  - Sandeep K. (`/img-01-professional-headshot-of-sandeep-k.jpeg`) - 580 → 695 in 5 months
+  - Alex M. (`/img-02-professional-headshot-of-alex-m.jpeg`) - 512 → 678 in 4 months
+  - Christian M. (`/img-03-professional-headshot-of-christian-m.jpeg`) - 498 → 721 in 7 months
+- Card styling: `bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c]`, gold stars (`fill-[#f9c65d]`), white italic quotes
+
+**Design Pattern - Testimonial Card:**
+```tsx
+<div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg">
+  <div className="flex gap-1 mb-4">
+    {[1,2,3,4,5].map((star) => (
+      <Star key={star} className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
+    ))}
+  </div>
+  <p className="text-white italic mb-4 leading-relaxed">"Quote..."</p>
+  <div className="border-t border-gray-600 pt-4 flex items-start gap-3">
+    <img src="/img-XX-..." className="w-12 h-12 rounded-full object-cover flex-shrink-0" />
+    <div>
+      <p className="font-semibold text-white">Name</p>
+      <p className="text-sm text-gray-400">Location</p>
+      <p className="text-sm text-amber-400 font-semibold mt-1">520 → 710 in 6 months</p>
+    </div>
+  </div>
+</div>
+```
+
+**Avatar Images in public/:**
+- `img-01-professional-headshot-of-sandeep-k.jpeg`
+- `img-02-professional-headshot-of-alex-m.jpeg`
+- `img-03-professional-headshot-of-christian-m.jpeg`
+- `img-04-professional-headshot-of-jessica-m.jpeg`
+- `img-05-professional-headshot-of-marcus-t.jpeg`
+- `img-06-professional-headshot-of-sarah-k.jpeg`
+- `img-07-professional-headshot-of-david-r.jpeg`
+
+---
+
+**Last Updated:** January 22, 2026
 **Project Status:** Active Development
