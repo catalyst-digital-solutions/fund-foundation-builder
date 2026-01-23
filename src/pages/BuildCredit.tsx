@@ -33,9 +33,12 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
+import { GHLFormModal } from '@/components/GHLFormModal';
 
 const BuildCredit = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [isGuideModalOpen, setIsGuideModalOpen] = useState(false);
+  const [selectedGuideUrl, setSelectedGuideUrl] = useState('');
 
   const trustPillars = [
     { icon: Calendar, title: 'Consistency', description: 'Showing up every month with on-time payments' },
@@ -165,6 +168,17 @@ const BuildCredit = () => {
     { name: 'BoomPay', url: 'https://www.boompay.app/', features: ['Reports to all 3 bureaus', 'Rent + utilities', 'Backdate history'] },
     { name: 'Experian Boost', url: 'https://www.experian.com/lp/score-boost/?conf=aff_a&pc=aff_exp_27&cc=aff_33_27_1228_6640_429891_01_213777450_eb70e093-56e4-474a-a807-01fcb94afdcc_rid175705769&ref=6fda4f17%2c21d6beda%2cn%2cn', features: ['FREE service', 'Add utilities & streaming', 'Instant score update'] },
   ];
+
+  const guideFormUrls: { [key: string]: string } = {
+    'Foundation Builder': 'https://link.mesagroupconsulting.com/widget/form/uUE1dkTdPGFZVQRR0ObD',
+    'Accelerated Builder': 'https://link.mesagroupconsulting.com/widget/form/UI9ZQ3EKobX1pX2qLz7s',
+    'Premium Profile Builder': 'https://link.mesagroupconsulting.com/widget/form/5Omruu9hIcuHix52sRHp'
+  };
+
+  const openGuideModal = (pathName: string) => {
+    setSelectedGuideUrl(guideFormUrls[pathName]);
+    setIsGuideModalOpen(true);
+  };
 
   const paths = [
     {
@@ -1617,14 +1631,13 @@ const BuildCredit = () => {
                   </p>
                 </div>
 
-                <CalendlyPopupButton
-                  text={`Download ${path.name} Guide`}
-                  showArrow={true}
+                <button
+                  onClick={() => openGuideModal(path.name)}
                   className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors inline-flex items-center justify-center gap-2"
-                  prefillOptions={{
-                    utm: { source: 'website', medium: 'build_credit', campaign: `${path.name.toLowerCase().replace(/ /g, '_')}_cta` }
-                  }}
-                />
+                >
+                  <span>Download {path.name} Guide</span>
+                  <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                </button>
               </div>
             ))}
           </div>
@@ -1910,6 +1923,14 @@ const BuildCredit = () => {
       </section>
 
       <Footer />
+
+      {/* GHL Form Modal for Download Guides */}
+      <GHLFormModal
+        isOpen={isGuideModalOpen}
+        onClose={() => setIsGuideModalOpen(false)}
+        formUrl={selectedGuideUrl}
+        title="Download Credit Building Guide"
+      />
     </div>
   );
 };

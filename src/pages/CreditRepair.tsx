@@ -154,7 +154,8 @@ const CreditRepair = () => {
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-8 text-center">
-            We Know You've Been Promised <span className="text-[#f9c65d]">Quick Fixes</span> Before.
+            We Know You've Been Promised<br />
+            <span className="text-[#f9c65d]">Quick Fixes</span> Before.
           </h2>
 
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
@@ -360,7 +361,7 @@ const CreditRepair = () => {
               <div className="space-y-4 text-sm text-gray-700 flex-grow">
                 <p>Here's where most credit restoration companies fail you: they remove the bad stuff, take your money, and ghost you. Then 6 months later, you're back where you started because nobody taught you how to actually BUILD credit.</p>
                 
-                <p className="font-semibold">Not here. Not with Mesa360.</p>
+                <p className="font-semibold">Not here. Not with Mesa Group Consulting.</p>
                 
                 <div>
                   <p className="font-bold mb-2">1-on-1 Financial Coaching (Included in Every Plan)</p>
@@ -1012,7 +1013,8 @@ const CreditRepair = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              This Isn't Just Credit Restoration. It's a <span className="text-[#f9c65d]">Complete Financial Transformation</span>.
+              This Isn't Just Credit Restoration.<br />
+              It's <span className="text-[#f9c65d]">Complete Financial Transformation</span>.
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Most credit recovery companies send generic dispute letters and disappear. At Mesa Group, every client gets a dedicated account manager, customized action plan, monthly reviews, and 1-on-1 financial coaching.
@@ -1136,7 +1138,7 @@ const CreditRepair = () => {
             <p className="text-amber-400 font-semibold mb-2">Total Cost of Bad Credit</p>
             <div className="text-5xl md:text-6xl font-bold text-white mb-6">$126,000+</div>
             <div className="border-t border-white/20 pt-6 mt-6">
-              <p className="text-gray-300 mb-2">Mesa Group Mesa360 Credit System™</p>
+              <p className="text-gray-300 mb-2">Mesa360 Credit System™</p>
               <p className="text-3xl font-bold text-amber-400 mb-4">Starting at $149/month</p>
               <p className="text-xl text-white">Your Potential Savings: <span className="text-green-400 font-bold">$100,000+</span></p>
             </div>
@@ -1491,13 +1493,13 @@ const CreditRepair = () => {
             </div>
           </div>
 
-          {/* 12-MONTH PROGRAMS SECTION */}
+          {/* 9-MONTH PROGRAMS SECTION */}
           <div className="mb-16">
             <div className="text-center mb-10">
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">12-MONTH PROGRAMS</h3>
+              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">9-MONTH PROGRAMS</h3>
               <p className="text-lg text-gray-600 mb-4">Pay Once, Transform Forever—Maximum Savings for Committed Action</p>
-              <p className="text-xl font-semibold text-[#3E3E3E] mb-2">Get a full year of the Mesa360 Credit System™ with significant savings</p>
-              <p className="text-gray-600 max-w-3xl mx-auto">For those who know they're committed—pay in full (or use Buy Now, Pay Later) and save up to $1,788 compared to monthly plans. Get the complete Mesa360 Credit System™ with massive upfront savings.</p>
+              <p className="text-xl font-semibold text-[#3E3E3E] mb-2">Get nine months of the Mesa360 Credit System™ with significant savings</p>
+              <p className="text-gray-600 max-w-3xl mx-auto">For those who know they're committed—pay in full (or use Buy Now, Pay Later) and save up to $1,691 compared to monthly plans. Get the complete Mesa360 Credit System™ with massive upfront savings.</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -1507,7 +1509,7 @@ const CreditRepair = () => {
                   <Gem className="w-8 h-8 text-red-500" />
                   <div>
                     <h4 className="text-xl font-bold text-[#3E3E3E]">RUBY PLAN</h4>
-                    <p className="text-sm text-gray-500">12-Month Flex</p>
+                    <p className="text-sm text-gray-500">9-Month Flex</p>
                   </div>
                 </div>
                 
@@ -1516,8 +1518,8 @@ const CreditRepair = () => {
                   <span className="text-3xl font-bold text-[#3E3E3E]">$1,500</span>
                   <span className="text-gray-500"> one-time (Pay in Full or BNPL)</span>
                 </div>
-                <p className="text-green-600 font-bold mb-1">Save $888 vs. Monthly Flex</p>
-                <p className="text-sm text-gray-600 mb-6">(Equivalent to 12 months of Mesa360 Flex for the price of ~7.5 months)</p>
+                <p className="text-green-600 font-bold mb-1">Save $791 vs. Monthly Flex</p>
+                <p className="text-sm text-gray-600 mb-6">(Equivalent to 9 months of Mesa360 Flex for the price of ~5.5 months)</p>
                 
                 <div className="space-y-1 mb-4 text-sm">
                   <p className="font-semibold text-gray-700">What's Included:</p>
@@ -1543,7 +1545,7 @@ const CreditRepair = () => {
 
                 <div className="bg-red-100 rounded-lg p-3 mb-4">
                   <p className="text-xs font-semibold text-red-800">Important Note:</p>
-                  <p className="text-xs text-red-700">Comprehensive 12-month program focused on your current credit profile. New items added during the program will not be worked on.</p>
+                  <p className="text-xs text-red-700">Comprehensive 9-month program focused on your current credit profile. New items added during the program will not be worked on.</p>
                 </div>
                 
                 <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 rounded-lg transition-colors text-center">
@@ -1557,7 +1559,7 @@ const CreditRepair = () => {
                   <Gem className="w-8 h-8 text-emerald-500" />
                   <div>
                     <h4 className="text-xl font-bold text-[#3E3E3E]">EMERALD PLAN</h4>
-                    <p className="text-sm text-gray-500">12-Month Elite</p>
+                    <p className="text-sm text-gray-500">9-Month Elite</p>
                   </div>
                 </div>
                 
@@ -1566,8 +1568,8 @@ const CreditRepair = () => {
                   <span className="text-3xl font-bold text-[#3E3E3E]">$1,800</span>
                   <span className="text-gray-500"> one-time (Pay in Full or BNPL)</span>
                 </div>
-                <p className="text-green-600 font-bold mb-1">Save $1,788 vs. Monthly Elite</p>
-                <p className="text-sm text-gray-600 mb-6">(Equivalent to 12 months of Mesa360 Elite for the price of ~6 months)</p>
+                <p className="text-green-600 font-bold mb-1">Save $1,691 vs. Monthly Elite</p>
+                <p className="text-sm text-gray-600 mb-6">(Equivalent to 9 months of Mesa360 Elite for the price of ~5 months)</p>
                 
                 <div className="space-y-1 mb-4 text-sm">
                   <p className="font-semibold text-gray-700">What's Included:</p>
@@ -1598,7 +1600,7 @@ const CreditRepair = () => {
 
                 <div className="bg-emerald-100 rounded-lg p-3 mb-4">
                   <p className="text-xs font-semibold text-emerald-800">Important Note:</p>
-                  <p className="text-xs text-emerald-700">Comprehensive 12-month program focused on your current credit profile. New items added during the program will not be worked on.</p>
+                  <p className="text-xs text-emerald-700">Comprehensive 9-month program focused on your current credit profile. New items added during the program will not be worked on.</p>
                 </div>
                 
                 <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-lg transition-colors text-center">
@@ -1663,13 +1665,13 @@ const CreditRepair = () => {
                 </div>
               </div>
 
-              {/* 12-Month Programs */}
+              {/* 9-Month Programs */}
               <div className="bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200 rounded-xl p-6">
-                <h4 className="font-bold text-[#3E3E3E] mb-4">Choose 12-Month Programs (Ruby/Emerald) if:</h4>
+                <h4 className="font-bold text-[#3E3E3E] mb-4">Choose 9-Month Programs (Ruby/Emerald) if:</h4>
                 <div className="space-y-2 text-sm">
-                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You want to save $888-$1,788 upfront</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You want to save $791-$1,691 upfront</span></div>
                   <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>Your credit situation is stable</span></div>
-                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You're committed to a full year</span></div>
+                  <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You're committed to nine months</span></div>
                   <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You prefer one-and-done payment</span></div>
                   <div className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" /><span>You want to lock in pricing and eliminate monthly billing</span></div>
                 </div>
@@ -1713,10 +1715,7 @@ const CreditRepair = () => {
             </div>
             
             <div className="mb-6">
-              <div className="flex items-center gap-2 mb-4">
-                <BarChart3 className="w-5 h-5 text-blue-600" />
-                <h4 className="text-lg font-bold text-[#3E3E3E]">Real-Time 3-Bureau Monitoring</h4>
-              </div>
+              <h4 className="text-lg font-bold text-[#3E3E3E] mb-4">Real-Time 3-Bureau Monitoring</h4>
               <div className="flex items-center justify-center gap-8 mb-6 py-4 bg-white rounded-lg">
                 <img src={experianLogo} alt="Experian" className="h-8 object-contain" />
                 <img src={equifaxLogo} alt="Equifax" className="h-8 object-contain" />
@@ -1856,7 +1855,8 @@ Every dollar you paid to Mesa Group.</p>
           <div className="text-center mb-12">
             <AlertTriangle className="w-16 h-16 text-orange-500 mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              What's <span className="text-orange-600">Not Covered</span> by the Mesa 360 90-Day Money-Back Guarantee
+              What's <span className="text-orange-600">Not Covered</span> By The Mesa 360<br />
+              90-Day Money Back Guarantee
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Transparency is important to us. Here's what the Mesa 360 90-Day Money-Back Guarantee does NOT cover:

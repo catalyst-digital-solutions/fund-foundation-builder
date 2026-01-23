@@ -685,10 +685,6 @@ function FAQSection() {
     {
       question: "Can I cancel anytime?",
       answer: "Yes. You can cancel your SmartCredit® membership at any time with no penalties or fees. You'll pay any accumulated, unbilled charges through the date of cancellation. You may reactivate your membership at any time."
-    },
-    {
-      question: "How do I dispute errors on my credit report?",
-      answer: "SmartCredit® makes disputing errors simple with Action Buttons built into your credit report dashboard. When you identify an error, click the Action Button to communicate directly with the creditor or credit bureau to initiate the dispute process."
     }
   ];
 

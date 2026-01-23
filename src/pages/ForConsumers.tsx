@@ -73,7 +73,7 @@ const ServiceCard = ({
       
       {pricing && (
         <div className="bg-amber-50 rounded-lg p-4">
-          <p className="text-sm text-gray-700">{pricing}</p>
+          <p className="text-sm text-gray-700 whitespace-pre-line">{pricing}</p>
         </div>
       )}
       
@@ -138,7 +138,7 @@ const ForConsumers = () => {
         "Inaccurate items on credit reports",
         "Anyone rebuilding after financial hardship"
       ],
-      pricing: "Monthly Plans starting at $149/month • 90-Day Money-Back Guarantee",
+      pricing: "• Monthly Plans starting at $149/month\n• 90-Day Money-Back Guarantee",
       ctaText: "Start Your Credit Transformation",
       ctaLink: "/credit-repair"
     },
@@ -160,7 +160,7 @@ const ForConsumers = () => {
         "Budget-conscious consumers",
         "Those who prefer DIY with professional tools"
       ],
-      pricing: "$39.99/month • Save 70-90% vs. traditional credit restoration",
+      pricing: "• $39.99/month\n• Save 70-90% vs. traditional credit restoration",
       ctaText: "Try DIY Credit Restoration",
       ctaLink: "/diy-credit-repair"
     },
@@ -608,9 +608,6 @@ const ForConsumers = () => {
               <div key={index} className="text-center space-y-4">
                 <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-500 rounded-full flex items-center justify-center mx-auto">
                   {item.icon}
-                </div>
-                <div className="w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center mx-auto -mt-2">
-                  <span className="text-sm font-bold text-gray-900">{item.step}</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
                 <p className="text-gray-700 leading-relaxed">{item.description}</p>

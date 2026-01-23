@@ -786,7 +786,7 @@ const LetterTemplates = () => {
           
           <div className="flex flex-row gap-4 justify-center">
             <a
-              href="/credit-repair-2"
+              href="/credit-repair"
               className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-4 px-8 rounded-lg transition-colors flex items-center justify-center gap-2"
             >
               View Credit Repair Services

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Clock, Mail, MapPin, Phone, ChevronDown, X, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Clock, Mail, MapPin, Phone, ChevronDown, X, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Inline SVG Logo Component (white version for dark backgrounds)
@@ -147,20 +147,23 @@ const Header = () => {
 
             {/* Right: Social Icons */}
             <div className="flex items-center gap-3">
-              <a href="https://www.facebook.com/mesafinanciera1" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
+              <a href="https://www.facebook.com/mesagroupco" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="https://www.instagram.com/mesafinanciera/" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
+              <a href="https://www.instagram.com/mesagroupco/" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="https://x.com/mesafinanciera" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
+              <a href="https://x.com/mesagroupco" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
                 <XIcon />
               </a>
-              <a href="https://www.linkedin.com/company/mesa-group-consulting/" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
+              <a href="https://www.linkedin.com/company/106433329/admin/dashboard/" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href="https://www.tiktok.com/@mesafinanciera?lang=en" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
+              <a href="https://www.tiktok.com/@mesagroupco" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
                 <TikTokIcon />
+              </a>
+              <a href="https://www.youtube.com/@MesaGroupCo" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] transition-colors">
+                <Youtube className="w-4 h-4" />
               </a>
             </div>
           </div>

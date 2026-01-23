@@ -1,5 +1,5 @@
 # Session Handoff Document
-**Last Updated:** January 19, 2026
+**Last Updated:** January 21, 2026
 **Purpose:** Rapid onboarding for new Claude Code context windows
 
 ---
@@ -40,6 +40,9 @@ git log --oneline -10  # See recent commits
 | **Icons** | lucide-react ONLY (never emojis) |
 | **Repository** | https://github.com/catalyst-digital-solutions/fund-foundation-builder |
 | **Lovable URL** | https://lovable.dev/projects/a84a569b-99f4-4ddf-898b-bc278a3f3eb0 |
+| **Preview URL** | https://mesa-group-consulting-website.vercel.app/ |
+| **Deployment** | GitHub → Lovable → Vercel (auto-deploy on push) |
+| **Twitter/X** | @mesafinanciera |
 
 ---
 
