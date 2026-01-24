@@ -24,7 +24,7 @@ const TrustAndWillPlan = () => {
     },
     {
       question: "What's the difference between a Will and a Trust?",
-      answer: "A Will takes effect after you die and goes through probate court (a public, 6-12 month process). A Trust takes effect immediately, holds your assets during your lifetime, and transfers them privately after death—avoiding probate entirely. Both name guardians for children and specify your wishes. Choose a Will if you have a modest estate and don't mind probate. Choose a Trust if you own a home, want privacy, or have significant assets ($100K+)."
+      answer: "A Will takes effect after you die and goes through probate court (a public, 6-12 month process). A Trust takes effect immediately, holds your assets during your lifetime, and transfers them privately after death, avoiding probate entirely. Both name guardians for children and specify your wishes. Choose a Will if you have a modest estate and don't mind probate. Choose a Trust if you own a home, want privacy, or have significant assets ($100K+)."
     },
     {
       question: "Do I need an attorney to create a Will or Trust?",
@@ -32,14 +32,14 @@ const TrustAndWillPlan = () => {
     },
     {
       question: "What happens if I don't have a Will or Trust?",
-      answer: "If you die without a Will or Trust, you die 'intestate' and state law decides what happens to your assets and who raises your children. This process (called intestate succession) may not match your wishes at all. For example, if you're unmarried with kids, your assets might go to your parents instead of your children. Courts will appoint guardians for your kids—possibly someone you wouldn't choose. Plus, your estate goes through probate, which costs 3-7% of your estate value and takes 6-24 months."
+      answer: "If you die without a Will or Trust, you die 'intestate' and state law decides what happens to your assets and who raises your children. This process (called intestate succession) may not match your wishes at all. For example, if you're unmarried with kids, your assets might go to your parents instead of your children. Courts will appoint guardians for your kids, possibly someone you wouldn't choose. Plus, your estate goes through probate, which costs 3-7% of your estate value and takes 6-24 months."
     },
     {
       question: "Can I update my Will or Trust after I create it?",
       answer: "Yes! Life changes (marriage, divorce, new children, moving states), and your estate plan should change with it. With a Will plan, you can log back in anytime and create an updated version for a small fee. With a Trust plan, your first year of membership is FREE ($39/year after), which includes unlimited updates. You can add assets, change beneficiaries, update guardians, or make any other changes whenever needed."
     },
     {
-      question: "How do I know which plan to choose—Will or Trust?",
+      question: "How do I know which plan to choose: Will or Trust?",
       answer: "Choose a Will if: you're young (under 40), have minimal assets (under $100K), don't own a home, and are okay with the probate process. Choose a Trust if: you own a home, have assets over $100K, want to avoid probate, value privacy, want faster asset transfer, or have a complex family situation (blended family, children from multiple relationships). Most homeowners choose the Trust plan. Still not sure? The questionnaire will help guide you."
     },
     {
@@ -56,7 +56,7 @@ const TrustAndWillPlan = () => {
     },
     {
       question: "What if I have minor children? How do I name guardians?",
-      answer: "Both the Will and Trust plans allow you to nominate guardians for your minor children (and pets!). You can name a primary guardian and backup guardians. If something happens to both parents, the court will appoint your chosen guardian to raise your children. Without a Will or Trust, the court decides who raises your kids—which may not be who you'd want. Naming guardians is one of the most important reasons parents create estate plans."
+      answer: "Both the Will and Trust plans allow you to nominate guardians for your minor children (and pets!). You can name a primary guardian and backup guardians. If something happens to both parents, the court will appoint your chosen guardian to raise your children. Without a Will or Trust, the court decides who raises your kids, which may not be who you'd want. Naming guardians is one of the most important reasons parents create estate plans."
     }
   ];
 
@@ -86,7 +86,7 @@ const TrustAndWillPlan = () => {
               
               {/* Subheadline */}
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
-                Create a legally-binding Will or Trust online in 20 minutes—built by attorneys, customized by you. Starting at a fraction of traditional attorney fees.
+                Create a legally-binding Will or Trust online in 20 minutes, built by attorneys, customized by you. Starting at a fraction of traditional attorney fees.
               </p>
               
               {/* Value Props Quick List */}
@@ -251,7 +251,7 @@ const TrustAndWillPlan = () => {
                 Control Your Assets
               </h3>
               <p className="text-sm text-gray-700">
-                Decide who gets your home, savings, investments, and possessions—not the government.
+                Decide who gets your home, savings, investments, and possessions. Not the government.
               </p>
             </div>
             
@@ -264,7 +264,7 @@ const TrustAndWillPlan = () => {
                 Avoid Probate Court
               </h3>
               <p className="text-sm text-gray-700">
-                With a Trust, assets transfer privately and quickly—no lengthy court process or public records.
+                With a Trust, assets transfer privately and quickly. No lengthy court process or public records.
               </p>
             </div>
             
@@ -495,7 +495,7 @@ const TrustAndWillPlan = () => {
               
               <div className="mt-6 p-4 bg-mgc-gradient rounded-lg">
                 <div className="text-sm text-white font-medium">
-                  <strong>Benefit:</strong> Assets transfer immediately and privately—no court, no delays, no public record
+                  <strong>Benefit:</strong> Assets transfer immediately and privately. No court, no delays, no public record.
                 </div>
               </div>
               
@@ -588,7 +588,7 @@ const TrustAndWillPlan = () => {
               </div>
               <h3 className="text-xl font-bold text-[#3E3E3E] mb-3">Answer Questions</h3>
               <p className="text-gray-700">
-                Tell us about yourself, your family, your assets, and your wishes. Simple questions in plain English—no legal jargon.
+                Tell us about yourself, your family, your assets, and your wishes. Simple questions in plain English, no legal jargon.
               </p>
             </div>
             
@@ -1158,7 +1158,7 @@ const TrustAndWillPlan = () => {
               If you have <strong>anyone you care about</strong>, <strong>anything you own</strong>, or <strong>any wishes for your care</strong>, you need an estate plan.
             </p>
             <p className="text-gray-700">
-              It's not about age or wealth—it's about protecting the people and things you love. The average cost of creating an estate plan online is $199-$599. The average cost of NOT having one is <strong>$15,000-$50,000+</strong> in probate fees, plus months of stress for your family.
+              It's not about age or wealth. It's about protecting the people and things you love. The average cost of creating an estate plan online is $199-$599. The average cost of NOT having one is <strong>$15,000-$50,000+</strong> in probate fees, plus months of stress for your family.
             </p>
             <p className="text-[#bb9446] font-bold text-xl mt-4">
               Which would you rather invest in?
@@ -1207,7 +1207,7 @@ const TrustAndWillPlan = () => {
                 ))}
               </div>
               <p className="text-white mb-4 italic leading-relaxed">
-                "My wife and I own our home and have investment accounts. We knew we needed a Trust to avoid probate but didn't want to spend $5,000 on an attorney. For $599, we got everything we needed—state-specific, legally binding, and done from our couch in under an hour."
+                "My wife and I own our home and have investment accounts. We knew we needed a Trust to avoid probate but didn't want to spend $5,000 on an attorney. For $599, we got everything we needed: state-specific, legally binding, and done from our couch in under an hour."
               </p>
               <div className="pt-4 border-t border-white/30">
                 <p className="font-semibold text-white">David & Jennifer K.</p>
@@ -1223,7 +1223,7 @@ const TrustAndWillPlan = () => {
                 ))}
               </div>
               <p className="text-white mb-4 italic leading-relaxed">
-                "My dad passed away without a Will and the probate process was a nightmare—9 months, tons of legal fees, and family fighting. I swore I'd never put my kids through that. Creating my Trust online was the smartest thing I've ever done. My estate will transfer immediately with zero court involvement."
+                "My dad passed away without a Will and the probate process was a nightmare. 9 months, tons of legal fees, and family fighting. I swore I'd never put my kids through that. Creating my Trust online was the smartest thing I've ever done. My estate will transfer immediately with zero court involvement."
               </p>
               <div className="pt-4 border-t border-white/30">
                 <p className="font-semibold text-white">Michael T.</p>

@@ -7,7 +7,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Will checking rates affect my credit score?",
-      answer: "No! When you check rates through our platform, we only use a soft credit inquiry, which does not impact your credit score. Only when you formally apply with a specific lender will they perform a hard credit pull—and only after you've chosen to proceed."
+      answer: "No! When you check rates through our platform, we only use a soft credit inquiry, which does not impact your credit score. Only when you formally apply with a specific lender will they perform a hard credit pull, and only after you've chosen to proceed."
     },
     {
       question: "How fast can I get funded?",
@@ -19,7 +19,7 @@ const FAQ = () => {
     },
     {
       question: "Can I use a personal loan for any purpose?",
-      answer: "Yes! Personal loans are unsecured and can be used for almost any legal purpose—debt consolidation, home improvements, medical bills, major purchases, business expenses, education, and more. Some lenders may ask what you'll use the funds for, but there are no restrictions."
+      answer: "Yes! Personal loans are unsecured and can be used for almost any legal purpose: debt consolidation, home improvements, medical bills, major purchases, business expenses, education, and more. Some lenders may ask what you'll use the funds for, but there are no restrictions."
     },
     {
       question: "What's the difference between a personal loan and a credit card?",
@@ -43,15 +43,15 @@ const FAQ = () => {
     },
     {
       question: "What happens if I miss a payment?",
-      answer: "Missing a payment can result in late fees (typically $15-$30) and negative marks on your credit report if the payment is more than 30 days late. If you're struggling to make payments, contact your lender immediately—many offer hardship programs or payment arrangements."
+      answer: "Missing a payment can result in late fees (typically $15-$30) and negative marks on your credit report if the payment is more than 30 days late. If you're struggling to make payments, contact your lender immediately. Many offer hardship programs or payment arrangements."
     },
     {
       question: "Is Mesa Group Consulting a lender?",
-      answer: "No, Mesa Group Consulting is not a lender. We are a financial services marketplace that connects consumers with multiple lending partners. We do not make lending decisions or fund loans—we simply help you compare offers from our network of trusted lenders."
+      answer: "No, Mesa Group Consulting is not a lender. We are a financial services marketplace that connects consumers with multiple lending partners. We do not make lending decisions or fund loans. We simply help you compare offers from our network of trusted lenders."
     },
     {
       question: "How do you make money if the service is free?",
-      answer: "Our service is free for consumers. We earn a referral fee from lenders when you successfully complete a loan through our platform. This does not affect your interest rate or loan terms—lenders pay us for connecting them with qualified borrowers."
+      answer: "Our service is free for consumers. We earn a referral fee from lenders when you successfully complete a loan through our platform. This does not affect your interest rate or loan terms. Lenders pay us for connecting them with qualified borrowers."
     }
   ];
 

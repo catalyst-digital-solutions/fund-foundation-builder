@@ -123,7 +123,7 @@ const ForConsumers = () => {
     {
       icon: <Shield className="w-6 h-6 text-amber-600" />,
       title: "Credit Restoration with Mesa360 Credit System™",
-      description: "Our proven Mesa360 Credit System™ doesn't just remove negative items—it's a complete financial transformation program. Repair inaccurate items, rebuild your credit foundation, and optimize your financial profile with 1-on-1 coaching.",
+      description: "Our proven Mesa360 Credit System™ doesn't just remove negative items. It's a complete financial transformation program. Repair inaccurate items, rebuild your credit foundation, and optimize your financial profile with 1-on-1 coaching.",
       included: [
         "REPAIR: Remove inaccurate negative items",
         "REBUILD: 1-on-1 financial coaching & customized action plan",
@@ -145,7 +145,7 @@ const ForConsumers = () => {
     {
       icon: <Laptop className="w-6 h-6 text-amber-600" />,
       title: "DIY Credit Restoration Software",
-      description: "Take control of your credit restoration journey with professional-grade tools, AI-powered dispute recommendations, and step-by-step guidance—at a fraction of the cost of full-service credit restoration companies.",
+      description: "Take control of your credit restoration journey with professional-grade tools, AI-powered dispute recommendations, and step-by-step guidance, at a fraction of the cost of full-service credit restoration companies.",
       included: [
         "Unlimited 3-bureau disputes",
         "AI-powered analysis and dispute recommendations",
@@ -166,7 +166,7 @@ const ForConsumers = () => {
     },
     {
       icon: <TrendingUp className="w-6 h-6 text-amber-600" />,
-      title: "Build Credit Fast—The Strategic Way",
+      title: "Build Credit Fast: The Strategic Way",
       description: "Access proven credit building platforms through one trusted partner. We guide you through a strategic credit building journey that focuses on relationships, not just scores.",
       included: [
         "Strategic Account Selection (3 proven paths)",
@@ -188,7 +188,7 @@ const ForConsumers = () => {
     {
       icon: <Eye className="w-6 h-6 text-amber-600" />,
       title: "SmartCredit Monitoring",
-      description: "Stay on top of your credit with real-time alerts, 3-bureau tracking, and comprehensive identity theft protection—all in one platform.",
+      description: "Stay on top of your credit with real-time alerts, 3-bureau tracking, and comprehensive identity theft protection, all in one platform.",
       included: [
         "3-bureau credit reports & scores",
         "Daily credit monitoring",
@@ -232,7 +232,7 @@ const ForConsumers = () => {
     {
       icon: <DollarSign className="w-6 h-6 text-amber-600" />,
       title: "Personal Loans",
-      description: "Compare personalized loan offers from multiple lenders in minutes—without impacting your credit score. Find the best rates for debt consolidation, home improvements, or major expenses.",
+      description: "Compare personalized loan offers from multiple lenders in minutes, without impacting your credit score. Find the best rates for debt consolidation, home improvements, or major expenses.",
       included: [
         "Soft credit pull (no score impact)",
         "Multiple lender comparison",
@@ -321,7 +321,7 @@ const ForConsumers = () => {
     {
       icon: <CreditCard className="w-6 h-6 text-amber-600" />,
       title: "Credit Cards",
-      description: "Find the right credit card for your situation—whether you're building credit, earning rewards, or looking for balance transfer options.",
+      description: "Find the right credit card for your situation, whether you're building credit, earning rewards, or looking for balance transfer options.",
       included: [
         "Personalized card recommendations",
         "No impact on credit score",
@@ -388,7 +388,7 @@ const ForConsumers = () => {
   const faqs = [
     {
       q: "How do I know which service is right for me?",
-      a: "Schedule a free consultation with one of our advisors. We'll discuss your situation, goals, and budget to recommend the best solution. There's no obligation—just honest guidance."
+      a: "Schedule a free consultation with one of our advisors. We'll discuss your situation, goals, and budget to recommend the best solution. There's no obligation. Just honest guidance."
     },
     {
       q: "Do you work with people who have bad credit?",
@@ -412,7 +412,7 @@ const ForConsumers = () => {
     },
     {
       q: "What makes Mesa Group different from other financial services companies?",
-      a: "We combine education with action. We're not just selling services—we're teaching you how to maintain financial health long-term. Plus, our founder has been where you are, which shapes how we treat every client: with empathy, respect, and practical guidance."
+      a: "We combine education with action. We're not just selling services. We're teaching you how to maintain financial health long-term. Plus, our founder has been where you are, which shapes how we treat every client: with empathy, respect, and practical guidance."
     },
     {
       q: "Do I have to commit to anything during the free consultation?",
@@ -457,7 +457,7 @@ const ForConsumers = () => {
               </h1>
 
               <p className="text-xl text-gray-700 leading-relaxed">
-                From credit restoration to debt relief, personal loans to life insurance—find the financial solution that fits your life. No judgment. No runaround. Just honest guidance and real results.
+                From credit restoration to debt relief, personal loans to life insurance. Find the financial solution that fits your life. No judgment. No runaround. Just honest guidance and real results.
               </p>
 
               <p className="text-gray-600 leading-relaxed">
@@ -546,7 +546,7 @@ const ForConsumers = () => {
               Here's what matters: where you start doesn't determine where you finish.
             </p>
             <p>
-              Mesa Group Consulting exists to guide you from wherever you are to wherever you want to be—with transparency, respect, and practical solutions that actually work. No corporate jargon. No hidden fees. No treating you like a credit score instead of a person.
+              Mesa Group Consulting exists to guide you from wherever you are to wherever you want to be, with transparency, respect, and practical solutions that actually work. No corporate jargon. No hidden fees. No treating you like a credit score instead of a person.
             </p>
             <p>
               We've been where you are. We understand the stress, the confusion, and the frustration of navigating a financial system that wasn't designed with you in mind. That's exactly why we built something different.
@@ -661,12 +661,12 @@ const ForConsumers = () => {
               {
                 icon: <Globe className="w-6 h-6 text-amber-600" />,
                 title: "Multilingual Support",
-                description: "We serve diverse communities with dedicated support in English, Spanish, and Punjabi—because financial guidance should be accessible in your language."
+                description: "We serve diverse communities with dedicated support in English, Spanish, and Punjabi, because financial guidance should be accessible in your language."
               },
               {
                 icon: <BookOpen className="w-6 h-6 text-amber-600" />,
                 title: "Education-First Approach",
-                description: "We don't just provide services—we teach you how credit works, why it matters, and how to maintain your financial health long-term."
+                description: "We don't just provide services. We teach you how credit works, why it matters, and how to maintain your financial health long-term."
               },
               {
                 icon: <Award className="w-6 h-6 text-amber-600" />,
@@ -676,7 +676,7 @@ const ForConsumers = () => {
               {
                 icon: <Layers className="w-6 h-6 text-amber-600" />,
                 title: "Comprehensive Solutions",
-                description: "From credit restoration to life insurance, we offer a full range of consumer financial solutions—so you don't need to navigate multiple companies."
+                description: "From credit restoration to life insurance, we offer a full range of consumer financial solutions, so you don't need to navigate multiple companies."
               }
             ].map((item, index) => (
               <div key={index} className="bg-gray-50 rounded-lg p-6 space-y-4 shadow-md">

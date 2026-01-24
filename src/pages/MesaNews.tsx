@@ -87,7 +87,7 @@ const MesaNews = () => {
       id: 'client-success-stories',
       name: 'Client Success Stories',
       icon: Award,
-      description: 'Real transformation stories from real people. These are the wins that remind us why we do what we do—helping families and businesses rewrite their financial futures.',
+      description: 'Real transformation stories from real people. These are the wins that remind us why we do what we do, helping families and businesses rewrite their financial futures.',
       recentNews: [
         'From 520 to 720: How Maria Bought Her First Home in 6 Months',
         'Local Business Owner Secures $150K in Funding After Credit Restoration',
@@ -173,7 +173,7 @@ const MesaNews = () => {
             </p>
 
             <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Stay connected with what's happening at MESA Group Consulting. From local community involvement to major milestones, partnership announcements to industry developments—this is where we share our journey, celebrate our clients, and keep you informed about the financial services landscape.
+              Stay connected with what's happening at MESA Group Consulting. From local community involvement to major milestones, partnership announcements to industry developments. This is where we share our journey, celebrate our clients, and keep you informed about the financial services landscape.
             </p>
 
             {/* Search & Filter Bar */}
@@ -374,7 +374,7 @@ const MesaNews = () => {
               </h2>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                We're proud to call Kern County home. Beyond credit repair and business funding, we're committed to giving back to the communities that have supported us—through education, sponsorships, and local involvement.
+                We're proud to call Kern County home. Beyond credit repair and business funding, we're committed to giving back to the communities that have supported us, through education, sponsorships, and local involvement.
               </p>
 
               <div className="space-y-4 pt-4">

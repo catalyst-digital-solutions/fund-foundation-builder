@@ -67,7 +67,7 @@ const CreditRepair = () => {
 
               {/* Subheadline */}
               <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-                Remove inaccurate items from your credit report in 45-90 days—plus get 1-on-1 coaching to rebuild your credit and achieve your financial goals. This isn't just credit restoration—it's a <strong>complete financial transformation program</strong> powered by our proven Mesa360 Credit System™.
+                Remove inaccurate items from your credit report in 45-90 days, plus get 1-on-1 coaching to rebuild your credit and achieve your financial goals. This isn't just credit restoration. It's a <strong>complete financial transformation program</strong> powered by our proven Mesa360 Credit System™.
               </p>
 
               {/* Trust Bar */}
@@ -123,7 +123,7 @@ const CreditRepair = () => {
               <img src={mesa360HeroTeam} alt="Mesa Group Capital team in front of client's new home" className="rounded-2xl shadow-2xl" loading="eager" />
               <div className="mt-4 px-2">
                 <p className="text-sm text-gray-600 italic leading-relaxed text-center">
-                  <span className="text-[#f9c65d] font-semibold not-italic">Real clients</span> with real results — achieving their dream of homeownership through the <span className="font-semibold text-gray-700">Mesa360 Credit System™</span>
+                  <span className="text-[#f9c65d] font-semibold not-italic">Real clients</span> with real results, achieving their dream of homeownership through the <span className="font-semibold text-gray-700">Mesa360 Credit System™</span>
                 </p>
               </div>
             </div>
@@ -160,7 +160,7 @@ const CreditRepair = () => {
 
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
             <p>
-              You've probably seen ads promising to "erase bad credit in 30 days" or "guaranteed 100-point increases." Here's the truth: <strong>those promises are not only unrealistic—they may violate federal law.</strong>
+              You've probably seen ads promising to "erase bad credit in 30 days" or "guaranteed 100-point increases." Here's the truth: <strong>those promises are not only unrealistic, they may violate federal law.</strong>
             </p>
 
             <blockquote className="my-8 py-6 px-8 border-l-4 border-[#f9c65d] bg-gray-50 text-center">
@@ -202,7 +202,7 @@ const CreditRepair = () => {
             </div>
 
             <p className="text-center text-xl font-semibold text-[#bb9446] pt-4">
-              Sound familiar? You're not alone—and there's a proven path forward.
+              Sound familiar? You're not alone, and there's a proven path forward.
             </p>
             <p className="text-center text-xl font-bold text-[#3E3E3E]">
               That's where Mesa Group's Mesa360 Credit System™ comes in.
@@ -227,7 +227,7 @@ const CreditRepair = () => {
             The Mesa360 Credit System™: <span className="text-[#f9c65d]">Your Complete Financial Transformation Blueprint</span>
           </h2>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Here's what makes us different: We don't just erase bad marks and disappear. We walk beside you through the entire journey—from breaking free of the mistakes holding you back, to building the financial foundation that changes everything, to positioning you for opportunities you thought were out of reach.
+            Here's what makes us different: We don't just erase bad marks and disappear. We walk beside you through the entire journey, from breaking free of the mistakes holding you back, to building the financial foundation that changes everything, to positioning you for opportunities you thought were out of reach.
           </p>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto mt-4">
             This isn't a service. It's a partnership. It's a transformation. It's your second chance, done right.
@@ -272,11 +272,11 @@ const CreditRepair = () => {
               <p className="text-gray-600 mb-6 italic">What's Really Holding You Back</p>
               
               <div className="space-y-4 text-sm text-gray-700 flex-grow">
-                <p>Before we can move forward, we need to understand what's anchoring you to the past. Not just the obvious stuff—but the hidden damage, the errors, the items that shouldn't even be there.</p>
+                <p>Before we can move forward, we need to understand what's anchoring you to the past. Not just the obvious stuff, but the hidden damage, the errors, the items that shouldn't even be there.</p>
                 
                 <div>
                   <p className="font-bold mb-2">Deep Credit Forensics</p>
-                  <p>We pull your credit from all three bureaus—Experian, Equifax, TransUnion—and perform a forensic analysis. Not a 5-minute glance. A real investigation.</p>
+                  <p>We pull your credit from all three bureaus (Experian, Equifax, TransUnion) and perform a forensic analysis. Not a 5-minute glance. A real investigation.</p>
                 </div>
                 
                 <div>
@@ -301,7 +301,7 @@ const CreditRepair = () => {
                   <p className="font-bold mb-2">What You Get:</p>
                   <ul className="space-y-1 text-gray-600">
                     <li>• Free 3-Bureau Credit Analysis (normally $50+ value)</li>
-                    <li>• Written breakdown of every negative item—and whether it's disputable</li>
+                    <li>• Written breakdown of every negative item, and whether it's disputable</li>
                     <li>• Honest assessment of your timeline and what's realistic</li>
                     <li>• Custom dispute strategy built for YOUR situation, not a template</li>
                   </ul>
@@ -321,7 +321,7 @@ const CreditRepair = () => {
               <div className="space-y-4 text-sm text-gray-700 flex-grow">
                 <p>Now the real work begins. We don't send generic letters. We don't use offshore call centers. We don't "set it and forget it."</p>
                 
-                <p>Your dedicated account manager—a real person who knows your name, your story, your goals—builds a custom dispute strategy based on FCRA/FDCPA law, your unique credit profile, and the specific violations we found.</p>
+                <p>Your dedicated account manager, a real person who knows your name, your story, your goals, builds a custom dispute strategy based on FCRA/FDCPA law, your unique credit profile, and the specific violations we found.</p>
                 
                 <div>
                   <p className="font-bold mb-2">Our Arsenal of Advanced Methods:</p>
@@ -428,7 +428,7 @@ const CreditRepair = () => {
                 
                 <div>
                   <p className="font-bold mb-2">Strategic Credit Building</p>
-                  <p>Learn which tradelines add value, which hurt you, and how to build strategically—not randomly.</p>
+                  <p>Learn which tradelines add value, which hurt you, and how to build strategically, not randomly.</p>
                 </div>
                 
                 <div>
@@ -477,7 +477,7 @@ const CreditRepair = () => {
               <div className="text-center md:text-left lg:col-span-2">
                 <Scale className="w-10 h-10 text-amber-400 mx-auto md:mx-0 mb-3" />
                 <p className="font-bold text-white text-lg mb-2">It's Backed by Real Legal Power</p>
-                <p className="text-gray-300">When creditors or bureaus violate your rights, we don't back down. We escalate to our legal team—real attorneys who've recovered thousands in settlements for clients whose rights were violated.</p>
+                <p className="text-gray-300">When creditors or bureaus violate your rights, we don't back down. We escalate to our legal team, real attorneys who've recovered thousands in settlements for clients whose rights were violated.</p>
               </div>
             </div>
           </div>
@@ -519,7 +519,7 @@ const CreditRepair = () => {
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">The Truth About Credit Restoration:</h3>
                 <p className="text-mgc-tan text-lg">
-                  Anyone promising "30-day miracles" or "guaranteed 100-point increases" is lying to you—and possibly <span className="text-red-400 font-semibold">breaking federal law</span>.
+                  Anyone promising "30-day miracles" or "guaranteed 100-point increases" is lying to you, and possibly <span className="text-red-400 font-semibold">breaking federal law</span>.
                 </p>
               </div>
             </div>
@@ -877,7 +877,7 @@ const CreditRepair = () => {
               WHEN <span className="text-mgc-yellow">LEGAL ESCALATION</span> HAPPENS
             </h2>
             <p className="text-xl text-mgc-tan max-w-3xl mx-auto">
-              Your Rights Are Protected By Federal Law—And We Make Sure They're Enforced
+              Your Rights Are Protected By Federal Law, And We Make Sure They're Enforced
             </p>
           </div>
 
@@ -973,7 +973,7 @@ const CreditRepair = () => {
             <DollarSign className="w-12 h-12 text-green-400 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-white mb-3">Real Financial Impact:</h3>
             <p className="text-mgc-tan text-lg">
-              Many qualified clients have received cash settlements ranging from <span className="text-green-400 font-bold">$1,000 to $2,500+</span> when creditors or bureaus violated their rights—<span className="text-white font-semibold">in addition to removal of inaccurate items</span>.
+              Many qualified clients have received cash settlements ranging from <span className="text-green-400 font-bold">$1,000 to $2,500+</span> when creditors or bureaus violated their rights, <span className="text-white font-semibold">in addition to removal of inaccurate items</span>.
             </p>
           </div>
 
@@ -1025,7 +1025,7 @@ const CreditRepair = () => {
             <div className="bg-white rounded-xl p-6 shadow-lg">
               <FileText className="w-10 h-10 text-[#f9c65d] mb-4" />
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-2">Customized Action Plan</h3>
-              <p className="text-gray-600 text-sm">Your account manager creates a personalized roadmap based on YOUR unique credit situation—not a one-size-fits-all template.</p>
+              <p className="text-gray-600 text-sm">Your account manager creates a personalized roadmap based on YOUR unique credit situation, not a one-size-fits-all template.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg">
               <Users className="w-10 h-10 text-[#f9c65d] mb-4" />
@@ -1060,7 +1060,7 @@ const CreditRepair = () => {
               {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-amber-500 fill-amber-500" />)}
             </div>
             <p className="text-gray-700 italic mb-4">
-              "I came to Mesa Group with a 540 score and collections I didn't understand. My account manager, Maria, didn't just file disputes—she explained every step, taught me how credit utilization works, and helped me build a plan to keep my score high after the program. Nine months later, I'm at 710 and I finally understand how to manage my credit."
+              "I came to Mesa Group with a 540 score and collections I didn't understand. My account manager, Maria, didn't just file disputes. She explained every step, taught me how credit utilization works, and helped me build a plan to keep my score high after the program. Nine months later, I'm at 710 and I finally understand how to manage my credit."
             </p>
             <p className="text-[#3E3E3E] font-semibold">— Carlos R., Bakersfield, CA</p>
           </div>
@@ -1097,7 +1097,7 @@ const CreditRepair = () => {
               Bad Credit Costs You <span className="text-red-600">$126,000</span> Over 30 Years. Here's How.
             </h2>
             <p className="text-xl text-gray-700">
-              Every month you wait to fix your credit, you're bleeding money. Higher interest rates, denied applications, security deposits—it all adds up.
+              Every month you wait to fix your credit, you're bleeding money. Higher interest rates, denied applications, security deposits. It all adds up.
             </p>
           </div>
 
@@ -1143,7 +1143,7 @@ const CreditRepair = () => {
               <p className="text-xl text-white">Your Potential Savings: <span className="text-green-400 font-bold">$100,000+</span></p>
             </div>
             <p className="text-gray-400 mt-6 text-sm">
-              Improving your credit isn't an expense—it's the highest-ROI financial decision you can make.
+              Improving your credit isn't an expense. It's the highest-ROI financial decision you can make.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
@@ -1178,7 +1178,7 @@ const CreditRepair = () => {
               Real People. Real Results. Real <span className="text-[#f9c65d]">Transformation</span>.
             </h2>
             <p className="text-xl text-gray-700">
-              Don't take our word for it—hear from clients who transformed their financial futures with the Mesa360 Credit System™.
+              Don't take our word for it. Hear from clients who transformed their financial futures with the Mesa360 Credit System™.
             </p>
           </div>
 
@@ -1208,7 +1208,7 @@ const CreditRepair = () => {
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
-              <h4 className="text-white font-bold mb-2">"From 540 to 695 in 75 Days—I Finally Got My Dream Home"</h4>
+              <h4 className="text-white font-bold mb-2">"From 540 to 695 in 75 Days: I Finally Got My Dream Home"</h4>
               <p className="text-gray-300 text-sm mb-4">
                 "I was skeptical after being denied for a mortgage twice. I'd tried DIY dispute letters with no results. Within 75 days of working with Mesa Group, they removed 6 inaccurate collections and my score increased from 540 to 695. Last month, I closed on my dream home in Bakersfield."
               </p>
@@ -1230,9 +1230,9 @@ const CreditRepair = () => {
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
-              <h4 className="text-white font-bold mb-2">"Tried DIY for 6 Months—Got Nowhere"</h4>
+              <h4 className="text-white font-bold mb-2">"Tried DIY for 6 Months, Got Nowhere"</h4>
               <p className="text-gray-300 text-sm mb-4">
-                "I wasted 6 months trying to do it myself with templates from the internet. The bureaus ignored me. Mesa Group removed 3 items in the first 60 days—items I'd been fighting on my own for half a year. Wish I'd hired them sooner."
+                "I wasted 6 months trying to do it myself with templates from the internet. The bureaus ignored me. Mesa Group removed 3 items in the first 60 days, items I'd been fighting on my own for half a year. Wish I'd hired them sooner."
               </p>
               <p className="text-white/80 text-sm">— David R., Bakersfield, CA</p>
             </div>
@@ -1285,7 +1285,7 @@ const CreditRepair = () => {
               Choose Your Path to <span className="text-[#f9c65d]">Financial Transformation</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              This isn't a purchase. It's an investment in your future, your family, your freedom. Every plan includes the complete Mesa360 Credit System™—comprehensive credit restoration, 1-on-1 coaching, and a dedicated account manager who knows your name and your goals.
+              This isn't a purchase. It's an investment in your future, your family, your freedom. Every plan includes the complete Mesa360 Credit System™: comprehensive credit restoration, 1-on-1 coaching, and a dedicated account manager who knows your name and your goals.
             </p>
           </div>
 
@@ -1293,7 +1293,7 @@ const CreditRepair = () => {
           <div className="mb-20">
             <div className="text-center mb-10">
               <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">MONTHLY PLANS</h3>
-              <p className="text-lg text-gray-600">Build Your Credit While You Invest—Maximum Flexibility for Life's Reality</p>
+              <p className="text-lg text-gray-600">Build Your Credit While You Invest: Maximum Flexibility for Life's Reality</p>
             </div>
           
             <div className="grid md:grid-cols-3 gap-6">
@@ -1497,9 +1497,9 @@ const CreditRepair = () => {
           <div className="mb-16">
             <div className="text-center mb-10">
               <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">9-MONTH PROGRAMS</h3>
-              <p className="text-lg text-gray-600 mb-4">Pay Once, Transform Forever—Maximum Savings for Committed Action</p>
+              <p className="text-lg text-gray-600 mb-4">Pay Once, Transform Forever: Maximum Savings for Committed Action</p>
               <p className="text-xl font-semibold text-[#3E3E3E] mb-2">Get nine months of the Mesa360 Credit System™ with significant savings</p>
-              <p className="text-gray-600 max-w-3xl mx-auto">For those who know they're committed—pay in full (or use Buy Now, Pay Later) and save up to $1,691 compared to monthly plans. Get the complete Mesa360 Credit System™ with massive upfront savings.</p>
+              <p className="text-gray-600 max-w-3xl mx-auto">For those who know they're committed, pay in full (or use Buy Now, Pay Later) and save up to $1,691 compared to monthly plans. Get the complete Mesa360 Credit System™ with massive upfront savings.</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -1757,7 +1757,7 @@ const CreditRepair = () => {
             <div className="bg-gray-50 rounded-lg p-4">
               <h5 className="font-bold text-[#3E3E3E] mb-2">Why This Matters:</h5>
               <p className="text-gray-700">
-                Without real-time monitoring, we're flying blind. Disputes could be resolved and we wouldn't know. New items could appear and we'd miss them. SmartCredit keeps everyone aligned—and keeps you in control.
+                Without real-time monitoring, we're flying blind. Disputes could be resolved and we wouldn't know. New items could appear and we'd miss them. SmartCredit keeps everyone aligned, and keeps you in control.
               </p>
             </div>
           </div>
@@ -1822,7 +1822,7 @@ Every dollar you paid to Mesa Group.</p>
             </p>
             <p className="text-white font-bold mt-6 text-xl">
               This is The Mesa360 Guarantee.<br />
-              Real Results in 90 Days — or Your Money Back.
+              Real Results in 90 Days, or Your Money Back.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
@@ -2025,7 +2025,7 @@ Every dollar you paid to Mesa Group.</p>
           {/* Bottom Callout */}
           <div className="bg-gradient-to-r from-[#f9c65d] to-[#fcd34d] rounded-2xl p-8 md:p-10 text-center">
             <p className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              The only way you don't see results is if you don't hold up your end—keeping monitoring active, staying responsive, and avoiding new negatives.
+              The only way you don't see results is if you don't hold up your end: keeping monitoring active, staying responsive, and avoiding new negatives.
             </p>
             <p className="text-xl text-gray-800 mb-6">
               If you do your part, we deliver results or refund your investment.

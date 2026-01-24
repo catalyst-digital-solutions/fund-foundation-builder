@@ -76,7 +76,7 @@ const Resources = () => {
     {
       icon: FileText,
       title: 'Letter Templates',
-      description: 'Professional letter templates you can download and customize for free. These are the same formats credit repair specialists use—now available to help you take action on your own terms.',
+      description: 'Professional letter templates you can download and customize for free. These are the same formats credit repair specialists use, now available to help you take action on your own terms.',
       features: [
         'Credit dispute letters',
         'Debt management letters',
@@ -129,7 +129,7 @@ const Resources = () => {
             {/* Body Copy */}
             <div className="bg-white rounded-2xl shadow-md p-6 md:p-8 text-left max-w-3xl mx-auto">
               <p className="text-lg text-[#3E3E3E] leading-relaxed">
-                At Mesa Group Consulting, we believe knowledge is the first step to financial freedom. That's why we've created <strong>The MESA Financial Knowledge Center</strong>—a comprehensive resource hub designed to educate, empower, and equip you with everything you need to take control of your credit and finances.
+                At Mesa Group Consulting, we believe knowledge is the first step to financial freedom. That's why we've created <strong>The MESA Financial Knowledge Center</strong>, a comprehensive resource hub designed to educate, empower, and equip you with everything you need to take control of your credit and finances.
               </p>
               <p className="text-lg text-[#3E3E3E] leading-relaxed mt-4">
                 Whether you're looking to understand credit fundamentals, repair your credit profile, secure business funding, or manage debt, you'll find the answers you need right here.
@@ -150,7 +150,7 @@ const Resources = () => {
               Everything You Need to Build <span className="text-[#f9c65d]">Financial Confidence</span>
             </h2>
             <p className="text-lg md:text-xl text-[#3E3E3E] leading-relaxed">
-              The MESA Financial Knowledge Center brings together educational content, real-time tools, professional templates, and company updates—all in one place. Explore each section below to find exactly what you're looking for.
+              The MESA Financial Knowledge Center brings together educational content, real-time tools, professional templates, and company updates, all in one place. Explore each section below to find exactly what you're looking for.
             </p>
           </div>
 
@@ -231,7 +231,7 @@ const Resources = () => {
                   Unlike other companies that just want to sell you services, MESA Group Consulting is committed to <strong>educating you first</strong>. We believe that when you understand how credit works, you're empowered to make better decisions for your financial future.
                 </p>
                 <p>
-                  Our Financial Knowledge Center reflects this commitment—offering real value, transparency, and support whether you're just starting to learn about credit or ready to take action with our professional services.
+                  Our Financial Knowledge Center reflects this commitment, offering real value, transparency, and support whether you're just starting to learn about credit or ready to take action with our professional services.
                 </p>
               </div>
 
@@ -294,7 +294,7 @@ const Resources = () => {
           </h2>
 
           <p className="text-xl text-white/80 leading-relaxed mb-8">
-            Our resources are designed to educate and empower you—but if you'd rather have professionals handle your credit repair, business funding, or debt relief, we're here to help.
+            Our resources are designed to educate and empower you, but if you'd rather have professionals handle your credit repair, business funding, or debt relief, we're here to help.
           </p>
 
           <div className="flex flex-row gap-4 justify-center">

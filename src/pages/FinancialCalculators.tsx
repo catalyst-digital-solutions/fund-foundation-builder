@@ -33,7 +33,7 @@ const calculators = [
   {
     id: 'credit-utilization' as const,
     title: 'Credit Utilization Calculator',
-    description: "Find out if your credit card balances are hurting your score—and exactly how much to pay down to optimize your utilization ratio.",
+    description: "Find out if your credit card balances are hurting your score, and exactly how much to pay down to optimize your utilization ratio.",
     icon: CreditCard,
     category: 'credit' as const
   },
@@ -148,7 +148,7 @@ const FinancialCalculators = () => {
           {/* Body Copy */}
           <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-600 leading-relaxed mb-8">
             <p>
-              Numbers don't lie—but they can be confusing. Our financial calculators take the guesswork out of important decisions by providing personalized insights based on your unique situation. Whether you're wondering how long it'll take to pay off debt, if your credit card balances are hurting your score, or how much you should save for emergencies, these tools give you answers in seconds.
+              Numbers don't lie, but they can be confusing. Our financial calculators take the guesswork out of important decisions by providing personalized insights based on your unique situation. Whether you're wondering how long it'll take to pay off debt, if your credit card balances are hurting your score, or how much you should save for emergencies, these tools give you answers in seconds.
             </p>
             <p className="font-medium text-gray-700">
               No credit card required. No strings attached. Just honest, helpful calculations to guide your next move.
@@ -181,7 +181,7 @@ const FinancialCalculators = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900">Choose Your Calculator</h3>
               <p className="text-gray-600 leading-relaxed">
-                Select the tool that matches your question—whether it's about credit utilization, debt payoff, or monthly payments.
+                Select the tool that matches your question, whether it's about credit utilization, debt payoff, or monthly payments.
               </p>
             </div>
 
@@ -335,7 +335,7 @@ const FinancialCalculators = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Based on Real Industry Standards</h3>
               <p className="text-gray-700 leading-relaxed">
-                Our calculators use the same formulas and benchmarks that lenders and credit bureaus use—so your results are realistic.
+                Our calculators use the same formulas and benchmarks that lenders and credit bureaus use, so your results are realistic.
               </p>
             </div>
 
@@ -346,7 +346,7 @@ const FinancialCalculators = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Actionable Recommendations</h3>
               <p className="text-gray-700 leading-relaxed">
-                You don't just get a number—you get a clear next step. Whether it's paying down debt, disputing errors, or building savings, we tell you exactly what to do.
+                You don't just get a number. You get a clear next step. Whether it's paying down debt, disputing errors, or building savings, we tell you exactly what to do.
               </p>
             </div>
           </div>
@@ -387,7 +387,7 @@ const FinancialCalculators = () => {
           </h2>
           
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Calculators are great for DIY guidance—but if you want a customized strategy built by experts, we're here to help. Our team specializes in credit repair, business funding, and debt relief tailored to your unique situation.
+            Calculators are great for DIY guidance, but if you want a customized strategy built by experts, we're here to help. Our team specializes in credit repair, business funding, and debt relief tailored to your unique situation.
           </p>
 
           <div className="flex flex-row gap-4 justify-center">

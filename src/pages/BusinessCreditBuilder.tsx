@@ -72,7 +72,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ openFullServiceModal, openDIY
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto mb-8 leading-relaxed">
-          Build a fortress between your business and personal finances. Access $5,000 to $150,000 in business credit—without touching your personal credit, risking your home, or betting your family's security on every business decision.
+          Build a fortress between your business and personal finances. Access $5,000 to $150,000 in business credit, without touching your personal credit, risking your home, or betting your family's security on every business decision.
         </p>
 
         {/* Trust Badges */}
@@ -124,7 +124,7 @@ const ProblemSection = () => {
     <section className="py-20 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-8">
-          You Built a Business to Create Opportunity—<br />Not to Risk Everything You Own
+          You Built a Business to Create Opportunity,<br />Not to Risk Everything You Own
         </h2>
 
         <div className="prose prose-lg max-w-4xl mx-auto text-gray-700 mb-12 leading-relaxed">
@@ -135,7 +135,7 @@ const ProblemSection = () => {
             Here's what's happening every time you use personal credit for business:
           </p>
           <p className="text-lg mt-4">
-            Your personal credit score takes the hit. Your personal assets are exposed. Your home becomes collateral. One business setback—something completely outside your control—could wipe out everything your family depends on.
+            Your personal credit score takes the hit. Your personal assets are exposed. Your home becomes collateral. One business setback, something completely outside your control, could wipe out everything your family depends on.
           </p>
         </div>
 
@@ -194,7 +194,7 @@ const ProblemSection = () => {
             What's the difference?
           </p>
           <p className="text-lg text-gray-700 mt-4">
-            They discovered something most business owners don't know exists—and every day you wait costs you opportunities, limits your growth, and keeps your personal assets at risk.
+            They discovered something most business owners don't know exists, and every day you wait costs you opportunities, limits your growth, and keeps your personal assets at risk.
           </p>
         </div>
       </div>
@@ -212,7 +212,7 @@ const AwakeningSection = () => {
         </h2>
 
         <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12">
-          Business credit isn't just about "building a score." It's about creating a <strong>firewall between your business operations and your personal life</strong>—so one never threatens the other.
+          Business credit isn't just about "building a score." It's about creating a <strong>firewall between your business operations and your personal life</strong>, so one never threatens the other.
         </p>
 
         {/* Two-Column Comparison Table */}
@@ -301,7 +301,7 @@ const VisionSection = () => {
     {
       icon: CheckCircle,
       title: 'Peace of Mind',
-      description: 'Your breakthrough is one approval away—not one risk away'
+      description: 'Your breakthrough is one approval away, not one risk away'
     }
   ];
 
@@ -318,7 +318,7 @@ const VisionSection = () => {
             <strong>Imagine this:</strong>
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mt-4">
-            $50,000 approved—no personal guarantee. Equipment purchased on business terms. Sleeping soundly knowing your home isn't at risk. Taking that major contract without hesitation. <strong>That's what real business credit creates.</strong>
+            $50,000 approved, no personal guarantee. Equipment purchased on business terms. Sleeping soundly knowing your home isn't at risk. Taking that major contract without hesitation. <strong>That's what real business credit creates.</strong>
           </p>
         </div>
 
@@ -368,7 +368,7 @@ const FundabilitySystemSection = () => {
       icon: Search,
       title: 'Identify Fundability Factors™ Holding You Back',
       subtitle: 'Discover the hidden barriers blocking your approvals',
-      body: 'Over 125 hidden factors can prevent funding approvals—even for profitable businesses. We reveal exactly what\'s holding you back (business structure issues, financial gaps, industry risk factors) so you can eliminate these barriers and secure maximum capital.',
+      body: 'Over 125 hidden factors can prevent funding approvals, even for profitable businesses. We reveal exactly what\'s holding you back (business structure issues, financial gaps, industry risk factors) so you can eliminate these barriers and secure maximum capital.',
       reveals: [
         'Which of the 125+ factors are affecting you',
         'Business structure optimization needs',
@@ -383,7 +383,7 @@ const FundabilitySystemSection = () => {
       icon: TrendingUp,
       title: 'Track Your Business Bureau Insights™',
       subtitle: 'See what lenders see when they review your business',
-      body: 'Get real-time monitoring from Dun & Bradstreet, Experian, Equifax—even the "secret" credit reporting agencies lenders actually use. You\'ll see exactly what\'s on your business credit reports, fix errors instantly, boost your scores, and track improvements as they happen.',
+      body: 'Get real-time monitoring from Dun & Bradstreet, Experian, Equifax, even the "secret" credit reporting agencies lenders actually use. You\'ll see exactly what\'s on your business credit reports, fix errors instantly, boost your scores, and track improvements as they happen.',
       reveals: [
         'Dun & Bradstreet PAYDEX scores',
         'Experian Intelliscore and Financial Stability Risk',
@@ -398,7 +398,7 @@ const FundabilitySystemSection = () => {
       icon: LayoutGrid,
       title: 'Maximize Your Fundability®',
       subtitle: 'Follow your custom roadmap to build a fundable business profile',
-      body: 'Your business is unique. That\'s why our proven software creates a tailored Fundability roadmap specific to your business type, industry, and goals. You\'ll build credit strategically—not randomly—enhancing your profile step-by-step to secure higher limits, lower rates, and better terms.',
+      body: 'Your business is unique. That\'s why our proven software creates a tailored Fundability roadmap specific to your business type, industry, and goals. You\'ll build credit strategically, not randomly, enhancing your profile step-by-step to secure higher limits, lower rates, and better terms.',
       reveals: [
         'Which vendors to start with (and in what order)',
         'When to apply for business credit cards',
@@ -413,7 +413,7 @@ const FundabilitySystemSection = () => {
       icon: Users,
       title: 'Get MATCHED with Vendors, Lenders & Credit Issuers',
       subtitle: 'Access our exclusive network of 300+ funding sources',
-      body: 'Fundability® matches you with secured and unsecured credit lines, vendor accounts, and business financing based purely on your company\'s creditworthiness—without personal guarantees or relying on personal credit.',
+      body: 'Fundability® matches you with secured and unsecured credit lines, vendor accounts, and business financing based purely on your company\'s creditworthiness, without personal guarantees or relying on personal credit.',
       reveals: [
         '300+ vendors, suppliers, and lenders who report to bureaus',
         'Tier 1: Vendor credit (starter accounts, easy approval)',
@@ -434,7 +434,7 @@ const FundabilitySystemSection = () => {
             How Fundability<sup className="text-2xl">®</sup> Prepares Your Business<br />for <span style={{ color: '#f9c65d' }}>Maximum Funding</span> in 5 Steps
           </h2>
           <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            Your business has untapped funding potential. The challenge? Most businesses don't know how to unlock it. Our proven Fundability<sup>®</sup> system shows you exactly how fundable your business is right now—and the precise steps to maximize your access to capital.
+            Your business has untapped funding potential. The challenge? Most businesses don't know how to unlock it. Our proven Fundability<sup>®</sup> system shows you exactly how fundable your business is right now, and the precise steps to maximize your access to capital.
           </p>
         </div>
 
@@ -735,7 +735,7 @@ const ProgramOptionsSection: React.FC<ProgramOptionsSectionProps> = ({ openFullS
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Get immediate access to the complete Business Credit Finance Suite, all educational materials, and funding source database—without the coaching or weekly calls.
+              Get immediate access to the complete Business Credit Finance Suite, all educational materials, and funding source database, without the coaching or weekly calls.
             </p>
 
             <div className="bg-white rounded-lg p-6 mb-6">
@@ -990,7 +990,7 @@ const FAQSection = ({ openFaq, setOpenFaq }: { openFaq: number | null; setOpenFa
     },
     {
       question: 'What Does it Mean to Establish Business Tradelines?',
-      answer: 'Establishing business tradelines is the act of applying to and using accounts that report to the business credit bureaus. A tradeline is any credit account—vendor accounts, business credit cards, lines of credit—that appears on your business credit report and shows your payment history.'
+      answer: 'Establishing business tradelines is the act of applying to and using accounts that report to the business credit bureaus. A tradeline is any credit account (vendor accounts, business credit cards, lines of credit) that appears on your business credit report and shows your payment history.'
     },
     {
       question: 'What is a Personal Guarantee?',
@@ -1018,11 +1018,11 @@ const FAQSection = ({ openFaq, setOpenFaq }: { openFaq: number | null; setOpenFa
     },
     {
       question: 'Will This Affect My Personal Credit?',
-      answer: 'When done correctly, building business credit has ZERO impact on your personal credit score. Applications, inquiries, and payment history all report under your business EIN—not your personal Social Security Number. This is one of the biggest advantages of business credit.'
+      answer: 'When done correctly, building business credit has ZERO impact on your personal credit score. Applications, inquiries, and payment history all report under your business EIN, not your personal Social Security Number. This is one of the biggest advantages of business credit.'
     },
     {
       question: 'What\'s the $50,000 Guarantee?',
-      answer: 'We guarantee that if you follow our program and maintain healthy financial behaviors, we\'ll continue working with you until you\'re approved for at least $50,000 in total business funding. This means we\'re committed to your success. We don\'t just hand you software and disappear—we stay with you until you hit that $50K threshold. The $50,000 funding guarantee is based on our advisor team assisting you with securing several credit approvals, totaling at least $50,000, through each tier of funding.'
+      answer: 'We guarantee that if you follow our program and maintain healthy financial behaviors, we\'ll continue working with you until you\'re approved for at least $50,000 in total business funding. This means we\'re committed to your success. We don\'t just hand you software and disappear. We stay with you until you hit that $50K threshold. The $50,000 funding guarantee is based on our advisor team assisting you with securing several credit approvals, totaling at least $50,000, through each tier of funding.'
     },
     {
       question: 'What\'s the Difference Between Full Service and DIY?',
@@ -1090,7 +1090,7 @@ const FinalCTASection: React.FC<FinalCTASectionProps> = ({ openFullServiceModal,
             Ready to Build Business Credit That<br />Opens Doors to Real Funding?
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Stop risking your personal assets. Stop being limited by personal credit. Start building business credit that unlocks $5,000 to $150,000 in funding—without personal guarantees.
+            Stop risking your personal assets. Stop being limited by personal credit. Start building business credit that unlocks $5,000 to $150,000 in funding, without personal guarantees.
           </p>
         </div>
 

@@ -210,7 +210,7 @@ const StudentLoanRefi2 = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Lower Your Interest Rate</h3>
               <p className="text-gray-700">
-                If your credit has improved or market rates have dropped, you could qualify for a significantly lower rate—saving thousands over time.
+                If your credit has improved or market rates have dropped, you could qualify for a significantly lower rate, saving thousands over time.
               </p>
             </div>
 
@@ -240,7 +240,7 @@ const StudentLoanRefi2 = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Choose Your Repayment Term</h3>
               <p className="text-gray-700">
-                Select a term (5-20 years) that fits your budget and goals—pay off faster to save on interest, or extend for lower monthly payments.
+                Select a term (5-20 years) that fits your budget and goals. Pay off faster to save on interest, or extend for lower monthly payments.
               </p>
             </div>
 
@@ -983,7 +983,7 @@ const StudentLoanRefi2 = () => {
             </h2>
             
             <p className="text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Compare 10+ lenders in 2 minutes—with zero impact to your credit score.
+              Compare 10+ lenders in 2 minutes, with zero impact to your credit score.
             </p>
 
             <a

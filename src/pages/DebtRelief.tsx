@@ -77,7 +77,7 @@ const DebtRelief = () => {
     },
     {
       question: "What's the difference between debt relief and debt consolidation?",
-      answer: "Debt consolidation combines multiple debts into one loan—you still owe 100% of the principal plus interest, and you need good credit to qualify. Debt relief (settlement) negotiates with creditors to reduce the total amount you owe by 30-50%. You don't need good credit to qualify for debt relief, and you end up paying significantly less than you originally owed."
+      answer: "Debt consolidation combines multiple debts into one loan. You still owe 100% of the principal plus interest, and you need good credit to qualify. Debt relief (settlement) negotiates with creditors to reduce the total amount you owe by 30-50%. You don't need good credit to qualify for debt relief, and you end up paying significantly less than you originally owed."
     },
     {
       question: "How long will it take to be debt-free?",
@@ -85,7 +85,7 @@ const DebtRelief = () => {
     },
     {
       question: "Will debt relief impact my credit score?",
-      answer: "Yes, debt relief will likely have a negative impact on your credit score temporarily because you'll stop making payments to creditors during negotiations. However, if your credit is already damaged from late payments or collections, the impact may be minimal. The alternative—bankruptcy—is far more damaging and lasts 7-10 years. Debt relief allows you to rebuild credit faster after completion, and most clients see their scores recover within 2-3 years."
+      answer: "Yes, debt relief will likely have a negative impact on your credit score temporarily because you'll stop making payments to creditors during negotiations. However, if your credit is already damaged from late payments or collections, the impact may be minimal. The alternative (bankruptcy) is far more damaging and lasts 7-10 years. Debt relief allows you to rebuild credit faster after completion, and most clients see their scores recover within 2-3 years."
     },
     {
       question: "Can you help if I'm already facing lawsuits or judgments?",
@@ -136,7 +136,7 @@ const DebtRelief = () => {
               </div>
             </div>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              We negotiate with your creditors, collection agencies, and attorneys to settle your debts for <strong>significantly less than you owe</strong>—while you focus on rebuilding your financial future, not drowning in debt.
+              We negotiate with your creditors, collection agencies, and attorneys to settle your debts for <strong>significantly less than you owe</strong>, while you focus on rebuilding your financial future, not drowning in debt.
             </p>
             
             <div className="inline-block">
@@ -202,7 +202,7 @@ const DebtRelief = () => {
                 Minimum Payment Trap
               </h3>
               <p className="text-gray-300 leading-relaxed">
-                You're making minimum payments but the balance never goes down. Interest eats up everything you pay—you're running in place.
+                You're making minimum payments but the balance never goes down. Interest eats up everything you pay. You're running in place.
               </p>
             </div>
 
@@ -237,7 +237,7 @@ const DebtRelief = () => {
               There's a Better Way Than Bankruptcy
             </h3>
             <p className="text-lg text-gray-300 leading-relaxed mb-6 max-w-3xl mx-auto">
-              Debt relief through Mesa Group Consulting lets you settle debts for <strong>30-50% less than you owe</strong>, avoid bankruptcy, and protect your family's future—without destroying your credit for 7-10 years.
+              Debt relief through Mesa Group Consulting lets you settle debts for <strong>30-50% less than you owe</strong>, avoid bankruptcy, and protect your family's future, without destroying your credit for 7-10 years.
             </p>
             <div className="inline-block">
               <button
@@ -280,7 +280,7 @@ const DebtRelief = () => {
                     Reduce Your Debt by 30-50%
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    On average, our clients save <strong>43% on enrolled debts</strong> before fees. If you owe $50,000, you might settle for $25,000-$35,000 total. That's tens of thousands of dollars saved—money that stays in your pocket.
+                    On average, our clients save <strong>43% on enrolled debts</strong> before fees. If you owe $50,000, you might settle for $25,000-$35,000 total. That's tens of thousands of dollars saved, money that stays in your pocket.
                   </p>
                 </div>
               </div>
@@ -328,7 +328,7 @@ const DebtRelief = () => {
                     Be Debt-Free in 20-48 Months
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Most clients achieve complete debt freedom <strong>within 4 years or less</strong>—with the first settlement typically within 4-7 months. Compare that to 15+ years of minimum payments on credit cards.
+                    Most clients achieve complete debt freedom <strong>within 4 years or less</strong>, with the first settlement typically within 4-7 months. Compare that to 15+ years of minimum payments on credit cards.
                   </p>
                 </div>
               </div>
@@ -350,7 +350,7 @@ const DebtRelief = () => {
               Types of Debt We Can <span className="text-[#f9c65d]">Settle</span>
             </h2>
             <p className="text-xl text-gray-600">
-              Our program handles unsecured debts—those not backed by collateral like a house or car.
+              Our program handles unsecured debts, those not backed by collateral like a house or car.
             </p>
           </div>
 
@@ -676,7 +676,7 @@ const DebtRelief = () => {
             </h2>
             
             <p className="text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
-              You didn't create this debt overnight, and you can't solve it overnight—but you <strong>can</strong> take the first step today. Let Mesa Group Consulting's <strong>Debt Relief specialists</strong> handle your creditors while you focus on what matters most.
+              You didn't create this debt overnight, and you can't solve it overnight, but you <strong>can</strong> take the first step today. Let Mesa Group Consulting's <strong>Debt Relief specialists</strong> handle your creditors while you focus on what matters most.
             </p>
 
             <div className="inline-block">

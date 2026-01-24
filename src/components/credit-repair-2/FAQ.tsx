@@ -19,7 +19,7 @@ const FAQ = () => {
         <div className="space-y-4 mb-12">
           {/* FAQ 1 */}
           <FAQItem index={0} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="1. Is this legit or a scam?">
-            <p className="mb-4">Absolutely legitimate. Mesa Group Consulting is a CROA-compliant financial services company operating in full accordance with federal consumer protection laws. We're not a fly-by-night operation—we're a real business with:</p>
+            <p className="mb-4">Absolutely legitimate. Mesa Group Consulting is a CROA-compliant financial services company operating in full accordance with federal consumer protection laws. We're not a fly-by-night operation. We're a real business with:</p>
             <ul className="list-disc pl-6 space-y-2 mb-4">
               <li>A physical office in Bakersfield, CA that you can visit</li>
               <li>2,500+ clients served nationwide</li>
@@ -47,7 +47,7 @@ const FAQ = () => {
               <li>Applying for too much new credit during the process</li>
               <li>Closing old credit card accounts (reduces your credit age)</li>
             </ul>
-            <p>That's why our program includes 1-on-1 financial coaching—we teach you what to do AND what NOT to do while we're working on your disputes.</p>
+            <p>That's why our program includes 1-on-1 financial coaching. We teach you what to do AND what NOT to do while we're working on your disputes.</p>
           </FAQItem>
 
           {/* FAQ 3 */}
@@ -73,7 +73,7 @@ const FAQ = () => {
               <li>✅ Client portal + mobile app access</li>
               <li>✅ Ongoing support (monthly plans) or 12 months of service (prepaid plans)</li>
             </ul>
-            <p className="mb-4"><strong>Additional requirement:</strong> You must maintain a SmartCredit 3-Bureau monitoring account ($27.99/month after $1 for 7-day trial) throughout the entire process. This gives us—and you—real-time access to your credit reports from all three bureaus.</p>
+            <p className="mb-4"><strong>Additional requirement:</strong> You must maintain a SmartCredit 3-Bureau monitoring account ($27.99/month after $1 for 7-day trial) throughout the entire process. This gives us (and you) real-time access to your credit reports from all three bureaus.</p>
             <p className="mb-4"><strong>No hidden fees. No upsells. No surprises.</strong></p>
             <p>You can cancel your monthly plan anytime (we have a 3-day risk-free cancellation window from signup). The 12-month programs are paid in full but can be financed through Buy Now, Pay Later (BNPL) options.</p>
           </FAQItem>
@@ -95,13 +95,13 @@ const FAQ = () => {
               <li><strong>90-180 days:</strong> Significant progress; multiple rounds of disputes completed</li>
               <li><strong>6-12 months:</strong> Most comprehensive results achieved</li>
             </ul>
-            <p className="mb-4"><strong>What we guarantee:</strong> We cannot guarantee specific score increases or exact timelines—any company that does is violating federal law (CROA). What we CAN promise is a legally compliant, persistent dispute process with measurable progress tracking every step of the way.</p>
+            <p className="mb-4"><strong>What we guarantee:</strong> We cannot guarantee specific score increases or exact timelines. Any company that does is violating federal law (CROA). What we CAN promise is a legally compliant, persistent dispute process with measurable progress tracking every step of the way.</p>
             <p><strong>Important note on monthly plans:</strong> Our monthly plans (Lite/Flex/Elite) provide ongoing support. If you add new items during the process, we'll work on them. This is different from our 12-month programs, which focus only on your credit profile at the time of enrollment.</p>
           </FAQItem>
 
           {/* FAQ 5 */}
           <FAQItem index={4} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="5. Can I do this myself instead of paying someone?">
-            <p className="mb-4">Yes—and we'll be the first to tell you that you have every legal right to dispute items yourself for free.</p>
+            <p className="mb-4">Yes, and we'll be the first to tell you that you have every legal right to dispute items yourself for free.</p>
             <p className="mb-2"><strong>But here's the reality:</strong></p>
             <p className="font-semibold mb-2">Why DIY often fails:</p>
             <ul className="list-disc pl-6 space-y-2 mb-4">
@@ -112,10 +112,10 @@ const FAQ = () => {
             </ul>
             <p className="font-semibold mb-2">What we bring to the table:</p>
             <ul className="list-disc pl-6 space-y-2 mb-4">
-              <li><strong>Personalized dispute strategies:</strong> No cookie-cutter templates—every letter is customized to your unique situation</li>
+              <li><strong>Personalized dispute strategies:</strong> No cookie-cutter templates. Every letter is customized to your unique situation.</li>
               <li><strong>Advanced methods:</strong> Digital uploads, Experian rapid inquiry removal, CFPB complaints, direct creditor disputes, Metro 2 challenges, and more</li>
               <li><strong>Full legal team for violations:</strong> When bureaus or creditors violate your FCRA rights, we escalate with attorney support. Qualified clients have received settlements of $1,000–$2,500 for violations.</li>
-              <li><strong>Ongoing coaching:</strong> We don't just dispute items—we teach you how to build and maintain good credit long-term</li>
+              <li><strong>Ongoing coaching:</strong> We don't just dispute items. We teach you how to build and maintain good credit long-term.</li>
               <li><strong>It's our full-time job:</strong> While you're working, spending time with family, or running your business, we're managing your disputes</li>
             </ul>
             <p className="mb-4"><strong>Think of it this way:</strong> You CAN change your own oil, fix your own plumbing, or file your own taxes. But most people hire professionals because the time, expertise, and peace of mind are worth it.</p>
@@ -159,7 +159,7 @@ const FAQ = () => {
               <li>❌ Tax liens (these are public records)</li>
               <li>❌ Court judgments that are accurate and within reporting period</li>
             </ul>
-            <p><strong>Our approach:</strong> We follow consumer law, factual disputing principles, and FCRA/FDCPA regulations to help clients fix their credit ethically and legally. We don't promise to "erase" everything—we promise to challenge everything that's legally disputable and get results where creditors and bureaus can't verify their claims.</p>
+            <p><strong>Our approach:</strong> We follow consumer law, factual disputing principles, and FCRA/FDCPA regulations to help clients fix their credit ethically and legally. We don't promise to "erase" everything. We promise to challenge everything that's legally disputable and get results where creditors and bureaus can't verify their claims.</p>
           </FAQItem>
 
           {/* FAQ 7 */}
@@ -181,7 +181,7 @@ const FAQ = () => {
               <li>Support for potential violation claims</li>
             </ul>
             <p className="mb-4"><strong>Settlements:</strong> Many qualified clients have received settlements ranging from $1,000 to $2,500 (or more) when creditors or bureaus are found in violation of federal law. These settlements are in addition to the removal of inaccurate items.</p>
-            <p><strong>Important note:</strong> Not every case qualifies for legal escalation—violations must be clear and documented. Your account manager will identify potential violations during your dispute process and escalate when appropriate.</p>
+            <p><strong>Important note:</strong> Not every case qualifies for legal escalation. Violations must be clear and documented. Your account manager will identify potential violations during your dispute process and escalate when appropriate.</p>
           </FAQItem>
 
           {/* FAQ 8 */}
@@ -213,7 +213,7 @@ const FAQ = () => {
             <p className="mb-4">If a credit bureau verifies an item after our first dispute, that doesn't mean the process is over. Here's what happens next:</p>
             <p className="font-semibold mb-2">Round 2: Advanced Dispute Methods</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
-              <li>We request the "method of verification" (MOV) from the bureau—they must tell us HOW they verified it</li>
+              <li>We request the "method of verification" (MOV) from the bureau. They must tell us HOW they verified it.</li>
               <li>We review the creditor's documentation for errors or missing information</li>
               <li>We file a second dispute with additional evidence or a different angle of challenge</li>
             </ul>
@@ -238,14 +238,14 @@ const FAQ = () => {
             <ul className="list-disc pl-6 space-y-1 mb-4">
               <li>Creditors often don't have complete documentation</li>
               <li>Bureaus and creditors hope you'll give up after one attempt</li>
-              <li>Each dispute round forces them to re-verify—and they often can't</li>
+              <li>Each dispute round forces them to re-verify, and they often can't</li>
             </ul>
             <p><strong>Client example:</strong> Sarah had a $4,200 medical collection verified twice. On the third dispute, we went directly to the collection agency and demanded documentation under FDCPA. They couldn't provide itemized medical records (HIPAA privacy protection), so they deleted it.</p>
           </FAQItem>
 
           {/* FAQ 10 */}
           <FAQItem index={9} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="10. Can you guarantee my score will increase by X points?">
-            <p className="mb-4">No—and you should run from any company that makes that promise.</p>
+            <p className="mb-4">No, and you should run from any company that makes that promise.</p>
             <p className="mb-4">Under the Credit Repair Organizations Act (CROA), it is illegal for credit restoration companies to:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
               <li>Guarantee specific score increases</li>
@@ -278,7 +278,7 @@ const FAQ = () => {
 
           {/* FAQ 11 */}
           <FAQItem index={10} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="11. What's included in the 1-on-1 financial coaching?">
-            <p className="mb-4">Every Mesa Group client—regardless of which plan you choose—gets a dedicated account manager and personalized financial coaching. This isn't just credit restoration; it's a complete financial transformation program.</p>
+            <p className="mb-4">Every Mesa Group client, regardless of which plan you choose, gets a dedicated account manager and personalized financial coaching. This isn't just credit restoration; it's a complete financial transformation program.</p>
             <p className="font-semibold mb-2">Your coaching includes:</p>
             <p className="font-semibold mt-4 mb-2">📊 Customized Action Plan</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
@@ -316,7 +316,7 @@ const FAQ = () => {
               <li>Help understanding credit bureau responses</li>
               <li>Support beyond just the disputes</li>
             </ul>
-            <p className="mb-4"><strong>Why coaching matters:</strong> Removing negative items is only half the battle. Without learning how to build and maintain good credit, you'll end up back where you started. Our clients don't just see score increases—they achieve lasting financial transformation.</p>
+            <p className="mb-4"><strong>Why coaching matters:</strong> Removing negative items is only half the battle. Without learning how to build and maintain good credit, you'll end up back where you started. Our clients don't just see score increases. They achieve lasting financial transformation.</p>
             <div className="bg-gray-100 p-4 rounded-lg mt-4">
               <p className="italic">"I came to Mesa Group with a 540 score and collections I didn't understand. My account manager, Maria, didn't just file disputes—she explained every step, taught me how credit utilization works, and helped me build a plan to keep my score high after the program. Nine months later, I'm at 710 and I finally understand how to manage my credit."</p>
               <p className="font-semibold mt-2">— Carlos R., Bakersfield, CA</p>
@@ -325,7 +325,7 @@ const FAQ = () => {
 
           {/* FAQ 12 */}
           <FAQItem index={11} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="12. What's the difference between your monthly plans and 12-month programs?">
-            <p className="mb-4">Great question—we offer both options to fit different needs and budgets.</p>
+            <p className="mb-4">Great question. We offer both options to fit different needs and budgets.</p>
             
             <div className="bg-amber-50 p-4 rounded-lg mb-4">
               <p className="font-bold text-lg mb-2">MONTHLY PLANS (Lite, Flex, Elite) - BEST FOR FLEXIBILITY</p>
@@ -335,8 +335,8 @@ const FAQ = () => {
                 <li>Ongoing monthly fee ($149-$299 depending on plan)</li>
                 <li>Cancel anytime (after 3-day risk-free window)</li>
               </ul>
-              <p className="mb-2"><strong>Key Advantage:</strong> ✅ Ongoing support for new items—If you add new negative items during the process (like a late payment or new collection), we'll work on them. No additional charge.</p>
-              <p className="mb-2"><strong>Why this matters:</strong> Life happens. Despite our coaching and guidance, clients sometimes add new late payments or inquiries during the credit recovery process. Monthly plans keep you covered and accountable—we don't abandon your case when new challenges arise. This flexibility is worth the ongoing investment for clients with active or evolving credit situations.</p>
+              <p className="mb-2"><strong>Key Advantage:</strong> ✅ Ongoing support for new items. If you add new negative items during the process (like a late payment or new collection), we'll work on them. No additional charge.</p>
+              <p className="mb-2"><strong>Why this matters:</strong> Life happens. Despite our coaching and guidance, clients sometimes add new late payments or inquiries during the credit recovery process. Monthly plans keep you covered and accountable. We don't abandon your case when new challenges arise. This flexibility is worth the ongoing investment for clients with active or evolving credit situations.</p>
               <p className="font-semibold mb-2">Best for:</p>
               <ul className="list-disc pl-6 space-y-1">
                 <li>People who want maximum flexibility</li>
@@ -354,7 +354,7 @@ const FAQ = () => {
                 <li>Can be paid in full OR financed through Buy Now, Pay Later (BNPL)</li>
                 <li>Full 12 months of service</li>
               </ul>
-              <p className="mb-2"><strong>Key Advantage:</strong> ✅ Significant savings—Save $888 (Ruby) or $1,788 (Emerald) vs. paying monthly</p>
+              <p className="mb-2"><strong>Key Advantage:</strong> ✅ Significant savings. Save $888 (Ruby) or $1,788 (Emerald) vs. paying monthly.</p>
               <p className="mb-2"><strong>Important Note:</strong> ❌ Comprehensive 12-month program focused on your current credit profile at enrollment. New items added during the program will NOT be worked on.</p>
               <p className="font-semibold mb-2">Best for:</p>
               <ul className="list-disc pl-6 space-y-1">
@@ -447,7 +447,7 @@ const FAQ = () => {
 
           {/* FAQ 15 */}
           <FAQItem index={14} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="15. What happens after my credit is restored?">
-            <p className="mb-4">Our goal isn't just to fix your credit—it's to transform your financial future. Here's what happens:</p>
+            <p className="mb-4">Our goal isn't just to fix your credit. It's to transform your financial future. Here's what happens:</p>
             <p className="font-semibold mb-2">During the Program:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
               <li>We remove inaccurate items</li>
@@ -521,7 +521,7 @@ const FAQ = () => {
           {/* FAQ 17 */}
           <FAQItem index={16} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="17. Can I apply for new credit during the program?">
             <p className="mb-4">Yes, but strategically.</p>
-            <p className="mb-4">This is one of the most important topics we cover in your 1-on-1 coaching, because applying for new credit during credit rebuilding can either help or hurt—depending on timing and approach.</p>
+            <p className="mb-4">This is one of the most important topics we cover in your 1-on-1 coaching, because applying for new credit during credit rebuilding can either help or hurt, depending on timing and approach.</p>
             <p className="font-semibold mb-2">General guidance:</p>
             <p className="font-semibold mt-4 mb-2">✅ GOOD IDEAS:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
@@ -552,7 +552,7 @@ const FAQ = () => {
               <li><strong>Month 6+:</strong> Consider additional credit building based on your goals</li>
             </ul>
             <p className="mb-4"><strong>Monthly plan advantage:</strong> If you're on a monthly plan with ongoing support for new items, we'll work on any new inquiries or accounts that appear during the process.</p>
-            <p><strong>Bottom line:</strong> Yes, you can apply for credit—but let's be strategic about it. That's what the coaching is for.</p>
+            <p><strong>Bottom line:</strong> Yes, you can apply for credit, but let's be strategic about it. That's what the coaching is for.</p>
           </FAQItem>
 
           {/* FAQ 18 */}
@@ -560,7 +560,7 @@ const FAQ = () => {
             <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-4">
               <p className="font-bold text-lg">90 Days. Real Results. Or You Get Every Dollar Back.</p>
             </div>
-            <p className="mb-4">We don't just talk about results—we put it in writing.</p>
+            <p className="mb-4">We don't just talk about results. We put it in writing.</p>
             <p className="mb-4">Every Mesa Group client is protected by <strong>The Mesa360 Guarantee</strong>: a legally written, contract-backed <strong>90-Day Money-Back Promise</strong> that most credit service companies aren't confident enough to offer.</p>
             <p className="font-semibold mb-2">Here's how it works:</p>
             <p className="mb-4">If you hold up your end of the agreement and we don't deliver real, verifiable progress within the first 90 days, you get 100% of your money back. No excuses. No runaround. No fine print.</p>
@@ -573,7 +573,7 @@ const FAQ = () => {
               <li>✅ <strong>Keep Your Account Current:</strong> Maintain payment on your Mesa Group account. Unpaid invoices for more than 30 days result in service suspension and guarantee ineligibility.</li>
               <li>✅ <strong>Avoid New Negative Items:</strong> Don't add new late payments, collections, or charge-offs during the 90-day period (new negatives work against the progress we're making)</li>
               <li>✅ <strong>Avoid New Hard Inquiries:</strong> Don't apply for multiple new credit accounts during the initial dispute period (this can temporarily lower your score and complicate the process)</li>
-              <li>✅ <strong>Follow Your Account Manager's Guidance:</strong> Your 1-on-1 coaching includes strategic advice—following it matters</li>
+              <li>✅ <strong>Follow Your Account Manager's Guidance:</strong> Your 1-on-1 coaching includes strategic advice. Following it matters.</li>
             </ul>
 
             <p className="font-semibold mb-2">Our Guarantee:</p>
@@ -582,11 +582,11 @@ const FAQ = () => {
             <ul className="list-disc pl-6 space-y-1 mb-4">
               <li>"Results" means documented removal of at least 1 inaccurate, incomplete, or unverifiable item</li>
               <li>We cannot guarantee specific score increases (that would violate CROA regulations)</li>
-              <li>Most clients see multiple removals within 90 days—this is a conservative baseline</li>
+              <li>Most clients see multiple removals within 90 days. This is a conservative baseline.</li>
             </ul>
 
             <p className="font-semibold mb-2">Why We Can Offer This:</p>
-            <p className="mb-4">Most of our clients start seeing results in the first 30-45 days. Why? Because we work your file like our reputation depends on it—because it does.</p>
+            <p className="mb-4">Most of our clients start seeing results in the first 30-45 days. Why? Because we work your file like our reputation depends on it, because it does.</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
               <li>Your case doesn't sit in a queue collecting dust</li>
               <li>Your dedicated account manager is personally invested in your success</li>
@@ -631,7 +631,7 @@ const FAQ = () => {
             <div className="bg-green-50 border-l-4 border-green-500 p-4 my-4">
               <p className="font-bold">You've Got Nothing to Lose. Everything to Gain.</p>
               <p className="mt-2">If you're serious about transforming your credit and your financial future, we'll match your commitment with everything we've got.</p>
-              <p className="mt-2 font-semibold">✨ This is The Mesa360 Guarantee.<br />Real Results in 90 Days — or Your Money Back.</p>
+              <p className="mt-2 font-semibold">✨ This is The Mesa360 Guarantee.<br />Real Results in 90 Days, or Your Money Back.</p>
             </div>
 
             <p className="font-semibold mb-2">Questions about the guarantee?</p>
@@ -641,7 +641,7 @@ const FAQ = () => {
           {/* FAQ 20 */}
           <FAQItem index={19} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="20. Will you help me with identity theft?">
             <p className="mb-4">Yes, absolutely.</p>
-            <p className="mb-4">Identity theft accounts (fraudulent accounts opened in your name) are some of the most damaging items that can appear on your credit report—and they're 100% disputable since they're not your responsibility.</p>
+            <p className="mb-4">Identity theft accounts (fraudulent accounts opened in your name) are some of the most damaging items that can appear on your credit report, and they're 100% disputable since they're not your responsibility.</p>
             <p className="font-semibold mb-2">What we do:</p>
             <p className="font-semibold mt-4 mb-2">🚨 Identify Fraudulent Accounts</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
@@ -680,7 +680,7 @@ const FAQ = () => {
 
           {/* FAQ 21 */}
           <FAQItem index={20} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="21. Can you help with student loans?">
-            <p className="mb-4">Yes—but it depends on the situation.</p>
+            <p className="mb-4">Yes, but it depends on the situation.</p>
             <p className="mb-4">Student loans are one of the most complex credit issues we handle. Here's what we can and can't do:</p>
             
             <div className="bg-green-50 p-4 rounded-lg mb-4">

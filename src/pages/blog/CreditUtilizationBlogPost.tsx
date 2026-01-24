@@ -104,7 +104,7 @@ const CreditUtilizationBlogPost = () => {
               When we pulled her credit reports, the problem became obvious immediately. Her credit card balances were being reported at 80 percent utilization. Every single month. Even though she was paying in full.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-              Here is what was happening behind the scenes. She was putting all her daily expenses on her cards—groceries, gas, bills, everything. By the time her statement closed, she had roughly $7,000 in charges on a $9,000 total credit limit. Then, she would pay the full $7,000 before the due date.
+              Here is what was happening behind the scenes. She was putting all her daily expenses on her cards (groceries, gas, bills, everything). By the time her statement closed, she had roughly $7,000 in charges on a $9,000 total credit limit. Then, she would pay the full $7,000 before the due date.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
               She thought she was doing everything right. And in terms of avoiding interest and <Link to="/build-credit" className="text-amber-600 hover:text-amber-700 underline">building your credit</Link> history, she was. But she did not understand how credit reporting actually works.
@@ -129,7 +129,7 @@ const CreditUtilizationBlogPost = () => {
               The Short Answer: <span className="text-amber-600">Yes, It Still Matters</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-              Let me be direct: Credit utilization matters even if you pay your balance in full every month. The timing of when your balance gets reported is what determines your utilization ratio—not whether you eventually pay it off.
+              Let me be direct: Credit utilization matters even if you pay your balance in full every month. The timing of when your balance gets reported is what determines your utilization ratio, not whether you eventually pay it off.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
               Here is the thing. Your credit card issuer reports your balance to the credit bureaus once per month. This typically happens on your statement closing date.
@@ -176,7 +176,7 @@ const CreditUtilizationBlogPost = () => {
                   <span className="flex-shrink-0 w-6 h-6 bg-amber-400 text-gray-900 font-bold rounded-full flex items-center justify-center text-sm">2</span>
                   <div>
                     <p className="text-gray-900 font-semibold mb-1">Payment due on the 10th of next month</p>
-                    <p className="text-gray-700">You pay the full $3,000 on the 9th—before the due date. You successfully avoid all interest.</p>
+                    <p className="text-gray-700">You pay the full $3,000 on the 9th, before the due date. You successfully avoid all interest.</p>
                   </div>
                 </li>
                 <li className="flex gap-3">
@@ -318,7 +318,7 @@ const CreditUtilizationBlogPost = () => {
               Let us look at an example. Say your statement closes on the 20th and your payment is due on the 15th of the following month. Throughout the month, you charge $4,000 on a card with a $5,000 limit.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-              On the 18th—two days before your statement closes—you make a payment of $3,500.
+              On the 18th, two days before your statement closes, you make a payment of $3,500.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
               Now, your balance is only $500 when the statement closes on the 20th. That $500 balance gets reported to the credit bureaus. Instead of showing 80 percent utilization, you are now showing 10 percent utilization.
@@ -337,7 +337,7 @@ const CreditUtilizationBlogPost = () => {
             className="w-full rounded-xl shadow-lg"
           />
           <p className="text-sm text-gray-500 text-center mt-4 italic">
-            Two identical spending patterns, vastly different credit scores—all because of payment timing.
+            Two identical spending patterns, vastly different credit scores, all because of payment timing.
           </p>
         </section>
 
@@ -374,27 +374,27 @@ const CreditUtilizationBlogPost = () => {
 
             <div className="space-y-4 mb-6">
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-lg p-4">
-                <h4 className="font-bold text-green-900 mb-2">Under 10% — Ideal</h4>
+                <h4 className="font-bold text-green-900 mb-2">Under 10% | Ideal</h4>
                 <p className="text-gray-700">This is the sweet spot. You will see the best scores here, assuming everything else is solid. If you have $10,000 in total credit limits, aim to keep your reported balances under $1,000.</p>
               </div>
 
               <div className="bg-gradient-to-r from-blue-50 to-cyan-50 border-l-4 border-blue-500 rounded-lg p-4">
-                <h4 className="font-bold text-blue-900 mb-2">10-30% — Good</h4>
+                <h4 className="font-bold text-blue-900 mb-2">10-30% | Good</h4>
                 <p className="text-gray-700">You will not get penalized much in this range. Your score might not be maximized, but you are not taking major damage.</p>
               </div>
 
               <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 rounded-lg p-4">
-                <h4 className="font-bold text-yellow-900 mb-2">30-50% — Starts to Hurt</h4>
+                <h4 className="font-bold text-yellow-900 mb-2">30-50% | Starts to Hurt</h4>
                 <p className="text-gray-700">This is the danger zone. We see noticeable score drops here. Lenders start to view you as higher risk.</p>
               </div>
 
               <div className="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 rounded-lg p-4">
-                <h4 className="font-bold text-orange-900 mb-2">50-75% — Bad</h4>
+                <h4 className="font-bold text-orange-900 mb-2">50-75% | Bad</h4>
                 <p className="text-gray-700">This causes major score impact. You will struggle to get approved for new credit.</p>
               </div>
 
               <div className="bg-gradient-to-r from-red-50 to-rose-50 border-l-4 border-red-600 rounded-lg p-4">
-                <h4 className="font-bold text-red-900 mb-2">Above 75% — Critical</h4>
+                <h4 className="font-bold text-red-900 mb-2">Above 75% | Critical</h4>
                 <p className="text-gray-700">You are likely getting denied for most applications. If you do get approved, the interest rates will be terrible.</p>
               </div>
             </div>
@@ -458,7 +458,7 @@ const CreditUtilizationBlogPost = () => {
                   <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-gray-900">You avoid interest</p>
-                    <p className="text-gray-700">Credit card interest rates are brutal—often 20 to 30 percent APR. Paying in full saves you hard-earned money.</p>
+                    <p className="text-gray-700">Credit card interest rates are brutal, often 20 to 30 percent APR. Paying in full saves you hard-earned money.</p>
                   </div>
                 </li>
                 <li className="flex gap-3">
@@ -532,7 +532,7 @@ const CreditUtilizationBlogPost = () => {
               The <span className="text-amber-600">Bottom Line</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-              Credit utilization matters even if you pay in full every month. The system is based on timing, not just good intentions. What gets reported to the credit bureaus is what matters for your score—not what you do after the report goes out.
+              Credit utilization matters even if you pay in full every month. The system is based on timing, not just good intentions. What gets reported to the credit bureaus is what matters for your score, not what you do after the report goes out.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
               If you have been paying in full but your score is stagnant, check your utilization. Look at your statement closing dates. Start paying down your balances before those dates.

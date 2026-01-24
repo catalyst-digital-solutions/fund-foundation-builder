@@ -55,7 +55,7 @@ const BusinessDebtRelief = () => {
           <p className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
             Drowning in business debt? Collections calling? Can't make payroll without creditor anxiety? 
             <strong> Mesa Group's Business Debt Relief program</strong> converts crushing debt into one 
-            manageable payment—so you can get back to running your business.
+            manageable payment, so you can get back to running your business.
           </p>
           
           {/* Key Benefits Bullets */}
@@ -209,7 +209,7 @@ const BusinessDebtRelief = () => {
             </h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
               Mesa Group Capital's business debt relief program restructures your unaffordable debt into 
-              <strong> one manageable monthly payment</strong> you can actually afford—while our expert negotiators 
+              <strong> one manageable monthly payment</strong> you can actually afford, while our expert negotiators 
               settle your debts for pennies on the dollar.
             </p>
           </div>
@@ -301,7 +301,7 @@ const BusinessDebtRelief = () => {
               We Resolve <span className="text-[#f9c65d]">All Types</span> of Business Debt
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              From merchant cash advances to credit cards, lawsuits to tax debts—we routinely settle every 
+              From merchant cash advances to credit cards, lawsuits to tax debts, we routinely settle every 
               category of business debt, including secured debts and personal guarantees.
             </p>
           </div>
@@ -422,7 +422,7 @@ const BusinessDebtRelief = () => {
                   <p className="text-gray-800 leading-relaxed mb-4">
                     Short-term debt converted into a manageable long-term plan means <strong>more money available 
                     for operations</strong>. Instead of paying $5,000/month toward debt, you might pay $2,000/month 
-                    while we negotiate settlements—freeing up $3,000/month for payroll, inventory, and growth.
+                    while we negotiate settlements, freeing up $3,000/month for payroll, inventory, and growth.
                   </p>
                   <div className="bg-white/50 rounded-lg p-4 border border-amber-200">
                     <p className="text-sm font-semibold text-gray-900 mb-2">Example:</p>
@@ -481,7 +481,7 @@ const BusinessDebtRelief = () => {
                   </h3>
                   <p className="text-gray-800 leading-relaxed mb-4">
                     <strong>Debts can be settled without attorneys</strong>. Bankruptcy lawyers charge 
-                    $3,000-$10,000+ just to file—and then you lose control of your business assets. Debt settlement 
+                    $3,000-$10,000+ just to file, and then you lose control of your business assets. Debt settlement 
                     costs a fraction and you keep your business intact.
                   </p>
                   <div className="bg-white/50 rounded-lg p-4 border border-amber-200">
@@ -584,7 +584,7 @@ const BusinessDebtRelief = () => {
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Free Consultation & Debt Analysis</h3>
                 <p className="text-gray-700 leading-relaxed mb-3">
-                  We review your complete financial situation—cash flow, debt types, creditor pressures, and business 
+                  We review your complete financial situation: cash flow, debt types, creditor pressures, and business 
                   goals. Our experts determine if you qualify for the program and provide a customized savings estimate.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-amber-400">
@@ -620,7 +620,7 @@ const BusinessDebtRelief = () => {
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Creditor Negotiation Begins</h3>
                 <p className="text-gray-700 leading-relaxed mb-3">
-                  Our expert negotiators contact your creditors immediately. We handle all communication—you refer 
+                  Our expert negotiators contact your creditors immediately. We handle all communication. You refer 
                   collection calls to us. We begin negotiations to settle debts for pennies on the dollar while you 
                   focus on your business.
                 </p>
@@ -641,7 +641,7 @@ const BusinessDebtRelief = () => {
                 <p className="text-gray-700 leading-relaxed mb-3">
                   As funds accumulate from your monthly payments, we strategically settle debts one by one. You'll 
                   see real-time updates in your online dashboard. Some creditors settle quickly (4-7 months), others 
-                  take longer—we negotiate based on your budget and priorities.
+                  take longer. We negotiate based on your budget and priorities.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-amber-400">
                   <TrendingDown className="w-4 h-4" />
@@ -761,8 +761,8 @@ const BusinessDebtRelief = () => {
                 You'll Pay Back Less Than What You Owe
               </h3>
               <p className="text-lg text-gray-800 leading-relaxed">
-                If you qualify for our guarantee program, the <strong>total amount you pay back—including all our 
-                fees—will be less than the full amount you currently owe</strong>. This is our commitment to you: 
+                If you qualify for our guarantee program, the <strong>total amount you pay back, including all our 
+                fees, will be less than the full amount you currently owe</strong>. This is our commitment to you: 
                 genuine debt reduction, not just restructuring.
               </p>
             </div>

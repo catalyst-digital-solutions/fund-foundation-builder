@@ -339,7 +339,7 @@ const MesaAdvantage = ({ setIsModalOpen }: { setIsModalOpen: (open: boolean) => 
       number: 1,
       icon: <Brain className="w-16 h-16 text-[#f9c65d]" />,
       title: "Banking Industry Insider Knowledge",
-      description: "Our CEO comes from a banking background and understands exactly how banks evaluate clients and underwrite decisions. We know what triggers approvals and what causes denials—because we've seen it from the inside.",
+      description: "Our CEO comes from a banking background and understands exactly how banks evaluate clients and underwrite decisions. We know what triggers approvals and what causes denials, because we've seen it from the inside.",
       result: "We position your profile the exact way underwriters want to see it, maximizing your approval odds and credit limits."
     },
     {
@@ -361,7 +361,7 @@ const MesaAdvantage = ({ setIsModalOpen }: { setIsModalOpen: (open: boolean) => 
       icon: <CheckCircle className="w-16 h-16 text-[#f9c65d]" />,
       title: "Credit Optimization Before Applications",
       description: "Most people apply before they're ready. We analyze your profile across all three bureaus and optimize every factor that impacts underwriting BEFORE we submit anything.",
-      result: "Position yourself for the highest limits possible—often $20K-$50K more per card."
+      result: "Position yourself for the highest limits possible, often $20K-$50K more per card."
     }
   ];
 
@@ -529,7 +529,7 @@ const WhoThisWorksFor = () => (
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">You need capital for legitimate business purposes</p>
-              <p className="text-sm text-gray-700">Growth, inventory, marketing, real estate, hiring, equipment—anything that moves your business forward.</p>
+              <p className="text-sm text-gray-700">Growth, inventory, marketing, real estate, hiring, equipment. Anything that moves your business forward.</p>
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">You're willing to follow our system</p>
@@ -847,7 +847,7 @@ const WhatYouActuallyDo = () => (
 
       <div className="bg-gray-100 rounded-xl p-8 shadow-lg">
         <p className="text-lg text-gray-700 leading-relaxed text-center">
-          <strong className="text-gray-900">The Bottom Line:</strong> This isn't passive—you're an active participant. But you're never guessing. We handle the applications and strategy. You follow our blueprint and maintain relationships. Think of it like having a personal trainer: We design the program and track progress. You show up and do the work. Together, we get results.
+          <strong className="text-gray-900">The Bottom Line:</strong> This isn't passive. You're an active participant. But you're never guessing. We handle the applications and strategy. You follow our blueprint and maintain relationships. Think of it like having a personal trainer: We design the program and track progress. You show up and do the work. Together, we get results.
         </p>
       </div>
 
@@ -1025,7 +1025,7 @@ const FAQSection = () => {
     },
     {
       question: "What if I get denied?",
-      answer: "Our optimization and banking relationships dramatically reduce denials. If you do get denied, we guide you through reconsideration—often converting denials to approvals. We have backup banks for every round. One denial doesn't kill the process."
+      answer: "Our optimization and banking relationships dramatically reduce denials. If you do get denied, we guide you through reconsideration, often converting denials to approvals. We have backup banks for every round. One denial doesn't kill the process."
     },
     {
       question: "Do I need an established business with revenue?",
@@ -1037,7 +1037,7 @@ const FAQSection = () => {
     },
     {
       question: "How is this different from just applying for cards myself?",
-      answer: "Three major differences: (1) We submit applications on your behalf through our banking relationships—your applications go through people who know us, not just online portals. (2) Our strategic sequencing and bureau management prevents inquiry damage while maximizing total approvals. (3) Our optimization process positions you for maximum limits before we submit anything. DIY attempts typically result in 40-60% of the funding you'd get with our system and relationships."
+      answer: "Three major differences: (1) We submit applications on your behalf through our banking relationships. Your applications go through people who know us, not just online portals. (2) Our strategic sequencing and bureau management prevents inquiry damage while maximizing total approvals. (3) Our optimization process positions you for maximum limits before we submit anything. DIY attempts typically result in 40-60% of the funding you'd get with our system and relationships."
     },
     {
       question: "What happens when the 0% period ends?",
@@ -1061,7 +1061,7 @@ const FAQSection = () => {
     },
     {
       question: "Is there a guarantee?",
-      answer: "We only get paid when you get funded. Our retainer covers your analysis and strategy—the real success fee only comes when you receive actual approvals. We've never had a client with a 720+ score fail to get at least $50K in Round 1. If your score is 700-719, we'll be upfront about realistic expectations during your consultation."
+      answer: "We only get paid when you get funded. Our retainer covers your analysis and strategy. The real success fee only comes when you receive actual approvals. We've never had a client with a 720+ score fail to get at least $50K in Round 1. If your score is 700-719, we'll be upfront about realistic expectations during your consultation."
     }
   ];
 

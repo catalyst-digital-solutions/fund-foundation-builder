@@ -94,7 +94,7 @@ const Contact = () => {
                 MEET IN PERSON
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                In-Office Meeting — Personalized <span className="text-[#f9c65d]">Financial Guidance</span>. Face-to-Face <span className="text-[#f9c65d]">Expert Consultations</span> in Our Bakersfield Office.
+                In-Office Meeting | Personalized <span className="text-[#f9c65d]">Financial Guidance</span>. Face-to-Face <span className="text-[#f9c65d]">Expert Consultations</span> in Our Bakersfield Office.
               </h2>
               <div className="text-white leading-relaxed space-y-4">
                 <p>Nothing replaces the power of personal connection when discussing your financial future.</p>
@@ -147,7 +147,7 @@ const Contact = () => {
                 MEET IN PERSON
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight">
-                In-Office Meeting — Personalized <span className="text-[#f9c65d]">Financial Guidance</span>. Face-to-Face <span className="text-[#f9c65d]">Expert Consultations</span> in Our Bakersfield Office.
+                In-Office Meeting | Personalized <span className="text-[#f9c65d]">Financial Guidance</span>. Face-to-Face <span className="text-[#f9c65d]">Expert Consultations</span> in Our Bakersfield Office.
               </h2>
               <div className="text-white text-sm leading-relaxed space-y-3">
                 <p>Nothing replaces the power of personal connection when discussing your financial future.</p>
@@ -200,7 +200,7 @@ const Contact = () => {
                 FREE CONSULTATION
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Free Consultation — Get <span className="font-black">Expert Credit Analysis</span> and Personalized <span className="font-black">Improvement Strategies</span> at No Cost to You
+                Free Consultation | Get <span className="font-black">Expert Credit Analysis</span> and Personalized <span className="font-black">Improvement Strategies</span> at No Cost to You
               </h2>
               <div className="text-gray-900 leading-relaxed space-y-4">
                 <p>Take the first step toward better credit with our complimentary consultation that provides real value without any obligation.</p>
@@ -253,7 +253,7 @@ const Contact = () => {
                 FREE CONSULTATION
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
-                Free Consultation — Get <span className="font-black">Expert Credit Analysis</span> and Personalized <span className="font-black">Improvement Strategies</span> at No Cost to You
+                Free Consultation | Get <span className="font-black">Expert Credit Analysis</span> and Personalized <span className="font-black">Improvement Strategies</span> at No Cost to You
               </h2>
               <div className="text-gray-900 text-sm leading-relaxed space-y-3">
                 <p>Take the first step toward better credit with our complimentary consultation that provides real value without any obligation.</p>

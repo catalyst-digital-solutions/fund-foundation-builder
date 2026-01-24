@@ -67,7 +67,7 @@ function HeroSection() {
             </h1>
             
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
-              <strong>24/7 credit monitoring</strong> with real-time alerts, identity theft protection, and powerful tools to track and improve your credit score—all in one simple platform.
+              <strong>24/7 credit monitoring</strong> with real-time alerts, identity theft protection, and powerful tools to track and improve your credit score, all in one simple platform.
             </p>
 
             {/* Key Features List */}
@@ -78,7 +78,7 @@ function HeroSection() {
                 </svg>
                 <div>
                   <h3 className="font-bold text-lg text-gray-900">3-Bureau Credit Reports & Scores</h3>
-                  <p className="text-gray-600 text-sm">Experian, Equifax, and TransUnion—all in one dashboard</p>
+                  <p className="text-gray-600 text-sm">Experian, Equifax, and TransUnion, all in one dashboard</p>
                 </div>
               </div>
               
@@ -196,7 +196,7 @@ function WhyMonitoringMatters() {
             Why Credit Monitoring Matters More Than Ever
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            With identity theft on the rise and credit impacting every major financial decision, monitoring your credit is no longer optional—it's essential.
+            With identity theft on the rise and credit impacting every major financial decision, monitoring your credit is no longer optional. It's essential.
           </p>
         </div>
 
@@ -299,7 +299,7 @@ function SmartCreditFeatures() {
                   3-Bureau Credit Reports & Scores
                 </h3>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  Your credit score is one of the most valuable financial tools you have. With SmartCredit®'s monitoring services, you can track <strong>all three major credit bureaus</strong>—Experian, Equifax, and TransUnion—in one easy-to-read dashboard.
+                  Your credit score is one of the most valuable financial tools you have. With SmartCredit®'s monitoring services, you can track <strong>all three major credit bureaus</strong> (Experian, Equifax, and TransUnion) in one easy-to-read dashboard.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   Your credit report is like a report card of your entire financial history. We make it easy to check accuracy and understand what's helping or hurting your score.
@@ -388,7 +388,7 @@ function SmartCreditFeatures() {
                   ScoreTracker, Builder & Boost™
                 </h3>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  It's not enough to just monitor—you need <strong>tools to improve</strong>. SmartCredit® includes powerful features to help you control and boost your future credit score.
+                  It's not enough to just monitor. You need <strong>tools to improve</strong>. SmartCredit® includes powerful features to help you control and boost your future credit score.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -449,10 +449,10 @@ function SmartCreditFeatures() {
                   Money Manager Dashboard
                 </h3>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  SmartCredit® isn't just about credit monitoring—it's a complete <strong>financial management platform</strong>. Our Money Manager gives you online banking functionality with action buttons all in one place.
+                  SmartCredit® isn't just about credit monitoring. It's a complete <strong>financial management platform</strong>. Our Money Manager gives you online banking functionality with action buttons all in one place.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Track your accounts, monitor transactions, and manage your credit—all from a single, simple dashboard designed for both your money and credit.
+                  Track your accounts, monitor transactions, and manage your credit, all from a single, simple dashboard designed for both your money and credit.
                 </p>
               </div>
               <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6 text-gray-900 shadow-xl border border-amber-200">
@@ -519,7 +519,7 @@ function WhyChooseSmartCredit() {
               All-in-One Platform
             </h3>
             <p className="text-muted-foreground leading-relaxed text-center mb-4">
-              Everything you need in one place—credit monitoring, identity protection, financial management, and credit building tools.
+              Everything you need in one place: credit monitoring, identity protection, financial management, and credit building tools.
             </p>
             <div className="text-sm text-muted-foreground text-center">
               No need for multiple subscriptions
@@ -551,7 +551,7 @@ function WhyChooseSmartCredit() {
               Works on All Devices
             </h3>
             <p className="text-muted-foreground leading-relaxed text-center mb-4">
-              Access your credit reports, scores, and alerts anytime, anywhere—on desktop, tablet, or mobile. Your credit protection travels with you.
+              Access your credit reports, scores, and alerts anytime, anywhere, on desktop, tablet, or mobile. Your credit protection travels with you.
             </p>
             <div className="text-sm text-muted-foreground text-center">
               iOS, Android, and web access

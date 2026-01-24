@@ -7,11 +7,11 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is debt consolidation?",
-      answer: "Debt consolidation is the process of combining multiple debts—like credit cards, medical bills, and personal loans—into a single loan with one monthly payment. The goal is to simplify your finances, lower your interest rate, and pay off debt faster."
+      answer: "Debt consolidation is the process of combining multiple debts (like credit cards, medical bills, and personal loans) into a single loan with one monthly payment. The goal is to simplify your finances, lower your interest rate, and pay off debt faster."
     },
     {
       question: "Will checking rates affect my credit score?",
-      answer: "No! When you check rates through our platform, we only use a soft credit inquiry, which does not impact your credit score. Only when you formally apply with a specific lender will they perform a hard credit pull—and only after you've chosen to proceed."
+      answer: "No! When you check rates through our platform, we only use a soft credit inquiry, which does not impact your credit score. Only when you formally apply with a specific lender will they perform a hard credit pull, and only after you've chosen to proceed."
     },
     {
       question: "How much can I save with debt consolidation?",
@@ -23,7 +23,7 @@ const FAQ = () => {
     },
     {
       question: "What credit score do I need to qualify?",
-      answer: "While many lenders prefer credit scores of 640+, our network includes lenders who work with scores as low as 580 or even lower. Your credit score affects your interest rate more than your approval odds—better credit typically means lower rates."
+      answer: "While many lenders prefer credit scores of 640+, our network includes lenders who work with scores as low as 580 or even lower. Your credit score affects your interest rate more than your approval odds. Better credit typically means lower rates."
     },
     {
       question: "How fast can I get funded?",
@@ -31,7 +31,7 @@ const FAQ = () => {
     },
     {
       question: "Is debt consolidation the same as debt settlement?",
-      answer: "No, they are very different. Debt consolidation is a loan that pays off your existing debts in full—you then repay the new loan over time. Debt settlement involves negotiating with creditors to pay less than you owe, which can significantly damage your credit. Consolidation is generally a better option if you can qualify for a loan."
+      answer: "No, they are very different. Debt consolidation is a loan that pays off your existing debts in full. You then repay the new loan over time. Debt settlement involves negotiating with creditors to pay less than you owe, which can significantly damage your credit. Consolidation is generally a better option if you can qualify for a loan."
     },
     {
       question: "Will I save money if I consolidate?",
@@ -47,7 +47,7 @@ const FAQ = () => {
     },
     {
       question: "Is Mesa Group Consulting a lender?",
-      answer: "No, Mesa Group Consulting is not a lender. We are a financial services marketplace that connects consumers with multiple lending partners. We do not make lending decisions or fund loans—we help you compare offers from our network of trusted lenders to find the best solution for your situation."
+      answer: "No, Mesa Group Consulting is not a lender. We are a financial services marketplace that connects consumers with multiple lending partners. We do not make lending decisions or fund loans. We help you compare offers from our network of trusted lenders to find the best solution for your situation."
     },
     {
       question: "How is this different from a balance transfer credit card?",

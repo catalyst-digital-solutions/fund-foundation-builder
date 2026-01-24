@@ -98,7 +98,7 @@ const CreditUtilizationCalculator = ({ onBack }: CreditUtilizationCalculatorProp
           Credit Utilization Calculator
         </h2>
         <p className="text-gray-600">
-          Find out if your credit card balances are hurting your score—and exactly how much to pay down to optimize your utilization ratio.
+          Find out if your credit card balances are hurting your score, and exactly how much to pay down to optimize your utilization ratio.
         </p>
       </div>
 

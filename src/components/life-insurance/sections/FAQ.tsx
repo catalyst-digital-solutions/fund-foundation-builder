@@ -12,7 +12,7 @@ const FAQ = () => {
     },
     {
       question: "How much does life insurance cost?",
-      answer: "Term life insurance is surprisingly affordable—many healthy individuals in their 30s can get $500,000 in coverage for $20-30 per month. Costs vary based on age, health, lifestyle habits (smoking), coverage amount, and policy type. Get a free personalized quote to see exact pricing for your situation."
+      answer: "Term life insurance is surprisingly affordable. Many healthy individuals in their 30s can get $500,000 in coverage for $20-30 per month. Costs vary based on age, health, lifestyle habits (smoking), coverage amount, and policy type. Get a free personalized quote to see exact pricing for your situation."
     },
     {
       question: "Do I need a medical exam?",
@@ -32,7 +32,7 @@ const FAQ = () => {
     },
     {
       question: "Is the death benefit taxable?",
-      answer: "No. Life insurance death benefits are generally income-tax-free to your beneficiaries. This is one of the key advantages of life insurance—your loved ones receive the full benefit amount without tax implications. However, the cash value growth in permanent policies may have tax considerations; consult a tax advisor for specifics."
+      answer: "No. Life insurance death benefits are generally income-tax-free to your beneficiaries. This is one of the key advantages of life insurance. Your loved ones receive the full benefit amount without tax implications. However, the cash value growth in permanent policies may have tax considerations; consult a tax advisor for specifics."
     },
     {
       question: "Can I change my coverage amount later?",
@@ -40,7 +40,7 @@ const FAQ = () => {
     },
     {
       question: "What if I miss a premium payment?",
-      answer: "Most policies have a grace period (typically 30-31 days) after your payment due date. If you pay within the grace period, your coverage continues uninterrupted. If you miss the grace period, your policy may lapse. Contact your insurer immediately if you're having payment difficulties—they may offer options."
+      answer: "Most policies have a grace period (typically 30-31 days) after your payment due date. If you pay within the grace period, your coverage continues uninterrupted. If you miss the grace period, your policy may lapse. Contact your insurer immediately if you're having payment difficulties. They may offer options."
     },
     {
       question: "Do I need life insurance if I'm young and single?",
@@ -48,7 +48,7 @@ const FAQ = () => {
     },
     {
       question: "How does PolicyGenius make money if quotes are free?",
-      answer: "PolicyGenius is compensated by insurance carriers when you purchase a policy—similar to how traditional insurance agents are paid. This commission is built into the policy price by the carrier, so you pay the same whether you buy through PolicyGenius or directly from the insurer. There are no extra fees or markups."
+      answer: "PolicyGenius is compensated by insurance carriers when you purchase a policy, similar to how traditional insurance agents are paid. This commission is built into the policy price by the carrier, so you pay the same whether you buy through PolicyGenius or directly from the insurer. There are no extra fees or markups."
     },
     {
       question: "Is PolicyGenius trustworthy?",

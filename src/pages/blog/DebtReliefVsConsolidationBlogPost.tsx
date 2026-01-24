@@ -65,7 +65,7 @@ const DebtReliefVsConsolidationBlogPost = () => {
               Key Takeaway
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Debt relief and debt consolidation solve different problems. Consolidation reorganizes your debt at better terms—you still owe the full amount. Relief reduces what you owe through negotiation—but damages your credit. Choose based on whether you can afford to repay your full debt.
+              Debt relief and debt consolidation solve different problems. Consolidation reorganizes your debt at better terms. You still owe the full amount. Relief reduces what you owe through negotiation, but damages your credit. Choose based on whether you can afford to repay your full debt.
             </p>
           </div>
         </header>
@@ -105,7 +105,7 @@ const DebtReliefVsConsolidationBlogPost = () => {
               The truth is that debt relief and debt consolidation are completely different strategies. They solve different problems for different people. Using the wrong one for your specific financial situation can cost you thousands of dollars and result in years of unnecessary stress.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Let me break down exactly what each option is, how they work, and—most importantly—how to know which one is right for you.
+              Let me break down exactly what each option is, how they work, and most importantly, how to know which one is right for you.
             </p>
           </div>
 
@@ -153,7 +153,7 @@ const DebtReliefVsConsolidationBlogPost = () => {
                 <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold text-gray-900">Home Equity Loans or Lines of Credit</p>
-                  <p className="text-gray-700">You borrow against your home equity to pay off unsecured debts. Be careful here—you are turning unsecured debt into secured debt backed by your house. If you miss payments, you could lose your home.</p>
+                  <p className="text-gray-700">You borrow against your home equity to pay off unsecured debts. Be careful here. You are turning unsecured debt into secured debt backed by your house. If you miss payments, you could lose your home.</p>
                 </div>
               </div>
               <div className="flex gap-3">
@@ -198,7 +198,7 @@ const DebtReliefVsConsolidationBlogPost = () => {
                 While this is happening, you put money into a designated savings account instead of paying your bills.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                After several months of missed payments, your creditors realize you might file for bankruptcy. They decide they would rather get something than nothing. A debt relief company steps in and negotiates to settle your debts for less than you owe—often 40 to 60 percent of the original balance.
+                After several months of missed payments, your creditors realize you might file for bankruptcy. They decide they would rather get something than nothing. A debt relief company steps in and negotiates to settle your debts for less than you owe, often 40 to 60 percent of the original balance.
               </p>
             </div>
 
@@ -387,7 +387,7 @@ const DebtReliefVsConsolidationBlogPost = () => {
             <div className="bg-white border-2 border-gray-200 rounded-xl p-6">
               <h4 className="font-bold text-gray-900 mb-3">Real Example from a Mesa Group Client</h4>
               <p className="text-gray-700 leading-relaxed mb-3">
-                A client had $18,000 spread across four credit cards. Her interest rates were punishing—between 21 and 28 percent APR. Her minimum payments totaled $650 per month. She could afford it, but she felt like she was running on a hamster wheel.
+                A client had $18,000 spread across four credit cards. Her interest rates were punishing, between 21 and 28 percent APR. Her minimum payments totaled $650 per month. She could afford it, but she felt like she was running on a hamster wheel.
               </p>
               <p className="text-gray-700 leading-relaxed mb-3">
                 She qualified for a personal loan at 11 percent APR with a $425 monthly payment over 5 years.
@@ -419,7 +419,7 @@ const DebtReliefVsConsolidationBlogPost = () => {
                 </li>
                 <li className="flex gap-3">
                   <AlertCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">You have experienced a major financial hardship—job loss, medical crisis, divorce—that destroyed your income.</span>
+                  <span className="text-gray-700">You have experienced a major financial hardship (job loss, medical crisis, divorce) that destroyed your income.</span>
                 </li>
                 <li className="flex gap-3">
                   <AlertCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
@@ -438,7 +438,7 @@ const DebtReliefVsConsolidationBlogPost = () => {
                 Another client came to us with $52,000 in credit card debt after a sudden medical emergency left her unable to work for six months. She was living paycheck to paycheck and could not make minimum payments. Her credit was already taking hits from missed payments.
               </p>
               <p className="text-gray-700 leading-relaxed mb-3">
-                Debt consolidation was impossible—no lender would touch her. Through a debt relief program, her creditors eventually settled for a total of $24,000. She paid that amount over 30 months.
+                Debt consolidation was impossible. No lender would touch her. Through a debt relief program, her creditors eventually settled for a total of $24,000. She paid that amount over 30 months.
               </p>
               <p className="text-gray-700 leading-relaxed mb-3">
                 Yes, her credit took a massive hit. But she eliminated $28,000 in debt that she had no realistic way of paying back. Once the program was done, she began the process of <Link to="/credit-repair" className="text-amber-600 hover:text-amber-700 underline">credit repair</Link> to rebuild her financial life.

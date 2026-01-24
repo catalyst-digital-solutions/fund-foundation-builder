@@ -36,11 +36,11 @@ const ForBusinesses = () => {
   const faqItems = [
     {
       question: "How do I know which service I need?",
-      answer: "That's exactly what the discovery call is for. We'll assess your situation and recommend the best path—whether it's one service or a combination. Some clients start with building business credit, then move to funding. Others need debt relief first to create capacity for new credit. We'll show you the right sequence for your specific situation."
+      answer: "That's exactly what the discovery call is for. We'll assess your situation and recommend the best path, whether it's one service or a combination. Some clients start with building business credit, then move to funding. Others need debt relief first to create capacity for new credit. We'll show you the right sequence for your specific situation."
     },
     {
       question: "Do I need to have good personal credit to work with you?",
-      answer: "Not necessarily. For building business credit, we can work with personal scores as low as 600. For 0% interest funding, we typically need 700+ on personal credit (clients with 720+ see the highest approval rates and funding amounts). For business funding through Mesa Group Capital, it depends on the product—we have solutions for credit scores ranging from 530+ to 700+. For debt relief, your credit score doesn't matter at all."
+      answer: "Not necessarily. For building business credit, we can work with personal scores as low as 600. For 0% interest funding, we typically need 700+ on personal credit (clients with 720+ see the highest approval rates and funding amounts). For business funding through Mesa Group Capital, it depends on the product: we have solutions for credit scores ranging from 530+ to 700+. For debt relief, your credit score doesn't matter at all."
     },
     {
       question: "How long does it take to see results?",
@@ -52,7 +52,7 @@ const ForBusinesses = () => {
     },
     {
       question: "Can I use multiple services at once?",
-      answer: "Absolutely. Many clients combine services—like building business credit while securing traditional funding, or using 0% interest funding while resolving old debt. We'll create an integrated strategy that maximizes your results."
+      answer: "Absolutely. Many clients combine services, like building business credit while securing traditional funding, or using 0% interest funding while resolving old debt. We'll create an integrated strategy that maximizes your results."
     },
     {
       question: "Do you work with startups or only established businesses?",
@@ -60,7 +60,7 @@ const ForBusinesses = () => {
     },
     {
       question: "What industries do you work with?",
-      answer: "We work with almost every industry: retail, e-commerce, construction, professional services, restaurants, real estate investors, healthcare, technology, and more. The strategies we use are industry-agnostic—they work regardless of what your business does."
+      answer: "We work with almost every industry: retail, e-commerce, construction, professional services, restaurants, real estate investors, healthcare, technology, and more. The strategies we use are industry-agnostic. They work regardless of what your business does."
     },
     {
       question: "Is this just for corporations, or can LLCs and sole proprietors qualify too?",
@@ -101,12 +101,12 @@ const ForBusinesses = () => {
 
               {/* Subheadline */}
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                From building business credit to securing funding, 0% interest capital to debt relief—find the financial solution that grows your business. No runaround. No personal guarantees. Just strategic guidance and real results.
+                From building business credit to securing funding, 0% interest capital to debt relief. Find the financial solution that grows your business. No runaround. No personal guarantees. Just strategic guidance and real results.
               </p>
 
               {/* Supporting Copy */}
               <p className="text-base text-gray-600 leading-relaxed">
-                Whether you're a startup building fundability from scratch, an established business ready to scale, or recovering from crushing debt—Mesa Group connects you with the right resources and expert support to move your business forward with confidence.
+                Whether you're a startup building fundability from scratch, an established business ready to scale, or recovering from crushing debt, Mesa Group connects you with the right resources and expert support to move your business forward with confidence.
               </p>
 
               {/* CTAs */}
@@ -189,7 +189,7 @@ const ForBusinesses = () => {
             </p>
             
             <p>
-              Mesa Group exists to guide you from wherever you are to wherever you want to be—with transparency, respect, and strategic solutions that actually work. No corporate jargon. No hidden fees. No treating you like a credit score instead of a business owner with a vision.
+              Mesa Group exists to guide you from wherever you are to wherever you want to be, with transparency, respect, and strategic solutions that actually work. No corporate jargon. No hidden fees. No treating you like a credit score instead of a business owner with a vision.
             </p>
             
             <p>
@@ -197,7 +197,7 @@ const ForBusinesses = () => {
             </p>
             
             <p>
-              Through <strong>Mesa Group Consulting</strong> (credit building and advisory) and <strong>Mesa Group Capital</strong> (business funding brokerage), we provide the complete spectrum of business financial solutions—from establishing fundability to deploying capital to eliminating crushing debt.
+              Through <strong>Mesa Group Consulting</strong> (credit building and advisory) and <strong>Mesa Group Capital</strong> (business funding brokerage), we provide the complete spectrum of business financial solutions: from establishing fundability to deploying capital to eliminating crushing debt.
             </p>
           </div>
         </div>
@@ -229,7 +229,7 @@ const ForBusinesses = () => {
               </h3>
               
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Build a fortress between your business and personal finances. Access $5,000 to $150,000 in business credit—without touching your personal credit, risking your home, or betting your family's security on every business decision.
+                Build a fortress between your business and personal finances. Access $5,000 to $150,000 in business credit, without touching your personal credit, risking your home, or betting your family's security on every business decision.
               </p>
 
               <div className="mb-6">
@@ -297,7 +297,7 @@ const ForBusinesses = () => {
               </h3>
               
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Through our brokerage division, Mesa Group Capital, access the right type of capital at the right time—from equipment financing to expansion loans, cash advances to SBA loans. We connect you with 75+ specialized lenders who compete for your business.
+                Through our brokerage division, Mesa Group Capital, access the right type of capital at the right time: from equipment financing to expansion loans, cash advances to SBA loans. We connect you with 75+ specialized lenders who compete for your business.
               </p>
 
               <div className="mb-6">
@@ -428,7 +428,7 @@ const ForBusinesses = () => {
               </h3>
               
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Eliminate or restructure crippling business debt using negotiation, settlement, and strategic legal leverage—without bankruptcy and without destroying your credit permanently. Break free from merchant cash advances and predatory lending cycles.
+                Eliminate or restructure crippling business debt using negotiation, settlement, and strategic legal leverage, without bankruptcy and without destroying your credit permanently. Break free from merchant cash advances and predatory lending cycles.
               </p>
 
               <div className="mb-6">
@@ -525,7 +525,7 @@ const ForBusinesses = () => {
                   Schedule a Free Consultation
                 </h3>
                 <p className="text-gray-700 text-center">
-                  Talk with a Mesa Group advisor who will listen to your situation, answer your questions, and recommend the best path forward—no pressure, just strategic information.
+                  Talk with a Mesa Group advisor who will listen to your situation, answer your questions, and recommend the best path forward. No pressure, just strategic information.
                 </p>
               </div>
             </div>
@@ -561,7 +561,7 @@ const ForBusinesses = () => {
                   Take Action & See Results
                 </h3>
                 <p className="text-gray-700 text-center">
-                  Start making progress with expert guidance, transparent pricing, and ongoing support every step of the way. From fundability to funding to freedom from debt—we're with you.
+                  Start making progress with expert guidance, transparent pricing, and ongoing support every step of the way. From fundability to funding to freedom from debt, we're with you.
                 </p>
               </div>
             </div>
@@ -610,7 +610,7 @@ const ForBusinesses = () => {
                 We're Operators, Not Just Advisors
               </h3>
               <p className="text-gray-700 text-center">
-                Our team has collectively raised millions in capital, built profitable businesses, and navigated every funding scenario you can imagine. We don't teach theory—we share what actually works because we've done it ourselves.
+                Our team has collectively raised millions in capital, built profitable businesses, and navigated every funding scenario you can imagine. We don't teach theory. We share what actually works because we've done it ourselves.
               </p>
             </div>
 
@@ -625,7 +625,7 @@ const ForBusinesses = () => {
                 Insider Banking Knowledge
               </h3>
               <p className="text-gray-700 text-center">
-                Our CEO comes from a banking background and understands exactly how banks evaluate clients and make underwriting decisions. We know what triggers approvals and what causes denials—because we've seen it from the inside. Your applications go through people who know us, not just algorithms.
+                Our CEO comes from a banking background and understands exactly how banks evaluate clients and make underwriting decisions. We know what triggers approvals and what causes denials, because we've seen it from the inside. Your applications go through people who know us, not just algorithms.
               </p>
             </div>
 
@@ -640,7 +640,7 @@ const ForBusinesses = () => {
                 Transparent Pricing & Aligned Incentives
               </h3>
               <p className="text-gray-700 text-center">
-                No hidden fees. No surprise charges. Most of our services are performance-based—we only win when you do. Business funding? $0 upfront. 0% funding? Pay when funded. Debt relief? Pay when debt is reduced.
+                No hidden fees. No surprise charges. Most of our services are performance-based. We only win when you do. Business funding? $0 upfront. 0% funding? Pay when funded. Debt relief? Pay when debt is reduced.
               </p>
             </div>
 
@@ -655,7 +655,7 @@ const ForBusinesses = () => {
                 Education-First Approach
               </h3>
               <p className="text-gray-700 text-center">
-                We don't just get you funded—we teach you the system so you can make informed decisions long after our engagement ends. Financial literacy is freedom, and we're committed to empowering you with knowledge.
+                We don't just get you funded. We teach you the system so you can make informed decisions long after our engagement ends. Financial literacy is freedom, and we're committed to empowering you with knowledge.
               </p>
             </div>
 
@@ -670,7 +670,7 @@ const ForBusinesses = () => {
                 Proven Track Record Across All Services
               </h3>
               <p className="text-gray-700 text-center">
-                $97M+ in total funding facilitated. 1,850+ businesses funded. 720+ business credit profiles built. 75+ lender network. 300+ vendor relationships. These aren't vanity metrics—they're results from doing this right, every single time.
+                $97M+ in total funding facilitated. 1,850+ businesses funded. 720+ business credit profiles built. 75+ lender network. 300+ vendor relationships. These aren't vanity metrics. They're results from doing this right, every single time.
               </p>
             </div>
 
@@ -685,7 +685,7 @@ const ForBusinesses = () => {
                 Comprehensive Business Solutions
               </h3>
               <p className="text-gray-700 text-center">
-                From credit building to funding to 0% interest capital to debt relief—we offer a full spectrum of business financial solutions. You don't need to navigate multiple companies. One trusted partner for your entire business finance journey.
+                From credit building to funding to 0% interest capital to debt relief, we offer a full spectrum of business financial solutions. You don't need to navigate multiple companies. One trusted partner for your entire business finance journey.
               </p>
             </div>
           </div>

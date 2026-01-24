@@ -28,11 +28,11 @@ const DIYCreditRepair = () => {
     },
     {
       question: "What's the difference between this and free DIY credit restoration?",
-      answer: "Free DIY means writing your own letters from scratch, creating Excel spreadsheets to track everything, and figuring out strategy yourself. Our software gives you AI-powered recommendations, professional letter templates, 3-bureau tracking, deadline management, and education—everything credit restoration companies use. You save hundreds while getting professional tools."
+      answer: "Free DIY means writing your own letters from scratch, creating Excel spreadsheets to track everything, and figuring out strategy yourself. Our software gives you AI-powered recommendations, professional letter templates, 3-bureau tracking, deadline management, and education, everything credit restoration companies use. You save hundreds while getting professional tools."
     },
     {
       question: "Can I really dispute as many items as I want?",
-      answer: "Yes. Whether you have 1 negative item or 50, the price is the same. Dispute all of them, re-dispute verified items with different strategies, send multiple rounds—unlimited. This is why DIY saves so much money compared to services that charge per-item or per-dispute."
+      answer: "Yes. Whether you have 1 negative item or 50, the price is the same. Dispute all of them, re-dispute verified items with different strategies, send multiple rounds, unlimited. This is why DIY saves so much money compared to services that charge per-item or per-dispute."
     },
     {
       question: "What if I get stuck or have questions?",
@@ -40,7 +40,7 @@ const DIYCreditRepair = () => {
     },
     {
       question: "Will bureaus take my disputes seriously?",
-      answer: "Yes, IF you use proper dispute letters. That's exactly what our letter generator creates—professional, legally-compliant disputes that cite specific FCRA violations, Metro 2 errors, and debt validation requirements. Bureaus are REQUIRED by federal law to investigate all disputes, whether they come from you or a credit restoration company."
+      answer: "Yes, IF you use proper dispute letters. That's exactly what our letter generator creates: professional, legally-compliant disputes that cite specific FCRA violations, Metro 2 errors, and debt validation requirements. Bureaus are REQUIRED by federal law to investigate all disputes, whether they come from you or a credit restoration company."
     },
     {
       question: "How long until I see results?",
@@ -83,7 +83,7 @@ const DIYCreditRepair = () => {
             <div>
               {/* Eyebrow */}
               <p className="text-sm uppercase tracking-wide text-gray-700 mb-4 font-medium">
-                DIY CREDIT REPAIR — POWERED BY MESA GROUP
+                DIY CREDIT REPAIR | POWERED BY MESA GROUP
               </p>
               
               {/* H1 Headline */}
@@ -93,7 +93,7 @@ const DIYCreditRepair = () => {
               
               {/* Subheadline */}
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
-                Professional-grade credit restoration tools — now in your hands. AI tells you what to dispute. We give you the letters. You send them. No waiting on anyone else. You're in control.
+                Professional-grade credit restoration tools, now in your hands. AI tells you what to dispute. We give you the letters. You send them. No waiting on anyone else. You're in control.
               </p>
               
               {/* Value Props Quick List */}
@@ -196,7 +196,7 @@ const DIYCreditRepair = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl mt-1">•</span>
-                  <span>You want to <strong>save money</strong> — 70% less than full-service</span>
+                  <span>You want to <strong>save money</strong>, 70% less than full-service</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl mt-1">•</span>
@@ -212,7 +212,7 @@ const DIYCreditRepair = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl mt-1">•</span>
-                  <span>You want to <strong>learn the system</strong> — not just fix it once</span>
+                  <span>You want to <strong>learn the system</strong>, not just fix it once</span>
                 </li>
               </ul>
             </div>
@@ -226,7 +226,7 @@ const DIYCreditRepair = () => {
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-orange-500 text-xl mt-1">•</span>
-                  <span>You'd rather spend your time on <strong>life</strong> — not paperwork</span>
+                  <span>You'd rather spend your time on <strong>life</strong>, not paperwork</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-orange-500 text-xl mt-1">•</span>
@@ -242,7 +242,7 @@ const DIYCreditRepair = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-orange-500 text-xl mt-1">•</span>
-                  <span>You want <strong>experts handling everything</strong> — start to finish</span>
+                  <span>You want <strong>experts handling everything</strong>, start to finish</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-orange-500 text-xl mt-1">•</span>
@@ -363,7 +363,7 @@ const DIYCreditRepair = () => {
           </h2>
           
           <p className="text-lg text-gray-300 mb-12 text-center max-w-3xl mx-auto">
-            Our software guides you through every move — you're never doing this alone.
+            Our software guides you through every move. You're never doing this alone.
           </p>
           
           {/* 5-Step Process */}
@@ -397,7 +397,7 @@ const DIYCreditRepair = () => {
                 Get AI Recommendations
               </h3>
               <p className="text-sm text-gray-300">
-                See exactly what to dispute and why — prioritized for impact.
+                See exactly what to dispute and why, prioritized for impact.
               </p>
             </div>
             
@@ -413,7 +413,7 @@ const DIYCreditRepair = () => {
                 Generate Letters
               </h3>
               <p className="text-sm text-gray-300">
-                Professional dispute letters citing federal law — created in seconds.
+                Professional dispute letters citing federal law, created in seconds.
               </p>
             </div>
             
@@ -471,7 +471,7 @@ const DIYCreditRepair = () => {
               </div>
               <div className="flex items-start gap-3">
                 <span className="font-semibold text-[#f9c65d] min-w-[120px]">Ongoing:</span>
-                <span>Continue cycles until your report is clean. Credit repair is a marathon — not a sprint.</span>
+                <span>Continue cycles until your report is clean. Credit repair is a marathon, not a sprint.</span>
               </div>
             </div>
           </div>
@@ -490,7 +490,7 @@ const DIYCreditRepair = () => {
           </h2>
           
           <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-            Professional-grade credit restoration tools — now in your hands for just $39.99/mo.
+            Professional-grade credit restoration tools, now in your hands for just $39.99/mo.
           </p>
           
           {/* Features Grid */}
@@ -505,7 +505,7 @@ const DIYCreditRepair = () => {
                 AI-Powered. Zero Guesswork.
               </h3>
               <p className="text-gray-700 mb-4">
-                Import your 3-bureau report automatically — no hard inquiry. Our AI identifies exactly what's hurting your score and tells you how to attack it.
+                Import your 3-bureau report automatically, no hard inquiry. Our AI identifies exactly what's hurting your score and tells you how to attack it.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
@@ -529,10 +529,10 @@ const DIYCreditRepair = () => {
                 <FileText className="w-10 h-10 text-yellow-600" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
-                Letters the Pros Would Send — Generated Instantly
+                Letters the Pros Would Send, Generated Instantly
               </h3>
               <p className="text-gray-700 mb-4">
-                Letters are far more effective than online disputes. Ours cite federal consumer protection laws — and because YOU send them, bureaus can't reject them like they do with credit restoration companies.
+                Letters are far more effective than online disputes. Ours cite federal consumer protection laws, and because YOU send them, bureaus can't reject them like they do with credit restoration companies.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
@@ -545,7 +545,7 @@ const DIYCreditRepair = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-yellow-600">✓</span>
-                  <span>You send them — bureaus must respond</span>
+                  <span>You send them, bureaus must respond</span>
                 </li>
               </ul>
             </div>
@@ -559,7 +559,7 @@ const DIYCreditRepair = () => {
                 One Dashboard. Total Control.
               </h3>
               <p className="text-gray-700 mb-4">
-                Manage unlimited disputes across Experian, Equifax, and TransUnion — all at the same time. No juggling accounts. No missing deadlines.
+                Manage unlimited disputes across Experian, Equifax, and TransUnion, all at the same time. No juggling accounts. No missing deadlines.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
@@ -568,7 +568,7 @@ const DIYCreditRepair = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-500">✓</span>
-                  <span>Unlimited disputes — whether you have 1 item or 50</span>
+                  <span>Unlimited disputes, whether you have 1 item or 50</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-500">✓</span>
@@ -586,12 +586,12 @@ const DIYCreditRepair = () => {
                 No Limits. No Extra Charges.
               </h3>
               <p className="text-gray-700 mb-4">
-                Dispute everything — all 3 bureaus, as many items as you have, as many rounds as needed. One price. Unlimited firepower.
+                Dispute everything: all 3 bureaus, as many items as you have, as many rounds as needed. One price. Unlimited firepower.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="text-pink-500">✓</span>
-                  <span>1 account or 50 — same price</span>
+                  <span>1 account or 50, same price</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-pink-500">✓</span>
@@ -613,7 +613,7 @@ const DIYCreditRepair = () => {
                 Watch It Work.
               </h3>
               <p className="text-gray-700 mb-4">
-                Every month, your report is re-imported automatically. See exactly what's been deleted, what's pending, and how your score is climbing — all 3 bureaus, one dashboard.
+                Every month, your report is re-imported automatically. See exactly what's been deleted, what's pending, and how your score is climbing, all 3 bureaus, one dashboard.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-start gap-2">
@@ -743,7 +743,7 @@ const DIYCreditRepair = () => {
                   What Can You Dispute?
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Under the FCRA, you have the right to challenge anything inaccurate, incomplete, unverifiable, or unfairly reported. And here's the thing — even items that seem accurate often have errors:
+                  Under the FCRA, you have the right to challenge anything inaccurate, incomplete, unverifiable, or unfairly reported. And here's the thing: even items that seem accurate often have errors:
                 </p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700 mb-4">
                   <li className="flex items-start gap-2">
@@ -856,7 +856,7 @@ const DIYCreditRepair = () => {
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-800">Cancel anytime — no contracts, no penalties</span>
+                  <span className="text-gray-800">Cancel anytime, no contracts, no penalties</span>
                 </li>
               </ul>
               
@@ -927,7 +927,7 @@ const DIYCreditRepair = () => {
           </h2>
           
           <p className="text-lg text-gray-700 mb-16 text-center max-w-4xl mx-auto leading-relaxed">
-            No credit restoration company. No thousands in fees. Just the right tools and the drive to take control. Creditily users are saving money and fixing their credit — on their own terms.
+            No credit restoration company. No thousands in fees. Just the right tools and the drive to take control. Creditily users are saving money and fixing their credit, on their own terms.
           </p>
           
           {/* Counter Header */}
@@ -1026,7 +1026,7 @@ const DIYCreditRepair = () => {
           {/* Final CTA */}
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Ready to Bridge the Gap — <span className="text-[#f9c65d]">Your Way?</span>
+              Ready to Bridge the Gap, <span className="text-[#f9c65d]">Your Way?</span>
             </h2>
             
             <button
@@ -1059,7 +1059,7 @@ const DIYCreditRepair = () => {
 
       <Footer />
 
-      {/* ExternalLinkModal removed — external signup opens in new tab instead */}
+      {/* ExternalLinkModal removed - external signup opens in new tab instead */}
     </main>
   );
 };

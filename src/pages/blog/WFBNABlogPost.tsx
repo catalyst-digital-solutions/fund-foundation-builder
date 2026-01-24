@@ -91,7 +91,7 @@ const WFBNABlogPost = () => {
 
           <div className="mb-8">
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
-              A client called us at Mesa Group Consulting last week, and I could hear the panic in her voice immediately. She was in the middle of reviewing her credit report before applying for a car loan—a stressful moment for anyone—when she spotted something that stopped her cold.
+              A client called us at Mesa Group Consulting last week, and I could hear the panic in her voice immediately. She was in the middle of reviewing her credit report before applying for a car loan, a stressful moment for anyone, when she spotted something that stopped her cold.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
               There was an account listed under "WFBNA" that she did not recognize at all.
@@ -103,7 +103,7 @@ const WFBNABlogPost = () => {
               I paused and asked her one simple question: "Do you have a Wells Fargo credit card or bank account?"
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
-              There was a long silence on the other end of the line. "Oh. Yes, I do. Wait—is WFBNA just Wells Fargo?"
+              There was a long silence on the other end of the line. "Oh. Yes, I do. Wait, is WFBNA just Wells Fargo?"
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
               Exactly.
@@ -118,7 +118,7 @@ const WFBNABlogPost = () => {
               You are not crazy for not recognizing it. The system is just not built for clarity.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              Let me break down exactly what WFBNA is, why it appears on your report, and—most importantly—when you should actually be worried about it.
+              Let me break down exactly what WFBNA is, why it appears on your report, and most importantly, when you should actually be worried about it.
             </p>
           </div>
 
@@ -130,7 +130,7 @@ const WFBNABlogPost = () => {
               Let us clear up the mystery right now. WFBNA stands for Wells Fargo Bank, National Association.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-              It is the official legal entity name that Wells Fargo uses when reporting your credit activity to the three major credit bureaus—Equifax, Experian, and TransUnion.
+              It is the official legal entity name that Wells Fargo uses when reporting your credit activity to the three major credit bureaus: Equifax, Experian, and TransUnion.
             </p>
 
             <div className="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6 mb-6">
@@ -164,7 +164,7 @@ const WFBNABlogPost = () => {
             </div>
 
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
-              The "N.A." simply stands for National Association. It is a standard designation for federally chartered banks. You will see similar confusing abbreviations for other financial giants—CBNA for Citibank, SYNCB for Synchrony Bank, AMEX for American Express.
+              The "N.A." simply stands for National Association. It is a standard designation for federally chartered banks. You will see similar confusing abbreviations for other financial giants: CBNA for Citibank, SYNCB for Synchrony Bank, AMEX for American Express.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
               Banks use these dry legal names instead of their consumer-facing brand names because credit reporting is a legal process governed by strict federal regulations. They are required to use their legal entity name, even if it makes things confusing for you.
@@ -188,7 +188,7 @@ const WFBNABlogPost = () => {
               So, your familiar card becomes a strange code. Same account. Just a different label that makes it harder to recognize at first glance.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              This is not unique to Wells Fargo. It is an industry standard. When you see SYNCB, that is Synchrony Bank—the powerhouse behind store cards like Amazon, PayPal Credit, and CareCredit. When you see CBNA, that is Citibank.
+              This is not unique to Wells Fargo. It is an industry standard. When you see SYNCB, that is Synchrony Bank, the powerhouse behind store cards like Amazon, PayPal Credit, and CareCredit. When you see CBNA, that is Citibank.
             </p>
           </section>
         </div>
@@ -323,7 +323,7 @@ const WFBNABlogPost = () => {
                   <div>
                     <h4 className="font-bold text-blue-900 mb-2">4. Duplicate Entries</h4>
                     <p className="text-gray-700 leading-relaxed">
-                      Sometimes, a glitch causes the same account to report twice—once as WFBNA and once as something else. This can make you look more indebted than you are. You should dispute the duplicate to clean up your profile.
+                      Sometimes, a glitch causes the same account to report twice, once as WFBNA and once as something else. This can make you look more indebted than you are. You should dispute the duplicate to clean up your profile.
                     </p>
                   </div>
                 </div>
@@ -378,7 +378,7 @@ const WFBNABlogPost = () => {
                   <span className="flex-shrink-0 w-8 h-8 bg-amber-400 text-gray-900 font-bold rounded-full flex items-center justify-center">4</span>
                   <div>
                     <p className="font-semibold text-gray-900 mb-1">Contact Wells Fargo Directly</p>
-                    <p className="text-gray-700">If something feels off—wrong balance, unrecognized account—call Wells Fargo. Ask for their credit reporting department. Give them the details and ask them to investigate.</p>
+                    <p className="text-gray-700">If something feels off (wrong balance, unrecognized account), call Wells Fargo. Ask for their credit reporting department. Give them the details and ask them to investigate.</p>
                   </div>
                 </li>
               </ol>
@@ -402,7 +402,7 @@ const WFBNABlogPost = () => {
                 When to Dispute
               </h4>
               <p className="text-gray-700 leading-relaxed mb-4">
-                However, if WFBNA is hurting you with wrong information—incorrect late payments or fraudulent accounts—you have rights. The Fair Credit Reporting Act (FCRA) allows you to challenge these errors.
+                However, if WFBNA is hurting you with wrong information (incorrect late payments or fraudulent accounts), you have rights. The Fair Credit Reporting Act (FCRA) allows you to challenge these errors.
               </p>
               <div className="space-y-3">
                 <div className="flex gap-2">
@@ -411,7 +411,7 @@ const WFBNABlogPost = () => {
                 </div>
                 <div className="flex gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <p className="text-gray-700"><strong>File a Formal Dispute:</strong> If the bank drags its feet, file disputes with Equifax, Experian, and TransUnion. You will need proof—bank statements, payment confirmations, or identity theft reports.</p>
+                  <p className="text-gray-700"><strong>File a Formal Dispute:</strong> If the bank drags its feet, file disputes with Equifax, Experian, and TransUnion. You will need proof: bank statements, payment confirmations, or identity theft reports.</p>
                 </div>
                 <div className="flex gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />

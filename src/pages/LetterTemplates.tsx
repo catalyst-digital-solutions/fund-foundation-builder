@@ -319,7 +319,7 @@ const faqs = [
   },
   {
     q: "Do I need to include documentation?",
-    a: "For disputes, include copies (never originals) of documents that support your claim—but don't overdo it. A few key documents are better than overwhelming them with paperwork."
+    a: "For disputes, include copies (never originals) of documents that support your claim, but don't overdo it. A few key documents are better than overwhelming them with paperwork."
   },
   {
     q: 'What if the bureau says the item is "verified"?',
@@ -367,7 +367,7 @@ const LetterTemplates = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto">
-              Professional letter templates you can download and customize for free—the same formats credit repair specialists use.
+              Professional letter templates you can download and customize for free, the same formats credit repair specialists use.
             </p>
             
             <div className="max-w-3xl mx-auto space-y-6">
@@ -411,7 +411,7 @@ const LetterTemplates = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Choose Your Template</h3>
               <p className="text-gray-700 leading-relaxed">
-                Browse our library and select the letter that matches your situation—whether you're disputing credit report errors, negotiating debt, or correcting personal information.
+                Browse our library and select the letter that matches your situation, whether you're disputing credit report errors, negotiating debt, or correcting personal information.
               </p>
             </div>
             
@@ -515,7 +515,7 @@ const LetterTemplates = () => {
                       PLEASE READ - IDENTITY THEFT VICTIMS:
                     </h4>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      If you are a real victim of identity theft, we can help you get these fraudulent accounts removed AND potentially secure a settlement for FCRA violations—at NO cost to you.
+                      If you are a real victim of identity theft, we can help you get these fraudulent accounts removed AND potentially secure a settlement for FCRA violations, at NO cost to you.
                     </p>
                   </div>
                 </div>
@@ -626,7 +626,7 @@ const LetterTemplates = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Professionally Written</h3>
               <p className="text-gray-700 leading-relaxed">
-                Created by credit repair specialists who know exactly what language gets results. These aren't generic templates—they're proven formats we've refined over thousands of client cases.
+                Created by credit repair specialists who know exactly what language gets results. These aren't generic templates. They're proven formats we've refined over thousands of client cases.
               </p>
             </div>
             
@@ -713,7 +713,7 @@ const LetterTemplates = () => {
               { icon: AlignLeft, title: 'Be Clear and Concise', desc: "Stick to the facts. Don't include unnecessary personal stories or emotional appeals (except for goodwill letters)." },
               { icon: Paperclip, title: 'Include Required Documentation', desc: 'Only send copies, never originals. Highlight the relevant information on your documents.' },
               { icon: Clock, title: 'Follow Up', desc: "Credit bureaus have 30 days to investigate. If you don't hear back, send a follow-up letter." },
-              { icon: Target, title: 'Be Patient But Persistent', desc: "Credit repair takes time. Don't be discouraged if the first letter doesn't work—escalate with follow-up letters." }
+              { icon: Target, title: 'Be Patient But Persistent', desc: "Credit repair takes time. Don't be discouraged if the first letter doesn't work. Escalate with follow-up letters." }
             ].map((tip, i) => (
               <div key={i} className="bg-gray-50 rounded-xl shadow-md p-6 space-y-3">
                 <div className="flex items-start gap-3">
@@ -761,7 +761,7 @@ const LetterTemplates = () => {
             Rather Have Experts <span className="text-[#f9c65d]">Handle It?</span>
           </h2>
           <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-8">
-            DIY credit repair works—but it takes time, patience, and persistence. If you'd rather have professionals handle the entire process for you, our team is here to help. We'll dispute errors, negotiate with creditors, and guide you through every step.
+            DIY credit repair works, but it takes time, patience, and persistence. If you'd rather have professionals handle the entire process for you, our team is here to help. We'll dispute errors, negotiate with creditors, and guide you through every step.
           </p>
           
           <div className="max-w-3xl mx-auto mb-8">

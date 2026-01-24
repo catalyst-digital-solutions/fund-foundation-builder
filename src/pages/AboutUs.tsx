@@ -59,12 +59,12 @@ const AboutUs = () => {
             
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
               Mesa Group was built by someone who lived through bad credit, financial mistakes, 
-              and the shame of being turned down—so you'd never have to navigate it alone.
+              and the shame of being turned down, so you'd never have to navigate it alone.
             </p>
             
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
               Since 2023, we've helped 2,500+ families and businesses break free from financial limitations. 
-              Not because we had some magic formula—but because we've been exactly where you are.
+              Not because we had some magic formula, but because we've been exactly where you are.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -115,7 +115,7 @@ const AboutUs = () => {
             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight text-center">
               Why "Mesa"? Because Money Should Be{' '}
-              <span className="text-[#f9c65d]">Discussed at the Table</span>—Not Hidden from It.
+              <span className="text-[#f9c65d]">Discussed at the Table</span>, Not Hidden from It.
             </h2>
             
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed text-center">
@@ -135,7 +135,7 @@ const AboutUs = () => {
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                 What if families actually sat down and talked about credit? About debt? About building 
                 something for the next generation? What if there was someone at that table who understood 
-                the struggle—and could show you the way forward without judgment?
+                the struggle and could show you the way forward without judgment?
               </p>
               
               <p className="text-lg md:text-xl text-[#f9c65d] font-semibold leading-relaxed">
@@ -171,7 +171,7 @@ const AboutUs = () => {
               
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                 Whether you're a young professional trying to build from scratch, a parent trying to buy 
-                your first home, or someone rebuilding after life knocked you down—you deserve guidance 
+                your first home, or someone rebuilding after life knocked you down, you deserve guidance 
                 that meets you where you are.
               </p>
               
@@ -216,7 +216,7 @@ const AboutUs = () => {
               </p>
               
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                The painful part was watching his immigrant parents almost lose their home—not because they 
+                The painful part was watching his immigrant parents almost lose their home. Not because they 
                 were lazy or irresponsible, but because no one ever explained how the financial system worked. 
                 They worked two jobs. They paid their bills. They did everything they were supposed to do.
               </p>
@@ -226,7 +226,7 @@ const AboutUs = () => {
               </p>
               
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                Evert watched his family file bankruptcy in the early 2000s. He saw what it did to them—the 
+                Evert watched his family file bankruptcy in the early 2000s. He saw what it did to them: the 
                 stress, the shame, the feeling of failure even though they worked harder than anyone he knew.
               </p>
               
@@ -261,7 +261,7 @@ const AboutUs = () => {
               </p>
               
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                Not to build a business. To build a movement—one family at a time.
+                Not to build a business. To build a movement, one family at a time.
               </p>
               
               <p className="text-lg md:text-xl text-[#f9c65d] font-semibold leading-relaxed">
@@ -332,7 +332,7 @@ const AboutUs = () => {
             </p>
             
             <p className="text-xl md:text-2xl text-[#3e3e3e] font-bold leading-relaxed mt-6">
-              That's the real legacy. Not fixing credit—breaking generational curses.
+              That's the real legacy. Not fixing credit. Breaking generational curses.
             </p>
             
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mt-6">
@@ -397,9 +397,9 @@ const AboutUs = () => {
                   To the Young Professional Building from Scratch
                 </h4>
                 <p className="text-gray-700 leading-relaxed">
-                  You won't repeat the mistakes your parents made—not on our watch. We'll teach you how to 
+                  You won't repeat the mistakes your parents made. Not on our watch. We'll teach you how to 
                   build credit the right way from day one, so by the time you're ready to buy your first 
-                  home or start your business, you're approved—not denied.
+                  home or start your business, you're approved, not denied.
                 </p>
               </div>
               
@@ -428,7 +428,7 @@ const AboutUs = () => {
                 </h4>
                 <p className="text-gray-700 leading-relaxed">
                   Your past failures don't define your future success. Bankruptcy, divorce, medical debt, 
-                  business collapse—we've seen it all, and we've helped people come back stronger. Your 
+                  business collapse. We've seen it all, and we've helped people come back stronger. Your 
                   comeback story starts here.
                 </p>
               </div>
@@ -496,7 +496,7 @@ const AboutUs = () => {
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    We stay with you through the entire journey—not just the transaction
+                    We stay with you through the entire journey, not just the transaction
                   </li>
                 </ul>
               </div>
@@ -533,7 +533,7 @@ const AboutUs = () => {
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    We believe your breakthrough is already written—we're just here to help you walk it out
+                    We believe your breakthrough is already written. We're just here to help you walk it out.
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
@@ -566,7 +566,7 @@ const AboutUs = () => {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    We tell you what we CAN do and what we CAN'T do—upfront
+                    We tell you what we CAN do and what we CAN'T do, upfront
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
@@ -574,7 +574,7 @@ const AboutUs = () => {
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    If we can't help you, we'll tell you that too—and point you in the right direction
+                    If we can't help you, we'll tell you that too, and point you in the right direction
                   </li>
                 </ul>
               </div>
@@ -716,7 +716,7 @@ const AboutUs = () => {
             </p>
             
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              When "financial literacy" isn't some fancy term—it's just what your family does.
+              When "financial literacy" isn't some fancy term. It's just what your family does.
             </p>
             
             <p className="text-xl md:text-2xl text-[#3e3e3e] font-bold leading-relaxed">
@@ -747,7 +747,7 @@ const AboutUs = () => {
               <span className="text-[#f9c65d]">Real Financial Challenges</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              Mesa Group works with clients at every stage of their financial journey—from rock bottom to soaring high.
+              Mesa Group works with clients at every stage of their financial journey, from rock bottom to soaring high.
             </p>
           </div>
           
@@ -888,7 +888,7 @@ const AboutUs = () => {
                 Anyone Rebuilding
               </h3>
               <p className="text-gray-700 text-sm leading-relaxed">
-                Recovering from financial setbacks—divorce, medical debt, job loss, business failure—and creating a path forward.
+                Recovering from financial setbacks (divorce, medical debt, job loss, business failure) and creating a path forward.
               </p>
               
               <div className="pt-2 space-y-2">
@@ -943,7 +943,7 @@ const AboutUs = () => {
               <span className="text-[#f9c65d]">Real Transformation.</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              Don't just take our word for it—hear from the people who've walked this path with us.
+              Don't just take our word for it. Hear from the people who've walked this path with us.
             </p>
           </div>
           
@@ -1086,7 +1086,7 @@ const AboutUs = () => {
               </p>
               <p className="text-[#f9c65d] font-semibold">
                 That's why Mesa Group operates differently. We're not here to judge you. We're here to guide 
-                you—because we've walked the exact path you're on right now.
+                you, because we've walked the exact path you're on right now.
               </p>
             </div>
             
@@ -1152,7 +1152,7 @@ const AboutUs = () => {
               <span className="text-[#f9c65d]">Every Financial Need</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              From credit building to business funding, estate planning to debt relief—we've partnered with 
+              From credit building to business funding, estate planning to debt relief, we've partnered with 
               the nation's leading platforms to give you everything under one roof.
             </p>
           </div>
@@ -1349,11 +1349,11 @@ const AboutUs = () => {
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
               Mesa Group is powered by a diverse, multilingual team of credit specialists, client advisors, 
-              and support professionals—all committed to your financial success.
+              and support professionals, all committed to your financial success.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
               Every member of our team has one thing in common: we genuinely care about your outcome. This 
-              isn't just a job to us. It's a calling. Whether you speak English, Spanish, or Punjabi—we're 
+              isn't just a job to us. It's a calling. Whether you speak English, Spanish, or Punjabi, we're 
               here to guide you in the language you're most comfortable with.
             </p>
           </div>
@@ -1380,7 +1380,7 @@ const AboutUs = () => {
               Why Our Team Makes the Difference
             </h3>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              Notice something about our team? We're not just multilingual—we're multicultural. We understand 
+              Notice something about our team? We're not just multilingual. We're multicultural. We understand 
               the unique financial challenges facing Hispanic/Latino families, Punjabi communities, and 
               first-generation Americans because many of us have lived them.
             </p>
@@ -1406,7 +1406,7 @@ const AboutUs = () => {
           </h2>
           
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-            Mesa Group was built in Bakersfield, California—a city often overlooked, but full of hardworking 
+            Mesa Group was built in Bakersfield, California, a city often overlooked, but full of hardworking 
             families who deserve better financial opportunities.
           </p>
           

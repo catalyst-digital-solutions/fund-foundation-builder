@@ -71,7 +71,7 @@ const ArticlesInsights = () => {
     },
     {
       name: "Credit Repair Strategies",
-      description: "Proven strategies for disputing errors, removing negative items, and rebuilding your credit profile. These are the same approaches professionals use—now available to you.",
+      description: "Proven strategies for disputing errors, removing negative items, and rebuilding your credit profile. These are the same approaches professionals use, now available to you.",
       icon: TrendingUp,
       articles: [
         "How to Dispute Errors on Your Credit Report (Step-by-Step Guide)",
@@ -83,7 +83,7 @@ const ArticlesInsights = () => {
     },
     {
       name: "Business Funding",
-      description: "Access capital to grow your business—even with less-than-perfect credit. Learn how to qualify for funding, build business credit, and leverage the right financing options.",
+      description: "Access capital to grow your business, even with less-than-perfect credit. Learn how to qualify for funding, build business credit, and leverage the right financing options.",
       icon: Building2,
       articles: [
         "How to Qualify for 0% Business Credit Cards",
@@ -107,7 +107,7 @@ const ArticlesInsights = () => {
     },
     {
       name: "Financial Planning",
-      description: "Build long-term financial health with practical strategies for budgeting, saving, and planning major purchases—even when money is tight.",
+      description: "Build long-term financial health with practical strategies for budgeting, saving, and planning major purchases, even when money is tight.",
       icon: DollarSign,
       articles: [
         "Building an Emergency Fund with Bad Credit: A Realistic Guide",
@@ -134,7 +134,7 @@ const ArticlesInsights = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-              Expert guidance on credit, debt, and financial growth—written for real people navigating real challenges.
+              Expert guidance on credit, debt, and financial growth, written for real people navigating real challenges.
             </p>
 
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -358,7 +358,7 @@ const ArticlesInsights = () => {
           </h2>
 
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Reading about credit repair is a great start—but if you're ready for professional help, our team is here to guide you through every step of your financial journey.
+            Reading about credit repair is a great start, but if you're ready for professional help, our team is here to guide you through every step of your financial journey.
           </p>
 
           <div className="flex flex-row gap-4 justify-center">

@@ -42,7 +42,7 @@ const CreditCards = () => {
     },
     {
       question: "What's the difference between pre-qualification and pre-approval?",
-      answer: "Pre-qualification is a quick estimate based on self-reported info (soft pull, no score impact). Pre-approval is more thorough, often involves a hard pull, and means you're very likely to be approved. Our tool shows pre-qualification first—apply when ready for the hard pull."
+      answer: "Pre-qualification is a quick estimate based on self-reported info (soft pull, no score impact). Pre-approval is more thorough, often involves a hard pull, and means you're very likely to be approved. Our tool shows pre-qualification first. Apply when ready for the hard pull."
     },
     {
       question: "What credit score do I need to get approved?",
@@ -50,7 +50,7 @@ const CreditCards = () => {
     },
     {
       question: "Should I close old credit cards I don't use?",
-      answer: "Usually no. Closing old cards reduces your total available credit (increases utilization) and shortens your credit history—both hurt your score. Better strategy: Keep old cards open, use them occasionally for small purchases, pay off immediately."
+      answer: "Usually no. Closing old cards reduces your total available credit (increases utilization) and shortens your credit history. Both hurt your score. Better strategy: Keep old cards open, use them occasionally for small purchases, pay off immediately."
     },
     {
       question: "How many credit cards should I have?",
@@ -82,7 +82,7 @@ const CreditCards = () => {
           </p>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Find Your <span className="text-[#f9c65d]">Perfect Credit Card</span>—Without Hurting Your Score
+            Find Your <span className="text-[#f9c65d]">Perfect Credit Card</span>, Without Hurting Your Score
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-4xl mx-auto">
@@ -97,7 +97,7 @@ const CreditCards = () => {
                   Pre-Qualification = No Credit Score Impact
                 </h3>
                 <p className="text-gray-600">
-                  Answer 5 quick questions (no SSN yet). See which cards you're likely to get approved for using a <strong>soft pull only</strong>. Your credit score won't drop. Apply when you're ready—that's when the hard pull happens.
+                  Answer 5 quick questions (no SSN yet). See which cards you're likely to get approved for using a <strong>soft pull only</strong>. Your credit score won't drop. Apply when you're ready. That's when the hard pull happens.
                 </p>
               </div>
             </div>
@@ -199,7 +199,7 @@ const CreditCards = () => {
                 Apply When Ready
               </h3>
               <p className="text-gray-700">
-                Choose your favorite card and apply directly. The hard pull happens here—not during comparison.
+                Choose your favorite card and apply directly. The hard pull happens here, not during comparison.
               </p>
             </div>
             

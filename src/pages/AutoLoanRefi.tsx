@@ -28,11 +28,11 @@ const AutoLoanRefi = () => {
     },
     {
       question: "Can I refinance if I bought my car from a dealer?",
-      answer: "Yes! It doesn't matter where you bought your car—dealership, private party, or even if you financed through the dealer. You can refinance with any lender on our platform. In fact, many dealers mark up interest rates, so refinancing away from dealer financing often gets you a better deal."
+      answer: "Yes! It doesn't matter where you bought your car, whether it's a dealership, private party, or even if you financed through the dealer. You can refinance with any lender on our platform. In fact, many dealers mark up interest rates, so refinancing away from dealer financing often gets you a better deal."
     },
     {
       question: "What if my car is really old or has high mileage?",
-      answer: "Most lenders require cars to be less than 10 years old, though some go up to 15 years. High mileage can affect eligibility and rates—lenders typically prefer vehicles under 100,000-125,000 miles, but some will work with higher mileage. The older or higher-mileage your car, the fewer lenders you'll qualify for, but it's still worth checking your options."
+      answer: "Most lenders require cars to be less than 10 years old, though some go up to 15 years. High mileage can affect eligibility and rates. Lenders typically prefer vehicles under 100,000-125,000 miles, but some will work with higher mileage. The older or higher-mileage your car, the fewer lenders you'll qualify for, but it's still worth checking your options."
     },
     {
       question: "Can I refinance to remove a co-signer from my loan?",
@@ -40,7 +40,7 @@ const AutoLoanRefi = () => {
     },
     {
       question: "Will my monthly payment definitely go down?",
-      answer: "Not necessarily—it depends on your goals. If you want a lower monthly payment, you can refinance to a lower rate or extend your loan term. If you want to pay off your car faster, you can refinance to a shorter term, which increases your monthly payment but saves you interest. The choice is yours based on your financial goals."
+      answer: "Not necessarily. It depends on your goals. If you want a lower monthly payment, you can refinance to a lower rate or extend your loan term. If you want to pay off your car faster, you can refinance to a shorter term, which increases your monthly payment but saves you interest. The choice is yours based on your financial goals."
     },
     {
       question: "Are there any fees for refinancing my car loan?",
@@ -48,11 +48,11 @@ const AutoLoanRefi = () => {
     },
     {
       question: "What happens to my old auto loan when I refinance?",
-      answer: "Your new lender pays off your old loan in full and closes that account. You'll start making payments to your new lender under the new terms. The process is seamless—you don't need to coordinate anything between lenders. Your new lender handles all the paperwork and title transfer."
+      answer: "Your new lender pays off your old loan in full and closes that account. You'll start making payments to your new lender under the new terms. The process is seamless. You don't need to coordinate anything between lenders. Your new lender handles all the paperwork and title transfer."
     },
     {
       question: "Can I refinance a leased vehicle?",
-      answer: "Technically, no—you can't refinance a lease because you don't own the car. However, you can do a 'lease buyout' where you purchase the leased vehicle and finance it with a loan. Some of our lending partners offer lease buyout financing. If you're interested in keeping your leased car, this is an option worth exploring."
+      answer: "Technically, no. You can't refinance a lease because you don't own the car. However, you can do a 'lease buyout' where you purchase the leased vehicle and finance it with a loan. Some of our lending partners offer lease buyout financing. If you're interested in keeping your leased car, this is an option worth exploring."
     }
   ];
 
@@ -92,7 +92,7 @@ const AutoLoanRefi = () => {
               
               {/* Subheadline */}
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
-                Compare 100+ lenders in minutes and find a better rate on your auto loan. Most drivers save $50-$150/month—without changing anything about their car.
+                Compare 100+ lenders in minutes and find a better rate on your auto loan. Most drivers save $50-$150/month, without changing anything about their car.
               </p>
               
               {/* Value Props Quick List */}
@@ -357,7 +357,7 @@ const AutoLoanRefi = () => {
           </h2>
           
           <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-            Get a better rate on your car loan in 4 simple steps—no dealership required.
+            Get a better rate on your car loan in 4 simple steps. No dealership required.
           </p>
           
           {/* 4-Step Process */}
@@ -459,7 +459,7 @@ const AutoLoanRefi = () => {
           </h2>
           
           <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-            We make refinancing simple, fast, and completely free—with zero risk to your credit score.
+            We make refinancing simple, fast, and completely free, with zero risk to your credit score.
           </p>
           
           {/* Benefits Grid */}
@@ -473,7 +473,7 @@ const AutoLoanRefi = () => {
                     Safe Credit Check
                   </h3>
                   <p className="text-gray-700 mb-4">
-                    We only use <strong>soft credit pulls</strong> to show you rates. Your credit score stays protected while you shop—check as many offers as you want with zero impact.
+                    We only use <strong>soft credit pulls</strong> to show you rates. Your credit score stays protected while you shop. Check as many offers as you want with zero impact.
                   </p>
                   <ul className="space-y-2 text-sm text-gray-700">
                     <li className="flex items-start gap-2">
@@ -501,7 +501,7 @@ const AutoLoanRefi = () => {
                     100+ Lenders Compete
                   </h3>
                   <p className="text-gray-700 mb-4">
-                    We partner with <strong>over 100 banks, credit unions, and online lenders</strong>—all competing for your business. More competition = better rates for you.
+                    We partner with <strong>over 100 banks, credit unions, and online lenders</strong>, all competing for your business. More competition = better rates for you.
                   </p>
                   <ul className="space-y-2 text-sm text-gray-700">
                     <li className="flex items-start gap-2">
@@ -700,7 +700,7 @@ const AutoLoanRefi = () => {
               <div>
                 <h4 className="font-bold text-[#3E3E3E] mb-2">Good News: We Work With All Credit Tiers</h4>
                 <p className="text-gray-700">
-                  Even if you have fair, poor, or bad credit (500+ credit score), our platform connects you with lenders who specialize in all credit levels. You may not get the absolute lowest rate, but you'll see your best options—and refinancing can still save you money even with less-than-perfect credit.
+                  Even if you have fair, poor, or bad credit (500+ credit score), our platform connects you with lenders who specialize in all credit levels. You may not get the absolute lowest rate, but you'll see your best options, and refinancing can still save you money even with less-than-perfect credit.
                 </p>
               </div>
             </div>
@@ -757,7 +757,7 @@ const AutoLoanRefi = () => {
                 </li>
               </ul>
               <p className="text-sm text-gray-600 mt-4 italic">
-                Don't worry—most of this you can fill in from memory. Documents only needed if you accept a loan.
+                Don't worry. Most of this you can fill in from memory. Documents only needed if you accept a loan.
               </p>
             </div>
             

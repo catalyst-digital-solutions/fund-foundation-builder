@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Description */}
           <div className="mb-14">
             <p className="text-white text-lg leading-[27px] font-normal">
-              Have a question about credit, funding, or your next financial move? Reach out today and let Mesa Group Consulting's trilingual team turn complex money problems into clear, actionable solutions—fast, friendly, and tailored to your goals.
+              Have a question about credit, funding, or your next financial move? Reach out today and let Mesa Group Consulting's trilingual team turn complex money problems into clear, actionable solutions: fast, friendly, and tailored to your goals.
             </p>
             <p className="text-white text-lg leading-[27px] font-normal mt-4">
               Se habla español.

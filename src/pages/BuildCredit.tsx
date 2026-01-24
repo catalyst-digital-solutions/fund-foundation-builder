@@ -51,7 +51,7 @@ const BuildCredit = () => {
     {
       icon: FileQuestion,
       title: 'Scenario 1: The Thin File Problem',
-      description: 'You have maybe one credit card you opened a year ago. You pay it on time every month. But when you apply for a car loan, you get denied—not because of bad behavior, but because lenders can\'t see enough history to trust you.'
+      description: 'You have maybe one credit card you opened a year ago. You pay it on time every month. But when you apply for a car loan, you get denied, not because of bad behavior, but because lenders can\'t see enough history to trust you.'
     },
     {
       icon: FileX,
@@ -88,7 +88,7 @@ const BuildCredit = () => {
       icon: Building,
       number: 1,
       title: 'Credit Union Relationships',
-      description: 'Credit unions are member-owned, which means they\'re designed to help you succeed—not just profit from fees. When you open a secured card or credit builder account at a credit union, you\'re building a relationship that leads to future auto loans, personal loans, and eventually mortgages.',
+      description: 'Credit unions are member-owned, which means they\'re designed to help you succeed, not just profit from fees. When you open a secured card or credit builder account at a credit union, you\'re building a relationship that leads to future auto loans, personal loans, and eventually mortgages.',
       goal: 'Establish at least one credit union membership with an active account.'
     },
     {
@@ -102,7 +102,7 @@ const BuildCredit = () => {
       icon: FileText,
       number: 3,
       title: 'Installment Credit',
-      description: 'These are fixed loans with set payment amounts over time—like auto loans, mortgages, or credit builder loans. Having installment credit shows lenders you can commit to regular payments.',
+      description: 'These are fixed loans with set payment amounts over time, like auto loans, mortgages, or credit builder loans. Having installment credit shows lenders you can commit to regular payments.',
       goal: '1-2 installment accounts showing consistent on-time payments.'
     },
     {
@@ -145,7 +145,7 @@ const BuildCredit = () => {
       icon: TrendingUp,
       number: 3,
       title: 'Make On-Time Payments & Watch Your Profile Grow',
-      description: 'Every on-time payment builds trust. Every month of responsible behavior strengthens your file. This isn\'t a hack—it\'s a system. And systems work when you work them consistently.',
+      description: 'Every on-time payment builds trust. Every month of responsible behavior strengthens your file. This isn\'t a hack. It\'s a system. And systems work when you work them consistently.',
       results: ['Credit score increases', 'Credit limits increase', 'Interest rates decrease', 'Approval odds increase']
     },
   ];
@@ -230,7 +230,7 @@ const BuildCredit = () => {
 
   const testimonials = [
     {
-      quote: "I went from no credit to a 738 score in 8 months. The strategy was simple—I just needed someone to show me the right order to do things.",
+      quote: "I went from no credit to a 738 score in 8 months. The strategy was simple. I just needed someone to show me the right order to do things.",
       name: 'Jessica M.',
       location: 'Bakersfield, CA',
       transformation: '0 → 738 in 8 months',
@@ -267,7 +267,7 @@ const BuildCredit = () => {
     },
     {
       mistake: 'Skipping the Credit Union',
-      whyItHurts: 'Banks and credit card companies don\'t build relationships—they build profits. Credit unions are designed to help members succeed and will approve you for future loans based on your membership history.',
+      whyItHurts: 'Banks and credit card companies don\'t build relationships. They build profits. Credit unions are designed to help members succeed and will approve you for future loans based on your membership history.',
       fix: 'Start with a credit union secured card or credit builder. Build the relationship first.'
     },
     {
@@ -277,7 +277,7 @@ const BuildCredit = () => {
     },
     {
       mistake: 'Missing Payments',
-      whyItHurts: 'One late payment can drop your score 50-100 points and stays on your report for 7 years. Payment history is 35% of your credit score—the single biggest factor.',
+      whyItHurts: 'One late payment can drop your score 50-100 points and stays on your report for 7 years. Payment history is 35% of your credit score, the single biggest factor.',
       fix: 'Set up autopay for at least minimum payments. Never miss. Ever.'
     },
     {
@@ -306,7 +306,7 @@ const BuildCredit = () => {
     },
     {
       question: 'Can I build credit while in credit restoration?',
-      answer: 'Absolutely—and you should. Running both simultaneously compresses your timeline significantly. While negatives are being removed, you\'re building positive accounts.'
+      answer: 'Absolutely, and you should. Running both simultaneously compresses your timeline significantly. While negatives are being removed, you\'re building positive accounts.'
     },
     {
       question: 'When should I add an authorized user tradeline?',
@@ -327,10 +327,10 @@ const BuildCredit = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Build Credit Fast—The <span className="text-[#f9c65d]">Strategic</span> Way
+              Build Credit Fast: The <span className="text-[#f9c65d]">Strategic</span> Way
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
-              Access the nation's leading credit building platforms through one trusted partner. We've partnered with proven tools to help you build strong credit relationships—no guesswork, no wasted time, just a clear path to funding.
+              Access the nation's leading credit building platforms through one trusted partner. We've partnered with proven tools to help you build strong credit relationships, no guesswork, no wasted time, just a clear path to funding.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -471,7 +471,7 @@ const BuildCredit = () => {
                 <strong>"I'm sorry, we can't approve you today. Your credit file is too thin."</strong>
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Because lenders don't just want a clean report. They want to see <em>proof</em> that you can handle credit responsibly. And if you've never had credit—or if you recently removed all your negative accounts—you're essentially invisible to them.
+                Because lenders don't just want a clean report. They want to see <em>proof</em> that you can handle credit responsibly. And if you've never had credit, or if you recently removed all your negative accounts, you're essentially invisible to them.
               </p>
             </div>
           </div>
@@ -730,7 +730,7 @@ const BuildCredit = () => {
                     What They Are
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Specialized accounts that report as revolving credit to all three bureaus—with no credit check required.
+                    Specialized accounts that report as revolving credit to all three bureaus, with no credit check required.
                   </p>
                 </div>
                 <div>
@@ -1096,7 +1096,7 @@ const BuildCredit = () => {
                     What They Are
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Specialized accounts that report as revolving credit to all three bureaus—with no credit check required.
+                    Specialized accounts that report as revolving credit to all three bureaus, with no credit check required.
                   </p>
                 </div>
                 <div>
@@ -1450,7 +1450,7 @@ const BuildCredit = () => {
               Authorized User Strategy (Educational)
             </h3>
             <p className="text-gray-700 mb-6 max-w-4xl">
-              Some consumers explore authorized user tradelines—being added to established credit card accounts (typically 5-20+ years old) to potentially benefit from the account's positive history.
+              Some consumers explore authorized user tradelines, being added to established credit card accounts (typically 5-20+ years old) to potentially benefit from the account's positive history.
             </p>
 
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-8">
@@ -1656,7 +1656,7 @@ const BuildCredit = () => {
               You can have a 750 credit score and still get denied for a mortgage. Why? Because the lender has never seen your name before. You have no relationship with them. No history. No trust.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              But someone with a 680 who's been banking at the same credit union for 5 years, paid off a car loan through them, and has a checking account? They're getting approved—often with better terms.
+              But someone with a 680 who's been banking at the same credit union for 5 years, paid off a car loan through them, and has a checking account? They're getting approved, often with better terms.
             </p>
           </div>
           
@@ -1747,7 +1747,7 @@ const BuildCredit = () => {
           
           <div className="max-w-4xl mx-auto mb-12">
             <p className="text-lg text-gray-700 leading-relaxed text-center">
-              If you're currently working with Mesa Group on credit restoration, don't wait until it's complete to start building. The most effective strategy is running both simultaneously—removing negatives while adding positives.
+              If you're currently working with Mesa Group on credit restoration, don't wait until it's complete to start building. The most effective strategy is running both simultaneously, removing negatives while adding positives.
             </p>
           </div>
           
@@ -1823,7 +1823,7 @@ const BuildCredit = () => {
           </h2>
           
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Credit isn't a number you chase. It's a reputation you build. And with the right strategy, tools, and guidance, you can build a credit profile that opens doors—not just today, but for decades to come.
+            Credit isn't a number you chase. It's a reputation you build. And with the right strategy, tools, and guidance, you can build a credit profile that opens doors, not just today, but for decades to come.
           </p>
           
           <div className="bg-white rounded-xl p-8 shadow-lg mb-8">

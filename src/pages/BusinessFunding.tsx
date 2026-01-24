@@ -102,11 +102,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ openApplicationModal }) => {
         </p>
 
         <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-3xl mx-auto">
-          Every business owner knows the feeling—the gap between where you are and where you could be isn't about ideas or effort. It's about capital. Whether you're hiring your first employee, upgrading equipment, or expanding to that second location, the right funding at the right time changes everything.
+          Every business owner knows the feeling. The gap between where you are and where you could be isn't about ideas or effort. It's about capital. Whether you're hiring your first employee, upgrading equipment, or expanding to that second location, the right funding at the right time changes everything.
         </p>
 
         <p className="text-lg text-gray-700 leading-relaxed mb-10 max-w-3xl mx-auto">
-          Through our brokerage division, <strong>Mesa Group Capital</strong>, we connect you with a curated network of <strong>75+ specialized lenders</strong>—each offering different products, terms, and approval criteria. We don't just submit applications. We architect funding solutions that match your business reality.
+          Through our brokerage division, <strong>Mesa Group Capital</strong>, we connect you with a curated network of <strong>75+ specialized lenders</strong>, each offering different products, terms, and approval criteria. We don't just submit applications. We architect funding solutions that match your business reality.
         </p>
 
         <div className="flex flex-col items-center mb-8">
@@ -313,7 +313,7 @@ const TheProblemSection = () => {
 
         <div className="bg-gradient-to-br from-amber-50 to-white rounded-xl p-8 md:p-12 shadow-lg border-l-4 border-amber-500">
           <p className="text-xl text-gray-900 leading-relaxed">
-            <strong>We know better.</strong> Your business isn't a credit score—it's your life's work, your family's security, and your community's resource. That deserves funding partners who see the full picture.
+            <strong>We know better.</strong> Your business isn't a credit score. It's your life's work, your family's security, and your community's resource. That deserves funding partners who see the full picture.
           </p>
         </div>
 
@@ -426,7 +426,7 @@ const TheSolutionSection = () => {
 
         <div className="bg-gradient-to-r from-green-100 to-green-50 rounded-xl p-8 text-center shadow-lg border-2 border-green-300">
           <p className="text-xl font-bold text-gray-900">
-            The result? Most clients secure funding within <span className="text-green-700">30-45 days</span>—even if they've been denied elsewhere.
+            The result? Most clients secure funding within <span className="text-green-700">30-45 days</span>, even if they've been denied elsewhere.
           </p>
         </div>
 
@@ -498,7 +498,7 @@ const IntroducingBrokerageDivision = () => {
               <h4 className="text-xl font-bold text-gray-900">One Application, Multiple Offers</h4>
             </div>
             <p className="text-gray-700 leading-relaxed">
-              Fill out our comprehensive application once. We handle submissions, follow-ups, and negotiations across our entire network—at no cost to you. We're compensated directly by lenders when your funding closes.
+              Fill out our comprehensive application once. We handle submissions, follow-ups, and negotiations across our entire network, at no cost to you. We're compensated directly by lenders when your funding closes.
             </p>
           </div>
 
@@ -534,7 +534,7 @@ const AllFundingSolutionsGrid: React.FC<AllFundingSolutionsGridProps> = ({ openA
             8 Ways We Fund Your <span className="text-[#f9c65d]">Business Growth</span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Through Mesa Group Capital, you have access to every major funding category. No two businesses are identical—that's why we offer multiple pathways.
+            Through Mesa Group Capital, you have access to every major funding category. No two businesses are identical, and that's why we offer multiple pathways.
           </p>
         </div>
 
@@ -680,7 +680,7 @@ const AllFundingSolutionsGrid: React.FC<AllFundingSolutionsGridProps> = ({ openA
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              Revolving credit you can draw against as needed—pay interest only on what you use. Like a business credit card, but with serious limits and better terms.
+              Revolving credit you can draw against as needed. Pay interest only on what you use. Like a business credit card, but with serious limits and better terms.
             </p>
 
             <div className="space-y-3 text-sm mb-6">
@@ -857,7 +857,7 @@ const AllFundingSolutionsGrid: React.FC<AllFundingSolutionsGridProps> = ({ openA
               <div>
                 <Building className="w-12 h-12 text-[#f9c65d] mb-3" strokeWidth={2.5} />
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Commercial Real Estate Loans</h3>
-                <p className="text-sm text-[#d4a84b] font-semibold">Stop paying rent—start building equity</p>
+                <p className="text-sm text-[#d4a84b] font-semibold">Stop paying rent. Start building equity.</p>
               </div>
               <div className="bg-[#f9c65d] text-gray-900 px-3 py-1 rounded-full text-sm font-bold">Up to $100M</div>
             </div>
@@ -935,7 +935,7 @@ const AllFundingSolutionsGrid: React.FC<AllFundingSolutionsGridProps> = ({ openA
             </div>
 
             <p className="leading-relaxed mb-6 text-gray-800">
-              Revolving credit lines with no revenue requirements through our startup-friendly lenders. Use funds for any business purpose—no restrictions.
+              Revolving credit lines with no revenue requirements through our startup-friendly lenders. Use funds for any business purpose, no restrictions.
             </p>
 
             <div className="space-y-3 text-sm mb-6">
@@ -1248,7 +1248,7 @@ const SettingRealisticExpectations: React.FC<SettingRealisticExpectationsProps> 
 
           <h4 className="text-xl font-bold text-gray-900 mb-4">Why this matters:</h4>
           <p className="text-gray-700 leading-relaxed mb-6">
-            This prevents you from wasting time chasing $100K in funding when your business generates $80K/year. It's not that lenders don't believe in your potential—it's that they're underwriting based on <strong>demonstrated cash flow, not projected growth.</strong>
+            This prevents you from wasting time chasing $100K in funding when your business generates $80K/year. It's not that lenders don't believe in your potential. They're underwriting based on <strong>demonstrated cash flow, not projected growth.</strong>
           </p>
 
           <h4 className="text-xl font-bold text-gray-900 mb-4">Exceptions to this rule:</h4>
@@ -1360,7 +1360,7 @@ const RealTalkQualifications = () => {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            If you're close but not quite there? We'll give you honest feedback during your consultation about what needs to improve before applying. In some cases, our sister company <strong>Mesa Group Consulting</strong> can help you build the credit foundation needed to qualify—but that's a separate service focused on long-term credit building, not a quick fix.
+            If you're close but not quite there? We'll give you honest feedback during your consultation about what needs to improve before applying. In some cases, our sister company <strong>Mesa Group Consulting</strong> can help you build the credit foundation needed to qualify, but that's a separate service focused on long-term credit building, not a quick fix.
           </p>
 
           <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-300">
@@ -1417,7 +1417,7 @@ const WhyMesaGetsResults = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Application Optimization</h3>
             <p className="text-gray-700 leading-relaxed">
-              How you present your business matters as much as the numbers. We craft applications that get approved—highlighting strengths, addressing concerns proactively, and positioning you as a smart investment.
+              How you present your business matters as much as the numbers. We craft applications that get approved, highlighting strengths, addressing concerns proactively, and positioning you as a smart investment.
             </p>
           </div>
 
@@ -1643,11 +1643,11 @@ const FAQSection: React.FC<FAQSectionProps> = ({ openApplicationModal }) => {
     },
     {
       question: "Will this hurt my credit score?",
-      answer: "We pre-qualify without hard inquiries through our broker relationships. Only when we're confident of approval do we submit formal applications—and even then, multiple applications within 14-45 days typically count as one inquiry for credit scoring purposes."
+      answer: "We pre-qualify without hard inquiries through our broker relationships. Only when we're confident of approval do we submit formal applications, and even then, multiple applications within 14-45 days typically count as one inquiry for credit scoring purposes."
     },
     {
       question: "What if I've been denied before?",
-      answer: "Perfect—tell us why. Previous denials give us intel on what to fix or avoid. During your free consultation, we'll review what happened and give you honest feedback about whether you're ready to apply again or if you need to strengthen your profile first. Many of our best success stories through Mesa Group Capital are clients who were denied elsewhere but got approved once we positioned them correctly."
+      answer: "Perfect, tell us why. Previous denials give us intel on what to fix or avoid. During your free consultation, we'll review what happened and give you honest feedback about whether you're ready to apply again or if you need to strengthen your profile first. Many of our best success stories through Mesa Group Capital are clients who were denied elsewhere but got approved once we positioned them correctly."
     },
     {
       question: "How much does this cost?",
@@ -1655,7 +1655,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ openApplicationModal }) => {
     },
     {
       question: "Are there really no application fees?",
-      answer: "Correct. Unlike many brokers who charge application fees, we don't. Our entire compensation comes from the lender side of the transaction, which means our interests are perfectly aligned with yours—we both win when you get approved for the right funding at the best terms."
+      answer: "Correct. Unlike many brokers who charge application fees, we don't. Our entire compensation comes from the lender side of the transaction, which means our interests are perfectly aligned with yours. We both win when you get approved for the right funding at the best terms."
     },
     {
       question: "How fast can I get funded?",
@@ -1667,7 +1667,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ openApplicationModal }) => {
     },
     {
       question: "What if my credit isn't good enough yet?",
-      answer: "We'll be upfront during your fundability assessment. If you're not ready, we won't waste your time with applications that will get denied. In some cases, our sister company Mesa Group Consulting offers business credit building services to help you establish the foundation needed to qualify—but that's a separate engagement focused on long-term credit development."
+      answer: "We'll be upfront during your fundability assessment. If you're not ready, we won't waste your time with applications that will get denied. In some cases, our sister company Mesa Group Consulting offers business credit building services to help you establish the foundation needed to qualify, but that's a separate engagement focused on long-term credit development."
     },
     {
       question: "Should I schedule a consultation or apply directly?",
@@ -1675,7 +1675,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ openApplicationModal }) => {
     },
     {
       question: "What's the relationship between Mesa Group Consulting and Mesa Group Capital?",
-      answer: "Mesa Group Consulting is our advisory firm that helps businesses build credit, optimize operations, and grow strategically. Mesa Group Capital is our brokerage division that connects businesses to our network of 75+ lenders. Often clients work with both—we help them become fundable, then connect them to capital."
+      answer: "Mesa Group Consulting is our advisory firm that helps businesses build credit, optimize operations, and grow strategically. Mesa Group Capital is our brokerage division that connects businesses to our network of 75+ lenders. Often clients work with both. We help them become fundable, then connect them to capital."
     }
   ];
 
@@ -1887,7 +1887,7 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ openApplicationModal }) => {
             Your Business Doesn't Have <span className="text-[#f9c65d]">Time</span> to Wait
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed mb-6 max-w-3xl mx-auto">
-            Every day without the right funding is a day your competition moves ahead. The market doesn't care about your credit score—it cares whether you can deliver.
+            Every day without the right funding is a day your competition moves ahead. The market doesn't care about your credit score. It cares whether you can deliver.
           </p>
           <p className="text-xl text-gray-700 leading-relaxed mb-6 max-w-3xl mx-auto">
             Through Mesa Group Capital, we've helped over <strong>1,000 business owners</strong> close the gap between where they are and where they're going. Many of them heard "no" from traditional lenders before they heard "yes" from our network.
@@ -1958,7 +1958,7 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ openApplicationModal }) => {
         {/* Trust Badges */}
         <div className="bg-gray-100 rounded-xl p-6 text-center">
           <p className="text-xs text-gray-600 leading-relaxed">
-            <strong>Disclaimers:</strong> Mesa Group Capital is a commercial loan brokerage operating in all 50 states. Our services are provided at no cost to clients—we earn commissions from lenders upon successful funding. Funding approval is based on credit profile health, business financials, and individual lender criteria. Minimum requirements listed are guidelines; exceptions may apply. Not all products available in all situations. The funding calculator provides estimates based on industry standards; actual amounts depend on individual assessment.
+            <strong>Disclaimers:</strong> Mesa Group Capital is a commercial loan brokerage operating in all 50 states. Our services are provided at no cost to clients. We earn commissions from lenders upon successful funding. Funding approval is based on credit profile health, business financials, and individual lender criteria. Minimum requirements listed are guidelines; exceptions may apply. Not all products available in all situations. The funding calculator provides estimates based on industry standards; actual amounts depend on individual assessment.
           </p>
         </div>
 
