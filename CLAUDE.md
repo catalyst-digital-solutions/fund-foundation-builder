@@ -1155,5 +1155,61 @@ Added professional avatar images and credit score transformation lines to testim
 
 ---
 
-**Last Updated:** January 22, 2026
+## Recent Major Update #17 (January 24, 2026)
+
+### Content Refinements, Hero Images, GHL Guide Modals & Social Media Update
+
+**Social Media Rebrand (Continued from Update #15):**
+- All social handles updated from `@mesafinanciera` to `@mesagroupco`
+- YouTube added to Header and Footer social links
+- Files: `src/components/Header.tsx`, `src/components/Footer.tsx`
+
+**Homepage:**
+- Heading: "Why We Built Mesa Group, And Why It Had To Exist"
+- Pronouns updated to collective: "I built" → "we built", "I'm most proud" → "we're most proud" (4 instances)
+
+**Credit Repair Page - 9-Month Program & Content Updates:**
+- **Program Duration Change:** All 12-month references → 9-month
+  - Ruby Plan: Save $791 vs. Monthly Flex (was $888)
+  - Emerald Plan: Save $1,691 vs. Monthly Elite (was $1,788)
+  - Updated equivalents and commitment language throughout
+- **Content Updates:**
+  - Added line breaks: "We Know You've Been Promised<br />Quick Fixes Before."
+  - "Not here. Not with Mesa360." → "Not here. Not with Mesa Group Consulting."
+  - "This Isn't Just Credit Restoration.<br />It's Complete Financial Transformation."
+  - "Mesa Group Mesa360 Credit System™" → "Mesa360 Credit System™"
+  - "What's Not Covered By The Mesa 360<br />90-Day Money Back Guarantee"
+- Removed duplicate BarChart3 icon from "Real-Time 3-Bureau Monitoring"
+
+**Credit Monitoring Page:**
+- Removed FAQ: "How do I dispute errors on my credit report?"
+
+**For Consumers Page:**
+- **Hero Image:** `/img-03-happy-family-in-front-of-home-cropped.jpeg` (family in front of new home)
+- **Background Image:** "Financial Solutions" section now has geometric pattern (`/img-geometric-financial-bg.jpeg`)
+  - White overlay: 70% opacity for image visibility + text readability
+  - Full-width cover background
+- **Pricing Format:** Two-line bullets with `whitespace-pre-line`
+- **Getting Started:** Removed numbered step badges (cleaner icon-only layout)
+
+**Build Credit Page:**
+- **New Component:** `GHLFormModal.tsx` for guide downloads
+- Three guide forms open in modals (Foundation, Accelerated, Premium Builder)
+- Replaced CalendlyPopupButton with custom modal buttons
+
+**Letter Templates Page:**
+- Fixed link: `/credit-repair-2` → `/credit-repair`
+
+**Business Pages:**
+- **For Business:** "Serving All 50 States" caption
+- **Business Funding:** Removed consultation notice + 6 trust cards
+- **Business Credit Builder:** Removed address footer block
+
+**New Assets:**
+- `public/img-geometric-financial-bg.jpeg`
+- `public/img-03-happy-family-in-front-of-home-cropped.jpeg`
+
+---
+
+**Last Updated:** January 24, 2026
 **Project Status:** Active Development

@@ -533,7 +533,9 @@ const ForConsumers = () => {
         <div className="absolute inset-0 bg-white/70"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
-            Financial Solutions Built for <span className="text-[#f9c65d]">Real People</span>, Real Situations
+            Financial Solutions Built for <br />
+            <span className="text-[#f9c65d]">Real People</span> <br />
+            and Real Situations
           </h2>
           
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
