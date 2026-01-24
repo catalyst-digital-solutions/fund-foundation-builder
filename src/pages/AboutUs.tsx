@@ -53,8 +53,8 @@ const AboutUs = () => {
           <div className="text-center max-w-4xl mx-auto space-y-6 lg:space-y-8">
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#3e3e3e] leading-tight">
-              We're Not Here to Sell You Services. We're Here to{' '}
-              <span className="text-[#f9c65d]">Rewrite Your Financial Story.</span>
+              We're Not Here to Sell You Services.<br className="hidden md:block" />
+              We're Here to <span className="text-[#f9c65d]">Rewrite Your Financial Story.</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
@@ -114,8 +114,8 @@ const AboutUs = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight text-center">
-              Why "Mesa"? Because Money Should Be{' '}
-              <span className="text-[#f9c65d]">Discussed at the Table</span>, Not Hidden from It.
+              Why "Mesa"?<br className="hidden md:block" />
+              Because Money Should Be <span className="text-[#f9c65d]">Discussed at the Table</span>, Not Hidden from It.
             </h2>
             
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed text-center">
@@ -188,8 +188,8 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight text-center mb-12">
-            The Man Behind Mesa: Why This Is{' '}
-            <span className="text-[#f9c65d]">Personal</span>
+            The Man Behind Mesa:<br className="hidden md:block" />
+            Why This Is <span className="text-[#f9c65d]">Personal</span>
           </h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -361,8 +361,8 @@ const AboutUs = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight">
-            Our Mission: Financial Freedom for{' '}
-            <span className="text-[#f9c65d]">Every Generation</span>
+            Our Mission:<br className="hidden md:block" />
+            Financial Freedom for <span className="text-[#f9c65d]">Every Generation</span>
           </h2>
           
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
@@ -636,7 +636,7 @@ const AboutUs = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight text-center">
-            Where We're Going:{' '}
+            Where We're Going:<br className="hidden md:block" />
             <span className="text-[#f9c65d]">Redefining Financial Success</span>
           </h2>
           
@@ -743,8 +743,8 @@ const AboutUs = () => {
           
           <div className="text-center mb-12 space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight">
-              We Serve Real People with{' '}
-              <span className="text-[#f9c65d]">Real Financial Challenges</span>
+              We Serve Real People<br className="hidden md:block" />
+              with <span className="text-[#f9c65d]">Real Financial Challenges</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
               Mesa Group works with clients at every stage of their financial journey, from rock bottom to soaring high.
@@ -939,7 +939,7 @@ const AboutUs = () => {
           
           <div className="text-center mb-12 space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight">
-              Real Families. Real Businesses.{' '}
+              Real Families. Real Businesses.<br className="hidden md:block" />
               <span className="text-[#f9c65d]">Real Transformation.</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
@@ -1059,7 +1059,7 @@ const AboutUs = () => {
           
           <div className="text-center mb-12 space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight">
-              How We're Different:{' '}
+              How We're Different:<br className="hidden md:block" />
               <span className="text-[#f9c65d]">Education First, Sales Never</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
@@ -1148,8 +1148,8 @@ const AboutUs = () => {
           
           <div className="text-center mb-12 space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight">
-              Comprehensive Solutions for{' '}
-              <span className="text-[#f9c65d]">Every Financial Need</span>
+              Comprehensive Solutions<br className="hidden md:block" />
+              for <span className="text-[#f9c65d]">Every Financial Need</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
               From credit building to business funding, estate planning to debt relief, we've partnered with 
@@ -1344,8 +1344,8 @@ const AboutUs = () => {
           
           <div className="text-center mb-12 space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight">
-              Meet the Team Behind Your{' '}
-              <span className="text-[#f9c65d]">Financial Transformation</span>
+              Meet the Team Behind<br className="hidden md:block" />
+              Your <span className="text-[#f9c65d]">Financial Transformation</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
               Mesa Group is powered by a diverse, multilingual team of credit specialists, client advisors, 
@@ -1401,7 +1401,7 @@ const AboutUs = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight">
-            Giving Back to the{' '}
+            Giving Back to the<br className="hidden md:block" />
             <span className="text-[#f9c65d]">Communities That Built Us</span>
           </h2>
           
@@ -1453,8 +1453,8 @@ const AboutUs = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3e3e3e] leading-tight">
-            Your Financial Transformation Starts with{' '}
-            <span className="text-[#f9c65d]">One Conversation</span>
+            Your Financial Transformation<br className="hidden md:block" />
+            Starts with <span className="text-[#f9c65d]">One Conversation</span>
           </h2>
           
           <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">

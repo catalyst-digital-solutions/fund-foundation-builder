@@ -1211,5 +1211,62 @@ Added professional avatar images and credit score transformation lines to testim
 
 ---
 
+## Recent Major Update #18 (January 24, 2026)
+
+### Sitewide Em-Dash Removal & Semantic Heading Line Breaks
+
+**Em-Dash Removal:**
+Per Evert's style preference, removed ~470 em-dashes across 33 files sitewide. Replaced with commas, periods, colons, or parentheses depending on context.
+
+**Preserved em-dashes:**
+- Testimonial attributions (e.g., `— Carlos R., Bakersfield, CA`)
+- Direct quotes and testimonials
+- Interjection-style statements in Evert's writing (e.g., `—hardworking immigrants who risked everything—`)
+
+**Files Modified:** 33 files including pages, blog posts, FAQ components, calculators, and other UI components.
+
+**Replacement Rules Applied:**
+- Prefer commas where natural
+- Use colons where introducing a list or explanation
+- Use parentheses for parenthetical information
+- Split into two sentences where appropriate
+- Avoid creating new parenthetical asides
+
+---
+
+### Semantic Heading Line Breaks (About Page)
+
+**Background:**
+Evert prefers headings to break at semantically meaningful points (after periods, colons, key phrases) rather than wherever the browser decides to wrap.
+
+**Implementation:**
+Added responsive `<br className="hidden md:block" />` tags to 12 major H1/H2 headings on the About page.
+
+**Behavior:**
+- **Desktop/Tablet (768px+):** Line breaks appear at semantic points
+- **Mobile (<768px):** Line breaks are hidden (`display: none`), text flows naturally
+
+**Headings Updated:**
+1. "We're Not Here to Sell You Services." (break after period)
+2. "Why 'Mesa'?" (break after question mark)
+3. "The Man Behind Mesa:" (break after colon)
+4. "Our Mission:" (break after colon)
+5. "Where We're Going:" (break after colon)
+6. "We Serve Real People" (break after "People")
+7. "Real Families. Real Businesses." (break after "Businesses.")
+8. "How We're Different:" (break after colon)
+9. "Comprehensive Solutions" (break after "Solutions")
+10. "Meet the Team Behind" (break after "Behind")
+11. "Giving Back to the" (break after "the")
+12. "Your Financial Transformation" (break after "Transformation")
+
+**Limitation Noted:**
+On mid-sized viewports where text is still too long for the line, browser auto-wrapping may occur within each "line" even with semantic breaks. This is a fundamental limitation of responsive typography—the `<br />` controls forced breaks but cannot prevent natural wrapping when lines exceed viewport width.
+
+**Future Consideration:**
+If applied sitewide, may need to use `lg:block` or `xl:block` instead of `md:block` to only show breaks on wider screens where they definitely fit.
+
+---
+
 **Last Updated:** January 24, 2026
 **Project Status:** Active Development
