@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { DollarSign, Plus, X, Lightbulb, ArrowLeft } from 'lucide-react';
+import { DollarSign, Plus, X, Lightbulb, ArrowLeft, Target, ArrowRight } from 'lucide-react';
 import { formatCurrency, getUtilizationColor } from '@/utils/calculations';
 
 interface CreditCard {
@@ -23,22 +23,23 @@ const UtilizationGauge = ({ percentage }: { percentage: number }) => {
           style={{ width: `${Math.min(percentage, 100)}%` }}
         />
       </div>
-      <div className="flex justify-between text-xs text-gray-600 font-medium px-1">
-        <span>0%</span>
-        <span className="text-green-600">10%</span>
-        <span className="text-yellow-600">30%</span>
-        <span>100%</span>
+      <div className="relative w-full text-xs font-medium h-5">
+        <span className="absolute left-0 text-gray-600">0%</span>
+        <span className="absolute text-green-600" style={{ left: '10%', transform: 'translateX(-50%)' }}>10%</span>
+        <span className="absolute text-yellow-600" style={{ left: '30%', transform: 'translateX(-50%)' }}>30%</span>
+        <span className="absolute right-0 text-gray-600">100%</span>
       </div>
     </div>
   );
 };
+
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
 
 const CreditUtilizationCalculator = ({ onBack }: CreditUtilizationCalculatorProps) => {
   const [cards, setCards] = useState<CreditCard[]>([
     { id: '1', limit: 0, balance: 0 }
   ]);
   const [showResults, setShowResults] = useState(false);
-  const [email, setEmail] = useState('');
 
   const addCard = () => {
     setCards([...cards, { id: Date.now().toString(), limit: 0, balance: 0 }]);
@@ -78,12 +79,6 @@ const CreditUtilizationCalculator = ({ onBack }: CreditUtilizationCalculatorProp
 
   const handleCalculate = () => {
     setShowResults(true);
-  };
-
-  const handleEmailSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Email submitted:', email);
-    // Handle email capture
   };
 
   const { overallUtilization, perCardUtilization, totalPaydown } = calculateUtilization();
@@ -235,28 +230,30 @@ const CreditUtilizationCalculator = ({ onBack }: CreditUtilizationCalculatorProp
             ))}
           </div>
 
-          {/* Email Capture */}
-          <div className="bg-gray-900 rounded-lg p-6 text-white">
-            <h4 className="font-bold mb-2">Want a detailed paydown strategy?</h4>
-            <p className="text-gray-300 text-sm mb-4">
-              Enter your email to receive a month-by-month plan and credit optimization tips
+          {/* SmartCredit Offer */}
+          <div className="bg-[#3e3e3e] rounded-lg p-6 text-white">
+            <div className="flex items-center gap-2 mb-2">
+              <Target className="w-5 h-5 text-amber-400" />
+              <h4 className="font-bold">Want a detailed paydown strategy?</h4>
+            </div>
+            <p className="text-amber-400 font-semibold mb-2">
+              Our Recommended Tool to Help Achieve Your Desired Goal Faster
             </p>
-            <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
-                className="flex-1 px-4 py-3 rounded-lg text-gray-900"
-                required
-              />
-              <button 
-                type="submit"
-                className="px-6 py-3 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors whitespace-nowrap"
-              >
-                Send My Report
-              </button>
-            </form>
+            <p className="text-gray-300 text-sm mb-4">
+              Unlock SmartCredit's <strong>ScoreBoost™</strong> feature to track your utilization in real-time and see exactly how paying down balances affects your score.
+            </p>
+            <p className="text-green-400 text-sm font-medium mb-4">
+              Special Offer: Just $1 for the first 7 days
+            </p>
+            <a 
+              href={SMARTCREDIT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors"
+            >
+              <span>Get SmartCredit ScoreBoost™</span>
+              <ArrowRight className="w-5 h-5 flex-shrink-0" />
+            </a>
           </div>
 
           {/* Disclaimer */}

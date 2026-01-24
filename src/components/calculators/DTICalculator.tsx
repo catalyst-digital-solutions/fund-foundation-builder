@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { DollarSign, ArrowLeft, Home, Car, CreditCard, GraduationCap, Wallet, MoreHorizontal } from 'lucide-react';
+import { DollarSign, ArrowLeft, Home, Car, CreditCard, GraduationCap, Wallet, MoreHorizontal, Target, ArrowRight } from 'lucide-react';
 import { formatCurrency, getDTIZone } from '@/utils/calculations';
 
 interface DTICalculatorProps {
@@ -39,6 +39,8 @@ const DTIGauge = ({ percentage }: { percentage: number }) => {
   );
 };
 
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
+
 const DTICalculator = ({ onBack }: DTICalculatorProps) => {
   const [income, setIncome] = useState(0);
   const [debts, setDebts] = useState({
@@ -50,7 +52,6 @@ const DTICalculator = ({ onBack }: DTICalculatorProps) => {
     other: 0
   });
   const [showResults, setShowResults] = useState(false);
-  const [email, setEmail] = useState('');
 
   const updateDebt = (field: keyof typeof debts, value: number) => {
     setDebts({ ...debts, [field]: value || 0 });
@@ -78,11 +79,6 @@ const DTICalculator = ({ onBack }: DTICalculatorProps) => {
 
   const handleCalculate = () => {
     setShowResults(true);
-  };
-
-  const handleEmailSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Email submitted:', email);
   };
 
   const { dtiRatio, totalDebt, mortgageQualified, autoLoanQualified, debtReductionForMortgage, debtReductionForAuto } = calculateDTI();
@@ -247,28 +243,30 @@ const DTICalculator = ({ onBack }: DTICalculatorProps) => {
             </ul>
           </div>
 
-          {/* Email Capture */}
-          <div className="bg-gray-900 rounded-lg p-6 text-white">
-            <h4 className="font-bold mb-2">Want personalized DTI improvement tips?</h4>
-            <p className="text-gray-300 text-sm mb-4">
-              Enter your email to receive a custom action plan
+          {/* SmartCredit Offer */}
+          <div className="bg-[#3e3e3e] rounded-lg p-6 text-white">
+            <div className="flex items-center gap-2 mb-2">
+              <Target className="w-5 h-5 text-amber-400" />
+              <h4 className="font-bold">Want to improve your DTI ratio?</h4>
+            </div>
+            <p className="text-amber-400 font-semibold mb-2">
+              Our Recommended Tool to Help Achieve Your Desired Goal Faster
             </p>
-            <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
-                className="flex-1 px-4 py-3 rounded-lg text-gray-900"
-                required
-              />
-              <button 
-                type="submit"
-                className="px-6 py-3 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors whitespace-nowrap"
-              >
-                Send My Plan
-              </button>
-            </form>
+            <p className="text-gray-300 text-sm mb-4">
+              Unlock SmartCredit's <strong>Money Manager</strong> to track all your debts and income in one dashboard, making it easier to monitor and improve your DTI ratio.
+            </p>
+            <p className="text-green-400 text-sm font-medium mb-4">
+              Special Offer: Just $1 for the first 7 days
+            </p>
+            <a 
+              href={SMARTCREDIT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors"
+            >
+              <span>Get SmartCredit Money Manager</span>
+              <ArrowRight className="w-5 h-5 flex-shrink-0" />
+            </a>
           </div>
 
           {/* Disclaimer */}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { DollarSign, Plus, X, ArrowLeft, Percent } from 'lucide-react';
+import { DollarSign, Plus, X, ArrowLeft, Percent, Target, ArrowRight } from 'lucide-react';
 import { formatCurrency, formatMonths, calculateMonthsToPayoff, calculateTotalInterest } from '@/utils/calculations';
 
 interface Debt {
@@ -20,13 +20,14 @@ interface PayoffResult {
   order: Debt[];
 }
 
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
+
 const DebtPayoffCalculator = ({ onBack }: DebtPayoffCalculatorProps) => {
   const [debts, setDebts] = useState<Debt[]>([
     { id: '1', name: 'Credit Card 1', balance: 0, apr: 0, minPayment: 0 }
   ]);
   const [extraPayment, setExtraPayment] = useState(0);
   const [showResults, setShowResults] = useState(false);
-  const [email, setEmail] = useState('');
 
   const addDebt = () => {
     setDebts([...debts, { 
@@ -50,94 +51,168 @@ const DebtPayoffCalculator = ({ onBack }: DebtPayoffCalculatorProps) => {
     ));
   };
 
+  // NPER formula: calculates months to pay off a debt
+  const nper = (monthlyRate: number, payment: number, balance: number): number => {
+    if (balance <= 0) return 0;
+    if (payment <= 0) return Infinity;
+    if (monthlyRate === 0) return balance / payment;
+    
+    const ratio = balance * monthlyRate / payment;
+    if (ratio >= 1) return Infinity; // Payment doesn't cover interest
+    
+    return -Math.log(1 - ratio) / Math.log(1 + monthlyRate);
+  };
+
+  // Calculate balance after n months of payments
+  const balanceAfterMonths = (principal: number, monthlyRate: number, payment: number, months: number): number => {
+    if (monthlyRate === 0) return Math.max(0, principal - payment * months);
+    if (months <= 0) return principal;
+    
+    const factor = Math.pow(1 + monthlyRate, months);
+    return principal * factor - payment * (factor - 1) / monthlyRate;
+  };
+
+  // Calculate interest paid over n months
+  const interestPaidOverMonths = (principal: number, monthlyRate: number, payment: number, months: number): number => {
+    const totalPaid = payment * months;
+    const principalPaid = principal - balanceAfterMonths(principal, monthlyRate, payment, months);
+    return totalPaid - principalPaid;
+  };
+
   const calculateMinimumPath = (): PayoffResult => {
     let totalInterest = 0;
     let maxMonths = 0;
+    let hasInfinite = false;
     
     debts.forEach(debt => {
       if (debt.balance <= 0 || debt.minPayment <= 0) return;
       
-      const months = calculateMonthsToPayoff(debt.balance, debt.apr, debt.minPayment);
-      if (isFinite(months)) {
-        const interest = calculateTotalInterest(debt.minPayment, months, debt.balance);
+      const monthlyRate = debt.apr / 100 / 12;
+      const months = nper(monthlyRate, debt.minPayment, debt.balance);
+      
+      if (!isFinite(months)) {
+        hasInfinite = true;
+        // Estimate interest for display (e.g., 30 years of payments)
+        const estimatedMonths = 360;
+        const interest = interestPaidOverMonths(debt.balance, monthlyRate, debt.minPayment, estimatedMonths);
+        totalInterest += interest;
+        maxMonths = Math.max(maxMonths, estimatedMonths);
+      } else {
+        const interest = (debt.minPayment * months) - debt.balance;
         totalInterest += interest;
         maxMonths = Math.max(maxMonths, months);
       }
     });
     
-    return { months: maxMonths, totalInterest, order: debts };
+    return { 
+      months: hasInfinite ? Infinity : Math.ceil(maxMonths), 
+      totalInterest, 
+      order: debts 
+    };
   };
 
   const calculateSnowball = (): PayoffResult => {
-    const sortedDebts = [...debts].sort((a, b) => a.balance - b.balance);
-    return simulatePayoff(sortedDebts);
+    // Sort by balance (smallest first), then by APR (highest first) for ties
+    const sortedDebts = debts
+      .map(d => ({ ...d }))
+      .sort((a, b) => {
+        if (a.balance !== b.balance) return a.balance - b.balance;
+        return b.apr - a.apr;
+      });
+    
+    return calculateStrategyPayoff(sortedDebts, 'Snowball');
   };
 
   const calculateAvalanche = (): PayoffResult => {
-    const sortedDebts = [...debts].sort((a, b) => b.apr - a.apr);
-    return simulatePayoff(sortedDebts);
+    // Sort by APR (highest first), then by balance (smallest first) for ties
+    const sortedDebts = debts
+      .map(d => ({ ...d }))
+      .sort((a, b) => {
+        if (a.apr !== b.apr) return b.apr - a.apr;
+        return a.balance - b.balance;
+      });
+    
+    return calculateStrategyPayoff(sortedDebts, 'Avalanche');
   };
 
-  const simulatePayoff = (orderedDebts: Debt[]): PayoffResult => {
-    // Create working copies with current balance tracking
-    let remainingDebts = orderedDebts.map(d => ({ ...d, currentBalance: d.balance }));
+  const calculateStrategyPayoff = (orderedDebts: Debt[], methodName: string): PayoffResult => {
+    // Create working copies with current balances
+    const workingDebts = orderedDebts.map(d => ({
+      ...d,
+      currentBalance: d.balance,
+      monthlyRate: d.apr / 100 / 12
+    }));
+
+    let totalMonths = 0;
     let totalInterest = 0;
-    let months = 0;
+    let availableExtra = extraPayment; // Extra payment capacity
 
-    // Track total extra payment available (starts with user's extra, grows as debts pay off)
-    let rollingExtra = extraPayment;
+    // Process each debt in priority order
+    for (let targetIndex = 0; targetIndex < workingDebts.length; targetIndex++) {
+      const targetDebt = workingDebts[targetIndex];
+      
+      if (targetDebt.currentBalance <= 0) continue;
 
-    while (remainingDebts.some(d => d.currentBalance > 0) && months < 600) {
-      months++;
-
-      // Calculate this month's extra pool (rolling extra from previous months)
-      let extraPool = rollingExtra;
-
-      // Process each debt in priority order
-      for (let i = 0; i < remainingDebts.length; i++) {
-        const debt = remainingDebts[i];
-        if (debt.currentBalance <= 0) continue;
-
-        // Calculate interest for this month
-        const monthlyRate = (debt.apr / 100) / 12;
-        const interest = debt.currentBalance * monthlyRate;
-        totalInterest += interest;
-
-        // Add interest to balance
-        debt.currentBalance += interest;
-
-        // Determine payment: minimum + any available extra for the first unpaid debt
-        let payment = debt.minPayment;
-
-        // First unpaid debt gets all available extra
-        const isFirstUnpaid = i === remainingDebts.findIndex(d => d.currentBalance > 0);
-        if (isFirstUnpaid) {
-          payment += extraPool;
-        }
-
-        // Apply payment
-        debt.currentBalance -= payment;
-
-        // If debt is paid off, add its min payment to rolling extra for future months
-        if (debt.currentBalance <= 0) {
-          // Any overpayment is "lost" (paid to debt, not refunded)
-          debt.currentBalance = 0;
-          // This debt's minimum payment now joins the rolling extra for next month
-          rollingExtra += debt.minPayment;
-        }
+      // Calculate payment for target debt: its minimum + all available extra
+      const targetPayment = targetDebt.minPayment + availableExtra;
+      
+      // Calculate months to pay off target debt
+      let monthsForTarget = nper(targetDebt.monthlyRate, targetPayment, targetDebt.currentBalance);
+      
+      if (!isFinite(monthsForTarget)) {
+        // Even with extra, can't pay off - use a cap
+        monthsForTarget = 600 - totalMonths;
+        if (monthsForTarget <= 0) break;
       }
+
+      // During this time, all other unpaid debts are being paid at their minimums
+      // Calculate their balance changes and interest
+      for (let i = targetIndex + 1; i < workingDebts.length; i++) {
+        const otherDebt = workingDebts[i];
+        if (otherDebt.currentBalance <= 0) continue;
+
+        // Interest accrued on other debt while paying target
+        const interestOnOther = interestPaidOverMonths(
+          otherDebt.currentBalance,
+          otherDebt.monthlyRate,
+          otherDebt.minPayment,
+          monthsForTarget
+        );
+        totalInterest += interestOnOther;
+
+        // Update other debt's balance after these months
+        otherDebt.currentBalance = balanceAfterMonths(
+          otherDebt.currentBalance,
+          otherDebt.monthlyRate,
+          otherDebt.minPayment,
+          monthsForTarget
+        );
+      }
+
+      // Calculate interest paid on target debt
+      const interestOnTarget = (targetPayment * monthsForTarget) - targetDebt.currentBalance;
+      totalInterest += interestOnTarget;
+
+      // Target debt is now paid off
+      targetDebt.currentBalance = 0;
+      totalMonths += monthsForTarget;
+
+      // Target debt's minimum payment is now freed up for next debt
+      availableExtra += targetDebt.minPayment;
     }
 
-    return { months, totalInterest, order: orderedDebts };
+    console.log(`${methodName}: ${totalMonths.toFixed(1)} months, $${totalInterest.toFixed(2)} interest`);
+    console.log(`${methodName} order:`, orderedDebts.map(d => `${d.name}: $${d.balance} @ ${d.apr}%`));
+
+    return { 
+      months: Math.ceil(totalMonths), 
+      totalInterest, 
+      order: orderedDebts 
+    };
   };
 
   const handleCalculate = () => {
     setShowResults(true);
-  };
-
-  const handleEmailSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Email submitted:', email);
   };
 
   const currentPath = calculateMinimumPath();
@@ -294,15 +369,20 @@ const DebtPayoffCalculator = ({ onBack }: DebtPayoffCalculatorProps) => {
                 <div>
                   <div className="text-sm text-gray-600">Debt-Free In</div>
                   <div className="text-2xl font-bold text-gray-900">
-                    {formatMonths(currentPath.months)}
+                    {!isFinite(currentPath.months) ? 'Never (payment too low)' : formatMonths(currentPath.months)}
                   </div>
                 </div>
                 <div>
                   <div className="text-sm text-gray-600">Total Interest</div>
                   <div className="text-xl font-bold text-red-600">
-                    {formatCurrency(currentPath.totalInterest)}
+                    {!isFinite(currentPath.months) ? '∞' : formatCurrency(currentPath.totalInterest)}
                   </div>
                 </div>
+                {!isFinite(currentPath.months) && (
+                  <p className="text-xs text-red-600 mt-2">
+                    Some debts have minimum payments that don't cover monthly interest
+                  </p>
+                )}
               </div>
             </div>
             
@@ -328,9 +408,11 @@ const DebtPayoffCalculator = ({ onBack }: DebtPayoffCalculatorProps) => {
                     {formatCurrency(snowball.totalInterest)}
                   </div>
                 </div>
-                <div className="text-sm text-green-600 font-medium">
-                  Saves {formatCurrency(currentPath.totalInterest - snowball.totalInterest)}
-                </div>
+                {isFinite(currentPath.months) && currentPath.totalInterest > snowball.totalInterest && (
+                  <div className="text-sm text-green-600 font-medium">
+                    Saves {formatCurrency(currentPath.totalInterest - snowball.totalInterest)} vs minimums
+                  </div>
+                )}
               </div>
             </div>
             
@@ -356,12 +438,25 @@ const DebtPayoffCalculator = ({ onBack }: DebtPayoffCalculatorProps) => {
                     {formatCurrency(avalanche.totalInterest)}
                   </div>
                 </div>
-                <div className="text-sm text-green-600 font-medium">
-                  Saves {formatCurrency(currentPath.totalInterest - avalanche.totalInterest)}
-                </div>
+                {isFinite(currentPath.months) && currentPath.totalInterest > avalanche.totalInterest && (
+                  <div className="text-sm text-green-600 font-medium">
+                    Saves {formatCurrency(currentPath.totalInterest - avalanche.totalInterest)} vs minimums
+                  </div>
+                )}
               </div>
             </div>
           </div>
+
+          {/* Comparison between methods */}
+          {snowball.totalInterest !== avalanche.totalInterest && (
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+              <p className="text-sm text-gray-700">
+                <strong>{avalanche.totalInterest < snowball.totalInterest ? 'Avalanche' : 'Snowball'}</strong> saves{' '}
+                <strong>{formatCurrency(Math.abs(snowball.totalInterest - avalanche.totalInterest))}</strong>{' '}
+                more in interest compared to {avalanche.totalInterest < snowball.totalInterest ? 'Snowball' : 'Avalanche'}.
+              </p>
+            </div>
+          )}
 
           {/* Payoff Order */}
           <div className="bg-gray-50 rounded-lg p-6">
@@ -381,28 +476,30 @@ const DebtPayoffCalculator = ({ onBack }: DebtPayoffCalculatorProps) => {
             </ol>
           </div>
 
-          {/* Email Capture */}
-          <div className="bg-gray-900 rounded-lg p-6 text-white">
-            <h4 className="font-bold mb-2">Want a detailed payoff schedule?</h4>
-            <p className="text-gray-300 text-sm mb-4">
-              Enter your email to receive a month-by-month payment plan
+          {/* SmartCredit Offer */}
+          <div className="bg-[#3e3e3e] rounded-lg p-6 text-white">
+            <div className="flex items-center gap-2 mb-2">
+              <Target className="w-5 h-5 text-amber-400" />
+              <h4 className="font-bold">Want a detailed payoff schedule?</h4>
+            </div>
+            <p className="text-amber-400 font-semibold mb-2">
+              Our Recommended Tool to Help Achieve Your Desired Goal Faster
             </p>
-            <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
-                className="flex-1 px-4 py-3 rounded-lg text-gray-900"
-                required
-              />
-              <button 
-                type="submit"
-                className="px-6 py-3 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors whitespace-nowrap"
-              >
-                Send My Schedule
-              </button>
-            </form>
+            <p className="text-gray-300 text-sm mb-4">
+              Unlock SmartCredit's <strong>Money Manager</strong> to track all your debts in one place, plus <strong>ScoreBoost™</strong> to see how paying them down affects your score.
+            </p>
+            <p className="text-green-400 text-sm font-medium mb-4">
+              Special Offer: Just $1 for the first 7 days
+            </p>
+            <a 
+              href={SMARTCREDIT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors"
+            >
+              <span>Get Money Manager + ScoreBoost™</span>
+              <ArrowRight className="w-5 h-5 flex-shrink-0" />
+            </a>
           </div>
 
           {/* Disclaimer */}

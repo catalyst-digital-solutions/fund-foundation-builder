@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Calculator,
   ArrowDown,
@@ -72,6 +72,11 @@ const FinancialCalculators = () => {
   const [filter, setFilter] = useState<FilterType>('all');
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
   const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
+
+  // Scroll to top when switching between calculators
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [activeCalculator]);
 
   const openCalendly = () => setIsCalendlyOpen(true);
   const closeCalendly = () => setIsCalendlyOpen(false);

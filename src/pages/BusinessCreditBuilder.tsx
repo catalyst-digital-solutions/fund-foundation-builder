@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {
   CheckCircle, X, ArrowRight, Phone, ChevronDown,
   Shield, Building, TrendingUp, CreditCard, Target,
-  LayoutGrid, Search, Users, Star, Play
+  LayoutGrid, Search, Users, Star
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -890,14 +890,16 @@ const VideoSection = () => {
           Watch a quick walkthrough of the software platform
         </p>
 
-        <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl p-12 shadow-lg border-4 border-[#f9c65d]">
-          <div className="flex flex-col items-center justify-center">
-            <Play className="w-20 h-20 text-[#f9c65d] mb-4" strokeWidth={2} />
-            <p className="text-gray-700 font-semibold mb-4">Video Walkthrough</p>
-            <p className="text-gray-600 text-sm max-w-2xl">
-              See exactly how the Fundability<sup>®</sup> system works, what the software looks like, and how we guide you through each stage of building business credit that unlocks real funding.
-            </p>
-          </div>
+        <div className="rounded-xl overflow-hidden shadow-lg border-4 border-[#f9c65d]">
+          <video 
+            className="w-full aspect-video"
+            controls
+            poster="/Mesa-BCFS-Video-thumbnail.jpg"
+            preload="metadata"
+          >
+            <source src="/Mesa BCFS Video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
         <p className="text-gray-600 mt-6 leading-relaxed">

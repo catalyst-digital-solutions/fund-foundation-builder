@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import { DollarSign, ArrowLeft, Percent, Calendar } from 'lucide-react';
+import { DollarSign, ArrowLeft, Percent, Calendar, Target, ArrowRight } from 'lucide-react';
 import { calculateMonthlyPayment, formatCurrency } from '@/utils/calculations';
 
 interface MonthlyPaymentCalculatorProps {
   onBack: () => void;
 }
+
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
 
 const MonthlyPaymentCalculator = ({ onBack }: MonthlyPaymentCalculatorProps) => {
   const [principal, setPrincipal] = useState(0);
@@ -12,17 +14,11 @@ const MonthlyPaymentCalculator = ({ onBack }: MonthlyPaymentCalculatorProps) => 
   const [termMonths, setTermMonths] = useState(36);
   const [termType, setTermType] = useState<'months' | 'years'>('months');
   const [showResults, setShowResults] = useState(false);
-  const [email, setEmail] = useState('');
 
   const getMonths = () => termType === 'years' ? termMonths * 12 : termMonths;
 
   const handleCalculate = () => {
     setShowResults(true);
-  };
-
-  const handleEmailSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Email submitted:', email);
   };
 
   const result = calculateMonthlyPayment(principal, apr, getMonths());
@@ -238,28 +234,30 @@ const MonthlyPaymentCalculator = ({ onBack }: MonthlyPaymentCalculatorProps) => 
             </ul>
           </div>
 
-          {/* Email Capture */}
-          <div className="bg-gray-900 rounded-lg p-6 text-white">
-            <h4 className="font-bold mb-2">Want an amortization schedule?</h4>
-            <p className="text-gray-300 text-sm mb-4">
-              Enter your email to receive a full payment breakdown showing principal vs interest each month
+          {/* SmartCredit Offer */}
+          <div className="bg-[#3e3e3e] rounded-lg p-6 text-white">
+            <div className="flex items-center gap-2 mb-2">
+              <Target className="w-5 h-5 text-amber-400" />
+              <h4 className="font-bold">Want to track your loan payments?</h4>
+            </div>
+            <p className="text-amber-400 font-semibold mb-2">
+              Our Recommended Tool to Help Achieve Your Desired Goal Faster
             </p>
-            <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
-                className="flex-1 px-4 py-3 rounded-lg text-gray-900"
-                required
-              />
-              <button 
-                type="submit"
-                className="px-6 py-3 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors whitespace-nowrap"
-              >
-                Send Schedule
-              </button>
-            </form>
+            <p className="text-gray-300 text-sm mb-4">
+              Unlock SmartCredit's <strong>Money Manager</strong> to track all your loans in one place, plus <strong>ScoreBoost™</strong> to see how your payments impact your credit score.
+            </p>
+            <p className="text-green-400 text-sm font-medium mb-4">
+              Special Offer: Just $1 for the first 7 days
+            </p>
+            <a 
+              href={SMARTCREDIT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors"
+            >
+              <span>Get Money Manager + ScoreBoost™</span>
+              <ArrowRight className="w-5 h-5 flex-shrink-0" />
+            </a>
           </div>
 
           {/* Disclaimer */}

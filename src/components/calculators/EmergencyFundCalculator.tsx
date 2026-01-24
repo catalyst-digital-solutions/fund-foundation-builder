@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { DollarSign, ArrowLeft, Shield, TrendingUp, Calendar } from 'lucide-react';
+import { DollarSign, ArrowLeft, Shield, TrendingUp, Calendar, Target, ArrowRight } from 'lucide-react';
 import { formatCurrency, formatMonths } from '@/utils/calculations';
 
 interface EmergencyFundCalculatorProps {
@@ -7,6 +7,8 @@ interface EmergencyFundCalculatorProps {
 }
 
 type Stability = 'stable' | 'moderate' | 'unstable';
+
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
 
 const ProgressBar = ({ current, target }: { current: number; target: number }) => {
   const percentage = target > 0 ? Math.min((current / target) * 100, 100) : 0;
@@ -36,7 +38,6 @@ const EmergencyFundCalculator = ({ onBack }: EmergencyFundCalculatorProps) => {
   const [monthlySavings, setMonthlySavings] = useState(0);
   const [stability, setStability] = useState<Stability>('stable');
   const [showResults, setShowResults] = useState(false);
-  const [email, setEmail] = useState('');
 
   const getMultiplier = (s: Stability) => {
     switch (s) {
@@ -66,11 +67,6 @@ const EmergencyFundCalculator = ({ onBack }: EmergencyFundCalculatorProps) => {
 
   const handleCalculate = () => {
     setShowResults(true);
-  };
-
-  const handleEmailSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Email submitted:', email);
   };
 
   const { targetFund, amountNeeded, monthsToGoal, accelerated, goalDate, multiplier } = calculateEmergencyFund();
@@ -305,28 +301,30 @@ const EmergencyFundCalculator = ({ onBack }: EmergencyFundCalculatorProps) => {
             </ul>
           </div>
 
-          {/* Email Capture */}
-          <div className="bg-gray-900 rounded-lg p-6 text-white">
-            <h4 className="font-bold mb-2">Want a personalized savings plan?</h4>
-            <p className="text-gray-300 text-sm mb-4">
-              Enter your email to receive a month-by-month savings tracker and tips
+          {/* SmartCredit Offer */}
+          <div className="bg-[#3e3e3e] rounded-lg p-6 text-white">
+            <div className="flex items-center gap-2 mb-2">
+              <Target className="w-5 h-5 text-amber-400" />
+              <h4 className="font-bold">Want to track your savings progress?</h4>
+            </div>
+            <p className="text-amber-400 font-semibold mb-2">
+              Our Recommended Tool to Help Achieve Your Desired Goal Faster
             </p>
-            <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
-                className="flex-1 px-4 py-3 rounded-lg text-gray-900"
-                required
-              />
-              <button 
-                type="submit"
-                className="px-6 py-3 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors whitespace-nowrap"
-              >
-                Send My Plan
-              </button>
-            </form>
+            <p className="text-gray-300 text-sm mb-4">
+              Unlock SmartCredit's <strong>Money Manager</strong> to track your savings, expenses, and financial goals all in one place—making it easier to build your emergency fund.
+            </p>
+            <p className="text-green-400 text-sm font-medium mb-4">
+              Special Offer: Just $1 for the first 7 days
+            </p>
+            <a 
+              href={SMARTCREDIT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 bg-amber-400 text-gray-900 font-semibold rounded-lg hover:bg-amber-500 transition-colors"
+            >
+              <span>Get SmartCredit Money Manager</span>
+              <ArrowRight className="w-5 h-5 flex-shrink-0" />
+            </a>
           </div>
 
           {/* Disclaimer */}

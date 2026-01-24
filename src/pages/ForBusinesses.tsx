@@ -923,7 +923,7 @@ const ForBusinesses = () => {
               </span>
             </div>
             <div className="text-sm text-gray-600">
-              Serving business owners nationwide | Licensed in all 50 states
+              Serving business owners nationwide
             </div>
             <div className="text-sm text-gray-600">
               Operating through Mesa Group Consulting & Mesa Group Capital
