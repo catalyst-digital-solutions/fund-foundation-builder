@@ -919,7 +919,7 @@ const ForBusinesses = () => {
           <div className="mt-8 space-y-2">
             <div className="inline-block bg-green-100 px-4 py-2 rounded-full">
               <span className="text-sm font-medium text-green-800">
-                Currently booking consultations 3-5 days out
+                Serving All 50 States
               </span>
             </div>
             <div className="text-sm text-gray-600">

@@ -487,12 +487,13 @@ const ForConsumers = () => {
             </div>
 
             <div className="hidden lg:block">
-              <div className="bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl p-8 aspect-square flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <Shield className="w-24 h-24 text-amber-600 mx-auto" />
-                  <p className="text-xl font-semibold text-gray-800">Your Financial Partner</p>
-                  <p className="text-gray-600">Trusted by 2,500+ clients</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/img-03-happy-family-in-front-of-home-cropped.jpeg" 
+                  alt="Happy family standing proudly in front of their new home - Mesa Group Consulting client success story" 
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                />
               </div>
             </div>
           </div>
@@ -528,8 +529,9 @@ const ForConsumers = () => {
       </section>
 
       {/* Intro Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-16 md:py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/img-geometric-financial-bg.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="absolute inset-0 bg-white/70"></div>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
             Financial Solutions Built for <span className="text-[#f9c65d]">Real People</span>, Real Situations
           </h2>

@@ -1162,14 +1162,6 @@ const FinalCTASection: React.FC<FinalCTASectionProps> = ({ openFullServiceModal,
           </div>
         </div>
 
-        {/* Footer Info */}
-        <div className="text-center text-gray-600">
-          <p className="font-bold text-gray-900">Mesa Group Capital</p>
-          <p>5001 California Ave Suite 219</p>
-          <p>Bakersfield, CA 93309</p>
-          <p className="mt-2">Operating nationwide. Specializing in business credit building since 2010.</p>
-        </div>
-
         {/* Compliance Disclaimers */}
         <div className="mt-12 bg-gray-50 rounded-xl p-8 border-2 border-gray-200">
           <h3 className="text-lg font-bold text-gray-900 mb-4">Important Disclosure:</h3>

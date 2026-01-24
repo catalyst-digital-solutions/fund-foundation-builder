@@ -1951,40 +1951,12 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ openApplicationModal }) => {
 
           <div className="text-center">
             <p className="text-gray-700 mb-2">Or call us: <a href="tel:6613103040" className="text-[#d4a84b] hover:text-[#c49a3d] font-bold">(661) 310-3040</a></p>
-            <p className="text-sm text-gray-600">📅 Currently booking consultations 5-7 days out</p>
             <p className="text-sm text-gray-600 mt-4">Mesa Group Capital operates nationwide. Backed by Mesa Group Consulting's expertise.</p>
           </div>
         </div>
 
         {/* Trust Badges */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
-          <div className="bg-white rounded-lg p-4 shadow">
-            <div className="text-2xl mb-2">🏆</div>
-            <div className="text-sm font-semibold text-gray-900">5.0 Star Rating on Google</div>
-          </div>
-          <div className="bg-white rounded-lg p-4 shadow">
-            <div className="text-2xl mb-2">✅</div>
-            <div className="text-sm font-semibold text-gray-900">Licensed in All 50 States</div>
-          </div>
-          <div className="bg-white rounded-lg p-4 shadow">
-            <div className="text-2xl mb-2">💰</div>
-            <div className="text-sm font-semibold text-gray-900">$50M+ in Funding Facilitated</div>
-          </div>
-          <div className="bg-white rounded-lg p-4 shadow">
-            <div className="text-2xl mb-2">🤝</div>
-            <div className="text-sm font-semibold text-gray-900">75+ Lender Network</div>
-          </div>
-          <div className="bg-white rounded-lg p-4 shadow">
-            <div className="text-2xl mb-2">⚡</div>
-            <div className="text-sm font-semibold text-gray-900">1,000+ Businesses Funded</div>
-          </div>
-          <div className="bg-white rounded-lg p-4 shadow">
-            <div className="text-2xl mb-2">🔒</div>
-            <div className="text-sm font-semibold text-gray-900">No Upfront Fees Ever</div>
-          </div>
-        </div>
-
-        <div className="mt-12 bg-gray-100 rounded-xl p-6 text-center">
+        <div className="bg-gray-100 rounded-xl p-6 text-center">
           <p className="text-xs text-gray-600 leading-relaxed">
             <strong>Disclaimers:</strong> Mesa Group Capital is a commercial loan brokerage operating in all 50 states. Our services are provided at no cost to clients—we earn commissions from lenders upon successful funding. Funding approval is based on credit profile health, business financials, and individual lender criteria. Minimum requirements listed are guidelines; exceptions may apply. Not all products available in all situations. The funding calculator provides estimates based on industry standards; actual amounts depend on individual assessment.
           </p>
