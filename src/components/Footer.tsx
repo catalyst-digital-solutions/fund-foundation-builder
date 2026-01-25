@@ -251,11 +251,23 @@ const Footer = () => {
       {/* ============================================== */}
       {/* NEW FOOTER PREVIEW - 4 COLUMN LAYOUT */}
       {/* ============================================== */}
-      <div className="bg-gradient-to-b from-amber-100 to-amber-50 border-t-4 border-[#f9c65d]">
-        {/* Preview Label */}
-        <div className="bg-[#f9c65d] text-[#3e3e3e] text-center py-2 font-bold text-sm">
-          FOOTER PREVIEW (FOR REVIEW)
+      
+      {/* Preview Label */}
+      <div className="bg-[#f9c65d] text-[#3e3e3e] text-center py-2 font-bold text-sm">
+        FOOTER PREVIEW (FOR REVIEW)
+      </div>
+
+      {/* Black Disclaimer Bar */}
+      <div className="bg-[#1a1a1a] py-4">
+        <div className="max-w-[50vw] mx-auto px-4">
+          <p className="text-white text-[10px] leading-relaxed text-center">
+            <strong>Disclaimers:</strong> The information on this website is for educational purposes only and does not constitute financial, legal, or tax advice. Mesa Group Consulting is not a lender and does not make credit decisions or provide financing. We may receive compensation through affiliate partnerships and referral arrangements. Credit repair services comply with CROA—you have the right to dispute inaccurate information with credit bureaus yourself at no cost. Results are not guaranteed and vary by individual circumstances. For detailed information, see our full <a href="https://www.mesagroupconsulting.com/disclaimer" className="underline hover:text-[#f9c65d] transition-colors">Disclaimer Page</a>.
+          </p>
         </div>
+      </div>
+
+      {/* Off-White/Cream 4-Column Footer */}
+      <div className="bg-gradient-to-b from-amber-100 to-amber-50">
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           {/* Desktop: 4 columns | Mobile: Stacked with collapsibles */}
@@ -581,19 +593,26 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Bottom Bar */}
-          <div className="mt-12 pt-8 border-t border-[#bb9446]/30">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-[#3e3e3e] text-sm">
-                © {new Date().getFullYear()} Mesa Group Consulting. All rights reserved.
-              </p>
-              <div className="flex flex-wrap justify-center gap-4 text-sm">
-                <a href="https://www.mesagroupconsulting.com/privacy-policy" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Privacy Policy</a>
-                <a href="https://www.mesagroupconsulting.com/terms-of-service" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Terms of Service</a>
-                <a href="https://www.mesagroupconsulting.com/disclaimer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Disclosures</a>
-              </div>
-            </div>
+        </div>
+      </div>
+
+      {/* Black Links Bar */}
+      <div className="bg-[#1a1a1a] py-4">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-6 text-white text-[15px]">
+            <a href="https://www.mesagroupconsulting.com/privacy-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">Privacy Policy</a>
+            <a href="https://www.mesagroupconsulting.com/terms-of-service" className="hover:text-[#f9c65d] hover:underline transition-colors">Terms of Service</a>
+            <a href="https://www.mesagroupconsulting.com/accessibility" className="hover:text-[#f9c65d] hover:underline transition-colors">Accessibility</a>
           </div>
+        </div>
+      </div>
+
+      {/* Black Copyright Bar */}
+      <div className="bg-[#1a1a1a] border-t border-white/10 py-4">
+        <div className="max-w-7xl mx-auto px-4">
+          <p className="text-center text-white text-[15px]">
+            © Copyright {new Date().getFullYear()} <a href="https://www.mesagroupconsulting.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#f9c65d] hover:underline transition-colors">Mesa Group Consulting.</a> All rights reserved.
+          </p>
         </div>
       </div>
       {/* END NEW FOOTER PREVIEW */}
