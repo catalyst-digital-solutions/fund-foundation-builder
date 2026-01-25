@@ -259,7 +259,7 @@ const Footer = () => {
 
       {/* Black Disclaimer Bar */}
       <div className="bg-[#1a1a1a] py-4">
-        <div className="max-w-[50vw] mx-auto px-4">
+        <div className="max-w-[80vw] mx-auto px-4">
           <p className="text-white text-[10px] leading-relaxed text-center">
             <strong>Disclaimers:</strong> The information on this website is for educational purposes only and does not constitute financial, legal, or tax advice. Mesa Group Consulting is not a lender and does not make credit decisions or provide financing. We may receive compensation through affiliate partnerships and referral arrangements. Credit repair services comply with CROA—you have the right to dispute inaccurate information with credit bureaus yourself at no cost. Results are not guaranteed and vary by individual circumstances. For detailed information, see our full <a href="https://www.mesagroupconsulting.com/disclaimer" className="underline hover:text-[#f9c65d] transition-colors">Disclaimer Page</a>.
           </p>
