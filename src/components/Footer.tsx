@@ -288,7 +288,7 @@ const Footer = () => {
                   <span className="text-base">🇪🇸</span> Hablamos Español
                 </p>
                 <p className="text-[#3e3e3e] text-sm flex items-center gap-2">
-                  <span className="text-base">🇮🇳</span> ਅਸੀਂ ਪੰਜਾਬੀ ਬੋਲਦੇ ਹਾਂ
+                  <span className="text-base">🇮🇳</span> Assi Punjabi Bolde Haan
                 </p>
               </div>
 
@@ -561,7 +561,6 @@ const Footer = () => {
 
               {/* Trust Indicators */}
               <div>
-                <h4 className="text-[#bb9446] font-semibold text-sm mb-3">TRUST INDICATORS</h4>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-[#3e3e3e] text-sm">
                     <Star className="w-4 h-4 text-[#f9c65d] fill-[#f9c65d]" />
