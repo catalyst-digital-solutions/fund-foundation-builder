@@ -1058,8 +1058,8 @@ const CreditRepair = () => {
           <div className="mt-12 bg-white rounded-2xl p-8 shadow-xl border-l-4 border-amber-500">
             <div className="flex items-start gap-6">
               <img 
-                src="/testimonials/credit-repair/carlos-r-kern-county-ca.jpeg" 
-                alt="Carlos R." 
+                src="/testimonials/credit-repair/johnny-f-bakersfield-ca.jpeg" 
+                alt="Johnny F." 
                 className="w-20 h-20 rounded-full object-cover flex-shrink-0"
               />
               <div className="flex-1">
@@ -1069,7 +1069,7 @@ const CreditRepair = () => {
                 <p className="text-gray-700 italic mb-4">
                   "I came to Mesa Group with a 540 score and collections I didn't understand. My account manager, Maria, didn't just file disputes. She explained every step, taught me how credit utilization works, and helped me build a plan to keep my score high after the program. Nine months later, I'm at 710 and I finally understand how to manage my credit."
                 </p>
-                <p className="text-[#3E3E3E] font-semibold">— Carlos R., Bakersfield, CA</p>
+                <p className="text-[#3E3E3E] font-semibold">— Johnny F., Bakersfield, CA</p>
               </div>
             </div>
           </div>
