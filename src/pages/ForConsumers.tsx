@@ -424,17 +424,20 @@ const ForConsumers = () => {
     {
       quote: "Mesa Group helped me raise my credit score by over 100 points in just 4 months. Their team was supportive every step of the way.",
       name: "Maria G.",
-      service: "Credit Restoration"
+      service: "Credit Restoration",
+      image: "/testimonials/for-consumers/maria-g-credit-restoration.jpeg"
     },
     {
       quote: "I was drowning in debt and didn't know where to turn. They helped me settle my debts for less than half of what I owed.",
       name: "James T.",
-      service: "Debt Relief"
+      service: "Debt Relief",
+      image: "/testimonials/for-consumers/james-t-debt-relief.jpeg"
     },
     {
       quote: "The DIY credit software was exactly what I needed. Easy to use and saved me thousands compared to hiring a credit repair company.",
       name: "Sarah K.",
-      service: "DIY Credit Restoration"
+      service: "DIY Credit Restoration",
+      image: "/testimonials/for-consumers/sarah-k-diy-credit-restoration.jpeg"
     }
   ];
 
@@ -701,13 +704,18 @@ const ForConsumers = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md space-y-4">
-                <div className="flex gap-1">
+                <img 
+                  src={testimonial.image} 
+                  alt={testimonial.name} 
+                  className="w-16 h-16 rounded-full object-cover mx-auto"
+                />
+                <div className="flex gap-1 justify-center">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <Star key={star} className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
                   ))}
                 </div>
                 <p className="text-white italic leading-relaxed">"{testimonial.quote}"</p>
-                <div>
+                <div className="text-center">
                   <p className="font-semibold text-white">{testimonial.name}</p>
                   <p className="text-sm text-gray-300">{testimonial.service}</p>
                 </div>

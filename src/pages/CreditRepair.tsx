@@ -1205,47 +1205,67 @@ const CreditRepair = () => {
           {/* Testimonials Grid */}
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg">
-              <div className="flex gap-1 mb-4">
+              <img 
+                src="/testimonials/credit-repair/bill-d-bakersfield-ca.jpeg" 
+                alt="Bill D." 
+                className="w-16 h-16 rounded-full object-cover mx-auto mb-4"
+              />
+              <div className="flex gap-1 mb-4 justify-center">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
-              <h4 className="text-white font-bold mb-2">"From 540 to 695 in 75 Days: I Finally Got My Dream Home"</h4>
+              <h4 className="text-white font-bold mb-2 text-center">"From 540 to 695 in 75 Days: I Finally Got My Dream Home"</h4>
               <p className="text-gray-300 text-sm mb-4">
                 "I was skeptical after being denied for a mortgage twice. I'd tried DIY dispute letters with no results. Within 75 days of working with Mesa Group, they removed 6 inaccurate collections and my score increased from 540 to 695. Last month, I closed on my dream home in Bakersfield."
               </p>
-              <p className="text-white/80 text-sm">— Sarah M., Bakersfield, CA</p>
+              <p className="text-white/80 text-sm text-center">— Bill D., Bakersfield, CA</p>
             </div>
 
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg">
-              <div className="flex gap-1 mb-4">
+              <img 
+                src="/testimonials/credit-repair/carlos-r-kern-county-ca.jpeg" 
+                alt="Carlos R." 
+                className="w-16 h-16 rounded-full object-cover mx-auto mb-4"
+              />
+              <div className="flex gap-1 mb-4 justify-center">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
-              <h4 className="text-white font-bold mb-2">"100+ Point Increase in Under 4 Months"</h4>
+              <h4 className="text-white font-bold mb-2 text-center">"100+ Point Increase in Under 4 Months"</h4>
               <p className="text-gray-300 text-sm mb-4">
                 "I came to Mesa Group in the low 500s. Great experience, great communication. Across all three bureaus, we're up over 100 points. I was able to get approved for a business loan I'd been denied for twice before. Believe in the process."
               </p>
-              <p className="text-white/80 text-sm">— Carlos R., Kern County, CA</p>
+              <p className="text-white/80 text-sm text-center">— Carlos R., Kern County, CA</p>
             </div>
 
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg">
-              <div className="flex gap-1 mb-4">
+              <img 
+                src="/testimonials/credit-repair/david-r-bakersfield-ca.jpeg" 
+                alt="David R." 
+                className="w-16 h-16 rounded-full object-cover mx-auto mb-4"
+              />
+              <div className="flex gap-1 mb-4 justify-center">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
-              <h4 className="text-white font-bold mb-2">"Tried DIY for 6 Months, Got Nowhere"</h4>
+              <h4 className="text-white font-bold mb-2 text-center">"Tried DIY for 6 Months, Got Nowhere"</h4>
               <p className="text-gray-300 text-sm mb-4">
                 "I wasted 6 months trying to do it myself with templates from the internet. The bureaus ignored me. Mesa Group removed 3 items in the first 60 days, items I'd been fighting on my own for half a year. Wish I'd hired them sooner."
               </p>
-              <p className="text-white/80 text-sm">— David R., Bakersfield, CA</p>
+              <p className="text-white/80 text-sm text-center">— David R., Bakersfield, CA</p>
             </div>
 
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg">
-              <div className="flex gap-1 mb-4">
+              <img 
+                src="/testimonials/credit-repair/maria-l-ca.jpeg" 
+                alt="Maria L." 
+                className="w-16 h-16 rounded-full object-cover mx-auto mb-4"
+              />
+              <div className="flex gap-1 mb-4 justify-center">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
-              <h4 className="text-white font-bold mb-2">"Transparent Pricing, No Hidden Fees"</h4>
+              <h4 className="text-white font-bold mb-2 text-center">"Transparent Pricing, No Hidden Fees"</h4>
               <p className="text-gray-300 text-sm mb-4">
                 "I signed up for the monthly plan. Transparent pricing, no hidden fees. Canceled after 5 months when I hit my goal score (720). Exactly as advertised. No pressure to stay longer than I needed."
               </p>
-              <p className="text-white/80 text-sm">— Maria L., CA</p>
+              <p className="text-white/80 text-sm text-center">— Maria L., CA</p>
             </div>
           </div>
 

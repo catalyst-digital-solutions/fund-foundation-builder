@@ -1299,9 +1299,11 @@ const Homepage = () => {
               </p>
               
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full flex items-center justify-center text-white font-bold">
-                  MT
-                </div>
+                <img 
+                  src="/testimonials/homepage/michael-t-business-owner-bakersfield-ca.jpeg" 
+                  alt="Michael T." 
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div>
                   <p className="font-semibold text-white">Michael T.</p>
                   <p className="text-sm text-gray-400">Business Owner, Bakersfield, CA</p>
@@ -1321,9 +1323,11 @@ const Homepage = () => {
               </p>
               
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-400 rounded-full flex items-center justify-center text-white font-bold">
-                  SL
-                </div>
+                <img 
+                  src="/testimonials/homepage/sarah-l-homeowner-los-angeles-ca.jpeg" 
+                  alt="Sarah L." 
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div>
                   <p className="font-semibold text-white">Sarah L.</p>
                   <p className="text-sm text-gray-400">Homeowner, Los Angeles, CA</p>
@@ -1343,9 +1347,11 @@ const Homepage = () => {
               </p>
               
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-white font-bold">
-                  JR
-                </div>
+                <img 
+                  src="/testimonials/homepage/james-r-marketing-manager-fresno-ca.jpeg" 
+                  alt="James R." 
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div>
                   <p className="font-semibold text-white">James R.</p>
                   <p className="text-sm text-gray-400">Marketing Manager, Fresno, CA</p>
@@ -1365,9 +1371,11 @@ const Homepage = () => {
               </p>
               
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-400 rounded-full flex items-center justify-center text-white font-bold">
-                  JK
-                </div>
+                <img 
+                  src="/testimonials/homepage/jennifer-k-restaurant-owner-bakersfield-ca.jpeg" 
+                  alt="Jennifer K." 
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div>
                   <p className="font-semibold text-white">Jennifer K.</p>
                   <p className="text-sm text-gray-400">Restaurant Owner, Bakersfield, CA</p>
@@ -1387,9 +1395,11 @@ const Homepage = () => {
               </p>
               
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-cyan-400 rounded-full flex items-center justify-center text-white font-bold">
-                  DM
-                </div>
+                <img 
+                  src="/testimonials/homepage/david-m-financial-consultant-san-diego-ca.jpeg" 
+                  alt="David M." 
+                  className="w-12 h-12 rounded-full object-cover"
+                />
                 <div>
                   <p className="font-semibold text-white">David M.</p>
                   <p className="text-sm text-gray-400">Financial Consultant, San Diego, CA</p>

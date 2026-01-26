@@ -971,7 +971,12 @@ const AboutUs = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg space-y-4">
-              <div className="flex gap-1">
+              <img 
+                src="/testimonials/about/maria-t-bakersfield-ca.jpeg" 
+                alt="Maria T." 
+                className="w-16 h-16 rounded-full object-cover mx-auto"
+              />
+              <div className="flex gap-1 justify-center">
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
@@ -985,7 +990,12 @@ const AboutUs = () => {
             </div>
             
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg space-y-4">
-              <div className="flex gap-1">
+              <img 
+                src="/testimonials/about/james-k-business-owner-bakersield-ca.jpeg" 
+                alt="James K." 
+                className="w-16 h-16 rounded-full object-cover mx-auto"
+              />
+              <div className="flex gap-1 justify-center">
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
@@ -1000,7 +1010,12 @@ const AboutUs = () => {
             </div>
             
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg space-y-4">
-              <div className="flex gap-1">
+              <img 
+                src="/testimonials/about/david-l-referred-client-bakersield-ca.jpeg" 
+                alt="David L." 
+                className="w-16 h-16 rounded-full object-cover mx-auto"
+              />
+              <div className="flex gap-1 justify-center">
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
@@ -1016,7 +1031,12 @@ const AboutUs = () => {
             </div>
             
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg space-y-4">
-              <div className="flex gap-1">
+              <img 
+                src="/testimonials/about/robert-m-auto-financing-client-bakersield-ca.jpeg" 
+                alt="Robert M." 
+                className="w-16 h-16 rounded-full object-cover mx-auto"
+              />
+              <div className="flex gap-1 justify-center">
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
@@ -1030,7 +1050,12 @@ const AboutUs = () => {
             </div>
             
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-xl p-6 shadow-lg space-y-4 md:col-span-2">
-              <div className="flex gap-1">
+              <img 
+                src="/testimonials/about/daniel-rodriguez-bakersfield-entrepreneur.jpeg" 
+                alt="Daniel Rodriguez" 
+                className="w-16 h-16 rounded-full object-cover mx-auto"
+              />
+              <div className="flex gap-1 justify-center">
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />
                 <Star className="w-5 h-5 fill-[#f9c65d] text-[#f9c65d]" />

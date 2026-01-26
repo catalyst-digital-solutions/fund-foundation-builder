@@ -903,45 +903,60 @@ const AutoLoanRefi = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
-              <div className="flex gap-1 mb-4">
+              <img 
+                src="/testimonials/auto-loan-refi/christina-m-saved-$57-mont-$2,280-total.jpeg" 
+                alt="Christina M." 
+                className="w-16 h-16 rounded-full object-cover mx-auto mb-4"
+              />
+              <div className="flex gap-1 mb-4 justify-center">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                 ))}
               </div>
-              <p className="text-white mb-4 italic leading-relaxed">
+              <p className="text-white mb-4 italic leading-relaxed text-center">
                 "Refinanced my 2021 Honda Accord from 8.2% to 4.8% APR. My payment dropped from $498 to $441/month. That's an extra $57/month for groceries and gas!"
               </p>
-              <div className="pt-4 border-t border-white/30">
+              <div className="pt-4 border-t border-white/30 text-center">
                 <p className="font-semibold text-white">Christina M.</p>
                 <p className="text-sm text-white/90">Saved $57/month • $2,280 total</p>
               </div>
             </div>
             
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
-              <div className="flex gap-1 mb-4">
+              <img 
+                src="/testimonials/auto-loan-refi/david-r-saved-$120-month-$6,240-total.jpg" 
+                alt="David R." 
+                className="w-16 h-16 rounded-full object-cover mx-auto mb-4"
+              />
+              <div className="flex gap-1 mb-4 justify-center">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                 ))}
               </div>
-              <p className="text-white mb-4 italic leading-relaxed">
+              <p className="text-white mb-4 italic leading-relaxed text-center">
                 "I bought my truck at a dealership and got stuck with a 9.5% interest rate. Refinanced 4 months later at 5.2% and I'm saving over $120/month. Wish I'd known sooner!"
               </p>
-              <div className="pt-4 border-t border-white/30">
+              <div className="pt-4 border-t border-white/30 text-center">
                 <p className="font-semibold text-white">David R.</p>
                 <p className="text-sm text-white/90">Saved $120/month • $6,240 total</p>
               </div>
             </div>
             
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-lg p-6 shadow-md">
-              <div className="flex gap-1 mb-4">
+              <img 
+                src="/testimonials/auto-loan-refi/angela-t-saved-$85-month-$4,100-total.jpeg" 
+                alt="Angela T." 
+                className="w-16 h-16 rounded-full object-cover mx-auto mb-4"
+              />
+              <div className="flex gap-1 mb-4 justify-center">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                 ))}
               </div>
-              <p className="text-white mb-4 italic leading-relaxed">
+              <p className="text-white mb-4 italic leading-relaxed text-center">
                 "My credit score went from 640 to 710 over the past year. Refinanced my SUV and knocked 3% off my rate. The whole process took 10 days and saved me $4,100 in interest."
               </p>
-              <div className="pt-4 border-t border-white/30">
+              <div className="pt-4 border-t border-white/30 text-center">
                 <p className="font-semibold text-white">Angela T.</p>
                 <p className="text-sm text-white/90">Saved $85/month • $4,100 total</p>
               </div>
