@@ -1554,36 +1554,51 @@ const EnhancedSocialProofSection: React.FC<EnhancedSocialProofSectionProps> = ({
         <div className="grid md:grid-cols-3 gap-8 mb-12">
 
           <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-green-200">
-            <div className="flex items-center gap-1 mb-4">
+            <img 
+              src="/testimonials/business-funding/miguel-m-construction-company-owner-funded-$250k.jpeg" 
+              alt="Miguel M." 
+              className="w-20 h-20 rounded-full object-cover mx-auto mb-4"
+            />
+            <div className="flex items-center gap-1 mb-4 justify-center">
               {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-amber-500 fill-amber-500" />)}
             </div>
-            <p className="text-gray-700 italic leading-relaxed mb-4">
+            <p className="text-gray-700 italic leading-relaxed mb-4 text-center">
               "Mesa Group Capital got us $250K when three banks said no. Their broker relationships made the difference. We hired two employees, bought a second truck, and doubled revenue in six months. The team was transparent about timelines and delivered exactly what they promised."
             </p>
-            <p className="font-bold text-gray-900">— Sarah M.</p>
-            <p className="text-sm text-gray-600">Construction Company Owner | <strong>Funded: $250,000</strong></p>
+            <p className="font-bold text-gray-900 text-center">— Miguel M.</p>
+            <p className="text-sm text-gray-600 text-center">Construction Company Owner | <strong>Funded: $250,000</strong></p>
           </div>
 
           <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-green-200">
-            <div className="flex items-center gap-1 mb-4">
+            <img 
+              src="/testimonials/business-funding/lee-k-tech-startup-founder-funded-$85k.jpeg" 
+              alt="Lee K." 
+              className="w-20 h-20 rounded-full object-cover mx-auto mb-4"
+            />
+            <div className="flex items-center gap-1 mb-4 justify-center">
               {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-amber-500 fill-amber-500" />)}
             </div>
-            <p className="text-gray-700 italic leading-relaxed mb-4">
+            <p className="text-gray-700 italic leading-relaxed mb-4 text-center">
               "Funded in 18 days after months of rejections. The difference was night and day. Other brokers sent a generic application. Mesa Group Capital told our story and positioned us strategically across their lender network. They knew exactly which lenders would appreciate our tech business model."
             </p>
-            <p className="font-bold text-gray-900">— James K.</p>
-            <p className="text-sm text-gray-600">Tech Startup Founder | <strong>Funded: $85,000</strong></p>
+            <p className="font-bold text-gray-900 text-center">— Lee K.</p>
+            <p className="text-sm text-gray-600 text-center">Tech Startup Founder | <strong>Funded: $85,000</strong></p>
           </div>
 
           <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-green-200">
-            <div className="flex items-center gap-1 mb-4">
+            <img 
+              src="/testimonials/business-funding/connie-l-e-commerce-retailer-funded-$75k.jpeg" 
+              alt="Connie L." 
+              className="w-20 h-20 rounded-full object-cover mx-auto mb-4"
+            />
+            <div className="flex items-center gap-1 mb-4 justify-center">
               {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-amber-500 fill-amber-500" />)}
             </div>
-            <p className="text-gray-700 italic leading-relaxed mb-4">
+            <p className="text-gray-700 italic leading-relaxed mb-4 text-center">
               "Got $75K even with damaged credit from my divorce. I thought my credit was too damaged. They helped me understand what their lenders actually care about and which programs I qualified for. Got $75K for inventory through their factoring partner. Now we're on track for our best year ever."
             </p>
-            <p className="font-bold text-gray-900">— Patricia L.</p>
-            <p className="text-sm text-gray-600">E-commerce Retailer | <strong>Funded: $75,000</strong></p>
+            <p className="font-bold text-gray-900 text-center">— Connie L.</p>
+            <p className="text-sm text-gray-600 text-center">E-commerce Retailer | <strong>Funded: $75,000</strong></p>
           </div>
 
         </div>

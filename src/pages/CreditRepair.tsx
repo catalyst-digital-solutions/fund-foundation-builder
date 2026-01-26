@@ -1056,13 +1056,22 @@ const CreditRepair = () => {
 
           {/* Testimonial Callout */}
           <div className="mt-12 bg-white rounded-2xl p-8 shadow-xl border-l-4 border-amber-500">
-            <div className="flex gap-1 mb-4">
-              {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-amber-500 fill-amber-500" />)}
+            <div className="flex items-start gap-6">
+              <img 
+                src="/testimonials/credit-repair/carlos-r-kern-county-ca.jpeg" 
+                alt="Carlos R." 
+                className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+              />
+              <div className="flex-1">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-amber-500 fill-amber-500" />)}
+                </div>
+                <p className="text-gray-700 italic mb-4">
+                  "I came to Mesa Group with a 540 score and collections I didn't understand. My account manager, Maria, didn't just file disputes. She explained every step, taught me how credit utilization works, and helped me build a plan to keep my score high after the program. Nine months later, I'm at 710 and I finally understand how to manage my credit."
+                </p>
+                <p className="text-[#3E3E3E] font-semibold">— Carlos R., Bakersfield, CA</p>
+              </div>
             </div>
-            <p className="text-gray-700 italic mb-4">
-              "I came to Mesa Group with a 540 score and collections I didn't understand. My account manager, Maria, didn't just file disputes. She explained every step, taught me how credit utilization works, and helped me build a plan to keep my score high after the program. Nine months later, I'm at 710 and I finally understand how to manage my credit."
-            </p>
-            <p className="text-[#3E3E3E] font-semibold">— Carlos R., Bakersfield, CA</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
