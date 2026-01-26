@@ -35,6 +35,7 @@ import Contact from "./pages/Contact";
 import CreditUtilizationBlogPost from "./pages/blog/CreditUtilizationBlogPost";
 import WFBNABlogPost from "./pages/blog/WFBNABlogPost";
 import DebtReliefVsConsolidationBlogPost from "./pages/blog/DebtReliefVsConsolidationBlogPost";
+import TermsAndConditions from "./pages/TermsAndConditions";
 
 const queryClient = new QueryClient();
 
@@ -76,6 +77,7 @@ const App = () => (
           <Route path="/business-funding" element={<BusinessFunding />} />
           <Route path="/business-debt-relief" element={<BusinessDebtRelief />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

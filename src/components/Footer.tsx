@@ -232,7 +232,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-6 text-[#2C2C2C] text-[15px]">
             <a href="https://www.mesagroupconsulting.com/privacy-policy" className="hover:underline">Privacy Policy</a>
-            <a href="https://www.mesagroupconsulting.com/terms-of-service" className="hover:underline">Terms of Service</a>
+            <Link to="/terms-and-conditions" className="hover:underline">Terms & Conditions</Link>
             <a href="https://www.mesagroupconsulting.com/disclaimer" className="hover:underline">Disclaimer</a>
             <a href="https://www.mesagroupconsulting.com/accessibility" className="hover:underline">Accessibility</a>
           </div>
@@ -601,7 +601,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-6 text-white text-[15px]">
             <a href="https://www.mesagroupconsulting.com/privacy-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">Privacy Policy</a>
-            <a href="https://www.mesagroupconsulting.com/terms-of-service" className="hover:text-[#f9c65d] hover:underline transition-colors">Terms of Service</a>
+            <Link to="/terms-and-conditions" className="hover:text-[#f9c65d] hover:underline transition-colors">Terms & Conditions</Link>
             <a href="https://www.mesagroupconsulting.com/accessibility" className="hover:text-[#f9c65d] hover:underline transition-colors">Accessibility</a>
           </div>
         </div>
