@@ -192,7 +192,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a href="https://www.youtube.com/@MesaGroupCo" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#F9C65D] flex items-center justify-center hover:bg-[#bb9446] transition-colors">
-                  <Youtube className="w-4 h-4 text-[#2C2C2C]" fill="currentColor" />
+                  <Youtube className="w-4 h-4 text-[#2C2C2C]" />
                 </a>
               </div>
             </div>
@@ -554,7 +554,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a href="https://www.youtube.com/@MesaGroupCo" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-[#3e3e3e] flex items-center justify-center hover:bg-[#bb9446] transition-colors">
-                    <Youtube className="w-4 h-4 text-white" fill="currentColor" />
+                    <Youtube className="w-4 h-4 text-white" />
                   </a>
                 </div>
               </div>
