@@ -834,12 +834,14 @@ const TestimonialsSection = () => {
     {
       text: "This has been a lifesaver on all levels. Getting my LLC up and running, having advisors there to call when I need them.",
       author: "Michelle",
-      rating: 5
+      rating: 5,
+      image: "/testimonials/business-credit-builder/michelle.png"
     },
     {
       text: "It's been everything it was advertised to be and then some. I'm not sure where you can find a program that is as comprehensive.",
       author: "Curtis H.",
-      rating: 5
+      rating: 5,
+      image: "/testimonials/business-credit-builder/curtis-h.png"
     }
   ];
 
@@ -856,20 +858,27 @@ const TestimonialsSection = () => {
               key={index}
               className="bg-white rounded-xl p-8 shadow-lg border-2 border-gray-200"
             >
+              {/* Author Image */}
+              <img 
+                src={testimonial.image} 
+                alt={testimonial.author} 
+                className="w-20 h-20 rounded-full object-cover mx-auto mb-4"
+              />
+
               {/* Rating Stars */}
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-4 justify-center">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-6 h-6 fill-[#f9c65d] text-[#f9c65d]" />
                 ))}
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-lg text-gray-700 leading-relaxed mb-6 italic">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6 italic text-center">
                 "{testimonial.text}"
               </p>
 
               {/* Author */}
-              <p className="text-gray-900 font-bold">— {testimonial.author}</p>
+              <p className="text-gray-900 font-bold text-center">— {testimonial.author}</p>
             </div>
           ))}
         </div>
