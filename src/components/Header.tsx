@@ -176,7 +176,7 @@ const Header = () => {
           <div className="flex items-center h-[105px]">
             {/* Logo */}
             <Link to="/" className="flex items-center flex-shrink-0">
-              <MesaGroupLogo className="h-[40px] w-auto" />
+              <img src="/mgc-mesa-group-consulting-white-svg-logo.svg" alt="Mesa Group Consulting" className="h-[40px] w-auto" />
             </Link>
 
             {/* Divider */}

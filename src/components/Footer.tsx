@@ -276,7 +276,7 @@ const Footer = () => {
             {/* Column 1: About Mesa Group */}
             <div className="space-y-6">
               <div>
-                <img src={mesaLogoDark} alt="Mesa Group Consulting Logo" className="h-10 mb-4" />
+                <img src="/mgc-mesa-group-consulting-black-svg-logo.svg" alt="Mesa Group Consulting Logo" className="h-10 mb-4" />
                 <p className="text-[#3e3e3e] text-sm leading-relaxed">
                   Have a question about credit, funding, or your next financial move? Reach out today and let Mesa Group Consulting's trilingual team turn complex money problems into clear, actionable solutions.
                 </p>
