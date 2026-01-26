@@ -586,7 +586,7 @@ const Footer = () => {
               <div className="pt-4">
                 <p className="text-[#3e3e3e] text-sm mb-1">A</p>
                 <a href="https://www.catalyst-digital.solutions" target="_blank" rel="noopener noreferrer" className="block">
-                  <img src="/catalyst-digital-solutions-gray-logo-175.png" alt="Catalyst Digital Solutions" className="w-[160px] h-[56px] object-contain" />
+                  <img src="/Catalyst Digital Solutions Logos and Headers - Purple - Rev D.svg" alt="Catalyst Digital Solutions" className="w-[160px] h-[56px] object-contain" />
                 </a>
                 <p className="text-[#3e3e3e] text-sm mt-1">Website</p>
               </div>
