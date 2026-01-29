@@ -1268,5 +1268,101 @@ If applied sitewide, may need to use `lg:block` or `xl:block` instead of `md:blo
 
 ---
 
-**Last Updated:** January 24, 2026
+---
+
+## Recent Major Update #19 (January 29, 2026)
+
+### Contact Page Restructure & Calendly Modal Integration
+
+**Background:**
+Redesigned the Contact page to improve user experience with cleaner layout and modal-based consultation booking.
+
+**Changes Implemented:**
+
+**1. Hero Section Update**
+- Removed background image from hero
+- Reverted text colors to dark theme for better readability
+
+**2. New Office Location Section**
+- Moved office photo to dedicated section below hero
+- Added heading: "Come visit us at our location on California Avenue!"
+- Clickable address opens Google Maps
+
+**3. Consultation Sections Redesign**
+- Removed old "Free Consultation" sections (desktop and mobile versions)
+- Removed "In-Office Meeting" sections
+- Added three new full-width consultation sections:
+  - **English** - Calendly modal (`https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar`)
+  - **Spanish** - Calendly modal (`https://calendly.com/mesagroupconsulting/mesa-group-consulting-consulta`)
+  - **Punjabi** - GHL iframe modal (`https://link.mesagroupconsulting.com/widget/booking/5I7RpXpr10YWafm3DHdl`)
+
+**4. Modal Implementation**
+- CalendlyModal used for English and Spanish (with `customUrl` prop)
+- Custom inline modal for Punjabi GHL booking iframe
+- All modals styled consistently (white card, close button, overlay)
+
+**File Modified:** `src/pages/Contact.tsx`
+
+---
+
+## Upcoming Feature: External Link Interstitial Animation
+
+### Purpose
+Create a branded loading interstitial that displays when users click external affiliate/partner links, providing visual feedback during redirect.
+
+### Design (Per Evert's Specifications)
+```
+┌─────────────────────────────────────┐
+│                                     │
+│     [Mesa Group Consulting Logo]    │
+│                                     │
+│        Powered by [Partner]         │
+│                                     │
+│   One moment while we pull up      │
+│          your offer.               │
+│                                     │
+└─────────────────────────────────────┘
+```
+
+### Partner Mapping by Page
+
+| Page | Route | Partner | Logo Needed |
+|------|-------|---------|-------------|
+| **Auto Loan Refi** | `/auto-loan-refi` | SuperMoney | ✅ |
+| **DIY Credit Repair** | `/diy-credit-repair` | Creditily | ✅ |
+| **Calculators** (all 5) | Various | SmartCredit | ✅ |
+| **Credit Repair** | `/credit-repair` | Mesa Group Portal | Internal |
+| **Business Funding** | `/business-funding` | Mesa Group Capital | Internal |
+| **Business Credit Builder** | `/business-credit-builder` | Mesa Group Capital | Internal |
+| **Build Credit** | `/build-credit` | Multiple partners | Skip for now |
+
+### Implementation Architecture
+
+**Files to Create:**
+- `src/context/ExternalNavigationContext.tsx` - Global provider with context
+- `src/components/ExternalLoadingOverlay.tsx` - Branded overlay component
+- `src/components/ExternalLink.tsx` - Reusable link component
+
+**Key Features:**
+- Full-viewport semi-opaque overlay
+- Centered MGC logo + "Powered by [Partner]" + loading text
+- Fast fade-in/fade-out (150-250ms)
+- Auto-hide after 500ms for new-tab links
+- Respects `prefers-reduced-motion`
+- `aria-hidden="true"` for accessibility
+- Dynamic partner logo based on link destination
+
+**Technical Notes:**
+- CSS/Tailwind-only animations (no extra dependencies)
+- Context provider wraps entire app
+- ExternalLink component replaces plain `<a target="_blank">` tags
+- Partner name/logo passed as props to ExternalLink
+
+**Scope:**
+Phase 1: Pages with single external partner (Auto Loan Refi, DIY Credit Repair, Calculators)
+Phase 2: Consider Build Credit page with multiple partners (dynamic partner detection)
+
+---
+
+**Last Updated:** January 29, 2026
 **Project Status:** Active Development
