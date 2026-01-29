@@ -26,35 +26,6 @@ const Contact = () => {
     <div className="min-h-screen bg-white">
       <Header />
 
-      {/* Office Location Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-amber-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <img 
-                src="/5001-california-ave-bakersfield-ca-building-photo-4-mesa-group-consulting-office-location.jpg" 
-                alt="Mesa Group Consulting Office - 5001 California Ave, Bakersfield, CA" 
-                className="w-full h-64 md:h-96 object-cover"
-              />
-              <div className="p-6 md:p-8 text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  Come visit us at our location on <span className="text-[#f9c65d]">California Avenue!</span>
-                </h2>
-                <a 
-                  href="https://www.google.com/maps/dir//5001+California+Ave+%23+219,+Bakersfield,+CA+93309"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-lg text-gray-700 hover:text-[#bb9446] transition-colors"
-                >
-                  <MapPin className="w-5 h-5 text-[#bb9446]" />
-                  <span className="font-semibold">5001 California Ave Suite 219, Bakersfield, CA 93309</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Hero Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
@@ -108,6 +79,35 @@ const Contact = () => {
                   <ArrowUpRight className="w-5 h-5" />
                 </button>
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Office Location Section */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-amber-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+              <img 
+                src="/5001-california-ave-bakersfield-ca-building-photo-4-mesa-group-consulting-office-location.jpg" 
+                alt="Mesa Group Consulting Office - 5001 California Ave, Bakersfield, CA" 
+                className="w-full h-64 md:h-96 object-cover"
+              />
+              <div className="p-6 md:p-8 text-center">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                  Come visit us at our location on <span className="text-[#f9c65d]">California Avenue!</span>
+                </h2>
+                <a 
+                  href="https://www.google.com/maps/dir//5001+California+Ave+%23+219,+Bakersfield,+CA+93309"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-lg text-gray-700 hover:text-[#bb9446] transition-colors"
+                >
+                  <MapPin className="w-5 h-5 text-[#bb9446]" />
+                  <span className="font-semibold">5001 California Ave Suite 219, Bakersfield, CA 93309</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
