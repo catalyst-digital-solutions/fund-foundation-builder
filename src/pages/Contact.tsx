@@ -27,18 +27,21 @@ const Contact = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
+      <section className="relative py-16 md:py-24 bg-cover bg-center" style={{ backgroundImage: 'url(/5001-california-ave-bakersfield-ca-building-photo-4-mesa-group-consulting-office-location.jpg)' }}>
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/60"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Left Column - Content */}
             <div className="space-y-6">
               <div className="inline-block bg-amber-400 text-gray-900 px-3 py-1 rounded-md text-sm font-semibold">
                 CONTACT US
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Get Your <span className="text-[#f9c65d]">Free Credit Report Analysis</span> & Personalized Financial Strategy
               </h1>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-gray-100 leading-relaxed">
                 Have questions about your credit report or financial options? Our team is ready to help. Fill out this form to schedule your complimentary credit analysis with one of our Bakersfield specialists. We'll review your Experian, Equifax, and TransUnion reports, identify improvement opportunities, and develop a customized strategy for your unique situation. Most inquiries receive a response within 24 hours.
               </p>
             </div>
