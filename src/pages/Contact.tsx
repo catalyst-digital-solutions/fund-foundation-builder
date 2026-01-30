@@ -83,7 +83,7 @@ const Contact = () => {
             <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
               <iframe
                 src="https://link.mesagroupconsulting.com/widget/form/CaNQDAlt2BSYAOxTZb6b"
-                style={{ width: '100%', height: '1010px', border: 'none' }}
+                style={{ width: '100%', height: '1005px', border: 'none' }}
                 id="inline-CaNQDAlt2BSYAOxTZb6b"
                 data-layout="{'id':'INLINE'}"
                 data-trigger-type="alwaysShow"
