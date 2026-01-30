@@ -139,7 +139,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <img 
-              src="/infographics/what-to-expect-from-your-consultation-infographic-3.jpg"
+              src="/infographics/what-to-expect-from-your-consultation-infographic-4.jpg"
               alt="What to Expect from Your Free Consultation: 1. Schedule Your Call - Pick a time that works for you in English, Spanish, or Punjabi. 2. Tell Us Your Goals - Credit repair, business funding, LLC formation, or debt relief. 3. Get Your Custom Plan - Walk away with clear next steps, no pressure, just clarity. 30 minutes, 100% free, no obligation."
               className="w-full h-auto shadow-lg"
             />
