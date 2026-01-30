@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowUpRight, Send, Mail, Phone, MapPin, Clock, X } from 'lucide-react';
+import { ArrowUpRight, Send, Mail, Phone, MapPin, Clock, X, Globe, Calendar, MessageCircle, FileCheck } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { NewsletterModal } from '@/components/NewsletterModal';
@@ -40,15 +40,61 @@ const Contact = () => {
                 CONTACT US
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Get Your <span className="text-[#f9c65d]">Free Credit Report Analysis</span> & Personalized Financial Strategy
+                Transform Your Financial Future – <span className="text-[#f9c65d]">Let's Talk Strategy</span>
               </h1>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Have questions about your credit report or financial options? Our team is ready to help. Fill out this form to schedule your complimentary credit analysis with one of our Bakersfield specialists. We'll review your Experian, Equifax, and TransUnion reports, identify improvement opportunities, and develop a customized strategy for your unique situation. Most inquiries receive a response within 24 hours.
+              <p className="text-xl font-semibold text-[#bb9446]">
+                Free 30-Minute Consultation | No Pressure, Just Clarity
               </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Whether you need credit repair, business funding, LLC formation, or debt relief – schedule a complimentary consultation with our Bakersfield team. We'll assess your situation, explain your options, and help you make informed decisions about your financial future.
+              </p>
+              <div className="space-y-4">
+                <a
+                  href="#english-consultation"
+                  className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold text-lg py-4 px-8 rounded-xl transition-colors"
+                >
+                  Schedule Your Free Consultation
+                  <ArrowUpRight className="w-5 h-5" />
+                </a>
+                <p className="text-sm text-gray-600">
+                  Or fill out the form below and we'll contact you within 24 hours
+                </p>
+              </div>
+
+              {/* Language Selection */}
+              <div className="pt-4 border-t border-gray-200">
+                <p className="text-sm font-semibold text-gray-700 mb-3 flex items-center gap-2">
+                  <Globe className="w-4 h-4" />
+                  Choose your preferred language:
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="#english-consultation"
+                    className="px-4 py-2 bg-gray-100 hover:bg-amber-100 text-gray-900 font-medium rounded-lg transition-colors text-sm"
+                  >
+                    English
+                  </a>
+                  <a
+                    href="#spanish-consultation"
+                    className="px-4 py-2 bg-gray-100 hover:bg-amber-100 text-gray-900 font-medium rounded-lg transition-colors text-sm"
+                  >
+                    Español
+                  </a>
+                  <a
+                    href="#punjabi-consultation"
+                    className="px-4 py-2 bg-gray-100 hover:bg-amber-100 text-gray-900 font-medium rounded-lg transition-colors text-sm"
+                  >
+                    Punjabi
+                  </a>
+                </div>
+              </div>
             </div>
 
             {/* Right Column - Form */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+              <p className="text-gray-700 mb-6 text-center">
+                Prefer to send us a message? Fill out this form and one of our specialists will respond within 24 hours.
+              </p>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <input
@@ -79,12 +125,54 @@ const Contact = () => {
                   type="submit"
                   className="w-full bg-amber-400 hover:bg-white hover:text-gray-900 text-gray-900 font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 border-2 border-transparent hover:border-gray-900"
                 >
-                  Send Mail
+                  Send Message
                   <ArrowUpRight className="w-5 h-5" />
                 </button>
               </form>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* What to Expect Section */}
+      <section className="py-16 bg-gradient-to-br from-[#f8d899]/30 to-[#e5D2af]/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              What to <span className="text-[#f9c65d]">Expect</span>
+            </h2>
+            <p className="text-lg text-gray-700">Your consultation in 3 simple steps</p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-[#e5D2af] text-center">
+              <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center mx-auto mb-4">
+                <Calendar className="w-8 h-8 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">1. Schedule Your Call</h3>
+              <p className="text-gray-600">Pick a time that works for you – English, Spanish, or Punjabi</p>
+            </div>
+            
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-[#e5D2af] text-center">
+              <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center mx-auto mb-4">
+                <MessageCircle className="w-8 h-8 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">2. Tell Us Your Goals</h3>
+              <p className="text-gray-600">Credit repair, business funding, LLC formation, or debt relief</p>
+            </div>
+            
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-[#e5D2af] text-center">
+              <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center mx-auto mb-4">
+                <FileCheck className="w-8 h-8 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">3. Get Your Custom Plan</h3>
+              <p className="text-gray-600">Walk away with clear next steps – no pressure, just clarity</p>
+            </div>
+          </div>
+          
+          <p className="text-center text-[#bb9446] font-semibold mt-8 text-lg">
+            30 minutes | 100% Free | No Obligation
+          </p>
         </div>
       </section>
 
@@ -118,84 +206,192 @@ const Contact = () => {
       </section>
 
       {/* English Consultation Section */}
-      <section className="py-16 md:py-24">
+      <section id="english-consultation" className="py-16 md:py-24 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto bg-amber-400 rounded-3xl p-8 md:p-12">
-            <div className="text-center space-y-6 max-w-4xl mx-auto">
-              <div className="inline-block bg-gray-900 text-white px-3 py-1 rounded-md text-sm font-semibold">
-                FREE CONSULTATION
+            <div className="space-y-6 max-w-4xl mx-auto">
+              <div className="text-center">
+                <div className="inline-block bg-gray-900 text-white px-3 py-1 rounded-md text-sm font-semibold">
+                  FREE CONSULTATION
+                </div>
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Free Consultation | Get <span className="font-black">Expert Credit Analysis</span> and Personalized <span className="font-black">Improvement Strategies</span> at No Cost to You
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight text-center">
+                Transform Your Financial Future – <span className="font-black">Let's Talk Strategy</span>
               </h2>
-              <div className="text-gray-900 leading-relaxed space-y-4 text-lg">
-                <p>Take the first step toward better credit with our complimentary consultation that provides real value without any obligation.</p>
-                <p>Our credit specialists will review your current credit situation, identify improvement opportunities, and explain exactly how we can help you achieve your goals.</p>
-                <p>This free consultation includes a thorough analysis of your credit reports, personalized recommendations for your unique situation, and a clear explanation of our services. Regardless of your credit goals, we'll give you the knowledge and confidence to make informed decisions about your credit future.</p>
+              <div className="text-gray-900 leading-relaxed space-y-6 text-lg">
+                <p>
+                  Whether you're looking to repair your credit, secure business funding, launch a new LLC, or break free from debt, this consultation is your first step toward financial freedom.
+                </p>
+                
+                <div>
+                  <p className="font-bold mb-2">What to expect on this call:</p>
+                  <ul className="space-y-1 ml-4">
+                    <li>• A personalized assessment of your current financial situation</li>
+                    <li>• Clear explanation of which Mesa Group services align with your goals</li>
+                    <li>• Transparent discussion of timelines, investment, and expected outcomes</li>
+                    <li>• Answers to all your questions – no pressure, just clarity</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <p className="font-bold mb-2">Come prepared (if possible):</p>
+                  <ul className="space-y-1 ml-4">
+                    <li>• Any relevant financial documents (credit reports, bank statements, loan applications, etc.)</li>
+                    <li>• Specific questions or concerns you'd like to address</li>
+                    <li>• Your timeline and goals for what you're trying to achieve</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <p className="font-bold mb-2">Our commitment to you:</p>
+                  <p>
+                    This is a strategy session, not a sales pitch. We'll give you honest guidance on whether we're the right fit for your situation and what realistic outcomes look like. If we can help, we'll show you exactly how. If we're not the best solution, we'll point you in the right direction.
+                  </p>
+                </div>
+                
+                <p className="italic">
+                  We're looking forward to speaking with you!<br />
+                  — The Mesa Group Consulting Team
+                </p>
               </div>
-              <button
-                onClick={() => setIsEnglishCalendarOpen(true)}
-                className="inline-flex items-center justify-center gap-3 bg-black hover:bg-white hover:text-black text-amber-400 font-bold text-2xl py-8 px-12 rounded-2xl transition-colors border-2 border-transparent hover:border-black mt-6"
-              >
-                Schedule in English
-                <ArrowUpRight className="w-6 h-6" />
-              </button>
+              <div className="text-center">
+                <button
+                  onClick={() => setIsEnglishCalendarOpen(true)}
+                  className="inline-flex items-center justify-center gap-3 bg-black hover:bg-white hover:text-black text-amber-400 font-bold text-2xl py-8 px-12 rounded-2xl transition-colors border-2 border-transparent hover:border-black mt-6"
+                >
+                  Schedule in English
+                  <ArrowUpRight className="w-6 h-6" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Spanish Consultation Section */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      <section id="spanish-consultation" className="py-16 md:py-24 bg-gray-50 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto bg-[#3e3e3e] rounded-3xl p-8 md:p-12">
-            <div className="text-center space-y-6 max-w-4xl mx-auto">
-              <div className="inline-block bg-amber-400 text-gray-900 px-3 py-1 rounded-md text-sm font-semibold">
-                CONSULTA GRATIS
+            <div className="space-y-6 max-w-4xl mx-auto">
+              <div className="text-center">
+                <div className="inline-block bg-amber-400 text-gray-900 px-3 py-1 rounded-md text-sm font-semibold">
+                  CONSULTA GRATIS
+                </div>
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                Consulta Gratuita | Obtenga <span className="font-black">Análisis de Crédito Experto</span> y <span className="font-black">Estrategias de Mejora Personalizadas</span> sin Costo Alguno
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight text-center">
+                Transforme Su Futuro Financiero – <span className="font-black">Hablemos de Estrategia</span>
               </h2>
-              <div className="text-gray-100 leading-relaxed space-y-4 text-lg">
-                <p>Dé el primer paso hacia un mejor crédito con nuestra consulta gratuita que proporciona un valor real sin ninguna obligación.</p>
-                <p>Nuestros especialistas en crédito revisarán su situación crediticia actual, identificarán oportunidades de mejora y explicarán exactamente cómo podemos ayudarlo a alcanzar sus objetivos.</p>
-                <p>Esta consulta gratuita incluye un análisis completo de sus informes de crédito, recomendaciones personalizadas para su situación única y una explicación clara de nuestros servicios. Independientemente de sus objetivos crediticios, le brindaremos el conocimiento y la confianza para tomar decisiones informadas sobre su futuro crediticio.</p>
+              <div className="text-gray-100 leading-relaxed space-y-6 text-lg">
+                <p>
+                  Ya sea que necesite reparación de crédito, financiamiento empresarial, formar una LLC, o liberarse de deudas, esta consulta es su primer paso hacia la libertad financiera.
+                </p>
+                
+                <div>
+                  <p className="font-bold mb-2 text-white">Qué esperar en esta llamada:</p>
+                  <ul className="space-y-1 ml-4">
+                    <li>• Una evaluación personalizada de su situación financiera actual</li>
+                    <li>• Explicación clara de qué servicios de Mesa Group se alinean con sus metas</li>
+                    <li>• Discusión transparente de plazos, inversión y resultados esperados</li>
+                    <li>• Respuestas a todas sus preguntas – sin presión, solo claridad</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <p className="font-bold mb-2 text-white">Venga preparado (si es posible):</p>
+                  <ul className="space-y-1 ml-4">
+                    <li>• Cualquier documento financiero relevante (informes de crédito, estados bancarios, solicitudes de préstamos, etc.)</li>
+                    <li>• Preguntas o inquietudes específicas que desee abordar</li>
+                    <li>• Su línea de tiempo y metas de lo que está tratando de lograr</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <p className="font-bold mb-2 text-white">Nuestro compromiso con usted:</p>
+                  <p>
+                    Esta es una sesión de estrategia, no un discurso de ventas. Le daremos orientación honesta sobre si somos la opción correcta para su situación y cómo se ven los resultados realistas. Si podemos ayudar, le mostraremos exactamente cómo. Si no somos la mejor solución, le señalaremos la dirección correcta.
+                  </p>
+                </div>
+                
+                <p className="italic">
+                  ¡Esperamos hablar con usted!<br />
+                  — El Equipo de Mesa Group Consulting
+                </p>
               </div>
-              <button
-                onClick={() => setIsSpanishCalendarOpen(true)}
-                className="inline-flex items-center justify-center gap-3 bg-amber-400 hover:bg-white hover:text-black text-gray-900 font-bold text-2xl py-8 px-12 rounded-2xl transition-colors border-2 border-transparent hover:border-black mt-6"
-              >
-                Programar en Español
-                <ArrowUpRight className="w-6 h-6" />
-              </button>
+              <div className="text-center">
+                <button
+                  onClick={() => setIsSpanishCalendarOpen(true)}
+                  className="inline-flex items-center justify-center gap-3 bg-amber-400 hover:bg-white hover:text-black text-gray-900 font-bold text-2xl py-8 px-12 rounded-2xl transition-colors border-2 border-transparent hover:border-black mt-6"
+                >
+                  Agendar en Español
+                  <ArrowUpRight className="w-6 h-6" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Punjabi Consultation Section */}
-      <section className="py-16 md:py-24">
+      <section id="punjabi-consultation" className="py-16 md:py-24 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto bg-amber-400 rounded-3xl p-8 md:p-12">
-            <div className="text-center space-y-6 max-w-4xl mx-auto">
-              <div className="inline-block bg-gray-900 text-white px-3 py-1 rounded-md text-sm font-semibold">
-                ਮੁਫਤ ਸਲਾਹ
+            <div className="space-y-6 max-w-4xl mx-auto">
+              <div className="text-center">
+                <div className="inline-block bg-gray-900 text-white px-3 py-1 rounded-md text-sm font-semibold">
+                  FREE CONSULTATION | Bilkul Muft Consultation
+                </div>
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                ਮੁਫਤ ਸਲਾਹ | <span className="font-black">ਮਾਹਰ ਕ੍ਰੈਡਿਟ ਵਿਸ਼ਲੇਸ਼ਣ</span> ਅਤੇ <span className="font-black">ਨਿੱਜੀ ਸੁਧਾਰ ਰਣਨੀਤੀਆਂ</span> ਤੁਹਾਡੇ ਲਈ ਕੋਈ ਕੀਮਤ ਨਹੀਂ
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight text-center">
+                Apna Financial Future Vadiya Banao – <span className="font-black">Strategy Te Gal Kariye</span>
               </h2>
-              <div className="text-gray-900 leading-relaxed space-y-4 text-lg">
-                <p>ਸਾਡੀ ਮੁਫਤ ਸਲਾਹ ਨਾਲ ਬਿਹਤਰ ਕ੍ਰੈਡਿਟ ਵੱਲ ਪਹਿਲਾ ਕਦਮ ਚੁੱਕੋ ਜੋ ਬਿਨਾਂ ਕਿਸੇ ਜ਼ਿੰਮੇਵਾਰੀ ਦੇ ਅਸਲ ਮੁੱਲ ਪ੍ਰਦਾਨ ਕਰਦੀ ਹੈ।</p>
-                <p>ਸਾਡੇ ਕ੍ਰੈਡਿਟ ਮਾਹਰ ਤੁਹਾਡੀ ਮੌਜੂਦਾ ਕ੍ਰੈਡਿਟ ਸਥਿਤੀ ਦੀ ਸਮੀਖਿਆ ਕਰਨਗੇ, ਸੁਧਾਰ ਦੇ ਮੌਕਿਆਂ ਦੀ ਪਛਾਣ ਕਰਨਗੇ, ਅਤੇ ਸਪੱਸ਼ਟ ਤੌਰ 'ਤੇ ਦੱਸਣਗੇ ਕਿ ਅਸੀਂ ਤੁਹਾਡੇ ਟੀਚਿਆਂ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰਨ ਵਿੱਚ ਕਿਵੇਂ ਮਦਦ ਕਰ ਸਕਦੇ ਹਾਂ।</p>
-                <p>ਇਸ ਮੁਫਤ ਸਲਾਹ ਵਿੱਚ ਤੁਹਾਡੀਆਂ ਕ੍ਰੈਡਿਟ ਰਿਪੋਰਟਾਂ ਦਾ ਡੂੰਘਾ ਵਿਸ਼ਲੇਸ਼ਣ, ਤੁਹਾਡੀ ਵਿਲੱਖਣ ਸਥਿਤੀ ਲਈ ਨਿੱਜੀ ਸਿਫਾਰਸ਼ਾਂ, ਅਤੇ ਸਾਡੀਆਂ ਸੇਵਾਵਾਂ ਦੀ ਸਪੱਸ਼ਟ ਵਿਆਖਿਆ ਸ਼ਾਮਲ ਹੈ।</p>
+              <div className="text-gray-900 leading-relaxed space-y-6 text-lg">
+                <p>
+                  Chahe tusi apna credit repair karna chaunde ho, business funding chahidi hove, navi LLC start karni hove, ya karze ton bahar nikalna chaunde ho, eh consultation tuhade layi pehla strong step hai financial freedom wal.
+                </p>
+                <p>
+                  Is call vich koi pressure nahi, sirf asli keemat te sidhi gal hovegi.
+                </p>
+                
+                <div>
+                  <p className="font-bold mb-2">Is call vich ki expect kar sakde ho:</p>
+                  <ul className="space-y-1 ml-4">
+                    <li>• Tuhadi current financial situation di personalized assessment</li>
+                    <li>• Clear explanation ke kehde Mesa Group services tuhade goals naal align karde ne</li>
+                    <li>• Saaf te imaandari naal discussion timelines, investment, te expected outcomes</li>
+                    <li>• Tuhade saare sawaalan de jawab — koi sales pressure nahi, sirf clarity</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <p className="font-bold mb-2">Je ho sake, tayari naal aao:</p>
+                  <ul className="space-y-1 ml-4">
+                    <li>• Relevant financial documents (credit reports, bank statements, loan applications, etc.)</li>
+                    <li>• Oh specific questions ya concerns jo tusi discuss karna chaunde ho</li>
+                    <li>• Tuhada timeline te goals jo tusi achieve karna chaunde ho</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <p className="font-bold mb-2">Saadi tuhade naal commitment:</p>
+                  <p>
+                    Eh strategy session hai, koi sales pitch nahi. Asi tuhanu imaandari naal guide karange ke asi tuhade layi right fit haan ja nahi, te realistic outcomes ki ho sakde ne. Je asi help kar sakde haan, asi exactly dikhavange kiven. Je asi best solution nahi haan, asi tuhanu sahi direction val guide karange.
+                  </p>
+                </div>
+                
+                <p className="italic">
+                  Asi tuhade naal gal karan layi excited haan.<br />
+                  — Mesa Group Consulting Team
+                </p>
               </div>
-              <button
-                onClick={() => setIsPunjabiCalendarOpen(true)}
-                className="inline-flex items-center justify-center gap-3 bg-black hover:bg-white hover:text-black text-amber-400 font-bold text-2xl py-8 px-12 rounded-2xl transition-colors border-2 border-transparent hover:border-black mt-6"
-              >
-                ਪੰਜਾਬੀ ਵਿੱਚ ਨਿਯਤ ਕਰੋ
-                <ArrowUpRight className="w-6 h-6" />
-              </button>
+              <div className="text-center">
+                <button
+                  onClick={() => setIsPunjabiCalendarOpen(true)}
+                  className="inline-flex items-center justify-center gap-3 bg-black hover:bg-white hover:text-black text-amber-400 font-bold text-2xl py-8 px-12 rounded-2xl transition-colors border-2 border-transparent hover:border-black mt-6"
+                >
+                  Schedule in Punjabi
+                  <ArrowUpRight className="w-6 h-6" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
