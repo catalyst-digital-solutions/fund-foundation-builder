@@ -7,11 +7,6 @@ import { CalendlyModal } from '@/components/CalendlyModal';
 import mesaGroupLogoWhite from '@/assets/mesa-group-logo-white.svg';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
   const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
   const [isEnglishCalendarOpen, setIsEnglishCalendarOpen] = useState(false);
   const [isSpanishCalendarOpen, setIsSpanishCalendarOpen] = useState(false);
@@ -19,12 +14,6 @@ const Contact = () => {
 
   const openNewsletter = () => setIsNewsletterOpen(true);
   const closeNewsletter = () => setIsNewsletterOpen(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -90,45 +79,20 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Right Column - Form */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-              <p className="text-gray-700 mb-6 text-center">
-                Prefer to send us a message? Fill out this form and one of our specialists will respond within 24 hours.
-              </p>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
-                  />
-                </div>
-                <textarea
-                  placeholder="Message"
-                  rows={5}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
-                />
-                <button
-                  type="submit"
-                  className="w-full bg-amber-400 hover:bg-white hover:text-gray-900 text-gray-900 font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 border-2 border-transparent hover:border-gray-900"
-                >
-                  Send Message
-                  <ArrowUpRight className="w-5 h-5" />
-                </button>
-              </form>
+            {/* Right Column - GHL Contact Form */}
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
+              <iframe
+                src="https://link.mesagroupconsulting.com/widget/form/CaNQDAlt2BSYAOxTZb6b"
+                style={{ width: '100%', height: '1116px', border: 'none' }}
+                id="inline-CaNQDAlt2BSYAOxTZb6b"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-activation-type="alwaysActivated"
+                data-deactivation-type="neverDeactivate"
+                data-form-name="MGC Website Contact"
+                data-form-id="CaNQDAlt2BSYAOxTZb6b"
+                title="MGC Website Contact"
+              />
             </div>
           </div>
         </div>
