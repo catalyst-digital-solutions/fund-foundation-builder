@@ -3,7 +3,7 @@ import {
   FileText, Download, Search, CheckCircle, ArrowRight, Scale,
   DollarSign, Edit, Award, Shield, Edit3, Mail, Copy, AlignLeft,
   Paperclip, Clock, Target, Lightbulb, List, MapPin, File,
-  Phone, ChevronDown, AlertTriangle, AlertCircle
+  Phone, ChevronDown, AlertTriangle, AlertCircle, X
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -20,11 +20,19 @@ interface TemplateCardProps {
   useCases: string[];
   additionalNote?: string;
   category: string;
+  formId?: string;
+  onDownload?: (formId: string, title: string) => void;
 }
 
 const TemplateCard = ({
-  icon, title, badge, whenToUse, whatItDoes, included, useCases, additionalNote
+  icon, title, badge, whenToUse, whatItDoes, included, useCases, additionalNote, formId, onDownload
 }: TemplateCardProps) => {
+  const handleClick = () => {
+    if (formId && onDownload) {
+      onDownload(formId, title);
+    }
+  };
+
   return (
     <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border border-gray-200 overflow-hidden">
       <div className="p-6 space-y-4">
@@ -79,9 +87,17 @@ const TemplateCard = ({
           </div>
         )}
         
-        <button className="w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
+        <button 
+          onClick={handleClick}
+          disabled={!formId}
+          className={`w-full font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 ${
+            formId 
+              ? 'bg-amber-400 hover:bg-amber-500 text-gray-900' 
+              : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+          }`}
+        >
           <Download className="w-5 h-5" />
-          Download Template
+          {formId ? 'Download Template' : 'Coming Soon'}
         </button>
       </div>
     </div>
@@ -110,7 +126,8 @@ const templates: TemplateCardProps[] = [
       'Wrong account balances',
       'Accounts reporting after they should be removed',
       'Duplicate accounts'
-    ]
+    ],
+    formId: '4bbdt1DcUaRJ4C5oNGZB'
   },
   {
     category: 'dispute',
@@ -130,7 +147,8 @@ const templates: TemplateCardProps[] = [
       'Bureau response is vague or incomplete',
       '30 days have passed with no resolution',
       'Bureau failed to contact the creditor'
-    ]
+    ],
+    formId: 'MJaYuSH22xGrsofKnLeX'
   },
   {
     category: 'dispute',
@@ -150,7 +168,8 @@ const templates: TemplateCardProps[] = [
       'Late payment during financial hardship (medical, job loss)',
       'Administrative error or oversight'
     ],
-    additionalNote: 'Success Rate: Works best with creditors you have long-standing relationships with and when late payments are isolated incidents.'
+    additionalNote: 'Success Rate: Works best with creditors you have long-standing relationships with and when late payments are isolated incidents.',
+    formId: 'hbBbSM65ZyRQE7ThvnDe'
   },
   {
     category: 'dispute',
@@ -171,7 +190,8 @@ const templates: TemplateCardProps[] = [
       'Fraudulent charges on existing accounts',
       'Someone used your SSN to open credit',
       'Medical identity theft'
-    ]
+    ],
+    formId: 'gJz015TT4xdC4tQOyNHv'
   },
   // Debt Management Letters
   {
@@ -192,7 +212,8 @@ const templates: TemplateCardProps[] = [
       'Accounts with collection agencies (not original creditors)',
       'Older collections nearing statute of limitations',
       'Small balance collections'
-    ]
+    ],
+    formId: '4Ycdxtk2PO5FIVRatWyl'
   },
   {
     category: 'debt',
@@ -212,7 +233,8 @@ const templates: TemplateCardProps[] = [
       'Debts you believe are past the statute of limitations',
       'Debts with incorrect amounts',
       'Debts that may have been paid already'
-    ]
+    ],
+    formId: 'zLOIjbLqmZ8zBRjFSwLB'
   },
   {
     category: 'debt',
@@ -232,7 +254,8 @@ const templates: TemplateCardProps[] = [
       'Older debts with negotiation leverage',
       'Collections from debt buyers',
       'Charged-off accounts'
-    ]
+    ],
+    formId: 'dW1jFiROGRY1u0Q51gR4'
   },
   {
     category: 'debt',
@@ -253,7 +276,8 @@ const templates: TemplateCardProps[] = [
       'Contact after requesting written communication only',
       'Threats or abusive language from collectors'
     ],
-    additionalNote: 'Warning: This stops contact but does not eliminate the debt. The collector may still sue you to collect.'
+    additionalNote: 'Warning: This stops contact but does not eliminate the debt. The collector may still sue you to collect.',
+    formId: '4buqFzIGk5PMCMd5lDBB'
   },
   // Credit Report Corrections
   {
@@ -276,6 +300,7 @@ const templates: TemplateCardProps[] = [
       'Wrong Social Security number digits',
       'Mixed file with another person'
     ]
+    // No formId - coming soon
   },
   {
     category: 'corrections',
@@ -297,6 +322,7 @@ const templates: TemplateCardProps[] = [
       'Outdated information (over 5 years old)',
       'Accounts closed in good standing reported negatively'
     ]
+    // No formId - coming soon
   }
 ];
 
@@ -334,11 +360,26 @@ const LetterTemplates = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
   const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
+  const [templateModalOpen, setTemplateModalOpen] = useState(false);
+  const [activeFormId, setActiveFormId] = useState('');
+  const [activeFormTitle, setActiveFormTitle] = useState('');
 
   const openCalendly = () => setIsCalendlyOpen(true);
   const closeCalendly = () => setIsCalendlyOpen(false);
   const openNewsletter = () => setIsNewsletterOpen(true);
   const closeNewsletter = () => setIsNewsletterOpen(false);
+
+  const handleTemplateDownload = (formId: string, title: string) => {
+    setActiveFormId(formId);
+    setActiveFormTitle(title);
+    setTemplateModalOpen(true);
+  };
+
+  const closeTemplateModal = () => {
+    setTemplateModalOpen(false);
+    setActiveFormId('');
+    setActiveFormTitle('');
+  };
 
   const filteredTemplates = templates.filter(template => {
     const matchesCategory = selectedCategory === 'all' || template.category === selectedCategory;
@@ -502,7 +543,7 @@ const LetterTemplates = () => {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {disputeTemplates.map((template, index) => (
-                  <TemplateCard key={index} {...template} />
+                  <TemplateCard key={index} {...template} onDownload={handleTemplateDownload} />
                 ))}
               </div>
 
@@ -581,7 +622,7 @@ const LetterTemplates = () => {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {debtTemplates.map((template, index) => (
-                  <TemplateCard key={index} {...template} />
+                  <TemplateCard key={index} {...template} onDownload={handleTemplateDownload} />
                 ))}
               </div>
             </div>
@@ -604,7 +645,7 @@ const LetterTemplates = () => {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {correctionTemplates.map((template, index) => (
-                  <TemplateCard key={index} {...template} />
+                  <TemplateCard key={index} {...template} onDownload={handleTemplateDownload} />
                 ))}
               </div>
             </div>
@@ -859,6 +900,36 @@ const LetterTemplates = () => {
         isOpen={isNewsletterOpen}
         onClose={closeNewsletter}
       />
+
+      {/* Template Download Modal */}
+      {templateModalOpen && activeFormId && (
+        <div
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 p-4 sm:p-6"
+          onClick={closeTemplateModal}
+        >
+          <div
+            className="relative w-full max-w-[600px] h-[90vh] max-h-[600px] bg-white rounded-xl shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="bg-amber-400 px-6 py-4 flex items-center justify-between">
+              <h3 className="text-lg font-bold text-gray-900">{activeFormTitle}</h3>
+              <button
+                onClick={closeTemplateModal}
+                className="w-8 h-8 flex items-center justify-center bg-white/20 hover:bg-white/40 rounded-full transition-colors"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5 text-gray-900" />
+              </button>
+            </div>
+            <iframe
+              src={`https://link.mesagroupconsulting.com/widget/form/${activeFormId}`}
+              className="w-full h-[calc(100%-60px)]"
+              style={{ border: 'none' }}
+              title={activeFormTitle}
+            />
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>
