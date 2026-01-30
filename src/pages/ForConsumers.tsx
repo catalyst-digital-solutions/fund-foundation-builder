@@ -583,19 +583,19 @@ const ForConsumers = () => {
 
       {/* Intro Section */}
       <section className="relative py-16 md:py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/mesa-group-consulting-office-photo-9.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 bg-white/80"></div>
+        <div className="absolute inset-0 bg-black/75"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8">
             Financial Solutions Built for <br />
             <span className="text-[#f9c65d]">Real People</span> <br />
             and Real Situations
           </h2>
           
-          <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+          <div className="space-y-6 text-lg text-gray-100 leading-relaxed">
             <p>
               Life doesn't follow a straight line, and neither does your financial journey. Maybe you've had some setbacks. Maybe no one ever taught you how credit actually works. Maybe you're just looking for better options than what the banks are offering.
             </p>
-            <p className="font-semibold">
+            <p className="font-semibold text-white">
               Here's what matters: where you start doesn't determine where you finish.
             </p>
             <p>
