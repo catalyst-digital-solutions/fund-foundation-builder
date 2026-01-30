@@ -101,10 +101,10 @@ const MesaNews = () => {
   ];
 
   const communityHighlights = [
-    'MESA Sponsors Bakersfield Youth Soccer League',
-    'Free Credit Workshop Series at Kern County Community Center',
-    'Evert Speaks at Local Small Business Forum',
-    'MESA Featured on KGET 17, Studio 17, and Telemundo'
+    '——',
+    '——',
+    '——',
+    '——'
   ];
 
   const mediaLogos = [
