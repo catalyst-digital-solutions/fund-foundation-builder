@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowUpRight, Send, MapPin, X, Globe } from 'lucide-react';
+import { ArrowUpRight, Send, MapPin, X, Globe, Phone, Mail } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { NewsletterModal } from '@/components/NewsletterModal';
@@ -143,6 +143,52 @@ const Contact = () => {
               alt="What to Expect from Your Free Consultation: 1. Schedule Your Call - Pick a time that works for you in English, Spanish, or Punjabi. 2. Tell Us Your Goals - Credit repair, business funding, LLC formation, or debt relief. 3. Get Your Custom Plan - Walk away with clear next steps, no pressure, just clarity. 30 minutes, 100% free, no obligation."
               className="w-full h-auto shadow-lg"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Alternative Contact Methods Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Just Have a <span className="text-[#f9c65d]">Quick Question?</span>
+            </h2>
+            <p className="text-lg text-gray-700 mb-8">
+              Not ready to schedule a consultation? No problem. Reach out directly and we'll point you in the right direction – no commitment required.
+            </p>
+            
+            <div className="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto">
+              <a
+                href="tel:6613240679"
+                className="flex items-center justify-center gap-3 bg-gray-50 hover:bg-amber-50 border-2 border-gray-200 hover:border-[#f9c65d] rounded-xl p-6 transition-all group"
+              >
+                <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Phone className="w-6 h-6 text-gray-900" />
+                </div>
+                <div className="text-left">
+                  <p className="font-semibold text-gray-900">Call Us</p>
+                  <p className="text-[#bb9446] font-medium">(661) 324-0679</p>
+                </div>
+              </a>
+              
+              <a
+                href="mailto:info@mesagroupconsulting.com"
+                className="flex items-center justify-center gap-3 bg-gray-50 hover:bg-amber-50 border-2 border-gray-200 hover:border-[#f9c65d] rounded-xl p-6 transition-all group"
+              >
+                <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Mail className="w-6 h-6 text-gray-900" />
+                </div>
+                <div className="text-left">
+                  <p className="font-semibold text-gray-900">Email Us</p>
+                  <p className="text-[#bb9446] font-medium text-sm">info@mesagroupconsulting.com</p>
+                </div>
+              </a>
+            </div>
+            
+            <p className="text-sm text-gray-500 mt-6">
+              We typically respond within 24 hours during business days.
+            </p>
           </div>
         </div>
       </section>
