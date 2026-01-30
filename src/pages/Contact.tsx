@@ -158,12 +158,12 @@ const Contact = () => {
               Not ready to schedule a consultation? No problem. Reach out directly and we'll point you in the right direction – no commitment required.
             </p>
             
-            <div className="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto">
+            <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
               <a
                 href="tel:6613240679"
-                className="flex items-center justify-center gap-3 bg-gray-50 hover:bg-amber-50 border-2 border-gray-200 hover:border-[#f9c65d] rounded-xl p-6 transition-all group"
+                className="flex items-center justify-center gap-4 bg-gray-50 hover:bg-amber-50 border-2 border-gray-200 hover:border-[#f9c65d] rounded-xl py-6 px-8 transition-all group"
               >
-                <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                   <Phone className="w-6 h-6 text-gray-900" />
                 </div>
                 <div className="text-left">
@@ -174,14 +174,14 @@ const Contact = () => {
               
               <a
                 href="mailto:info@mesagroupconsulting.com"
-                className="flex items-center justify-center gap-3 bg-gray-50 hover:bg-amber-50 border-2 border-gray-200 hover:border-[#f9c65d] rounded-xl p-6 transition-all group"
+                className="flex items-center justify-center gap-4 bg-gray-50 hover:bg-amber-50 border-2 border-gray-200 hover:border-[#f9c65d] rounded-xl py-6 px-8 transition-all group"
               >
-                <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                   <Mail className="w-6 h-6 text-gray-900" />
                 </div>
                 <div className="text-left">
                   <p className="font-semibold text-gray-900">Email Us</p>
-                  <p className="text-[#bb9446] font-medium text-sm">info@mesagroupconsulting.com</p>
+                  <p className="text-[#bb9446] font-medium">info@mesagroupconsulting.com</p>
                 </div>
               </a>
             </div>
