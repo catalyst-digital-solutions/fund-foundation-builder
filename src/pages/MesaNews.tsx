@@ -48,90 +48,55 @@ const MesaNews = () => {
       id: 'company-updates',
       name: 'Company Updates',
       icon: Building2,
-      description: 'Major milestones, new services, office updates, and the growth of MESA Group Consulting. See how we\'re expanding our reach and deepening our impact in the communities we serve.',
-      recentNews: [
-        'MESA Group Consulting Surpasses 2,500 Clients Served in Under 2 Years',
-        'Expanding Our Reach: MESA Now Serving Three Languages',
-        'MESA Group Capital Celebrates $30 Million in Business Funding Facilitated',
-        'New Office Hours: Extended Support for Working Families',
-        'MESA Launches Free Monthly Credit Education Workshops'
-      ]
+      description: 'Major milestones, new services, office updates, and the growth of MESA Group Consulting. See how we\'re expanding our reach and deepening our impact in the communities we serve.'
     },
     {
       id: 'industry-news',
       name: 'Industry News',
       icon: FileText,
-      description: 'Important updates affecting credit repair, debt relief, and financial services. Stay informed about regulatory changes, bureau updates, and trends that impact your financial options.',
-      recentNews: [
-        'FTC Announces New Credit Repair Regulations: What They Mean for You',
-        'California Passes New Credit Reporting Transparency Law',
-        'Major Credit Bureaus Update Dispute Resolution Processes',
-        'SmartCredit Releases 2025 State of Credit Report',
-        'New Study Shows 79% of Credit Reports Contain Errors'
-      ]
+      description: 'Important updates affecting credit repair, debt relief, and financial services. Stay informed about regulatory changes, bureau updates, and trends that impact your financial options.'
     },
     {
       id: 'partnership-announcements',
       name: 'Partnership Announcements',
       icon: Handshake,
-      description: 'Strategic partnerships that enhance our services and expand opportunities for our clients. Learn about the trusted companies we work with to deliver comprehensive financial solutions.',
-      recentNews: [
-        'MESA Partners with SmartCredit to Enhance Client Experience',
-        'Introducing Punjabi Language Support Through Chaklo Credit',
-        'MESA Group Capital Partners with Leading Lenders for Expanded Funding Options',
-        'Partnership Spotlight: How MESA and SuperMoney Help Clients Compare Options',
-        'MESA Joins California Credit Repair Alliance'
-      ]
+      description: 'Strategic partnerships that enhance our services and expand opportunities for our clients. Learn about the trusted companies we work with to deliver comprehensive financial solutions.'
     },
     {
       id: 'client-success-stories',
       name: 'Client Success Stories',
       icon: Award,
-      description: 'Real transformation stories from real people. These are the wins that remind us why we do what we do, helping families and businesses rewrite their financial futures.',
-      recentNews: [
-        'From 520 to 720: How Maria Bought Her First Home in 6 Months',
-        'Local Business Owner Secures $150K in Funding After Credit Restoration',
-        'Bakersfield Family Overcomes Identity Theft with MESA\'s Help',
-        'How One Client Removed 12 Collections and Got Approved for a Car Loan',
-        'Success Story: First-Generation Immigrant Builds 750+ Credit Score'
-      ]
+      description: 'Real transformation stories from real people. These are the wins that remind us why we do what we do, helping families and businesses rewrite their financial futures.'
     },
     {
       id: 'team-spotlights',
       name: 'Team Spotlights',
       icon: UserCircle,
-      description: 'Meet the people behind MESA Group Consulting. Learn about our team\'s expertise, passion, and the personal experiences that drive our commitment to your financial success.',
-      recentNews: [
-        'Meet Evert: From Struggling Immigrant Family to Credit Expert',
-        'Team Member Spotlight: Daniel\'s Journey from Client to Specialist',
-        'Behind the Desk: Justin Shares His Favorite Client Success Story',
-        'Why We\'re Passionate: MESA Team Explains Their \'Why\'',
-        'Evert Calderon Named Speaker at 2025 SmartCredit Conference'
-      ]
+      description: 'Meet the people behind MESA Group Consulting. Learn about our team\'s expertise, passion, and the personal experiences that drive our commitment to your financial success.'
     }
   ];
 
   const featuredPosts = [
     {
       id: 1,
-      title: 'MESA Group Consulting Surpasses 2,500 Clients Served in Under 2 Years',
+      title: '——',
       category: 'Company Updates',
-      date: 'December 5, 2025',
-      excerpt: 'A major milestone in our mission to bridge the gap between culture and credit. Learn how we\'ve grown from a local operation to serving families across California.',
+      date: 'January 2026',
+      excerpt: '——',
     },
     {
       id: 2,
-      title: 'MESA Partners with SmartCredit to Enhance Client Experience',
+      title: '——',
       category: 'Partnership Announcements',
-      date: 'December 3, 2025',
-      excerpt: 'This strategic partnership brings enhanced credit monitoring tools and educational resources to our clients. Discover what this means for your credit journey.',
+      date: 'January 2026',
+      excerpt: '——',
     },
     {
       id: 3,
-      title: 'From 520 to 720: How Maria Bought Her First Home in 6 Months',
+      title: '——',
       category: 'Client Success Stories',
-      date: 'November 28, 2025',
-      excerpt: 'Maria\'s inspiring journey from credit challenges to homeownership. This is what\'s possible when determination meets the right support system.',
+      date: 'January 2026',
+      excerpt: '——',
     }
   ];
 
@@ -300,55 +265,29 @@ const MesaNews = () => {
             </p>
           </div>
 
-          <div className="space-y-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {categories.map((category) => {
               const IconComponent = category.icon;
               return (
-                <div key={category.id} className="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
-                  
-                  <div className="flex items-start gap-4 mb-6">
+                <div key={category.id} className="bg-white rounded-2xl p-6 md:p-8 shadow-lg">
+                  <div className="flex items-start gap-4 mb-4">
                     <div className="flex-shrink-0">
-                      <div className="bg-amber-100 p-4 rounded-lg">
-                        <IconComponent className="w-8 h-8 text-amber-600" />
+                      <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center">
+                        <IconComponent className="w-6 h-6 text-amber-600" />
                       </div>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
                         {category.name}
                       </h3>
-                      <p className="text-gray-700 leading-relaxed">
-                        {category.description}
-                      </p>
                     </div>
                   </div>
-
-                  <div className="ml-0 md:ml-20">
-                    <h4 className="text-lg font-semibold text-gray-900 mb-4">
-                      Recent News in This Category:
-                    </h4>
-                    <ul className="space-y-3">
-                      {category.recentNews.map((newsTitle, idx) => (
-                        <li key={idx} className="flex items-start gap-3 group">
-                          <ArrowRight className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                          <a 
-                            href="#" 
-                            className="text-gray-700 hover:text-amber-600 transition-colors leading-relaxed"
-                          >
-                            {newsTitle}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {category.id === 'client-success-stories' && (
-                    <div className="mt-6 ml-0 md:ml-20">
-                      <p className="text-sm text-gray-600 italic border-l-4 border-amber-400 pl-4 py-2">
-                        <strong>Note:</strong> All client stories are shared with permission and comply with privacy regulations. Some details may be changed to protect client confidentiality.
-                      </p>
-                    </div>
-                  )}
-
+                  <p className="text-gray-700 leading-relaxed">
+                    {category.description}
+                  </p>
+                  <p className="text-sm text-gray-500 italic mt-4">
+                    News coming soon
+                  </p>
                 </div>
               );
             })}
