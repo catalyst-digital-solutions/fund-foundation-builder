@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowUpRight, Send, MapPin, X, Globe, Phone, Mail } from 'lucide-react';
+import { ArrowUpRight, Send, MapPin, X, Globe, Phone, Mail, Calendar, MessageCircle, FileCheck } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { NewsletterModal } from '@/components/NewsletterModal';
@@ -137,13 +137,42 @@ const Contact = () => {
       {/* What to Expect Section */}
       <section className="py-16 bg-gradient-to-br from-[#f8d899]/30 to-[#e5D2af]/20">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <img 
-              src="/infographics/what-to-expect-from-your-consultation-infographic-4.jpg"
-              alt="What to Expect from Your Free Consultation: 1. Schedule Your Call - Pick a time that works for you in English, Spanish, or Punjabi. 2. Tell Us Your Goals - Credit repair, business funding, LLC formation, or debt relief. 3. Get Your Custom Plan - Walk away with clear next steps, no pressure, just clarity. 30 minutes, 100% free, no obligation."
-              className="w-full h-auto shadow-lg"
-            />
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              What to <span className="text-[#f9c65d]">Expect</span>
+            </h2>
+            <p className="text-lg text-gray-700">Your consultation in 3 simple steps</p>
           </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-[#e5D2af] text-center">
+              <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center mx-auto mb-4">
+                <Calendar className="w-8 h-8 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">1. Schedule Your Call</h3>
+              <p className="text-gray-600">Pick a time that works for you – English, Spanish, or Punjabi</p>
+            </div>
+            
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-[#e5D2af] text-center">
+              <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center mx-auto mb-4">
+                <MessageCircle className="w-8 h-8 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">2. Tell Us Your Goals</h3>
+              <p className="text-gray-600">Credit repair, business funding, LLC formation, or debt relief</p>
+            </div>
+            
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-[#e5D2af] text-center">
+              <div className="w-16 h-16 bg-[#f9c65d] rounded-full flex items-center justify-center mx-auto mb-4">
+                <FileCheck className="w-8 h-8 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">3. Get Your Custom Plan</h3>
+              <p className="text-gray-600">Walk away with clear next steps – no pressure, just clarity</p>
+            </div>
+          </div>
+          
+          <p className="text-center text-[#bb9446] font-semibold mt-8 text-lg">
+            30 minutes | 100% Free | No Obligation
+          </p>
         </div>
       </section>
 
@@ -160,7 +189,7 @@ const Contact = () => {
             
             <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
               <a
-                href="tel:6613240679"
+                href="tel:6613103040"
                 className="flex items-center justify-center gap-4 bg-gray-50 hover:bg-amber-50 border-2 border-gray-200 hover:border-[#f9c65d] rounded-xl py-6 px-8 transition-all group"
               >
                 <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
@@ -168,12 +197,12 @@ const Contact = () => {
                 </div>
                 <div className="text-left">
                   <p className="font-semibold text-gray-900">Call Us</p>
-                  <p className="text-[#bb9446] font-medium">(661) 324-0679</p>
+                  <p className="text-[#bb9446] font-medium">(661) 310-3040</p>
                 </div>
               </a>
               
               <a
-                href="mailto:info@mesagroupconsulting.com"
+                href="mailto:contact@mesagroupconsulting.com"
                 className="flex items-center justify-center gap-4 bg-gray-50 hover:bg-amber-50 border-2 border-gray-200 hover:border-[#f9c65d] rounded-xl py-6 px-8 transition-all group"
               >
                 <div className="w-12 h-12 bg-[#f9c65d] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
@@ -181,7 +210,7 @@ const Contact = () => {
                 </div>
                 <div className="text-left">
                   <p className="font-semibold text-gray-900">Email Us</p>
-                  <p className="text-[#bb9446] font-medium">info@mesagroupconsulting.com</p>
+                  <p className="text-[#bb9446] font-medium">contact@mesagroupconsulting.com</p>
                 </div>
               </a>
             </div>
