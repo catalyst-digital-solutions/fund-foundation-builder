@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import {
   CheckCircle, ArrowRight, Star, Users, Calendar, Globe,
@@ -9,6 +9,50 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
+
+// Animated Counter Component
+const AnimatedCounter = ({ target, suffix = '', duration = 2000 }: { target: number; suffix?: string; duration?: number }) => {
+  const [count, setCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const ref = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+          const startTime = Date.now();
+          const animate = () => {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease-out effect
+            const easeOut = 1 - Math.pow(1 - progress, 3);
+            setCount(Math.floor(easeOut * target));
+            if (progress < 1) {
+              requestAnimationFrame(animate);
+            } else {
+              setCount(target);
+            }
+          };
+          requestAnimationFrame(animate);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, [target, duration, hasAnimated]);
+
+  return (
+    <span ref={ref}>
+      {count.toLocaleString()}{suffix}
+    </span>
+  );
+};
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -509,12 +553,16 @@ const ForConsumers = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
               <Users className="w-8 h-8 text-amber-600 mx-auto" />
-              <div className="text-3xl md:text-4xl font-bold text-gray-900">2,500+</div>
+              <div className="text-3xl md:text-4xl font-bold text-gray-900">
+                <AnimatedCounter target={2500} suffix="+" duration={2000} />
+              </div>
               <div className="text-sm text-gray-600">Clients Helped</div>
             </div>
             <div className="space-y-2">
               <Star className="w-8 h-8 text-amber-600 mx-auto" />
-              <div className="text-3xl md:text-4xl font-bold text-gray-900">150+</div>
+              <div className="text-3xl md:text-4xl font-bold text-gray-900">
+                <AnimatedCounter target={150} suffix="+" duration={2000} />
+              </div>
               <div className="text-sm text-gray-600">Five-Star Reviews</div>
             </div>
             <div className="space-y-2">
@@ -524,7 +572,9 @@ const ForConsumers = () => {
             </div>
             <div className="space-y-2">
               <Globe className="w-8 h-8 text-amber-600 mx-auto" />
-              <div className="text-3xl md:text-4xl font-bold text-gray-900">3</div>
+              <div className="text-3xl md:text-4xl font-bold text-gray-900">
+                <AnimatedCounter target={3} suffix="" duration={2000} />
+              </div>
               <div className="text-sm text-gray-600">Languages: EN, ES, PA</div>
             </div>
           </div>
