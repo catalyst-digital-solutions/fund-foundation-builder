@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, Clock, ArrowRight, Mail } from 'lucide-react';
+import { Search, Clock, ArrowRight, BookOpen, TrendingUp, Building2, Scale, DollarSign, Mail } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -28,6 +28,39 @@ const ArticlesInsights = () => {
       }
     }, 100);
   };
+
+  const categories = [
+    {
+      name: "Credit Fundamentals",
+      description: "Start here if you're new to credit or want to understand how the system really works. Learn what affects your score, how credit reports work, and the basics everyone should know.",
+      icon: BookOpen,
+      articles: []
+    },
+    {
+      name: "Credit Repair Strategies",
+      description: "Proven strategies for disputing errors, removing negative items, and rebuilding your credit profile. These are the same approaches professionals use, now available to you.",
+      icon: TrendingUp,
+      articles: []
+    },
+    {
+      name: "Business Funding",
+      description: "Access capital to grow your business, even with less-than-perfect credit. Learn how to qualify for funding, build business credit, and leverage the right financing options.",
+      icon: Building2,
+      articles: []
+    },
+    {
+      name: "Debt Relief Solutions",
+      description: "Overwhelmed by debt? Explore your options for getting relief, negotiating with creditors, and creating a realistic path forward without destroying your credit.",
+      icon: Scale,
+      articles: []
+    },
+    {
+      name: "Financial Planning",
+      description: "Build long-term financial health with practical strategies for budgeting, saving, and planning major purchases, even when money is tight.",
+      icon: DollarSign,
+      articles: []
+    }
+  ];
 
   const featuredArticles = [
     {
@@ -186,6 +219,50 @@ const ArticlesInsights = () => {
                   </article>
                 );
               }
+            })}
+          </div>
+
+        </div>
+      </section>
+
+      {/* BROWSE BY CATEGORY SECTION */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-amber-50 to-orange-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Browse by <span className="text-[#f9c65d]">Topic</span>
+            </h2>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              Find exactly what you're looking for. Our articles are organized by category to help you quickly access the information you need.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {categories.map((category, index) => {
+              const IconComponent = category.icon;
+              return (
+                <div key={index} className="bg-white rounded-2xl p-6 md:p-8 shadow-lg">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-[#f9c65d]/20 rounded-xl flex items-center justify-center">
+                        <IconComponent className="w-6 h-6 text-[#bb9446]" />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        {category.name}
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-gray-700 leading-relaxed">
+                    {category.description}
+                  </p>
+                  <p className="text-sm text-gray-500 italic mt-4">
+                    Articles coming soon
+                  </p>
+                </div>
+              );
             })}
           </div>
 
