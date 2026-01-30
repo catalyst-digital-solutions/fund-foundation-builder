@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, Clock, ArrowRight, BookOpen, TrendingUp, Building2, Scale, DollarSign, Mail, CheckCircle } from 'lucide-react';
+import { Search, Clock, ArrowRight, Mail } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -55,70 +55,6 @@ const ArticlesInsights = () => {
       image: "/blog-post-images/post-03-img-1-stressed-person-choosing-debt-options.png"
     }
   ];
-
-  const categories = [
-    {
-      name: "Credit Fundamentals",
-      description: "Start here if you're new to credit or want to understand how the system really works. Learn what affects your score, how credit reports work, and the basics everyone should know.",
-      icon: BookOpen,
-      articles: [
-        "How Credit Scores Are Actually Calculated: The Complete Breakdown",
-        "What's the Difference Between a Hard Pull and Soft Pull?",
-        "Understanding Credit Utilization: The 30% Rule Explained",
-        "FICO Score vs. VantageScore: What's the Difference?",
-        "How Long Do Negative Items Stay on Your Credit Report?"
-      ]
-    },
-    {
-      name: "Credit Repair Strategies",
-      description: "Proven strategies for disputing errors, removing negative items, and rebuilding your credit profile. These are the same approaches professionals use, now available to you.",
-      icon: TrendingUp,
-      articles: [
-        "How to Dispute Errors on Your Credit Report (Step-by-Step Guide)",
-        "The Truth About Pay for Delete Agreements",
-        "Can Goodwill Letters Really Remove Late Payments?",
-        "How to Deal with Collections: Your Complete Guide",
-        "What to Do If You're a Victim of Identity Theft"
-      ]
-    },
-    {
-      name: "Business Funding",
-      description: "Access capital to grow your business, even with less-than-perfect credit. Learn how to qualify for funding, build business credit, and leverage the right financing options.",
-      icon: Building2,
-      articles: [
-        "How to Qualify for 0% Business Credit Cards",
-        "Business Funding Options When You Have Bad Personal Credit",
-        "Building Business Credit: A Complete Starter Guide",
-        "What Credit Score Do You Need for an SBA Loan?",
-        "Net-30 Vendor Accounts: Building Business Credit Fast"
-      ]
-    },
-    {
-      name: "Debt Relief Solutions",
-      description: "Overwhelmed by debt? Explore your options for getting relief, negotiating with creditors, and creating a realistic path forward without destroying your credit.",
-      icon: Scale,
-      articles: [
-        "Debt Settlement vs. Debt Consolidation: Which Is Right for You?",
-        "How to Negotiate with Creditors (Without Hurting Your Credit)",
-        "Should You File for Bankruptcy? Pros, Cons, and Alternatives",
-        "Understanding Debt Relief Programs: What You Need to Know",
-        "How to Stop Collection Calls Legally"
-      ]
-    },
-    {
-      name: "Financial Planning",
-      description: "Build long-term financial health with practical strategies for budgeting, saving, and planning major purchases, even when money is tight.",
-      icon: DollarSign,
-      articles: [
-        "Building an Emergency Fund with Bad Credit: A Realistic Guide",
-        "How to Budget When You're Living Paycheck to Paycheck",
-        "First-Time Homebuyer Guide: Credit Requirements Explained",
-        "How to Save for a Down Payment While Paying Off Debt",
-        "Financial Planning for Immigrants: Navigating Credit in a New Country"
-      ]
-    }
-  ];
-
 
   return (
     <div className="min-h-screen bg-white">
@@ -250,68 +186,6 @@ const ArticlesInsights = () => {
                   </article>
                 );
               }
-            })}
-          </div>
-
-        </div>
-      </section>
-
-      {/* BROWSE BY CATEGORY SECTION */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-amber-50 to-orange-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Browse by <span className="text-[#f9c65d]">Topic</span>
-            </h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Find exactly what you're looking for. Our articles are organized by category to help you quickly access the information you need.
-            </p>
-          </div>
-
-          <div className="space-y-16">
-            {categories.map((category, index) => {
-              const IconComponent = category.icon;
-              return (
-                <div key={index} className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-                  
-                  <div className="flex items-start gap-6 mb-8">
-                    <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-[#f9c65d]/20 rounded-xl flex items-center justify-center">
-                        <IconComponent className="w-8 h-8 text-[#bb9446]" />
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                        {category.name}
-                      </h3>
-                      <p className="text-lg text-gray-700 leading-relaxed">
-                        {category.description}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="space-y-1">
-                    <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
-                      Popular Articles in This Category
-                    </p>
-                    <div className="space-y-3">
-                      {category.articles.map((article, articleIndex) => (
-                        <div 
-                          key={articleIndex}
-                          className="flex items-start gap-3 p-4 rounded-lg hover:bg-amber-50 transition-colors cursor-pointer group"
-                        >
-                          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700 group-hover:text-[#bb9446] transition-colors font-medium">
-                            {article}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                </div>
-              );
             })}
           </div>
 
