@@ -533,7 +533,7 @@ const ForConsumers = () => {
 
       {/* Intro Section */}
       <section className="relative py-16 md:py-24 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/mesa-group-consulting-office-photo-9.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 bg-white/70"></div>
+        <div className="absolute inset-0 bg-white/80"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
             Financial Solutions Built for <br />
