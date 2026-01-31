@@ -1,0 +1,316 @@
+# Product Requirements Document (PRD)
+# Mesa Group Consulting - Content Generation Engine
+
+## Project Overview
+
+A comprehensive AI-powered content generation system for Mesa Group Consulting that automates YouTube content creation, blog post generation, and social media distribution. The goal is to establish Mesa Group Consulting as a "household name" among their target audience through consistent, high-quality content across all digital channels.
+
+## Project Objectives
+
+1. Automate YouTube script generation from high-performing industry content
+2. Generate SEO-optimized WordPress blog posts with AI-created images
+3. Streamline content approval workflow with human-in-the-loop verification
+4. Enable multi-channel content repurposing (YouTube → Blog → Social Media)
+5. Reduce content creation time while maintaining quality and brand voice
+
+## Existing Components
+
+### 1. mgc-blog-ai-agent
+**Location:** `/Users/Mario/Documents/aaa-catalyst-digital-solutions/aaa-client-projects/Mesa Group Consulting - Evert Calderon/jobs-current/mgc-blog-ai-agent`
+
+**Current Functionality:**
+- Simple GUI with YouTube URL input field
+- AI scrapes video transcript
+- Ingests content into RAG vector database
+- Enhances content with Perplexity research
+- Generates blog post copy
+- Sends to approval field in GUI
+- On approval: posts to WordPress via REST API (draft mode)
+- User manually formats and publishes in WordPress
+
+### 2. nano-banana-image-queuer-and-generator
+**Location:** `/Users/Mario/Documents/aaa-catalyst-digital-solutions/aaa-client-projects/Mesa Group Consulting - Evert Calderon/custom-code/nano-banana-image-queuer-and-generator`
+
+**Current Functionality:**
+- UI with paragraph-type prompt field for bulk prompts
+- Parses and separates individual prompts
+- Displays preview for approval
+- Gemini API generates images sequentially
+- Shows progress for each image
+- Outputs images to designated folder
+
+## System Architecture
+
+### Phase 1: YouTube Script Generation Pipeline
+
+```
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│   Tube Lab API  │────▶│  Gemini (Script)│────▶│   Perplexity    │
+│  (Outlier Scan) │     │   Generation    │     │   Enhancement   │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+                                                        │
+                                                        ▼
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│   Email/SMTP    │◀────│    Approval     │◀────│  Nano Banana    │
+│   Delivery      │     │    Interface    │     │  Image Prompts  │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+```
+
+### Phase 2: Blog Post Generation Pipeline
+
+```
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│  YouTube Script │────▶│  Blog Post AI   │────▶│  Nano Banana    │
+│  (Approved)     │     │  (Claude/Gemini)│     │  Image Gen      │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+                                                        │
+                                                        ▼
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│   WordPress     │◀────│    Approval     │◀────│  Post Preview   │
+│   REST API      │     │    Interface    │     │  with Images    │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+```
+
+### Phase 3: Social Media Distribution (Future)
+
+```
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│  YouTube Video  │────▶│   AI Chopper    │────▶│  Platform-Spec  │
+│  (Uploaded)     │     │  (Short-form)   │     │  Formatting     │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+                                                        │
+                                                        ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    Social Media Distribution                     │
+│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌────────┐│
+│  │ Facebook │ │Instagram │ │  TikTok  │ │    X     │ │YouTube ││
+│  │          │ │  Reels   │ │          │ │          │ │ Shorts ││
+│  └──────────┘ └──────────┘ └──────────┘ └──────────┘ └────────┘│
+└─────────────────────────────────────────────────────────────────┘
+```
+
+## Technical Requirements
+
+### Phase 1: Script Generation
+
+#### 1.1 Tube Lab API Integration
+- Connect to Tube Lab API for YouTube video discovery
+- Query by subject/industry keywords
+- Filter by "outlier score" to identify top performers
+- Extract video metadata (title, description, channel, performance metrics)
+- Store video data for analysis
+
+#### 1.2 Script Generation (Gemini)
+- Input: Top-performing video transcripts and metadata
+- Process: Generate original YouTube script inspired by successful content
+- Output: Full script with intro, body sections, and outro
+- Include teleprompter-friendly formatting
+- Target length: 8-15 minutes of spoken content
+
+#### 1.3 Research Enhancement (Perplexity)
+- Input: Generated script
+- Process: Fact-check and enhance with current information
+- Add up-to-date statistics and data points
+- Verify claims and add citations where appropriate
+- Output: Enhanced script with research notes
+
+#### 1.4 Image Prompt Generation
+- Generate 2-3 Nano Banana prompts per blog post
+- Prompts aligned with Mesa Group brand colors:
+  - Primary Yellow: #f9c65d
+  - Dark Gold: #bb9446
+  - Light Tan: #e5D2af
+  - Cream: #f8d899
+- Professional financial services aesthetic
+- Specify dimensions appropriate for blog headers and inline images
+
+#### 1.5 Email Delivery
+- Configure SMTP or AWS SES
+- Template for script delivery
+- Include script, research notes, and image prompts
+- Send to designated approval email (Evert)
+
+### Phase 2: Blog Post Generation
+
+#### 2.1 WordPress REST API Setup
+- Enable REST API on WordPress installation
+- Configure authentication (Application Passwords recommended)
+- Set up proper CORS headers
+- Test endpoint connectivity
+
+#### 2.2 Blog Post AI Generation
+- Model: Claude Sonnet or Gemini 1.5 Pro
+- Input: Approved YouTube script + research notes
+- Output: SEO-optimized blog post in WordPress-ready HTML
+- Include:
+  - Meta title and description (Rank Math compatible)
+  - Proper heading hierarchy (H1, H2, H3)
+  - Image placement markers
+  - Internal linking suggestions
+  - Category and tag recommendations
+
+#### 2.3 Image Integration
+- Generate images via Nano Banana/Gemini
+- Upload to WordPress media library via API
+- Insert into blog post at designated positions
+- Set featured image
+- Optimize for web (compression, alt tags)
+
+#### 2.4 WordPress Posting
+- Create post in draft status
+- Apply categories and tags
+- Set Rank Math SEO fields via API
+- Notify user of draft ready for review
+
+#### 2.5 Approval Interface
+- Display post preview with images
+- Show SEO score/recommendations
+- Approve → Publish (or schedule)
+- Reject → Return to editing queue
+- Edit → Open WordPress editor
+
+### Phase 3: Social Media Distribution (Future)
+
+#### 3.1 Video Processing
+- Detect YouTube video upload completion
+- Download video for processing
+- AI analysis of content segments
+
+#### 3.2 Short-Form Content Generation
+- Identify key moments/quotes
+- Generate clips in platform-specific formats:
+  - Instagram Reels: 9:16, 15-90 seconds
+  - TikTok: 9:16, 15-60 seconds
+  - YouTube Shorts: 9:16, up to 60 seconds
+  - Facebook Reels: 9:16, 15-90 seconds
+  - X/Twitter: Various formats, up to 2:20
+
+#### 3.3 Platform Publishing
+- Option A: Direct API integration per platform
+- Option B: Buffer/Hootsuite API for unified posting
+- Schedule posts across platforms
+- Optimize posting times per platform
+
+## AI Model Recommendations
+
+| Task | Recommended Model | Estimated Cost |
+|------|------------------|----------------|
+| Script generation | Gemini 1.5 Flash | ~$0.01-0.05/script |
+| Script enhancement | Perplexity API | ~$0.02-0.05/query |
+| Blog post creation | Claude Sonnet | ~$0.05-0.15/post |
+| Image prompts | Gemini Flash | ~$0.001/prompt |
+| WordPress formatting | Claude Sonnet | ~$0.02-0.05/post |
+| Video analysis | Gemini 1.5 Pro | ~$0.10-0.20/video |
+
+**Total estimated cost per content cycle:** $0.20-0.50
+
+## WordPress Integration Requirements
+
+### Required Plugins
+- Rank Math SEO (for SEO field API access)
+- Application Passwords (built into WP 5.6+)
+- Classic Editor (recommended for cleaner API posting)
+- WP REST API Controller (optional, for fine-grained control)
+
+### API Endpoints Used
+- `POST /wp-json/wp/v2/posts` - Create posts
+- `POST /wp-json/wp/v2/media` - Upload images
+- `GET /wp-json/wp/v2/categories` - Get categories
+- `GET /wp-json/wp/v2/tags` - Get tags
+- Rank Math endpoints for SEO fields
+
+### Authentication
+- Application Passwords (recommended)
+- Store credentials securely (environment variables)
+- Never expose in client-side code
+
+## Blog Post Template Structure
+
+```html
+<!-- Featured Image: [nano-banana-header-image] -->
+
+<h1>[SEO-Optimized Title]</h1>
+
+<p class="intro">[Engaging introduction paragraph]</p>
+
+<h2>[Section 1 Heading]</h2>
+<p>[Content...]</p>
+
+<!-- Inline Image: [nano-banana-section-image] -->
+
+<h2>[Section 2 Heading]</h2>
+<p>[Content...]</p>
+
+<h2>[Key Takeaways]</h2>
+<ul>
+  <li>[Takeaway 1]</li>
+  <li>[Takeaway 2]</li>
+  <li>[Takeaway 3]</li>
+</ul>
+
+<h2>[Call to Action]</h2>
+<p>[CTA with link to consultation or relevant service page]</p>
+```
+
+## Success Criteria
+
+### Phase 1
+- Script generation completes in under 5 minutes
+- Research enhancement adds verifiable, current information
+- Email delivery is reliable (99%+ delivery rate)
+- User can review and approve/reject scripts easily
+
+### Phase 2
+- Blog posts require minimal manual editing
+- Images are properly placed and optimized
+- SEO scores average 80+ on Rank Math
+- Draft-to-publish time under 10 minutes
+
+### Phase 3 (Future)
+- Short-form content generated within 1 hour of video upload
+- Platform-specific formatting is accurate
+- Posts scheduled automatically
+- Engagement metrics tracked
+
+## Risks and Mitigations
+
+| Risk | Probability | Impact | Mitigation |
+|------|-------------|--------|------------|
+| Tube Lab API instability | Medium | High | Build fallback using YouTube Data API |
+| AI hallucinations in content | Medium | High | Human-in-the-loop approval required |
+| WordPress API authentication issues | Low | Medium | Test thoroughly, document setup |
+| Nano Banana rate limits | Low | Medium | Queue system with delays |
+| Social platform API changes | High | Medium | Use aggregator service (Buffer) |
+| Brand voice inconsistency | Medium | Medium | Detailed system prompts with examples |
+
+## Dependencies
+
+- Tube Lab API account and credentials
+- OpenAI/Anthropic/Google AI API keys
+- Perplexity API access
+- Nano Banana/Gemini image generation access
+- WordPress installation with REST API enabled
+- SMTP server or AWS SES account
+- (Future) Buffer/Hootsuite API or individual social platform APIs
+
+## Timeline Estimate
+
+- **Phase 1 (Script Generation):** 2-3 weeks
+- **Phase 2 (Blog Post Automation):** 2-3 weeks
+- **Phase 3 (Social Distribution):** 4-6 weeks
+
+## Stakeholders
+
+- **Client:** Evert Calderon (Mesa Group Consulting)
+- **Developer:** Catalyst Digital Solutions
+- **Content Approver:** Evert Calderon
+- **End Users:** Mesa Group Consulting marketing team
+
+## Future Enhancements
+
+- Voice cloning for AI-narrated content
+- A/B testing for blog post titles
+- Analytics dashboard for content performance
+- Automatic topic suggestion based on trending searches
+- Multi-language content generation (Spanish, Punjabi)
+- Integration with CRM for lead tracking from content

@@ -1,0 +1,212 @@
+# Product Requirements Document (PRD)
+# Mesa Group Consulting Website - Vercel Deployment & WordPress Blog Integration
+
+## Project Overview
+
+Mesa Group Consulting is a Bakersfield-based financial services company offering credit repair, business funding, LLC formation, debt relief, and related services. This project involves deploying their new Vite/React website to Vercel on the production domain (mesagroupconsulting.com), archiving the existing WordPress site, and subsequently integrating a fresh WordPress blog at the /blog subfolder for SEO purposes.
+
+## Project Objectives
+
+1. Deploy the Vite/React website to Vercel production
+2. Connect the mesagroupconsulting.com domain to Vercel
+3. Preserve the existing WordPress site as a backup on Cloudways
+4. Establish a fresh WordPress installation for the blog
+5. Configure the /blog subfolder to serve WordPress content via reverse proxy
+6. Theme the WordPress blog to match the React site's design
+7. Integrate blog links from the React site to WordPress seamlessly
+
+## Technical Stack
+
+### Current React Site (fund-foundation-builder)
+- Framework: Vite + React 18 + TypeScript
+- Styling: Tailwind CSS + shadcn/ui
+- Routing: React Router v6
+- Hosting Target: Vercel
+- Repository: GitHub (catalyst-digital-solutions/fund-foundation-builder)
+
+### WordPress Blog (Future)
+- CMS: WordPress (Fresh Installation)
+- Hosting: Cloudways
+- SEO Plugin: Rank Math
+- Theme: Lightweight theme (GeneratePress or Astra) with custom styling
+
+### Domain & DNS
+- Domain: mesagroupconsulting.com
+- DNS Provider: GoDaddy
+- SSL: Vercel auto-provisioned
+
+## Phase 1: Vercel Deployment (Today)
+
+### Requirements
+
+#### 1.1 Pre-Deployment Verification
+- Verify local build succeeds without errors (npm run build)
+- Test all critical pages render correctly
+- Ensure GHL (GoHighLevel) iframe forms function properly
+- Verify all images and assets load correctly
+- Check mobile responsiveness on key pages
+
+#### 1.2 Vercel Project Setup
+- Connect GitHub repository to Vercel
+- Configure build settings:
+  - Framework Preset: Vite
+  - Build Command: npm run build
+  - Output Directory: dist
+  - Node.js Version: 18.x or higher
+- Set up any required environment variables (if applicable)
+
+#### 1.3 Preview Deployment Testing
+- Deploy to Vercel preview environment
+- Test all pages on preview URL
+- Verify forms submit correctly
+- Check Core Web Vitals scores
+- Test on multiple devices (desktop, tablet, mobile)
+
+#### 1.4 Domain Configuration
+- Add mesagroupconsulting.com to Vercel project
+- Add www.mesagroupconsulting.com as alias
+- Configure GoDaddy DNS:
+  - A record: @ -> 76.76.21.21
+  - CNAME record: www -> cname.vercel-dns.com
+- Verify SSL certificate provisioning
+- Test HTTPS redirect functionality
+
+#### 1.5 WordPress Backup (Pre-DNS Change)
+- Create full backup on Cloudways (application + database)
+- Document current server IP for rollback purposes
+- Export WordPress content (posts, pages, media) via WP export tool
+- Save backup locally as archive
+
+#### 1.6 Go-Live Verification
+- Verify site loads at mesagroupconsulting.com
+- Test all navigation links
+- Verify GHL forms work in production
+- Check Calendly modals function correctly
+- Test all anchor links (language selection, etc.)
+- Verify Google Maps embed loads
+- Test newsletter subscription modal
+
+### Success Criteria for Phase 1
+- Site accessible at mesagroupconsulting.com with HTTPS
+- All pages render without errors
+- All interactive elements function correctly
+- Page load times under 3 seconds
+- Mobile-friendly on all viewports
+
+## Phase 2: WordPress Blog Setup (Starting Monday)
+
+### Requirements
+
+#### 2.1 Fresh WordPress Installation
+- Install fresh WordPress on Cloudways
+- Use subdomain temporarily (blog.mesagroupconsulting.com) for setup
+- Install and configure Rank Math SEO plugin
+- Set up proper permalink structure (/blog/post-slug)
+- Configure XML sitemaps
+
+#### 2.2 Theme Selection and Customization
+- Install lightweight theme (GeneratePress recommended)
+- Create child theme for customizations
+- Match React site's design:
+  - Primary Yellow: #f9c65d
+  - Dark Gold: #bb9446
+  - Light Tan: #e5D2af
+  - Font: Inter
+  - Header/Footer to match React site
+- Customize blog post templates
+- Customize archive/category pages
+
+#### 2.3 Menu Integration
+- Create WordPress menu matching React site navigation
+- All non-blog links point to React site (https://mesagroupconsulting.com/...)
+- Blog-specific links stay within WordPress
+
+#### 2.4 Reverse Proxy Configuration
+- Configure Vercel rewrites for /blog/* paths
+- Set up proper caching headers
+- Ensure SEO-friendly URL structure
+- Test all blog URLs work correctly
+
+#### 2.5 React Site Updates
+- Update Articles & Insights page with real blog post links
+- Update Mesa News page with real post links
+- Ensure category links point to WordPress category archives
+- Add proper external link handling for blog links
+
+### Success Criteria for Phase 2
+- WordPress blog accessible at mesagroupconsulting.com/blog
+- Blog posts indexed by search engines
+- Seamless visual transition between React and WordPress
+- Rank Math showing green SEO scores
+- All internal blog links work correctly
+
+## Non-Functional Requirements
+
+### Performance
+- Lighthouse Performance score > 90
+- First Contentful Paint < 1.5s
+- Largest Contentful Paint < 2.5s
+- Cumulative Layout Shift < 0.1
+
+### SEO
+- All pages have unique meta titles and descriptions
+- Proper heading hierarchy (H1, H2, H3)
+- Schema markup on business pages
+- XML sitemap available
+- robots.txt properly configured
+
+### Accessibility
+- WCAG 2.1 AA compliance
+- Keyboard navigation functional
+- Screen reader compatible
+- Sufficient color contrast
+
+### Security
+- HTTPS enforced
+- No mixed content warnings
+- WordPress security plugins installed
+- Regular backup schedule
+
+## Rollback Plan
+
+If critical issues arise post-deployment:
+1. Revert GoDaddy DNS A record to Cloudways server IP
+2. WordPress site becomes live again within DNS propagation time
+3. Debug and fix React site issues on Vercel preview
+4. Re-deploy when ready
+
+## Timeline
+
+- Phase 1 (Today): Vercel deployment and domain connection
+- Phase 2 (Monday onwards): WordPress blog setup and integration
+- Phase 2 Estimated Completion: 1-2 weeks depending on theme customization complexity
+
+## Stakeholders
+
+- Client: Evert Calderon (Mesa Group Consulting)
+- Developer: Catalyst Digital Solutions
+- Hosting: Vercel (React), Cloudways (WordPress)
+
+## Dependencies
+
+- GoDaddy DNS access
+- Cloudways hosting access
+- Vercel account with CLI
+- GitHub repository access
+- GoHighLevel forms configured and working
+
+## Risks and Mitigations
+
+| Risk | Probability | Impact | Mitigation |
+|------|-------------|--------|------------|
+| DNS propagation delays | Medium | Low | Plan deployment during low-traffic hours |
+| GHL forms not working | Low | High | Test thoroughly on preview before go-live |
+| WordPress/React style mismatch | Medium | Medium | Use design system documentation |
+| SEO ranking drop during transition | Low | Medium | Implement 301 redirects where needed |
+
+## Future Considerations
+
+- Content Generation Engine integration (mgc-blog-ai-agent)
+- Automated blog posting via WordPress REST API
+- Social media automation pipeline
+- Performance monitoring and analytics setup

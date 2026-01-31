@@ -1,0 +1,730 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": "1",
+        "title": "Pre-Deployment Verification and Build Testing",
+        "description": "Verify the Vite/React application builds successfully and all critical functionality works before deployment",
+        "details": "Run 'npm run build' to verify clean build. Test all pages render correctly, verify GHL iframe forms function, check image loading, test mobile responsiveness on key pages. Validate React Router v6 navigation works properly. Check Tailwind CSS + shadcn/ui styling renders correctly. Test Calendly modals and Google Maps embed functionality.",
+        "testStrategy": "Execute build command and verify no errors. Manual testing of all pages, forms, and interactive elements. Cross-browser testing on Chrome, Firefox, Safari. Mobile testing on various viewport sizes.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Build Verification and Environment Setup",
+            "description": "Verify the Vite/React application builds successfully without errors and validate build output",
+            "dependencies": [],
+            "details": "Execute 'npm run build' command to verify clean build process. Check for TypeScript compilation errors, dependency conflicts, and build warnings. Validate that all assets are properly generated in the 'dist' directory. Verify build size optimization and ensure no critical files are missing from the output.",
+            "status": "pending",
+            "testStrategy": "Run build command and analyze console output for errors. Check dist folder contents and file sizes. Validate that all required assets (JS, CSS, images) are present and properly optimized.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Functional Testing and Component Validation",
+            "description": "Test all pages, forms, and interactive components to ensure proper functionality",
+            "dependencies": [
+              1
+            ],
+            "details": "Test all pages render correctly with proper content and styling. Verify GHL iframe forms function properly with form submissions. Check image loading across all pages. Validate React Router v6 navigation works correctly between all routes. Test Calendly modals open and function properly. Verify Google Maps embed loads and displays correctly. Check newsletter subscription modal functionality.",
+            "status": "pending",
+            "testStrategy": "Manual testing of all pages and interactive elements. Test form submissions end-to-end. Verify all modals and embedded content work as expected. Check console for JavaScript errors during navigation and interactions.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Cross-Browser Compatibility Testing",
+            "description": "Validate application functionality across different browsers and ensure consistent behavior",
+            "dependencies": [
+              2
+            ],
+            "details": "Test the application on Chrome, Firefox, Safari, and Edge browsers. Verify Tailwind CSS and shadcn/ui components render consistently across browsers. Check that all interactive elements (forms, modals, navigation) work properly in each browser. Validate that React 18 features and modern JavaScript work correctly across browser versions.",
+            "status": "pending",
+            "testStrategy": "Systematic testing across major browsers. Document any browser-specific issues or inconsistencies. Test both desktop and browser mobile views. Verify polyfills work correctly for older browser versions if needed.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Mobile Responsiveness and Performance Testing",
+            "description": "Verify mobile responsiveness and performance across different device sizes and orientations",
+            "dependencies": [
+              3
+            ],
+            "details": "Test mobile responsiveness on key pages using various viewport sizes (320px, 768px, 1024px, 1440px). Verify touch interactions work properly on mobile devices. Check that all content is accessible and readable on small screens. Test performance metrics including page load times, Core Web Vitals, and mobile-specific optimizations. Validate that modals and forms work correctly on touch devices.",
+            "status": "pending",
+            "testStrategy": "Use browser developer tools to test various device sizes. Run Lighthouse mobile audits targeting Performance > 90. Test actual mobile devices if available. Verify touch gestures and mobile-specific interactions work correctly.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 6,
+        "recommendedSubtasks": 4,
+        "expansionPrompt": "Break down this task into specific testing phases: build verification, functional testing, cross-browser testing, and mobile responsiveness testing. Each subtask should focus on a specific aspect of the pre-deployment verification process.",
+        "updatedAt": "2026-01-31T18:29:57.951Z"
+      },
+      {
+        "id": "2",
+        "title": "Vercel Project Setup and Configuration",
+        "description": "Connect GitHub repository to Vercel and configure build settings for Vite/React deployment",
+        "details": "Connect catalyst-digital-solutions/fund-foundation-builder repository to Vercel. Configure build settings: Framework Preset: Vite, Build Command: 'npm run build', Output Directory: 'dist', Node.js Version: 18.x or higher. Set up any required environment variables if applicable. Configure automatic deployments from main branch.",
+        "testStrategy": "Verify successful repository connection. Test build configuration by triggering a preview deployment. Confirm build logs show successful completion and proper asset generation.",
+        "priority": "high",
+        "dependencies": [
+          "1"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "GitHub Repository Connection to Vercel",
+            "description": "Connect the catalyst-digital-solutions/fund-foundation-builder GitHub repository to Vercel platform",
+            "dependencies": [],
+            "details": "Import the GitHub repository catalyst-digital-solutions/fund-foundation-builder into Vercel. Authenticate GitHub account with Vercel if not already connected. Select the correct repository and grant necessary permissions for Vercel to access the repository for deployments.",
+            "status": "pending",
+            "testStrategy": "Verify successful repository connection by checking Vercel dashboard shows the imported project. Confirm Vercel has proper read access to the repository and can detect changes.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Vite Build Configuration Setup",
+            "description": "Configure Vercel build settings specifically for Vite/React deployment with proper framework preset and build commands",
+            "dependencies": [
+              1
+            ],
+            "details": "Set Framework Preset to Vite in Vercel project settings. Configure Build Command as 'npm run build' and Output Directory as 'dist'. Set Node.js Version to 18.x or higher. Configure any required environment variables for the build process if applicable.",
+            "status": "pending",
+            "testStrategy": "Trigger a preview deployment to test build configuration. Verify build logs show successful completion with Vite-specific output. Confirm dist directory is properly generated and contains expected assets.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Automatic Deployment Configuration",
+            "description": "Set up automatic deployments from the main branch with proper deployment triggers and branch protection",
+            "dependencies": [
+              2
+            ],
+            "details": "Configure automatic deployments to trigger on pushes to the main branch. Set up production branch as main and ensure preview deployments work for other branches. Configure deployment hooks and notifications if needed. Verify webhook integration between GitHub and Vercel is properly established.",
+            "status": "pending",
+            "testStrategy": "Test automatic deployment by making a commit to main branch and verifying deployment triggers automatically. Confirm preview deployments work for feature branches. Validate deployment status notifications and logs.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 4,
+        "recommendedSubtasks": 3,
+        "expansionPrompt": "Divide this into repository connection, build configuration setup, and deployment automation configuration. Each subtask should handle a specific aspect of the Vercel setup process.",
+        "updatedAt": "2026-01-31T18:29:54.942Z"
+      },
+      {
+        "id": "3",
+        "title": "Preview Deployment Testing and Validation",
+        "description": "Deploy to Vercel preview environment and thoroughly test all functionality",
+        "details": "Deploy to Vercel preview URL. Test all pages load correctly, verify GHL forms submit properly, check Core Web Vitals scores using Lighthouse. Test newsletter subscription modal, anchor links for language selection, and all navigation elements. Verify TypeScript compilation and React 18 features work correctly.",
+        "testStrategy": "Comprehensive functional testing on preview URL. Run Lighthouse audits targeting Performance > 90, accessibility checks. Test form submissions end-to-end. Validate all interactive components work as expected.",
+        "priority": "high",
+        "dependencies": [
+          "2"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Deployment Verification and Environment Setup",
+            "description": "Deploy the application to Vercel preview environment and verify successful deployment",
+            "dependencies": [],
+            "details": "Deploy to Vercel preview URL and confirm deployment is successful. Verify all static assets are properly served, check that the build artifacts are correctly deployed, and ensure the preview environment is accessible. Document the preview URL for testing purposes.",
+            "status": "pending",
+            "testStrategy": "Verify deployment status in Vercel dashboard, check preview URL accessibility, confirm all assets load without 404 errors",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Functional Testing of Core Features",
+            "description": "Test all pages, navigation, and interactive components work correctly in preview environment",
+            "dependencies": [
+              1
+            ],
+            "details": "Test all pages load correctly, verify navigation elements work properly, test newsletter subscription modal functionality, validate anchor links for language selection, and ensure all interactive components respond as expected. Test mobile responsiveness across different viewport sizes.",
+            "status": "pending",
+            "testStrategy": "Manual testing of all pages and components, cross-browser testing on Chrome/Firefox/Safari, mobile testing on various devices",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Performance Testing with Lighthouse Audits",
+            "description": "Run comprehensive Lighthouse audits to verify Core Web Vitals and performance metrics",
+            "dependencies": [
+              1
+            ],
+            "details": "Execute Lighthouse audits on all key pages targeting Performance scores > 90. Check Core Web Vitals including LCP, FID, and CLS. Verify accessibility scores, SEO optimization, and best practices compliance. Document any performance issues and optimization opportunities.",
+            "status": "pending",
+            "testStrategy": "Run Lighthouse audits on desktop and mobile for all major pages, verify Core Web Vitals meet target thresholds, document performance metrics",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Form Submission and GHL Integration Testing",
+            "description": "Thoroughly test all form submissions and GoHighLevel integration functionality",
+            "dependencies": [
+              1
+            ],
+            "details": "Test GHL iframe forms submit properly and data is captured correctly. Verify newsletter subscription modal works end-to-end, test contact forms and lead capture forms. Validate form validation rules, error handling, and success states. Ensure all form data reaches the intended destinations.",
+            "status": "pending",
+            "testStrategy": "End-to-end form testing with real submissions, verify data appears in GHL dashboard, test form validation and error scenarios",
+            "parentId": "undefined"
+          },
+          {
+            "id": 5,
+            "title": "TypeScript and React 18 Feature Validation",
+            "description": "Verify TypeScript compilation and React 18 features work correctly in production environment",
+            "dependencies": [
+              1
+            ],
+            "details": "Confirm TypeScript compilation is successful without errors or warnings. Test React 18 specific features like concurrent rendering, automatic batching, and Suspense boundaries. Verify React Router v6 navigation works properly, test state management and component lifecycle methods function as expected.",
+            "status": "pending",
+            "testStrategy": "Review build logs for TypeScript errors, test React 18 features manually, verify component behavior matches development environment",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 7,
+        "recommendedSubtasks": 5,
+        "expansionPrompt": "Break this into deployment verification, functional testing, performance testing with Lighthouse, form submission testing, and TypeScript/React 18 feature validation. Each subtask should focus on a specific validation area.",
+        "updatedAt": "2026-01-31T18:29:56.282Z"
+      },
+      {
+        "id": "4",
+        "title": "WordPress Backup and Archive Creation",
+        "description": "Create comprehensive backup of existing WordPress site before DNS changes",
+        "details": "Create full backup on Cloudways including application files and database. Document current server IP address for rollback purposes. Export WordPress content via WP export tool (posts, pages, media). Save backup files locally as archive. Verify backup integrity by testing restore process on staging environment.",
+        "testStrategy": "Verify backup files are complete and downloadable. Test backup restoration on a staging environment to ensure data integrity. Document all backup locations and access credentials.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Cloudways Application and Database Backup",
+            "description": "Generate comprehensive backup of WordPress application files and database through Cloudways platform",
+            "dependencies": [],
+            "details": "Access Cloudways dashboard and navigate to backup section. Create full application backup including all WordPress files, themes, plugins, and uploads. Generate database backup with complete MySQL dump. Document current server IP address and server configuration details for rollback purposes. Download backup files from Cloudways to ensure local access.",
+            "status": "pending",
+            "testStrategy": "Verify backup files are successfully created in Cloudways dashboard. Confirm backup file sizes are reasonable and complete. Test download functionality to ensure files are accessible.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Export WordPress Content via WP Export Tool",
+            "description": "Use WordPress native export functionality to create XML export of all content",
+            "dependencies": [],
+            "details": "Access WordPress admin dashboard and navigate to Tools > Export. Select 'All content' option to export posts, pages, comments, custom fields, terms, navigation menus, and custom posts. Generate and download the WordPress XML export file. Additionally, manually backup the wp-content/uploads directory to preserve media files that aren't included in XML export.",
+            "status": "pending",
+            "testStrategy": "Verify XML export file contains all expected content types. Check file size and validate XML structure. Confirm media files are separately backed up from uploads directory.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Create Local Archive Storage System",
+            "description": "Organize and store all backup files in structured local archive with proper documentation",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "Create organized folder structure for backup storage with date stamps and version control. Store Cloudways backup files, WordPress XML export, and media files in clearly labeled directories. Create comprehensive documentation including server IP addresses, database credentials, backup dates, and restoration instructions. Compress archives using appropriate compression tools and verify file integrity.",
+            "status": "pending",
+            "testStrategy": "Verify all backup files are properly organized and accessible. Test archive compression and decompression. Confirm documentation includes all necessary restoration details and credentials.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Verify Backup Integrity on Staging Environment",
+            "description": "Test backup restoration process on staging environment to ensure data integrity and completeness",
+            "dependencies": [
+              3
+            ],
+            "details": "Set up staging environment on Cloudways or alternative hosting platform. Restore WordPress application from Cloudways backup files and import database. Test WordPress XML import functionality and verify all content is properly restored. Compare staging site with original site to ensure complete data integrity. Document any issues found during restoration process and create step-by-step restoration guide.",
+            "status": "pending",
+            "testStrategy": "Perform complete site functionality testing on staging environment. Verify all posts, pages, media, and configurations match original site. Test admin functionality and plugin compatibility. Document restoration time and any encountered issues.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 5,
+        "recommendedSubtasks": 4,
+        "expansionPrompt": "Separate into Cloudways backup creation, WordPress export, local archive storage, and backup integrity verification. Each subtask should handle a specific backup method or verification step.",
+        "updatedAt": "2026-01-31T18:29:57.047Z"
+      },
+      {
+        "id": "5",
+        "title": "Domain Configuration and DNS Setup",
+        "description": "Configure mesagroupconsulting.com domain to point to Vercel with proper DNS records",
+        "details": "Add mesagroupconsulting.com and www.mesagroupconsulting.com to Vercel project. Configure GoDaddy DNS: A record @ -> 76.76.21.21, CNAME record www -> cname.vercel-dns.com. Verify SSL certificate auto-provisioning by Vercel. Configure HTTPS redirect functionality. Monitor DNS propagation status.",
+        "testStrategy": "Use DNS propagation checkers to verify record updates. Test both www and non-www versions load correctly. Verify SSL certificate is properly installed and HTTPS redirect works. Test from multiple geographic locations.",
+        "priority": "high",
+        "dependencies": [
+          "3",
+          "4"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Add Domain to Vercel Project",
+            "description": "Add mesagroupconsulting.com and www.mesagroupconsulting.com domains to the Vercel project configuration",
+            "dependencies": [],
+            "details": "Navigate to Vercel project dashboard and add both mesagroupconsulting.com and www.mesagroupconsulting.com as custom domains. Configure domain settings and prepare for DNS configuration. Ensure both apex and www subdomains are properly registered in Vercel.",
+            "status": "pending",
+            "testStrategy": "Verify domains appear in Vercel dashboard with pending DNS configuration status. Confirm both apex and www domains are listed correctly.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Configure GoDaddy DNS Records",
+            "description": "Set up proper DNS records in GoDaddy for domain routing to Vercel",
+            "dependencies": [
+              1
+            ],
+            "details": "Access GoDaddy DNS management and configure: A record with name '@' pointing to 76.76.21.21 for apex domain, and CNAME record with name 'www' pointing to cname.vercel-dns.com for www subdomain. Remove any conflicting existing records.",
+            "status": "pending",
+            "testStrategy": "Use DNS lookup tools to verify A and CNAME records are properly configured. Check that @ record points to correct IP and www CNAME points to Vercel.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Verify SSL Certificate Auto-Provisioning",
+            "description": "Confirm SSL certificate is automatically provisioned by Vercel and HTTPS redirect is working",
+            "dependencies": [
+              2
+            ],
+            "details": "Monitor Vercel dashboard for SSL certificate status after DNS propagation. Verify Let's Encrypt certificate is automatically issued for both domains. Test HTTPS redirect functionality to ensure HTTP requests are properly redirected to HTTPS.",
+            "status": "pending",
+            "testStrategy": "Check SSL certificate validity using browser tools and online SSL checkers. Test HTTP to HTTPS redirect for both www and non-www versions. Verify certificate covers both domain variants.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Monitor DNS Propagation Status",
+            "description": "Track DNS propagation across multiple geographic locations and validate domain accessibility",
+            "dependencies": [
+              2
+            ],
+            "details": "Use DNS propagation checking tools to monitor record updates across global DNS servers. Test domain accessibility from multiple geographic locations. Verify both www and non-www versions load correctly and serve the correct content.",
+            "status": "pending",
+            "testStrategy": "Use DNS propagation checkers like whatsmydns.net to verify global propagation. Test domain access from different locations and devices. Confirm both domain variants load the correct Vercel-hosted content.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 6,
+        "recommendedSubtasks": 4,
+        "expansionPrompt": "Break into Vercel domain addition, GoDaddy DNS configuration, SSL certificate verification, and DNS propagation monitoring. Each subtask should focus on a specific aspect of the domain setup process.",
+        "updatedAt": "2026-01-31T18:29:59.432Z"
+      },
+      {
+        "id": "6",
+        "title": "Production Go-Live Verification",
+        "description": "Verify the React site is fully functional on the production domain",
+        "details": "Test site accessibility at mesagroupconsulting.com with HTTPS. Verify all navigation links work correctly, GHL forms function in production environment, Calendly modals open properly. Test Google Maps embed loads correctly, newsletter subscription modal works, and all anchor links function. Verify page load times under 3 seconds.",
+        "testStrategy": "End-to-end testing on production domain. Performance testing with tools like GTmetrix and PageSpeed Insights. Cross-device testing on desktop, tablet, and mobile. Functional testing of all interactive elements.",
+        "priority": "high",
+        "dependencies": [
+          "5"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "HTTPS Accessibility Verification",
+            "description": "Verify the production site is accessible via HTTPS at mesagroupconsulting.com and SSL certificate is properly configured",
+            "dependencies": [],
+            "details": "Test direct access to https://mesagroupconsulting.com, verify SSL certificate validity and security headers. Check for any mixed content warnings or security issues. Validate redirect from HTTP to HTTPS works correctly.",
+            "status": "pending",
+            "testStrategy": "Use SSL testing tools like SSL Labs, browser developer tools to check certificate status, and manual verification of HTTPS access",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Navigation and Internal Links Testing",
+            "description": "Comprehensive testing of all navigation elements and internal links throughout the production site",
+            "dependencies": [
+              1
+            ],
+            "details": "Test main navigation menu, footer links, breadcrumbs, and all internal page transitions. Verify React Router v6 navigation works correctly in production. Test anchor links for language selection and page sections.",
+            "status": "pending",
+            "testStrategy": "Manual click-through testing of all navigation elements, automated link checking tools, and verification of proper URL routing",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Third-Party Integration Testing",
+            "description": "Verify all third-party integrations function correctly in the production environment",
+            "dependencies": [
+              1
+            ],
+            "details": "Test GHL iframe forms submission and functionality, verify Calendly modals open and booking works properly, check Google Maps embed loads and displays correctly. Test newsletter subscription modal functionality.",
+            "status": "pending",
+            "testStrategy": "End-to-end testing of each integration, form submission testing, modal interaction testing, and verification of external service connectivity",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Performance Validation and Load Time Testing",
+            "description": "Validate site performance meets the requirement of page load times under 3 seconds",
+            "dependencies": [
+              1,
+              2,
+              3
+            ],
+            "details": "Use GTmetrix, PageSpeed Insights, and Lighthouse to measure Core Web Vitals. Test load times across different pages and network conditions. Verify performance optimization techniques are working effectively.",
+            "status": "pending",
+            "testStrategy": "Performance testing tools including GTmetrix, PageSpeed Insights, Lighthouse audits, and real-world network simulation testing",
+            "parentId": "undefined"
+          },
+          {
+            "id": 5,
+            "title": "Cross-Device and Browser Compatibility Testing",
+            "description": "Test site functionality and appearance across different devices, browsers, and screen sizes",
+            "dependencies": [
+              2,
+              3
+            ],
+            "details": "Test on desktop, tablet, and mobile devices across Chrome, Firefox, Safari, and Edge browsers. Verify responsive design works correctly, touch interactions function on mobile, and all features are accessible across platforms.",
+            "status": "pending",
+            "testStrategy": "Cross-browser testing using BrowserStack or similar tools, physical device testing, and responsive design validation across multiple viewport sizes",
+            "parentId": "undefined"
+          },
+          {
+            "id": 6,
+            "title": "Comprehensive Functional Testing and Final Validation",
+            "description": "Complete end-to-end functional testing of all site features and user workflows",
+            "dependencies": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "details": "Execute comprehensive user journey testing, verify all interactive elements work correctly, test error handling and edge cases. Perform final validation checklist covering all critical functionality before declaring production ready.",
+            "status": "pending",
+            "testStrategy": "End-to-end user journey testing, comprehensive functional test suite execution, and final production readiness checklist validation",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 8,
+        "recommendedSubtasks": 6,
+        "expansionPrompt": "Divide into HTTPS accessibility verification, navigation testing, third-party integration testing (GHL, Calendly, Google Maps), performance validation, cross-device testing, and comprehensive functional testing. Each subtask should focus on a specific verification area.",
+        "updatedAt": "2026-01-31T18:30:00.947Z"
+      },
+      {
+        "id": "7",
+        "title": "Fresh WordPress Installation and Basic Configuration",
+        "description": "Set up new WordPress installation on Cloudways for the blog functionality",
+        "details": "Install fresh WordPress on Cloudways using subdomain blog.mesagroupconsulting.com for initial setup. Install and configure Rank Math SEO plugin with proper settings. Set up permalink structure as /blog/post-slug. Configure XML sitemaps generation. Install security plugins and configure basic WordPress security settings.",
+        "testStrategy": "Verify WordPress installation is accessible and functional. Test Rank Math plugin configuration and sitemap generation. Verify permalink structure works correctly. Test admin dashboard functionality and plugin compatibility.",
+        "priority": "medium",
+        "dependencies": [
+          "6"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "WordPress Installation on Cloudways Platform",
+            "description": "Set up fresh WordPress installation on Cloudways hosting platform using the specified subdomain",
+            "dependencies": [],
+            "details": "Create new WordPress application on Cloudways platform using subdomain blog.mesagroupconsulting.com. Configure server settings, database, and ensure proper SSL certificate installation. Set up admin user account and verify WordPress dashboard accessibility.",
+            "status": "pending",
+            "testStrategy": "Verify WordPress installation is accessible via subdomain URL. Test admin dashboard login functionality and confirm SSL certificate is properly configured.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Rank Math SEO Plugin Setup and Configuration",
+            "description": "Install and configure Rank Math SEO plugin with proper settings for optimal search engine optimization",
+            "dependencies": [
+              1
+            ],
+            "details": "Install Rank Math SEO plugin from WordPress repository. Run setup wizard and configure basic SEO settings including site verification, social media profiles, and local SEO if applicable. Set up proper meta tags structure and configure schema markup settings.",
+            "status": "pending",
+            "testStrategy": "Verify Rank Math plugin is properly installed and configured. Test SEO analysis functionality and confirm meta tags are being generated correctly on test posts.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Permalink Structure and XML Sitemap Configuration",
+            "description": "Configure custom permalink structure and set up XML sitemap generation for SEO optimization",
+            "dependencies": [
+              2
+            ],
+            "details": "Set up permalink structure as /blog/post-slug in WordPress settings. Configure XML sitemap generation through Rank Math plugin settings. Ensure sitemap includes all necessary post types and is properly formatted for search engine submission.",
+            "status": "pending",
+            "testStrategy": "Test permalink structure by creating sample posts and verifying URL format. Verify XML sitemap is generated correctly and accessible at /sitemap.xml. Test sitemap validation using Google Search Console tools.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Security Plugin Installation and Basic Hardening",
+            "description": "Install security plugins and configure basic WordPress security settings to protect the installation",
+            "dependencies": [
+              1
+            ],
+            "details": "Install recommended security plugins such as Wordfence or Sucuri Security. Configure basic security settings including login attempt limits, file permissions, and security headers. Set up security monitoring and enable two-factor authentication for admin accounts.",
+            "status": "pending",
+            "testStrategy": "Verify security plugins are properly installed and configured. Test login security features and confirm security headers are properly set. Run security scan to identify any remaining vulnerabilities.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 5,
+        "recommendedSubtasks": 4,
+        "expansionPrompt": "Break into WordPress installation on Cloudways, Rank Math SEO plugin setup, permalink and sitemap configuration, and security plugin installation. Each subtask should handle a specific configuration area."
+      },
+      {
+        "id": "8",
+        "title": "WordPress Theme Installation and Customization",
+        "description": "Install and customize WordPress theme to match React site design",
+        "details": "Install GeneratePress theme and create child theme for customizations. Implement design matching React site: Primary Yellow #f9c65d, Dark Gold #bb9446, Light Tan #e5D2af, Inter font family. Customize header/footer to match React site design. Create custom blog post templates and archive/category page layouts. Implement responsive design matching React site's mobile experience.",
+        "testStrategy": "Visual comparison testing between React site and WordPress theme. Test responsive design on multiple devices. Verify color scheme and typography consistency. Test blog post layouts and archive pages render correctly.",
+        "priority": "medium",
+        "dependencies": [
+          "7"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Install GeneratePress Theme and Create Child Theme",
+            "description": "Install the GeneratePress theme on WordPress and create a child theme for safe customizations",
+            "dependencies": [],
+            "details": "Install GeneratePress theme from WordPress repository. Create child theme directory with proper style.css and functions.php files. Set up child theme structure to inherit parent theme functionality while allowing safe customizations. Activate child theme and verify it loads correctly.",
+            "status": "pending",
+            "testStrategy": "Verify GeneratePress theme is installed and child theme is active. Test that child theme inherits parent styling correctly and WordPress admin shows child theme as active theme.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Implement Design System Colors and Typography",
+            "description": "Configure the color scheme and typography to match React site design specifications",
+            "dependencies": [
+              1
+            ],
+            "details": "Implement Primary Yellow #f9c65d, Dark Gold #bb9446, Light Tan #e5D2af color scheme through child theme CSS. Configure Inter font family across the site. Set up CSS custom properties for consistent color usage. Update theme customizer settings and add custom CSS for typography and color implementation.",
+            "status": "pending",
+            "testStrategy": "Visual verification that colors match React site exactly using color picker tools. Test Inter font loads correctly across all text elements. Verify color consistency across different page types and components.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Customize Header and Footer Design",
+            "description": "Modify header and footer layouts to match React site design and branding",
+            "dependencies": [
+              2
+            ],
+            "details": "Customize header layout, navigation menu styling, and logo placement to match React site. Modify footer structure, content, and styling for brand consistency. Use GeneratePress hooks and filters or custom template parts to implement design changes. Ensure proper mobile navigation functionality.",
+            "status": "pending",
+            "testStrategy": "Side-by-side comparison of WordPress header/footer with React site design. Test navigation functionality on desktop and mobile. Verify logo displays correctly and links work properly.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Create Custom Blog Post and Archive Templates",
+            "description": "Develop custom templates for blog posts, category pages, and archive layouts",
+            "dependencies": [
+              3
+            ],
+            "details": "Create custom single.php template for blog post layout matching React site design. Develop archive.php and category.php templates for blog listing pages. Implement custom post meta display, featured image handling, and content formatting. Add pagination styling and excerpt formatting to match design system.",
+            "status": "pending",
+            "testStrategy": "Test blog post display with various content types and featured images. Verify archive and category pages show proper post listings. Test pagination functionality and ensure layouts match React site design patterns.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 5,
+            "title": "Implement Responsive Design and Mobile Optimization",
+            "description": "Ensure all customizations work properly across different screen sizes and devices",
+            "dependencies": [
+              4
+            ],
+            "details": "Implement responsive CSS for all custom elements to match React site's mobile experience. Test and optimize header navigation for mobile devices. Ensure blog layouts work properly on tablets and phones. Add mobile-specific styling adjustments and test touch interactions for navigation and content.",
+            "status": "pending",
+            "testStrategy": "Test responsive design on multiple device sizes using browser dev tools and actual devices. Compare mobile experience with React site for consistency. Verify touch navigation works properly and content is readable on small screens.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 7,
+        "recommendedSubtasks": 5,
+        "expansionPrompt": "Separate into GeneratePress theme installation, child theme creation, design system implementation (colors, fonts), header/footer customization, and responsive design implementation. Each subtask should focus on a specific customization area."
+      },
+      {
+        "id": "9",
+        "title": "Reverse Proxy Configuration and URL Routing",
+        "description": "Configure Vercel rewrites to serve WordPress blog at /blog subfolder",
+        "details": "Configure Vercel vercel.json with rewrites for /blog/* paths to WordPress installation. Set up proper caching headers for blog content. Ensure SEO-friendly URL structure is maintained. Configure WordPress menu with navigation matching React site, ensuring non-blog links point to React site URLs. Test all blog URL patterns work correctly.",
+        "testStrategy": "Test all /blog/* URLs resolve correctly to WordPress. Verify caching headers are properly set. Test navigation between React site and WordPress blog. Validate SEO-friendly URLs and proper canonical tags.",
+        "priority": "medium",
+        "dependencies": [
+          "8"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Configure Vercel Rewrite Rules in vercel.json",
+            "description": "Set up Vercel configuration file with proper rewrite rules to route /blog/* paths to WordPress installation",
+            "dependencies": [],
+            "details": "Create or update vercel.json file with rewrites array containing rules to proxy /blog/* requests to WordPress subdomain. Configure source patterns for /blog, /blog/, and /blog/* paths. Set up destination URLs pointing to blog.mesagroupconsulting.com with proper path handling. Include fallback rules for WordPress admin and wp-content assets.",
+            "status": "pending",
+            "testStrategy": "Test that /blog URLs correctly proxy to WordPress. Verify admin access works through proxy. Test asset loading for images, CSS, and JS files.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Implement Caching Headers for Blog Content",
+            "description": "Configure appropriate caching strategies and headers for WordPress blog content served through Vercel proxy",
+            "dependencies": [
+              1
+            ],
+            "details": "Set up headers configuration in vercel.json for blog content with appropriate cache-control directives. Configure different caching strategies for static assets (images, CSS, JS) vs dynamic content (posts, pages). Implement cache invalidation rules for updated content. Set up proper ETag and Last-Modified headers for optimal performance.",
+            "status": "pending",
+            "testStrategy": "Verify caching headers are properly set using browser dev tools. Test cache behavior for different content types. Validate cache invalidation when content is updated.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Validate SEO-Friendly URL Structure",
+            "description": "Ensure proper SEO URL structure is maintained through the reverse proxy configuration",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "Verify that WordPress permalink structure (/blog/post-slug) works correctly through Vercel proxy. Test canonical URL generation and ensure proper meta tags are preserved. Validate that search engines can properly crawl and index blog content. Configure proper redirects for any URL variations. Test XML sitemap accessibility through proxy.",
+            "status": "pending",
+            "testStrategy": "Use SEO tools to validate URL structure and meta tags. Test canonical URLs and sitemap accessibility. Verify proper HTTP status codes for all blog URLs.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Configure WordPress Navigation Integration",
+            "description": "Set up WordPress menu system to seamlessly integrate with React site navigation",
+            "dependencies": [
+              3
+            ],
+            "details": "Configure WordPress custom menu with navigation items that match React site structure. Set up external links for non-blog pages to point back to React site URLs. Implement proper target attributes for external navigation. Style WordPress navigation to match React site design. Configure breadcrumb navigation for blog sections.",
+            "status": "pending",
+            "testStrategy": "Test navigation between WordPress blog and React site sections. Verify all menu links work correctly and open in appropriate targets. Test breadcrumb functionality.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 5,
+            "title": "Comprehensive URL Pattern Testing",
+            "description": "Perform thorough testing of all blog URL patterns and proxy functionality",
+            "dependencies": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "details": "Test all possible blog URL patterns including posts, pages, categories, tags, archives, and search results. Verify WordPress admin access through proxy. Test RSS feeds and XML sitemaps accessibility. Validate proper handling of 404 errors and redirects. Test performance and loading times for blog content. Verify mobile responsiveness of proxied content.",
+            "status": "pending",
+            "testStrategy": "Create comprehensive test suite covering all URL patterns. Use automated testing tools to verify proxy functionality. Perform load testing to ensure performance standards are met.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 8,
+        "recommendedSubtasks": 5,
+        "expansionPrompt": "Break into Vercel rewrite configuration, caching header setup, SEO URL structure validation, WordPress navigation configuration, and comprehensive URL pattern testing. Each subtask should handle a specific aspect of the proxy setup."
+      },
+      {
+        "id": "10",
+        "title": "React Site Blog Integration and Final Testing",
+        "description": "Update React site to integrate with WordPress blog and perform comprehensive testing",
+        "details": "Update Articles & Insights page to link to real WordPress blog posts. Update Mesa News page with actual post links. Ensure category links point to WordPress category archives. Add proper external link handling for blog navigation. Implement seamless visual transition between React and WordPress sections. Test all integrations work correctly.",
+        "testStrategy": "End-to-end testing of blog integration. Verify all links between React site and WordPress work correctly. Test user experience flow from React pages to blog and back. Validate SEO implementation with Rank Math showing green scores. Performance testing of integrated solution.",
+        "priority": "medium",
+        "dependencies": [
+          "9"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Update React Site Blog Link Integration",
+            "description": "Update Articles & Insights and Mesa News pages to link to real WordPress blog posts with proper URL structure",
+            "dependencies": [],
+            "details": "Modify Articles & Insights page components to fetch and display WordPress blog post links. Update Mesa News page with actual WordPress post URLs. Implement dynamic link generation to WordPress blog posts using the /blog/post-slug permalink structure. Ensure all blog post previews on React pages link correctly to WordPress content.",
+            "status": "pending",
+            "testStrategy": "Test all blog post links from React pages navigate correctly to WordPress. Verify link URLs follow proper permalink structure and open in same/new tab as intended.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Implement WordPress Category Archive Navigation",
+            "description": "Configure category links to point to WordPress category archives with proper navigation flow",
+            "dependencies": [
+              1
+            ],
+            "details": "Set up category navigation links from React site to WordPress category archive pages. Implement proper URL mapping for category filters and tags. Ensure category links maintain consistent navigation experience and proper breadcrumb functionality between React and WordPress sections.",
+            "status": "pending",
+            "testStrategy": "Test category links navigate to correct WordPress archive pages. Verify category filtering works correctly and maintains user navigation context.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "External Link Handling Implementation",
+            "description": "Add proper external link handling for seamless navigation between React site and WordPress blog",
+            "dependencies": [
+              2
+            ],
+            "details": "Implement external link handling components for WordPress blog navigation. Add proper target and rel attributes for external links. Configure link behavior for opening WordPress pages while maintaining React site session. Implement back-navigation handling and breadcrumb consistency across platforms.",
+            "status": "pending",
+            "testStrategy": "Test external link behavior opens WordPress correctly. Verify back navigation works properly and user session is maintained across platforms.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Visual Transition Optimization",
+            "description": "Implement seamless visual transition between React site and WordPress blog sections",
+            "dependencies": [
+              3
+            ],
+            "details": "Optimize visual consistency between React site and WordPress theme. Implement loading states and transition animations for blog navigation. Ensure header/footer consistency and maintain design cohesion. Configure WordPress theme customizations to match React site's Inter font, color scheme (#f9c65d, #bb9446, #e5D2af), and responsive design patterns.",
+            "status": "pending",
+            "testStrategy": "Visual comparison testing between React and WordPress sections. Test transition smoothness and design consistency across different devices and screen sizes.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 5,
+            "title": "Comprehensive Integration Testing",
+            "description": "Perform end-to-end testing of complete React-WordPress integration functionality",
+            "dependencies": [
+              4
+            ],
+            "details": "Execute comprehensive testing of all integration points between React site and WordPress blog. Test user journey flows from React pages to blog and back. Verify all navigation elements, form submissions, and interactive components work correctly across both platforms. Test performance impact of integration and ensure Core Web Vitals remain optimal.",
+            "status": "pending",
+            "testStrategy": "End-to-end user journey testing from React to WordPress and back. Performance testing with Lighthouse audits. Cross-browser and cross-device compatibility testing of integrated solution.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 6,
+            "title": "SEO Validation and Final Optimization",
+            "description": "Validate SEO implementation with Rank Math and optimize complete integrated solution performance",
+            "dependencies": [
+              5
+            ],
+            "details": "Verify Rank Math SEO plugin shows green scores across all WordPress blog pages. Test XML sitemap generation includes both React and WordPress content. Validate meta tags, structured data, and SEO optimization across integrated solution. Perform final performance optimization and ensure page load times remain under 3 seconds for complete user journey.",
+            "status": "pending",
+            "testStrategy": "SEO audit using Rank Math plugin validation. Performance testing with GTmetrix and PageSpeed Insights for complete integrated solution. Verify XML sitemaps and structured data implementation.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 9,
+        "recommendedSubtasks": 6,
+        "expansionPrompt": "Divide into React site blog link updates, navigation integration, external link handling implementation, visual transition optimization, comprehensive integration testing, and SEO validation. Each subtask should focus on a specific integration aspect."
+      }
+    ],
+    "metadata": {
+      "version": "1.0.0",
+      "lastModified": "2026-01-31T18:30:00.947Z",
+      "taskCount": 10,
+      "completedCount": 6,
+      "tags": [
+        "master"
+      ]
+    }
+  }
+}

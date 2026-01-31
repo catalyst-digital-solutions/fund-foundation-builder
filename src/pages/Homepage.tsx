@@ -581,10 +581,11 @@ const Homepage = () => {
                 <video
                   className="w-full h-full object-cover"
                   controls
-                  poster=""
+                  poster="/mesa-group-consulting-30-second-commercial-thumbnail.jpg"
                   preload="metadata"
                 >
                   <source src="/mesa-group-consulting-30-second-commercial.webm" type="video/webm" />
+                  <source src="/mesa-group-consulting-30-second-commercial.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
