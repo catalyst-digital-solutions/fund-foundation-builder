@@ -428,3 +428,9 @@ Once the WordPress blog is live, integration with the content generation engine 
 - Loading and error states implemented
 - Links point to WordPress via proxy URL
 - Fallback to placeholder content if no WordPress posts
+- HTML entities properly decoded in titles
+
+**Note:** Both Articles & News pages currently show the same WordPress posts. To differentiate:
+- Create WordPress categories: "Articles", "News", "Company Updates", etc.
+- Update React pages to filter by category using `categories` parameter in API calls
+- Example: `useWordPressPosts({ per_page: 9, categories: '5' })` where 5 is the category ID
