@@ -393,16 +393,16 @@ Once the WordPress blog is live, integration with the content generation engine 
 
 ---
 
-**Last Updated:** February 4, 2026  
-**Status:** Tasks 7-8 Complete - WordPress installed and themed
+**Last Updated:** February 5, 2026  
+**Status:** Tasks 7-10 Complete - WordPress blog fully integrated with React site
 
-## Completed Today (Feb 4, 2026):
+## Completed (Feb 4-5, 2026):
 
 **Task 7: WordPress Installation ✅**
 - Cloudways server created (2GB RAM, Lightning Stack, $24/mo)
 - WordPress installed with MySQL 8.0, PHP 8.1+
 - Plugins installed: Rank Math SEO, Classic Editor, Wordfence, W3 Total Cache
-- Permalink structure: /blog/%postname%/
+- Permalink structure: /%postname%/
 - Site icon uploaded
 - Rank Math configured (Small Business Site, Financial Service)
 
@@ -412,3 +412,19 @@ Once the WordPress blog is live, integration with the content generation engine 
 - Typography set: Inter font for body and headings
 - Custom CSS added to match React site styling
 - Basic design matching complete
+
+**Task 9: Reverse Proxy Configuration ✅**
+- Vercel reverse proxy configured via `vercel.json`
+- WordPress accessible at `https://mesagroupconsulting.com/blog/`
+- SSL working correctly through proxy
+- Seamless URL routing from main site to blog
+
+**Task 10: React Site Blog Integration ✅**
+- WordPress REST API utility created (`src/utils/wordpress.ts`)
+- React Query hooks created (`src/hooks/useWordPress.ts`)
+- ArticlesInsights page updated to fetch real WordPress posts
+- MesaNews page updated to fetch real WordPress posts
+- Featured images, categories, excerpts displayed
+- Loading and error states implemented
+- Links point to WordPress via proxy URL
+- Fallback to placeholder content if no WordPress posts
