@@ -1,17 +1,24 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/blog",
-      "destination": "https://blog.mesagroupconsulting.com"
+      "src": "/blog",
+      "dest": "https://blog.mesagroupconsulting.com"
     },
     {
-      "source": "/blog/:path*",
-      "destination": "https://blog.mesagroupconsulting.com/:path*"
+      "src": "/blog/(.*)",
+      "dest": "https://blog.mesagroupconsulting.com/$1"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ],
   "headers": [
     {
-      "source": "/blog/:path*",
+      "source": "/blog/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
