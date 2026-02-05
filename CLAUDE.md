@@ -1305,5 +1305,70 @@ Redesigned the Contact page to improve user experience with cleaner layout and m
 
 ---
 
-**Last Updated:** January 29, 2026
+**Last Updated:** February 5, 2026
 **Project Status:** Active Development
+
+---
+
+## Recent Major Update #20 (February 5, 2026)
+
+### WordPress Blog Integration Complete
+
+**Background:**
+WordPress blog at `blog.mesagroupconsulting.com` fully integrated with main React site. Header and navigation now match the main site design.
+
+**Tasks Completed:**
+
+**Task 7-10: WordPress Installation & Integration ✅**
+- Cloudways server (Lightning Stack, 2GB RAM)
+- WordPress REST API integration with React site
+- Reverse proxy configuration via `vercel.json`
+- Articles & News pages fetch real WordPress posts
+
+**Task 11: WordPress Menu & Navigation ✅**
+- Header styling matches React site (black background, white text, Mesa Yellow accents)
+- Top info bar with hours, email (copy-to-clipboard), address, social icons
+- Slide-out panel with MGC logo, mission statement, hours, contact info
+- Header CTA elements: phone icon (dark gray bg, white icon), divider, Client Login link, dot grid trigger
+- WPCode snippets use `<g transform="scale()">` for SVG icon compatibility
+- Menu structure: "Blog" renamed to "Resources" with nested items
+
+**WPCode Snippets:**
+- `wpcode-top-info-bar-FIXED.html` - Top info bar implementation
+- `wpcode-header-snippet-FIXED.html` - Header enhancement (slide-out, CTA elements)
+
+**Technical Notes:**
+- SVG icons in WPCode require scaling via `<g transform="scale(X)">` inside `<svg>` tag (no viewBox attribute)
+- Email links use JavaScript copy-to-clipboard due to mailto: issues in production
+- Toast notifications implemented for email copy confirmation
+
+**WordPress Menu Structure (matching React site):**
+
+| Menu Item | URL |
+|-----------|-----|
+| Home | https://www.mesagroupconsulting.com/ |
+| About | https://www.mesagroupconsulting.com/about |
+| For Consumers | https://www.mesagroupconsulting.com/for-consumers |
+| → Build Credit | https://www.mesagroupconsulting.com/build-credit |
+| → Credit Monitoring | https://www.mesagroupconsulting.com/credit-monitoring |
+| → Credit Restoration (Mesa360) | https://www.mesagroupconsulting.com/credit-repair |
+| → DIY Credit Restoration | https://www.mesagroupconsulting.com/diy-credit-repair |
+| → Credit Cards | https://www.mesagroupconsulting.com/credit-cards |
+| → Personal Loans | https://www.mesagroupconsulting.com/personal-loans |
+| → Auto Loan Refi | https://www.mesagroupconsulting.com/auto-loan-refi |
+| → Student Loan Refi | https://www.mesagroupconsulting.com/student-loan-refi |
+| → Debt Consolidation Loan | https://www.mesagroupconsulting.com/debt-consolidation-loan |
+| → Debt Relief | https://www.mesagroupconsulting.com/debt-relief |
+| → Trust & Will Plan | https://www.mesagroupconsulting.com/trust-and-will-plan |
+| → Life Insurance | https://www.mesagroupconsulting.com/life-insurance |
+| For Businesses | https://www.mesagroupconsulting.com/for-businesses |
+| → 0% Interest Business Funding | https://www.mesagroupconsulting.com/zero-interest-business-funding |
+| → Business Funding | https://www.mesagroupconsulting.com/business-funding |
+| → Business Credit Builder | https://www.mesagroupconsulting.com/business-credit-builder |
+| → Business Debt Relief | https://www.mesagroupconsulting.com/business-debt-relief |
+| Resources | https://www.mesagroupconsulting.com/resources |
+| → Articles & Insights | https://www.mesagroupconsulting.com/resources/articles |
+| → Mesa News | https://www.mesagroupconsulting.com/resources/news |
+| → Financial Calculators | https://www.mesagroupconsulting.com/resources/calculators |
+| → Letter Templates | https://www.mesagroupconsulting.com/resources/templates |
+| Contact | https://www.mesagroupconsulting.com/contact |

@@ -57,8 +57,31 @@ const DotGridIcon = () => (
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [slideOutOpen, setSlideOutOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [showCopyToast, setShowCopyToast] = useState(false);
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleEmailClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const email = 'contact@mesagroupconsulting.com';
+    navigator.clipboard.writeText(email).then(() => {
+      setShowCopyToast(true);
+      setTimeout(() => setShowCopyToast(false), 2000);
+    }).catch(() => {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = email;
+      textArea.style.position = 'fixed';
+      textArea.style.left = '-9999px';
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      setShowCopyToast(true);
+      setTimeout(() => setShowCopyToast(false), 2000);
+    });
+  };
 
   const handleMouseEnter = (label: string) => {
     if (closeTimeoutRef.current) {
@@ -133,12 +156,14 @@ const Header = () => {
 
             {/* Center: Email & Address */}
             <div className="hidden md:flex items-center gap-6 text-white">
-              <div className="flex items-center gap-2">
+              <button 
+                onClick={handleEmailClick}
+                className="flex items-center gap-2 hover:text-[#f9c65d] transition-colors"
+                title="Click to copy email"
+              >
                 <Mail className="w-4 h-4" />
-                <a href="mailto:contact@mesagroupconsulting.com" className="hover:text-[#f9c65d] transition-colors">
-                  contact@mesagroupconsulting.com
-                </a>
-              </div>
+                <span>contact@mesagroupconsulting.com</span>
+              </button>
               <a href="https://www.google.com/maps/dir//5001+California+Ave+Suite+219,+Bakersfield,+CA+93309" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center gap-2 hover:text-[#f9c65d] transition-colors">
                 <MapPin className="w-4 h-4" />
                 <span>5001 California Ave Suite 219 Bakersfield, California 93309</span>
@@ -285,11 +310,11 @@ const Header = () => {
               {/* Divider before Dot Grid */}
               <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
 
-              {/* 3x3 Dot Grid - Desktop */}
+              {/* 3x3 Dot Grid - Desktop (opens slide-out panel) */}
               <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                onClick={() => setSlideOutOpen(true)}
                 className="hidden lg:flex p-2 text-white hover:text-[#f9c65d] transition-colors"
-                aria-label="Open menu"
+                aria-label="Open info panel"
               >
                 <DotGridIcon />
               </button>
@@ -394,6 +419,147 @@ const Header = () => {
               </a>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* Slide-Out Panel (Desktop) */}
+      {slideOutOpen && (
+        <>
+          {/* Backdrop */}
+          <div 
+            className="fixed inset-0 bg-black/50 z-[100] transition-opacity"
+            onClick={() => setSlideOutOpen(false)}
+          />
+          
+          {/* Panel */}
+          <div className="fixed top-0 right-0 h-full w-full max-w-[420px] bg-white z-[101] shadow-2xl transform transition-transform duration-300 ease-out overflow-y-auto">
+            {/* Close Button */}
+            <button
+              onClick={() => setSlideOutOpen(false)}
+              className="absolute top-6 right-6 w-10 h-10 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full transition-colors"
+              aria-label="Close panel"
+            >
+              <X className="w-5 h-5 text-gray-700" />
+            </button>
+            
+            {/* Panel Content */}
+            <div className="p-8 pt-12">
+              {/* Logo */}
+              <div className="mb-8">
+                <img 
+                  src="/mgc-mesa-group-consulting-black-svg-logo.svg.svg" 
+                  alt="Mesa Group Consulting" 
+                  className="h-[50px] w-auto"
+                />
+              </div>
+              
+              {/* Mission Statement */}
+              <div className="mb-8">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">Our Mission</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Mesa Group Consulting was founded with a mission deeply rooted in family, faith, and financial empowerment: To help underserved communities thrive through professional credit counseling services. As first-generation Americans raised by hardworking immigrant parents from the Hispanic and Punjabi communities, we saw firsthand the struggles families face when trying to navigate credit, funding, and financial systems that often overlook them.
+                </p>
+              </div>
+              
+              {/* Divider */}
+              <div className="border-t border-gray-200 my-6" />
+              
+              {/* Hours */}
+              <div className="mb-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <Clock className="w-5 h-5 text-[#f9c65d]" />
+                  <h4 className="font-semibold text-gray-900">Hours of Operation</h4>
+                </div>
+                <p className="text-gray-600 ml-8">
+                  Monday - Friday: 9:00 AM - 7:00 PM<br />
+                  Saturday: 10:00 AM - 2:00 PM<br />
+                  Sunday: Closed
+                </p>
+              </div>
+              
+              {/* Contact Info */}
+              <div className="space-y-4">
+                {/* Phone */}
+                <a 
+                  href="tel:+16613103040" 
+                  className="flex items-center gap-3 text-gray-700 hover:text-[#bb9446] transition-colors group"
+                >
+                  <div className="w-10 h-10 rounded-full bg-[#f9c65d]/10 flex items-center justify-center group-hover:bg-[#f9c65d]/20 transition-colors">
+                    <Phone className="w-5 h-5 text-[#f9c65d]" />
+                  </div>
+                  <div>
+                    <div className="text-xs text-gray-500">Phone</div>
+                    <div className="font-medium">(661) 310-3040</div>
+                  </div>
+                </a>
+                
+                {/* Email */}
+                <button 
+                  onClick={handleEmailClick}
+                  className="flex items-center gap-3 text-gray-700 hover:text-[#bb9446] transition-colors group text-left"
+                >
+                  <div className="w-10 h-10 rounded-full bg-[#f9c65d]/10 flex items-center justify-center group-hover:bg-[#f9c65d]/20 transition-colors">
+                    <Mail className="w-5 h-5 text-[#f9c65d]" />
+                  </div>
+                  <div>
+                    <div className="text-xs text-gray-500">Email (click to copy)</div>
+                    <div className="font-medium">contact@mesagroupconsulting.com</div>
+                  </div>
+                </button>
+                
+                {/* Address */}
+                <a 
+                  href="https://www.google.com/maps/dir//5001+California+Ave+Suite+219,+Bakersfield,+CA+93309"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-[#bb9446] transition-colors group"
+                >
+                  <div className="w-10 h-10 rounded-full bg-[#f9c65d]/10 flex items-center justify-center group-hover:bg-[#f9c65d]/20 transition-colors">
+                    <MapPin className="w-5 h-5 text-[#f9c65d]" />
+                  </div>
+                  <div>
+                    <div className="text-xs text-gray-500">Address</div>
+                    <div className="font-medium">5001 California Ave Suite 219<br />Bakersfield, CA 93309</div>
+                  </div>
+                </a>
+              </div>
+              
+              {/* Divider */}
+              <div className="border-t border-gray-200 my-6" />
+              
+              {/* Social Links */}
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-4">Connect With Us</h4>
+                <div className="flex items-center gap-4">
+                  <a href="https://www.facebook.com/mesagroupco" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-100 hover:bg-[#f9c65d]/20 flex items-center justify-center text-gray-600 hover:text-[#bb9446] transition-colors">
+                    <Facebook className="w-5 h-5" />
+                  </a>
+                  <a href="https://www.instagram.com/mesagroupco/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-100 hover:bg-[#f9c65d]/20 flex items-center justify-center text-gray-600 hover:text-[#bb9446] transition-colors">
+                    <Instagram className="w-5 h-5" />
+                  </a>
+                  <a href="https://x.com/mesagroupco" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-100 hover:bg-[#f9c65d]/20 flex items-center justify-center text-gray-600 hover:text-[#bb9446] transition-colors">
+                    <XIcon />
+                  </a>
+                  <a href="https://www.linkedin.com/company/106433329/admin/dashboard/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-100 hover:bg-[#f9c65d]/20 flex items-center justify-center text-gray-600 hover:text-[#bb9446] transition-colors">
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                  <a href="https://www.tiktok.com/@mesagroupco" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-100 hover:bg-[#f9c65d]/20 flex items-center justify-center text-gray-600 hover:text-[#bb9446] transition-colors">
+                    <TikTokIcon />
+                  </a>
+                  <a href="https://www.youtube.com/@MesaGroupCo" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-100 hover:bg-[#f9c65d]/20 flex items-center justify-center text-gray-600 hover:text-[#bb9446] transition-colors">
+                    <Youtube className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* Copy Toast Notification */}
+      {showCopyToast && (
+        <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white px-6 py-3 rounded-lg shadow-lg z-[200] animate-fade-in">
+          Email copied to clipboard!
         </div>
       )}
     </header>
