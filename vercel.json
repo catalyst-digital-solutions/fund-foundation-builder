@@ -3,11 +3,11 @@
   "rewrites": [
     { "source": "/blog", "destination": "https://blog.mesagroupconsulting.com/" },
     { "source": "/blog/", "destination": "https://blog.mesagroupconsulting.com/" },
-    { "source": "/blog/:path*", "destination": "https://blog.mesagroupconsulting.com/:path*" }
+    { "source": "/blog/:path(.*)", "destination": "https://blog.mesagroupconsulting.com/:path" }
   ],
   "headers": [
     {
-      "source": "/blog/:path*",
+      "source": "/blog/:path(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
       ]
