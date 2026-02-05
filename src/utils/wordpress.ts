@@ -102,6 +102,15 @@ export function getPostCategories(post: WordPressPost): Array<{ id: number; name
 }
 
 /**
+ * Decode HTML entities (e.g., &#8211; to –)
+ */
+export function decodeHtmlEntities(text: string): string {
+  const textarea = document.createElement('textarea');
+  textarea.innerHTML = text;
+  return textarea.value;
+}
+
+/**
  * Strip HTML tags from excerpt
  */
 export function stripHtmlTags(html: string): string {

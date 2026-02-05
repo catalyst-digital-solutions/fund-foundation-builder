@@ -11,7 +11,8 @@ import {
   getPostCategories, 
   stripHtmlTags, 
   calculateReadingTime,
-  getBlogPostUrl 
+  getBlogPostUrl,
+  decodeHtmlEntities
 } from '@/utils/wordpress';
 
 const ArticlesInsights = () => {
@@ -169,6 +170,7 @@ const ArticlesInsights = () => {
                 const featuredImage = getFeaturedImageUrl(post);
                 const categories = getPostCategories(post);
                 const category = categories.length > 0 ? categories[0].name : 'Uncategorized';
+                const title = decodeHtmlEntities(post.title.rendered);
                 const excerpt = stripHtmlTags(post.excerpt.rendered);
                 const readTime = calculateReadingTime(post.content.rendered);
                 const postUrl = getBlogPostUrl(post.slug);
@@ -183,7 +185,7 @@ const ArticlesInsights = () => {
                       {featuredImage ? (
                         <img
                           src={featuredImage}
-                          alt={post.title.rendered}
+                          alt={title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                       ) : (
@@ -205,7 +207,7 @@ const ArticlesInsights = () => {
                       </div>
 
                       <h3 className="text-xl font-bold text-gray-900 leading-tight group-hover:text-[#bb9446] transition-colors">
-                        {post.title.rendered}
+                        {title}
                       </h3>
 
                       <p className="text-gray-600 leading-relaxed line-clamp-3">

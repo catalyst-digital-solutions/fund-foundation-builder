@@ -32,7 +32,8 @@ import {
   getPostCategories, 
   stripHtmlTags,
   formatPostDate,
-  getBlogPostUrl 
+  getBlogPostUrl,
+  decodeHtmlEntities
 } from '@/utils/wordpress';
 
 import kget17Logo from '@/assets/kget-17-logo.png';
@@ -240,6 +241,7 @@ const MesaNews = () => {
                 const featuredImage = getFeaturedImageUrl(post);
                 const categories = getPostCategories(post);
                 const category = categories.length > 0 ? categories[0].name : 'Company Updates';
+                const title = decodeHtmlEntities(post.title.rendered);
                 const excerpt = stripHtmlTags(post.excerpt.rendered);
                 const date = formatPostDate(post.date);
                 const postUrl = getBlogPostUrl(post.slug);
@@ -254,7 +256,7 @@ const MesaNews = () => {
                       {featuredImage ? (
                         <img
                           src={featuredImage}
-                          alt={post.title.rendered}
+                          alt={title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                       ) : (
@@ -277,7 +279,7 @@ const MesaNews = () => {
                       </div>
 
                       <h3 className="text-xl font-bold text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">
-                        {post.title.rendered}
+                        {title}
                       </h3>
 
                       <p className="text-gray-600 leading-relaxed line-clamp-3">
