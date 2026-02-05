@@ -1,9 +1,10 @@
 /**
  * WordPress REST API Utility
- * Fetches blog posts from the WordPress installation at /blog
+ * Fetches blog posts from the WordPress installation
+ * Note: API requests go directly to blog subdomain, not through proxy
  */
 
-const WP_API_BASE = 'https://mesagroupconsulting.com/blog/wp-json/wp/v2';
+const WP_API_BASE = 'https://blog.mesagroupconsulting.com/wp-json/wp/v2';
 
 export interface WordPressPost {
   id: number;
