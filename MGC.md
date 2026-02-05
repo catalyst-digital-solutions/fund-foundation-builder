@@ -460,5 +460,23 @@ Once the WordPress blog is live, integration with the content generation engine 
 - `wpcode-top-info-bar-FIXED.html` - Top info bar snippet
 - `wpcode-header-snippet-FIXED.html` - Header enhancement snippet
 
+**WordPress Customizer CSS (Additional CSS):**
+```css
+/* Force vertical dropdown menus */
+.main-navigation .sub-menu,
+.primary-menu .sub-menu,
+nav ul ul {
+    display: block !important;
+    flex-direction: column !important;
+}
+
+.main-navigation .sub-menu li,
+.primary-menu .sub-menu li,
+nav ul ul li {
+    display: block !important;
+    width: 100% !important;
+}
+```
+
 **Remaining Tasks:**
 - [ ] Task 12: SEO & Performance Optimization
