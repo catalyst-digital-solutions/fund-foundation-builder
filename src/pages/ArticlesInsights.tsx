@@ -1,16 +1,27 @@
 import { useState } from 'react';
-import { Search, Clock, ArrowRight, BookOpen, TrendingUp, Building2, Scale, DollarSign, Mail } from 'lucide-react';
+import { Search, Clock, ArrowRight, BookOpen, TrendingUp, Building2, Scale, DollarSign, Mail, Loader2 } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyModal } from '@/components/CalendlyModal';
 import { NewsletterModal } from '@/components/NewsletterModal';
+import { useWordPressPosts } from '@/hooks/useWordPress';
+import { 
+  getFeaturedImageUrl, 
+  getPostCategories, 
+  stripHtmlTags, 
+  calculateReadingTime,
+  getBlogPostUrl 
+} from '@/utils/wordpress';
 
 const ArticlesInsights = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
   const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
   const navigate = useNavigate();
+
+  // Fetch WordPress posts
+  const { data: wordpressPosts, isLoading, error } = useWordPressPosts({ per_page: 9 });
 
   const openCalendly = () => setIsCalendlyOpen(true);
   const closeCalendly = () => setIsCalendlyOpen(false);
@@ -135,92 +146,166 @@ const ArticlesInsights = () => {
             Latest <span className="text-[#f9c65d]">Articles</span>
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredArticles.map((article) => {
-              const isFirstArticle = article.id === 1;
-              const isSecondArticle = article.id === 2;
-              const isThirdArticle = article.id === 3;
-              const cardContent = (
-                <>
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={article.image}
-                      alt={article.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="inline-block px-3 py-1 bg-[#f9c65d] text-gray-900 text-sm font-semibold rounded-full shadow-lg">
-                        {article.category}
-                      </span>
-                    </div>
-                  </div>
+          {/* Loading State */}
+          {isLoading && (
+            <div className="flex justify-center items-center py-12">
+              <Loader2 className="w-8 h-8 text-[#f9c65d] animate-spin" />
+              <span className="ml-3 text-gray-600">Loading articles...</span>
+            </div>
+          )}
 
-                  <div className="p-6 space-y-4">
-                    <div className="flex items-center gap-2 text-sm text-gray-500">
-                      <Clock className="w-4 h-4" />
-                      <span>{article.readTime}</span>
-                    </div>
+          {/* Error State */}
+          {error && (
+            <div className="text-center py-12">
+              <p className="text-red-600 mb-4">Unable to load articles from WordPress.</p>
+              <p className="text-gray-600">Please check back later or contact support.</p>
+            </div>
+          )}
 
-                    <h3 className="text-xl font-bold text-gray-900 leading-tight group-hover:text-[#bb9446] transition-colors">
-                      {article.title}
-                    </h3>
+          {/* WordPress Posts */}
+          {!isLoading && !error && wordpressPosts && wordpressPosts.length > 0 && (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {wordpressPosts.map((post) => {
+                const featuredImage = getFeaturedImageUrl(post);
+                const categories = getPostCategories(post);
+                const category = categories.length > 0 ? categories[0].name : 'Uncategorized';
+                const excerpt = stripHtmlTags(post.excerpt.rendered);
+                const readTime = calculateReadingTime(post.content.rendered);
+                const postUrl = getBlogPostUrl(post.slug);
 
-                    <p className="text-gray-600 leading-relaxed">
-                      {article.excerpt}
-                    </p>
-
-                    <div className="pt-4">
-                      <span className="inline-flex items-center text-[#bb9446] font-semibold group-hover:gap-2 transition-all">
-                        Read Article
-                        <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </span>
-                    </div>
-                  </div>
-                </>
-              );
-
-              if (isFirstArticle) {
                 return (
-                  <Link
-                    key={article.id}
-                    to="/blog/does-credit-utilization-matter-if-you-pay-in-full-every-month"
+                  <a
+                    key={post.id}
+                    href={postUrl}
                     className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
                   >
-                    {cardContent}
-                  </Link>
+                    <div className="relative h-48 overflow-hidden">
+                      {featuredImage ? (
+                        <img
+                          src={featuredImage}
+                          alt={post.title.rendered}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
+                          <BookOpen className="w-16 h-16 text-amber-300" />
+                        </div>
+                      )}
+                      <div className="absolute top-4 left-4">
+                        <span className="inline-block px-3 py-1 bg-[#f9c65d] text-gray-900 text-sm font-semibold rounded-full shadow-lg">
+                          {category}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="p-6 space-y-4">
+                      <div className="flex items-center gap-2 text-sm text-gray-500">
+                        <Clock className="w-4 h-4" />
+                        <span>{readTime}</span>
+                      </div>
+
+                      <h3 className="text-xl font-bold text-gray-900 leading-tight group-hover:text-[#bb9446] transition-colors">
+                        {post.title.rendered}
+                      </h3>
+
+                      <p className="text-gray-600 leading-relaxed line-clamp-3">
+                        {excerpt}
+                      </p>
+
+                      <div className="pt-4">
+                        <span className="inline-flex items-center text-[#bb9446] font-semibold group-hover:gap-2 transition-all">
+                          Read Article
+                          <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </span>
+                      </div>
+                    </div>
+                  </a>
                 );
-              } else if (isSecondArticle) {
-                return (
-                  <Link
-                    key={article.id}
-                    to="/blog/what-is-wfbna-on-credit-report"
-                    className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
-                  >
-                    {cardContent}
-                  </Link>
+              })}
+            </div>
+          )}
+
+          {/* Fallback: Show old featured articles if no WordPress posts */}
+          {!isLoading && !error && (!wordpressPosts || wordpressPosts.length === 0) && (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {featuredArticles.map((article) => {
+                const isFirstArticle = article.id === 1;
+                const isSecondArticle = article.id === 2;
+                const isThirdArticle = article.id === 3;
+                const cardContent = (
+                  <>
+                    <div className="relative h-48 overflow-hidden">
+                      <img
+                        src={article.image}
+                        alt={article.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute top-4 left-4">
+                        <span className="inline-block px-3 py-1 bg-[#f9c65d] text-gray-900 text-sm font-semibold rounded-full shadow-lg">
+                          {article.category}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="p-6 space-y-4">
+                      <div className="flex items-center gap-2 text-sm text-gray-500">
+                        <Clock className="w-4 h-4" />
+                        <span>{article.readTime}</span>
+                      </div>
+
+                      <h3 className="text-xl font-bold text-gray-900 leading-tight group-hover:text-[#bb9446] transition-colors">
+                        {article.title}
+                      </h3>
+
+                      <p className="text-gray-600 leading-relaxed">
+                        {article.excerpt}
+                      </p>
+
+                      <div className="pt-4">
+                        <span className="inline-flex items-center text-[#bb9446] font-semibold group-hover:gap-2 transition-all">
+                          Read Article
+                          <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </span>
+                      </div>
+                    </div>
+                  </>
                 );
-              } else if (isThirdArticle) {
-                return (
-                  <Link
-                    key={article.id}
-                    to="/blog/debt-relief-vs-debt-consolidation"
-                    className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
-                  >
-                    {cardContent}
-                  </Link>
-                );
-              } else {
-                return (
-                  <article
-                    key={article.id}
-                    className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer"
-                  >
-                    {cardContent}
-                  </article>
-                );
-              }
-            })}
-          </div>
+
+                if (isFirstArticle) {
+                  return (
+                    <Link
+                      key={article.id}
+                      to="/blog/does-credit-utilization-matter-if-you-pay-in-full-every-month"
+                      className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
+                    >
+                      {cardContent}
+                    </Link>
+                  );
+                } else if (isSecondArticle) {
+                  return (
+                    <Link
+                      key={article.id}
+                      to="/blog/what-is-wfbna-on-credit-report"
+                      className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
+                    >
+                      {cardContent}
+                    </Link>
+                  );
+                } else if (isThirdArticle) {
+                  return (
+                    <Link
+                      key={article.id}
+                      to="/blog/debt-relief-vs-debt-consolidation"
+                      className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
+                    >
+                      {cardContent}
+                    </Link>
+                  );
+                }
+                return null;
+              })}
+            </div>
+          )}
 
         </div>
       </section>

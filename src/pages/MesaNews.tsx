@@ -19,12 +19,21 @@ import {
   Send,
   Phone,
   Filter,
-  TrendingUp
+  TrendingUp,
+  Loader2
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyModal } from '@/components/CalendlyModal';
 import { NewsletterModal } from '@/components/NewsletterModal';
+import { useWordPressPosts } from '@/hooks/useWordPress';
+import { 
+  getFeaturedImageUrl, 
+  getPostCategories, 
+  stripHtmlTags,
+  formatPostDate,
+  getBlogPostUrl 
+} from '@/utils/wordpress';
 
 import kget17Logo from '@/assets/kget-17-logo.png';
 import studio17Logo from '@/assets/studio-17-logo.png';
@@ -37,6 +46,9 @@ const MesaNews = () => {
   const [sortOrder, setSortOrder] = useState('recent');
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
   const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
+
+  // Fetch WordPress posts for news
+  const { data: wordpressPosts, isLoading, error } = useWordPressPosts({ per_page: 6 });
 
   const openCalendly = () => setIsCalendlyOpen(true);
   const closeCalendly = () => setIsCalendlyOpen(false);
@@ -205,49 +217,124 @@ const MesaNews = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredPosts.map((post) => (
-              <article key={post.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
-                
-                <div className="relative h-48 bg-gradient-to-br from-amber-100 to-orange-100 overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Newspaper className="w-16 h-16 text-amber-300" />
-                  </div>
-                </div>
+          {/* Loading State */}
+          {isLoading && (
+            <div className="flex justify-center items-center py-12">
+              <Loader2 className="w-8 h-8 text-[#f9c65d] animate-spin" />
+              <span className="ml-3 text-gray-600">Loading news...</span>
+            </div>
+          )}
 
-                <div className="p-6 space-y-4">
-                  
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="inline-flex items-center gap-1 px-3 py-1 bg-amber-100 text-amber-800 rounded-full font-medium">
-                      <Tag className="w-3 h-3" />
-                      {post.category}
-                    </span>
-                    <span className="flex items-center gap-1 text-gray-500">
-                      <Calendar className="w-4 h-4" />
-                      {post.date}
-                    </span>
-                  </div>
+          {/* Error State */}
+          {error && (
+            <div className="text-center py-12">
+              <p className="text-red-600 mb-4">Unable to load news from WordPress.</p>
+              <p className="text-gray-600">Please check back later or contact support.</p>
+            </div>
+          )}
 
-                  <h3 className="text-xl font-bold text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">
-                    {post.title}
-                  </h3>
+          {/* WordPress Posts */}
+          {!isLoading && !error && wordpressPosts && wordpressPosts.length > 0 && (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {wordpressPosts.map((post) => {
+                const featuredImage = getFeaturedImageUrl(post);
+                const categories = getPostCategories(post);
+                const category = categories.length > 0 ? categories[0].name : 'Company Updates';
+                const excerpt = stripHtmlTags(post.excerpt.rendered);
+                const date = formatPostDate(post.date);
+                const postUrl = getBlogPostUrl(post.slug);
 
-                  <p className="text-gray-600 leading-relaxed">
-                    {post.excerpt}
-                  </p>
-
-                  <a 
-                    href="#" 
-                    className="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700 transition-colors"
+                return (
+                  <a
+                    key={post.id}
+                    href={postUrl}
+                    className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
                   >
-                    Read More
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
+                    <div className="relative h-48 overflow-hidden">
+                      {featuredImage ? (
+                        <img
+                          src={featuredImage}
+                          alt={post.title.rendered}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      ) : (
+                        <div className="bg-gradient-to-br from-amber-100 to-orange-100 w-full h-full flex items-center justify-center">
+                          <Newspaper className="w-16 h-16 text-amber-300" />
+                        </div>
+                      )}
+                    </div>
 
-                </div>
-              </article>
-            ))}
-          </div>
+                    <div className="p-6 space-y-4">
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="inline-flex items-center gap-1 px-3 py-1 bg-amber-100 text-amber-800 rounded-full font-medium">
+                          <Tag className="w-3 h-3" />
+                          {category}
+                        </span>
+                        <span className="flex items-center gap-1 text-gray-500">
+                          <Calendar className="w-4 h-4" />
+                          {date}
+                        </span>
+                      </div>
+
+                      <h3 className="text-xl font-bold text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">
+                        {post.title.rendered}
+                      </h3>
+
+                      <p className="text-gray-600 leading-relaxed line-clamp-3">
+                        {excerpt}
+                      </p>
+
+                      <span className="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700 transition-colors">
+                        Read More
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </span>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          )}
+
+          {/* Fallback: Show placeholder if no WordPress posts */}
+          {!isLoading && !error && (!wordpressPosts || wordpressPosts.length === 0) && (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {featuredPosts.map((post) => (
+                <article key={post.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                  <div className="relative h-48 bg-gradient-to-br from-amber-100 to-orange-100 overflow-hidden">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Newspaper className="w-16 h-16 text-amber-300" />
+                    </div>
+                  </div>
+
+                  <div className="p-6 space-y-4">
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="inline-flex items-center gap-1 px-3 py-1 bg-amber-100 text-amber-800 rounded-full font-medium">
+                        <Tag className="w-3 h-3" />
+                        {post.category}
+                      </span>
+                      <span className="flex items-center gap-1 text-gray-500">
+                        <Calendar className="w-4 h-4" />
+                        {post.date}
+                      </span>
+                    </div>
+
+                    <h3 className="text-xl font-bold text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">
+                      {post.title}
+                    </h3>
+
+                    <p className="text-gray-600 leading-relaxed">
+                      {post.excerpt}
+                    </p>
+
+                    <span className="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700 transition-colors cursor-pointer">
+                      Read More
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </div>
+                </article>
+              ))}
+            </div>
+          )}
 
         </div>
       </section>
