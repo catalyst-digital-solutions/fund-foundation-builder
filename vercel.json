@@ -1,29 +1,15 @@
 {
-  "routes": [
-    {
-      "src": "/blog",
-      "dest": "https://blog.mesagroupconsulting.com"
-    },
-    {
-      "src": "/blog/(.*)",
-      "dest": "https://blog.mesagroupconsulting.com/$1"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/blog", "destination": "https://blog.mesagroupconsulting.com/" },
+    { "source": "/blog/", "destination": "https://blog.mesagroupconsulting.com/" },
+    { "source": "/blog/:path*", "destination": "https://blog.mesagroupconsulting.com/:path*" }
   ],
   "headers": [
     {
-      "source": "/blog/(.*)",
+      "source": "/blog/:path*",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600, stale-while-revalidate=86400"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
       ]
     }
   ]
