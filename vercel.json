@@ -1,9 +1,9 @@
 {
-  "framework": "vite",
   "rewrites": [
     { "source": "/blog", "destination": "https://blog.mesagroupconsulting.com/" },
     { "source": "/blog/", "destination": "https://blog.mesagroupconsulting.com/" },
-    { "source": "/blog/:path(.*)", "destination": "https://blog.mesagroupconsulting.com/:path" }
+    { "source": "/blog/:path(.*)", "destination": "https://blog.mesagroupconsulting.com/:path" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
     {
