@@ -143,8 +143,8 @@ export function formatPostDate(dateString: string): string {
 }
 
 /**
- * Get blog post URL (via proxy)
+ * Get blog post URL (direct link to blog subdomain)
  */
 export function getBlogPostUrl(slug: string): string {
-  return `/blog/${slug}/`;
+  return `https://blog.mesagroupconsulting.com/${slug}/`;
 }

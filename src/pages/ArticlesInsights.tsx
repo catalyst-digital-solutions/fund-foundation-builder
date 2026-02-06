@@ -179,6 +179,8 @@ const ArticlesInsights = () => {
                   <a
                     key={post.id}
                     href={postUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
                   >
                     <div className="relative h-48 overflow-hidden">

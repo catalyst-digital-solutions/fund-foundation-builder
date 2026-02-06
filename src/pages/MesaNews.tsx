@@ -250,6 +250,8 @@ const MesaNews = () => {
                   <a
                     key={post.id}
                     href={postUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group block"
                   >
                     <div className="relative h-48 overflow-hidden">
