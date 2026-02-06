@@ -1,0 +1,664 @@
+<!-- Mesa Group Consulting - Custom Footer for WordPress -->
+<!-- WPCode Snippet: Footer Location, Priority 10 -->
+
+<style>
+/* Footer Reset & Base Styles */
+.mgc-footer * { box-sizing: border-box; }
+.mgc-footer a { text-decoration: none; }
+.mgc-footer a:hover { text-decoration: none; }
+
+/* Disclaimer Bar */
+.mgc-disclaimer-bar {
+  background: #1a1a1a;
+  padding: 16px 0;
+}
+.mgc-disclaimer-bar p {
+  color: #fff;
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.mgc-disclaimer-bar a {
+  color: #fff;
+  text-decoration: underline;
+}
+.mgc-disclaimer-bar a:hover {
+  color: #f9c65d;
+}
+
+/* Main Footer */
+.mgc-footer-main {
+  background: linear-gradient(to bottom, #fff4c6, #fffbea);
+  padding: 48px 16px;
+}
+.mgc-footer-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+@media (min-width: 768px) {
+  .mgc-footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .mgc-footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+  }
+}
+
+/* Column Styles */
+.mgc-footer-col { }
+.mgc-footer-col h3 {
+  color: #3e3e3e;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+.mgc-footer-col h4 {
+  color: #bb9446 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  margin: 0 0 12px 0 !important;
+  letter-spacing: 1.5px !important;
+  background: none !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+.mgc-footer-col p {
+  color: #3e3e3e;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+.mgc-footer-col ul {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 0;
+}
+.mgc-footer-col ul li {
+  margin-bottom: 8px;
+}
+.mgc-footer-col ul li a {
+  color: #3e3e3e;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s;
+}
+.mgc-footer-col ul li a:hover {
+  color: #bb9446;
+}
+
+/* Contact Links */
+.mgc-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #3e3e3e;
+  font-size: 14px;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+}
+.mgc-contact-link:hover {
+  color: #bb9446;
+}
+.mgc-contact-link svg {
+  flex-shrink: 0;
+}
+
+/* Address Link */
+.mgc-address-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #3e3e3e;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+.mgc-address-link:hover {
+  color: #bb9446;
+}
+.mgc-address-link svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Hours */
+.mgc-hours-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #3e3e3e;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* Language Support */
+.mgc-language {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #3e3e3e;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* Collapsible Sections */
+.mgc-collapsible-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 8px 0;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+.mgc-collapsible-header h4 {
+  margin: 0;
+}
+.mgc-collapsible-arrow {
+  transition: transform 0.2s;
+}
+.mgc-collapsible-arrow.open {
+  transform: rotate(180deg);
+}
+.mgc-collapsible-content {
+  display: none;
+  padding-bottom: 16px;
+}
+.mgc-collapsible-content.open {
+  display: block;
+}
+@media (min-width: 768px) {
+  .mgc-collapsible-header {
+    cursor: default;
+    padding: 0;
+  }
+  .mgc-collapsible-arrow {
+    display: none;
+  }
+  .mgc-collapsible-content {
+    display: block !important;
+  }
+}
+
+/* Newsletter Button */
+.mgc-newsletter-btn {
+  width: 100% !important;
+  background: #3e3e3e !important;
+  background-color: #3e3e3e !important;
+  color: #fff !important;
+  padding: 14px 20px !important;
+  border-radius: 8px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  border: none !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  transition: background 0.2s, color 0.2s !important;
+}
+.mgc-newsletter-btn:hover {
+  background: #2c2c2c !important;
+  background-color: #2c2c2c !important;
+  color: #f9c65d !important;
+}
+
+/* Social Icons */
+.mgc-social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.mgc-social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #3e3e3e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.mgc-social-icon:hover {
+  background: #bb9446;
+}
+.mgc-social-icon svg {
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  fill: #fff;
+}
+
+/* Trust Indicators */
+.mgc-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #3e3e3e;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.mgc-trust-item svg {
+  flex-shrink: 0;
+}
+
+/* Catalyst Attribution */
+.mgc-catalyst {
+  padding-top: 16px;
+}
+.mgc-catalyst p {
+  margin: 0;
+  font-size: 14px;
+  color: #3e3e3e;
+}
+.mgc-catalyst img {
+  width: 160px;
+  height: auto;
+  margin: 4px 0;
+}
+
+/* Links Bar */
+.mgc-links-bar {
+  background: #1a1a1a;
+  padding: 16px 0;
+}
+.mgc-links-bar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.mgc-links-bar a {
+  color: #fff;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+.mgc-links-bar a:hover {
+  color: #f9c65d;
+  text-decoration: underline;
+}
+
+/* Copyright Bar */
+.mgc-copyright-bar {
+  background: #1a1a1a;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 16px 0;
+}
+.mgc-copyright-bar p {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  padding: 0 16px;
+}
+.mgc-copyright-bar a {
+  color: #fff;
+  transition: color 0.2s;
+}
+.mgc-copyright-bar a:hover {
+  color: #f9c65d;
+  text-decoration: underline;
+}
+
+/* Footer Logo */
+.mgc-footer-logo {
+  height: 40px;
+  width: auto;
+  margin-bottom: 16px;
+}
+
+/* External Link Icon */
+.mgc-external-icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* Newsletter Modal */
+.mgc-newsletter-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.mgc-newsletter-modal-overlay.open {
+  display: flex;
+}
+.mgc-newsletter-modal {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+}
+.mgc-newsletter-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+.mgc-newsletter-modal-close:hover {
+  background: #f3f4f6;
+}
+.mgc-newsletter-modal iframe {
+  width: 100%;
+  min-height: 520px;
+  border: 0;
+}
+</style>
+
+<footer class="mgc-footer">
+  <!-- Disclaimer Bar -->
+  <div class="mgc-disclaimer-bar">
+    <p>
+      <strong>Disclaimers:</strong> The information on this website is for educational purposes only and does not constitute financial, legal, or tax advice. Mesa Group Consulting is not a lender and does not make credit decisions or provide financing. We may receive compensation through affiliate partnerships and referral arrangements. Credit repair services comply with CROA—you have the right to dispute inaccurate information with credit bureaus yourself at no cost. Results are not guaranteed and vary by individual circumstances. For detailed information, see our full <a href="https://www.mesagroupconsulting.com/disclaimer">Disclaimer Page</a>.
+    </p>
+  </div>
+
+  <!-- Main Footer -->
+  <div class="mgc-footer-main">
+    <div class="mgc-footer-grid">
+      
+      <!-- Column 1: About -->
+      <div class="mgc-footer-col">
+        <img src="https://www.mesagroupconsulting.com/mgc-mesa-group-consulting-black-svg-logo.svg.svg" alt="Mesa Group Consulting" class="mgc-footer-logo">
+        <p>Have a question about credit, funding, or your next financial move? Reach out today and let Mesa Group Consulting's trilingual team turn complex money problems into clear, actionable solutions.</p>
+        
+        <div style="margin-bottom:16px;">
+          <p class="mgc-language"><span>🇪🇸</span> Hablamos Español</p>
+          <p class="mgc-language"><span>🇮🇳</span> Assi Punjabi Bolde Haan</p>
+        </div>
+        
+        <h4>CONTACT US</h4>
+        <a href="mailto:contact@mesagroupconsulting.com" class="mgc-contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          contact@mesagroupconsulting.com
+        </a>
+        <a href="tel:+16613103040" class="mgc-contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (661) 310-3040
+        </a>
+        
+        <h4 style="margin-top:16px;">ADDRESS</h4>
+        <a href="https://www.google.com/maps/dir//5001+California+Ave+%23+219,+Bakersfield,+CA+93309" target="_blank" rel="noopener noreferrer" class="mgc-address-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>5001 California Ave Suite 219<br>Bakersfield, CA 93309</span>
+        </a>
+        
+        <h4 style="margin-top:16px;">HOURS</h4>
+        <div class="mgc-hours-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          M-F: 9am - 7pm
+        </div>
+        <div class="mgc-hours-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Sat: 10am - 2pm
+        </div>
+        <div class="mgc-hours-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Sun: Closed
+        </div>
+      </div>
+      
+      <!-- Column 2: For Consumers -->
+      <div class="mgc-footer-col">
+        <h3>For Consumers</h3>
+        
+        <!-- Credit Services -->
+        <div class="mgc-collapsible" data-collapsible="credit-services">
+          <button class="mgc-collapsible-header" onclick="toggleCollapsible('credit-services')">
+            <h4>CREDIT SERVICES</h4>
+            <svg class="mgc-collapsible-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bb9446" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mgc-collapsible-content" id="credit-services-content">
+            <ul>
+              <li><a href="https://www.mesagroupconsulting.com/build-credit">Build Your Credit</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/credit-monitoring">Credit Monitoring</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/credit-repair">Credit Restoration</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/diy-credit-repair">DIY Credit Repair</a></li>
+              <li><a href="https://www.smartcredit.com/?PID=39842" target="_blank" rel="noopener noreferrer">Get Credit Report <svg class="mgc-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Lending Solutions -->
+        <div class="mgc-collapsible" data-collapsible="lending">
+          <button class="mgc-collapsible-header" onclick="toggleCollapsible('lending')">
+            <h4>LENDING SOLUTIONS</h4>
+            <svg class="mgc-collapsible-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bb9446" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mgc-collapsible-content" id="lending-content">
+            <ul>
+              <li><a href="https://www.mesagroupconsulting.com/personal-loans">Personal Loans</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/credit-cards">Credit Cards</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/auto-loan-refi">Auto Loan Refinancing</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/student-loan-refi">Student Loan Refinancing</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/debt-consolidation-loan">Debt Consolidation</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Protection -->
+        <div class="mgc-collapsible" data-collapsible="protection">
+          <button class="mgc-collapsible-header" onclick="toggleCollapsible('protection')">
+            <h4>PROTECTION</h4>
+            <svg class="mgc-collapsible-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bb9446" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mgc-collapsible-content" id="protection-content">
+            <ul>
+              <li><a href="https://www.mesagroupconsulting.com/debt-relief">Debt Relief</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/trust-and-will-plan">Trust & Will Planning</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/life-insurance">Life Insurance</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Column 3: For Businesses -->
+      <div class="mgc-footer-col">
+        <h3>For Businesses</h3>
+        
+        <!-- Business Services -->
+        <div class="mgc-collapsible" data-collapsible="business-services">
+          <button class="mgc-collapsible-header" onclick="toggleCollapsible('business-services')">
+            <h4>BUSINESS SERVICES</h4>
+            <svg class="mgc-collapsible-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bb9446" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mgc-collapsible-content" id="business-services-content">
+            <ul>
+              <li><a href="https://www.mesagroupconsulting.com/zero-interest-business-funding">0% Interest Funding</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/business-funding">Business Funding</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/business-credit-builder">Business Credit Builder</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/business-debt-relief">Business Debt Relief</a></li>
+              <li><a href="https://www.tailorbrands.com/llc-cpa-aff?transaction_id=102bd1f29c1558d91db36f9aa7b89e&state=&utm_source=Tune&utm_medium=Tune&utm_campaign=9347" target="_blank" rel="noopener noreferrer">Form An LLC <svg class="mgc-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Resources -->
+        <div class="mgc-collapsible" data-collapsible="resources">
+          <button class="mgc-collapsible-header" onclick="toggleCollapsible('resources')">
+            <h4>RESOURCES</h4>
+            <svg class="mgc-collapsible-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bb9446" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mgc-collapsible-content" id="resources-content">
+            <ul>
+              <li><a href="https://portal.mesagroupconsulting.com/Portal/login.jsp" target="_blank" rel="noopener noreferrer">Client Portal <svg class="mgc-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+              <li><a href="https://www.mesagroupconsulting.com/resources/articles">Blog & Guides</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/resources/calculators">Financial Calculator</a></li>
+              <li><a href="https://www.mesagroupconsulting.com/contact">Free Consultation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Column 4: Connect With Us -->
+      <div class="mgc-footer-col">
+        <h3>Connect With Us</h3>
+        
+        <!-- Newsletter -->
+        <div style="margin-bottom:24px;">
+          <h4>STAY UPDATED</h4>
+          <p>Subscribe to our financial tips newsletter</p>
+          <button class="mgc-newsletter-btn" onclick="openNewsletterModal()">
+            Subscribe Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+        </div>
+        
+        <!-- Social Media -->
+        <div style="margin-bottom:24px;">
+          <h4>MESA GROUP CONSULTING</h4>
+          <div class="mgc-social-icons">
+            <a href="https://www.facebook.com/mesagroupco" target="_blank" rel="noopener noreferrer" class="mgc-social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/mesagroupco/" target="_blank" rel="noopener noreferrer" class="mgc-social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@mesagroupco" target="_blank" rel="noopener noreferrer" class="mgc-social-icon" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/106433329/" target="_blank" rel="noopener noreferrer" class="mgc-social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://x.com/mesagroupco" target="_blank" rel="noopener noreferrer" class="mgc-social-icon" aria-label="X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@MesaGroupCo" target="_blank" rel="noopener noreferrer" class="mgc-social-icon" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#1a1a1a"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Trust Indicators -->
+        <div style="margin-bottom:24px;">
+          <div class="mgc-trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f9c65d" stroke="#f9c65d" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>5.0 Google Rating</span>
+          </div>
+          <div class="mgc-trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bb9446" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <span>$15M+ Collections Deleted</span>
+          </div>
+          <div class="mgc-trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bb9446" stroke-width="2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+            <span>$97M+ Business Funding Secured</span>
+          </div>
+          <div class="mgc-trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bb9446" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>2,500+ Clients Served</span>
+          </div>
+        </div>
+        
+        <!-- Catalyst Attribution -->
+        <div class="mgc-catalyst">
+          <p>A</p>
+          <a href="https://www.catalyst-digital.solutions" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.mesagroupconsulting.com/Catalyst%20Digital%20Solutions%20Logos%20and%20Headers%20-%20Purple%20-%20Rev%20D.svg" alt="Catalyst Digital Solutions">
+          </a>
+          <p>Website</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Links Bar -->
+  <div class="mgc-links-bar">
+    <div class="mgc-links-bar-inner">
+      <a href="https://www.mesagroupconsulting.com/privacy-policy">Privacy Policy</a>
+      <a href="https://www.mesagroupconsulting.com/terms-and-conditions">Terms & Conditions</a>
+      <a href="https://www.mesagroupconsulting.com/accessibility">Accessibility</a>
+    </div>
+  </div>
+
+  <!-- Copyright Bar -->
+  <div class="mgc-copyright-bar">
+    <p>© Copyright <script>document.write(new Date().getFullYear())</script> <a href="https://www.mesagroupconsulting.com" target="_blank" rel="noopener noreferrer">Mesa Group Consulting.</a> All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Newsletter Modal -->
+<div class="mgc-newsletter-modal-overlay" id="mgc-newsletter-modal">
+  <div class="mgc-newsletter-modal">
+    <button class="mgc-newsletter-modal-close" onclick="closeNewsletterModal()" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <iframe src="https://link.mesagroupconsulting.com/widget/form/87XreQhYJtAAT7XwLE0p" title="Newsletter Signup"></iframe>
+  </div>
+</div>
+
+<script>
+// Collapsible functionality
+function toggleCollapsible(id) {
+  var content = document.getElementById(id + '-content');
+  var arrow = document.querySelector('[data-collapsible="' + id + '"] .mgc-collapsible-arrow');
+  
+  if (content.classList.contains('open')) {
+    content.classList.remove('open');
+    if (arrow) arrow.classList.remove('open');
+  } else {
+    content.classList.add('open');
+    if (arrow) arrow.classList.add('open');
+  }
+}
+
+// Newsletter modal functions
+function openNewsletterModal() {
+  document.getElementById('mgc-newsletter-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeNewsletterModal() {
+  document.getElementById('mgc-newsletter-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Close modal on overlay click
+document.getElementById('mgc-newsletter-modal').addEventListener('click', function(e) {
+  if (e.target === this) {
+    closeNewsletterModal();
+  }
+});
+
+// Close modal on Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeNewsletterModal();
+  }
+});
+</script>
