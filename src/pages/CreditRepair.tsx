@@ -16,6 +16,8 @@ import mesa360HeroTeam from "@/assets/mesa360-hero-team.jpeg";
 import experianLogo from "@/assets/experian-logo.png";
 import equifaxLogo from "@/assets/equifax-logo.png";
 import transunionLogo from "@/assets/transunion-logo.png";
+import { SEO } from '@/components/SEO';
+import { SEO } from '@/components/SEO';
 const CreditRepair = () => {
   const timelineSectionRef = useRef<HTMLElement>(null);
   const [timelineVisible, setTimelineVisible] = useState(false);
@@ -44,6 +46,11 @@ const CreditRepair = () => {
     });
   };
   return <main className="min-h-screen">
+      <SEO 
+        title="Credit Repair Services | Mesa360 Credit System™ | Mesa Group Consulting"
+        description="Fix bad credit in 45-90 days with our Mesa360 Credit System™. Remove inaccurate items, rebuild your score, and transform your finances. 90-day money-back guarantee."
+        canonicalUrl="/credit-repair"
+      />
       <Header />
       
       {/* ============================================ */}

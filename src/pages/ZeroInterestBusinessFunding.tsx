@@ -10,12 +10,18 @@ import {
   Brain, Users, Target, CheckCircle, Phone, Check, ChevronDown,
   X, Star, AlertCircle
 } from 'lucide-react';
+import { SEO } from '@/components/SEO';
 
 const ZeroInterestBusinessFunding2 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-background font-['Inter',sans-serif]">
+      <SEO 
+        title="0% Interest Business Funding | No Interest Financing | Mesa Group Consulting"
+        description="Access $50K-$250K in 0% interest business funding with 12-21 month terms. Leverage business credit cards strategically with Mesa Group Consulting."
+        canonicalUrl="/zero-interest-business-funding"
+      />
       <Header />
       <HeroSection isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       <TheAwakeningSection setIsModalOpen={setIsModalOpen} />

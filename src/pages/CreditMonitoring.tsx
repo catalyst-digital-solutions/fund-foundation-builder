@@ -9,12 +9,18 @@ import EmotionalCTA3 from '@/components/credit-monitoring/sections/EmotionalCTA3
 import experianLogo from '@/assets/experian-logo.png';
 import equifaxLogo from '@/assets/equifax-logo.png';
 import transunionLogo from '@/assets/transunion-logo.png';
+import { SEO } from '@/components/SEO';
 
 const AFFILIATE_LINK = "https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM";
 
 const CreditMonitoring = () => {
   return (
     <div className="min-h-screen bg-background font-['Inter',sans-serif]">
+      <SEO 
+        title="Credit Monitoring Services | Mesa Group Consulting"
+        description="Monitor your credit scores daily with 3-bureau alerts, identity theft protection, and real-time updates. Affordable credit monitoring from Mesa Group Consulting."
+        canonicalUrl="/credit-monitoring"
+      />
       <Header />
       <HeroSection />
       <WhyMonitoringMatters />

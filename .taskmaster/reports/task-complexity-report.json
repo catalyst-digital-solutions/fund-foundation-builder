@@ -1,93 +1,141 @@
 {
 	"meta": {
-		"generatedAt": "2026-01-31T05:31:21.143Z",
-		"tasksAnalyzed": 10,
-		"totalTasks": 10,
-		"analysisCount": 10,
+		"generatedAt": "2026-02-09T20:33:01.254Z",
+		"tasksAnalyzed": 16,
+		"totalTasks": 16,
+		"analysisCount": 16,
 		"thresholdScore": 5,
 		"projectName": "Task Master",
 		"usedResearch": true
 	},
 	"complexityAnalysis": [
 		{
-			"taskId": 1,
-			"taskTitle": "Pre-Deployment Verification and Build Testing",
-			"complexityScore": 6,
-			"recommendedSubtasks": 4,
-			"expansionPrompt": "Break down this task into specific testing phases: build verification, functional testing, cross-browser testing, and mobile responsiveness testing. Each subtask should focus on a specific aspect of the pre-deployment verification process.",
-			"reasoning": "This task involves comprehensive testing across multiple dimensions (build, functionality, browsers, devices) with various technologies (Vite, React Router v6, Tailwind CSS, shadcn/ui, GHL forms, Calendly, Google Maps). The complexity comes from the breadth of testing required and potential integration issues between different components."
+			"taskId": 11,
+			"taskTitle": "Add SEO Component to ForConsumers.tsx and ForBusinesses.tsx",
+			"complexityScore": 2,
+			"recommendedSubtasks": 0,
+			"expansionPrompt": "No expansion needed - simple component addition.",
+			"reasoning": "Straightforward copy-paste implementation using existing SEO component on 2 files. Minimal risk, clear specs, standard React Helmet pattern. Testing via browser inspection is basic."
 		},
 		{
-			"taskId": 2,
-			"taskTitle": "Vercel Project Setup and Configuration",
+			"taskId": 12,
+			"taskTitle": "Add SEO Component to BuildCredit.tsx and BusinessCreditBuilder.tsx",
+			"complexityScore": 2,
+			"recommendedSubtasks": 0,
+			"expansionPrompt": "No expansion needed - identical to task 11 pattern.",
+			"reasoning": "Identical to task 11: add SEO component to 2 files with provided metadata. Depends on 11 completing successfully. Standard implementation with basic verification."
+		},
+		{
+			"taskId": 13,
+			"taskTitle": "Implement SEO for Resources, ArticlesInsights, and FinancialCalculators.tsx",
+			"complexityScore": 3,
+			"recommendedSubtasks": 0,
+			"expansionPrompt": "No expansion needed - consistent SEO component pattern across 3 files.",
+			"reasoning": "3 files instead of 2, but same pattern. Requires ensuring canonical URLs match routes exactly. Build-time testing adds slight complexity but remains low effort."
+		},
+		{
+			"taskId": 14,
+			"taskTitle": "Complete SEO Rollout for Credit Services Pages (Monitoring to DebtRelief)",
 			"complexityScore": 4,
-			"recommendedSubtasks": 3,
-			"expansionPrompt": "Divide this into repository connection, build configuration setup, and deployment automation configuration. Each subtask should handle a specific aspect of the Vercel setup process.",
-			"reasoning": "Standard deployment platform setup with well-documented processes. The complexity is moderate due to specific Vite configuration requirements and environment variable setup, but Vercel's integration with GitHub is mature and reliable."
+			"recommendedSubtasks": 1,
+			"expansionPrompt": "Break into two subtasks: 1) Implement SEO for first 4 credit service pages (CreditMonitoring to [midpoint]), 2) Implement remaining 3 pages with final validation script.",
+			"reasoning": "Batch of 7 pages requires creating unique descriptions for each. Higher volume increases copy-paste error risk. Puppeteer test script adds testing complexity."
 		},
 		{
-			"taskId": 3,
-			"taskTitle": "Preview Deployment Testing and Validation",
-			"complexityScore": 7,
-			"recommendedSubtasks": 5,
-			"expansionPrompt": "Break this into deployment verification, functional testing, performance testing with Lighthouse, form submission testing, and TypeScript/React 18 feature validation. Each subtask should focus on a specific validation area.",
-			"reasoning": "High complexity due to comprehensive testing requirements including performance metrics (Core Web Vitals > 90), end-to-end form testing, and validation of modern React features. Multiple testing tools and methodologies are required."
-		},
-		{
-			"taskId": 4,
-			"taskTitle": "WordPress Backup and Archive Creation",
+			"taskId": 15,
+			"taskTitle": "SEO Implementation for Loan and Funding Pages",
 			"complexityScore": 5,
-			"recommendedSubtasks": 4,
-			"expansionPrompt": "Separate into Cloudways backup creation, WordPress export, local archive storage, and backup integrity verification. Each subtask should handle a specific backup method or verification step.",
-			"reasoning": "Moderate complexity involving multiple backup methods and platforms. Requires understanding of Cloudways infrastructure, WordPress export tools, and backup verification processes. Critical for rollback capability."
+			"recommendedSubtasks": 2,
+			"expansionPrompt": "Split into: 1) Personal loan/credit card pages (4 pages), 2) Business funding pages (4 pages), 3) Lighthouse SEO audit and validation.",
+			"reasoning": "8 pages with keyword-specific descriptions. Lighthouse audit targeting 90+ score requires performance knowledge beyond basic meta tags."
 		},
 		{
-			"taskId": 5,
-			"taskTitle": "Domain Configuration and DNS Setup",
+			"taskId": 16,
+			"taskTitle": "SEO for News, Contact, Legal, and 404 Pages",
+			"complexityScore": 3,
+			"recommendedSubtasks": 0,
+			"expansionPrompt": "No expansion needed - 4 standard pages with clear specifications.",
+			"reasoning": "4 pages including special 404 handling. Straightforward but 404 meta requires understanding helpful error page SEO best practices."
+		},
+		{
+			"taskId": 17,
+			"taskTitle": "Update generate-sitemap.js to Include All Routes",
 			"complexityScore": 6,
-			"recommendedSubtasks": 4,
-			"expansionPrompt": "Break into Vercel domain addition, GoDaddy DNS configuration, SSL certificate verification, and DNS propagation monitoring. Each subtask should focus on a specific aspect of the domain setup process.",
-			"reasoning": "DNS configuration can be complex with potential propagation delays and SSL certificate issues. Involves coordination between multiple services (Vercel, GoDaddy) and requires careful monitoring of propagation status across geographic locations."
+			"recommendedSubtasks": 2,
+			"expansionPrompt": "1) Extract all routes from App.tsx into sitemap generator, 2) Test sitemap generation and validate XML structure across all 30+ routes.",
+			"reasoning": "Requires parsing React Router config from App.tsx, dynamic route generation. 30+ routes increases testing surface. XML validation adds tooling complexity."
 		},
 		{
-			"taskId": 6,
-			"taskTitle": "Production Go-Live Verification",
-			"complexityScore": 8,
-			"recommendedSubtasks": 6,
-			"expansionPrompt": "Divide into HTTPS accessibility verification, navigation testing, third-party integration testing (GHL, Calendly, Google Maps), performance validation, cross-device testing, and comprehensive functional testing. Each subtask should focus on a specific verification area.",
-			"reasoning": "High complexity as this is the final production validation with strict performance requirements (< 3 seconds load time), multiple third-party integrations, and comprehensive cross-device testing. Any issues here directly impact user experience."
+			"taskId": 18,
+			"taskTitle": "Update public/robots.txt and Submit React Sitemap to GSC",
+			"complexityScore": 3,
+			"recommendedSubtasks": 0,
+			"expansionPrompt": "No expansion needed - simple config file + GSC submission.",
+			"reasoning": "Standard robots.txt update and GSC submission. Requires understanding GSC property management but follows clear template."
 		},
 		{
-			"taskId": 7,
-			"taskTitle": "Fresh WordPress Installation and Basic Configuration",
-			"complexityScore": 5,
-			"recommendedSubtasks": 4,
-			"expansionPrompt": "Break into WordPress installation on Cloudways, Rank Math SEO plugin setup, permalink and sitemap configuration, and security plugin installation. Each subtask should handle a specific configuration area.",
-			"reasoning": "Standard WordPress setup with moderate complexity due to specific SEO plugin configuration, custom permalink structure, and security hardening requirements. Cloudways platform adds some complexity to the installation process."
+			"taskId": 19,
+			"taskTitle": "Configure WordPress Rank Math Sitemap and robots.txt",
+			"complexityScore": 4,
+			"recommendedSubtasks": 1,
+			"expansionPrompt": "Split into: 1) Configure Rank Math sitemap settings, 2) Update WordPress robots.txt and validate all sitemap endpoints.",
+			"reasoning": "WordPress-specific admin panel navigation. Rank Math plugin settings + multiple sitemap validation (post-sitemap.xml, page-sitemap.xml)."
 		},
 		{
-			"taskId": 8,
-			"taskTitle": "WordPress Theme Installation and Customization",
+			"taskId": 20,
+			"taskTitle": "WordPress Blog GSC Property Setup and Sitemap Submission",
+			"complexityScore": 4,
+			"recommendedSubtasks": 0,
+			"expansionPrompt": "No expansion needed - standard GSC property verification and submission.",
+			"reasoning": "GSC property verification (DNS/HTML methods) + sitemap submission. Requires domain access and 24-48hr verification wait time."
+		},
+		{
+			"taskId": 21,
+			"taskTitle": "Resolve React GSC Coverage Issues and Request Indexing",
 			"complexityScore": 7,
-			"recommendedSubtasks": 5,
-			"expansionPrompt": "Separate into GeneratePress theme installation, child theme creation, design system implementation (colors, fonts), header/footer customization, and responsive design implementation. Each subtask should focus on a specific customization area.",
-			"reasoning": "High complexity due to extensive design matching requirements, custom template creation, and responsive design implementation. Requires deep WordPress theming knowledge and careful attention to design consistency across platforms."
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "1) Analyze GSC Coverage report and categorize issues (404s, duplicates, noindex), 2) Fix canonical/redirect issues from prior SEO tasks, 3) Bulk request indexing for key pages and monitor results.",
+			"reasoning": "Diagnostic task requiring GSC expertise. Issue categorization, prioritization, and fixes span multiple prior tasks. 48hr monitoring period."
 		},
 		{
-			"taskId": 9,
-			"taskTitle": "Reverse Proxy Configuration and URL Routing",
+			"taskId": 22,
+			"taskTitle": "Cross-Domain Linking and Canonical Verification",
+			"complexityScore": 7,
+			"recommendedSubtasks": 2,
+			"expansionPrompt": "1) Audit canonical URLs across both domains using Screaming Frog, 2) Implement cross-domain links (React→WP and WP→React) with nofollow considerations.",
+			"reasoning": "Requires SEO audit tool (Screaming Frog), cross-domain coordination, canonical chain verification. Link implementation across two CMS systems."
+		},
+		{
+			"taskId": 23,
+			"taskTitle": "Technical SEO Audits and LocalBusiness Schema Addition",
 			"complexityScore": 8,
-			"recommendedSubtasks": 5,
-			"expansionPrompt": "Break into Vercel rewrite configuration, caching header setup, SEO URL structure validation, WordPress navigation configuration, and comprehensive URL pattern testing. Each subtask should handle a specific aspect of the proxy setup.",
-			"reasoning": "High complexity involving advanced Vercel configuration, proper caching strategies, and seamless integration between two different platforms. Requires deep understanding of reverse proxy concepts and SEO implications."
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "1) Lighthouse audits and heading/image fixes, 2) Implement LocalBusiness JSON-LD schema, 3) Validate schema with Google's Rich Results Test and Core Web Vitals.",
+			"reasoning": "Multiple tools (Lighthouse, Rich Results Test), schema markup implementation, Core Web Vitals optimization. High coordination across performance/SEO."
 		},
 		{
-			"taskId": 10,
-			"taskTitle": "React Site Blog Integration and Final Testing",
-			"complexityScore": 9,
-			"recommendedSubtasks": 6,
-			"expansionPrompt": "Divide into React site blog link updates, navigation integration, external link handling implementation, visual transition optimization, comprehensive integration testing, and SEO validation. Each subtask should focus on a specific integration aspect.",
-			"reasoning": "Highest complexity as this involves seamless integration between React and WordPress platforms, comprehensive end-to-end testing, SEO validation, and performance optimization of the complete integrated solution. This is the final critical task that ensures the entire system works cohesively."
+			"taskId": 24,
+			"taskTitle": "Optimize index.html Meta Tags and Analytics Integration",
+			"complexityScore": 5,
+			"recommendedSubtasks": 1,
+			"expansionPrompt": "Split into: 1) Update index.html OG images/favicons/preconnect, 2) Verify GA4 implementation and GSC-Analytics linking.",
+			"reasoning": "Static HTML updates + analytics verification across two sites. GA4 DebugView testing requires real-time traffic simulation."
+		},
+		{
+			"taskId": 25,
+			"taskTitle": "WordPress Technical Audit and Content Optimization",
+			"complexityScore": 7,
+			"recommendedSubtasks": 2,
+			"expansionPrompt": "1) Bulk optimize existing posts (focus keywords, metas, internal links), 2) Configure image optimization (W3 Total Cache) and validate Rank Math scores.",
+			"reasoning": "Content editing across multiple posts, Rank Math bulk operations, caching configuration. Requires content/SEO expertise beyond code changes."
+		},
+		{
+			"taskId": 26,
+			"taskTitle": "Establish SEO Monitoring and Baseline Documentation",
+			"complexityScore": 4,
+			"recommendedSubtasks": 1,
+			"expansionPrompt": "Split into: 1) Configure GSC alerts and record baseline metrics, 2) Create monitoring Google Sheet with weekly checklist template.",
+			"reasoning": "Process documentation + GSC configuration. Creates ongoing monitoring infrastructure but straightforward admin tasks."
 		}
 	]
 }

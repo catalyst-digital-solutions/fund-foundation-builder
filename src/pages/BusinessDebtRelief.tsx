@@ -27,10 +27,16 @@ import {
   Lock,
   Check
 } from 'lucide-react';
+import { SEO } from '@/components/SEO';
 
 const BusinessDebtRelief = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
+      <SEO 
+        title="Business Debt Relief & Settlement | Mesa Group Consulting"
+        description="Reduce business debt and negotiate settlements. Get relief from merchant cash advances, credit lines, and business loans with Mesa Group Consulting."
+        canonicalUrl="/business-debt-relief"
+      />
       <Header />
 
       {/* SECTION 1: HERO SECTION */}

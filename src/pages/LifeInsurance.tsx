@@ -12,10 +12,16 @@ import EmotionalCTA3 from "@/components/life-insurance/sections/EmotionalCTA3";
 import FAQ from "@/components/life-insurance/sections/FAQ";
 import FinalCTA from "@/components/life-insurance/sections/FinalCTA";
 import Footer from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 
 const LifeInsurance = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="Life Insurance Quotes & Coverage | Mesa Group Consulting"
+        description="Compare life insurance quotes from top providers. Find term life, whole life, and affordable coverage to protect your family. Expert guidance from Mesa Group Consulting."
+        canonicalUrl="/life-insurance"
+      />
       <Header />
       <HeroSection />
       <EmotionalCTA1 />

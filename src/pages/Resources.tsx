@@ -17,6 +17,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyModal } from '@/components/CalendlyModal';
 import { NewsletterModal } from '@/components/NewsletterModal';
+import { SEO } from '@/components/SEO';
 
 const Resources = () => {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
@@ -101,6 +102,11 @@ const Resources = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Free Financial Resources & Tools | Mesa Group Consulting"
+        description="Access free credit guides, financial calculators, letter templates, and expert articles. Mesa Group Consulting's resource hub for credit building and financial success."
+        canonicalUrl="/resources"
+      />
       <Header />
       
       {/* Hero Section */}

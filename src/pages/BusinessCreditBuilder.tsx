@@ -9,6 +9,7 @@ import Footer from '@/components/Footer';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 import ExternalLinkModal from '@/components/ExternalLinkModal';
+import { SEO } from '@/components/SEO';
 
 const BusinessCreditBuilder = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -29,6 +30,11 @@ const BusinessCreditBuilder = () => {
 
   return (
     <div className="min-h-screen bg-background font-['Inter',sans-serif]">
+      <SEO 
+        title="Business Credit Builder Program | Mesa Group Consulting"
+        description="Build business credit and unlock $50K-$150K in funding with the Fundability® System. Full-service coaching or DIY options from Mesa Group Consulting."
+        canonicalUrl="/business-credit-builder"
+      />
       <Header />
       <HeroSection openFullServiceModal={openFullServiceModal} openDIYModal={openDIYModal} />
       <ProblemSection />

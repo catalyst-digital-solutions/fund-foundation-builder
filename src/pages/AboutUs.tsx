@@ -25,6 +25,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
+import { SEO } from '@/components/SEO';
 
 const AboutUs = () => {
   const teamMembers = [
@@ -45,6 +46,11 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="About Mesa Group Consulting | Our Mission, Vision & Team" 
+        description="Learn about Mesa Group Consulting's mission to provide financial freedom for every generation. Meet our founder Evert Calderon and our dedicated team."
+        canonicalUrl="/about"
+      />
       <Header />
       
       {/* HERO SECTION */}

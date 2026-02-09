@@ -2,726 +2,866 @@
   "master": {
     "tasks": [
       {
-        "id": "1",
-        "title": "Pre-Deployment Verification and Build Testing",
-        "description": "Verify the Vite/React application builds successfully and all critical functionality works before deployment",
-        "details": "Run 'npm run build' to verify clean build. Test all pages render correctly, verify GHL iframe forms function, check image loading, test mobile responsiveness on key pages. Validate React Router v6 navigation works properly. Check Tailwind CSS + shadcn/ui styling renders correctly. Test Calendly modals and Google Maps embed functionality.",
-        "testStrategy": "Execute build command and verify no errors. Manual testing of all pages, forms, and interactive elements. Cross-browser testing on Chrome, Firefox, Safari. Mobile testing on various viewport sizes.",
+        "id": "11",
+        "title": "Add SEO Component to ForConsumers.tsx and ForBusinesses.tsx",
+        "description": "Implement SEO component with unique title, description, and canonical URL for the first two pages requiring SEO metadata.",
+        "details": "Import SEO from '@/components/SEO'; Add <SEO title=\"For Consumers | Mesa Group Consulting\" description=\"Discover personalized credit building solutions for consumers with Mesa Group Consulting's expert guidance and tools.\" canonicalUrl=\"/for-consumers\" /> inside the component return statement. Ensure title is 50-60 chars, description 150-160 chars with natural keywords.",
+        "testStrategy": "Build site, navigate to /for-consumers and /for-businesses, inspect page source to verify unique title, meta description, canonical URL, OG tags present and correct. Check View Page Source vs rendered DOM.",
         "priority": "high",
         "dependencies": [],
         "status": "done",
         "subtasks": [
           {
             "id": 1,
-            "title": "Build Verification and Environment Setup",
-            "description": "Verify the Vite/React application builds successfully without errors and validate build output",
+            "title": "Import SEO component in ForConsumers.tsx and ForBusinesses.tsx",
+            "description": "Add the import statement for the SEO component at the top of both ForConsumers.tsx and ForBusinesses.tsx files.",
             "dependencies": [],
-            "details": "Execute 'npm run build' command to verify clean build process. Check for TypeScript compilation errors, dependency conflicts, and build warnings. Validate that all assets are properly generated in the 'dist' directory. Verify build size optimization and ensure no critical files are missing from the output.",
-            "status": "pending",
-            "testStrategy": "Run build command and analyze console output for errors. Check dist folder contents and file sizes. Validate that all required assets (JS, CSS, images) are present and properly optimized.",
-            "parentId": "undefined"
+            "details": "Add 'import SEO from '@/components/SEO';' at the top of both files after other imports. Verify the path is correct and matches the project structure.",
+            "status": "done",
+            "testStrategy": "Verify no TypeScript/import errors appear in IDE and build process completes successfully.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:51.913Z"
           },
           {
             "id": 2,
-            "title": "Functional Testing and Component Validation",
-            "description": "Test all pages, forms, and interactive components to ensure proper functionality",
+            "title": "Add SEO component to ForConsumers.tsx with metadata",
+            "description": "Insert the SEO component with title, description, and canonical URL optimized for the For Consumers page.",
             "dependencies": [
               1
             ],
-            "details": "Test all pages render correctly with proper content and styling. Verify GHL iframe forms function properly with form submissions. Check image loading across all pages. Validate React Router v6 navigation works correctly between all routes. Test Calendly modals open and function properly. Verify Google Maps embed loads and displays correctly. Check newsletter subscription modal functionality.",
-            "status": "pending",
-            "testStrategy": "Manual testing of all pages and interactive elements. Test form submissions end-to-end. Verify all modals and embedded content work as expected. Check console for JavaScript errors during navigation and interactions.",
-            "parentId": "undefined"
+            "details": "Add <SEO title=\"For Consumers | Mesa Group Consulting\" description=\"Discover personalized credit building solutions for consumers with Mesa Group Consulting's expert guidance and tools.\" canonicalUrl=\"/for-consumers\" /> inside the component return statement, preferably at the top before other JSX elements. Verify title is 50-60 chars and description is 150-160 chars.",
+            "status": "done",
+            "testStrategy": "Navigate to /for-consumers, inspect page source to verify title tag, meta description, canonical link, and Open Graph tags are present and correct.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:51.924Z"
           },
           {
             "id": 3,
-            "title": "Cross-Browser Compatibility Testing",
-            "description": "Validate application functionality across different browsers and ensure consistent behavior",
+            "title": "Add SEO component to ForBusinesses.tsx with metadata",
+            "description": "Insert the SEO component with unique title, description, and canonical URL tailored for the For Businesses page.",
             "dependencies": [
-              2
+              1
             ],
-            "details": "Test the application on Chrome, Firefox, Safari, and Edge browsers. Verify Tailwind CSS and shadcn/ui components render consistently across browsers. Check that all interactive elements (forms, modals, navigation) work properly in each browser. Validate that React 18 features and modern JavaScript work correctly across browser versions.",
-            "status": "pending",
-            "testStrategy": "Systematic testing across major browsers. Document any browser-specific issues or inconsistencies. Test both desktop and browser mobile views. Verify polyfills work correctly for older browser versions if needed.",
-            "parentId": "undefined"
+            "details": "Add <SEO title=\"For Businesses | Mesa Group Consulting\" description=\"Empower your business with comprehensive credit building solutions and expert consulting services from Mesa Group Consulting.\" canonicalUrl=\"/for-businesses\" /> inside the component return statement. Ensure unique content that differentiates from consumer page, with title 50-60 chars and description 150-160 chars.",
+            "status": "done",
+            "testStrategy": "Navigate to /for-businesses, inspect page source to verify unique title tag, meta description, canonical link, and Open Graph tags differ from ForConsumers page.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:51.931Z"
           },
           {
             "id": 4,
-            "title": "Mobile Responsiveness and Performance Testing",
-            "description": "Verify mobile responsiveness and performance across different device sizes and orientations",
+            "title": "Build and verify SEO metadata rendering in browser",
+            "description": "Build the application and test both pages in browser to ensure SEO metadata renders correctly in page source.",
             "dependencies": [
+              2,
               3
             ],
-            "details": "Test mobile responsiveness on key pages using various viewport sizes (320px, 768px, 1024px, 1440px). Verify touch interactions work properly on mobile devices. Check that all content is accessible and readable on small screens. Test performance metrics including page load times, Core Web Vitals, and mobile-specific optimizations. Validate that modals and forms work correctly on touch devices.",
-            "status": "pending",
-            "testStrategy": "Use browser developer tools to test various device sizes. Run Lighthouse mobile audits targeting Performance > 90. Test actual mobile devices if available. Verify touch gestures and mobile-specific interactions work correctly.",
-            "parentId": "undefined"
+            "details": "Run production build command, start local server or deploy to preview environment. Navigate to both /for-consumers and /for-businesses pages. Use 'View Page Source' (not just inspect element) to verify meta tags are in the initial HTML response, not just client-side rendered.",
+            "status": "done",
+            "testStrategy": "Check View Page Source for both pages to confirm title, meta description, canonical URL, og:title, og:description, and og:url tags are present with correct values. Compare rendered DOM vs initial HTML source.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:51.938Z"
+          },
+          {
+            "id": 5,
+            "title": "Validate SEO implementation meets specifications",
+            "description": "Final validation that all SEO requirements are met including character counts, keyword usage, and proper formatting.",
+            "dependencies": [
+              4
+            ],
+            "details": "Verify title tags are exactly 50-60 characters, descriptions are 150-160 characters with natural keyword integration. Confirm both pages have unique metadata, canonical URLs are correct (/for-consumers and /for-businesses), and all tags follow the established pattern with ' | Mesa Group Consulting' suffix.",
+            "status": "done",
+            "testStrategy": "Use SEO validation tools or manual character count to verify length requirements. Test canonical URLs resolve correctly. Ensure no duplicate content between the two pages.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:51.945Z"
           }
         ],
-        "complexity": 6,
-        "recommendedSubtasks": 4,
-        "expansionPrompt": "Break down this task into specific testing phases: build verification, functional testing, cross-browser testing, and mobile responsiveness testing. Each subtask should focus on a specific aspect of the pre-deployment verification process.",
-        "updatedAt": "2026-01-31T18:29:57.951Z"
+        "complexity": 2,
+        "recommendedSubtasks": 0,
+        "expansionPrompt": "No expansion needed - simple component addition.",
+        "updatedAt": "2026-02-09T21:35:51.945Z"
       },
       {
-        "id": "2",
-        "title": "Vercel Project Setup and Configuration",
-        "description": "Connect GitHub repository to Vercel and configure build settings for Vite/React deployment",
-        "details": "Connect catalyst-digital-solutions/fund-foundation-builder repository to Vercel. Configure build settings: Framework Preset: Vite, Build Command: 'npm run build', Output Directory: 'dist', Node.js Version: 18.x or higher. Set up any required environment variables if applicable. Configure automatic deployments from main branch.",
-        "testStrategy": "Verify successful repository connection. Test build configuration by triggering a preview deployment. Confirm build logs show successful completion and proper asset generation.",
+        "id": "12",
+        "title": "Add SEO Component to BuildCredit.tsx and BusinessCreditBuilder.tsx",
+        "description": "Roll out SEO metadata to credit builder pages using existing react-helmet-async pattern.",
+        "details": "Add SEO component: <SEO title=\"Build Credit Fast | Mesa Group Consulting\" description=\"Learn proven strategies to build credit quickly with our step-by-step guides, calculators, and expert advice from Mesa Group Consulting.\" canonicalUrl=\"/build-credit\" />. Create unique descriptions targeting credit building keywords.",
+        "testStrategy": "Deploy to Vercel preview, use browser dev tools to verify meta tags render correctly, test OG tags with Facebook Sharing Debugger.",
         "priority": "high",
         "dependencies": [
-          "1"
+          "11"
         ],
         "status": "done",
         "subtasks": [
           {
             "id": 1,
-            "title": "GitHub Repository Connection to Vercel",
-            "description": "Connect the catalyst-digital-solutions/fund-foundation-builder GitHub repository to Vercel platform",
+            "title": "Import SEO component in BuildCredit.tsx",
+            "description": "Add the SEO component import statement at the top of the BuildCredit.tsx file to enable SEO metadata functionality.",
             "dependencies": [],
-            "details": "Import the GitHub repository catalyst-digital-solutions/fund-foundation-builder into Vercel. Authenticate GitHub account with Vercel if not already connected. Select the correct repository and grant necessary permissions for Vercel to access the repository for deployments.",
+            "details": "Add 'import SEO from '@/components/SEO';' to the imports section of BuildCredit.tsx. Verify the import path matches the project structure and that the SEO component is available from the previous task 11 implementation.",
+            "status": "done",
+            "testStrategy": "Verify no TypeScript/import errors in the IDE and that the file compiles successfully without errors.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:53.290Z"
+          },
+          {
+            "id": 2,
+            "title": "Add SEO component to BuildCredit.tsx return statement",
+            "description": "Insert the SEO component with credit building metadata inside the BuildCredit.tsx component's return statement.",
+            "dependencies": [
+              1
+            ],
+            "details": "Add <SEO title=\"Build Credit Fast | Mesa Group Consulting\" description=\"Learn proven strategies to build credit quickly with our step-by-step guides, calculators, and expert advice from Mesa Group Consulting.\" canonicalUrl=\"/build-credit\" /> at the beginning of the component's JSX return. Ensure proper placement and formatting.",
+            "status": "done",
+            "testStrategy": "Build the application and navigate to /build-credit route. Inspect page source to verify title, meta description, and canonical URL are present and correct.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:53.298Z"
+          },
+          {
+            "id": 3,
+            "title": "Import SEO component in BusinessCreditBuilder.tsx",
+            "description": "Add the SEO component import statement at the top of the BusinessCreditBuilder.tsx file to enable SEO metadata functionality.",
+            "dependencies": [],
+            "details": "Add 'import SEO from '@/components/SEO';' to the imports section of BusinessCreditBuilder.tsx. Verify the import path matches the project structure and follows the same pattern as BuildCredit.tsx.",
+            "status": "done",
+            "testStrategy": "Verify no TypeScript/import errors in the IDE and that the file compiles successfully without errors.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:53.305Z"
+          },
+          {
+            "id": 4,
+            "title": "Add SEO component to BusinessCreditBuilder.tsx with unique metadata",
+            "description": "Insert the SEO component with business credit building specific metadata inside the BusinessCreditBuilder.tsx component's return statement.",
+            "dependencies": [
+              3
+            ],
+            "details": "Add <SEO title=\"Business Credit Builder | Mesa Group Consulting\" description=\"Build strong business credit with expert strategies, tools, and guidance from Mesa Group Consulting. Establish and grow your business creditworthiness.\" canonicalUrl=\"/business-credit-builder\" /> at the beginning of the component's JSX return. Create unique description targeting business credit keywords while maintaining 150-160 character length.",
+            "status": "done",
+            "testStrategy": "Build the application and navigate to /business-credit-builder route. Inspect page source to verify title, meta description, and canonical URL are present, unique, and correct.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:53.313Z"
+          },
+          {
+            "id": 5,
+            "title": "Deploy and verify SEO metadata on both pages",
+            "description": "Deploy changes to Vercel preview environment and comprehensively test SEO metadata rendering on both BuildCredit and BusinessCreditBuilder pages.",
+            "dependencies": [
+              2,
+              4
+            ],
+            "details": "Deploy to Vercel preview environment. Use browser dev tools to inspect meta tags on both /build-credit and /business-credit-builder routes. Verify title tags, meta descriptions, canonical URLs, and Open Graph tags render correctly. Test OG tags using Facebook Sharing Debugger to ensure proper social media preview functionality.",
+            "status": "done",
+            "testStrategy": "Check View Page Source vs rendered DOM for both pages. Validate all meta tags are present and unique. Use Facebook Sharing Debugger and Twitter Card Validator to verify OG tags display correctly for social sharing.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:53.320Z"
+          }
+        ],
+        "complexity": 2,
+        "recommendedSubtasks": 0,
+        "expansionPrompt": "No expansion needed - identical to task 11 pattern.",
+        "updatedAt": "2026-02-09T21:35:53.320Z"
+      },
+      {
+        "id": "13",
+        "title": "Implement SEO for Resources, ArticlesInsights, and FinancialCalculators.tsx",
+        "description": "Add SEO metadata to resource and calculator pages with service-specific keywords.",
+        "details": "For Resources.tsx: title=\"Free Credit Resources | Mesa Group Consulting\", description with keywords like credit tools, guides, calculators. Ensure canonical URLs match routes. Use existing SEO component props exactly as specified in PRD.",
+        "testStrategy": "Run `npm run build`, verify no console errors, check generated HTML in dist/ folder for meta injection, test page load with JavaScript disabled.",
+        "priority": "high",
+        "dependencies": [
+          "12"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Add SEO component to Resources.tsx with metadata",
+            "description": "Import and implement SEO component in Resources.tsx with title, description, and canonical URL targeting credit resource keywords.",
+            "dependencies": [],
+            "details": "Import SEO from '@/components/SEO'. Add <SEO title=\"Free Credit Resources | Mesa Group Consulting\" description=\"Access free credit tools, guides, and calculators to improve your financial health with Mesa Group Consulting's comprehensive resources.\" canonicalUrl=\"/resources\" /> at the top of the component return statement. Ensure description is 150-160 characters and includes keywords: credit tools, guides, calculators.",
+            "status": "done",
+            "testStrategy": "Verify SEO component renders without errors, inspect page source to confirm meta tags are present with correct values.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:54.740Z"
+          },
+          {
+            "id": 2,
+            "title": "Add SEO component to ArticlesInsights.tsx with metadata",
+            "description": "Import and implement SEO component in ArticlesInsights.tsx with unique title, description, and canonical URL for articles and insights content.",
+            "dependencies": [],
+            "details": "Import SEO from '@/components/SEO'. Add <SEO title=\"Articles & Insights | Mesa Group Consulting\" description=\"Read expert articles and insights on credit building, financial planning, and debt management from Mesa Group Consulting's team of professionals.\" canonicalUrl=\"/articles-insights\" /> at the top of the component return statement. Ensure title is 50-60 characters and description is 150-160 characters with relevant keywords.",
+            "status": "done",
+            "testStrategy": "Check component renders correctly, validate meta tags in page source match specified values.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:54.746Z"
+          },
+          {
+            "id": 3,
+            "title": "Add SEO component to FinancialCalculators.tsx with metadata",
+            "description": "Import and implement SEO component in FinancialCalculators.tsx with calculator-specific keywords and proper canonical URL.",
+            "dependencies": [],
+            "details": "Import SEO from '@/components/SEO'. Add <SEO title=\"Financial Calculators | Mesa Group Consulting\" description=\"Use free financial calculators for credit scores, loan payments, and debt payoff planning from Mesa Group Consulting in Bakersfield, CA.\" canonicalUrl=\"/financial-calculators\" /> at the top of the component return statement. Ensure keywords include: calculators, credit scores, loan payments, debt payoff.",
+            "status": "done",
+            "testStrategy": "Verify SEO component integration, inspect rendered HTML for correct meta tags and canonical URL.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:54.752Z"
+          },
+          {
+            "id": 4,
+            "title": "Verify canonical URLs match exact route paths",
+            "description": "Cross-check that all three canonical URLs specified in SEO components exactly match their corresponding route definitions in the application.",
+            "dependencies": [
+              1,
+              2,
+              3
+            ],
+            "details": "Review routing configuration and verify: Resources.tsx canonicalUrl=\"/resources\", ArticlesInsights.tsx canonicalUrl=\"/articles-insights\", FinancialCalculators.tsx canonicalUrl=\"/financial-calculators\". Ensure no trailing slashes, correct casing, and paths match exactly what's defined in the router. Check for any route aliases or redirects that might affect canonical URL accuracy.",
+            "status": "done",
+            "testStrategy": "Navigate to each page in browser, check network tab for correct URL paths, verify canonical link tags in page source point to exact current URLs.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:54.758Z"
+          },
+          {
+            "id": 5,
+            "title": "Build and validate SEO meta injection in production output",
+            "description": "Run production build and verify SEO metadata is correctly injected into generated HTML files without console errors.",
+            "dependencies": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "details": "Execute `npm run build` and monitor console for any errors or warnings. Navigate to dist/ folder and inspect generated HTML files for Resources, ArticlesInsights, and FinancialCalculators pages. Verify meta tags (title, description, canonical, OG tags) are present in static HTML. Test page load with JavaScript disabled to ensure meta tags are server-rendered or statically generated.",
+            "status": "done",
+            "testStrategy": "Run `npm run build`, verify no console errors, check generated HTML in dist/ folder for meta injection, test page load with JavaScript disabled to confirm SEO tags are accessible to crawlers.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:54.763Z"
+          }
+        ],
+        "complexity": 3,
+        "recommendedSubtasks": 0,
+        "expansionPrompt": "No expansion needed - consistent SEO component pattern across 3 files.",
+        "updatedAt": "2026-02-09T21:35:54.763Z"
+      },
+      {
+        "id": "14",
+        "title": "Complete SEO Rollout for Credit Services Pages (Monitoring to DebtRelief)",
+        "description": "Add SEO to 7 credit service pages: CreditMonitoring.tsx through DebtRelief.tsx.",
+        "details": "Batch implement SEO with unique descriptions: e.g., CreditMonitoring: \"Monitor credit scores daily with Mesa Group Consulting's affordable monitoring services and alerts.\" Ensure all titles end with \" | Mesa Group Consulting\", canonicals correct.",
+        "testStrategy": "Create test script to fetch all pages and validate meta tags using Puppeteer, verify 100% coverage of listed pages.",
+        "priority": "high",
+        "dependencies": [
+          "13"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement SEO for first 4 credit service pages (CreditMonitoring to midpoint)",
+            "description": "Add SEO metadata to the first 4 credit service pages: CreditMonitoring.tsx, CreditRepair.tsx, CreditBuilder.tsx, and CreditCounseling.tsx with unique descriptions and proper title formatting.",
+            "dependencies": [
+              13
+            ],
+            "details": "Implement <SEO> component for each page with unique descriptions. Example: CreditMonitoring: 'Monitor credit scores daily with Mesa Group Consulting's affordable monitoring services and alerts.' Ensure all titles follow pattern '[Service Name] | Mesa Group Consulting' and canonicalUrl matches route path. Verify no duplicate descriptions across pages.",
+            "status": "done",
+            "testStrategy": "Manual verification of meta tags in browser DevTools for each of the 4 pages. Check title format, description uniqueness, and canonical URL correctness.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:35:55.855Z"
+          }
+        ],
+        "complexity": 4,
+        "recommendedSubtasks": 1,
+        "expansionPrompt": "Break into two subtasks: 1) Implement SEO for first 4 credit service pages (CreditMonitoring to [midpoint]), 2) Implement remaining 3 pages with final validation script.",
+        "updatedAt": "2026-02-09T21:35:55.855Z"
+      },
+      {
+        "id": "15",
+        "title": "SEO Implementation for Loan and Funding Pages",
+        "description": "Add SEO metadata to 8 financial product pages from CreditCards.tsx to BusinessDebtRelief.tsx.",
+        "details": "Target keywords like personal loans, business funding: <SEO title=\"Personal Loans | Mesa Group Consulting\" description=\"Compare personal loan options and rates with expert guidance from Mesa Group Consulting in Bakersfield, CA.\" canonicalUrl=\"/personal-loans\" />.",
+        "testStrategy": "Lighthouse SEO audit on staging, target 90+ score, verify unique titles/descriptions across all pages using SEO checker tools.",
+        "priority": "high",
+        "dependencies": [
+          "14"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Add SEO metadata to personal loan and credit card pages (4 pages)",
+            "description": "Implement SEO component with targeted keywords for CreditCards.tsx, PersonalLoans.tsx, and 2 other consumer financial product pages.",
+            "dependencies": [
+              14
+            ],
+            "details": "Add SEO component to 4 consumer-focused pages (CreditCards.tsx, PersonalLoans.tsx, and 2 related pages). Use keyword-rich titles and descriptions following the pattern: <SEO title=\"[Product] | Mesa Group Consulting\" description=\"Compare [product] options and rates with expert guidance from Mesa Group Consulting in Bakersfield, CA.\" canonicalUrl=\"/[product-route]\" />. Ensure unique titles and descriptions for each page targeting keywords like personal loans, credit cards, consumer financing.",
+            "status": "done",
+            "testStrategy": "Verify SEO meta tags render correctly in browser dev tools, check unique titles/descriptions using SEO checker tools, validate canonical URLs match routes.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:37:07.356Z"
+          },
+          {
+            "id": 2,
+            "title": "Add SEO metadata to business funding pages and run Lighthouse audit",
+            "description": "Implement SEO for 4 business-focused pages (BusinessDebtRelief.tsx and 3 others) and perform comprehensive Lighthouse SEO audit targeting 90+ score.",
+            "dependencies": [
+              1
+            ],
+            "details": "Add SEO component to 4 business funding pages including BusinessDebtRelief.tsx with business-focused keywords like business funding, business loans, debt relief. Follow same SEO component pattern with unique metadata. After implementation, run Lighthouse SEO audit on staging environment for all 8 pages (4 personal + 4 business). Target 90+ SEO score, verify performance metrics, check for duplicate content issues, validate structured data, and ensure all meta tags are properly indexed.",
+            "status": "done",
+            "testStrategy": "Run Lighthouse SEO audit on staging for all 8 pages targeting 90+ score, use SEO checker tools to verify no duplicate titles/descriptions across pages, test page load performance, validate canonical URLs and meta tag injection in generated HTML.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:38:08.032Z"
+          }
+        ],
+        "complexity": 5,
+        "recommendedSubtasks": 2,
+        "expansionPrompt": "Split into: 1) Personal loan/credit card pages (4 pages), 2) Business funding pages (4 pages), 3) Lighthouse SEO audit and validation.",
+        "updatedAt": "2026-02-09T21:38:08.032Z"
+      },
+      {
+        "id": "16",
+        "title": "SEO for News, Contact, Legal, and 404 Pages",
+        "description": "Complete SEO rollout for remaining pages: MesaNews.tsx, Contact.tsx, TermsAndConditions.tsx, NotFound.tsx.",
+        "details": "404 page: title=\"Page Not Found | Mesa Group Consulting\", description=\"The page you're looking for doesn't exist. Discover our credit building services.\" canonicalUrl=\"/404\". Ensure helpful 404 meta.",
+        "testStrategy": "Test 404 page accessibility, verify robots.txt allows crawling, check meta renders on direct URL access.",
+        "priority": "high",
+        "dependencies": [
+          "15"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement SEO metadata for MesaNews.tsx page",
+            "description": "Add SEO component with appropriate title, description, and canonical URL to the MesaNews.tsx page to optimize for news and updates content.",
+            "dependencies": [],
+            "details": "Add <SEO title=\"News & Updates | Mesa Group Consulting\" description=\"Stay informed with the latest news, updates, and insights from Mesa Group Consulting's credit building and financial services.\" canonicalUrl=\"/news\" /> to MesaNews.tsx. Ensure the SEO component is imported and placed at the top of the component return statement.",
+            "status": "done",
+            "testStrategy": "Verify meta tags render correctly in browser dev tools, check that title appears in browser tab, validate canonical URL matches route path.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:41:31.479Z"
+          },
+          {
+            "id": 2,
+            "title": "Implement SEO metadata for Contact.tsx page",
+            "description": "Add SEO component with contact-focused keywords and metadata to the Contact.tsx page to improve discoverability for users seeking to reach Mesa Group Consulting.",
+            "dependencies": [],
+            "details": "Add <SEO title=\"Contact Us | Mesa Group Consulting\" description=\"Get in touch with Mesa Group Consulting in Bakersfield, CA. Contact our credit building experts for personalized financial guidance and support.\" canonicalUrl=\"/contact\" /> to Contact.tsx. Include location-based keywords for local SEO optimization.",
+            "status": "done",
+            "testStrategy": "Test page rendering with SEO tags, verify local keywords are present in description, check meta tags using browser inspector and SEO validation tools.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:41:42.791Z"
+          },
+          {
+            "id": 3,
+            "title": "Implement SEO metadata for TermsAndConditions.tsx page",
+            "description": "Add SEO component to TermsAndConditions.tsx with appropriate legal page metadata to ensure proper indexing and user expectations.",
+            "dependencies": [],
+            "details": "Add <SEO title=\"Terms and Conditions | Mesa Group Consulting\" description=\"Read Mesa Group Consulting's terms and conditions for our credit building and financial services. Understand your rights and our policies.\" canonicalUrl=\"/terms-and-conditions\" /> to TermsAndConditions.tsx. Ensure clear, professional description for legal content.",
+            "status": "done",
+            "testStrategy": "Validate meta tags render correctly, verify canonical URL matches route, check that description accurately represents legal content nature.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:41:57.498Z"
+          },
+          {
+            "id": 4,
+            "title": "Implement SEO metadata for NotFound.tsx (404 page) with helpful error page best practices",
+            "description": "Add SEO component to NotFound.tsx following 404 error page SEO best practices with helpful messaging and service discovery prompts.",
+            "dependencies": [],
+            "details": "Add <SEO title=\"Page Not Found | Mesa Group Consulting\" description=\"The page you're looking for doesn't exist. Discover our credit building services.\" canonicalUrl=\"/404\" /> to NotFound.tsx. Implement helpful 404 meta that guides users back to services. Consider adding noindex meta tag to prevent 404 pages from being indexed while maintaining helpful user experience.",
+            "status": "done",
+            "testStrategy": "Test 404 page accessibility by navigating to non-existent URLs, verify robots.txt allows crawling, check meta renders on direct URL access, validate that 404 returns proper HTTP status code while displaying helpful content.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:42:11.139Z"
+          },
+          {
+            "id": 5,
+            "title": "Comprehensive testing and validation of all four pages SEO implementation",
+            "description": "Perform end-to-end testing of SEO metadata across MesaNews, Contact, TermsAndConditions, and NotFound pages to ensure consistency and correctness.",
+            "dependencies": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "details": "Run `npm run build` and verify no console errors. Check generated HTML in dist/ folder for proper meta tag injection on all four pages. Use Lighthouse SEO audit to verify scores. Test each page with JavaScript disabled to ensure meta tags are server-rendered. Validate all titles end with ' | Mesa Group Consulting', descriptions are unique and keyword-optimized, and canonical URLs match their respective routes.",
+            "status": "done",
+            "testStrategy": "Create automated test script to validate meta tags across all four pages, run Lighthouse SEO audit targeting 90+ score, verify unique titles/descriptions using SEO checker tools, test 404 page specifically for proper HTTP status and helpful meta content.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:42:31.754Z"
+          }
+        ],
+        "complexity": 3,
+        "recommendedSubtasks": 0,
+        "expansionPrompt": "No expansion needed - 4 standard pages with clear specifications.",
+        "updatedAt": "2026-02-09T21:42:31.754Z"
+      },
+      {
+        "id": "17",
+        "title": "Update generate-sitemap.js to Include All Routes",
+        "description": "Verify and update sitemap generation script to include all 30+ routes from App.tsx.",
+        "details": "Review App.tsx routes, ensure generate-sitemap.js dynamically pulls all paths. Run `npm run build` to generate fresh sitemap.xml. Verify https://www.mesagroupconsulting.com/sitemap.xml accessible post-deploy.",
+        "testStrategy": "curl sitemap.xml endpoint, validate XML structure with sitemap validator, confirm all 30+ pages listed with correct lastmod dates.",
+        "priority": "high",
+        "dependencies": [
+          "16"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Extract and Configure All 30+ Routes from App.tsx in Sitemap Generator",
+            "description": "Parse App.tsx to identify all React Router routes and update generate-sitemap.js to dynamically include all paths in the sitemap generation process.",
+            "dependencies": [],
+            "details": "Review App.tsx file to extract all route definitions (30+ routes). Update generate-sitemap.js script to programmatically read and include all routes. Ensure dynamic route handling for any parameterized paths. Configure proper URL structure with https://www.mesagroupconsulting.com base URL. Set appropriate priority and changefreq values for different route types.",
+            "status": "done",
+            "testStrategy": "Run generate-sitemap.js locally to produce sitemap.xml. Verify all 30+ routes are present in output. Check XML structure is valid using online XML validator. Confirm no duplicate URLs and all paths use correct domain.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:46:03.615Z"
+          },
+          {
+            "id": 2,
+            "title": "Build, Deploy and Validate Sitemap Accessibility",
+            "description": "Execute npm run build to generate fresh sitemap.xml, deploy to production, and verify sitemap is accessible and properly formatted at the live URL.",
+            "dependencies": [
+              1
+            ],
+            "details": "Run `npm run build` command to trigger sitemap generation as part of build process. Verify sitemap.xml is created in public/build directory. Deploy updated code to production environment. Test sitemap accessibility at https://www.mesagroupconsulting.com/sitemap.xml. Validate lastmod dates are current and all 30+ routes appear with correct formatting.",
+            "status": "done",
+            "testStrategy": "Use curl to fetch https://www.mesagroupconsulting.com/sitemap.xml and verify 200 response. Validate XML structure using Google's sitemap validator or similar tool. Confirm all 30+ pages are listed with proper URL format, lastmod timestamps, and valid XML schema compliance.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:46:18.559Z"
+          }
+        ],
+        "complexity": 6,
+        "recommendedSubtasks": 2,
+        "expansionPrompt": "1) Extract all routes from App.tsx into sitemap generator, 2) Test sitemap generation and validate XML structure across all 30+ routes.",
+        "updatedAt": "2026-02-09T21:46:18.559Z"
+      },
+      {
+        "id": "18",
+        "title": "Update public/robots.txt and Submit React Sitemap to GSC",
+        "description": "Configure robots.txt with sitemap reference and submit to Google Search Console.",
+        "details": "Update robots.txt: User-agent: * Allow: / Sitemap: https://www.mesagroupconsulting.com/sitemap.xml. Submit via GSC property www.mesagroupconsulting.com.",
+        "testStrategy": "Verify robots.txt at /robots.txt, check GSC sitemap status shows 'Success', monitor Coverage report for new pages.",
+        "priority": "high",
+        "dependencies": [
+          "17"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create or update public/robots.txt file with sitemap reference",
+            "description": "Update the robots.txt file in the public directory to allow all user agents and reference the sitemap URL.",
+            "dependencies": [],
+            "details": "Navigate to the public folder in the React project. Create or edit robots.txt file with the following content:\nUser-agent: *\nAllow: /\nSitemap: https://www.mesagroupconsulting.com/sitemap.xml\n\nEnsure proper line breaks and formatting. Save the file and commit changes to version control.",
+            "status": "done",
+            "testStrategy": "After deployment, verify robots.txt is accessible at https://www.mesagroupconsulting.com/robots.txt. Check that content matches expected format and sitemap URL is correct.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:47:42.709Z"
+          },
+          {
+            "id": 2,
+            "title": "Verify sitemap.xml is accessible and properly formatted",
+            "description": "Confirm that the sitemap.xml file generated by Task 17 is accessible at the expected URL and contains valid XML.",
+            "dependencies": [],
+            "details": "Access https://www.mesagroupconsulting.com/sitemap.xml in a browser. Verify the XML structure is valid and includes all expected routes from the React application. Use an online sitemap validator tool to check for any formatting issues or errors. Ensure lastmod dates are present and accurate.",
+            "status": "done",
+            "testStrategy": "Use curl or browser to fetch sitemap.xml. Validate XML structure using tools like xml-sitemaps.com validator. Confirm all 30+ routes are listed with proper URLs and metadata.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:47:43.814Z"
+          },
+          {
+            "id": 3,
+            "title": "Access Google Search Console for www.mesagroupconsulting.com property",
+            "description": "Log into Google Search Console and navigate to the correct property for the main React website.",
+            "dependencies": [],
+            "details": "Go to https://search.google.com/search-console and sign in with the appropriate Google account that has access to the www.mesagroupconsulting.com property. Verify ownership is confirmed and the property is set up correctly. If property doesn't exist, add it using domain or URL prefix method and complete verification.",
             "status": "pending",
-            "testStrategy": "Verify successful repository connection by checking Vercel dashboard shows the imported project. Confirm Vercel has proper read access to the repository and can detect changes.",
+            "testStrategy": "Confirm successful login to GSC. Verify the property www.mesagroupconsulting.com appears in the property selector and shows verified status.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Submit sitemap.xml to Google Search Console",
+            "description": "Add the sitemap URL to Google Search Console for the www.mesagroupconsulting.com property to enable Google crawling and indexing.",
+            "dependencies": [
+              2,
+              3
+            ],
+            "details": "In Google Search Console, navigate to Sitemaps section in the left sidebar. Enter 'sitemap.xml' in the 'Add a new sitemap' field (full URL: https://www.mesagroupconsulting.com/sitemap.xml). Click Submit button. Wait for GSC to process the sitemap submission, which may take a few minutes to several hours.",
+            "status": "pending",
+            "testStrategy": "Check GSC Sitemaps page shows the submitted sitemap with 'Success' status. Verify the number of discovered URLs matches expected count from sitemap. Monitor for any errors or warnings.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 5,
+            "title": "Monitor GSC Coverage report and verify indexing progress",
+            "description": "Review Google Search Console Coverage report to ensure pages from the sitemap are being discovered and indexed without errors.",
+            "dependencies": [
+              4
+            ],
+            "details": "After sitemap submission (wait 24-48 hours for initial processing), navigate to Coverage section in GSC. Check for any errors, warnings, or excluded pages. Verify that valid pages are increasing in count. Look for issues like 404s, duplicate content, or noindex tags that might prevent indexing. Document any issues found for resolution in Task 21.",
+            "status": "pending",
+            "testStrategy": "GSC Coverage report shows increasing number of valid indexed pages. No critical errors related to sitemap URLs. Sitemap status remains 'Success' with no fetch errors. Cross-reference with sitemap.xml to ensure all important pages are being processed.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 3,
+        "recommendedSubtasks": 0,
+        "expansionPrompt": "No expansion needed - simple config file + GSC submission.",
+        "updatedAt": "2026-02-09T21:47:45.466Z"
+      },
+      {
+        "id": "19",
+        "title": "Configure WordPress Rank Math Sitemap and robots.txt",
+        "description": "Verify Rank Math settings and ensure sitemap accessible at blog.mesagroupconsulting.com/sitemap_index.xml.",
+        "details": "WordPress admin > Rank Math > Sitemap Settings: enable posts/pages, exclude author archives. Test post-sitemap.xml, page-sitemap.xml. Update robots.txt to reference sitemap_index.xml.",
+        "testStrategy": "Access sitemap URLs directly, validate XML, use GSC Sitemaps tester before submission.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Configure Rank Math sitemap settings",
+            "description": "Access WordPress admin panel and configure Rank Math plugin sitemap settings to enable posts and pages while excluding author archives.",
+            "dependencies": [],
+            "details": "Navigate to WordPress admin > Rank Math > Sitemap Settings. Enable sitemaps for posts and pages. Exclude author archives from sitemap generation. Verify sitemap_index.xml is accessible at blog.mesagroupconsulting.com/sitemap_index.xml. Test individual sitemap files including post-sitemap.xml and page-sitemap.xml to ensure they are generating correctly with proper XML structure.",
+            "status": "done",
+            "testStrategy": "Access sitemap URLs directly (sitemap_index.xml, post-sitemap.xml, page-sitemap.xml), validate XML structure using online validators, verify all enabled content types appear in index, use Google Search Console Sitemaps tester to validate before submission.",
+            "parentId": "undefined",
+            "updatedAt": "2026-02-09T21:49:09.870Z"
+          }
+        ],
+        "complexity": 4,
+        "recommendedSubtasks": 1,
+        "expansionPrompt": "Split into: 1) Configure Rank Math sitemap settings, 2) Update WordPress robots.txt and validate all sitemap endpoints.",
+        "updatedAt": "2026-02-09T21:49:09.870Z"
+      },
+      {
+        "id": "20",
+        "title": "WordPress Blog GSC Property Setup and Sitemap Submission",
+        "description": "Add/verify blog.mesagroupconsulting.com in GSC and submit sitemap.",
+        "details": "Add property in GSC, verify via DNS TXT or HTML file upload. Submit https://blog.mesagroupconsulting.com/sitemap_index.xml. Request indexing for posts.",
+        "testStrategy": "Check GSC verification status, review Coverage report for errors, verify sitemap processed successfully.",
+        "priority": "high",
+        "dependencies": [
+          "19"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Add blog.mesagroupconsulting.com property in Google Search Console",
+            "description": "Navigate to Google Search Console and add the blog subdomain as a new property using the URL prefix method.",
+            "dependencies": [],
+            "details": "Log into Google Search Console at search.google.com/search-console. Click 'Add Property' and select 'URL prefix' option. Enter https://blog.mesagroupconsulting.com as the property URL. Proceed to verification step selection.",
+            "status": "pending",
+            "testStrategy": "Confirm property appears in GSC property selector dropdown and shows 'Unverified' status initially.",
             "parentId": "undefined"
           },
           {
             "id": 2,
-            "title": "Vite Build Configuration Setup",
-            "description": "Configure Vercel build settings specifically for Vite/React deployment with proper framework preset and build commands",
+            "title": "Verify blog property ownership via DNS TXT record or HTML file upload",
+            "description": "Complete GSC property verification using either DNS TXT record method or HTML file upload method to prove domain ownership.",
             "dependencies": [
               1
             ],
-            "details": "Set Framework Preset to Vite in Vercel project settings. Configure Build Command as 'npm run build' and Output Directory as 'dist'. Set Node.js Version to 18.x or higher. Configure any required environment variables for the build process if applicable.",
+            "details": "Choose verification method: (Option A) DNS TXT - Add provided TXT record to domain DNS settings via hosting provider, wait 24-48 hours for propagation, click Verify in GSC. (Option B) HTML file - Download verification HTML file from GSC, upload to blog WordPress root via FTP/cPanel File Manager, click Verify immediately.",
             "status": "pending",
-            "testStrategy": "Trigger a preview deployment to test build configuration. Verify build logs show successful completion with Vite-specific output. Confirm dist directory is properly generated and contains expected assets.",
+            "testStrategy": "GSC shows green checkmark with 'Ownership verified' message. Property dashboard becomes accessible with data collection starting.",
             "parentId": "undefined"
           },
           {
             "id": 3,
-            "title": "Automatic Deployment Configuration",
-            "description": "Set up automatic deployments from the main branch with proper deployment triggers and branch protection",
+            "title": "Submit sitemap_index.xml to Google Search Console",
+            "description": "Navigate to Sitemaps section in GSC and submit the Rank Math generated sitemap index file for the blog property.",
             "dependencies": [
               2
             ],
-            "details": "Configure automatic deployments to trigger on pushes to the main branch. Set up production branch as main and ensure preview deployments work for other branches. Configure deployment hooks and notifications if needed. Verify webhook integration between GitHub and Vercel is properly established.",
+            "details": "In verified blog property, go to Sitemaps section (left sidebar). Enter 'sitemap_index.xml' in the 'Add a new sitemap' field. Click Submit button. GSC will fetch and process the sitemap, discovering post-sitemap.xml and page-sitemap.xml references.",
             "status": "pending",
-            "testStrategy": "Test automatic deployment by making a commit to main branch and verifying deployment triggers automatically. Confirm preview deployments work for feature branches. Validate deployment status notifications and logs.",
+            "testStrategy": "Sitemap shows 'Success' status in GSC Sitemaps report. Check 'Discovered URLs' count matches expected blog posts/pages. Coverage report begins populating within 24-48 hours.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "Request indexing for priority blog posts via URL Inspection tool",
+            "description": "Use GSC URL Inspection tool to manually request indexing for key blog posts to accelerate Google discovery and crawling.",
+            "dependencies": [
+              3
+            ],
+            "details": "In GSC, use URL Inspection tool (top search bar). Enter full URLs of 5-10 priority blog posts (newest or most important content). For each URL showing 'URL is not on Google', click 'Request Indexing' button. Google will prioritize crawling these URLs within days rather than weeks.",
+            "status": "pending",
+            "testStrategy": "URL Inspection shows 'Indexing requested' confirmation message for each submitted URL. Monitor Index Coverage report over 3-7 days to see URLs move from 'Discovered' to 'Indexed' status.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 5,
+            "title": "Verify GSC setup completion and monitor initial reports",
+            "description": "Confirm all GSC configuration is complete and review initial data in Coverage, Sitemaps, and Performance reports to ensure proper setup.",
+            "dependencies": [
+              4
+            ],
+            "details": "Check GSC verification status remains active (green checkmark). Review Sitemaps report: sitemap_index.xml shows 'Success' with no errors. Check Coverage report for any errors or warnings. Verify Performance report begins collecting impression/click data within 2-3 days. Document any issues for resolution.",
+            "status": "pending",
+            "testStrategy": "GSC dashboard shows: verified property, successfully processed sitemap with discovered URLs matching blog content count, no critical errors in Coverage report, Performance data begins appearing within 48-72 hours.",
             "parentId": "undefined"
           }
         ],
         "complexity": 4,
+        "recommendedSubtasks": 0,
+        "expansionPrompt": "No expansion needed - standard GSC property verification and submission."
+      },
+      {
+        "id": "21",
+        "title": "Resolve React GSC Coverage Issues and Request Indexing",
+        "description": "Address duplicate content, 404s, noindex issues in React site GSC.",
+        "details": "Review Coverage report, fix canonical duplicates via SEO component, request indexing for key pages, set www preferred domain.",
+        "testStrategy": "Monitor GSC for 48hrs post-fix, verify error count drops to zero, check indexed pages count increases.",
+        "priority": "medium",
+        "dependencies": [
+          "18"
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Analyze GSC Coverage Report and Categorize Issues",
+            "description": "Review Google Search Console Coverage report to identify and categorize all indexing issues including 404 errors, duplicate content, noindex pages, and canonical issues.",
+            "dependencies": [],
+            "details": "Access GSC Coverage report and export all errors and warnings. Create a spreadsheet categorizing issues by type: 404 errors (broken links), duplicate content (pages with similar/identical content), noindex tags (pages blocked from indexing), and canonical conflicts. Prioritize issues based on impact to key pages and traffic potential. Document URLs affected and root causes for each category.",
+            "status": "pending",
+            "testStrategy": "Verify all issues are documented with categories, URLs, and root causes. Cross-reference with site structure to ensure no issues are missed.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Fix Canonical Tags and Redirect Issues in React SEO Component",
+            "description": "Implement fixes for canonical URL duplicates and redirect issues identified in the Coverage report by updating the React SEO component and routing configuration.",
+            "dependencies": [
+              1
+            ],
+            "details": "Update React SEO component to ensure proper canonical tags are set for all pages. Fix duplicate content issues by implementing correct canonical URLs pointing to preferred versions. Address redirect chains and 404 errors by updating routing configuration. Set www as preferred domain in both GSC and site configuration. Ensure all internal links use consistent URL format (www vs non-www).",
+            "status": "pending",
+            "testStrategy": "Test canonical tags on sample pages using browser inspector and SEO tools. Verify redirects work correctly (301 status). Check that www preference is reflected across all pages.",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "Request Bulk Indexing for Key Pages and Monitor Results",
+            "description": "Submit indexing requests for priority pages through Google Search Console and monitor indexing status over 48-hour period to verify improvements.",
+            "dependencies": [
+              2
+            ],
+            "details": "Identify key pages for indexing priority (homepage, main service pages, high-value content). Use GSC URL Inspection tool to request indexing for each priority page. Submit sitemap if not already done. Monitor GSC Coverage report for 48 hours to track error count reduction and indexed pages count increase. Document before/after metrics including total indexed pages, error counts by category, and coverage percentage.",
+            "status": "pending",
+            "testStrategy": "Monitor GSC for 48hrs post-fix, verify error count drops to zero or near-zero, check indexed pages count increases by at least 20%, confirm key pages appear in index via site: search.",
+            "parentId": "undefined"
+          }
+        ],
+        "complexity": 7,
         "recommendedSubtasks": 3,
-        "expansionPrompt": "Divide this into repository connection, build configuration setup, and deployment automation configuration. Each subtask should handle a specific aspect of the Vercel setup process.",
-        "updatedAt": "2026-01-31T18:29:54.942Z"
+        "expansionPrompt": "1) Analyze GSC Coverage report and categorize issues (404s, duplicates, noindex), 2) Fix canonical/redirect issues from prior SEO tasks, 3) Bulk request indexing for key pages and monitor results."
       },
       {
-        "id": "3",
-        "title": "Preview Deployment Testing and Validation",
-        "description": "Deploy to Vercel preview environment and thoroughly test all functionality",
-        "details": "Deploy to Vercel preview URL. Test all pages load correctly, verify GHL forms submit properly, check Core Web Vitals scores using Lighthouse. Test newsletter subscription modal, anchor links for language selection, and all navigation elements. Verify TypeScript compilation and React 18 features work correctly.",
-        "testStrategy": "Comprehensive functional testing on preview URL. Run Lighthouse audits targeting Performance > 90, accessibility checks. Test form submissions end-to-end. Validate all interactive components work as expected.",
-        "priority": "high",
+        "id": "22",
+        "title": "Cross-Domain Linking and Canonical Verification",
+        "description": "Verify canonicals correct, add internal links between main site and blog.",
+        "details": "Audit all pages for correct canonical URLs, add blog links from ArticlesInsights.tsx/MesaNews.tsx, ensure blog posts link to services. Check no duplicate content.",
+        "testStrategy": "Use Screaming Frog to crawl both sites, verify canonical chains, check internal link structure.",
+        "priority": "medium",
         "dependencies": [
-          "2"
+          "16",
+          "20"
         ],
-        "status": "done",
+        "status": "pending",
         "subtasks": [
           {
             "id": 1,
-            "title": "Deployment Verification and Environment Setup",
-            "description": "Deploy the application to Vercel preview environment and verify successful deployment",
+            "title": "Audit canonical URLs across both domains using Screaming Frog",
+            "description": "Perform comprehensive canonical URL audit across main React site and WordPress blog to identify incorrect canonicals, canonical chains, and duplicate content issues.",
             "dependencies": [],
-            "details": "Deploy to Vercel preview URL and confirm deployment is successful. Verify all static assets are properly served, check that the build artifacts are correctly deployed, and ensure the preview environment is accessible. Document the preview URL for testing purposes.",
+            "details": "Use Screaming Frog SEO Spider to crawl both www.mesagroupconsulting.com and blog.mesagroupconsulting.com. Export canonical URL report and identify: 1) Pages with missing canonical tags, 2) Canonical chains (A→B→C), 3) Self-referencing canonicals, 4) Cross-domain canonical issues, 5) Duplicate content across domains. Document all findings in spreadsheet with URL, current canonical, recommended canonical, and priority level.",
             "status": "pending",
-            "testStrategy": "Verify deployment status in Vercel dashboard, check preview URL accessibility, confirm all assets load without 404 errors",
+            "testStrategy": "Verify Screaming Frog crawl completes successfully for both domains, validate exported reports contain canonical data, cross-reference findings with manual spot-checks of 10+ pages, ensure no canonical chains exist after fixes.",
             "parentId": "undefined"
           },
           {
             "id": 2,
-            "title": "Functional Testing of Core Features",
-            "description": "Test all pages, navigation, and interactive components work correctly in preview environment",
+            "title": "Implement cross-domain internal links between React and WordPress sites",
+            "description": "Add strategic internal links from main site components to blog posts and from WordPress blog posts back to React service pages, considering nofollow attributes where appropriate.",
             "dependencies": [
               1
             ],
-            "details": "Test all pages load correctly, verify navigation elements work properly, test newsletter subscription modal functionality, validate anchor links for language selection, and ensure all interactive components respond as expected. Test mobile responsiveness across different viewport sizes.",
+            "details": "In React codebase: Update ArticlesInsights.tsx and MesaNews.tsx to include contextual links to relevant blog.mesagroupconsulting.com posts (use dofollow for editorial links). In WordPress: Edit blog posts to add internal links to www.mesagroupconsulting.com service pages with relevant anchor text. Create linking matrix mapping blog categories to service pages. Implement links as standard <a> tags with appropriate rel attributes. Ensure all links use HTTPS and absolute URLs for cross-domain references.",
             "status": "pending",
-            "testStrategy": "Manual testing of all pages and components, cross-browser testing on Chrome/Firefox/Safari, mobile testing on various devices",
-            "parentId": "undefined"
-          },
-          {
-            "id": 3,
-            "title": "Performance Testing with Lighthouse Audits",
-            "description": "Run comprehensive Lighthouse audits to verify Core Web Vitals and performance metrics",
-            "dependencies": [
-              1
-            ],
-            "details": "Execute Lighthouse audits on all key pages targeting Performance scores > 90. Check Core Web Vitals including LCP, FID, and CLS. Verify accessibility scores, SEO optimization, and best practices compliance. Document any performance issues and optimization opportunities.",
-            "status": "pending",
-            "testStrategy": "Run Lighthouse audits on desktop and mobile for all major pages, verify Core Web Vitals meet target thresholds, document performance metrics",
-            "parentId": "undefined"
-          },
-          {
-            "id": 4,
-            "title": "Form Submission and GHL Integration Testing",
-            "description": "Thoroughly test all form submissions and GoHighLevel integration functionality",
-            "dependencies": [
-              1
-            ],
-            "details": "Test GHL iframe forms submit properly and data is captured correctly. Verify newsletter subscription modal works end-to-end, test contact forms and lead capture forms. Validate form validation rules, error handling, and success states. Ensure all form data reaches the intended destinations.",
-            "status": "pending",
-            "testStrategy": "End-to-end form testing with real submissions, verify data appears in GHL dashboard, test form validation and error scenarios",
-            "parentId": "undefined"
-          },
-          {
-            "id": 5,
-            "title": "TypeScript and React 18 Feature Validation",
-            "description": "Verify TypeScript compilation and React 18 features work correctly in production environment",
-            "dependencies": [
-              1
-            ],
-            "details": "Confirm TypeScript compilation is successful without errors or warnings. Test React 18 specific features like concurrent rendering, automatic batching, and Suspense boundaries. Verify React Router v6 navigation works properly, test state management and component lifecycle methods function as expected.",
-            "status": "pending",
-            "testStrategy": "Review build logs for TypeScript errors, test React 18 features manually, verify component behavior matches development environment",
+            "testStrategy": "Click-test all implemented links to verify they resolve correctly, use Screaming Frog to crawl and verify internal link structure shows cross-domain connections, check that nofollow/dofollow attributes are correctly applied, validate no broken links exist using link checker tool.",
             "parentId": "undefined"
           }
         ],
         "complexity": 7,
-        "recommendedSubtasks": 5,
-        "expansionPrompt": "Break this into deployment verification, functional testing, performance testing with Lighthouse, form submission testing, and TypeScript/React 18 feature validation. Each subtask should focus on a specific validation area.",
-        "updatedAt": "2026-01-31T18:29:56.282Z"
+        "recommendedSubtasks": 2,
+        "expansionPrompt": "1) Audit canonical URLs across both domains using Screaming Frog, 2) Implement cross-domain links (React→WP and WP→React) with nofollow considerations."
       },
       {
-        "id": "4",
-        "title": "WordPress Backup and Archive Creation",
-        "description": "Create comprehensive backup of existing WordPress site before DNS changes",
-        "details": "Create full backup on Cloudways including application files and database. Document current server IP address for rollback purposes. Export WordPress content via WP export tool (posts, pages, media). Save backup files locally as archive. Verify backup integrity by testing restore process on staging environment.",
-        "testStrategy": "Verify backup files are complete and downloadable. Test backup restoration on a staging environment to ensure data integrity. Document all backup locations and access credentials.",
-        "priority": "high",
-        "dependencies": [],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Create Cloudways Application and Database Backup",
-            "description": "Generate comprehensive backup of WordPress application files and database through Cloudways platform",
-            "dependencies": [],
-            "details": "Access Cloudways dashboard and navigate to backup section. Create full application backup including all WordPress files, themes, plugins, and uploads. Generate database backup with complete MySQL dump. Document current server IP address and server configuration details for rollback purposes. Download backup files from Cloudways to ensure local access.",
-            "status": "pending",
-            "testStrategy": "Verify backup files are successfully created in Cloudways dashboard. Confirm backup file sizes are reasonable and complete. Test download functionality to ensure files are accessible.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 2,
-            "title": "Export WordPress Content via WP Export Tool",
-            "description": "Use WordPress native export functionality to create XML export of all content",
-            "dependencies": [],
-            "details": "Access WordPress admin dashboard and navigate to Tools > Export. Select 'All content' option to export posts, pages, comments, custom fields, terms, navigation menus, and custom posts. Generate and download the WordPress XML export file. Additionally, manually backup the wp-content/uploads directory to preserve media files that aren't included in XML export.",
-            "status": "pending",
-            "testStrategy": "Verify XML export file contains all expected content types. Check file size and validate XML structure. Confirm media files are separately backed up from uploads directory.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 3,
-            "title": "Create Local Archive Storage System",
-            "description": "Organize and store all backup files in structured local archive with proper documentation",
-            "dependencies": [
-              1,
-              2
-            ],
-            "details": "Create organized folder structure for backup storage with date stamps and version control. Store Cloudways backup files, WordPress XML export, and media files in clearly labeled directories. Create comprehensive documentation including server IP addresses, database credentials, backup dates, and restoration instructions. Compress archives using appropriate compression tools and verify file integrity.",
-            "status": "pending",
-            "testStrategy": "Verify all backup files are properly organized and accessible. Test archive compression and decompression. Confirm documentation includes all necessary restoration details and credentials.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 4,
-            "title": "Verify Backup Integrity on Staging Environment",
-            "description": "Test backup restoration process on staging environment to ensure data integrity and completeness",
-            "dependencies": [
-              3
-            ],
-            "details": "Set up staging environment on Cloudways or alternative hosting platform. Restore WordPress application from Cloudways backup files and import database. Test WordPress XML import functionality and verify all content is properly restored. Compare staging site with original site to ensure complete data integrity. Document any issues found during restoration process and create step-by-step restoration guide.",
-            "status": "pending",
-            "testStrategy": "Perform complete site functionality testing on staging environment. Verify all posts, pages, media, and configurations match original site. Test admin functionality and plugin compatibility. Document restoration time and any encountered issues.",
-            "parentId": "undefined"
-          }
-        ],
-        "complexity": 5,
-        "recommendedSubtasks": 4,
-        "expansionPrompt": "Separate into Cloudways backup creation, WordPress export, local archive storage, and backup integrity verification. Each subtask should handle a specific backup method or verification step.",
-        "updatedAt": "2026-01-31T18:29:57.047Z"
-      },
-      {
-        "id": "5",
-        "title": "Domain Configuration and DNS Setup",
-        "description": "Configure mesagroupconsulting.com domain to point to Vercel with proper DNS records",
-        "details": "Add mesagroupconsulting.com and www.mesagroupconsulting.com to Vercel project. Configure GoDaddy DNS: A record @ -> 76.76.21.21, CNAME record www -> cname.vercel-dns.com. Verify SSL certificate auto-provisioning by Vercel. Configure HTTPS redirect functionality. Monitor DNS propagation status.",
-        "testStrategy": "Use DNS propagation checkers to verify record updates. Test both www and non-www versions load correctly. Verify SSL certificate is properly installed and HTTPS redirect works. Test from multiple geographic locations.",
-        "priority": "high",
+        "id": "23",
+        "title": "Technical SEO Audits and LocalBusiness Schema Addition",
+        "description": "Run Lighthouse audits, fix heading structure/images, add LocalBusiness structured data to React site footer.",
+        "details": "Add to index.html or global layout: JSON-LD with NAP: {\"@type\":\"LocalBusiness\",\"name\":\"Mesa Group Consulting\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"5001 California Ave Suite 219\",\"addressLocality\":\"Bakersfield\",\"addressRegion\":\"CA\",\"postalCode\":\"93309\"},\"telephone\":\"(661) 310-3040\"}. Lighthouse target 90+ SEO.",
+        "testStrategy": "Lighthouse reports both sites, Google's Rich Results Test for schema, verify Core Web Vitals passing.",
+        "priority": "medium",
         "dependencies": [
-          "3",
-          "4"
+          "21"
         ],
-        "status": "done",
+        "status": "pending",
         "subtasks": [
           {
             "id": 1,
-            "title": "Add Domain to Vercel Project",
-            "description": "Add mesagroupconsulting.com and www.mesagroupconsulting.com domains to the Vercel project configuration",
+            "title": "Run Lighthouse audits and fix heading structure/image issues",
+            "description": "Execute Lighthouse audits on the React site to identify SEO, performance, and accessibility issues. Fix heading hierarchy problems and optimize images for better Core Web Vitals scores.",
             "dependencies": [],
-            "details": "Navigate to Vercel project dashboard and add both mesagroupconsulting.com and www.mesagroupconsulting.com as custom domains. Configure domain settings and prepare for DNS configuration. Ensure both apex and www subdomains are properly registered in Vercel.",
+            "details": "Run Lighthouse in Chrome DevTools for both desktop and mobile. Document current SEO score and identify issues. Fix heading structure to ensure proper h1-h6 hierarchy (only one h1 per page). Optimize images by adding alt text, implementing lazy loading, using appropriate formats (WebP), and compressing file sizes. Address any other critical SEO issues flagged by Lighthouse. Target: achieve 90+ SEO score.",
             "status": "pending",
-            "testStrategy": "Verify domains appear in Vercel dashboard with pending DNS configuration status. Confirm both apex and www domains are listed correctly.",
+            "testStrategy": "Run Lighthouse audits before and after fixes. Verify SEO score reaches 90+, all images have alt text, heading structure passes accessibility checks, and Core Web Vitals metrics (LCP, FID, CLS) are in green range.",
             "parentId": "undefined"
           },
           {
             "id": 2,
-            "title": "Configure GoDaddy DNS Records",
-            "description": "Set up proper DNS records in GoDaddy for domain routing to Vercel",
+            "title": "Implement LocalBusiness JSON-LD schema in React site",
+            "description": "Add LocalBusiness structured data markup with NAP (Name, Address, Phone) information to the React site footer or global layout for improved local SEO.",
             "dependencies": [
               1
             ],
-            "details": "Access GoDaddy DNS management and configure: A record with name '@' pointing to 76.76.21.21 for apex domain, and CNAME record with name 'www' pointing to cname.vercel-dns.com for www subdomain. Remove any conflicting existing records.",
+            "details": "Add JSON-LD script tag to index.html or global layout component with LocalBusiness schema: {\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"name\":\"Mesa Group Consulting\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"5001 California Ave Suite 219\",\"addressLocality\":\"Bakersfield\",\"addressRegion\":\"CA\",\"postalCode\":\"93309\"},\"telephone\":\"(661) 310-3040\"}. Ensure proper JSON formatting and placement in the document head or footer component.",
             "status": "pending",
-            "testStrategy": "Use DNS lookup tools to verify A and CNAME records are properly configured. Check that @ record points to correct IP and www CNAME points to Vercel.",
+            "testStrategy": "Validate schema implementation using Google's Rich Results Test and Schema Markup Validator. Verify JSON-LD appears in page source, is properly formatted, and passes validation without errors or warnings.",
             "parentId": "undefined"
           },
           {
             "id": 3,
-            "title": "Verify SSL Certificate Auto-Provisioning",
-            "description": "Confirm SSL certificate is automatically provisioned by Vercel and HTTPS redirect is working",
+            "title": "Validate schema markup and verify Core Web Vitals compliance",
+            "description": "Use Google's Rich Results Test to validate LocalBusiness schema implementation and confirm Core Web Vitals metrics meet performance standards.",
             "dependencies": [
               2
             ],
-            "details": "Monitor Vercel dashboard for SSL certificate status after DNS propagation. Verify Let's Encrypt certificate is automatically issued for both domains. Test HTTPS redirect functionality to ensure HTTP requests are properly redirected to HTTPS.",
+            "details": "Test the live site URL using Google's Rich Results Test tool to confirm LocalBusiness schema is recognized and eligible for rich results. Run PageSpeed Insights to verify Core Web Vitals (LCP < 2.5s, FID < 100ms, CLS < 0.1) pass thresholds. Check Google Search Console for any structured data errors. Document final Lighthouse SEO score and Core Web Vitals status.",
             "status": "pending",
-            "testStrategy": "Check SSL certificate validity using browser tools and online SSL checkers. Test HTTP to HTTPS redirect for both www and non-www versions. Verify certificate covers both domain variants.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 4,
-            "title": "Monitor DNS Propagation Status",
-            "description": "Track DNS propagation across multiple geographic locations and validate domain accessibility",
-            "dependencies": [
-              2
-            ],
-            "details": "Use DNS propagation checking tools to monitor record updates across global DNS servers. Test domain accessibility from multiple geographic locations. Verify both www and non-www versions load correctly and serve the correct content.",
-            "status": "pending",
-            "testStrategy": "Use DNS propagation checkers like whatsmydns.net to verify global propagation. Test domain access from different locations and devices. Confirm both domain variants load the correct Vercel-hosted content.",
-            "parentId": "undefined"
-          }
-        ],
-        "complexity": 6,
-        "recommendedSubtasks": 4,
-        "expansionPrompt": "Break into Vercel domain addition, GoDaddy DNS configuration, SSL certificate verification, and DNS propagation monitoring. Each subtask should focus on a specific aspect of the domain setup process.",
-        "updatedAt": "2026-01-31T18:29:59.432Z"
-      },
-      {
-        "id": "6",
-        "title": "Production Go-Live Verification",
-        "description": "Verify the React site is fully functional on the production domain",
-        "details": "Test site accessibility at mesagroupconsulting.com with HTTPS. Verify all navigation links work correctly, GHL forms function in production environment, Calendly modals open properly. Test Google Maps embed loads correctly, newsletter subscription modal works, and all anchor links function. Verify page load times under 3 seconds.",
-        "testStrategy": "End-to-end testing on production domain. Performance testing with tools like GTmetrix and PageSpeed Insights. Cross-device testing on desktop, tablet, and mobile. Functional testing of all interactive elements.",
-        "priority": "high",
-        "dependencies": [
-          "5"
-        ],
-        "status": "done",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "HTTPS Accessibility Verification",
-            "description": "Verify the production site is accessible via HTTPS at mesagroupconsulting.com and SSL certificate is properly configured",
-            "dependencies": [],
-            "details": "Test direct access to https://mesagroupconsulting.com, verify SSL certificate validity and security headers. Check for any mixed content warnings or security issues. Validate redirect from HTTP to HTTPS works correctly.",
-            "status": "pending",
-            "testStrategy": "Use SSL testing tools like SSL Labs, browser developer tools to check certificate status, and manual verification of HTTPS access",
-            "parentId": "undefined"
-          },
-          {
-            "id": 2,
-            "title": "Navigation and Internal Links Testing",
-            "description": "Comprehensive testing of all navigation elements and internal links throughout the production site",
-            "dependencies": [
-              1
-            ],
-            "details": "Test main navigation menu, footer links, breadcrumbs, and all internal page transitions. Verify React Router v6 navigation works correctly in production. Test anchor links for language selection and page sections.",
-            "status": "pending",
-            "testStrategy": "Manual click-through testing of all navigation elements, automated link checking tools, and verification of proper URL routing",
-            "parentId": "undefined"
-          },
-          {
-            "id": 3,
-            "title": "Third-Party Integration Testing",
-            "description": "Verify all third-party integrations function correctly in the production environment",
-            "dependencies": [
-              1
-            ],
-            "details": "Test GHL iframe forms submission and functionality, verify Calendly modals open and booking works properly, check Google Maps embed loads and displays correctly. Test newsletter subscription modal functionality.",
-            "status": "pending",
-            "testStrategy": "End-to-end testing of each integration, form submission testing, modal interaction testing, and verification of external service connectivity",
-            "parentId": "undefined"
-          },
-          {
-            "id": 4,
-            "title": "Performance Validation and Load Time Testing",
-            "description": "Validate site performance meets the requirement of page load times under 3 seconds",
-            "dependencies": [
-              1,
-              2,
-              3
-            ],
-            "details": "Use GTmetrix, PageSpeed Insights, and Lighthouse to measure Core Web Vitals. Test load times across different pages and network conditions. Verify performance optimization techniques are working effectively.",
-            "status": "pending",
-            "testStrategy": "Performance testing tools including GTmetrix, PageSpeed Insights, Lighthouse audits, and real-world network simulation testing",
-            "parentId": "undefined"
-          },
-          {
-            "id": 5,
-            "title": "Cross-Device and Browser Compatibility Testing",
-            "description": "Test site functionality and appearance across different devices, browsers, and screen sizes",
-            "dependencies": [
-              2,
-              3
-            ],
-            "details": "Test on desktop, tablet, and mobile devices across Chrome, Firefox, Safari, and Edge browsers. Verify responsive design works correctly, touch interactions function on mobile, and all features are accessible across platforms.",
-            "status": "pending",
-            "testStrategy": "Cross-browser testing using BrowserStack or similar tools, physical device testing, and responsive design validation across multiple viewport sizes",
-            "parentId": "undefined"
-          },
-          {
-            "id": 6,
-            "title": "Comprehensive Functional Testing and Final Validation",
-            "description": "Complete end-to-end functional testing of all site features and user workflows",
-            "dependencies": [
-              1,
-              2,
-              3,
-              4,
-              5
-            ],
-            "details": "Execute comprehensive user journey testing, verify all interactive elements work correctly, test error handling and edge cases. Perform final validation checklist covering all critical functionality before declaring production ready.",
-            "status": "pending",
-            "testStrategy": "End-to-end user journey testing, comprehensive functional test suite execution, and final production readiness checklist validation",
+            "testStrategy": "Google Rich Results Test shows LocalBusiness schema with no errors. PageSpeed Insights shows all Core Web Vitals in green. Final Lighthouse audit confirms 90+ SEO score. Google Search Console shows no structured data errors after indexing.",
             "parentId": "undefined"
           }
         ],
         "complexity": 8,
-        "recommendedSubtasks": 6,
-        "expansionPrompt": "Divide into HTTPS accessibility verification, navigation testing, third-party integration testing (GHL, Calendly, Google Maps), performance validation, cross-device testing, and comprehensive functional testing. Each subtask should focus on a specific verification area.",
-        "updatedAt": "2026-01-31T18:30:00.947Z"
+        "recommendedSubtasks": 3,
+        "expansionPrompt": "1) Lighthouse audits and heading/image fixes, 2) Implement LocalBusiness JSON-LD schema, 3) Validate schema with Google's Rich Results Test and Core Web Vitals."
       },
       {
-        "id": "7",
-        "title": "Fresh WordPress Installation and Basic Configuration",
-        "description": "Set up new WordPress installation on Cloudways for the blog functionality",
-        "details": "Install fresh WordPress on Cloudways using subdomain blog.mesagroupconsulting.com for initial setup. Install and configure Rank Math SEO plugin with proper settings. Set up permalink structure as /blog/post-slug. Configure XML sitemaps generation. Install security plugins and configure basic WordPress security settings.",
-        "testStrategy": "Verify WordPress installation is accessible and functional. Test Rank Math plugin configuration and sitemap generation. Verify permalink structure works correctly. Test admin dashboard functionality and plugin compatibility.",
-        "priority": "medium",
+        "id": "24",
+        "title": "Optimize index.html Meta Tags and Analytics Integration",
+        "description": "Update React index.html OG images/favicons, verify GA4 on both sites, link GSC to Analytics.",
+        "details": "Set og:image to absolute https://www.mesagroupconsulting.com/og-image.jpg, add preconnect to Google fonts/CDN. Confirm GA4 tags fire via DebugView.",
+        "testStrategy": "Test index.html direct access (JS disabled), GA4 real-time reports show traffic, GSC linked successfully.",
+        "priority": "low",
         "dependencies": [
-          "6"
+          "23"
         ],
         "status": "pending",
         "subtasks": [
           {
             "id": 1,
-            "title": "WordPress Installation on Cloudways Platform",
-            "description": "Set up fresh WordPress installation on Cloudways hosting platform using the specified subdomain",
+            "title": "Update index.html OG images/favicons/preconnect",
+            "description": "Update React index.html with absolute OG image URLs, favicon references, and add preconnect tags for Google fonts and CDN resources.",
             "dependencies": [],
-            "details": "Create new WordPress application on Cloudways platform using subdomain blog.mesagroupconsulting.com. Configure server settings, database, and ensure proper SSL certificate installation. Set up admin user account and verify WordPress dashboard accessibility.",
+            "details": "Modify public/index.html to set og:image meta tag to absolute URL https://www.mesagroupconsulting.com/og-image.jpg. Update og:image:secure_url, twitter:image tags similarly. Verify favicon links are correct. Add <link rel='preconnect' href='https://fonts.googleapis.com'> and <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin> for Google Fonts. Add preconnect for any CDN resources used. Ensure all meta tags follow Open Graph protocol standards.",
             "status": "pending",
-            "testStrategy": "Verify WordPress installation is accessible via subdomain URL. Test admin dashboard login functionality and confirm SSL certificate is properly configured.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 2,
-            "title": "Rank Math SEO Plugin Setup and Configuration",
-            "description": "Install and configure Rank Math SEO plugin with proper settings for optimal search engine optimization",
-            "dependencies": [
-              1
-            ],
-            "details": "Install Rank Math SEO plugin from WordPress repository. Run setup wizard and configure basic SEO settings including site verification, social media profiles, and local SEO if applicable. Set up proper meta tags structure and configure schema markup settings.",
-            "status": "pending",
-            "testStrategy": "Verify Rank Math plugin is properly installed and configured. Test SEO analysis functionality and confirm meta tags are being generated correctly on test posts.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 3,
-            "title": "Permalink Structure and XML Sitemap Configuration",
-            "description": "Configure custom permalink structure and set up XML sitemap generation for SEO optimization",
-            "dependencies": [
-              2
-            ],
-            "details": "Set up permalink structure as /blog/post-slug in WordPress settings. Configure XML sitemap generation through Rank Math plugin settings. Ensure sitemap includes all necessary post types and is properly formatted for search engine submission.",
-            "status": "pending",
-            "testStrategy": "Test permalink structure by creating sample posts and verifying URL format. Verify XML sitemap is generated correctly and accessible at /sitemap.xml. Test sitemap validation using Google Search Console tools.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 4,
-            "title": "Security Plugin Installation and Basic Hardening",
-            "description": "Install security plugins and configure basic WordPress security settings to protect the installation",
-            "dependencies": [
-              1
-            ],
-            "details": "Install recommended security plugins such as Wordfence or Sucuri Security. Configure basic security settings including login attempt limits, file permissions, and security headers. Set up security monitoring and enable two-factor authentication for admin accounts.",
-            "status": "pending",
-            "testStrategy": "Verify security plugins are properly installed and configured. Test login security features and confirm security headers are properly set. Run security scan to identify any remaining vulnerabilities.",
+            "testStrategy": "Test index.html direct access with JavaScript disabled to verify meta tags render correctly. Use Facebook Sharing Debugger and Twitter Card Validator to confirm OG images load properly. Check browser DevTools Network tab to verify preconnect resources are loaded early. Validate HTML with W3C validator.",
             "parentId": "undefined"
           }
         ],
         "complexity": 5,
-        "recommendedSubtasks": 4,
-        "expansionPrompt": "Break into WordPress installation on Cloudways, Rank Math SEO plugin setup, permalink and sitemap configuration, and security plugin installation. Each subtask should handle a specific configuration area."
+        "recommendedSubtasks": 1,
+        "expansionPrompt": "Split into: 1) Update index.html OG images/favicons/preconnect, 2) Verify GA4 implementation and GSC-Analytics linking."
       },
       {
-        "id": "8",
-        "title": "WordPress Theme Installation and Customization",
-        "description": "Install and customize WordPress theme to match React site design",
-        "details": "Install GeneratePress theme and create child theme for customizations. Implement design matching React site: Primary Yellow #f9c65d, Dark Gold #bb9446, Light Tan #e5D2af, Inter font family. Customize header/footer to match React site design. Create custom blog post templates and archive/category page layouts. Implement responsive design matching React site's mobile experience.",
-        "testStrategy": "Visual comparison testing between React site and WordPress theme. Test responsive design on multiple devices. Verify color scheme and typography consistency. Test blog post layouts and archive pages render correctly.",
+        "id": "25",
+        "title": "WordPress Technical Audit and Content Optimization",
+        "description": "Ensure all blog posts have green Rank Math scores, focus keywords, internal links to main site.",
+        "details": "Bulk edit posts: add focus keywords (credit repair, business funding), unique metas, service links. Optimize images with W3 Total Cache.",
+        "testStrategy": "Rank Math analysis shows 100% green scores, Lighthouse mobile 80+, verify Article schema.",
         "priority": "medium",
         "dependencies": [
-          "7"
+          "20"
         ],
         "status": "pending",
         "subtasks": [
           {
             "id": 1,
-            "title": "Install GeneratePress Theme and Create Child Theme",
-            "description": "Install the GeneratePress theme on WordPress and create a child theme for safe customizations",
+            "title": "Bulk optimize existing blog posts with focus keywords, meta descriptions, and internal links",
+            "description": "Edit all existing WordPress blog posts to add focus keywords (credit repair, business funding), write unique meta descriptions, and insert internal links to main site services.",
             "dependencies": [],
-            "details": "Install GeneratePress theme from WordPress repository. Create child theme directory with proper style.css and functions.php files. Set up child theme structure to inherit parent theme functionality while allowing safe customizations. Activate child theme and verify it loads correctly.",
+            "details": "Access WordPress admin and bulk edit all blog posts. For each post: assign relevant focus keywords from the list (credit repair, business funding, etc.), write unique meta descriptions optimized for SEO, add 2-3 internal links to main site service pages (mesagroupconsulting.com), ensure proper heading structure. Use Rank Math's content analysis to achieve green scores for each post. Focus on improving SEO metrics like keyword density, readability, and link structure.",
             "status": "pending",
-            "testStrategy": "Verify GeneratePress theme is installed and child theme is active. Test that child theme inherits parent styling correctly and WordPress admin shows child theme as active theme.",
+            "testStrategy": "Verify Rank Math analysis shows 100% green scores across all posts. Check that each post has unique meta description, at least one focus keyword, and 2-3 internal links. Validate that internal links point to correct service pages on main site.",
             "parentId": "undefined"
           },
           {
             "id": 2,
-            "title": "Implement Design System Colors and Typography",
-            "description": "Configure the color scheme and typography to match React site design specifications",
+            "title": "Configure W3 Total Cache for image optimization and validate Rank Math scores",
+            "description": "Set up W3 Total Cache plugin for image optimization, enable lazy loading, and perform final validation of all Rank Math scores and schema markup.",
             "dependencies": [
               1
             ],
-            "details": "Implement Primary Yellow #f9c65d, Dark Gold #bb9446, Light Tan #e5D2af color scheme through child theme CSS. Configure Inter font family across the site. Set up CSS custom properties for consistent color usage. Update theme customizer settings and add custom CSS for typography and color implementation.",
+            "details": "Install/configure W3 Total Cache plugin in WordPress admin. Enable image optimization settings: lazy loading, WebP conversion if supported, browser caching for images. Configure CDN settings if applicable. After optimization, run final Rank Math validation across all posts to ensure green scores maintained. Test Lighthouse mobile performance (target 80+). Verify Article schema is properly implemented and validate using Google's Rich Results Test.",
             "status": "pending",
-            "testStrategy": "Visual verification that colors match React site exactly using color picker tools. Test Inter font loads correctly across all text elements. Verify color consistency across different page types and components.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 3,
-            "title": "Customize Header and Footer Design",
-            "description": "Modify header and footer layouts to match React site design and branding",
-            "dependencies": [
-              2
-            ],
-            "details": "Customize header layout, navigation menu styling, and logo placement to match React site. Modify footer structure, content, and styling for brand consistency. Use GeneratePress hooks and filters or custom template parts to implement design changes. Ensure proper mobile navigation functionality.",
-            "status": "pending",
-            "testStrategy": "Side-by-side comparison of WordPress header/footer with React site design. Test navigation functionality on desktop and mobile. Verify logo displays correctly and links work properly.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 4,
-            "title": "Create Custom Blog Post and Archive Templates",
-            "description": "Develop custom templates for blog posts, category pages, and archive layouts",
-            "dependencies": [
-              3
-            ],
-            "details": "Create custom single.php template for blog post layout matching React site design. Develop archive.php and category.php templates for blog listing pages. Implement custom post meta display, featured image handling, and content formatting. Add pagination styling and excerpt formatting to match design system.",
-            "status": "pending",
-            "testStrategy": "Test blog post display with various content types and featured images. Verify archive and category pages show proper post listings. Test pagination functionality and ensure layouts match React site design patterns.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 5,
-            "title": "Implement Responsive Design and Mobile Optimization",
-            "description": "Ensure all customizations work properly across different screen sizes and devices",
-            "dependencies": [
-              4
-            ],
-            "details": "Implement responsive CSS for all custom elements to match React site's mobile experience. Test and optimize header navigation for mobile devices. Ensure blog layouts work properly on tablets and phones. Add mobile-specific styling adjustments and test touch interactions for navigation and content.",
-            "status": "pending",
-            "testStrategy": "Test responsive design on multiple device sizes using browser dev tools and actual devices. Compare mobile experience with React site for consistency. Verify touch navigation works properly and content is readable on small screens.",
+            "testStrategy": "Run Lighthouse audit targeting mobile score 80+. Verify W3 Total Cache is active and images are lazy-loaded. Use Google Rich Results Test to confirm Article schema validation. Check Rank Math dashboard shows 100% green scores. Test page load times before/after caching implementation.",
             "parentId": "undefined"
           }
         ],
         "complexity": 7,
-        "recommendedSubtasks": 5,
-        "expansionPrompt": "Separate into GeneratePress theme installation, child theme creation, design system implementation (colors, fonts), header/footer customization, and responsive design implementation. Each subtask should focus on a specific customization area."
+        "recommendedSubtasks": 2,
+        "expansionPrompt": "1) Bulk optimize existing posts (focus keywords, metas, internal links), 2) Configure image optimization (W3 Total Cache) and validate Rank Math scores."
       },
       {
-        "id": "9",
-        "title": "Reverse Proxy Configuration and URL Routing",
-        "description": "Configure Vercel rewrites to serve WordPress blog at /blog subfolder",
-        "details": "Configure Vercel vercel.json with rewrites for /blog/* paths to WordPress installation. Set up proper caching headers for blog content. Ensure SEO-friendly URL structure is maintained. Configure WordPress menu with navigation matching React site, ensuring non-blog links point to React site URLs. Test all blog URL patterns work correctly.",
-        "testStrategy": "Test all /blog/* URLs resolve correctly to WordPress. Verify caching headers are properly set. Test navigation between React site and WordPress blog. Validate SEO-friendly URLs and proper canonical tags.",
-        "priority": "medium",
+        "id": "26",
+        "title": "Establish SEO Monitoring and Baseline Documentation",
+        "description": "Set up GSC alerts, document baseline metrics, create review checklist.",
+        "details": "GSC > Settings > Alerts, record current indexed pages/traffic/errors. Create Google Sheet with weekly checklist: GSC errors, rankings, Lighthouse scores.",
+        "testStrategy": "Verify alert emails received for test issues, baseline metrics match GSC/Analytics data.",
+        "priority": "low",
         "dependencies": [
-          "8"
+          "21",
+          "23",
+          "24"
         ],
         "status": "pending",
         "subtasks": [
           {
             "id": 1,
-            "title": "Configure Vercel Rewrite Rules in vercel.json",
-            "description": "Set up Vercel configuration file with proper rewrite rules to route /blog/* paths to WordPress installation",
-            "dependencies": [],
-            "details": "Create or update vercel.json file with rewrites array containing rules to proxy /blog/* requests to WordPress subdomain. Configure source patterns for /blog, /blog/, and /blog/* paths. Set up destination URLs pointing to blog.mesagroupconsulting.com with proper path handling. Include fallback rules for WordPress admin and wp-content assets.",
-            "status": "pending",
-            "testStrategy": "Test that /blog URLs correctly proxy to WordPress. Verify admin access works through proxy. Test asset loading for images, CSS, and JS files.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 2,
-            "title": "Implement Caching Headers for Blog Content",
-            "description": "Configure appropriate caching strategies and headers for WordPress blog content served through Vercel proxy",
+            "title": "Configure GSC alerts and record baseline metrics",
+            "description": "Set up Google Search Console alerts for critical SEO issues and document current baseline metrics including indexed pages, traffic, and errors.",
             "dependencies": [
-              1
+              21,
+              23,
+              24
             ],
-            "details": "Set up headers configuration in vercel.json for blog content with appropriate cache-control directives. Configure different caching strategies for static assets (images, CSS, JS) vs dynamic content (posts, pages). Implement cache invalidation rules for updated content. Set up proper ETag and Last-Modified headers for optimal performance.",
+            "details": "Navigate to GSC > Settings > Alerts and configure notifications for coverage errors, indexing issues, and manual actions. Document baseline metrics: current indexed pages count, average traffic (impressions/clicks), existing errors from Coverage report, and mobile usability issues. Record all metrics in a structured format with timestamp for future comparison.",
             "status": "pending",
-            "testStrategy": "Verify caching headers are properly set using browser dev tools. Test cache behavior for different content types. Validate cache invalidation when content is updated.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 3,
-            "title": "Validate SEO-Friendly URL Structure",
-            "description": "Ensure proper SEO URL structure is maintained through the reverse proxy configuration",
-            "dependencies": [
-              1,
-              2
-            ],
-            "details": "Verify that WordPress permalink structure (/blog/post-slug) works correctly through Vercel proxy. Test canonical URL generation and ensure proper meta tags are preserved. Validate that search engines can properly crawl and index blog content. Configure proper redirects for any URL variations. Test XML sitemap accessibility through proxy.",
-            "status": "pending",
-            "testStrategy": "Use SEO tools to validate URL structure and meta tags. Test canonical URLs and sitemap accessibility. Verify proper HTTP status codes for all blog URLs.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 4,
-            "title": "Configure WordPress Navigation Integration",
-            "description": "Set up WordPress menu system to seamlessly integrate with React site navigation",
-            "dependencies": [
-              3
-            ],
-            "details": "Configure WordPress custom menu with navigation items that match React site structure. Set up external links for non-blog pages to point back to React site URLs. Implement proper target attributes for external navigation. Style WordPress navigation to match React site design. Configure breadcrumb navigation for blog sections.",
-            "status": "pending",
-            "testStrategy": "Test navigation between WordPress blog and React site sections. Verify all menu links work correctly and open in appropriate targets. Test breadcrumb functionality.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 5,
-            "title": "Comprehensive URL Pattern Testing",
-            "description": "Perform thorough testing of all blog URL patterns and proxy functionality",
-            "dependencies": [
-              1,
-              2,
-              3,
-              4
-            ],
-            "details": "Test all possible blog URL patterns including posts, pages, categories, tags, archives, and search results. Verify WordPress admin access through proxy. Test RSS feeds and XML sitemaps accessibility. Validate proper handling of 404 errors and redirects. Test performance and loading times for blog content. Verify mobile responsiveness of proxied content.",
-            "status": "pending",
-            "testStrategy": "Create comprehensive test suite covering all URL patterns. Use automated testing tools to verify proxy functionality. Perform load testing to ensure performance standards are met.",
+            "testStrategy": "Verify alert emails are received by triggering a test issue (e.g., temporarily blocking a page). Confirm baseline metrics match current GSC and Analytics data by cross-referencing reports.",
             "parentId": "undefined"
           }
         ],
-        "complexity": 8,
-        "recommendedSubtasks": 5,
-        "expansionPrompt": "Break into Vercel rewrite configuration, caching header setup, SEO URL structure validation, WordPress navigation configuration, and comprehensive URL pattern testing. Each subtask should handle a specific aspect of the proxy setup."
-      },
-      {
-        "id": "10",
-        "title": "React Site Blog Integration and Final Testing",
-        "description": "Update React site to integrate with WordPress blog and perform comprehensive testing",
-        "details": "Update Articles & Insights page to link to real WordPress blog posts. Update Mesa News page with actual post links. Ensure category links point to WordPress category archives. Add proper external link handling for blog navigation. Implement seamless visual transition between React and WordPress sections. Test all integrations work correctly.",
-        "testStrategy": "End-to-end testing of blog integration. Verify all links between React site and WordPress work correctly. Test user experience flow from React pages to blog and back. Validate SEO implementation with Rank Math showing green scores. Performance testing of integrated solution.",
-        "priority": "medium",
-        "dependencies": [
-          "9"
-        ],
-        "status": "pending",
-        "subtasks": [
-          {
-            "id": 1,
-            "title": "Update React Site Blog Link Integration",
-            "description": "Update Articles & Insights and Mesa News pages to link to real WordPress blog posts with proper URL structure",
-            "dependencies": [],
-            "details": "Modify Articles & Insights page components to fetch and display WordPress blog post links. Update Mesa News page with actual WordPress post URLs. Implement dynamic link generation to WordPress blog posts using the /blog/post-slug permalink structure. Ensure all blog post previews on React pages link correctly to WordPress content.",
-            "status": "pending",
-            "testStrategy": "Test all blog post links from React pages navigate correctly to WordPress. Verify link URLs follow proper permalink structure and open in same/new tab as intended.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 2,
-            "title": "Implement WordPress Category Archive Navigation",
-            "description": "Configure category links to point to WordPress category archives with proper navigation flow",
-            "dependencies": [
-              1
-            ],
-            "details": "Set up category navigation links from React site to WordPress category archive pages. Implement proper URL mapping for category filters and tags. Ensure category links maintain consistent navigation experience and proper breadcrumb functionality between React and WordPress sections.",
-            "status": "pending",
-            "testStrategy": "Test category links navigate to correct WordPress archive pages. Verify category filtering works correctly and maintains user navigation context.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 3,
-            "title": "External Link Handling Implementation",
-            "description": "Add proper external link handling for seamless navigation between React site and WordPress blog",
-            "dependencies": [
-              2
-            ],
-            "details": "Implement external link handling components for WordPress blog navigation. Add proper target and rel attributes for external links. Configure link behavior for opening WordPress pages while maintaining React site session. Implement back-navigation handling and breadcrumb consistency across platforms.",
-            "status": "pending",
-            "testStrategy": "Test external link behavior opens WordPress correctly. Verify back navigation works properly and user session is maintained across platforms.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 4,
-            "title": "Visual Transition Optimization",
-            "description": "Implement seamless visual transition between React site and WordPress blog sections",
-            "dependencies": [
-              3
-            ],
-            "details": "Optimize visual consistency between React site and WordPress theme. Implement loading states and transition animations for blog navigation. Ensure header/footer consistency and maintain design cohesion. Configure WordPress theme customizations to match React site's Inter font, color scheme (#f9c65d, #bb9446, #e5D2af), and responsive design patterns.",
-            "status": "pending",
-            "testStrategy": "Visual comparison testing between React and WordPress sections. Test transition smoothness and design consistency across different devices and screen sizes.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 5,
-            "title": "Comprehensive Integration Testing",
-            "description": "Perform end-to-end testing of complete React-WordPress integration functionality",
-            "dependencies": [
-              4
-            ],
-            "details": "Execute comprehensive testing of all integration points between React site and WordPress blog. Test user journey flows from React pages to blog and back. Verify all navigation elements, form submissions, and interactive components work correctly across both platforms. Test performance impact of integration and ensure Core Web Vitals remain optimal.",
-            "status": "pending",
-            "testStrategy": "End-to-end user journey testing from React to WordPress and back. Performance testing with Lighthouse audits. Cross-browser and cross-device compatibility testing of integrated solution.",
-            "parentId": "undefined"
-          },
-          {
-            "id": 6,
-            "title": "SEO Validation and Final Optimization",
-            "description": "Validate SEO implementation with Rank Math and optimize complete integrated solution performance",
-            "dependencies": [
-              5
-            ],
-            "details": "Verify Rank Math SEO plugin shows green scores across all WordPress blog pages. Test XML sitemap generation includes both React and WordPress content. Validate meta tags, structured data, and SEO optimization across integrated solution. Perform final performance optimization and ensure page load times remain under 3 seconds for complete user journey.",
-            "status": "pending",
-            "testStrategy": "SEO audit using Rank Math plugin validation. Performance testing with GTmetrix and PageSpeed Insights for complete integrated solution. Verify XML sitemaps and structured data implementation.",
-            "parentId": "undefined"
-          }
-        ],
-        "complexity": 9,
-        "recommendedSubtasks": 6,
-        "expansionPrompt": "Divide into React site blog link updates, navigation integration, external link handling implementation, visual transition optimization, comprehensive integration testing, and SEO validation. Each subtask should focus on a specific integration aspect."
+        "complexity": 4,
+        "recommendedSubtasks": 1,
+        "expansionPrompt": "Split into: 1) Configure GSC alerts and record baseline metrics, 2) Create monitoring Google Sheet with weekly checklist template."
       }
     ],
     "metadata": {
       "version": "1.0.0",
-      "lastModified": "2026-01-31T18:30:00.947Z",
-      "taskCount": 10,
-      "completedCount": 6,
+      "lastModified": "2026-02-09T21:49:09.871Z",
+      "taskCount": 16,
+      "completedCount": 9,
       "tags": [
         "master"
       ]

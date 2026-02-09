@@ -34,6 +34,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 import { GHLFormModal } from '@/components/GHLFormModal';
+import { SEO } from '@/components/SEO';
 
 const BuildCredit = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -320,6 +321,11 @@ const BuildCredit = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Build Credit Fast | Free Guide & Tools | Mesa Group Consulting"
+        description="Learn how to build credit from scratch or improve your score with proven strategies. Free credit building guides, partner tools, and expert advice from Mesa Group."
+        canonicalUrl="/build-credit"
+      />
       <Header />
       
       {/* Hero Section */}

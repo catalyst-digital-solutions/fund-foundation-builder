@@ -14,6 +14,7 @@ import {
   getBlogPostUrl,
   decodeHtmlEntities
 } from '@/utils/wordpress';
+import { SEO } from '@/components/SEO';
 
 const ArticlesInsights = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -103,6 +104,11 @@ const ArticlesInsights = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Credit & Finance Articles | Mesa Group Consulting"
+        description="Expert articles on credit repair, debt management, business funding, and financial planning. Learn proven strategies from Mesa Group Consulting's team."
+        canonicalUrl="/resources/articles"
+      />
       <Header />
       
       {/* HERO SECTION */}

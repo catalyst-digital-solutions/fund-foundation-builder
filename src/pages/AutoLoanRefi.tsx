@@ -7,6 +7,7 @@ import EmotionalCTA3 from '@/components/auto-loan-refi/sections/EmotionalCTA3';
 import PoweredBySuperMoney from '@/components/PoweredBySuperMoney';
 // ExternalLinkModal removed; external links open in a new tab instead
 import { Lock, Zap, CircleDollarSign, TrendingUp, TrendingDown, Search, BarChart3, Landmark, Lightbulb, Star, Banknote, Ban, UserMinus, FileText, Shield, AlertTriangle, LockKeyhole, CheckCircle2, ChevronDown, Check } from 'lucide-react';
+import { SEO } from '@/components/SEO';
 
 const AutoLoanRefi = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -72,6 +73,11 @@ const AutoLoanRefi = () => {
 
   return (
     <main className="min-h-screen">
+      <SEO 
+        title="Auto Loan Refinancing | Lower Your Car Payment | Mesa Group Consulting"
+        description="Refinance your auto loan and save $1,200-$3,600. Compare 100+ lenders for the best rates on car loans. Expert guidance from Mesa Group Consulting."
+        canonicalUrl="/auto-loan-refi"
+      />
       <Header />
       {/* SECTION 1: HERO */}
       <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-24 px-6 md:px-8">

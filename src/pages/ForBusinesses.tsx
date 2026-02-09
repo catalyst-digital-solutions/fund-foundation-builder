@@ -25,6 +25,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
+import { SEO } from '@/components/SEO';
 
 const ForBusinesses = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -78,6 +79,11 @@ const ForBusinesses = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Business Funding & Credit Solutions | Mesa Group Consulting"
+        description="Access business funding, build business credit, and secure 0% interest financing. Mesa Group Consulting helps entrepreneurs in Bakersfield, CA grow their businesses."
+        canonicalUrl="/for-businesses"
+      />
       <Header />
       
       {/* Hero Section */}

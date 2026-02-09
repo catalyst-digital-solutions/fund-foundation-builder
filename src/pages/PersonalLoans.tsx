@@ -15,6 +15,7 @@ import FAQ from '@/components/personal-loans/sections/FAQ';
 import FinalCTA from '@/components/personal-loans/sections/FinalCTA';
 import Footer from '@/components/Footer';
 // ExternalLinkModal removed; open affiliate links in new tab instead
+import { SEO } from '@/components/SEO';
 
 const PersonalLoans = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -30,6 +31,11 @@ const PersonalLoans = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Personal Loans & Rates | Compare Lenders | Mesa Group Consulting"
+        description="Compare personal loan offers from top lenders. Get rates for debt consolidation, home improvements, emergencies. Expert guidance from Mesa Group Consulting."
+        canonicalUrl="/personal-loans"
+      />
       <Header />
       <main>
         <HeroSection setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />

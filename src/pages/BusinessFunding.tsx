@@ -11,6 +11,7 @@ import {
   ChevronDown, Star, AlertTriangle, Calculator, Users, ArrowRight, CheckCircle2
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { SEO } from '@/components/SEO';
 
 const BusinessFunding2 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,6 +34,11 @@ const BusinessFunding2 = () => {
 
   return (
     <div className="min-h-screen bg-background font-['Inter',sans-serif]">
+      <SEO 
+        title="Business Funding Solutions | Working Capital | Mesa Group Consulting"
+        description="Get business funding from $10K to $5M. Term loans, lines of credit, equipment financing, and SBA loans. 75+ lender relationships serving all 50 states."
+        canonicalUrl="/business-funding"
+      />
       <Header />
       <HeroSection openApplicationModal={openApplicationModal} />
       <InteractiveFundingCalculator openApplicationModal={openApplicationModal} />

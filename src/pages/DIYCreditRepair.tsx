@@ -10,6 +10,7 @@ import costComparisonBg from "@/assets/diy-credit-repair-cost-comparison-bg.png"
 import EmotionalCTA1 from "@/components/diy-credit-repair/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/diy-credit-repair/sections/EmotionalCTA2";
 import EmotionalCTA3 from "@/components/diy-credit-repair/sections/EmotionalCTA3";
+import { SEO } from '@/components/SEO';
 
 const DIYCreditRepair = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -73,6 +74,11 @@ const DIYCreditRepair = () => {
 
   return (
     <main className="font-['Inter',sans-serif]">
+      <SEO 
+        title="DIY Credit Repair Software | Mesa Group Consulting"
+        description="Take control of your credit repair with professional AI-powered software. Unlimited disputes, expert templates, and real-time tracking from Mesa Group Consulting."
+        canonicalUrl="/diy-credit-repair"
+      />
       <Header />
       {/* SECTION 1: HERO */}
       <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-24 px-6 md:px-8">

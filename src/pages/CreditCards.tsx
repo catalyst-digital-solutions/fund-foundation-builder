@@ -6,6 +6,7 @@ import EmotionalCTA1 from '@/components/credit-cards/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/credit-cards/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/credit-cards/sections/EmotionalCTA3';
 import supermoneyLogo from '@/assets/supermoney-logo.svg';
+import { SEO } from '@/components/SEO';
 
 const CreditCards = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -72,6 +73,11 @@ const CreditCards = () => {
 
   return (
     <main className="min-h-screen">
+      <SEO 
+        title="Credit Card Offers & Comparisons | Mesa Group Consulting"
+        description="Compare credit card offers for all credit levels. Find rewards cards, balance transfer options, and cards to build credit. Expert guidance from Mesa Group Consulting."
+        canonicalUrl="/credit-cards"
+      />
       <Header />
       {/* SECTION 1: HERO */}
       <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-24 px-6 md:px-8">

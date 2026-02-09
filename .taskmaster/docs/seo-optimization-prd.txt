@@ -1,0 +1,432 @@
+# Mesa Group Consulting - Comprehensive SEO Optimization PRD
+
+## Project Overview
+
+Mesa Group Consulting operates two websites that require comprehensive SEO optimization and Google Search Console verification:
+
+1. **Main React Site**: https://www.mesagroupconsulting.com (React/Vite SPA on Vercel)
+2. **WordPress Blog**: https://blog.mesagroupconsulting.com (WordPress on Cloudways)
+
+This PRD outlines all tasks required to ensure both sites are properly indexed by Google, have correct SEO configurations, and achieve optimal search visibility.
+
+---
+
+## Current State Assessment
+
+### React Site (www.mesagroupconsulting.com)
+- **Platform**: React 18 + Vite, hosted on Vercel
+- **SEO Tools**: react-helmet-async (partially implemented), generate-sitemap.js
+- **Known Issues**: 
+  - Only 2 of ~30 pages have SEO component (Homepage, AboutUs)
+  - Google Search Console showing "Duplicate content" errors
+  - Missing unique meta descriptions on most pages
+  - Sitemap exists but may not be submitted to GSC
+
+### WordPress Blog (blog.mesagroupconsulting.com)
+- **Platform**: WordPress on Cloudways (Lightning Stack)
+- **SEO Tools**: Rank Math SEO, W3 Total Cache
+- **Current Status**: 
+  - SSL certificate just renewed
+  - Rank Math configured for sitemaps, titles, social meta
+  - Footer and header match main site design
+- **Potential Issues**:
+  - Sitemap may not be submitted to GSC
+  - Need to verify indexing status
+  - Cross-domain linking strategy
+
+---
+
+## Technical Requirements
+
+### Task 1: Complete React Site SEO Component Rollout
+
+**Objective**: Add unique SEO metadata to every page on the React site using the existing react-helmet-async implementation.
+
+**Pages Requiring SEO Component** (28 pages):
+1. ForConsumers.tsx
+2. ForBusinesses.tsx
+3. BuildCredit.tsx
+4. BusinessCreditBuilder.tsx
+5. Resources.tsx
+6. ArticlesInsights.tsx
+7. FinancialCalculators.tsx
+8. LetterTemplates.tsx
+9. CreditMonitoring.tsx
+10. CreditRepair.tsx
+11. DIYCreditRepair.tsx
+12. CreditCards.tsx
+13. PersonalLoans.tsx
+14. AutoLoanRefi.tsx
+15. StudentLoanRefi.tsx
+16. DebtConsolidationLoan.tsx
+17. DebtRelief.tsx
+18. TrustAndWillPlan.tsx
+19. LifeInsurance.tsx
+20. ZeroInterestBusinessFunding.tsx
+21. BusinessFunding.tsx
+22. BusinessDebtRelief.tsx
+23. MesaNews.tsx
+24. Contact.tsx
+25. TermsAndConditions.tsx
+26. NotFound.tsx (404 page)
+27. Index.tsx (if different from Homepage)
+28. Blog post pages (CreditUtilizationBlogPost, WFBNABlogPost, DebtReliefVsConsolidationBlogPost)
+
+**Implementation Pattern**:
+```tsx
+import { SEO } from '@/components/SEO';
+
+// Inside component return:
+<SEO 
+  title="[Page Title] | Mesa Group Consulting"
+  description="[Unique 150-160 character description for this page]"
+  canonicalUrl="/[page-path]"
+/>
+```
+
+**Requirements**:
+- Each page must have a unique, descriptive title (50-60 characters)
+- Each page must have a unique meta description (150-160 characters)
+- Canonical URL must match the page's route
+- Title should include "Mesa Group Consulting" brand
+- Description should include relevant keywords naturally
+
+---
+
+### Task 2: React Site Sitemap Verification and Submission
+
+**Objective**: Ensure sitemap.xml is complete and properly submitted to Google Search Console.
+
+**Subtasks**:
+1. Verify generate-sitemap.js includes ALL routes from App.tsx
+2. Run build to generate fresh sitemap.xml
+3. Verify sitemap.xml is accessible at https://www.mesagroupconsulting.com/sitemap.xml
+4. Update public/robots.txt to include sitemap reference
+5. Submit sitemap to Google Search Console for www.mesagroupconsulting.com
+
+**Robots.txt Update**:
+```
+User-agent: *
+Allow: /
+
+Sitemap: https://www.mesagroupconsulting.com/sitemap.xml
+```
+
+---
+
+### Task 3: React Site Google Search Console Configuration
+
+**Objective**: Fully configure GSC for the React site and resolve all indexing issues.
+
+**Subtasks**:
+1. Verify domain ownership in GSC (www.mesagroupconsulting.com)
+2. Review Coverage report for errors
+3. Address "Duplicate without user-selected canonical" issues
+4. Address "Not found (404)" issues
+5. Address "Excluded by 'noindex' tag" issues (if any)
+6. Request indexing for key pages
+7. Set preferred domain (www vs non-www)
+8. Configure URL parameters (if applicable)
+
+---
+
+### Task 4: WordPress Blog Sitemap Configuration
+
+**Objective**: Ensure Rank Math sitemap is properly configured and accessible.
+
+**Subtasks**:
+1. Verify Rank Math Sitemap settings:
+   - Posts included
+   - Pages included
+   - Categories included (optional)
+   - Author archives excluded (noindex)
+2. Verify sitemap accessible at https://blog.mesagroupconsulting.com/sitemap_index.xml
+3. Test individual sitemaps (post-sitemap.xml, page-sitemap.xml)
+4. Verify robots.txt includes sitemap reference
+
+---
+
+### Task 5: WordPress Blog Google Search Console Setup
+
+**Objective**: Add and verify blog subdomain in Google Search Console.
+
+**Subtasks**:
+1. Add property: blog.mesagroupconsulting.com in GSC
+2. Verify ownership via DNS TXT record or HTML file
+3. Submit sitemap_index.xml to GSC
+4. Review Coverage report for any issues
+5. Request indexing for existing blog posts
+6. Monitor for crawl errors
+
+---
+
+### Task 6: Cross-Domain SEO Strategy
+
+**Objective**: Ensure proper SEO relationship between main site and blog.
+
+**Subtasks**:
+1. Verify canonical URLs are correct on both sites
+2. Ensure blog posts link back to relevant main site pages
+3. Ensure main site articles/news pages link to blog correctly
+4. Review internal linking structure
+5. Verify no duplicate content between sites
+6. Check for proper hreflang if applicable (same language, so likely not needed)
+
+---
+
+### Task 7: Technical SEO Audit - React Site
+
+**Objective**: Comprehensive technical SEO check for the React site.
+
+**Audit Checklist**:
+1. **Meta Tags**: Verify all pages have unique title and description
+2. **Heading Structure**: Ensure proper H1-H6 hierarchy on each page
+3. **Image Alt Text**: Verify all images have descriptive alt attributes
+4. **Page Speed**: Run Lighthouse audit, target 90+ on desktop, 80+ on mobile
+5. **Mobile Responsiveness**: Test on multiple device sizes
+6. **Structured Data**: Consider adding Organization, LocalBusiness, or BreadcrumbList schema
+7. **Open Graph Tags**: Verify OG image, title, description on each page
+8. **Twitter Cards**: Verify Twitter meta tags
+9. **404 Page**: Ensure custom 404 page exists and is helpful
+10. **HTTPS**: Verify all resources load over HTTPS
+11. **Core Web Vitals**: Check LCP, FID, CLS metrics
+
+---
+
+### Task 8: Technical SEO Audit - WordPress Blog
+
+**Objective**: Comprehensive technical SEO check for the WordPress blog.
+
+**Audit Checklist**:
+1. **Rank Math Score**: Ensure all posts have green SEO score
+2. **Focus Keywords**: Set focus keywords for each post
+3. **Meta Descriptions**: Unique descriptions for all posts
+4. **Featured Images**: All posts have optimized featured images
+5. **Internal Links**: Posts link to main site services where relevant
+6. **Schema Markup**: Verify Article schema on blog posts
+7. **Page Speed**: Run Lighthouse, optimize with W3 Total Cache
+8. **Mobile Responsiveness**: Test blog on mobile devices
+9. **Breadcrumbs**: Enable if not already
+10. **SSL**: Verify SSL is working (just renewed)
+
+---
+
+### Task 9: Index.html Meta Tags Optimization
+
+**Objective**: Optimize the React app's index.html for fallback SEO.
+
+**Current State**: index.html has static meta tags that apply when JavaScript doesn't execute.
+
+**Updates Needed**:
+1. Verify og:image is correct absolute URL
+2. Verify twitter:image is correct absolute URL
+3. Ensure favicon is properly linked
+4. Add preconnect hints for external resources
+5. Verify charset and viewport meta tags
+
+---
+
+### Task 10: Google Analytics and Search Console Integration
+
+**Objective**: Ensure proper analytics tracking on both sites.
+
+**Subtasks**:
+1. Verify GA4 is installed on React site
+2. Verify GA4 is installed on WordPress blog
+3. Link GA4 to Google Search Console
+4. Set up conversion tracking if applicable
+5. Verify both properties are collecting data
+6. Configure Search Console users/permissions
+
+---
+
+### Task 11: Local SEO Optimization
+
+**Objective**: Optimize for local search in Bakersfield, CA area.
+
+**Subtasks**:
+1. Verify Google Business Profile is claimed and optimized
+2. Ensure NAP (Name, Address, Phone) consistency across both sites
+3. Add LocalBusiness structured data to React site
+4. Include location keywords in meta descriptions where appropriate
+5. Verify address schema markup
+
+**Business Information**:
+- Name: Mesa Group Consulting
+- Address: 5001 California Ave Suite 219, Bakersfield, CA 93309
+- Phone: (661) 310-3040
+- Hours: M-F 9am-7pm, Sat 10am-2pm, Sun Closed
+
+---
+
+### Task 12: Content Strategy Alignment
+
+**Objective**: Ensure blog content supports main site SEO goals.
+
+**Subtasks**:
+1. Identify target keywords for each main site service page
+2. Plan blog posts that support those keywords
+3. Create internal linking plan from blog to services
+4. Set up category structure in WordPress matching service areas
+5. Document content calendar recommendations
+
+---
+
+### Task 13: Monitoring and Reporting Setup
+
+**Objective**: Establish ongoing SEO monitoring processes.
+
+**Subtasks**:
+1. Set up GSC email alerts for critical issues
+2. Create weekly/monthly review checklist
+3. Document baseline metrics (current rankings, traffic, indexed pages)
+4. Set up rank tracking for priority keywords (optional)
+5. Create performance dashboard or reporting template
+
+---
+
+## Success Criteria
+
+1. **React Site**:
+   - All 30+ pages have unique SEO metadata
+   - Sitemap submitted and all pages indexed in GSC
+   - No "Duplicate content" errors in GSC
+   - Lighthouse SEO score 90+
+
+2. **WordPress Blog**:
+   - Sitemap submitted and indexed in GSC
+   - All posts have green Rank Math score
+   - SSL working correctly
+   - No crawl errors in GSC
+
+3. **Cross-Domain**:
+   - Proper canonical URLs on both sites
+   - Effective internal linking between sites
+   - No duplicate content issues
+
+4. **Analytics**:
+   - GA4 tracking on both sites
+   - GSC linked to Analytics
+   - Baseline metrics documented
+
+---
+
+## Priority Order
+
+1. **High Priority** (Do First):
+   - Task 1: Complete React SEO component rollout
+   - Task 2: React sitemap verification and submission
+   - Task 3: React GSC configuration
+   - Task 5: WordPress GSC setup
+
+2. **Medium Priority** (Do Second):
+   - Task 4: WordPress sitemap verification
+   - Task 6: Cross-domain SEO strategy
+   - Task 7: Technical SEO audit - React
+   - Task 8: Technical SEO audit - WordPress
+
+3. **Lower Priority** (Do Third):
+   - Task 9: Index.html optimization
+   - Task 10: Analytics integration
+   - Task 11: Local SEO optimization
+   - Task 12: Content strategy alignment
+   - Task 13: Monitoring setup
+
+---
+
+## Dependencies
+
+- Task 1 must complete before Task 2 (sitemap should include all pages with proper metadata)
+- Task 2 must complete before Task 3 (need sitemap before GSC submission)
+- Task 4 should complete before Task 5 (verify sitemap before GSC submission)
+- Task 7 and Task 8 can run in parallel
+- Task 13 should be last (needs baseline data from other tasks)
+
+---
+
+## Technical Notes
+
+### React Site SEO Implementation
+
+The existing `src/components/SEO.tsx` component uses react-helmet-async:
+
+```tsx
+import { Helmet } from 'react-helmet-async';
+
+export const SEO = ({ title, description, canonicalUrl, type = 'website', name = 'Mesa Group Consulting' }: SEOProps) => {
+  const DOMAIN = 'https://www.mesagroupconsulting.com';
+  const effectiveCanonicalUrl = canonicalUrl 
+    ? (canonicalUrl.startsWith('http') ? canonicalUrl : `${DOMAIN}${canonicalUrl}`)
+    : window.location.href;
+
+  return (
+    <Helmet>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <link rel="canonical" href={effectiveCanonicalUrl} />
+      <meta property="og:type" content={type} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={effectiveCanonicalUrl} />
+      <meta property="og:site_name" content={name} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+    </Helmet>
+  );
+};
+```
+
+### WordPress Blog SEO
+
+Rank Math SEO is installed and configured with:
+- Sitemaps enabled
+- Author archives set to noindex
+- Social meta configured
+- Titles & meta configured
+
+### Sitemap Generation
+
+React site uses `generate-sitemap.js` which runs on build:
+```json
+"build": "vite build && npm run generate-sitemap"
+```
+
+---
+
+## Estimated Effort
+
+| Task | Estimated Time |
+|------|----------------|
+| Task 1: React SEO rollout | 3-4 hours |
+| Task 2: React sitemap | 30 minutes |
+| Task 3: React GSC config | 1 hour |
+| Task 4: WordPress sitemap | 30 minutes |
+| Task 5: WordPress GSC setup | 1 hour |
+| Task 6: Cross-domain strategy | 1 hour |
+| Task 7: React technical audit | 2 hours |
+| Task 8: WordPress technical audit | 1 hour |
+| Task 9: Index.html optimization | 30 minutes |
+| Task 10: Analytics integration | 1 hour |
+| Task 11: Local SEO | 1 hour |
+| Task 12: Content strategy | 1 hour |
+| Task 13: Monitoring setup | 30 minutes |
+| **Total** | **13-15 hours** |
+
+---
+
+## Deliverables
+
+1. All React pages with unique SEO metadata
+2. Both sitemaps submitted to Google Search Console
+3. Zero critical errors in GSC for both properties
+4. Technical SEO audit reports for both sites
+5. Documentation of baseline metrics
+6. Monitoring and maintenance checklist
+
+---
+
+**PRD Version**: 1.0
+**Created**: February 9, 2026
+**Author**: Catalyst Digital Solutions
+**Client**: Mesa Group Consulting (Evert Calderon)

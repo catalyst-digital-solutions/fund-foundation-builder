@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { SEO } from '@/components/SEO';
 import { 
   Check,
   CheckCircle,
@@ -508,6 +509,11 @@ const Homepage = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Mesa Group Consulting - Credit Repair, Business Funding & Financial Services" 
+        description="Expert credit repair, business funding, and financial services in Bakersfield, CA. Build credit, access business funding, and achieve financial freedom with Mesa Group Consulting."
+        canonicalUrl="/"
+      />
       <Header />
       
       {/* ================================================================

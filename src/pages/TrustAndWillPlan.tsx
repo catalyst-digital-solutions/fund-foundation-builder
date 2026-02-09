@@ -13,6 +13,7 @@ import {
   ArrowRight, HelpCircle, Award, Baby, CircleDollarSign, PiggyBank,
   FileSignature, Globe, X, ChevronDown
 } from 'lucide-react';
+import { SEO } from '@/components/SEO';
 
 const TrustAndWillPlan = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -66,6 +67,11 @@ const TrustAndWillPlan = () => {
 
   return (
     <main className="min-h-screen">
+      <SEO 
+        title="Online Trust & Will Planning | Mesa Group Consulting"
+        description="Create legal wills and trusts online. Protect your family, avoid probate, and plan your estate affordably. Expert estate planning from Mesa Group Consulting."
+        canonicalUrl="/trust-and-will-plan"
+      />
       <Header />
       {/* SECTION 1: HERO */}
       <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-24 px-6 md:px-8">

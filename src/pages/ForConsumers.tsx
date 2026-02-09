@@ -9,6 +9,7 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
+import { SEO } from '@/components/SEO';
 
 // Animated Counter Component
 const AnimatedCounter = ({ target, suffix = '', duration = 2000 }: { target: number; suffix?: string; duration?: number }) => {
@@ -487,6 +488,11 @@ const ForConsumers = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Credit Solutions for Consumers | Mesa Group Consulting"
+        description="Build credit, repair your score, and access personal loans with Mesa Group Consulting. Expert credit restoration, monitoring, and financial tools in Bakersfield, CA."
+        canonicalUrl="/for-consumers"
+      />
       <Header />
 
       {/* Hero Section */}

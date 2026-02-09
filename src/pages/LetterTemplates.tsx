@@ -9,6 +9,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CalendlyModal } from '@/components/CalendlyModal';
 import { NewsletterModal } from '@/components/NewsletterModal';
+import { SEO } from '@/components/SEO';
 
 interface TemplateCardProps {
   icon: React.ReactNode;
@@ -395,6 +396,11 @@ const LetterTemplates = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Free Credit Dispute Letter Templates | Mesa Group Consulting"
+        description="Download free credit dispute letter templates for inaccuracies, identity theft, and creditor verification. Professional templates from Mesa Group Consulting."
+        canonicalUrl="/resources/templates"
+      />
       <Header />
 
       {/* Hero Section */}

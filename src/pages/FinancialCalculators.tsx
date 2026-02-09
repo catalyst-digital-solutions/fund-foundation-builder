@@ -25,6 +25,7 @@ import DebtPayoffCalculator from '@/components/calculators/DebtPayoffCalculator'
 import DTICalculator from '@/components/calculators/DTICalculator';
 import MonthlyPaymentCalculator from '@/components/calculators/MonthlyPaymentCalculator';
 import EmergencyFundCalculator from '@/components/calculators/EmergencyFundCalculator';
+import { SEO } from '@/components/SEO';
 
 type CalculatorType = 'hub' | 'credit-utilization' | 'debt-payoff' | 'dti' | 'monthly-payment' | 'emergency-fund';
 type FilterType = 'all' | 'credit' | 'debt' | 'savings';
@@ -95,6 +96,11 @@ const FinancialCalculators = () => {
   if (activeCalculator !== 'hub') {
     return (
       <div className="min-h-screen bg-gray-50">
+        <SEO 
+          title="Free Financial Calculators | Mesa Group Consulting"
+          description="Calculate credit utilization, debt payoff plans, DTI ratios, and loan payments. Free financial tools from Mesa Group Consulting in Bakersfield, CA."
+          canonicalUrl="/resources/calculators"
+        />
         <Header />
         <main className="py-12 md:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -122,6 +128,11 @@ const FinancialCalculators = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Free Financial Calculators | Mesa Group Consulting"
+        description="Calculate credit utilization, debt payoff plans, DTI ratios, and loan payments. Free financial tools from Mesa Group Consulting in Bakersfield, CA."
+        canonicalUrl="/resources/calculators"
+      />
       <Header />
       
       {/* HERO SECTION */}

@@ -35,6 +35,7 @@ import {
   getBlogPostUrl,
   decodeHtmlEntities
 } from '@/utils/wordpress';
+import { SEO } from '@/components/SEO';
 
 import kget17Logo from '@/assets/kget-17-logo.png';
 import studio17Logo from '@/assets/studio-17-logo.png';
@@ -129,6 +130,11 @@ const MesaNews = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Mesa News & Updates | Mesa Group Consulting"
+        description="Stay updated on Mesa Group Consulting news, community involvement, media features, and company milestones. Bakersfield credit repair and financial services updates."
+        canonicalUrl="/resources/news"
+      />
       <Header />
       
       {/* Hero Section */}

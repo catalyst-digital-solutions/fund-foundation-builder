@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CheckCircle, FileText, Shield, Scale, AlertCircle, Mail, Phone, MapPin, ChevronDown, ChevronUp } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { SEO } from '@/components/SEO';
 
 const TermsAndConditions = () => {
   const [expandedSections, setExpandedSections] = useState<{ [key: string]: boolean }>({});
@@ -22,6 +23,11 @@ const TermsAndConditions = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Terms and Conditions | Mesa Group Consulting"
+        description="Review Mesa Group Consulting's terms and conditions for credit repair, business funding, and financial services. Understand your rights and our policies."
+        canonicalUrl="/terms-and-conditions"
+      />
       <Header />
 
       {/* Hero Section - Legal Document Header */}

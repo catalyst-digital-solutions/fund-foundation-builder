@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import { NewsletterModal } from '@/components/NewsletterModal';
 import { CalendlyModal } from '@/components/CalendlyModal';
 import mesaGroupLogoWhite from '@/assets/mesa-group-logo-white.svg';
+import { SEO } from '@/components/SEO';
 
 const Contact = () => {
   const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
@@ -17,6 +18,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Contact Mesa Group Consulting | Bakersfield, CA"
+        description="Contact Mesa Group Consulting for credit repair, business funding, and financial services. Free consultation in Bakersfield, CA. Call (661) 310-3040 or visit us."
+        canonicalUrl="/contact"
+      />
       <Header />
 
       {/* Hero Section */}

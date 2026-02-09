@@ -27,6 +27,7 @@ import {
   Award,
   Check
 } from 'lucide-react';
+import { SEO } from '@/components/SEO';
 
 const StudentLoanRefi2 = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -111,6 +112,11 @@ const StudentLoanRefi2 = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Student Loan Refinancing | Lower Rates & Payments | Mesa Group Consulting"
+        description="Refinance student loans to lower rates, reduce payments, and save thousands. Compare top lenders and get expert guidance from Mesa Group Consulting."
+        canonicalUrl="/student-loan-refi"
+      />
       <Header />
 
       {/* HERO SECTION */}

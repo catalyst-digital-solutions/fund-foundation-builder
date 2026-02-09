@@ -22,6 +22,7 @@ import {
   CheckCircle,
   ChevronDown
 } from 'lucide-react';
+import { SEO } from '@/components/SEO';
 
 // Debt Relief specific Calendly URL
 const DEBT_RELIEF_CALENDLY_URL = 'https://calendly.com/d/z7p-zgg-z6c/debt-help-consultation';
@@ -99,6 +100,11 @@ const DebtRelief = () => {
 
   return (
     <div className="min-h-screen bg-white font-sans">
+      <SEO 
+        title="Debt Relief & Settlement Services | Mesa Group Consulting"
+        description="Get debt relief and settle for less than you owe. Reduce credit card debt, medical bills, and personal loans with Mesa Group Consulting in Bakersfield, CA."
+        canonicalUrl="/debt-relief"
+      />
       <Header />
       
       {/* SECTION 1: HERO */}
