@@ -12,6 +12,7 @@ import EmotionalCTA3 from "@/components/life-insurance/sections/EmotionalCTA3";
 import FAQ from "@/components/life-insurance/sections/FAQ";
 import FinalCTA from "@/components/life-insurance/sections/FinalCTA";
 import Footer from "@/components/Footer";
+import ContactFormSection from '@/components/ContactFormSection';
 import { SEO } from "@/components/SEO";
 
 const LifeInsurance = () => {
@@ -35,6 +36,10 @@ const LifeInsurance = () => {
       <EmotionalCTA3 />
       <FAQ />
       <FinalCTA />
+      
+      {/* Contact Form Section */}
+      <ContactFormSection />
+      
       <Footer />
     </div>
   );

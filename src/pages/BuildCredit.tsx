@@ -32,6 +32,7 @@ import {
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ContactFormSection from '@/components/ContactFormSection';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 import { GHLFormModal } from '@/components/GHLFormModal';
 import { SEO } from '@/components/SEO';
@@ -1927,6 +1928,9 @@ const BuildCredit = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactFormSection />
 
       <Footer />
 

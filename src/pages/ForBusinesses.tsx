@@ -24,6 +24,7 @@ import {
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ContactFormSection from '@/components/ContactFormSection';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 import { SEO } from '@/components/SEO';
 
@@ -937,6 +938,9 @@ const ForBusinesses = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactFormSection />
 
       <Footer />
     </div>

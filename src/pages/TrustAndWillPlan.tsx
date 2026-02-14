@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ContactFormSection from '@/components/ContactFormSection';
 import EmotionalCTA1 from '@/components/trust-and-will/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/trust-and-will/sections/EmotionalCTA2';
 import EmotionalCTA3 from '@/components/trust-and-will/sections/EmotionalCTA3';
@@ -1415,6 +1416,9 @@ const TrustAndWillPlan = () => {
 
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactFormSection />
 
       <Footer />
     </main>

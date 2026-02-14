@@ -17,12 +17,61 @@ import experianLogo from "@/assets/experian-logo.png";
 import equifaxLogo from "@/assets/equifax-logo.png";
 import transunionLogo from "@/assets/transunion-logo.png";
 import { SEO } from '@/components/SEO';
-import { SEO } from '@/components/SEO';
+import ContactFormSection from '@/components/ContactFormSection';
+import { NewsletterModal } from '@/components/NewsletterModal';
 const CreditRepair = () => {
   const timelineSectionRef = useRef<HTMLElement>(null);
   const [timelineVisible, setTimelineVisible] = useState(false);
+  const [phase1Open, setPhase1Open] = useState(false);
+  const [phase2Open, setPhase2Open] = useState(false);
+  const [phase3Open, setPhase3Open] = useState(false);
+  const [phase4Open, setPhase4Open] = useState(false);
+  const [pricingLiteOpen, setPricingLiteOpen] = useState(false);
+  const [pricingFlexOpen, setPricingFlexOpen] = useState(false);
+  const [pricingEliteOpen, setPricingEliteOpen] = useState(false);
+  const [pricingRubyOpen, setPricingRubyOpen] = useState(false);
+  const [pricingEmeraldOpen, setPricingEmeraldOpen] = useState(false);
+  const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
   
   const portalUrl = 'https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09';
+
+  // Newsletter Popup Logic
+  useEffect(() => {
+    // Check if user has already seen the newsletter popup in this session
+    const hasSeenNewsletter = sessionStorage.getItem('mesa360_newsletter_shown');
+    
+    if (hasSeenNewsletter) {
+      return; // Don't show again this session
+    }
+
+    let exitIntentTriggered = false; // Track if exit-intent already fired
+
+    // Time-based trigger: Show after 10 seconds
+    const timeoutId = setTimeout(() => {
+      if (!exitIntentTriggered) {
+        setIsNewsletterOpen(true);
+        sessionStorage.setItem('mesa360_newsletter_shown', 'true');
+      }
+    }, 10000);
+
+    // Exit-intent trigger: Show when mouse leaves viewport towards top (close button)
+    const handleMouseLeave = (e: MouseEvent) => {
+      // Only trigger once, and only if mouse is moving towards top (trying to close tab)
+      if (e.clientY <= 5 && !exitIntentTriggered && !sessionStorage.getItem('mesa360_newsletter_shown')) {
+        exitIntentTriggered = true; // Prevent multiple triggers
+        setIsNewsletterOpen(true);
+        sessionStorage.setItem('mesa360_newsletter_shown', 'true');
+        clearTimeout(timeoutId); // Cancel time-based trigger if exit-intent fires first
+      }
+    };
+
+    document.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      clearTimeout(timeoutId);
+      document.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
 
   // Scroll animation for timeline section
   useEffect(() => {
@@ -101,27 +150,51 @@ const CreditRepair = () => {
                 </div>
               </div>
 
-              {/* Primary CTA Button */}
-              <div className="flex flex-col sm:flex-row gap-4 items-start">
-                <div className="flex flex-col items-center">
-                  <CalendlyPopupButton
-                    text="Schedule Your Free Consultation →"
-                    className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4 text-center"
-                    showArrow={false}
-                    prefillOptions={{
-                      utm: { source: 'credit_repair_page', medium: 'website', campaign: 'hero_cta' }
-                    }}
-                  />
-                  <p className="text-sm text-gray-600 mt-2">Powered by Mesa Group</p>
+              {/* Primary CTA Buttons */}
+              <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row gap-4 items-start">
+                  <div className="flex flex-col items-center">
+                    <CalendlyPopupButton
+                      text="Schedule Your Free Consultation →"
+                      className="inline-block bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-8 py-4 text-center"
+                      showArrow={false}
+                      prefillOptions={{
+                        utm: { source: 'credit_repair_page', medium: 'website', campaign: 'hero_cta' }
+                      }}
+                    />
+                    <p className="text-sm text-gray-600 mt-2">Powered by Mesa Group</p>
+                  </div>
+                  <a 
+                    href="https://shm.to/yatPKyE" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center justify-center bg-white text-gray-900 hover:bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-lg font-bold px-8 py-4 text-center mt-0"
+                  >
+                    Get Free Credit Analysis
+                  </a>
                 </div>
-                <a 
-                  href="https://shm.to/yatPKyE" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center justify-center bg-white text-gray-900 hover:bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-gray-300 text-lg font-bold px-8 py-4 text-center mt-0"
+                
+                {/* Full-width View Pricing button */}
+                <button
+                  onClick={() => scrollToSection('pricing')}
+                  className="w-full inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
                 >
-                  Get Free Credit Analysis
-                </a>
+                  View Pricing & Plans
+                  <ArrowRight className="w-5 h-5" />
+                </button>
+              </div>
+
+              {/* Phone Number CTA */}
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <p className="text-gray-700 text-lg">
+                  <strong>Prefer to talk?</strong> Call us now:{" "}
+                  <a 
+                    href="tel:6613103040" 
+                    className="text-[#bb9446] hover:text-[#f9c65d] font-bold text-xl transition-colors"
+                  >
+                    (661) 310-3040
+                  </a>
+                </p>
               </div>
             </div>
 
@@ -139,21 +212,8 @@ const CreditRepair = () => {
       </section>
 
       {/* ============================================ */}
-      {/* SECTION 2: AS SEEN ON MEDIA LOGOS */}
+      {/* SECTION 2: AS SEEN ON MEDIA LOGOS - REMOVED PER EVERT/STEVE MEETING */}
       {/* ============================================ */}
-      <section className="bg-gray-100 py-12 px-6 md:px-8">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-center text-gray-600 text-sm mb-10">
-            Featured in local and national media for our proven Mesa360 Credit System™
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20 lg:gap-28">
-            <img src={kgetLogo} alt="KGET 17" className="h-16 md:h-20 w-auto object-contain" />
-            <img src={studio17Logo} alt="Studio 17" className="h-20 md:h-28 w-auto object-contain" />
-            <img src={telemundoLogo} alt="Telemundo" className="h-16 md:h-20 w-auto object-contain" />
-            <img src={cwLogo} alt="The CW" className="h-14 md:h-18 w-auto object-contain" />
-          </div>
-        </div>
-      </section>
 
       {/* ============================================ */}
       {/* SECTION 3: THE PROBLEM (Empathy + Acknowledgment) */}
@@ -214,6 +274,17 @@ const CreditRepair = () => {
             <p className="text-center text-xl font-bold text-[#3E3E3E]">
               That's where Mesa Group's Mesa360 Credit System™ comes in.
             </p>
+
+            {/* View Pricing CTA Button */}
+            <div className="flex justify-center mt-8">
+              <button
+                onClick={() => scrollToSection('pricing')}
+                className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+              >
+                View Pricing & Plans
+                <ArrowRight className="w-5 h-5" />
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -240,23 +311,34 @@ const CreditRepair = () => {
             This isn't a service. It's a partnership. It's a transformation. It's your second chance, done right.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-            <CalendlyPopupButton 
-              text="Schedule Your Free Consultation"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
-              showArrow={true}
-              prefillOptions={{
-                utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
-              }}
-            />
-            <a 
-              href={portalUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white/10 rounded-lg transition-all duration-200 text-lg font-bold"
+          <div className="max-w-2xl mx-auto space-y-4 mt-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <CalendlyPopupButton 
+                text="Schedule Your Free Consultation"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
+                showArrow={true}
+                prefillOptions={{
+                  utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
+                }}
+              />
+              <a 
+                href={portalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white/10 rounded-lg transition-all duration-200 text-lg font-bold"
+              >
+                Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
+            
+            {/* Full-width View Pricing button */}
+            <button
+              onClick={() => scrollToSection('pricing')}
+              className="w-full inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
             >
-              Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
-            </a>
+              View Pricing & Plans
+              <ArrowRight className="w-5 h-5" />
+            </button>
           </div>
         </div>
       </section>
@@ -267,18 +349,29 @@ const CreditRepair = () => {
       <section className="bg-gradient-to-br from-gray-50 to-amber-50 py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
 
-          {/* 4-Phase Process */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16 items-stretch">
+          {/* 4-Phase Process - Collapsible */}
+          <div className="space-y-6 mb-16">
             {/* PHASE 1: BREAK DOWN THE BARRIERS */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-amber-500 flex flex-col">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
-                <Search className="w-8 h-8 text-[#f9c65d]" />
-              </div>
-              <div className="text-sm font-bold text-[#f9c65d] mb-2">PHASE 1</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">BREAK DOWN THE BARRIERS</h3>
-              <p className="text-gray-600 mb-6 italic">What's Really Holding You Back</p>
+            <div className="bg-white rounded-2xl shadow-xl border-t-4 border-amber-500">
+              <button
+                onClick={() => setPhase1Open(!phase1Open)}
+                className="w-full flex items-center justify-between p-8 text-left hover:bg-gray-50 transition-colors"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Search className="w-8 h-8 text-[#f9c65d]" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-[#f9c65d] mb-1">PHASE 1</div>
+                    <h3 className="text-2xl font-bold text-[#3E3E3E]">BREAK DOWN THE BARRIERS</h3>
+                    <p className="text-gray-600 italic text-sm">What's Really Holding You Back</p>
+                  </div>
+                </div>
+                <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform ${phase1Open ? 'rotate-180' : ''}`} />
+              </button>
               
-              <div className="space-y-4 text-sm text-gray-700 flex-grow">
+              {phase1Open && (
+                <div className="px-8 pb-8 space-y-4 text-sm text-gray-700">
                 <p>Before we can move forward, we need to understand what's anchoring you to the past. Not just the obvious stuff, but the hidden damage, the errors, the items that shouldn't even be there.</p>
                 
                 <div>
@@ -313,19 +406,31 @@ const CreditRepair = () => {
                     <li>• Custom dispute strategy built for YOUR situation, not a template</li>
                   </ul>
                 </div>
-              </div>
+                </div>
+              )}
             </div>
 
             {/* PHASE 2: REPAIR WHAT'S BROKEN */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-orange-500 flex flex-col">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
-                <FileText className="w-8 h-8 text-orange-600" />
-              </div>
-              <div className="text-sm font-bold text-orange-600 mb-2">PHASE 2</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">REPAIR WHAT'S BROKEN</h3>
-              <p className="text-gray-600 mb-6 italic">Removing the Weight You've Been Carrying</p>
+            <div className="bg-white rounded-2xl shadow-xl border-t-4 border-orange-500">
+              <button
+                onClick={() => setPhase2Open(!phase2Open)}
+                className="w-full flex items-center justify-between p-8 text-left hover:bg-gray-50 transition-colors"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <FileText className="w-8 h-8 text-orange-600" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-orange-600 mb-1">PHASE 2</div>
+                    <h3 className="text-2xl font-bold text-[#3E3E3E]">REPAIR WHAT'S BROKEN</h3>
+                    <p className="text-gray-600 italic text-sm">Removing the Weight You've Been Carrying</p>
+                  </div>
+                </div>
+                <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform ${phase2Open ? 'rotate-180' : ''}`} />
+              </button>
               
-              <div className="space-y-4 text-sm text-gray-700 flex-grow">
+              {phase2Open && (
+                <div className="px-8 pb-8 space-y-4 text-sm text-gray-700">
                 <p>Now the real work begins. We don't send generic letters. We don't use offshore call centers. We don't "set it and forget it."</p>
                 
                 <p>Your dedicated account manager, a real person who knows your name, your story, your goals, builds a custom dispute strategy based on FCRA/FDCPA law, your unique credit profile, and the specific violations we found.</p>
@@ -353,19 +458,31 @@ const CreditRepair = () => {
                 </div>
                 
                 <p className="font-semibold text-gray-800">You don't lift a finger. You just watch the progress.</p>
-              </div>
+                </div>
+              )}
             </div>
 
             {/* PHASE 3: BUILD YOUR NEW FOUNDATION */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-green-500 flex flex-col">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                <Users className="w-8 h-8 text-green-600" />
-              </div>
-              <div className="text-sm font-bold text-green-600 mb-2">PHASE 3</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">BUILD YOUR NEW FOUNDATION</h3>
-              <p className="text-gray-600 mb-6 italic">Learning to Win Long-Term</p>
+            <div className="bg-white rounded-2xl shadow-xl border-t-4 border-green-500">
+              <button
+                onClick={() => setPhase3Open(!phase3Open)}
+                className="w-full flex items-center justify-between p-8 text-left hover:bg-gray-50 transition-colors"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Users className="w-8 h-8 text-green-600" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-green-600 mb-1">PHASE 3</div>
+                    <h3 className="text-2xl font-bold text-[#3E3E3E]">BUILD YOUR NEW FOUNDATION</h3>
+                    <p className="text-gray-600 italic text-sm">Learning to Win Long-Term</p>
+                  </div>
+                </div>
+                <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform ${phase3Open ? 'rotate-180' : ''}`} />
+              </button>
               
-              <div className="space-y-4 text-sm text-gray-700 flex-grow">
+              {phase3Open && (
+                <div className="px-8 pb-8 space-y-4 text-sm text-gray-700">
                 <p>Here's where most credit restoration companies fail you: they remove the bad stuff, take your money, and ghost you. Then 6 months later, you're back where you started because nobody taught you how to actually BUILD credit.</p>
                 
                 <p className="font-semibold">Not here. Not with Mesa Group Consulting.</p>
@@ -406,19 +523,31 @@ const CreditRepair = () => {
                     <li>• Just want financial peace? We focus on stability.</li>
                   </ul>
                 </div>
-              </div>
+                </div>
+              )}
             </div>
 
             {/* PHASE 4: OPTIMIZE FOR MAXIMUM OPPORTUNITY */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-blue-500 flex flex-col">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                <TrendingUp className="w-8 h-8 text-blue-600" />
-              </div>
-              <div className="text-sm font-bold text-blue-600 mb-2">PHASE 4</div>
-              <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">OPTIMIZE FOR MAXIMUM OPPORTUNITY</h3>
-              <p className="text-gray-600 mb-6 italic">Positioning You to Win</p>
+            <div className="bg-white rounded-2xl shadow-xl border-t-4 border-blue-500">
+              <button
+                onClick={() => setPhase4Open(!phase4Open)}
+                className="w-full flex items-center justify-between p-8 text-left hover:bg-gray-50 transition-colors"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <TrendingUp className="w-8 h-8 text-blue-600" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-blue-600 mb-1">PHASE 4</div>
+                    <h3 className="text-2xl font-bold text-[#3E3E3E]">OPTIMIZE FOR MAXIMUM OPPORTUNITY</h3>
+                    <p className="text-gray-600 italic text-sm">Positioning You to Win</p>
+                  </div>
+                </div>
+                <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform ${phase4Open ? 'rotate-180' : ''}`} />
+              </button>
               
-              <div className="space-y-4 text-sm text-gray-700 flex-grow">
+              {phase4Open && (
+                <div className="px-8 pb-8 space-y-4 text-sm text-gray-700">
                 <p>We don't just repair your credit. We optimize your entire financial profile so when opportunity knocks, you're ready to answer.</p>
                 
                 <div>
@@ -448,8 +577,26 @@ const CreditRepair = () => {
                     <li>• Confidence that you'll never need credit restoration again</li>
                   </ul>
                 </div>
-              </div>
+                </div>
+              )}
             </div>
+          </div>
+
+          {/* Free Credit Consultation CTA after Phases */}
+          <div className="text-center my-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              Ready to Transform Your <span className="text-[#f9c65d]">Credit & Financial Future?</span>
+            </h3>
+            <a 
+              href={portalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold text-xl px-10 py-5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+            >
+              Free Credit Consultation
+              <ArrowRight className="w-6 h-6" />
+            </a>
+            <p className="text-gray-600 mt-4">90-Day Money-Back Guarantee | Start Your Journey Today</p>
           </div>
 
           {/* Why It Works */}
@@ -487,6 +634,17 @@ const CreditRepair = () => {
                 <p className="text-gray-300">When creditors or bureaus violate your rights, we don't back down. We escalate to our legal team, real attorneys who've recovered thousands in settlements for clients whose rights were violated.</p>
               </div>
             </div>
+
+            {/* View Pricing CTA inside Why It Works */}
+            <div className="text-center mt-10">
+              <button
+                onClick={() => scrollToSection('pricing')}
+                className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
+              >
+                View Pricing & Plans
+                <ArrowRight className="w-5 h-5" />
+              </button>
+            </div>
           </div>
 
           {/* Timeline Disclosure */}
@@ -494,6 +652,284 @@ const CreditRepair = () => {
             <p className="text-sm text-gray-700">
               <strong>Important:</strong> Legitimate credit restoration takes time. While we cannot guarantee specific results, most clients see measurable improvements within 45-90 days. Individual timelines vary based on the complexity of your credit situation and credit bureau responsiveness. The bureaus have 30 days to investigate each dispute, and most items require 1-2 dispute cycles to resolve.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================ */}
+      {/* CONDENSED PRICING CARDS - Early Preview */}
+      {/* ============================================ */}
+      <section className="bg-white py-12 md:py-16 px-6 md:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Choose Your <span className="text-[#f9c65d]">Investment Path</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Three monthly plans and two prepaid options. All include the complete Mesa360 Credit System™.
+            </p>
+          </div>
+
+          {/* Monthly Plans Heading */}
+          <div className="mb-6">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">MONTHLY PLANS</h3>
+            <p className="text-gray-600">Maximum flexibility - cancel anytime after 90 days</p>
+          </div>
+
+          {/* Condensed Collapsible Monthly Cards */}
+          <div className="space-y-4 mb-12">
+            {/* Mesa360 Lite - Collapsible */}
+            <div className="bg-white border-2 border-gray-200 rounded-xl shadow-sm hover:border-amber-300 transition-colors">
+              <button
+                onClick={() => setPricingLiteOpen(!pricingLiteOpen)}
+                className="w-full p-6 text-left"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Briefcase className="w-5 h-5 text-amber-500" />
+                      <h4 className="text-lg font-bold text-gray-900">MESA360 LITE</h4>
+                    </div>
+                    <p className="text-sm text-gray-600 mb-2">Your Gateway to Financial Freedom</p>
+                    <div className="mb-3">
+                      <span className="text-2xl font-bold text-gray-900">$350</span>
+                      <span className="text-gray-500"> initial + </span>
+                      <span className="text-2xl font-bold text-[#FBBF23]">$149</span>
+                      <span className="text-gray-500">/mo</span>
+                    </div>
+                    <p className={`text-sm ${pricingLiteOpen ? 'text-gray-700' : 'text-gray-400'} font-semibold flex items-center gap-2`}>
+                      What's Included
+                      {!pricingLiteOpen && <span className="text-xs text-gray-400">(click to expand)</span>}
+                    </p>
+                  </div>
+                  <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform ${pricingLiteOpen ? 'rotate-180' : ''}`} />
+                </div>
+              </button>
+              
+              {pricingLiteOpen && (
+                <div className="px-6 pb-6 space-y-3 border-t border-gray-100 pt-4">
+                  <div className="space-y-1 text-sm">
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Collections, Late Payments, Inquiries</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>3-Bureau Digital Filing</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dedicated Account Manager</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>1-on-1 Financial Coaching</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Monthly Progress Tracking</span></div>
+                  </div>
+                  <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors text-center mt-4">
+                    Choose Mesa360 Lite
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {/* Mesa360 Flex - Collapsible */}
+            <div className="bg-white border-2 border-amber-400 rounded-xl shadow-md relative">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#FBBF23] text-gray-900 text-xs font-bold px-4 py-1 rounded-full">
+                ⭐ MOST POPULAR
+              </div>
+              <button
+                onClick={() => setPricingFlexOpen(!pricingFlexOpen)}
+                className="w-full p-6 text-left mt-2"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Zap className="w-5 h-5 text-amber-500" />
+                      <h4 className="text-lg font-bold text-gray-900">MESA360 FLEX</h4>
+                    </div>
+                    <p className="text-sm text-gray-600 mb-2">The Complete Transformation Package</p>
+                    <div className="mb-3">
+                      <span className="text-2xl font-bold text-gray-900">$500</span>
+                      <span className="text-gray-500"> initial + </span>
+                      <span className="text-2xl font-bold text-[#FBBF23]">$199</span>
+                      <span className="text-gray-500">/mo</span>
+                    </div>
+                    <p className={`text-sm ${pricingFlexOpen ? 'text-gray-700' : 'text-gray-400'} font-semibold flex items-center gap-2`}>
+                      What's Included
+                      {!pricingFlexOpen && <span className="text-xs text-gray-400">(click to expand)</span>}
+                    </p>
+                  </div>
+                  <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform ${pricingFlexOpen ? 'rotate-180' : ''}`} />
+                </div>
+              </button>
+              
+              {pricingFlexOpen && (
+                <div className="px-6 pb-6 space-y-3 border-t border-gray-100 pt-4">
+                  <div className="space-y-1 text-sm">
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>All Lite features</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Charge-Offs</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Priority Bureau Access</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Direct Creditor Disputes</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Federal Escalation (CFPB)</span></div>
+                  </div>
+                  <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-[#FBBF23] hover:bg-[#E5AC1F] text-gray-900 font-bold py-3 rounded-lg transition-colors text-center mt-4">
+                    Choose Mesa360 Flex
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {/* Mesa360 Elite - Collapsible */}
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-gray-700 rounded-xl shadow-lg relative">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-400 text-gray-900 text-xs font-bold px-4 py-1 rounded-full">
+                👑 PREMIUM
+              </div>
+              <button
+                onClick={() => setPricingEliteOpen(!pricingEliteOpen)}
+                className="w-full p-6 text-left mt-2"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Crown className="w-5 h-5 text-amber-400" />
+                      <h4 className="text-lg font-bold text-white">MESA360 ELITE</h4>
+                    </div>
+                    <p className="text-sm text-gray-300 mb-2">When You've Got the Heavy Stuff</p>
+                    <div className="mb-3">
+                      <span className="text-2xl font-bold text-white">$800</span>
+                      <span className="text-gray-400"> initial + </span>
+                      <span className="text-2xl font-bold text-amber-400">$299</span>
+                      <span className="text-gray-400">/mo</span>
+                    </div>
+                    <p className={`text-sm ${pricingEliteOpen ? 'text-gray-200' : 'text-gray-500'} font-semibold flex items-center gap-2`}>
+                      What's Included
+                      {!pricingEliteOpen && <span className="text-xs text-gray-500">(click to expand)</span>}
+                    </p>
+                  </div>
+                  <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform ${pricingEliteOpen ? 'rotate-180' : ''}`} />
+                </div>
+              </button>
+              
+              {pricingEliteOpen && (
+                <div className="px-6 pb-6 space-y-3 border-t border-gray-700 pt-4">
+                  <div className="space-y-1 text-sm text-gray-300">
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>All Flex features</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Bankruptcies, Repossessions, Evictions</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Student Loans & Medical Bills</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Advanced Legal Disputes</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" /><span>Funding Profile Optimization</span></div>
+                  </div>
+                  <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold py-3 rounded-lg transition-colors text-center mt-4">
+                    Choose Mesa360 Elite
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* 9-Month Prepaid Plans Heading */}
+          <div className="mb-6 mt-12">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">9-MONTH PREPAID PLANS</h3>
+            <p className="text-gray-600">Pay once, save up to $1,691 - maximum commitment, maximum savings</p>
+          </div>
+
+          {/* Condensed Collapsible Prepaid Cards */}
+          <div className="space-y-4">
+            {/* Ruby Plan - Collapsible */}
+            <div className="bg-gradient-to-br from-red-50 to-pink-50 border-2 border-red-200 rounded-xl shadow-sm">
+              <button
+                onClick={() => setPricingRubyOpen(!pricingRubyOpen)}
+                className="w-full p-6 text-left"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Gem className="w-5 h-5 text-red-500" />
+                      <h4 className="text-lg font-bold text-gray-900">RUBY PLAN</h4>
+                    </div>
+                    <p className="text-sm text-gray-600 mb-2">9-Month Flex - Pay Once</p>
+                    <div className="mb-3">
+                      <span className="text-3xl font-bold text-gray-900">$2,291</span>
+                      <span className="text-gray-500 text-sm"> one-time payment</span>
+                    </div>
+                    <p className="text-sm font-semibold text-green-600 mb-2">Save $791 vs. Monthly Flex</p>
+                    <p className={`text-sm ${pricingRubyOpen ? 'text-gray-700' : 'text-gray-400'} font-semibold flex items-center gap-2`}>
+                      What's Included
+                      {!pricingRubyOpen && <span className="text-xs text-gray-400">(click to expand)</span>}
+                    </p>
+                  </div>
+                  <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform ${pricingRubyOpen ? 'rotate-180' : ''}`} />
+                </div>
+              </button>
+              
+              {pricingRubyOpen && (
+                <div className="px-6 pb-6 space-y-3 border-t border-red-200 pt-4">
+                  <div className="space-y-1 text-sm">
+                    <p className="font-semibold text-gray-900 mb-2">All Mesa360 Flex features for 9 months:</p>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Collections, Late Payments, Charge-Offs, Inquiries</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Priority Bureau Access + Accelerated Processing</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Direct Creditor & Collector Disputes</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Federal Escalation Protocol (CFPB)</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Dedicated Account Manager + 1-on-1 Coaching</span></div>
+                  </div>
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-3">
+                    <p className="text-sm font-semibold text-green-800">💰 Save $791 compared to paying monthly</p>
+                  </div>
+                  <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 rounded-lg transition-colors text-center mt-4">
+                    Choose Ruby Plan
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {/* Emerald Plan - Collapsible */}
+            <div className="bg-gradient-to-br from-emerald-50 to-teal-50 border-2 border-emerald-300 rounded-xl shadow-sm">
+              <button
+                onClick={() => setPricingEmeraldOpen(!pricingEmeraldOpen)}
+                className="w-full p-6 text-left"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Gem className="w-5 h-5 text-emerald-600" />
+                      <h4 className="text-lg font-bold text-gray-900">EMERALD PLAN</h4>
+                    </div>
+                    <p className="text-sm text-gray-600 mb-2">9-Month Elite - Maximum Savings</p>
+                    <div className="mb-3">
+                      <span className="text-3xl font-bold text-gray-900">$4,001</span>
+                      <span className="text-gray-500 text-sm"> one-time payment</span>
+                    </div>
+                    <p className="text-sm font-semibold text-green-600 mb-2">Save $1,691 vs. Monthly Elite</p>
+                    <p className={`text-sm ${pricingEmeraldOpen ? 'text-gray-700' : 'text-gray-400'} font-semibold flex items-center gap-2`}>
+                      What's Included
+                      {!pricingEmeraldOpen && <span className="text-xs text-gray-400">(click to expand)</span>}
+                    </p>
+                  </div>
+                  <ChevronDown className={`w-6 h-6 text-gray-400 flex-shrink-0 transition-transform ${pricingEmeraldOpen ? 'rotate-180' : ''}`} />
+                </div>
+              </button>
+              
+              {pricingEmeraldOpen && (
+                <div className="px-6 pb-6 space-y-3 border-t border-emerald-200 pt-4">
+                  <div className="space-y-1 text-sm">
+                    <p className="font-semibold text-gray-900 mb-2">All Mesa360 Elite features for 9 months:</p>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Everything in Flex PLUS Bankruptcies</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Repossessions, Evictions</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Student Loans & Medical Bills</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Advanced Legal Disputes + Priority Handling</span></div>
+                    <div className="flex items-start gap-2"><Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" /><span>Funding Profile Optimization</span></div>
+                  </div>
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-3">
+                    <p className="text-sm font-semibold text-green-800">💰 Save $1,691 compared to paying monthly</p>
+                  </div>
+                  <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-lg transition-colors text-center mt-4">
+                    Choose Emerald Plan
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* View Full Pricing CTA */}
+          <div className="text-center mt-10">
+            <button
+              onClick={() => scrollToSection('pricing')}
+              className="inline-flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-900 font-semibold text-base px-6 py-3 rounded-lg transition-colors border border-gray-300"
+            >
+              View Full Pricing Details
+              <ArrowRight className="w-5 h-5" />
+            </button>
+            <p className="text-sm text-gray-500 mt-2">See complete feature breakdown and side-by-side comparison</p>
           </div>
         </div>
       </section>
@@ -843,23 +1279,34 @@ const CreditRepair = () => {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-              <CalendlyPopupButton 
-                text="Schedule Your Free Consultation"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
-                showArrow={true}
-                prefillOptions={{
-                  utm: { source: 'credit_repair_page', medium: 'website', campaign: 'what_this_means_cta' }
-                }}
-              />
-              <a 
-                href={portalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-gray-900 text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 text-lg font-bold"
+            <div className="max-w-2xl mx-auto space-y-4 mt-12">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <CalendlyPopupButton 
+                  text="Schedule Your Free Consultation"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
+                  showArrow={true}
+                  prefillOptions={{
+                    utm: { source: 'credit_repair_page', medium: 'website', campaign: 'what_this_means_cta' }
+                  }}
+                />
+                <a 
+                  href={portalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-gray-900 text-gray-900 hover:bg-gray-100 rounded-lg transition-all duration-200 text-lg font-bold"
+                >
+                  Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
+                </a>
+              </div>
+              
+              {/* Full-width View Pricing button */}
+              <button
+                onClick={() => scrollToSection('pricing')}
+                className="w-full inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
               >
-                Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
-              </a>
+                View Pricing & Plans
+                <ArrowRight className="w-5 h-5" />
+              </button>
             </div>
           </div>
         </div>
@@ -1289,23 +1736,34 @@ const CreditRepair = () => {
             Individual results may vary. Testimonials are not a guarantee of future performance. Results depend on individual circumstances.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-            <CalendlyPopupButton 
-              text="Schedule Your Free Consultation"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
-              showArrow={true}
-              prefillOptions={{
-                utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
-              }}
-            />
-            <a 
-              href={portalUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 border-2 border-gray-300 hover:bg-gray-50 rounded-lg transition-all duration-200 text-lg font-bold shadow-sm hover:shadow-md"
+          <div className="max-w-2xl mx-auto space-y-4 mt-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <CalendlyPopupButton 
+                text="Schedule Your Free Consultation"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
+                showArrow={true}
+                prefillOptions={{
+                  utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
+                }}
+              />
+              <a 
+                href={portalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 border-2 border-gray-300 hover:bg-gray-50 rounded-lg transition-all duration-200 text-lg font-bold shadow-sm hover:shadow-md"
+              >
+                Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
+            
+            {/* Full-width View Pricing button */}
+            <button
+              onClick={() => scrollToSection('pricing')}
+              className="w-full inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
             >
-              Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
-            </a>
+              View Pricing & Plans
+              <ArrowRight className="w-5 h-5" />
+            </button>
           </div>
         </div>
       </section>
@@ -1313,7 +1771,7 @@ const CreditRepair = () => {
       {/* ============================================ */}
       {/* SECTION 9: PRICING & PLANS */}
       {/* ============================================ */}
-      <section className="bg-white py-16 md:py-24 px-6 md:px-8">
+      <section id="pricing" className="bg-white py-16 md:py-24 px-6 md:px-8 scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           {/* Main Header */}
           <div className="text-center mb-16">
@@ -1861,23 +2319,34 @@ Every dollar you paid to Mesa Group.</p>
               Real Results in 90 Days, or Your Money Back.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-              <CalendlyPopupButton 
-                text="Schedule Your Free Consultation"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
-                showArrow={true}
-                prefillOptions={{
-                  utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
-                }}
-              />
-              <a 
-                href={portalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 border-2 border-gray-300 hover:bg-gray-50 rounded-lg transition-all duration-200 text-lg font-bold shadow-sm hover:shadow-md"
+            <div className="max-w-2xl mx-auto space-y-4 mt-8">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <CalendlyPopupButton 
+                  text="Schedule Your Free Consultation"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold"
+                  showArrow={true}
+                  prefillOptions={{
+                    utm: { source: 'credit_repair_page', medium: 'website', campaign: 'mesa360_section_cta' }
+                  }}
+                />
+                <a 
+                  href={portalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 border-2 border-gray-300 hover:bg-gray-50 rounded-lg transition-all duration-200 text-lg font-bold shadow-sm hover:shadow-md"
+                >
+                  Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
+                </a>
+              </div>
+              
+              {/* Full-width View Pricing button */}
+              <button
+                onClick={() => scrollToSection('pricing')}
+                className="w-full inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500"
               >
-                Get Free Credit Analysis <ArrowRight className="w-5 h-5" />
-              </a>
+                View Pricing & Plans
+                <ArrowRight className="w-5 h-5" />
+              </button>
             </div>
           </div>
         </div>
@@ -2195,7 +2664,16 @@ Every dollar you paid to Mesa Group.</p>
         </div>
       </section>
 
+      {/* Contact Form Section */}
+      <ContactFormSection />
+
       <Footer />
+
+      {/* Newsletter Modal - Time-based (5s) + Exit-intent triggers */}
+      <NewsletterModal 
+        isOpen={isNewsletterOpen} 
+        onClose={() => setIsNewsletterOpen(false)} 
+      />
     </main>;
 };
 export default CreditRepair;

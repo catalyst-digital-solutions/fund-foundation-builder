@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ContactFormSection from '@/components/ContactFormSection';
 import PoweredByMesaGroup from '@/components/PoweredByMesaGroup';
 import { CalendlyPopupButton } from '@/components/CalendlyPopupButton';
 import ExternalLinkModal from '@/components/ExternalLinkModal';
@@ -55,6 +56,10 @@ const BusinessFunding2 = () => {
       <FAQSection openApplicationModal={openApplicationModal} />
       <TwoPathsForward openApplicationModal={openApplicationModal} openCalendly={openCalendly} />
       <FinalCTA openApplicationModal={openApplicationModal} />
+      
+      {/* Contact Form Section */}
+      <ContactFormSection />
+      
       <Footer />
 
       <ExternalLinkModal

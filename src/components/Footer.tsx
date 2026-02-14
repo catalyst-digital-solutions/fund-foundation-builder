@@ -207,7 +207,6 @@ const Footer = () => {
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <ul className="space-y-2 text-sm mb-4">
-                      <li><Link to="/zero-interest-business-funding" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">0% Interest Funding</Link></li>
                       <li><Link to="/business-funding" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Funding</Link></li>
                       <li><Link to="/business-credit-builder" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Credit Builder</Link></li>
                       <li><Link to="/business-debt-relief" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Debt Relief</Link></li>
@@ -222,7 +221,6 @@ const Footer = () => {
                 <div className="hidden md:block">
                   <h4 className="text-[#bb9446] font-semibold text-sm mb-2">BUSINESS SERVICES</h4>
                   <ul className="space-y-2 text-sm mb-4">
-                    <li><Link to="/zero-interest-business-funding" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">0% Interest Funding</Link></li>
                     <li><Link to="/business-funding" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Funding</Link></li>
                     <li><Link to="/business-credit-builder" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Credit Builder</Link></li>
                     <li><Link to="/business-debt-relief" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Debt Relief</Link></li>
@@ -356,9 +354,18 @@ const Footer = () => {
       <div className="bg-[#1a1a1a] py-4">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-6 text-white text-[15px]">
-            <a href="https://www.mesagroupconsulting.com/privacy-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">Privacy Policy</a>
+            <a href="#privacy-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">Privacy Policy</a>
             <Link to="/terms-and-conditions" className="hover:text-[#f9c65d] hover:underline transition-colors">Terms & Conditions</Link>
-            <a href="https://www.mesagroupconsulting.com/accessibility" className="hover:text-[#f9c65d] hover:underline transition-colors">Accessibility</a>
+            <a href="#accessibility" className="hover:text-[#f9c65d] hover:underline transition-colors">Accessibility</a>
+            <a href="#affiliate-disclosure" className="hover:text-[#f9c65d] hover:underline transition-colors">Affiliate Disclosure</a>
+            <a href="#ca-privacy-rights" className="hover:text-[#f9c65d] hover:underline transition-colors">CA Privacy Rights</a>
+            <a href="#cookies-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">Cookies</a>
+            <a href="#ccpa-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">CCPA</a>
+            <a href="#do-not-sell" className="hover:text-[#f9c65d] hover:underline transition-colors">Do Not Sell My Info</a>
+            <a href="#gdpr-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">GDPR</a>
+            <a href="#disclaimer" className="hover:text-[#f9c65d] hover:underline transition-colors">Disclaimer</a>
+            <a href="#data-protection" className="hover:text-[#f9c65d] hover:underline transition-colors">Data Protection</a>
+            <a href="#legal-notice" className="hover:text-[#f9c65d] hover:underline transition-colors">Legal Notice</a>
           </div>
         </div>
       </div>

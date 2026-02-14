@@ -13,6 +13,7 @@ import EmotionalCTA3 from '@/components/debt-consolidation/sections/EmotionalCTA
 import FAQ from '@/components/debt-consolidation/sections/FAQ';
 import FinalCTA from '@/components/debt-consolidation/sections/FinalCTA';
 import Footer from '@/components/Footer';
+import ContactFormSection from '@/components/ContactFormSection';
 import { SEO } from '@/components/SEO';
 
 const DebtConsolidationLoan = () => {
@@ -47,6 +48,10 @@ const DebtConsolidationLoan = () => {
         <EmotionalCTA3 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
         <FAQ />
         <FinalCTA setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
+        
+        {/* Contact Form Section */}
+        <ContactFormSection />
+        
         <Footer />
       </main>
 

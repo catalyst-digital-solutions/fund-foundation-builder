@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactFormSection from '@/components/ContactFormSection';
 import PoweredByMesaGroup from "@/components/PoweredByMesaGroup";
 import EmotionalCTA1 from "@/components/debt-relief/sections/EmotionalCTA1";
 import EmotionalCTA2 from "@/components/debt-relief/sections/EmotionalCTA2";
@@ -703,6 +704,9 @@ const DebtRelief = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactFormSection />
 
       <Footer />
 

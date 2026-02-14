@@ -14,6 +14,7 @@ import EmotionalCTA3 from '@/components/personal-loans/sections/EmotionalCTA3';
 import FAQ from '@/components/personal-loans/sections/FAQ';
 import FinalCTA from '@/components/personal-loans/sections/FinalCTA';
 import Footer from '@/components/Footer';
+import ContactFormSection from '@/components/ContactFormSection';
 // ExternalLinkModal removed; open affiliate links in new tab instead
 import { SEO } from '@/components/SEO';
 
@@ -51,6 +52,10 @@ const PersonalLoans = () => {
         <EmotionalCTA3 setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
         <FAQ />
         <FinalCTA setIsModalOpen={setIsModalOpen} setSelectedUrl={setSelectedUrl} />
+        
+        {/* Contact Form Section */}
+        <ContactFormSection />
+        
         <Footer />
       </main>
     </div>

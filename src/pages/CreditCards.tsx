@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ContactFormSection from '@/components/ContactFormSection';
 import { Target, Check, Lock, Lightbulb, TrendingUp, Star, CircleDollarSign, BarChart3, CreditCard, Gem, Plane, X, Gift, Globe, Trophy, ThumbsUp, Wrench, ChevronDown } from 'lucide-react';
 import EmotionalCTA1 from '@/components/credit-cards/sections/EmotionalCTA1';
 import EmotionalCTA2 from '@/components/credit-cards/sections/EmotionalCTA2';
@@ -862,6 +863,9 @@ const CreditCards = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactFormSection />
 
       <Footer />
 

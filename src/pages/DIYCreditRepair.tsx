@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactFormSection from '@/components/ContactFormSection';
 import { Zap, BarChart3, TrendingUp, FileText, BookOpen, Calendar, CreditCard, Car, AlertTriangle, Shield, Star, Search, Bot, ClipboardList, PenTool, Mail, Infinity, X, Home, Scale, Gavel, Check, ChevronDown, ArrowRight } from 'lucide-react';
 import creditilyLogo from "@/assets/creditily-wolf-logo.svg";
 import creditilyWideWolfLogo from "@/assets/creditily-wide-wolf-logo.svg";
@@ -1062,6 +1063,9 @@ const DIYCreditRepair = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactFormSection />
 
       <Footer />
 
