@@ -1396,3 +1396,77 @@ WordPress blog at `blog.mesagroupconsulting.com` fully integrated with main Reac
 | → Financial Calculators | https://www.mesagroupconsulting.com/resources/calculators |
 | → Letter Templates | https://www.mesagroupconsulting.com/resources/templates |
 | Contact | https://www.mesagroupconsulting.com/contact |
+
+---
+
+## Recent Major Update #21 (February 17, 2026)
+
+### Legal Pages Suite — 10 New Pages + Footer Link Overhaul
+
+**Background:**
+Built a complete legal page suite from scratch, following an established MGC Legal Page Pattern Template. All pages use the shared Header/Footer, SEO component, amber design system, and smooth-scroll TOC.
+
+**MGC Legal Page Pattern Template (established):**
+- Hero section: `bg-gradient-to-br from-amber-50 via-white to-orange-50` + badge icon + title with amber accent word + dates + summary
+- Table of Contents: gray background, 2-column grid, smooth-scroll buttons with amber hover
+- Content body: numbered sections with amber-100 number badges
+- Callout boxes: Amber (features/services), Blue (compliance), Red (warnings), Gray (lists), Gradient amber (contact card), Strong gradient amber (acknowledgment)
+- Copyright line at bottom with `border-t-2 border-gray-200`
+- `useEffect(() => window.scrollTo(0, 0), [])` on mount
+
+**New Pages Created:**
+
+| File | Route | Badge Icon | Sections |
+|------|-------|-----------|----------|
+| `src/pages/PrivacyPolicy.tsx` | `/privacy-policy` | Shield | 14 sections |
+| `src/pages/CaliforniaPrivacyPolicy.tsx` | `/california-privacy-policy` | ShieldCheck | 11 + 4 additional |
+| `src/pages/CookiePolicy.tsx` | `/cookie-policy` | Cookie | 8 sections |
+| `src/pages/TCPAConsentPolicy.tsx` | `/tcpa-consent-policy` | Phone | 12 sections |
+| `src/pages/Disclaimer.tsx` | `/disclaimer` | AlertTriangle | 15 sections |
+| `src/pages/DoNotSellMyPersonalInformation.tsx` | `/do-not-sell-my-personal-information` | EyeOff | 6 sections |
+| `src/pages/AffiliateDisclosure.tsx` | `/affiliate-disclosure` | Handshake | 9 sections + Summary |
+| `src/pages/AccessibilityStatement.tsx` | `/accessibility-statement` | Accessibility | 7 numbered + 4 unnumbered |
+
+**Terms & Conditions — Full Content Replacement:**
+- `src/pages/TermsAndConditions.tsx` completely rewritten (old collapsible accordion → new standard legal page pattern)
+- Expanded from 17 → **19 sections**
+- New sections added: Mesa360 Credit Repair Program (§4), 90-Day Money-Back Guarantee (§5)
+- Full cross-linking to all new legal pages in §1 and §16.1
+- Updated third-party partner list in §8.4 (SmartCredit, Novae, Impruvu, CreditVersio, SuperMoney, etc.)
+- Consumer loan comparison services added as §2.6
+- Client portal link (`portal.mesagroupconsulting.com`) throughout
+
+**Footer Legal Bar — Linked Up:**
+All footer legal links updated from `#hash` anchors to real routes in `src/components/Footer.tsx`:
+
+| Link | Route |
+|------|-------|
+| Privacy Policy | `/privacy-policy` |
+| Terms & Conditions | `/terms-and-conditions` |
+| Accessibility | `/accessibility-statement` |
+| Affiliate Disclosure | `/affiliate-disclosure` |
+| CA Privacy Rights | `/california-privacy-policy` |
+| Cookies | `/cookie-policy` |
+| CCPA | `/california-privacy-policy` |
+| Do Not Sell My Info | `/do-not-sell-my-personal-information` |
+| Disclaimer | `/disclaimer` |
+| TCPA | `/tcpa-consent-policy` |
+
+Removed 3 placeholder links with no pages yet: GDPR, Data Protection, Legal Notice.
+
+**All routes registered in `src/App.tsx`.**
+
+**Key content notes:**
+- Privacy Policy: Verbatim from `new-legal-page-copy/MGC - Privacy Policy.txt` — includes exact partner list (Novae, Impruvu, CreditVersio, SmartCredit, SuperMoney)
+- California Privacy Policy: Full CCPA/CPRA rights, 12-category data table, Section 508, authorized agents, non-discrimination
+- Cookie Policy: 16-row third-party table with privacy policy links, 5 cookie types, browser/mobile/ad-network opt-out methods
+- TCPA: Opt-out methods table, SMS carriers grid, CAN-SPAM compliance
+- Disclaimer: Full CROA notice in §3.4, ALL CAPS liability limitation in §11, 10 service partner list
+- Do Not Sell: CCPA position statement, 10 opt-out methods, XCircle icons for "what we don't do"
+- Affiliate Disclosure: 9 subsections for partner types (2.1–2.9), 5 detailed partner profiles in §7 (amber boxes), FTC 16 CFR Part 255 compliance
+- Accessibility Statement: WCAG 2.1 Level AA, ADA Title III, Section 508, DOJ contact info, 11-item TOC
+
+---
+
+**Last Updated:** February 17, 2026
+**Project Status:** Active Development

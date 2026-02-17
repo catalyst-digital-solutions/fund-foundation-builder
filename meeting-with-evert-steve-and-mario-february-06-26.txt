@@ -1,0 +1,820 @@
+Meet with Evert - 1pm PST - February 06
+VIEW RECORDING - 167 mins (No highlights): https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc
+
+---
+
+0:00 - Steve Neu (Core Focus Digital)
+  So multiple ways, right, I mean, that someone can engage, right, is going to play a really big part in the marketing, right?  And so when I was, you know, trying to, you know, I took the approach, one, hey, let's try to figure out, let's try to get some messaging to people who do hit the site now.  So we put MailX2 on. It's very generalized. The second step was, let's, you know, while you're building this out, let's get those articles going.  So maybe we can pick up some clicks here and there, plus those articles would be good for your new site.
+  ACTION ITEM: Publish 10–12 AI articles to MGC blog - WATCH: https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc?timestamp=49.9999  So we want to get those in. I didn't see them on here, right? Yeah. So we're building out a whole blog content generation system.
+
+0:54 - Mario Garza (Catalyst Digital Solutions)
+  But yeah, Everett and his team are going to be doing manual blogs in the meantime. next time.
+
+1:00 - Steve Neu (Core Focus Digital)
+  But we also, I think, generated 10 or 12 articles for you, okay? So you want to at least try to get some of those in, right?  They're AI-generated, but they were done with a specific purpose to generate traffic from an, you know? So is it like Everett's, you know, perfectly, you know, designed, you know, strategy, right, for helping somebody?  No, right? So if you can do those, Everett, that would help, right? Because it would brand you and brand your strategies.  Meanwhile, you still have a, an article generation system going that's always just kind of thinking about how to, how to get more questions answered out there.  Because you're seeing, and even, even with us talking in the last few months, you're, you just, the, the Google is.  It's just, everything's AI first, right? You know, and people are asking more questions and getting comfortable with asking questions.  It's putting strain actually on the pay-per-click ads and things like that because they have been delegated a little bit.  They cost more now to do, which means that we have to be really specific with our pay-per-click campaigns so we don't overspend and that we truly get the engagement, right, based on that.  So the campaigns that, that we need to run would be very specific to the services, product services that, that when they hit that page, they don't need to go anywhere else.  They don't need to explore the site, which then can get them off, right? And then, but that, that fits their need right then and there, regardless if it's credit monitoring or restoration or, you know, personal loans or something like that, then those campaigns.  they make hire theiriamen. Thank from a pay-per-click basis really work. But those SEO articles are going to drive those questions, the authority and trust in those questions being answered that most people are searching for right now, right?  You know, so it might be, how do I restore my credit? I'm not buying that as a pay-per-click because it's a very dedicated, specific phrase, right?  And, and there's so many words in there, you can't go broad, otherwise you're going to get all kinds of clicks on all kinds of different things that won't make sense and drive up your costs.  So you, but you do want to really answer that question, right? And so those articles are going to help you from that, that perspective show up.  Okay. So the individual pages here, like for consumers, right? I think you, yeah. Yeah. Now you have, if you look at that page and you go, let's say we set up a campaign for, um, uh, can you scroll up there, Mario, I think, or, or what, what page are you on?  Oh, yeah.
+
+4:14 - Mario Garza (Catalyst Digital Solutions)
+  So you're on, yeah.
+
+4:15 - Steve Neu (Core Focus Digital)
+  But can you select one of the actual pages, one of the services for consumers?
+
+4:22 - Mario Garza (Catalyst Digital Solutions)
+  Oh yeah. Okay. Which one? the credit cards.
+
+4:25 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah.
+
+4:27 - Steve Neu (Core Focus Digital)
+  Yeah. So, um, Okay. So this is a pre-qualification, so you're, so that's your lead form there is to get them pre-qualified, right?
+
+4:45 - Mario Garza (Catalyst Digital Solutions)
+  Okay. That's super money. Yeah. Super money, credit card site.
+
+4:52 - Steve Neu (Core Focus Digital)
+  Um, what was that pre-qualification that you had?
+
+5:02 - Evert Jafet Calderon (Mesa Group Consulting)
+  So is that going to an answer, how do they answer five? Oh, it's just, it's the super money. Oh, you're just putting that ahead of time?  Yeah.
+
+5:13 - Steve Neu (Core Focus Digital)
+  Yeah, you might want to just say, hey, we partner with super money, you're going to head over there, this is our solution.  They have prequalification, there's no impact to your credit, right? Um, so when you decide to, you know, choose a credit card, you're, you're going to, um, do that.  Is there any way to pull that information on your, on a form here and then transfer it over to super money?  And then so far, when they hit compare credit cards, then your qualification already is in, in, in tow. And therefore they're only showing cards at that point that they already qualify for based on their prequalification.
+
+5:55 - Evert Jafet Calderon (Mesa Group Consulting)
+  No, they, they told me that we don't get any like. across like. Because ideally, I wanted to do a widget on the website, but they told me that I don't even get access to that until I'm at least making $10,000 per month with them.  That's when they'll give me more access to tools and resources.
+
+6:12 - Steve Neu (Core Focus Digital)
+  Well, and then depending on, like this may not be a good one to do specific pay-per-click ads on, right?  So like the credit restoration one would be good, right? Because that's your product, that's your profitability, right? Yeah. So, plus you're calling it something, the Mesa 360 credit system, right?  So we would create a very specific ad for this. And then what I like about what you've done here, Mario, is that now everything is right there on the, you know, above the fold.  Okay? Because someone's gonna, they already read an ad that says, I'm stuck with bad credit and I need to get my credit.  Fixed, right? And everything else, right? Then they click on the ad because Google thought that your landing page had enough significance to present that ad.
+  ACTION ITEM: Implement conversion tracking on Mesa 360 & Debt Relief; then Steve build/test Google Ads - WATCH: https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc?timestamp=431.9999  And then we're doing the second part of it, which is doing the call to actions here, the conversions. So I'd be placing conversion control on each one of these, right?  So then that reports back. The only thing here that would be missing specifically would be a phone number, right?  A phone call, because you have already broken down possibly some of the, you know, because they're coming from an ad specifically, right?  And you would want to track that call. So then we would give you a phone number to put on here specifically for this product.  And anytime that phone number was called, of course, it would be routed to your main one or whatever, ever you wanted to handle that, right?  And then those would be recorded, but also reported back to Google as success and engagement, right? So that would be key because I think you just got a main number up there on the top header in the menu, right?  Yeah. Yeah.
+
+8:23 - Mario Garza (Catalyst Digital Solutions)
+  So they might call that.
+
+8:25 - Steve Neu (Core Focus Digital)
+  That's great. I don't care how they do that. But if they come to this page and start scrolling down, that header's gone, right?  If, depending on, you know, if they're in mobile, I would imagine, right? So as they're kind of going through, right?  So you got the top of the page and then I see a couple other CTAs in here. So as long as you got them kind of spaced out through, especially through mobile scrolling, right?  Then you have the ability to do that. So Mario, another way to do that is... Is to have some sort of, you know, this is obviously when you have a chat functionality, that's going to be really key because regardless of where they're scrolling, they can always, you know, you know, go ahead and just, you know, ask, ask a question.  And you can put that up in the wording and say, hey, we have chat here. It's available 24-7. Just ask us a question and we can get, you know, started.  And then, of course, your chat will engage them, ask them their name, information, and so forth, and it acts like a lead anyway, right?  Right.
+
+9:31 - Mario Garza (Catalyst Digital Solutions)
+  So, I think this is great.
+
+9:33 - Steve Neu (Core Focus Digital)
+  think, I think it's, so that's what I would do is I would pick out these certain products and services, Everett, that have true profitability to you, right?  And then we can start the process of understanding what a cost per acquisition and marketing would be. And then you can then make those decisions, you know, look, I, at at Okay.  Let's Most I spend 50 bucks, but you know, I made $150 and, but I not only made 150, I made it times seven.  So that made a lot of sense. Maybe I'm willing to do a cost per acquisition of a hundred dollars because of that, right?  You know, so we don't, we don't know until we get started, but this, but these pages are in a much better situation to be able to start that type of marketing because of the CTA.  But what I need to do is take all this content that you have that like, take this page, put it up in, in the AdWords and have them analyze it.  They'll basically go, whoa, we, this is all readable. This is all structured fine for us. It's fast enough for us, right?  Because that was another issue you had on the other side was how, how slow it was behaving. So you're just weren't grading well.  So I think, you know, if this is ready to go, I think we. You take that next step, put it in to Google, analyze it.  Mario, if you get any, if we get any performance issues out of it or whatever, we'll let you know so you can kind of fix those.  We'll keep retesting until Google says, yeah, you are going to have success with these key words and key phrases.  You're likely to spend this and this much activity is happening in your area and we're going to do everything we can to do that and your site is built in a way that's going to get engagement so then you're not wasting your dollars ever on spend that doesn't result in some sort of lead calendar consultation or at least a form or a chat or a phone call to you, right?  Yeah, definitely.
+
+11:53 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah, So, yeah.
+
+11:55 - Mario Garza (Catalyst Digital Solutions)
+  My question, Steve, is looking at this page, like, big FAQ. down here, which is great, you know, the chat bot is extremely important, I've always thought that, and I just feel like there's a lot of content to digest here, and I, we know that we need to add more images, Evert's got a, a photo shoot scheduled for March.
+
+12:17 - Evert Jafet Calderon (Mesa Group Consulting)
+  Got a photo shoot, let's bring out my, my modeling skills. Yeah.
+
+12:22 - Mario Garza (Catalyst Digital Solutions)
+  So like, we want to use those images to do the, there's another section somewhere on here with the employees where we can put like faces.  to all of the names and all of that, the whole team, my question is, we already have this page, as far as Google's concerned, this page exists, right, in the Google ether somewhere.  Yep. For purposes of sales, do we want to have a primer page to this? I mean, there's a lot of data here, and like, people don't read, as you well know, you know, so like, do, do we, I try to do a little bit of visual engagement.  Here, you know, with these little, like, CTA sections, this is just story, you know, it talks about what the advantages are of this program and all of that, but the long story short version is, like, there's a lot of content, I feel like we should have another page that leads to this sort of information, as in more visuals, more pain points, more simple solutions, as in, like, this is what you're going to get by the By choosing Mesa Group Consulting.  That kind of stuff should be the first thing that they see, and once they, I feel like once they've seen all of that, then getting further into the information, how are you going to do that?  That's the next logical question, right? What, what are you going to do first, how you do it a second?  I feel like that's where this sort of page should come into play, or how do you, how do you feel about that?
+
+13:55 - Steve Neu (Core Focus Digital)
+  I feel like it might be duplicate, what you're doing. like not right. I'm that Already. I mean, got content isn't anything to be afraid of.  It's the structures here. It's like, what do you want the person to do, right? And you got a couple of things to get in here.  Like, hey, we want them to convert, right? But how do they convert? They got to know what it is that you do up front.  You clearly have that. You're going to fix it. They're stuck with bad credit. Your system can help. That's it.  I mean, I think this is great, right? How do you get going? Even if they don't want to look at pricing or anything else like that, that would be the part that I'm looking at going, because my own question would be, if I put myself in the consumer's shoes, I'd be like, all right, what does this thing cost?  So maybe there's a button here or something where you can quickly get to your plans, right? Because I would say, out of all this other information, people are going to go, okay, all right, yes, I get it.  I can read more if I want to, but then. Initial is, I already searched for this, I'm in the market, I clicked on an ad, I landed here, right?  And what decisioning points do I need to make to engage? And so, to me, it's going to be, what do I get?  What am I doing here? Which you confirmed. Maybe some sort of performance, I saw the reviews, that's key, okay?  But, you know, and I know you can't say a lot from a performer, you can't promise this and that, so you have to be careful with that.  But it doesn't mean that you can't portray the image that, hey, our Mesa 360 system is way better than anything else that you've seen out there and why, in a very short, short description or even video or something like that, that somebody could use and we could use for marketing purposes later.  And then then- The next step for them is, what is this thing gonna cost me? How easy is this to get going, right?  And so a typical sort of SaaS product or something like what I saw there is you got this kind of good, better, best, right?  Pricing, right? And you might just say that we've, we have, up top, we have a really, you know, consumer, focused, easy, plan, strategy, or I mean, however you want to say it, you know, and light, flex, and elite models, but, you know, very, you know, obviously affordable to get on and competitive, come look at our plans and see everything you get.  Because what they're reading right here, you probably, all these, like, bullet points, you probably probably have expanded on somewhere else in this in this content, right?  And they're probably not going to read through all that content. That content's good for Google, for that, for SEO, for matching, answering questions, for creating trust and authority, especially if it's backed up by articles, if it's backed up by your, you know, you've got a Google My Business Profile that has very similar content on it, right?  You're a verified business, and then you're actually doing ads, and the ads are generating the same sort of related content, then I think people are going to click this, and then you got to give them, you know, reason of, you know, to engage.  And then a lot of them might go, well, I'm not, I'm not going to engage unless I know what the price is.  And, hey, we got great to the And they're built for you, and that's also what makes us different, and that's kind of all you need to do as long as you can direct them to this page, and especially on a mobile phone where, you know, 70% of this traffic is going to happen.  So you've got to get that up there above the fold as quickly as possible, even though your monthly plans are kind of, you know, maybe sitting in the middle of the page, that's fine, but you've just got to get them down there so they can view it, and then this is kind of where you might look at how do you do this on a mobile phone, because each one of these squares can take up a lot.  a lot of space, so you might have to design some sort of tab system where you got it labeled like  Flex and Elite and put the one that you, you know, give them a little instruction on saying, hey, this, you know, and there's lots of nice examples out there because, you know, a lot of people do the good, better, best type of modeling like this, right?  But they do it because it works and, you know, this most popular and the premium and everything else, you know, it kind of goes to the state of what they want to fix and how, how quick and how comprehensive of a situation that they may find themselves in.  And at this point, too, is where you might want to throw in another shot because if they're sitting here reading this, this is where they might have a question.  So this is where you suggest, hey, call us. We're here to answer any questions you have, right? Whatever your hours are, remind them there.  Hey, if it's after hours, our chat system can help you go, you know, work. this through, right? Email us a question, you know, whatever, just as long as you get engagement.  So you're going to, so this is your, your product right here is right, is right here, not all that other content, which may get consumed, but likely not as much as this, or what's above the fold.  Got it.
+
+20:30 - Evert Jafet Calderon (Mesa Group Consulting)
+  I think for, like the model that we had on the homepage for the services, where it's the little tabs, I think that's something that could be replicated on the credit restoration page, and it could be some way, something that we do, like a, like very, like something like that, you know, maybe something like that, kind of showcasing the three plans, and we can still leave the section where it covers all of it, just in case somebody scrolls down all all the way there, but adding  A section like this a little bit towards the top of the site.
+
+21:04 - Steve Neu (Core Focus Digital)
+  Second level? Yeah. Is this really what they're gonna do? I mean, if you look at, like, even what Smart Credit does, those are the simplest landing pages.  They don't tell you jack about the product, really. And I get it, but it's like, okay, you wanna get, you either wanna get, you got here for a reason, do you wanna get going?  Yeah. Or, you still got another question? It's probably about pricing. Okay. And you still got questions? Well, is it because of, you don't understand the pricing and the packaging?  So then, use that as a way to get a conversion? Or is it that maybe this doesn't, all these services don't match up?  Well, in that case, you can learn more by continuing to read down why all this stuff is included in our...  Packages of why we do this stuff, right? And all that leads to us being better for you, right? And we're not a waste of your time, regardless even if you want to take 15 minutes and talk to us.  And you know if they call, you're very likely to talk that person in right then there on the phone, moving forward, right?  Because you already captured them and they're going to sing a little bit, right? Their situation and what's going on.  And then they're just going to fall right in your lap. So I would imagine whatever you can, and this is one thing that I did see that's kind of missing through, is a real focused phone call.  Call us for questions. Call us. We're available. We're here to help. Don't be scared of us, type of language, right?  Because the easier You can make it for the less friction to that phone call, and I imagine that's your best lead when you get someone to actually call you, right?  So the calendar, they still have, depending on when they set it up, they still got to get, you know, you got the emails that go out, they can still cancel, they can still go out and search, right?  You know, the chat is a little stronger because you got them now and you're starting to communicate and getting their information.  You know, the calendar, they can pull it up, they click a time and a date, then you obviously are asking them for their information and then they stop, right?  So, Calendee is going to help you, I guess, see that, right? So you're going to have those sort of abandonments that are going to occur.  worry. gonna Great. But you can't really abandon on a phone call, can you?
+
+24:05 - Evert Jafet Calderon (Mesa Group Consulting)
+  Nope, not at all. And then, I mean, I think, obviously, finance is already a scary thing. And then I think people sometimes assume they're coming in for credit repair.  Then looking at the site sometimes can be a little bit overwhelming for them, especially because I think my whole purpose was from the very beginning to always be like, look like a white glove service.  You know, I think the website does a very good job of reflecting that now. So it could be a bit intimidating for them and then kind of overwhelming.  So I think with those just like, hey, call us, we're here to help. Call to action, I think those would probably be able to ease their mind a little bit and be like, oh, OK, cool.  Let just call them and see what's up, you know, as opposed to other websites that look similar but don't have that option.
+
+24:50 - Steve Neu (Core Focus Digital)
+  Yeah, well, you still have a little sense of that corporate-y feel still with this site. And but you're solving a real personal line.  So if you can bridge that a little bit more, I think you'll be in better shape, right? But structurally, this site is doing better.  The first one, had the big boardroom pictures and this and that. then, you know, so someone who's like, ah, I need help with my credit is going to look at that and like, what on earth?  You know, I'm not, am I, am I, is this a lawyer? You know, is this a big business, right?  So if you could pepper this with a little bit more personalization, right? And I think that comes then with you doing your videos and your blog work and your content there too.  And maybe a focus on, on you and your strategies and vision and stuff like that too, right? But, but even on the tops of these pages and things like that, I'm glad you kind of stayed away from some of that imagery that makes you look too corporate-y, right?  Yeah.
+
+26:00 - Evert Jafet Calderon (Mesa Group Consulting)
+  So, like, one thing that, like, I was talking to Mario, too, is, like, I mean, I think the structure overall of the site is great, and then March 20th, we're going to have an office, like, team shoot, so we're going to go down to the studio, you know, get pictures taken and everything, and then just adding that touch of the team members in an outside environment from the office, because it's going to be at a studio, is going to give it that more of a personal touch.  And then, wherever I see fit that, it's like, hmm, maybe we could do a video here, then we'll film a video, and then these people are going to be like, oh, these are the guys from, you know, this company that are helping us and creating the videos to help us.  So, I think the image, the new imagery and the videos, they'll come with time, and then that'll really kind of help tie things all together.  And then, one thing that I did want to ask you is, like, we can run the ads and start generating traffic to it, and then kind of get things moving that way.  One, like, the strategy that we were thinking. What was if maybe Mario can show you in a bit here, but we were going to do the blog generation post and then that was going to generate a YouTube script for us as well.  So then we would have a blog posted, then we would have this YouTube script, create the YouTube video in a long format.  We were going to then clip that YouTube video into it, shorts, reels, and TikToks, then create a couple of short form videos specifically on that topic, even make some Instagram carousels, maybe some X posts, and then really just start thinking like a full pledge media distribution company.  And then leave traffic all the way back to the very beginning to the website, because even if somebody doesn't necessarily call us, I think the website is now set up to be able to generate revenue on itself.  You know, if somebody is looking for a card, I'm going to go click on here, obviously super money. Cookies are going to track it, and then be able to help us get paid on that.  Yeah, so we need to track all this.
+
+28:07 - Steve Neu (Core Focus Digital)
+  the good news is we are identifying records on your site, right? So the next thing that – now this is budget stuff, right?  I mean, so this is – do you want to build, get some traffic going, understand these kind of dollar principles, profitability, cost per action, and so forth?  But what you're talking about is moving into what we call demand, you know, marketing, okay? So the demand services side is the videos, the very specific retargeting to one-on-one marketing that's occurring on connected TV, streaming radio, all over the place, right?  You know, so now you know that this person – In some way, shape, or form hit your site or hit one of your assets and is interested, right?  Now, maybe they didn't fill out a form. Maybe they're not ready yet, whatever the case is. But now it's in your best interest because they're low-hanging fruit that hit them on every single level, every single channel that they typically go.  And that could be display. That could be all kinds of things. But instead of regular display, like, hey, we're sharing a cookie, right, and then it only lasts for so long or as long as the sessions are up and running, we can take and identify very specific individuals and start running those demand generation type of marketing, okay?  They're more expensive. So in order to do demand marketing, that one-to-one, one, they need a lot more records, okay?  So to make it work out because the budgets to It started, okay, on a, we, we start our budgets at $5,000 a month for demand services.  Okay. So in order to market to $5,000, right? And you got to have all the engines to do that and so forth to do, to do that.  Plus it comes with what is called the trade desk. Have you ever seen, have you ever heard of the trade desk?  Okay. That is a, like the world's largest transaction system. Okay. So just about everything you buy, everything you do gets compiled into a demand generation service called the, the trade desk and they do data.  Okay. So then you, you request from the trade desk data that matches the type of data that is good for you.  You have Right. You know, so it might be credit people with credit scores in this range. It could be people that just purchased this and makes a lot of sense if you're, you know, in, you know, let's say maybe they just got a maybe they just applied for a home mortgage.  Right. But there's no new home mortgage on their credit record. Right. So that might be a sign and their credit score is low.  So it'd be like, hey, that's good. They probably need help from me. Right. Or, you know, they already have a list of people who are already pre-qualified for a credit card or something along those lines or is actively looking for a credit card.  All right. Or personal loans. So you can imagine we, you know, from the automotive perspective, which is where a lot of our experience comes from.  And we use the trade desk too. I. And then to identify specifically what car they're driving, so it can get really granular in that perspective.  And that's why the cost to do demand generation is so high, because they are the leader in providing one-to-one data records for whatever type of situation that you do.  So you normally don't live off of your retargeting identification on the site alone, right? Especially if you're a smaller organization and you don't get a lot of visits to your site, okay?  That builds up the number that would satisfy the budget. So you, not replenish, but you supply your campaign with data that's...  Coming from the Trade Desk, okay? So those are things that we can look at as we get going, right?  And it's all part of your package with us. It just becomes a budget decision when you get there. But as when I look at these sort of things, we go, okay, let's get the site and the core structure really ready to market, okay?  Let's move into some search engine marketing. Let's make sure the SEO is working. Let's make sure we get trust and authority.  The other things with this site, just, you know, I know, Mario, you're working on it, but like the compliance, the ADA, stuff like that, that's all going to, we want to get that all kind of figured out and put up before we get to Google.  Google, because Google is going to look at this and immediately put it into a financial situation, okay? at data.  to Google going to look You remember, Evert, when I talked at the convention, your money, your life, okay, algorithms, those are going to come true on this site, okay?  So they're going to put extra weight on your compliance, your privacy policies, because you're providing something to a person that affects either their money or their life.  And then what they mean by life is health care, stuff like that. So financial organizations and health websites, medical websites, things like that, elective health care services really fall into that YMYL standards, okay?  And they will reduce the effectiveness of your ads and marketing and everything else. So, so, so the reason I'm telling you that is we got to get that all kind of squared away then.  Then, 00. We typically work into that search, right? Because we got the site structured and so forth. And if we have the CTAs and the conversions happening, then search is a great way to kind of control the ups and downs of a growing business, right?  So then you can say, Steve, let's pause that for a little bit or let's bring the budget down because you're working on a daily spend, $50, $60.  Oh, let's bring that down to 40. I'm getting too much business, you know, or whatever, or I'm not getting enough.  Let's bring it up. Or this is a good season. I want to, I'm, I'm, I'm feeling better about it.  So it's a real controllable, targetable, you know, system that you can manage there. And plus you can learn very specifically what it takes.  And if you can be in a position every month that you finally got this kind of dialed in, that you wake up like in the beginning of February and know, I'm, I'm, Thank  Or without a doubt that you're going to generate probably X amount of thousands of dollars just from your marketing and it's going to be profitable and you're going to probably do that month in and month out and month in and month out so you can trust it.  So then once we get that kind of put in place, then you start to go, I want to maximize this more, right?  When I got the right traffic coming to my site, I want to capture that traffic, I want to identify them, I want to retarget them because that's the traffic that most likely is going to come back and buy again, right?  So I want to email them, I possibly want to send postcards to them, a direct mail, and then I definitely want to eventually do demand services combined with the lists that are available out there so I can attract more customers just like that, okay?  And then so that's kind of like the system flow that we want to be able to go through. And I know we've been kind of, you know, been waiting.  You've been on the clock, too, and you've been, you know, on the bill, too, right? So, but this is a lot, lot better, right?  You're in a lot better situation than what you were day one, okay? And then to be able to run with that type of strategy, okay?  And then I do caution, yes, you can do all the things you said, you should get those assets together, because it doesn't mean that we can't do a little Google, like a Performance Max campaign, and get some of the, get some of that video out there, and skippable ads, and stuff like that.  It doesn't mean that we can't do some placements, that's not demand, that's targeted, okay? So, demand retargeting is a collage of all that sort of data records that you know is the lowest hanging fruit, and that's where you really want to focus, which then, then, then what you're doing is controlling that cost for acquisition.  And the, the, if we can keep lowering that, and keep... Increasing your revenue, then, you know, you're in a good position.  So that's kind of why that's the last part, but I also don't want to say, no, don't do that, just, we might have to kind of pepper it in on the targeted side, but we would have to follow the same sort of rules, right, that we do in the cost per acquisition kind of analysis to make sure that we don't overspend or put yourself in a position that, that affects those campaigns, right?  So, I don't know, I might have over-talked that, but that makes No, no, no.
+
+38:37 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah, that makes sense. So, my question would be, are we going to be running it to the site entirely, or a specific section of the site?  Yeah, so campaigns are going to be, like, each one of those service pages, right, would deserve its own specific campaign.  Okay. Gotcha, okay. Okay. And...
+
+39:00 - Steve Neu (Core Focus Digital)
+  If I, like, there's probably so much competition for general finance consultants, right? This, that, all kinds of stuff that's out there.  You're running into anything from banks to this, to that, to, you know, insurance, to, you know, anything and everything under the sun, right?  So that is also super competitive. So your cost per click is going to be very high, right? I want you to pick a product that has a, or a service that has a very defined, you know, niche and audience that then we can define a very specific keyword, key phrase approach that's based off of the content of your, your site.  And then that campaign only fuels that, that service. Okay. And then that way we can figure it out and we're not, you know, and  Most likely, people are going to land on that page, and although you got all this other stuff on the site that's great, all that's doing is saying, wow, these guys are no joke, okay?  And it might even make them feel better when they land on that page to go ahead and contact you because it's a professionally done page, it looks good, you have lots of ways to contact, you're the real deal, and you got a lot of other things.  So, you might as well go ahead and start this, ask them a question or start the process, right? And that would be our goal.  And then we'll do it one sort of campaign at a time, and we could start off with two or three campaigns, but each campaign would be dedicated to a service that you want to, you know, grow and make money on.  And so, your core is going to be the MESA 360, right?
+
+40:52 - Evert Jafet Calderon (Mesa Group Consulting)
+  I mean, we can with the MESA 360 because that would be the credit repair, right? The other one, too, that wouldn't make sense for me.  Music. would also be debt relief because if you go to the debt relief page, this one is, obviously they have that.  And then once they book the call, that's not even to us. That's for the fulfillment team. So it's very low friction for me.  I mean, they can call us and then I'm just going to book the appointment for them either way, you know?  Yeah. So, but I know that if it's, we spend $25 to acquire this one lead, that means the payout can be anywhere from $500 to $1,000, $1,500.  Yeah. So that's going to be, I think those two are the best ones. Yeah. Well you, you, and then you, as your business changes, you just, you know, Mario's going to build you a new page.
+
+41:51 - Steve Neu (Core Focus Digital)
+  We keep it to the, you know, to a marketing focus, right?
+
+41:55 - Evert Jafet Calderon (Mesa Group Consulting)
+  You know, a conversion focus. This is pure conversion. we'rerijkölder, Yeah, It's There's not a lot here, right?
+
+42:03 - Steve Neu (Core Focus Digital)
+  And then, and the customers, and then you have complete scalability, which means that you can, you know, it's not bothering you if, right?  I mean, it's not hurting your resources, right? Or are dedicated to other things because you got something else that's taking care of this customer, right?
+
+42:25 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah, because I mean, we can get 20 book calls for that all day long. Yeah. And it'll, it'll never slow me down.
+
+42:32 - Steve Neu (Core Focus Digital)
+  So, um, debt relief is competitive, but at the same time, a lot of this stuff is, but it's once again, Google's going to look at this and go, what does this page say?  All right. So you might come back and say, this is a little, a little less content than what we want, right?  So then we can go back and say, Hey, you know, we think that we want to get these key phrases in, but, um,  But the page doesn't have any reference to that, okay? So then Google will likely, like they would on an SEO as well, will likely degrade the page a little bit, the ad of the page and the effectiveness.  So, but if, yeah, so there's all this, okay, so there's a lot more, obviously. So, when I plug this page in, all right, when it's all ready to go, and we're like, we're ready to go, I'm going to take this page, put it in Google AdWords, and today with how they do things, I mean, two years ago, I used to have to write individually every description, every key phrase, every, everything.  Today, you don't do that, you, if your site, you only do that if your site's not readable. And then, but that's the first alarm of saying,  you need a new website. So if Google doesn't read it and then tell you, well, this site is, we understand exactly what you're trying to do and exactly what you're trying to sell.  And this is what's going to work for you. And, and then that's how you get off to a good start and generate, you know, hits off the bat.  And then as we optimize it and get better, and, and, and, conversions are actually being, you know, happening. Like when someone clicks this book, free debt analysis, and it reports back to Google as a positive engagement, then they're going to say, yay, we're, we've been, we're providing a good service to our client.  They looked at the listings, they clicked on it and they acted. So we're going to now do this more often with this ad.  And, um, and that's, I always like to call that the king of the hill position, and once you're there, it's very hard for anyone to knock you out, and that's why then you can start relying on that sort of every month and a month out to produce.  Now, it might take some time and a little bit of budget to figure that out, right? Because, you know, but it takes a lot less time than before because, you know, Google analyzes it right off the bat and sets you off in a pretty good, you know, good state in the beginning.  So, I would say, hey, let's pick out the products, right?
+
+45:46 - Evert Jafet Calderon (Mesa Group Consulting)
+  The service pages. Let me go ahead.
+
+45:49 - Steve Neu (Core Focus Digital)
+  I mean, we don't have to start the campaigns, but let me just start to put the campaigns together, see what we run into, and if we get the green light.
+
+46:00 - Evert Jafet Calderon (Mesa Group Consulting)
+  From Google, then I say we put a couple bucks in and see start the process. Right.
+
+46:06 - Steve Neu (Core Focus Digital)
+  But then again, if Google comes back and it's like scoring well, right, then we'll, we'll make those corrections. So then we can, right.  Ultimately. Yeah.
+
+46:21 - Evert Jafet Calderon (Mesa Group Consulting)
+  I mean, I say, let's, let's start with those two debt relief and then the Mesa 360. Okay. Uh, because those are going to be the ones that yield the biggest ROI.  And obviously if we're, cause I mean the smart card one really doesn't make sense to put into it to test just because it's such a low ticket.  And then we want to make sure that we're breaking even and making more than what we're spending. So I think those two products will be ideal for it.
+
+46:50 - Steve Neu (Core Focus Digital)
+  Yeah. And then there's so much value to the impressions. I mean, because Let's just say you get, I mean, really, let's say on something like this, you might get 5%, you know, CTRs.  That means that 95% of your ads are just being seen and they're getting looking at your name, but those ads aren't being seen unless people are putting key phrases in that make sense for you.  So there is a nice growth that you get from direct, from your, you know, social pages and different things like that.  And then what we recommend then from there is we're starting to collect this data, let's start getting some emails and some things out.  Now, you're, this is just a high level, right? You guys are working the CRM, right?
+
+47:48 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah, high level. Yeah. So is that all programmed to do the drips and things like that? Yeah. I still haven't, I'm sorry, I still haven't finalized.  it's, go, Like the whole newsletter and everything just yet. So that's still a work in progress, but I'm where that's already kind of plugged into the site.  So once it gets turned on, it'll be working. Okay.
+
+48:11 - Steve Neu (Core Focus Digital)
+  But either that or we can help you at least get some email campaigns out too, right? Because I think things that control your cost per acquisition is, you know, obviously getting these other sales.  I don't cost you much. And then like with pay per click, you know, you get the impression value, which can help, but I would imagine your referrals are going to be a really big part of this.  So all these customers and these reviews and the people that you've helped in the past, if we can start dripping and targeting them with a specific referral program, right?  Um, that might just help because they're working for you and, and it doesn't. much. It much to do an email, it doesn't cost us anything, and we could put together the program for you, we just need the data to support it, and then the records.  But I would be thinking along those lines, what can you do with your current customers, your current leads, reestablishing communication and engagement with them?  Because those are actually, you know, better percentage opportunities, typically, and your current customer may not realize that you have these other services now, right?  Or, you know, you always had them, but they weren't concerned about them now. Now, a reminder of all the awesome other things that you do might help that along with a referral.  Perfect. Bye. So I think we should come up with some campaign strategies that we can get that data because that data is accessible to you either in your CRM or in your transaction system.  We may just have to pull it out, collect it. I can enhance the data and prepare campaigns, do the creative for that based off of the new website design.  And so everything matches, right?
+
+50:30 - Evert Jafet Calderon (Mesa Group Consulting)
+  So when they hit the email and go to the site, it doesn't look disjointed. Yeah, because even off the email from currency, I'm just kind of looking at right now, we have about a 4,300 contact list.  Yeah.
+
+50:50 - Steve Neu (Core Focus Digital)
+  So. Your best, that's your lowest hanging fruit right there. And then, is that including customers? Yeah, it's including.
+
+50:59 - Evert Jafet Calderon (Mesa Group Consulting)
+  do anything. also Customers. But I mean, for those, mean, think about it. Hey, are you looking for a new credit card?  Here's our credit card service. And then who knows, maybe a couple of them go through super money, get a little bit of that or some loans here.  You know, it's like they're able to be able to start getting some traffic from these people that we have.  So I would load those up to in the Google.
+
+51:24 - Steve Neu (Core Focus Digital)
+  So then if they happen to go search, you are prioritized and you're at placement for them automatically because they're your audience.
+
+51:33 - Evert Jafet Calderon (Mesa Group Consulting)
+  So imagine them getting an email and get a little, you know, it's kind of like a little shelf life, right?
+
+51:39 - Steve Neu (Core Focus Digital)
+  Well, you might even send them out a postcard, let them know, you know, if you've got their address, all of a sudden, obviously, they're going to go online sometime.  Who knows? Maybe not then, but maybe, you know, a couple of weeks later and like, you know, they got reminded of, you know, maybe I got a credit card offer, you know, from some bank.  And then they're, you know, then they get online and they do a search and bam, you're coming up number one because we had you all loaded up.  So I, I would, I would definitely get a hold of that data. And I think, you know, maybe this is all coming full circle because we really like work in that current customer base, your current lead base, and then your current website activity, right?  And then if you have to do targeting, which is like the demand services and things like that, then you go to a system like the Trade Desk, the kind of, you know, targeting data that you can, conquest data that you can.  But if you can use all the data that you're cultivating yourself, it's always going to yield a better percentage of, you know, marketing, you know, ROI for you.  Yeah.
+
+52:58 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah. Cause I even have. About another 1,800 on Smart Credit Closed Accounts. Yeah.
+
+53:12 - Steve Neu (Core Focus Digital)
+  Yeah.
+
+53:13 - Evert Jafet Calderon (Mesa Group Consulting)
+  So, I mean, it's about 5,000, almost 6,000 to be able to retarget to.
+
+53:21 - Steve Neu (Core Focus Digital)
+  So, why don't we do this? Why don't we next, why don't we schedule, why don't we get all this, let's give ourselves a week.  Right? If we can, like to get all this, I'll test those Google campaigns.
+
+53:37 - Evert Jafet Calderon (Mesa Group Consulting)
+  Right?
+
+53:38 - Steve Neu (Core Focus Digital)
+  Um, the sites that we have now, Mario, you got a couple things I know you're working on, right? And, and I'm still on the site.
+
+53:46 - Evert Jafet Calderon (Mesa Group Consulting)
+  Um, and then let's get that data together.
+
+53:50 - Steve Neu (Core Focus Digital)
+  Okay? And then let's meet again.
+
+53:53 - Evert Jafet Calderon (Mesa Group Consulting)
+  Do want to do this same time next week?
+
+53:58 - Mario Garza (Catalyst Digital Solutions)
+  Does that work for everyone? I think I'm, I think I'm okay though.
+
+54:05 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah. Yeah. I think that works for me.
+
+54:08 - Steve Neu (Core Focus Digital)
+  And then even if we make it kind of a cycle here initially, I think, cause I feel like we've kind of, you know, we, we passed a, a milestone here, right?  And then let's get onto the much more active stage of not that Mario, you weren't active at all, but for, for my standpoint, get in there, get this data going, get these campaigns running.  And then, then we got a lot of, you know, a lot of, you know, now we're discussing new business, how it's working, ROI's, you know, changes, a consistent process to making these additional enhancements to the site based on the data that we're seeing from the marketing, right?  You know, so I want you to make future changes to the site based on the fact. That the much larger expense that you're, that you're marketing with drives the reason for your changes.
+
+55:09 - Evert Jafet Calderon (Mesa Group Consulting)
+  Correct. It should be data driven changes. Yeah. And we won't know that until we start putting some of this stuff together.
+
+55:16 - Steve Neu (Core Focus Digital)
+  Right.
+
+55:17 - Evert Jafet Calderon (Mesa Group Consulting)
+  So one thing that I did want to ask, like, let's say somebody comes into the debt relief page or at any point on the website, if they want to leave the website, do you think it makes sense to have like a pop-up that appears on the exit, be like, Hey, before you go grab this and then we collect their email?  Yeah.
+
+55:39 - Steve Neu (Core Focus Digital)
+  I mean, that typically kind of happens in the front end and end, right? So having it just at the end is kind of, you know, people kind of frown on that.
+
+55:49 - Evert Jafet Calderon (Mesa Group Consulting)
+  Like, I just want out of here, you know, and you don't get a lot of it. So if you're going to present a newsletter, like, opportunity, you know.
+
+56:00 - Steve Neu (Core Focus Digital)
+  Or an offer on the end, then you need to do it in the front, okay? So then it's not, it's just like a, hey, this is a one time, hey, before you leave, you know, we already asked you to, you know, to fill this out.  We know that wasn't probably the best time, but, you know, before you leave, go ahead. And, you know, we've got a great newsletter that's full of all kinds of wonderful information if you want to do that.  Or, you know, if there's a incentive, time-based incentive, right, you know, come on back, you know, you can get, you know, this week or whatever, you know, a free month or something, you know, however you want to do that.  So you can interchange it, but you want to put it on the front end and back, not just the back.
+
+56:55 - Evert Jafet Calderon (Mesa Group Consulting)
+  Gotcha. Makes sense. Okay.
+
+56:58 - Steve Neu (Core Focus Digital)
+  And then you might have it. I mean, you see them like on retail sites, they might have like, it's sitting there always on that bottom left-hand side, like a little rewards or something like that, or a little, like a little, little button that's kind of hovering there, newsletter, 5% off, 15, you know, whatever, one month free.  And that way, as they're scrolling through your site, they can always hit it at any time, and then when it does pop up on the end, you know, it doesn't, it doesn't feel like a, you know, last-ditch sort of effort.  Hey, where are you going? You're not supposed to leave yet. Yeah.
+
+57:43 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah, because it's a little bit, hey, don't leave. Oh, yeah.
+
+57:48 - Steve Neu (Core Focus Digital)
+  You got to give them something. But you got to make that not a secret at the end. got to make it something that they know about it the whole time.  So, yeah. Okay. That makes sense.
+
+58:04 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah, I mean, they're good.
+
+58:06 - Steve Neu (Core Focus Digital)
+  You know, Jenner, if you can build your newsletter group up, that's just another good group of customers that you can engage with, right?
+
+58:17 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah.
+
+58:18 - Steve Neu (Core Focus Digital)
+  All right, you got your, and then if you do that, you got to do that in Facebook and Instagram and everywhere else that you're posting stuff and make it a part of your mission.  And I know that's part of your mission, too, because you want to educate, right? Mm-hmm. You want to give to the community, you have something to give, and you personally write these articles and information and that draws a real strong value to what we were talking about before when someone's going to make a decision.  So, I think it's a good idea.
+
+58:59 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah. Yeah. Yeah. But make it a system, make it a program that you're doing no matter what.
+
+59:06 - Steve Neu (Core Focus Digital)
+  Yeah.
+
+59:06 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah, that's one thing we want to kind of get into. That's also something, Mario, I like, that's where our main focus, especially for this year is just be able to portray that message as much as we can, you know, multiple channels, right, be able to brand it under the company one, and then everybody else have their individual that still funnels into it.
+  ACTION ITEM: Provide call-tracking routing/voicemail prefs to Steve; then Steve provision numbers - WATCH: https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc?timestamp=3563.9999  So the more channels that we have helping the business grow, the better it'll be in the end. Okay.
+
+59:34 - Steve Neu (Core Focus Digital)
+  Yeah. And then the only other thing is maybe for next week, you just let me know, I mean, because we have the phone numbers for you as well, right?  The track, trackable numbers, if we want to put them in various places, right? I forgot how that worked with your current system, but just think of the numbers that we can provide you would just be tracking numbers, right?  You know, so you want to track this, want to track that number of calls are going here.
+
+59:59 - Evert Jafet Calderon (Mesa Group Consulting)
+  yes. That's good. So certainly.
+
+1:00:00 - Steve Neu (Core Focus Digital)
+  And then it can record the calls too. So that might be important for you, like, especially if some of the calls are very sales oriented or like ask a question and you want to kind of, you know, help train your team and handling that or, or, you know, saying, Hey, I, you know, this is what, what you could have done in this situation.  Right. When they asked you that. So, so buyer call is a, is a good solution as well. Um, it doesn't replace your numbers.  It just provides you a tracking number to, to, to route to the numbers that you want. Right. Um, and then in certain circumstances, if you have certain staff that really understand a, a product or a solution better, or that's their forte, then you can use the buyer call routing features just to get them the call immediately.  Like, don't put them through the, you know, the main line with a bunch of ops. Just get them right to that person, and that person usually has their cell phone on or whatever the case is, although that cell phone rings, it will ring like a business line, and then we could put a business voicemail on that as well.  So although they're using their personal cell phone and could answer the call at anywhere they please, to the customer and to the inbound call, the both will know it's a business call.  Does that make sense? Yeah. Yeah, that makes sense. Okay, so think about how you might want to utilize that as well, because that's another powerful tool just to, I mean, fine, we get more calls, we do all this stuff, but then the next question is, am I closing this business?  Was it a good business to have, you know, and then that's where you as a operator of the business need to understand.  So business Understand everyone's kind of performance level and, you know, what's happening and, you know, and you don't want to waste any, you know, by the time you got that lead or phone call, you might have just spent, you know, $50, $60 in ads, right?  So you don't want anyone, you don't want it to go into some, you know, I haven't called your number, but, you know, if it's not personally answered and there's a bunch of call tree type of things like that, there's a likelihood that you may lose the call from that standpoint and they hardly ever leave a message, right?  If you're, if it's after hours. So you just want to try to get those sort of things figured out so you can maximize that, okay?  Will do.
+
+1:02:52 - Mario Garza (Catalyst Digital Solutions)
+  All right. right.
+
+1:02:55 - Steve Neu (Core Focus Digital)
+  Knights. So. Sounds like a plan. You guys just want me to, I'll just, you're, I'll just recycle this meeting for next week, and we'll all come in with our homework.  Yeah, that works for me.
+
+1:03:06 - Evert Jafet Calderon (Mesa Group Consulting)
+  Sounds good.
+
+1:03:07 - Steve Neu (Core Focus Digital)
+  All right. Awesome. Well, I'm glad everything's going off to a good start this year. So I got a new, I got a new rep, um, with, uh, with Smart Credit.  So I talked to her yesterday. Okay.
+
+1:03:27 - Evert Jafet Calderon (Mesa Group Consulting)
+  don't know if. Yeah. Yes. Rachel. Yeah. So. I don't, I don't know. I don't even know how they end up splitting things up anymore.  Yeah. Who was your, uh, who was your rep before? Summer.
+
+1:03:40 - Steve Neu (Core Focus Digital)
+  And then before that was Mary Lou, which you have, right? So. Yeah.
+
+1:03:45 - Evert Jafet Calderon (Mesa Group Consulting)
+  Oh yeah. Cause Summer ended up leaving.
+
+1:03:50 - Steve Neu (Core Focus Digital)
+  Yeah. She, she, she had it out.
+
+1:03:54 - Evert Jafet Calderon (Mesa Group Consulting)
+  So not bad. All right.
+
+1:03:57 - Steve Neu (Core Focus Digital)
+  Well, you guys have a great rest. your day, and Evert, if there's anything you, or Mario too, if anything you guys need, just give me a call, okay?  Okay, cool.
+
+1:04:08 - Evert Jafet Calderon (Mesa Group Consulting)
+  Thanks, Steve. All right, thank you. All right, thank you. Bye-bye. Ma'am, you wanna, well, I guess we could just stay on this call and then go over what we were gonna go over before?
+  ACTION ITEM: Fix 'Get free credit analysis' link caching issue - WATCH: https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc?timestamp=3861.9999  Yeah.
+
+1:04:28 - Mario Garza (Catalyst Digital Solutions)
+  Um, there really isn't all that much to go over, honestly. It's just, um, I noticed that we got some broken links here that, of course, it's like, while you're not looking, you know, all of a sudden things start breaking.
+
+1:04:43 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah, I saw that you were trying to pull up the, it was a dispute fox one, huh?
+
+1:04:50 - Mario Garza (Catalyst Digital Solutions)
+  Probably.
+
+1:04:54 - Evert Jafet Calderon (Mesa Group Consulting)
+  Oh, wait, wait, it's working on my end.
+
+1:04:59 - Mario Garza (Catalyst Digital Solutions)
+  We We Really?
+
+1:05:03 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah. Okay.
+
+1:05:06 - Mario Garza (Catalyst Digital Solutions)
+  So let see here.
+
+1:05:14 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah. Go back to which one is it? That's the click on it. Get free credit analysis. Yeah, I clicked on it and it worked perfectly fine.  What the?
+
+1:05:29 - Mario Garza (Catalyst Digital Solutions)
+  I'm gonna open a new window here.
+
+1:05:38 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah.
+
+1:05:43 - Mario Garza (Catalyst Digital Solutions)
+  Yeah, in incognito, it's working fine. So let me see. Maybe if I hard refresh this thing. Okay. What?
+
+1:05:54 - Evert Jafet Calderon (Mesa Group Consulting)
+  I'm gonna draw a Thank you.
+
+1:06:02 - Mario Garza (Catalyst Digital Solutions)
+  Weird, weird, weird. Well, I want to make sure that this isn't happening for anybody else, so I'm going to try to replicate this elsewhere.  It should be the same link, obviously. Exactly same link in incognito, and that one's routing right, the incognito one, but the other one is not.  It's going to be a caching issue. It's probably not even, I probably can't even replicate it with another browser, but I'm going to try it.  It's fine on mobile.
+
+1:06:43 - Evert Jafet Calderon (Mesa Group Consulting)
+  Okay.
+
+1:06:44 - Mario Garza (Catalyst Digital Solutions)
+  Of course, it's just the one that we're trying to show Steve, it makes us look like we don't know what's going on.  Yeah. Just a standard window on Safari is working fine, and an incognito is working fine.
+  ACTION ITEM: Add contact forms to all pages using standard form - WATCH: https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc?timestamp=4020.9999
+
+1:07:01 - Evert Jafet Calderon (Mesa Group Consulting)
+  I'll test the other ones, but it looks like it's fine.
+
+1:07:03 - Mario Garza (Catalyst Digital Solutions)
+  looks like it's just a me problem.
+
+1:07:06 - Evert Jafet Calderon (Mesa Group Consulting)
+  Cool. And then as far as, I mean, it wasn't too many changes. Obviously, the chat bot, a contact form on the homepage makes sense.  I didn't really think about that. Me either. think, I think we ought to put more contact forms, period, just across the board.
+
+1:07:25 - Mario Garza (Catalyst Digital Solutions)
+  Yeah, we had it on the first site at the bottom of the page, pretty much, or we had a newsletter one for most and, but it makes perfect sense.  Let's put some more contact forms on there. Let's also do some buttons that take them down directly to the pricing.
+
+1:07:41 - Evert Jafet Calderon (Mesa Group Consulting)
+  Or for the pricing, what do you think about that option that I said about if we make a different menu?  Like that, I don't know, accordion menu, you could call it, I guess? Yeah. the one that we have, like the one that we have on the homepage?  Oh, yeah, yeah, yeah.
+
+1:07:59 - Mario Garza (Catalyst Digital Solutions)
+  Like, um...
+
+1:08:02 - Evert Jafet Calderon (Mesa Group Consulting)
+  Services?
+
+1:08:03 - Mario Garza (Catalyst Digital Solutions)
+  It's a tab, a tabbed menu.
+
+1:08:06 - Evert Jafet Calderon (Mesa Group Consulting)
+  There you go. Like that? Yeah, and then maybe, like, obviously it'll have three, and then it'll just be a default on the middle one because that's the most popular one.  Yeah.
+
+1:08:19 - Mario Garza (Catalyst Digital Solutions)
+  I would just say that we have to make sure that we draw attention to those, like, majorly because we don't want them to scroll down casually and see, oh, they got one plan and then move on.  If that's not their plan, you know?
+
+1:08:32 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah. Or I guess just different, or maybe like if we can do just tiles, but maybe a little bit more interactive.
+
+1:08:40 - Mario Garza (Catalyst Digital Solutions)
+  What I initially thought when he said it was a problem, the first thing off the top of my head was, yeah, see, that's a lot.
+
+1:08:50 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah, that's long.
+
+1:08:51 - Mario Garza (Catalyst Digital Solutions)
+  So my initial thought was, like, truncate everything here, like everything here from down. Yeah. Tom. Thank is collapsible and like just that way we have like cards that are roughly about this big right here like particularly on mobile he's right this will take up a lot of space so like they have to scroll and scroll we don't want that so like I am gonna have to think about like the optimal way to implement it because you do want them to be able to say yes I want to sign up boom it what if we do this what if we do a shortened version towards the top of the site and then if they see view plan details it drags it takes them all the way down here yeah I think that is just another layer of complexity or redirection though so I think the best way to do it would be like I mean that'd be kind of the same thing though like I was just thinking  One place where we have the pricing, and then condense it to like where all they're seeing is the features, right here, and the button.  And that's it. And then be like, have a little arrow that shows that like, maybe we display this much of the, this part of this section of it, or no, I'm sorry, like it would be here, right?  So like, and then like a show more and have an arrow button down. And then when they click on that, if they tap on that, it'll expand.  And then give them all the other information. And then it'll present like this right here, like what we're looking at.  So the button ideas is good, like at the top, or like the minimal version of each one of these is good.  I'm just worried that it's going to be a little confusing or like they wanted to just sign up. They're like, yeah, I don't care.  Like I have, I just got my tax return. I want to, you know, like sign up for this thing.  And I know that all I want is just to sign up. So we should give them that, that opportunity up high.  But we should also offer all the other features for those who are a little more like they need more information.  So my thought process was put buttons at the top that says show pricing or show me the plans or something like that.  And then this and then have the expandable thing that's very obvious that it's not including all the information. You have to tap on it to see more information.
+
+1:11:35 - Evert Jafet Calderon (Mesa Group Consulting)
+  I don't know. What do you think? I like it. Yeah, think. Yeah, because I mean, there's no point of creating more friction when we don't need to.  And then we can just take this section and just move it towards the top. So it's a little bit closer towards the top, you know?  Yeah, I think that'll work.
+
+1:11:53 - Mario Garza (Catalyst Digital Solutions)
+  Yeah, I think there's no real there's no real disadvantage to showing them the price early rather than like, hey, read through all.
+
+1:12:00 - Evert Jafet Calderon (Mesa Group Consulting)
+  All of this, before you sign up, I think we should, I think we should put it, oh, let's see, if you scroll down or scroll up on that page, I'm going to go to the top, because that's where we're going to start, so, so, that's fine, okay, do you think, that, I was wondering, do you think it makes sense to, I don't, it makes sense to have the as seen on that one?  Because it kind of takes, it takes some space up, you know, so, I guess we, on the, on the, on on the credit restoration page, let's remove the as seen section, you want to just drop it down, or do you want to remove it entirely?
+  ACTION ITEM: Update Mesa 360 page: remove 'As seen on'; add pricing CTA; collapse phases; add 'Sign up now' - WATCH: https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc?timestamp=4356.9999  say we just remove it, because they already saw it on, on the homepage.
+
+1:12:47 - Mario Garza (Catalyst Digital Solutions)
+  Okay, so, on the, what are we on here, 360, on the Mesa 360 page, we're going to remove the featured in local and national media for our proven Mesa 360 credit system section.  Yeah.
+
+1:13:00 - Evert Jafet Calderon (Mesa Group Consulting)
+  So that buys us a little bit of space, and then if we scroll down, we know, Fathcredit doesn't find you, that's okay, that's fine, we scroll down, and then your Transformation Blueprint, okay, and then even these, I like them, but they are a little lengthy, Collapsible again, yeah, Collapsible for the Phase 1, 2, 3, and 4, and then that saves us a lot of room.  Yeah, they can just get past that if they're not readers, and you know, you know, yeah, and then if we scroll down, why the Mexican 360, this is where, okay, I like that, and then if we scroll down, this is where I don't know where to put it, do we put it, I think we put it above this, for sure, above that, yeah, for sure, it goes before that, because it's like, this is just like removing by resistance, I think, and so it makes sense, the law, it, it's then, you
+
+1:14:00 - Mario Garza (Catalyst Digital Solutions)
+  It's logical to follow the pricing with that, because if they're still not convinced at that point, like, here's all the reasonings behind Yeah, here's all the awesome stuff we're going to do for you, and then you give them the pricing.  And if they're not your people, they're not your people, like, at that point. It's like, I can't afford $350 plus $149.  Like, they're just not going to keep going, you know, but if they need more convincing, then they'll have this right beneath it.
+
+1:14:27 - Evert Jafet Calderon (Mesa Group Consulting)
+  But I think that'll be a good spot.
+
+1:14:28 - Mario Garza (Catalyst Digital Solutions)
+  I think, actually, above this one will be better, too, actually, because you, again, you to, you do want, you like it above, above these?  I mean, do you like it below these?
+
+1:14:45 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah, because it at least tells them, you know, this is what's going to happen, right? We're going to break down, repair what's broken, build a new foundation, and then optimize for opportunity.  And then this is why the system works. And then here's the price. And. And then if you need the, like you said, if you need the convincing, well, then you can scroll down and read everything as to why it's going to work, and then, you know, when the pages are this long too, it doesn't hurt to have it in more than one place, sort of like another CTA, you know, like, but then, it's just probably better to have a button sign up now, you know, and then it takes them down to those, or up to those at that point.
+
+1:15:30 - Mario Garza (Catalyst Digital Solutions)
+  To pricing?
+
+1:15:32 - Evert Jafet Calderon (Mesa Group Consulting)
+  Well, I say we can leave that pricing, I say we leave that pricing where it's at, the, just you, like you said, just use it as another CTA, so then that way that one stays intact like that, and then, because if you scroll down, it also has the month, or like the nine month plan, the prepaid ones, I say,  Does it make sense to make all of this collapsible and then take like a version of a collapsible version of this up top so then that way they have that and then they also have this one if they continue scrolling down because then that way they don't want they don't have to scroll all the way back up to to sign up.
+
+1:16:21 - Mario Garza (Catalyst Digital Solutions)
+  Yeah or or we have more buttons like every single well we need more CTAs I think like I know we put a bunch in but I feel like there really ought to be one like after almost every section because it takes up such little a little amount of space.  They know what they are you know as they pass them it's like more buttons okay yeah I know I can sign up here and there they don't take up a lot of space I think they're really like unintrusive.  So I think we need to have more period and then in addition to just the schedule your consultation get free credit analysis I think we ought to have one big one beneath these right here for every you  There's that says, sign up now. And then straight to the signup page. Yeah, straight to the, I would think this one right here, the full one.  Yeah. Because if they're already going to sign up, you don't need to remove the friction. You don't need to remove this.  This is where they'll be interested to know what they're getting because they're ready to pay. Yeah.
+
+1:17:24 - Evert Jafet Calderon (Mesa Group Consulting)
+  Okay, I like that. It's kind of the best of both worlds. We put collapsibles at the top, and then a lot of CTAs that lead to this.  Perfect. And I think that cleans up that page. Yeah.
+
+1:17:37 - Mario Garza (Catalyst Digital Solutions)
+  And I think we ought to do the same for every page. What do you think?
+
+1:17:45 - Evert Jafet Calderon (Mesa Group Consulting)
+  As far as?
+
+1:17:47 - Mario Garza (Catalyst Digital Solutions)
+  Like, anything that has pricing cards on it?
+
+1:17:52 - Evert Jafet Calderon (Mesa Group Consulting)
+  Let's just do it for... Let's just do it for the debt relief, and then, or like... Let's just do it for this one for right now.  We'll just do it for the Mesa360 Credit System or Restoration page, and then from there, we'll wait on the feedback that he gives us after he analyzes the other two pages, and then we'll focus on those two pages because those are the ones that, if we do run traffic to, they're going to be the ones that are going to be responsible for yielding revenue.  Okay. Okay, got it. Because a lot of the other parts of the site, it will be warm traffic, and then they'll be, like, shown how to, like, go through things, because everything else will be...  Okay, so, yeah, so we'll just do the Mesa360 update with those changes that we talked about right now. So, then from there, we'll wait until Steve analyzes the debt...  Relief and then the Mesa 360 page to do any changes based off of Google Ads, and then for the policy pages and all that, you have those already, so we just need to add those, right?
+  ACTION ITEM: Add 9 policy pages to footer - WATCH: https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc?timestamp=4762.9999  Yeah, that should be in my email, right? Or on the drive? Yeah, email or drive.
+
+1:19:28 - Mario Garza (Catalyst Digital Solutions)
+  Okay, yeah, those are nothing, like I wanted to get to those, but I just wasn't able to.
+
+1:19:33 - Evert Jafet Calderon (Mesa Group Consulting)
+  And then let's see, we could just throw them all the way down here, look, like just to the footer, like in that black footer section of the footer.  Right here? Yeah. Yeah, just throw them all there, because I realized, because we have to have like affiliate disclosure, we have to have California privacy rights and all that, cookies and all that, so I just did all of them for you.  Right, okay, good. So it's about like nine.
+
+1:19:55 - Mario Garza (Catalyst Digital Solutions)
+  Huh? It's like nine of them.
+
+1:19:57 - Evert Jafet Calderon (Mesa Group Consulting)
+  Oh, really? Yeah. Well, mean, boy, it was. would be six more since we already have three. Yeah. Yeah, so at least it'll make it look nice and full down there.  Yeah, on widescreen it's a little bit bare, minimalist. Yeah. So that'll be good.
+
+1:20:16 - Mario Garza (Catalyst Digital Solutions)
+  Doesn't the verbiage say that the terms have to be prominently displayed and stuff like that?
+
+1:20:23 - Evert Jafet Calderon (Mesa Group Consulting)
+  Like, do we need to put, what do we need to put on every page?
+
+1:20:26 - Mario Garza (Catalyst Digital Solutions)
+  Just this disclaimer right here?
+
+1:20:29 - Evert Jafet Calderon (Mesa Group Consulting)
+  Uh, I, I didn't, I didn't see that. I, cause I, based off of like what NerdWallet, like I don't think NerdWallet has it in every single page.  Well, cause if it's on the footer I think we'll be fine. Yeah, that's how they do it. But you see how long theirs is?  Yeah. Yeah. Yeah. Yeah. Because they have to showcase their their license numbers as well so I think that footer should be fine the one that we have already the disclaimer yeah I mean that's fine I think that's a good footer okay cool at some point that little disclaimer right the the top section we have that one's good because then it says see full disclaimer page and then we can go to that and then we're covered yeah okay all right and then so we got that up that we got those updates for there and then oh I'll get I keep forgetting to write this down I'll get the blog posts that Francisco made and also the ones if I can I'm that
+
+1:22:00 - Mario Garza (Catalyst Digital Solutions)
+  Pick them back up again, because they're in the old version of this site now, but I'll get the ones that we already wrote, that I already wrote with AI, and I'll put those on the blog.  I'll definitely do Francisco's, and then I'll let you know which ones are the ones that were written for the demo blog, and see if you like those or not, and then we can put those on there too.
+  ACTION ITEM: Install ATP blog/YouTube tool; schedule training w/ Evert; record Loom - WATCH: https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc?timestamp=4944.9999
+
+1:22:22 - Evert Jafet Calderon (Mesa Group Consulting)
+  Okay, and then right now, it's just blog posting right now, right? Like it doesn't have the whole ATP generator.  Yeah, okay. Right.
+
+1:22:35 - Mario Garza (Catalyst Digital Solutions)
+  If you want the YouTube one, I can get you that one. Yeah, I need to put that online. I'm going to put that online if you guys want to use that, because it's nice to generate complete copy from a YouTube video that you like.  You know, just kind of why not? It's a tool for you guys. Okay. Oh yeah.
+
+1:22:56 - Evert Jafet Calderon (Mesa Group Consulting)
+  Oh, the other one that he had made. Yeah. That's part of part.
+
+1:23:00 - Mario Garza (Catalyst Digital Solutions)
+  Part the whole workflow thing, but yeah, it's useful.
+
+1:23:04 - Evert Jafet Calderon (Mesa Group Consulting)
+  Well, what I would like, Rain, what I would like on that would be, at least the blog is up, so that's cool.  Obviously, we just have to add some of those posts on there, but what I would like is the one that will generate off the ATP question that will generate the blog post and then the YouTube script, and then we can obviously post a manual however we need to post on there.  Right, okay. And then, I don't know if maybe one of these days we can kind of go over and then I'll record everything too, so we can kind of do like a little training session on posting the blogs.
+
+1:23:52 - Mario Garza (Catalyst Digital Solutions)
+  Yeah, whenever you guys want, I can, I can send you a document or we can do an in-person if you want, but it's, it's...
+
+1:24:01 - Evert Jafet Calderon (Mesa Group Consulting)
+  Okay, so, uh, so we probably didn't, I mean, if we could do it in person, that'd be cool, I'll record it, I'll record a loom on it the whole time.  Okay, yeah, it'd be pretty easy. Yeah, yeah, because I mean, if it just generates that, then that'll be good to go, because it allows us to start generating traffic on there, or generating the YouTube script, so then that way we can start generating that, that, uh, that content.  Okay, so that'll be cool, um, and then one thing that I did want to tell you is, let me see, I mean, other than that, we're pretty much covered on that, though, right?
+
+1:24:41 - Mario Garza (Catalyst Digital Solutions)
+  Yeah, I think, I think you're good, as long as, I mean, you guys are willing to do the manual stuff right now, so yeah, um, now that the blog is mostly out of the way, the rest of the stuff should fly by pretty quickly.
+
+1:24:54 - Evert Jafet Calderon (Mesa Group Consulting)
+  Cool, uh, you may hate me or not, but, you know, I have to, I have to revert. Thank Your word on the 0% interest funding.  I got some news I didn't really like, so I got to sever some ties. On the 0% interest? Oh, I see.  Yeah. I got to cut some ties with Improved View. Oh, okay. Yeah, no problem. That's what I was going to do.  I was going to search and see how many times their name appears on the website, so we can remove that.  I don't know if they, I don't know if it appears at any, I think it doesn't appear at all.  I don't think it does. I think it says, I know Super, I know SmartCredit, SuperMoney, I know they do.  Well, let's see. Yeah, no. Oh, is that how you search for certain keywords? That's one of the ways that I do it.
+
+1:25:53 - Mario Garza (Catalyst Digital Solutions)
+  This might be the old site.
+
+1:25:57 - Evert Jafet Calderon (Mesa Group Consulting)
+  Let me see. If it doesn't show it, then. That's how we left it. was perfect. Yeah, I'm almost positive.
+
+1:26:11 - Mario Garza (Catalyst Digital Solutions)
+  Like, preview is one of the ones where it was very vague to me, and the spelling is weird, and I'd remember if we had put it on there.
+
+1:26:17 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah. Okay, cool. So I'm going to redo the copy for this page because we're going to change this offer up a little bit.  Just for... Yeah, because we're going to change that program up. Okay. Like, I was talking to SmartCredit, and it was kind of like, a lot of these funding guys are not really fond of it because in a way it's like predatory lending.
+
+1:26:43 - Mario Garza (Catalyst Digital Solutions)
+  Because it's like, hey Mario, I can get you $100,000.
+
+1:26:47 - Evert Jafet Calderon (Mesa Group Consulting)
+  Some of them are guaranteeing it, but it's like, I can't guarantee you that I'm going to get you $100,000.  Yeah. then, once I get you $100,000, hey Mario, now you owe me 10%. Yeah. It's $10,000. Yeah. The bank teller, the banker isn't even getting that much money.  Like, realistically speaking, why should somebody who's just guiding you through the process be making that much off of it?  Right. So instead of doing it like a done-for-you, it's like a done-with-you. So it's like, hey, Mario, so I can show you how to get access to like $25,000 to $100,000, leveraging your personal credit and your business.  The program is $2,500 for that. I'm going to work with you anywhere from six to nine months, depending on how long it takes to achieve your goal.  Or, you know, or maybe longer, you know, just kind of per case scenario. But I'm going to help you get that.  And then once you're done with that, you kind of graduate the program. So I think that's a little bit more rewarding and then you're able to, because then I can just be like, I mean, you know, a lot of these guys are just predatory, you know, charging you to 100%.  And then you just start building up. more of a consulting role. Trust and authority like they're gonna look at you and go like oh man I owe you for that I almost signed up with them you know yeah that's loyalty right there um yeah I'm gonna take this page down in the meantime no you can leave it for right now okay and then um all right let me see um oh because you can just hide it right yeah I mean it doesn't need to like go away I can just like hide it so nobody's signing up for this offer yeah if you can do that if you can just hide it for right now okay and then I'll take I'll take uh I'll have I'll reword the page that I that I need to do all right and Oh and then one more thing that I did so I'm sorry
+  ACTION ITEM: Hide 0% funding page; then Evert rewrite copy; Mario republish - WATCH: https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc?timestamp=5315.9999
+
+1:29:00 - Mario Garza (Catalyst Digital Solutions)
+  Real quick, before we get off this, it's just the 0%, right? Yeah, just that one. Just the 0%.
+
+1:29:05 - Evert Jafet Calderon (Mesa Group Consulting)
+  Go ahead. And then two things that I had for you was, maybe this could probably be for another day or something, but as far as analytics goes, like Pixels, GA4, and all that, are those connected or not yet?
+
+1:29:22 - Mario Garza (Catalyst Digital Solutions)
+  So I needed to get with you on that because I need your admin account or to be made like an admin or a super admin maybe, like I don't know, but I thought you'd made me an admin on Google already.  And then when I tried to sign up, yeah, I thought when I tried to, I mean, when I tried to sign up the blog on Google Search Console, it wasn't allowing me to, it said that I needed, you know, admin access or something like that.  So I don't know what more you can give me or what you need to give me in order to do that, or we can just do it with your account.
+
+1:29:59 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah. We can do that.
+
+1:30:01 - Mario Garza (Catalyst Digital Solutions)
+  Okay, so how do you want to do it? Do you want to just give me your password, or do you want to, like, do a meeting one day, and then we sign up for it, like, together?  That way you're on your end, I'm online, I tell you what I'm looking at.
+
+1:30:16 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah, if you want to do that, so then that way I also know, like, what I'm looking for, and then that way I can always know what to keep track of.  And then that way I can also do the Facebook one, because I know the Facebook one is super tricky as well.  And then let you know, hey, like, where do we grab this code for the Facebook, and then do that one.  That way we can have that pixel just be getting, traffic. Yeah, like, recording, like, routing in the proper places and recording information.  Yeah, because one of my biggest thing is that I do want to retarget people, so being able to have those pixels in place from the beginning is going to be super helpful.  Yeah, that's huge.
+
+1:30:55 - Mario Garza (Catalyst Digital Solutions)
+  So, like, I know we've got to do that sooner than later. Thank So when do you want to? You let me know when it works for you.  I mean, the difficult thing for me is that when Maudie's home working, she's dealing with confidential information, like people's socials and medical information and all that stuff.  So it's like when she works from home, she's supposed to be in an office all by herself and no noise, no nothing.  If anybody ever complains or mentions that there's background noise, like voices and stuff where other people could hear the information, she could get fired.  So that's why, yeah, that's why I can't talk about, I can't talk while she's working and she works tomorrow too.  So, I mean, if you want to just knock it out of the way now, that's fine. If you have time, if you don't have time, that's fine too.  Yeah, I have time.
+
+1:31:56 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah, we can do it right now. Okay, let me, let me use the restroom real quick.
+
+1:31:59 - Mario Garza (Catalyst Digital Solutions)
+  I'll be right back. Okay. Okay, same, so give me, I'll be right back.
+
+1:32:03 - Evert Jafet Calderon (Mesa Group Consulting)
+  Okay. Thank you.
+
+1:37:03 - Mario Garza (Catalyst Digital Solutions)
+  All right, so let me log in to the WordPress site real quick.
+
+1:37:16 - Evert Jafet Calderon (Mesa Group Consulting)
+  So we want to go GA4 right now, right?
+
+1:37:20 - Mario Garza (Catalyst Digital Solutions)
+  Yeah. Actually, you might start with GSC Search Console. I think that is admin.
+
+1:37:36 - Evert Jafet Calderon (Mesa Group Consulting)
+  No, it's search.google.com is what it is. Okay, so start now. So I put my domain. I'll share my screen then.  Okay.
+
+1:37:54 - Mario Garza (Catalyst Digital Solutions)
+  Okay. Right.
+
+1:37:55 - Evert Jafet Calderon (Mesa Group Consulting)
+  What was the fine. Okay. Okay. All right. right. There we go. There How's it? Let's see. Hey, my friend.  How's it going? This is Ted, the message group consulting. Okay. You want to put the WWU? Oh, that'll do the entire domain, subdomains, and everything too, right?  Yeah, WWW is actually a subdomain, technically. go. Okay. Start verification. verification. Okay. Great. Great. And that First name is Fathom.  It's like I'm reading your mind. What email address is he using? First name is Fathom. The app is at every rate.  It's like 2015. That's what it's like. Let me ask him. Funny, do you still have the December 2050 email?  Which I did. Is it, they're similarly. Who ended? 2015. You can't a correct answer. Yes. Who ended up? Okay.  Okay. So. This account is already linked to you and it's already past your considering question, so. Okay. you. First name is Fathom.  It's like I'm reading your mind. What email address is he using? First name is Fathom. The app is at every rate.  It's like 2015. That's what it's like.
+
+1:40:34 - Mario Garza (Catalyst Digital Solutions)
+  Let me ask him.
+
+1:40:36 - Evert Jafet Calderon (Mesa Group Consulting)
+  Funny, do you still have the December 2050 email? Which I did. Is it, they're similarly. Who ended? 2015. You can't a correct answer.  Yes. Who ended up? Okay. Okay. So. This account is already linked to you and it's already past your considering question, so.  Okay. you. Okay, gotcha. Let me tell him, because he sent me a different one. Okay, does he have new, but the B, but the B, do you see?  Oh, you didn't, you haven't verified that you own the domain yet? I guess not. I mean, I probably wouldn't have done that.  I think I could have done that. I have to put those, those into GoDaddy? Yeah, you gotta put the DNS records in there.  That's pretty good question. Sure. send me a an APNNN the door, just to it. Thanks for that one. Yeah.  Now, sent it nice. Okay, we're just gonna, I feel like you're doing a long line. So, one, I wanna try, I wanna wanna try.  Thank you so much for, I want to try it. I think GoDaddy is not the fastest website. GoDaddy sucks.  So we got to clean this up later on too. So I have to add this text one, Google Site.  Thank you. you. Thank you. Let me maximize your screen here. I'm going to add a record. This is TX.
+
+1:43:10 - Mario Garza (Catalyst Digital Solutions)
+  What's the name though? Oh, so it'd be that one, right? Yeah.
+
+1:43:16 - Evert Jafet Calderon (Mesa Group Consulting)
+  That's exactly it. Value, I think. I did a sort of call at the backfield, It conflicts with another at name.  Oh yeah, you can't have more than at that. Yeah. Because I have these. And then it says it conflicts with, so it's saying that it conflicts with this one.  If you can copy that right there and then look for that in the DNS. Give me one quick second.  It is going to... Say that again? Copy that. This one? Yeah, and then Command F for that one. Yeah.  So that one's already. I mean, end of the day, different preferences. Yeah, they're both there. Yeah, so you should own it already.
+
+1:44:42 - Mario Garza (Catalyst Digital Solutions)
+  Just go back and try to see what domains you own. So verify later. Verify later. And then I get to search property.  So... So... I don't know. I'm logging card. I'm There it is. So I do have it. Yeah, it's been re-owned.  But there's no data. But there's no data. It safe. But the score right now, the information trends, you need to do in the 673, experience in the 662, and effects in the 672.  To the top left, it's the line of the book. Yeah. Okay, yeah, it's indexing the new site, that's why.  The new version, so like, it doesn't like the HTML version that was recommended to me. So I'll have to do an XML version.  Let me, before you leave that, let me take a screenshot of that. Okay. So yeah, that's why there's no data.  But you would think... No, because it goes off of the sitemap, so yeah. Well, it had a sitemap before.  I wonder why, because it's... There must be something in the sitemap that's keeping it from... Just a problem here.
+
+1:46:41 - Evert Jafet Calderon (Mesa Group Consulting)
+  That's like, that's the identity of the site. Right.
+
+1:46:54 - Mario Garza (Catalyst Digital Solutions)
+  So yeah, I guess we're starting from scratch on that. You I thought it would keep it. I thought it would keep everything.  It should keep everything because it's the domain that you're tracking. Like, I don't know why they would delete old stats even though it's a different sitemap now.  Sitemaps change.
+  ACTION ITEM: Upload XML sitemap to Search Console - WATCH: https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc?timestamp=6451.9999
+
+1:47:29 - Evert Jafet Calderon (Mesa Group Consulting)
+  It's three o'clock. It's three o So, but you're saying that we need to upload XML on it probably instead of the HTML?  Yeah, so maybe that's part of the problem. Like, it doesn't like that. And so once I get the XML one up?
+
+1:47:54 - Mario Garza (Catalyst Digital Solutions)
+  No, I think it's just not there anymore.
+
+1:48:00 - Evert Jafet Calderon (Mesa Group Consulting)
+  But that's weird. Anyway, yeah, I can get a new XML sitemap, because that was the native way that it does generate a sitemap.  But I was recommending that I use HTML, so that's what we converted it to. Anyway, I'll fix it. Here, I'm going add you here, then, add user.  Let me see if, let me know if you got a email for that.
+
+1:48:48 - Mario Garza (Catalyst Digital Solutions)
+  Ok, thank you.
+
+1:49:01 - Evert Jafet Calderon (Mesa Group Consulting)
+  So, that's I to You see, is very address. I don't that one very good address. No, sent it to your catalyst.  Oh, really? No, it's not showing up yet. Okay. It's going to be in spam. I'll send it to them as someone.  I think that's going to be a problem anyway. think I have to be on the team. I have to have the same domain in order to manage them.  Thank you very much. So for right now, I will keep it in and keep it in keep in it in mind Okay, Like the P.O.  box But end of the day Did the mess? I won't get it No I will make sure that the P.O.  is motivated to lead
+
+1:51:13 - Mario Garza (Catalyst Digital Solutions)
+  What if you just go to the... ...the search engine, I mean the search console, and then it should pop...  Let's see if we'll let you.
+
+1:51:59 - Evert Jafet Calderon (Mesa Group Consulting)
+  Let's see we can.
+
+1:52:25 - Mario Garza (Catalyst Digital Solutions)
+  I'm not a verified owner. Are you in on the Mesa one? Yeah, I am. What about now? What does that tell you?  Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Thank Here it is. I am a delegated owner. I was granted permissions by the owner.  If you wish to become a verified owner, please use one of the methods described below. Start verification. He wants me to connect in GoDaddy.  I wonder. Let me see if I can do that. So, can you do the same, make me an admin as opposed to sharing your admin with me?  do GoDaddy. GoDaddy. 2 See, and there it says, it says, accounts I can access, Evert Calderon, but I already had that.  Yeah, I'm under your account too. Let me see. You are a delegated owner. The domain is already registered, but you own it.  Google. Pain in my butt. I'm a delegated owner. Okay, maybe I don't need to verify because it says you, you were granted permission.  algorithm domain is already registered. can That's Google, right? You were granted permissions by an owner. If you wish to become a verified owner, please use one of the methods below.  But it says you are a delegated owner. So I would think that that would allow me to go to admin.  All right. Okay. Yeah, I don't think there's a problem here anymore. So let me see if I can add it.  Now I'll share my screen with you. So you can see what I'm going through. Oh, what's the difference? All right.  So Here, I should be able to connect. This is Rank Math, right? So I should be able to connect Google Analytics right here, which is going to give us a GA4 token.  Okay. I'm going to Analytics real quick to see if I have only
+
+2:01:29 - Evert Jafet Calderon (Mesa Group Consulting)
+  So we were just about Fathom, Calderon, Steve So maybe you have to add me in analytics.google.com, that's what I think.
+
+2:01:58 - Mario Garza (Catalyst Digital Solutions)
+  Before I can see this. Because I can see it right here in Search Console, and that's what we did already.
+
+2:02:09 - Evert Jafet Calderon (Mesa Group Consulting)
+  Okay. Google Analytics, right? Yeah.
+
+2:02:52 - Mario Garza (Catalyst Digital Solutions)
+  Type in analytics.google.com. Thank you. Thank I know.
+
+2:03:24 - Evert Jafet Calderon (Mesa Group Consulting)
+  So, I get into, I get into, that's a good consulting maybe this is right maybe it's not so you want me to add you to this right yeah if you can i don't know it's gonna lie i don't know how would i maybe under settings in the lower left corner over there yeah that's
+
+2:04:01 - Mario Garza (Catalyst Digital Solutions)
+  and now see if there's users what it says Mario with Catalyst Digital Solutions Property Access Management admin there you go let's see if that did a trick yeah okay okay it let me that i mean  It automatically refreshed over here and filled it out on a different page. Do you know, off the top of your head, like, or you can look in the Analytics Console right there, like, do you want me to use the property credit?  Obviously, we're not going to tell the job. Yeah. Mesa Group Consulting, Install Analytics Code. Enable this option only if you are not using any other plugin theme to install Google Analytics Code.  I'm not. So I'm going to enable that. Exclude logged in users. Hmm. Yes. Double check real quick. This But I hope I internet message where I  All right, I can change this later, so we'll just go through right now, exclude, I don't have AdSense, but I guess we don't need that right now.  How long do you want the analytics database to retain your information for SEO purposes? analytics? analytics? analytics? you Its default is 90 days.  I'd say 180.
+
+2:08:17 - Evert Jafet Calderon (Mesa Group Consulting)
+  Friends, I should be showing this to you. Okay. Yeah, so when you added me, all of a sudden this was populated, which is Search Console.  Yeah, that's the one we want. And then for Analytics we want, Mesa Group Consulting, Credit, or do we want to do a new one with the blog?  I think we maybe should do a new one. But is that one only for the blog? Yeah. Oh, yeah, right.  Yeah, that analytics for the blogs. Yeah, we can do a new one. I'll create it real quick. So it would be in a property, right?  Yeah. Looks like I can add one here if you want. Here, I have it right here. Okay.
+
+2:09:31 - Mario Garza (Catalyst Digital Solutions)
+  You're consulting.
+
+2:09:35 - Evert Jafet Calderon (Mesa Group Consulting)
+  Nod-industry. Finance. Next. Generate leads.
+
+2:09:45 - Mario Garza (Catalyst Digital Solutions)
+  Do user engagement. Understand.
+
+2:09:51 - Evert Jafet Calderon (Mesa Group Consulting)
+  So, start a technically total negative account for data. Start collecting data on the web. Yeah. Android app? Yeah. And then here, we just type in.  You can see my screen, Yeah, I'm to turn mine off for a second so I can see yours better.
+
+2:10:18 - Mario Garza (Catalyst Digital Solutions)
+  Oh, you want me to do the subdomain?
+
+2:10:27 - Evert Jafet Calderon (Mesa Group Consulting)
+  No, you're good right there. Oh, you know, I guess you're right. Sorry. Dang it. At the end of the day, it's like you're buying and going on.  Oh, what happened? I'll do it. No. Just go change it. You get it? Yeah. Because this is just for the blog, right?  Right. There we go. The blog. Okay, so that's there for you. Okay. I don't think I need to do  I else on here. Close that. I don't think I need to do anything else on here. Right. But go ahead and close it.  Close it. Yeah. Close that out.
+
+2:11:16 - Mario Garza (Catalyst Digital Solutions)
+  Okay, good. Update it. That's what I wanted to see because it just said Mesa Group Consulting on the other page, that page right there.
+
+2:11:23 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yes. The blog The blog. data there. If you know who is, visit them.
+
+2:11:37 - Mario Garza (Catalyst Digital Solutions)
+  Then they can fill out how đểÉ to for, which member, but it doesn't more of the but on that have check the Puke as but having have resourced meetings.  You're that the day altogether, we have ... ... ... It's not there yet. Might take a minute. Yeah. You Yeah.  Yeah. You. Yeah. Yeah. Yeah. Yeah. You Yeah, okay, so who are we at? It's just gonna take a little while, maybe 10-15 minutes or something like that for it to populate.  But that's really what I needed. I needed admin access so I could actually have this stuff pop up. Seems like it's working now.  Search Console's up and running. So if I go to Google Admin, I probably should have gone to search. And then, so this is just for the blog, how do we do it for the main site itself?  Or is that already going to happen automatically? That should be done. Well, analytics, I'm an admin. Mine admin here.  Yeah.
+
+2:14:32 - Evert Jafet Calderon (Mesa Group Consulting)
+  Okay. So admin, I'm an admin. Yeah.
+
+2:15:21 - Mario Garza (Catalyst Digital Solutions)
+  Okay, so yeah, in analytics, I'm an admin also. And that's for the main. Oh, it's not showing up for you yet, huh?  Right. Which explains why it's not showing up in the ranking. I think it'll just take a little while, maybe half an hour or something like that.  Once that's done, I'll be able to connect this, which we need for SEO.
+
+2:15:52 - Evert Jafet Calderon (Mesa Group Consulting)
+  Go to property details. Move to property. No? It should be good. I think it just takes some time, right?  Yeah, kind of like the whole billing situation that we had that one time with the... Yeah. I think I'm good there.
+
+2:16:22 - Mario Garza (Catalyst Digital Solutions)
+  I'm a full admin everywhere, so I should be able to add whatever I need to and see the property you just created.
+
+2:16:39 - Evert Jafet Calderon (Mesa Group Consulting)
+  So look, there's data. And then that is current website right now, right? Yes and no. I think... No, so...  ... ... ... ... ... ... ... So we go to Average Time for TV. This is historical, I think.  Interesting.
+
+2:17:16 - Mario Garza (Catalyst Digital Solutions)
+  So this is, I wonder why there's so much in China. They got a lot of people. They got a lot of companies that are scouring, collecting data, and all kinds of crap.
+
+2:17:35 - Evert Jafet Calderon (Mesa Group Consulting)
+  Not to mention scammers, some of them. You're right. Okay. So then that takes care of the Google search engine, search console.  And then the analytics is GA4, right?
+
+2:17:47 - Mario Garza (Catalyst Digital Solutions)
+  Yeah.
+
+2:17:48 - Evert Jafet Calderon (Mesa Group Consulting)
+  And then is there anything else really, or just those are main ones, right? Yeah. Yeah. And then. Yeah. Yeah.  Yeah. Yeah. For instance, it's whatever saying, know, Yeah. Yeah. Yeah. Yeah. Thank you very much. Would it make sense to do, and we add Meta to it as well?  That should be easy. If you make me an admin there. Well, hold on. Because you're not, you don't have any managing a Facebook group or something.  This is something that I've never done. We can hold off on this one, because I need to create the different message group assets and everything, too, and then kind of link it all under, under another one.  So we can wait on that one for right now. Okay. We have enough to keep us busy for a while, so.  Well, so at least that topic is good.
+  ACTION ITEM: Set OG image/title to 'Mesa Group Consulting | Credit and Funding Solutions' - WATCH: https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc?timestamp=8337.9999
+
+2:18:52 - Mario Garza (Catalyst Digital Solutions)
+  and then, so that covers that one, and then the last thing that I did want to mention was... Good morning.  So, click, this is good, good, good, and then, where'd it go, where'd it go? I want it to, this right here, the social share image.  Yeah. Like, you know how, like, when we share the website? Uh-huh. So, right now, this is, it was showing, like, this.  Yeah, that's how mine shows up, too, for that, for some reason.
+
+2:19:38 - Evert Jafet Calderon (Mesa Group Consulting)
+  Is there any way that we can make it a little bit more, like, kind of, maybe add the image, be an image of the office, like, the conference room?  Uh, yeah. We can do whatever you want. Um, I really hate that my, I tell you my stuff fails whenever I have to talk to you.  Like, one of the things that... Failed is my Alfred. I haven't been able to just like find a file real quick like I usually do.  So I'm having to like manually. Oh, look, there it is. Having to manually look for everything. And it's really, really annoying.  Anyway, I found this. Okay, so this is what I just made for the blog. Let me share that again.  Where you at? Exactly. There you go. Where at? you at? Okay. Where you at? at? you Okay. That's good one.  like that. I would do that. The credit repair. Let's just put credit and funding solutions. Okay. You're going to go with that?  I was going to go with that and I thought, no, I'm sure he's going to want to see like a list of, you know, stuff or whatever.  Oh, no, the list is cool, but the middle? Yeah. Yeah. Okay. Got you. Yeah. So it's just, and funding solutions.  Yeah. That's another thing that I entertained. I was like, yeah, I'm going to go with that with them. I thought now they got refinancing with them.  got life insurance and all this stuff. So anyway. Okay.
+
+2:21:41 - Mario Garza (Catalyst Digital Solutions)
+  Yeah, that's perfect. Okay. And then, you know how it's showing right now as credit repair and business funding, if we can just put message group consulting so that the title shows up as, like we see on this one, it shows up as credit repair and business funding.  If we can change that to show Mesa Group Consulting, if you look at my screen, you see how the title says Credit Repair and Business Funding, if we can do, what can we do, just Mesa Group Consulting.
+
+2:22:30 - Evert Jafet Calderon (Mesa Group Consulting)
+  And then maybe even Credit and Funding Solutions or something.
+
+2:22:36 - Mario Garza (Catalyst Digital Solutions)
+  For the AI note taker, let's try consulting Credit and Funding Solutions on the Facebook thumbnail preview or the open graph image.  The one that shows up when you're texting somebody the link.
+
+2:22:54 - Evert Jafet Calderon (Mesa Group Consulting)
+  So the social share link? Yeah, there's like several different. names for it. That's one of them. That's what I've always known it as.  Yeah. Technically, Open Graph is, I think it's a Facebook thing, but also Twitter refers to it as that too, and that's what people usually go with, but social share, yeah, that's what I have it in my graphics.  That's what Wix used to call it. Oh. All right.
+
+2:23:42 - Mario Garza (Catalyst Digital Solutions)
+  Okay, so.
+
+2:23:45 - Evert Jafet Calderon (Mesa Group Consulting)
+  We're worried about Facebook another day. So that's for me to set up the. MGC Message Group Assets on Facebook, like all their channels, titles, so we'll do that.  Yeah, the Facebook group and all that, all that good stuff. So I'll set up the pixels and everything on that.  And then that is basically it for right now. I know the other things will resolve them this following week.  Yeah, are we friends on Facebook? Maybe. Yeah, I can message you, I think so. Yeah, yeah, Well, know know, good stuff.  So that's cool. They found out about that down payment with the end of the road. They found out about introspectively 20% of whole society, right?  Well, I'll just go see. Yeah. That's not you. That's That's a good year, I think. That's not good. That's forgot, man.  That's not good. That's That's not good. I don't think I don't think I
+
+2:26:04 - Mario Garza (Catalyst Digital Solutions)
+  How do I add you?
+
+2:26:09 - Evert Jafet Calderon (Mesa Group Consulting)
+  To the group? the group?
+
+2:26:27 - Mario Garza (Catalyst Digital Solutions)
+  Yeah, meta business suite is what it is. is. Yeah, but how do I add you as a friend? Did you get my message?  Yeah, I got your message. You can't just tap on my profile and then add me as a friend? Maybe we already are.  Maybe. Maybe. I don't know. Maybe. Yeah, because it says Mario Garza wants to send you a message. Mario Garza  Followed you, and then if I go, oh yeah, we're not, okay, fine friend, let me see, I found you, so why can I not just, that's not you, oh, no, this guy's from someplace else, you only have the one Facebook, right?  That's all. I'm going to unfollow you and see if maybe that, for some reason, had something to do with it.
+
+2:28:32 - Evert Jafet Calderon (Mesa Group Consulting)
+  Thank you very much. Thank very Thank you. Thank you very much. Thank you. Thank you. You Were you talking to me?  Yeah, that it doesn't show up. I can figure two messages. What did you show me right there on the screen?  I was going to show you the profile. Like, it is going to show me to add friends. All I see is this, like, message.  It doesn't allow me to add a friend or anything. It's the same for me. Let me check my settings.
+
+2:29:41 - Mario Garza (Catalyst Digital Solutions)
+  Wait, you're going to this one, right?
+
+2:29:45 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah. You're not able to add them as a friend? Nope. It's the same thing as yours. That's weird. Maybe because, I don't know.  I might have... Yeah. Yeah. Yeah. It's... It's... Hmm. It's fine. We fixed the Facebook one when we get there.
+
+2:30:12 - Mario Garza (Catalyst Digital Solutions)
+  I'll have to go through my stuff and see if there's a problem on my end.
+
+2:30:21 - Evert Jafet Calderon (Mesa Group Consulting)
+  Cool, cool. No worries.
+
+2:30:24 - Mario Garza (Catalyst Digital Solutions)
+  But I think we're good. We're good now that night.
+
+2:30:28 - Evert Jafet Calderon (Mesa Group Consulting)
+  Yeah. Okay, cool. So we'll work on those changes this week. Just keep me updated. then if you need me to revise some of those blog posts, just send them over my way.  Okay. I'll give you links to them, too, because you're going to be on the old site. So I'll see if I can.  I'll get them to you one way or nothing. Okay. And then I'll just, I'll create the... The new, the wording for the program on the business funding one, if you can hide that page for right now.
+
+2:31:09 - Mario Garza (Catalyst Digital Solutions)
+  Yeah, sorry. think I found the problem.
+
+2:31:14 - Evert Jafet Calderon (Mesa Group Consulting)
+  I only have friends of friends who can friend me. Makes sense. That's my, it's gonna be. Yeah, get rid of the.  Yeah, getting rid of that 0% one, hiding it, I'll draft up a brand new one, and then we'll go from there.
+
+2:31:41 - Mario Garza (Catalyst Digital Solutions)
+  Then we need to complete the policy pages. Then from there, we're gonna do the. Mesa 360 pricing adjustment. Yeah.  Um, and then we're gonna add contact forms. Yeah. Um. One per page, right? Should it just be the same one that we have on the contact page?  Just directing to the contact page? Or that same form?
+
+2:32:14 - Evert Jafet Calderon (Mesa Group Consulting)
+  Oh, yeah. Yeah, we can use the same form. That's fine. Yeah, we'll use that same form. That way everything is uniformed.  So we'll use that same contact form across the page. And then from there...
+
+2:32:31 - Mario Garza (Catalyst Digital Solutions)
+  What do you think about the pop-up email box when they come in and out? Pop-up email box? Oh, yeah.  I think I half-like Steve's idea. I like putting it in the front and not in the back. But it's up to you.  Like, that's an owner decision right there whether you want it on the back end. Because it really does come down to that, like what he said for me.  mean, it's... Like, it's a little annoying when you're trying to get off a site, and it's like, just shut up and go away.  I'm trying to leave this site, you know? Your mic's off? I'm trying to see if NerdWallet does it. I don't even see an opt-in for them.  But they do have the chatbot. They have the Nerd AI. Yeah, that's something we've got to do, too. I can always take all of it.  I don't want to get into that until we're ready to do it, but, like, that's going to take a lot of information from the chatbot to train it.
+
+2:33:38 - Evert Jafet Calderon (Mesa Group Consulting)
+  So, like, I think the best way to go about this is, to go about that, is just take a complete rip of everything that I can get.  So, like, all of the socials, if I can get that stuff, too. But, um, I'll see about that. But otherwise, I think I need to come up with, like, a list of commonly asked questions based upon the site rip.  What are they gonna wanna know? And we'll get like a list of like, we're talking probably like 500 questions, right?  And then I'll come over one day, we'll record a conversation between me and you where you just answer those questions.  And then I'll have AI go through and take the transcript and then we'll use those as the answers to the, you know, we'll reformat it, make them like all coherent and like good sounding language and everything.  then we'll give that to the database for the chat bot to answer questions from. Yeah, that's what I was thinking.  So that works for me too. Okay.
+
+2:34:38 - Mario Garza (Catalyst Digital Solutions)
+  Cool.
+
+2:34:38 - Evert Jafet Calderon (Mesa Group Consulting)
+  So then that would be working project on there. And then I know that the, I know the credit, Lisa, I know you said I wanna be a little bit easier to do, right?  Cause it's just gonna be using that builder and then some of the images that I had sent you over with the wolf.  was good. Yeah. Yeah. uh what do you uh what do you think on that one because what we're going to start doing is we're going to start creating content with the wolf and then start batching some of it so then that way at least i can kind of get an idea of once you start sending people that to that site how many pages would you say it's going to be i think i had it just for like one main page honestly because we don't even have to add the blog to it just yet because i'd rather us finish the blog on mesa first yeah yeah and then we can make a copy of the blog so there's at least sorry go ahead and then make a make a copy of the blog on on credit lee where it's just a blog and that's just like automatic posting you know oh right yeah you were talking about that um but i don't i'd rather much us focus on the blog for mesa first and then whenever it's complete then we can  Work on adding it to Credit.ly with no YouTube script because it's just going to be nothing but just blogging.
+  ACTION ITEM: Build Credit.ly SPA w/ Mesa branding; include Mesa backlink; add FAQs - WATCH: https://fathom.video/share/5yzExp8dF5FKzZpDJyV-8UgzgzUtXrYc?timestamp=9364.9999  That's what I remember, it's doing anything but YouTube pretty much. Yeah, so it's just a complete single page website with navigation structure.  So the build credit page is going to be a duplicate of the MGC build credit without any mess group reference as it will be branded for the Credit.ly site.  And then on this one, we'll call the blog Credit Academy. But as far as like the main page, it's going to be like a one page website.  A single page app. It's yeah, they call it a SPA, a single page application. Okay. So it's just very simple.  And then these are some inspo websites that I have on here. So like these are all very just. See, just very simple.  I'm just looking at my window right now, but I'll go to the drive. Like, these are all very simple, like home.  Yeah. And then you go to sign up, and then it goes into what we already have, which is the currently sign up.  Those are kind of like funnel pages, right? Yeah. So basically what we're building is this right here. Yeah, you shared that, um, that document with me, right?  Yeah. I'll send it over. Like, they're all, they're all pretty similar. And then Credit Versio is what we actually use, so we are a white label of Credit Versio.  don't say that I won't unreasonable be on... And then this is a white label as well, so they use CreditVersio.  And then I have all the links for you too, so this is the member login, and this is the get started.  Okay. So if you want, I mean, it looks like you pretty much wrote the whole thing, so like. Yeah, because honestly, it's just that, I did this one on GHL, and it's just like, it doesn't look good.  All right, let me see.
+
+2:38:35 - Mario Garza (Catalyst Digital Solutions)
+  Yeah, just kind of threw it on, and I was like, eh, dude, was like, it could be so much nicer, you know?
+
+2:38:43 - Evert Jafet Calderon (Mesa Group Consulting)
+  You want me to rip that video and use the video in it? I have the video, I can always send it to you.  Oh, it's on our, it's on our Google, here. Yeah. Did you feel the show? What's on there? What do you It's not a living.
+
+2:38:58 - Mario Garza (Catalyst Digital Solutions)
+  Yeah, she's talking about it. I have all these here, so I'll upload it to whatever videos you feel like you need there.  Okay. Show me the couches.
+
+2:39:28 - Evert Jafet Calderon (Mesa Group Consulting)
+  It looks like that could be done.
+
+2:39:31 - Mario Garza (Catalyst Digital Solutions)
+  This is the pictures from tables.
+
+2:39:38 - Evert Jafet Calderon (Mesa Group Consulting)
+  Let me look at the page real quick. Nice. That's what it looks like come up. Yeah. cold. No, it's modern and stuff too.  fabulous, right? Yeah. And the chest looks more modern.
+
+2:39:56 - Mario Garza (Catalyst Digital Solutions)
+  That's good. So as for the footer.
+
+2:39:59 - Evert Jafet Calderon (Mesa Group Consulting)
+  we I OK, we No, I You just want, like, again, like a repeat of the, um, um, say that again?
+
+2:40:11 - Mario Garza (Catalyst Digital Solutions)
+  Yeah. So as for the footer, you kind of just want to keep the same structure as you had before?  Like as, as this one? Yeah. We can. Or do you want to do it, something that links back to Mesa?  Cause backlinks are great. Like wherever you can get backlinks is, is awesome.
+
+2:40:37 - Evert Jafet Calderon (Mesa Group Consulting)
+  Um, yeah, but that's, that's, that's your call. we, cause I mean, we could always do like credits or like, we can backlink to these services, right?  Like we can put the footer and make, I mean, we can rip the Mesa footer. I'm thinking, oh no, because we, cause we can, like, what if we rip?  We could even rip this footer, put this on Creditly, and it's going to backlink back to us. Yeah.
+
+2:41:12 - Mario Garza (Catalyst Digital Solutions)
+  And then you've already got the navigation stuff in the header. Uh-huh. So that's fine, unless there's more pages down here in the footer that we have to add to the header.
+
+2:41:23 - Evert Jafet Calderon (Mesa Group Consulting)
+  Like FAQs, FAQs page, but it's only got five questions on it. So we could put that at the bottom of the new page.  page. Yeah, we don't need to read. I mean, the only thing that we would do is probably just remove the logo, remove this, and then change the email address and then stuff like this, you know?
+
+2:41:53 - Mario Garza (Catalyst Digital Solutions)
+  Yeah. could be. And I think that might be better because then we link it back to MESA and then people...  I to go through these things, they're like, oh, this is all the same company. Yeah, maybe we do one unified footer for both companies, and we just say on the footer that you're looking at right there on the main site and the blog, we add another section like under resources that says credit.ly resources or something like that, credit.ly links maybe.  Oh, but no, like on the Mesa, I wouldn't want to add anything credit.ly to it.
+
+2:42:29 - Evert Jafet Calderon (Mesa Group Consulting)
+  Oh, okay. Yeah, so I want to keep like just messages, white glove, premium, and then, but it's okay if people know that credit.ly is part of Mesa because credit.ly is going to be more like just generic people.  Okay. Okay. So, yeah, so then the footer on credit.ly can link back to Mesa, but I don't want Mesa to link to credit.ly.
+
+2:42:52 - Mario Garza (Catalyst Digital Solutions)
+  Got it. So we can just, since we're going to have all of that stuff on here, we could do what I just said.  But on credit. Yeah.
+
+2:43:00 - Evert Jafet Calderon (Mesa Group Consulting)
+  Only, and like Credibly Resources, Credibly Links, or something like that. Maybe we'll have those first on that Twitter, and then… Yeah, we could put it like on this section here.  Right. Yeah. Change the emails, like you said, and all that, and yeah, same hours, same… No, you want to do different socials, right?  Yeah. Okay. All right, when I need something, I'll let you know, because building it out, I can't sit here and like go over everything in my head.  Unfortunately, I'm not that smart. No, you're good. I mean, there's little things. No, but I I just want to let you know, like that one's like super simple.  Like, I don't want to get too crazy with it. Like, just basically, it's going to be like a very updated, nice landing page.
+
+2:43:50 - Mario Garza (Catalyst Digital Solutions)
+  Mm-hmm.
+
+2:43:51 - Evert Jafet Calderon (Mesa Group Consulting)
+  And make sure the branding is on point too, right? Like, we're using the Mesa branding, not this like bright yellow.  No, we would use, I think I put the color codes in there as well. Wait, okay, cool. Yeah, I think I put everything in there because it'll be that credit lead logo, so it'll go, yeah, it'll be everything with the credit lead logo, so it could be a little bit brighter on the yellow.  That's fine with me, and then I think I shared this one with you. Alright, think I'm going a credit website copy.
+
+2:44:45 - Mario Garza (Catalyst Digital Solutions)
+  You have that one?
+
+2:44:47 - Evert Jafet Calderon (Mesa Group Consulting)
+  I have that one, you shared it with me six minutes ago, I see that now.
+
+2:44:54 - Mario Garza (Catalyst Digital Solutions)
+  Yeah, that make me feel that credit lead. I think I put him in here, Wolf Mascot, I could have sworn I sent you more pictures, images, team photos, no, there go, so it's in here, credit Lee.
+
+2:45:31 - Evert Jafet Calderon (Mesa Group Consulting)
+  Oh yeah, I did see that. Okay. They're there. There's only two pieces. All right, I'll leave those open just so I don't lose them.  I'm to see that other people have a hard time doing this stuff. What was that? Oh, I was just saying that I'm glad to see that other people have a hard time keeping track of all your assets and your data.  And everything like I try to stay organized, and before I know it, I'm completely reliant upon my searching tools and stuff.  I'm like, where was that again? Dang, dude, I gotta spend like a week of these days organizing everything. I have a pretty good idea where everything's at.  I just get confused sometimes. Every once in while, it's hard, you know? Yeah, I do. Having a bunch of clients, know, like a dozen clients or whatever, and then trying to find every single one of their different assets, it ends up being a lot.  I'm gonna put that one in here, actually, as well. I'm gonna put that the document in here. Okay, now I think it's a little bit easier to find.  There you go. Cool. There you go. Got it. Yeah, that's what we're doing. Yeah, cool. Yeah, Sounds good. And then if you need anything on the Google, just let me know on there.  But I think it's minor things. And then we'll wait for the pop-up email box. Okay. Yeah, we'll wait. How are we going on that one?  Okay, cool. Got it. Cool. Sounds good. Thank you, Mario. If you need anything from me, let me know. Yeah, same here.  Thank you.'clock. Alrighty. Thank you, sir. See you later, Everett. Later. Have a good weekend. You too. Thank you. Bye-bye.  Always a happy birthday.

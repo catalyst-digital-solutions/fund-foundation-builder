@@ -1,0 +1,85 @@
+{
+	"meta": {
+		"generatedAt": "2026-02-12T20:03:21.011Z",
+		"tasksAnalyzed": 9,
+		"totalTasks": 9,
+		"analysisCount": 9,
+		"thresholdScore": 5,
+		"projectName": "Task Master",
+		"usedResearch": false
+	},
+	"complexityAnalysis": [
+		{
+			"taskId": 11,
+			"taskTitle": "Project Setup and Build Infrastructure",
+			"complexityScore": 4,
+			"recommendedSubtasks": 5,
+			"expansionPrompt": "Break down the project setup into: 1) Initial Vite project scaffolding and dependency installation, 2) Configuration file migration from Nano Banana (vite.config.ts, tailwind.config.js, postcss.config.js, tsconfig.json), 3) Environment variable setup and validation (.env files with VITE_API_URL and VITE_WS_URL), 4) Git hooks and code quality tooling setup, 5) Development server verification and documentation. Each subtask should include specific verification steps and success criteria.",
+			"reasoning": "While project setup is foundational, it's relatively straightforward with clear steps. The 60% code reuse from Nano Banana reduces complexity significantly. Main challenges are ensuring proper configuration migration and dependency compatibility. The task is well-defined with clear acceptance criteria (npm install success, dev server starts, TypeScript compiles). Risk is low as these are standard tooling tasks with extensive documentation."
+		},
+		{
+			"taskId": 12,
+			"taskTitle": "Core Component Architecture and Type Definitions",
+			"complexityScore": 7,
+			"recommendedSubtasks": 6,
+			"expansionPrompt": "Divide the architecture work into: 1) Folder structure creation and component scaffolding (src/components, src/types, src/services, src/hooks, src/utils), 2) TypeScript interface definitions (Generation, ProgressEvent, ContentPackage, ErrorState with complete type safety), 3) Service layer implementation (websocketService.ts, apiClient.ts, downloadService.ts, storageService.ts), 4) Custom hooks development (useGeneration.ts with state management, useWebSocket.ts with connection logic), 5) Utility functions (inputDetection.ts, formatters.ts), 6) State management architecture decision and implementation (Context vs Zustand). Each subtask should define clear interfaces and contracts.",
+			"reasoning": "This is a high-complexity architectural task that establishes the foundation for the entire application. It requires careful design decisions (Context vs Zustand), multiple interconnected pieces (services, hooks, types), and proper TypeScript typing throughout. The custom hooks need careful dependency management to avoid infinite loops. The 95%+ accuracy requirement for input detection adds testing complexity. This task has high impact on all subsequent tasks and requires strong TypeScript and React expertise."
+		},
+		{
+			"taskId": 13,
+			"taskTitle": "Input Form with Auto-Detection and Validation",
+			"complexityScore": 6,
+			"recommendedSubtasks": 5,
+			"expansionPrompt": "Break down the input form into: 1) Basic textarea component with auto-expanding behavior and character counter, 2) Debounced auto-detection logic implementation with regex patterns for 4 input types (YouTube URLs, ATP questions, URLs, topics), 3) Dynamic badge display system with lucide-react icons and smooth transitions, 4) localStorage persistence layer with save-on-keystroke and load-on-mount, 5) Validation logic and Generate button state management with Mesa Group styling. Each subtask should achieve >95% detection accuracy for its input type.",
+			"reasoning": "Moderate-to-high complexity due to multiple interactive features working together. The debounced auto-detection requires careful implementation to avoid performance issues. The 95%+ accuracy requirement for 4 different input types demands robust regex patterns and testing. localStorage persistence adds state management complexity. The smooth UX requirements (debouncing, auto-expanding textarea, badge transitions) require attention to performance and user experience. Dependencies on Task 12 for types and utilities."
+		},
+		{
+			"taskId": 14,
+			"taskTitle": "WebSocket Integration and Progress State Management",
+			"complexityScore": 8,
+			"recommendedSubtasks": 6,
+			"expansionPrompt": "Divide WebSocket implementation into: 1) Socket.io-client setup with connection configuration and environment variables, 2) Auto-reconnect logic with exponential backoff (1s initial, 30s max, 1.5x multiplier, jitter), 3) Event handler implementation for 7 event types (connection_established, generation_started, step_start, step_progress, step_complete, generation_complete, error), 4) useWebSocket custom hook with connection state management and cleanup, 5) HTTP polling fallback mechanism with 1-second intervals, 6) SessionStorage integration for progress persistence across page refreshes. Each subtask should handle edge cases and connection failures gracefully.",
+			"reasoning": "High complexity due to real-time communication requirements, resilient connection management, and multiple failure modes. Exponential backoff with jitter requires careful implementation. Managing 7 different event types with proper state updates is complex. The fallback to HTTP polling adds another layer of complexity. SessionStorage persistence for mid-generation refreshes requires careful state serialization. The <500ms latency requirement is challenging. This is critical infrastructure that affects user experience significantly. Requires deep understanding of WebSocket lifecycle and React hooks."
+		},
+		{
+			"taskId": 15,
+			"taskTitle": "Progress Display Component with Collapsible Steps",
+			"complexityScore": 7,
+			"recommendedSubtasks": 5,
+			"expansionPrompt": "Break down progress display into: 1) ProgressDisplay.tsx container component managing 7 steps with proper state orchestration, 2) ProgressStep.tsx sub-component with 4 visual states (pending, processing, complete-expanded, complete-collapsed) and icon mapping, 3) Expand/collapse animation system with CSS transitions (300ms), ChevronDown rotation, and no layout shift, 4) Auto-collapse timing logic (3-second setTimeout after step_complete) with user interaction persistence, 5) Sub-item staggered animation implementation (100-200ms delays) with Mesa brand color application. Each subtask should maintain 60fps performance.",
+			"reasoning": "High complexity due to intricate animation requirements and state management across 7 steps. The 4 visual states per step with smooth transitions require careful CSS/animation work. Auto-collapse timing that respects user interactions adds state complexity. Staggered sub-item animations need performance optimization to avoid jank. The requirement for no layout shifts (using transform/opacity only) is technically demanding. Color-coded states with Mesa branding throughout. Performance requirement of 60fps during animations is strict. Dependencies on WebSocket events from Task 14."
+		},
+		{
+			"taskId": 16,
+			"taskTitle": "Output Display and File Download System",
+			"complexityScore": 7,
+			"recommendedSubtasks": 6,
+			"expansionPrompt": "Divide output and download system into: 1) OutputDisplay.tsx component with summary card (quality score color coding, generation time, primary keyword display), 2) Download section UI with 'Download All Assets' button and 8 individual file buttons in 2-column grid, 3) downloadService.ts implementation with jszip 3.10.1 for client-side ZIP creation, 4) ZIP file structure and naming (mgc-content-[slug]-[YYYYMMDD-HHMMSS].zip) with README.txt generation, 5) Individual file download logic using Blob API with proper MIME types for 8 file types, 6) File size calculation and display with cross-browser download compatibility. Each subtask should complete within performance targets (<2s for ZIP creation).",
+			"reasoning": "High complexity due to multiple file formats, client-side ZIP creation, and cross-browser compatibility requirements. Handling 8 different file types with correct MIME types and formatting is non-trivial. The jszip library integration for client-side ZIP creation requires careful implementation. Quality score color coding with precise boundaries (79/80, 59/60) needs exact logic. Blob API usage with ObjectURL management (create, trigger, revoke) requires proper cleanup. The <2s ZIP creation performance target with large files is challenging. Cross-browser testing (Chrome, Safari, Firefox, Edge) adds testing complexity."
+		},
+		{
+			"taskId": 17,
+			"taskTitle": "Error Handling, Validation, and User Feedback System",
+			"complexityScore": 6,
+			"recommendedSubtasks": 5,
+			"expansionPrompt": "Break down error handling into: 1) ErrorDisplay.tsx component with user-friendly messaging and lucide-react icons (AlertTriangle, XCircle, Info), 2) Error type implementations (API key missing, rate limit with countdown, network errors with auto-retry, quality warnings, WebSocket disconnection), 3) Error recovery mechanisms (Retry, Skip, Cancel buttons with countdown timers), 4) React Error Boundaries for component error catching with fallback UI, 5) Axios interceptors for consistent HTTP error handling and graceful degradation logic. Each subtask should provide actionable feedback under 40 words.",
+			"reasoning": "Moderate-to-high complexity due to comprehensive error coverage across multiple failure modes. Implementing 5+ distinct error types with specific recovery options requires careful UX design. Countdown timers for auto-retry (10s for network errors) add state management complexity. React Error Boundaries require proper implementation to catch component errors without crashing the app. Axios interceptors for consistent error handling across all API calls need careful configuration. Graceful degradation (proceeding without optional APIs) requires conditional logic throughout. The requirement for user-friendly messages (no technical jargon, under 40 words) demands thoughtful copywriting."
+		},
+		{
+			"taskId": 18,
+			"taskTitle": "Mesa Group Branding, Styling, and Responsive Design Implementation",
+			"complexityScore": 5,
+			"recommendedSubtasks": 4,
+			"expansionPrompt": "Divide branding and responsive design into: 1) Mesa Group color palette application throughout UI (primary yellow #f9c65d, secondary gold #bb9446, status colors) with Inter font configuration, 2) Complete emoji-to-lucide-react icon replacement audit and implementation (15+ icon types mapped), 3) Responsive layout implementation using Tailwind breakpoints (desktop 1024px+, tablet 768-1023px, mobile) with proper grid/column adjustments, 4) Cross-browser compatibility testing and touch target optimization (48px+ on tablet/mobile). Each subtask should maintain visual consistency and accessibility standards.",
+			"reasoning": "Moderate complexity as it's primarily styling and responsive design work, but with strict brand requirements. The complete emoji removal and icon replacement requires thorough codebase audit. Implementing responsive layouts across 3 breakpoints (desktop, tablet, mobile) with different grid configurations requires careful Tailwind usage. The 48px+ touch target requirement for mobile adds accessibility considerations. Cross-browser testing (Chrome, Safari, Firefox, Edge) for font loading and color accuracy is time-consuming. Dependencies on Tasks 15, 16, 17 mean this touches many components. The requirement to use only Tailwind utilities (no custom CSS) constrains implementation."
+		},
+		{
+			"taskId": 19,
+			"taskTitle": "Integration Testing, Performance Optimization, and Production Readiness",
+			"complexityScore": 8,
+			"recommendedSubtasks": 7,
+			"expansionPrompt": "Break down integration and optimization into: 1) End-to-end workflow testing with FastAPI backend for all 4 input types (ATP question, YouTube URL, competitor URL, plain topic), 2) Performance profiling and optimization (page load <2s, WebSocket latency <500ms, ZIP creation <2s, memory leak detection), 3) Code splitting implementation for ProgressDisplay and OutputDisplay using React.lazy() and Suspense, 4) Production build configuration and environment-specific settings (.env.production, build optimization), 5) Deployment pipeline setup (Vercel/Netlify configuration, backend Docker/VM instructions), 6) Acceptance criteria validation checklist (all 20 criteria from PRD), 7) Cross-browser compatibility testing, Lighthouse audits (Performance >90, Accessibility >95, Best Practices >95), and security verification (no API keys in frontend, CORS, XSS prevention). Each subtask should include specific metrics and pass/fail criteria.",
+			"reasoning": "High complexity as this is comprehensive integration, testing, and optimization work spanning the entire application. Testing 4 complete workflows end-to-end with real backend integration is time-intensive. Performance optimization requires profiling, identifying bottlenecks, and implementing fixes (code splitting, lazy loading). The strict performance targets (<2s page load, <500ms WebSocket latency) require measurement and iteration. Memory leak detection over 10+ minutes requires careful profiling. Lighthouse audit targets (>90, >95, >95) are demanding. Cross-browser testing across 4 browsers multiplies testing effort. Deployment configuration for both frontend and backend adds DevOps complexity. Validating all 20 acceptance criteria is a comprehensive checklist. Security verification (OWASP checklist) requires security expertise. This task depends on all previous tasks being complete."
+		}
+	]
+}

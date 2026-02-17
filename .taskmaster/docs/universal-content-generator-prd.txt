@@ -1,0 +1,1243 @@
+PRODUCT REQUIREMENTS DOCUMENT
+Universal Content Generator - ATP Content Engine
+Mesa Group Consulting | Catalyst Digital Solutions
+Version 1.0 | February 10, 2026
+
+================================================================================
+PROJECT OVERVIEW
+================================================================================
+
+Project Name: Universal Content Generator (ATP Content Engine v1)
+Client: Mesa Group Consulting (Evert Calderon)
+Developer: Catalyst Digital Solutions (Mario Garza)
+Timeline: 2-3 weeks for MVP (Phase 1)
+Budget: <$100/month operational cost
+
+Purpose:
+Build an automated content generation system that accepts multiple input types (YouTube URLs, Answer the Public questions, general topics, competitor URLs) and generates high-quality, AEO/GEO-optimized blog posts, YouTube scripts, and supporting materials for Mesa Group Consulting's content marketing efforts.
+
+Core Value Proposition:
+Transform any content idea or source material into a complete content package (YouTube script + blog post + images + metadata) in 5-10 minutes, with quality exceeding manual research through multi-source synthesis and AI-powered optimization.
+
+================================================================================
+SUCCESS CRITERIA
+================================================================================
+
+MVP Success Metrics:
+- Generate complete content package in under 10 minutes
+- Blog posts: 1,500-2,500 words with AEO/GEO optimization
+- YouTube scripts: 7-10 minutes, teleprompter-ready
+- Keyword research: Search volume, difficulty, related keywords
+- Cost: Under $2 per content package
+- Quality: Passes Evert's approval 80%+ of time
+- Schema markup: Auto-generated for all content
+- Citation quality: Minimum 5 authoritative sources per post
+
+Business Goals:
+- Reduce content creation time from 4-6 hours to 10 minutes per piece
+- Enable weekly content publishing (2-3 posts/week minimum)
+- Improve SEO rankings through AEO/GEO optimization
+- Build content library (50+ posts in first 6 months)
+- Support Mesa Group blog at blog.mesagroupconsulting.com
+
+================================================================================
+TECHNICAL REQUIREMENTS
+================================================================================
+
+Programming Languages:
+- Python 3.11+ (backend services, CLI)
+- Node.js 20+ (optional web UI)
+- TypeScript (optional web UI)
+
+Required APIs and Services:
+- DataForSEO Keywords Data API (pay-as-you-go, <$1/month)
+- Pytrends (Google Trends - free Python library)
+- Perplexity API (existing subscription)
+- Google Gemini API (existing access)
+- YouTube Data API v3 (free quota)
+- youtube-transcript-api (free Python library)
+- Jina Reader API (free tier - URL to markdown conversion)
+- WordPress REST API (blog.mesagroupconsulting.com)
+- Nano Banana API (existing image generation system)
+
+Database and Storage:
+- Supabase (PostgreSQL + pgvector) - reuse existing mgc-blog-ai-agent database
+- Local file storage for outputs
+- AWS S3 (optional - for image hosting)
+
+Infrastructure:
+- Local development initially
+- AWS EC2 deployment (optional Phase 2)
+- GitHub repository
+- CI/CD via GitHub Actions (optional Phase 2)
+
+================================================================================
+CORE FEATURES - PHASE 1 MVP (WEEK 1-2)
+================================================================================
+
+Feature 1: Universal Input Processing
+Priority: CRITICAL
+Description: Accept and normalize 4 input types into standardized research format
+
+Input Types Supported:
+1. YouTube Video URL
+   - Extract video ID from URL
+   - Fetch metadata (title, description, channel, views)
+   - Extract full transcript
+   - Parse into research context
+
+2. Answer the Public Question
+   - Parse question structure
+   - Identify question type (how-to, what-is, etc.)
+   - Extract implicit keywords
+   - Determine appropriate schema type
+
+3. General Topic/Keyword
+   - Clean and normalize topic text
+   - Identify related concepts
+   - Determine content angle
+   - Extract core keywords
+
+4. Competitor Article URL
+   - Scrape article content (Jina Reader API)
+   - Analyze structure, keywords, approach
+   - Identify strengths, weaknesses, gaps
+   - Extract citations and authorities
+   - Determine how to create superior version
+
+Requirements:
+- Auto-detect input type from user input
+- Manual override option (--type flag)
+- Error handling for invalid inputs
+- Validation for URL formats
+- Normalization to NormalizedResearchData model
+
+Acceptance Criteria:
+- All 4 input types process successfully
+- Auto-detection accuracy >95%
+- Normalized output includes all required fields
+- Error messages are clear and actionable
+
+================================================================================
+
+Feature 2: Keyword Research Engine
+Priority: CRITICAL
+Description: Integrate DataForSEO and Pytrends for comprehensive keyword analysis
+
+DataForSEO Integration:
+- Set up API authentication (basic auth with credentials)
+- Implement search volume lookup endpoint
+- Implement related keywords endpoint
+- Parse API responses into structured data
+- Calculate keyword difficulty scores
+- Handle rate limiting and retries
+
+Pytrends Integration:
+- Initialize TrendReq client
+- Get trending searches for US market
+- Get interest over time (12-month trends)
+- Get related queries (rising and top)
+- Determine if keyword is growing/declining/stable
+- Geographic breakdown (US, Bakersfield CA)
+
+Keyword Analysis Features:
+- Primary keyword identification
+- Related keyword extraction (10-20 variations)
+- Question-based keyword extraction (for H2 headers)
+- Long-tail keyword identification (4+ words)
+- Easy-win keyword selection (high volume, low competition)
+- Quotable keyword identification (for AI extraction)
+- Schema type determination (HowTo, FAQ, Article, DefinedTerm)
+
+Output Data Structure:
+- Primary keyword (keyword, search volume, competition, CPC)
+- Target keywords list (10-20 keywords with metrics)
+- H2 header suggestions (5 question-based keywords)
+- Long-tail opportunities (10 keywords)
+- Trending status (growing/declining/stable)
+- Rising queries list
+- AEO/GEO optimization data
+
+Requirements:
+- Cost tracking per API call
+- Caching to avoid duplicate lookups (24-hour cache)
+- Graceful fallback if API fails
+- Rate limit handling with retries
+
+Acceptance Criteria:
+- Keyword research completes in <30 seconds
+- Returns minimum 15 related keywords
+- Trending status determination works
+- Cost per lookup <$0.01
+- 99% API success rate
+
+================================================================================
+
+Feature 3: Multi-Source Research Engine
+Priority: CRITICAL
+Description: Research topic from multiple authoritative sources
+
+Research Sources:
+1. Perplexity API
+   - Query for top 10 articles on topic
+   - Extract citations and URLs
+   - Get authoritative sources (CFPB, FTC, credit bureaus for Mesa)
+   - Parse key points and insights
+
+2. YouTube Data API
+   - Search for top-performing videos on topic
+   - Filter by view count, recency, engagement
+   - Get video metadata (title, description, channel)
+   - Select top 3-5 videos for transcript extraction
+
+3. Transcript Extraction
+   - Extract transcripts from selected YouTube videos
+   - Combine transcripts for comprehensive coverage
+   - Parse for key concepts and advice
+
+4. Competitor URL Analysis (if applicable)
+   - Scrape competitor content (Jina Reader API)
+   - Extract structure, keywords, approach
+   - Identify content gaps
+   - Analyze what to improve
+
+Research Synthesis:
+- Combine insights from all sources
+- Identify unique angle/gap in existing content
+- Extract authoritative citations (government sources, bureaus, regulations)
+- Compile key points and topics to cover
+- Determine target audience and content angle
+
+Requirements:
+- Parallel API calls where possible (Perplexity + YouTube simultaneously)
+- Timeout handling (max 3 minutes for research phase)
+- Citation extraction and storage
+- Source quality scoring (government > established company > blog)
+
+Acceptance Criteria:
+- Research completes in under 2 minutes
+- Minimum 10 sources compiled
+- At least 3 authoritative citations identified
+- Unique content angle identified
+- All source URLs preserved for citation
+
+================================================================================
+
+Feature 4: AEO/GEO Optimized Content Generation
+Priority: CRITICAL
+Description: Generate blog post and YouTube script optimized for AI answer engines
+
+Content Generation Requirements:
+
+BLOG POST (WordPress HTML):
+- Length: 1,500-2,500 words
+- Structure:
+  * Direct answer in first 150-200 words (for featured snippets)
+  * Question-based H2/H3 headers (from keyword research)
+  * Bulleted lists for features/steps
+  * Numbered lists for processes
+  * Comparison tables where applicable
+  * Related questions answered inline
+  * Author bio section (Evert Calderon, Mesa Group)
+- SEO Optimization:
+  * Primary keyword in title, first paragraph, H1
+  * Target keywords distributed naturally (avoid stuffing)
+  * Long-tail keywords in subheadings
+  * Meta description (150 chars, keyword-rich)
+- AEO/GEO Optimization:
+  * Quotable standalone statements
+  * Active voice, declarative sentences
+  * Authority citations (FCRA, CFPB, credit bureaus)
+  * Factual, verifiable claims
+  * Semantic richness (related entities, subtopics)
+- Formatting:
+  * WordPress-compatible HTML
+  * Image placeholders: [IMAGE 1: description]
+  * Internal link suggestions: [LINK: page name]
+  * CTA placements marked
+
+YOUTUBE SCRIPT (Teleprompter-ready):
+- Length: 7-10 minutes (1,750-2,500 words)
+- Structure:
+  * Hook (first 30 seconds) - attention-grabbing question/stat
+  * Introduction (30-60 seconds) - who you are, what this video covers
+  * Main content (5-8 minutes) - educational, keyword-rich but natural
+  * CTAs (3 placements: 3min, 6min, end)
+  * Outro (30 seconds) - recap, subscribe reminder
+- Production Notes:
+  * B-roll suggestions: [B-ROLL: description]
+  * Timestamp markers: [00:30], [03:00], [06:00]
+  * Pause indicators: [PAUSE]
+  * Emphasis markers: [EMPHASIZE: text]
+- SEO Integration:
+  * Natural keyword integration (not robotic)
+  * Question-based structure
+  * Quotable soundbites for shorts
+
+YOUTUBE METADATA (JSON):
+- SEO-optimized title (60-70 chars, primary keyword)
+- Description (200-300 words):
+  * Keyword-rich first 150 characters
+  * Timestamps for chapters
+  * Links to blog post, Mesa Group services
+  * Related video suggestions
+- Tags (15-20):
+  * Primary keyword
+  * Related keywords from research
+  * Topic variations
+  * Industry tags
+- Category, thumbnail suggestions
+
+SCHEMA MARKUP (JSON-LD):
+- Auto-generate appropriate schema.org type:
+  * HowTo for process articles
+  * FAQPage for Q&A content
+  * Article for general content
+  * DefinedTerm for terminology
+- Include all required fields:
+  * name, description, author
+  * datePublished, dateModified
+  * image, video (if applicable)
+  * step-by-step for HowTo
+  * Q&A pairs for FAQPage
+
+IMAGE PROMPTS (Nano Banana ready):
+- Generate 2-3 image prompts
+- Format: Blog post X, Image Y, description
+- Style consistency (Mesa Group branding)
+- Placement suggestions (hero, mid-article, conclusion)
+
+Requirements:
+- Single Gemini API call for efficiency (generate all content types together)
+- Structured output parsing (JSON response format)
+- Prompt engineering with clear AEO/GEO requirements
+- Citation preservation from research phase
+- Mesa Group brand voice consistency
+
+Acceptance Criteria:
+- Blog post passes AEO/GEO checklist (direct answer, questions, lists, citations)
+- YouTube script is teleprompter-ready (no editing needed)
+- Schema markup validates at schema.org validator
+- Image prompts generate usable images in Nano Banana
+- Meta description includes primary keyword
+- Content reads naturally (not keyword-stuffed)
+
+================================================================================
+
+Feature 5: Schema Markup Auto-Generation
+Priority: HIGH
+Description: Automatically generate schema.org JSON-LD markup for AEO/GEO
+
+Schema Types Supported:
+1. HowTo Schema
+   - For process-based content ("how to" questions)
+   - Required fields: name, step[], totalTime, tool[], supply[]
+   - Example: "How to dispute credit errors"
+
+2. FAQPage Schema
+   - For question-answer content
+   - Required fields: mainEntity[] with Question/Answer pairs
+   - Example: "Common credit repair questions"
+
+3. Article Schema
+   - For general informational content
+   - Required fields: headline, author, datePublished, publisher
+   - Enhanced with: wordCount, keywords, articleBody
+
+4. DefinedTerm Schema
+   - For terminology/definition content
+   - Required fields: name, description, inDefinedTermSet
+   - Example: "What is FCRA"
+
+Auto-Detection Logic:
+- Parse ATP question or topic
+- Identify content type from keywords (how to, what is, can i, etc.)
+- Select appropriate schema type
+- Map content sections to schema fields
+- Generate complete JSON-LD
+
+Requirements:
+- Valid schema.org markup (passes validator)
+- Complete required fields
+- WordPress-injectable format
+- Proper escaping of special characters
+
+Acceptance Criteria:
+- Schema validates at schema.org/validator
+- All required fields populated
+- Appropriate schema type selected 95%+ of time
+- JSON-LD format compatible with WordPress
+
+================================================================================
+
+Feature 6: Output Management and File Organization
+Priority: MEDIUM
+Description: Save generated content in organized, reusable format
+
+Output Structure:
+```
+output/
+├── [topic-slug]/
+│   ├── blog-post.html           # WordPress-ready HTML
+│   ├── youtube-script.txt       # Teleprompter format
+│   ├── youtube-metadata.json    # Title, description, tags
+│   ├── schema-markup.json       # JSON-LD schema
+│   ├── image-prompts.txt        # Nano Banana prompts
+│   ├── seo-report.json          # Keywords, metrics, recommendations
+│   ├── research-sources.json    # All source URLs and citations
+│   └── metadata.json            # Generation timestamp, input type, settings
+```
+
+Filename Generation:
+- Create URL-safe slug from topic
+- Use format: YYYY-MM-DD-topic-slug
+- Avoid spaces and special characters
+- Maximum 50 characters
+
+File Formats:
+- Blog post: Clean HTML (WordPress-compatible)
+- YouTube script: Plain text with markdown formatting
+- Metadata: JSON with proper encoding
+- Reports: JSON for programmatic access
+
+Requirements:
+- Atomic writes (no partial files)
+- Error logging if save fails
+- File overwrite protection (prompt before overwriting)
+- Backup of previous versions (optional)
+
+Acceptance Criteria:
+- All 7 files save successfully
+- Filenames are valid and descriptive
+- JSON files parse correctly
+- HTML is WordPress-compatible
+- No data loss on errors
+
+================================================================================
+
+Feature 7: WordPress REST API Integration
+Priority: HIGH
+Description: Auto-post generated content to WordPress blog as draft
+
+WordPress Configuration:
+- Site URL: https://blog.mesagroupconsulting.com
+- Authentication: Application password
+- Post status: Draft (requires Evert approval)
+- Default category: Uncategorized (manual categorization)
+
+Post Creation:
+- Title: From generated content
+- Content: HTML blog post with schema injected
+- Excerpt: First 150-200 words (direct answer section)
+- Featured image: Placeholder (manual upload after Nano Banana generation)
+- Categories: TBD by Evert
+- Tags: Auto-generated from keyword research
+- Author: Evert Calderon (WordPress user ID)
+- Custom fields:
+  * source_type: youtube/atp/topic/competitor
+  * source_url: Original input URL (if applicable)
+  * primary_keyword: SEO keyword
+  * generation_date: Timestamp
+
+Schema Injection:
+- Inject JSON-LD schema into post content (footer)
+- Format: <script type="application/json-ld">{schema}</script>
+- Validate schema before injection
+
+Requirements:
+- Error handling for WordPress API failures
+- Retry logic with exponential backoff
+- Verify post creation (check response for post ID)
+- Store WordPress post ID in metadata.json
+
+Acceptance Criteria:
+- Draft posts appear in WordPress admin
+- Schema markup displays correctly
+- Tags and metadata preserved
+- Images can be added manually
+- Posts ready for Evert review and publish
+
+================================================================================
+
+Feature 8: CLI Interface
+Priority: HIGH
+Description: Simple command-line interface for content generation
+
+Basic Usage:
+```bash
+# YouTube video
+python generate.py "https://youtube.com/watch?v=ABC123"
+
+# ATP question
+python generate.py "how to remove late payments from credit report"
+
+# General topic
+python generate.py "credit card rewards strategies"
+
+# Competitor URL
+python generate.py "https://nerdwallet.com/article/credit" --competitor
+
+# With options
+python generate.py "debt relief" --skip-wordpress --verbose
+```
+
+CLI Arguments:
+- Positional arg: Input (URL, question, or topic)
+- --type: Manually specify input type (youtube, atp, topic, competitor)
+- --skip-wordpress: Don't create WordPress draft
+- --skip-images: Don't generate image prompts
+- --output-dir: Custom output directory
+- --verbose: Detailed logging
+- --competitor: Enable competitor analysis mode
+
+Output Display:
+- Progress indicators (research, keywords, synthesis, generation)
+- Real-time status updates
+- Summary table at completion:
+  * Files saved
+  * Keyword metrics
+  * WordPress post ID (if created)
+  * Total generation time
+  * Cost estimate
+
+Error Handling:
+- Clear error messages
+- Suggestions for fixing issues
+- Partial output preservation (save what succeeded)
+
+Requirements:
+- argparse for argument parsing
+- Rich library for beautiful CLI output (progress bars, tables)
+- Logging to file and console
+- Exit codes (0 success, 1 error)
+
+Acceptance Criteria:
+- CLI runs without errors
+- Progress updates are clear
+- Output summary is informative
+- Error messages are actionable
+- Works on macOS, Linux, Windows
+
+================================================================================
+
+Feature 9: AEO/GEO Optimization System
+Priority: CRITICAL
+Description: Ensure all content is optimized for AI answer engines
+
+Optimization Targets:
+- Google Gemini AI Overviews
+- ChatGPT SearchGPT
+- Perplexity AI
+- Claude Search
+- Traditional SEO (featured snippets, knowledge panels)
+
+AEO/GEO Requirements (Implemented in Prompts):
+
+1. Direct Answer Structure:
+   - First 150-200 words answer the main question directly
+   - Clear, quotable, standalone
+   - Include primary keyword
+   - Use declarative statements
+
+2. Question-Based Headers:
+   - H2/H3 headers match natural language questions
+   - Derived from keyword research (H2 suggestions)
+   - Cover "People Also Ask" queries
+   - Use question marks in headers
+
+3. Structured Content:
+   - Bulleted lists for features/benefits
+   - Numbered lists for step-by-step processes
+   - Comparison tables (vs. competitors, vs. DIY)
+   - Clear section breaks
+   - Logical hierarchy
+
+4. Authority Citations:
+   - Cite regulations (FCRA, FDCPA, TCPA)
+   - Reference institutions (CFPB, FTC, credit bureaus)
+   - Link to authoritative sources
+   - Include statistics with sources
+   - Factual, verifiable statements only
+
+5. Quotable Statements:
+   - Write in active voice
+   - Avoid marketing fluff
+   - Make each point independently quotable
+   - Clear, concise language
+   - Examples with specifics
+
+6. Semantic Richness:
+   - Cover related subtopics
+   - Include entity relationships
+   - Answer related questions inline
+   - Comprehensive topic coverage
+   - 1,500-2,500 word target
+
+7. E-E-A-T Signals:
+   - Display author expertise (Evert's credentials)
+   - Show first-hand experience (Mesa Group client results)
+   - Update dates prominent
+   - Contact information
+   - Real business location (Bakersfield, CA)
+
+AEO/GEO Validation Checklist:
+- [ ] Direct answer in first 200 words
+- [ ] Minimum 3 question-based H2 headers
+- [ ] At least 2 bulleted or numbered lists
+- [ ] Minimum 5 authoritative citations
+- [ ] Active voice >80% of sentences
+- [ ] Zero marketing fluff in factual sections
+- [ ] Related questions answered (minimum 3)
+- [ ] Schema markup generated
+- [ ] Author bio included
+- [ ] Update date prominent
+
+Requirements:
+- Automated checklist validation
+- Warning if criteria not met
+- Suggestions for improvement
+- Manual override option
+
+Acceptance Criteria:
+- 95% of generated content passes checklist
+- Content gets cited by AI engines (manual testing)
+- Clear, direct answers present
+- Citations are authoritative and relevant
+
+================================================================================
+
+Feature 10: Nano Banana Image Integration
+Priority: MEDIUM
+Description: Generate image prompts and queue for Nano Banana processing
+
+Image Prompt Generation:
+- Analyze blog post content
+- Identify 2-3 optimal image placements:
+  * Hero image (top of post)
+  * Mid-article visual (supporting concept)
+  * Conclusion/CTA image (optional)
+- Generate descriptive prompts for each image
+- Include Mesa Group branding requirements
+- Style consistency across images
+
+Prompt Format:
+```
+Blog Post: [topic]
+Image Number: 1
+Placement: Hero image
+Description: Professional illustration showing [concept]. Style: Modern, clean, financial services aesthetic. Colors: Mesa Group gold (#f9c65d), dark gray, white. No text overlays.
+```
+
+Integration with Existing System:
+- Output prompts in format compatible with nano-banana-image-queuer
+- Queue file format: Same as existing .queue.json
+- Filename generation: blog-[slug]-img-[number]-[description].png
+
+Requirements:
+- Prompts are specific and actionable
+- Style consistency enforced
+- Mesa Group brand colors specified
+- Placement suggestions clear
+
+Acceptance Criteria:
+- 2-3 prompts generated per blog post
+- Prompts work with existing Nano Banana system
+- Images align with blog content
+- Branding is consistent
+
+================================================================================
+
+Feature 11: Quality Validation and Completeness Checking
+Priority: MEDIUM
+Description: Validate generated content meets quality standards
+
+Validation Checks:
+
+Blog Post Validation:
+- Word count: 1,500-2,500 words (warning if outside range)
+- Keyword density: Primary keyword 1-2% (not stuffed)
+- Readability: Flesch reading ease 60+ (accessible)
+- Structure: Minimum 3 H2 headers, 5 lists/tables
+- Citations: Minimum 5 authoritative sources
+- Links: No broken internal links
+- HTML: Valid WordPress-compatible markup
+
+YouTube Script Validation:
+- Word count: 1,750-2,500 words (7-10 min read time)
+- Hook present: First 30 seconds compelling
+- CTAs: Minimum 3 placements
+- Structure: Clear sections with timestamps
+- Natural language: Not keyword-stuffed
+- Production notes: B-roll and pause markers present
+
+Schema Validation:
+- Valid JSON-LD syntax
+- Required fields present for schema type
+- Validates at schema.org/validator
+- Proper escaping and encoding
+
+Completeness Scoring:
+- Calculate 0-100 score based on:
+  * Word count (20 points)
+  * Structure (20 points)
+  * Citations (15 points)
+  * Keywords (15 points)
+  * AEO/GEO compliance (20 points)
+  * Readability (10 points)
+- Warning if score <80
+- Suggestions for improvement
+
+Auto-Regeneration (Optional):
+- If completeness score <70, regenerate automatically
+- Maximum 2 regeneration attempts
+- Different synthesis approach on retry
+
+Requirements:
+- Fast validation (<5 seconds)
+- Clear reporting of issues
+- Actionable improvement suggestions
+
+Acceptance Criteria:
+- Validation runs on all generated content
+- Scoring is consistent and accurate
+- Warnings are helpful
+- Auto-regeneration improves quality
+
+================================================================================
+
+Feature 12: Cost Tracking and Reporting
+Priority: LOW
+Description: Track API costs and generation statistics
+
+Cost Tracking:
+- DataForSEO API calls and cost
+- Perplexity API tokens and cost
+- Gemini API tokens and cost
+- Jina Reader API calls (if used)
+- Total cost per generation
+
+Usage Statistics:
+- Generations per day/week/month
+- Average generation time
+- Input type distribution
+- Success/failure rate
+- Average content quality score
+
+Reporting:
+- Cost summary at end of each generation
+- Weekly usage report (email or console)
+- Monthly cost projection
+- API quota monitoring
+
+Requirements:
+- SQLite database for tracking (lightweight)
+- JSON export for analysis
+- Dashboard view (optional web UI)
+
+Acceptance Criteria:
+- Costs tracked accurately (<1% error)
+- Reports are clear and actionable
+- Warns before exceeding budget thresholds
+
+================================================================================
+
+Feature 13: Error Handling and Logging
+Priority: MEDIUM
+Description: Comprehensive error handling and debugging support
+
+Error Scenarios to Handle:
+- API failures (Perplexity, Gemini, DataForSEO, YouTube)
+- Rate limiting (retry with backoff)
+- Invalid inputs (clear user messaging)
+- Network timeouts
+- Malformed responses
+- WordPress API errors
+- File system errors
+
+Logging System:
+- Log levels: DEBUG, INFO, WARNING, ERROR
+- File logging: logs/atp-generator-YYYY-MM-DD.log
+- Console logging: Rich formatting with colors
+- Rotation: Keep last 7 days of logs
+
+Error Recovery:
+- Retry logic for transient failures (3 attempts, exponential backoff)
+- Graceful degradation (proceed without optional features)
+- Partial output preservation (save what succeeded)
+- Clear error messages with remediation steps
+
+Requirements:
+- Python logging module
+- Structured log format (JSON for parsing)
+- Error categorization (user error vs. system error)
+
+Acceptance Criteria:
+- All errors caught and logged
+- User sees clear error messages
+- Retry logic works for transient failures
+- Logs are helpful for debugging
+
+================================================================================
+
+ARCHITECTURE AND DESIGN
+================================================================================
+
+Modular Component Design:
+
+1. InputProcessor (handles all input types)
+   - YouTubeInputHandler
+   - ATPQuestionHandler
+   - GeneralTopicHandler
+   - CompetitorURLHandler
+   - BaseInputHandler (abstract class)
+
+2. KeywordEngine (keyword research)
+   - DataForSEOClient
+   - PytrendsClient
+   - KeywordAnalyzer
+   - CachingLayer (24-hour cache)
+
+3. ResearchEngine (multi-source research)
+   - PerplexityResearcher
+   - YouTubeSearcher
+   - TranscriptExtractor
+   - CompetitorAnalyzer
+   - SourceAggregator
+
+4. SynthesisEngine (content planning)
+   - SourceSynthesizer
+   - GapAnalyzer
+   - OutlineGenerator
+   - CitationExtractor
+
+5. ContentGenerator (AEO/GEO optimized generation)
+   - BlogPostGenerator
+   - YouTubeScriptGenerator
+   - MetadataGenerator
+   - SchemaGenerator
+   - ImagePromptGenerator
+
+6. QualityValidator (validation and scoring)
+   - BlogValidator
+   - ScriptValidator
+   - SchemaValidator
+   - CompletenessScorer
+   - AEOGEOChecker
+
+7. OutputHandler (file management)
+   - FileWriter
+   - DirectoryManager
+   - WordPressPublisher
+   - MetadataGenerator
+
+8. CostTracker (usage and billing)
+   - APICallTracker
+   - CostCalculator
+   - UsageReporter
+
+Design Principles:
+- Single Responsibility: Each class does one thing
+- Open/Closed: Open for extension, closed for modification
+- Dependency Injection: All dependencies injected, not hardcoded
+- Interface Segregation: Small, focused interfaces
+- Composition over Inheritance: Compose behavior from small pieces
+
+Configuration Management:
+- .env file for secrets (API keys)
+- config.yaml for settings (timeouts, quotas, defaults)
+- Constants file for fixed values (Mesa branding, word counts)
+- Command-line overrides for all settings
+
+================================================================================
+
+INTEGRATION REQUIREMENTS
+================================================================================
+
+Integration with Existing Systems:
+
+1. mgc-blog-ai-agent (Existing YouTube → Blog system)
+   - Reuse: Perplexity service, Gemini client, WordPress service
+   - Reuse: Knowledge base (469 financial terms)
+   - Reuse: Supabase tables (drafts, jobs, logs)
+   - Reuse: React approval UI
+   - Extension point: Add ATP input mode to existing CLI
+
+2. nano-banana-image-queuer (Existing image generator)
+   - Output: Image prompts in compatible format
+   - Integration: Queue prompts to existing system
+   - Reuse: Prompt parsing logic
+   - Extension point: Auto-trigger image generation (Phase 2)
+
+3. WordPress Blog (blog.mesagroupconsulting.com)
+   - Create drafts via REST API
+   - Inject schema markup
+   - Set proper metadata (tags, categories)
+   - Upload images (Phase 2)
+
+Future Integration Points:
+- TubeLab API (video outlier scores)
+- OpusClip (short-form video generation)
+- Social media APIs (Instagram, TikTok, X)
+- Email marketing (Mailchimp, ConvertKit)
+- Analytics (track content performance)
+
+================================================================================
+
+TESTING REQUIREMENTS
+================================================================================
+
+Unit Tests:
+- Test each input handler independently
+- Test keyword research with mock API responses
+- Test content generation with sample inputs
+- Test schema generation for each type
+- Test file writing and organization
+
+Integration Tests:
+- End-to-end generation with real APIs (using test credits)
+- WordPress draft creation
+- Output file validation
+- Cost tracking accuracy
+
+Manual Testing:
+- Generate content for 5 diverse ATP questions
+- Generate from 3 YouTube videos
+- Generate from 2 competitor URLs
+- Generate from 3 general topics
+- Review quality with Evert
+
+Validation Tests:
+- Schema markup validates at schema.org
+- WordPress HTML renders correctly
+- YouTube scripts are readable
+- Keywords are properly researched
+- Citations are accurate
+
+Performance Tests:
+- Total generation time <10 minutes
+- Keyword research <30 seconds
+- Content research <2 minutes
+- Content generation <5 minutes
+- File operations <5 seconds
+
+================================================================================
+
+SECURITY AND COMPLIANCE
+================================================================================
+
+API Key Management:
+- Store in .env file (never commit)
+- Validate keys on startup
+- Rotate keys every 90 days
+- Secure credential storage
+
+Data Privacy:
+- No storage of personal client information
+- Anonymize any examples in content
+- GDPR compliance for any EU data
+- No storage of API responses beyond caching
+
+WordPress Security:
+- Use application passwords (not main password)
+- HTTPS only for API calls
+- Validate WordPress site certificate
+- Rate limiting to prevent abuse
+
+Compliance for Credit Repair Content:
+- FCRA compliance (no guaranteed removals)
+- CROA compliance (transparent disclaimers)
+- No false advertising
+- Factual accuracy verification
+
+================================================================================
+
+DOCUMENTATION REQUIREMENTS
+================================================================================
+
+User Documentation:
+- README.md with quick start guide
+- Installation instructions
+- CLI usage examples
+- Configuration guide
+- Troubleshooting common issues
+
+Developer Documentation:
+- CLAUDE.md with architecture overview
+- API integration guides
+- Component documentation
+- Extension guide (how to add new input types)
+- Testing guide
+
+Operational Documentation:
+- Cost monitoring guide
+- API key rotation procedures
+- Deployment instructions
+- Backup and recovery procedures
+
+================================================================================
+
+DEPLOYMENT AND OPERATIONS
+================================================================================
+
+Local Development:
+- Python virtual environment
+- .env configuration
+- Local file outputs
+- Manual WordPress posting initially
+
+Phase 1 Deployment (MVP):
+- Run locally on Mario's machine
+- Manual execution per content request
+- Local file storage
+- Git repository for version control
+
+Phase 2 Deployment (Automation):
+- AWS EC2 instance or similar
+- Scheduled cron jobs (optional)
+- S3 for file storage
+- CloudWatch monitoring
+
+Maintenance:
+- API quota monitoring
+- Cost tracking
+- Performance monitoring
+- Error rate tracking
+- Quality score trending
+
+================================================================================
+
+DEPENDENCIES AND PREREQUISITES
+================================================================================
+
+Required Services:
+- DataForSEO account ($50 initial credit)
+- Perplexity API subscription (existing)
+- Google Gemini API access (existing)
+- YouTube Data API key (free)
+- WordPress site with REST API enabled
+- Jina Reader API account (free tier)
+
+Python Libraries:
+- requests (HTTP calls)
+- google-generativeai (Gemini)
+- pytrends (Google Trends)
+- youtube-transcript-api (transcripts)
+- pydantic (data validation)
+- python-dotenv (environment variables)
+- rich (beautiful CLI output)
+- pytest (testing)
+
+Development Tools:
+- Python 3.11+
+- Git
+- Code editor (Cursor, VS Code)
+- Terminal
+
+================================================================================
+
+PHASES AND TIMELINE
+================================================================================
+
+Phase 1: MVP - Core 4 Input Types (Week 1-2)
+- Universal input processing (YouTube, ATP, topic, competitor)
+- Keyword research integration (DataForSEO + Pytrends)
+- Multi-source research engine
+- AEO/GEO content generation
+- Schema markup generation
+- CLI interface
+- Local file outputs
+- WordPress draft creation
+
+Deliverables:
+- Working CLI tool
+- Generates all 5 outputs (script, blog, metadata, schema, images)
+- <10 minute generation time
+- <$2 per generation cost
+
+Phase 2: Enhancement & Integration (Week 3-4)
+- Web UI for easier submission
+- Integration with existing approval UI
+- Automated image generation trigger
+- Quality validation and scoring
+- Cost tracking dashboard
+- Extended input types (FAQ, news, social)
+
+Deliverables:
+- Web interface
+- Approval workflow integration
+- Automated quality checks
+- Usage analytics
+
+Phase 3: Automation & Scale (Month 2)
+- TubeLab API integration
+- Multi-video transcript aggregation
+- Full RAG pipeline integration
+- Automated publishing workflows
+- Performance analytics
+- A/B testing for titles
+
+Deliverables:
+- Production-ready automation
+- Performance tracking
+- Optimization feedback loop
+
+Phase 4: Advanced Features (Month 3+)
+- OpusClip short-form generation
+- Social media auto-posting
+- Email sequence generation
+- Multi-site support (Credit.ly, future brands)
+- Content calendar automation
+
+================================================================================
+
+RISKS AND MITIGATIONS
+================================================================================
+
+Risk 1: API Costs Exceed Budget
+Probability: LOW
+Impact: MEDIUM
+Mitigation:
+- Set hard spending limits in DataForSEO account
+- Monitor costs daily
+- Cache aggressively
+- Use free alternatives where possible
+
+Risk 2: Content Quality Insufficient
+Probability: MEDIUM
+Impact: HIGH
+Mitigation:
+- Implement quality validation
+- Manual review for first 20 pieces
+- Iterate on prompts based on feedback
+- A/B test different prompt approaches
+
+Risk 3: AEO/GEO Optimization Ineffective
+Probability: MEDIUM
+Impact: MEDIUM
+Mitigation:
+- Manual testing in AI engines (ChatGPT, Perplexity, Gemini)
+- Track citations monthly
+- Iterate on structure and formatting
+- Follow industry best practices
+
+Risk 4: Integration Complexity with Existing Systems
+Probability: LOW
+Impact: MEDIUM
+Mitigation:
+- Start with standalone MVP
+- Gradual integration
+- Maintain backward compatibility
+- Comprehensive testing
+
+Risk 5: Evert Doesn't Use It
+Probability: LOW
+Impact: HIGH
+Mitigation:
+- Make it dead simple (CLI + web UI)
+- Fast generation (<10 min)
+- High quality output (minimal editing needed)
+- Training and documentation
+
+================================================================================
+
+METRICS AND KPIs
+================================================================================
+
+Product Metrics:
+- Generations per week (target: 10+)
+- Average generation time (target: <10 minutes)
+- Content approval rate (target: 80%+)
+- WordPress posts published (target: 2-3/week)
+
+Quality Metrics:
+- Completeness score (target: 85+ average)
+- Keyword optimization score (target: 90+)
+- AEO/GEO checklist pass rate (target: 95%+)
+- Evert satisfaction rating (target: 4/5+)
+
+Technical Metrics:
+- API success rate (target: 99%+)
+- Average cost per generation (target: <$2)
+- Error rate (target: <5%)
+- Keyword research accuracy (target: 95%+)
+
+Business Metrics:
+- Blog posts published (target: 50+ in 6 months)
+- YouTube videos created (target: 20+ in 6 months)
+- Time saved vs. manual (target: 4-5 hours per post)
+- SEO rankings improvement (track top 20 keywords)
+
+================================================================================
+
+ACCEPTANCE CRITERIA - PHASE 1 MVP
+================================================================================
+
+The MVP is complete and ready for Evert when:
+
+1. ✅ CLI accepts 4 input types (YouTube, ATP, topic, competitor)
+2. ✅ Auto-detection works 95%+ of time
+3. ✅ Keyword research completes in <30 seconds with accurate data
+4. ✅ Multi-source research aggregates 10+ sources in <2 minutes
+5. ✅ Blog posts are 1,500-2,500 words, AEO/GEO optimized
+6. ✅ YouTube scripts are 7-10 minutes, teleprompter-ready
+7. ✅ Schema markup validates and is WordPress-compatible
+8. ✅ Image prompts work with Nano Banana system
+9. ✅ WordPress drafts create successfully via REST API
+10. ✅ All outputs save to organized file structure
+11. ✅ Total generation time <10 minutes
+12. ✅ Cost per generation <$2
+13. ✅ Error handling gracefully manages API failures
+14. ✅ Documentation allows Evert to run independently
+15. ✅ Quality validation provides actionable feedback
+
+Final Acceptance:
+- Evert generates 5 pieces of content successfully
+- Approves and publishes at least 3 to WordPress
+- Reports system is useful and time-saving
+- Recommends for ongoing use
+
+================================================================================
+
+FUTURE ENHANCEMENTS (POST-MVP)
+================================================================================
+
+Noted for future phases (not in MVP scope):
+
+- Advanced RAG pipeline integration
+- TubeLab outlier score analysis
+- Multi-video transcript synthesis
+- OpusClip short-form generation
+- Social media auto-posting (Instagram, TikTok, X, YouTube Shorts)
+- Email sequence generation
+- Multi-site support (Credit.ly + future brands)
+- Content calendar automation
+- Performance analytics and A/B testing
+- Competitor monitoring automation
+- Trend-jacking automation
+- Podcast audio transcription
+- PDF/whitepaper processing
+- Case study automation
+- Webinar repurposing
+
+All future enhancements designed to plug into modular MVP architecture.
+
+================================================================================
+
+STAKEHOLDER SIGN-OFF
+================================================================================
+
+Product Owner: Evert Calderon (Mesa Group Consulting)
+Developer: Mario Garza (Catalyst Digital Solutions)
+Reviewer: Steve Neu (Marketing Strategy) - Optional
+
+Approval Gates:
+- Phase 1 MVP scope approval: [ ] Evert, [ ] Mario
+- Technical architecture approval: [ ] Mario
+- Quality standards approval: [ ] Evert
+- Budget approval (<$100/month): [ ] Evert
+
+================================================================================
+END OF PRD
+================================================================================
+
+This PRD defines the complete scope for the Universal Content Generator MVP with extensibility built-in from Day 1. All features are designed to integrate seamlessly with existing systems (mgc-blog-ai-agent, nano-banana-image-queuer) while providing a clear path to the full TubeLab/OpusClip/social automation vision.

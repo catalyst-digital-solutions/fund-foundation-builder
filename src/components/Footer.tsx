@@ -354,18 +354,16 @@ const Footer = () => {
       <div className="bg-[#1a1a1a] py-4">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-6 text-white text-[15px]">
-            <a href="#privacy-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">Privacy Policy</a>
+            <Link to="/privacy-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">Privacy Policy</Link>
             <Link to="/terms-and-conditions" className="hover:text-[#f9c65d] hover:underline transition-colors">Terms & Conditions</Link>
-            <a href="#accessibility" className="hover:text-[#f9c65d] hover:underline transition-colors">Accessibility</a>
-            <a href="#affiliate-disclosure" className="hover:text-[#f9c65d] hover:underline transition-colors">Affiliate Disclosure</a>
-            <a href="#ca-privacy-rights" className="hover:text-[#f9c65d] hover:underline transition-colors">CA Privacy Rights</a>
-            <a href="#cookies-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">Cookies</a>
-            <a href="#ccpa-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">CCPA</a>
-            <a href="#do-not-sell" className="hover:text-[#f9c65d] hover:underline transition-colors">Do Not Sell My Info</a>
-            <a href="#gdpr-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">GDPR</a>
-            <a href="#disclaimer" className="hover:text-[#f9c65d] hover:underline transition-colors">Disclaimer</a>
-            <a href="#data-protection" className="hover:text-[#f9c65d] hover:underline transition-colors">Data Protection</a>
-            <a href="#legal-notice" className="hover:text-[#f9c65d] hover:underline transition-colors">Legal Notice</a>
+            <Link to="/accessibility-statement" className="hover:text-[#f9c65d] hover:underline transition-colors">Accessibility</Link>
+            <Link to="/affiliate-disclosure" className="hover:text-[#f9c65d] hover:underline transition-colors">Affiliate Disclosure</Link>
+            <Link to="/california-privacy-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">CA Privacy Rights</Link>
+            <Link to="/cookie-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">Cookies</Link>
+            <Link to="/california-privacy-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">CCPA</Link>
+            <Link to="/do-not-sell-my-personal-information" className="hover:text-[#f9c65d] hover:underline transition-colors">Do Not Sell My Info</Link>
+            <Link to="/disclaimer" className="hover:text-[#f9c65d] hover:underline transition-colors">Disclaimer</Link>
+            <Link to="/tcpa-consent-policy" className="hover:text-[#f9c65d] hover:underline transition-colors">TCPA</Link>
           </div>
         </div>
       </div>

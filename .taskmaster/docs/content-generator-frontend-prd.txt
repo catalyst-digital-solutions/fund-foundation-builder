@@ -1,0 +1,1251 @@
+PRODUCT REQUIREMENTS DOCUMENT
+MGC Content Generator - Web Frontend (Option 1 Enhanced)
+Mesa Group Consulting | Catalyst Digital Solutions
+Version 1.0 | February 11, 2026
+
+================================================================================
+PROJECT OVERVIEW
+================================================================================
+
+Project Name: MGC Content Generator Web Frontend
+Parent System: Universal Content Generator (Python backend - completed)
+Client: Mesa Group Consulting (Evert Calderon)
+Developer: Catalyst Digital Solutions (Mario Garza)
+Timeline: 1 day for MVP
+Technology: Vite + React + TypeScript (reuse Nano Banana patterns)
+
+Purpose:
+Build a clean, professional web interface for the MGC Content Generator that allows Evert and his team to generate blog posts and YouTube scripts by simply pasting a question, topic, or URL into a text field. The system auto-detects input type, processes in background with real-time progress updates via WebSocket, and provides downloadable deliverables.
+
+Core Value Proposition:
+Transform command-line complexity into point-and-click simplicity while showcasing the sophistication of the multi-source research and AEO/GEO optimization happening behind the scenes. Make content generation feel effortless for Evert while demonstrating the value and diligence of the system.
+
+Key Constraint:
+NO cost mentions in client-facing UI (billing model undecided - may be included in monthly retainer or billed separately).
+
+================================================================================
+SUCCESS CRITERIA
+================================================================================
+
+MVP Success Metrics:
+- Single-page web app loads in under 2 seconds
+- Input field accepts any text and auto-detects type accurately
+- Real-time progress updates via WebSocket show processing steps
+- Cursor-style collapsible progress (expands during processing, collapses after 3 seconds)
+- Complete content package downloadable (8 files or ZIP)
+- Quality score displayed prominently (0-100 scale)
+- Generation completes in 5-10 minutes with visible progress
+- Professional UI matching Mesa Group brand (yellow/gold palette)
+- Works on desktop and tablet (mobile optional for MVP)
+
+User Experience Goals:
+- Evert can generate content without technical knowledge
+- Progress display educates Evert on system sophistication
+- Outputs are immediately usable (copy script to teleprompter, download blog HTML)
+- System feels premium and valuable
+- No confusion about what to do next
+
+================================================================================
+TECHNICAL REQUIREMENTS
+================================================================================
+
+Frontend Technology Stack:
+- Vite 5.x (build tool)
+- React 18 (UI framework)
+- TypeScript (type safety)
+- Tailwind CSS (styling - Mesa Group theme)
+- lucide-react (icons - NO emojis)
+- Socket.io-client (WebSocket for real-time updates)
+- axios (HTTP requests)
+- file-saver (download functionality)
+- jszip (ZIP file creation for "Download All")
+
+Backend Requirements:
+- FastAPI server (Python)
+- Socket.io (WebSocket server)
+- Subprocess integration (calls existing generate.py CLI)
+- File serving (static file downloads)
+- Progress event emission (real-time updates)
+
+Dependencies from Existing Systems:
+- Reuse: nano-banana-image-queuer Vite/React structure
+- Reuse: Mesa Group Tailwind theme configuration
+- Reuse: ProgressTracker component patterns
+- Integration: Calls existing mgc-content-generator Python backend
+
+================================================================================
+CORE FEATURES - FRONTEND MVP
+================================================================================
+
+Feature 1: Universal Input Form
+Priority: CRITICAL
+Description: Single text input that accepts any content source with auto-detection
+
+UI Components:
+- Large textarea (min 3 rows, auto-expand)
+- Placeholder text with examples:
+  * "Paste YouTube URL, Answer the Public question, topic, or competitor article URL..."
+  * "Examples: how to fix bad credit | https://youtube.com/watch?v=ABC | debt relief strategies"
+- Auto-detection badge showing detected input type (updates as user types)
+- Mesa Group branded header with logo
+- Large "Generate Content" button (Mesa Yellow, full width or prominent)
+
+Auto-Detection Visual Feedback:
+- As user types, show badge: "Detected: YouTube Video" with Video icon (lucide-react)
+- Badge colors: YouTube (red), ATP Question (blue), Topic (purple), Competitor URL (orange)
+- Smooth transition animation when type changes
+- Icon from lucide-react: Video, HelpCircle, FileText, ExternalLink
+
+Input Validation:
+- Minimum 10 characters required
+- Show character count if under minimum
+- Disable "Generate" button until valid input
+- Clear error messages for invalid input
+
+Requirements:
+- Debounced auto-detection (300ms delay after typing stops)
+- Input persists in localStorage (don't lose work on refresh)
+- Paste detection and auto-trim whitespace
+- Support for long URLs (no truncation)
+
+Acceptance Criteria:
+- Input field is large and easy to use
+- Auto-detection is 95%+ accurate
+- Badge updates smoothly as user types
+- Generate button is prominent and obvious
+- Works on desktop and tablet viewports
+
+================================================================================
+
+Feature 2: Real-Time Progress Display (WebSocket)
+Priority: CRITICAL
+Description: Cursor-style collapsible progress display showing detailed steps with 3-second auto-collapse
+
+WebSocket Architecture:
+- Backend emits progress events as generation proceeds
+- Frontend receives events in real-time
+- Events include: step_start, step_progress, step_complete, error, final_complete
+- Connection established when "Generate" clicked
+- Connection closed when generation complete or error
+
+Progress Step Structure:
+7 main steps displayed:
+1. Input Processing (icon: Zap from lucide-react)
+2. Keyword Research & SEO Analysis (icon: Search)
+3. Multi-Source Research (icon: BookOpen)
+4. Content Generation (icon: FileText)
+5. Schema Markup & SEO (icon: Tag)
+6. Quality Validation (icon: CheckCircle)
+7. Saving Files (icon: Save)
+
+Each step has 3 states:
+- Pending: Gray icon, gray text, collapsed
+- Processing: Yellow icon (Mesa Yellow), expanded, shows sub-steps in real-time
+- Complete: Green icon, all details visible, auto-collapses after 3 seconds
+
+Collapsible Behavior:
+- Step expands automatically when processing starts
+- Sub-items appear one by one as they complete (smooth animation)
+- After step completes, all details visible for 3 seconds
+- Auto-collapse to summary line: "Step X: [Summary] [Expand ▼]"
+- User can click to manually expand/collapse any step
+- Collapse animation: 300ms ease-in-out
+- Arrow icon rotates 180deg on expand/collapse
+
+Sub-Step Detail Examples:
+
+Step 2 (Keyword Research) expanded:
+```
+🔍 Step 2: Keyword Research & SEO Analysis [Collapse ▲]
+   ├─ Querying DataForSEO API... → ✓ Primary keyword identified
+   │   • Keyword: "how to fix bad credit"  
+   │   • Search volume: 5,400/month
+   │   • Competition: Medium
+   ├─ Finding related keywords... → ✓ 23 variations discovered
+   │   • "credit repair" (18,100/month)
+   │   • "improve credit score" (14,800/month)
+   │   • + 21 more
+   ├─ Analyzing Google Trends... → ✓ Trend status determined
+   │   • Status: Growing +18%
+   │   • Rising queries: 7 identified
+   └─ H2 header suggestions generated: 5 question-based headers
+
+Duration: 18.4s | Keywords: 23 | Status: Growing
+```
+
+After 3 seconds, auto-collapses to:
+```
+✅ Step 2: Keyword Research → 23 keywords • 5,400/month • Growing +18% [Expand ▼]
+```
+
+WebSocket Event Format:
+```json
+{
+  "type": "step_start",
+  "step_id": 2,
+  "step_name": "Keyword Research & SEO Analysis",
+  "timestamp": "2026-02-11T18:30:15.123Z"
+}
+
+{
+  "type": "step_progress", 
+  "step_id": 2,
+  "item": "Primary keyword identified",
+  "details": {
+    "keyword": "how to fix bad credit",
+    "search_volume": 5400,
+    "competition": "medium"
+  }
+}
+
+{
+  "type": "step_complete",
+  "step_id": 2,
+  "summary": "23 keywords • 5,400/month • Growing +18%",
+  "duration": 18.4
+}
+```
+
+Requirements:
+- WebSocket reconnection on disconnect (max 3 retries)
+- Graceful fallback to polling if WebSocket unavailable
+- Progress state persists if page refreshes (localStorage)
+- Smooth animations for expand/collapse
+- No flickering or layout shifts
+
+Acceptance Criteria:
+- All 7 steps display correctly
+- Real-time updates appear as they happen (< 500ms latency)
+- Sub-items appear smoothly (one by one)
+- Auto-collapse works consistently (3 seconds after completion)
+- Manual expand/collapse works on all steps
+- Icons from lucide-react (NO emojis)
+- Animations are smooth (300ms)
+
+================================================================================
+
+Feature 3: Output Display and Download System
+Priority: CRITICAL
+Description: Show generation results with individual and bulk download options
+
+Output Screen Components:
+
+1. Summary Card (Top):
+   - Topic title (large, bold)
+   - Input type badge (icon + label)
+   - Quality score (large number with color: Green 80+, Yellow 60-79, Red <60)
+   - Generation time
+   - Primary keyword (if available)
+
+2. Download Section:
+   - "Download All Assets" button (prominent, Mesa Yellow, ZIP file)
+     * Icon: Download from lucide-react
+     * Text: "Download All Assets"
+     * Subtext: "Complete content package (8 files)"
+   - Individual download buttons (grid layout):
+     * Blog Post (FileText icon)
+     * YouTube Script (Video icon)
+     * YouTube Metadata (FileJson icon)
+     * Image Prompts (Image icon)
+     * Schema Markup (Code icon)
+     * SEO Report (TrendingUp icon)
+     * Research Sources (BookOpen icon)
+     * Generation Metadata (Info icon)
+
+3. WordPress Status (if applicable):
+   - Badge showing "Draft Created" or "Saved Locally"
+   - Link to WordPress admin if draft created
+   - "View in WordPress" button (ExternalLink icon)
+
+4. Next Steps Guidance:
+   - Numbered list with icons (lucide-react)
+   - 1. Use image prompts with Nano Banana (Image icon)
+   - 2. Copy script to teleprompter (Video icon)
+   - 3. Review and publish WordPress draft (Globe icon)
+   - Clear, actionable instructions
+
+5. Action Buttons:
+   - "Generate Another" (Repeat icon) - Resets to input form
+   - "View Output Folder" (FolderOpen icon) - Opens file explorer
+
+Download Functionality:
+- Individual files: Direct download as .html, .txt, .json
+- "Download All": Creates ZIP file client-side with all 8 files
+  * ZIP filename: mgc-content-[slug]-[timestamp].zip
+  * Includes all files with organized structure
+- Browser-native download (no server round-trip needed)
+- Files open in appropriate applications (HTML in browser, TXT in text editor)
+
+Visual Design:
+- Cards with white background, subtle shadows
+- Mesa Yellow accents on buttons and badges
+- Green checkmarks for completion (CheckCircle icon)
+- Clear visual hierarchy (summary → downloads → next steps → actions)
+- Generous whitespace, not cramped
+
+Requirements:
+- All download buttons work reliably
+- ZIP file creation doesn't freeze UI
+- Files download with correct extensions and mime types
+- WordPress link opens in new tab if applicable
+- Mobile-friendly layout (buttons stack on small screens)
+
+Acceptance Criteria:
+- Summary card shows all key information
+- Quality score is prominent and color-coded correctly
+- Download All creates valid ZIP with all 8 files
+- Individual downloads work for all file types
+- Next steps are clear and actionable
+- "Generate Another" resets app state correctly
+
+================================================================================
+
+Feature 4: Error Handling and User Feedback
+Priority: HIGH
+Description: Clear error messages, recovery options, and user guidance
+
+Error States to Handle:
+
+1. API Key Missing/Invalid:
+   - Show which API key is missing (DataForSEO, Perplexity, Gemini, YouTube)
+   - Provide link to configuration instructions
+   - Option to skip optional features (e.g., keyword research)
+   - Don't block entire generation for optional APIs
+
+2. API Rate Limit Exceeded:
+   - Show friendly message: "API usage limit reached"
+   - Explain which API (e.g., "DataForSEO monthly quota")
+   - Suggest retry in X minutes/hours
+   - Option to proceed without that feature
+
+3. Network Errors:
+   - Retry button with countdown (Auto-retry in 10...9...8...)
+   - Manual retry option
+   - Explain what failed in simple terms
+
+4. Generation Quality Low:
+   - Show quality score < 80 as warning (not error)
+   - Display specific issues (e.g., "Only 1,200 words - target 1,500+")
+   - Option to regenerate or proceed anyway
+   - Show suggestions for improvement
+
+5. WebSocket Connection Lost:
+   - Automatically attempt reconnection (3 retries)
+   - Fall back to polling if WebSocket fails
+   - Show connection status indicator
+   - Don't lose progress if connection drops
+
+Error Message Principles:
+- Clear, non-technical language
+- Explain what happened and why
+- Provide actionable next steps
+- Include retry/skip/cancel options
+- Use appropriate colors (amber for warnings, red for errors)
+- Icons from lucide-react (AlertTriangle, XCircle, Info)
+
+Requirements:
+- All error states have designed UI
+- Error messages are user-friendly (no stack traces)
+- Recovery options are always available
+- System degrades gracefully (proceed without optional features)
+- Errors are logged for debugging (but hidden from user)
+
+Acceptance Criteria:
+- Users understand what went wrong
+- Clear path to resolution for each error type
+- System doesn't crash or freeze on errors
+- Partial results saved even if generation fails mid-way
+
+================================================================================
+
+Feature 5: Mesa Group Branding and Visual Design
+Priority: HIGH
+Description: Professional, branded UI matching Mesa Group website aesthetic
+
+Brand Colors (from Mesa Group Website):
+- Primary: #f9c65d (Mesa Yellow) - Buttons, accents, active states
+- Secondary: #bb9446 (Mesa Gold) - Hover states, secondary accents
+- Cream: #f8d899 - Soft backgrounds
+- Tan: #e5D2af - Light backgrounds
+- Dark Gray: #3e3e3e - Text, headers
+- Medium Gray: #6b7280 - Body text
+- Light Gray: #f5f5f5 - Backgrounds
+
+Status Colors:
+- Success: #10b981 (Green) - Completed steps, checkmarks
+- Processing: #f9c65d (Mesa Yellow) - Active steps, progress bars
+- Pending: #9ca3af (Gray) - Not started steps
+- Warning: #f59e0b (Amber) - Quality warnings
+- Error: #ef4444 (Red) - Errors only
+
+Typography:
+- Font Family: Inter (same as Mesa Group website)
+- Headings: Bold, 600-700 weight
+- Body: Regular, 400 weight
+- Code/Technical: Mono, 400 weight, slightly smaller
+- Line height: 1.6 for readability
+
+Icon System (lucide-react ONLY):
+Replace ALL emojis with appropriate lucide-react icons:
+- 🍌 Banana logo → Zap (brand icon)
+- 🔍 Search → Search
+- 📊 Data → TrendingUp
+- 🧠 Brain → Brain or Lightbulb
+- 🎬 Video → Video
+- 📝 Document → FileText
+- 🔖 Tag → Tag
+- ✓ Check → CheckCircle
+- ⏳ Loading → Loader (animated spin)
+- ✗ Error → XCircle
+- ⚠ Warning → AlertTriangle
+- 📥 Download → Download
+- 🌐 Web → Globe
+- 📁 Folder → FolderOpen
+- ↻ Repeat → RotateCw
+- 🖼️ Image → Image
+- 📈 Chart → TrendingUp
+- 💾 Save → Save
+- ⏸ Pause → Pause
+- ▼ Expand → ChevronDown
+- ▲ Collapse → ChevronUp
+
+Layout Principles:
+- Clean, spacious design (not cramped)
+- Card-based layout with shadows
+- Consistent padding (16px, 24px, 32px scale)
+- Clear visual hierarchy (large → medium → small)
+- White space for readability
+- Rounded corners (8px, 12px for cards)
+
+Component Styling:
+- Cards: White background, subtle shadow, rounded-lg
+- Buttons: Mesa Yellow, rounded-lg, shadow on hover
+- Input: White background, gray border, focus → yellow border
+- Progress bars: Gray background, yellow fill, animated
+- Badges: Colored backgrounds with icons
+- Links: Mesa Gold, underline on hover
+
+Requirements:
+- All colors from Mesa Group brand palette
+- Inter font loaded and applied globally
+- Icons only from lucide-react library (zero emojis)
+- Consistent spacing using Tailwind scale
+- Responsive design (desktop 1024px+, tablet 768-1024px)
+- Dark mode NOT required (light theme only)
+
+Acceptance Criteria:
+- Visual design matches Mesa Group website aesthetic
+- No emojis anywhere in UI (icons only)
+- Colors are consistent and brand-appropriate
+- Typography is readable and professional
+- Layout is clean and spacious
+- Works on Chrome, Safari, Firefox, Edge
+
+================================================================================
+
+Feature 6: Cursor-Style Collapsible Progress Steps
+Priority: HIGH
+Description: Progressive disclosure of detailed processing steps with educational messaging
+
+Step Display States:
+
+State 1: Pending (Not Started)
+```
+⏸ Step 3: Multi-Source Research        [Gray, collapsed]
+   └─ Waiting for keywords...
+```
+Icons: Pause (lucide-react), Gray color
+
+State 2: Processing (Active - Expanded)
+```
+⏳ Step 3: Multi-Source Research        [Yellow glow, expanded]
+   ├─ Perplexity AI research...         [Loader icon, spinning]
+   ├─ ✓ Found 10 authoritative sources  [CheckCircle icon, green]
+   │    └─ CFPB, FTC, Experian...
+   ├─ Searching YouTube videos...       [Video icon, yellow]
+   ├─ ✓ Top 5 videos found              [CheckCircle icon, green]
+   └─ Extracting transcripts...         [Loader icon, spinning]
+```
+Icons: Loader (spinning), CheckCircle, various step-specific icons
+Colors: Mesa Yellow for active, Green for completed sub-items
+
+State 3: Complete (Expanded - First 3 Seconds)
+```
+✅ Step 3: Multi-Source Research        [Green checkmark]
+   ├─ ✓ Perplexity research: 10 sources
+   ├─ ✓ YouTube videos: 5 found
+   ├─ ✓ Transcripts: 3 extracted (12,450 words)
+   └─ ✓ Citations: 13 authoritative sources
+     Duration: 1m 42s | Sources: 13 total
+```
+Icons: CheckCircle (green), all items shown
+Shows for 3 seconds before collapsing
+
+State 4: Complete (Collapsed - After 3 Seconds)
+```
+✅ Step 3: Multi-Source Research
+   └─→ 13 sources • 3 transcripts • 12,450 words
+   [Expand ▼]                            [ChevronDown icon]
+```
+Icons: CheckCircle (green), ChevronDown
+User can click to re-expand
+
+Collapsible Logic:
+- On step_complete event, wait 3 seconds
+- Animate collapse (height transition 300ms)
+- Rotate arrow icon 180deg
+- Show summary line only
+- User click toggles expand/collapse
+- Multiple steps can be expanded simultaneously
+
+Educational Details (What User Sees When Expanded):
+
+Step 1: Input Processing
+- Input type detected (YouTube, ATP, Topic, Competitor)
+- Keywords extracted from input
+- Recommended schema type
+- Content angle determined
+
+Step 2: Keyword Research
+- Primary keyword metrics (volume, competition)
+- Related keywords count and top 3 examples
+- Trend analysis (growing/declining/stable with %)
+- Rising queries count
+- H2 header suggestions count
+- NO COST MENTIONS (remove from client UI)
+
+Step 3: Multi-Source Research
+- Perplexity sources count and top authorities
+- YouTube videos count and top performer metrics
+- Transcripts extracted count and total word count
+- Citations count (breakdown: government, bureaus, media)
+
+Step 4: Content Generation
+- Blog post word count
+- Direct answer present (yes/no)
+- Headers, lists, citations count
+- YouTube script word count and duration
+- Metadata generated (title, tags count)
+- Image prompts count
+
+Step 5: Schema Markup
+- Schema type selected
+- Steps/Q&A/content extracted count
+- Validation status
+
+Step 6: Quality Validation
+- Overall quality score (0-100)
+- Blog score, Script score, Schema score breakdown
+- Checks passed / checks total
+- Warnings count (if any)
+
+Step 7: Saving Files
+- Files saved count (8 files)
+- Output folder path
+- WordPress status (draft created or skipped)
+
+Requirements:
+- WebSocket events trigger UI updates immediately
+- Smooth animations (no jank)
+- Auto-collapse timer resets if user manually expands
+- Expand/collapse state persists if user switches tabs/windows
+- All icons from lucide-react
+- Educational but not overwhelming
+
+Acceptance Criteria:
+- Progress updates appear in real-time (< 500ms latency)
+- Auto-collapse works consistently (3 seconds after completion)
+- Manual expand/collapse works on all steps
+- Animations are smooth (60fps)
+- Text is educational and showcases system sophistication
+- User understands what's happening at each step
+
+================================================================================
+
+Feature 7: Download All Assets with ZIP Creation
+Priority: HIGH
+Description: Single-click download of complete content package as ZIP file
+
+Download All Button Design:
+```
+┌────────────────────────────────────────────┐
+│  [Download icon] Download All Assets       │  ← Mesa Yellow background
+│  Complete content package                  │     Dark gray text
+│  8 files • Blog, Script, Images, SEO      │     White border, shadow
+│                                             │     Hover: Mesa Gold
+└────────────────────────────────────────────┘
+```
+
+Button Specifications:
+- Icon: Download from lucide-react (left aligned)
+- Size: Large (px-8 py-4)
+- Colors: bg-[#f9c65d] hover:bg-[#bb9446]
+- Text: Bold, dark gray (#3e3e3e)
+- Border: 2px white
+- Shadow: lg on normal, xl on hover
+- Full width on mobile, auto width on desktop
+- Positioned prominently above individual downloads
+
+ZIP File Contents (Client-Side Creation):
+Using jszip library to create ZIP in browser:
+1. blog-post.html
+2. youtube-script.txt
+3. youtube-metadata.json
+4. schema-markup.json
+5. image-prompts.txt
+6. seo-report.json
+7. research-sources.json
+8. metadata.json
+
+ZIP Filename Format:
+mgc-content-[slug]-[YYYYMMDD-HHMMSS].zip
+
+Example: mgc-content-how-to-fix-bad-credit-20260211-183045.zip
+
+ZIP Structure (Internal):
+```
+mgc-content-how-to-fix-bad-credit/
+├── blog-post.html
+├── youtube-script.txt
+├── youtube-metadata.json
+├── schema-markup.json
+├── image-prompts.txt
+├── seo-report.json
+├── research-sources.json
+├── metadata.json
+└── README.txt                    (Usage instructions)
+```
+
+README.txt Contents:
+```
+MGC Content Generator - Content Package
+Generated: February 11, 2026 6:30 PM
+
+Topic: How to Fix Bad Credit
+Input Type: ATP Question
+Quality Score: 94/100
+
+Files Included:
+1. blog-post.html - WordPress-ready blog post (1,847 words)
+2. youtube-script.txt - Teleprompter-ready script (9.2 minutes)
+3. youtube-metadata.json - Title, description, tags for YouTube upload
+4. schema-markup.json - Schema.org JSON-LD for SEO
+5. image-prompts.txt - 3 prompts for Nano Banana image generator
+6. seo-report.json - Keyword metrics and recommendations
+7. research-sources.json - Citations and authoritative sources
+8. metadata.json - Generation details and settings
+
+Next Steps:
+1. Use image-prompts.txt with Nano Banana to generate images
+2. Copy youtube-script.txt to your teleprompter app
+3. Upload blog-post.html to WordPress (or review existing draft)
+4. Upload generated images to WordPress media library
+5. Use youtube-metadata.json when uploading video to YouTube
+
+Questions? Contact Catalyst Digital Solutions
+```
+
+Individual Download Buttons Layout:
+```
+Grid layout (2 columns on desktop, 1 on mobile):
+
+[📝 Blog Post]      [🎬 YouTube Script]
+[📊 Metadata]       [🖼️ Image Prompts]  
+[🔖 Schema]         [📈 SEO Report]
+[📚 Sources]        [ℹ️ Metadata]
+```
+
+Each button:
+- Icon: Appropriate lucide-react icon
+- Label: Clear file type
+- File size shown (e.g., "12.4 KB")
+- Hover: Mesa Gold background
+- Click: Immediate download
+
+Requirements:
+- jszip library integrated
+- ZIP creation is fast (< 2 seconds for 8 files)
+- All files include UTF-8 encoding
+- Filenames are safe (no special characters)
+- Downloads work on all major browsers
+- Mobile layout stacks buttons vertically
+
+Acceptance Criteria:
+- Download All button is prominent and obvious
+- ZIP file contains all 8 files correctly
+- Individual downloads work for all file types
+- Filenames are descriptive and organized
+- README.txt provides clear usage instructions
+- Download doesn't cause page reload or navigation
+- Works on Chrome, Safari, Firefox, Edge
+
+================================================================================
+
+Feature 8: Responsive Layout and Mobile Optimization
+Priority: MEDIUM
+Description: Responsive design that works on desktop, tablet, and mobile
+
+Breakpoints:
+- Desktop: 1024px and above
+- Tablet: 768px - 1023px
+- Mobile: Below 768px (optional for MVP)
+
+Desktop Layout (1024px+):
+- Full-width container (max-width: 1200px, centered)
+- Input form: 70% width, centered
+- Progress steps: Full width with 2-column sub-items where applicable
+- Download buttons: 2-column grid
+- Generous padding and whitespace
+
+Tablet Layout (768-1023px):
+- Full-width container (max-width: 768px)
+- Input form: 90% width
+- Progress steps: Full width, single column sub-items
+- Download buttons: 2-column grid
+- Reduced padding
+
+Mobile Layout (< 768px) - Optional for MVP:
+- Full-width container
+- Input form: 95% width
+- Progress steps: Condensed, less detail in expanded view
+- Download buttons: Single column (stacked)
+- Minimal padding
+- Larger touch targets (48px minimum)
+
+Requirements:
+- Tailwind responsive classes (sm:, md:, lg:)
+- Touch-friendly on tablet (button sizes 44px+)
+- No horizontal scrolling on any viewport
+- Readable text sizes on all devices
+- Progress steps don't overflow on narrow screens
+
+Acceptance Criteria:
+- Works perfectly on desktop (1024px+)
+- Works well on tablet (768-1023px)
+- Mobile is usable (optional - can be "coming soon")
+- No broken layouts at any viewport size
+- Touch targets are adequate for tablet users
+
+================================================================================
+
+ARCHITECTURE AND DESIGN
+================================================================================
+
+Frontend Architecture:
+
+Component Structure:
+```
+src/
+├── App.tsx                          # Main app component, route management
+├── components/
+│   ├── InputForm.tsx                # Input field with auto-detection
+│   ├── ProgressDisplay.tsx          # Cursor-style collapsible progress
+│   ├── ProgressStep.tsx             # Individual step component
+│   ├── OutputDisplay.tsx            # Results and downloads
+│   ├── DownloadButton.tsx           # Reusable download button
+│   ├── ErrorDisplay.tsx             # Error states
+│   └── Header.tsx                   # Mesa Group branded header
+├── services/
+│   ├── websocketService.ts          # WebSocket connection management
+│   ├── apiClient.ts                 # HTTP API calls
+│   ├── downloadService.ts           # File download and ZIP creation
+│   └── storageService.ts            # localStorage for state persistence
+├── types/
+│   ├── generation.ts                # Generation types
+│   ├── progress.ts                  # Progress event types
+│   └── content.ts                   # Content package types
+├── utils/
+│   ├── inputDetection.ts            # Auto-detect input type
+│   └── formatters.ts                # Data formatting helpers
+├── hooks/
+│   ├── useGeneration.ts             # Generation state management
+│   └── useWebSocket.ts              # WebSocket hook
+└── styles/
+    └── index.css                    # Global styles, Tailwind config
+```
+
+Backend Architecture (FastAPI + WebSocket):
+
+```
+server/
+├── main.py                          # FastAPI app, WebSocket endpoint
+├── generation_worker.py             # Subprocess caller for generate.py
+├── websocket_manager.py             # WebSocket connection management
+└── progress_emitter.py              # Emit progress events
+```
+
+WebSocket Flow:
+```
+Client                  Server                  Python CLI
+  │                       │                         │
+  │──── Connect ─────────▶│                         │
+  │                       │                         │
+  │──── POST /generate ──▶│                         │
+  │                       │──── subprocess ────────▶│
+  │                       │       generate.py       │
+  │                       │                         │
+  │◀──── step_start ─────│◀──── stdout ────────────│
+  │◀──── step_progress ──│◀──── stdout ────────────│
+  │◀──── step_complete ──│◀──── stdout ────────────│
+  │                       │                         │
+  │◀──── final_complete ─│◀──── exit 0 ────────────│
+  │                       │                         │
+  │──── GET /output ─────▶│                         │
+  │◀──── files ──────────│                         │
+  │                       │                         │
+  │──── Disconnect ──────▶│                         │
+```
+
+State Management:
+- React useState for UI state
+- Custom hook useGeneration for generation workflow
+- Custom hook useWebSocket for connection management
+- localStorage for persistence (input, progress, last generation)
+
+Data Flow:
+1. User enters input → InputForm
+2. Click Generate → API POST /generate
+3. WebSocket connects automatically
+4. Progress events → ProgressDisplay updates
+5. Generation complete → OutputDisplay shows
+6. Downloads → downloadService handles files
+
+File Download Strategy:
+- Individual files: Fetch from /api/output/[filename] endpoint
+- ZIP creation: Client-side using jszip (no server round-trip)
+- Files cached in browser after first download
+- Download triggers browser-native save dialog
+
+================================================================================
+
+WEBSOCKET IMPLEMENTATION DETAILS
+================================================================================
+
+WebSocket Events:
+
+1. connection_established
+```json
+{
+  "type": "connection_established",
+  "session_id": "uuid",
+  "timestamp": "ISO 8601"
+}
+```
+
+2. generation_started
+```json
+{
+  "type": "generation_started",
+  "input": "user input text",
+  "input_type": "atp_question",
+  "session_id": "uuid"
+}
+```
+
+3. step_start
+```json
+{
+  "type": "step_start",
+  "step_id": 2,
+  "step_name": "Keyword Research & SEO Analysis",
+  "icon": "Search",
+  "total_steps": 7
+}
+```
+
+4. step_progress (Sub-item Update)
+```json
+{
+  "type": "step_progress",
+  "step_id": 2,
+  "item_text": "Primary keyword identified",
+  "item_status": "complete",
+  "icon": "CheckCircle",
+  "details": {
+    "keyword": "how to fix bad credit",
+    "search_volume": 5400,
+    "competition": "medium"
+  }
+}
+```
+
+5. step_complete
+```json
+{
+  "type": "step_complete",
+  "step_id": 2,
+  "summary": "23 keywords • 5,400/month • Growing +18%",
+  "duration": 18.4,
+  "metadata": {
+    "keywords_found": 23,
+    "search_volume": 5400,
+    "trend": "growing"
+  }
+}
+```
+
+6. generation_complete
+```json
+{
+  "type": "generation_complete",
+  "success": true,
+  "output_folder": "output/20260211-how-to-fix-bad-credit",
+  "files": [
+    {"name": "blog-post.html", "size": 12450},
+    {"name": "youtube-script.txt", "size": 8890},
+    ...
+  ],
+  "quality_score": 94,
+  "total_duration": 278.5,
+  "wordpress_post_id": 247
+}
+```
+
+7. error
+```json
+{
+  "type": "error",
+  "step_id": 2,
+  "error_message": "DataForSEO API key invalid",
+  "error_type": "auth_error",
+  "recovery_options": ["skip", "retry", "configure"]
+}
+```
+
+Backend Progress Emission:
+- Parse generate.py stdout in real-time
+- Map console output to WebSocket events
+- Emit events as Python CLI prints progress
+- Buffer events if WebSocket temporarily disconnected
+- Close connection gracefully on completion/error
+
+Frontend WebSocket Handling:
+- useWebSocket custom hook
+- Auto-reconnect on disconnect (max 3 attempts)
+- Fall back to polling if WebSocket fails
+- Update progress state on each event
+- Trigger auto-collapse timers on step_complete
+- Handle connection errors gracefully
+
+Requirements:
+- Socket.io for WebSocket (client and server)
+- Event-driven architecture
+- Progress state synchronized with backend
+- Connection resilience (auto-reconnect)
+- Graceful degradation (fallback to polling)
+
+Acceptance Criteria:
+- Real-time updates appear < 500ms latency
+- Connection remains stable during 5-10 min generation
+- Auto-reconnect works if connection drops
+- All event types handled correctly
+- No memory leaks from event listeners
+
+================================================================================
+
+INTEGRATION WITH EXISTING SYSTEMS
+================================================================================
+
+Integration 1: Reuse Nano Banana Frontend Structure
+Files to Copy Directly:
+- vite.config.ts (Vite configuration)
+- tailwind.config.js (Mesa Group theme already configured!)
+- postcss.config.js (PostCSS setup)
+- tsconfig.json (TypeScript config)
+- package.json (adapt dependencies)
+- src/index.css (global styles with Mesa colors)
+- public/CDS Logo 150w.png (Catalyst Digital Solutions logo)
+
+Files to Adapt:
+- src/App.tsx - Change from image queue to content generation
+- src/components/ProgressTracker.tsx → ProgressDisplay.tsx
+  * Adapt for collapsible steps instead of image queue
+  * Add WebSocket integration instead of polling
+- src/services/apiClient.ts - Call /generate endpoint
+
+Files to Create New:
+- src/components/InputForm.tsx (simple text input)
+- src/components/OutputDisplay.tsx (results and downloads)
+- src/services/websocketService.ts (WebSocket client)
+- src/services/downloadService.ts (ZIP creation)
+
+Estimated Code Reuse: ~60% from Nano Banana
+
+Integration 2: Backend Connection
+- FastAPI server wraps existing generate.py
+- WebSocket server emits progress from CLI stdout
+- Static file serving for downloads
+- CORS configured for local development
+
+Integration 3: Python CLI
+- No changes to existing CLI needed
+- Backend calls: subprocess.run(["python", "generate.py", input])
+- Parses stdout for progress updates
+- Reads output files after completion
+
+================================================================================
+
+TESTING REQUIREMENTS
+================================================================================
+
+Unit Tests:
+- Test input detection utility (YouTube, ATP, topic, URL)
+- Test WebSocket connection and reconnection logic
+- Test ZIP file creation with sample files
+- Test progress state management
+- Test auto-collapse timer logic
+
+Integration Tests:
+- Test full generation flow (input → progress → output)
+- Test WebSocket event handling for all event types
+- Test download functionality (individual and ZIP)
+- Test error recovery (API failures, disconnections)
+
+Manual Testing:
+- Generate content with all 4 input types
+- Verify progress updates appear in real-time
+- Test auto-collapse timing (exactly 3 seconds)
+- Verify manual expand/collapse works
+- Test Download All creates valid ZIP
+- Test individual downloads work correctly
+- Verify WordPress link works if draft created
+
+Browser Testing:
+- Chrome (primary)
+- Safari (MacOS)
+- Firefox
+- Edge (optional)
+
+Viewport Testing:
+- Desktop 1920x1080
+- Desktop 1366x768
+- Tablet 768x1024
+- Mobile 375x667 (optional)
+
+Performance Testing:
+- Page load time < 2 seconds
+- WebSocket connection < 500ms
+- Progress updates latency < 500ms
+- ZIP creation < 2 seconds
+- No memory leaks during generation
+- Smooth 60fps animations
+
+================================================================================
+
+ACCEPTANCE CRITERIA - FRONTEND MVP
+================================================================================
+
+The frontend MVP is complete when:
+
+1. ✅ Single-page web app loads quickly (<2 seconds)
+2. ✅ Input field accepts any text and auto-detects type accurately (95%+)
+3. ✅ "Generate Content" button is prominent and obviously clickable
+4. ✅ WebSocket connection establishes and remains stable during generation
+5. ✅ All 7 progress steps display with real-time updates
+6. ✅ Steps auto-expand when processing starts
+7. ✅ Steps show detailed sub-items as they complete
+8. ✅ Steps auto-collapse 3 seconds after completion
+9. ✅ User can manually expand/collapse any step
+10. ✅ Icons are from lucide-react (zero emojis)
+11. ✅ Mesa Group brand colors used throughout
+12. ✅ Quality score displayed prominently
+13. ✅ "Download All Assets" button creates valid ZIP
+14. ✅ Individual download buttons work for all 8 files
+15. ✅ WordPress status shown if draft created
+16. ✅ "Next Steps" guidance is clear
+17. ✅ "Generate Another" resets app correctly
+18. ✅ Error states are user-friendly with recovery options
+19. ✅ Works on desktop and tablet viewports
+20. ✅ NO cost mentions anywhere in client UI
+
+Final Acceptance:
+- Evert can generate content without technical knowledge
+- Progress display is educational and impressive
+- All outputs are immediately usable
+- System feels professional and valuable
+- Evert understands the sophistication of the system
+- No questions about effectiveness or diligence
+
+================================================================================
+
+SECURITY AND CONFIGURATION
+================================================================================
+
+Environment Variables (Frontend):
+- VITE_API_URL - Backend API URL (default: http://localhost:8000)
+- VITE_WS_URL - WebSocket URL (default: ws://localhost:8000)
+
+Security Considerations:
+- No API keys in frontend code (all in backend)
+- CORS properly configured
+- WebSocket connections authenticated (session tokens)
+- Input sanitization before sending to backend
+- XSS protection (no dangerouslySetInnerHTML)
+
+Configuration:
+- Development: localhost:5173 (Vite), localhost:8000 (FastAPI)
+- Production: Deploy frontend to Vercel/Netlify, backend to AWS/Railway
+
+================================================================================
+
+DEPLOYMENT
+================================================================================
+
+Development:
+```bash
+# Frontend
+cd frontend
+npm run dev          # Port 5173
+
+# Backend
+cd backend
+uvicorn server.main:app --reload  # Port 8000
+```
+
+Production:
+- Frontend: Vercel or Netlify (static hosting)
+- Backend: AWS EC2, Railway, or similar (needs long-running process)
+- WebSocket: Ensure server supports WebSocket connections
+- Domain: content-generator.mesagroupconsulting.com (or subdomain)
+
+================================================================================
+
+TIMELINE AND PHASES
+================================================================================
+
+Phase 1: Core UI (Day 1 - 4 hours)
+- Copy Nano Banana structure
+- Build InputForm component
+- Build ProgressDisplay with WebSocket
+- Build OutputDisplay with downloads
+- Basic styling with Mesa colors
+
+Deliverables: Working web UI with all features
+
+Phase 2: Polish (Day 1 - 2 hours)
+- Refine animations
+- Add tooltips/help text
+- Improve error messages
+- Test on multiple browsers
+- Fix any bugs
+
+Deliverables: Production-ready frontend
+
+Phase 3: Integration Testing (Day 2 - 2 hours)
+- Test with real API keys
+- Generate 5 pieces of content
+- Verify all downloads work
+- Test WordPress integration
+- Verify Nano Banana compatibility
+
+Deliverables: Validated, tested system
+
+Phase 4: Documentation (Day 2 - 1 hour)
+- User guide for Evert
+- Technical documentation
+- Deployment instructions
+
+Deliverables: Complete documentation
+
+Total Estimate: 9 hours over 2 days
+
+================================================================================
+
+CODE REUSE FROM NANO BANANA
+================================================================================
+
+Direct Copy (No Changes):
+- vite.config.ts
+- tailwind.config.js (Mesa theme already configured!)
+- postcss.config.js
+- tsconfig.json
+- src/index.css
+- public/CDS Logo 150w.png
+
+Adapt (Minor Changes):
+- package.json - Add socket.io-client, jszip, file-saver
+- src/App.tsx - Change from image queue to content generation
+- src/services/apiClient.ts - Call /generate instead of /parse
+
+Create New:
+- src/components/InputForm.tsx (~100 lines)
+- src/components/ProgressDisplay.tsx (~200 lines)
+- src/components/OutputDisplay.tsx (~150 lines)
+- src/services/websocketService.ts (~100 lines)
+- src/services/downloadService.ts (~80 lines)
+- server/main.py (~150 lines FastAPI + WebSocket)
+
+Total New Code: ~780 lines
+Reused Code: ~400 lines from Nano Banana
+Reuse Ratio: ~34% reused
+
+================================================================================
+
+DEPENDENCIES
+================================================================================
+
+Frontend Dependencies (package.json):
+```json
+{
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "lucide-react": "^0.454.0",
+    "socket.io-client": "^4.7.2",
+    "axios": "^1.6.0",
+    "jszip": "^3.10.1",
+    "file-saver": "^2.0.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react-swc": "^3.7.2",
+    "vite": "^5.4.19",
+    "tailwindcss": "^3.4.17",
+    "postcss": "^8.4.49",
+    "autoprefixer": "^10.4.20"
+  }
+}
+```
+
+Backend Dependencies (requirements.txt):
+```
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-socketio>=5.11.0
+aiofiles>=23.2.1
+```
+
+================================================================================
+
+KEY DECISIONS AND RATIONALE
+================================================================================
+
+Decision 1: WebSocket over Polling
+Rationale: Real-time updates feel more premium, better UX, showcases sophistication
+
+Decision 2: Lucide-React Icons (No Emojis)
+Rationale: Professional appearance, consistent sizing, better customization
+
+Decision 3: No Cost Mentions in UI
+Rationale: Billing model undecided, don't want to set client expectations
+
+Decision 4: Client-Side ZIP Creation
+Rationale: Faster, no server load, works offline after generation
+
+Decision 5: Auto-Collapse After 3 Seconds
+Rationale: Shows detail (educational) then cleans up (not overwhelming)
+
+Decision 6: Reuse Nano Banana Structure
+Rationale: Proven code, Mesa branding already configured, faster development
+
+Decision 7: Desktop/Tablet Only for MVP
+Rationale: Evert uses desktop, mobile is rare use case, save time
+
+================================================================================
+
+END OF PRD
+================================================================================
+
+This PRD defines the complete scope for the MGC Content Generator web frontend with real-time WebSocket progress, Cursor-style collapsible steps, Mesa Group branding, and comprehensive download functionality. The system will transform the working Python CLI into a premium web experience that educates users while delivering professional results.

@@ -1,3 +1,8 @@
 {
-  "migrationNoticeShown": true
+  "migrationNoticeShown": true,
+  "branchTagMapping": {
+    "feature/content-generator": "feature-content-generator"
+  },
+  "currentTag": "feature-content-generator",
+  "lastSwitched": "2026-02-12T00:52:39.159Z"
 }

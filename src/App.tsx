@@ -37,6 +37,14 @@ import CreditUtilizationBlogPost from "./pages/blog/CreditUtilizationBlogPost";
 import WFBNABlogPost from "./pages/blog/WFBNABlogPost";
 import DebtReliefVsConsolidationBlogPost from "./pages/blog/DebtReliefVsConsolidationBlogPost";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CaliforniaPrivacyPolicy from "./pages/CaliforniaPrivacyPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
+import TCPAConsentPolicy from "./pages/TCPAConsentPolicy";
+import Disclaimer from "./pages/Disclaimer";
+import DoNotSellMyPersonalInformation from "./pages/DoNotSellMyPersonalInformation";
+import AffiliateDisclosure from "./pages/AffiliateDisclosure";
+import AccessibilityStatement from "./pages/AccessibilityStatement";
 
 const queryClient = new QueryClient();
 
@@ -78,6 +86,14 @@ const App = () => (
           <Route path="/business-debt-relief" element={<BusinessDebtRelief />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/california-privacy-policy" element={<CaliforniaPrivacyPolicy />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
+          <Route path="/tcpa-consent-policy" element={<TCPAConsentPolicy />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/do-not-sell-my-personal-information" element={<DoNotSellMyPersonalInformation />} />
+          <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
+          <Route path="/accessibility-statement" element={<AccessibilityStatement />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </BrowserRouter>
