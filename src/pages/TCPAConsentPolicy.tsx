@@ -40,7 +40,7 @@ const TCPAConsentPolicy = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              TCPA Consent <span className="text-amber-600">Policy</span>
+              TCPA Consent <span className="text-[#f9c65d]">Policy</span>
             </h1>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-gray-600">
@@ -66,7 +66,7 @@ const TCPAConsentPolicy = () => {
       <section className="py-12 bg-gray-50 border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Table of <span className="text-amber-600">Contents</span>
+            Table of <span className="text-[#f9c65d]">Contents</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-3">
             {[
@@ -106,7 +106,7 @@ const TCPAConsentPolicy = () => {
             <div id="section-1" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">1</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">1</span>
                 </div>
                 WHAT IS THE TCPA?
               </h2>
@@ -145,7 +145,7 @@ const TCPAConsentPolicy = () => {
             <div id="section-2" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">2</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">2</span>
                 </div>
                 YOUR CONSENT TO CONTACT
               </h2>
@@ -190,7 +190,7 @@ const TCPAConsentPolicy = () => {
             <div id="section-3" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">3</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">3</span>
                 </div>
                 TYPES OF COMMUNICATIONS
               </h2>
@@ -234,7 +234,7 @@ const TCPAConsentPolicy = () => {
             <div id="section-4" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">4</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">4</span>
                 </div>
                 SMS/TEXT MESSAGING
               </h2>
@@ -324,7 +324,7 @@ const TCPAConsentPolicy = () => {
             <div id="section-5" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">5</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">5</span>
                 </div>
                 PHONE CALLS
               </h2>
@@ -383,7 +383,7 @@ const TCPAConsentPolicy = () => {
             <div id="section-6" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">6</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">6</span>
                 </div>
                 EMAIL COMMUNICATIONS
               </h2>
@@ -443,7 +443,7 @@ const TCPAConsentPolicy = () => {
             <div id="section-7" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">7</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">7</span>
                 </div>
                 OPT-OUT RIGHTS
               </h2>
@@ -512,7 +512,7 @@ const TCPAConsentPolicy = () => {
             <div id="section-8" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">8</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">8</span>
                 </div>
                 DO NOT CALL REGISTRY
               </h2>
@@ -545,7 +545,7 @@ const TCPAConsentPolicy = () => {
             <div id="section-9" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">9</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">9</span>
                 </div>
                 CONSENT REQUIREMENTS
               </h2>
@@ -583,7 +583,7 @@ const TCPAConsentPolicy = () => {
             <div id="section-10" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">10</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">10</span>
                 </div>
                 CONTACT INFORMATION
               </h2>
@@ -639,7 +639,7 @@ const TCPAConsentPolicy = () => {
             <div id="section-11" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">11</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">11</span>
                 </div>
                 CHANGES TO THIS TCPA CONSENT POLICY
               </h2>
@@ -670,7 +670,7 @@ const TCPAConsentPolicy = () => {
             <div id="section-12" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">12</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">12</span>
                 </div>
                 ACKNOWLEDGMENT
               </h2>

@@ -52,7 +52,7 @@ const AccessibilityStatement = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Accessibility <span className="text-amber-600">Statement</span>
+              Accessibility <span className="text-[#f9c65d]">Statement</span>
             </h1>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-gray-600">
@@ -78,7 +78,7 @@ const AccessibilityStatement = () => {
       <section className="py-12 bg-gray-50 border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Table of <span className="text-amber-600">Contents</span>
+            Table of <span className="text-[#f9c65d]">Contents</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-3">
             {[
@@ -127,7 +127,7 @@ const AccessibilityStatement = () => {
           <div id="section-1" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">1</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">1</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">ACCESSIBILITY FEATURES</h2>
             </div>
@@ -244,7 +244,7 @@ const AccessibilityStatement = () => {
           <div id="section-2" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">2</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">2</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">STANDARDS AND GUIDELINES</h2>
             </div>
@@ -302,7 +302,7 @@ const AccessibilityStatement = () => {
           <div id="section-3" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">3</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">3</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">ONGOING EFFORTS</h2>
             </div>
@@ -389,7 +389,7 @@ const AccessibilityStatement = () => {
           <div id="section-4" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">4</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">4</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">KNOWN LIMITATIONS</h2>
             </div>
@@ -461,7 +461,7 @@ const AccessibilityStatement = () => {
           <div id="section-5" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">5</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">5</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">ASSISTIVE TECHNOLOGIES</h2>
             </div>
@@ -476,11 +476,11 @@ const AccessibilityStatement = () => {
               </h3>
               <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg">
                 <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span><strong>JAWS (Job Access With Speech):</strong> Windows screen reader</span></li>
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span><strong>NVDA (NonVisual Desktop Access):</strong> Free, open-source Windows screen reader</span></li>
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span><strong>VoiceOver:</strong> Built-in macOS and iOS screen reader</span></li>
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span><strong>TalkBack:</strong> Built-in Android screen reader</span></li>
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span><strong>ChromeVox:</strong> Chrome browser extension for screen reading</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span><strong>JAWS (Job Access With Speech):</strong> Windows screen reader</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span><strong>NVDA (NonVisual Desktop Access):</strong> Free, open-source Windows screen reader</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span><strong>VoiceOver:</strong> Built-in macOS and iOS screen reader</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span><strong>TalkBack:</strong> Built-in Android screen reader</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span><strong>ChromeVox:</strong> Chrome browser extension for screen reading</span></li>
                 </ul>
               </div>
             </div>
@@ -493,10 +493,10 @@ const AccessibilityStatement = () => {
               </h3>
               <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg">
                 <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span><strong>Text Zoom:</strong> Increase or decrease text size (Ctrl/Cmd + Plus/Minus)</span></li>
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span><strong>High Contrast Mode:</strong> Enable high contrast themes in browser settings</span></li>
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span><strong>Dark Mode:</strong> Enable dark mode in browser or operating system settings</span></li>
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span><strong>Read Aloud:</strong> Use browser read-aloud features (Edge, Safari, Chrome extensions)</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span><strong>Text Zoom:</strong> Increase or decrease text size (Ctrl/Cmd + Plus/Minus)</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span><strong>High Contrast Mode:</strong> Enable high contrast themes in browser settings</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span><strong>Dark Mode:</strong> Enable dark mode in browser or operating system settings</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span><strong>Read Aloud:</strong> Use browser read-aloud features (Edge, Safari, Chrome extensions)</span></li>
                 </ul>
               </div>
             </div>
@@ -509,9 +509,9 @@ const AccessibilityStatement = () => {
               </h3>
               <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg">
                 <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span><strong>Dragon NaturallySpeaking:</strong> Voice-to-text and voice commands</span></li>
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span><strong>Windows Speech Recognition:</strong> Built-in Windows speech recognition</span></li>
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span><strong>macOS Dictation:</strong> Built-in macOS speech recognition</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span><strong>Dragon NaturallySpeaking:</strong> Voice-to-text and voice commands</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span><strong>Windows Speech Recognition:</strong> Built-in Windows speech recognition</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span><strong>macOS Dictation:</strong> Built-in macOS speech recognition</span></li>
                 </ul>
               </div>
             </div>
@@ -535,8 +535,8 @@ const AccessibilityStatement = () => {
               </h3>
               <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg">
                 <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span>Full keyboard navigation support (Tab, Shift+Tab, Enter, Spacebar, Arrow keys)</span></li>
-                  <li className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span>No mouse or trackpad required for website interaction</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span>Full keyboard navigation support (Tab, Shift+Tab, Enter, Spacebar, Arrow keys)</span></li>
+                  <li className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span>No mouse or trackpad required for website interaction</span></li>
                 </ul>
               </div>
             </div>
@@ -546,7 +546,7 @@ const AccessibilityStatement = () => {
           <div id="section-6" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">6</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">6</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">FEEDBACK AND ASSISTANCE</h2>
             </div>
@@ -606,7 +606,7 @@ const AccessibilityStatement = () => {
           <div id="section-7" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">7</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">7</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">CONTACT INFORMATION</h2>
             </div>
@@ -698,7 +698,7 @@ const AccessibilityStatement = () => {
               <p className="text-gray-700 leading-relaxed mb-4">Mesa Group Consulting reserves the right to update this Accessibility Statement at any time to reflect changes in our accessibility practices, standards, or technologies. When we make changes, we will:</p>
               <ul className="space-y-2 text-gray-700">
                 {['Update the "Last Updated" date at the top of this page', 'Post the revised statement on our website', 'Notify users of significant changes via email (if applicable)'].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2"><span className="text-amber-600 font-bold flex-shrink-0">•</span><span>{item}</span></li>
+                  <li key={i} className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold flex-shrink-0">•</span><span>{item}</span></li>
                 ))}
               </ul>
             </div>

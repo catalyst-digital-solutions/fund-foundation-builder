@@ -31,7 +31,7 @@ const PrivacyPolicy = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Privacy <span className="text-amber-600">Policy</span>
+              Privacy <span className="text-[#f9c65d]">Policy</span>
             </h1>
 
             <p className="text-lg font-semibold text-gray-800">MESA & CO CONSULTING LLC DBA MESA GROUP CONSULTING</p>
@@ -55,7 +55,7 @@ const PrivacyPolicy = () => {
       <section className="py-12 bg-gray-50 border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Table of <span className="text-amber-600">Contents</span>
+            Table of <span className="text-[#f9c65d]">Contents</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-3">
             {[
@@ -97,7 +97,7 @@ const PrivacyPolicy = () => {
             <div id="section-1" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">1</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">1</span>
                 </div>
                 INTRODUCTION
               </h2>
@@ -156,7 +156,7 @@ const PrivacyPolicy = () => {
             <div id="section-2" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">2</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">2</span>
                 </div>
                 INFORMATION WE COLLECT
               </h2>
@@ -306,7 +306,7 @@ const PrivacyPolicy = () => {
             <div id="section-3" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">3</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">3</span>
                 </div>
                 HOW WE USE YOUR INFORMATION
               </h2>
@@ -420,7 +420,7 @@ const PrivacyPolicy = () => {
             <div id="section-4" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">4</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">4</span>
                 </div>
                 HOW WE SHARE YOUR INFORMATION
               </h2>
@@ -574,7 +574,7 @@ const PrivacyPolicy = () => {
             <div id="section-5" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">5</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">5</span>
                 </div>
                 COOKIES AND TRACKING TECHNOLOGIES
               </h2>
@@ -652,7 +652,7 @@ const PrivacyPolicy = () => {
             <div id="section-6" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">6</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">6</span>
                 </div>
                 EMAIL AND SMS MARKETING
               </h2>
@@ -723,7 +723,7 @@ const PrivacyPolicy = () => {
             <div id="section-7" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">7</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">7</span>
                 </div>
                 DATA SECURITY
               </h2>
@@ -766,7 +766,7 @@ const PrivacyPolicy = () => {
             <div id="section-8" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">8</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">8</span>
                 </div>
                 DATA RETENTION
               </h2>
@@ -806,7 +806,7 @@ const PrivacyPolicy = () => {
             <div id="section-9" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">9</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">9</span>
                 </div>
                 YOUR PRIVACY RIGHTS
               </h2>
@@ -867,7 +867,7 @@ const PrivacyPolicy = () => {
             <div id="section-10" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">10</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">10</span>
                 </div>
                 CHILDREN'S PRIVACY
               </h2>
@@ -881,7 +881,7 @@ const PrivacyPolicy = () => {
             <div id="section-11" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">11</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">11</span>
                 </div>
                 THIRD-PARTY LINKS
               </h2>
@@ -908,7 +908,7 @@ const PrivacyPolicy = () => {
             <div id="section-12" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">12</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">12</span>
                 </div>
                 INTERNATIONAL DATA TRANSFERS
               </h2>
@@ -923,7 +923,7 @@ const PrivacyPolicy = () => {
             <div id="section-13" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">13</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">13</span>
                 </div>
                 CHANGES TO THIS PRIVACY POLICY
               </h2>
@@ -950,7 +950,7 @@ const PrivacyPolicy = () => {
             <div id="section-14" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">14</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">14</span>
                 </div>
                 CONTACT US
               </h2>

@@ -45,7 +45,7 @@ const DoNotSellMyPersonalInformation = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Do Not Sell My <span className="text-amber-600">Personal Information</span>
+              Do Not Sell My <span className="text-[#f9c65d]">Personal Information</span>
             </h1>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-gray-600">
@@ -71,7 +71,7 @@ const DoNotSellMyPersonalInformation = () => {
       <section className="py-12 bg-gray-50 border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Table of <span className="text-amber-600">Contents</span>
+            Table of <span className="text-[#f9c65d]">Contents</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-3">
             {[
@@ -105,7 +105,7 @@ const DoNotSellMyPersonalInformation = () => {
             <div id="section-1" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">1</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">1</span>
                 </div>
                 WE DO NOT SELL YOUR PERSONAL INFORMATION
               </h2>
@@ -161,7 +161,7 @@ const DoNotSellMyPersonalInformation = () => {
             <div id="section-2" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">2</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">2</span>
                 </div>
                 WHAT DOES "SELL" MEAN UNDER CCPA?
               </h2>
@@ -208,7 +208,7 @@ const DoNotSellMyPersonalInformation = () => {
             <div id="section-3" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">3</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">3</span>
                 </div>
                 THIRD-PARTY COOKIES AND TRACKING
               </h2>
@@ -266,7 +266,7 @@ const DoNotSellMyPersonalInformation = () => {
             <div id="section-4" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">4</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">4</span>
                 </div>
                 HOW TO OPT OUT OF THIRD-PARTY TRACKING
               </h2>
@@ -381,7 +381,7 @@ const DoNotSellMyPersonalInformation = () => {
             <div id="section-5" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">5</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">5</span>
                 </div>
                 YOUR CCPA RIGHTS
               </h2>
@@ -418,7 +418,7 @@ const DoNotSellMyPersonalInformation = () => {
             <div id="section-6" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">6</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">6</span>
                 </div>
                 CONTACT INFORMATION
               </h2>

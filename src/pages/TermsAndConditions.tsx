@@ -27,7 +27,7 @@ const TermsAndConditions: React.FC = () => {
               <span className="text-sm font-medium text-gray-700">Legal Document</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Terms & <span className="text-amber-600">Conditions</span>
+              Terms & <span className="text-[#f9c65d]">Conditions</span>
             </h1>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-gray-600">
               <div className="flex items-center gap-2">
@@ -51,7 +51,7 @@ const TermsAndConditions: React.FC = () => {
       <section className="py-12 bg-gray-50 border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Table of <span className="text-amber-600">Contents</span>
+            Table of <span className="text-[#f9c65d]">Contents</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-3">
             {[
@@ -96,7 +96,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-1" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">1</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">1</span>
                 </div>
                 ACCEPTANCE OF TERMS
               </h2>
@@ -122,7 +122,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-2" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">2</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">2</span>
                 </div>
                 SERVICES PROVIDED
               </h2>
@@ -234,7 +234,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-3" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">3</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">3</span>
                 </div>
                 CREDIT REPAIR ORGANIZATIONS ACT (CROA) COMPLIANCE
               </h2>
@@ -282,7 +282,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-4" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">4</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">4</span>
                 </div>
                 MESA360 CREDIT REPAIR PROGRAM
               </h2>
@@ -343,7 +343,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-5" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">5</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">5</span>
                 </div>
                 90-DAY MONEY-BACK GUARANTEE
               </h2>
@@ -400,7 +400,7 @@ const TermsAndConditions: React.FC = () => {
 
                 <h3 className="text-xl font-bold text-gray-900">5.3 Why We Can Offer This Guarantee</h3>
                 <p>Because we're that confident in the Mesa360 Credit System™. Most clients see results in the first 30-45 days. We use advanced dispute methods, not cookie-cutter templates. Your dedicated account manager works on your file personally. Our reputation depends on your success.</p>
-                <p className="text-lg font-bold text-amber-600">This is The Mesa360 Guarantee: Real Results in 90 Days — or Your Money Back.</p>
+                <p className="text-lg font-bold text-[#f9c65d]">This is The Mesa360 Guarantee: Real Results in 90 Days — or Your Money Back.</p>
               </div>
             </div>
 
@@ -408,7 +408,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-6" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">6</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">6</span>
                 </div>
                 CLIENT RESPONSIBILITIES
               </h2>
@@ -453,7 +453,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-7" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">7</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">7</span>
                 </div>
                 FEES, PAYMENT, AND REFUNDS
               </h2>
@@ -517,7 +517,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-8" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">8</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">8</span>
                 </div>
                 RESULTS AND DISCLAIMERS
               </h2>
@@ -562,7 +562,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-9" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">9</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">9</span>
                 </div>
                 INTELLECTUAL PROPERTY RIGHTS
               </h2>
@@ -601,7 +601,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-10" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">10</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">10</span>
                 </div>
                 USER CONTENT AND SUBMISSIONS
               </h2>
@@ -628,7 +628,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-11" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">11</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">11</span>
                 </div>
                 PRIVACY AND DATA PROTECTION
               </h2>
@@ -654,7 +654,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-12" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">12</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">12</span>
                 </div>
                 LIMITATION OF LIABILITY
               </h2>
@@ -687,7 +687,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-13" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">13</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">13</span>
                 </div>
                 INDEMNIFICATION
               </h2>
@@ -708,7 +708,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-14" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">14</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">14</span>
                 </div>
                 DISPUTE RESOLUTION AND ARBITRATION
               </h2>
@@ -754,7 +754,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-15" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">15</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">15</span>
                 </div>
                 TERMINATION
               </h2>
@@ -785,7 +785,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-16" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">16</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">16</span>
                 </div>
                 MISCELLANEOUS PROVISIONS
               </h2>
@@ -814,7 +814,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-17" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">17</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">17</span>
                 </div>
                 CONTACT INFORMATION
               </h2>
@@ -875,7 +875,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-18" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">18</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">18</span>
                 </div>
                 CALIFORNIA-SPECIFIC NOTICES
               </h2>
@@ -899,7 +899,7 @@ const TermsAndConditions: React.FC = () => {
             <div id="section-19" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">19</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">19</span>
                 </div>
                 ACKNOWLEDGMENT
               </h2>

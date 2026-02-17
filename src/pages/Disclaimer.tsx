@@ -41,7 +41,7 @@ const Disclaimer = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              <span className="text-amber-600">Disclaimer</span>
+              <span className="text-[#f9c65d]">Disclaimer</span>
             </h1>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-gray-600">
@@ -67,7 +67,7 @@ const Disclaimer = () => {
       <section className="py-12 bg-gray-50 border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Table of <span className="text-amber-600">Contents</span>
+            Table of <span className="text-[#f9c65d]">Contents</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-3">
             {[
@@ -110,7 +110,7 @@ const Disclaimer = () => {
             <div id="section-1" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">1</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">1</span>
                 </div>
                 GENERAL DISCLAIMER
               </h2>
@@ -131,7 +131,7 @@ const Disclaimer = () => {
             <div id="section-2" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">2</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">2</span>
                 </div>
                 NO GUARANTEED RESULTS
               </h2>
@@ -172,7 +172,7 @@ const Disclaimer = () => {
             <div id="section-3" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">3</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">3</span>
                 </div>
                 CREDIT REPAIR DISCLAIMERS
               </h2>
@@ -224,7 +224,7 @@ const Disclaimer = () => {
             <div id="section-4" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">4</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">4</span>
                 </div>
                 BUSINESS FUNDING DISCLAIMERS
               </h2>
@@ -265,7 +265,7 @@ const Disclaimer = () => {
             <div id="section-5" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">5</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">5</span>
                 </div>
                 NOT A LENDER
               </h2>
@@ -296,7 +296,7 @@ const Disclaimer = () => {
             <div id="section-6" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">6</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">6</span>
                 </div>
                 NO LEGAL, TAX, OR INVESTMENT ADVICE
               </h2>
@@ -349,7 +349,7 @@ const Disclaimer = () => {
             <div id="section-7" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">7</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">7</span>
                 </div>
                 THIRD-PARTY SERVICES AND PARTNERSHIPS
               </h2>
@@ -406,7 +406,7 @@ const Disclaimer = () => {
             <div id="section-8" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">8</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">8</span>
                 </div>
                 AFFILIATE MARKETING DISCLOSURE
               </h2>
@@ -457,7 +457,7 @@ const Disclaimer = () => {
             <div id="section-9" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">9</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">9</span>
                 </div>
                 CREDIT BUREAU AND CREDITOR RESPONSES
               </h2>
@@ -506,7 +506,7 @@ const Disclaimer = () => {
             <div id="section-10" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">10</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">10</span>
                 </div>
                 WEBSITE CONTENT AND ACCURACY
               </h2>
@@ -544,7 +544,7 @@ const Disclaimer = () => {
             <div id="section-11" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">11</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">11</span>
                 </div>
                 LIMITATION OF LIABILITY
               </h2>
@@ -575,7 +575,7 @@ const Disclaimer = () => {
             <div id="section-12" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">12</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">12</span>
                 </div>
                 EXTERNAL LINKS
               </h2>
@@ -599,7 +599,7 @@ const Disclaimer = () => {
             <div id="section-13" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">13</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">13</span>
                 </div>
                 TESTIMONIALS AND RESULTS
               </h2>
@@ -632,7 +632,7 @@ const Disclaimer = () => {
             <div id="section-14" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">14</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">14</span>
                 </div>
                 EDUCATIONAL CONTENT
               </h2>
@@ -665,7 +665,7 @@ const Disclaimer = () => {
             <div id="section-15" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <div className="flex-shrink-0 w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                  <span className="text-amber-600 font-bold text-xl">15</span>
+                  <span className="text-[#f9c65d] font-bold text-xl">15</span>
                 </div>
                 CONTACT INFORMATION
               </h2>

@@ -1468,5 +1468,36 @@ Removed 3 placeholder links with no pages yet: GDPR, Data Protection, Legal Noti
 
 ---
 
+---
+
+## Recent Major Update #22 (February 17, 2026)
+
+### Legal Pages — Heading Color Unified to Mesa Yellow
+
+**Change:** All heading/title/subtitle accent colors in the 9 legal pages changed from Tailwind `text-amber-600` (`#d97706`, dark orange-amber) to Mesa brand yellow `text-[#f9c65d]`.
+
+**Files Updated (9):**
+- `src/pages/TermsAndConditions.tsx`
+- `src/pages/PrivacyPolicy.tsx`
+- `src/pages/CaliforniaPrivacyPolicy.tsx`
+- `src/pages/CookiePolicy.tsx`
+- `src/pages/TCPAConsentPolicy.tsx`
+- `src/pages/Disclaimer.tsx`
+- `src/pages/DoNotSellMyPersonalInformation.tsx`
+- `src/pages/AffiliateDisclosure.tsx`
+- `src/pages/AccessibilityStatement.tsx`
+
+**Patterns replaced:**
+- Hero title accent word: `<span className="text-amber-600">Word</span>` → `text-[#f9c65d]`
+- TOC heading accent: `Table of <span className="text-amber-600">Contents</span>` → `text-[#f9c65d]`
+- Section number badges: `text-amber-600 font-bold text-xl` → `text-[#f9c65d] font-bold text-xl`
+- Large number badges: `text-2xl font-bold text-amber-600` → `text-2xl font-bold text-[#f9c65d]`
+- Bullet dot spans: `text-amber-600 font-bold flex-shrink-0` → `text-[#f9c65d] font-bold flex-shrink-0`
+- Inline heading text: `text-lg font-bold text-amber-600` → `text-[#f9c65d]`
+
+**Not changed:** Link colors (`text-amber-600 hover:text-amber-700 underline`), icon colors, callout box borders/backgrounds.
+
+---
+
 **Last Updated:** February 17, 2026
 **Project Status:** Active Development

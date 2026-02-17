@@ -42,7 +42,7 @@ const AffiliateDisclosure = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Affiliate <span className="text-amber-600">Disclosure</span>
+              Affiliate <span className="text-[#f9c65d]">Disclosure</span>
             </h1>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-gray-600">
@@ -68,7 +68,7 @@ const AffiliateDisclosure = () => {
       <section className="py-12 bg-gray-50 border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Table of <span className="text-amber-600">Contents</span>
+            Table of <span className="text-[#f9c65d]">Contents</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-3">
             {[
@@ -87,7 +87,7 @@ const AffiliateDisclosure = () => {
                 onClick={() => scrollToSection(item.id)}
                 className="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-amber-300 hover:shadow-md transition-all text-left group"
               >
-                <span className="text-2xl font-bold text-amber-600 group-hover:scale-110 transition-transform flex-shrink-0">{item.num}</span>
+                <span className="text-2xl font-bold text-[#f9c65d] group-hover:scale-110 transition-transform flex-shrink-0">{item.num}</span>
                 <span className="text-gray-900 font-medium">{item.title}</span>
               </button>
             ))}
@@ -103,7 +103,7 @@ const AffiliateDisclosure = () => {
           <div id="what-is-affiliate-marketing" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">1</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">1</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase">
                 What is Affiliate Marketing?
@@ -123,7 +123,7 @@ const AffiliateDisclosure = () => {
           <div id="our-affiliate-relationships" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">2</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">2</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase">
                 Our Affiliate Relationships
@@ -245,7 +245,7 @@ const AffiliateDisclosure = () => {
           <div id="how-affiliate-compensation-works" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">3</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">3</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase">
                 How Affiliate Compensation Works
@@ -301,7 +301,7 @@ const AffiliateDisclosure = () => {
           <div id="no-additional-cost" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">4</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">4</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase">
                 No Additional Cost to You
@@ -323,7 +323,7 @@ const AffiliateDisclosure = () => {
                 <p className="text-gray-700 mb-2">If a partner service has a monthly subscription fee:</p>
                 <ul className="space-y-2 text-gray-700 ml-4">
                   {['You pay the same price whether you sign up through Mesa Group or directly with the partner', 'The partner pays Mesa Group a commission from their revenue', 'Your cost is the same'].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2"><span className="text-amber-600 font-bold">•</span><span>{item}</span></li>
+                    <li key={i} className="flex items-start gap-2"><span className="text-[#f9c65d] font-bold">•</span><span>{item}</span></li>
                   ))}
                 </ul>
               </div>
@@ -334,7 +334,7 @@ const AffiliateDisclosure = () => {
           <div id="our-commitment-to-transparency" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">5</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">5</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase">
                 Our Commitment to Transparency
@@ -379,7 +379,7 @@ const AffiliateDisclosure = () => {
           <div id="your-trust-is-important" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">6</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">6</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase">
                 Your Trust is Important to Us
@@ -405,7 +405,7 @@ const AffiliateDisclosure = () => {
           <div id="specific-affiliate-partnerships" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">7</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">7</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase">
                 Specific Affiliate Partnerships
@@ -480,7 +480,7 @@ const AffiliateDisclosure = () => {
           <div id="ftc-compliance" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">8</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">8</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase">
                 FTC Compliance
@@ -540,7 +540,7 @@ const AffiliateDisclosure = () => {
           <div id="contact-information" className="mb-12 scroll-mt-24">
             <div className="flex items-start gap-4 mb-6">
               <div className="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-amber-600">9</span>
+                <span className="text-2xl font-bold text-[#f9c65d]">9</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase">
                 Contact Information
@@ -600,7 +600,7 @@ const AffiliateDisclosure = () => {
           {/* Changes to This Affiliate Disclosure */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Changes to This <span className="text-amber-600">Affiliate Disclosure</span>
+              Changes to This <span className="text-[#f9c65d]">Affiliate Disclosure</span>
             </h2>
             <div className="space-y-4">
               <p className="text-gray-700 leading-relaxed">Mesa Group Consulting reserves the right to update this Affiliate Disclosure at any time to reflect changes in our affiliate relationships, compensation structures, or FTC guidelines. When we make changes, we will:</p>
@@ -618,7 +618,7 @@ const AffiliateDisclosure = () => {
           {/* Summary */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              <span className="text-amber-600">Summary</span>
+              <span className="text-[#f9c65d]">Summary</span>
             </h2>
             <div className="space-y-4">
               <p className="text-gray-700 leading-relaxed">Mesa Group Consulting participates in affiliate marketing and may receive compensation when you use certain partner services or products. This compensation does not increase your cost, and we are committed to recommending only services we believe provide genuine value.</p>
