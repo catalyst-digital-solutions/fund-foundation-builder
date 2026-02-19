@@ -35,7 +35,7 @@ const Footer = () => {
               <div>
                 <img src="/mgc-mesa-group-consulting-black-svg-logo.svg.svg" alt="Mesa Group Consulting Logo" className="h-10 mb-4" />
                 <p className="text-[#3e3e3e] text-sm leading-relaxed">
-                  Have a question about credit, funding, or your next financial move? Reach out today and let Mesa Group Consulting's trilingual team turn complex money problems into clear, actionable solutions.
+                  Have a question about credit, funding, or your next financial move? We're here to help. Our trilingual team turns complex money problems into clear, actionable solutions.
                 </p>
               </div>
 
@@ -249,7 +249,10 @@ const Footer = () => {
                       </li>
                       <li><Link to="/resources/articles" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Blog & Guides</Link></li>
                       <li><Link to="/resources/calculators" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Financial Calculator</Link></li>
-                      <li><Link to="/contact" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Free Consultation</Link></li>
+                      <li>
+                        <a href="https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Free Consultation</a>
+                      </li>
+                      <li><a href="#" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">FAQ</a></li>
                     </ul>
                   </CollapsibleContent>
                 </Collapsible>
@@ -263,7 +266,10 @@ const Footer = () => {
                     </li>
                     <li><Link to="/resources/articles" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Blog & Guides</Link></li>
                     <li><Link to="/resources/calculators" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Financial Calculator</Link></li>
-                    <li><Link to="/contact" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Free Consultation</Link></li>
+                    <li>
+                      <a href="https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Free Consultation</a>
+                    </li>
+                    <li><a href="#" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">FAQ</a></li>
                   </ul>
                 </div>
               </div>
@@ -327,11 +333,11 @@ const Footer = () => {
                   </div>
                   <div className="flex items-center gap-2 text-[#3e3e3e] text-sm">
                     <Building2 className="w-4 h-4 text-[#bb9446]" />
-                    <span>$97M+ Business Funding Secured</span>
+                    <span>Business Funding Facilitated</span>
                   </div>
                   <div className="flex items-center gap-2 text-[#3e3e3e] text-sm">
                     <Users className="w-4 h-4 text-[#bb9446]" />
-                    <span>2,500+ Clients Served</span>
+                    <span>2,500+ Lives Changed</span>
                   </div>
                 </div>
               </div>

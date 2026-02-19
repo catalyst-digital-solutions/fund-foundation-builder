@@ -586,7 +586,7 @@ const LetterTemplates = () => {
                 
                 <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded mb-6">
                   <p className="text-sm text-gray-700">
-                    <strong>The only requirement:</strong> An active SmartCredit account ($27.99/month after $1 seven-day trial) so we can access your 3-bureau credit report and build your case.
+                    <strong>The only requirement:</strong> An active SmartCredit account ($27.99/month) so we can access your 3-bureau credit report and build your case.
                   </p>
                 </div>
                 

@@ -2239,7 +2239,7 @@ const CreditRepair = () => {
             </div>
 
             <div className="bg-white rounded-lg p-4 mb-6">
-              <p className="text-lg font-bold text-[#3E3E3E]">Cost: <span className="text-blue-600">$1 for 7-day trial</span>, then $27.99/month</p>
+              <p className="text-lg font-bold text-[#3E3E3E]">Cost: <span className="text-blue-600">$27.99/month</span></p>
             </div>
 
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">

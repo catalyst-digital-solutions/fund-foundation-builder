@@ -73,7 +73,7 @@ const FAQ = () => {
               <li>✅ Client portal + mobile app access</li>
               <li>✅ Ongoing support (monthly plans) or 12 months of service (prepaid plans)</li>
             </ul>
-            <p className="mb-4"><strong>Additional requirement:</strong> You must maintain a SmartCredit 3-Bureau monitoring account ($27.99/month after $1 for 7-day trial) throughout the entire process. This gives us (and you) real-time access to your credit reports from all three bureaus.</p>
+            <p className="mb-4"><strong>Additional requirement:</strong> You must maintain a SmartCredit 3-Bureau monitoring account ($27.99/month) throughout the entire process. This gives us (and you) real-time access to your credit reports from all three bureaus.</p>
             <p className="mb-4"><strong>No hidden fees. No upsells. No surprises.</strong></p>
             <p>You can cancel your monthly plan anytime (we have a 3-day risk-free cancellation window from signup). The 12-month programs are paid in full but can be financed through Buy Now, Pay Later (BNPL) options.</p>
           </FAQItem>
@@ -499,8 +499,7 @@ const FAQ = () => {
             </ul>
             <p className="font-semibold mb-2">Cost:</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
-              <li>$1 for 7-day trial</li>
-              <li>Then $27.99/month after trial ends</li>
+              <li>$27.99/month</li>
               <li>You must maintain this throughout your program</li>
             </ul>
             <p className="font-semibold mb-2">Why we don't include it in our price:</p>

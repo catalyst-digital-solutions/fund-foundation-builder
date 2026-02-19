@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Clock, Mail, MapPin, Phone, ChevronDown, X, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Clock, Mail, MapPin, Phone, ChevronDown, X, Menu, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Inline SVG Logo Component (white version for dark backgrounds)
@@ -100,6 +100,7 @@ const Header = () => {
   const menuItems = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
+    { label: 'Concierge', href: '/concierge' },
     {
       label: 'For Consumers',
       href: '/for-consumers',
@@ -199,6 +200,15 @@ const Header = () => {
       <div className="border-b border-gray-800">
         <div className="max-w-[1840px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-[105px]">
+            {/* Mobile Hamburger — far left, mobile only */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="lg:hidden p-2 mr-3 text-white hover:text-[#f9c65d] transition-colors flex-shrink-0"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+
             {/* Logo */}
             <Link to="/" className="flex items-center flex-shrink-0">
               <img src="/mgc-mesa-group-consulting-white-svg-logo.svg.svg" alt="Mesa Group Consulting" className="h-[40px] w-auto" />
@@ -307,6 +317,22 @@ const Header = () => {
                 Client Login
               </a>
 
+              {/* Mobile: Phone number + Client Login */}
+              <div className="lg:hidden flex items-center gap-3">
+                <a href="tel:+16613103040" className="text-sm font-semibold text-white hover:text-[#f9c65d] transition-colors">
+                  (661) 310-3040
+                </a>
+                <div className="h-4 w-[1px] bg-gray-600" />
+                <a
+                  href="https://portal.mesagroupconsulting.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-white hover:text-[#f9c65d] transition-colors"
+                >
+                  Sign In
+                </a>
+              </div>
+
               {/* Divider before Dot Grid */}
               <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
 
@@ -319,13 +345,6 @@ const Header = () => {
                 <DotGridIcon />
               </button>
 
-              {/* Mobile Menu Toggle */}
-              <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="lg:hidden p-2 text-white hover:text-[#f9c65d] transition-colors"
-              >
-                {mobileMenuOpen ? <X className="w-6 h-6" /> : <DotGridIcon />}
-              </button>
             </div>
           </div>
         </div>

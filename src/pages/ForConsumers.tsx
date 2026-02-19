@@ -249,7 +249,7 @@ const ForConsumers = () => {
         "People monitoring dispute progress",
         "Those wanting credit score transparency"
       ],
-      pricing: "$1 for 7-day trial, then $27.99/month",
+      pricing: "$27.99/month",
       ctaText: "Start Monitoring Your Credit",
       ctaLink: "/credit-monitoring",
       poweredBy: "SmartCredit"
