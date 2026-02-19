@@ -33,7 +33,7 @@ const UtilizationGauge = ({ percentage }: { percentage: number }) => {
   );
 };
 
-const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM';
 
 const CreditUtilizationCalculator = ({ onBack }: CreditUtilizationCalculatorProps) => {
   const [cards, setCards] = useState<CreditCard[]>([

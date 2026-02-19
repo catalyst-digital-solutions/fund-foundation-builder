@@ -39,7 +39,7 @@ const DTIGauge = ({ percentage }: { percentage: number }) => {
   );
 };
 
-const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM';
 
 const DTICalculator = ({ onBack }: DTICalculatorProps) => {
   const [income, setIncome] = useState(0);

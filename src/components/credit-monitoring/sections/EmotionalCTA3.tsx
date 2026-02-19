@@ -4,7 +4,7 @@ import PoweredBySmartCredit from '@/components/PoweredBySmartCredit';
 
 const EmotionalCTA3 = () => {
   const handleClick = () => {
-    window.open('https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM', '_blank', 'noopener,noreferrer');
+    window.open('https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM', '_blank', 'noopener,noreferrer');
   };
 
   return (

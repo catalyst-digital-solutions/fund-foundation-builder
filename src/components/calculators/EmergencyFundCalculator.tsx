@@ -8,7 +8,7 @@ interface EmergencyFundCalculatorProps {
 
 type Stability = 'stable' | 'moderate' | 'unstable';
 
-const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM';
 
 const ProgressBar = ({ current, target }: { current: number; target: number }) => {
   const percentage = target > 0 ? Math.min((current / target) * 100, 100) : 0;

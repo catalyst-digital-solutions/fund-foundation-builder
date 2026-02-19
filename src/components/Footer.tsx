@@ -116,7 +116,7 @@ const Footer = () => {
                       <li><Link to="/credit-repair" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Credit Restoration</Link></li>
                       <li><Link to="/diy-credit-repair" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">DIY Credit Repair</Link></li>
                       <li>
-                        <a href="https://www.smartcredit.com/?PID=39842" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors inline-flex items-center gap-1">
+                        <a href="https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors inline-flex items-center gap-1">
                           Get Credit Report <ExternalLink className="w-3 h-3" />
                         </a>
                       </li>
@@ -131,7 +131,7 @@ const Footer = () => {
                     <li><Link to="/credit-repair" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Credit Restoration</Link></li>
                     <li><Link to="/diy-credit-repair" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">DIY Credit Repair</Link></li>
                     <li>
-                      <a href="https://www.smartcredit.com/?PID=39842" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors inline-flex items-center gap-1">
+                      <a href="https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors inline-flex items-center gap-1">
                         Get Credit Report <ExternalLink className="w-3 h-3" />
                       </a>
                     </li>

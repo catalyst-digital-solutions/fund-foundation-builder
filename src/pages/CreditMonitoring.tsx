@@ -12,7 +12,7 @@ import equifaxLogo from '@/assets/equifax-logo.png';
 import transunionLogo from '@/assets/transunion-logo.png';
 import { SEO } from '@/components/SEO';
 
-const AFFILIATE_LINK = "https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM";
+const AFFILIATE_LINK = "https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM";
 
 const CreditMonitoring = () => {
   return (

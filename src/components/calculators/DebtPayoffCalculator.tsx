@@ -20,7 +20,7 @@ interface PayoffResult {
   order: Debt[];
 }
 
-const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM';
 
 const DebtPayoffCalculator = ({ onBack }: DebtPayoffCalculatorProps) => {
   const [debts, setDebts] = useState<Debt[]>([
