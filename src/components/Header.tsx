@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
-import { Clock, Mail, MapPin, Phone, ChevronDown, X, Menu, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Clock, Mail, MapPin, Phone, ChevronDown, X, Menu, Search, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SearchModal } from '@/components/SearchModal';
 
 // Inline SVG Logo Component (white version for dark backgrounds)
 const MesaGroupLogo = ({ className }: { className?: string }) => (
@@ -60,6 +61,7 @@ const Header = () => {
   const [slideOutOpen, setSlideOutOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [showCopyToast, setShowCopyToast] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleEmailClick = (e: React.MouseEvent) => {
@@ -319,8 +321,16 @@ const Header = () => {
                 Client Login
               </a>
 
-              {/* Mobile: Phone number + Client Login */}
+              {/* Mobile: Search + Phone number + Sign In */}
               <div className="lg:hidden flex items-center gap-3">
+                <button
+                  onClick={() => setSearchOpen(true)}
+                  className="text-white hover:text-[#f9c65d] transition-colors"
+                  aria-label="Search"
+                >
+                  <Search className="w-5 h-5" />
+                </button>
+                <div className="h-4 w-[1px] bg-gray-600" />
                 <a href="tel:+16613103040" className="text-sm font-semibold text-white hover:text-[#f9c65d] transition-colors">
                   (661) 310-3040
                 </a>
@@ -338,13 +348,13 @@ const Header = () => {
               {/* Divider before Dot Grid */}
               <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
 
-              {/* 3x3 Dot Grid - Desktop (opens slide-out panel) */}
+              {/* Search Icon - Desktop */}
               <button
-                onClick={() => setSlideOutOpen(true)}
+                onClick={() => setSearchOpen(true)}
                 className="hidden lg:flex p-2 text-white hover:text-[#f9c65d] transition-colors"
-                aria-label="Open info panel"
+                aria-label="Search"
               >
-                <DotGridIcon />
+                <Search className="w-5 h-5" />
               </button>
 
             </div>
@@ -583,6 +593,9 @@ const Header = () => {
           Email copied to clipboard!
         </div>
       )}
+
+      {/* Search Modal */}
+      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </header>
   );
 };
