@@ -290,11 +290,23 @@ const Header = () => {
               ))}
             </nav>
 
-            {/* Divider before Phone */}
+            {/* Divider before right-side actions */}
             <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-6" />
 
-            {/* Right Side: Phone, Client Login & Dot Grid */}
+            {/* Right Side: Search, Phone, Client Login */}
             <div className="flex items-center gap-4">
+              {/* Search Icon - Desktop (first position) */}
+              <button
+                onClick={() => setSearchOpen(true)}
+                className="hidden lg:flex p-2 text-white hover:text-[#f9c65d] transition-colors"
+                aria-label="Search"
+              >
+                <Search className="w-5 h-5" />
+              </button>
+
+              {/* Divider before Phone */}
+              <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
+
               {/* Phone Section */}
               <div className="hidden md:flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#3e3e3e] flex items-center justify-center">
@@ -345,17 +357,6 @@ const Header = () => {
                 </a>
               </div>
 
-              {/* Divider before Dot Grid */}
-              <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
-
-              {/* Search Icon - Desktop */}
-              <button
-                onClick={() => setSearchOpen(true)}
-                className="hidden lg:flex p-2 text-white hover:text-[#f9c65d] transition-colors"
-                aria-label="Search"
-              >
-                <Search className="w-5 h-5" />
-              </button>
 
             </div>
           </div>
