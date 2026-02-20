@@ -121,7 +121,7 @@ const FlipCard = ({ step }: { step: any }) => {
               <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                 What Happens
               </h4>
-              <p className="text-xl text-gray-800 leading-relaxed max-w-2xl">
+              <p className="text-xl text-gray-800 leading-relaxed max-w-2xl whitespace-pre-line">
                 {step.whatHappens}
               </p>
             </div>
@@ -152,7 +152,7 @@ const FlipCard = ({ step }: { step: any }) => {
             {/* What Happens - Visible on Mobile */}
             <div className={`bg-gradient-to-br ${step.backBgGradient} rounded-2xl p-6 border-2 ${step.borderColor}`}>
               <p className="text-base font-bold text-gray-900 mb-2">What happens:</p>
-              <p className="text-base text-gray-800 leading-relaxed">
+              <p className="text-base text-gray-800 leading-relaxed whitespace-pre-line">
                 {step.whatHappens}
               </p>
             </div>
@@ -170,9 +170,9 @@ const HowItWorksSection = () => {
       icon: Users,
       iconBg: 'from-amber-100 to-amber-200',
       iconColor: 'text-amber-600',
-      title: 'Free Consultation',
-      description: 'Schedule a conversation with our team to discuss your current situation, goals, and challenges. We\'ll provide expert guidance on your best path forward, completely free.',
-      whatHappens: 'You\'ll complete a brief contact form or call us directly. We\'ll schedule a consultation at your convenience to review your needs.',
+      title: 'Schedule Your Free Consultation',
+      description: 'Book a call with one of our advisors to discuss your current situation, goals, and challenges. We\'ll assess your situation honestly and help you understand your best path forward.',
+      whatHappens: 'We\'ll spend 30-45 minutes understanding your complete financial picture. Where you are, where you want to be, and what\'s standing in your way.\n\nAvailable in-office, by phone, or video call. Choose what works for you.',
       bgGradient: 'from-amber-100 via-amber-50 to-white',
       borderColor: 'border-amber-200',
       backBgGradient: 'from-amber-200 via-amber-100 to-amber-50'
@@ -182,9 +182,9 @@ const HowItWorksSection = () => {
       icon: Target,
       iconBg: 'from-purple-100 to-purple-200',
       iconColor: 'text-purple-600',
-      title: 'Custom Recommendations',
-      description: 'Based on your analysis, we\'ll recommend the right solutions from our ecosystem, whether that\'s credit restoration, funding access, debt relief, or financial product comparisons.',
-      whatHappens: 'We present a clear roadmap tailored to your situation. You decide what fits your budget and timeline.',
+      title: 'We\'ll Show You What\'s Possible',
+      description: 'Based on our conversation, we\'ll create a personalized roadmap for your situation. You\'ll know exactly what to do next and why it makes sense for your goals.',
+      whatHappens: 'You\'ll receive a clear action plan tailored to your situation. We\'ll tell you honestly what makes sense and what doesn\'t.\n\nMost people get their roadmap within 24 hours of the consultation.',
       bgGradient: 'from-purple-100 via-purple-50 to-white',
       borderColor: 'border-purple-200',
       backBgGradient: 'from-purple-200 via-purple-100 to-purple-50'
@@ -194,13 +194,20 @@ const HowItWorksSection = () => {
       icon: TrendingUp,
       iconBg: 'from-green-100 to-green-200',
       iconColor: 'text-green-600',
-      title: 'Guided Implementation',
-      description: 'We guide you through implementation, provide ongoing support, and track your progress until you hit your goals. You\'re never alone in this process.',
-      whatHappens: 'Think of us as your strategic partner on speed dial. You\'re never navigating alone.',
+      title: 'Move Forward with Confidence',
+      description: 'Whether that\'s working with us or handling things yourself, you\'ll have the clarity and guidance you need to make the right decision for your situation.',
+      whatHappens: 'You choose what fits. Some people need our services. Some people just need direction. We help both.\n\nIf you move forward with us, we get started immediately. No waiting periods.',
       bgGradient: 'from-green-100 via-green-50 to-white',
       borderColor: 'border-green-200',
       backBgGradient: 'from-green-200 via-green-100 to-green-50'
     }
+  ];
+
+  const walkAways = [
+    'Complete understanding of your financial situation',
+    'Clear roadmap with specific next steps',
+    'Honest guidance from people who\'ve been where you are',
+    'Options that actually fit your goals and budget',
   ];
 
   return (
@@ -210,12 +217,25 @@ const HowItWorksSection = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Getting Started is <span className="text-[#f9c65d]">Straightforward</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
             We've designed our process to be transparent, efficient, and friction-free, so you know exactly what to expect at every step.
           </p>
-          <p className="text-base text-gray-500 mt-2 hidden md:block">
+          <p className="text-base text-gray-500 hidden md:block">
             Move your cursor over each card to see what happens next
           </p>
+        </div>
+
+        {/* What You'll Walk Away With */}
+        <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 mb-12 max-w-3xl mx-auto">
+          <h3 className="text-xl font-bold text-gray-900 mb-4">What You'll Walk Away With:</h3>
+          <ul className="space-y-3">
+            {walkAways.map((item, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-700">{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="space-y-8">
@@ -224,8 +244,15 @@ const HowItWorksSection = () => {
           ))}
         </div>
 
+        {/* Common Questions */}
+        <div className="mt-12 grid md:grid-cols-3 gap-6 text-center text-sm text-gray-600 max-w-3xl mx-auto">
+          <div><p className="font-semibold text-gray-900 mb-1">How long does it take?</p><p>30-45 minutes, depending on your situation</p></div>
+          <div><p className="font-semibold text-gray-900 mb-1">Is there really no charge?</p><p>None. The consultation is completely free.</p></div>
+          <div><p className="font-semibold text-gray-900 mb-1">Do I need to prepare?</p><p>Just come ready to talk about your goals.</p></div>
+        </div>
+
         {/* CTA Button */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-12">
           <CalendlyPopupButtonLarge
             text="Start My Free Consultation"
             prefillOptions={{
