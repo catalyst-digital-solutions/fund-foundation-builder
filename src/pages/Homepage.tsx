@@ -532,7 +532,7 @@ const Homepage = () => {
               <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md border border-amber-200">
                 <CheckCircle className="w-5 h-5 text-green-600" />
                 <span className="text-sm font-medium text-gray-700">
-                  2,500+ Clients Served Since 2023
+                  2,500+ Lives Changed Since 2023
                 </span>
               </div>
 
@@ -568,7 +568,7 @@ const Homepage = () => {
               <div className="flex flex-wrap items-center gap-4 pt-4 text-sm text-gray-600">
                 <div className="flex items-center gap-1">
                   <CheckCircle className="w-4 h-4 text-green-600" />
-                  <span>2,500+ Clients Served</span>
+                  <span>100% Customized Solutions</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <CheckCircle className="w-4 h-4 text-green-600" />
@@ -604,8 +604,8 @@ const Homepage = () => {
                       <TrendingUp className="w-6 h-6 text-green-600" />
                     </div>
                     <div>
-                      <p className="text-2xl font-bold text-gray-900">$100M+</p>
-                      <p className="text-xs text-gray-600">Funding Facilitated</p>
+                      <p className="text-2xl font-bold text-gray-900">2,500+</p>
+                      <p className="text-xs text-gray-600">Lives Changed</p>
                     </div>
                   </div>
                 </div>
@@ -682,7 +682,27 @@ const Homepage = () => {
             </p>
 
             <p className="text-2xl font-bold text-[#f9c65d]">
-              And it ends here.
+              That cycle ends today.
+            </p>
+
+            <p>
+              We help everybody who walks through our door, whether you need comprehensive services or just honest guidance on your next step. Whether you're in crisis or just want to optimize. Whether your credit is terrible or just okay.
+            </p>
+
+            <p className="text-xl font-bold text-white">
+              We help people first.
+            </p>
+
+            <p>
+              We assess your situation. We answer your questions honestly. We guide you to the right solution, even if that solution isn't us.
+            </p>
+
+            <p>
+              Because you're not a sales target. You're a person who deserves honest guidance from people who've been exactly where you are.
+            </p>
+
+            <p className="text-xl font-semibold text-[#f9c65d]">
+              That's our promise to you.
             </p>
           </div>
 
@@ -697,10 +717,10 @@ const Homepage = () => {
           
           <div className="text-center mb-12 lg:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              We Did the <span className="text-[#f9c65d]">Heavy Lifting</span>. You Get the Results.
+              We Know the Way Forward. <span className="text-[#f9c65d]">Let Us Help You Get There.</span>
             </h2>
             
-            <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-4">
               You've spent enough time feeling stuck. Enough nights lying awake wondering how you'll ever get ahead. Enough years watching everyone else build wealth while you're just trying to survive.
             </p>
             
@@ -729,20 +749,32 @@ const Homepage = () => {
             <p>
               We've spent years building relationships with the nation's premier financial service providers, from credit restoration platforms to business funding networks to estate planning technologies. We've negotiated access, vetted their credibility, and integrated them into a single, cohesive ecosystem.
             </p>
-            
-            <p className="text-xl font-semibold text-gray-900">
-              We did the homework. We made the connections. We built the shortcuts.
+
+            <p className="font-semibold text-gray-900">
+              Here's what makes Mesa Group different:
+            </p>
+
+            <p>
+              We help you navigate it all. We assess your situation honestly. We recommend what you actually need. We give you a roadmap that works for YOUR goals.
             </p>
             
+            <p className="text-xl font-semibold text-gray-900">
+              Because we help people first. Always.
+            </p>
+            
+            <p>
+              We did the homework. We made the connections. We built the shortcuts.
+            </p>
+
             <p className="text-xl font-semibold text-[#f9c65d]">
-              You get the results.
+              You get the guidance. And when you're ready, you get the results.
             </p>
           </div>
 
           {/* Cost Comparison */}
           <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-8 lg:p-12 mb-16">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
-              The Cost of Going It Alone
+              Why People Choose Mesa Group
             </h3>
             
             <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
@@ -754,8 +786,8 @@ const Homepage = () => {
                   {[
                     '10+ hours researching which platforms are trustworthy',
                     '$500+ on trial-and-error with the wrong services',
-                    '6-12 months longer to see results (if they see results at all)',
-                    'Countless opportunities lost to confusion and overwhelm'
+                    'No one to give you honest guidance without a sales pitch',
+                    '6-12 months longer to see results (if you see results at all)'
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-start gap-3">
                       <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -773,10 +805,10 @@ const Homepage = () => {
                 </h4>
                 <div className="space-y-3">
                   {[
-                    'Instant access to vetted, industry-leading platforms',
-                    'A clear roadmap built specifically for your situation',
-                    'Expert guidance at every step, and no more guessing',
-                    'Real results in 45-90 days for most clients'
+                    'Finally, everything you need in one place',
+                    'Someone who tells you the truth about what you actually need',
+                    'Guidance from people who\'ve been exactly where you are',
+                    'A partner in your corner who genuinely wants you to succeed'
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-start gap-3">
                       <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
@@ -788,7 +820,7 @@ const Homepage = () => {
             </div>
 
             <p className="text-center text-xl font-bold text-gray-900 mt-8 pt-8 border-t border-amber-200">
-              The difference? You're not alone anymore.
+              The difference? We help people first. Always.
             </p>
           </div>
 
@@ -826,7 +858,7 @@ const Homepage = () => {
                 Proven Results
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                With over $100M in client funding facilitated and 2,500+ successful outcomes, we demonstrate what happens when expertise meets execution.
+                With over 2,500+ lives changed and 150+ five-star reviews, we demonstrate what happens when real people help real people. We help people first. Always.
               </p>
             </div>
           </div>
@@ -847,8 +879,11 @@ const Homepage = () => {
             </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Complete <span className="text-[#f9c65d]">Credit & Business</span> Solutions
+              Complete <span className="text-[#f9c65d]">Credit & Financial</span> Solutions
             </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We help everyone who walks through our door, from individuals building credit to businesses accessing capital. Whether you need comprehensive services or just honest guidance on your next step, we're here for you.
+            </p>
           </div>
 
           {/* Three Solution Cards */}
@@ -860,9 +895,10 @@ const Homepage = () => {
                 <TrendingUp className="w-7 h-7 text-white" />
               </div>
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Credit Solutions
               </h3>
+              <p className="text-gray-600 text-sm mb-6">Not sure where to start? Let's figure it out together.</p>
 
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2 text-gray-700">
@@ -871,16 +907,16 @@ const Homepage = () => {
                 </li>
                 <li className="flex items-center gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  DIY Credit Repair (Powered by Creditily)
+                  DIY Credit Repair
                 </li>
                 <li className="flex items-center gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  Credit Monitoring (Powered by SmartCredit)
+                  Credit Monitoring
                 </li>
               </ul>
 
               <Link to="/for-consumers" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold">
-                View All Credit Services
+                Learn More About Your Options
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -891,18 +927,19 @@ const Homepage = () => {
                 <Building2 className="w-7 h-7 text-white" />
               </div>
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Business Funding
               </h3>
+              <p className="text-gray-600 text-sm mb-6">From startups to growth stages, we'll find what fits.</p>
 
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  0% Interest Business Funding (Exclusive)
+                  0% Interest Business Funding
                 </li>
                 <li className="flex items-center gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  Business Funding Network (75+ Lenders)
+                  Business Funding Network
                 </li>
                 <li className="flex items-center gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
@@ -915,7 +952,7 @@ const Homepage = () => {
               </ul>
 
               <Link to="/for-businesses" className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold">
-                Explore Business Solutions
+                Explore Your Funding Options
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -926,9 +963,10 @@ const Homepage = () => {
                 <TrendingUp className="w-7 h-7 text-white" />
               </div>
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Build Credit
               </h3>
+              <p className="text-gray-600 text-sm mb-6">Building credit takes time. We'll show you the fastest path.</p>
 
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-2 text-gray-700">
@@ -941,24 +979,20 @@ const Homepage = () => {
                 </li>
                 <li className="flex items-center gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  Authorized User Tradelines
-                </li>
-                <li className="flex items-center gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                   Credit Education Resources
                 </li>
               </ul>
 
               <Link to="/build-credit" className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold">
-                Start Building Credit
+                See How We Can Help
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
           </div>
 
-          <p className="text-center text-gray-600 mb-16">
-            Customized Solutions Tailored for your Credit, Business Funding, or Building Credit Needs
+          <p className="text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+            We'll be honest with you: not everyone needs every service. During your free consultation, we'll assess your situation and recommend only what makes sense for YOUR goals. Sometimes that's our services. Sometimes it's just good advice. Either way, you'll know the truth.
           </p>
 
           {/* Check Out Our Services - Tab System */}
@@ -996,8 +1030,9 @@ const Homepage = () => {
                   Not Sure Where to <span className="text-[#f9c65d]">Start?</span>
                 </h3>
                 <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-                  Schedule your free consultation and let our experts create a personalized roadmap for your financial success.
+                  Schedule your free consultation. We'll assess your situation honestly and help you understand your best path forward. No pressure. No sales pitch.
                 </p>
+                <p className="text-white/70 text-sm mt-4">Talk to real people who've been where you are.</p>
                 <CalendlyPopupButton
                   text="Schedule My Free Consultation"
                   prefillOptions={{
@@ -1125,19 +1160,27 @@ const Homepage = () => {
                 </p>
                 
                 <p>
-                  That's why we work harder. That's why we care more. That's why we've maintained a perfect 5-star rating across 150+ Google reviews.
+                  Here's what that looks like:
+                </p>
+
+                <p>
+                  A teacher came to us confused about buying a home. Didn't know if his credit was good enough. Didn't know where to start. Didn't know if he could even afford it.
+                </p>
+
+                <p>
+                  We walked him through everything. Showed him what he needed to fix. Built him a roadmap. Six months later, he's a homeowner. And he's sent his sister, his coworker, and two friends from church our way.
+                </p>
+
+                <p>
+                  That's how we've built this. Not by maximizing every transaction. But by genuinely helping people first.
                 </p>
                 
-                <p className="font-semibold">
-                  When you succeed, you tell people. And that's how we grow.
-                </p>
-                
-                <p className="font-bold text-gray-900">
-                  We're not here to make a quick buck. We're here to build generational relationships with families who trust us with their financial futures.
+                <p>
+                  We've maintained a perfect 5-star rating across 150+ Google reviews. Families trust us with their financial futures. And while other companies have come and gone, we're still here, still growing.
                 </p>
                 
                 <p className="font-bold text-green-600">
-                  That trust? We protect it with everything we have.
+                  When you actually help people, they don't forget it. And that trust? We protect it with everything we have.
                 </p>
               </div>
             </div>
@@ -1164,7 +1207,10 @@ const Homepage = () => {
             </h2>
             
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Mesa Group's ecosystem is built for Americans at every stage of their financial journey.
+              Whether you're just starting out or starting over, your first step is the same: talking to someone who understands.
+            </p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+              We work with individuals, families, and businesses at every stage of their financial journey:
             </p>
           </div>
 
@@ -1287,130 +1333,85 @@ const Homepage = () => {
             </h2>
             
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Don't just take our word for it; hear from families and businesses who've used Mesa Group to change their financial futures.
+              Here's what happens when you work with people who genuinely want you to succeed.
             </p>
           </div>
 
-          {/* Text Testimonials */}
+          {/* Real Google Reviews */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
+
+            {/* Julian Morales — 512→762+, car loan, dream home */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
-              
-              <p className="text-white leading-relaxed mb-6">
-                "Professional, transparent, and results-driven. Mesa Group facilitated our business funding when traditional banks turned us down. Game-changer for our growth."
+              <p className="text-white leading-relaxed mb-6 italic">
+                "A year ago, my credit score was 512 and I felt stuck. This company guided me step-by-step from disputing errors and building positive credit to teaching me smart habits. Within 6 months, my score jumped over 250 points. Thanks to them, I was finally approved for my first car loan and just closed on my dream home."
               </p>
-              
-              <div className="flex items-center gap-3">
-                <img 
-                  src="/testimonials/homepage/michael-t-business-owner-bakersfield-ca.jpeg" 
-                  alt="Michael T." 
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold text-white">Michael T.</p>
-                  <p className="text-sm text-gray-400">Business Owner, Bakersfield, CA</p>
-                </div>
+              <div className="border-t border-gray-600 pt-4">
+                <p className="font-semibold text-white">Julian M.</p>
+                <p className="text-sm text-amber-400 font-semibold mt-1">512 → 762+ in 6 months · First car loan · Dream home</p>
+                <p className="text-xs text-gray-400">Bakersfield, CA</p>
               </div>
             </div>
 
+            {/* MyaG — bought first home after 2 failed companies */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
-              
-              <p className="text-white leading-relaxed mb-6">
-                "I was skeptical of credit repair companies after being burned before. Mesa Group was different. They educated me on every step and delivered exactly what they promised."
+              <p className="text-white leading-relaxed mb-6 italic">
+                "I had previously worked with several other individuals and saw no improvement. Evert from Mesa Group has been working on my credit from day one, and he knows exactly what actions to take to achieve results. I was able to buy my first home as of 4/7/25!"
               </p>
-              
-              <div className="flex items-center gap-3">
-                <img 
-                  src="/testimonials/homepage/sarah-l-homeowner-los-angeles-ca.jpeg" 
-                  alt="Sarah L." 
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold text-white">Sarah L.</p>
-                  <p className="text-sm text-gray-400">Homeowner, Los Angeles, CA</p>
-                </div>
+              <div className="border-t border-gray-600 pt-4">
+                <p className="font-semibold text-white">Mya G.</p>
+                <p className="text-sm text-amber-400 font-semibold mt-1">Bought first home after 2 failed companies</p>
+                <p className="text-xs text-gray-400">Bakersfield, CA</p>
               </div>
             </div>
 
+            {/* Harwinder Singh — "guidance, support, and a clear path forward" */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
-              
-              <p className="text-white leading-relaxed mb-6">
-                "The team at Mesa helped me consolidate $45K in debt and create a realistic repayment plan. I finally feel like I'm in control of my finances again."
+              <p className="text-white leading-relaxed mb-6 italic">
+                "From the beginning, their team has been professional, respectful, and responsive to every question we've had. What stands out most is their dedication to truly helping their clients. They don't just offer a service — they offer guidance, support, and a clear path forward."
               </p>
-              
-              <div className="flex items-center gap-3">
-                <img 
-                  src="/testimonials/homepage/james-r-marketing-manager-fresno-ca.jpeg" 
-                  alt="James R." 
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold text-white">James R.</p>
-                  <p className="text-sm text-gray-400">Marketing Manager, Fresno, CA</p>
-                </div>
+              <div className="border-t border-gray-600 pt-4">
+                <p className="font-semibold text-white">Harwinder S.</p>
+                <p className="text-sm text-amber-400 font-semibold mt-1">Professional · Transparent · Dedicated</p>
+                <p className="text-xs text-gray-400">Bakersfield, CA</p>
               </div>
             </div>
 
+            {/* nava andrew — negatives removed, car loan, on track for home */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
-              
-              <p className="text-white leading-relaxed mb-6">
-                "Their 0% business funding program gave us the capital we needed without crushing interest payments. Incredible opportunity that we wouldn't have found elsewhere."
+              <p className="text-white leading-relaxed mb-6 italic">
+                "Within just a few months, they removed several negative items including collections and late payments. They didn't just fix credit — they educated me so I can keep it healthy. Thanks to them, I was approved for a car loan with a great interest rate and I'm on track to buy my first home."
               </p>
-              
-              <div className="flex items-center gap-3">
-                <img 
-                  src="/testimonials/homepage/jennifer-k-restaurant-owner-bakersfield-ca.jpeg" 
-                  alt="Jennifer K." 
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold text-white">Jennifer K.</p>
-                  <p className="text-sm text-gray-400">Restaurant Owner, Bakersfield, CA</p>
-                </div>
+              <div className="border-t border-gray-600 pt-4">
+                <p className="font-semibold text-white">Andrew N.</p>
+                <p className="text-sm text-amber-400 font-semibold mt-1">Collections removed · Car loan approved · First home in sight</p>
+                <p className="text-xs text-gray-400">Bakersfield, CA</p>
               </div>
             </div>
 
+            {/* Alex Medrano — 2 failed companies → results in months */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
-              
-              <p className="text-white leading-relaxed mb-6">
-                "From credit monitoring to estate planning, Mesa Group truly has everything under one roof. I don't have to manage multiple companies anymore."
+              <p className="text-white leading-relaxed mb-6 italic">
+                "I tried 2 other companies and for over 2 years combined, all I got was empty promises and no results. I came across Mesa Group Consulting and in just a few months the results speak for themselves. Evert's attention to detail, transparency, and dedication have left me speechless."
               </p>
-              
-              <div className="flex items-center gap-3">
-                <img 
-                  src="/testimonials/homepage/david-m-financial-consultant-san-diego-ca.jpeg" 
-                  alt="David M." 
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold text-white">David M.</p>
-                  <p className="text-sm text-gray-400">Financial Consultant, San Diego, CA</p>
-                </div>
+              <div className="border-t border-gray-600 pt-4">
+                <p className="font-semibold text-white">Alex M.</p>
+                <p className="text-sm text-amber-400 font-semibold mt-1">Results in months after 2+ years at other companies</p>
+                <p className="text-xs text-gray-400">Bakersfield, CA</p>
               </div>
             </div>
 
@@ -1419,10 +1420,9 @@ const Homepage = () => {
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4">
                 <Star className="w-10 h-10 text-amber-500 fill-amber-500" />
               </div>
-              
-              <p className="text-3xl font-bold mb-2">150+</p>
-              <p className="text-lg font-semibold mb-4">Five-Star Reviews</p>
-              
+              <p className="text-3xl font-bold mb-1">150+</p>
+              <p className="text-lg font-semibold mb-2">Five-Star Reviews</p>
+              <p className="text-sm text-white/80 mb-6">All from real clients. All verified.</p>
               <a
                 href="https://www.google.com/search?q=mesa+group+consulting"
                 target="_blank"
@@ -1475,79 +1475,79 @@ const Homepage = () => {
             <div className="order-1 lg:order-2 space-y-6 text-lg text-gray-700 leading-relaxed">
               
               <p className="text-2xl font-bold text-gray-900">
-                At 25, I had bad credit, a failed business, and nearly nothing in the bank.
+                Our founder will never forget checking his credit score for the first time: 490. But that wasn't even the painful part.
               </p>
               
               <p>
-                But that's not even the painful part.
+                The painful part was watching his immigrant parents almost lose everything they'd built.
               </p>
               
               <p>
-                The painful part was watching my immigrant parents almost lose their home in 2008, not because they were lazy or irresponsible, but because no one ever explained how the financial system worked. They worked two jobs. They paid their bills. They did everything they were supposed to do.
+                That's why this company was born: from a promise that no family should ever navigate the financial system blind.
               </p>
-              
-              <p className="font-semibold text-gray-900">
-                And the system still almost crushed them.
+
+              <p>
+                His parents worked two jobs. They paid their bills. They did everything right. And the system still almost crushed them.
               </p>
               
               <p>
-                I watched my family file bankruptcy in the early 2000s. I saw what it did to them: the stress, the shame, the feeling of failure even though they worked harder than anyone I knew.
+                He watched his family file bankruptcy in the early 2000s. Saw the stress, the shame, the feeling of failure even though they worked harder than anyone he knew.
               </p>
               
               <p>
-                When I tried to start my own life, I repeated the same mistakes. Credit cards I didn't understand. Loans I couldn't afford. A business that collapsed under debt I didn't know how to manage.
+                When he tried to start his own life, he repeated the same mistakes. Credit cards he didn't understand. Loans he couldn't afford. A business that collapsed under debt he didn't know how to manage.
               </p>
               
               <p className="text-xl font-bold text-red-600">
-                I'll never forget the feeling of checking my credit score for the first time: 490.
+                That 490 credit score felt like a life sentence.
               </p>
               
               <p>
-                I felt like a failure. Like I'd let my family down. Like I was destined to repeat their struggle.
+                But then came the realization that changed everything:
               </p>
               
               <p className="text-xl font-bold text-[#f9c65d]">
-                But then I realized something that changed everything:
+                Bad credit doesn't mean you're irresponsible. It means no one taught you.
               </p>
 
               {/* Mobile/Tablet only - show conclusion inline (desktop shows in Section 9B) */}
               <div className="lg:hidden">
-                <p className="text-2xl font-bold text-gray-900 mt-6">
-                  Bad credit doesn't mean you're irresponsible. It means no one taught you.
-                </p>
-
                 <p className="mt-6">
-                  And if no one taught my parents, hardworking immigrants who risked everything to come to this country and build a life, then how many other families were out there navigating this system blind?
+                  And if no one taught hardworking immigrants who risked everything to build a life in this country, then how many other families were out there navigating this system blind?
                 </p>
 
                 <p className="text-xl font-bold text-gray-900 mt-6">
-                  That's why we built Mesa Group.
+                  That's why Mesa Group exists.
                 </p>
 
                 <p className="mt-6">
-                  So it could be the strategic financial partner my family never had when we needed it most.
+                  To be the financial partner those families never had. To help people first, always.
+                </p>
+
+                <p className="mt-6">
+                  Our team shows up every day for one reason: to help you figure out your best path forward. Sometimes that's credit repair. Sometimes it's business funding. Sometimes it's just honest advice that saves you thousands of dollars.
                 </p>
 
                 <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 my-8">
                   <p className="font-semibold text-gray-900">
-                    Today, we've helped over 2,500 families and businesses. We've facilitated over $100M in funding through our partner networks. We've turned 490 credit scores into mortgage approvals. We've turned denied loan applications into funded businesses.
+                    Today, we've helped over 2,500 individuals, families, and businesses. We've turned denials into approvals. We've turned denied loan applications into funded businesses.
                   </p>
                 </div>
 
                 <p className="text-xl font-bold text-green-600">
-                  But here's what we're most proud of:
+                  But here's what keeps us going:
                 </p>
 
                 <p>
-                  Every single client we've helped is now equipped to teach the next generation. They understand how credit works. They know how to access capital. They can build wealth that lasts.
+                  Every single person we help is now equipped to teach the next generation. They understand how credit works. They know how to access capital. They can build wealth that lasts.
                 </p>
 
                 <p className="text-xl font-bold text-gray-900">
-                  That's the real legacy. Not fixing credit, but breaking generational curses.
+                  That's why we do this. Not to fix credit scores. To help people build the lives they deserve.
                 </p>
 
                 <p className="italic text-gray-600 mt-8">
-                  — Evert Jafet Calderon, Founder & CEO
+                  — The Mesa Group Team
                 </p>
               </div>
             </div>
@@ -1565,42 +1565,41 @@ const Homepage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 leading-relaxed">
 
-            <p className="text-2xl font-bold text-gray-900">
-              Bad credit doesn't mean you're irresponsible. It means no one taught you.
-            </p>
-
             <p>
-              And if no one taught my parents, hardworking immigrants who risked everything to come to this country and build a life, then how many other families were out there navigating this system blind?
+              And if no one taught hardworking immigrants who risked everything to build a life in this country, then how many other families were out there navigating this system blind?
             </p>
 
             <p className="text-xl font-bold text-gray-900">
-              That's why we built Mesa Group.
+              That's why Mesa Group exists.
             </p>
 
             <p>
-              So it could be the strategic financial partner my family never had when we needed it most.
+              To be the financial partner those families never had. To help people first, always.
+            </p>
+
+            <p>
+              Our team shows up every day for one reason: to help you figure out your best path forward. Sometimes that's credit repair. Sometimes it's business funding. Sometimes it's just honest advice that saves you thousands of dollars.
+            </p>
+
+            <p>
+              We help everybody. That's the promise we made, and that's the promise we keep.
             </p>
 
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 my-8">
               <p className="text-xl font-semibold text-gray-900">
-                Today, we've helped over 2,500 families and businesses. We've facilitated over $100M in funding through our partner networks. We've turned 490 credit scores into mortgage approvals. We've turned denied loan applications into funded businesses.
+                Today, we've helped over 2,500 individuals, families, and businesses. We've turned denials into approvals. We've turned denied loan applications into funded businesses.
+              </p>
+              <p className="text-lg text-gray-700 mt-4">
+                That teacher who came to us confused about buying a home? He's a homeowner now. And his kids will grow up watching their dad own something, not rent. That's generational change.
               </p>
             </div>
 
             <p className="text-xl font-bold text-green-600">
-              But here's what we're most proud of:
-            </p>
-
-            <p>
-              Every single client we've helped is now equipped to teach the next generation. They understand how credit works. They know how to access capital. They can build wealth that lasts.
-            </p>
-
-            <p className="text-xl font-bold text-gray-900">
-              That's the real legacy. Not fixing credit, but breaking generational curses.
+              That's why we do this. Not to fix credit scores. To help people build the lives they deserve.
             </p>
 
             <p className="italic text-gray-600 mt-8">
-              — Evert Jafet Calderon, Founder & CEO
+              — The Mesa Group Team
             </p>
 
           </div>
@@ -1627,35 +1626,39 @@ const Homepage = () => {
             {[
               {
                 question: "Is Mesa Group a credit repair company?",
-                answer: "Mesa Group is a comprehensive financial services platform. While we offer credit restoration through our Mesa360 Credit System, we also provide access to personal loans, debt consolidation, business funding, estate planning, life insurance, and more through our strategic partnerships with industry-leading providers."
+                answer: "Mesa Group is a comprehensive financial services platform. While we offer credit restoration through our Mesa360 Credit System, we help people with much more than just credit repair. We provide access to business funding, debt relief, credit monitoring, estate planning, and more through our partnerships with industry-leading providers. Think of us as your financial partner who helps you navigate everything, not just one service."
               },
               {
                 question: "How is Mesa Group different from other financial services companies?",
-                answer: "Three key differentiators: (1) We've built an ecosystem of vetted partners so you don't have to research multiple platforms, (2) Our founder and team have personal experience overcoming financial challenges, so we understand your situation, (3) We succeed when you succeed, which is why we maintain a 5-star rating across 150+ Google reviews."
+                answer: "Three things set us apart: (1) We help people first. Not everyone who calls us becomes a client, and that's okay. We'd rather give you honest guidance than push services you don't need. (2) We've built the ecosystem for you. Instead of researching dozens of platforms, you get access to vetted partners through one relationship. (3) We've been where you are. Our founder had a 490 credit score. We understand what it's like to feel stuck, which is why we're here to help you move forward."
               },
               {
                 question: "What services does Mesa Group offer?",
-                answer: "We offer credit monitoring, credit restoration (professional and DIY), personal loans, auto loan refinancing, student loan refinancing, debt consolidation, debt relief, business funding (including 0% interest programs), business credit building, life insurance, and estate planning."
+                answer: "We help with credit restoration (professional and DIY), credit monitoring, business funding (including 0% interest programs), business credit building, debt consolidation, debt relief, personal loans, auto loan refinancing, student loan refinancing, life insurance, and estate planning. During your free consultation, we'll assess your situation and recommend only what makes sense for YOUR goals."
               },
               {
                 question: "How long does it take to see results?",
-                answer: "Results vary by service. For credit restoration, most clients see measurable improvement within 45-90 days. Loan pre-qualifications are typically instant. Business funding timelines depend on your specific situation but can be as fast as 24-48 hours for certain programs."
+                answer: "It depends on your situation and goals. For credit restoration, most clients see measurable improvement within 45-90 days. Business funding can be as fast as 24-48 hours for certain programs. Loan pre-qualifications are typically instant. During your consultation, we'll give you a realistic timeline based on your specific situation."
               },
               {
                 question: "Does Mesa Group guarantee specific results?",
-                answer: "We cannot guarantee specific credit score increases or funding approvals, as results depend on individual circumstances. What we do guarantee is expert guidance, transparent communication, and access to the same tools and platforms used by financial professionals nationwide."
+                answer: "We can't guarantee specific credit score increases or funding approvals because results depend on your individual circumstances. What we do guarantee: honest guidance, transparent communication, and access to the same tools and platforms the wealthy use to build and protect their wealth."
               },
               {
                 question: "Is there a free consultation?",
-                answer: "Yes! We offer a completely free consultation to understand your situation, goals, and challenges. There's no obligation, just a conversation about how we might be able to help you achieve your financial objectives."
+                answer: "Yes. The consultation is completely free. We'll spend 30-45 minutes understanding your situation, answering your questions, and helping you figure out your best path forward. No pressure. No obligations. Just honest guidance."
+              },
+              {
+                question: "Do I have to sign up for services after the consultation?",
+                answer: "Absolutely not. Many people schedule consultations just to understand their options or get expert advice, and that's completely fine with us. We help everybody, not just the people who become clients."
               },
               {
                 question: "What areas do you serve?",
-                answer: "Mesa Group serves clients nationwide. While our headquarters is in Bakersfield, California, our digital platform and partner network allow us to help families and businesses across all 50 states."
+                answer: "We serve clients nationwide. While our headquarters is in Bakersfield, California (5001 California Ave Suite 219), our platform and partner network allow us to help individuals, families, and businesses across all 50 states. We offer consultations in-office, by phone, or video call."
               },
               {
                 question: "How do I get started?",
-                answer: "Simply schedule a free consultation through our website or call us at (661) 310-3040. We'll discuss your situation and recommend the best path forward based on your unique needs and goals."
+                answer: "Schedule a free consultation. Call us at (661) 310-3040 or book online. We'll discuss your situation and help you understand your best path forward. No pressure. No obligations. Just people who genuinely want to help."
               }
             ].map((item, idx) => (
               <div
@@ -1693,38 +1696,21 @@ const Homepage = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Trust Recap */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-            <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Serving since 2023</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">2500+ Clients Served</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">150+ 5-Star Reviews</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Trilingual Support</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Helping Clients Nationwide</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">100% Customized Solutions</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">EN/ES/Punjabi Support</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm">
-              <Check className="w-4 h-4 text-green-600" />
-              <span className="text-gray-700">Real Office You Can Visit</span>
-            </div>
+            {[
+              'Serving since 2023',
+              '2,500+ Lives Changed',
+              '150+ 5-Star Reviews',
+              'Trilingual Support',
+              'Helping Clients Nationwide',
+              '100% Customized Solutions',
+              'EN/ES/Punjabi Support',
+              'Real Office You Can Visit',
+            ].map((badge) => (
+              <div key={badge} className="flex items-center gap-2 text-sm">
+                <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                <span className="text-gray-700">{badge}</span>
+              </div>
+            ))}
           </div>
 
           {/* Final CTA */}
