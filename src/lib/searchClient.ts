@@ -4,7 +4,7 @@
  * To swap providers, replace only this file.
  */
 
-import algoliasearch from 'algoliasearch';
+import { algoliasearch } from 'algoliasearch';
 
 const APP_ID = import.meta.env.VITE_ALGOLIA_APP_ID as string;
 const SEARCH_KEY = import.meta.env.VITE_ALGOLIA_SEARCH_KEY as string;
