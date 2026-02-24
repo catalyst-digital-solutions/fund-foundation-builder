@@ -1074,6 +1074,127 @@ const Homepage = () => {
 
 
       {/* ================================================================
+          SECTION 4C: MESA FINANCIAL CONCIERGE SPOTLIGHT
+      ================================================================ */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-amber-50 via-[#fffbec] to-orange-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div className="text-center mb-12">
+            <div className="inline-block bg-amber-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-4 uppercase tracking-wide">
+              Mesa Financial Concierge
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              You Deserve a Partner, <span className="text-[#f9c65d]">Not Just a Platform.</span>
+            </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              This is the financial membership we wish existed when we needed it most. Built for the people the system forgot. Delivered like the service you've always deserved.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-12 space-y-4 text-lg text-gray-700 leading-relaxed text-center">
+            <p>
+              You deserve more than a service that disappears after you sign up.
+            </p>
+            <p>
+              Mesa Financial Concierge is your seat at the table. A private community of people on the same journey. Weekly live coaching calls with real advisors. A personalized roadmap built around your goals. Not a generic template. Business funding guidance when you're ready to grow. And $1M in identity theft protection for your entire household.
+            </p>
+            <p className="font-semibold text-gray-900">
+              This isn't a bonus feature. This is what true partnership looks like.
+            </p>
+            <p>
+              We built this because credit repair is only the beginning. The families we serve deserve someone by their side through every chapter — through the mortgage application, the business launch, and the next generation that never has to start from zero.
+            </p>
+            <p>
+              That's why the Community tier is free with your Mesa x SmartCredit subscription. Because access to a real financial partner shouldn't be a luxury. It should be a right.
+            </p>
+          </div>
+
+          {/* 5 Experience Pillars */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+            {[
+              {
+                icon: MessageSquare,
+                title: 'Your People. Your Community.',
+                body: 'Ask questions at midnight. Celebrate wins on a Tuesday. Get real answers from advisors and members who\'ve been exactly where you are. This is your financial family.',
+              },
+              {
+                icon: Phone,
+                title: 'Weekly Live Strategy Calls',
+                body: 'A live room where your questions get answered and your progress gets witnessed. Every call is recorded, so you never miss a beat.',
+              },
+              {
+                icon: MapPin,
+                title: 'Your Personal Roadmap',
+                body: 'Powered by LevelUpScore technology. Tailored to your credit profile and your goals. You\'ll always know your next move — and why it matters.',
+              },
+              {
+                icon: Building2,
+                title: 'Business Funding Guidance',
+                body: 'You built something real. We help you access the capital to grow it.',
+              },
+              {
+                icon: ShieldCheck,
+                title: '$1M Identity Theft Protection',
+                body: 'Your household. Covered. Automatically.',
+              },
+            ].map((pillar, i) => (
+              <div key={i} className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow text-center">
+                <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <pillar.icon className="w-6 h-6 text-amber-600" />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2 text-sm">{pillar.title}</h3>
+                <p className="text-gray-600 text-xs leading-relaxed">{pillar.body}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Access tiers */}
+          <div className="bg-white rounded-2xl p-6 max-w-2xl mx-auto mb-10 shadow-md">
+            <p className="text-center font-semibold text-gray-900 mb-4">How to Access:</p>
+            <div className="space-y-2 text-sm text-gray-700">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                <span>Free with Mesa x SmartCredit ($27.99/month)</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                <span>Free with every Mesa360 Credit System enrollment</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                <span>Upgrade to Concierge or Executive for 1-on-1 advisor access</span>
+              </div>
+            </div>
+          </div>
+
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link
+              to="/concierge"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
+            >
+              Explore Mesa Financial Concierge
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            <a
+              href="https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-xl shadow-md hover:shadow-lg border-2 border-gray-200 transition-all duration-200"
+            >
+              Get Started with SmartCredit
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
+
+          <p className="text-center text-sm text-gray-500 mt-6">
+            Three tiers. One mission. We help people first — always.
+          </p>
+
+        </div>
+      </section>
+
+      {/* ================================================================
           SECTION 4B: TRANSFORMATION JOURNEY (A/B TEST VARIANT)
       ================================================================ */}
       <TransformationJourney />
