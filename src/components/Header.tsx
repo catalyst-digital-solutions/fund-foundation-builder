@@ -323,7 +323,7 @@ const Header = () => {
               {/* Divider before Client Login */}
               <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
 
-              {/* Client Login Link */}
+              {/* Client Login Link — desktop only */}
               <a
                 href="https://portal.mesagroupconsulting.com/"
                 target="_blank"
@@ -333,8 +333,16 @@ const Header = () => {
                 Client Login
               </a>
 
-              {/* Mobile: Search + Phone number + Sign In */}
-              <div className="lg:hidden flex items-center gap-3">
+              {/* JOIN Button — desktop */}
+              <Link
+                to="/concierge"
+                className="hidden lg:flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-bold rounded-lg transition-colors"
+              >
+                Join
+              </Link>
+
+              {/* Mobile: Search + Phone + Sign In + JOIN */}
+              <div className="lg:hidden flex items-center gap-2">
                 <button
                   onClick={() => setSearchOpen(true)}
                   className="text-white hover:text-[#f9c65d] transition-colors"
@@ -355,6 +363,12 @@ const Header = () => {
                 >
                   Sign In
                 </a>
+                <Link
+                  to="/concierge"
+                  className="px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-bold rounded-lg transition-colors"
+                >
+                  Join
+                </Link>
               </div>
 
 
