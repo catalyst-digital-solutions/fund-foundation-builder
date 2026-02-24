@@ -314,7 +314,7 @@ const EmergencyFundCalculator = ({ onBack }: EmergencyFundCalculatorProps) => {
               Unlock SmartCredit's <strong>Money Manager</strong> to track your savings, expenses, and financial goals all in one place, making it easier to build your emergency fund.
             </p>
             <p className="text-green-400 text-sm font-medium mb-4">
-              Special Offer: Just $1 for the first 7 days
+              $27.99/month · Cancel Anytime
             </p>
             <a 
               href={SMARTCREDIT_URL}
