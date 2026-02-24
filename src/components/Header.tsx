@@ -111,7 +111,6 @@ const Header = () => {
         { label: 'Credit Monitoring', href: '/credit-monitoring' },
         { label: 'Credit Restoration', href: '/credit-repair' },
         { label: 'DIY Credit Repair', href: '/diy-credit-repair' },
-        { label: 'Get Credit Report', href: 'https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM', external: true },
         { label: 'Personal Loans', href: '/personal-loans' },
         { label: 'Credit Cards', href: '/credit-cards' },
         { label: 'Auto Loan Refinancing', href: '/auto-loan-refi' },
@@ -130,7 +129,6 @@ const Header = () => {
         { label: 'Business Funding', href: '/business-funding' },
         { label: 'Business Credit Builder', href: '/business-credit-builder' },
         { label: 'Business Debt Relief', href: '/business-debt-relief' },
-        { label: 'Form An LLC', href: 'https://www.tailorbrands.com/llc-cpa-aff?transaction_id=102bd1f29c1558d91db36f9aa7b89e&state=&utm_source=Tune&utm_medium=Tune&utm_campaign=9347', external: true },
       ],
     },
     {
