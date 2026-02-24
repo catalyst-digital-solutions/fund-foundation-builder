@@ -50,7 +50,7 @@ const DIYCreditRepair = () => {
     },
     {
       question: "What if I'm not satisfied?",
-      answer: "We offer a 7-day free trial (no credit card required) and a 30-day money-back guarantee after you subscribe. If the software isn't what you expected, cancel within 30 days for a full refund. We want you to succeed, not feel trapped."
+      answer: "We offer a 30-day money-back guarantee. If the software isn't what you expected, cancel within 30 days for a full refund. We want you to succeed, not feel trapped."
     },
     {
       question: "Can I upgrade to MESA 360 coaching later?",

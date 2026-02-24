@@ -4,7 +4,7 @@ import PoweredBySmartCredit from '@/components/PoweredBySmartCredit';
 
 const EmotionalCTA3 = () => {
   const handleClick = () => {
-    window.open('https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM', '_blank', 'noopener,noreferrer');
+    window.open('https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -20,7 +20,7 @@ const EmotionalCTA3 = () => {
           Sleep Soundly Knowing Your Credit Is Protected. Catch Fraud the Moment It Happens.
         </h2>
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-          Imagine waking up to instant alerts—not devastating surprises months later. Your family covered with $1M fraud insurance. Your credit score rising as you dispute errors and build strategically. Complete peace of mind knowing you'll catch threats before they destroy your financial future. That security you deserve is one decision away.
+          Imagine waking up to instant alerts, not devastating surprises months later. Your family covered with $1M fraud insurance. Your credit score rising as you dispute errors and build strategically. Expert guidance available whenever you need it. Complete peace of mind knowing you'll catch threats before they destroy your financial future. That security you deserve is one decision away.
         </p>
         <button
           onClick={handleClick}

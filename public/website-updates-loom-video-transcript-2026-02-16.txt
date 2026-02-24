@@ -1,0 +1,52 @@
+0:00 So, I wanna send you over this video, breaking down the changes that I have on this dock. So, when it comes to the mobile header, we do wanna change it up a bit just because I realize that not a lot of people are gonna realize that this is a menu button here.
+0:17 So, I was thinking if we can do something like this nerd wallet option, where we do the burger min- you with the three lines, kinda like match it up this way, and then seeing if we can do a, a search option, and then assign it and join.
+0:35 The sign-in feature would go to the client login, and then join with link to the concierge page. So then that way they can join on there, and then we can keep the hours on there, and then keep the socials, or- a 4.
+0:48 Unless you think maybe we switch this to the numbers, Maybe the switching it to the phone number would be a little bit better for a call to action, and then being able to have that phone number right there for people.
+1:04 So, I added some stuff on here. I don't know if this would help, but just kinda going through- through- this, and then seeing if we can update that.
+1:12 Now, for the home website, for the desktop version, excuse me, all is good. I would say if we can add the concierge to have the spoke about.
+1:23 Maybe if we can do the search feature, and then the client login would go to the portal, and then join would go again to the concierge service.
+1:32 So, maybe- maybe we can get rid of this, since it's really just like that pullout card, you know, so I don't know exactly, you know, maybe if you have something in mind for that, maybe we can kind of utilize the space up here best.
+1:46 but just so we can kind of mimic the nerd wallet setup, and then I just added some instructions on here.
+1:51 hope that helps. Now, for the mireboard, I have the mireboard linked here for you, and then I have a Lumix foundation.
+1:57 nation. On there. if the Lumix foundation isn't the best, I'll give you a quick flow of things right now. So then this way you understand.
+2:07 So, it all starts here. Right, these are our marketing channels. Then it's the consultation with the smart credit. We're not going to be doing the 49 for right now.
+2:17 We'll leave that for like quarter two, quarter three. this S-C, because we just recently switched to the 2799 with no child, so we'll keep this moving for right now.
+2:28 And then does the client enroll for Messa 360 services, which is obviously the credit area services. And then if they do enroll for the services, then here's the plan.
+2:37 This is how onboarding goes. Like, pretty much what rolls and tasks each team member and department needs. To do, right?
+2:46 So then this is going to be happening, and then welcome car, and then on round one update, client success manager is going to go ahead and give them a car, and then day 45, credit ballot check-in, day 70, so this is what's going to be happening.
+2:59 And then this is literally just like an explanation of everything that should be happening for that client until they graduate.
+3:06 And then obviously the goal is to keep them retained. As much as possible. Now if that client does not sign up for credit card services, and then our goal is to keep them into at least this free community here with an active smart credit PID.
+3:19 And then if they want to go different tiers and they get all these perks on here. So this is basically the operational flow for how traffic will be when it comes into message consulting.
+3:29 Obviously we have different services and everything. But this is going to be the main goal for us as far as being able to get retention because then we have like debt relief and all that other good stuff.
+3:42 But those are a little bit more specifically targeted. I needed to kind of create something that understands this flow. I think later on I can kind of create what happens for each of the other branches of the business.
+3:53 But this is the ones that I wanted to target on. So you'll have. Have good day. That here and there's a Lumen explanation kind of going through that a little bit more in detail.
+4:00 For the footer update, I didn't want to update it just because obviously we changed the language and everything. one of the biggest things when I was prompting you is like that credit union help people first type of language.
+4:12 so we updated this on here. And then, one of the biggest thing is like, I know the system was kind of saying.
+4:19 Thank you when we were prompting it the first time, it was saying $100 million facilitated in funding. I kind of wanted to stay away from that just because those are not concrete numbers that we can prove.
+4:30 Yes, we're leveraging our white label partners. But, I didn't really want to like lead with that. So, we're gonna change this in the footer where it's five-star Google rating, 50 million collections deleted because we can actually verify the- that, business funding facilitated is gonna be there instead
+4:45 of the 97 million plus funding. And then, instead of like clients, we're gonna say 2,500 plus lives change so that we can bite- or go into that more like credit union to help people first set up.
+4:59 And then the home page, I went ahead and updated the entire home page for you. I did the copy and everything on here.
+5:06 You So, this is good to go for you for the most part. Everything stayed this. Well, like, the format of it stayed the same, but the body and everything is a lot different.
+5:17 So it embodies out a lot more. And then, we have the concierge page. So here's the concierge page for you.
+5:26 This is laid out exactly how we needed it to. Then the credit monitoring page, we have this one updated, so it includes, it's talking about, like, the bonuses and stuff like that out of there, included with their smart credit subscription.
+5:42 So here we have that right there. And then I went ahead and searched the website to see where I said dollar trial.
+5:50 And we're just gonna go ahead and remove it completely. So I did add the links for you here. So. Right here, we'll just remove that trial.
+5:57 right here in the credit repair page, we'll end up removing this trial as well. Then, on the credit repair page, there's a couple of questions on the Q&A's that say trial.
+6:09 So we'll remove that one right there on question three. And then on question 16, it says trial twice, so we'll go ahead and work on removing that.
+6:18 That's it. And then on the DIY credit repair page, it does say trial on here, so we'll work on removing that as well.
+6:27 And then on the templates is does says trial, so we'll work on removing that as well. And then that's pretty much it.
+6:35 And then I have the new version for the zero percent business funding page. It'll be three different offers. So I've updated it to be a little bit more of that starter, intermediate, and then concierge executive type of level.
+6:52 So I think this one will perform a lot better than what we originally had. And I did try to condense it as much as I could.
+6:57 Just because the previous one was going a little bit more in depth and giving away the actual strategy. So I think this will be a lot better.
+7:05 Also, On this page, Where is this at? So the funding qualification form. On this section here, I have the form right here because this is going to lead into the CRM.
+7:17 We're going to have everything that we need to do on our back end. So you can add that form there.
+7:24 And then for this section here, where we go, where we go. This is the section. There's testimonial section. Oh, that's the form.
+7:40 There you go. On here. The social proven testimonial section. You know, I'm going to link this in the email.
+7:55 I guess I can probably do it here. So, I've added these on our folder. So, we go to Miss Group Consulting website videos.
+8:04 So, we have one, two, three, four. These are going to be review videos. So, we can add those in that section just to give the website a little bit more, you get videos on there.
+8:16 So, here, I'm just going to grab this actually. Copy link. I'm just going to create this. Oh, no, no. 0% of this funding.
+8:32 There we go. Alright, cool. So, I believe that is it. And then, on here, what I'll do on this document is what I mentioned to you earlier this morning, as far as, Oh, you already sent it to me.
+8:50 So, thank you so much, sir, so, Oh, here, let me see. I'll add these on here. pah, pah, pah, pah, pah, pah.
+8:57 So, this is gonna be the credit press duration for consumers.
+9:10 And then for business. So, I'll update this doc with those pages. . . . And then I think we should be good to go.
+9:17 If you have any questions, go for it in the middle. Thank you, Mario.

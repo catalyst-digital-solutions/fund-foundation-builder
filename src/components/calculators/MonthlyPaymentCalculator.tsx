@@ -6,7 +6,7 @@ interface MonthlyPaymentCalculatorProps {
   onBack: () => void;
 }
 
-const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM';
 
 const MonthlyPaymentCalculator = ({ onBack }: MonthlyPaymentCalculatorProps) => {
   const [principal, setPrincipal] = useState(0);
@@ -247,7 +247,7 @@ const MonthlyPaymentCalculator = ({ onBack }: MonthlyPaymentCalculatorProps) => 
               Unlock SmartCredit's <strong>Money Manager</strong> to track all your loans in one place, plus <strong>ScoreBoost™</strong> to see how your payments impact your credit score.
             </p>
             <p className="text-green-400 text-sm font-medium mb-4">
-              Special Offer: Just $1 for the first 7 days
+              $27.99/month · Cancel Anytime
             </p>
             <a 
               href={SMARTCREDIT_URL}

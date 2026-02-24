@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
-import { Clock, Mail, MapPin, Phone, ChevronDown, X, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Clock, Mail, MapPin, Phone, ChevronDown, X, Menu, Search, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SearchModal } from '@/components/SearchModal';
 
 // Inline SVG Logo Component (white version for dark backgrounds)
 const MesaGroupLogo = ({ className }: { className?: string }) => (
@@ -60,6 +61,7 @@ const Header = () => {
   const [slideOutOpen, setSlideOutOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [showCopyToast, setShowCopyToast] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleEmailClick = (e: React.MouseEvent) => {
@@ -100,21 +102,23 @@ const Header = () => {
   const menuItems = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
+    { label: 'Concierge', href: '/concierge' },
     {
       label: 'For Consumers',
       href: '/for-consumers',
       submenu: [
-        { label: 'Build Credit', href: '/build-credit' },
+        { label: 'Build Your Credit', href: '/build-credit' },
         { label: 'Credit Monitoring', href: '/credit-monitoring' },
-        { label: 'Credit Restoration (Mesa360)', href: '/credit-repair' },
-        { label: 'DIY Credit Restoration', href: '/diy-credit-repair' },
-        { label: 'Credit Cards', href: '/credit-cards' },
+        { label: 'Credit Restoration', href: '/credit-repair' },
+        { label: 'DIY Credit Repair', href: '/diy-credit-repair' },
+        { label: 'Get Credit Report', href: 'https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM', external: true },
         { label: 'Personal Loans', href: '/personal-loans' },
-        { label: 'Auto Loan Refi', href: '/auto-loan-refi' },
-        { label: 'Student Loan Refi', href: '/student-loan-refi' },
-        { label: 'Debt Consolidation Loan', href: '/debt-consolidation-loan' },
+        { label: 'Credit Cards', href: '/credit-cards' },
+        { label: 'Auto Loan Refinancing', href: '/auto-loan-refi' },
+        { label: 'Student Loan Refinancing', href: '/student-loan-refi' },
+        { label: 'Debt Consolidation', href: '/debt-consolidation-loan' },
         { label: 'Debt Relief', href: '/debt-relief' },
-        { label: 'Trust & Will Plan', href: '/trust-and-will-plan' },
+        { label: 'Trust & Will Planning', href: '/trust-and-will-plan' },
         { label: 'Life Insurance', href: '/life-insurance' },
       ],
     },
@@ -122,20 +126,21 @@ const Header = () => {
       label: 'For Businesses',
       href: '/for-businesses',
       submenu: [
-        // { label: '0% Interest Business Funding', href: '/zero-interest-business-funding' }, // HIDDEN: Awaiting revised copy from Evert (done-with-you model)
         { label: 'Business Funding', href: '/business-funding' },
         { label: 'Business Credit Builder', href: '/business-credit-builder' },
         { label: 'Business Debt Relief', href: '/business-debt-relief' },
+        { label: 'Form An LLC', href: 'https://www.tailorbrands.com/llc-cpa-aff?transaction_id=102bd1f29c1558d91db36f9aa7b89e&state=&utm_source=Tune&utm_medium=Tune&utm_campaign=9347', external: true },
       ],
     },
     {
       label: 'Resources',
       href: '/resources',
       submenu: [
-        { label: 'Articles & Insights', href: '/resources/articles' },
-        { label: 'Mesa News', href: '/resources/news' },
-        { label: 'Financial Calculators', href: '/resources/calculators' },
-        { label: 'Letter Templates', href: '/resources/templates' },
+        { label: 'Client Portal', href: 'https://portal.mesagroupconsulting.com/Portal/login.jsp', external: true },
+        { label: 'Blog & Guides', href: '/resources/articles' },
+        { label: 'Financial Calculator', href: '/resources/calculators' },
+        { label: 'Free Consultation', href: 'https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar', external: true },
+        { label: 'FAQ', href: '#' },
       ],
     },
     { label: 'Contact', href: '/contact' },
@@ -199,6 +204,15 @@ const Header = () => {
       <div className="border-b border-gray-800">
         <div className="max-w-[1840px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-[105px]">
+            {/* Mobile Hamburger — far left, mobile only */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="lg:hidden p-2 mr-3 text-white hover:text-[#f9c65d] transition-colors flex-shrink-0"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+
             {/* Logo */}
             <Link to="/" className="flex items-center flex-shrink-0">
               <img src="/mgc-mesa-group-consulting-white-svg-logo.svg.svg" alt="Mesa Group Consulting" className="h-[40px] w-auto" />
@@ -276,11 +290,23 @@ const Header = () => {
               ))}
             </nav>
 
-            {/* Divider before Phone */}
+            {/* Divider before right-side actions */}
             <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-6" />
 
-            {/* Right Side: Phone, Client Login & Dot Grid */}
+            {/* Right Side: Search, Phone, Client Login */}
             <div className="flex items-center gap-4">
+              {/* Search Icon - Desktop (first position) */}
+              <button
+                onClick={() => setSearchOpen(true)}
+                className="hidden lg:flex p-2 text-white hover:text-[#f9c65d] transition-colors"
+                aria-label="Search"
+              >
+                <Search className="w-5 h-5" />
+              </button>
+
+              {/* Divider before Phone */}
+              <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
+
               {/* Phone Section */}
               <div className="hidden md:flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#3e3e3e] flex items-center justify-center">
@@ -297,7 +323,7 @@ const Header = () => {
               {/* Divider before Client Login */}
               <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
 
-              {/* Client Login Link */}
+              {/* Client Login Link — desktop only */}
               <a
                 href="https://portal.mesagroupconsulting.com/"
                 target="_blank"
@@ -307,25 +333,45 @@ const Header = () => {
                 Client Login
               </a>
 
-              {/* Divider before Dot Grid */}
-              <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-2" />
-
-              {/* 3x3 Dot Grid - Desktop (opens slide-out panel) */}
-              <button
-                onClick={() => setSlideOutOpen(true)}
-                className="hidden lg:flex p-2 text-white hover:text-[#f9c65d] transition-colors"
-                aria-label="Open info panel"
+              {/* JOIN Button — desktop */}
+              <Link
+                to="/concierge"
+                className="hidden lg:flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-bold rounded-lg transition-colors"
               >
-                <DotGridIcon />
-              </button>
+                Join
+              </Link>
 
-              {/* Mobile Menu Toggle */}
-              <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="lg:hidden p-2 text-white hover:text-[#f9c65d] transition-colors"
-              >
-                {mobileMenuOpen ? <X className="w-6 h-6" /> : <DotGridIcon />}
-              </button>
+              {/* Mobile: Search + Phone + Sign In + JOIN */}
+              <div className="lg:hidden flex items-center gap-2">
+                <button
+                  onClick={() => setSearchOpen(true)}
+                  className="text-white hover:text-[#f9c65d] transition-colors"
+                  aria-label="Search"
+                >
+                  <Search className="w-5 h-5" />
+                </button>
+                <div className="h-4 w-[1px] bg-gray-600" />
+                <a href="tel:+16613103040" className="text-sm font-semibold text-white hover:text-[#f9c65d] transition-colors">
+                  (661) 310-3040
+                </a>
+                <div className="h-4 w-[1px] bg-gray-600" />
+                <a
+                  href="https://portal.mesagroupconsulting.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-white hover:text-[#f9c65d] transition-colors"
+                >
+                  Sign In
+                </a>
+                <Link
+                  to="/concierge"
+                  className="px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-bold rounded-lg transition-colors"
+                >
+                  Join
+                </Link>
+              </div>
+
+
             </div>
           </div>
         </div>
@@ -562,6 +608,9 @@ const Header = () => {
           Email copied to clipboard!
         </div>
       )}
+
+      {/* Search Modal */}
+      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </header>
   );
 };

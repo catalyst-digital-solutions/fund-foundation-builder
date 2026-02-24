@@ -8,7 +8,7 @@ interface EmergencyFundCalculatorProps {
 
 type Stability = 'stable' | 'moderate' | 'unstable';
 
-const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM';
 
 const ProgressBar = ({ current, target }: { current: number; target: number }) => {
   const percentage = target > 0 ? Math.min((current / target) * 100, 100) : 0;
@@ -314,7 +314,7 @@ const EmergencyFundCalculator = ({ onBack }: EmergencyFundCalculatorProps) => {
               Unlock SmartCredit's <strong>Money Manager</strong> to track your savings, expenses, and financial goals all in one place, making it easier to build your emergency fund.
             </p>
             <p className="text-green-400 text-sm font-medium mb-4">
-              Special Offer: Just $1 for the first 7 days
+              $27.99/month · Cancel Anytime
             </p>
             <a 
               href={SMARTCREDIT_URL}

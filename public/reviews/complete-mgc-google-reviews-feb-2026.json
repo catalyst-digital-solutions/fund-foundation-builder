@@ -1,0 +1,1792 @@
+{
+  "business": "Mesa Group Consulting",
+  "total_reviews": 117,
+  "reviews": [
+    {
+      "id": 1,
+      "reviewer": "Sahil Jaglan",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "6 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "5 weeks ago",
+        "text": "Thank you, Sahil, for the fantastic 5-star rating; we are delighted to hear that our efforts exceeded your expectations, and we're always here to support you in achieving your goals!"
+      }
+    },
+    {
+      "id": 2,
+      "reviewer": "Gurshaan waraich",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "11 weeks ago",
+      "review_text": "Gurtej singh veri nicee and polite explain everything pretty nicely 10/10",
+      "staff_mentioned": ["Gurtej Singh"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "11 weeks ago",
+        "text": "Thank you, Gurshaan Waraich, for your fantastic review; we're delighted to hear that Gurtej Singh provided you with such a positive experience, and we're always here to support your consulting needs!"
+      }
+    },
+    {
+      "id": 3,
+      "reviewer": "Jasnoordip Singh",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "14 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "14 weeks ago",
+        "text": "Thank you, Jasnoordip Singh, for your outstanding 5-star rating; your trust fuels our commitment to delivering exceptional results and keeping you at the forefront of success!"
+      }
+    },
+    {
+      "id": 4,
+      "reviewer": "Sovanny Mao",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "15 weeks ago",
+      "review_text": "Hi .. thank you for sharing.. I am deaf woman for Philippines 🇵🇭.. I need get earn more money job .. that's very important.. I am goal .. my bank is wisely they need to know .. Is something going on , the help is look alike the insurance, transfers, more etc .. we can together.. I am happy 😊",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "15 weeks ago",
+        "text": "Thank you, Sovanny Mao, for your insightful review; we're excited to assist you in achieving your goals and exploring opportunities to enhance your financial success together while ensuring comprehensive support tailored to your needs."
+      }
+    },
+    {
+      "id": 5,
+      "reviewer": "Satwinder Smarty",
+      "reviewer_stats": { "review_count": 4, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "23 weeks ago",
+      "review_text": "They are very nice give good advice for your granny report and history. I think everyone should Discuss our problems with that guys for credit",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": null
+    },
+    {
+      "id": 6,
+      "reviewer": "kulwinder ghuman",
+      "reviewer_stats": { "review_count": 8, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "26 weeks ago",
+      "review_text": "Very nice and very good service",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "26 weeks ago",
+        "text": "Thank you, Kulwinder Ghuman, for your wonderful feedback; we're delighted to hear you appreciated our service and look forward to delivering exceptional results for you in the future!"
+      }
+    },
+    {
+      "id": 7,
+      "reviewer": "Sukh Jammu",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "27 weeks ago",
+      "review_text": "Gurtej singh very good explain me a friendly",
+      "staff_mentioned": ["Gurtej Singh"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "27 weeks ago",
+        "text": "Thank you, Sukh Jammu, for your outstanding 5-star review! We're delighted to hear that Gurtej Singh provided you with clear and friendly explanations, making your experience with Mesa Group Consulting enjoyable. Our commitment to your success is unwavering, and we look forward to continuing to support you on your journey!"
+      }
+    },
+    {
+      "id": 8,
+      "reviewer": "Jovanny Rendon",
+      "reviewer_stats": { "review_count": 5, "photo_count": 46, "local_guide": true },
+      "rating": 5,
+      "date": "28 weeks ago",
+      "review_text": "Really recommend Mesa Group great work 🤝",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "28 weeks ago",
+        "text": "Thank you, Jovanny Rendon, for the fantastic 5-star review! We're delighted to know you were pleased with our work and appreciate your recommendation. Mesa Group Consulting is here to help you achieve outstanding results whenever you need us!"
+      }
+    },
+    {
+      "id": 9,
+      "reviewer": "Maninder Singh",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "29 weeks ago",
+      "review_text": "Very good explanation",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "29 weeks ago",
+        "text": "Thank you, Maninder Singh, for your wonderful feedback! We're delighted to hear that our explanations met your expectations, and we remain committed to providing you with the insightful support you deserve."
+      }
+    },
+    {
+      "id": 10,
+      "reviewer": "Jobandeep Singh",
+      "reviewer_stats": { "review_count": 9, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "29 weeks ago",
+      "review_text": "I highly recommend. They are the best of the best.I want to say thank you very much for helping me,",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "29 weeks ago",
+        "text": "Thank you, Jobandeep Singh, for your glowing recommendation; your success is our priority, and we're delighted to have made a positive impact on your journey!"
+      }
+    },
+    {
+      "id": 11,
+      "reviewer": "Rohan Sharma",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "30 weeks ago",
+      "review_text": "Shoutout to Harpreet for getting me setup on my credit repair very knowledgeable I definitely recommend Harpreet and his whole team thanks a lot",
+      "staff_mentioned": ["Harpreet"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "30 weeks ago",
+        "text": "Thank you, Rohan, for your glowing review! We're delighted to hear that Harpreet provided you with the knowledgeable support you needed for your credit repair journey. Our team is always here to help you achieve your financial goals, so don't hesitate to reach out for any further assistance!"
+      }
+    },
+    {
+      "id": 12,
+      "reviewer": "Rosie Ramos",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "31 weeks ago",
+      "review_text": "Exelente recomendado el 100%",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "Spanish",
+      "owner_response": {
+        "date": "31 weeks ago",
+        "text": "Thank you, Rosie Ramos, for your fantastic 5-star review! We're delighted to hear you found our services excellent and wholeheartedly recommended—your trust inspires us to continue delivering outstanding results. We're always here to support your needs!"
+      }
+    },
+    {
+      "id": 13,
+      "reviewer": "Ekamjot Sekhon",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "31 weeks ago",
+      "review_text": "They help me a lot,brief explanation,understandable and I had a good experience here.",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "31 weeks ago",
+        "text": "Thank you, Ekamjot Sekhon, for your fantastic 5-star review! We're delighted to hear that you found our explanations clear and helpful, leading to a positive experience with us. Your success is our priority, and we're always here to support you on your journey!"
+      }
+    },
+    {
+      "id": 14,
+      "reviewer": "Singh Singh",
+      "reviewer_stats": { "review_count": 11, "photo_count": 11, "local_guide": false },
+      "rating": 5,
+      "date": "32 weeks ago",
+      "review_text": "I contacted them mesa group consulting for fixing my credit my experience is great help me out with my credit score and I am very happy grateful to have my credit score back and appreciate them alot",
+      "staff_mentioned": [],
+      "outcomes": ["Credit score improved"],
+      "language": "English",
+      "owner_response": {
+        "date": "32 weeks ago",
+        "text": "Thank you, Davinder1313, for your wonderful feedback! We're delighted to hear that our team was able to assist you in improving your credit score, and we appreciate your trust in Mesa Group Consulting to help you achieve your goals. You can count on us for continued support on your credit journey!"
+      }
+    },
+    {
+      "id": 15,
+      "reviewer": "A Singh",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "32 weeks ago",
+      "review_text": "I saw the tiktoks of Chaklo Credit and thought to give try to fix my credit. I had a great experience in talking with one of the consultants of MESA GROUP. From the beginning, he was very professional, respectful, and responsive to every question I asked. He take the time to explain everything clearly about my credit report and what stands out most is his dedication to truly helping me to fix the errors. He don't just offer a service, He offer guidance, support, and a clear path forward for my future credit.\n\nI am glad I chose the right company to fix my credit and I highly recommend their services to anyone looking for trustworthy credit repair assistance.",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "referral_source": "TikTok (Chaklo Credit)",
+      "owner_response": {
+        "date": "32 weeks ago",
+        "text": "Thank you, A Singh, for your fantastic 5-star review! We're delighted to hear that our consultant was not only professional and responsive but also dedicated to providing you with the guidance and support needed to improve your credit; this is exactly the experience we strive for at Mesa Group Consulting. We're here to help you every step of the way as you work towards a brighter credit future!"
+      }
+    },
+    {
+      "id": 16,
+      "reviewer": "Jitu Chodry",
+      "reviewer_stats": { "review_count": 36, "photo_count": 24, "local_guide": true },
+      "rating": 5,
+      "date": "33 weeks ago",
+      "review_text": "AMAZING GURTEZ VEER HE SUGGEST ME LIKE AS CHOTA PRA AND VERY FRIENDLY AND ALL THING GOOD SO AGAIN THANKS ALOT 🤗❤️🙏",
+      "staff_mentioned": ["Gurtej"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "33 weeks ago",
+        "text": "Thank you, Jitu Chodry, for your incredible review! We're delighted to hear that Gurtez made such a positive impact on your experience, and we're here to support you every step of the way."
+      }
+    },
+    {
+      "id": 17,
+      "reviewer": "harjinder singh",
+      "reviewer_stats": { "review_count": 5, "photo_count": 1, "local_guide": false },
+      "rating": 5,
+      "date": "33 weeks ago",
+      "review_text": "I wil be talking gurtej singh and help me very good and explain me is a very good if anyone need any program for credit fix it please contact gurtej team thank you",
+      "staff_mentioned": ["Gurtej Singh"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "33 weeks ago",
+        "text": "Thank you, Harjinder Singh, for your fantastic 5-star review! We're delighted to hear that Gurtej and the team provided you with excellent support in your credit fix program, and we're here to help anyone else looking to achieve similar results."
+      }
+    },
+    {
+      "id": 18,
+      "reviewer": "Mandy Sohi",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "33 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "33 weeks ago",
+        "text": "Thank you, Mandy Sohi, for your outstanding 5-star review! We appreciate your trust in Mesa Group Consulting and are committed to delivering exceptional results in a timely manner as we continue working together."
+      }
+    },
+    {
+      "id": 19,
+      "reviewer": "Arsh bajwa",
+      "reviewer_stats": { "review_count": 7, "photo_count": 1, "local_guide": false },
+      "rating": 5,
+      "date": "33 weeks ago",
+      "review_text": "Heyy Mesa Group consultant\nI am here for Gurtej singh who gave me very right and good information credit building . From past three months i was searching for person who can help me for credit repair and also i meet with some people also but i felt that they were not good because they were just trying to sell their plans for money and that sit but i am very impressed with i met with Gurtej pajjji . he explains me every things in very simple and interesting way which was easy to understand for me . i learn lot of things which is very good as well as important for build a good credit . Last thing i have to say that GOD BLESS YOU AND KEEP RISING ❤️",
+      "staff_mentioned": ["Gurtej Singh"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "33 weeks ago",
+        "text": "Thank you, Arsh Bajwa, for your glowing 5-star review! We're delighted to hear that Gurtej Singh provided you with clear and valuable guidance on credit building, helping you navigate the complexities of credit repair in a way that was both engaging and informative. Your satisfaction is our priority, and we're here to support you every step of the way toward achieving your credit goals."
+      }
+    },
+    {
+      "id": 20,
+      "reviewer": "Rana Yg",
+      "reviewer_stats": { "review_count": 14, "photo_count": 2, "local_guide": false },
+      "rating": 5,
+      "date": "33 weeks ago",
+      "review_text": "I had a great experience with them. They helped me a lot in repairing my credit I would also like to say to everyone else that anyone who wants to fix their credit should contact them.",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "33 weeks ago",
+        "text": "Thank you, Rana Yg, for your fantastic review! We're delighted to hear about your positive experience and appreciate your recommendation for others seeking credit repair—our team is here to support anyone looking to improve their financial future."
+      }
+    },
+    {
+      "id": 21,
+      "reviewer": "Gurjeet Singh",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "33 weeks ago",
+      "review_text": "Talk with Gurtej , he explain me how to build credit and very heplful and easy going , im looking forward get this credit build services",
+      "staff_mentioned": ["Gurtej"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "33 weeks ago",
+        "text": "Thank you, Gurjeet Singh, for your fantastic review! We're excited to support you on your credit-building journey and look forward to helping you achieve your financial goals. Remember, we're here to assist you every step of the way!"
+      }
+    },
+    {
+      "id": 22,
+      "reviewer": "Santi",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "33 weeks ago",
+      "review_text": "Great service & explain everything with detail.",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "33 weeks ago",
+        "text": "Thank you, Santi, for your fantastic review! We're delighted to hear that you appreciated our detailed explanations and great service. At Mesa Group Consulting, we're committed to delivering exceptional results and look forward to continuing to support you on your journey!"
+      }
+    },
+    {
+      "id": 23,
+      "reviewer": "Michelle Morales",
+      "reviewer_stats": { "review_count": 4, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "33 weeks ago",
+      "review_text": "Everett was beyond helpful !!\nI am so grateful I kept an open mind and reached out to Mesa Group thank you Valerie for the referral. I am so glad I did not go with the previous credit repair company !\nThe professionalism, attentiveness was excellent. Everett was patient with all the million questions I had lol and fyi this was just during my consultation over the phone.\nThank you again, can't wait for my credit to be top tier !",
+      "staff_mentioned": ["Everett"],
+      "outcomes": [],
+      "language": "English",
+      "referral_source": "Valerie (personal referral)",
+      "owner_response": {
+        "date": "33 weeks ago",
+        "text": "Thank you so much, Michelle! We're honored you gave us the opportunity to support you and thrilled to hear how helpful and attentive Evert was during your consultation. Valerie knew you'd be in good hands. We're excited to walk with you on this journey and can't wait to celebrate when your credit hits that top-tier level. We're here for you every step of the way!"
+      }
+    },
+    {
+      "id": 24,
+      "reviewer": "Devil saab",
+      "reviewer_stats": { "review_count": 3, "photo_count": 1, "local_guide": false },
+      "rating": 5,
+      "date": "33 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "33 weeks ago",
+        "text": "Thank you, Devil Saab, for the fantastic 5-star rating! Your positive feedback inspires us to continue delivering exceptional results, and we're always here to support you on your journey."
+      }
+    },
+    {
+      "id": 25,
+      "reviewer": "Dilpreet singh",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "34 weeks ago",
+      "review_text": "Good guidance regarding credit score to boost up",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "33 weeks ago",
+        "text": "Thank you, Dilpreet. We're glad you found our guidance helpful in boosting your credit score. If you ever have more questions or need further support, we're here to help."
+      }
+    },
+    {
+      "id": 26,
+      "reviewer": "Prince Kumar",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "34 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "33 weeks ago",
+        "text": "Thank you so much, Prince. We appreciate your 5-star review and your support. If you ever need anything else or know someone who needs help with their credit, we're here and ready to assist."
+      }
+    },
+    {
+      "id": 27,
+      "reviewer": "felipe arias",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "34 weeks ago",
+      "review_text": "Excelentes. Los resultados tan solo 4 meses í puntuaje subió bastante mesa Grup agradezco todo lo que han echo por mi crédito.100% los recomiendo garantizando su trabajo",
+      "staff_mentioned": [],
+      "outcomes": ["Credit score improved significantly in 4 months"],
+      "language": "Spanish",
+      "owner_response": {
+        "date": "34 weeks ago",
+        "text": "Muchísimas gracias, Felipe! Nos alegra saber que en solo 4 meses logramos grandes resultados con su puntaje. Su confianza significa mucho para nosotros. Gracias por recomendarnos, seguimos aquí para ayudarle a usted y a nuestra comunidad a lograr sus metas financieras."
+      }
+    },
+    {
+      "id": 28,
+      "reviewer": "Harwinder Singh",
+      "reviewer_stats": { "review_count": 12, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "34 weeks ago",
+      "review_text": "We've had a great experience working with MESA GROUP CONSULTING. From the beginning, their team has been professional, respectful, and responsive to every question we've had. They take the time to explain everything clearly and make the process feel less overwhelming.\nWhat stands out most is their dedication to truly helping their clients. They don't just offer a service — they offer guidance, support, and a clear path forward. It's been a pleasure working with a team that genuinely cares about delivering results.\nWe're glad we chose them and highly recommend their services to anyone looking for trustworthy credit assistance.",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "34 weeks ago",
+        "text": "Thank you, Harwinder, for your fantastic feedback! It's incredibly rewarding to know that our team's professionalism and dedication have positively impacted your experience. Your recognition of our commitment to providing clear guidance and support motivates us to continue delivering exceptional results for our clients."
+      }
+    },
+    {
+      "id": 29,
+      "reviewer": "Baljinder Singh",
+      "reviewer_stats": { "review_count": 6, "photo_count": 1, "local_guide": false },
+      "rating": 5,
+      "date": "34 weeks ago",
+      "review_text": "Good service",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "34 weeks ago",
+        "text": "Thank you, Baljinder! We're delighted to hear you enjoyed our service and appreciate your support!"
+      }
+    },
+    {
+      "id": 30,
+      "reviewer": "Manni Singh",
+      "reviewer_stats": { "review_count": 6, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "34 weeks ago",
+      "review_text": "It was great to talk to gurtej very helpful guy explained everything briefly in Punjabi which was great I'm looking forward to work with you guys thank you so much for help.",
+      "staff_mentioned": ["Gurtej"],
+      "outcomes": [],
+      "language": "English",
+      "service_language": "Punjabi",
+      "owner_response": {
+        "date": "34 weeks ago",
+        "text": "Thank you, Manni, for your fantastic review! We're glad Gurtej could assist you in Punjabi, and we look forward to working with you!"
+      }
+    },
+    {
+      "id": 31,
+      "reviewer": "Jugraj Sandhu",
+      "reviewer_stats": { "review_count": 3, "photo_count": 1, "local_guide": false },
+      "rating": 5,
+      "date": "34 weeks ago",
+      "review_text": "Thanks u so much gurtej brother",
+      "staff_mentioned": ["Gurtej"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "34 weeks ago",
+        "text": "Thanks for the fantastic review, Jugraj! Your appreciation means a lot, and I'm glad to have made a positive impact. Looking forward to more successful collaborations ahead!"
+      }
+    },
+    {
+      "id": 32,
+      "reviewer": "Sandeep Singh",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "34 weeks ago",
+      "review_text": "Mesa Group was referred to me by a friend, I was hesitant at first, but I talk to a couple people who have used their services and they told me that their services are genuine.\nAfter that, I didn't look back and signed up and they helped me out and they repaired my credit.\nStaff very respectful.\nI recommend their services !",
+      "staff_mentioned": [],
+      "outcomes": ["Credit repaired"],
+      "language": "English",
+      "referral_source": "Friend referral",
+      "owner_response": {
+        "date": "34 weeks ago",
+        "text": "Thank you, Sandeep, for sharing your experience with Mesa Group Consulting! We're delighted to hear that our genuine services helped you repair your credit and that our respectful staff made a positive impression. Your recommendation means a lot to us, and we're glad to have been part of your journey!"
+      }
+    },
+    {
+      "id": 33,
+      "reviewer": "Karanjot Singh",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "34 weeks ago",
+      "review_text": "very good customer service explained it very well thanks gurjet paji",
+      "staff_mentioned": ["Gurtej"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "34 weeks ago",
+        "text": "We're delighted to hear that you had a fantastic experience with our customer service! Gurtej's thorough explanations are a hallmark of our commitment to excellence. Thank you for choosing Mesa Group Consulting; we look forward to assisting you again!"
+      }
+    },
+    {
+      "id": 34,
+      "reviewer": "Julian Morales",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "Absolutely amazing experience! A year ago, my credit score was 512 and I felt stuck. This company guided me step-by-step from disputing errors and building positive credit to teaching me smart habits. Within 6 months, my score jumped over 250 points.Thanks to them, I was finally approved for my first car loan and just closed on my dream home. I can't recommend them enough! Thank you to everyone at Mesa Group Consulting for the life changing experience.",
+      "staff_mentioned": [],
+      "outcomes": ["Credit score improved from 512 by 250+ points in 6 months", "Approved for first car loan", "Closed on dream home"],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Julian, for sharing your transformative journey! We're ecstatic to have played a role in your success, and we look forward to seeing even more incredible milestones ahead!"
+      }
+    },
+    {
+      "id": 35,
+      "reviewer": "Ronald Pineda",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "Very helpful and fast",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Ronald, for your incredible feedback; we're delighted to hear you found our service both helpful and speedy!"
+      }
+    },
+    {
+      "id": 36,
+      "reviewer": "Robin Mehrok",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "One of the best agencies in game, the staff is very smart and helpful.",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Robin, for the fantastic review; we're proud to have such a dedicated team that truly makes a difference!"
+      }
+    },
+    {
+      "id": 37,
+      "reviewer": "Kyne Kamal",
+      "reviewer_stats": { "review_count": 1, "photo_count": 1, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "I don't know what others think about credit consulting, but I'm confident these guys are the best in town maybe even the best in California. Life's so much better now with a 700+ credit score",
+      "staff_mentioned": [],
+      "outcomes": ["Achieved 700+ credit score"],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Kyne! We're proud to have helped you achieve such an amazing credit score, and your kind words truly motivate us to keep delivering top-notch consulting services."
+      }
+    },
+    {
+      "id": 38,
+      "reviewer": "Harjinder Singh",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "Great people, I have learned a lot from them and they helped me a lot. Thanks to sherbie",
+      "staff_mentioned": ["Sherbie"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Harjinder, for the fantastic feedback! We're delighted to hear that our team made such a positive impact on your journey. Sherbie is truly dedicated to helping others, and we're glad you found the experience valuable."
+      }
+    },
+    {
+      "id": 39,
+      "reviewer": "Juan Lima",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Juan, for the fantastic 5-star rating! Your feedback motivates us to continue delivering exceptional service and innovative solutions at Mesa Group Consulting."
+      }
+    },
+    {
+      "id": 40,
+      "reviewer": "Justin Calderon",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "note": "Profile A — 0 reviews. Distinct from review #48 (Profile B) and #91 (Profile C, 1 review).",
+      "owner_response": null
+    },
+    {
+      "id": 41,
+      "reviewer": "nava andrew",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "I can't thank Mesa Group enough for everything they've done for me. When I first reached out, my credit was in rough shape and I honestly didn't know where to start. Their team was professional, patient, and really took the time to explain every step of the process.\n\nWithin just a few months, they were able to remove several negative items from my credit report including collections and late payments that were dragging my score down.\n\nWhat I appreciated most was how transparent and supportive they were. They didn't just fix credit they educated me so I can keep it healthy moving forward. Thanks to them, I was able to get approved for a car loan with a great interest rate and I'm on track to buy my first home.\n\nIf you're struggling with credit, don't wait reach out to MESA. They truly changed my life.",
+      "staff_mentioned": [],
+      "outcomes": ["Negative items removed (collections, late payments)", "Approved for car loan with great interest rate", "On track to buy first home"],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Andrew! We're delighted to hear how our team made a positive impact on your credit journey. Your success is our priority, and we're so glad you appreciated both the results and the education along the way."
+      }
+    },
+    {
+      "id": 42,
+      "reviewer": "Frankie Morales",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Frankie! Your five-star rating fuels our passion for delivering exceptional consulting services."
+      }
+    },
+    {
+      "id": 43,
+      "reviewer": "Leslie Almazan",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Leslie Almazan, for the fantastic 5-star review! We're delighted to hear that you had a stellar experience with Mesa Group Consulting and truly appreciate your support."
+      }
+    },
+    {
+      "id": 44,
+      "reviewer": "Lucid_ Ronaldシ",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": null
+    },
+    {
+      "id": 45,
+      "reviewer": "Ronald Pineda",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "note": "Duplicate name — different profile from review #35 (1 review) and same name appears again.",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Ronald, for the fantastic 5-star rating! Your support energizes us to continue delivering exceptional results at Mesa Group Consulting."
+      }
+    },
+    {
+      "id": 46,
+      "reviewer": "Christopher Chavez",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, for your outstanding 5-star review! Your satisfaction fuels our passion for delivering exceptional consulting services at Mesa Group."
+      }
+    },
+    {
+      "id": 47,
+      "reviewer": "Ju Strokes",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "I think Harkamal was his name very attractive btw. Great customer service. Highly recommend!",
+      "staff_mentioned": ["Harkamal"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you for the fantastic review! We're delighted to hear about your positive experience with Harkamal and appreciate your recommendation!"
+      }
+    },
+    {
+      "id": 48,
+      "reviewer": "Justin Calderon",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "note": "Profile B — 0 reviews. Distinct from review #40 (Profile A) and #91 (Profile C, 1 review).",
+      "owner_response": null
+    },
+    {
+      "id": 49,
+      "reviewer": "Ju Cas",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Ju, for the fantastic 5-star rating! We're delighted to hear that your experience exceeded expectations and appreciate your support. Your feedback fuels our passion for providing exceptional consulting services!"
+      }
+    },
+    {
+      "id": 50,
+      "reviewer": "Gurnoor Singh",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "They're perfect on fixing credit I will recommend everyone using them",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you so much, Gurnoor! We're glad to hear you had a great experience. Your recommendation means the world to us — we're here to make credit repair fast, easy, and effective for everyone. Appreciate the support!\n— The Mesa Group Consulting Team"
+      }
+    },
+    {
+      "id": 51,
+      "reviewer": "prabhjot singh",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Prabhjot Singh, for the fantastic 5-star rating! We're delighted to hear that you had such a positive experience with Mesa Group Consulting. Your feedback inspires us to keep pushing the boundaries of excellence in our services!"
+      }
+    },
+    {
+      "id": 52,
+      "reviewer": "Prabhjot dhillon",
+      "reviewer_stats": { "review_count": 7, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "35 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Prabhjot, for your fantastic 5-star rating! We're delighted to hear that our services met your expectations and made a positive impact. Your support inspires us to continue delivering top-notch consulting experiences!"
+      }
+    },
+    {
+      "id": 53,
+      "reviewer": "Ajay Mandhan",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "38 weeks ago",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "35 weeks ago",
+        "text": "Thank you, Ajay! Your fantastic rating inspires us to keep delivering exceptional service."
+      }
+    },
+    {
+      "id": 54,
+      "reviewer": "Deepa Singh",
+      "reviewer_stats": { "review_count": 4, "photo_count": 7, "local_guide": false },
+      "rating": 5,
+      "date": "41 weeks ago",
+      "review_text": "I was work with Mesa Group Consulting They are great guys\nThey are resolved my all problems\nNow I have good credit and feel free",
+      "staff_mentioned": [],
+      "outcomes": ["Credit problems resolved", "Good credit achieved"],
+      "language": "English",
+      "owner_response": {
+        "date": "49 weeks ago",
+        "text": "Thank you for your wonderful review, Deepa! We're thrilled to hear that we were able to resolve your problems and improve your credit situation. Your satisfaction is our top priority, and we look forward to assisting you in the future!"
+      }
+    },
+    {
+      "id": 55,
+      "reviewer": "Kulwinder Singh",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "41 weeks ago",
+      "review_text": "Gud experience",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": null
+    },
+    {
+      "id": 56,
+      "reviewer": "Enrique Espinoza",
+      "reviewer_stats": { "review_count": 4, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "41 weeks ago",
+      "review_text": "Great service, Evert was able to get me approved on a 25 Grand Cherokee🙏🏻",
+      "staff_mentioned": ["Evert"],
+      "outcomes": ["Approved for Jeep Grand Cherokee ($25K vehicle purchase)"],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "That's fantastic to hear! We're thrilled that you're getting your credit back on track. Providing great customer service is a top priority for us, and we're delighted that you've had a positive experience with Mesa Group Consulting. If you need any further assistance along your credit journey, just let us know. We're here to help!"
+      }
+    },
+    {
+      "id": 57,
+      "reviewer": "MyaG",
+      "reviewer_stats": { "review_count": 13, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "45 weeks ago",
+      "review_text": "To begin with, I had previously worked with several other individuals whom I paid monthly, but I saw no improvement in my credit. Evert from Mesa Group has been working on my credit from day one, and let me tell you, he knows exactly what actions to take to achieve results! I've also recommended him to many family and friends. Evert has been fantastic, and I will definitely keep using his services. Also, I was able to buy my first home as of 4/7/25!",
+      "staff_mentioned": ["Evert"],
+      "outcomes": ["Bought first home on 4/7/25 after previously failing with other credit repair companies"],
+      "language": "English",
+      "owner_response": {
+        "date": "36 weeks ago",
+        "text": "Thank you for the amazing 5-star review! We're delighted to hear about your success in buying your first home and are grateful for your recommendations—Evert's expertise truly makes a difference!"
+      }
+    },
+    {
+      "id": 58,
+      "reviewer": "Hussain Bhalli",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "52 weeks ago",
+      "review_text": "Nice job",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "52 weeks ago",
+        "text": "Thank you for your kind words, Hussain! We appreciate your support and are glad you are satisfied with our work."
+      }
+    },
+    {
+      "id": 59,
+      "reviewer": "Amrit Sidhu",
+      "reviewer_stats": { "review_count": 4, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Feb 17, 2025",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "Feb 17, 2025",
+        "text": "Thank you for the 5-star rating, Amrit! We appreciate your support and look forward to serving you again."
+      }
+    },
+    {
+      "id": 60,
+      "reviewer": "Varinder Dhiman",
+      "reviewer_stats": { "review_count": 11, "photo_count": 4, "local_guide": false },
+      "rating": 5,
+      "date": "Feb 7, 2025",
+      "review_text": "Amazing service, got my score fixed quicker than expected. Gurtej was really helpful and available any time for my concerns. Would recommend 100%",
+      "staff_mentioned": ["Gurtej"],
+      "outcomes": ["Credit score improved faster than expected"],
+      "language": "English",
+      "owner_response": {
+        "date": "Feb 12, 2025",
+        "text": "Thank you for your wonderful review, Varinder! We're thrilled to hear that you had such a positive experience and that Gurtej was able to assist you effectively. Your recommendation means a lot to us!"
+      }
+    },
+    {
+      "id": 61,
+      "reviewer": "sunny chauhan",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Jan 28, 2025",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "Jan 28, 2025",
+        "text": "Thank you for the 5-star rating, Sunny! We appreciate your support and look forward to serving you again in the future."
+      }
+    },
+    {
+      "id": 62,
+      "reviewer": "Julie Aranda",
+      "reviewer_stats": { "review_count": 25, "photo_count": 2, "local_guide": true },
+      "rating": 5,
+      "date": "Jan 15, 2025",
+      "review_text": "Evert is amazing! The best! Helped me out from my bankruptcy and starting new credit for my business. I would recommend him to my family and friends.",
+      "staff_mentioned": ["Evert"],
+      "outcomes": ["Recovered from bankruptcy", "Established new business credit"],
+      "language": "English",
+      "owner_response": {
+        "date": "Jan 15, 2025",
+        "text": "Thank you for your wonderful review, Julie! We're thrilled to hear about your positive experience with Evert. Your recommendation means a lot to us, and we look forward to continuing to support you in your business journey."
+      }
+    },
+    {
+      "id": 63,
+      "reviewer": "Guillermo Alvarado",
+      "reviewer_stats": { "review_count": 7, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Jan 15, 2025",
+      "review_text": "They did a great job They fix my credit from 530 to 780 credit score",
+      "staff_mentioned": [],
+      "outcomes": ["Credit score improved from 530 to 780"],
+      "language": "English",
+      "owner_response": {
+        "date": "Jan 15, 2025",
+        "text": "Thank you for your fantastic review, Guillermo! We're thrilled to hear that we were able to help improve your credit score. Your success is our priority, and we appreciate your trust in our services."
+      }
+    },
+    {
+      "id": 64,
+      "reviewer": "Carlos Sosa",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Jan 2, 2025",
+      "review_text": "Son muy ables y te alludan con cualquier pregunta o duda",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "Spanish",
+      "owner_response": {
+        "date": "Jan 2, 2025",
+        "text": "¡Gracias por tu comentario, Carlos! Nos alegra saber que nuestro equipo ha podido ayudarte con tus preguntas y dudas. Apreciamos tu apoyo y esperamos poder asistirte nuevamente en el futuro."
+      }
+    },
+    {
+      "id": 65,
+      "reviewer": "Inder M Pabla",
+      "reviewer_stats": { "review_count": 71, "photo_count": 2, "local_guide": true },
+      "rating": 5,
+      "date": "Jan 2, 2025",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "Jan 2, 2025",
+        "text": "Thank you for your 5-star rating, Inder! We appreciate your support and look forward to serving you again."
+      }
+    },
+    {
+      "id": 66,
+      "reviewer": "carlos espinoza",
+      "reviewer_stats": { "review_count": 4, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Dec 14, 2024",
+      "review_text": "I got recommended from one of my family members that Evert is a very knowledgeable agent from Mesa Group Consulting which help him out to established a high credit Score I scheduled an appointment with Evert about my situation we had a Great Conversation about improving my credit Score.",
+      "staff_mentioned": ["Evert"],
+      "outcomes": [],
+      "language": "English",
+      "referral_source": "Family member referral",
+      "owner_response": {
+        "date": "Dec 14, 2024",
+        "text": "Thank you for your wonderful feedback, Carlos! We're glad to hear that Evert provided you with valuable insights for improving your credit score. It's our goal to offer personalized support to all our clients, and we appreciate your trust in us. We look forward to working with you further on your journey to better credit!"
+      }
+    },
+    {
+      "id": 67,
+      "reviewer": "Sandeep Kaur",
+      "reviewer_stats": { "review_count": 30, "photo_count": 20, "local_guide": true },
+      "rating": 5,
+      "date": "Dec 3, 2024",
+      "review_text": "I've been using Mesa Group Consulting to help fix my credit, and I couldn't be happier with their service. They do a phenomenal job of handling everything efficiently and professionally. One thing I really appreciate is how they keep you updated throughout the entire process—you don't have to keep calling them to check on progress. They take the initiative to follow up with you regularly to ensure all your needs are being met, which makes the experience so much more stress-free.\n\nFrom the moment you're signed up and ready to go, you'll start to see great improvements in your credit score. They also provide clear explanations of what's being done and what to expect, so you feel confident every step of the way. If you ever have any questions, their office is always approachable and responsive.\n\nWhat sets Mesa Group Consulting apart is their dedication to their clients. They genuinely care about helping you reach your financial goals, and it shows in the results. If you're looking for a reliable and effective credit repair company, I highly recommend checking out Mesa Group Consulting—you won't be disappointed!",
+      "staff_mentioned": [],
+      "outcomes": ["Credit score improved"],
+      "language": "English",
+      "owner_response": {
+        "date": "Dec 4, 2024",
+        "text": "Thank you so much for your wonderful review, Sandeep! We're thrilled to hear that you've had a positive experience with our credit repair services. Providing clear communication and support throughout the process is a top priority for us, and we're glad it made a difference for you. Your recommendation means a lot to us, and we're here to help you achieve your financial goals."
+      }
+    },
+    {
+      "id": 68,
+      "reviewer": "Crystal TellezlTellez",
+      "reviewer_stats": { "review_count": 4, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Dec 3, 2024",
+      "review_text": "The best credit repair in Bakersfield. I been with mesa group fixing my credit for 3 months only and evert has been honest with me since day one. I'm be honest my credit was low low but in 3 months my credit has booted up high. I don't regret in investing my credit. Whoever needs to fix there credit and is looking for the best of the best. Well stop looking call evert and start your process.",
+      "staff_mentioned": ["Evert"],
+      "outcomes": ["Significant credit score increase in 3 months from very low"],
+      "language": "English",
+      "owner_response": {
+        "date": "Dec 3, 2024",
+        "text": "Thank you for your wonderful review, Crystal! We're thrilled to hear that your credit has improved significantly in just three months. Evert and the team strive to provide honest and effective service, and we appreciate your recommendation. Your success is our priority!"
+      }
+    },
+    {
+      "id": 69,
+      "reviewer": "Maritza Hernandez",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Dec 3, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "Dec 3, 2024",
+        "text": "Thank you for your 5-star rating, Maritza! We appreciate your support and look forward to serving you again."
+      }
+    },
+    {
+      "id": 70,
+      "reviewer": "Keiara Britton",
+      "reviewer_stats": { "review_count": 4, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Nov 25, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "Nov 25, 2024",
+        "text": "Thank you for the 5-star rating, Keiara! We appreciate your support and are glad to know you had a positive experience with us."
+      }
+    },
+    {
+      "id": 71,
+      "reviewer": "gurmeet singh",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Nov 19, 2024",
+      "review_text": "Good",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "Nov 19, 2024",
+        "text": "Thank you for your positive feedback, Gurmeet! We're glad to hear you had a good experience with us."
+      }
+    },
+    {
+      "id": 72,
+      "reviewer": "RANJEET SINGH",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Nov 16, 2024",
+      "review_text": "excellent people",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": null
+    },
+    {
+      "id": 73,
+      "reviewer": "MAJHA DA MAJHAIL",
+      "reviewer_stats": { "review_count": 5, "photo_count": 1, "local_guide": false },
+      "rating": 5,
+      "date": "Nov 13, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "Nov 13, 2024",
+        "text": "Thank you for your 5-star rating! We're glad to see that you had a positive experience with us. Your support is greatly appreciated!"
+      }
+    },
+    {
+      "id": 74,
+      "reviewer": "Huzaifa Mughal",
+      "reviewer_stats": { "review_count": 6, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Nov 11, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": null
+    },
+    {
+      "id": 75,
+      "reviewer": "Alex Medrano",
+      "reviewer_stats": { "review_count": 5, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Nov 11, 2024",
+      "review_text": "A few years ago I went through some hardship and ended up with my credit the worst it's ever been. I tried 2 other companies and for over 2 years combined and lots money in monthly payment, all I got was empty promises and no results.\nI came across Mesa Group Consulting and in just a few months the results speak for themselves.\nEvert has been helping me and his attention to detail, transparency, communication and dedication to resolve and fix my credit have left me speechless.\nI can't be more thankful to Mesa Group Consulting for all the work they have done not only with my credit but everyone and everything else they work with.\nI'll be sure to recommend this guys in a heartbeat without any hesitation to anyone.\nGod bless y'all.",
+      "staff_mentioned": ["Evert"],
+      "outcomes": ["Credit fixed in a few months after 2+ years of failure with other companies"],
+      "language": "English",
+      "owner_response": {
+        "date": "Nov 11, 2024",
+        "text": "Thank you so much for your heartfelt review, Alex! We are thrilled to hear about your positive experience with Evert and the results you've achieved. Your kind words and recommendations mean a lot to us. We're here to support you and look forward to continuing our work together!"
+      }
+    },
+    {
+      "id": 76,
+      "reviewer": "Alex Escobar",
+      "reviewer_stats": { "review_count": 1, "photo_count": 2, "local_guide": false },
+      "rating": 5,
+      "date": "Oct 26, 2024",
+      "review_text": "Awesome services, very professional! Great people, Evert is the one helping me and he's the Best! Very informative and looking to put you in the best possible situation. Would definitely recommend 🤝👍",
+      "staff_mentioned": ["Evert"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "36 weeks ago",
+        "text": "Thank you for the fantastic review, Alex! We're delighted to hear that Evert made such a positive impact on your experience. Your recommendation means the world to us, and we look forward to assisting you again in the future!"
+      }
+    },
+    {
+      "id": 77,
+      "reviewer": "Kevin Ruiz",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Oct 26, 2024",
+      "review_text": "Best in business\nEvert helped me fix my credit quickly and efficiently. Highly recommend.",
+      "staff_mentioned": ["Evert"],
+      "outcomes": ["Credit fixed quickly and efficiently"],
+      "language": "English",
+      "owner_response": {
+        "date": "36 weeks ago",
+        "text": "Thank you, Kevin, for your fantastic 5-star review! We're delighted to hear that Evert was able to assist you in improving your credit swiftly and effectively. Your recommendation means the world to us and motivates our team to continue delivering exceptional service!"
+      }
+    },
+    {
+      "id": 78,
+      "reviewer": "Home Away from home Developments Inc",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Jul 31, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "Jul 31, 2024",
+        "text": "We're so grateful for your 5-star rating, Home Away from home Developments Inc! We appreciate your support and hope to serve you again in future!"
+      }
+    },
+    {
+      "id": 79,
+      "reviewer": "Ganga Singh",
+      "reviewer_stats": { "review_count": 6, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Jul 17, 2024",
+      "review_text": "Very good service and they are very respectful towards their clients",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "Jul 17, 2024",
+        "text": "Thank you for your kind words, Ganga! We're delighted to hear you've enjoyed our service. We are committed to providing respectful and quality service to all our clients."
+      }
+    },
+    {
+      "id": 80,
+      "reviewer": "Jose Luis Herrera",
+      "reviewer_stats": { "review_count": 5, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "Jun 17, 2024",
+      "review_text": "Right away got on my credit and making changes. Was given Mesa Group Consulting by a good friend from Highschool. Evert is a knowledgeable agent with well experience to handle my case. Thank you Mesa Group Consulting.",
+      "staff_mentioned": ["Evert"],
+      "outcomes": [],
+      "language": "English",
+      "referral_source": "High school friend referral",
+      "owner_response": {
+        "date": "Jun 18, 2024",
+        "text": "Thank you for your warm feedback, Jose Luis! We are happy to hear about your positive experience with our services and that one of our agents, Evert, left a good impression. We pledge to continue providing great services and so much more. Cheers!"
+      }
+    },
+    {
+      "id": 81,
+      "reviewer": "Aman Sandhu",
+      "reviewer_stats": { "review_count": 12, "photo_count": 2, "local_guide": true },
+      "rating": 5,
+      "date": "Jun 14, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "Jun 14, 2024",
+        "text": "Thank you for your 5-star rating, Aman! We're glad to know you're pleased with our services, and we're here to assist you whenever needed"
+      }
+    },
+    {
+      "id": 82,
+      "reviewer": "Jasdeep Singh Soni",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 21, 2024",
+      "review_text": "The group has helped me through great conversations about improving my credit; I have discussed with them good credit cards to get and it has been helpful.",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 21, 2024",
+        "text": "We're thrilled to hear you had a productive experience discussing credit improvements with us, Jasdeep! We're committed to providing that level of service, and we appreciate your feedback. Don't hesitate to get in touch again if you need more help in the future."
+      }
+    },
+    {
+      "id": 83,
+      "reviewer": "Shalynn Laquaglia",
+      "reviewer_stats": { "review_count": 5, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 20, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 21, 2024",
+        "text": "Thank you for the 5-stars, Shalynn! We're glad you had a positive experience. We are always here for you if you need anything."
+      }
+    },
+    {
+      "id": 84,
+      "reviewer": "Sukhchain Samra",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 20, 2024",
+      "review_text": "Very knowledgeable and full of valuable information that has significantly helped me increase my credit score.",
+      "staff_mentioned": [],
+      "outcomes": ["Credit score increased significantly"],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for your positive feedback, Sukhchain! We're glad to hear our service has significantly helped you increase your credit score. We continue striving to offer quality service to our clients."
+      }
+    },
+    {
+      "id": 85,
+      "reviewer": "Erick Acevedo",
+      "reviewer_stats": { "review_count": 3, "photo_count": 1, "local_guide": false },
+      "rating": 5,
+      "date": "May 20, 2024",
+      "review_text": "Best in the business. Helped me out a ton.",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for your kind words, Erick! We're glad we could assist you and look forward to serving you again in the future."
+      }
+    },
+    {
+      "id": 86,
+      "reviewer": "Jesus Luna",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 20, 2024",
+      "review_text": "Very professional Group. Always willing to answer any of my questions and provided update reports in a timely manner. Highly recommend.",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "We appreciate your positive feedback, Jesus! It's great to know our professionalism, responsiveness, and timely reports met your expectation. We are always here to help with any queries. Thank you for highly recommending us!"
+      }
+    },
+    {
+      "id": 87,
+      "reviewer": "Jagreet Dhaliwal",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 20, 2024",
+      "review_text": "I was given such insightful advice after speaking to this company. I spoke to Gurtej, who guided me through the process of increasing my credit score in a way that was accessible and easy to understand. It is apparent that this company is well versed and knowledgeable, and are truly there to spread their wisdom to others. If you're someone like me that desperately needs credit repair, I highly recommend Mesa Group Consulting's services.",
+      "staff_mentioned": ["Gurtej"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you very much for your kind words, Jagreet! We're extremely pleased to learn about your satisfactory consultation with Gurtej. We value your recommendation and look forward to continually serving you."
+      }
+    },
+    {
+      "id": 88,
+      "reviewer": "Jugraj Singh",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 11, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 11, 2024",
+        "text": "Thank you for your 5-star rating, Jugraj! We're thrilled to know you're pleased with our service. Looking forward to serving you again."
+      }
+    },
+    {
+      "id": 89,
+      "reviewer": "Christian Mendoza",
+      "reviewer_stats": { "review_count": 5, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 8, 2024",
+      "review_text": "I recently had the pleasure of working with Mesa Group Consulting for my credit consulting needs and I couldn't be happier with the experience. Evert, one of the consultants, was easy to talk to and extremely responsive to all of my questions and concerns. The customer service provided by Mesa Group Consulting is top-notch, making me feel valued as a client.\n\nWhat sets Mesa Group Consulting apart is their real-time results and easy-to-navigate portal for credit tracking. Being able to see the progress being made on my credit score in real-time was extremely reassuring and I appreciated the transparency provided by the company.\n\nOverall, I highly recommend Mesa Group Consulting for anyone in need of credit consulting services. Their professionalism, great customer service, and effectiveness in improving credit scores make them a standout in the industry.",
+      "staff_mentioned": ["Evert"],
+      "outcomes": ["Credit score improved"],
+      "language": "English",
+      "product_mentioned": "Real-time credit tracking portal",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you so much for your wonderful review! We're thrilled to hear about your positive experience with Mesa Group Consulting. It's fantastic to know that Evert was able to assist you effectively and that our customer service made you feel valued. We're proud of our real-time results and user-friendly portal, and we're glad you found these features reassuring and transparent. Your recommendation means a lot to us, and we look forward to continuing to provide excellent service."
+      }
+    },
+    {
+      "id": 90,
+      "reviewer": "Gurbender Gill",
+      "reviewer_stats": { "review_count": 8, "photo_count": 1, "local_guide": false },
+      "rating": 5,
+      "date": "May 8, 2024",
+      "review_text": "If I could leave 10 stars I would. The team was very welcoming and helpful. They helped me every step of the way. They are the best in the game. I highly recommend.",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for such a glowing review! We're thrilled to hear that you found our team welcoming and helpful every step of the way. Your high praise and recommendation mean the world to us. We look forward to continuing to provide you with the best service possible."
+      }
+    },
+    {
+      "id": 91,
+      "reviewer": "Justin Calderon",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "Mesa Group Consulting helped me repair my credit score. They gave me my own personalized action plan, every step was very effective.",
+      "staff_mentioned": [],
+      "outcomes": ["Credit score repaired via personalized action plan"],
+      "language": "English",
+      "note": "Profile C — 1 review. Distinct from review #40 (Profile A, 0 reviews) and #48 (Profile B, 0 reviews).",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for your review! We're pleased to hear that Mesa Group Consulting was able to help you repair your credit score with a personalized action plan. It's great to know that each step was effective for you. We appreciate your feedback and look forward to continuing to support your credit improvement journey!"
+      }
+    },
+    {
+      "id": 92,
+      "reviewer": "Mirna Calderon",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "Muy excelente servicio, me ayudaron poder subir mi puntaje de crédito y eliminar las cuentas negativos de mi reporte de crédito. Le recomiendo a todos que se comuniquen con ellos si tienen algún problema con su reporte de crédito!",
+      "staff_mentioned": [],
+      "outcomes": ["Credit score raised", "Negative accounts removed from credit report"],
+      "language": "Spanish",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "¡Muchas gracias por tu excelente reseña! Nos alegra saber que nuestro servicio te ayudó a subir tu puntaje de crédito y eliminar las cuentas negativas de tu reporte. Apreciamos tu recomendación y estamos aquí para seguir ayudándote con cualquier necesidad relacionada con tu crédito. ¡Gracias por confiar en Mesa Group Consulting!"
+      }
+    },
+    {
+      "id": 93,
+      "reviewer": "Raju Deol",
+      "reviewer_stats": { "review_count": 11, "photo_count": 2, "local_guide": true },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "My credit was repaired, and the service I received was truly world-class.",
+      "staff_mentioned": [],
+      "outcomes": ["Credit repaired"],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for your wonderful review! We're thrilled to hear that your credit was repaired and that you found our service to be truly world-class. Your satisfaction is our top priority, and we look forward to continuing to provide you with exceptional service."
+      }
+    },
+    {
+      "id": 94,
+      "reviewer": "Hukam Grewal",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for the 5-star rating! We're glad to know you had a positive experience with us. If you have any feedback or questions in the future, feel free to reach out. We appreciate your support!"
+      }
+    },
+    {
+      "id": 95,
+      "reviewer": "Lakhbir Kaur",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "Very personal, willing to go above and beyond to help,",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for your kind words! We're dedicated to providing personalized service and going above and beyond to help our clients. It's fantastic to hear that our efforts have made a difference for you. If there's anything else we can assist you with, please don't hesitate to let us know. We're here for you!"
+      }
+    },
+    {
+      "id": 96,
+      "reviewer": "Rodnesha Rose",
+      "reviewer_stats": { "review_count": 6, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "Very professional and helpful, i recommend this place to everyone who needs help with credit repair .",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you so much for your glowing recommendation! We're thrilled to hear that you found our service to be very professional and helpful. Helping our clients with credit repair is our passion, and we're grateful for the opportunity to assist you. If you know anyone else who could benefit from our services, please don't hesitate to send them our way. We appreciate your support!"
+      }
+    },
+    {
+      "id": 97,
+      "reviewer": "Amanpreet Kaur",
+      "reviewer_stats": { "review_count": 5, "photo_count": 2, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "These dudes can really help you get your credit scores up. Try them if you are in need of improving your credit scores",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for your recommendation! We're glad to hear that Mesa Group Consulting was able to help you improve your credit scores. If anyone else is in need of similar assistance, we'd be more than happy to help them too. Don't hesitate to reach out if you have any further questions or concerns."
+      }
+    },
+    {
+      "id": 98,
+      "reviewer": "Amanpreet Gill",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "Very informative and helpful team. I highly recommend reaching out to them regarding any credit repair issues you may have.",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for your glowing recommendation! We're delighted to hear that you found our team to be informative and helpful. Helping our clients with their credit repair issues is our passion, and we're thrilled to have been able to assist you. If you or anyone you know needs further assistance, please don't hesitate to reach out. We're here to help!"
+      }
+    },
+    {
+      "id": 99,
+      "reviewer": "Gurleen S.K",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for the 5-star rating! We appreciate your support. If you have any feedback or questions in the future, feel free to reach out. We're here to assist you however we can."
+      }
+    },
+    {
+      "id": 100,
+      "reviewer": "Loveleen Saini",
+      "reviewer_stats": { "review_count": 4, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "Cannot rave enough about them! They turned my credit around when I thought there was no recovering from it. I'm beyond thankful for the opportunities that have opened up for me after this experience.",
+      "staff_mentioned": [],
+      "outcomes": ["Credit turned around when recovery seemed impossible"],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "We're overjoyed to hear about your positive experience! Helping clients like you turn their credit around and open up new opportunities is exactly why we're here. Thank you for entrusting us with your credit journey, and we're thrilled to have been able to make a difference for you. If there's anything else we can do to support you, please don't hesitate to reach out."
+      }
+    },
+    {
+      "id": 101,
+      "reviewer": "Amisha Cheema",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "Very sincere and helpful people! So thankful to Everet and Harpreet with helping increase my credit score.",
+      "staff_mentioned": ["Everett", "Harpreet"],
+      "outcomes": ["Credit score increased"],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you, Amisha, for your kind words! We're thrilled to hear that Everett and Harpreet were able to help increase your credit score. Providing sincere and helpful service is our priority, and we're grateful for the opportunity to assist you on your credit improvement journey. If you have any further questions or need assistance in the future, please don't hesitate to reach out. We're here to help!"
+      }
+    },
+    {
+      "id": 102,
+      "reviewer": "Sharon Cheema",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "Love love love",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you so much, Sharon! We're thrilled to hear that you love our service. Your satisfaction is our top priority, and we're grateful for your support. If you ever need anything or have any questions, please don't hesitate to reach out. We're here to help!"
+      }
+    },
+    {
+      "id": 103,
+      "reviewer": "harleen saini",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "the best",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you, Harleen! We're honored to receive your praise. Our team is committed to providing the best service possible, and we're thrilled that you had a positive experience with us. If you have any further feedback or if there's anything else we can assist you with, please feel free to let us know. We're here for you!"
+      }
+    },
+    {
+      "id": 104,
+      "reviewer": "CALI_1313",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "Nice",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you! We appreciate your feedback. If you have any questions or need further assistance, feel free to reach out. We're here to help!"
+      }
+    },
+    {
+      "id": 105,
+      "reviewer": "Sahib Singh",
+      "reviewer_stats": { "review_count": 10, "photo_count": 1, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "I had a great experience with mesa group consulting. The employees are very nice and respectful. They helped my credit score go from 340 to 721",
+      "staff_mentioned": [],
+      "outcomes": ["Credit score improved from 340 to 721"],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you, Sahib! We're thrilled to hear about your great experience with Mesa Group Consulting. It's wonderful to know that our team was able to help you raise your credit score significantly. Providing excellent service and respectful assistance to our clients is what we strive for. If you have any further questions or need assistance in the future, please don't hesitate to reach out. We're here to help!"
+      }
+    },
+    {
+      "id": 106,
+      "reviewer": "Narinder Singh",
+      "reviewer_stats": { "review_count": 2, "photo_count": 3, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "My credit was really bad. They really helped me now. I'm buying a house.",
+      "staff_mentioned": [],
+      "outcomes": ["Credit improved enough to buy a house"],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Congratulations, Narinder! We're thrilled to hear that Mesa Group Consulting was able to assist you in improving your credit and achieving your goal of buying a house. Helping clients navigate through challenging credit situations and achieve their dreams is incredibly rewarding for us. If you ever need further assistance or have any questions along the way, please don't hesitate to reach out. We're here to support you in any way we can. Best wishes for your new home!"
+      }
+    },
+    {
+      "id": 107,
+      "reviewer": "Jasroop More",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "Really good worth the price and has lots of people to help with your credit score or other credit related problems that you may have for a good amount of money.",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you, Jasroop! We're delighted to hear that you found Mesa Group Consulting to be worth the price and that our team was able to assist you with your credit-related problems. Providing value for our clients and offering comprehensive support is what we aim for. If you have any further questions or need assistance in the future, please feel free to reach out. We're here to help!"
+      }
+    },
+    {
+      "id": 108,
+      "reviewer": "Harry Golde",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "Fair price for improving your financial health. Cannot recommend enough if you are struggling with credit",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for your recommendation, Harry! We're pleased to hear that you found Mesa Group Consulting to offer fair pricing for improving your financial health. Helping clients overcome credit struggles and improve their financial well-being is our mission, and we're glad to have been able to assist you. If you or anyone you know is in need of similar assistance, please don't hesitate to refer them to us. We're here to help!"
+      }
+    },
+    {
+      "id": 109,
+      "reviewer": "Jap&jan",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for the 5-star rating! We appreciate your support. If you ever have any questions or need further assistance, please feel free to reach out. We're here to help however we can."
+      }
+    },
+    {
+      "id": 110,
+      "reviewer": "Narinder Sanghera",
+      "reviewer_stats": { "review_count": 2, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for your 5-star rating, Narinder. We appreciate your feedback and are pleased to hear about your positive experience with our services. If you have any questions or require further assistance in the future, please do not hesitate to reach out to us. We remain committed to delivering exceptional service and assisting you with your credit-related needs."
+      }
+    },
+    {
+      "id": 111,
+      "reviewer": "Paulina Leon",
+      "reviewer_stats": { "review_count": 4, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "Evert has helped me achieve a higher credit score, learn about credit and travel for free by travel hacking.",
+      "staff_mentioned": ["Evert"],
+      "outcomes": ["Higher credit score achieved", "Learned travel hacking / free travel"],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for sharing your experience, Paulina! We're thrilled to hear that Evert was able to help you achieve a higher credit score and also provided valuable insights into credit management. It's fantastic to know that you've been able to leverage your improved credit for travel hacking and enjoying free travel opportunities. If you have any further questions or need assistance in the future, please don't hesitate to reach out. We're here to help!"
+      }
+    },
+    {
+      "id": 112,
+      "reviewer": "Osba plays",
+      "reviewer_stats": { "review_count": 0, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you, Osba, for the 5-star rating! We appreciate your support. If you have any questions or need further assistance in the future, feel free to reach out. We're here to help!"
+      }
+    },
+    {
+      "id": 113,
+      "reviewer": "xavier blanks",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 7, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for the 5-star rating, Xavier! Your feedback is valuable to us. If you ever have any questions or need assistance, don't hesitate to reach out. We're here to help however we can."
+      }
+    },
+    {
+      "id": 114,
+      "reviewer": "Aaron Benitez",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 6, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you, Aaron, for the 5-star rating! We appreciate your support. If you have any questions or need assistance in the future, feel free to reach out. We're here to help!"
+      }
+    },
+    {
+      "id": 115,
+      "reviewer": "Aileen Calderon",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 6, 2024",
+      "review_text": "Highly recommend Mesa Group Consulting for anyone that needs help in higher their credit score. They are the best in town! Not only did they provide great service but they are very professional and friendly I highly recommend them! Evert has helped me with all my credit needs. Not only did you help me with higher my credit score but he even taught me some traveling hacks. I have been able to travel for free. I am glad I ran into Mesa Group Consulting. I wouldn't be in the place I am now without them. I highly recommend them for anyone that is wanting to get credit repair or for any credit needs or travel hacks. They are truly the best!",
+      "staff_mentioned": ["Evert"],
+      "outcomes": ["Credit score improved", "Learned travel hacking / free travel"],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you so much, Aileen, for your glowing recommendation! We're thrilled to hear about your positive experience with Mesa Group Consulting. It's fantastic to know that Evert was able to assist you not only in improving your credit score but also in teaching you valuable travel hacks. Providing excellent service, professionalism, and friendliness are our top priorities, and we're glad that you found our team to excel in all these areas. We're honored to have been able to help you achieve your goals and make a positive impact on your financial journey. If you ever need further assistance or have any questions, please don't hesitate to reach out. We're here to help!"
+      }
+    },
+    {
+      "id": 116,
+      "reviewer": "Marcus Martinez",
+      "reviewer_stats": { "review_count": 3, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 6, 2024",
+      "review_text": "",
+      "staff_mentioned": [],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you for the 5-star rating, Marcus! We appreciate your feedback. If you have any questions or need assistance in the future, feel free to reach out. We're here to help!"
+      }
+    },
+    {
+      "id": 117,
+      "reviewer": "Andrew Nava",
+      "reviewer_stats": { "review_count": 1, "photo_count": 0, "local_guide": false },
+      "rating": 5,
+      "date": "May 6, 2024",
+      "review_text": "honestly it was so amazing i couldn't ask for much more, this experience will definitely leave a mark on me and give me the excitement to let my fellow family members and friends know that sherbie does an outstanding job!!! 🤗",
+      "staff_mentioned": ["Sherbie"],
+      "outcomes": [],
+      "language": "English",
+      "owner_response": {
+        "date": "May 20, 2024",
+        "text": "Thank you so much for your kind words, Andrew! We're thrilled to hear that your experience with Sherbie and Mesa Group Consulting was so amazing. Your satisfaction is our priority, and we're delighted to have made a positive impact on you. We appreciate your enthusiasm in recommending our services to your family and friends. If you ever need further assistance or have any questions, please don't hesitate to reach out. We're here to help! 🌟"
+      }
+    }
+  ],
+  "summary": {
+    "all_ratings_5_stars": true,
+    "total_reviews": 117,
+    "reviews_with_text": 78,
+    "reviews_without_text": 39,
+    "reviews_with_owner_response": 111,
+    "local_guides": 7,
+    "languages": {
+      "English": 112,
+      "Spanish": 5
+    },
+    "staff_mentions": {
+      "Evert_Everett": 22,
+      "Gurtej_Gurtez": 17,
+      "Harpreet": 3,
+      "Sherbie": 3,
+      "Harkamal": 1
+    },
+    "referral_sources_mentioned": [
+      { "id": 15, "source": "TikTok (Chaklo Credit)" },
+      { "id": 23, "source": "Personal referral (Valerie)" },
+      { "id": 32, "source": "Friend referral" },
+      { "id": 66, "source": "Family member referral" },
+      { "id": 80, "source": "High school friend referral" }
+    ],
+    "notable_scored_outcomes": [
+      { "reviewer": "Sahib Singh", "id": 105, "detail": "Credit score: 340 → 721" },
+      { "reviewer": "Guillermo Alvarado", "id": 63, "detail": "Credit score: 530 → 780" },
+      { "reviewer": "Julian Morales", "id": 34, "detail": "Credit score: 512 → 762+ (+250 pts in 6 months); approved for car loan; closed on home" },
+      { "reviewer": "Kyne Kamal", "id": 37, "detail": "Achieved 700+ credit score" }
+    ],
+    "notable_life_outcome_reviews": [
+      { "reviewer": "MyaG", "id": 57, "detail": "Bought first home 4/7/25 after failing with multiple other credit repair companies" },
+      { "reviewer": "nava andrew", "id": 41, "detail": "Negatives removed; car loan approved; on track for first home purchase" },
+      { "reviewer": "Julie Aranda", "id": 62, "detail": "Recovered from bankruptcy; established new business credit" },
+      { "reviewer": "Narinder Singh", "id": 106, "detail": "Buying a house" },
+      { "reviewer": "Enrique Espinoza", "id": 56, "detail": "Approved for $25K Jeep Grand Cherokee" },
+      { "reviewer": "Paulina Leon", "id": 111, "detail": "Higher credit score + travel hacking / free travel" },
+      { "reviewer": "Aileen Calderon", "id": 115, "detail": "Credit improved + travel hacking / free travel" }
+    ]
+  }
+}

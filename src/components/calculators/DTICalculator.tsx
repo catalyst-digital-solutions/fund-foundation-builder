@@ -39,7 +39,7 @@ const DTIGauge = ({ percentage }: { percentage: number }) => {
   );
 };
 
-const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM';
 
 const DTICalculator = ({ onBack }: DTICalculatorProps) => {
   const [income, setIncome] = useState(0);
@@ -256,7 +256,7 @@ const DTICalculator = ({ onBack }: DTICalculatorProps) => {
               Unlock SmartCredit's <strong>Money Manager</strong> to track all your debts and income in one dashboard, making it easier to monitor and improve your DTI ratio.
             </p>
             <p className="text-green-400 text-sm font-medium mb-4">
-              Special Offer: Just $1 for the first 7 days
+              $27.99/month · Cancel Anytime
             </p>
             <a 
               href={SMARTCREDIT_URL}

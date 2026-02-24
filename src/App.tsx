@@ -45,6 +45,7 @@ import Disclaimer from "./pages/Disclaimer";
 import DoNotSellMyPersonalInformation from "./pages/DoNotSellMyPersonalInformation";
 import AffiliateDisclosure from "./pages/AffiliateDisclosure";
 import AccessibilityStatement from "./pages/AccessibilityStatement";
+import Concierge from "./pages/Concierge";
 
 const queryClient = new QueryClient();
 
@@ -59,6 +60,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/concierge" element={<Concierge />} />
           <Route path="/for-consumers" element={<ForConsumers />} />
           <Route path="/for-businesses" element={<ForBusinesses />} />
           <Route path="/build-credit" element={<BuildCredit />} />

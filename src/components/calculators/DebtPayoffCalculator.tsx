@@ -20,7 +20,7 @@ interface PayoffResult {
   order: Debt[];
 }
 
-const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=39842&planType=PREMIUM';
+const SMARTCREDIT_URL = 'https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM';
 
 const DebtPayoffCalculator = ({ onBack }: DebtPayoffCalculatorProps) => {
   const [debts, setDebts] = useState<Debt[]>([
@@ -489,7 +489,7 @@ const DebtPayoffCalculator = ({ onBack }: DebtPayoffCalculatorProps) => {
               Unlock SmartCredit's <strong>Money Manager</strong> to track all your debts in one place, plus <strong>ScoreBoost™</strong> to see how paying them down affects your score.
             </p>
             <p className="text-green-400 text-sm font-medium mb-4">
-              Special Offer: Just $1 for the first 7 days
+              $27.99/month · Cancel Anytime
             </p>
             <a 
               href={SMARTCREDIT_URL}
