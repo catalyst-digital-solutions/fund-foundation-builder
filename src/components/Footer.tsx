@@ -207,6 +207,7 @@ const Footer = () => {
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <ul className="space-y-2 text-sm mb-4">
+                      <li><Link to="/zero-interest-business-funding" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">0% Interest Business Funding</Link></li>
                       <li><Link to="/business-funding" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Funding</Link></li>
                       <li><Link to="/business-credit-builder" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Credit Builder</Link></li>
                       <li><Link to="/business-debt-relief" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Debt Relief</Link></li>
@@ -221,6 +222,7 @@ const Footer = () => {
                 <div className="hidden md:block">
                   <h4 className="text-[#bb9446] font-semibold text-sm mb-2">BUSINESS SERVICES</h4>
                   <ul className="space-y-2 text-sm mb-4">
+                    <li><Link to="/zero-interest-business-funding" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">0% Interest Business Funding</Link></li>
                     <li><Link to="/business-funding" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Funding</Link></li>
                     <li><Link to="/business-credit-builder" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Credit Builder</Link></li>
                     <li><Link to="/business-debt-relief" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Debt Relief</Link></li>

@@ -82,8 +82,7 @@ const App = () => (
           <Route path="/debt-relief" element={<DebtRelief />} />
           <Route path="/trust-and-will-plan" element={<TrustAndWillPlan />} />
           <Route path="/life-insurance" element={<LifeInsurance />} />
-          {/* HIDDEN: 0% Interest Funding - Awaiting revised copy from Evert */}
-          <Route path="/zero-interest-business-funding" element={<BusinessFunding />} />
+          <Route path="/zero-interest-business-funding" element={<ZeroInterestBusinessFunding />} />
           <Route path="/business-funding" element={<BusinessFunding />} />
           <Route path="/business-debt-relief" element={<BusinessDebtRelief />} />
           <Route path="/contact" element={<Contact />} />
