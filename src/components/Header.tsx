@@ -336,7 +336,7 @@ const Header = () => {
               {/* JOIN Button — desktop */}
               <Link
                 to="/concierge"
-                className="hidden lg:flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-bold rounded-lg transition-colors"
+                className="hidden lg:flex items-center px-4 py-2 bg-[#f9c65d] hover:bg-[#e6b44a] text-gray-900 text-sm font-bold rounded-lg transition-colors"
               >
                 Join
               </Link>
@@ -365,7 +365,7 @@ const Header = () => {
                 </a>
                 <Link
                   to="/concierge"
-                  className="px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-bold rounded-lg transition-colors"
+                  className="px-3 py-1.5 bg-[#f9c65d] hover:bg-[#e6b44a] text-gray-900 text-xs font-bold rounded-lg transition-colors"
                 >
                   Join
                 </Link>
