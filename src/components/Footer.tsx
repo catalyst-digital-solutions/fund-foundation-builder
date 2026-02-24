@@ -329,7 +329,7 @@ const Footer = () => {
                   </div>
                   <div className="flex items-center gap-2 text-[#3e3e3e] text-sm">
                     <DollarSign className="w-4 h-4 text-[#bb9446]" />
-                    <span>$15M+ Collections Deleted</span>
+                    <span>$50M+ Collections Deleted</span>
                   </div>
                   <div className="flex items-center gap-2 text-[#3e3e3e] text-sm">
                     <Building2 className="w-4 h-4 text-[#bb9446]" />

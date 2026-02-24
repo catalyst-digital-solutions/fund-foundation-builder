@@ -520,14 +520,23 @@ function TestimonialsSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Real Business Owners, Real Results</h2>
           <p className="text-xl text-muted-foreground">Here's what happens when you use a proven strategy instead of random applications.</p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6 mb-10">
-          {[1, 2, 3].map((n) => (
-            <div key={n} className="bg-gray-100 rounded-2xl p-6 shadow-md flex flex-col items-center justify-center min-h-[280px] text-center border-2 border-dashed border-gray-300">
-              <div className="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center mb-4">
-                <Users className="w-8 h-8 text-gray-500" />
-              </div>
-              <p className="text-gray-500 text-sm font-medium">Video Testimonial #{n}</p>
-              <p className="text-gray-400 text-xs mt-1">Coming soon</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+          {[
+            { src: '/mgc-zero-percent-interest-funding-videos/compressed/Funding Review 1 (1).webm', label: 'Client Review #1' },
+            { src: '/mgc-zero-percent-interest-funding-videos/compressed/Funding Review 2 V2 (1).webm', label: 'Client Review #2' },
+            { src: '/mgc-zero-percent-interest-funding-videos/compressed/Funding Review 3 (1).webm', label: 'Client Review #3' },
+            { src: '/mgc-zero-percent-interest-funding-videos/compressed/Funding Review 4 (1).webm', label: 'Client Review #4' },
+          ].map(({ src, label }) => (
+            <div key={src} className="rounded-2xl overflow-hidden shadow-lg bg-black">
+              <video
+                controls
+                preload="metadata"
+                className="w-full aspect-video object-cover"
+                aria-label={label}
+              >
+                <source src={src} type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           ))}
         </div>
