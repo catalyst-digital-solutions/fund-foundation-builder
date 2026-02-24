@@ -4,22 +4,19 @@ import {
   Star,
   TrendingUp,
   Building2,
-  CreditCard,
   DollarSign,
-  Percent,
   ShieldCheck,
-  Search,
-  Calendar,
   Briefcase,
-  GraduationCap,
-  Award,
-  Target,
   ChevronDown,
   ChevronUp,
   MapPin,
-  Clock,
   ArrowRight,
-  Phone
+  Phone,
+  Heart,
+  Home,
+  Users,
+  MessageSquare,
+  Map
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -37,911 +34,451 @@ const ForBusinesses = () => {
 
   const faqItems = [
     {
-      question: "How do I know which service I need?",
-      answer: "That's exactly what the discovery call is for. We'll assess your situation and recommend the best path, whether it's one service or a combination. Some clients start with building business credit, then move to funding. Others need debt relief first to create capacity for new credit. We'll show you the right sequence for your specific situation."
+      question: "How do I know which business service is right for me?",
+      answer: "Schedule a free consultation with one of our advisors. We'll take the time to understand your business situation, your goals, and your timeline, and point you toward the solution that genuinely makes sense. No obligation. Just honest guidance."
     },
     {
-      question: "Do I need to have good personal credit to work with you?",
-      answer: "Not necessarily. For building business credit, we can work with personal scores as low as 600. For 0% interest funding, we typically need 700+ on personal credit (clients with 720+ see the highest approval rates and funding amounts). For business funding through Mesa Group Capital, it depends on the product: we have solutions for credit scores ranging from 530+ to 700+. For debt relief, your credit score doesn't matter at all."
+      question: "Do you work with businesses that have bad credit or no credit history?",
+      answer: "Absolutely. We specialize in helping businesses at every stage, whether you're brand new with no credit profile or recovering from a setback. You'll receive the same level of care, respect, and professional service every single time."
     },
     {
-      question: "How long does it take to see results?",
-      answer: "Depends on the service: Business Credit Building: 30-45 days for first approvals, 6-12 months to reach $50K-$150K fundability. Business Funding: 24 hours to 8 weeks depending on product type (cash advances fastest, SBA loans longest). 0% Interest Funding: 30-60 days for Round 1, full deployment across all 3 rounds in 120-180 days. Debt Relief: 60-180 days depending on negotiation complexity."
+      question: "Are there any hidden fees?",
+      answer: "None. Every service comes with transparent, upfront pricing so you know exactly what you're committing to before you sign anything. Our business funding services are performance-based. We don't get paid until you do."
     },
     {
-      question: "What if I'm turned down for funding?",
-      answer: "With business funding through Mesa Group Capital, there's no upfront cost, so if you're not approved, you don't pay anything. For our 0% Interest Funding program, we assess fundability before enrollment to minimize declined applications. If you're not fundable yet, we'll tell you honestly and show you how to get there."
+      question: "What if my business was just denied for funding?",
+      answer: "A denial isn't the end. It usually means the wrong lender, wrong timing, or wrong positioning — not that funding is impossible. We'll review your situation, identify what caused the denial, and build a strategy to get you approved through the right channel."
     },
     {
-      question: "Can I use multiple services at once?",
-      answer: "Absolutely. Many clients combine services, like building business credit while securing traditional funding, or using 0% interest funding while resolving old debt. We'll create an integrated strategy that maximizes your results."
+      question: "Do I have to commit to anything during the free consultation?",
+      answer: "Not at all. The consultation exists purely to understand your business and give you honest information. You decide if, when, and how you want to move forward. That's always your call."
     },
     {
-      question: "Do you work with startups or only established businesses?",
-      answer: "Both. Startups typically begin with our Business Credit Building program to establish fundability. Established businesses often go straight to funding or 0% interest programs. We have solutions for every stage of business growth."
+      question: "What size businesses do you work with?",
+      answer: "We work with businesses at every stage, from pre-revenue startups to established companies doing millions annually. The solutions change depending on where you are, but the commitment to helping you doesn't."
     },
-    {
-      question: "What industries do you work with?",
-      answer: "We work with almost every industry: retail, e-commerce, construction, professional services, restaurants, real estate investors, healthcare, technology, and more. The strategies we use are industry-agnostic. They work regardless of what your business does."
-    },
-    {
-      question: "Is this just for corporations, or can LLCs and sole proprietors qualify too?",
-      answer: "We work with all entity types: LLCs, S-Corps, C-Corps, and even sole proprietors (though we often recommend forming an LLC first for asset protection and better fundability)."
-    },
-    {
-      question: "How much does it cost to work with Mesa Group?",
-      answer: "Build Business Credit: $2,495 Full Service (12-month program with coaching) OR $995 DIY (software + education, self-paced). Business Funding: $0 upfront (we earn commissions from lenders when you get funded). 0% Interest Funding: Small retainer + performance-based success fee (we only get paid when you get funded). Business Debt Relief: Results-based fees (you only pay when debt is reduced)."
-    },
-    {
-      question: "What's the catch?",
-      answer: "There isn't one. We're incentivized to get you real results because we only succeed when you do. Our reputation depends on delivering what we promise, which is why we're transparent about requirements, timelines, and outcomes from day one."
-    }
   ];
 
   return (
     <div className="min-h-screen bg-white">
-      <SEO 
+      <SEO
         title="Business Funding & Credit Solutions | Mesa Group Consulting"
-        description="Access business funding, build business credit, and secure 0% interest financing. Mesa Group Consulting helps entrepreneurs in Bakersfield, CA grow their businesses."
+        description="Business credit building, funding, 0% interest capital, and debt relief. Mesa Group helps entrepreneurs access the capital and guidance they need to grow."
         canonicalUrl="/for-businesses"
       />
       <Header />
-      
-      {/* Hero Section */}
+
+      {/* ── SECTION 1: HERO ──────────────────────────────────────────── */}
       <section className="bg-gradient-to-br from-white via-amber-50 to-white py-12 md:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Content */}
-            <div className="space-y-6 lg:space-y-8">
-              {/* Trust Badge */}
-              <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-200">
-                <Star className="w-5 h-5 text-amber-400 fill-amber-400" />
-                <span className="text-sm font-medium text-gray-700">
-                  5.0 Star Rating on Google (200+ Reviews)
-                </span>
-              </div>
+          <div className="max-w-4xl mx-auto text-center space-y-6">
 
-              {/* Headline */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Business Financial Solutions That <span className="text-[#f9c65d]">Actually Work</span>
-              </h1>
-
-              {/* Subheadline */}
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                From building business credit to securing funding, 0% interest capital to debt relief. Find the financial solution that grows your business. No runaround. No personal guarantees. Just strategic guidance and real results.
-              </p>
-
-              {/* Supporting Copy */}
-              <p className="text-base text-gray-600 leading-relaxed">
-                Whether you're a startup building fundability from scratch, an established business ready to scale, or recovering from crushing debt, Mesa Group connects you with the right resources and expert support to move your business forward with confidence.
-              </p>
-
-              {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="#services"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg shadow-lg transition-all duration-200 hover:shadow-xl border-2 border-amber-500"
-                >
-                  Explore Your Business Solutions
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </a>
-                <CalendlyPopupButton
-                  text="Schedule Free Consultation"
-                  prefillOptions={{
-                    utm: {
-                      source: "for_businesses",
-                      medium: "hero_cta"
-                    }
-                  }}
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg shadow-md border-2 border-gray-300 transition-all duration-200"
-                  showArrow={false}
-                />
-              </div>
+            <div className="inline-block bg-amber-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide">
+              We Help Businesses First. Always.
             </div>
 
-            {/* Right Column - Visual */}
-            <div className="hidden lg:block">
-              <div className="relative">
-                <div className="aspect-square bg-gradient-to-br from-amber-100 to-orange-100 rounded-2xl shadow-2xl flex items-center justify-center">
-                  <Briefcase className="w-48 h-48 text-[#f9c65d]" />
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              You're in the Right Place. <span className="text-[#f9c65d]">Let's Figure This Out Together.</span>
+            </h1>
+
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+              From business credit to funding, 0% interest capital to debt relief, Mesa Group connects you with the right resources and expert support to move your business forward with confidence. Whether you're building from scratch, ready to scale, or recovering from crushing debt, we'll find the solution that fits where your business actually is.
+            </p>
+
+            {/* Trust Bar */}
+            <div className="flex flex-wrap justify-center gap-6 pt-2 text-sm text-gray-600">
+              {['2,500+ Lives Changed', '150+ Five-Star Reviews', 'Real Office You Can Visit', 'EN / ES / Punjabi Support'].map((item) => (
+                <div key={item} className="flex items-center gap-1.5">
+                  <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                  <span>{item}</span>
                 </div>
-              </div>
+              ))}
             </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+              <CalendlyPopupButton
+                text="Schedule My Free Business Consultation"
+                prefillOptions={{ utm: { source: 'for_businesses', medium: 'hero_cta' } }}
+                className="inline-flex items-center justify-center px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-bold rounded-xl shadow-lg transition-all duration-200"
+                showArrow={true}
+              />
+              <a
+                href="tel:+16613103040"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-xl shadow-md border-2 border-gray-200 transition-all"
+              >
+                <Phone className="w-5 h-5 text-[#f9c65d]" />
+                (661) 310-3040
+              </a>
+            </div>
+
+            <p className="text-sm text-gray-500">Hablamos Español · Assi Punjabi Bolde Haan</p>
           </div>
         </div>
       </section>
 
-      {/* Trust Bar Section */}
-      <section className="bg-gray-50 py-8 md:py-12">
+      {/* ── SECTION 2: ROUTING CARDS ─────────────────────────────────── */}
+      <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center">
-              <TrendingUp className="w-12 h-12 text-[#f9c65d] mx-auto mb-4" />
-              <div className="text-3xl font-bold text-gray-900 mb-2">1,850+</div>
-              <div className="text-sm text-gray-600">Businesses Funded</div>
+          <div className="text-center mb-12">
+            <div className="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-semibold mb-4 uppercase tracking-wide">
+              Find Your Path
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center">
-              <Star className="w-12 h-12 text-amber-400 fill-amber-400 mx-auto mb-4" />
-              <div className="text-3xl font-bold text-gray-900 mb-2">5.0</div>
-              <div className="text-sm text-gray-600">Star Rating (200+ Reviews)</div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center">
-              <Building2 className="w-12 h-12 text-[#f9c65d] mx-auto mb-4" />
-              <div className="text-3xl font-bold text-gray-900 mb-2">Since 2023</div>
-              <div className="text-sm text-gray-600">Serving Businesses Nationwide</div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 text-center">
-              <CheckCircle className="w-12 h-12 text-green-600 mx-auto mb-4" />
-              <div className="text-3xl font-bold text-gray-900 mb-2">All 50</div>
-              <div className="text-sm text-gray-600">States Licensed</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Mesa Group Section */}
-      <section className="bg-gradient-to-br from-amber-50 to-orange-50 py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-8">
-            Business Financial Solutions Built for <span className="text-[#f9c65d]">Real Entrepreneurs</span>, Real Growth
-          </h2>
-          
-          <div className="space-y-6 text-gray-700 leading-relaxed">
-            <p>
-              Business growth doesn't follow a straight line, and neither does your funding journey. Maybe traditional banks turned you down. Maybe no one ever taught you how business credit actually works. Maybe you're tired of risking your personal assets for every business decision.
-            </p>
-            
-            <p className="text-xl font-semibold text-gray-900">
-              Here's what matters: where you start doesn't determine where you finish.
-            </p>
-            
-            <p>
-              Mesa Group exists to guide you from wherever you are to wherever you want to be, with transparency, respect, and strategic solutions that actually work. No corporate jargon. No hidden fees. No treating you like a credit score instead of a business owner with a vision.
-            </p>
-            
-            <p>
-              We've built businesses ourselves. We understand the stress, the cash flow challenges, and the frustration of navigating a financial system that seems designed to keep entrepreneurs stuck. That's exactly why we built something different.
-            </p>
-            
-            <p>
-              Through <strong>Mesa Group Consulting</strong> (credit building and advisory) and <strong>Mesa Group Capital</strong> (business funding brokerage), we provide the complete spectrum of business financial solutions: from establishing fundability to deploying capital to eliminating crushing debt.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Overview Section */}
-      <section id="services" className="py-16 md:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Find the Right <span className="text-[#f9c65d]">Solution</span> for Your Business
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              What's Going On With Your <span className="text-[#f9c65d]">Business Right Now?</span>
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              Every business challenge requires a different approach. Explore our business services below and discover which path makes sense for your growth goals.
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Tell us where you are. We'll show you exactly where to go. No pressure, no judgment.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Service Card 1: Business Credit */}
-            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-amber-200 p-8">
-              <div className="flex justify-center mb-6">
-                <div className="bg-amber-50 p-4 rounded-full">
-                  <CreditCard className="w-16 h-16 text-[#f9c65d]" />
-                </div>
+
+            {/* Card 1 — Build Credit */}
+            <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-amber-300 group">
+              <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-6">
+                <TrendingUp className="w-8 h-8 text-white" />
               </div>
-              
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-                Business Credit Builder Program
-              </h3>
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Build a fortress between your business and personal finances. Access $5,000 to $150,000 in business credit, without touching your personal credit, risking your home, or betting your family's security on every business decision.
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Build My Business Credit</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                No business credit history. Banks keep saying no. You're putting everything on your personal card and it's getting old. There's a better way, and we'll walk you through it step by step.
               </p>
-
-              <div className="mb-6">
-                <h4 className="font-semibold text-gray-900 mb-3">What's Included:</h4>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Business Credit Finance Suite - Your complete credit-building command center</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Fundability Score™ tracking across all major bureaus</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Access to 300+ vendors, lenders & credit issuers</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Tier-by-tier progression: Vendor credit → Retail cards → Bank cards → Lines of credit</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">$50K minimum funding guarantee (Full Service program)</span>
-                  </li>
-                </ul>
+              <div className="space-y-2 mb-6 text-sm text-gray-600">
+                <div>→ <Link to="/business-credit-builder" className="text-[#bb9446] hover:underline font-medium">Business Credit Builder Program</Link></div>
               </div>
-
-              <div className="mb-6">
-                <h4 className="font-semibold text-gray-900 mb-3">Ideal For:</h4>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li>• New businesses needing to establish credit from scratch</li>
-                  <li>• Entrepreneurs who want asset protection (no personal guarantees)</li>
-                  <li>• Owners tired of risking personal credit for business needs</li>
-                  <li>• Anyone ready to separate business and personal finances</li>
-                </ul>
-              </div>
-
-              <div className="bg-amber-50 p-4 rounded-lg mb-6">
-                <div className="font-semibold text-gray-900 mb-2">Program Options:</div>
-                <div className="text-sm text-gray-700 space-y-1">
-                  <div>Full Service: <strong>$2,495</strong> (12-month program with coaching)</div>
-                  <div>DIY: <strong>$995</strong> (software + education, self-paced)</div>
-                </div>
-              </div>
-
-              <Link
-                to="/business-credit-builder"
-                className="block w-full text-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 border-2 border-amber-500"
-              >
-                Start Building Business Credit →
+              <Link to="/business-credit-builder" className="inline-flex items-center gap-2 text-gray-900 font-bold bg-[#f9c65d] hover:bg-[#bb9446] px-6 py-3 rounded-lg transition-colors">
+                Show Me How <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
-            {/* Service Card 2: Business Funding */}
-            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-amber-200 p-8">
-              <div className="flex justify-center mb-6">
-                <div className="bg-amber-50 p-4 rounded-full">
-                  <DollarSign className="w-16 h-16 text-[#f9c65d]" />
-                </div>
+            {/* Card 2 — Get Funding */}
+            <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-amber-300 group">
+              <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-6">
+                <DollarSign className="w-8 h-8 text-white" />
               </div>
-              
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-                Business Funding Solutions via Mesa Group Capital
-              </h3>
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Through our brokerage division, Mesa Group Capital, access the right type of capital at the right time: from equipment financing to expansion loans, cash advances to SBA loans. We connect you with 75+ specialized lenders who compete for your business.
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Get Business Funding</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                You've got a real business doing real work, and you just need the capital to match. Whether you've been denied before or you're applying for the first time, we'll find the right lender for where you actually are.
               </p>
-
-              <div className="mb-6">
-                <h4 className="font-semibold text-gray-900 mb-3">What's Included:</h4>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Access to 75+ vetted lender relationships</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Multiple funding products under one roof</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Strategic positioning and application optimization</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Terms negotiation on your behalf</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">No upfront fees - we only get paid when you get funded</span>
-                  </li>
-                </ul>
+              <div className="space-y-2 mb-6 text-sm text-gray-600">
+                <div>→ <Link to="/business-funding" className="text-[#bb9446] hover:underline font-medium">Business Funding via Mesa Group Capital</Link></div>
+                <div>→ <Link to="/zero-interest-business-funding" className="text-[#bb9446] hover:underline font-medium">0% Interest Funding Program</Link></div>
               </div>
-
-              <div className="mb-6">
-                <h4 className="font-semibold text-gray-900 mb-3">Funding Products Available:</h4>
-                <ul className="space-y-1 text-sm text-gray-700">
-                  <li>• Business Cash Advances: $10K-$10M (24-48 hour approval)</li>
-                  <li>• Term Loans: $10K-$5M (2-4 week approval)</li>
-                  <li>• Lines of Credit: $5K-$250K (1-2 week approval)</li>
-                  <li>• Equipment Financing: $1K-$20M (5-7 day approval)</li>
-                  <li>• SBA Loans: $50K-$5M (4-8 week approval)</li>
-                  <li>• Invoice Factoring: $10K-$5M (3-5 day approval)</li>
-                </ul>
-              </div>
-
-              <div className="bg-green-50 p-4 rounded-lg mb-6">
-                <div className="font-semibold text-gray-900 mb-2">Track Record:</div>
-                <div className="text-sm text-gray-700">
-                  $50M+ in funding facilitated | 1,000+ businesses funded | 30-day average approval
-                </div>
-              </div>
-
-              <Link
-                to="/business-funding"
-                className="block w-full text-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 border-2 border-amber-500"
-              >
-                Explore Business Funding Options →
+              <Link to="/business-funding" className="inline-flex items-center gap-2 text-gray-900 font-bold bg-[#f9c65d] hover:bg-[#bb9446] px-6 py-3 rounded-lg transition-colors">
+                Show Me How <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
-            {/* Service Card 3: 0% Interest Funding */}
-            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-amber-200 p-8">
-              <div className="flex justify-center mb-6">
-                <div className="bg-amber-50 p-4 rounded-full">
-                  <Percent className="w-16 h-16 text-[#f9c65d]" />
-                </div>
+            {/* Card 3 — Debt Relief */}
+            <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-amber-300 group">
+              <div className="w-14 h-14 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center mb-6">
+                <ShieldCheck className="w-8 h-8 text-white" />
               </div>
-              
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-                0% Interest Business Funding Program
-              </h3>
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Access $50,000-$250,000+ in 0% APR business credit cards and use the interest-free period (9-18 months) to fuel growth, manage cash flow, or consolidate expensive debt. Save $18,000-$28,000 in interest payments that would otherwise go to lenders.
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Get Out of Business Debt</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Merchant cash advances bleeding you dry. Creditors calling. The payments don't stop but the balance never moves. You don't have to file bankruptcy to get free. There's a real path out, and we know it.
               </p>
-
-              <div className="mb-6">
-                <h4 className="font-semibold text-gray-900 mb-3">What's Included:</h4>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">0% APR business credit cards (9-18 month intro periods)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Direct banking relationships with Chase, BofA, US Bank, 40+ regional banks</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Strategic Three-Round Framework for maximum approvals</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Banking Industry Insider Knowledge - approvals through people, not algorithms</span>
-                  </li>
-                </ul>
+              <div className="space-y-2 mb-6 text-sm text-gray-600">
+                <div>→ <Link to="/business-debt-relief" className="text-[#bb9446] hover:underline font-medium">Business Debt Relief & Settlement</Link></div>
               </div>
-
-              <div className="mb-6">
-                <h4 className="font-semibold text-gray-900 mb-3">The Three-Round Framework:</h4>
-                <ul className="space-y-1 text-sm text-gray-700">
-                  <li>• Round 1: Foundation - $50K-$150K</li>
-                  <li>• Round 2: Expansion - $50K-$150K additional</li>
-                  <li>• Round 3: Maximization - $25K-$100K additional</li>
-                </ul>
-              </div>
-
-              <div className="bg-green-50 p-4 rounded-lg mb-6">
-                <div className="font-semibold text-gray-900 mb-2">Real ROI Example:</div>
-                <div className="text-sm text-gray-700">
-                  $150K at 0% vs. 9% traditional loan = <strong>$20,250 saved</strong> over 18 months
-                </div>
-              </div>
-
-              <Link
-                to="/zero-interest-business-funding"
-                className="block w-full text-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 border-2 border-amber-500"
-              >
-                Discover 0% Interest Funding →
+              <Link to="/business-debt-relief" className="inline-flex items-center gap-2 text-gray-900 font-bold bg-[#f9c65d] hover:bg-[#bb9446] px-6 py-3 rounded-lg transition-colors">
+                Show Me How <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
-            {/* Service Card 4: Business Debt Relief */}
-            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-amber-200 p-8">
-              <div className="flex justify-center mb-6">
-                <div className="bg-amber-50 p-4 rounded-full">
-                  <ShieldCheck className="w-16 h-16 text-[#f9c65d]" />
-                </div>
+            {/* Card 4 — Set Up Right */}
+            <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-amber-300 group">
+              <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mb-6">
+                <Briefcase className="w-8 h-8 text-white" />
               </div>
-              
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-                Business Debt Relief & Settlement
-              </h3>
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Eliminate or restructure crippling business debt using negotiation, settlement, and strategic legal leverage, without bankruptcy and without destroying your credit permanently. Break free from merchant cash advances and predatory lending cycles.
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Set My Business Up Right</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Maybe no one ever showed you how to properly structure a business so banks and lenders take it seriously. We'll get the foundation right, so the doors that keep closing start opening instead.
               </p>
-
-              <div className="mb-6">
-                <h4 className="font-semibold text-gray-900 mb-3">What's Included:</h4>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Merchant Cash Advance settlements (often 40-60% off balance)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Revenue-based financing negotiation</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Business credit card debt resolution</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Multi-creditor workout strategies</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">Complete debt freedom roadmap</span>
-                  </li>
-                </ul>
+              <div className="space-y-2 mb-6 text-sm text-gray-600">
+                <div>→ <a href="https://www.tailorbrands.com/llc-cpa-aff?transaction_id=102bd1f29c1558d91db36f9aa7b89e&state=&utm_source=Tune&utm_medium=Tune&utm_campaign=9347" target="_blank" rel="noopener noreferrer" className="text-[#bb9446] hover:underline font-medium">LLC Formation</a></div>
+                <div>→ <span className="text-gray-500 font-medium">Business Advisory (free consultation)</span></div>
               </div>
-
-              <div className="mb-6">
-                <h4 className="font-semibold text-gray-900 mb-3">Handles These Debts:</h4>
-                <ul className="space-y-1 text-sm text-gray-700">
-                  <li>• Merchant cash advances (MCA)</li>
-                  <li>• Revenue-based financing</li>
-                  <li>• Business credit cards</li>
-                  <li>• SBA loan defaults</li>
-                  <li>• Equipment financing defaults</li>
-                </ul>
-              </div>
-
-              <div className="bg-blue-50 p-4 rounded-lg mb-6">
-                <div className="font-semibold text-gray-900 mb-2">Typical Timeline:</div>
-                <div className="text-sm text-gray-700">
-                  First settlement: 4-7 months | Complete debt freedom: 12-36 months
-                </div>
-              </div>
-
-              <Link
-                to="/business-debt-relief"
-                className="block w-full text-center px-6 py-3 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 border-2 border-amber-500"
-              >
-                Get Business Debt Relief Help →
-              </Link>
+              <CalendlyPopupButton
+                text="Show Me How"
+                showArrow={true}
+                prefillOptions={{ utm: { source: 'for_businesses', medium: 'setup_card' } }}
+                className="inline-flex items-center gap-2 text-gray-900 font-bold bg-[#f9c65d] hover:bg-[#bb9446] px-6 py-3 rounded-lg transition-colors"
+              />
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* How It Works Section */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      {/* ── SECTION 3: MESA FINANCIAL CONCIERGE SPOTLIGHT ────────────── */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-amber-50 via-[#fffbec] to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-16">
-            Getting Started Is <span className="text-[#f9c65d]">Simple</span>
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {/* Step 1 */}
-            <div className="relative">
-              <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 h-full">
-                <div className="flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-6 mx-auto">
-                  <span className="text-3xl font-bold text-[#f9c65d]">1</span>
-                </div>
-                <div className="flex justify-center mb-4">
-                  <Search className="w-12 h-12 text-[#f9c65d]" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
-                  Explore Your Options
-                </h3>
-                <p className="text-gray-700 text-center">
-                  Browse our business services and identify which solutions align with your current growth goals and challenges. Need help deciding? That's what the next step is for.
-                </p>
-              </div>
+          <div className="text-center mb-12">
+            <div className="inline-block bg-amber-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-4 uppercase tracking-wide">
+              What Makes Mesa Different
             </div>
-
-            {/* Step 2 */}
-            <div className="relative">
-              <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 h-full">
-                <div className="flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-6 mx-auto">
-                  <span className="text-3xl font-bold text-[#f9c65d]">2</span>
-                </div>
-                <div className="flex justify-center mb-4">
-                  <Calendar className="w-12 h-12 text-[#f9c65d]" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
-                  Schedule a Free Consultation
-                </h3>
-                <p className="text-gray-700 text-center">
-                  Talk with a Mesa Group advisor who will listen to your situation, answer your questions, and recommend the best path forward. No pressure, just strategic information.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="relative">
-              <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 h-full">
-                <div className="flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-6 mx-auto">
-                  <span className="text-3xl font-bold text-[#f9c65d]">3</span>
-                </div>
-                <div className="flex justify-center mb-4">
-                  <CheckCircle className="w-12 h-12 text-[#f9c65d]" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
-                  Choose Your Solution
-                </h3>
-                <p className="text-gray-700 text-center">
-                  Select the service or program that makes the most sense for your budget, timeline, and business goals. You're in control of your business growth journey.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 4 */}
-            <div className="relative">
-              <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 h-full">
-                <div className="flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-6 mx-auto">
-                  <span className="text-3xl font-bold text-[#f9c65d]">4</span>
-                </div>
-                <div className="flex justify-center mb-4">
-                  <TrendingUp className="w-12 h-12 text-[#f9c65d]" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
-                  Take Action & See Results
-                </h3>
-                <p className="text-gray-700 text-center">
-                  Start making progress with expert guidance, transparent pricing, and ongoing support every step of the way. From fundability to funding to freedom from debt, we're with you.
-                </p>
-              </div>
-            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              You Get More Than a Service. <span className="text-[#f9c65d]">You Get a Partner.</span>
+            </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              From the moment you walk through our door, you have access to something that most business owners never knew existed. Expert guidance, a dedicated community, and a personalized roadmap built entirely around your business and your goals.
+            </p>
           </div>
 
-          {/* Section CTAs */}
+          <div className="max-w-3xl mx-auto text-center space-y-4 text-lg text-gray-700 mb-12">
+            <p>
+              That's Mesa Financial Concierge. White-glove financial partnership, available to every single client we serve, included free with your credit monitoring subscription.
+            </p>
+            <p className="font-semibold text-gray-900">
+              This is the experience you always deserved. Now it's yours.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {[
+              {
+                icon: Users,
+                title: 'Expert Coaching',
+                body: 'Weekly live coaching calls with financial advisors dedicated to your success. Bring your questions, your challenges, your wins. Real guidance from real people, every single week.',
+              },
+              {
+                icon: MessageSquare,
+                title: 'Private Community',
+                body: "You're never navigating alone. Post a question at any hour and receive a thoughtful response from experts or members who've walked the exact path you're on, within 24 hours.",
+              },
+              {
+                icon: Map,
+                title: 'Your Business Roadmap',
+                body: "Your fully customized action plan tells you precisely what to do next, built around your business profile and your goals. No guessing. No wasted time. Just a clear path forward that's yours alone.",
+              },
+            ].map((pillar) => (
+              <div key={pillar.title} className="bg-white rounded-2xl p-8 shadow-md text-center">
+                <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mx-auto mb-5">
+                  <pillar.icon className="w-7 h-7 text-amber-600" />
+                </div>
+                <h3 className="font-bold text-gray-900 text-lg mb-3">{pillar.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{pillar.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              to="/concierge"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-bold rounded-xl shadow-lg transition-all duration-200 mr-4"
+            >
+              Discover Mesa Financial Concierge <ArrowRight className="w-5 h-5" />
+            </Link>
+            <p className="text-sm text-gray-500 mt-4">
+              Included FREE with Mesa x SmartCredit ($27.99/month) · Included with every Mesa360 enrollment
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 4: NOT SURE WHERE TO START ───────────────────────── */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            You Don't Have to <span className="text-[#f9c65d]">Figure This Out Alone.</span>
+          </h2>
+          <p className="text-xl text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
+            A lot of business owners come to us not knowing exactly what they need — just knowing something isn't working. That's okay. That's actually exactly why we're here.
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-3xl mx-auto">
+            Sit down with one of our advisors, completely free, and just talk. Tell us where your business is. Tell us what's been frustrating you. We'll listen, ask the right questions, and give you honest direction — whether you become a client or not.
+          </p>
+          <p className="text-lg font-semibold text-gray-900 mb-10">
+            That's the Mesa promise. And it's available to every business owner who walks through our door.
+          </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CalendlyPopupButton
-              text="Schedule Your Free Consultation"
-              prefillOptions={{
-                utm: {
-                  source: "for_businesses",
-                  medium: "how_it_works_cta"
-                }
-              }}
-              className="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg shadow-lg transition-all duration-200 border-2 border-amber-500"
-              showArrow={false}
+              text="Schedule My Free Business Consultation"
+              showArrow={true}
+              prefillOptions={{ utm: { source: 'for_businesses', medium: 'not_sure_cta' } }}
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-bold rounded-xl shadow-lg transition-all duration-200"
             />
             <a
               href="tel:+16613103040"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg shadow-md border-2 border-gray-300 transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-xl shadow-md border-2 border-gray-200 transition-all"
             >
-              <Phone className="w-5 h-5 mr-2" />
-              Call: (661) 310-3040
+              <Phone className="w-5 h-5 text-[#f9c65d]" />
+              Or call us: (661) 310-3040
             </a>
           </div>
+          <p className="text-sm text-gray-500 mt-6">Hablamos Español · Assi Punjabi Bolde Haan</p>
         </div>
       </section>
 
-      {/* Why Choose Mesa Group Section */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* ── SECTION 5: WHY MESA ──────────────────────────────────────── */}
+      <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-16">
-            Why Business Owners Choose <span className="text-[#f9c65d]">Mesa Group</span>
+            Built on a Promise <span className="text-[#f9c65d]">We Made to Ourselves.</span>
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Reason 1 */}
-            <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="flex justify-center mb-6">
-                <div className="bg-amber-100 p-4 rounded-full">
-                  <Briefcase className="w-12 h-12 text-[#f9c65d]" />
-                </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow">
+              <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                <Home className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
-                We're Operators, Not Just Advisors
-              </h3>
-              <p className="text-gray-700 text-center">
-                Our team has collectively raised millions in capital, built profitable businesses, and navigated every funding scenario you can imagine. We don't teach theory. We share what actually works because we've done it ourselves.
+              <h3 className="text-xl font-bold text-gray-900 mb-4">We've Been There</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Our founder watched his immigrant parents nearly lose everything they worked their whole lives to build. He knows what it feels like to build something from nothing, and to navigate a financial system that wasn't designed with your family or your business in mind. Mesa Group was born from that experience, so no business owner ever has to face it alone again.
               </p>
             </div>
 
-            {/* Reason 2 */}
-            <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="flex justify-center mb-6">
-                <div className="bg-amber-100 p-4 rounded-full">
-                  <Building2 className="w-12 h-12 text-[#f9c65d]" />
-                </div>
+            <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow">
+              <div className="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6">
+                <Heart className="w-8 h-8 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
-                Insider Banking Knowledge
-              </h3>
-              <p className="text-gray-700 text-center">
-                Our CEO comes from a banking background and understands exactly how banks evaluate clients and make underwriting decisions. We know what triggers approvals and what causes denials, because we've seen it from the inside. Your applications go through people who know us, not just algorithms.
+              <h3 className="text-xl font-bold text-gray-900 mb-4">We Help Everybody</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Every business owner who walks through our door gets the same level of care. No matter where your business is, no matter what your credit looks like, no matter how complicated your situation. We don't turn people away. We find a way to help. Every single time.
               </p>
             </div>
 
-            {/* Reason 3 */}
-            <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="flex justify-center mb-6">
-                <div className="bg-amber-100 p-4 rounded-full">
-                  <DollarSign className="w-12 h-12 text-[#f9c65d]" />
-                </div>
+            <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow">
+              <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
+                <MapPin className="w-8 h-8 text-amber-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
-                Transparent Pricing & Aligned Incentives
-              </h3>
-              <p className="text-gray-700 text-center">
-                No hidden fees. No surprise charges. Most of our services are performance-based. We only win when you do. Business funding? $0 upfront. 0% funding? Pay when funded. Debt relief? Pay when debt is reduced.
-              </p>
-            </div>
-
-            {/* Reason 4 */}
-            <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="flex justify-center mb-6">
-                <div className="bg-amber-100 p-4 rounded-full">
-                  <GraduationCap className="w-12 h-12 text-[#f9c65d]" />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
-                Education-First Approach
-              </h3>
-              <p className="text-gray-700 text-center">
-                We don't just get you funded. We teach you the system so you can make informed decisions long after our engagement ends. Financial literacy is freedom, and we're committed to empowering you with knowledge.
-              </p>
-            </div>
-
-            {/* Reason 5 */}
-            <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="flex justify-center mb-6">
-                <div className="bg-amber-100 p-4 rounded-full">
-                  <Award className="w-12 h-12 text-[#f9c65d]" />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
-                Proven Track Record Across All Services
-              </h3>
-              <p className="text-gray-700 text-center">
-                $97M+ in total funding facilitated. 1,850+ businesses funded. 720+ business credit profiles built. 75+ lender network. 300+ vendor relationships. These aren't vanity metrics. They're results from doing this right, every single time.
-              </p>
-            </div>
-
-            {/* Reason 6 */}
-            <div className="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="flex justify-center mb-6">
-                <div className="bg-amber-100 p-4 rounded-full">
-                  <Target className="w-12 h-12 text-[#f9c65d]" />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 text-center mb-4">
-                Comprehensive Business Solutions
-              </h3>
-              <p className="text-gray-700 text-center">
-                From credit building to funding to 0% interest capital to debt relief, we offer a full spectrum of business financial solutions. You don't need to navigate multiple companies. One trusted partner for your entire business finance journey.
+              <h3 className="text-xl font-bold text-gray-900 mb-4">A Real Place You Can Walk Into</h3>
+              <p className="text-gray-700 leading-relaxed">
+                5001 California Ave Suite 219, Bakersfield, CA. Come in, meet the team, and sit down before you commit to a single thing. No call centers. No overseas agents. Just real people who are invested in your business because this community is ours too.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-amber-50 to-orange-50">
+      {/* ── SECTION 6: TESTIMONIALS ──────────────────────────────────── */}
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-16">
-            Real Stories from <span className="text-[#f9c65d]">Real Business Owners</span>
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Testimonial 1 */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] p-8 rounded-xl shadow-md border border-gray-700">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
-              </div>
-              <h3 className="text-lg font-bold text-white mb-3">
-                "Mesa Group Capital got us $250K when three banks said no"
-              </h3>
-              <p className="text-gray-300 mb-4">
-                "Their broker relationships made the difference. We hired two employees, bought a second truck, and doubled revenue in six months. The team was transparent about timelines and delivered exactly what they promised."
-              </p>
-              <p className="text-sm text-gray-400">
-                — Sarah M., Construction Company Owner | Funded: $250,000
-              </p>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] p-8 rounded-xl shadow-md border border-gray-700">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
-              </div>
-              <h3 className="text-lg font-bold text-white mb-3">
-                "Funded in 18 days after months of rejections"
-              </h3>
-              <p className="text-gray-300 mb-4">
-                "The difference was night and day. Other brokers sent a generic application. Mesa Group Capital told our story and positioned us strategically across their lender network. They knew exactly which lenders would appreciate our tech business model."
-              </p>
-              <p className="text-sm text-gray-400">
-                — James K., Tech Startup Founder | Funded: $85,000
-              </p>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] p-8 rounded-xl shadow-md border border-gray-700">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
-              </div>
-              <h3 className="text-lg font-bold text-white mb-3">
-                "Got $75K even with damaged credit from my divorce"
-              </h3>
-              <p className="text-gray-300 mb-4">
-                "I thought my credit was too damaged after my divorce. They helped me understand what their lenders actually care about and which programs I qualified for. Got $75K for inventory through their factoring partner. Now we're on track for our best year ever."
-              </p>
-              <p className="text-sm text-gray-400">
-                — Patricia L., E-commerce Retailer | Funded: $75,000
-              </p>
-            </div>
-
-            {/* Testimonial 4 */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] p-8 rounded-xl shadow-md border border-gray-700">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
-              </div>
-              <h3 className="text-lg font-bold text-white mb-3">
-                "$187K at 0% changed everything for my e-commerce business"
-              </h3>
-              <p className="text-gray-300 mb-4">
-                "I was stuck at $50K in revenue because I couldn't afford inventory at scale. Mesa helped me secure $187K at 0%. I 5x'd my inventory and hit $340K in revenue within 6 months. The 0% interest saved me $25K that hired two employees."
-              </p>
-              <p className="text-sm text-gray-400">
-                — Sarah M., E-commerce Owner | 0% Funding: $187,000
-              </p>
-            </div>
-
-            {/* Testimonial 5 */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] p-8 rounded-xl shadow-md border border-gray-700">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
-              </div>
-              <h3 className="text-lg font-bold text-white mb-3">
-                "Built business credit from zero to $75K in funding"
-              </h3>
-              <p className="text-gray-300 mb-4">
-                "Every bank told me no because my business was 'too new.' Mesa Group built our business credit from scratch and within 10 months, we had $75K in funding and landed our first municipal contract without ever risking my personal assets."
-              </p>
-              <p className="text-sm text-gray-400">
-                — Jennifer R., General Contractor | Business Credit Program
-              </p>
-            </div>
-
-            {/* Testimonial 6 */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] p-8 rounded-xl shadow-md border border-gray-700">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
-                ))}
-              </div>
-              <h3 className="text-lg font-bold text-white mb-3">
-                "Freedom from $180K in merchant cash advances"
-              </h3>
-              <p className="text-gray-300 mb-4">
-                "We owed $180K in merchant cash advances that were bleeding us dry with weekly payments. Mesa Group negotiated settlements for $68K total and restructured the rest. We're finally profitable again and actually growing."
-              </p>
-              <p className="text-sm text-gray-400">
-                — David L., Restaurant Owner | Debt Relief
-              </p>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Real Business Owners. Real Results. <span className="text-[#f9c65d]">Real Transformation.</span>
+            </h2>
+            <p className="text-xl text-gray-600">Here's what happens when you work with people who genuinely want your business to succeed.</p>
           </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                stars: 5,
+                text: "Evert is amazing! The best! Helped me out from my bankruptcy and starting new credit for my business. I would recommend him to my family and friends.",
+                name: "Julie A.",
+                detail: "Recovered from bankruptcy · New business credit established",
+                location: "Bakersfield, CA",
+              },
+              {
+                stars: 5,
+                text: "I had a great experience with mesa group consulting. They helped me a lot in repairing my credit. I would also like to say to everyone else that anyone who wants to fix their credit should contact them.",
+                name: "Rana Y.",
+                detail: "Credit repaired · Ready to access capital",
+                location: "Bakersfield, CA",
+              },
+              {
+                stars: 5,
+                text: "They did a great job. They fix my credit from 530 to 780 credit score.",
+                name: "Guillermo A.",
+                detail: "530 → 780 credit score",
+                location: "Bakersfield, CA",
+              },
+            ].map((t, i) => (
+              <div key={i} className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(t.stars)].map((_, j) => <Star key={j} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
+                </div>
+                <p className="text-white italic leading-relaxed mb-6">"{t.text}"</p>
+                <div className="border-t border-gray-600 pt-4">
+                  <p className="font-semibold text-white">{t.name}</p>
+                  <p className="text-sm text-[#f9c65d] font-semibold mt-1">{t.detail}</p>
+                  <p className="text-xs text-gray-400">{t.location}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-sm text-gray-500 mt-8 max-w-2xl mx-auto">
+            Results vary based on individual business circumstances. Testimonials reflect individual client experiences and are not a guarantee of similar outcomes. All testimonials are from actual clients.
+          </p>
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* ── SECTION 7: FAQ ───────────────────────────────────────────── */}
+      <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-16">
-            Common <span className="text-[#f9c65d]">Questions</span> About Our Business Services
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-4">
+            Common Questions. <span className="text-[#f9c65d]">Honest Answers.</span>
           </h2>
+          <p className="text-center text-gray-600 mb-12">Everything you need to know before getting started.</p>
 
           <div className="space-y-4">
             {faqItems.map((faq, index) => (
-              <div key={index} className="bg-white rounded-lg border border-gray-200 shadow-sm">
+              <div key={index} className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
                 <button
                   onClick={() => toggleFaq(index)}
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
                 >
-                  <span className="text-lg font-semibold text-gray-900">{faq.question}</span>
-                  {openFaq === index ? (
-                    <ChevronUp className="w-6 h-6 text-[#f9c65d] flex-shrink-0" />
-                  ) : (
-                    <ChevronDown className="w-6 h-6 text-gray-400 flex-shrink-0" />
-                  )}
+                  <span className="text-lg font-semibold text-gray-900 pr-4">{faq.question}</span>
+                  {openFaq === index
+                    ? <ChevronUp className="w-5 h-5 text-[#f9c65d] flex-shrink-0" />
+                    : <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                  }
                 </button>
                 {openFaq === index && (
-                  <div className="px-6 pb-6 bg-white">
+                  <div className="px-6 pb-6">
                     <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                   </div>
                 )}
               </div>
             ))}
           </div>
-
-          <div className="mt-12 text-center">
-            <CalendlyPopupButton
-              text="Still Have Questions? Schedule a Call"
-              prefillOptions={{
-                utm: {
-                  source: "for_businesses",
-                  medium: "faq_cta"
-                }
-              }}
-              className="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg shadow-lg transition-all duration-200 border-2 border-amber-500"
-              showArrow={false}
-            />
-          </div>
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section id="contact" className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
+      {/* ── SECTION 8: FINAL CTA ─────────────────────────────────────── */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] to-[#FFECD7]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Your Business Growth Journey Starts with <span className="text-[#f9c65d]">One Conversation</span>
+            Your Business Transformation Starts with <span className="text-[#f9c65d]">One Conversation</span>
           </h2>
-
-          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-            Whether you're ready to take action today or just exploring your options, we're here to help. Schedule a free consultation, and let's talk about where your business is, where you want it to be, and the most practical path to get there.
+          <p className="text-xl text-gray-700 leading-relaxed mb-4 max-w-3xl mx-auto">
+            Whether you're ready to take action today or just exploring your options, we're here to help. Schedule a free consultation and let's talk about where your business is, where you want it to be, and the most practical path to get there.
           </p>
-
           <p className="text-base text-gray-600 mb-10">
-            No pressure. No judgment. Just honest guidance from people who understand what you're going through because we've built businesses ourselves.
+            No pressure. No judgment. Just honest guidance from people who understand what you're going through, because we've built businesses ourselves.
           </p>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <CalendlyPopupButton
-              text="Schedule Free Consultation"
-              prefillOptions={{
-                utm: {
-                  source: "for_businesses",
-                  medium: "final_cta"
-                }
-              }}
-              className="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold rounded-lg shadow-lg transition-all duration-200 border-2 border-amber-500"
-              showArrow={false}
+              text="Schedule Free Business Consultation"
+              showArrow={true}
+              prefillOptions={{ utm: { source: 'for_businesses', medium: 'final_cta' } }}
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-bold rounded-xl shadow-lg transition-all duration-200"
             />
             <a
               href="tel:+16613103040"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg shadow-md border-2 border-gray-300 transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-xl shadow-md border-2 border-gray-200 transition-all"
             >
-              <Phone className="w-5 h-5 mr-2" />
+              <Phone className="w-5 h-5 text-[#f9c65d]" />
               Call Us: (661) 310-3040
             </a>
           </div>
 
-          {/* Office Information Cards */}
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-              <div className="flex items-center justify-center gap-2 mb-3">
-                <Clock className="w-6 h-6 text-[#f9c65d]" />
-                <h3 className="text-lg font-bold text-gray-900">Office Hours</h3>
-              </div>
-              <p className="text-gray-700">M-F: 9am - 7pm</p>
-              <p className="text-gray-700">Sat: 10am - 2pm PST</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-              <div className="flex items-center justify-center gap-2 mb-3">
-                <MapPin className="w-6 h-6 text-[#f9c65d]" />
-                <h3 className="text-lg font-bold text-gray-900">Office Location</h3>
-              </div>
-              <p className="text-gray-700">5001 California Ave Suite 219</p>
-              <p className="text-gray-700">Bakersfield, CA 93309</p>
-            </div>
+          <div className="grid md:grid-cols-2 gap-4 max-w-xl mx-auto text-sm text-gray-600 mb-6">
+            <div>M-F: 9am – 7pm | Sat: 10am – 2pm PST</div>
+            <div>5001 California Ave Suite 219, Bakersfield, CA 93309</div>
           </div>
 
-          {/* Badges */}
-          <div className="mt-8 space-y-2">
-            <div className="inline-block bg-green-100 px-4 py-2 rounded-full">
-              <span className="text-sm font-medium text-green-800">
-                Serving All 50 States
-              </span>
-            </div>
-            <div className="text-sm text-gray-600">
-              Serving business owners nationwide
-            </div>
-            <div className="text-sm text-gray-600">
-              Operating through Mesa Group Consulting & Mesa Group Capital
-            </div>
-          </div>
+          <p className="text-xs text-gray-500 max-w-2xl mx-auto">
+            Mesa Group Consulting is a financial services and advisory platform. Mesa Group Capital is our business funding brokerage division. Results vary by individual business circumstances. Business funding is facilitated through Mesa Group Capital's lender network; terms and approval are subject to lender underwriting. No upfront fees on brokerage services.
+          </p>
         </div>
       </section>
 
-      {/* Contact Form Section */}
       <ContactFormSection />
-
       <Footer />
     </div>
   );
