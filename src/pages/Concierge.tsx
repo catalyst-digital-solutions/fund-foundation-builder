@@ -204,7 +204,7 @@ function WhyPartnershipMatters() {
 
         <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-10 text-center text-white">
           <p className="text-xl leading-relaxed mb-4 max-w-3xl mx-auto">
-            We don't think that's right. Everyone deserves access to expert financial guidance — not just the wealthy, not just people who can afford a five-thousand dollar retainer, not just businesses with perfect credit. <strong>Everybody.</strong>
+            We don't think that's right. Everyone deserves access to expert financial guidance. Not just the wealthy, not just people who can afford a five-thousand dollar retainer, not just businesses with perfect credit. <strong>Everybody.</strong>
           </p>
           <p className="text-lg text-amber-300 font-semibold mb-6">That's why we built Mesa Financial Concierge.</p>
           <a
@@ -233,7 +233,7 @@ function EmotionalHook() {
           <p>You've spent hours Googling with no clear answers. You've watched everyone else seem to have it figured out while you're still stuck trying to understand the basics. Maybe you've been turned down for funding and don't know why. Maybe you're not sure if your personal credit or your business credit is the problem.</p>
           <p>Here's what we believe: <strong>Nobody should have to navigate their financial life without real guidance.</strong></p>
           <p>The system wasn't built for regular people. It was built for people who already have money, who already have advisors, who already know how everything works. That's not right. And we're here to change it.</p>
-          <p>Mesa Financial Concierge exists because everyone deserves a financial partner in their corner. Whether you're working on personal credit, building a business, or both — someone who genuinely wants you to succeed. A community where people actually help each other.</p>
+          <p>Mesa Financial Concierge exists because everyone deserves a financial partner in their corner. Whether you're working on personal credit, building a business, or both. Someone who genuinely wants you to succeed. A community where people actually help each other.</p>
           <p className="text-xl font-semibold text-gray-900">That's what you've been missing. And that's what we built.</p>
         </div>
       </div>
@@ -258,7 +258,7 @@ function WhatYouGet() {
           <div className="grid md:grid-cols-2 gap-4 mb-6">
             {[
               'A credit question at 10 PM? Post it in the community and get a real answer from experts or members within 24 hours.',
-              'Weekly group calls where an advisor walks through exactly how to build credit, optimize your profile, or prepare for funding — and you can ask your specific questions live.',
+              'Weekly group calls where an advisor walks through exactly how to build credit, optimize your profile, or prepare for funding, and you can ask your specific questions live.',
               'Guidance on which funding options you actually qualify for and a clear roadmap to build the business credit profile lenders want to see.',
               'Courses that teach you everything the wealthy know about credit and money, step by step, in plain English, at your own pace.',
               'A clear action plan that tells you exactly what to do next. No more guessing. No more wondering if you\'re doing it right.',
@@ -282,7 +282,7 @@ function FeatureBlocks() {
       icon: Users,
       headline: 'Your Financial Family, Available 24/7',
       label: 'Private Community Access',
-      body: `That credit question at 10 PM we mentioned? Here's where you ask it.\n\nPost questions anytime and get real answers from experts or members who've been exactly where you are — within 24 to 48 hours. Share wins. Troubleshoot challenges. Get support from people who actually understand.\n\nWhether you're working through a dispute, trying to understand your credit profile, or figuring out your next step toward business funding, this community has been there.\n\nThe Mesa Financial Concierge community isn't just a forum. It's your financial family.`,
+      body: `That credit question at 10 PM we mentioned? Here's where you ask it.\n\nPost questions anytime and get real answers from experts or members who've been exactly where you are, within 24 to 48 hours. Share wins. Troubleshoot challenges. Get support from people who actually understand.\n\nWhether you're working through a dispute, trying to understand your credit profile, or figuring out your next step toward business funding, this community has been there.\n\nThe Mesa Financial Concierge community isn't just a forum. It's your financial family.`,
     },
     {
       icon: Phone,
@@ -496,7 +496,7 @@ function HowToStart() {
         'Complete your first education module',
         'Post your introduction in the community',
         'Get your first expert guidance',
-        'Start your financial journey — personal, business, or both',
+        'Start your financial journey, personal, business, or both',
       ],
     },
   ];
@@ -566,7 +566,7 @@ function WhyDifferent() {
             {
               icon: Award,
               title: 'Everything in One Place',
-              body: 'No more juggling multiple coaches, courses, or subscriptions. No more wondering who to trust or where to turn. Credit coaching. Funding guidance. Community support. Education. Accountability. Whether your goals are personal, business, or both — it\'s all in one partnership.',
+              body: 'No more juggling multiple coaches, courses, or subscriptions. No more wondering who to trust or where to turn. Credit coaching. Funding guidance. Community support. Education. Accountability. Whether your goals are personal, business, or both, it\'s all in one partnership.',
               note: 'This is what you\'ve been missing.',
             },
             {
@@ -601,7 +601,7 @@ function WhyDifferent() {
             <strong>We help people first.</strong>
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Some people need comprehensive credit repair. Some need business funding guidance. Some just need honest direction. We help all of them. That's how we've built this company — by genuinely caring about your success, not just signing you up.
+            Some people need comprehensive credit repair. Some need business funding guidance. Some just need honest direction. We help all of them. That's how we've built this company, by genuinely caring about your success, not just signing you up.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Mesa Financial Concierge was built from a simple realization: most people don't need another product. They need a partner. Someone who stays in their corner for the long haul. A community that actually understands what they're going through.
@@ -841,7 +841,7 @@ function FAQSection() {
     },
     {
       q: "What's the difference between Mesa Financial Concierge and Mesa360?",
-      a: "They're two different services that work well together. Mesa360 is hands-on credit repair, including dispute work and removal of negative items. Mesa Financial Concierge is credit coaching, business funding guidance, education, and ongoing strategy. Many clients have both — Mesa360 fixes existing problems while Concierge helps you build positive credit, prepare for funding, and stay on track for the long haul.",
+      a: "They're two different services that work well together. Mesa360 is hands-on credit repair, including dispute work and removal of negative items. Mesa Financial Concierge is credit coaching, business funding guidance, education, and ongoing strategy. Many clients have both. Mesa360 fixes existing problems while Concierge helps you build positive credit, prepare for funding, and stay on track for the long haul.",
     },
     {
       q: 'Can I upgrade or downgrade tiers?',
@@ -853,7 +853,7 @@ function FAQSection() {
     },
     {
       q: 'How is this different from other financial coaching programs?',
-      a: "Three things. We've been where you are — our founder had credit completely shot at one point. We're not lecturing from ivory towers. We've lived this journey. Complete ecosystem: you get credit monitoring, community, education, personal and business funding guidance, and marketplace access. Everything in one place. We help people first: we believe everyone deserves a financial partner in their corner, regardless of what they can afford. That's why Community tier is included with Mesa x SmartCredit.",
+      a: "Three things. We've been where you are, our founder had credit completely shot at one point. We're not lecturing from ivory towers. We've lived this journey. Complete ecosystem: you get credit monitoring, community, education, personal and business funding guidance, and marketplace access. Everything in one place. We help people first: we believe everyone deserves a financial partner in their corner, regardless of what they can afford. That's why Community tier is included with Mesa x SmartCredit.",
     },
   ];
 
@@ -996,7 +996,7 @@ function FinalCTA() {
 
         <div className="text-center mb-6">
           <h3 className="text-2xl font-bold text-gray-900 mb-8">Ready to Get Started?</h3>
-          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">Join Mesa Financial Concierge and get the financial partnership you deserve. Personal credit, business credit, or both — we've got you covered.</p>
+          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">Join Mesa Financial Concierge and get the financial partnership you deserve. Personal credit, business credit, or both. We've got you covered.</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <a
               href={SMARTCREDIT_LINK}
@@ -1044,7 +1044,7 @@ function FinalCTA() {
         </div>
 
         <div className="text-center mt-8 space-y-2 text-sm text-gray-600">
-          <p>Not sure which tier is right for you? <a href={CALENDLY_LINK} target="_blank" rel="noopener noreferrer" className="text-[#bb9446] font-semibold hover:underline">Schedule a free consultation</a> — no pressure, no obligations, just honest guidance.</p>
+          <p>Not sure which tier is right for you? <a href={CALENDLY_LINK} target="_blank" rel="noopener noreferrer" className="text-[#bb9446] font-semibold hover:underline">Schedule a free consultation</a>, no pressure, no obligations, just honest guidance.</p>
           <p>Already a Mesa360 client? You already have Community tier access. Check your email for login details. Want to upgrade? <a href={CALENDLY_LINK} target="_blank" rel="noopener noreferrer" className="text-[#bb9446] font-semibold hover:underline">Contact your advisor →</a></p>
           <p className="text-gray-500">Hablamos Español &nbsp;|&nbsp; Assi Punjabi Bolde Haan</p>
         </div>

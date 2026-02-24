@@ -346,13 +346,13 @@ const CreditRepair = () => {
             </div>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                <strong>$27.99/month, billed directly by SmartCredit — not by us.</strong>
+                <strong>$27.99/month, billed directly by SmartCredit. Not by us.</strong>
               </p>
               <p>
                 Transparency is one of our core values, so we'd rather tell you this now than have you find out later. Your dedicated Client Success Manager and the Mesa360 Credit System™ use SmartCredit to access your live Experian, Equifax, and TransUnion reports throughout your program. It's what keeps everyone aligned in real time, so nothing gets missed and every dispute is filed with precision.
               </p>
               <p>
-                You keep full control of your account. You see everything we see. And beyond your restoration program, SmartCredit delivers genuine value on its own — $1M identity theft insurance, real-time fraud alerts, and all three bureaus in one dashboard.
+                You keep full control of your account. You see everything we see. And beyond your restoration program, SmartCredit delivers genuine value on its own: $1M identity theft insurance, real-time fraud alerts, and all three bureaus in one dashboard.
               </p>
               <p className="font-semibold text-[#3E3E3E]">
                 This is us being the partner we promised to be. Honest with you from the very first step.
@@ -1208,7 +1208,7 @@ const CreditRepair = () => {
             
             {/* Mesa Financial Concierge callout */}
             <div className="mt-8 bg-amber-400/10 border border-amber-400/40 rounded-2xl p-6">
-              <h4 className="text-lg font-bold text-amber-300 mb-3">Your Financial Home While We Work — Mesa Financial Concierge</h4>
+              <h4 className="text-lg font-bold text-amber-300 mb-3">Your Financial Home While We Work. Mesa Financial Concierge.</h4>
               <p className="text-mgc-tan text-sm leading-relaxed mb-3">
                 Every Mesa360 client automatically receives access to <strong className="text-white">Mesa Financial Concierge Community tier</strong>, included at no additional cost. Because we believe the time spent in your program should never feel like waiting.
               </p>
@@ -2204,7 +2204,7 @@ const CreditRepair = () => {
                     'Dedicated Client Success Manager for both',
                     '1-on-1 financial coaching for both',
                     'Mesa Financial Concierge Community access',
-                    'Ongoing support — new items worked at no additional charge',
+                    'Ongoing support. New items worked at no additional charge',
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-purple-300 mt-0.5 flex-shrink-0" />
@@ -2853,7 +2853,7 @@ Every dollar you paid to Mesa Group.</p>
       </section>
 
       {/* ============================================ */}
-      {/* SECTION 11B: WHY MESA GROUP — BUILT DIFFERENT */}
+      {/* SECTION 11B: WHY MESA GROUP, BUILT DIFFERENT */}
       {/* ============================================ */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
@@ -2876,9 +2876,9 @@ Every dollar you paid to Mesa Group.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-4 mb-10">
             {[
-              { icon: '👤', title: 'A Real Person in Your Corner', body: 'A dedicated Client Success Manager who knows your name, your story, and your goals — from your first day to graduation.' },
+              { icon: '👤', title: 'A Real Person in Your Corner', body: 'A dedicated Client Success Manager who knows your name, your story, and your goals, from your first day to graduation.' },
               { icon: '📚', title: 'Coaching That Lasts', body: 'A program that makes sure what we build together stays built. You\'ll never end up back where you started.' },
-              { icon: '🌐', title: 'A Trilingual Team', body: 'We communicate without barriers — English, Español, and Punjabi. Because you deserve guidance in your language.' },
+              { icon: '🌐', title: 'A Trilingual Team', body: 'We communicate without barriers, English, Español, and Punjabi. Because you deserve guidance in your language.' },
               { icon: '🏢', title: 'A Real Office You Can Visit', body: '5001 California Ave Suite 219, Bakersfield, CA. We\'re not a faceless company. We\'re your neighbors.' },
               { icon: '⚖️', title: 'Legal Backing When You Need It', body: 'When the system doesn\'t treat you fairly, we bring in licensed consumer protection attorneys. We stand up for you.' },
               { icon: '❤️', title: 'Your Family Behind Every File', body: 'Behind every file is a family. A dream. A version of life that feels just out of reach. We never forget that.' },

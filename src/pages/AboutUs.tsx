@@ -33,13 +33,13 @@ const AboutUs = () => {
       name: 'Aileen Calderon',
       role: 'Office Operations Manager',
       languages: 'Spanish / English',
-      bio: "Aileen is the reason everything runs the way it should. She manages the day-to-day operations that most clients never see but always feel — the follow-through, the coordination, the consistency that makes Mesa feel different from the first interaction. She brings order to complexity and makes sure nothing falls through the cracks. Clients who've worked with Aileen describe her as someone who genuinely cares whether things go right for you, not just whether the process was followed.",
+      bio: "Aileen is the reason everything runs the way it should. She manages the day-to-day operations that most clients never see but always feel: the follow-through, the coordination, the consistency that makes Mesa feel different from the first interaction. She brings order to complexity and makes sure nothing falls through the cracks. Clients who've worked with Aileen describe her as someone who genuinely cares whether things go right for you, not just whether the process was followed.",
     },
     {
       name: 'Justin Calderon',
       role: 'Client Solutions Coordinator',
       languages: 'Spanish / English',
-      bio: "Justin is usually the first real conversation a new client has at Mesa. He listens first and talks second, which is rarer than it should be in this industry. His job is to understand where someone actually is — not just financially, but emotionally — and connect them to the right path forward. He doesn't push. He guides. Clients consistently say Justin made them feel like they weren't being sold something, they were being helped.",
+      bio: "Justin is usually the first real conversation a new client has at Mesa. He listens first and talks second, which is rarer than it should be in this industry. His job is to understand where someone actually is, not just financially, but emotionally, and connect them to the right path forward. He doesn't push. He guides. Clients consistently say Justin made them feel like they weren't being sold something, they were being helped.",
     },
     {
       name: 'Harpreet Moore',
@@ -51,7 +51,7 @@ const AboutUs = () => {
       name: 'Gurtej Singh',
       role: 'Client Solutions Director',
       languages: 'Punjabi / English',
-      bio: "Gurtej leads with precision and conviction. He works with clients who are ready to move — people who've done the work and need a strategist in their corner to get results. He brings deep knowledge of both the credit system and the funding landscape, connecting the dots between where a client is today and what's actually possible for their future. Clients describe him as direct, thorough, and someone who always tells you the truth even when it's not what you wanted to hear.",
+      bio: "Gurtej leads with precision and conviction. He works with clients who are ready to move, people who've done the work and need a strategist in their corner to get results. He brings deep knowledge of both the credit system and the funding landscape, connecting the dots between where a client is today and what's actually possible for their future. Clients describe him as direct, thorough, and someone who always tells you the truth even when it's not what you wanted to hear.",
     },
   ];
 
@@ -67,13 +67,13 @@ const AboutUs = () => {
       icon: Heart,
       color: 'bg-red-100 text-red-500',
       title: 'Family First',
-      body: "We treat every client like family because that's how we were raised. Whether you're restoring credit, getting out of debt, accessing business funding, or protecting your family's future with a will or life insurance — every conversation comes from a place of respect and genuine commitment. When you work with Mesa, you're not a transaction. You're part of something.",
+      body: "We treat every client like family because that's how we were raised. Whether you're restoring credit, getting out of debt, accessing business funding, or protecting your family's future with a will or life insurance. Every conversation comes from a place of respect and genuine commitment. When you work with Mesa, you're not a transaction. You're part of something.",
     },
     {
       icon: Sparkles,
       color: 'bg-amber-100 text-amber-600',
       title: 'Faith-Led Purpose',
-      body: 'Everything we do is rooted in service, compassion, and belief. Belief in new beginnings. Belief that your breakthrough is already written. We\'re just here to help you walk it out. We answer to a higher standard — and that standard shows up in every interaction, every service, every outcome. "Where God guides, He provides." — Isaiah 58:11',
+      body: 'Everything we do is rooted in service, compassion, and belief. Belief in new beginnings. Belief that your breakthrough is already written. We\'re just here to help you walk it out. We answer to a higher standard, and that standard shows up in every interaction, every service, every outcome. "Where God guides, He provides." — Isaiah 58:11',
     },
     {
       icon: Shield,
@@ -85,13 +85,13 @@ const AboutUs = () => {
       icon: BookOpen,
       color: 'bg-green-100 text-green-600',
       title: 'Education Over Shortcuts',
-      body: "The wealthy have always had access to financial advisors, estate planners, credit specialists, and funding networks. Most people haven't. We built Mesa to change that. Real transformation happens when you understand how the system works — not just how to navigate it once, but how to use it for the rest of your life. Our goal isn't to make you dependent on us. It's to make sure you never need us again.",
+      body: "The wealthy have always had access to financial advisors, estate planners, credit specialists, and funding networks. Most people haven't. We built Mesa to change that. Real transformation happens when you understand how the system works, not just how to navigate it once, but how to use it for the rest of your life. Our goal isn't to make you dependent on us. It's to make sure you never need us again.",
     },
     {
       icon: Globe,
       color: 'bg-purple-100 text-purple-600',
       title: 'Access for Everyone',
-      body: "Credit cards. Personal loans. Auto refinancing. Business funding. Debt relief. Estate planning. Life insurance. These aren't services reserved for people who already have money. They're tools every family deserves access to. Mesa Group exists to put those tools in your hands — with honest guidance on which ones actually fit your life — and none of the judgment that usually comes with it.",
+      body: "Credit cards. Personal loans. Auto refinancing. Business funding. Debt relief. Estate planning. Life insurance. These aren't services reserved for people who already have money. They're tools every family deserves access to. Mesa Group exists to put those tools in your hands, with honest guidance on which ones actually fit your life, and none of the judgment that usually comes with it.",
     },
   ];
 
@@ -173,7 +173,7 @@ const AboutUs = () => {
               And if no one taught hardworking immigrants who risked everything to build a life in this country, how many other families were navigating this same system blind?
             </p>
             <p className="text-xl font-bold text-gray-900">
-              That's why Mesa Group exists. Not to fix credit scores. Not to push financial products. To be the financial partner those families never had — for credit, for funding, for debt, for protection, for everything that comes with building a life worth passing down.
+              That's why Mesa Group exists. Not to fix credit scores. Not to push financial products. To be the financial partner those families never had, for credit, for funding, for debt, for protection, for everything that comes with building a life worth passing down.
             </p>
             <p>
               Today, we've helped over 2,500 individuals, families, and businesses transform their financial futures. We've turned denials into approvals. Debt into freedom. Confusion into clarity. And every single client we've helped is now equipped to teach the next generation what no one taught them.
@@ -197,7 +197,7 @@ const AboutUs = () => {
           </p>
           <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
             <p>
-              We serve the younger generation so they don't repeat the mistakes their parents made. We serve the older generation because it is never too late to start. And we treat every client who walks through our door — whether they arrive with a 300 or an 800, whether they need credit restoration or business capital or a will for their family — with the same respect, care, and dedication.
+              We serve the younger generation so they don't repeat the mistakes their parents made. We serve the older generation because it is never too late to start. And we treat every client who walks through our door, whether they arrive with a 300 or an 800, whether they need credit restoration or business capital or a will for their family, with the same respect, care, and dedication.
             </p>
           </div>
         </div>
@@ -231,7 +231,7 @@ const AboutUs = () => {
               The People Behind <span className="text-[#f9c65d]">the Promise</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Every person on this team shows up for one reason. To help you figure out your best path forward — and stay with you until you get there.
+              Every person on this team shows up for one reason. To help you figure out your best path forward, and stay with you until you get there.
             </p>
           </div>
 
@@ -264,7 +264,7 @@ const AboutUs = () => {
             Our Client Success Team
           </h3>
           <p className="text-gray-600 mb-8 max-w-3xl">
-            Your Client Success Manager is your dedicated point of contact throughout your journey. They know your file, your goals, and your name — from day one to graduation.
+            Your Client Success Manager is your dedicated point of contact throughout your journey. They know your file, your goals, and your name, from day one to graduation.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -293,7 +293,7 @@ const AboutUs = () => {
           </h2>
           <div className="space-y-5 text-lg text-gray-700 leading-relaxed">
             <p>
-              Mesa Group was built in Bakersfield, California — a city often overlooked but full of hardworking families who deserve better financial opportunities. We serve this community in English, Spanish, and Punjabi because financial guidance should never be limited by language.
+              Mesa Group was built in Bakersfield, California, a city often overlooked but full of hardworking families who deserve better financial opportunities. We serve this community in English, Spanish, and Punjabi because financial guidance should never be limited by language.
             </p>
             <p>
               We serve Hispanic and Latino families through <strong>Mesa Financiera</strong>. We serve the Punjabi community through <strong>Chaklo Credit</strong>. We serve first-generation Americans navigating a system no one explained to them. And we serve anyone who walks through our door ready to build something better.

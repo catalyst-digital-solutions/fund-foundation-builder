@@ -47,7 +47,7 @@ const ForBusinesses = () => {
     },
     {
       question: "What if my business was just denied for funding?",
-      answer: "A denial isn't the end. It usually means the wrong lender, wrong timing, or wrong positioning — not that funding is impossible. We'll review your situation, identify what caused the denial, and build a strategy to get you approved through the right channel."
+      answer: "A denial isn't the end. It usually means the wrong lender, wrong timing, or wrong positioning, not that funding is impossible. We'll review your situation, identify what caused the denial, and build a strategy to get you approved through the right channel."
     },
     {
       question: "Do I have to commit to anything during the free consultation?",
@@ -133,7 +133,7 @@ const ForBusinesses = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
 
-            {/* Card 1 — Build Credit */}
+            {/* Card 1, Build Credit */}
             <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-amber-300 group">
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-6">
                 <TrendingUp className="w-8 h-8 text-white" />
@@ -150,7 +150,7 @@ const ForBusinesses = () => {
               </Link>
             </div>
 
-            {/* Card 2 — Get Funding */}
+            {/* Card 2, Get Funding */}
             <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-amber-300 group">
               <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-6">
                 <DollarSign className="w-8 h-8 text-white" />
@@ -168,7 +168,7 @@ const ForBusinesses = () => {
               </Link>
             </div>
 
-            {/* Card 3 — Debt Relief */}
+            {/* Card 3, Debt Relief */}
             <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-amber-300 group">
               <div className="w-14 h-14 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center mb-6">
                 <ShieldCheck className="w-8 h-8 text-white" />
@@ -185,7 +185,7 @@ const ForBusinesses = () => {
               </Link>
             </div>
 
-            {/* Card 4 — Set Up Right */}
+            {/* Card 4, Set Up Right */}
             <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-amber-300 group">
               <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mb-6">
                 <Briefcase className="w-8 h-8 text-white" />
@@ -283,10 +283,10 @@ const ForBusinesses = () => {
             You Don't Have to <span className="text-[#f9c65d]">Figure This Out Alone.</span>
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
-            A lot of business owners come to us not knowing exactly what they need — just knowing something isn't working. That's okay. That's actually exactly why we're here.
+            A lot of business owners come to us not knowing exactly what they need, just knowing something isn't working. That's okay. That's actually exactly why we're here.
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-3xl mx-auto">
-            Sit down with one of our advisors, completely free, and just talk. Tell us where your business is. Tell us what's been frustrating you. We'll listen, ask the right questions, and give you honest direction — whether you become a client or not.
+            Sit down with one of our advisors, completely free, and just talk. Tell us where your business is. Tell us what's been frustrating you. We'll listen, ask the right questions, and give you honest direction, whether you become a client or not.
           </p>
           <p className="text-lg font-semibold text-gray-900 mb-10">
             That's the Mesa promise. And it's available to every business owner who walks through our door.

@@ -1020,7 +1020,7 @@ const Homepage = () => {
 
           </div>
 
-          <p className="text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+          <p className="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
             We'll be honest with you: not everyone needs every service. During your free consultation, we'll assess your situation and recommend only what makes sense for YOUR goals. Sometimes that's our services. Sometimes it's just good advice. Either way, you'll know the truth.
           </p>
 
@@ -1111,7 +1111,7 @@ const Homepage = () => {
               This isn't a bonus feature. This is what true partnership looks like.
             </p>
             <p>
-              We built this because credit repair is only the beginning. The families we serve deserve someone by their side through every chapter — through the mortgage application, the business launch, and the next generation that never has to start from zero.
+              We built this because credit repair is only the beginning. The families we serve deserve someone by their side through every chapter: through the mortgage application, the business launch, and the next generation that never has to start from zero.
             </p>
             <p>
               That's why the Community tier is free with your Mesa x SmartCredit subscription. Because access to a real financial partner shouldn't be a luxury. It should be a right.
@@ -1134,7 +1134,7 @@ const Homepage = () => {
               {
                 icon: MapPin,
                 title: 'Your Personal Roadmap',
-                body: 'Powered by LevelUpScore technology. Tailored to your credit profile and your goals. You\'ll always know your next move — and why it matters.',
+                body: 'Powered by LevelUpScore technology. Tailored to your credit profile and your goals. You\'ll always know your next move, and why it matters.',
               },
               {
                 icon: Building2,
@@ -1197,7 +1197,7 @@ const Homepage = () => {
           </div>
 
           <p className="text-center text-sm text-gray-500 mt-6">
-            Three tiers. One mission. We help people first — always.
+            Three tiers. One mission. We help people first. Always.
           </p>
 
         </div>
@@ -1497,7 +1497,7 @@ const Homepage = () => {
           {/* Real Google Reviews */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            {/* Julian Morales — 512→762+, car loan, dream home */}
+            {/* Julian Morales, 512→762+, car loan, dream home */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
@@ -1512,7 +1512,7 @@ const Homepage = () => {
               </div>
             </div>
 
-            {/* MyaG — bought first home after 2 failed companies */}
+            {/* MyaG, bought first home after 2 failed companies */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
@@ -1527,13 +1527,13 @@ const Homepage = () => {
               </div>
             </div>
 
-            {/* Harwinder Singh — "guidance, support, and a clear path forward" */}
+            {/* Harwinder Singh, "guidance, support, and a clear path forward" */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
               <p className="text-white leading-relaxed mb-6 italic">
-                "From the beginning, their team has been professional, respectful, and responsive to every question we've had. What stands out most is their dedication to truly helping their clients. They don't just offer a service — they offer guidance, support, and a clear path forward."
+                "From the beginning, their team has been professional, respectful, and responsive to every question we've had. What stands out most is their dedication to truly helping their clients. They don't just offer a service. They offer guidance, support, and a clear path forward."
               </p>
               <div className="border-t border-gray-600 pt-4">
                 <p className="font-semibold text-white">Harwinder S.</p>
@@ -1542,13 +1542,13 @@ const Homepage = () => {
               </div>
             </div>
 
-            {/* nava andrew — negatives removed, car loan, on track for home */}
+            {/* nava andrew, negatives removed, car loan, on track for home */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
               </div>
               <p className="text-white leading-relaxed mb-6 italic">
-                "Within just a few months, they removed several negative items including collections and late payments. They didn't just fix credit — they educated me so I can keep it healthy. Thanks to them, I was approved for a car loan with a great interest rate and I'm on track to buy my first home."
+                "Within just a few months, they removed several negative items including collections and late payments. They didn't just fix credit. They educated me so I can keep it healthy. Thanks to them, I was approved for a car loan with a great interest rate and I'm on track to buy my first home."
               </p>
               <div className="border-t border-gray-600 pt-4">
                 <p className="font-semibold text-white">Andrew N.</p>
@@ -1557,7 +1557,7 @@ const Homepage = () => {
               </div>
             </div>
 
-            {/* Alex Medrano — 2 failed companies → results in months */}
+            {/* Alex Medrano, 2 failed companies → results in months */}
             <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}

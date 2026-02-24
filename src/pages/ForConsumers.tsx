@@ -127,7 +127,7 @@ const ForConsumers = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
 
-            {/* Card 1 — Fix or Build Credit */}
+            {/* Card 1, Fix or Build Credit */}
             <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-amber-300">
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-6">
                 <TrendingUp className="w-8 h-8 text-white" />
@@ -147,7 +147,7 @@ const ForConsumers = () => {
               </Link>
             </div>
 
-            {/* Card 2 — Get Out of Debt */}
+            {/* Card 2, Get Out of Debt */}
             <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-amber-300">
               <div className="w-14 h-14 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center mb-6">
                 <Shield className="w-8 h-8 text-white" />
@@ -165,14 +165,14 @@ const ForConsumers = () => {
               </Link>
             </div>
 
-            {/* Card 3 — Find a Loan or Credit Product */}
+            {/* Card 3, Find a Loan or Credit Product */}
             <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-amber-300">
               <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-6">
                 <DollarSign className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Find a Loan or Credit Product</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                We've done the homework on which lenders are worth your time. Compare real rates from multiple lenders in minutes — no impact to your credit score.
+                We've done the homework on which lenders are worth your time. Compare real rates from multiple lenders in minutes, with no impact to your credit score.
               </p>
               <div className="space-y-1.5 mb-6 text-sm text-gray-600">
                 <div>→ <Link to="/personal-loans" className="text-[#bb9446] hover:underline font-medium">Personal Loans</Link></div>
@@ -185,14 +185,14 @@ const ForConsumers = () => {
               </Link>
             </div>
 
-            {/* Card 4 — Protect My Family's Future */}
+            {/* Card 4, Protect My Family's Future */}
             <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all border-2 border-transparent hover:border-amber-300">
               <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mb-6">
                 <Heart className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Protect My Family's Future</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Life doesn't wait. Get your estate planning and life insurance in order — affordable, simple, and done right.
+                Life doesn't wait. Get your estate planning and life insurance in order. Affordable, simple, and done right.
               </p>
               <div className="space-y-1.5 mb-6 text-sm text-gray-600">
                 <div>→ <Link to="/life-insurance" className="text-[#bb9446] hover:underline font-medium">Life Insurance</Link></div>
@@ -329,7 +329,7 @@ const ForConsumers = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">We Help Everybody</h3>
               <p className="text-gray-700 leading-relaxed">
-                Every person who walks through our door gets the same level of care — whether your credit is a 300 or an 800, whether you need comprehensive services or just honest direction. We help everybody. That's the promise we made, and that's the promise we keep.
+                Every person who walks through our door gets the same level of care, whether your credit is a 300 or an 800, whether you need comprehensive services or just honest direction. We help everybody. That's the promise we made, and that's the promise we keep.
               </p>
             </div>
 

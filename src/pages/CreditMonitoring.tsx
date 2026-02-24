@@ -785,7 +785,7 @@ function FAQSection() {
     },
     {
       question: "What is Mesa Financial Concierge and why is it included?",
-      answer: "Mesa Financial Concierge is our complete financial guidance platform. Community tier is included FREE with every Mesa x SmartCredit subscription because we believe everyone deserves a financial partner in their corner. You get weekly live expert coaching calls, private community support, a complete education library, and personalized action plans — plus all the SmartCredit monitoring features. All included with your Mesa x SmartCredit subscription."
+      answer: "Mesa Financial Concierge is our complete financial guidance platform. Community tier is included FREE with every Mesa x SmartCredit subscription because we believe everyone deserves a financial partner in their corner. You get weekly live expert coaching calls, private community support, a complete education library, and personalized action plans, plus all the SmartCredit monitoring features. All included with your Mesa x SmartCredit subscription."
     },
     {
       question: "How much does it cost?",
@@ -805,7 +805,7 @@ function FAQSection() {
     },
     {
       question: "Can I upgrade to get more personalized support?",
-      answer: "Yes! Mesa Financial Concierge offers premium tiers — Concierge at $97/month and Executive at $197/month — that include monthly or weekly 1-on-1 advisor calls. Community tier is included with your SmartCredit subscription, and you can upgrade anytime."
+      answer: "Yes! Mesa Financial Concierge offers premium tiers: Concierge at $97/month and Executive at $197/month, that include monthly or weekly 1-on-1 advisor calls. Community tier is included with your SmartCredit subscription, and you can upgrade anytime."
     },
     {
       question: "Is there a contract?",

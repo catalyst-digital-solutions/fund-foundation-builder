@@ -68,7 +68,7 @@ function HeroSection() {
         <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">
           Most business owners don't realize they're sitting on $50K–$250K in accessible capital. Not through banks. Not through investors. Through strategic 0% business credit that requires no collateral, no business tax returns, and no equity giveaway.
           <br /><br />
-          The difference between $15K and $150K isn't your credit score. It's knowing the strategy. We show you exactly how to access it — whether you want the roadmap, coaching support, or white-glove service where we handle everything.
+          The difference between $15K and $150K isn't your credit score. It's knowing the strategy. We show you exactly how to access it, whether you want the roadmap, coaching support, or white-glove service where we handle everything.
         </p>
 
         {/* Stats Bar */}
@@ -273,7 +273,7 @@ function HowItWorks() {
     {
       num: '3',
       title: 'Strategic Execution',
-      body: 'Whether you execute the strategy yourself (Blueprint), we coach you through it (Guided Journey), or we handle everything (Full-Service) — you\'re using the same proven system that gets our clients $50K+ vs $15K–$25K DIY.',
+      body: 'Whether you execute the strategy yourself (Blueprint), we coach you through it (Guided Journey), or we handle everything (Full-Service), you\'re using the same proven system that gets our clients $50K+ vs $15K–$25K DIY.',
     },
     {
       num: '4',
@@ -643,7 +643,7 @@ function ThreeTiers() {
     },
     {
       name: 'The Full-Service Experience',
-      tag: 'LIMITED — 5/month',
+      tag: 'LIMITED: 5/month',
       price: '$500 + 10% of funded',
       approach: 'Done-For-You Execution',
       timeline: '90–120 Days Avg',
@@ -841,7 +841,7 @@ function TierDetails() {
         <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg text-white">
           <div className="flex items-start justify-between flex-wrap gap-4 mb-2">
             <div>
-              <div className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-2">⚠ LIMITED — 5 CLIENTS/MONTH MAX</div>
+              <div className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-2">⚠ LIMITED: 5 CLIENTS/MONTH MAX</div>
               <h3 className="text-3xl font-bold">The Full-Service Experience</h3>
               <p className="text-gray-300 mt-1">We Handle Everything While You Focus on Your Business</p>
             </div>
@@ -908,7 +908,7 @@ function QualificationSection() {
             ))}
           </div>
           <div className="border-t border-amber-300 pt-6">
-            <h3 className="font-bold text-gray-900 mb-3">Quick Self-Assessment — Count How Many You Checked:</h3>
+            <h3 className="font-bold text-gray-900 mb-3">Quick Self-Assessment. Count How Many You Checked:</h3>
             <div className="space-y-2 text-sm text-gray-700">
               <p className="flex items-start gap-2"><span className="text-green-600 font-bold">5–6 checks:</span> You're very likely qualified. Fill out the form above or call us.</p>
               <p className="flex items-start gap-2"><span className="text-amber-600 font-bold">3–4 checks:</span> You might qualify with adjusted expectations. Call us for an honest assessment.</p>
@@ -917,7 +917,7 @@ function QualificationSection() {
           </div>
         </div>
         <div className="text-center">
-          <p className="text-gray-600 mb-4">Not sure if you qualify? Fill out our qualification form or call us. We'll assess your situation honestly and tell you exactly where you stand — even if that means coming back in 6 months after optimizing your credit. We help people first. Always.</p>
+          <p className="text-gray-600 mb-4">Not sure if you qualify? Fill out our qualification form or call us. We'll assess your situation honestly and tell you exactly where you stand, even if that means coming back in 6 months after optimizing your credit. We help people first. Always.</p>
           <a
             href="#qualification-form"
             className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-10 py-4"
@@ -943,7 +943,7 @@ function FAQSection() {
     { q: 'How long does this take?', a: 'Average timeline is 90–120 days from start to funding. This includes strategic relationship building, application execution, and fund access. Much faster than traditional bank loans (3–6 months).' },
     { q: 'Will this affect my personal credit?', a: 'Your personal credit is reviewed during qualification, but this builds your business credit profile. The reporting benefits your business credit, not your personal credit.' },
     { q: 'What if I have limited business history or less-than-perfect credit?', a: 'Minimum requirement is 700+ personal credit. If you\'re below that, we\'ll tell you what to optimize and when you\'re ready for funding.' },
-    { q: "What's the difference between the three support tiers?", a: 'The strategy is identical. You\'re choosing support level: Strategy Builder ($1,997) — we give you the complete roadmap, you execute solo. Guided Journey ($3,500) — we coach you through execution for 6 months. Full-Service ($500 + 10%) — we handle everything while you focus on business.' },
+    { q: "What's the difference between the three support tiers?", a: 'The strategy is identical. You\'re choosing support level: Strategy Builder ($1,997): we give you the complete roadmap, you execute solo. Guided Journey ($3,500): we coach you through execution for 6 months. Full-Service ($500 + 10%): we handle everything while you focus on business.' },
     { q: "Can't I just Google this and figure it out myself?", a: 'You can try. You\'ll find generic YouTube videos, Reddit threads with conflicting info, and blog posts from companies trying to sell you something. What you WON\'T find: which specific banks to target based on YOUR 3-bureau profile, current underwriting criteria, the exact sequence that maximizes YOUR approvals, or real-time support when banks push back. The gap between Google and us is worth $50K–$100K to your business.' },
     { q: 'What happens after the 0% promotional period ends?', a: 'You have three options: pay off the balance before 0% ends (ideal), transfer to another 0% card (extends the period), or keep the balance at regular APR (not recommended). Most business owners use 0% capital for growth that pays itself off.' },
     { q: 'Can I do this again in the future?', a: 'Yes! This is a repeatable system. After 12–18 months, your business credit profile is actually stronger, and you can execute Round 2 funding for additional capital.' },
