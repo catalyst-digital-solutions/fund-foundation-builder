@@ -33,7 +33,7 @@ const CreditRepair = () => {
   const [pricingEmeraldOpen, setPricingEmeraldOpen] = useState(false);
   const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
   
-  const portalUrl = 'https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=MjI1cm9wbjdDZFc1U1d0REI0NnNJdz09';
+  const portalUrl = 'https://portal.mesagroupconsulting.com//portal-signUp/signup.jsp?id=LzgrcWJobTEyUXFoejhLbFpJYjVwUT09';
 
   // Newsletter Popup Logic
   useEffect(() => {
@@ -117,13 +117,18 @@ const CreditRepair = () => {
               </div>
 
               {/* H1 Headline */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Stuck with Bad Credit? Our <span className="text-[#f9c65d]">Mesa360 Credit System™</span> Can Help You Fix It.
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+                What Would Your Life Look Like If <span className="text-[#f9c65d]">Bad Credit Wasn't in the Way?</span>
               </h1>
+
+              {/* Supporting Line */}
+              <p className="text-2xl md:text-3xl font-semibold text-[#bb9446] mb-6">
+                Bad Credit Doesn't Define You. Let's Prove It.
+              </p>
 
               {/* Subheadline */}
               <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-                Remove inaccurate items from your credit report in 45-90 days, plus get 1-on-1 coaching to rebuild your credit and achieve your financial goals. This isn't just credit restoration. It's a <strong>complete financial transformation program</strong> powered by our proven Mesa360 Credit System™.
+                The Mesa360 Credit System™ combines professional credit restoration with 1-on-1 coaching and a dedicated Client Success Manager who stays with you through the entire journey. You don't have to travel this path alone. We're here to help every step of the way.
               </p>
 
               {/* Trust Bar */}
@@ -216,28 +221,62 @@ const CreditRepair = () => {
       {/* ============================================ */}
 
       {/* ============================================ */}
+      {/* SECTION 2B: GHL EMAIL CAPTURE FORM */}
+      {/* ============================================ */}
+      <section className="bg-gradient-to-br from-amber-50 to-white py-16 px-6 md:px-8">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-3">
+              Over 2,500 Lives Changed. <span className="text-[#f9c65d]">Yours Could Be Next.</span>
+            </h2>
+            <p className="text-lg text-gray-600">
+              Fill out the form and one of our Client Solutions Advisors will reach out to set you up with your own customized action plan built around your goals.
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl shadow-xl border border-amber-200 overflow-hidden">
+            <iframe
+              src="https://link.mesagroupconsulting.com/widget/survey/Y7K7EfnX7ydeGpv4RoIU"
+              style={{ border: 'none', width: '100%', minHeight: '520px' }}
+              scrolling="no"
+              id="Y7K7EfnX7ydeGpv4RoIU"
+              title="Credit Repair Assessment"
+            />
+            <script src="https://link.mesagroupconsulting.com/js/form_embed.js" />
+          </div>
+          <p className="text-center text-sm text-gray-500 mt-4">
+            We typically respond within one business day. What you share stays with us.
+          </p>
+        </div>
+      </section>
+
+      {/* ============================================ */}
       {/* SECTION 3: THE PROBLEM (Empathy + Acknowledgment) */}
       {/* ============================================ */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-8 text-center">
-            We Know You've Been Promised<br />
-            <span className="text-[#f9c65d]">Quick Fixes</span> Before.
+            Whatever You've Been Through,<br />
+            <span className="text-[#f9c65d]">You're in the Right Place Now.</span>
           </h2>
 
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
             <p>
-              You've probably seen ads promising to "erase bad credit in 30 days" or "guaranteed 100-point increases." Here's the truth: <strong>those promises are not only unrealistic, they may violate federal law.</strong>
+              A lot of people come to us carrying more than just credit problems. They're carrying the weight of feeling stuck. Of watching opportunities pass them by. Of not knowing who to trust or where to turn.
+            </p>
+            <p>
+              We get it. And we don't take that lightly.
             </p>
 
             <blockquote className="my-8 py-6 px-8 border-l-4 border-[#f9c65d] bg-gray-50 text-center">
               <p className="text-2xl md:text-3xl font-semibold text-gray-800 italic">
-                Bad credit doesn't define you.
+                Bad credit doesn't mean you're irresponsible.
               </p>
               <p className="mt-3 text-lg text-gray-600">
-                It's just a chapter in your financial story. And with the right strategy, it's a chapter you can rewrite.
+                It usually means no one ever taught you how this system works. That changes today.
               </p>
             </blockquote>
+
+            <p>We built Mesa for exactly this moment. For the person who's ready to take that first step and just needs someone to take it with them.</p>
 
             <p className="font-medium">Maybe you're stuck in the cycle:</p>
 
@@ -290,6 +329,45 @@ const CreditRepair = () => {
       </section>
 
       
+
+      {/* ============================================ */}
+      {/* SECTION 3B: SMARTCREDIT TRANSPARENCY NOTICE */}
+      {/* ============================================ */}
+      <section className="bg-gradient-to-br from-blue-50 to-indigo-50 py-12 px-6 md:px-8">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white rounded-2xl border-2 border-blue-200 shadow-lg p-8">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <Shield className="w-5 h-5 text-blue-600" />
+              </div>
+              <div>
+                <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-1">ONE THING WE WANT TO BE UPFRONT ABOUT</p>
+                <h3 className="text-xl font-bold text-[#3E3E3E]">All Mesa360 Plans Require an Active Mesa x SmartCredit Subscription</h3>
+              </div>
+            </div>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                <strong>$27.99/month, billed directly by SmartCredit — not by us.</strong>
+              </p>
+              <p>
+                Transparency is one of our core values, so we'd rather tell you this now than have you find out later. Your dedicated Client Success Manager and the Mesa360 Credit System™ use SmartCredit to access your live Experian, Equifax, and TransUnion reports throughout your program. It's what keeps everyone aligned in real time, so nothing gets missed and every dispute is filed with precision.
+              </p>
+              <p>
+                You keep full control of your account. You see everything we see. And beyond your restoration program, SmartCredit delivers genuine value on its own — $1M identity theft insurance, real-time fraud alerts, and all three bureaus in one dashboard.
+              </p>
+              <p className="font-semibold text-[#3E3E3E]">
+                This is us being the partner we promised to be. Honest with you from the very first step.
+              </p>
+            </div>
+            <a
+              href="/credit-monitoring"
+              className="inline-flex items-center gap-2 mt-6 text-blue-600 hover:text-blue-800 font-semibold underline text-sm"
+            >
+              Learn More About Mesa x SmartCredit →
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* ============================================ */}
       {/* SECTION 4A: Mesa360 Credit System Hero */}
@@ -1129,6 +1207,30 @@ const CreditRepair = () => {
               </div>
             </div>
             
+            {/* Mesa Financial Concierge callout */}
+            <div className="mt-8 bg-amber-400/10 border border-amber-400/40 rounded-2xl p-6">
+              <h4 className="text-lg font-bold text-amber-300 mb-3">Your Financial Home While We Work — Mesa Financial Concierge</h4>
+              <p className="text-mgc-tan text-sm leading-relaxed mb-3">
+                Every Mesa360 client automatically receives access to <strong className="text-white">Mesa Financial Concierge Community tier</strong>, included at no additional cost. Because we believe the time spent in your program should never feel like waiting.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-2 text-sm mb-3">
+                {[
+                  'Weekly live group coaching calls with financial experts',
+                  'A private community where real answers are always within reach',
+                  'A complete financial education library',
+                  'A personalized action plan powered by LevelUpScore technology',
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-2 text-mgc-tan">
+                    <ArrowRight className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
+                    {item}
+                  </div>
+                ))}
+              </div>
+              <a href="/concierge" className="text-amber-400 hover:text-amber-300 text-sm font-semibold underline">
+                Learn More About Mesa Financial Concierge →
+              </a>
+            </div>
+
             {/* Closing Statement */}
             <p className="text-center text-xl text-white font-bold mt-8">
               No false promises. Just real work. And <span className="text-mgc-yellow">real results</span>.
@@ -1769,18 +1871,100 @@ const CreditRepair = () => {
       </section>
 
       {/* ============================================ */}
+      {/* SECTION 8B: PLAN SELECTOR */}
+      {/* ============================================ */}
+      <section className="bg-gradient-to-br from-amber-50 to-yellow-50 py-16 px-6 md:px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
+              Let's Find the Right <span className="text-[#f9c65d]">Starting Point</span> for You
+            </h2>
+            <p className="text-lg text-gray-600">
+              Every situation is different. Every plan is built around that. Take a look at what resonates with where you are right now. And if you're not sure, that's okay too. We'll figure it out together.
+            </p>
+          </div>
+          <div className="space-y-4">
+            {[
+              {
+                condition: 'If your report has collections, late payments, or unauthorized inquiries:',
+                body: 'You\'re in the right place and you have a clear path forward. Mesa360 Lite was built for exactly where you are. A solid, structured starting point with a dedicated Client Success Manager and coaching included from day one.',
+                cta: 'Mesa360 Lite is your starting point.',
+                color: 'border-blue-200 bg-blue-50',
+                badge: 'Lite',
+              },
+              {
+                condition: 'If you\'re also dealing with charge-offs on top of that:',
+                body: 'This is one of the most common situations we see, and one of the most manageable with the right strategy. Mesa360 Flex handles everything in Lite plus charge-offs, with accelerated processing and direct creditor disputes built in. There\'s a reason it\'s our most popular plan.',
+                cta: 'Mesa360 Flex was made for your situation.',
+                color: 'border-amber-300 bg-amber-50',
+                badge: 'Flex',
+              },
+              {
+                condition: 'If your report includes bankruptcies, repossessions, evictions, student loans, or medical bills:',
+                body: 'We know this feels heavy. It\'s okay. You\'re not alone in this and you\'re not out of options. Mesa360 Elite is our most comprehensive program, built specifically for complex situations with advanced legal dispute strategies and priority handling from our full team.',
+                cta: 'Mesa360 Elite is built for where you are.',
+                color: 'border-gray-700 bg-gray-800',
+                badge: 'Elite',
+                dark: true,
+              },
+              {
+                condition: 'If you and a partner are both looking to rebuild:',
+                body: 'Two profiles. One program. One team that shows up for both of you. The Mesa360 Duo Plan was designed for couples and partners who want to build their financial future together, because some journeys are better taken side by side.',
+                cta: 'Mesa360 Duo covers both of you under one program.',
+                color: 'border-purple-200 bg-purple-50',
+                badge: 'Duo',
+              },
+            ].map(({ condition, body, cta, color, badge, dark }) => (
+              <div key={badge} className={`rounded-xl p-6 border-2 ${color}`}>
+                <div className="flex items-start gap-4">
+                  <div className={`w-16 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 ${dark ? 'bg-amber-400 text-gray-900' : 'bg-[#f9c65d] text-gray-900'}`}>
+                    {badge}
+                  </div>
+                  <div>
+                    <p className={`font-semibold mb-2 ${dark ? 'text-white' : 'text-[#3E3E3E]'}`}>{condition}</p>
+                    <p className={`text-sm leading-relaxed mb-2 ${dark ? 'text-gray-300' : 'text-gray-600'}`}>{body}</p>
+                    <p className={`text-sm font-bold ${dark ? 'text-amber-400' : 'text-[#bb9446]'}`}>→ {cta}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+            <div className="rounded-xl p-6 border-2 border-green-200 bg-green-50">
+              <p className="font-semibold text-[#3E3E3E] mb-2">If you're not sure where you fall:</p>
+              <p className="text-sm text-gray-600 mb-3">This is the most honest answer and we respect it completely. You don't need to figure this out before you talk to us. That's exactly what we're here for.</p>
+              <CalendlyPopupButton
+                text="Schedule Your Free Consultation →"
+                className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-6 py-3 rounded-lg border-2 border-amber-500 text-sm transition-all"
+                showArrow={false}
+                prefillOptions={{ utm: { source: 'credit_repair_page', medium: 'website', campaign: 'plan_selector_cta' } }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================ */}
       {/* SECTION 9: PRICING & PLANS */}
       {/* ============================================ */}
       <section id="pricing" className="bg-white py-16 md:py-24 px-6 md:px-8 scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           {/* Main Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
-              Choose Your Path to <span className="text-[#f9c65d]">Financial Transformation</span>
+              Choose Your <span className="text-[#f9c65d]">Path Forward</span>
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              This isn't a purchase. It's an investment in your future, your family, your freedom. Every plan includes the complete Mesa360 Credit System™: comprehensive credit restoration, 1-on-1 coaching, and a dedicated account manager who knows your name and your goals.
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-6">
+              Every Mesa360 plan includes your dedicated Client Success Manager, 1-on-1 financial coaching, personalized action plan, client portal, and Mesa Financial Concierge Community access. What changes is the complexity of what we work on together.
             </p>
+            {/* Online Enrollment Callout */}
+            <div className="inline-block bg-green-50 border-2 border-green-400 rounded-xl px-6 py-4 mb-6 text-left max-w-2xl">
+              <p className="font-bold text-green-800 mb-1">🌐 Enroll directly through our website and save on your setup fee.</p>
+              <p className="text-sm text-green-700">Our team is always here if you have questions first. But if you're ready to get started, we want to make it as easy as possible.</p>
+            </div>
+            <p className="text-sm text-gray-500 mb-2">All plans require an active Mesa x SmartCredit subscription ($27.99/month, billed directly by SmartCredit).</p>
+            {/* Georgia Notice */}
+            <div className="inline-block bg-amber-50 border border-amber-300 rounded-lg px-5 py-3 text-sm text-amber-800 max-w-2xl">
+              <strong>Please note:</strong> Due to state regulations, Mesa Group Consulting is currently unable to provide credit restoration services to residents of Georgia. If you are located in Georgia and need assistance, please <a href="tel:6613103040" className="underline font-semibold">contact us</a> and we will do our best to point you in the right direction.
+            </div>
           </div>
 
           {/* MONTHLY PLANS SECTION */}
@@ -1803,13 +1987,14 @@ const CreditRepair = () => {
                 <div className="mb-2">
                   <p className="text-sm font-semibold text-gray-700">Investment:</p>
                   <div>
-                    <span className="text-2xl font-bold text-[#3E3E3E]">$350</span>
-                    <span className="text-gray-500"> initial + </span>
+                    <span className="text-2xl font-bold text-[#3E3E3E]">$250</span>
+                    <span className="text-gray-500"> to start + </span>
                     <span className="text-2xl font-bold text-[#FBBF23]">$149</span>
                     <span className="text-gray-500">/mo</span>
                   </div>
+                  <p className="text-xs text-green-600 font-semibold mt-0.5">🌐 Online enrollment discount applied</p>
                 </div>
-                <p className="text-sm text-gray-600 mb-4">Starting your credit restoration journey. Covers collections, late payments, and inquiries across all 3 bureaus. Includes steady dispute support with agencies and monthly progress tracking.</p>
+                <p className="text-sm text-gray-600 mb-4">Best for collections, late payments, and inquiries across all three bureaus.</p>
                 
                 <div className="space-y-1 mb-4 text-sm">
                   <p className="font-semibold text-gray-700">What's Included:</p>
@@ -1868,13 +2053,14 @@ const CreditRepair = () => {
                 <div className="mb-2">
                   <p className="text-sm font-semibold text-gray-700">Investment:</p>
                   <div>
-                    <span className="text-2xl font-bold text-[#3E3E3E]">$500</span>
-                    <span className="text-gray-500"> initial + </span>
+                    <span className="text-2xl font-bold text-[#3E3E3E]">$350</span>
+                    <span className="text-gray-500"> to start + </span>
                     <span className="text-2xl font-bold text-[#FBBF23]">$199</span>
                     <span className="text-gray-500">/mo</span>
                   </div>
+                  <p className="text-xs text-green-600 font-semibold mt-0.5">🌐 Online enrollment discount applied</p>
                 </div>
-                <p className="text-sm text-gray-600 mb-4">Our most popular plan. Everything in Lite PLUS charge-offs. Includes priority bureau access, accelerated processing, direct creditor disputes, and federal escalation protocols.</p>
+                <p className="text-sm text-gray-600 mb-4">Best for collections, late payments, charge-offs, and inquiries. The most complete option for most clients.</p>
                 
                 <div className="space-y-1 mb-4 text-sm">
                   <p className="font-semibold text-gray-700">What's Included:</p>
@@ -1931,13 +2117,14 @@ const CreditRepair = () => {
                 <div className="mb-2">
                   <p className="text-sm font-semibold text-gray-300">Investment:</p>
                   <div>
-                    <span className="text-2xl font-bold">$800</span>
-                    <span className="text-gray-400"> initial + </span>
+                    <span className="text-2xl font-bold">$650</span>
+                    <span className="text-gray-400"> to start + </span>
                     <span className="text-2xl font-bold text-amber-400">$299</span>
                     <span className="text-gray-400">/mo</span>
                   </div>
+                  <p className="text-xs text-green-400 font-semibold mt-0.5">🌐 Online enrollment discount applied</p>
                 </div>
-                <p className="text-sm text-gray-300 mb-4">Our most premium plan reserved for heavy credit damage. Covers everything in Flex PLUS bankruptcies, repossessions, evictions, student loans, and medical bills. Includes advanced legal disputes, priority handling, and funding profile optimization.</p>
+                <p className="text-sm text-gray-300 mb-4">Best for bankruptcies, repossessions, evictions, student loans, and medical bills. Our most advanced program with priority handling and legal team review.</p>
                 
                 <div className="space-y-1 mb-4 text-sm">
                   <p className="font-semibold text-gray-200">What's Included:</p>
@@ -1983,6 +2170,77 @@ const CreditRepair = () => {
                 </a>
 
                 <p className="text-xs text-gray-400">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process. Ongoing support is provided. If you add new items, we will work on them. Clients may continue applying for accounts as needed.</p>
+              </div>
+
+              {/* Mesa360 Duo */}
+              <div className="bg-gradient-to-br from-purple-700 to-purple-900 border-2 border-purple-400 rounded-2xl p-6 text-white relative">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-purple-400 text-white text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
+                  <Users className="w-3 h-3" /> COUPLES PROGRAM
+                </div>
+                <div className="flex items-center gap-2 mb-2 mt-2">
+                  <Users className="w-6 h-6 text-purple-300" />
+                  <h4 className="text-xl font-bold">MESA360 DUO</h4>
+                </div>
+                <p className="text-sm text-purple-200 mb-1">Two Profiles. One Powerful Partnership.</p>
+                <p className="text-xs text-purple-300 font-semibold mb-4">Built for couples and partners</p>
+
+                <div className="mb-2">
+                  <p className="text-sm font-semibold text-purple-200">Investment:</p>
+                  <div>
+                    <span className="text-2xl font-bold">$700</span>
+                    <span className="text-purple-300"> to start + </span>
+                    <span className="text-2xl font-bold text-purple-300">$399</span>
+                    <span className="text-purple-300">/mo</span>
+                  </div>
+                  <p className="text-xs text-green-400 font-semibold mt-0.5">🌐 Online enrollment discount applied</p>
+                </div>
+                <p className="text-sm text-purple-200 mb-4">Built for couples and partners ready to build their financial future together. Two profiles, one program, one team that shows up for both of you.</p>
+
+                <div className="space-y-1 mb-4 text-sm">
+                  <p className="font-semibold text-purple-200">What's Included:</p>
+                  {[
+                    'Two full profiles covered under one program',
+                    'Flex-level and Elite-level coverage as needed',
+                    'Same 35-day update cycle for both profiles',
+                    'Dedicated Client Success Manager for both',
+                    '1-on-1 financial coaching for both',
+                    'Mesa Financial Concierge Community access',
+                    'Ongoing support — new items worked at no additional charge',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-2">
+                      <Check className="w-4 h-4 text-purple-300 mt-0.5 flex-shrink-0" />
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="text-center mb-4">
+                  <p className="text-sm font-semibold text-purple-200">Your Investment Today:</p>
+                  <p className="text-2xl font-bold text-green-400">$0.00 DUE TODAY</p>
+                  <p className="text-xs text-purple-300">Risk Free - 3 Day Cancellation Window</p>
+                </div>
+
+                <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="block w-full bg-purple-400 hover:bg-purple-300 text-white font-bold py-3 rounded-lg transition-colors mb-3 text-center">
+                  Get Started with Duo
+                </a>
+                <p className="text-xs text-purple-300">Note: You must maintain your SmartCredit 3-Bureau monitoring account throughout the entire process.</p>
+              </div>
+            </div>
+
+            {/* Custom Options */}
+            <div className="mt-8 bg-gray-50 border border-gray-200 rounded-xl p-6 text-center">
+              <h4 className="font-bold text-[#3E3E3E] mb-2">Custom and Prepaid Options</h4>
+              <p className="text-gray-600 text-sm mb-4">Looking for something different? Whether you need a custom payment structure or a prepaid program built around your specific situation, we'd love to talk. Our team will put together an option that actually fits.</p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <CalendlyPopupButton
+                  text="Talk to Us About Custom Options →"
+                  className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-6 py-3 rounded-lg border-2 border-amber-500 text-sm transition-all"
+                  showArrow={false}
+                  prefillOptions={{ utm: { source: 'credit_repair_page', medium: 'website', campaign: 'custom_options_cta' } }}
+                />
+                <a href="tel:6613103040" className="inline-flex items-center gap-2 text-[#bb9446] font-semibold hover:underline text-sm">
+                  <Phone className="w-4 h-4" /> Or call: (661) 310-3040
+                </a>
               </div>
             </div>
           </div>
@@ -2592,6 +2850,63 @@ Every dollar you paid to Mesa Group.</p>
               utm: { source: 'website', medium: 'credit_repair_2', campaign: 'transformation_now_cta' }
             }}
           />
+        </div>
+      </section>
+
+      {/* ============================================ */}
+      {/* SECTION 11B: WHY MESA GROUP — BUILT DIFFERENT */}
+      {/* ============================================ */}
+      <section className="bg-white py-16 md:py-24 px-6 md:px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-4">
+              Built Different. <span className="text-[#f9c65d]">On Purpose.</span>
+            </h2>
+          </div>
+          <div className="space-y-5 text-lg text-gray-700 leading-relaxed mb-10">
+            <p>
+              The Mesa360 Credit System™ wasn't designed to be the biggest credit restoration program. It was designed to be the <strong>most trusted one.</strong>
+            </p>
+            <p>
+              From the beginning we made a decision that has guided every part of how we operate. <strong>We help people first.</strong> That's the foundation everything else is built on.
+            </p>
+            <p>
+              We believe the right guidance sometimes means pointing you somewhere else. If another path serves you better, we'll tell you that openly and help you get there. Genuine care for someone means putting their outcome above everything else.
+            </p>
+            <p>What that philosophy has built is something rare in this industry:</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4 mb-10">
+            {[
+              { icon: '👤', title: 'A Real Person in Your Corner', body: 'A dedicated Client Success Manager who knows your name, your story, and your goals — from your first day to graduation.' },
+              { icon: '📚', title: 'Coaching That Lasts', body: 'A program that makes sure what we build together stays built. You\'ll never end up back where you started.' },
+              { icon: '🌐', title: 'A Trilingual Team', body: 'We communicate without barriers — English, Español, and Punjabi. Because you deserve guidance in your language.' },
+              { icon: '🏢', title: 'A Real Office You Can Visit', body: '5001 California Ave Suite 219, Bakersfield, CA. We\'re not a faceless company. We\'re your neighbors.' },
+              { icon: '⚖️', title: 'Legal Backing When You Need It', body: 'When the system doesn\'t treat you fairly, we bring in licensed consumer protection attorneys. We stand up for you.' },
+              { icon: '❤️', title: 'Your Family Behind Every File', body: 'Behind every file is a family. A dream. A version of life that feels just out of reach. We never forget that.' },
+            ].map(({ icon, title, body }) => (
+              <div key={title} className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-5 border border-amber-200">
+                <div className="text-2xl mb-2">{icon}</div>
+                <h3 className="font-bold text-[#3E3E3E] mb-1">{title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{body}</p>
+              </div>
+            ))}
+          </div>
+          <blockquote className="bg-gradient-to-r from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 text-center text-white">
+            <p className="text-xl leading-relaxed italic mb-4">
+              "That's what drives this team every single day, and it's why we'll never stop showing up for the people who trust us with something this important."
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <CalendlyPopupButton
+                text="Schedule Your Free Consultation →"
+                className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold px-8 py-3 rounded-lg border-2 border-amber-500 transition-all"
+                showArrow={false}
+                prefillOptions={{ utm: { source: 'credit_repair_page', medium: 'website', campaign: 'why_mesa_cta' } }}
+              />
+              <a href={portalUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold px-8 py-3 rounded-lg transition-all">
+                Get Free Credit Analysis →
+              </a>
+            </div>
+          </blockquote>
         </div>
       </section>
 

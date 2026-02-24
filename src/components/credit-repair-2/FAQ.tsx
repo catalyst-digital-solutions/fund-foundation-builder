@@ -19,16 +19,8 @@ const FAQ = () => {
         <div className="space-y-4 mb-12">
           {/* FAQ 1 */}
           <FAQItem index={0} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="1. Is this legit or a scam?">
-            <p className="mb-4">Absolutely legitimate. Mesa Group Consulting is a CROA-compliant financial services company operating in full accordance with federal consumer protection laws. We're not a fly-by-night operation. We're a real business with:</p>
-            <ul className="list-disc pl-6 space-y-2 mb-4">
-              <li>A physical office in Bakersfield, CA that you can visit</li>
-              <li>2,500+ clients served nationwide</li>
-              <li>150+ five-star reviews from real customers</li>
-              <li>Featured in local media (KGET17, Studio17, Telemundo, The CW)</li>
-              <li>Full legal team for FCRA violation cases</li>
-              <li>Transparent pricing with no hidden fees</li>
-            </ul>
-            <p>We're proud to serve clients in English, Spanish, and Punjabi (🇺🇸 🇪🇸 🇮🇳). You can call us, visit us, or read reviews from real people we've helped. We're as real as it gets.</p>
+            <p className="mb-4">We understand the skepticism. This industry has earned it. Mesa Group Consulting is a real company with a real office at 5001 California Ave Suite 219, Bakersfield, CA. We've served 2,500+ clients since 2023, have 150+ five-star reviews, and operate in full compliance with CROA, the federal law governing credit repair companies.</p>
+            <p>You can walk through our door, meet our team, and ask every question you have before signing anything. We welcome that.</p>
           </FAQItem>
 
           {/* FAQ 2 */}
@@ -52,30 +44,29 @@ const FAQ = () => {
 
           {/* FAQ 3 */}
           <FAQItem index={2} openFAQ={openFAQ} setOpenFAQ={setOpenFAQ} question="3. How much is this going to cost total?">
-            <p className="mb-4">We believe in transparent pricing. Here's exactly what you'll pay:</p>
-            <p className="font-semibold mb-2">Monthly Plans:</p>
+            <p className="mb-4">Plans start at <strong>$250 to enroll online plus $149/month</strong>, and all plans require a Mesa x SmartCredit subscription at <strong>$27.99/month</strong> billed directly by SmartCredit. There are no hidden fees. Everything is disclosed upfront and in your contract before you sign anything. Your Client Solutions Advisor will walk you through the full cost picture during your free consultation.</p>
+            <p className="font-semibold mb-2">Monthly Plans (online enrollment pricing):</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
-              <li><strong>Mesa360 Lite:</strong> $350 initial setup + $149/month (ongoing)</li>
-              <li><strong>Mesa360 Flex:</strong> $500 initial setup + $199/month (ongoing)</li>
-              <li><strong>Mesa360 Elite:</strong> $800 initial setup + $299/month (ongoing)</li>
+              <li><strong>Mesa360 Lite:</strong> $250 to start + $149/month</li>
+              <li><strong>Mesa360 Flex:</strong> $350 to start + $199/month</li>
+              <li><strong>Mesa360 Elite:</strong> $650 to start + $299/month</li>
+              <li><strong>Mesa360 Duo:</strong> $700 to start + $399/month (two profiles)</li>
             </ul>
-            <p className="font-semibold mb-2">12-Month Programs (Pay in Full & Save):</p>
+            <p className="font-semibold mb-2">9-Month Programs (Pay in Full & Save):</p>
             <ul className="list-disc pl-6 space-y-1 mb-4">
-              <li><strong>Ruby Plan:</strong> $1,500 one-time payment (saves you $888 vs. monthly Flex)</li>
-              <li><strong>Emerald Plan:</strong> $1,800 one-time payment (saves you $1,788 vs. monthly Elite)</li>
+              <li><strong>Ruby Plan:</strong> $1,500 one-time payment (saves you $791 vs. monthly Flex)</li>
+              <li><strong>Emerald Plan:</strong> $1,800 one-time payment (saves you $1,691 vs. monthly Elite)</li>
             </ul>
             <p className="font-semibold mb-2">What's included in every plan:</p>
             <ul className="space-y-1 mb-4">
-              <li>✅ Dedicated account manager</li>
+              <li>✅ Dedicated Client Success Manager</li>
               <li>✅ 1-on-1 financial coaching</li>
               <li>✅ Customized action plan</li>
-              <li>✅ Monthly progress reports</li>
-              <li>✅ Client portal + mobile app access</li>
-              <li>✅ Ongoing support (monthly plans) or 12 months of service (prepaid plans)</li>
+              <li>✅ 35-day update cycle + client portal</li>
+              <li>✅ Mesa Financial Concierge Community access</li>
+              <li>✅ Ongoing support for new items</li>
             </ul>
-            <p className="mb-4"><strong>Additional requirement:</strong> You must maintain a SmartCredit 3-Bureau monitoring account ($27.99/month) throughout the entire process. This gives us (and you) real-time access to your credit reports from all three bureaus.</p>
-            <p className="mb-4"><strong>No hidden fees. No upsells. No surprises.</strong></p>
-            <p>You can cancel your monthly plan anytime (we have a 3-day risk-free cancellation window from signup). The 12-month programs are paid in full but can be financed through Buy Now, Pay Later (BNPL) options.</p>
+            <p className="mb-4"><strong>No hidden fees. No upsells. No surprises.</strong> 3-day risk-free cancellation window from signup.</p>
           </FAQItem>
 
           {/* FAQ 4 */}
