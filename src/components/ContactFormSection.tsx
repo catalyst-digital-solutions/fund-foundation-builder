@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Send } from 'lucide-react';
 
 /**
@@ -8,6 +8,17 @@ import { Send } from 'lucide-react';
  * The form uses GoHighLevel (GHL) iframe integration for seamless submission.
  */
 const ContactFormSection = () => {
+  useEffect(() => {
+    const scriptId = 'ghl-form-embed-script';
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement('script');
+      script.id = scriptId;
+      script.src = 'https://link.mesagroupconsulting.com/js/form_embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <section className="py-16 md:py-20 bg-gradient-to-br from-amber-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,7 +85,8 @@ const ContactFormSection = () => {
           <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
             <iframe
               src="https://link.mesagroupconsulting.com/widget/form/CaNQDAlt2BSYAOxTZb6b"
-              style={{ width: '100%', height: '1003px', border: 'none' }}
+              style={{ width: '100%', height: '100%', minHeight: '600px', border: 'none', display: 'block' }}
+              scrolling="no"
               id="inline-contact-form"
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
