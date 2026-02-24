@@ -20,7 +20,7 @@ const EmotionalCTA2 = () => {
           What If You Could See EVERYTHING on Your Credit—Across All 3 Bureaus—With $1M Fraud Protection?
         </h2>
         <p className="text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-          Through SmartCredit®, monitor Experian, Equifax, and TransUnion 24/7 with instant fraud alerts. Get $1 Million family fraud insurance. Catch identity theft before it ruins your credit. Track your score daily and dispute errors instantly. Mesa Group Capital gives you complete visibility and ironclad protection.
+          Through SmartCredit®, monitor Experian, Equifax, and TransUnion 24/7 with instant fraud alerts. Get $1 Million family fraud insurance. Catch identity theft before it ruins your credit. Track your score daily and dispute errors instantly. Plus get expert guidance from Mesa Financial Concierge to help you build credit strategically. Mesa Group gives you complete visibility and ironclad protection.
         </p>
         <button
           onClick={handleClick}

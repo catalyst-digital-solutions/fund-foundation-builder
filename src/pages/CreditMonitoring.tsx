@@ -24,6 +24,7 @@ const CreditMonitoring = () => {
       />
       <Header />
       <HeroSection />
+      <IncludedCallout />
       <WhyMonitoringMatters />
       <EmotionalCTA1 />
       <SmartCreditFeatures />
@@ -58,17 +59,17 @@ function HeroSection() {
               Powered by SmartCredit® | Trusted Credit Monitoring
             </div>
 
-            {/* Trial Pricing Badge - Hero */}
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500 px-6 py-3 rounded-full shadow-lg mb-6">
-              <div className="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
-                $1
+            {/* Pricing Callout Badge - Hero */}
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-50 to-yellow-50 border-2 border-amber-400 px-6 py-3 rounded-full shadow-lg mb-6">
+              <div className="bg-amber-400 text-gray-900 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
+                ✨
               </div>
               <div className="text-left">
                 <p className="text-lg font-bold text-gray-900 leading-tight">
-                  $1 for 7-Day Trial
+                  $27.99/month
                 </p>
                 <p className="text-sm text-gray-600">
-                  Then $27.99/month
+                  Includes Mesa Financial Concierge Community Access · Cancel Anytime · No Contracts
                 </p>
               </div>
             </div>
@@ -78,7 +79,7 @@ function HeroSection() {
             </h1>
             
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
-              <strong>24/7 credit monitoring</strong> with real-time alerts, identity theft protection, and powerful tools to track and improve your credit score, all in one simple platform.
+              <strong>24/7 credit monitoring</strong> with real-time alerts, identity theft protection, and powerful tools to track and improve your credit score, all in one simple platform. Plus FREE access to expert financial guidance and community support.
             </p>
 
             {/* Key Features List */}
@@ -122,6 +123,16 @@ function HeroSection() {
                   <p className="text-gray-600 text-sm">Instant notifications of suspicious activity or changes</p>
                 </div>
               </div>
+
+              <div className="flex items-start gap-3">
+                <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                  <h3 className="font-bold text-lg text-gray-900">Mesa Financial Concierge Community</h3>
+                  <p className="text-gray-600 text-sm">Expert guidance, weekly calls, and 24/7 community support</p>
+                </div>
+              </div>
             </div>
 
 {/* CTA Button */}
@@ -132,7 +143,7 @@ function HeroSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5"
               >
-                Get Started
+                Get Your Credit Report →
                 <ExternalLink className="w-5 h-5" />
               </a>
               <PoweredBySmartCredit className="mt-3 mb-3" />
@@ -191,6 +202,37 @@ function HeroSection() {
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function IncludedCallout() {
+  return (
+    <section className="py-10 px-6 bg-gradient-to-br from-amber-50 to-yellow-50">
+      <div className="max-w-4xl mx-auto">
+        <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-amber-300 text-center">
+          <div className="inline-flex items-center gap-2 bg-amber-100 text-gray-900 px-4 py-1.5 rounded-full text-sm font-bold mb-4 border border-amber-300">
+            <span>🎁</span>
+            INCLUDED WITH YOUR MESA x SMARTCREDIT SUBSCRIPTION
+          </div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 text-left max-w-2xl mx-auto mb-6">
+            {[
+              '3-Bureau Credit Monitoring (SmartCredit®)',
+              '$1M Identity Theft Insurance',
+              'Mesa Financial Concierge Community Access',
+              'Weekly Live Expert Coaching Calls',
+              'Private Community Support 24/7',
+              'Complete Financial Education Library',
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2 text-sm text-gray-700">
+                <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                {item}
+              </div>
+            ))}
+          </div>
+          <p className="text-xl font-bold text-gray-900">All Yours: <span className="text-[#f9c65d]">$27.99/month</span></p>
         </div>
       </div>
     </section>
@@ -264,7 +306,7 @@ function WhyMonitoringMatters() {
             Don't Wait for a Crisis to Start Monitoring
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            SmartCredit® gives you the tools to catch problems early, dispute errors quickly, and take control of your financial future.
+            SmartCredit® gives you the tools to catch problems early, dispute errors quickly, and take control of your financial future. Plus, with Mesa Financial Concierge included, you get expert guidance every step of the way.
           </p>
           <a
             href={AFFILIATE_LINK}
@@ -272,7 +314,7 @@ function WhyMonitoringMatters() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-4"
           >
-            Start Your $1 Trial
+            Get Your Credit Report →
             <Shield className="w-5 h-5" />
           </a>
           <PoweredBySmartCredit className="mt-3" />
@@ -293,7 +335,7 @@ function SmartCreditFeatures() {
             Everything You Need in One Platform
           </h2>
           <p className="text-xl text-muted-foreground">
-            SmartCredit® makes credit monitoring simple, powerful, and affordable
+            SmartCredit® makes credit monitoring simple, powerful, and affordable. And with Mesa Financial Concierge included, you get expert guidance at no extra cost.
           </p>
         </div>
 
@@ -485,6 +527,70 @@ function SmartCreditFeatures() {
             </div>
           </div>
 
+          {/* Feature 5: Mesa Financial Concierge Community */}
+          <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-200">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="inline-block bg-amber-400/20 p-4 rounded-lg mb-4">
+                  <Users className="w-12 h-12 text-foreground" />
+                </div>
+                <div className="inline-flex items-center gap-2 bg-amber-100 text-gray-800 text-xs font-bold px-3 py-1 rounded-full mb-3 border border-amber-300">
+                  ✨ INCLUDED FREE WITH YOUR SUBSCRIPTION
+                </div>
+                <h3 className="text-3xl font-bold text-foreground mb-4">
+                  Mesa Financial Concierge Community
+                  <span className="block text-xl font-medium text-gray-600 mt-1">Expert Guidance Included at No Extra Cost</span>
+                </h3>
+                <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+                  With your Mesa x SmartCredit subscription, you automatically get access to Mesa Financial Concierge Community tier.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-2 font-semibold">That means:</p>
+                <div className="space-y-3">
+                  {[
+                    'Weekly live group coaching calls with financial experts',
+                    'Private community where you can ask credit questions 24/7',
+                    'Complete financial education library',
+                    'Personalized action plans powered by LevelUpScore technology',
+                    'A community of people on the same journey as you',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span className="text-sm text-gray-700">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-4 text-sm font-semibold text-gray-700">This isn't just credit monitoring. This is true financial partnership.</p>
+                <p className="text-green-700 font-bold mt-1">Your Price: Included FREE with SmartCredit</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-xl border border-amber-200 text-center">
+                <div className="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-gray-900" />
+                </div>
+                <h4 className="text-xl font-bold text-gray-900 mb-2">Your Financial Community</h4>
+                <div className="space-y-3 text-left">
+                  <div className="bg-amber-50 rounded-lg p-3 border border-amber-100">
+                    <div className="font-semibold text-gray-800 text-sm">Weekly Live Calls</div>
+                    <div className="text-xs text-gray-600">Expert coaching every week</div>
+                  </div>
+                  <div className="bg-amber-50 rounded-lg p-3 border border-amber-100">
+                    <div className="font-semibold text-gray-800 text-sm">24/7 Community Support</div>
+                    <div className="text-xs text-gray-600">Ask questions anytime</div>
+                  </div>
+                  <div className="bg-amber-50 rounded-lg p-3 border border-amber-100">
+                    <div className="font-semibold text-gray-800 text-sm">Education Library</div>
+                    <div className="text-xs text-gray-600">Complete financial education</div>
+                  </div>
+                  <div className="bg-amber-50 rounded-lg p-3 border border-amber-100">
+                    <div className="font-semibold text-gray-800 text-sm">Personalized Action Plan</div>
+                    <div className="text-xs text-gray-600">Know exactly what to do next</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div className="mt-12 text-center">
@@ -494,7 +600,7 @@ function SmartCreditFeatures() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5"
           >
-            Start Your $1 Trial
+            Get Your Credit Report →
             <ExternalLink className="w-5 h-5" />
           </a>
           <PoweredBySmartCredit className="mt-3" />
@@ -530,7 +636,7 @@ function WhyChooseSmartCredit() {
               All-in-One Platform
             </h3>
             <p className="text-muted-foreground leading-relaxed text-center mb-4">
-              Everything you need in one place: credit monitoring, identity protection, financial management, and credit building tools.
+              Everything you need in one place: credit monitoring, identity protection, financial management, and credit building tools. Plus expert guidance through Mesa Financial Concierge.
             </p>
             <div className="text-sm text-muted-foreground text-center">
               No need for multiple subscriptions
@@ -605,7 +711,7 @@ function HowItWorks() {
                 Sign Up
               </h3>
               <p className="text-muted-foreground leading-relaxed text-center">
-                Create your SmartCredit® Premium account in less than 2 minutes. No credit card required to start.
+                Create your SmartCredit® Premium account in less than 2 minutes and activate your Mesa Financial Concierge access.
               </p>
             </div>
           </div>
@@ -638,10 +744,10 @@ function HowItWorks() {
                 <Shield className="w-16 h-16 text-[#3D3D3D]" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4 text-center">
-                Stay Protected
+                Start Learning & Connecting
               </h3>
               <p className="text-muted-foreground leading-relaxed text-center">
-                Receive real-time alerts, track your score, and take action when needed. We monitor 24/7 so you don't have to.
+                Receive real-time alerts, track your score, and take action when needed. Join weekly coaching calls and connect with your financial community. We monitor 24/7 so you don't have to.
               </p>
             </div>
           </div>
@@ -655,7 +761,7 @@ function HowItWorks() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5"
           >
-            Start Your $1 Trial
+            Get Your Credit Report →
             <ExternalLink className="w-5 h-5" />
           </a>
           <PoweredBySmartCredit className="mt-3" />
@@ -674,28 +780,36 @@ function FAQSection() {
 
   const faqs = [
     {
-      question: "How much does SmartCredit cost?",
-      answer: "SmartCredit offers an incredible $1 trial for 7 days so you can experience full 3-bureau credit monitoring with zero risk. After your 7-day trial, SmartCredit continues at $27.99 per month. This includes daily credit monitoring from all 3 bureaus, real-time alerts for changes to your credit, credit score tracking and analysis, and identity theft protection features. You can cancel anytime with no long-term commitment required."
+      question: "What is included with my Mesa x SmartCredit subscription?",
+      answer: "Your subscription includes: 3-bureau credit monitoring (Experian, Equifax, TransUnion), $1 Million family fraud insurance, real-time alerts and dark web monitoring, ScoreTracker, ScoreBuilder, and ScoreBoost tools, Money Manager dashboard, Mesa Financial Concierge Community access, weekly live expert coaching calls, private community support 24/7, and a complete financial education library. All for $27.99/month with no contracts."
+    },
+    {
+      question: "What is Mesa Financial Concierge and why is it included?",
+      answer: "Mesa Financial Concierge is our complete financial guidance platform. Community tier is included FREE with every Mesa x SmartCredit subscription because we believe everyone deserves a financial partner in their corner. You get weekly live expert coaching calls, private community support, a complete education library, and personalized action plans — plus all the SmartCredit monitoring features. All included with your Mesa x SmartCredit subscription."
+    },
+    {
+      question: "How much does it cost?",
+      answer: "$27.99/month with no trial period, no setup fees, and no contracts. Cancel anytime."
+    },
+    {
+      question: "How quickly can I access my credit reports?",
+      answer: "Immediately after signing up. You'll get instant access to all three credit bureau reports and your Mesa Financial Concierge welcome email within 24 hours."
     },
     {
       question: "Why do I need to monitor all 3 credit bureaus?",
       answer: "Each credit bureau (Experian, Equifax, and TransUnion) maintains separate records. One bureau may have more or fewer inquiries than the others, which could produce different credit reports and scores. Monitoring all three ensures you have a comprehensive view of your credit and can quickly identify discrepancies."
     },
     {
-      question: "How often is my credit information updated?",
-      answer: "Your credit reports are updated monthly, and you'll receive real-time alerts whenever changes occur to your credit profile. This includes new accounts, inquiries, late payments, or suspicious activity."
-    },
-    {
       question: "Will checking my credit hurt my score?",
       answer: "No. When you check your own credit through SmartCredit®, it's considered a \"soft inquiry\" which does not impact your credit score. Only \"hard inquiries\" from lenders when you apply for credit can affect your score."
     },
     {
-      question: "What's included in the $1 Million fraud insurance?",
-      answer: "The Identity Fraud Expense Reimbursement covers expenses related to identity theft for you and your entire household. This includes legal fees, lost wages, document replacement costs, and other expenses incurred while resolving identity theft issues."
+      question: "Can I upgrade to get more personalized support?",
+      answer: "Yes! Mesa Financial Concierge offers premium tiers — Concierge at $97/month and Executive at $197/month — that include monthly or weekly 1-on-1 advisor calls. Community tier is included with your SmartCredit subscription, and you can upgrade anytime."
     },
     {
-      question: "Can I cancel anytime?",
-      answer: "Yes. You can cancel your SmartCredit® membership at any time with no penalties or fees. You'll pay any accumulated, unbilled charges through the date of cancellation. You may reactivate your membership at any time."
+      question: "Is there a contract?",
+      answer: "No. This is a month-to-month subscription. Cancel anytime with no penalties or fees. You can cancel your SmartCredit® membership through your account dashboard or by calling us at (661) 310-3040."
     }
   ];
 
@@ -828,39 +942,26 @@ function FinalCTA() {
     <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Trust Recap */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-          <div className="flex items-center gap-2 text-sm">
-            <Check className="w-4 h-4 text-green-600" />
-            <span className="text-gray-700">3-Bureau Credit Monitoring</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm">
-            <Check className="w-4 h-4 text-green-600" />
-            <span className="text-gray-700">$1 Million Fraud Insurance</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm">
-            <Check className="w-4 h-4 text-green-600" />
-            <span className="text-gray-700">24/7 Real-Time Alerts</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm">
-            <Check className="w-4 h-4 text-green-600" />
-            <span className="text-gray-700">Dark Web Monitoring</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm">
-            <Check className="w-4 h-4 text-green-600" />
-            <span className="text-gray-700">Score Simulator Tools</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm">
-            <Check className="w-4 h-4 text-green-600" />
-            <span className="text-gray-700">PrivacyMaster®</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm">
-            <Check className="w-4 h-4 text-green-600" />
-            <span className="text-gray-700">Cancel Anytime</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm">
-            <Check className="w-4 h-4 text-green-600" />
-            <span className="text-gray-700">Trusted by Professionals</span>
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-12">
+          {[
+            '3-Bureau Credit Monitoring',
+            '$1 Million Fraud Insurance',
+            '24/7 Real-Time Alerts',
+            'Dark Web Monitoring',
+            'Score Simulator Tools',
+            'PrivacyMaster®',
+            'Mesa Financial Concierge Community',
+            'Weekly Expert Coaching Calls',
+            'Private Community Support',
+            'Complete Education Library',
+            'Cancel Anytime',
+            'Trusted by Professionals',
+          ].map((item) => (
+            <div key={item} className="flex items-center gap-2 text-sm">
+              <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+              <span className="text-gray-700">{item}</span>
+            </div>
+          ))}
         </div>
 
         {/* Final CTA */}
@@ -870,13 +971,13 @@ function FinalCTA() {
           </h2>
 
           {/* Pricing Callout */}
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6 text-center max-w-md mx-auto">
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6 text-center max-w-lg mx-auto">
             <p className="text-gray-700 leading-relaxed">
-              <span className="font-bold text-xl text-[#f9c65d]">$1</span> gets you started with a 
-              <span className="font-semibold"> 7-day trial</span> of full 3-bureau credit monitoring.
+              Get 3-bureau credit monitoring, $1M fraud protection, and expert financial guidance, all in one subscription.
               <br />
-              <span className="text-sm text-gray-600">
-                Continue at $27.99/month after trial. Cancel anytime.
+              <span className="font-bold text-xl text-[#f9c65d]">$27.99/month</span>
+              <span className="text-sm text-gray-600 block mt-1">
+                Cancel anytime. No contracts.
               </span>
             </p>
           </div>
@@ -887,7 +988,7 @@ function FinalCTA() {
             rel="noopener noreferrer" 
             className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-gray-900 bg-amber-400 hover:bg-amber-500 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 mb-2"
           >
-            Start Your $1 Trial →
+            Get Your Credit Report →
           </a>
           <PoweredBySmartCredit className="mt-3 mb-4" />
           
