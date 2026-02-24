@@ -896,6 +896,40 @@ const Homepage = () => {
       </section>
 
       {/* ================================================================
+          SECTION 4B: NOT SURE WHERE TO START CTA
+      ================================================================ */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Primary CTA - Meeting Room Background Section */}
+          <div className="relative h-[500px] md:h-[600px] overflow-hidden rounded-3xl">
+            <img
+              src={meetingRoomImg}
+              alt="Mesa Group Consulting professional meeting room"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/50" />
+            <div className="relative h-full flex items-center">
+              <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full text-center">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                  Not Sure Where to <span className="text-[#f9c65d]">Start?</span>
+                </h3>
+                <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+                  Schedule your free consultation. We'll assess your situation honestly and help you understand your best path forward. No pressure. No sales pitch.
+                </p>
+                <p className="text-white/70 text-sm mt-4">Talk to real people who've been where you are.</p>
+                <CalendlyPopupButton
+                  text="Schedule My Free Consultation"
+                  prefillOptions={{
+                    utm: { source: 'website', medium: 'homepage', campaign: 'not_sure_section' }
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================================================================
           SECTION 4: COMPREHENSIVE SERVICES
       ================================================================ */}
       <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-gray-50 via-amber-50/30 to-gray-50">
@@ -1039,41 +1073,6 @@ const Homepage = () => {
 
         </div>
       </section>
-
-      {/* ================================================================
-          SECTION 4B: NOT SURE WHERE TO START CTA
-      ================================================================ */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Primary CTA - Meeting Room Background Section */}
-          <div className="relative h-[500px] md:h-[600px] overflow-hidden rounded-3xl">
-            <img
-              src={meetingRoomImg}
-              alt="Mesa Group Consulting professional meeting room"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/50" />
-            <div className="relative h-full flex items-center">
-              <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 w-full text-center">
-                <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-                  Not Sure Where to <span className="text-[#f9c65d]">Start?</span>
-                </h3>
-                <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-                  Schedule your free consultation. We'll assess your situation honestly and help you understand your best path forward. No pressure. No sales pitch.
-                </p>
-                <p className="text-white/70 text-sm mt-4">Talk to real people who've been where you are.</p>
-                <CalendlyPopupButton
-                  text="Schedule My Free Consultation"
-                  prefillOptions={{
-                    utm: { source: 'website', medium: 'homepage', campaign: 'not_sure_section' }
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
 
       {/* ================================================================
           SECTION 4C: MESA FINANCIAL CONCIERGE SPOTLIGHT
