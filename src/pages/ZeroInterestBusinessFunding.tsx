@@ -137,7 +137,6 @@ function QualificationForm() {
               id="FIkq2SkzWrx0Ylx8xp9w"
               title="0% Business Funding Qualification"
             />
-            <script src="https://link.mesagroupconsulting.com/js/form_embed.js" />
             <p className="text-center text-sm text-gray-600 mt-4 flex items-center justify-center gap-2">
               <span>✍</span>
               Response From One of Our Funding Strategists Within 24 Hours

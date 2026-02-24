@@ -241,7 +241,6 @@ const CreditRepair = () => {
               id="Y7K7EfnX7ydeGpv4RoIU"
               title="Credit Repair Assessment"
             />
-            <script src="https://link.mesagroupconsulting.com/js/form_embed.js" />
           </div>
           <p className="text-center text-sm text-gray-500 mt-4">
             We typically respond within one business day. What you share stays with us.
