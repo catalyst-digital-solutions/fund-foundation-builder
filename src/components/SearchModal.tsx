@@ -6,6 +6,8 @@ import { search, type SearchResult } from '@/lib/searchClient';
 interface SearchModalProps {
   isOpen: boolean;
   onClose: () => void;
+  /** Ref owned by Header so focus() can be called synchronously within the tap gesture */
+  inputRef?: React.RefObject<HTMLInputElement>;
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -19,14 +21,16 @@ const CATEGORY_COLORS: Record<string, string> = {
   'Resources': 'bg-gray-100 text-gray-700',
 };
 
-export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
+export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, inputRef }) => {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [loading, setLoading] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
+  // Internal fallback ref if Header doesn't pass one
+  const internalRef = useRef<HTMLInputElement>(null);
+  const resolvedRef = (inputRef ?? internalRef) as React.RefObject<HTMLInputElement>;
 
-  // Clear state when modal closes
+  // Reset state when modal closes
   useEffect(() => {
     if (!isOpen) {
       setQuery('');
@@ -35,29 +39,24 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
     }
   }, [isOpen]);
 
-  // Close on Escape
+  // Prevent body scroll when open; restore when closed
   useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-    };
-    if (isOpen) window.addEventListener('keydown', handleKey);
-    return () => window.removeEventListener('keydown', handleKey);
-  }, [isOpen, onClose]);
-
-  // Prevent body scroll when modal is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = isOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [isOpen]);
+
+  // Close on Escape key
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) onClose();
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [isOpen, onClose]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!query.trim()) return;
-
     setLoading(true);
     setHasSearched(true);
     try {
@@ -71,17 +70,20 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
     }
   };
 
-  const handleResultClick = () => {
-    onClose();
-  };
-
-  if (!isOpen) return null;
+  const handleResultClick = () => onClose();
 
   const isExternal = (path: string) => path.startsWith('http');
 
+  // Always render — use CSS to hide/show so the input stays in the DOM.
+  // This is the key to iOS keyboard: focus() can be called synchronously
+  // within the tap gesture because the input already exists in the DOM.
   return (
     <div
-      className="fixed inset-0 z-[9999] flex items-start justify-center bg-black/60 pt-20 px-4"
+      className={`fixed inset-0 z-[9999] flex items-start justify-center bg-black/60 pt-20 px-4 ${
+        isOpen ? '' : 'pointer-events-none invisible opacity-0'
+      }`}
+      aria-modal="true"
+      aria-label="Search"
       onClick={onClose}
     >
       <div
@@ -90,21 +92,25 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
       >
         {/* Search Form */}
         <form onSubmit={handleSubmit} className="flex items-center border-b border-gray-200">
-          <Search className="w-5 h-5 text-gray-400 ml-4 flex-shrink-0" />
+          <Search className="w-5 h-5 text-gray-400 ml-4 flex-shrink-0" aria-hidden="true" />
           <input
-            ref={inputRef}
-            type="text"
+            ref={resolvedRef}
+            type="search"
+            inputMode="search"
+            enterKeyHint="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search pages, services, resources..."
+            aria-label="Search pages, services, and resources"
             className="flex-1 px-4 py-4 text-base text-gray-900 placeholder-gray-400 outline-none bg-transparent"
             autoComplete="off"
-            autoFocus
+            tabIndex={isOpen ? 0 : -1}
           />
           {loading && <Loader2 className="w-5 h-5 text-gray-400 mr-3 animate-spin flex-shrink-0" />}
           <button
             type="submit"
             className="mr-2 px-4 py-2 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold text-sm rounded-lg transition-colors flex-shrink-0"
+            tabIndex={isOpen ? 0 : -1}
           >
             Search
           </button>
@@ -113,21 +119,20 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
             onClick={onClose}
             className="p-2 mr-2 text-gray-400 hover:text-gray-600 transition-colors flex-shrink-0"
             aria-label="Close search"
+            tabIndex={isOpen ? 0 : -1}
           >
             <X className="w-5 h-5" />
           </button>
         </form>
 
         {/* Results */}
-        <div className="max-h-[60vh] overflow-y-auto">
-          {/* No query yet */}
+        <div className="max-h-[60vh] overflow-y-auto" role="listbox" aria-label="Search results">
           {!hasSearched && !loading && (
             <div className="px-6 py-8 text-center text-gray-400 text-sm">
               Type a keyword and press Enter or click Search
             </div>
           )}
 
-          {/* No results */}
           {hasSearched && !loading && results.length === 0 && (
             <div className="px-6 py-8 text-center">
               <p className="text-gray-600 font-medium mb-1">No results for "{query}"</p>
@@ -135,7 +140,6 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
             </div>
           )}
 
-          {/* Results list */}
           {results.length > 0 && (
             <ul className="divide-y divide-gray-100">
               {results.map((result) => {
@@ -160,7 +164,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                 );
 
                 return (
-                  <li key={result.objectID}>
+                  <li key={result.objectID} role="option" aria-selected="false">
                     {isExternal(result.path) ? (
                       <a href={result.path} target="_blank" rel="noopener noreferrer" onClick={handleResultClick}>
                         {content}
@@ -177,7 +181,6 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
           )}
         </div>
 
-        {/* Footer hint */}
         {hasSearched && results.length > 0 && (
           <div className="px-5 py-3 border-t border-gray-100 bg-gray-50 text-xs text-gray-400 flex items-center justify-between">
             <span>{results.length} result{results.length !== 1 ? 's' : ''} found</span>

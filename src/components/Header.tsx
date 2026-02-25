@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Clock, Mail, MapPin, Phone, ChevronDown, X, Menu, Search, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SearchModal } from '@/components/SearchModal';
@@ -63,6 +63,34 @@ const Header = () => {
   const [showCopyToast, setShowCopyToast] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  // Ctrl+K / Cmd+K / "/" shortcut to open search
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      const tag = (e.target as HTMLElement)?.tagName;
+      const isTyping = tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT';
+      if (
+        ((e.key === 'k' && (e.ctrlKey || e.metaKey)) || (e.key === '/' && !isTyping)) &&
+        !e.defaultPrevented
+      ) {
+        e.preventDefault();
+        setSearchOpen(true);
+        // Focus runs after state flushes — safe for desktop; mobile uses ref approach below
+        setTimeout(() => searchInputRef.current?.focus(), 0);
+      }
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, []);
+
+  // iOS/Android: focus the input synchronously within the tap gesture
+  const openSearch = () => {
+    setSearchOpen(true);
+    // The input is always in the DOM (SearchModal uses CSS hide/show), so
+    // this focus() call is within the user gesture → iOS keyboard appears
+    searchInputRef.current?.focus();
+  };
 
   const handleEmailClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -294,7 +322,7 @@ const Header = () => {
             <div className="flex items-center gap-4">
               {/* Search Icon - Desktop (first position) */}
               <button
-                onClick={() => setSearchOpen(true)}
+                onClick={openSearch}
                 className="hidden lg:flex p-2 text-white hover:text-[#f9c65d] transition-colors"
                 aria-label="Search"
               >
@@ -341,7 +369,7 @@ const Header = () => {
               {/* Mobile: Search + JOIN only — pushed to far right */}
               <div className="lg:hidden flex items-center gap-3 ml-auto">
                 <button
-                  onClick={() => setSearchOpen(true)}
+                  onClick={openSearch}
                   className="p-2 text-white hover:text-[#f9c65d] transition-colors"
                   aria-label="Search"
                 >
@@ -609,7 +637,7 @@ const Header = () => {
       )}
 
       {/* Search Modal */}
-      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
+      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} inputRef={searchInputRef} />
     </header>
   );
 };

@@ -1016,7 +1016,7 @@ function FinalCTA() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Ready to Access 0% Capital for Your Business?
+            Ready to Access <span className="text-[#f9c65d]">0% Capital</span> for Your Business?
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Join 2,500+ clients who've accessed the funding they already qualified for. No collateral. No tax returns. No equity required.
