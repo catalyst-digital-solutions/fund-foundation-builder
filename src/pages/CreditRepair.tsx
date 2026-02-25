@@ -227,7 +227,7 @@ const CreditRepair = () => {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-3">
-              Over 2,500 Lives Changed. <span className="text-[#f9c65d]">Yours Could Be Next.</span>
+              Over 2,500 Lives Changed.<br /><span className="text-[#f9c65d]">Yours Could Be Next.</span>
             </h2>
             <p className="text-lg text-gray-600">
               Answer a few quick questions, and one of our Client Solutions Advisors will reach out to set you up with your own customized action plan built around your goals.
