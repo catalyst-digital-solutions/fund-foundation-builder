@@ -233,7 +233,7 @@ const CreditRepair = () => {
               Answer a few quick questions, and one of our Client Solutions Advisors will reach out to set you up with your own customized action plan built around your goals.
             </p>
           </div>
-          <div className="bg-white rounded-2xl shadow-xl border border-amber-200 overflow-hidden">
+          <div className="rounded-2xl shadow-xl overflow-hidden">
             <iframe
               src="https://link.mesagroupconsulting.com/widget/survey/Y7K7EfnX7ydeGpv4RoIU"
               style={{ border: 'none', width: '100%', minHeight: '520px' }}
