@@ -46,6 +46,7 @@ import DoNotSellMyPersonalInformation from "./pages/DoNotSellMyPersonalInformati
 import AffiliateDisclosure from "./pages/AffiliateDisclosure";
 import AccessibilityStatement from "./pages/AccessibilityStatement";
 import Concierge from "./pages/Concierge";
+import CreditilyDIY from "./pages/CreditilyDIY";
 
 const queryClient = new QueryClient();
 
@@ -74,6 +75,7 @@ const App = () => (
           <Route path="/credit-monitoring" element={<CreditMonitoring />} />
           <Route path="/credit-repair" element={<CreditRepair />} />
           <Route path="/diy-credit-repair" element={<DIYCreditRepair />} />
+          <Route path="/creditily" element={<CreditilyDIY />} />
           <Route path="/credit-cards" element={<CreditCards />} />
           <Route path="/personal-loans" element={<PersonalLoans />} />
           <Route path="/auto-loan-refi" element={<AutoLoanRefi />} />
