@@ -135,11 +135,9 @@ const Header = () => {
       label: 'Resources',
       href: '/resources',
       submenu: [
-        { label: 'Client Portal', href: 'https://portal.mesagroupconsulting.com/Portal/login.jsp', external: true },
-        { label: 'Blog & Guides', href: '/resources/articles' },
+        { label: 'Articles & Insights', href: '/resources/articles' },
         { label: 'Financial Calculator', href: '/resources/calculators' },
         { label: 'Free Consultation', href: 'https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar', external: true },
-        { label: 'FAQ', href: '#' },
       ],
     },
     { label: 'Contact', href: '/contact' },
