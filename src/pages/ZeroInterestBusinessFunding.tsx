@@ -125,9 +125,8 @@ function QualificationForm() {
       <div className="max-w-2xl mx-auto">
         <div className="bg-white rounded-2xl shadow-xl border border-amber-200 overflow-hidden">
           <div className="bg-amber-400 px-8 py-6 text-center">
-            <h2 className="text-2xl font-bold text-gray-900">Fill Out This Form to Get Started</h2>
-            <p className="text-gray-800 mt-1 font-medium">700+ Credit Score Required</p>
-            <p className="text-gray-700 text-sm">Applying Will Not Impact Your Credit</p>
+            <h2 className="text-2xl font-bold text-gray-900">The Right Strategy Is the Difference Between $15K and $150K.</h2>
+            <p className="text-gray-800 mt-1 font-medium">Answer a few quick questions and one of our Business Funding Strategists will reach out to build your personalized funding plan.</p>
           </div>
           <div className="p-6">
             <iframe
