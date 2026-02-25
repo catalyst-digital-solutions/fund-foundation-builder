@@ -26,11 +26,9 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
   const [hasSearched, setHasSearched] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Focus input when modal opens
+  // Clear state when modal closes
   useEffect(() => {
-    if (isOpen) {
-      setTimeout(() => inputRef.current?.focus(), 50);
-    } else {
+    if (!isOpen) {
       setQuery('');
       setResults([]);
       setHasSearched(false);
@@ -101,6 +99,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
             placeholder="Search pages, services, resources..."
             className="flex-1 px-4 py-4 text-base text-gray-900 placeholder-gray-400 outline-none bg-transparent"
             autoComplete="off"
+            autoFocus
           />
           {loading && <Loader2 className="w-5 h-5 text-gray-400 mr-3 animate-spin flex-shrink-0" />}
           <button

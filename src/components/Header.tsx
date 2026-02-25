@@ -338,18 +338,18 @@ const Header = () => {
                 Join
               </Link>
 
-              {/* Mobile: Search + JOIN only */}
-              <div className="lg:hidden flex items-center gap-2">
+              {/* Mobile: Search + JOIN only — pushed to far right */}
+              <div className="lg:hidden flex items-center gap-3 ml-auto">
                 <button
                   onClick={() => setSearchOpen(true)}
-                  className="text-white hover:text-[#f9c65d] transition-colors"
+                  className="p-2 text-white hover:text-[#f9c65d] transition-colors"
                   aria-label="Search"
                 >
-                  <Search className="w-5 h-5" />
+                  <Search className="w-6 h-6" />
                 </button>
                 <Link
                   to="/concierge"
-                  className="px-3 py-1.5 bg-[#f9c65d] hover:bg-[#e6b44a] text-gray-900 text-xs font-bold rounded-lg transition-colors"
+                  className="px-5 py-2.5 bg-[#f9c65d] hover:bg-[#e6b44a] text-gray-900 text-sm font-bold rounded-xl transition-colors"
                 >
                   Join
                 </Link>
