@@ -1851,6 +1851,13 @@ const Homepage = () => {
       ================================================================ */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Final CTA heading — above badges */}
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+              Ready to Transform Your<br /><span className="text-[#f9c65d]">Financial Future</span>?
+            </h2>
+          </div>
+
           {/* Trust Recap */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             {[
@@ -1870,11 +1877,8 @@ const Homepage = () => {
             ))}
           </div>
 
-          {/* Final CTA */}
+          {/* Final CTA buttons */}
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Ready to Transform Your<br /><span className="text-[#f9c65d]">Financial Future</span>?
-            </h2>
 
             <CalendlyPopupButtonLarge
               text="Schedule My Free Consultation →"

@@ -81,8 +81,8 @@ const ContactFormSection = () => {
             </div>
           </div>
 
-          {/* Right Column - GHL Contact Form */}
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
+          {/* Right Column - GHL Contact Form (transparent container — form has its own card styling) */}
+          <div className="rounded-2xl overflow-hidden">
             <iframe
               src="https://link.mesagroupconsulting.com/widget/form/CaNQDAlt2BSYAOxTZb6b"
               style={{ width: '100%', height: '100%', minHeight: '600px', border: 'none', display: 'block' }}

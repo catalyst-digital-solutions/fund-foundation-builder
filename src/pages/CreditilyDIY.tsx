@@ -28,6 +28,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
+import ContactFormSection from "@/components/ContactFormSection";
 import wolfieIcon from "@/assets/creditily-wolf-logo.svg";
 import diyHeroImage from "@/assets/diy-credit-repair-hero.webp";
 
@@ -848,6 +849,7 @@ export default function CreditilyDIY() {
         </div>
       </section>
 
+      <ContactFormSection />
       <Footer />
     </div>
   );
