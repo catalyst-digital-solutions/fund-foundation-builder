@@ -123,25 +123,27 @@ function QualificationForm() {
   return (
     <section id="qualification-form" className="py-16 px-6 bg-gradient-to-br from-amber-50 to-white">
       <div className="max-w-2xl mx-auto">
-        <div className="bg-white rounded-2xl shadow-xl border border-amber-200 overflow-hidden">
-          <div className="bg-amber-400 px-8 py-6 text-center">
-            <h2 className="text-2xl font-bold text-gray-900">The Right Strategy Is the Difference Between $15K and $150K.</h2>
-            <p className="text-gray-800 mt-1 font-medium">Answer a few quick questions and one of our Business Funding Strategists will reach out to build your personalized funding plan.</p>
-          </div>
-          <div className="p-6">
-            <iframe
-              src="https://link.mesagroupconsulting.com/widget/survey/FIkq2SkzWrx0Ylx8xp9w"
-              style={{ border: 'none', width: '100%', minHeight: '500px' }}
-              scrolling="no"
-              id="FIkq2SkzWrx0Ylx8xp9w"
-              title="0% Business Funding Qualification"
-            />
-            <p className="text-center text-sm text-gray-600 -mt-10 flex items-center justify-center gap-2 relative z-10">
-              <span>✍</span>
-              Response From One of Our Funding Strategists Within 24 Hours
-            </p>
-          </div>
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#3E3E3E] mb-3">
+            The Right Strategy Is the Difference Between{" "}
+            <span className="text-[#f9c65d]">$15K and $150K.</span>
+          </h2>
+          <p className="text-lg text-gray-600">
+            Answer a few quick questions and one of our Business Funding Strategists will reach out to build your personalized funding plan.
+          </p>
         </div>
+        <div className="rounded-2xl overflow-hidden">
+          <iframe
+            src="https://link.mesagroupconsulting.com/widget/survey/FIkq2SkzWrx0Ylx8xp9w"
+            style={{ border: 'none', width: '100%', minHeight: '500px', display: 'block' }}
+            scrolling="no"
+            id="FIkq2SkzWrx0Ylx8xp9w"
+            title="0% Business Funding Qualification"
+          />
+        </div>
+        <p className="text-center text-sm text-gray-600 -mt-6">
+          Response From One of Our Funding Strategists Within 24 Hours
+        </p>
       </div>
     </section>
   );

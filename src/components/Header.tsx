@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useTransition } from 'react';
 import { Clock, Mail, MapPin, Phone, ChevronDown, X, Menu, Search, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SearchModal } from '@/components/SearchModal';
@@ -64,6 +64,10 @@ const Header = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
+  // useTransition defers the menu-close state update so it doesn't block
+  // the browser paint triggered by navigation (fixes INP on dropdown links)
+  const [, startMenuTransition] = useTransition();
+  const closeMobileMenu = () => startMenuTransition(() => setMobileMenuOpen(false));
 
   // Ctrl+K / Cmd+K / "/" shortcut to open search
   useEffect(() => {
@@ -402,7 +406,7 @@ const Header = () => {
                         {item.href ? (
                           <Link
                             to={item.href}
-                            onClick={() => setMobileMenuOpen(false)}
+                            onClick={closeMobileMenu}
                             className="flex-1 px-4 py-3 text-white hover:text-[#f9c65d] hover:bg-gray-900 rounded-l-lg transition-colors font-medium"
                           >
                             {item.label}
@@ -432,7 +436,7 @@ const Header = () => {
                                 href={subItem.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                onClick={() => setMobileMenuOpen(false)}
+                                onClick={closeMobileMenu}
                                 className="block px-4 py-2 text-sm text-gray-300 hover:text-[#f9c65d] hover:bg-gray-900 rounded-lg transition-colors"
                               >
                                 {subItem.label}
@@ -441,7 +445,7 @@ const Header = () => {
                               <Link
                                 key={subItem.label}
                                 to={subItem.href}
-                                onClick={() => setMobileMenuOpen(false)}
+                                onClick={closeMobileMenu}
                                 className="block px-4 py-2 text-sm text-gray-300 hover:text-[#f9c65d] hover:bg-gray-900 rounded-lg transition-colors"
                               >
                                 {subItem.label}
@@ -454,7 +458,7 @@ const Header = () => {
                   ) : (
                     <Link
                       to={item.href}
-                      onClick={() => setMobileMenuOpen(false)}
+                      onClick={closeMobileMenu}
                       className="block px-4 py-3 text-white hover:text-[#f9c65d] hover:bg-gray-900 rounded-lg transition-colors font-medium"
                     >
                       {item.label}
@@ -479,7 +483,7 @@ const Header = () => {
                 href="https://portal.mesagroupconsulting.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={closeMobileMenu}
                 className="flex items-center gap-3 px-4 py-3 text-white hover:text-[#f9c65d] transition-colors"
               >
                 <div className="w-10 h-10 rounded-full bg-[#3e3e3e] flex items-center justify-center flex-shrink-0">

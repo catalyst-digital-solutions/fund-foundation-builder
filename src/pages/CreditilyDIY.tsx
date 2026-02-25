@@ -29,6 +29,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import wolfieIcon from "@/assets/creditily-wolf-logo.svg";
+import diyHeroImage from "@/assets/diy-credit-repair-hero.webp";
 
 // ─────────────────────────────────────────────
 // FAQ DATA
@@ -90,9 +91,9 @@ function FAQItem({ q, a }: { q: string; a: string }) {
       >
         <span className="text-base font-semibold text-gray-900 pr-4">{q}</span>
         {open ? (
-          <ChevronUp className="w-5 h-5 text-amber-600 flex-shrink-0" />
+          <ChevronUp className="w-5 h-5 text-[#f9c65d] flex-shrink-0" />
         ) : (
-          <ChevronDown className="w-5 h-5 text-amber-600 flex-shrink-0" />
+          <ChevronDown className="w-5 h-5 text-[#f9c65d] flex-shrink-0" />
         )}
       </button>
       {open && (
@@ -142,8 +143,8 @@ export default function CreditilyDIY() {
             <div className="space-y-6">
               {/* Eyebrow */}
               <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-200">
-                <Shield className="w-4 h-4 text-amber-600" />
-                <span className="text-sm font-medium text-amber-600">
+                <Shield className="w-4 h-4 text-[#f9c65d]" />
+                <span className="text-sm font-medium text-[#f9c65d]">
                   Backed by Mesa Group Consulting
                 </span>
               </div>
@@ -151,7 +152,7 @@ export default function CreditilyDIY() {
               {/* H1 */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Professional Credit Restoration. Now In{" "}
-                <span className="text-amber-500">Your Hands.</span>
+                <span className="text-[#f9c65d]">Your Hands.</span>
               </h1>
 
               {/* Subheadline */}
@@ -172,7 +173,7 @@ export default function CreditilyDIY() {
                   href="https://getcreditily.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 text-amber-600 font-semibold text-base hover:underline py-4"
+                  className="inline-flex items-center justify-center gap-2 text-[#f9c65d] font-semibold text-base hover:underline py-4"
                 >
                   Ready to get started? Join Creditily today
                   <ArrowRight className="w-4 h-4 flex-shrink-0" />
@@ -187,52 +188,21 @@ export default function CreditilyDIY() {
                   { icon: Shield, label: "Backed by Mesa Group Consulting" },
                 ].map(({ icon: Icon, label }) => (
                   <div key={label} className="flex items-center gap-2">
-                    <Icon className="w-5 h-5 text-amber-600" />
+                    <Icon className="w-5 h-5 text-[#f9c65d]" />
                     <span className="text-sm font-medium text-gray-700">{label}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Right — Dashboard Mockup */}
+            {/* Right — Hero Image */}
             <div className="relative flex justify-center lg:justify-end">
-              <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 p-6 w-full max-w-md">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-sm font-semibold text-gray-900">Credit Dashboard</span>
-                  <span className="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded-full font-medium">3 Bureaus</span>
-                </div>
-                {/* Bureaus */}
-                {[
-                  { bureau: "Experian", score: 718, prev: 658, status: "Removed" },
-                  { bureau: "Equifax", score: 702, prev: 645, status: "Removed" },
-                  { bureau: "TransUnion", score: 711, prev: 651, status: "Removed" },
-                ].map(({ bureau, score, prev, status }) => (
-                  <div key={bureau} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
-                    <div>
-                      <p className="text-sm font-semibold text-gray-900">{bureau}</p>
-                      <p className="text-xs text-gray-500">{prev} → {score}</p>
-                    </div>
-                    <span className="text-xs font-semibold text-green-600 bg-green-50 px-2 py-1 rounded-full">
-                      {status}
-                    </span>
-                  </div>
-                ))}
-                {/* Score progress bar */}
-                <div className="mt-4">
-                  <div className="flex justify-between text-xs text-gray-500 mb-1">
-                    <span>Credit Score Progress</span>
-                    <span className="text-green-600 font-semibold">+60 pts avg</span>
-                  </div>
-                  <div className="w-full bg-gray-100 rounded-full h-2">
-                    <div className="bg-amber-400 h-2 rounded-full" style={{ width: "72%" }} />
-                  </div>
-                </div>
-                {/* Wolfie badge — using Creditily wolf logo asset */}
-                <div className="mt-4 flex items-center gap-2 bg-amber-50 rounded-lg p-3">
-                  <img src={wolfieIcon} alt="Creditily" className="w-6 h-6 object-contain" />
-                  <span className="text-xs text-gray-700 font-medium">Powered by Mesa Group Consulting</span>
-                </div>
-              </div>
+              <img
+                src={diyHeroImage}
+                alt="Creditily DIY Credit Restoration — Powered by Mesa Group Consulting"
+                className="rounded-2xl shadow-2xl w-full max-w-lg object-cover"
+                loading="eager"
+              />
             </div>
 
           </div>
@@ -245,7 +215,7 @@ export default function CreditilyDIY() {
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Get Your Free{" "}
-              <span className="text-amber-600">Dispute Letter Generator</span>
+              <span className="text-[#f9c65d]">Dispute Letter Generator</span>
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               Answer 3 quick questions and we will unlock your free access to Creditily's AI-powered dispute letter generator. The same tool Mesa Group uses with clients every day. No credit card. No commitment.
@@ -253,7 +223,7 @@ export default function CreditilyDIY() {
           </div>
 
           {/* GHL Survey Embed — script injected via useEffect above */}
-          <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+          <div className="rounded-2xl overflow-hidden">
             <iframe
               src="https://link.mesagroupconsulting.com/widget/survey/nVWtGucezHO6c0Or4Il1"
               style={{ border: "none", width: "100%", minHeight: "480px", display: "block" }}
@@ -267,10 +237,10 @@ export default function CreditilyDIY() {
               data-form-id="nVWtGucezHO6c0Or4Il1"
               title="Creditily Free Dispute Letter Generator"
             />
-            <p className="text-center text-sm text-gray-500 mt-4">
-              No credit card required. What you share stays with us. On completion, you will be taken directly to your free dispute letter generator.
-            </p>
           </div>
+          <p className="text-center text-sm text-gray-500 -mt-6">
+            No credit card required. What you share stays with us. On completion, you will be taken directly to your free dispute letter generator.
+          </p>
         </div>
       </section>
 
@@ -300,12 +270,12 @@ export default function CreditilyDIY() {
 
             {/* Right — Copy */}
             <div className="space-y-6">
-              <p className="text-sm font-semibold text-amber-600 uppercase tracking-wider">
+              <p className="text-sm font-semibold text-[#f9c65d] uppercase tracking-wider">
                 More Than a Platform
               </p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 The Expertise of Mesa Group.{" "}
-                <span className="text-amber-600">In Your Hands.</span>
+                <span className="text-[#f9c65d]">In Your Hands.</span>
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed text-base">
                 <p>
@@ -335,12 +305,12 @@ export default function CreditilyDIY() {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-3">
+            <p className="text-sm font-semibold text-[#f9c65d] uppercase tracking-wider mb-3">
               Two Paths. One Mission.
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               We Help{" "}
-              <span className="text-amber-600">Everyone</span>{" "}
+              <span className="text-[#f9c65d]">Everyone</span>{" "}
               Who Walks Through Our Door.
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
@@ -420,7 +390,7 @@ export default function CreditilyDIY() {
           {/* Reassurance line */}
           <p className="text-center text-gray-600 mt-10 text-base">
             Not sure which path fits?{" "}
-            <a href="tel:6613103040" className="text-amber-600 font-semibold hover:underline">
+            <a href="tel:6613103040" className="text-[#f9c65d] font-semibold hover:underline">
               Call us at (661) 310-3040
             </a>
             . We will give you an honest answer, even if that answer is just good advice.
@@ -432,12 +402,12 @@ export default function CreditilyDIY() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-3">
+            <p className="text-sm font-semibold text-[#f9c65d] uppercase tracking-wider mb-3">
               A Process Built Around You
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Your Credit Restoration Journey.{" "}
-              <span className="text-amber-600">Step by Step.</span>
+              <span className="text-[#f9c65d]">Step by Step.</span>
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
               Creditily does not leave you guessing. Every step is guided, every decision is supported, and every round is smarter than the last.
@@ -486,7 +456,7 @@ export default function CreditilyDIY() {
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <Icon className="w-5 h-5 text-amber-600" />
+                    <Icon className="w-5 h-5 text-[#f9c65d]" />
                     <h3 className="text-lg md:text-xl font-bold text-gray-900">{title}</h3>
                   </div>
                   <p className="text-gray-700 leading-relaxed text-base">{body}</p>
@@ -498,7 +468,7 @@ export default function CreditilyDIY() {
           {/* Timeline callout */}
           <div className="mt-10 max-w-4xl mx-auto bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-300 rounded-2xl p-8">
             <h4 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-              <Clock className="w-5 h-5 text-amber-600" />
+              <Clock className="w-5 h-5 text-[#f9c65d]" />
               What Your Journey Looks Like
             </h4>
             <div className="grid md:grid-cols-2 gap-4">
@@ -524,12 +494,12 @@ export default function CreditilyDIY() {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-3">
+            <p className="text-sm font-semibold text-[#f9c65d] uppercase tracking-wider mb-3">
               Your Rights Under Federal Law
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               If It Is Inaccurate, You Have the{" "}
-              <span className="text-amber-600">Right to Challenge It.</span>
+              <span className="text-[#f9c65d]">Right to Challenge It.</span>
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
               The Fair Credit Reporting Act gives every American the right to dispute anything on their credit report that is inaccurate, incomplete, or cannot be verified. Creditily makes sure you use that right to its full potential.
@@ -550,7 +520,7 @@ export default function CreditilyDIY() {
             ].map(({ icon: Icon, label }) => (
               <div key={label} className="bg-white rounded-xl border border-gray-200 p-5 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
                 <div className="bg-amber-100 rounded-xl p-3 mb-3">
-                  <Icon className="w-6 h-6 text-amber-600" />
+                  <Icon className="w-6 h-6 text-[#f9c65d]" />
                 </div>
                 <p className="text-sm font-semibold text-gray-900">{label}</p>
               </div>
@@ -587,12 +557,12 @@ export default function CreditilyDIY() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-3">
+            <p className="text-sm font-semibold text-[#f9c65d] uppercase tracking-wider mb-3">
               Built With One Purpose
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Everything You Need to{" "}
-              <span className="text-amber-600">Take Ownership.</span>
+              <span className="text-[#f9c65d]">Take Ownership.</span>
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
               Six professional capabilities in one platform. Built for people who are ready to stop waiting and start moving.
@@ -648,12 +618,12 @@ export default function CreditilyDIY() {
       <section className="py-16 md:py-24 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-3">
+            <p className="text-sm font-semibold text-[#f9c65d] uppercase tracking-wider mb-3">
               Transparent. Simple. No Surprises.
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               One Plan.{" "}
-              <span className="text-amber-600">Everything Included.</span>
+              <span className="text-[#f9c65d]">Everything Included.</span>
             </h2>
             <p className="text-lg text-gray-700 max-w-xl mx-auto leading-relaxed">
               No hidden fees. No setup charges. No long contracts. Professional credit restoration tools, available to anyone who is ready to use them.
@@ -664,7 +634,7 @@ export default function CreditilyDIY() {
           <div className="max-w-lg mx-auto">
             <div className="bg-white rounded-2xl shadow-2xl border-2 border-amber-400 p-8 md:p-10">
               <div className="text-center mb-8">
-                <p className="text-sm font-bold text-amber-600 uppercase tracking-widest mb-2">CREDITILY</p>
+                <p className="text-sm font-bold text-[#f9c65d] uppercase tracking-widest mb-2">CREDITILY</p>
                 <p className="text-xs text-gray-500 mb-4">Powered by Mesa Group</p>
                 <div className="flex items-end justify-center gap-1">
                   <span className="text-5xl font-bold text-gray-900">$39.99</span>
@@ -726,12 +696,12 @@ export default function CreditilyDIY() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-3">
+            <p className="text-sm font-semibold text-[#f9c65d] uppercase tracking-wider mb-3">
               Real People. Real Journeys.
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               This Is What{" "}
-              <span className="text-amber-600">Taking Ownership</span>{" "}
+              <span className="text-[#f9c65d]">Taking Ownership</span>{" "}
               Looks Like.
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
@@ -804,16 +774,16 @@ export default function CreditilyDIY() {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-amber-600 uppercase tracking-wider mb-3">
+            <p className="text-sm font-semibold text-[#f9c65d] uppercase tracking-wider mb-3">
               You Have Questions. We Have Honest Answers.
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Everything You Want to Know{" "}
-              <span className="text-amber-600">Before You Start.</span>
+              <span className="text-[#f9c65d]">Before You Start.</span>
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               We believe transparency is not a policy. It is a promise. If your question is not here,{" "}
-              <a href="tel:6613103040" className="text-amber-600 font-semibold hover:underline">
+              <a href="tel:6613103040" className="text-[#f9c65d] font-semibold hover:underline">
                 call us at (661) 310-3040
               </a>
               . We are real people and we will give you a straight answer.
