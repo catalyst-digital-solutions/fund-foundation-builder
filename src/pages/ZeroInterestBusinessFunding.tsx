@@ -58,7 +58,7 @@ function HeroSection() {
         </div>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          Access $50,000 to $250,000+ in 0% Business Funding Without Collateral, Tax Returns, or Personal Guarantees
+          Access <span className="text-[#f9c65d]">$50,000 to $250,000+</span> in <span className="text-[#f9c65d]">0% Business Funding</span> Without Collateral, Tax Returns, or Personal Guarantees
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-3xl mx-auto">
