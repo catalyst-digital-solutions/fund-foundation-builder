@@ -136,8 +136,8 @@ const Header = () => {
       href: '/resources',
       submenu: [
         { label: 'Articles & Insights', href: '/resources/articles' },
+        { label: 'Mesa News', href: '/resources/news' },
         { label: 'Financial Calculator', href: '/resources/calculators' },
-        { label: 'Free Consultation', href: 'https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar', external: true },
       ],
     },
     { label: 'Contact', href: '/contact' },
