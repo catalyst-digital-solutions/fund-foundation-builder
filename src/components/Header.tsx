@@ -319,7 +319,7 @@ const Header = () => {
             <div className="hidden lg:block h-[40px] w-[1px] bg-gray-700 mx-6" />
 
             {/* Right Side: Search, Phone, Client Login */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 ml-auto lg:ml-0">
               {/* Search Icon - Desktop (first position) */}
               <button
                 onClick={openSearch}
@@ -366,8 +366,8 @@ const Header = () => {
                 Join
               </Link>
 
-              {/* Mobile: Search + JOIN only — pushed to far right */}
-              <div className="lg:hidden flex items-center gap-3 ml-auto">
+              {/* Mobile: Search + JOIN only */}
+              <div className="lg:hidden flex items-center gap-3">
                 <button
                   onClick={openSearch}
                   className="p-2 text-white hover:text-[#f9c65d] transition-colors"
