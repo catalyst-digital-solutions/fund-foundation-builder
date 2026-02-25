@@ -509,7 +509,7 @@ const CreditUtilizationBlogPost = () => {
                     We recommend this to all our <Link to="/credit-repair" className="text-amber-600 hover:text-amber-700 underline">credit repair</Link> clients because you cannot fix what you are not tracking. If you are serious about optimization, you need the data.
                   </p>
                   <a
-                    href="https://smartcredit.com"
+                    href="https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"

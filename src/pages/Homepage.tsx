@@ -746,7 +746,7 @@ const Homepage = () => {
           
           <div className="text-center mb-12 lg:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              We Know the Way Forward. <span className="text-[#f9c65d]">Let Us Help You Get There.</span>
+              We Know the Way Forward.<br className="hidden md:block" /><span className="text-[#f9c65d]">Let Us Help You Get There.</span>
             </h2>
             
             <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-4">

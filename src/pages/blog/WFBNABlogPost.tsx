@@ -508,7 +508,7 @@ const WFBNABlogPost = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://smartcredit.com"
+                  href="https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-[#bb9446]"

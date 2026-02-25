@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useTransition } from 'react';
 import { Clock, Mail, MapPin, Phone, ChevronDown, X, Menu, Search, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { SearchModal } from '@/components/SearchModal';
 
 // Inline SVG Logo Component (white version for dark backgrounds)
@@ -64,10 +64,14 @@ const Header = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
-  // useTransition defers the menu-close state update so it doesn't block
-  // the browser paint triggered by navigation (fixes INP on dropdown links)
+  // useTransition defers state updates so they don't block browser paint (fixes INP)
   const [, startMenuTransition] = useTransition();
+  const [, startNavTransition] = useTransition();
+  const navigate = useNavigate();
   const closeMobileMenu = () => startMenuTransition(() => setMobileMenuOpen(false));
+  // Desktop nav: wrap navigate() in startTransition so the page render doesn't
+  // block the current frame — eliminates the 242ms INP on nav link clicks
+  const transitionNavigate = (to: string) => startNavTransition(() => navigate(to));
 
   // Ctrl+K / Cmd+K / "/" shortcut to open search
   useEffect(() => {
@@ -262,13 +266,14 @@ const Header = () => {
                   {item.submenu ? (
                     <>
                       {item.href ? (
-                        <Link 
-                          to={item.href}
-                          className="flex items-center gap-1 text-white hover:text-[#f9c65d] transition-colors text-sm font-medium"
+                        <a
+                          href={item.href}
+                          onClick={(e) => { e.preventDefault(); transitionNavigate(item.href); }}
+                          className="flex items-center gap-1 text-white hover:text-[#f9c65d] transition-colors text-sm font-medium cursor-pointer"
                         >
                           {item.label}
                           <ChevronDown className="w-4 h-4" />
-                        </Link>
+                        </a>
                       ) : (
                         <button className="flex items-center gap-1 text-white hover:text-[#f9c65d] transition-colors text-sm font-medium">
                           {item.label}
@@ -294,13 +299,14 @@ const Header = () => {
                                   {subItem.label}
                                 </a>
                               ) : (
-                                <Link
+                                <a
                                   key={subItem.label}
-                                  to={subItem.href}
-                                  className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-900 hover:text-[#f9c65d] transition-colors"
+                                  href={subItem.href}
+                                  onClick={(e) => { e.preventDefault(); transitionNavigate(subItem.href); }}
+                                  className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-900 hover:text-[#f9c65d] transition-colors cursor-pointer"
                                 >
                                   {subItem.label}
-                                </Link>
+                                </a>
                               )
                             ))}
                           </div>
@@ -308,12 +314,13 @@ const Header = () => {
                       )}
                     </>
                   ) : (
-                    <Link
-                      to={item.href}
-                      className="text-white hover:text-[#f9c65d] transition-colors text-sm font-medium"
+                    <a
+                      href={item.href}
+                      onClick={(e) => { e.preventDefault(); transitionNavigate(item.href); }}
+                      className="text-white hover:text-[#f9c65d] transition-colors text-sm font-medium cursor-pointer"
                     >
                       {item.label}
-                    </Link>
+                    </a>
                   )}
                 </div>
               ))}
