@@ -148,14 +148,16 @@ const AboutUs = () => {
       </section>
 
       {/* ── WHERE THIS COMPANY CAME FROM ─────────────────────────────── */}
-      <section className="relative py-16 md:py-24">
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/santa-ana-volcano-crater-lake.jpg)' }}
+      <section className="relative py-16 md:py-24 min-h-[480px] overflow-hidden">
+        {/* Background image: use img so it reliably loads and displays */}
+        <img
+          src="/santa-ana-volcano-crater-lake.jpg"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+          aria-hidden
         />
         {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-black/65 pointer-events-none" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
             Where This Company <span className="text-[#f9c65d]">Came From</span>
