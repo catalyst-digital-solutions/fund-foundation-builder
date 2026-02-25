@@ -1134,6 +1134,13 @@ const CreditRestorationV3 = () => {
       {/* ============================================ */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Final CTA */}
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-10">
+              Your Next Chapter Starts With <span className="text-[#f9c65d]">One Simple Step.</span>
+            </h2>
+          </div>
+
           {/* Trust Badges */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             {[
@@ -1153,11 +1160,7 @@ const CreditRestorationV3 = () => {
             ))}
           </div>
 
-          {/* Final CTA */}
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
-              Your Next Chapter Starts With <span className="text-[#f9c65d]">One Simple Step.</span>
-            </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <CalendlyPopupButton
                 text="Schedule Your Free Consultation"
