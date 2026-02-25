@@ -242,7 +242,7 @@ const CreditRepair = () => {
               title="Credit Repair Assessment"
             />
           </div>
-          <p className="text-center text-sm text-gray-500 mt-4">
+          <p className="text-center text-sm text-gray-500 -mt-6">
             We typically respond within one business day. What you share stays with us.
           </p>
         </div>
