@@ -136,7 +136,7 @@ function QualificationForm() {
               id="FIkq2SkzWrx0Ylx8xp9w"
               title="0% Business Funding Qualification"
             />
-            <p className="text-center text-sm text-gray-600 mt-4 flex items-center justify-center gap-2">
+            <p className="text-center text-sm text-gray-600 -mt-10 flex items-center justify-center gap-2 relative z-10">
               <span>✍</span>
               Response From One of Our Funding Strategists Within 24 Hours
             </p>
@@ -1014,6 +1014,15 @@ function FinalCTA() {
   return (
     <section className="py-20 px-6 bg-gradient-to-br from-[#FFFBEC] from-40% to-[#FFECD7]">
       <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Ready to Access 0% Capital for Your Business?
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Join 2,500+ clients who've accessed the funding they already qualified for. No collateral. No tax returns. No equity required.
+          </p>
+        </div>
+
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-12">
           {[
             '2,500+ Lives Changed Since 2023',
@@ -1028,15 +1037,6 @@ function FinalCTA() {
               <span className="text-gray-700">{item}</span>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Ready to Access 0% Capital for Your Business?
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Join 2,500+ clients who've accessed the funding they already qualified for. No collateral. No tax returns. No equity required.
-          </p>
         </div>
 
         <div className="grid sm:grid-cols-3 gap-4 mb-8">

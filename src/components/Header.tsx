@@ -338,7 +338,7 @@ const Header = () => {
                 Join
               </Link>
 
-              {/* Mobile: Search + Phone + Sign In + JOIN */}
+              {/* Mobile: Search + JOIN only */}
               <div className="lg:hidden flex items-center gap-2">
                 <button
                   onClick={() => setSearchOpen(true)}
@@ -347,19 +347,6 @@ const Header = () => {
                 >
                   <Search className="w-5 h-5" />
                 </button>
-                <div className="h-4 w-[1px] bg-gray-600" />
-                <a href="tel:+16613103040" className="text-sm font-semibold text-white hover:text-[#f9c65d] transition-colors">
-                  (661) 310-3040
-                </a>
-                <div className="h-4 w-[1px] bg-gray-600" />
-                <a
-                  href="https://portal.mesagroupconsulting.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium text-white hover:text-[#f9c65d] transition-colors"
-                >
-                  Sign In
-                </a>
                 <Link
                   to="/concierge"
                   className="px-3 py-1.5 bg-[#f9c65d] hover:bg-[#e6b44a] text-gray-900 text-xs font-bold rounded-lg transition-colors"
@@ -449,15 +436,30 @@ const Header = () => {
               ))}
             </nav>
 
-            {/* Mobile Phone */}
-            <div className="mt-4 pt-4 border-t border-gray-800">
+            {/* Mobile Phone + Client Login */}
+            <div className="mt-4 pt-4 border-t border-gray-800 space-y-1">
               <a href="tel:+16613103040" className="flex items-center gap-3 px-4 py-3 text-white hover:text-[#f9c65d] transition-colors">
-                <div className="w-10 h-10 rounded-full bg-[#3e3e3e] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-[#3e3e3e] flex items-center justify-center flex-shrink-0">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <div className="text-xs text-gray-400">Have Questions?</div>
                   <div className="text-sm font-semibold">(661) 310-3040</div>
+                </div>
+              </a>
+              <a
+                href="https://portal.mesagroupconsulting.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center gap-3 px-4 py-3 text-white hover:text-[#f9c65d] transition-colors"
+              >
+                <div className="w-10 h-10 rounded-full bg-[#3e3e3e] flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                </div>
+                <div>
+                  <div className="text-xs text-gray-400">Your Account</div>
+                  <div className="text-sm font-semibold">Client Login</div>
                 </div>
               </a>
             </div>
