@@ -148,12 +148,19 @@ const AboutUs = () => {
       </section>
 
       {/* ── WHERE THIS COMPANY CAME FROM ─────────────────────────────── */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+      <section className="relative py-16 md:py-24">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(/santa-ana-volcano-crater-lake.jpg)' }}
+        />
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-black/65" />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
             Where This Company <span className="text-[#f9c65d]">Came From</span>
           </h2>
-          <div className="space-y-5 text-lg text-gray-700 leading-relaxed">
+          <div className="space-y-5 text-lg text-white/90 leading-relaxed">
             <p>
               Mesa Group was born from a promise. A promise that no family should have to navigate the financial system blind, the way so many families have.
             </p>
@@ -163,25 +170,25 @@ const AboutUs = () => {
             <p>
               When he tried to build his own life, the same mistakes followed. Credit completely shot. A business that collapsed. Nearly nothing in the bank. No blueprint. No guidance.
             </p>
-            <p className="text-xl font-bold text-red-600">
+            <p className="text-xl font-bold text-amber-300">
               But then came the realization that changed everything.
             </p>
-            <p className="text-2xl font-bold text-gray-900">
+            <p className="text-2xl font-bold text-white">
               Bad credit doesn't mean you're irresponsible. It means no one taught you.
             </p>
             <p>
               And if no one taught hardworking immigrants who risked everything to build a life in this country, how many other families were navigating this same system blind?
             </p>
-            <p className="text-xl font-bold text-gray-900">
+            <p className="text-xl font-bold text-white">
               That's why Mesa Group exists. Not to fix credit scores. Not to push financial products. To be the financial partner those families never had, for credit, for funding, for debt, for protection, for everything that comes with building a life worth passing down.
             </p>
             <p>
               Today, we've helped over 2,500 individuals, families, and businesses transform their financial futures. We've turned denials into approvals. Debt into freedom. Confusion into clarity. And every single client we've helped is now equipped to teach the next generation what no one taught them.
             </p>
-            <p className="text-xl font-bold text-green-600">
+            <p className="text-xl font-bold text-[#f9c65d]">
               That's the real legacy. Not restoring credit. Breaking generational cycles.
             </p>
-            <p className="font-semibold text-gray-900">We help people first. Always.</p>
+            <p className="font-semibold text-white">We help people first. Always.</p>
           </div>
         </div>
       </section>

@@ -1034,8 +1034,8 @@ const Homepage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative h-[500px] md:h-[600px] overflow-hidden rounded-3xl">
             <img
-              src={meetingRoomImg}
-              alt="Mesa Group Consulting professional meeting room"
+              src="/mesa-group-consulting-office-photo-9.jpg"
+              alt="Mesa Group Consulting office"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/50" />
