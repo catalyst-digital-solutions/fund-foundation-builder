@@ -411,7 +411,7 @@ const ForConsumers = () => {
               Important Disclosure: Results vary based on individual circumstances. Testimonials reflect individual client experiences and are not a guarantee of similar outcomes. All testimonials are from actual clients.
             </p>
             <p className="text-xs text-gray-400">
-              Images may be AI-generated, stock photo, or other representations and do not depict actual clients.
+              Images may be AI-generated, stock photo, or other representations and may not depict actual clients.
             </p>
           </div>
         </div>
