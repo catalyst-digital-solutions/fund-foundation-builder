@@ -9,7 +9,6 @@ import {
   Mail,
   Star,
   Users,
-  Globe,
   Shield,
   Award,
   HeartHandshake,
@@ -32,7 +31,7 @@ export default function OurPartners() {
         "Premium credit restoration and financial education built specifically for the Punjabi community — delivered in their language, with the cultural respect their families deserve.",
       accentColor: "border-orange-300",
       bgColor: "from-orange-50 to-amber-50",
-      iconColor: "text-orange-500",
+      logo: "/partners/chaklo-credit-logo.png",
     },
     {
       name: "Credit Sherbie",
@@ -41,7 +40,7 @@ export default function OurPartners() {
         "Real guidance for people who are done settling for less. No runaround, no jargon — just the kind of direct, knowledgeable advice that actually moves the needle.",
       accentColor: "border-amber-300",
       bgColor: "from-amber-50 to-yellow-50",
-      iconColor: "text-[#f9c65d]",
+      logo: "/partners/credit-sherbie-logo.png",
     },
     {
       name: "Creditily",
@@ -50,7 +49,7 @@ export default function OurPartners() {
         "A modern, accessible platform for people who want to take ownership of their credit journey — with the tools, education, and support to do it right.",
       accentColor: "border-blue-200",
       bgColor: "from-blue-50 to-sky-50",
-      iconColor: "text-blue-500",
+      logo: "/partners/diy-credit-repair-creditily-logo.png",
     },
     {
       name: "Credit Girly",
@@ -59,7 +58,7 @@ export default function OurPartners() {
         "Financial empowerment built for women — clear, honest, and completely free of the barriers this industry has always put in the way. Because the right guidance should be available to everyone.",
       accentColor: "border-pink-200",
       bgColor: "from-pink-50 to-rose-50",
-      iconColor: "text-pink-500",
+      logo: "/partners/credit-girly-logo.png",
     },
     {
       name: "Mesa Financiera",
@@ -68,7 +67,7 @@ export default function OurPartners() {
         "Our Spanish-language home. Full-service credit restoration and financial education for Latino families — built from the same foundation that started everything Mesa stands for.",
       accentColor: "border-green-200",
       bgColor: "from-green-50 to-emerald-50",
-      iconColor: "text-green-600",
+      logo: "/partners/mesa-financiera-logo.png",
     },
   ];
 
@@ -179,12 +178,12 @@ export default function OurPartners() {
                 key={channel.name}
                 className={`bg-gradient-to-br ${channel.bgColor} rounded-2xl border-2 ${channel.accentColor} shadow-md hover:shadow-xl transition-all p-8 flex flex-col`}
               >
-                {/* Logo placeholder — replace with actual logo once assets are available */}
-                <div className="w-16 h-16 rounded-2xl bg-white shadow-sm border border-gray-100 flex items-center justify-center mb-5">
-                  <Globe className={`w-8 h-8 ${channel.iconColor}`} />
+                {/* Channel logo */}
+                <div className="w-16 h-16 rounded-2xl bg-white shadow-sm border border-gray-100 flex items-center justify-center mb-5 p-2 overflow-hidden">
+                  <img src={channel.logo} alt={channel.name} className="w-full h-full object-contain" />
                 </div>
 
-                <span className={`text-xs font-bold tracking-wide uppercase ${channel.iconColor} mb-2`}>
+                <span className="text-xs font-bold tracking-wide uppercase text-gray-600 mb-2">
                   {channel.tagline}
                 </span>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">{channel.name}</h3>
@@ -347,9 +346,9 @@ export default function OurPartners() {
             <div className="bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col">
               <div className="h-64 bg-gradient-to-br from-amber-100 to-orange-100 overflow-hidden relative">
                 <img
-                  src="/images/partners/destiney-perry.jpg"
+                  src="/partners/destiny-perry-real-estate.svg"
                   alt="Destiney Perry — Real Estate Agent"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-top relative z-10"
                   onError={(e) => {
                     (e.target as HTMLImageElement).style.display = "none";
                   }}
@@ -386,9 +385,9 @@ export default function OurPartners() {
             <div className="bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col">
               <div className="h-64 bg-gradient-to-br from-amber-100 to-orange-100 overflow-hidden relative">
                 <img
-                  src="/images/partners/diana-munoz.jpg"
+                  src="/partners/diana-munoz-mortgage-loan-expert.png"
                   alt="Diana Munoz — Mortgage Professional"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-top relative z-10"
                   onError={(e) => {
                     (e.target as HTMLImageElement).style.display = "none";
                   }}
