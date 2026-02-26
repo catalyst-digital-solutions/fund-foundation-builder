@@ -32,6 +32,7 @@ export default function OurPartners() {
       accentColor: "border-orange-300",
       bgColor: "from-orange-50 to-amber-50",
       logo: "/partners/chaklo-credit-logo.png",
+      href: "https://chaklo.mesagroupconsulting.com/",
     },
     {
       name: "Credit Sherbie",
@@ -41,6 +42,7 @@ export default function OurPartners() {
       accentColor: "border-amber-300",
       bgColor: "from-amber-50 to-yellow-50",
       logo: "/partners/credit-sherbie-logo.png",
+      href: "https://www.tiktok.com/@creditsherbie",
     },
     {
       name: "Creditily",
@@ -50,6 +52,7 @@ export default function OurPartners() {
       accentColor: "border-blue-200",
       bgColor: "from-blue-50 to-sky-50",
       logo: "/partners/diy-credit-repair-creditily-logo.png",
+      href: "https://getcreditily.com/",
     },
     {
       name: "Credit Girly",
@@ -59,6 +62,7 @@ export default function OurPartners() {
       accentColor: "border-pink-200",
       bgColor: "from-pink-50 to-rose-50",
       logo: "/partners/credit-girly-logo.png",
+      href: "https://www.instagram.com/creditgirly/",
     },
     {
       name: "Mesa Financiera",
@@ -68,6 +72,7 @@ export default function OurPartners() {
       accentColor: "border-green-200",
       bgColor: "from-green-50 to-emerald-50",
       logo: "/partners/mesa-financiera-logo.png",
+      href: "https://www.instagram.com/mesafinanciera/",
     },
   ];
 
@@ -174,9 +179,12 @@ export default function OurPartners() {
           {/* Channel Cards — 2+2+1 responsive grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {premierChannels.map((channel) => (
-              <div
+              <a
                 key={channel.name}
-                className={`bg-gradient-to-br ${channel.bgColor} rounded-2xl border-2 ${channel.accentColor} shadow-md hover:shadow-xl transition-all flex flex-col overflow-hidden`}
+                href={channel.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`bg-gradient-to-br ${channel.bgColor} rounded-2xl border-2 ${channel.accentColor} shadow-md hover:shadow-xl transition-all flex flex-col overflow-hidden cursor-pointer`}
               >
                 {/* Logo — full width, native aspect ratio, card gradient behind it.
                     overflow-hidden on outer div clips corners; border-2 on outer div
@@ -202,7 +210,7 @@ export default function OurPartners() {
                     Operated by Mesa Group Leadership
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 
@@ -352,7 +360,12 @@ export default function OurPartners() {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
             {/* Destiney Perry */}
-            <div className="bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col">
+            <a
+              href="https://destineyperrysells.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col cursor-pointer"
+            >
               <div className="h-64 bg-gradient-to-br from-amber-100 to-orange-100 overflow-hidden relative">
                 <img
                   src="/partners/destiny-perry-real-estate.svg"
@@ -362,36 +375,33 @@ export default function OurPartners() {
                     (e.target as HTMLImageElement).style.display = "none";
                   }}
                 />
-                {/* Fallback initials avatar */}
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-amber-200 to-orange-200">
                   <div className="w-24 h-24 rounded-full bg-[#f9c65d] flex items-center justify-center text-gray-900 font-bold text-3xl shadow-lg">
                     DP
                   </div>
                 </div>
               </div>
-
               <div className="p-8 flex flex-col flex-1">
-                <div className="mb-4">
-                  <h3 className="text-2xl font-bold text-gray-900">Destiney Perry</h3>
-                  <p className="text-[#bb9446] font-semibold">Real Estate Agent</p>
+                <div className="mb-4 flex items-start justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Destiney Perry</h3>
+                    <p className="text-[#bb9446] font-semibold">Real Estate Agent</p>
+                  </div>
+                  <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0 mt-1" />
                 </div>
-                <p className="text-gray-700 leading-relaxed flex-1 mb-6">
+                <p className="text-gray-700 leading-relaxed flex-1">
                   Destiney has built her career on one belief: every family deserves a home. She knows that credit is often the last obstacle standing between a family and the life they've been working toward — and she refuses to let that be where their story ends.
                 </p>
-                <a
-                  href="https://start.mesagroupconsulting.com/destineyperry"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold px-6 py-3 rounded-lg shadow-md transition-colors w-full"
-                >
-                  Work with Destiney
-                  <ExternalLink className="w-4 h-4 flex-shrink-0" />
-                </a>
               </div>
-            </div>
+            </a>
 
             {/* Diana Munoz */}
-            <div className="bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col">
+            <a
+              href="https://www.facebook.com/diana.munoz.9231/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col cursor-pointer"
+            >
               <div className="h-64 bg-gradient-to-br from-amber-100 to-orange-100 overflow-hidden relative">
                 <img
                   src="/partners/diana-munoz-mortgage-loan-expert.png"
@@ -401,33 +411,25 @@ export default function OurPartners() {
                     (e.target as HTMLImageElement).style.display = "none";
                   }}
                 />
-                {/* Fallback initials avatar */}
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-amber-200 to-orange-200">
                   <div className="w-24 h-24 rounded-full bg-[#f9c65d] flex items-center justify-center text-gray-900 font-bold text-3xl shadow-lg">
                     DM
                   </div>
                 </div>
               </div>
-
               <div className="p-8 flex flex-col flex-1">
-                <div className="mb-4">
-                  <h3 className="text-2xl font-bold text-gray-900">Diana Munoz</h3>
-                  <p className="text-[#bb9446] font-semibold">Mortgage Professional</p>
+                <div className="mb-4 flex items-start justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Diana Munoz</h3>
+                    <p className="text-[#bb9446] font-semibold">Mortgage Professional</p>
+                  </div>
+                  <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0 mt-1" />
                 </div>
-                <p className="text-gray-700 leading-relaxed flex-1 mb-6">
+                <p className="text-gray-700 leading-relaxed flex-1">
                   Diana meets clients at every stage of the home financing journey. For the ones who aren't quite ready, her partnership with Mesa means they never leave empty-handed — they leave with a plan, a team, and a clear path to what they came for.
                 </p>
-                <a
-                  href="https://start.mesagroupconsulting.com/diana-munoz-mortgage"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold px-6 py-3 rounded-lg shadow-md transition-colors w-full"
-                >
-                  Work with Diana
-                  <ExternalLink className="w-4 h-4 flex-shrink-0" />
-                </a>
               </div>
-            </div>
+            </a>
 
           </div>
         </div>
