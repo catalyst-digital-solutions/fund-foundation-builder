@@ -359,41 +359,61 @@ const ForConsumers = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
+                photo: "/reviews/for-consumers-reviews/img-01-happy-latino-man-at-new-home.jpeg",
                 text: "A year ago, my credit score was 512 and I felt stuck. Within 6 months, my score jumped over 250 points. Thanks to them, I was finally approved for my first car loan and just closed on my dream home.",
                 name: "Julian M.",
                 detail: "512 → 762+ in 6 months · Car loan · Dream home",
                 location: "Bakersfield, CA",
               },
               {
+                photo: "/reviews/for-consumers-reviews/img-02-man-celebrates-rising-credit-score-graph.jpeg",
                 text: "I tried 2 other companies and for over 2 years combined, all I got was empty promises and no results. I came across Mesa Group and in just a few months the results speak for themselves.",
                 name: "Alex M.",
                 detail: "Results in months after 2+ years at other companies",
                 location: "Bakersfield, CA",
               },
               {
+                photo: "/reviews/for-consumers-reviews/img-03-punjabi-woman-in-warm-golden-light.jpeg",
                 text: "Cannot rave enough about them! They turned my credit around when I thought there was no recovering from it. I'm beyond thankful for the opportunities that have opened up after this experience.",
                 name: "Loveleen S.",
                 detail: "Credit turned around when recovery seemed impossible",
                 location: "Bakersfield, CA",
               },
             ].map((t, i) => (
-              <div key={i} className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, j) => <Star key={j} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
+              <div key={i} className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                {/* Review photo */}
+                <div className="h-56 overflow-hidden">
+                  <img
+                    src={t.photo}
+                    alt=""
+                    aria-hidden
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
-                <p className="text-white italic leading-relaxed mb-6">"{t.text}"</p>
-                <div className="border-t border-gray-600 pt-4">
-                  <p className="font-semibold text-white">{t.name}</p>
-                  <p className="text-sm text-[#f9c65d] font-semibold mt-1">{t.detail}</p>
-                  <p className="text-xs text-gray-400">{t.location}</p>
+                {/* Quote + attribution */}
+                <div className="p-8 flex flex-col flex-1">
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, j) => <Star key={j} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
+                  </div>
+                  <p className="text-white italic leading-relaxed mb-6 flex-1">"{t.text}"</p>
+                  <div className="border-t border-gray-600 pt-4">
+                    <p className="font-semibold text-white">{t.name}</p>
+                    <p className="text-sm text-[#f9c65d] font-semibold mt-1">{t.detail}</p>
+                    <p className="text-xs text-gray-400">{t.location}</p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
 
-          <p className="text-center text-sm text-gray-500 mt-8 max-w-2xl mx-auto">
-            Important Disclosure: Results vary based on individual circumstances. Testimonials reflect individual client experiences and are not a guarantee of similar outcomes. All testimonials are from actual clients.
-          </p>
+          <div className="mt-8 text-center max-w-2xl mx-auto space-y-2">
+            <p className="text-sm text-gray-500">
+              Important Disclosure: Results vary based on individual circumstances. Testimonials reflect individual client experiences and are not a guarantee of similar outcomes. All testimonials are from actual clients.
+            </p>
+            <p className="text-xs text-gray-400">
+              Images may be AI-generated, stock photo, or other representations and do not depict actual clients.
+            </p>
+          </div>
         </div>
       </section>
 
