@@ -234,7 +234,7 @@ export default function LifeInsuranceV2() {
     { name: "Transamerica",             logo: "/partners/life-insurance-partners/transamerica_1989-2025-logo_brandlogos.net_grdfy.png" },
     { name: "United Home Life",         logo: "/partners/life-insurance-partners/United-Home-Life.png", zoom: true },
     { name: "American National",        logo: "/partners/life-insurance-partners/american-national-02.jpg" },
-    { name: "North American",           logo: "/partners/life-insurance-partners/north-american-life-insurance.png" },
+    { name: "North American",           logo: "/partners/life-insurance-partners/north-american-life-insurance.png", zoom: true },
     { name: "Nassau",                   logo: "/partners/life-insurance-partners/nassau-life-insurance.png" },
     { name: "Columbus Life Insurance",  logo: "/partners/life-insurance-partners/columbus-life-insurance.png" },
   ];
