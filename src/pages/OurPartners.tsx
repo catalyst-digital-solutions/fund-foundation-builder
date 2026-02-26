@@ -176,22 +176,31 @@ export default function OurPartners() {
             {premierChannels.map((channel) => (
               <div
                 key={channel.name}
-                className={`bg-gradient-to-br ${channel.bgColor} rounded-2xl border-2 ${channel.accentColor} shadow-md hover:shadow-xl transition-all p-8 flex flex-col`}
+                className={`bg-gradient-to-br ${channel.bgColor} rounded-2xl border-2 ${channel.accentColor} shadow-md hover:shadow-xl transition-all flex flex-col overflow-hidden`}
               >
-                {/* Channel logo */}
-                <div className="w-16 h-16 rounded-2xl bg-white shadow-sm border border-gray-100 flex items-center justify-center mb-5 p-2 overflow-hidden">
-                  <img src={channel.logo} alt={channel.name} className="w-full h-full object-contain" />
+                {/* Logo — full width, native aspect ratio, card gradient behind it.
+                    overflow-hidden on outer div clips corners; border-2 on outer div
+                    sits above the image on the z-axis naturally. */}
+                <div className={`bg-gradient-to-br ${channel.bgColor} px-8 pt-8 pb-4`}>
+                  <img
+                    src={channel.logo}
+                    alt={channel.name}
+                    className="w-full h-auto object-contain"
+                  />
                 </div>
 
-                <span className="text-xs font-bold tracking-wide uppercase text-gray-600 mb-2">
-                  {channel.tagline}
-                </span>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{channel.name}</h3>
-                <p className="text-gray-700 leading-relaxed flex-1">{channel.description}</p>
+                {/* Content */}
+                <div className="px-8 pb-8 flex flex-col flex-1">
+                  <span className="text-xs font-bold tracking-wide uppercase text-gray-600 mb-2">
+                    {channel.tagline}
+                  </span>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{channel.name}</h3>
+                  <p className="text-gray-700 leading-relaxed flex-1">{channel.description}</p>
 
-                <div className="mt-6 flex items-center gap-2 text-xs font-semibold text-gray-600">
-                  <BadgeCheck className="w-4 h-4 text-green-600" />
-                  Operated by Mesa Group Leadership
+                  <div className="mt-6 flex items-center gap-2 text-xs font-semibold text-gray-600">
+                    <BadgeCheck className="w-4 h-4 text-green-600" />
+                    Operated by Mesa Group Leadership
+                  </div>
                 </div>
               </div>
             ))}
