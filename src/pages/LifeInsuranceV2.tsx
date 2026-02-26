@@ -850,7 +850,7 @@ export default function LifeInsuranceV2() {
             {[...carriers, ...carriers].map((carrier, i) => (
               <div
                 key={`${carrier.name}-${i}`}
-                className="w-44 h-16 flex-shrink-0 bg-white rounded-xl shadow-sm border border-gray-100 p-3 overflow-hidden"
+                className="w-[264px] h-24 flex-shrink-0 bg-white rounded-xl shadow-sm border border-gray-100 p-4 overflow-hidden"
               >
                 <img
                   src={carrier.logo}
