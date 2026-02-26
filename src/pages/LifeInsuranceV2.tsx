@@ -212,14 +212,31 @@ export default function LifeInsuranceV2() {
   ];
 
   const carriers = [
-    "Aetna", "Aflac", "AIG", "American Amicable", "Americo", "Athene",
-    "Columbian Financial Group", "Ethos", "F&G Annuities and Life",
-    "Foresters Financial", "Global Atlantic", "Great Western Insurance",
-    "John Hancock", "Liberty Bankers", "Lincoln Financial Group",
-    "Mutual of Omaha", "National Life Group", "Prosperity Life Group",
-    "Royal Neighbors of America", "Transamerica", "United Home Life",
-    "American National", "North American", "Nassau",
-    "Columbus Life Insurance Company",
+    { name: "Aetna",                    logo: "/partners/life-insurance-partners/aetna-01.png" },
+    { name: "Aflac",                    logo: "/partners/life-insurance-partners/aflac-02.png" },
+    { name: "AIG",                      logo: "/partners/life-insurance-partners/AIG_logo.svg.png" },
+    { name: "American Amicable",        logo: "/partners/life-insurance-partners/american-amicable-01.webp" },
+    { name: "Americo",                  logo: "/partners/life-insurance-partners/americo.png" },
+    { name: "Athene",                   logo: "/partners/life-insurance-partners/Athene-Logo.webp" },
+    { name: "Columbian Financial Group",logo: "/partners/life-insurance-partners/columbian-financial-group.png" },
+    { name: "Ethos",                    logo: "/partners/life-insurance-partners/ethos-logo-green-background-white-font.webp" },
+    { name: "F&G Annuities and Life",   logo: "/partners/life-insurance-partners/F&G_Annuities_&_Life.png" },
+    { name: "Foresters Financial",      logo: "/partners/life-insurance-partners/Foresters_Financial_Logo.svg.png" },
+    { name: "Global Atlantic",          logo: "/partners/life-insurance-partners/global-atlantic-financial-group.png" },
+    { name: "Great Western Insurance",  logo: "/partners/life-insurance-partners/great-western-insurance-company-02.jpeg" },
+    { name: "John Hancock",             logo: "/partners/life-insurance-partners/john-hancock-02.png" },
+    { name: "Liberty Bankers",          logo: "/partners/life-insurance-partners/liberty-bankers-life-logo-02.png" },
+    { name: "Lincoln Financial Group",  logo: "/partners/life-insurance-partners/lincoln-financial-new-logo-02.png" },
+    { name: "Mutual of Omaha",          logo: "/partners/life-insurance-partners/Mutual-of-Omaha-logo-02.png" },
+    { name: "National Life Group",      logo: "/partners/life-insurance-partners/national-life-group-01.png" },
+    { name: "Prosperity Life Group",    logo: "/partners/life-insurance-partners/prosperity-life-group-02.png" },
+    { name: "Royal Neighbors of America", logo: "/partners/life-insurance-partners/Royal-Neighbors-of-America-logo-colored.jpeg" },
+    { name: "Transamerica",             logo: "/partners/life-insurance-partners/transamerica-logo.png" },
+    { name: "United Home Life",         logo: "/partners/life-insurance-partners/United-Home-Life.png" },
+    { name: "American National",        logo: "/partners/life-insurance-partners/american-national-02.jpg" },
+    { name: "North American",           logo: "/partners/life-insurance-partners/north-american-life-insurance.png" },
+    { name: "Nassau",                   logo: "/partners/life-insurance-partners/nassau-life-insurance.png" },
+    { name: "Columbus Life Insurance",  logo: "/partners/life-insurance-partners/columbus-life-insurance.png" },
   ];
 
   const faqs = [
@@ -814,26 +831,41 @@ export default function LifeInsuranceV2() {
       </section>
 
       {/* ─── CARRIERS ─── */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-amber-50 to-orange-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-16 md:py-20 bg-gradient-to-br from-amber-50 to-orange-50 overflow-hidden">
+        {/* Header — stays constrained */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             A network built for{" "}
             <span className="text-[#f9c65d]">your benefit</span>
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-10">
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             We partner with over 30 top-rated carriers so we are never limited to a single option. That independence is what allows us to always put your needs first.
           </p>
-          <div className="flex flex-wrap gap-3 justify-center">
-            {carriers.map((carrier) => (
-              <span
-                key={carrier}
-                className="bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-700 shadow-sm hover:border-[#f9c65d] transition-colors"
+        </div>
+
+        {/* Full-width logo ticker — hover to pause */}
+        <div className="marquee-container overflow-hidden py-2">
+          <div className="marquee-track flex gap-5 w-max">
+            {/* Duplicate set for seamless loop */}
+            {[...carriers, ...carriers].map((carrier, i) => (
+              <div
+                key={`${carrier.name}-${i}`}
+                className="w-44 h-16 flex-shrink-0 bg-white rounded-xl shadow-sm border border-gray-100 p-3 overflow-hidden"
               >
-                {carrier}
-              </span>
+                <img
+                  src={carrier.logo}
+                  alt={carrier.name}
+                  title={carrier.name}
+                  className="w-full h-full object-contain"
+                />
+              </div>
             ))}
           </div>
-          <p className="text-xs text-gray-500 mt-6">
+        </div>
+
+        {/* Disclaimer — stays constrained */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-8">
+          <p className="text-xs text-gray-500">
             All carriers are independent of Mesa Group Consulting. Coverage availability varies by state and is subject to carrier underwriting guidelines.
           </p>
         </div>
