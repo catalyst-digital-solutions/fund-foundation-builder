@@ -32,8 +32,8 @@ const Footer = () => {
           aria-hidden
           className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
         />
-        {/* Dark overlay for text legibility */}
-        <div className="absolute inset-0 bg-[#1a1a1a]/87 pointer-events-none" />
+        {/* Dark overlay for text legibility — inline style guarantees rgba works */}
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundColor: 'rgba(20, 20, 20, 0.82)' }} />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           {/* Desktop: 4 columns | Mobile: Stacked with collapsibles */}
