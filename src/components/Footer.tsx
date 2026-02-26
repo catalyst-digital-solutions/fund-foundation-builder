@@ -23,28 +23,37 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Off-White/Cream 4-Column Footer */}
-      <div className="bg-gradient-to-b from-amber-100 to-amber-50">
+      {/* 4-Column Footer — building photo background */}
+      <div className="relative overflow-hidden">
+        {/* Background: MGC office building */}
+        <img
+          src="/5001-california-ave-bakersfield-ca-building-photo-4-mesa-group-consulting-office-location.jpg"
+          alt=""
+          aria-hidden
+          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+        />
+        {/* Dark overlay for text legibility */}
+        <div className="absolute inset-0 bg-[#1a1a1a]/87 pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           {/* Desktop: 4 columns | Mobile: Stacked with collapsibles */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             
             {/* Column 1: About Mesa Group */}
             <div className="space-y-6">
               <div>
-                <img src="/mgc-mesa-group-consulting-black-svg-logo.svg.svg" alt="Mesa Group Consulting Logo" className="h-10 mb-4" />
-                <p className="text-[#3e3e3e] text-sm leading-relaxed">
+                <img src="/mgc-mesa-group-consulting-white-svg-logo.svg.svg" alt="Mesa Group Consulting Logo" className="h-10 mb-4" />
+                <p className="text-white/75 text-sm leading-relaxed">
                   Have a question about credit, funding, or your next financial move? We're here to help. Our trilingual team turns complex money problems into clear, actionable solutions.
                 </p>
               </div>
 
               {/* Language Support */}
               <div className="space-y-1">
-                <p className="text-[#3e3e3e] text-sm flex items-center gap-2">
+                <p className="text-white/80 text-sm flex items-center gap-2">
                   <span className="text-base">🇪🇸</span> Hablamos Español
                 </p>
-                <p className="text-[#3e3e3e] text-sm flex items-center gap-2">
+                <p className="text-white/80 text-sm flex items-center gap-2">
                   <span className="text-base">🇮🇳</span> Assi Punjabi Bolde Haan
                 </p>
               </div>
@@ -53,11 +62,11 @@ const Footer = () => {
               <div>
                 <h4 className="text-[#bb9446] font-semibold text-sm mb-2">CONTACT US</h4>
                 <div className="space-y-2">
-                  <a href="mailto:contact@mesagroupconsulting.com" className="flex items-center gap-2 text-[#3e3e3e] hover:text-[#bb9446] transition-colors text-sm">
+                  <a href="mailto:contact@mesagroupconsulting.com" className="flex items-center gap-2 text-white/80 hover:text-[#f9c65d] transition-colors text-sm">
                     <Mail className="w-4 h-4 flex-shrink-0" />
                     contact@mesagroupconsulting.com
                   </a>
-                  <a href="tel:+16613103040" className="flex items-center gap-2 text-[#3e3e3e] hover:text-[#bb9446] transition-colors text-sm">
+                  <a href="tel:+16613103040" className="flex items-center gap-2 text-white/80 hover:text-[#f9c65d] transition-colors text-sm">
                     <Phone className="w-4 h-4 flex-shrink-0" />
                     (661) 310-3040
                   </a>
@@ -71,7 +80,7 @@ const Footer = () => {
                   href="https://www.google.com/maps/dir//5001+California+Ave+%23+219,+Bakersfield,+CA+93309"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-2 text-[#3e3e3e] hover:text-[#bb9446] transition-colors text-sm"
+                  className="flex items-start gap-2 text-white/80 hover:text-[#f9c65d] transition-colors text-sm"
                 >
                   <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
                   <span>5001 California Ave Suite 219<br />Bakersfield, CA 93309</span>
@@ -81,7 +90,7 @@ const Footer = () => {
               {/* Hours */}
               <div>
                 <h4 className="text-[#bb9446] font-semibold text-sm mb-2">HOURS</h4>
-                <div className="space-y-1 text-[#3e3e3e] text-sm">
+                <div className="space-y-1 text-white/80 text-sm">
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 flex-shrink-0" />
                     M-F: 9am - 7pm
@@ -100,7 +109,7 @@ const Footer = () => {
 
             {/* Column 2: For Consumers */}
             <div className="space-y-4">
-              <h3 className="text-[#3e3e3e] font-bold text-lg">For Consumers</h3>
+              <h3 className="text-white font-bold text-lg">For Consumers</h3>
               
               {/* Credit Services */}
               <div className="md:block">
@@ -111,12 +120,12 @@ const Footer = () => {
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <ul className="space-y-2 text-sm mb-4">
-                      <li><Link to="/build-credit" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Build Your Credit</Link></li>
-                      <li><Link to="/credit-monitoring" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Credit Monitoring</Link></li>
-                      <li><Link to="/credit-repair" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Credit Restoration</Link></li>
-                      <li><Link to="/diy-credit-repair" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">DIY Credit Repair</Link></li>
+                      <li><Link to="/build-credit" className="text-white/80 hover:text-[#f9c65d] transition-colors">Build Your Credit</Link></li>
+                      <li><Link to="/credit-monitoring" className="text-white/80 hover:text-[#f9c65d] transition-colors">Credit Monitoring</Link></li>
+                      <li><Link to="/credit-repair" className="text-white/80 hover:text-[#f9c65d] transition-colors">Credit Restoration</Link></li>
+                      <li><Link to="/diy-credit-repair" className="text-white/80 hover:text-[#f9c65d] transition-colors">DIY Credit Repair</Link></li>
                       <li>
-                        <a href="https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors inline-flex items-center gap-1">
+                        <a href="https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-[#f9c65d] transition-colors inline-flex items-center gap-1">
                           Get Credit Report <ExternalLink className="w-3 h-3" />
                         </a>
                       </li>
@@ -126,12 +135,12 @@ const Footer = () => {
                 <div className="hidden md:block">
                   <h4 className="text-[#bb9446] font-semibold text-sm mb-2">CREDIT SERVICES</h4>
                   <ul className="space-y-2 text-sm mb-4">
-                    <li><Link to="/build-credit" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Build Your Credit</Link></li>
-                    <li><Link to="/credit-monitoring" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Credit Monitoring</Link></li>
-                    <li><Link to="/credit-repair" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Credit Restoration</Link></li>
-                    <li><Link to="/diy-credit-repair" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">DIY Credit Repair</Link></li>
+                    <li><Link to="/build-credit" className="text-white/80 hover:text-[#f9c65d] transition-colors">Build Your Credit</Link></li>
+                    <li><Link to="/credit-monitoring" className="text-white/80 hover:text-[#f9c65d] transition-colors">Credit Monitoring</Link></li>
+                    <li><Link to="/credit-repair" className="text-white/80 hover:text-[#f9c65d] transition-colors">Credit Restoration</Link></li>
+                    <li><Link to="/diy-credit-repair" className="text-white/80 hover:text-[#f9c65d] transition-colors">DIY Credit Repair</Link></li>
                     <li>
-                      <a href="https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors inline-flex items-center gap-1">
+                      <a href="https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-[#f9c65d] transition-colors inline-flex items-center gap-1">
                         Get Credit Report <ExternalLink className="w-3 h-3" />
                       </a>
                     </li>
@@ -148,22 +157,22 @@ const Footer = () => {
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <ul className="space-y-2 text-sm mb-4">
-                      <li><Link to="/personal-loans" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Personal Loans</Link></li>
-                      <li><Link to="/credit-cards" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Credit Cards</Link></li>
-                      <li><Link to="/auto-loan-refi" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Auto Loan Refinancing</Link></li>
-                      <li><Link to="/student-loan-refi" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Student Loan Refinancing</Link></li>
-                      <li><Link to="/debt-consolidation-loan" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Debt Consolidation</Link></li>
+                      <li><Link to="/personal-loans" className="text-white/80 hover:text-[#f9c65d] transition-colors">Personal Loans</Link></li>
+                      <li><Link to="/credit-cards" className="text-white/80 hover:text-[#f9c65d] transition-colors">Credit Cards</Link></li>
+                      <li><Link to="/auto-loan-refi" className="text-white/80 hover:text-[#f9c65d] transition-colors">Auto Loan Refinancing</Link></li>
+                      <li><Link to="/student-loan-refi" className="text-white/80 hover:text-[#f9c65d] transition-colors">Student Loan Refinancing</Link></li>
+                      <li><Link to="/debt-consolidation-loan" className="text-white/80 hover:text-[#f9c65d] transition-colors">Debt Consolidation</Link></li>
                     </ul>
                   </CollapsibleContent>
                 </Collapsible>
                 <div className="hidden md:block">
                   <h4 className="text-[#bb9446] font-semibold text-sm mb-2">LENDING SOLUTIONS</h4>
                   <ul className="space-y-2 text-sm mb-4">
-                    <li><Link to="/personal-loans" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Personal Loans</Link></li>
-                    <li><Link to="/credit-cards" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Credit Cards</Link></li>
-                    <li><Link to="/auto-loan-refi" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Auto Loan Refinancing</Link></li>
-                    <li><Link to="/student-loan-refi" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Student Loan Refinancing</Link></li>
-                    <li><Link to="/debt-consolidation-loan" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Debt Consolidation</Link></li>
+                    <li><Link to="/personal-loans" className="text-white/80 hover:text-[#f9c65d] transition-colors">Personal Loans</Link></li>
+                    <li><Link to="/credit-cards" className="text-white/80 hover:text-[#f9c65d] transition-colors">Credit Cards</Link></li>
+                    <li><Link to="/auto-loan-refi" className="text-white/80 hover:text-[#f9c65d] transition-colors">Auto Loan Refinancing</Link></li>
+                    <li><Link to="/student-loan-refi" className="text-white/80 hover:text-[#f9c65d] transition-colors">Student Loan Refinancing</Link></li>
+                    <li><Link to="/debt-consolidation-loan" className="text-white/80 hover:text-[#f9c65d] transition-colors">Debt Consolidation</Link></li>
                   </ul>
                 </div>
               </div>
@@ -177,18 +186,18 @@ const Footer = () => {
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <ul className="space-y-2 text-sm">
-                      <li><Link to="/debt-relief" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Debt Relief</Link></li>
-                      <li><Link to="/trust-and-will-plan" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Trust & Will Planning</Link></li>
-                      <li><Link to="/life-insurance" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Life Insurance</Link></li>
+                      <li><Link to="/debt-relief" className="text-white/80 hover:text-[#f9c65d] transition-colors">Debt Relief</Link></li>
+                      <li><Link to="/trust-and-will-plan" className="text-white/80 hover:text-[#f9c65d] transition-colors">Trust & Will Planning</Link></li>
+                      <li><Link to="/life-insurance" className="text-white/80 hover:text-[#f9c65d] transition-colors">Life Insurance</Link></li>
                     </ul>
                   </CollapsibleContent>
                 </Collapsible>
                 <div className="hidden md:block">
                   <h4 className="text-[#bb9446] font-semibold text-sm mb-2">PROTECTION</h4>
                   <ul className="space-y-2 text-sm">
-                    <li><Link to="/debt-relief" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Debt Relief</Link></li>
-                    <li><Link to="/trust-and-will-plan" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Trust & Will Planning</Link></li>
-                    <li><Link to="/life-insurance" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Life Insurance</Link></li>
+                    <li><Link to="/debt-relief" className="text-white/80 hover:text-[#f9c65d] transition-colors">Debt Relief</Link></li>
+                    <li><Link to="/trust-and-will-plan" className="text-white/80 hover:text-[#f9c65d] transition-colors">Trust & Will Planning</Link></li>
+                    <li><Link to="/life-insurance" className="text-white/80 hover:text-[#f9c65d] transition-colors">Life Insurance</Link></li>
                   </ul>
                 </div>
               </div>
@@ -196,7 +205,7 @@ const Footer = () => {
 
             {/* Column 3: For Businesses */}
             <div className="space-y-4">
-              <h3 className="text-[#3e3e3e] font-bold text-lg">For Businesses</h3>
+              <h3 className="text-white font-bold text-lg">For Businesses</h3>
               
               {/* Business Services */}
               <div className="md:block">
@@ -207,12 +216,12 @@ const Footer = () => {
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <ul className="space-y-2 text-sm mb-4">
-                      <li><Link to="/zero-interest-business-funding" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">0% Interest Business Funding</Link></li>
-                      <li><Link to="/business-funding" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Funding</Link></li>
-                      <li><Link to="/business-credit-builder" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Credit Builder</Link></li>
-                      <li><Link to="/business-debt-relief" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Debt Relief</Link></li>
+                      <li><Link to="/zero-interest-business-funding" className="text-white/80 hover:text-[#f9c65d] transition-colors">0% Interest Business Funding</Link></li>
+                      <li><Link to="/business-funding" className="text-white/80 hover:text-[#f9c65d] transition-colors">Business Funding</Link></li>
+                      <li><Link to="/business-credit-builder" className="text-white/80 hover:text-[#f9c65d] transition-colors">Business Credit Builder</Link></li>
+                      <li><Link to="/business-debt-relief" className="text-white/80 hover:text-[#f9c65d] transition-colors">Business Debt Relief</Link></li>
                       <li>
-                        <a href="https://www.tailorbrands.com/llc-cpa-aff?transaction_id=102bd1f29c1558d91db36f9aa7b89e&state=&utm_source=Tune&utm_medium=Tune&utm_campaign=9347" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors inline-flex items-center gap-1">
+                        <a href="https://www.tailorbrands.com/llc-cpa-aff?transaction_id=102bd1f29c1558d91db36f9aa7b89e&state=&utm_source=Tune&utm_medium=Tune&utm_campaign=9347" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-[#f9c65d] transition-colors inline-flex items-center gap-1">
                           Form An LLC <ExternalLink className="w-3 h-3" />
                         </a>
                       </li>
@@ -222,12 +231,12 @@ const Footer = () => {
                 <div className="hidden md:block">
                   <h4 className="text-[#bb9446] font-semibold text-sm mb-2">BUSINESS SERVICES</h4>
                   <ul className="space-y-2 text-sm mb-4">
-                    <li><Link to="/zero-interest-business-funding" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">0% Interest Business Funding</Link></li>
-                    <li><Link to="/business-funding" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Funding</Link></li>
-                    <li><Link to="/business-credit-builder" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Credit Builder</Link></li>
-                    <li><Link to="/business-debt-relief" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Business Debt Relief</Link></li>
+                    <li><Link to="/zero-interest-business-funding" className="text-white/80 hover:text-[#f9c65d] transition-colors">0% Interest Business Funding</Link></li>
+                    <li><Link to="/business-funding" className="text-white/80 hover:text-[#f9c65d] transition-colors">Business Funding</Link></li>
+                    <li><Link to="/business-credit-builder" className="text-white/80 hover:text-[#f9c65d] transition-colors">Business Credit Builder</Link></li>
+                    <li><Link to="/business-debt-relief" className="text-white/80 hover:text-[#f9c65d] transition-colors">Business Debt Relief</Link></li>
                     <li>
-                      <a href="https://www.tailorbrands.com/llc-cpa-aff?transaction_id=102bd1f29c1558d91db36f9aa7b89e&state=&utm_source=Tune&utm_medium=Tune&utm_campaign=9347" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors inline-flex items-center gap-1">
+                      <a href="https://www.tailorbrands.com/llc-cpa-aff?transaction_id=102bd1f29c1558d91db36f9aa7b89e&state=&utm_source=Tune&utm_medium=Tune&utm_campaign=9347" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-[#f9c65d] transition-colors inline-flex items-center gap-1">
                         Form An LLC <ExternalLink className="w-3 h-3" />
                       </a>
                     </li>
@@ -245,16 +254,16 @@ const Footer = () => {
                   <CollapsibleContent>
                     <ul className="space-y-2 text-sm">
                       <li>
-                        <a href="https://portal.mesagroupconsulting.com/Portal/login.jsp" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors inline-flex items-center gap-1">
+                        <a href="https://portal.mesagroupconsulting.com/Portal/login.jsp" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-[#f9c65d] transition-colors inline-flex items-center gap-1">
                           Client Portal <ExternalLink className="w-3 h-3" />
                         </a>
                       </li>
-                      <li><Link to="/resources/articles" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Blog & Guides</Link></li>
-                      <li><Link to="/resources/calculators" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Financial Calculator</Link></li>
+                      <li><Link to="/resources/articles" className="text-white/80 hover:text-[#f9c65d] transition-colors">Blog & Guides</Link></li>
+                      <li><Link to="/resources/calculators" className="text-white/80 hover:text-[#f9c65d] transition-colors">Financial Calculator</Link></li>
                       <li>
-                        <a href="https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Free Consultation</a>
+                        <a href="https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-[#f9c65d] transition-colors">Free Consultation</a>
                       </li>
-                      <li><a href="#" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">FAQ</a></li>
+                      <li><a href="#" className="text-white/80 hover:text-[#f9c65d] transition-colors">FAQ</a></li>
                     </ul>
                   </CollapsibleContent>
                 </Collapsible>
@@ -262,16 +271,16 @@ const Footer = () => {
                   <h4 className="text-[#bb9446] font-semibold text-sm mb-2">RESOURCES</h4>
                   <ul className="space-y-2 text-sm">
                     <li>
-                      <a href="https://portal.mesagroupconsulting.com/Portal/login.jsp" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors inline-flex items-center gap-1">
+                      <a href="https://portal.mesagroupconsulting.com/Portal/login.jsp" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-[#f9c65d] transition-colors inline-flex items-center gap-1">
                         Client Portal <ExternalLink className="w-3 h-3" />
                       </a>
                     </li>
-                    <li><Link to="/resources/articles" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Blog & Guides</Link></li>
-                    <li><Link to="/resources/calculators" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Financial Calculator</Link></li>
+                    <li><Link to="/resources/articles" className="text-white/80 hover:text-[#f9c65d] transition-colors">Blog & Guides</Link></li>
+                    <li><Link to="/resources/calculators" className="text-white/80 hover:text-[#f9c65d] transition-colors">Financial Calculator</Link></li>
                     <li>
-                      <a href="https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar" target="_blank" rel="noopener noreferrer" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">Free Consultation</a>
+                      <a href="https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-[#f9c65d] transition-colors">Free Consultation</a>
                     </li>
-                    <li><a href="#" className="text-[#3e3e3e] hover:text-[#bb9446] transition-colors">FAQ</a></li>
+                    <li><a href="#" className="text-white/80 hover:text-[#f9c65d] transition-colors">FAQ</a></li>
                   </ul>
                 </div>
               </div>
@@ -279,15 +288,15 @@ const Footer = () => {
 
             {/* Column 4: Connect With Us */}
             <div className="space-y-6">
-              <h3 className="text-[#3e3e3e] font-bold text-lg">Connect With Us</h3>
+              <h3 className="text-white font-bold text-lg">Connect With Us</h3>
               
               {/* Newsletter Signup */}
               <div>
                 <h4 className="text-[#bb9446] font-semibold text-sm mb-2">STAY UPDATED</h4>
-                <p className="text-[#3e3e3e] text-sm mb-3">Subscribe to our financial tips newsletter</p>
+                <p className="text-white/75 text-sm mb-3">Subscribe to our financial tips newsletter</p>
                 <button
                   onClick={() => setIsNewsletterOpen(true)}
-                  className="w-full bg-[#3e3e3e] hover:bg-[#2c2c2c] text-white px-4 py-3 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-2"
+                  className="w-full bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 px-4 py-3 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-2"
                 >
                   Subscribe Now <ArrowRight className="w-4 h-4" />
                 </button>
@@ -325,19 +334,19 @@ const Footer = () => {
               {/* Trust Indicators */}
               <div>
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-[#3e3e3e] text-sm">
+                  <div className="flex items-center gap-2 text-white/80 text-sm">
                     <Star className="w-4 h-4 text-[#f9c65d] fill-[#f9c65d]" />
                     <span>5.0 Google Rating</span>
                   </div>
-                  <div className="flex items-center gap-2 text-[#3e3e3e] text-sm">
+                  <div className="flex items-center gap-2 text-white/80 text-sm">
                     <DollarSign className="w-4 h-4 text-[#bb9446]" />
                     <span>$50M+ Collections Deleted</span>
                   </div>
-                  <div className="flex items-center gap-2 text-[#3e3e3e] text-sm">
+                  <div className="flex items-center gap-2 text-white/80 text-sm">
                     <Building2 className="w-4 h-4 text-[#bb9446]" />
                     <span>Business Funding Facilitated</span>
                   </div>
-                  <div className="flex items-center gap-2 text-[#3e3e3e] text-sm">
+                  <div className="flex items-center gap-2 text-white/80 text-sm">
                     <Users className="w-4 h-4 text-[#bb9446]" />
                     <span>2,500+ Lives Changed</span>
                   </div>
@@ -346,11 +355,11 @@ const Footer = () => {
 
               {/* Catalyst Digital Solutions Attribution */}
               <div className="pt-4">
-                <p className="text-[#3e3e3e] text-sm mb-1">A</p>
+                <p className="text-white/60 text-sm mb-1">A</p>
                 <a href="https://www.catalyst-digital.solutions" target="_blank" rel="noopener noreferrer" className="block">
                   <img src="/Catalyst Digital Solutions Logos and Headers - Purple - Rev D.svg" alt="Catalyst Digital Solutions" className="w-[160px] h-[56px] object-contain" />
                 </a>
-                <p className="text-[#3e3e3e] text-sm mt-1">Website</p>
+                <p className="text-white/60 text-sm mt-1">Website</p>
               </div>
             </div>
           </div>
