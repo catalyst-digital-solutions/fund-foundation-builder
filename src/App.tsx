@@ -47,6 +47,7 @@ import AffiliateDisclosure from "./pages/AffiliateDisclosure";
 import AccessibilityStatement from "./pages/AccessibilityStatement";
 import Concierge from "./pages/Concierge";
 import CreditilyDIY from "./pages/CreditilyDIY";
+import LifeInsuranceV2 from "./pages/LifeInsuranceV2";
 
 const queryClient = new QueryClient();
 
@@ -84,6 +85,7 @@ const App = () => (
           <Route path="/debt-relief" element={<DebtRelief />} />
           <Route path="/trust-and-will-plan" element={<TrustAndWillPlan />} />
           <Route path="/life-insurance" element={<LifeInsurance />} />
+          <Route path="/life-insurance-v2" element={<LifeInsuranceV2 />} />
           <Route path="/zero-interest-business-funding" element={<ZeroInterestBusinessFunding />} />
           <Route path="/business-funding" element={<BusinessFunding />} />
           <Route path="/business-debt-relief" element={<BusinessDebtRelief />} />
