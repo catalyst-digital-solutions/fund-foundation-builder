@@ -220,7 +220,7 @@ export default function LifeInsuranceV2() {
     { name: "Athene",                   logo: "/partners/life-insurance-partners/Athene-Logo.webp" },
     { name: "Columbian Financial Group",logo: "/partners/life-insurance-partners/columbian-financial-group.png" },
     { name: "Ethos",                    logo: "/partners/life-insurance-partners/ethos-logo-green-background-white-font.webp" },
-    { name: "F&G Annuities and Life",   logo: "/partners/life-insurance-partners/F&G_Annuities_&_Life.png" },
+    { name: "F&G Annuities and Life",   logo: "/partners/life-insurance-partners/F&G_Annuities_&_Life.png", zoom: 1.2 },
     { name: "Foresters Financial",      logo: "/partners/life-insurance-partners/Foresters_Financial_Logo.svg.png" },
     { name: "Global Atlantic",          logo: "/partners/life-insurance-partners/global-atlantic-financial-group.png" },
     { name: "Great Western Insurance",  logo: "/partners/life-insurance-partners/great-western-insurance-company-02.jpeg" },
@@ -856,7 +856,10 @@ export default function LifeInsuranceV2() {
                   src={carrier.logo}
                   alt={carrier.name}
                   title={carrier.name}
-                  className={`w-full h-full object-contain${'zoom' in carrier && carrier.zoom ? ' scale-[1.4]' : ''}`}
+                  className="w-full h-full object-contain"
+                  style={'zoom' in carrier && carrier.zoom
+                    ? { transform: `scale(${carrier.zoom === true ? 1.4 : carrier.zoom})` }
+                    : undefined}
                 />
               </div>
             ))}
