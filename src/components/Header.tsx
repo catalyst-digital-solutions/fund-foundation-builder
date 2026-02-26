@@ -174,6 +174,7 @@ const Header = () => {
         { label: 'Articles & Insights', href: '/resources/articles' },
         { label: 'Mesa News', href: '/resources/news' },
         { label: 'Financial Calculator', href: '/resources/calculators' },
+        { label: 'Letter Templates', href: '/resources/templates' },
       ],
     },
     { label: 'Contact', href: '/contact' },

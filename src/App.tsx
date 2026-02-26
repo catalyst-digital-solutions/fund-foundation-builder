@@ -49,6 +49,7 @@ import Concierge from "./pages/Concierge";
 import CreditilyDIY from "./pages/CreditilyDIY";
 import LifeInsuranceV2 from "./pages/LifeInsuranceV2";
 import PartnerWithUs from "./pages/PartnerWithUs";
+import OurPartners from "./pages/OurPartners";
 
 const queryClient = new QueryClient();
 
@@ -88,6 +89,7 @@ const App = () => (
           <Route path="/life-insurance" element={<LifeInsurance />} />
           <Route path="/life-insurance-v2" element={<LifeInsuranceV2 />} />
           <Route path="/partner-with-us" element={<PartnerWithUs />} />
+          <Route path="/our-partners" element={<OurPartners />} />
           <Route path="/zero-interest-business-funding" element={<ZeroInterestBusinessFunding />} />
           <Route path="/business-funding" element={<BusinessFunding />} />
           <Route path="/business-debt-relief" element={<BusinessDebtRelief />} />
