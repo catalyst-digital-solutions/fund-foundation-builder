@@ -751,7 +751,7 @@ export default function LifeInsuranceV2() {
       <section className="py-16 md:py-24 bg-[#3e3e3e]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-            There are only{" "}
+            There are{" "}
             <span className="text-[#f9c65d]">two ways this pays off</span>
           </h2>
           <p className="text-lg text-gray-300 mb-10">With our Return of Premium term life option:</p>
