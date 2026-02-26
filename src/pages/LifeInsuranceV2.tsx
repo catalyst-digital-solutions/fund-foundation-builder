@@ -213,7 +213,7 @@ export default function LifeInsuranceV2() {
 
   const carriers = [
     { name: "Aetna",                    logo: "/partners/life-insurance-partners/aetna-01.png" },
-    { name: "Aflac",                    logo: "/partners/life-insurance-partners/aflac-02.png" },
+    { name: "Aflac",                    logo: "/partners/life-insurance-partners/aflac.png" },
     { name: "AIG",                      logo: "/partners/life-insurance-partners/AIG_logo.svg.png" },
     { name: "American Amicable",        logo: "/partners/life-insurance-partners/american-amicable-01.webp" },
     { name: "Americo",                  logo: "/partners/life-insurance-partners/americo.png" },
@@ -226,7 +226,7 @@ export default function LifeInsuranceV2() {
     { name: "Great Western Insurance",  logo: "/partners/life-insurance-partners/great-western-insurance-company-02.jpeg" },
     { name: "John Hancock",             logo: "/partners/life-insurance-partners/john-hancock-02.png" },
     { name: "Liberty Bankers",          logo: "/partners/life-insurance-partners/liberty-bankers-life-logo-02.png" },
-    { name: "Lincoln Financial Group",  logo: "/partners/life-insurance-partners/lincoln-financial-new-logo-02.png" },
+    { name: "Lincoln Financial Group",  logo: "/partners/life-insurance-partners/lincoln-financial-new-logo.jpg" },
     { name: "Mutual of Omaha",          logo: "/partners/life-insurance-partners/Mutual-of-Omaha-logo-02.png" },
     { name: "National Life Group",      logo: "/partners/life-insurance-partners/national-life-group-01.png" },
     { name: "Prosperity Life Group",    logo: "/partners/life-insurance-partners/prosperity-life-group-02.png" },
