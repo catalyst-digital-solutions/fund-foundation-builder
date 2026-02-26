@@ -230,9 +230,9 @@ export default function LifeInsuranceV2() {
     { name: "Mutual of Omaha",          logo: "/partners/life-insurance-partners/Mutual-of-Omaha-logo-02.png" },
     { name: "National Life Group",      logo: "/partners/life-insurance-partners/national-life-group-01.png" },
     { name: "Prosperity Life Group",    logo: "/partners/life-insurance-partners/prosperity-life-group-02.png" },
-    { name: "Royal Neighbors of America", logo: "/partners/life-insurance-partners/Royal-Neighbors-of-America-logo-colored.jpeg" },
-    { name: "Transamerica",             logo: "/partners/life-insurance-partners/transamerica-logo.png" },
-    { name: "United Home Life",         logo: "/partners/life-insurance-partners/United-Home-Life.png" },
+    { name: "Royal Neighbors of America", logo: "/partners/life-insurance-partners/royal-neighbors-of-america-01.jpeg" },
+    { name: "Transamerica",             logo: "/partners/life-insurance-partners/transamerica_1989-2025-logo_brandlogos.net_grdfy.png" },
+    { name: "United Home Life",         logo: "/partners/life-insurance-partners/United-Home-Life.png", zoom: true },
     { name: "American National",        logo: "/partners/life-insurance-partners/american-national-02.jpg" },
     { name: "North American",           logo: "/partners/life-insurance-partners/north-american-life-insurance.png" },
     { name: "Nassau",                   logo: "/partners/life-insurance-partners/nassau-life-insurance.png" },
@@ -856,7 +856,7 @@ export default function LifeInsuranceV2() {
                   src={carrier.logo}
                   alt={carrier.name}
                   title={carrier.name}
-                  className="w-full h-full object-contain"
+                  className={`w-full h-full object-contain${'zoom' in carrier && carrier.zoom ? ' scale-[1.4]' : ''}`}
                 />
               </div>
             ))}
