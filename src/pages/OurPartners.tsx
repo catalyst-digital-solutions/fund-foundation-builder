@@ -129,7 +129,7 @@ export default function OurPartners() {
       </section>
 
       {/* ─── THE MESA PHILOSOPHY ─── */}
-      <section className="py-16 md:py-24 bg-gray-900">
+      <section className="py-16 md:py-24 bg-[#3e3e3e]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8">
             We Built This Around{" "}
@@ -282,7 +282,7 @@ export default function OurPartners() {
             </div>
 
             {/* Novae */}
-            <div className="bg-gray-900 rounded-2xl border-2 border-gray-700 shadow-xl hover:shadow-2xl transition-shadow p-8 flex flex-col">
+            <div className="bg-[#3e3e3e] rounded-2xl border-2 border-gray-700 shadow-xl hover:shadow-2xl transition-shadow p-8 flex flex-col">
               <div className="h-14 flex items-center mb-6">
                 <div className="bg-[#f9c65d] text-gray-900 font-bold text-xl px-5 py-2 rounded-lg inline-flex items-center gap-2">
                   <Award className="w-5 h-5" />
@@ -480,7 +480,7 @@ export default function OurPartners() {
       </section>
 
       {/* ─── CLOSING TRUST STATEMENT ─── */}
-      <section className="py-16 md:py-24 bg-gray-900">
+      <section className="py-16 md:py-24 bg-[#3e3e3e]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8">
             Every Name on This Page{" "}
@@ -529,7 +529,7 @@ export default function OurPartners() {
       <Footer />
 
       {/* ─── COMPLIANCE FOOTER ─── */}
-      <div className="bg-gray-950 py-8 px-4">
+      <div className="bg-[#3e3e3e] py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm text-gray-400 leading-relaxed">
             Mesa Group Consulting's premier channels are operated under the Mesa Group Consulting leadership team and adhere to the same compliance standards and service model. All financial solutions and programs are subject to eligibility requirements and individual circumstances. Co-brand partners are independent professionals. Mesa Group Consulting is responsible for all credit restoration services delivered through co-brand partner pages. Individual results may vary. All credit restoration services comply with the Credit Repair Organizations Act (CROA).

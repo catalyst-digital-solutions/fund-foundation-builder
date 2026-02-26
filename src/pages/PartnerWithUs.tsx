@@ -271,7 +271,7 @@ export default function PartnerWithUs() {
             </div>
 
             {/* Card 2 — Co-Brand Partner (dark / premium) */}
-            <div className="bg-gray-900 rounded-2xl border-2 border-gray-700 shadow-xl hover:shadow-2xl transition-shadow p-8 flex flex-col relative overflow-hidden">
+            <div className="bg-[#3e3e3e] rounded-2xl border-2 border-gray-700 shadow-xl hover:shadow-2xl transition-shadow p-8 flex flex-col relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-[#f9c65d] text-gray-900 text-xs font-bold px-4 py-1 rounded-bl-xl">
                 Most Popular
               </div>
@@ -515,7 +515,7 @@ export default function PartnerWithUs() {
       </section>
 
       {/* ─── TRUST & INTEGRITY ─── */}
-      <section className="py-16 md:py-24 bg-gray-900">
+      <section className="py-16 md:py-24 bg-[#3e3e3e]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8">
             We Do This the{" "}
@@ -633,7 +633,7 @@ export default function PartnerWithUs() {
           {/* Form 9B — Co-Brand Partner */}
           <div id="cobrand-partner" className="mb-16 scroll-mt-20">
             <div className="bg-white rounded-2xl shadow-md border border-gray-800 overflow-hidden">
-              <div className="bg-gray-900 px-8 py-5 flex items-center gap-3">
+              <div className="bg-[#3e3e3e] px-8 py-5 flex items-center gap-3">
                 <Award className="w-7 h-7 text-[#f9c65d]" />
                 <div>
                   <h3 className="text-xl font-bold text-white">Mesa Co-Brand Partnership</h3>
@@ -709,14 +709,14 @@ export default function PartnerWithUs() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6 flex-wrap">
             <a
               href="#referral-partner"
-              className="inline-flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-lg shadow-xl transition-colors text-base"
+              className="inline-flex items-center justify-center gap-2 bg-[#3e3e3e] hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-lg shadow-xl transition-colors text-base"
             >
               Join as a Referral Partner — Free
               <ArrowRight className="w-5 h-5 flex-shrink-0" />
             </a>
             <a
               href="#cobrand-partner"
-              className="inline-flex items-center justify-center gap-2 border-2 border-gray-900 hover:bg-gray-900 hover:text-white text-gray-900 font-semibold px-8 py-4 rounded-lg transition-colors bg-white text-base"
+              className="inline-flex items-center justify-center gap-2 border-2 border-gray-900 hover:bg-[#3e3e3e] hover:text-white text-gray-900 font-semibold px-8 py-4 rounded-lg transition-colors bg-white text-base"
             >
               Apply for Co-Brand Partnership
             </a>
@@ -748,7 +748,7 @@ export default function PartnerWithUs() {
       <Footer />
 
       {/* ─── COMPLIANCE FOOTER ─── */}
-      <div className="bg-gray-900 py-8 px-4">
+      <div className="bg-[#3e3e3e] py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm text-gray-400 leading-relaxed">
             Mesa Referral Partner commissions are subject to a 30-day activity period. Co-Brand Partnerships are subject to program terms reviewed during onboarding. Partnership structures for licensed professionals are designed to comply with applicable compensation restrictions. Mesa Group Consulting is a licensed independent insurance agency. Agent compensation structures are subject to individual agreements reviewed during onboarding. Individual results for referred clients may vary.

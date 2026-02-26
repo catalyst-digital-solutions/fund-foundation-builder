@@ -548,7 +548,7 @@ export default function LifeInsuranceV2() {
       </section>
 
       {/* ─── PICTURE YOUR FAMILY'S FUTURE ─── */}
-      <section className="py-16 md:py-24 bg-gray-900">
+      <section className="py-16 md:py-24 bg-[#3e3e3e]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8">
             Picture what changes when your family is{" "}
@@ -721,7 +721,7 @@ export default function LifeInsuranceV2() {
       </section>
 
       {/* ─── EITHER WAY YOU WIN ─── */}
-      <section className="py-16 md:py-24 bg-gray-900">
+      <section className="py-16 md:py-24 bg-[#3e3e3e]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
             There are only{" "}
@@ -955,7 +955,7 @@ export default function LifeInsuranceV2() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#consultation"
-              className="inline-flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-lg shadow-xl transition-colors text-lg"
+              className="inline-flex items-center justify-center gap-2 bg-[#3e3e3e] hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-lg shadow-xl transition-colors text-lg"
             >
               Book Your Free Consultation
               <ArrowRight className="w-5 h-5 flex-shrink-0" />
@@ -978,7 +978,7 @@ export default function LifeInsuranceV2() {
       <Footer />
 
       {/* ─── INSURANCE COMPLIANCE FOOTER ─── */}
-      <div className="bg-gray-900 py-8 px-4">
+      <div className="bg-[#3e3e3e] py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm text-gray-400 leading-relaxed">
             Mesa Group Consulting is a licensed independent insurance agency. Coverage is subject to underwriting approval by the issuing carrier. Rates vary based on age, health, and coverage selected. Not all products are available in all states. We also offer health insurance coverage. Ask us about your options during your free consultation or call (661) 310-3040.

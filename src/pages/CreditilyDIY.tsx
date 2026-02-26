@@ -356,7 +356,7 @@ export default function CreditilyDIY() {
 
             {/* Mesa360 Card */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 flex flex-col">
-              <div className="bg-gray-900 text-white font-bold text-sm px-4 py-1.5 rounded-full inline-block mb-6 self-start">
+              <div className="bg-[#3e3e3e] text-white font-bold text-sm px-4 py-1.5 rounded-full inline-block mb-6 self-start">
                 Full-Service
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">
@@ -379,7 +379,7 @@ export default function CreditilyDIY() {
               {/* /mesa360 → corrected to /credit-repair (actual route) */}
               <a
                 href="/credit-repair"
-                className="mt-8 inline-flex items-center justify-center gap-2 border-2 border-gray-900 text-gray-900 font-semibold px-6 py-3.5 rounded-xl hover:bg-gray-900 hover:text-white transition-colors"
+                className="mt-8 inline-flex items-center justify-center gap-2 border-2 border-gray-900 text-gray-900 font-semibold px-6 py-3.5 rounded-xl hover:bg-[#3e3e3e] hover:text-white transition-colors"
               >
                 Explore Mesa360 Credit Restoration
                 <ArrowRight className="w-4 h-4 flex-shrink-0" />
