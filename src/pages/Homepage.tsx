@@ -23,6 +23,7 @@ import {
   Home,
   Heart,
   ChevronDown,
+  ChevronUp,
   ChevronRight,
   Star,
   TrendingUp,
@@ -535,6 +536,9 @@ const ServicesTabSystem = () => {
 
 const Homepage = () => {
   const [faqOpen, setFaqOpen] = useState<number | null>(null);
+  const [cardsExpanded, setCardsExpanded] = useState([false, false, false]);
+  const toggleCard = (i: number) =>
+    setCardsExpanded(prev => prev.map((v, idx) => (idx === i ? !v : v)));
 
   return (
     <div className="min-h-screen bg-white">
@@ -1230,116 +1234,77 @@ const Homepage = () => {
 
           <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
             
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 lg:p-10">
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 lg:p-10 flex flex-col">
               <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
                 <Heart className="w-8 h-8 text-white" />
               </div>
-              
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 We've Actually Been There
               </h3>
-              
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  Most financial companies are run by people who've never struggled with bad credit. Never been denied. Never felt the shame of financial rejection.
-                </p>
-                
-                <p className="font-semibold">
-                  Not us.
-                </p>
-                
-                <p>
-                  Our founder had a 490 credit score. Failed business. Nearly empty bank account. He watched his immigrant parents almost lose their home and everything they built when they risked coming to this country. He knows what it feels like to be stuck.
-                </p>
-                
-                <p>
-                  That's why Mesa Group operates different. We're not here to judge you. We're here to guide you, because we've walked the exact path you're on right now.
-                </p>
-                
-                <p className="font-bold text-gray-900">
-                  You're not talking to salespeople. You're talking to people who understand.
-                </p>
+              <div className={`relative overflow-hidden transition-all duration-300 flex-1 ${cardsExpanded[0] ? 'max-h-[1000px]' : 'max-h-40'}`}>
+                <div className="space-y-4 text-gray-700 leading-relaxed">
+                  <p>Most financial companies are run by people who've never struggled with bad credit. Never been denied. Never felt the shame of financial rejection.</p>
+                  <p className="font-semibold">Not us.</p>
+                  <p>Our founder had a 490 credit score. Failed business. Nearly empty bank account. He watched his immigrant parents almost lose their home and everything they built when they risked coming to this country. He knows what it feels like to be stuck.</p>
+                  <p>That's why Mesa Group operates different. We're not here to judge you. We're here to guide you, because we've walked the exact path you're on right now.</p>
+                  <p className="font-bold text-gray-900">You're not talking to salespeople. You're talking to people who understand.</p>
+                </div>
+                {!cardsExpanded[0] && <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-cyan-50 to-transparent" />}
               </div>
+              <button onClick={() => toggleCard(0)} className="mt-4 flex items-center gap-1 text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors self-start">
+                {cardsExpanded[0] ? 'Less' : 'More'}
+                {cardsExpanded[0] ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+              </button>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 lg:p-10">
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 lg:p-10 flex flex-col">
               <div className="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-white" />
               </div>
-              
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 We Built the Shortcuts You Need
               </h3>
-              
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  You know what separates people who succeed from people who stay stuck? <span className="font-semibold">Information.</span>
-                </p>
-                
-                <p>
-                  The wealthy have financial advisors, estate planners, CPAs, credit specialists, funding networks. They have access.
-                </p>
-                
-                <p className="font-bold text-gray-900">
-                  Mesa Group gives you that same access.
-                </p>
-                
-                <p>
-                  We spent years building relationships with SmartCredit, SuperMoney, Novae, and more. We negotiated partnerships so you get enterprise-level tools without enterprise-level prices.
-                </p>
-                
-                <p className="font-bold text-[#f9c65d]">
-                  The shortcuts the wealthy use? Now they're yours too.
-                </p>
+              <div className={`relative overflow-hidden transition-all duration-300 flex-1 ${cardsExpanded[1] ? 'max-h-[1000px]' : 'max-h-40'}`}>
+                <div className="space-y-4 text-gray-700 leading-relaxed">
+                  <p>You know what separates people who succeed from people who stay stuck? <span className="font-semibold">Information.</span></p>
+                  <p>The wealthy have financial advisors, estate planners, CPAs, credit specialists, funding networks. They have access.</p>
+                  <p className="font-bold text-gray-900">Mesa Group gives you that same access.</p>
+                  <p>We spent years building relationships with SmartCredit, SuperMoney, Novae, and more. We negotiated partnerships so you get enterprise-level tools without enterprise-level prices.</p>
+                  <p className="font-bold text-[#f9c65d]">The shortcuts the wealthy use? Now they're yours too.</p>
+                </div>
+                {!cardsExpanded[1] && <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-pink-50 to-transparent" />}
               </div>
+              <button onClick={() => toggleCard(1)} className="mt-4 flex items-center gap-1 text-sm font-semibold text-purple-600 hover:text-purple-700 transition-colors self-start">
+                {cardsExpanded[1] ? 'Less' : 'More'}
+                {cardsExpanded[1] ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+              </button>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 lg:p-10">
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 lg:p-10 flex flex-col">
               <div className="w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center mb-6">
                 <Award className="w-8 h-8 text-white" />
               </div>
-              
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Your Success is Our Success
               </h3>
-              
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  Here's the difference between Mesa Group and everyone else:
-                </p>
-                
-                <p>
-                  <span className="font-semibold">Other companies:</span> Get paid whether you succeed or not. They take your money upfront, deliver mediocre results, and move on.
-                </p>
-                
-                <p>
-                  <span className="font-semibold text-green-600">Mesa Group:</span> We only win when you win. Our reputation is built on your transformation. Your referrals. Your success stories.
-                </p>
-                
-                <p>
-                  Here's what that looks like:
-                </p>
-
-                <p>
-                  A teacher came to us confused about buying a home. Didn't know if his credit was good enough. Didn't know where to start. Didn't know if he could even afford it.
-                </p>
-
-                <p>
-                  We walked him through everything. Showed him what he needed to fix. Built him a roadmap. Six months later, he's a homeowner. And he's sent his sister, his coworker, and two friends from church our way.
-                </p>
-
-                <p>
-                  That's how we've built this. Not by maximizing every transaction. But by genuinely helping people first.
-                </p>
-                
-                <p>
-                  We've maintained a perfect 5-star rating across 150+ Google reviews. Families trust us with their financial futures. And while other companies have come and gone, we're still here, still growing.
-                </p>
-                
-                <p className="font-bold text-green-600">
-                  When you actually help people, they don't forget it. And that trust? We protect it with everything we have.
-                </p>
+              <div className={`relative overflow-hidden transition-all duration-300 flex-1 ${cardsExpanded[2] ? 'max-h-[1000px]' : 'max-h-40'}`}>
+                <div className="space-y-4 text-gray-700 leading-relaxed">
+                  <p>Here's the difference between Mesa Group and everyone else:</p>
+                  <p><span className="font-semibold">Other companies:</span> Get paid whether you succeed or not. They take your money upfront, deliver mediocre results, and move on.</p>
+                  <p><span className="font-semibold text-green-600">Mesa Group:</span> We only win when you win. Our reputation is built on your transformation. Your referrals. Your success stories.</p>
+                  <p>Here's what that looks like:</p>
+                  <p>A teacher came to us confused about buying a home. Didn't know if his credit was good enough. Didn't know where to start. Didn't know if he could even afford it.</p>
+                  <p>We walked him through everything. Showed him what he needed to fix. Built him a roadmap. Six months later, he's a homeowner. And he's sent his sister, his coworker, and two friends from church our way.</p>
+                  <p>That's how we've built this. Not by maximizing every transaction. But by genuinely helping people first.</p>
+                  <p>We've maintained a perfect 5-star rating across 150+ Google reviews. Families trust us with their financial futures. And while other companies have come and gone, we're still here, still growing.</p>
+                  <p className="font-bold text-green-600">When you actually help people, they don't forget it. And that trust? We protect it with everything we have.</p>
+                </div>
+                {!cardsExpanded[2] && <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-emerald-50 to-transparent" />}
               </div>
+              <button onClick={() => toggleCard(2)} className="mt-4 flex items-center gap-1 text-sm font-semibold text-green-600 hover:text-green-700 transition-colors self-start">
+                {cardsExpanded[2] ? 'Less' : 'More'}
+                {cardsExpanded[2] ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+              </button>
             </div>
 
           </div>
