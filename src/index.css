@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth anchor-link scrolling — required for #referral-partner, #cobrand-partner, #agent-team CTAs */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Life Insurance carrier logo ticker */
+@keyframes marqueeTicker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marqueeTicker 60s linear infinite;
+}
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */

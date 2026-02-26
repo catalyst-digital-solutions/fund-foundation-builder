@@ -29,7 +29,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import ContactFormSection from "@/components/ContactFormSection";
-import wolfieIcon from "@/assets/creditily-wolf-logo.svg";
 import diyHeroImage from "@/assets/diy-credit-repair-hero.webp";
 
 // ─────────────────────────────────────────────
@@ -144,7 +143,7 @@ export default function CreditilyDIY() {
             <div className="space-y-6">
               {/* Eyebrow */}
               <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-200">
-                <Shield className="w-4 h-4 text-[#f9c65d]" />
+                <img src="/partners/diy-credit-repair-creditily-logo.png" alt="Creditily" className="h-5 object-contain" />
                 <span className="text-sm font-medium text-[#f9c65d]">
                   Backed by Mesa Group Consulting
                 </span>
@@ -356,7 +355,7 @@ export default function CreditilyDIY() {
 
             {/* Mesa360 Card */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 flex flex-col">
-              <div className="bg-gray-900 text-white font-bold text-sm px-4 py-1.5 rounded-full inline-block mb-6 self-start">
+              <div className="bg-[#3e3e3e] text-white font-bold text-sm px-4 py-1.5 rounded-full inline-block mb-6 self-start">
                 Full-Service
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">
@@ -379,7 +378,7 @@ export default function CreditilyDIY() {
               {/* /mesa360 → corrected to /credit-repair (actual route) */}
               <a
                 href="/credit-repair"
-                className="mt-8 inline-flex items-center justify-center gap-2 border-2 border-gray-900 text-gray-900 font-semibold px-6 py-3.5 rounded-xl hover:bg-gray-900 hover:text-white transition-colors"
+                className="mt-8 inline-flex items-center justify-center gap-2 border-2 border-gray-900 text-gray-900 font-semibold px-6 py-3.5 rounded-xl hover:bg-[#3e3e3e] hover:text-white transition-colors"
               >
                 Explore Mesa360 Credit Restoration
                 <ArrowRight className="w-4 h-4 flex-shrink-0" />
@@ -635,7 +634,9 @@ export default function CreditilyDIY() {
           <div className="max-w-lg mx-auto">
             <div className="bg-white rounded-2xl shadow-2xl border-2 border-amber-400 p-8 md:p-10">
               <div className="text-center mb-8">
-                <p className="text-sm font-bold text-[#f9c65d] uppercase tracking-widest mb-2">CREDITILY</p>
+                <div className="flex justify-center mb-3">
+                  <img src="/partners/diy-credit-repair-creditily-logo.png" alt="Creditily" className="h-8 object-contain" />
+                </div>
                 <p className="text-xs text-gray-500 mb-4">Powered by Mesa Group</p>
                 <div className="flex items-end justify-center gap-1">
                   <span className="text-5xl font-bold text-gray-900">$39.99</span>
