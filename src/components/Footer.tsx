@@ -60,7 +60,7 @@ const Footer = () => {
 
               {/* Contact */}
               <div>
-                <h4 className="text-[#bb9446] font-semibold text-sm mb-2">CONTACT US</h4>
+                <h4 className="text-[#f9c65d] font-semibold text-sm mb-2">CONTACT US</h4>
                 <div className="space-y-2">
                   <a href="mailto:contact@mesagroupconsulting.com" className="flex items-center gap-2 text-white/80 hover:text-[#f9c65d] transition-colors text-sm">
                     <Mail className="w-4 h-4 flex-shrink-0" />
@@ -75,7 +75,7 @@ const Footer = () => {
 
               {/* Address */}
               <div>
-                <h4 className="text-[#bb9446] font-semibold text-sm mb-2">ADDRESS</h4>
+                <h4 className="text-[#f9c65d] font-semibold text-sm mb-2">ADDRESS</h4>
                 <a 
                   href="https://www.google.com/maps/dir//5001+California+Ave+%23+219,+Bakersfield,+CA+93309"
                   target="_blank"
@@ -89,7 +89,7 @@ const Footer = () => {
 
               {/* Hours */}
               <div>
-                <h4 className="text-[#bb9446] font-semibold text-sm mb-2">HOURS</h4>
+                <h4 className="text-[#f9c65d] font-semibold text-sm mb-2">HOURS</h4>
                 <div className="space-y-1 text-white/80 text-sm">
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 flex-shrink-0" />
@@ -115,7 +115,7 @@ const Footer = () => {
               <div className="md:block">
                 <Collapsible open={isCreditServicesOpen} onOpenChange={setIsCreditServicesOpen} className="md:hidden">
                   <CollapsibleTrigger className="flex items-center justify-between w-full text-left group mb-2">
-                    <h4 className="text-[#bb9446] font-semibold text-sm">CREDIT SERVICES</h4>
+                    <h4 className="text-[#f9c65d] font-semibold text-sm">CREDIT SERVICES</h4>
                     <ChevronDown className={`w-4 h-4 text-[#bb9446] transition-transform duration-200 md:hidden ${isCreditServicesOpen ? 'rotate-180' : ''}`} />
                   </CollapsibleTrigger>
                   <CollapsibleContent>
@@ -133,7 +133,7 @@ const Footer = () => {
                   </CollapsibleContent>
                 </Collapsible>
                 <div className="hidden md:block">
-                  <h4 className="text-[#bb9446] font-semibold text-sm mb-2">CREDIT SERVICES</h4>
+                  <h4 className="text-[#f9c65d] font-semibold text-sm mb-2">CREDIT SERVICES</h4>
                   <ul className="space-y-2 text-sm mb-4">
                     <li><Link to="/build-credit" className="text-white/80 hover:text-[#f9c65d] transition-colors">Build Your Credit</Link></li>
                     <li><Link to="/credit-monitoring" className="text-white/80 hover:text-[#f9c65d] transition-colors">Credit Monitoring</Link></li>
@@ -152,7 +152,7 @@ const Footer = () => {
               <div className="md:block">
                 <Collapsible open={isLendingOpen} onOpenChange={setIsLendingOpen} className="md:hidden">
                   <CollapsibleTrigger className="flex items-center justify-between w-full text-left group mb-2">
-                    <h4 className="text-[#bb9446] font-semibold text-sm">LENDING SOLUTIONS</h4>
+                    <h4 className="text-[#f9c65d] font-semibold text-sm">LENDING SOLUTIONS</h4>
                     <ChevronDown className={`w-4 h-4 text-[#bb9446] transition-transform duration-200 md:hidden ${isLendingOpen ? 'rotate-180' : ''}`} />
                   </CollapsibleTrigger>
                   <CollapsibleContent>
@@ -166,7 +166,7 @@ const Footer = () => {
                   </CollapsibleContent>
                 </Collapsible>
                 <div className="hidden md:block">
-                  <h4 className="text-[#bb9446] font-semibold text-sm mb-2">LENDING SOLUTIONS</h4>
+                  <h4 className="text-[#f9c65d] font-semibold text-sm mb-2">LENDING SOLUTIONS</h4>
                   <ul className="space-y-2 text-sm mb-4">
                     <li><Link to="/personal-loans" className="text-white/80 hover:text-[#f9c65d] transition-colors">Personal Loans</Link></li>
                     <li><Link to="/credit-cards" className="text-white/80 hover:text-[#f9c65d] transition-colors">Credit Cards</Link></li>
@@ -181,7 +181,7 @@ const Footer = () => {
               <div className="md:block">
                 <Collapsible open={isProtectionOpen} onOpenChange={setIsProtectionOpen} className="md:hidden">
                   <CollapsibleTrigger className="flex items-center justify-between w-full text-left group mb-2">
-                    <h4 className="text-[#bb9446] font-semibold text-sm">PROTECTION</h4>
+                    <h4 className="text-[#f9c65d] font-semibold text-sm">PROTECTION</h4>
                     <ChevronDown className={`w-4 h-4 text-[#bb9446] transition-transform duration-200 md:hidden ${isProtectionOpen ? 'rotate-180' : ''}`} />
                   </CollapsibleTrigger>
                   <CollapsibleContent>
@@ -193,7 +193,7 @@ const Footer = () => {
                   </CollapsibleContent>
                 </Collapsible>
                 <div className="hidden md:block">
-                  <h4 className="text-[#bb9446] font-semibold text-sm mb-2">PROTECTION</h4>
+                  <h4 className="text-[#f9c65d] font-semibold text-sm mb-2">PROTECTION</h4>
                   <ul className="space-y-2 text-sm">
                     <li><Link to="/debt-relief" className="text-white/80 hover:text-[#f9c65d] transition-colors">Debt Relief</Link></li>
                     <li><Link to="/trust-and-will-plan" className="text-white/80 hover:text-[#f9c65d] transition-colors">Trust & Will Planning</Link></li>
@@ -211,7 +211,7 @@ const Footer = () => {
               <div className="md:block">
                 <Collapsible open={isBusinessServicesOpen} onOpenChange={setIsBusinessServicesOpen} className="md:hidden">
                   <CollapsibleTrigger className="flex items-center justify-between w-full text-left group mb-2">
-                    <h4 className="text-[#bb9446] font-semibold text-sm">BUSINESS SERVICES</h4>
+                    <h4 className="text-[#f9c65d] font-semibold text-sm">BUSINESS SERVICES</h4>
                     <ChevronDown className={`w-4 h-4 text-[#bb9446] transition-transform duration-200 md:hidden ${isBusinessServicesOpen ? 'rotate-180' : ''}`} />
                   </CollapsibleTrigger>
                   <CollapsibleContent>
@@ -229,7 +229,7 @@ const Footer = () => {
                   </CollapsibleContent>
                 </Collapsible>
                 <div className="hidden md:block">
-                  <h4 className="text-[#bb9446] font-semibold text-sm mb-2">BUSINESS SERVICES</h4>
+                  <h4 className="text-[#f9c65d] font-semibold text-sm mb-2">BUSINESS SERVICES</h4>
                   <ul className="space-y-2 text-sm mb-4">
                     <li><Link to="/zero-interest-business-funding" className="text-white/80 hover:text-[#f9c65d] transition-colors">0% Interest Business Funding</Link></li>
                     <li><Link to="/business-funding" className="text-white/80 hover:text-[#f9c65d] transition-colors">Business Funding</Link></li>
@@ -248,7 +248,7 @@ const Footer = () => {
               <div className="md:block">
                 <Collapsible open={isResourcesOpen} onOpenChange={setIsResourcesOpen} className="md:hidden">
                   <CollapsibleTrigger className="flex items-center justify-between w-full text-left group mb-2">
-                    <h4 className="text-[#bb9446] font-semibold text-sm">RESOURCES</h4>
+                    <h4 className="text-[#f9c65d] font-semibold text-sm">RESOURCES</h4>
                     <ChevronDown className={`w-4 h-4 text-[#bb9446] transition-transform duration-200 md:hidden ${isResourcesOpen ? 'rotate-180' : ''}`} />
                   </CollapsibleTrigger>
                   <CollapsibleContent>
@@ -268,7 +268,7 @@ const Footer = () => {
                   </CollapsibleContent>
                 </Collapsible>
                 <div className="hidden md:block">
-                  <h4 className="text-[#bb9446] font-semibold text-sm mb-2">RESOURCES</h4>
+                  <h4 className="text-[#f9c65d] font-semibold text-sm mb-2">RESOURCES</h4>
                   <ul className="space-y-2 text-sm">
                     <li>
                       <a href="https://portal.mesagroupconsulting.com/Portal/login.jsp" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-[#f9c65d] transition-colors inline-flex items-center gap-1">
@@ -292,7 +292,7 @@ const Footer = () => {
               
               {/* Newsletter Signup */}
               <div>
-                <h4 className="text-[#bb9446] font-semibold text-sm mb-2">STAY UPDATED</h4>
+                <h4 className="text-[#f9c65d] font-semibold text-sm mb-2">STAY UPDATED</h4>
                 <p className="text-white/75 text-sm mb-3">Subscribe to our financial tips newsletter</p>
                 <button
                   onClick={() => setIsNewsletterOpen(true)}
@@ -304,7 +304,7 @@ const Footer = () => {
 
               {/* Social Media */}
               <div>
-                <h4 className="text-[#bb9446] font-semibold text-sm mb-3">MESA GROUP CONSULTING</h4>
+                <h4 className="text-[#f9c65d] font-semibold text-sm mb-3">MESA GROUP CONSULTING</h4>
                 <div className="flex flex-wrap gap-2">
                   <a href="https://www.facebook.com/mesagroupco" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-[#3e3e3e] flex items-center justify-center hover:bg-[#bb9446] transition-colors">
                     <Facebook className="w-4 h-4 text-white" fill="currentColor" />
@@ -357,7 +357,7 @@ const Footer = () => {
               <div className="pt-4">
                 <p className="text-white/60 text-sm mb-1">A</p>
                 <a href="https://www.catalyst-digital.solutions" target="_blank" rel="noopener noreferrer" className="block">
-                  <img src="/Catalyst Digital Solutions Logos and Headers - Purple - Rev D.svg" alt="Catalyst Digital Solutions" className="w-[160px] h-[56px] object-contain" />
+                  <img src="/white-catalyst-digital-solutions-logo.svg" alt="Catalyst Digital Solutions" className="w-[160px] h-[56px] object-contain" />
                 </a>
                 <p className="text-white/60 text-sm mt-1">Website</p>
               </div>
