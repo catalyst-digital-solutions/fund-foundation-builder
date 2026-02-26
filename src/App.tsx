@@ -50,6 +50,7 @@ import CreditilyDIY from "./pages/CreditilyDIY";
 import LifeInsuranceV2 from "./pages/LifeInsuranceV2";
 import PartnerWithUs from "./pages/PartnerWithUs";
 import OurPartners from "./pages/OurPartners";
+import CreditRestorationV3 from "./pages/CreditRestorationV3";
 
 const queryClient = new QueryClient();
 
@@ -77,6 +78,7 @@ const App = () => (
           <Route path="/business-credit" element={<Index />} />
           <Route path="/credit-monitoring" element={<CreditMonitoring />} />
           <Route path="/credit-repair" element={<CreditRepair />} />
+          <Route path="/credit-restoration-v3" element={<CreditRestorationV3 />} />
           <Route path="/diy-credit-repair" element={<DIYCreditRepair />} />
           <Route path="/creditily" element={<CreditilyDIY />} />
           <Route path="/credit-cards" element={<CreditCards />} />
