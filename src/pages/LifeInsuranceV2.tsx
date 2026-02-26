@@ -301,23 +301,33 @@ export default function LifeInsuranceV2() {
       />
       <Header />
 
-      {/* ─── TRUST BAR ─── */}
-      <div className="bg-[#f9c65d] py-2 px-4">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-center text-sm font-semibold text-gray-900">
-          <span className="flex items-center gap-1">
-            <CheckCircle className="w-4 h-4" />
-            Licensed Independent Insurance Agents
-          </span>
-          <span className="hidden sm:inline text-gray-700">·</span>
-          <span>30+ Top-Rated Carriers</span>
-          <span className="hidden sm:inline text-gray-700">·</span>
-          <span>2,500+ Families Served</span>
-          <span className="hidden sm:inline text-gray-700">·</span>
-          <span>English · Español · Punjabi</span>
-          <span className="hidden sm:inline text-gray-700">·</span>
-          <span className="text-gray-800 font-bold">
-            We Also Offer Health Insurance — Ask Us About Coverage Options
-          </span>
+      {/* ─── TRUST BAR — scrolling ticker ─── */}
+      <div className="bg-[#f9c65d] overflow-hidden marquee-container py-3">
+        <div
+          className="marquee-track flex items-center w-max"
+          style={{ animationDuration: '40s' }}
+        >
+          {[0, 1].map((set) => (
+            <span
+              key={set}
+              className="inline-flex items-center whitespace-nowrap text-[18px] md:text-[22px] font-semibold text-gray-900 flex-shrink-0"
+            >
+              <span className="inline-flex items-center gap-2 px-8">
+                <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                Licensed Independent Insurance Agents
+              </span>
+              <span className="px-4 text-gray-700 font-bold">·</span>
+              <span className="px-8">30+ Top-Rated Carriers</span>
+              <span className="px-4 text-gray-700 font-bold">·</span>
+              <span className="px-8">2,500+ Families Served</span>
+              <span className="px-4 text-gray-700 font-bold">·</span>
+              <span className="px-8">English · Español · Punjabi</span>
+              <span className="px-4 text-gray-700 font-bold">·</span>
+              <span className="px-8 font-bold">
+                We Also Offer Health Insurance — Ask Us About Coverage Options
+              </span>
+            </span>
+          ))}
         </div>
       </div>
 
