@@ -288,7 +288,7 @@ function HowItWorks() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Getting 0% Capital Is Easier Than You Think
+            Getting 0% Capital Is <span className="text-[#f9c65d]">Easier Than You Think</span>
           </h2>
           <p className="text-xl text-muted-foreground">Follow our proven 4-step process to access the funding you already qualify for.</p>
         </div>
@@ -403,7 +403,7 @@ function ComparisonSection() {
     <section className="py-20 px-6 bg-background">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-10 text-center">
-          0% Business Funding vs Traditional Financing
+          <span className="text-[#f9c65d]">0% Business Funding</span> vs Traditional Financing
         </h2>
         <div className="overflow-x-auto rounded-2xl shadow-lg border border-gray-200">
           <table className="w-full">
@@ -478,7 +478,7 @@ function IndustryUseCases() {
     <section className="py-20 px-6 bg-gradient-to-br from-light to-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">How Business Owners Use 0% Funding</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">How Business Owners Use <span className="text-[#f9c65d]">0% Funding</span></h2>
           <p className="text-xl text-muted-foreground">Real strategies from real businesses across different industries.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -517,7 +517,7 @@ function TestimonialsSection() {
     <section className="py-20 px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Real Business Owners, Real Results</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Real Business Owners, <span className="text-[#f9c65d]">Real Results</span></h2>
           <p className="text-xl text-muted-foreground">Here's what happens when you use a proven strategy instead of random applications.</p>
         </div>
         {/* 4 portrait (9:16) videos in a row — same layout as Instagram Reels / TikTok */}
@@ -570,7 +570,7 @@ function StrategyGapSection() {
     <section className="py-20 px-6 bg-gradient-to-br from-amber-50 to-background">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
-          Why Most Business Owners Get $15K When They Qualify for $150K
+          Why Most Business Owners Get $15K When They <span className="text-[#f9c65d]">Qualify for $150K</span>
         </h2>
         <p className="text-xl text-muted-foreground text-center mb-8 max-w-3xl mx-auto">
           It's not your credit score. It's not your business. It's the strategy you don't know exists.
@@ -891,7 +891,7 @@ function QualificationSection() {
     <section className="py-20 px-6 bg-background">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Do You Qualify for 0% Business Funding?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Do You Qualify for <span className="text-[#f9c65d]">0% Business Funding?</span></h2>
           <p className="text-xl text-muted-foreground">Most business owners qualify if they meet these basic requirements.</p>
         </div>
         <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8 border-2 border-amber-200 shadow-lg mb-8">
