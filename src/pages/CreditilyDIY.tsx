@@ -407,7 +407,7 @@ export default function CreditilyDIY() {
               A Process Built Around You
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Your Credit Restoration Journey.{" "}
+              Your Credit Restoration Journey.<br className="hidden md:block" />
               <span className="text-[#f9c65d]">Step by Step.</span>
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
