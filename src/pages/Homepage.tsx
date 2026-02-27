@@ -1462,80 +1462,65 @@ const Homepage = () => {
           {/* Real Google Reviews */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            {/* Julian Morales, 512→762+, car loan, dream home */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
+            {[
+              {
+                photo: "/reviews/for-consumers-reviews/img-01-happy-latino-man-at-new-home.jpeg",
+                text: "A year ago, my credit score was 512 and I felt stuck. This company guided me step-by-step from disputing errors and building positive credit to teaching me smart habits. Within 6 months, my score jumped over 250 points. Thanks to them, I was finally approved for my first car loan and just closed on my dream home.",
+                name: "Julian M.",
+                detail: "512 → 762+ in 6 months · First car loan · Dream home",
+                location: "Bakersfield, CA",
+              },
+              {
+                photo: "/reviews/homepage-reviews/mya-g-joyful-black-woman-at-first-home.png",
+                text: "I had previously worked with several other individuals and saw no improvement. Evert from Mesa Group has been working on my credit from day one, and he knows exactly what actions to take to achieve results. I was able to buy my first home as of 4/7/25!",
+                name: "Mya G.",
+                detail: "Bought first home after 2 failed credit companies",
+                location: "Bakersfield, CA",
+              },
+              {
+                photo: "/reviews/homepage-reviews/harwinder-s-confident-punjabi-man-at-home-desk.png",
+                text: "From the beginning, their team has been professional, respectful, and responsive to every question we've had. What stands out most is their dedication to truly helping their clients. They don't just offer a service. They offer guidance, support, and a clear path forward.",
+                name: "Harwinder S.",
+                detail: "Professional · Transparent · Dedicated",
+                location: "Bakersfield, CA",
+              },
+              {
+                photo: "/reviews/homepage-reviews/andrew-n-hispanic-man-leaning-on-table-portrait.png",
+                text: "Within just a few months, they removed several negative items including collections and late payments. They didn't just fix credit. They educated me so I can keep it healthy. Thanks to them, I was approved for a car loan with a great interest rate and I'm on track to buy my first home.",
+                name: "Andrew N.",
+                detail: "Collections removed · Car loan approved · First home in sight",
+                location: "Bakersfield, CA",
+              },
+              {
+                photo: "/reviews/for-consumers-reviews/img-02-man-celebrates-rising-credit-score-graph.jpeg",
+                text: "I tried 2 other companies and for over 2 years combined, all I got was empty promises and no results. I came across Mesa Group Consulting and in just a few months the results speak for themselves. Evert's attention to detail, transparency, and dedication have left me speechless.",
+                name: "Alex M.",
+                detail: "Results in months after 2+ years at other companies",
+                location: "Bakersfield, CA",
+              },
+            ].map((t, i) => (
+              <div key={i} className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <div className="h-56 overflow-hidden">
+                  <img
+                    src={t.photo}
+                    alt=""
+                    aria-hidden
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="p-8 flex flex-col flex-1">
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, j) => <Star key={j} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
+                  </div>
+                  <p className="text-white italic leading-relaxed mb-6 flex-1">"{t.text}"</p>
+                  <div className="border-t border-gray-600 pt-4">
+                    <p className="font-semibold text-white">{t.name}</p>
+                    <p className="text-sm text-[#f9c65d] font-semibold mt-1">{t.detail}</p>
+                    <p className="text-xs text-gray-400">{t.location}</p>
+                  </div>
+                </div>
               </div>
-              <p className="text-white leading-relaxed mb-6 italic">
-                "A year ago, my credit score was 512 and I felt stuck. This company guided me step-by-step from disputing errors and building positive credit to teaching me smart habits. Within 6 months, my score jumped over 250 points. Thanks to them, I was finally approved for my first car loan and just closed on my dream home."
-              </p>
-              <div className="border-t border-gray-600 pt-4">
-                <p className="font-semibold text-white">Julian M.</p>
-                <p className="text-sm text-amber-400 font-semibold mt-1">512 → 762+ in 6 months · First car loan · Dream home</p>
-                <p className="text-xs text-gray-400">Bakersfield, CA</p>
-              </div>
-            </div>
-
-            {/* MyaG, bought first home after 2 failed companies */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
-              </div>
-              <p className="text-white leading-relaxed mb-6 italic">
-                "I had previously worked with several other individuals and saw no improvement. Evert from Mesa Group has been working on my credit from day one, and he knows exactly what actions to take to achieve results. I was able to buy my first home as of 4/7/25!"
-              </p>
-              <div className="border-t border-gray-600 pt-4">
-                <p className="font-semibold text-white">Mya G.</p>
-                <p className="text-sm text-amber-400 font-semibold mt-1">Bought first home after 2 failed companies</p>
-                <p className="text-xs text-gray-400">Bakersfield, CA</p>
-              </div>
-            </div>
-
-            {/* Harwinder Singh, "guidance, support, and a clear path forward" */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
-              </div>
-              <p className="text-white leading-relaxed mb-6 italic">
-                "From the beginning, their team has been professional, respectful, and responsive to every question we've had. What stands out most is their dedication to truly helping their clients. They don't just offer a service. They offer guidance, support, and a clear path forward."
-              </p>
-              <div className="border-t border-gray-600 pt-4">
-                <p className="font-semibold text-white">Harwinder S.</p>
-                <p className="text-sm text-amber-400 font-semibold mt-1">Professional · Transparent · Dedicated</p>
-                <p className="text-xs text-gray-400">Bakersfield, CA</p>
-              </div>
-            </div>
-
-            {/* nava andrew, negatives removed, car loan, on track for home */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
-              </div>
-              <p className="text-white leading-relaxed mb-6 italic">
-                "Within just a few months, they removed several negative items including collections and late payments. They didn't just fix credit. They educated me so I can keep it healthy. Thanks to them, I was approved for a car loan with a great interest rate and I'm on track to buy my first home."
-              </p>
-              <div className="border-t border-gray-600 pt-4">
-                <p className="font-semibold text-white">Andrew N.</p>
-                <p className="text-sm text-amber-400 font-semibold mt-1">Collections removed · Car loan approved · First home in sight</p>
-                <p className="text-xs text-gray-400">Bakersfield, CA</p>
-              </div>
-            </div>
-
-            {/* Alex Medrano, 2 failed companies → results in months */}
-            <div className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />)}
-              </div>
-              <p className="text-white leading-relaxed mb-6 italic">
-                "I tried 2 other companies and for over 2 years combined, all I got was empty promises and no results. I came across Mesa Group Consulting and in just a few months the results speak for themselves. Evert's attention to detail, transparency, and dedication have left me speechless."
-              </p>
-              <div className="border-t border-gray-600 pt-4">
-                <p className="font-semibold text-white">Alex M.</p>
-                <p className="text-sm text-amber-400 font-semibold mt-1">Results in months after 2+ years at other companies</p>
-                <p className="text-xs text-gray-400">Bakersfield, CA</p>
-              </div>
-            </div>
+            ))}
 
             {/* Google Reviews CTA Card */}
             <div className="bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow flex flex-col justify-center items-center text-center text-white">
