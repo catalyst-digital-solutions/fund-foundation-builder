@@ -124,7 +124,7 @@ const FlipCard = ({ step }: { step: any }) => {
               <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                 What Happens
               </h4>
-              <p className="text-xl text-gray-800 leading-relaxed max-w-2xl whitespace-pre-line">
+              <p className="text-xl text-gray-800 leading-relaxed max-w-3xl whitespace-pre-line">
                 {step.whatHappens}
               </p>
             </div>
