@@ -105,7 +105,7 @@ const ForConsumers = () => {
               </a>
             </div>
 
-            <p className="text-sm text-gray-500">Hablamos Español · Assi Punjabi Bolde Haan</p>
+            <p className="text-sm text-gray-500">🇪🇸 Hablamos Español · 🇮🇳 Assi Punjabi Bolde Haan</p>
           </div>
         </div>
       </section>
@@ -301,7 +301,7 @@ const ForConsumers = () => {
               Or call us: (661) 310-3040
             </a>
           </div>
-          <p className="text-sm text-gray-500 mt-6">Hablamos Español · Assi Punjabi Bolde Haan</p>
+          <p className="text-sm text-gray-500 mt-6">🇪🇸 Hablamos Español · 🇮🇳 Assi Punjabi Bolde Haan</p>
         </div>
       </section>
 

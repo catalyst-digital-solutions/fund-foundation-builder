@@ -129,7 +129,7 @@ function HeroSection() {
             Or schedule a consultation: (661) 310-3040
           </a>
         </div>
-        <p className="mt-3 text-sm text-gray-500">Hablamos Español &nbsp;|&nbsp; Assi Punjabi Bolde Haan</p>
+        <p className="mt-3 text-sm text-gray-500">🇪🇸 Hablamos Español &nbsp;|&nbsp; 🇮🇳 Assi Punjabi Bolde Haan</p>
       </div>
     </section>
   );
@@ -542,7 +542,7 @@ function HowToStart() {
           <PoweredBySmartCredit className="mt-3" />
           <p className="text-sm text-gray-600 mt-2">Or schedule a consultation: <a href="tel:6613103040" className="text-[#bb9446] font-semibold hover:underline">(661) 310-3040</a></p>
           <p className="text-sm text-gray-500 mt-1">Not sure if this is right for you? We'll help you figure it out. No pressure. No obligations. Just honest guidance.</p>
-          <p className="text-sm text-gray-500 mt-1">Hablamos Español &nbsp;|&nbsp; Assi Punjabi Bolde Haan</p>
+          <p className="text-sm text-gray-500 mt-1">🇪🇸 Hablamos Español &nbsp;|&nbsp; 🇮🇳 Assi Punjabi Bolde Haan</p>
         </div>
       </div>
     </section>
@@ -1046,7 +1046,7 @@ function FinalCTA() {
         <div className="text-center mt-8 space-y-2 text-sm text-gray-600">
           <p>Not sure which tier is right for you? <a href={CALENDLY_LINK} target="_blank" rel="noopener noreferrer" className="text-[#bb9446] font-semibold hover:underline">Schedule a free consultation</a>, no pressure, no obligations, just honest guidance.</p>
           <p>Already a Mesa360 client? You already have Community tier access. Check your email for login details. Want to upgrade? <a href={CALENDLY_LINK} target="_blank" rel="noopener noreferrer" className="text-[#bb9446] font-semibold hover:underline">Contact your advisor →</a></p>
-          <p className="text-gray-500">Hablamos Español &nbsp;|&nbsp; Assi Punjabi Bolde Haan</p>
+          <p className="text-gray-500">🇪🇸 Hablamos Español &nbsp;|&nbsp; 🇮🇳 Assi Punjabi Bolde Haan</p>
         </div>
 
         {/* Disclosure */}

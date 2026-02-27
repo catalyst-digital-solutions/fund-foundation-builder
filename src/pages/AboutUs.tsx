@@ -349,7 +349,7 @@ const AboutUs = () => {
             </a>
           </div>
 
-          <p className="text-sm text-gray-500">Hablamos Español · Assi Punjabi Bolde Haan</p>
+          <p className="text-sm text-gray-500">🇪🇸 Hablamos Español · 🇮🇳 Assi Punjabi Bolde Haan</p>
         </div>
       </section>
 

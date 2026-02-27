@@ -7,6 +7,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Slight letter-spacing on all section headings to prevent characters from being too close */
+h1, h2, h3 {
+  letter-spacing: 0.015em;
+}
+
 /* Life Insurance carrier logo ticker */
 @keyframes marqueeTicker {
   0% { transform: translateX(0); }

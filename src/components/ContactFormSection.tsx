@@ -29,7 +29,7 @@ const ContactFormSection = () => {
               GET IN TOUCH
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              Have Questions? <span className="text-[#f9c65d]">Let's Talk</span>
+              Have Questions?<br /><span className="text-[#f9c65d]">Let's Talk</span>
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               Fill out the form and our team will get back to you within 24 hours. Whether you need credit repair, business funding, or financial guidance, we're here to help.

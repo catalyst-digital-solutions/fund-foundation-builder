@@ -110,7 +110,7 @@ function HeroSection() {
             </div>
           ))}
         </div>
-        <p className="text-sm text-gray-500">Hablamos Español &nbsp;|&nbsp; Assi Punjabi Bolde Haan</p>
+        <p className="text-sm text-gray-500">🇪🇸 Hablamos Español &nbsp;|&nbsp; 🇮🇳 Assi Punjabi Bolde Haan</p>
       </div>
     </section>
   );
@@ -1074,7 +1074,7 @@ function FinalCTA() {
 
         <div className="text-center text-sm text-gray-600">
           <p>Not sure if you qualify? We'll assess your situation honestly and show you the best path forward, even if that means optimizing your credit first.</p>
-          <p className="mt-2 text-gray-500">Hablamos Español &nbsp;|&nbsp; Assi Punjabi Bolde Haan</p>
+          <p className="mt-2 text-gray-500">🇪🇸 Hablamos Español &nbsp;|&nbsp; 🇮🇳 Assi Punjabi Bolde Haan</p>
         </div>
       </div>
     </section>

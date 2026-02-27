@@ -1180,7 +1180,7 @@ const CreditRestorationV3 = () => {
             <p className="text-gray-600 mb-3">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            <p className="text-sm text-gray-500">Hablamos Español | Assi Punjabi Bolde Haan</p>
+            <p className="text-sm text-gray-500">🇪🇸 Hablamos Español &nbsp;|&nbsp; 🇮🇳 Assi Punjabi Bolde Haan</p>
           </div>
         </div>
       </section>

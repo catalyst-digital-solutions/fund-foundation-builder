@@ -848,9 +848,9 @@ const LetterTemplates = () => {
           </div>
           
           <div className="text-center mt-6">
-            <a href="tel:6613240679" className="inline-flex items-center gap-2 text-lg font-semibold text-gray-900 hover:text-amber-600">
+            <a href="tel:6613103040" className="inline-flex items-center gap-2 text-lg font-semibold text-gray-900 hover:text-amber-600">
               <Phone className="w-5 h-5" />
-              Call (661) 324-0679
+              Call (661) 310-3040
             </a>
           </div>
         </div>

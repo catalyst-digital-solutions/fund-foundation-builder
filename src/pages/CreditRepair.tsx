@@ -2445,7 +2445,7 @@ const CreditRepair = () => {
                 </span>
               </div>
               
-              <p className="text-gray-300 mb-6">Hablamos Español 🇪🇸 | Assi Punjabi Bolde Haan 🇮🇳</p>
+              <p className="text-gray-300 mb-6">🇪🇸 Hablamos Español &nbsp;|&nbsp; 🇮🇳 Assi Punjabi Bolde Haan</p>
 
               <CalendlyPopupButton
                 text="Schedule Free Consultation"
@@ -2973,7 +2973,7 @@ Every dollar you paid to Mesa Group.</p>
             <p className="text-gray-600 mb-6">
               Or call us: <a href="tel:6613103040" className="text-[#bb9446] hover:underline font-semibold">(661) 310-3040</a>
             </p>
-            <p className="text-sm text-gray-500">Hablamos Español 🇪🇸 |  Assi Punjabi Bolde Haan 🇮🇳</p>
+            <p className="text-sm text-gray-500">🇪🇸 Hablamos Español &nbsp;|&nbsp; 🇮🇳 Assi Punjabi Bolde Haan</p>
           </div>
         </div>
       </section>
