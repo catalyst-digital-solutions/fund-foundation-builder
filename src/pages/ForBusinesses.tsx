@@ -249,7 +249,7 @@ const ForBusinesses = () => {
               {
                 icon: Map,
                 title: 'Your Business Roadmap',
-                body: "Your fully customized action plan tells you precisely what to do next, built around your business profile and your goals. No guessing. No wasted time. Just a clear path forward that's yours alone.",
+                body: "Your fully customized action plan tells you precisely what to do next, built around your business profile and your goals. No guessing. No wasted time. Just a clear path forward that's yours and yours alone.",
               },
             ].map((pillar) => (
               <div key={pillar.title} className="bg-white rounded-2xl p-8 shadow-md text-center">
@@ -473,7 +473,7 @@ const ForBusinesses = () => {
           </div>
 
           <p className="text-xs text-gray-500 max-w-2xl mx-auto">
-            Mesa Group Consulting is a financial services and advisory platform. Mesa Group Capital is our business funding brokerage division. Results vary by individual business circumstances. Business funding is facilitated through Mesa Group Capital's lender network; terms and approval are subject to lender underwriting. No upfront fees on brokerage services.
+            Mesa Group Consulting is a financial services and advisory platform. Mesa Group Capital is our business funding brokerage division. Results vary by individual business circumstances. Business funding is facilitated through Mesa Group Capital's lender network, terms and approval are subject to lender underwriting. No upfront fees on brokerage services.
           </p>
         </div>
       </section>

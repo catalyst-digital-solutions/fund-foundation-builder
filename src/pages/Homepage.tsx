@@ -1115,7 +1115,7 @@ const Homepage = () => {
               This isn't a bonus feature. This is what true partnership looks like.
             </p>
             <p>
-              We built this because credit repair is only the beginning. The families we serve deserve someone by their side through every chapter: through the mortgage application, the business launch, and the next generation that never has to start from zero.
+              We built this because credit repair is only the beginning. The families we serve deserve someone by their side through every chapter. Through the mortgage application, the business launch, and the next generation that never has to start from zero.
             </p>
             <p>
               That's why the Community tier is free with your Mesa x SmartCredit subscription. Because access to a real financial partner shouldn't be a luxury. It should be a right.
@@ -1133,12 +1133,12 @@ const Homepage = () => {
               {
                 icon: Phone,
                 title: 'Weekly Live Strategy Calls',
-                body: 'A live room where your questions get answered and your progress gets witnessed. Every call is recorded, so you never miss a beat.',
+                body: 'A live room where your questions get answered, and your progress gets witnessed. Every call is recorded, so you never miss a beat.',
               },
               {
                 icon: MapPin,
                 title: 'Your Personal Roadmap',
-                body: 'Powered by LevelUpScore technology. Tailored to your credit profile and your goals. You\'ll always know your next move, and why it matters.',
+                body: 'Powered by LevelUpScore technology. Tailored to your credit profile and your goals. You\'ll always know your next move — and why it matters.',
               },
               {
                 icon: Building2,
@@ -1201,7 +1201,7 @@ const Homepage = () => {
           </div>
 
           <p className="text-center text-sm text-gray-500 mt-6">
-            Three tiers. One mission. We help people first. Always.
+            Three tiers. One mission. We help people first — always.
           </p>
 
         </div>

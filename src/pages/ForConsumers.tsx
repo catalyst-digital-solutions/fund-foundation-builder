@@ -172,7 +172,7 @@ const ForConsumers = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Find a Loan or Credit Product</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                We've done the homework on which lenders are worth your time. Compare real rates from multiple lenders in minutes, with no impact to your credit score.
+                We've done the homework on which lenders are worth your time. Compare real rates from multiple lenders in minutes, no impact to your credit score.
               </p>
               <div className="space-y-1.5 mb-6 text-sm text-gray-600">
                 <div>→ <Link to="/personal-loans" className="text-[#bb9446] hover:underline font-medium">Personal Loans</Link></div>
@@ -192,7 +192,7 @@ const ForConsumers = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Protect My Family's Future</h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Life doesn't wait. Get your estate planning and life insurance in order. Affordable, simple, and done right.
+                Life doesn't wait. Get your estate planning and life insurance in order, affordable, simple, and done right.
               </p>
               <div className="space-y-1.5 mb-6 text-sm text-gray-600">
                 <div>→ <Link to="/life-insurance" className="text-[#bb9446] hover:underline font-medium">Life Insurance</Link></div>
@@ -246,7 +246,7 @@ const ForConsumers = () => {
               {
                 icon: Map,
                 title: 'Your Personal Roadmap',
-                body: "Your fully customized action plan tells you precisely what to do next, built around your credit profile and your goals. No guessing. No wasted time. Just a clear path forward that's yours alone.",
+                body: "Your fully customized action plan tells you precisely what to do next, built around your credit profile and your goals. No guessing. No wasted time. Just a clear path forward that's yours and yours alone.",
               },
             ].map((pillar) => (
               <div key={pillar.title} className="bg-white rounded-2xl p-8 shadow-md text-center">
@@ -479,7 +479,7 @@ const ForConsumers = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-4 max-w-xl mx-auto text-sm text-gray-600 mb-6">
-            <div>M-F: 9am – 7pm | Sat: 10am – 2pm PST</div>
+            <div>M-F: 9am - 7pm | Sat: 10am - 2pm PST</div>
             <div>5001 California Ave Suite 219, Bakersfield, CA 93309</div>
           </div>
 

@@ -372,7 +372,7 @@ function FeatureBlocks() {
 function ComparisonTable() {
   const rows = [
     ['Figure everything out by yourself', 'Expert advisors who genuinely want to help'],
-    ['Google at midnight with no real answers', 'Post questions anytime, get answers within 24–48 hours'],
+    ['Google at midnight with no real answers', 'Post questions anytime, get answers within 24 to 48 hours'],
     ['Expensive trial-and-error mistakes', 'Proven system that actually works'],
     ['No one to keep you accountable', 'Weekly group calls and community support'],
     ['Generic advice that doesn\'t fit your situation', 'Personalized strategies for your specific goals'],
@@ -496,7 +496,7 @@ function HowToStart() {
         'Complete your first education module',
         'Post your introduction in the community',
         'Get your first expert guidance',
-        'Start your financial journey, personal, business, or both',
+        'Start your financial journey — personal, business, or both',
       ],
     },
   ];
