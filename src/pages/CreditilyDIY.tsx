@@ -387,8 +387,17 @@ export default function CreditilyDIY() {
 
           </div>
 
+          {/* Wolfie + Mesa girls pointing at the plans */}
+          <div className="max-w-5xl mx-auto mt-6 -mb-4 flex justify-center pointer-events-none select-none">
+            <img
+              src="/wolfie-and-the-mesa-group-consulting-girls-pointing-at-plans-for-creditily-diy-credit-restoration-in-bakersfield-no-bg.png"
+              alt="Wolfie and the Mesa Group Consulting team pointing at your credit restoration options"
+              className="w-full max-w-3xl h-auto object-contain"
+            />
+          </div>
+
           {/* Reassurance line */}
-          <p className="text-center text-gray-600 mt-10 text-base">
+          <p className="text-center text-gray-600 mt-4 text-base">
             Not sure which path fits?{" "}
             <a href="tel:6613103040" className="text-[#f9c65d] font-semibold hover:underline">
               Call us at (661) 310-3040
