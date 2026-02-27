@@ -1544,9 +1544,12 @@ const Homepage = () => {
           </div>
 
           {/* Compliance Disclaimer */}
-          <div className="mt-12 text-center">
-            <p className="text-sm text-gray-600 max-w-3xl mx-auto">
-              <strong>Important Disclosure:</strong> Results vary based on individual circumstances. Testimonials reflect individual client experiences and are not a guarantee of similar outcomes. All testimonials are from actual clients.
+          <div className="mt-8 text-center max-w-2xl mx-auto space-y-2">
+            <p className="text-sm text-gray-500">
+              Important Disclosure: Results vary based on individual circumstances. Testimonials reflect individual client experiences and are not a guarantee of similar outcomes. All testimonials are from actual clients.
+            </p>
+            <p className="text-xs text-gray-400">
+              Images may be AI-generated, stock photo, or other representations and may not depict actual clients.
             </p>
           </div>
 
