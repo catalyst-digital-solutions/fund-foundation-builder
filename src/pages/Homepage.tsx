@@ -1818,7 +1818,7 @@ const Homepage = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Final CTA heading — above badges */}
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-snug">
               Ready to Transform Your<br /><span className="text-[#f9c65d]">Financial Future</span>?
             </h2>
           </div>
