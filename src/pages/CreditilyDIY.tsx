@@ -387,12 +387,12 @@ export default function CreditilyDIY() {
 
           </div>
 
-          {/* Wolfie + Mesa girls pointing at the plans */}
-          <div className="max-w-5xl mx-auto mt-6 -mb-4 flex justify-center pointer-events-none select-none">
+          {/* Wolfie + Mesa girls pointing at the plans — full viewport width */}
+          <div className="mt-6 -mb-4 -mx-4 sm:-mx-6 lg:-mx-8 pointer-events-none select-none">
             <img
               src="/wolfie-and-the-mesa-group-consulting-girls-pointing-at-plans-for-creditily-diy-credit-restoration-in-bakersfield-no-bg.png"
               alt="Wolfie and the Mesa Group Consulting team pointing at your credit restoration options"
-              className="w-full max-w-3xl h-auto object-contain"
+              className="w-full h-auto object-contain"
             />
           </div>
 
