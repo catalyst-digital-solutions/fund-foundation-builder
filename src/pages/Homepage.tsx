@@ -1167,7 +1167,7 @@ const Homepage = () => {
             <div className="space-y-2 text-sm text-gray-700">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
-                <span>Free with Mesa x SmartCredit ($27.99/month)</span>
+                <span>Free with Mesa x SmartCredit</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
@@ -1181,7 +1181,7 @@ const Homepage = () => {
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex justify-center">
             <Link
               to="/concierge"
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
@@ -1189,19 +1189,10 @@ const Homepage = () => {
               Explore Mesa Financial Concierge
               <ArrowRight className="w-5 h-5" />
             </Link>
-            <a
-              href="https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-xl shadow-md hover:shadow-lg border-2 border-gray-200 transition-all duration-200"
-            >
-              Get Started with SmartCredit
-              <ArrowRight className="w-5 h-5" />
-            </a>
           </div>
 
           <p className="text-center text-sm text-gray-500 mt-6">
-            Three tiers. One mission. We help people first — always.
+            One mission. We help people first — always.
           </p>
 
         </div>
@@ -1806,7 +1797,7 @@ const Homepage = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Final CTA heading — above badges */}
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-snug">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-relaxed">
               Ready to Transform Your<br /><span className="text-[#f9c65d]">Financial Future</span>?
             </h2>
           </div>
