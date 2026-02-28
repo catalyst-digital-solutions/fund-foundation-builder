@@ -295,29 +295,36 @@ const AboutUs = () => {
       </section>
 
       {/* ── ROOTED IN BAKERSFIELD ─────────────────────────────────────── */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <img
+          src="/amex-centric-mesa-group-consulting-office-boardroom-photo.jpg"
+          alt=""
+          aria-hidden
+          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-black/65 pointer-events-none" />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
             Rooted in Bakersfield. <span className="text-[#f9c65d]">Built for Everyone.</span>
           </h2>
-          <div className="space-y-5 text-lg text-gray-700 leading-relaxed">
+          <div className="space-y-5 text-lg text-white/90 leading-relaxed">
             <p>
               Mesa Group was built in Bakersfield, California, a city often overlooked but full of hardworking families who deserve better financial opportunities. We serve this community in English, Spanish, and Punjabi because financial guidance should never be limited by language.
             </p>
             <p>
               We serve Hispanic and Latino families through <strong>Mesa Financiera</strong>. We serve the Punjabi community through <strong>Chaklo Credit</strong>. We serve first-generation Americans navigating a system no one explained to them. And we serve anyone who walks through our door ready to build something better.
             </p>
-            <p className="text-xl font-bold text-gray-900">
+            <p className="text-xl font-bold text-white">
               Bad credit doesn't discriminate. Neither do we.
             </p>
           </div>
 
-          <div className="mt-8 flex items-start gap-3 bg-white rounded-xl p-6 border border-gray-200">
+          <div className="mt-8 flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
             <MapPin className="w-6 h-6 text-[#f9c65d] flex-shrink-0 mt-0.5" />
             <div>
-              <p className="font-semibold text-gray-900">Come Visit Us</p>
-              <p className="text-gray-600">5001 California Ave Suite 219, Bakersfield, CA 93309</p>
-              <p className="text-gray-500 text-sm mt-1">M–F 9am–7pm · Sat 10am–2pm</p>
+              <p className="font-semibold text-white">Come Visit Us</p>
+              <p className="text-white/80">5001 California Ave Suite 219, Bakersfield, CA 93309</p>
+              <p className="text-white/60 text-sm mt-1">M–F 9am–7pm · Sat 10am–2pm</p>
             </div>
           </div>
         </div>
