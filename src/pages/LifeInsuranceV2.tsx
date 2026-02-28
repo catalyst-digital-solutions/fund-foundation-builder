@@ -301,36 +301,6 @@ export default function LifeInsuranceV2() {
       />
       <Header />
 
-      {/* ─── TRUST BAR — scrolling ticker ─── */}
-      <div className="bg-[#f9c65d] overflow-hidden marquee-container py-3">
-        <div
-          className="marquee-track flex items-center w-max"
-          style={{ animationDuration: '40s' }}
-        >
-          {[0, 1].map((set) => (
-            <span
-              key={set}
-              className="inline-flex items-center whitespace-nowrap text-[18px] md:text-[22px] font-semibold text-gray-900 flex-shrink-0"
-            >
-              <span className="inline-flex items-center gap-2 px-8">
-                <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                Licensed Independent Insurance Agents
-              </span>
-              <span className="px-4 text-gray-700 font-bold">·</span>
-              <span className="px-8">30+ Top-Rated Carriers</span>
-              <span className="px-4 text-gray-700 font-bold">·</span>
-              <span className="px-8">2,500+ Families Served</span>
-              <span className="px-4 text-gray-700 font-bold">·</span>
-              <span className="px-8">English · Español · Punjabi</span>
-              <span className="px-4 text-gray-700 font-bold">·</span>
-              <span className="px-8 font-bold">
-                We Also Offer Health Insurance — Ask Us About Coverage Options
-              </span>
-            </span>
-          ))}
-        </div>
-      </div>
-
       {/* ─── HERO ─── */}
       <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -340,7 +310,7 @@ export default function LifeInsuranceV2() {
             <div className="space-y-6 lg:space-y-8">
               <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-200">
                 <Shield className="w-5 h-5 text-green-600" />
-                <span className="text-sm font-medium text-gray-700">Mesa Group Life Insurance</span>
+                <span className="text-sm font-medium text-gray-700">Life Insurance</span>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
@@ -596,7 +566,7 @@ export default function LifeInsuranceV2() {
             ))}
           </div>
           <p className="mt-8 text-lg text-gray-300 font-medium">
-            This is not a fantasy. This is what the right coverage makes possible. And it starts with a 20-minute conversation.
+            This is not a fantasy. This is what the right coverage makes possible.<br /><br />And it starts with a 20-minute conversation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a
@@ -629,31 +599,40 @@ export default function LifeInsuranceV2() {
               Not sure which type fits your situation? That is what the free consultation is for.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="space-y-6">
             {coverageOptions.map((option) => (
               <div
                 key={option.title}
-                className="bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-xl transition-shadow p-6 flex flex-col"
+                className="bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-xl transition-shadow p-6 md:p-8"
               >
-                <div className="mb-3">{option.icon}</div>
-                <span className="text-xs font-semibold text-[#bb9446] bg-amber-50 border border-amber-200 rounded-full px-3 py-1 mb-3 inline-block w-fit">
-                  {option.badge}
-                </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{option.title}</h3>
-                <p className="text-gray-700 leading-relaxed mb-4">{option.description}</p>
-                <div className="space-y-2 flex-1">
-                  {option.features.map((f) => (
-                    <div key={f} className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-gray-700">{f}</span>
+                <div className="flex flex-col md:flex-row gap-8">
+                  {/* Left — eyebrow, icon, title, description */}
+                  <div className="md:w-1/2 space-y-3">
+                    <div>{option.icon}</div>
+                    <span className="text-xs font-semibold text-[#bb9446] bg-amber-50 border border-amber-200 rounded-full px-3 py-1 inline-block">
+                      {option.badge}
+                    </span>
+                    <h3 className="text-xl font-bold text-gray-900">{option.title}</h3>
+                    <p className="text-gray-700 leading-relaxed">{option.description}</p>
+                    {option.disclaimer && (
+                      <p className="text-xs text-gray-500 pt-3 border-t border-gray-100">
+                        {option.disclaimer}
+                      </p>
+                    )}
+                  </div>
+                  {/* Right — key features */}
+                  <div className="md:w-1/2">
+                    <p className="text-sm font-bold text-gray-900 mb-3 uppercase tracking-wide">Key Features</p>
+                    <div className="space-y-2">
+                      {option.features.map((f) => (
+                        <div key={f} className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-gray-700">{f}</span>
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
                 </div>
-                {option.disclaimer && (
-                  <p className="text-xs text-gray-500 mt-4 pt-4 border-t border-gray-100">
-                    {option.disclaimer}
-                  </p>
-                )}
               </div>
             ))}
           </div>
@@ -669,7 +648,7 @@ export default function LifeInsuranceV2() {
               <span className="text-[#f9c65d]">pass away</span>{" "}
               for this to protect your family
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Most people assume life insurance only pays when someone dies. What most people are never told is that the majority of our plans include living benefits at no additional cost.
             </p>
           </div>
@@ -690,7 +669,7 @@ export default function LifeInsuranceV2() {
 
           <div className="bg-white rounded-2xl p-6 border border-amber-200 text-center shadow-sm">
             <p className="text-lg font-semibold text-gray-900 mb-2">
-              Use it for medical bills. Use it for living expenses. Use it for whatever your family needs while you are still here to help them.
+              Use it for medical bills.<br />Use it for living expenses.<br />Use it for whatever your family needs while you are still here to help them.
             </p>
             <p className="text-sm text-gray-500">
               Living benefits included on most plans at no additional cost. Eligibility and access amounts vary by policy.
@@ -704,9 +683,10 @@ export default function LifeInsuranceV2() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
-              Been told you do{" "}
-              <span className="text-[#f9c65d]">not qualify?</span>{" "}
-              Let us take another look.
+            Been told you do{" "}
+            <span className="text-[#f9c65d]">not qualify?</span>
+            <br />
+            Let us take another look.
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               Health history should not keep your family from being protected. Because we work with a broad network of top-rated carriers, we can often find coverage for people who have been declined elsewhere.
@@ -733,7 +713,7 @@ export default function LifeInsuranceV2() {
           </div>
 
           <p className="text-sm text-gray-500 mt-4 text-center">
-            Before you give up on finding coverage, let us check. That is what the free consultation is for. Coverage subject to carrier underwriting guidelines. Individual results vary.
+            Before you give up on finding coverage, let us check. That is what the free consultation is for.<br />Coverage subject to carrier underwriting guidelines. Individual results vary.
           </p>
           <div className="flex justify-center mt-6">
             <a
@@ -797,7 +777,7 @@ export default function LifeInsuranceV2() {
               <span className="text-[#f9c65d]">when you reach out</span>
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              We know a free consultation can feel like a setup for a sales call. It is not. Here is what ours actually looks like.
+              We know a free consultation can feel like a setup for a sales call. It is not.<br />Here is what ours actually looks like.
             </p>
           </div>
           <div className="space-y-6">
@@ -905,19 +885,19 @@ export default function LifeInsuranceV2() {
               Because when you trust us with your family's future, we take that seriously.
             </p>
           </div>
-          <div className="flex flex-wrap gap-3 justify-center mt-8">
+          <div className="flex flex-col items-center gap-3 mt-8">
             {[
-              "2,500+ Families Served",
-              "150+ Five-Star Reviews",
-              "Licensed Independent Agents",
-              "English · Español · Punjabi",
+              { icon: <Users className="w-4 h-4 text-[#f9c65d]" />, text: "2,500+ Families Served" },
+              { icon: <Star className="w-4 h-4 text-[#f9c65d]" />, text: "150+ Five-Star Reviews" },
+              { icon: <Shield className="w-4 h-4 text-[#f9c65d]" />, text: "Licensed Independent Agents" },
+              { icon: null, text: "🇺🇸 English · 🇪🇸 Español · 🇮🇳 Punjabi" },
             ].map((item) => (
               <span
-                key={item}
-                className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-4 py-2 text-sm font-semibold text-gray-800"
+                key={item.text}
+                className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-full px-5 py-2.5 text-sm font-semibold text-gray-800"
               >
-                <Star className="w-4 h-4 text-[#f9c65d]" />
-                {item}
+                {item.icon}
+                {item.text}
               </span>
             ))}
           </div>
@@ -932,25 +912,44 @@ export default function LifeInsuranceV2() {
             <span className="text-[#f9c65d]">Real protection.</span>{" "}
             Real peace of mind.
           </h2>
-          {/* NOTE FOR MARIO AND EVERT: Replace placeholder testimonials with real verified
-              client reviews once available. First name, last initial, city and state. */}
           <div className="grid md:grid-cols-3 gap-6 mt-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 shadow-md border border-amber-100">
-                <div className="flex gap-1 mb-3 justify-center">
+            {[
+              {
+                text: "We've had a great experience working with Mesa Group Consulting. From the beginning, their team has been professional, respectful, and responsive to every question we've had. What stands out most is their dedication to truly helping their clients. They don't just offer a service — they offer guidance, support, and a clear path forward.",
+                name: "Harwinder S.",
+                detail: "Professional · Transparent · Dedicated",
+                location: "Bakersfield, CA",
+              },
+              {
+                text: "I can't thank Mesa Group enough for everything they've done for me. Within just a few months, they removed several negative items from my credit report including collections and late payments. They didn't just fix credit — they educated me so I can keep it healthy moving forward. Thanks to them, I was approved for a car loan and I'm on track to buy my first home.",
+                name: "Andrew N.",
+                detail: "Collections removed · Car loan approved · First home in sight",
+                location: "Bakersfield, CA",
+              },
+              {
+                text: "I don't know what others think about credit consulting, but I'm confident these guys are the best in town, maybe even the best in California. Life's so much better now with a 700+ credit score.",
+                name: "Kyne K.",
+                detail: "Achieved 700+ credit score",
+                location: "Bakersfield, CA",
+              },
+            ].map((t) => (
+              <div key={t.name} className="bg-white rounded-2xl p-6 shadow-md border border-amber-100 flex flex-col">
+                <div className="flex gap-1 mb-4 justify-center">
                   {[1,2,3,4,5].map((s) => (
                     <Star key={s} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
                   ))}
                 </div>
-                <p className="text-gray-500 italic text-sm">
-                  [Client testimonial placeholder — insert once available]
-                </p>
-                <p className="text-gray-400 text-xs mt-4">— Mesa Group Client</p>
+                <p className="text-gray-700 italic text-sm leading-relaxed flex-1">"{t.text}"</p>
+                <div className="border-t border-gray-100 pt-4 mt-4">
+                  <p className="font-semibold text-gray-900 text-sm">{t.name}</p>
+                  <p className="text-xs text-[#f9c65d] font-semibold mt-1">{t.detail}</p>
+                  <p className="text-xs text-gray-400">{t.location}</p>
+                </div>
               </div>
             ))}
           </div>
           <p className="text-xs text-gray-500 mt-6">
-            Individual results may vary. Testimonials reflect individual client experiences and are not a guarantee of similar outcomes.
+            Individual results may vary. Testimonials reflect individual client experiences and are not a guarantee of similar outcomes. All testimonials are from actual clients.
           </p>
         </div>
       </section>
@@ -989,50 +988,54 @@ export default function LifeInsuranceV2() {
       </section>
 
       {/* ─── FINAL CTA ─── */}
-      <section className="py-16 md:py-24 bg-[#f9c65d]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <img
+          src="/img-01-caucasian-family-in-formal-black-clothing.png"
+          alt=""
+          aria-hidden
+          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-black/70 pointer-events-none" />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
             Your family deserves a real plan. Let us help you build one.
           </h2>
-          <p className="text-xl text-gray-800 mb-8 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">
             Coverage that fits your health, your budget, and your goals. Without the pressure, without the jargon, and without the runaround. The consultation is free. The conversation is on us.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#consultation"
-              className="inline-flex items-center justify-center gap-2 bg-[#3e3e3e] hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-lg shadow-xl transition-colors text-lg"
+              className="inline-flex items-center justify-center gap-2 bg-[#f9c65d] hover:bg-[#bb9446] text-gray-900 font-semibold px-8 py-4 rounded-lg shadow-xl transition-colors text-lg"
             >
               Book Your Free Consultation
               <ArrowRight className="w-5 h-5 flex-shrink-0" />
             </a>
             <a
               href="tel:6613103040"
-              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-900 font-semibold px-8 py-4 rounded-lg shadow-xl transition-colors text-lg border-2 border-gray-900"
+              className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-lg shadow-xl transition-colors text-lg border-2 border-white/40"
             >
               <Phone className="w-5 h-5 flex-shrink-0" />
               (661) 310-3040
             </a>
           </div>
-          <p className="text-sm text-gray-800 mt-4">
+          <p className="text-sm text-white/70 mt-4">
             No obligation · No pressure · English · Español · Punjabi
           </p>
         </div>
       </section>
 
-      <ContactFormSection />
-      <Footer />
-
-      {/* ─── INSURANCE COMPLIANCE FOOTER ─── */}
-      <div className="bg-[#3e3e3e] py-8 px-4">
+      {/* ─── INSURANCE COMPLIANCE ─── */}
+      <div className="bg-gray-100 py-8 px-4 border-t border-gray-200">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-sm text-gray-400 leading-relaxed">
+          <p className="text-sm text-gray-600 leading-relaxed">
             Mesa Group Consulting is a licensed independent insurance agency. Coverage is subject to underwriting approval by the issuing carrier. Rates vary based on age, health, and coverage selected. Not all products are available in all states. We also offer health insurance coverage. Ask us about your options during your free consultation or call (661) 310-3040.
-          </p>
-          <p className="text-xs text-gray-600 mt-4">
-            © {new Date().getFullYear()} Mesa Group Consulting. All rights reserved.
           </p>
         </div>
       </div>
+
+      <ContactFormSection />
+      <Footer />
 
     </div>
   );
