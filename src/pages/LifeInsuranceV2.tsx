@@ -606,13 +606,15 @@ export default function LifeInsuranceV2() {
                 className="bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-xl transition-shadow p-6 md:p-8"
               >
                 <div className="flex flex-col md:flex-row gap-8">
-                  {/* Left — eyebrow, icon, title, description */}
+                  {/* Left — eyebrow, icon + title, description */}
                   <div className="md:w-1/2 space-y-3">
-                    <div>{option.icon}</div>
                     <span className="text-xs font-semibold text-[#bb9446] bg-amber-50 border border-amber-200 rounded-full px-3 py-1 inline-block">
                       {option.badge}
                     </span>
-                    <h3 className="text-xl font-bold text-gray-900">{option.title}</h3>
+                    <div className="flex items-center gap-3">
+                      {option.icon}
+                      <h3 className="text-xl font-bold text-gray-900">{option.title}</h3>
+                    </div>
                     <p className="text-gray-700 leading-relaxed">{option.description}</p>
                     {option.disclaimer && (
                       <p className="text-xs text-gray-500 pt-3 border-t border-gray-100">
@@ -990,7 +992,7 @@ export default function LifeInsuranceV2() {
       {/* ─── FINAL CTA ─── */}
       <section className="relative py-16 md:py-24 overflow-hidden">
         <img
-          src="/img-01-caucasian-family-in-formal-black-clothing.png"
+          src="/img-01-caucasian-family-in-formal-black-clothing-cropped.jpeg"
           alt=""
           aria-hidden
           className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
