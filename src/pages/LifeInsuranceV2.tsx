@@ -992,7 +992,7 @@ export default function LifeInsuranceV2() {
       {/* ─── FINAL CTA ─── */}
       <section className="relative py-16 md:py-24 overflow-hidden">
         <img
-          src="/img-01-caucasian-family-in-formal-black-clothing-cropped.jpeg"
+          src="/img-01-caucasian-family-in-formal-black-clothing.png"
           alt=""
           aria-hidden
           className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
