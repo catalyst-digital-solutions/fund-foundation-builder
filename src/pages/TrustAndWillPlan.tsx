@@ -102,31 +102,31 @@ const TrustAndWillPlan = () => {
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-700"><strong>Attorney-built documents</strong> – state-specific & legally binding</span>
+                  <span className="text-gray-700"><strong>Attorney-built documents.</strong> State-specific and legally binding</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-700"><strong>Create online in 20 minutes</strong> – no appointments needed</span>
+                  <span className="text-gray-700"><strong>Create online in 20 minutes.</strong> No appointments needed</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-700"><strong>Save thousands vs attorneys</strong> – plans from $199</span>
+                  <span className="text-gray-700"><strong>Save thousands vs attorneys.</strong> Plans from $199</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-700"><strong>Avoid probate with Trusts</strong> – keep affairs private</span>
+                  <span className="text-gray-700"><strong>Avoid probate with Trusts.</strong> Keep affairs private</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-700"><strong>30-day money-back guarantee</strong> – risk-free</span>
+                  <span className="text-gray-700"><strong>30-day money-back guarantee.</strong> Risk-free</span>
                 </li>
               </ul>
               
