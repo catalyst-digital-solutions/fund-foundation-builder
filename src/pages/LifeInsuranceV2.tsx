@@ -995,7 +995,7 @@ export default function LifeInsuranceV2() {
           src="/img-01-caucasian-family-in-formal-black-clothing.png"
           alt=""
           aria-hidden
-          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+          className="absolute inset-0 w-full h-full object-cover object-top pointer-events-none"
         />
         <div className="absolute inset-0 bg-black/70 pointer-events-none" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
