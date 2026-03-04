@@ -119,14 +119,17 @@ function HeroSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-10 py-4"
           >
-            Get Started with SmartCredit →
+            Join Mesa Financial Concierge →
             <ExternalLink className="w-5 h-5" />
           </a>
           <a
-            href="tel:6613103040"
-            className="text-gray-700 font-semibold hover:text-[#bb9446] transition-colors"
+            href={CALENDLY_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-white border-2 border-gray-300 hover:border-[#f9c65d] text-gray-900 font-semibold rounded-lg px-6 py-4 transition-colors"
           >
-            Or schedule a consultation: (661) 310-3040
+            <Calendar className="w-5 h-5 text-[#f9c65d]" />
+            Book a Free Consultation
           </a>
         </div>
         <p className="mt-3 text-sm text-gray-500">🇪🇸 Hablamos Español &nbsp;|&nbsp; 🇮🇳 Assi Punjabi Bolde Haan</p>
@@ -151,7 +154,7 @@ function WhyPartnershipMatters() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
           {[
             {
               icon: Users,
@@ -194,8 +197,8 @@ function WhyPartnershipMatters() {
               body: 'The wealthy have financial advisors because they can afford them. You can\'t. So you\'re expected to just figure it out? That\'s not right.',
             },
           ].map(({ icon: Icon, color, bg, border, title, body }) => (
-            <div key={title} className={`${bg} border ${border} rounded-xl p-6 shadow-md`}>
-              <Icon className={`w-10 h-10 ${color} mb-3`} />
+            <div key={title} className={`${bg} border ${border} rounded-xl p-6 shadow-md flex flex-col min-h-[220px]`}>
+              <Icon className={`w-10 h-10 ${color} mb-3 flex-shrink-0`} />
               <h3 className="text-lg font-bold text-gray-900 mb-2">{title}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">{body}</p>
             </div>
@@ -249,7 +252,7 @@ function WhatYouGet() {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             What If You Had Someone to <span className="text-[#f9c65d]">Call?</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-[53rem] mx-auto">
             Not a salesperson. Not a customer service line. A real financial partner who knows your name, understands your situation, and genuinely wants you to succeed.
           </p>
         </div>
@@ -454,7 +457,7 @@ function WhatIfSection() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-xl font-bold px-12 py-5"
         >
-          Get Started with SmartCredit →
+          Get Access to Our Concierge Service →
           <ExternalLink className="w-5 h-5" />
         </a>
         <PoweredBySmartCredit variant="dark" className="mt-4" />
@@ -540,8 +543,7 @@ function HowToStart() {
             <ExternalLink className="w-5 h-5" />
           </a>
           <PoweredBySmartCredit className="mt-3" />
-          <p className="text-sm text-gray-600 mt-2">Or schedule a consultation: <a href="tel:6613103040" className="text-[#bb9446] font-semibold hover:underline">(661) 310-3040</a></p>
-          <p className="text-sm text-gray-500 mt-1">Not sure if this is right for you? We'll help you figure it out. No pressure. No obligations. Just honest guidance.</p>
+          <p className="text-sm text-gray-500 mt-2">Not sure if this is right for you? We'll help you figure it out. No pressure. No obligations. Just honest guidance.</p>
           <p className="text-sm text-gray-500 mt-1">🇪🇸 Hablamos Español &nbsp;|&nbsp; 🇮🇳 Assi Punjabi Bolde Haan</p>
         </div>
       </div>
