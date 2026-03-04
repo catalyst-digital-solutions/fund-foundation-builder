@@ -81,7 +81,7 @@ const ForBusinesses = () => {
               You're in the Right Place. <span className="text-[#f9c65d]">Let's Figure This Out Together.</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-[55rem] mx-auto">
               From business credit to funding, 0% interest capital to debt relief, Mesa Group connects you with the right resources and expert support to move your business forward with confidence. Whether you're building from scratch, ready to scale, or recovering from crushing debt, we'll find the solution that fits where your business actually is.
             </p>
 
@@ -127,7 +127,7 @@ const ForBusinesses = () => {
               What's Going On With Your <span className="text-[#f9c65d]">Business Right Now?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Tell us where you are. We'll show you exactly where to go. No pressure, no judgment.
+              Tell us where you are. We'll show you exactly where to go.<br />No pressure, no judgment.
             </p>
           </div>
 
@@ -218,9 +218,9 @@ const ForBusinesses = () => {
               What Makes Mesa Different
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              You Get More Than a Service. <span className="text-[#f9c65d]">You Get a Partner.</span>
+              You Get More Than a Service.<br /><span className="text-[#f9c65d]">You Get a Partner.</span>
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-700 max-w-[55rem] mx-auto leading-relaxed">
               From the moment you walk through our door, you have access to something that most business owners never knew existed. Expert guidance, a dedicated community, and a personalized roadmap built entirely around your business and your goals.
             </p>
           </div>
@@ -270,7 +270,7 @@ const ForBusinesses = () => {
               Discover Mesa Financial Concierge <ArrowRight className="w-5 h-5" />
             </Link>
             <p className="text-sm text-gray-500 mt-4">
-              Included FREE with Mesa x SmartCredit ($27.99/month) · Included with every Mesa360 enrollment
+              Included FREE with Mesa x SmartCredit · Included with every Mesa360 enrollment
             </p>
           </div>
         </div>
@@ -280,12 +280,12 @@ const ForBusinesses = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            You Don't Have to <span className="text-[#f9c65d]">Figure This Out Alone.</span>
+            You Don't Have to<br /><span className="text-[#f9c65d]">Figure This Out Alone.</span>
           </h2>
-          <p className="text-xl text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 leading-relaxed mb-8 max-w-[55rem] mx-auto">
             A lot of business owners come to us not knowing exactly what they need, just knowing something isn't working. That's okay. That's actually exactly why we're here.
           </p>
-          <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-[55rem] mx-auto">
             Sit down with one of our advisors, completely free, and just talk. Tell us where your business is. Tell us what's been frustrating you. We'll listen, ask the right questions, and give you honest direction, whether you become a client or not.
           </p>
           <p className="text-lg font-semibold text-gray-900 mb-10">
@@ -315,7 +315,7 @@ const ForBusinesses = () => {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-16">
-            Built on a Promise <span className="text-[#f9c65d]">We Made to Ourselves.</span>
+            Built on a Promise<br /><span className="text-[#f9c65d]">We Made to Ourselves.</span>
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -357,7 +357,7 @@ const ForBusinesses = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Real Business Owners. Real Results. <span className="text-[#f9c65d]">Real Transformation.</span>
+              Real Business Owners. Real Results.<br /><span className="text-[#f9c65d]">Real Transformation.</span>
             </h2>
             <p className="text-xl text-gray-600">Here's what happens when you work with people who genuinely want your business to succeed.</p>
           </div>
@@ -401,7 +401,7 @@ const ForBusinesses = () => {
           </div>
 
           <p className="text-center text-sm text-gray-500 mt-8 max-w-2xl mx-auto">
-            Results vary based on individual business circumstances. Testimonials reflect individual client experiences and are not a guarantee of similar outcomes. All testimonials are from actual clients.
+            Results vary based on individual business circumstances.<br />Testimonials reflect individual client experiences and are not a guarantee of similar outcomes.<br />All testimonials are from actual clients.
           </p>
         </div>
       </section>
@@ -410,7 +410,7 @@ const ForBusinesses = () => {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-4">
-            Common Questions. <span className="text-[#f9c65d]">Honest Answers.</span>
+            Common Questions.<br /><span className="text-[#f9c65d]">Honest Answers.</span>
           </h2>
           <p className="text-center text-gray-600 mb-12">Everything you need to know before getting started.</p>
 
@@ -467,12 +467,7 @@ const ForBusinesses = () => {
             </a>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 max-w-xl mx-auto text-sm text-gray-600 mb-6">
-            <div>M-F: 9am – 7pm | Sat: 10am – 2pm PST</div>
-            <div>5001 California Ave Suite 219, Bakersfield, CA 93309</div>
-          </div>
-
-          <p className="text-xs text-gray-500 max-w-2xl mx-auto">
+          <p className="text-xs text-gray-500 max-w-[46rem] mx-auto">
             Mesa Group Consulting is a financial services and advisory platform. Mesa Group Capital is our business funding brokerage division. Results vary by individual business circumstances. Business funding is facilitated through Mesa Group Capital's lender network, terms and approval are subject to lender underwriting. No upfront fees on brokerage services.
           </p>
         </div>

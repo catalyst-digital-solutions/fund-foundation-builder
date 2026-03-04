@@ -92,8 +92,12 @@ function HeroSection() {
           >
             See If You Qualify →
           </a>
-          <a href="tel:6613103040" className="text-gray-700 font-semibold hover:text-[#bb9446] transition-colors">
-            Or call us: (661) 310-3040
+          <a
+            href="tel:6613103040"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-xl shadow-md border-2 border-gray-200 transition-all"
+          >
+            <Phone className="w-5 h-5 text-[#f9c65d]" />
+            Call Us: (661) 310-3040
           </a>
         </div>
 
@@ -234,7 +238,7 @@ function WhyChooseMesa() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Why Business Owners Trust Mesa Group for <span className="text-[#f9c65d]">0% Funding</span>
+            Why Business Owners Trust<br />Mesa Group for <span className="text-[#f9c65d]">0% Funding</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We've helped 2,500+ clients build better financial futures through credit optimization, business funding, and honest guidance.
@@ -288,7 +292,7 @@ function HowItWorks() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Getting 0% Capital Is <span className="text-[#f9c65d]">Easier Than You Think</span>
+            Getting 0% Capital Is<br /><span className="text-[#f9c65d]">Easier Than You Think</span>
           </h2>
           <p className="text-xl text-muted-foreground">Follow our proven 4-step process to access the funding you already qualify for.</p>
         </div>
@@ -403,7 +407,7 @@ function ComparisonSection() {
     <section className="py-20 px-6 bg-background">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-10 text-center">
-          <span className="text-[#f9c65d]">0% Business Funding</span> vs Traditional Financing
+          <span className="text-[#f9c65d]">0% Business Funding</span><br />vs Traditional Financing
         </h2>
         <div className="overflow-x-auto rounded-2xl shadow-lg border border-gray-200">
           <table className="w-full">
@@ -502,7 +506,7 @@ function IndustryUseCases() {
           ))}
         </div>
         <p className="text-center text-gray-600 mt-8 max-w-3xl mx-auto">
-          Regardless of your industry, 0% capital gives you the flexibility to invest in growth without the burden of monthly loan payments eating into your margins.
+          Zero-percent interest capital gives you the flexibility to invest in growth without the burden of monthly loan payments eating into your margins.
         </p>
       </div>
     </section>
@@ -572,7 +576,7 @@ function StrategyGapSection() {
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
           Why Most Business Owners Get $15K When They <span className="text-[#f9c65d]">Qualify for $150K</span>
         </h2>
-        <p className="text-xl text-muted-foreground text-center mb-8 max-w-3xl mx-auto">
+        <p className="text-xl text-muted-foreground text-center mb-8 max-w-[53rem] mx-auto">
           It's not your credit score. It's not your business. It's the strategy you don't know exists.
         </p>
         <div className="prose prose-lg max-w-none text-gray-700 mb-10 space-y-4">
@@ -614,7 +618,7 @@ function StrategyGapSection() {
           <p className="text-lg leading-relaxed mb-4">
             Imagine $150,000 at 0% right now. That equipment upgrade? Funded. That inventory buy? Funded. Those new hires? Funded. The working capital cushion? Funded.
           </p>
-          <p className="text-amber-300 font-semibold text-xl">The capital exists. The strategy works. Now choose: Do it yourself, get coaching, or have us handle it?</p>
+          <p className="text-amber-300 font-semibold text-xl">The capital exists. The strategy works.<br />Now choose: Do it yourself, get coaching, or have us handle it?</p>
         </div>
       </div>
     </section>
@@ -681,7 +685,7 @@ function ThreeTiers() {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Same proven strategy. Three levels of support. You decide what fits.
           </p>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-600 mt-4 max-w-[46rem] mx-auto">
             Some business owners want the roadmap and execute independently. Some want expert coaching through the process. Some prefer white-glove execution while they focus on revenue. You choose.
           </p>
         </div>
@@ -891,7 +895,7 @@ function QualificationSection() {
     <section className="py-20 px-6 bg-background">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Do You Qualify for <span className="text-[#f9c65d]">0% Business Funding?</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 max-w-[64rem] mx-auto">Do You Qualify for <span className="text-[#f9c65d]">0% Business Funding?</span></h2>
           <p className="text-xl text-muted-foreground">Most business owners qualify if they meet these basic requirements.</p>
         </div>
         <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8 border-2 border-amber-200 shadow-lg mb-8">
@@ -920,13 +924,22 @@ function QualificationSection() {
           </div>
         </div>
         <div className="text-center">
-          <p className="text-gray-600 mb-4">Not sure if you qualify? Fill out our qualification form or call us. We'll assess your situation honestly and tell you exactly where you stand, even if that means coming back in 6 months after optimizing your credit. We help people first. Always.</p>
-          <a
-            href="#qualification-form"
-            className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-10 py-4"
-          >
-            Check Your Qualification Status →
-          </a>
+          <p className="text-gray-600 mb-4 max-w-[62rem] mx-auto">Not sure if you qualify? Fill out our qualification form or call us. We'll assess your situation honestly and tell you exactly where you stand, even if that means coming back in 6 months after optimizing your credit. We help people first. Always.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#qualification-form"
+              className="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 text-lg font-bold px-10 py-4"
+            >
+              Check Your Qualification Status →
+            </a>
+            <a
+              href="tel:6613103040"
+              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-amber-50 text-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-400 text-lg font-bold px-10 py-4"
+            >
+              <Phone className="w-5 h-5 text-[#f9c65d]" />
+              Call Now: (661) 310-3040
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -959,7 +972,7 @@ function FAQSection() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Common <span className="text-[#f9c65d]">Questions</span> About 0% Business Funding
+            Common <span className="text-[#f9c65d]">Questions</span> About<br />0% Business Funding
           </h2>
         </div>
         <div className="space-y-4">
@@ -1043,15 +1056,7 @@ function FinalCTA() {
           ))}
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-4 mb-8">
-          <a
-            href="#qualification-form"
-            className="flex flex-col items-center bg-amber-400 hover:bg-amber-500 text-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 border-2 border-amber-500 font-bold px-4 py-5 text-center"
-          >
-            <ArrowRight className="w-5 h-5 mb-2" />
-            <span className="font-bold">Fill Out Qualification Form</span>
-            <span className="text-xs text-gray-700 mt-1">2-minute form, 24-hour strategist response</span>
-          </a>
+        <div className="grid sm:grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto">
           <a
             href={CALENDLY_LINK}
             target="_blank"
@@ -1070,11 +1075,6 @@ function FinalCTA() {
             <span className="font-bold">Call Us: (661) 310-3040</span>
             <span className="text-xs text-gray-600 mt-1">Talk to a Business Funding Strategist now</span>
           </a>
-        </div>
-
-        <div className="text-center text-sm text-gray-600">
-          <p>Not sure if you qualify? We'll assess your situation honestly and show you the best path forward, even if that means optimizing your credit first.</p>
-          <p className="mt-2 text-gray-500">🇪🇸 Hablamos Español &nbsp;|&nbsp; 🇮🇳 Assi Punjabi Bolde Haan</p>
         </div>
       </div>
     </section>
