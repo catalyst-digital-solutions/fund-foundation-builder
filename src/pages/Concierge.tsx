@@ -543,8 +543,6 @@ function HowToStart() {
             <ExternalLink className="w-5 h-5" />
           </a>
           <PoweredBySmartCredit className="mt-3" />
-          <p className="text-sm text-gray-500 mt-2">Not sure if this is right for you? We'll help you figure it out. No pressure. No obligations. Just honest guidance.</p>
-          <p className="text-sm text-gray-500 mt-1">🇪🇸 Hablamos Español &nbsp;|&nbsp; 🇮🇳 Assi Punjabi Bolde Haan</p>
         </div>
       </div>
     </section>
@@ -714,7 +712,7 @@ function MembershipTiers() {
             Choose the Level of Support That <span className="text-[#f9c65d]">Fits Your Goals</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            All tiers require an active Mesa x SmartCredit subscription. The difference is how much personalized support you receive.
+            All tiers require an active Mesa x SmartCredit subscription.
           </p>
         </div>
 
