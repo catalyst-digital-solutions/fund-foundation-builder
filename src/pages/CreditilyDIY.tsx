@@ -705,8 +705,7 @@ export default function CreditilyDIY() {
               Real People. Real Journeys.
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              This Is What{" "}
-              <span className="text-[#f9c65d]">Taking Ownership</span>{" "}
+              This Is What <span className="text-[#f9c65d]">Taking Ownership</span><br />
               Looks Like.
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
@@ -734,44 +733,65 @@ export default function CreditilyDIY() {
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {[
               {
+                photo: "/reviews/creditily-reviews/jennifer-k-atlanta-ga.jpg",
                 quote: "I had tried to figure this out on my own for months and kept hitting walls. Creditily showed me exactly where to start, built my letters automatically, and within 40 days I had my first deletions. Having Mesa Group behind it made me feel like I was actually in good hands.",
                 name: "Jennifer K.",
+                detail: "First deletions in 40 days",
                 location: "Atlanta, GA",
               },
               {
+                photo: "/reviews/creditily-reviews/marcus-t-dallas-tx.jpg",
                 quote: "What got me was how organized everything was. I knew exactly what was being disputed, why it was being disputed, and when I would see results. I never felt lost. Four collections removed in my first round and my score is moving in the right direction.",
                 name: "Marcus T.",
+                detail: "4 collections removed in Round 1",
                 location: "Dallas, TX",
               },
               {
+                photo: "/reviews/creditily-reviews/david-r-phoenix-az.jpg",
                 quote: "The education library alone changed how I think about credit. I finally understand how the system actually works. The dispute letters cite real federal laws. This is not a shortcut. It is the real thing, and it works.",
                 name: "David R.",
+                detail: "Finally understands how the system works",
                 location: "Phoenix, AZ",
               },
               {
+                photo: "/reviews/creditily-reviews/amanda-s-denver-co.jpg",
                 quote: "I appreciated that I was in control the whole time. I reviewed every letter before it went out. I understood every step. I chose what to dispute. And the results followed. Knowing Mesa Group built this gave me confidence from day one.",
                 name: "Amanda S.",
+                detail: "In control every step of the way",
                 location: "Denver, CO",
               },
-            ].map(({ quote, name, location }) => (
-              <div key={name} className="bg-white rounded-2xl border border-gray-200 shadow-sm p-7">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
-                  ))}
-                </div>
-                <p className="text-gray-700 leading-relaxed mb-5 italic">"{quote}"</p>
-                <div>
-                  <p className="font-semibold text-gray-900 text-sm">{name}</p>
-                  <p className="text-gray-500 text-xs">{location}</p>
+            ].map(({ photo, quote, name, detail, location }) => (
+              <div key={name} className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                {photo && (
+                  <div className="h-56 overflow-hidden">
+                    <img src={photo} alt="" aria-hidden className="w-full h-full object-cover object-top" />
+                  </div>
+                )}
+                <div className="p-8 flex flex-col flex-1">
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                    ))}
+                  </div>
+                  <p className="text-white italic leading-relaxed mb-6 flex-1">"{quote}"</p>
+                  <div className="border-t border-gray-600 pt-4">
+                    <p className="font-semibold text-white text-sm">{name}</p>
+                    {detail && <p className="text-sm text-[#f9c65d] font-semibold mt-1">{detail}</p>}
+                    <p className="text-xs text-gray-400">{location}</p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
 
-          <p className="text-center text-xs text-gray-500 mt-8 max-w-2xl mx-auto leading-relaxed">
-            Individual results may vary. Testimonials are not a guarantee of future performance or results. Success depends on individual circumstances including credit history, accuracy of disputed items, and credit bureau responsiveness.
-          </p>
+          <div className="mt-8 text-center max-w-2xl mx-auto space-y-2">
+            <p className="text-sm text-gray-500">
+              Individual results may vary. Testimonials are not a guarantee of future performance or results. Success depends on individual circumstances including credit history, accuracy of disputed items, and credit bureau responsiveness.
+            </p>
+            <p className="text-xs text-gray-400">
+              Images may be AI-generated, stock photo, or other representations and may not depict actual clients.
+            </p>
+          </div>
         </div>
       </section>
 
