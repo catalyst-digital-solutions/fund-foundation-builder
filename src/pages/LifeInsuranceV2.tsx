@@ -319,7 +319,7 @@ export default function LifeInsuranceV2() {
               </h1>
 
               <p className="text-xl text-gray-700 font-semibold leading-snug">
-                Your Family Deserves a Plan. Let's Build One Together.
+                Your Family Deserves a Plan.<br />Let's Build One Together.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -402,7 +402,7 @@ export default function LifeInsuranceV2() {
             <span className="text-[#f9c65d]">Protected.</span>{" "}
             Let's Build a Plan Around Them.
           </h2>
-          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed max-w-[53rem] mx-auto">
             Answer a few quick questions and a licensed Mesa Group advisor will reach out with coverage options built around the people counting on you, your health, and your budget.
           </p>
           {/* Transparent form container — GHL form has its own card */}
@@ -595,7 +595,7 @@ export default function LifeInsuranceV2() {
               Coverage for every{" "}
               <span className="text-[#f9c65d]">stage of life</span>
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-[46rem] mx-auto">
               Not sure which type fits your situation? That is what the free consultation is for.
             </p>
           </div>
