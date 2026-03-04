@@ -11,8 +11,9 @@ import {
 import { Link } from 'react-router-dom';
 import PoweredBySmartCredit from '@/components/PoweredBySmartCredit';
 
-const SMARTCREDIT_LINK = "https://www.smartcredit.com/join/?PID=53366&planType=PREMIUM";
-const CALENDLY_LINK = "https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar";
+const CONCIERGE_FUNNEL = "https://concierge.mesagroupconsulting.com/opt-in";
+const SMARTCREDIT_LINK = CONCIERGE_FUNNEL;
+const CALENDLY_LINK = CONCIERGE_FUNNEL;
 
 const Concierge = () => {
   useEffect(() => window.scrollTo(0, 0), []);
