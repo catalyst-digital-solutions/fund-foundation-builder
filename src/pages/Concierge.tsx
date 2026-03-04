@@ -13,7 +13,7 @@ import PoweredBySmartCredit from '@/components/PoweredBySmartCredit';
 
 const CONCIERGE_FUNNEL = "https://concierge.mesagroupconsulting.com/opt-in";
 const SMARTCREDIT_LINK = CONCIERGE_FUNNEL;
-const CALENDLY_LINK = CONCIERGE_FUNNEL;
+const CALENDLY_LINK = "https://calendly.com/mesagroupconsulting/mesa-group-consulting-consultation-calendar";
 
 const Concierge = () => {
   useEffect(() => window.scrollTo(0, 0), []);
