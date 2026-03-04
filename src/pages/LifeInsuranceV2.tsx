@@ -374,7 +374,7 @@ export default function LifeInsuranceV2() {
                     "Rates that never increase after you enroll",
                     "Living benefits included on most plans at no extra cost",
                     "Coverage even if you've been declined before",
-                    "English · Español · Punjabi support",
+                    "🇺🇸 English · 🇪🇸 Español · 🇮🇳 Punjabi support",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
@@ -566,7 +566,7 @@ export default function LifeInsuranceV2() {
             ))}
           </div>
           <p className="mt-8 text-lg text-gray-300 font-medium">
-            This is not a fantasy. This is what the right coverage makes possible.<br /><br />And it starts with a 20-minute conversation.
+            This is not a fantasy.<br />This is what the right coverage makes possible.<br /><br />And it starts with a 20-minute conversation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a
@@ -1022,7 +1022,7 @@ export default function LifeInsuranceV2() {
             </a>
           </div>
           <p className="text-sm text-white/70 mt-4">
-            No obligation · No pressure · English · Español · Punjabi
+            No obligation · No pressure · 🇺🇸 English · 🇪🇸 Español · 🇮🇳 Punjabi
           </p>
         </div>
       </section>
