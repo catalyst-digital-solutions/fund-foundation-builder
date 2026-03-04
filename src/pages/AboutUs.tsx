@@ -228,6 +228,27 @@ const AboutUs = () => {
                 <p className="text-gray-700 leading-relaxed text-sm">{pillar.body}</p>
               </div>
             ))}
+
+            {/* 6th card — aerial video loop */}
+            <div className="relative rounded-2xl shadow-md overflow-hidden min-h-[260px]">
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+              >
+                <source src="/santa-ana-birds-eye-view-sm.mp4" type="video/mp4" />
+                <source src="/santa-ana-birds-eye-view.webm" type="video/webm" />
+              </video>
+              <div className="absolute inset-0 bg-black/50" />
+              <div className="relative z-10 h-full flex flex-col justify-end p-8">
+                <h3 className="text-xl font-bold text-white mb-3">Where This Came From</h3>
+                <p className="text-white/80 leading-relaxed text-sm">
+                  This company was born in Bakersfield, California — and carries the heart of everyone who built something here against the odds.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
