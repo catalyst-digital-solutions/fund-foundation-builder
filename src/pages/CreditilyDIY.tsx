@@ -733,28 +733,28 @@ export default function CreditilyDIY() {
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {[
               {
-                photo: "/reviews/creditily/img-01-portrait-of-relieved-woman-at-desk.png",
+                photo: "/reviews/creditily/img-01-portrait-of-relieved-woman-at-desk.jpeg",
                 quote: "I had tried to figure this out on my own for months and kept hitting walls. Creditily showed me exactly where to start, built my letters automatically, and within 40 days I had my first deletions. Having Mesa Group behind it made me feel like I was actually in good hands.",
                 name: "Jennifer K.",
                 detail: "First deletions in 40 days",
                 location: "Atlanta, GA",
               },
               {
-                photo: "/reviews/creditily/img-02-confident-man-in-navy-button-down.png",
+                photo: "/reviews/creditily/img-02-confident-man-in-navy-button-down.jpeg",
                 quote: "What got me was how organized everything was. I knew exactly what was being disputed, why it was being disputed, and when I would see results. I never felt lost. Four collections removed in my first round and my score is moving in the right direction.",
                 name: "Marcus T.",
                 detail: "4 collections removed in Round 1",
                 location: "Dallas, TX",
               },
               {
-                photo: "/reviews/creditily/img-03-relaxed-hispanic-man-in-warm-light.png",
+                photo: "/reviews/creditily/img-03-relaxed-hispanic-man-in-warm-light.jpeg",
                 quote: "The education library alone changed how I think about credit. I finally understand how the system actually works. The dispute letters cite real federal laws. This is not a shortcut. It is the real thing, and it works.",
                 name: "David R.",
                 detail: "Finally understands how the system works",
                 location: "Phoenix, AZ",
               },
               {
-                photo: "/reviews/creditily/img-04-confident-woman-in-light-colored-sweater.png",
+                photo: "/reviews/creditily/img-04-confident-woman-in-light-colored-sweater.jpeg",
                 quote: "I appreciated that I was in control the whole time. I reviewed every letter before it went out. I understood every step. I chose what to dispute. And the results followed. Knowing Mesa Group built this gave me confidence from day one.",
                 name: "Amanda S.",
                 detail: "In control every step of the way",
