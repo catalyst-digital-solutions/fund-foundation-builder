@@ -763,8 +763,8 @@ export default function CreditilyDIY() {
             ].map(({ photo, quote, name, detail, location }) => (
               <div key={name} className="bg-gradient-to-br from-[#3e3e3e] to-[#2c2c2c] rounded-2xl shadow-lg overflow-hidden flex flex-col">
                 {photo && (
-                  <div className="h-56 overflow-hidden">
-                    <img src={photo} alt="" aria-hidden className="w-full h-full object-cover object-center" />
+                  <div className="overflow-hidden">
+                    <img src={photo} alt="" aria-hidden className="w-full h-auto block" />
                   </div>
                 )}
                 <div className="p-8 flex flex-col flex-1">
